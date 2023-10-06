@@ -41,14 +41,101 @@ enum ClassLoadState {
     PROGRESSION = 'progression',
 }
 
+interface CharacterClassProgressionLevel {
+    Level: number;
+    'Proficiency Bonus': number;
+    Features: ClassFeature[];
+    'Spell Slots': number[];
+    'Cantrips Known'?: number;
+    // [key: string]: number | string | undefined;
+}
+
+type CharacterClassProgression = CharacterClassProgressionLevel[];
+
 export class CharacterClass extends PageItem {
-    progression?: Record<string, string | number | ClassFeature[]>[];
+    progression?: CharacterClassProgression;
 
     constructor(public name: string) {
         super(name);
 
         this.initialized[ClassLoadState.PROGRESSION] =
             this.initProgression().catch(error);
+    }
+
+    private static cleanProgressionTableData(
+        formattedData: { [key: string]: any }[],
+    ) {
+        return formattedData.map((item) => {
+            const cleanedItem: {
+                [key: string]: string | number | ClassFeature[];
+            } = {};
+
+            Object.keys(item).forEach((key) => {
+                const cleanedKey = stripWikiMarkup(key);
+
+                if (cleanedKey === 'Features') {
+                    cleanedItem[cleanedKey] = parseFeatures(item[key]);
+                } else {
+                    const value = stripWikiMarkup(item[key]);
+
+                    if (value === '-') {
+                        cleanedItem[cleanedKey] = 0;
+                        return;
+                    }
+
+                    // Try to convert to integer
+                    const intValue = parseInt(value, 10);
+                    if (!Number.isNaN(intValue)) {
+                        cleanedItem[cleanedKey] = intValue;
+                    } else {
+                        cleanedItem[cleanedKey] = value;
+                    }
+                }
+            });
+
+            return cleanedItem;
+        });
+    }
+
+    private static parseSpellSlots(
+        data: { [key: string]: string | number | ClassFeature[] }[],
+    ): CharacterClassProgression {
+        return data.map((rawLevelData) => {
+            const levelData: Partial<CharacterClassProgressionLevel> = {};
+
+            Object.entries(rawLevelData).forEach(
+                ([key, value]: [string, string | number | ClassFeature[]]) => {
+                    if (
+                        key === '1st' ||
+                        key === '2nd' ||
+                        key === '3rd' ||
+                        /\dth/.test(key)
+                    ) {
+                        const match = /\d+/.exec(key);
+
+                        if (!match) {
+                            return;
+                        }
+
+                        const level = parseInt(match[0], 10);
+
+                        levelData['Spell Slots'] =
+                            levelData['Spell Slots'] || [];
+
+                        levelData['Spell Slots'][level] = value as number;
+                        // eslint-disable-next-line no-param-reassign
+                        delete rawLevelData[key];
+                    }
+                },
+            );
+
+            const finalLevelData = {
+                ...rawLevelData,
+                ...levelData,
+            } as CharacterClassProgressionLevel;
+
+            return finalLevelData;
+        });
     }
 
     async initProgression() {
@@ -72,7 +159,6 @@ export class CharacterClass extends PageItem {
                 const cells = [...row[1].matchAll(cellRegex)];
                 return cells.map((cell) => cell[1].trim());
             });
-            // log(parsedRows);
 
             const keys = parsedRows[1];
             const dataRows = parsedRows.slice(2);
@@ -88,42 +174,11 @@ export class CharacterClass extends PageItem {
                 );
             });
 
-            // log(formattedData);
+            const cleanedData =
+                CharacterClass.cleanProgressionTableData(formattedData);
+            const dataWithSpells = CharacterClass.parseSpellSlots(cleanedData);
 
-            const cleanedData = formattedData.map((item) => {
-                const cleanedItem: {
-                    [key: string]: string | number | ClassFeature[];
-                } = {};
-
-                Object.keys(item).forEach((key) => {
-                    const cleanedKey = stripWikiMarkup(key);
-
-                    if (cleanedKey === 'Features') {
-                        cleanedItem[cleanedKey] = parseFeatures(item[key]);
-                    } else {
-                        const value = stripWikiMarkup(item[key]);
-
-                        if (value === '-') {
-                            cleanedItem[cleanedKey] = 0;
-                            return;
-                        }
-
-                        // Try to convert to integer
-                        const intValue = parseInt(value, 10);
-                        if (!Number.isNaN(intValue)) {
-                            cleanedItem[cleanedKey] = intValue;
-                        } else {
-                            cleanedItem[cleanedKey] = value;
-                        }
-                    }
-                });
-
-                return cleanedItem;
-            });
-
-            // log(cleanedData);
-
-            this.progression = cleanedData;
+            this.progression = dataWithSpells;
         } else {
             throw new Error(
                 `No class progression table found for "${this.name}"`,
@@ -140,7 +195,7 @@ export async function getCharacterClassData(): Promise<void> {
 
     classData = classNames.map((name) => new CharacterClass(name));
 
-    const cls = classData.find((c) => c.name === 'Warlock');
+    const cls = classData.find((c) => c.name === 'Cleric');
     await cls?.initialized[ClassLoadState.PROGRESSION];
     log(cls?.progression);
 }
