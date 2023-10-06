@@ -5,7 +5,7 @@ dotenv.config();
 /* eslint-disable import/first */
 import express from 'express';
 import { getCharacterClassData } from './models/character-class';
-import { log } from './models/logger';
+import './models/globals';
 
 const app = express();
 const PORT = process.env.PORT || 3001;

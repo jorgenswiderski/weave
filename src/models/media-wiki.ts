@@ -1,8 +1,8 @@
 import { ApiRevision } from 'mwn';
 import { Db } from 'mongodb';
+import assert from 'assert';
 import { MongoCollections, getMongoDb } from './mongo';
 import { MwnApi } from '../api/mwn';
-import { log } from './logger';
 
 export interface PageData extends ApiRevision {
     title: string;
@@ -64,13 +64,17 @@ export class MediaWiki {
             lastFetched: currentTime,
         };
 
+        assert(
+            typeof data.content === 'string' && 'Page content must be a string',
+        );
+
         // Store or update the page content, revision ID, and categories in MongoDB
         if (cachedPage) {
             await pageCollection.updateOne(
                 { title: pageTitle },
                 {
                     $set: {
-                        content: content.revisions[0],
+                        ...content.revisions[0],
                         revisionId: latestRevisionId,
                         categories,
                         lastFetched: currentTime,

@@ -36,4 +36,9 @@ module.exports = {
         'import/no-default-export': 'error',
         'no-console': 'error',
     },
+    globals: {
+        log: 'readonly',
+        error: 'readonly',
+        debug: 'readonly',
+    },
 };

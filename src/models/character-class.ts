@@ -1,7 +1,7 @@
 import { MwnApi } from '../api/mwn';
 import { ClassFeature } from './class-features';
-import { error, log } from './logger';
-import { PageItem } from './page-item';
+
+import { PageItem, PageLoadingState } from './page-item';
 
 function stripWikiMarkup(value: string): string {
     let v = value.replace(/\[\[.*?\|(.*?)\]\]/g, '$1'); // extract link labels
@@ -26,26 +26,32 @@ function parseFeatures(value: string): ClassFeature[] {
 
     const features = value.split(', ').map(ClassFeature.fromMarkdownString);
 
-    log(
-        value.split(', ').map((str) => ({
-            input: str,
-            incorrectOutput: ClassFeature.fromMarkdownString(str)?.pageTitle,
-        })),
-    );
+    // log(
+    //     value.split(', ').map((str) => ({
+    //         input: str,
+    //         incorrectOutput: ClassFeature.fromMarkdownString(str)?.pageTitle,
+    //     })),
+    // );
 
     return features;
 }
+
+enum ClassLoadState {
+    PROGRESSION = 'progression',
+}
+
 export class CharacterClass extends PageItem {
     progression?: Record<string, string | number | ClassFeature[]>[];
 
     constructor(public name: string) {
         super(name);
 
-        this.initProgression().catch(error);
+        this.initialized[ClassLoadState.PROGRESSION] =
+            this.initProgression().catch(error);
     }
 
     async initProgression() {
-        await this.pageHasLoaded;
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page || !this.page.content) {
             return;
@@ -56,7 +62,7 @@ export class CharacterClass extends PageItem {
         const rowRegex = /\|-\s*([\s\S]*?)(?=\|-\s*|$)/g; // Capture rows between |- and the next |- or end of string
         const cellRegex = /\|([^\n]*)/g; // Capture content of each cell
 
-        const match = tableRegex.exec(this.page.content);
+        const match = tableRegex.exec(this.page.content.slice(1000));
 
         if (match) {
             const tableContent = match[1];
@@ -96,6 +102,11 @@ export class CharacterClass extends PageItem {
                     } else {
                         const value = stripWikiMarkup(item[key]);
 
+                        if (value === '-') {
+                            cleanedItem[cleanedKey] = 0;
+                            return;
+                        }
+
                         // Try to convert to integer
                         const intValue = parseInt(value, 10);
                         if (!Number.isNaN(intValue)) {
@@ -126,7 +137,9 @@ let classData: CharacterClass[] = [];
 export async function getCharacterClassData(): Promise<void> {
     const classNames = await MwnApi.fetchTitlesFromCategory('Classes');
 
-    classData = await Promise.all(
-        classNames.map((name) => new CharacterClass(name)),
-    );
+    classData = classNames.map((name) => new CharacterClass(name));
+
+    const cls = classData.find((c) => c.name === 'Warlock');
+    await cls?.initialized[ClassLoadState.PROGRESSION];
+    // log(cls?.progression);
 }

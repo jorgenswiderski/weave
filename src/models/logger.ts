@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-class Logger {
+export class Logger {
     static base(func: Function, ...args: any[]) {
         func(...args);
     }
@@ -8,5 +8,3 @@ class Logger {
     static log = (...args: any[]) => this.base(console.log, ...args);
     static error = (...args: any[]) => this.base(console.error, ...args);
 }
-
-export const { log, debug, error } = Logger;

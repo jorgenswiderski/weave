@@ -1,29 +1,32 @@
-import { error, log } from './logger';
 import { MediaWiki, PageData } from './media-wiki';
 
 let errorCount = 0;
 
+export enum PageLoadingState {
+    PAGE_CONTENT = 'page_content',
+}
+
 export class PageItem {
     constructor(public pageTitle?: string) {
         if (pageTitle) {
-            this.fetchPage().catch((e) => {
-                error(e);
-                errorCount += 1;
-                log(`ec: ${errorCount}`);
-            });
+            this.initialized[PageLoadingState.PAGE_CONTENT] =
+                this.fetchPage().catch((e) => {
+                    error(e);
+                    errorCount += 1;
+                    log(`ec: ${errorCount}`);
+                });
         }
     }
 
     page?: PageData;
-    pageHasLoaded?: Promise<PageData | null>;
+    initialized: Record<string, Promise<any>> = {};
 
     async fetchPage(): Promise<void> {
         if (!this.pageTitle) {
             return;
         }
 
-        this.pageHasLoaded = MediaWiki.getPage(this.pageTitle);
-        const data = await this.pageHasLoaded;
+        const data = await MediaWiki.getPage(this.pageTitle);
 
         if (!data) {
             return;

@@ -1,6 +1,7 @@
 import { PageItem } from './page-item';
 
 export enum ClassFeatureTypes {
+    NONE = 'NONE',
     CHOOSE_SUBCLASS = 'CHOOSE_SUBCLASS',
     FEAT = 'FEAT',
     SUBCLASS_FEATURE = 'SUBCLASS_FEATURE',
@@ -19,6 +20,7 @@ export interface ClassFeatureOther extends ClassFeatureBase {
 }
 
 type ClassFeatureTypesSpecial =
+    | ClassFeatureTypes.NONE
     | ClassFeatureTypes.CHOOSE_SUBCLASS
     | ClassFeatureTypes.FEAT
     | ClassFeatureTypes.SUBCLASS_FEATURE
@@ -42,11 +44,12 @@ export class ClassFeature extends PageItem implements ClassFeatureBase {
 
     static fromMarkdownString(featureText: string): ClassFeature {
         const specialCases: { [key: string]: ClassFeatureTypesSpecial } = {
+            'eldritch invocations': ClassFeatureTypes.NONE,
             'choose a subclass': ClassFeatureTypes.CHOOSE_SUBCLASS,
             'subclass feature': ClassFeatureTypes.SUBCLASS_FEATURE,
             'feats|feat': ClassFeatureTypes.FEAT,
             '#spellcasting': ClassFeatureTypes.SPELLCASTING,
-            '#pact magic': ClassFeatureTypes.SPELLCASTING,
+            '#pact magic': ClassFeatureTypes.PACT_MAGIC,
         };
 
         // Handle special labels
@@ -87,15 +90,19 @@ export class ClassFeature extends PageItem implements ClassFeatureBase {
         }
 
         // Extract link labels or whole links
-        if (featureText.includes('[') && featureText.includes(']')) {
-            const parts = featureText.split('|');
-            const pageTitle = parts[1]
-                ? parts[1].replace(']]', '').trim()
-                : parts[0].replace('[[', '').replace(']]', '').trim();
-            return new ClassFeature({
-                type: ClassFeatureTypes.OTHER,
-                pageTitle,
-            });
+        const linkPattern = /\[\[(.*?)\]\]/;
+        if (linkPattern.test(featureText)) {
+            const match = featureText.match(linkPattern);
+
+            if (match) {
+                const parts = match[1].split('|');
+
+                // Take the linked page title and discard the non-link text
+                return new ClassFeature({
+                    type: ClassFeatureTypes.OTHER,
+                    pageTitle: parts[parts.length - 1].trim(),
+                });
+            }
         }
 
         return new ClassFeature({
