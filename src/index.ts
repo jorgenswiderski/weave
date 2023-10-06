@@ -4,7 +4,7 @@ dotenv.config();
 
 /* eslint-disable import/first */
 import express from 'express';
-import { getCharacterClassData } from './models/character-class';
+import { getCharacterClassData } from './models/character-class/character-class';
 import { log } from './models/logger';
 
 const app = express();

@@ -1,4 +1,6 @@
 import { Mwn } from 'mwn';
+import { memoizeWithExpiration } from '../models/utils';
+import { CONFIG } from '../models/config';
 
 type ApiParam =
     | string
@@ -18,65 +20,75 @@ const bot = new Mwn({
 });
 
 export class MwnApi {
-    static fetchTitlesFromCategory = async (
-        categoryName: string,
-        includeSubcategories: boolean = false,
-    ): Promise<string[]> => {
-        let titles: string[] = [];
-        let cmcontinue: ApiParam;
+    static fetchTitlesFromCategory = memoizeWithExpiration(
+        CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
+        async (
+            categoryName: string,
+            includeSubcategories: boolean = false,
+        ): Promise<string[]> => {
+            let titles: string[] = [];
+            let cmcontinue: ApiParam;
 
-        do {
-            // eslint-disable-next-line no-await-in-loop
-            const response = await bot.request({
-                action: 'query',
-                list: 'categorymembers',
-                cmtitle: `Category:${categoryName}`,
-                cmlimit: 500, // maximum allowed for most users
-                // cmcontinue,
-            });
+            do {
+                // eslint-disable-next-line no-await-in-loop
+                const response = await bot.request({
+                    action: 'query',
+                    list: 'categorymembers',
+                    cmtitle: `Category:${categoryName}`,
+                    cmlimit: 500, // maximum allowed for most users
+                    // cmcontinue,
+                });
 
-            const members = response?.query?.categorymembers || [];
+                const members = response?.query?.categorymembers || [];
 
-            // Filter out subcategories if not required
-            const filteredMembers = includeSubcategories
-                ? members
-                : members.filter(
-                      (member: any) => !member.title.startsWith('Category:'),
-                  );
+                // Filter out subcategories if not required
+                const filteredMembers = includeSubcategories
+                    ? members
+                    : members.filter(
+                          (member: any) =>
+                              !member.title.startsWith('Category:'),
+                      );
 
-            titles = titles.concat(
-                filteredMembers.map((member: any) => member.title),
-            );
+                titles = titles.concat(
+                    filteredMembers.map((member: any) => member.title),
+                );
 
-            cmcontinue = response?.continue?.cmcontinue;
-        } while (cmcontinue);
+                cmcontinue = response?.continue?.cmcontinue;
+            } while (cmcontinue);
 
-        return titles;
-    };
+            return titles;
+        },
+    );
 
     // Fetches the revision ID and categories of a page
-    static async fetchPageInfo(pageTitle: string) {
-        const pageInfo = await bot.query({
-            titles: pageTitle,
-            prop: 'info|categories',
-            inprop: 'watched',
-            cllimit: 'max',
-        });
+    static fetchPageInfo = memoizeWithExpiration(
+        CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
+        async (pageTitle: string) => {
+            const pageInfo = await bot.query({
+                titles: pageTitle,
+                prop: 'info|categories',
+                inprop: 'watched',
+                cllimit: 'max',
+            });
 
-        const latestRevisionId =
-            pageInfo?.query?.pages[Object.keys(pageInfo?.query?.pages)[0]]
-                .lastrevid;
+            const latestRevisionId =
+                pageInfo?.query?.pages[Object.keys(pageInfo?.query?.pages)[0]]
+                    .lastrevid;
 
-        const categories =
-            pageInfo?.query?.pages[
-                Object.keys(pageInfo?.query?.pages)[0]
-            ].categories?.map((category: any) => category.title) || [];
+            const categories =
+                pageInfo?.query?.pages[
+                    Object.keys(pageInfo?.query?.pages)[0]
+                ].categories?.map((category: any) => category.title) || [];
 
-        return { latestRevisionId, categories };
-    }
+            return { latestRevisionId, categories };
+        },
+    );
 
     // Reads the content of a page
-    static async fetchPageContent(pageTitle: string) {
-        return bot.read(pageTitle);
-    }
+    static fetchPageContent = memoizeWithExpiration(
+        CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
+        async (pageTitle: string) => {
+            return bot.read(pageTitle);
+        },
+    );
 }

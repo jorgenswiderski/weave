@@ -87,4 +87,19 @@ export class MediaWiki {
 
         return data;
     }
+
+    static stripMarkup(value: string): string {
+        let v = value.replace(/\[\[.*?\|(.*?)\]\]/g, '$1'); // extract link labels
+        v = v.replace(/\[\[(.*?)\]\]/g, '$1');
+        v = v.replace(/{{.*?\|(.*?)}}/g, '$1'); // extract template parameters
+        v = v.replace(/'''(.*?)'''/g, '$1'); // bold text
+        v = v.replace(/''(.*?)''/g, '$1'); // italic text
+        v = v.replace(/`/g, ''); // backticks
+        v = v.replace(/<.*?>/g, ''); // strip out any html tags
+        v = v.replace(/style=".*?" \| /g, ''); // strip out style attributes
+        v = v.replace(/(\w+)\.webp|\.png/g, '$1'); // remove image extensions
+        v = v.trim(); // remove spaces from start and end
+
+        return v;
+    }
 }
