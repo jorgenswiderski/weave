@@ -1,10 +1,11 @@
 import dotenv from 'dotenv';
+
 dotenv.config();
 
+/* eslint-disable import/first */
 import express from 'express';
-import { MediaWiki } from './media-wiki';
-import { mwnApi } from './api/mwn';
-import { getCharacterClassData } from './character-class';
+import { getCharacterClassData } from './models/character-class';
+import { log } from './models/logger';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -16,5 +17,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    log(`Server is running on port ${PORT}`);
 });

@@ -1,7 +1,8 @@
-import { ApiPage, ApiRevision } from 'mwn';
-import { MongoCollections, getMongoDb } from './mongo';
+import { ApiRevision } from 'mwn';
 import { Db } from 'mongodb';
-import { mwnApi } from './api/mwn';
+import { MongoCollections, getMongoDb } from './mongo';
+import { MwnApi } from '../api/mwn';
+import { log } from './logger';
 
 export interface PageData extends ApiRevision {
     title: string;
@@ -18,18 +19,18 @@ export class MediaWiki {
         const cachedPage = await pageCollection.findOne({ title: pageTitle });
 
         const { latestRevisionId, categories } =
-            await mwnApi.fetchPageInfo(pageTitle);
+            await MwnApi.fetchPageInfo(pageTitle);
 
         // Compare with locally stored revision ID
         if (cachedPage && cachedPage.revisionId >= latestRevisionId) {
-            console.log(`No newer revision of page ${pageTitle} available`);
+            // log(`No newer revision of page ${pageTitle} available`);
             return cachedPage as unknown as PageData;
         }
 
-        const content = await mwnApi.fetchPageContent(pageTitle);
+        const content = await MwnApi.fetchPageContent(pageTitle);
 
         if (!content.revisions || !content.revisions[0]) {
-            throw new Error(`Content for page ${pageTitle} not found`);
+            throw new Error(`Content for page "${pageTitle}" not found`);
         }
 
         const data = {
@@ -51,10 +52,10 @@ export class MediaWiki {
                     },
                 },
             );
-            console.log(`Updated page "${pageTitle}" contents`);
+            log(`Updated page "${pageTitle}" contents`);
         } else {
             await pageCollection.insertOne(data);
-            console.log(`Fetched page "${pageTitle}" contents`);
+            // log(`Fetched page "${pageTitle}" contents`);
         }
 
         return data;

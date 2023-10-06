@@ -1,6 +1,4 @@
-import { ApiPage, Mwn } from 'mwn';
-import { MongoCollections, getMongoDb } from '../mongo';
-import { Db } from 'mongodb';
+import { Mwn } from 'mwn';
 
 type ApiParam =
     | string
@@ -19,7 +17,7 @@ const bot = new Mwn({
     apiUrl: 'https://bg3.wiki/w/api.php',
 });
 
-export class mwnApi {
+export class MwnApi {
     static fetchTitlesFromCategory = async (
         categoryName: string,
         includeSubcategories: boolean = false,
@@ -28,6 +26,7 @@ export class mwnApi {
         let cmcontinue: ApiParam;
 
         do {
+            // eslint-disable-next-line no-await-in-loop
             const response = await bot.request({
                 action: 'query',
                 list: 'categorymembers',
@@ -78,6 +77,6 @@ export class mwnApi {
 
     // Reads the content of a page
     static async fetchPageContent(pageTitle: string) {
-        return await bot.read(pageTitle);
+        return bot.read(pageTitle);
     }
 }

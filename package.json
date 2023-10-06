@@ -10,6 +10,7 @@
         "serve": "node dist/index.js",
         "prepare": "husky install",
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+        "lint-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
         "format": "prettier --write .",
         "dbstart": "docker-compose up -d",
         "dbstop": "docker-compose down"
@@ -30,6 +31,7 @@
         "@typescript-eslint/eslint-plugin": "^6.7.4",
         "@typescript-eslint/parser": "^6.7.4",
         "eslint": "^8.50.0",
+        "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.1.0",
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-prettier": "^5.0.0",
