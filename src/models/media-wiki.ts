@@ -18,12 +18,35 @@ export class MediaWiki {
         // Check if the page is cached
         const cachedPage = await pageCollection.findOne({ title: pageTitle });
 
+        // If the page is cached and it's been fewer than N seconds since the last fetch,
+        // just return the cached content.
+        const currentTime = Math.floor(Date.now() / 1000);
+
+        if (
+            cachedPage &&
+            currentTime - (cachedPage.lastFetched || 0) <
+                parseInt(
+                    process.env.MEDIAWIKI_REVISION_CHECK_THROTTLE_IN_MILLIS ??
+                        '5',
+                    10,
+                )
+        ) {
+            return cachedPage as unknown as PageData;
+        }
+
         const { latestRevisionId, categories } =
             await MwnApi.fetchPageInfo(pageTitle);
 
         // Compare with locally stored revision ID
         if (cachedPage && cachedPage.revisionId >= latestRevisionId) {
-            // log(`No newer revision of page ${pageTitle} available`);
+            await pageCollection.updateOne(
+                { title: pageTitle },
+                {
+                    $set: {
+                        lastFetched: currentTime,
+                    },
+                },
+            );
             return cachedPage as unknown as PageData;
         }
 
@@ -38,6 +61,7 @@ export class MediaWiki {
             title: pageTitle,
             revisionId: latestRevisionId,
             categories,
+            lastFetched: currentTime,
         };
 
         // Store or update the page content, revision ID, and categories in MongoDB
@@ -49,13 +73,12 @@ export class MediaWiki {
                         content: content.revisions[0],
                         revisionId: latestRevisionId,
                         categories,
+                        lastFetched: currentTime,
                     },
                 },
             );
-            log(`Updated page "${pageTitle}" contents`);
         } else {
             await pageCollection.insertOne(data);
-            // log(`Fetched page "${pageTitle}" contents`);
         }
 
         return data;
