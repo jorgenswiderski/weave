@@ -1,5 +1,6 @@
 import { MwnApi } from '../api/mwn';
 import { ClassFeature } from './class-features';
+import { error, log } from './logger';
 
 import { PageItem, PageLoadingState } from './page-item';
 
@@ -141,5 +142,5 @@ export async function getCharacterClassData(): Promise<void> {
 
     const cls = classData.find((c) => c.name === 'Warlock');
     await cls?.initialized[ClassLoadState.PROGRESSION];
-    // log(cls?.progression);
+    log(cls?.progression);
 }

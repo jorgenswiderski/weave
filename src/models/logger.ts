@@ -8,3 +8,5 @@ export class Logger {
     static log = (...args: any[]) => this.base(console.log, ...args);
     static error = (...args: any[]) => this.base(console.error, ...args);
 }
+
+export const { debug, log, error } = Logger;
