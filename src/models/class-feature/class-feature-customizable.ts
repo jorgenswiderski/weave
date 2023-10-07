@@ -1,6 +1,6 @@
 import { ClassFeature } from './class-feature';
 import {
-    ClassFeatureCustomizationOption,
+    IClassFeatureCustomizationOption,
     ClassFeatureOther,
     ClassFeatureSpecial,
     IClassFeatureCustomizable,
@@ -10,7 +10,7 @@ export class ClassFeatureCustomizable
     extends ClassFeature
     implements IClassFeatureCustomizable
 {
-    choices?: ClassFeatureCustomizationOption[][];
+    choices?: IClassFeatureCustomizationOption[][];
 
     constructor(options: ClassFeatureOther | ClassFeatureSpecial) {
         super(options);

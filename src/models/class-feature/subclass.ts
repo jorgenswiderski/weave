@@ -3,6 +3,7 @@ import { MediaWiki, PageData } from '../media-wiki';
 import { ClassFeatureCustomizable } from './class-feature-customizable';
 import { ClassFeatureTypes, IClassSubclass } from './types';
 import { MwnApi } from '../../api/mwn';
+import { ClassFeatureCustomizationOption } from './feature-customization-option/feature-customization-option';
 
 enum SubclassLoadStates {
     DATA = 'DATA',
@@ -32,11 +33,14 @@ export class ClassSubclass
         ) as PageData[];
 
         this.choices = [
-            filtered.map((page) => ({
-                label: page.title.split('(')[0].trim(),
-                pageTitle: page.title,
-                page,
-            })),
+            filtered.map(
+                (page) =>
+                    new ClassFeatureCustomizationOption(
+                        page.title.split('(')[0].trim(),
+                        page.title,
+                        page,
+                    ),
+            ),
         ];
     }
 }

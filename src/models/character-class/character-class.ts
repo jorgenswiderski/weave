@@ -1,7 +1,7 @@
 import { MwnApi } from '../../api/mwn';
 import { ClassFeatureFactory } from '../class-feature/class-feature-factory';
 import {
-    ClassFeatureCustomizationOption,
+    IClassFeatureCustomizationOption,
     ClassFeatureTypes,
     IClassFeature,
     IClassSubclass,
@@ -200,7 +200,7 @@ export class CharacterClass extends PageItem {
         return intro.split('\n')[0].trim();
     }
 
-    private getSubclasses(): ClassFeatureCustomizationOption[] {
+    private getSubclasses(): IClassFeatureCustomizationOption[] {
         if (!this.progression) {
             throw new Error('Could not find progression');
         }

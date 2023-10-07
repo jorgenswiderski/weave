@@ -32,14 +32,15 @@ export interface ClassFeatureSpecial extends IClassFeature {
     pageTitle?: string;
 }
 
-export interface ClassFeatureCustomizationOption {
-    pageTitle?: string;
-    page?: PageData;
+export interface IClassFeatureCustomizationOption {
+    pageTitle: string;
+    page: PageData;
     label: string;
+    description?: string;
 }
 
 export interface IClassFeatureCustomizable extends IClassFeature {
-    choices?: ClassFeatureCustomizationOption[][];
+    choices?: IClassFeatureCustomizationOption[][];
 }
 
 export interface IClassSubclass extends IClassFeatureCustomizable {}
