@@ -182,10 +182,12 @@ export class CharacterClass extends PageItem {
             throw new Error('No page title!');
         }
 
-        return MwnApi.fetchTextExtract(this.pageTitle, {
+        const intro = await MwnApi.fetchTextExtract(this.pageTitle, {
             exintro: true,
             explaintext: true,
         });
+
+        return intro.split('\n')[0].trim();
     }
 
     private getSubclasses(): ClassFeatureCustomizationOption[] {
