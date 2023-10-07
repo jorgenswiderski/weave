@@ -32,6 +32,7 @@ function parseFeatures(
                 featureString,
             ),
         );
+
     return features;
 }
 
@@ -43,7 +44,7 @@ export interface ClassBasicInfo {
     name: string;
     description: string;
     subclassNames: string[];
-    image: string;
+    image?: string;
 }
 
 export class CharacterClass extends PageItem {
@@ -72,11 +73,13 @@ export class CharacterClass extends PageItem {
 
                     if (value === '-') {
                         cleanedItem[cleanedKey] = 0;
+
                         return;
                     }
 
                     // Try to convert to integer
                     const intValue = parseInt(value, 10);
+
                     if (!Number.isNaN(intValue)) {
                         cleanedItem[cleanedKey] = intValue;
                     } else {
@@ -149,6 +152,7 @@ export class CharacterClass extends PageItem {
             const rows = [...tableContent.matchAll(rowRegex)];
             const parsedRows = rows.map((row) => {
                 const cells = [...row[1].matchAll(cellRegex)];
+
                 return cells.map((cell) => cell[1].trim());
             });
 
@@ -160,6 +164,7 @@ export class CharacterClass extends PageItem {
                     (obj, cell, index) => {
                         // eslint-disable-next-line no-param-reassign
                         obj[keys[index]] = cell;
+
                         return obj;
                     },
                     {} as { [key: string]: any },
@@ -219,15 +224,16 @@ export class CharacterClass extends PageItem {
     }
 
     // TODO
-    private getImage(): string {
+    private getImage(): string | null {
         if (!this.page || !this.page.content) {
             throw new Error('Could not find page content');
         }
 
-        // parse the image from the page
+        const match = this.page.content.match(
+            /{{ClassQuote[^}]+image=([^|}]+)/,
+        );
 
-        // return image;
-        return '';
+        return match && match[1] ? match[1].trim() : null;
     }
 
     async getBasicInfo(): Promise<ClassBasicInfo> {
@@ -235,7 +241,7 @@ export class CharacterClass extends PageItem {
             name: this.name,
             description: await this.getDescription(),
             subclassNames: this.getSubclasses().map((sc) => sc.label),
-            image: this.getImage(),
+            image: this.getImage() ?? undefined,
         };
     }
 }
