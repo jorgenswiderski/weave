@@ -19,9 +19,13 @@ const bot = new Mwn({
     apiUrl: 'https://bg3.wiki/w/api.php',
 });
 
+// shorthand just to reduce boilerplate
+function memoize<T extends (...args: any[]) => any>(fn: T): T {
+    return memoizeWithExpiration(CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS, fn);
+}
+
 export class MwnApi {
-    static fetchTitlesFromCategory = memoizeWithExpiration(
-        CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
+    static queryTitlesFromCategory = memoize(
         async (
             categoryName: string,
             includeSubcategories: boolean = false,
@@ -31,8 +35,7 @@ export class MwnApi {
 
             do {
                 // eslint-disable-next-line no-await-in-loop
-                const response = await bot.request({
-                    action: 'query',
+                const response = await bot.query({
                     list: 'categorymembers',
                     cmtitle: `Category:${categoryName}`,
                     cmlimit: 500, // maximum allowed for most users
@@ -60,47 +63,52 @@ export class MwnApi {
         },
     );
 
-    // Fetches the revision ID and categories of a page
-    static fetchPageInfo = memoizeWithExpiration(
-        CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
-        async (pageTitle: string) => {
-            const pageInfo = await bot.query({
-                titles: pageTitle,
-                prop: 'info|categories',
-                inprop: 'watched',
-                cllimit: 'max',
-            });
+    static readPage = memoize(async (pageTitle: string): Promise<ApiPage> => {
+        return bot.read(pageTitle);
+    });
 
-            const latestRevisionId =
-                pageInfo?.query?.pages[Object.keys(pageInfo?.query?.pages)[0]]
-                    .lastrevid;
-
-            const categories =
-                pageInfo?.query?.pages[
-                    Object.keys(pageInfo?.query?.pages)[0]
-                ].categories?.map((category: any) => category.title) || [];
-
-            return { latestRevisionId, categories };
-        },
-    );
-
-    static fetchPageContent = memoizeWithExpiration(
-        CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
-        async (pageTitle: string): Promise<ApiPage> => {
-            return bot.read(pageTitle);
-        },
-    );
-
-    static fetchTextExtract = memoizeWithExpiration(
-        CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
-        async (pageTitle: string, options: ApiParams): Promise<string> => {
-            const data = await bot.query({
-                titles: pageTitle,
-                prop: 'extracts',
+    static queryPages = memoize(
+        async (
+            pageTitles: string[],
+            options: ApiParams,
+        ): Promise<Record<string, Record<string, any>>> => {
+            const responseData = await bot.query({
+                titles: pageTitles,
                 ...options,
             });
 
-            return data.query?.pages[0].extract;
+            if (!responseData?.query?.pages) {
+                throw new Error('Could not find page data');
+            }
+
+            const pageData = responseData.query.pages as Record<
+                string,
+                Record<string, any>
+            >;
+
+            const entries = Object.values(pageData).map(
+                (datum: Record<string, any>) => [datum.title, datum],
+            );
+            return Object.fromEntries(entries);
+        },
+    );
+
+    static queryPage = memoize(
+        async (
+            pageTitle: string,
+            options: ApiParams,
+        ): Promise<Record<string, any>> => {
+            const response = await this.queryPages([pageTitle], options);
+
+            return response[pageTitle];
         },
     );
 }
+
+// (async () => {
+//     await MwnApi.queryPage('Clericasdfa', {
+//         prop: 'extracts',
+//         exintro: true,
+//         explaintext: true,
+//     });
+// })();

@@ -21,7 +21,7 @@ export class ClassSubclass
 
     private async fetchSubclasses(): Promise<void> {
         const allSubclassPages =
-            await MwnApi.fetchTitlesFromCategory('Subclasses');
+            await MwnApi.queryTitlesFromCategory('Subclasses');
         const allSubclasses = await Promise.all(
             allSubclassPages.map((title) => MediaWiki.getPage(title)),
         );

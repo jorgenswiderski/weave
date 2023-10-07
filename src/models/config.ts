@@ -5,4 +5,10 @@ export const CONFIG = {
             10,
         ),
     },
+    MEDIAWIKI: {
+        REVISION_CHECK_THROTTLE_IN_MILLIS: parseInt(
+            process.env.MEDIAWIKI_REVISION_CHECK_THROTTLE_IN_MILLIS ?? '5',
+            10,
+        ),
+    },
 };

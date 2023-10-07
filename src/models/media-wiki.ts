@@ -3,6 +3,7 @@ import { Db } from 'mongodb';
 import assert from 'assert';
 import { MongoCollections, getMongoDb } from './mongo';
 import { MwnApi } from '../api/mwn';
+import { CONFIG } from './config';
 
 export interface PageData extends ApiRevision {
     title: string;
@@ -20,22 +21,18 @@ export class MediaWiki {
 
         // If the page is cached and it's been fewer than N seconds since the last fetch,
         // just return the cached content.
-        const currentTime = Math.floor(Date.now() / 1000);
+        const currentTime = Date.now();
 
         if (
             cachedPage &&
             currentTime - (cachedPage.lastFetched || 0) <
-                parseInt(
-                    process.env.MEDIAWIKI_REVISION_CHECK_THROTTLE_IN_MILLIS ??
-                        '5',
-                    10,
-                )
+                CONFIG.MEDIAWIKI.REVISION_CHECK_THROTTLE_IN_MILLIS
         ) {
             return cachedPage as unknown as PageData;
         }
 
         const { latestRevisionId, categories } =
-            await MwnApi.fetchPageInfo(pageTitle);
+            await MediaWiki.getPageInfo(pageTitle);
 
         // Compare with locally stored revision ID
         if (cachedPage && cachedPage.revisionId >= latestRevisionId) {
@@ -50,7 +47,7 @@ export class MediaWiki {
             return cachedPage as unknown as PageData;
         }
 
-        const content = await MwnApi.fetchPageContent(pageTitle);
+        const content = await MwnApi.readPage(pageTitle);
 
         if (!content.revisions || !content.revisions[0]) {
             throw new Error(`Content for page "${pageTitle}" not found`);
@@ -101,5 +98,40 @@ export class MediaWiki {
         v = v.trim(); // remove spaces from start and end
 
         return v;
+    }
+
+    static async getTextExtract(
+        pageTitle: string,
+        options: {
+            intro?: boolean;
+            plainText?: boolean;
+        },
+    ): Promise<string | null> {
+        const data = await MwnApi.queryPage(pageTitle, {
+            prop: 'extracts',
+            exintro: options?.intro ?? false,
+            explaintext: options?.plainText ?? true,
+        });
+
+        return data?.extract ?? null;
+    }
+
+    static async getPageInfo(pageTitle: string): Promise<{
+        latestRevisionId: number;
+        categories: string[];
+    }> {
+        const data = await MwnApi.queryPage(pageTitle, {
+            prop: 'info|categories',
+            inprop: 'watched',
+            cllimit: 'max',
+        });
+
+        const { lastrevid, categories } = data;
+
+        return {
+            latestRevisionId: lastrevid,
+            categories:
+                categories?.map((cat: Record<string, any>) => cat.title) || [],
+        };
     }
 }

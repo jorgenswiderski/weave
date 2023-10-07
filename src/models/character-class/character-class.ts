@@ -182,10 +182,13 @@ export class CharacterClass extends PageItem {
             throw new Error('No page title!');
         }
 
-        const intro = await MwnApi.fetchTextExtract(this.pageTitle, {
-            exintro: true,
-            explaintext: true,
+        const intro = await MediaWiki.getTextExtract(this.pageTitle, {
+            intro: true,
         });
+
+        if (!intro) {
+            throw new Error('Page intro is null');
+        }
 
         return intro.split('\n')[0].trim();
     }
@@ -241,7 +244,7 @@ let characterClassData: CharacterClass[];
 
 export async function getCharacterClassData(): Promise<CharacterClass[]> {
     if (!characterClassData) {
-        const classNames = await MwnApi.fetchTitlesFromCategory('Classes');
+        const classNames = await MwnApi.queryTitlesFromCategory('Classes');
 
         characterClassData = classNames.map((name) => new CharacterClass(name));
 
