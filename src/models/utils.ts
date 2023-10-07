@@ -14,6 +14,7 @@ export function memoizeWithExpiration<T extends (...args: any[]) => any>(
 
         const result = fn(...args);
         cache[key] = { value: result, timestamp: now };
+
         return result;
     } as unknown as T;
 }

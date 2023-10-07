@@ -54,6 +54,7 @@ export class ClassFeatureFactory {
             const parts = featureText.split('|');
 
             const pageTitle = parts[1].split('}}')[0].trim();
+
             return ClassFeatureFactory.construct(characterClass, {
                 type: ClassFeatureTypes.OTHER,
                 pageTitle,
@@ -64,6 +65,7 @@ export class ClassFeatureFactory {
         if (featureText.startsWith('{{SmIconLink|')) {
             const parts = featureText.split('|');
             const pageTitle = parts[3].replace('}}', '').trim();
+
             return ClassFeatureFactory.construct(characterClass, {
                 type: ClassFeatureTypes.OTHER,
                 pageTitle,
@@ -72,6 +74,7 @@ export class ClassFeatureFactory {
 
         // Extract link labels or whole links
         const linkPattern = /\[\[(.*?)\]\]/;
+
         if (linkPattern.test(featureText)) {
             const match = featureText.match(linkPattern);
 

@@ -89,6 +89,7 @@ export class MwnApi {
             const entries = Object.values(pageData).map(
                 (datum: Record<string, any>) => [datum.title, datum],
             );
+
             return Object.fromEntries(entries);
         },
     );

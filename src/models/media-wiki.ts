@@ -44,6 +44,7 @@ export class MediaWiki {
                     },
                 },
             );
+
             return cachedPage as unknown as PageData;
         }
 

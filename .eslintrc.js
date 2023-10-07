@@ -35,6 +35,19 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'import/no-default-export': 'error',
         'no-console': 'error',
+        'padding-line-between-statements': [
+            'warn',
+            {
+                blankLine: 'always',
+                prev: '*',
+                next: ['block', 'block-like', 'multiline-expression', 'return'],
+            },
+            {
+                blankLine: 'always',
+                prev: ['block', 'block-like', 'multiline-expression'],
+                next: '*',
+            },
+        ],
     },
     globals: {
         log: 'readonly',
