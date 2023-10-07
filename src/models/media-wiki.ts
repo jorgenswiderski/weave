@@ -1,6 +1,7 @@
 import { ApiRevision } from 'mwn';
 import { Db } from 'mongodb';
 import assert from 'assert';
+import crypto from 'crypto';
 import { MongoCollections, getMongoDb } from './mongo';
 import { MwnApi } from '../api/mwn';
 import { CONFIG } from './config';
@@ -134,5 +135,15 @@ export class MediaWiki {
             categories:
                 categories?.map((cat: Record<string, any>) => cat.title) || [],
         };
+    }
+
+    static getImagePath(imageName: string): string {
+        const formattedImageName = imageName.replace(/ /g, '_');
+        const hash = crypto
+            .createHash('md5')
+            .update(formattedImageName)
+            .digest('hex');
+
+        return `${CONFIG.MEDIAWIKI.BASE_URL}/images/${hash[0]}/${hash[0]}${hash[1]}/${formattedImageName}`;
     }
 }

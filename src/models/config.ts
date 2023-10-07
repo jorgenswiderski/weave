@@ -10,5 +10,6 @@ export const CONFIG = {
             process.env.MEDIAWIKI_REVISION_CHECK_THROTTLE_IN_MILLIS ?? '5',
             10,
         ),
+        BASE_URL: process.env.MEDIAWIKI_BASE_URL,
     },
 };

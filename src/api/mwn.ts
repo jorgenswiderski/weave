@@ -16,7 +16,7 @@ type ApiParam =
       };
 
 const bot = new Mwn({
-    apiUrl: 'https://bg3.wiki/w/api.php',
+    apiUrl: `${CONFIG.MEDIAWIKI.BASE_URL}/api.php`,
 });
 
 // shorthand just to reduce boilerplate

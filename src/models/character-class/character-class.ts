@@ -223,7 +223,6 @@ export class CharacterClass extends PageItem {
         return feature.choices[0];
     }
 
-    // TODO
     private getImage(): string | null {
         if (!this.page || !this.page.content) {
             throw new Error('Could not find page content');
@@ -233,7 +232,13 @@ export class CharacterClass extends PageItem {
             /{{ClassQuote[^}]+image=([^|}]+)/,
         );
 
-        return match && match[1] ? match[1].trim() : null;
+        if (!match || !match[1]) {
+            return null;
+        }
+
+        const fileName = match[1].trim();
+
+        return MediaWiki.getImagePath(fileName);
     }
 
     async getBasicInfo(): Promise<ClassBasicInfo> {
