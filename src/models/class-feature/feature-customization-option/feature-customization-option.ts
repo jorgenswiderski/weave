@@ -19,6 +19,6 @@ export class ClassFeatureCustomizationOption
             intro: true,
         });
 
-        this.description = data ?? '<ERROR>';
+        this.description = data ? data.split('\n')[0].trim() : '<ERROR>';
     }
 }
