@@ -25,6 +25,7 @@ router.get('/progression/:classes', async (req: Request, res: Response) => {
     );
 
     // Check if one of the classes wasn't found
+    // FIXME
     if (classesInfo.some((info) => !info)) {
         res.status(404).json({ error: 'One or more classes not found.' });
 
