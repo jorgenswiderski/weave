@@ -1,4 +1,4 @@
-import { Mwn } from 'mwn';
+import { ApiPage, ApiParams, Mwn } from 'mwn';
 import { memoizeWithExpiration } from '../models/utils';
 import { CONFIG } from '../models/config';
 
@@ -84,11 +84,23 @@ export class MwnApi {
         },
     );
 
-    // Reads the content of a page
     static fetchPageContent = memoizeWithExpiration(
         CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
-        async (pageTitle: string) => {
+        async (pageTitle: string): Promise<ApiPage> => {
             return bot.read(pageTitle);
+        },
+    );
+
+    static fetchTextExtract = memoizeWithExpiration(
+        CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
+        async (pageTitle: string, options: ApiParams): Promise<string> => {
+            const data = await bot.query({
+                titles: pageTitle,
+                prop: 'extracts',
+                ...options,
+            });
+
+            return data.query?.pages[0].extract;
         },
     );
 }

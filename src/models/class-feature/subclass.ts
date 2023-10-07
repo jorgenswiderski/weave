@@ -1,14 +1,17 @@
 import { error } from '../logger';
 import { MediaWiki, PageData } from '../media-wiki';
 import { ClassFeatureCustomizable } from './class-feature-customizable';
-import { ClassFeatureTypes } from './types';
+import { ClassFeatureTypes, IClassSubclass } from './types';
 import { MwnApi } from '../../api/mwn';
 
 enum SubclassLoadStates {
     DATA = 'DATA',
 }
 
-export class ClassSubclass extends ClassFeatureCustomizable {
+export class ClassSubclass
+    extends ClassFeatureCustomizable
+    implements IClassSubclass
+{
     constructor(public className: string) {
         super({ type: ClassFeatureTypes.CHOOSE_SUBCLASS });
 
@@ -30,6 +33,7 @@ export class ClassSubclass extends ClassFeatureCustomizable {
 
         this.choices = [
             filtered.map((page) => ({
+                name: page?.title || 'no name', // FIXME
                 pageTitle: page?.title,
                 page: page as PageData,
             })),

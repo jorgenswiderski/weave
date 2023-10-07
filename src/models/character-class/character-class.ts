@@ -1,6 +1,11 @@
 import { MwnApi } from '../../api/mwn';
 import { ClassFeatureFactory } from '../class-feature/class-feature-factory';
-import { IClassFeature } from '../class-feature/types';
+import {
+    ClassFeatureCustomizationOption,
+    ClassFeatureTypes,
+    IClassFeature,
+    IClassSubclass,
+} from '../class-feature/types';
 import { error } from '../logger';
 import { MediaWiki } from '../media-wiki';
 
@@ -32,6 +37,13 @@ function parseFeatures(
 
 enum ClassLoadState {
     PROGRESSION = 'progression',
+}
+
+export interface ClassBasicInfo {
+    name: string;
+    description: string;
+    subclassNames: string[];
+    image: string;
 }
 
 export class CharacterClass extends PageItem {
@@ -164,17 +176,83 @@ export class CharacterClass extends PageItem {
             );
         }
     }
+
+    private async getDescription(): Promise<string> {
+        if (!this.pageTitle) {
+            throw new Error('No page title!');
+        }
+
+        return MwnApi.fetchTextExtract(this.pageTitle, {
+            exintro: true,
+            explaintext: true,
+        });
+    }
+
+    private getSubclasses(): ClassFeatureCustomizationOption[] {
+        if (!this.progression) {
+            throw new Error('Could not find progression');
+        }
+
+        const features = this.progression.map((level) => level.Features);
+        const chooseSubclass = features
+            .flat()
+            .find(
+                (feature) => feature.type === ClassFeatureTypes.CHOOSE_SUBCLASS,
+            );
+
+        if (!chooseSubclass) {
+            throw new Error('Could not find subclass info');
+        }
+
+        const feature = chooseSubclass as IClassSubclass;
+
+        if (!feature.choices || !feature.choices[0]) {
+            throw new Error('Subclass info has no choices');
+        }
+
+        return feature.choices[0];
+    }
+
+    // TODO
+    private getImage(): string {
+        if (!this.page || !this.page.content) {
+            throw new Error('Could not find page content');
+        }
+
+        // parse the image from the page
+
+        // return image;
+        return '';
+    }
+
+    async getBasicInfo(): Promise<ClassBasicInfo> {
+        return {
+            name: this.name,
+            description: await this.getDescription(),
+            subclassNames: this.getSubclasses().map((sc) => sc.name),
+            image: this.getImage(),
+        };
+    }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-let classData: CharacterClass[] = [];
+let characterClassData: CharacterClass[];
 
-export async function getCharacterClassData(): Promise<void> {
-    const classNames = await MwnApi.fetchTitlesFromCategory('Classes');
+export async function getCharacterClassData(): Promise<CharacterClass[]> {
+    if (!characterClassData) {
+        const classNames = await MwnApi.fetchTitlesFromCategory('Classes');
 
-    classData = classNames.map((name) => new CharacterClass(name));
+        characterClassData = classNames.map((name) => new CharacterClass(name));
 
-    const cls = classData.find((c) => c.name === 'Fighter');
-    await cls?.initialized[ClassLoadState.PROGRESSION];
-    // log(cls?.progression);
+        // Wait for all data to load
+        await Promise.all(
+            characterClassData
+                .map((cc) => Object.values(cc.initialized))
+                .flat(),
+        );
+
+        // const cls = characterClassData.find((c) => c.name === 'Fighter');
+        // log(cls?.progression);
+    }
+
+    return characterClassData;
 }

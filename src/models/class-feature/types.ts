@@ -1,3 +1,5 @@
+import { PageData } from '../media-wiki';
+
 export enum ClassFeatureTypes {
     NONE = 'NONE',
     CHOOSE_SUBCLASS = 'CHOOSE_SUBCLASS',
@@ -29,3 +31,15 @@ export interface ClassFeatureSpecial extends IClassFeature {
     type: ClassFeatureTypesSpecial;
     pageTitle?: string;
 }
+
+export interface ClassFeatureCustomizationOption {
+    pageTitle?: string;
+    page?: PageData;
+    name: string;
+}
+
+export interface IClassFeatureCustomizable extends IClassFeature {
+    choices?: ClassFeatureCustomizationOption[][];
+}
+
+export interface IClassSubclass extends IClassFeatureCustomizable {}

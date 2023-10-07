@@ -1,13 +1,15 @@
-import { PageData } from '../media-wiki';
 import { ClassFeature } from './class-feature';
-import { ClassFeatureOther, ClassFeatureSpecial } from './types';
+import {
+    ClassFeatureCustomizationOption,
+    ClassFeatureOther,
+    ClassFeatureSpecial,
+    IClassFeatureCustomizable,
+} from './types';
 
-export interface ClassFeatureCustomizationOption {
-    pageTitle?: string;
-    page?: PageData;
-}
-
-export class ClassFeatureCustomizable extends ClassFeature {
+export class ClassFeatureCustomizable
+    extends ClassFeature
+    implements IClassFeatureCustomizable
+{
     choices?: ClassFeatureCustomizationOption[][];
 
     constructor(options: ClassFeatureOther | ClassFeatureSpecial) {
