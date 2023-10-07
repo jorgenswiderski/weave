@@ -231,7 +231,7 @@ export class CharacterClass extends PageItem {
         return {
             name: this.name,
             description: await this.getDescription(),
-            subclassNames: this.getSubclasses().map((sc) => sc.name),
+            subclassNames: this.getSubclasses().map((sc) => sc.label),
             image: this.getImage(),
         };
     }

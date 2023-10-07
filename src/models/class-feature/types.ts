@@ -35,7 +35,7 @@ export interface ClassFeatureSpecial extends IClassFeature {
 export interface ClassFeatureCustomizationOption {
     pageTitle?: string;
     page?: PageData;
-    name: string;
+    label: string;
 }
 
 export interface IClassFeatureCustomizable extends IClassFeature {

@@ -29,13 +29,13 @@ export class ClassSubclass
         const filtered = allSubclasses.filter(
             (data) =>
                 data && data.content?.includes(`{{${this.className}Navbox}}`),
-        );
+        ) as PageData[];
 
         this.choices = [
             filtered.map((page) => ({
-                name: page?.title || 'no name', // FIXME
-                pageTitle: page?.title,
-                page: page as PageData,
+                label: page.title.split('(')[0].trim(),
+                pageTitle: page.title,
+                page,
             })),
         ];
     }
