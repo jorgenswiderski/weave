@@ -14,5 +14,4 @@ export type CharacterClassProgression = CharacterClassProgressionLevel[];
 
 export interface ICharacterClass extends PageItem {
     name: string;
-    progression?: CharacterClassProgression;
 }

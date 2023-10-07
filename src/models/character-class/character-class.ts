@@ -48,7 +48,7 @@ export interface ClassBasicInfo {
 }
 
 export class CharacterClass extends PageItem {
-    progression?: CharacterClassProgression;
+    private progression?: CharacterClassProgression;
 
     constructor(public name: string) {
         super(name);
@@ -183,6 +183,8 @@ export class CharacterClass extends PageItem {
     }
 
     private async getDescription(): Promise<string> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
         if (!this.pageTitle) {
             throw new Error('No page title!');
         }
@@ -223,7 +225,9 @@ export class CharacterClass extends PageItem {
         return feature.choices[0];
     }
 
-    private getImage(): string | null {
+    private async getImage(): Promise<string | null> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
         if (!this.page || !this.page.content) {
             throw new Error('Could not find page content');
         }
@@ -246,8 +250,15 @@ export class CharacterClass extends PageItem {
             name: this.name,
             description: await this.getDescription(),
             subclassNames: this.getSubclasses().map((sc) => sc.label),
-            image: this.getImage() ?? undefined,
+            image: (await this.getImage()) ?? undefined,
         };
+    }
+
+    async getProgression() {
+        // Wait for full initialization
+        await Promise.all(Object.values(this.initialized));
+
+        return this.progression as CharacterClassProgression;
     }
 }
 

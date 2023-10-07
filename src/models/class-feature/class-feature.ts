@@ -15,4 +15,11 @@ export class ClassFeature extends PageItem implements IClassFeature {
 
         this.type = options.type;
     }
+
+    toJSON() {
+        return {
+            type: this.type,
+            customizable: this.customizable,
+        };
+    }
 }

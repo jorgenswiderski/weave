@@ -17,4 +17,17 @@ export class ClassFeatureCustomizable
 
         this.customizable = true;
     }
+
+    toJSON() {
+        const choicesWithoutPageData =
+            this.choices?.map((choice) =>
+                choice.map((option) => {
+                    const { page, ...optionWithoutPageData } = option;
+
+                    return optionWithoutPageData;
+                }),
+            ) ?? undefined;
+
+        return { ...super.toJSON(), choices: choicesWithoutPageData };
+    }
 }
