@@ -11,12 +11,18 @@ import { log } from './models/logger';
 import { classesRouter } from './routes/classes';
 import { getCharacterRaceData } from './models/character-feature/character-race/character-race';
 import { racesRouter } from './routes/races';
+import { getCharacterBackgroundData } from './models/character-feature/character-background/character-background';
+import { backgroundsRouter } from './routes/backgrounds';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 (async () => {
-    await Promise.all([getCharacterClassData(), getCharacterRaceData()]);
+    await Promise.all([
+        getCharacterClassData(),
+        getCharacterRaceData(),
+        getCharacterBackgroundData(),
+    ]);
 })();
 
 app.use(
@@ -29,6 +35,7 @@ app.use(
 
 app.use('/api/classes', classesRouter);
 app.use('/api/races', racesRouter);
+app.use('/api/backgrounds', backgroundsRouter);
 
 app.listen(PORT, () => {
     log(`Server is running on port ${PORT}`);

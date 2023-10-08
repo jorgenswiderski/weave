@@ -8,6 +8,7 @@ export enum CharacterFeatureTypes {
     OTHER = 'OTHER',
 
     RACE = 'RACE',
+    BACKGROUND = 'BACKGROUND',
 }
 
 export interface ICharacterFeature {
