@@ -1,10 +1,10 @@
-import { IClassFeature } from '../class-feature/types';
+import { ICharacterFeature } from '../character-feature/types';
 import { PageItem } from '../page-item';
 
 export interface CharacterClassProgressionLevel {
     Level: number;
     'Proficiency Bonus': number;
-    Features: IClassFeature[];
+    Features: ICharacterFeature[];
     'Spell Slots': number[];
     'Cantrips Known'?: number;
     // [key: string]: number | string | undefined;

@@ -1,16 +1,15 @@
-import { ClassFeature } from './class-feature';
+import { CharacterFeature } from './character-feature';
+import { ClassFeatureOther, ClassFeatureSpecial } from './class-feature/types';
 import {
-    IClassFeatureCustomizationOption,
-    ClassFeatureOther,
-    ClassFeatureSpecial,
-    IClassFeatureCustomizable,
-} from './types';
+    ICharacterFeatureCustomizable,
+    ICharacterFeatureCustomizationOption,
+} from './feature-customization-option/types';
 
-export class ClassFeatureCustomizable
-    extends ClassFeature
-    implements IClassFeatureCustomizable
+export class CharacterFeatureCustomizable
+    extends CharacterFeature
+    implements ICharacterFeatureCustomizable
 {
-    choices?: IClassFeatureCustomizationOption[][];
+    choices?: ICharacterFeatureCustomizationOption[][];
 
     constructor(options: ClassFeatureOther | ClassFeatureSpecial) {
         super(options);

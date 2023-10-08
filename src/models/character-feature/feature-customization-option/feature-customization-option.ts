@@ -1,8 +1,8 @@
 import { MediaWiki, PageData } from '../../media-wiki';
-import { IClassFeatureCustomizationOption } from '../types';
+import { ICharacterFeatureCustomizationOption } from './types';
 
-export class ClassFeatureCustomizationOption
-    implements IClassFeatureCustomizationOption
+export class CharacterFeatureCustomizationOption
+    implements ICharacterFeatureCustomizationOption
 {
     description?: string;
 

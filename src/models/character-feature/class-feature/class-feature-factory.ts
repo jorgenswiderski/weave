@@ -1,10 +1,10 @@
-import { ICharacterClass } from '../character-class/types';
-import { ClassFeature } from './class-feature';
+import { ICharacterClass } from '../../character-class/types';
+import { CharacterFeature } from '../character-feature';
 import { ClassSubclass } from './subclass';
+import { CharacterFeatureTypes } from '../types';
 import {
     ClassFeatureOther,
     ClassFeatureSpecial,
-    ClassFeatureTypes,
     ClassFeatureTypesSpecial,
 } from './types';
 
@@ -12,25 +12,25 @@ export class ClassFeatureFactory {
     static construct(
         characterClass: ICharacterClass,
         options: ClassFeatureOther | ClassFeatureSpecial,
-    ): ClassFeature {
-        if (options.type === ClassFeatureTypes.CHOOSE_SUBCLASS) {
+    ): CharacterFeature {
+        if (options.type === CharacterFeatureTypes.CHOOSE_SUBCLASS) {
             return new ClassSubclass(characterClass.name);
         }
 
-        return new ClassFeature(options);
+        return new CharacterFeature(options);
     }
 
     static fromMarkdownString(
         characterClass: ICharacterClass,
         featureText: string,
-    ): ClassFeature {
+    ): CharacterFeature {
         const specialCases: { [key: string]: ClassFeatureTypesSpecial } = {
-            'eldritch invocations': ClassFeatureTypes.NONE,
-            'choose a subclass': ClassFeatureTypes.CHOOSE_SUBCLASS,
-            'subclass feature': ClassFeatureTypes.SUBCLASS_FEATURE,
-            'feats|feat': ClassFeatureTypes.FEAT,
-            '#spellcasting': ClassFeatureTypes.SPELLCASTING,
-            '#pact magic': ClassFeatureTypes.PACT_MAGIC,
+            'eldritch invocations': CharacterFeatureTypes.NONE,
+            'choose a subclass': CharacterFeatureTypes.CHOOSE_SUBCLASS,
+            'subclass feature': CharacterFeatureTypes.SUBCLASS_FEATURE,
+            'feats|feat': CharacterFeatureTypes.FEAT,
+            '#spellcasting': CharacterFeatureTypes.SPELLCASTING,
+            '#pact magic': CharacterFeatureTypes.PACT_MAGIC,
         };
 
         // Handle special labels
@@ -56,7 +56,7 @@ export class ClassFeatureFactory {
             const pageTitle = parts[1].split('}}')[0].trim();
 
             return ClassFeatureFactory.construct(characterClass, {
-                type: ClassFeatureTypes.OTHER,
+                type: CharacterFeatureTypes.OTHER,
                 pageTitle,
             });
         }
@@ -67,7 +67,7 @@ export class ClassFeatureFactory {
             const pageTitle = parts[3].replace('}}', '').trim();
 
             return ClassFeatureFactory.construct(characterClass, {
-                type: ClassFeatureTypes.OTHER,
+                type: CharacterFeatureTypes.OTHER,
                 pageTitle,
             });
         }
@@ -83,14 +83,14 @@ export class ClassFeatureFactory {
 
                 // Take the linked page title and discard the non-link text
                 return ClassFeatureFactory.construct(characterClass, {
-                    type: ClassFeatureTypes.OTHER,
+                    type: CharacterFeatureTypes.OTHER,
                     pageTitle: parts[parts.length - 1].trim(),
                 });
             }
         }
 
         return ClassFeatureFactory.construct(characterClass, {
-            type: ClassFeatureTypes.OTHER,
+            type: CharacterFeatureTypes.OTHER,
             pageTitle: featureText.trim(),
         });
     }

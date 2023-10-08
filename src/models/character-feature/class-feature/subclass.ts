@@ -1,20 +1,21 @@
-import { error } from '../logger';
-import { MediaWiki, PageData } from '../media-wiki';
-import { ClassFeatureCustomizable } from './class-feature-customizable';
-import { ClassFeatureTypes, IClassSubclass } from './types';
-import { MwnApi } from '../../api/mwn';
-import { ClassFeatureCustomizationOption } from './feature-customization-option/feature-customization-option';
+import { error } from '../../logger';
+import { MediaWiki, PageData } from '../../media-wiki';
+import { CharacterFeatureCustomizable } from '../character-feature-customizable';
+import { CharacterFeatureTypes } from '../types';
+import { MwnApi } from '../../../api/mwn';
+import { CharacterFeatureCustomizationOption } from '../feature-customization-option/feature-customization-option';
+import { IClassSubclass } from './types';
 
 enum SubclassLoadStates {
     DATA = 'DATA',
 }
 
 export class ClassSubclass
-    extends ClassFeatureCustomizable
+    extends CharacterFeatureCustomizable
     implements IClassSubclass
 {
     constructor(public className: string) {
-        super({ type: ClassFeatureTypes.CHOOSE_SUBCLASS });
+        super({ type: CharacterFeatureTypes.CHOOSE_SUBCLASS });
 
         this.initialized[SubclassLoadStates.DATA] =
             this.fetchSubclasses().catch(error);
@@ -35,7 +36,7 @@ export class ClassSubclass
         this.choices = [
             filtered.map(
                 (page) =>
-                    new ClassFeatureCustomizationOption(
+                    new CharacterFeatureCustomizationOption(
                         page.title.split('(')[0].trim(),
                         page.title,
                         page,

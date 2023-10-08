@@ -1,13 +1,9 @@
 import { PageItem } from '../page-item';
-import {
-    IClassFeature,
-    ClassFeatureOther,
-    ClassFeatureSpecial,
-    ClassFeatureTypes,
-} from './types';
+import { ClassFeatureOther, ClassFeatureSpecial } from './class-feature/types';
+import { ICharacterFeature, CharacterFeatureTypes } from './types';
 
-export class ClassFeature extends PageItem implements IClassFeature {
-    type: ClassFeatureTypes;
+export class CharacterFeature extends PageItem implements ICharacterFeature {
+    type: CharacterFeatureTypes;
     customizable: boolean = false;
 
     constructor(options: ClassFeatureOther | ClassFeatureSpecial) {

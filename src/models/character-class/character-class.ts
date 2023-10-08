@@ -1,11 +1,11 @@
 import { MwnApi } from '../../api/mwn';
-import { ClassFeatureFactory } from '../class-feature/class-feature-factory';
+import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
+import { IClassSubclass } from '../character-feature/class-feature/types';
+import { ICharacterFeatureCustomizationOption } from '../character-feature/feature-customization-option/types';
 import {
-    IClassFeatureCustomizationOption,
-    ClassFeatureTypes,
-    IClassFeature,
-    IClassSubclass,
-} from '../class-feature/types';
+    ICharacterFeature,
+    CharacterFeatureTypes,
+} from '../character-feature/types';
 import { error } from '../logger';
 import { MediaWiki } from '../media-wiki';
 
@@ -18,7 +18,7 @@ import {
 function parseFeatures(
     characterClass: CharacterClass,
     value: string,
-): IClassFeature[] {
+): ICharacterFeature[] {
     if (value === '-') {
         // No features this level
         return [];
@@ -60,7 +60,7 @@ export class CharacterClass extends PageItem {
     private cleanProgressionTableData(formattedData: { [key: string]: any }[]) {
         return formattedData.map((item) => {
             const cleanedItem: {
-                [key: string]: string | number | IClassFeature[];
+                [key: string]: string | number | ICharacterFeature[];
             } = {};
 
             Object.keys(item).forEach((key) => {
@@ -93,13 +93,16 @@ export class CharacterClass extends PageItem {
     }
 
     private static parseSpellSlots(
-        data: { [key: string]: string | number | IClassFeature[] }[],
+        data: { [key: string]: string | number | ICharacterFeature[] }[],
     ): CharacterClassProgression {
         return data.map((rawLevelData) => {
             const levelData: Partial<CharacterClassProgressionLevel> = {};
 
             Object.entries(rawLevelData).forEach(
-                ([key, value]: [string, string | number | IClassFeature[]]) => {
+                ([key, value]: [
+                    string,
+                    string | number | ICharacterFeature[],
+                ]) => {
                     if (
                         key === '1st' ||
                         key === '2nd' ||
@@ -200,7 +203,7 @@ export class CharacterClass extends PageItem {
         return intro.split('\n')[0].trim();
     }
 
-    private getSubclasses(): IClassFeatureCustomizationOption[] {
+    private getSubclasses(): ICharacterFeatureCustomizationOption[] {
         if (!this.progression) {
             throw new Error('Could not find progression');
         }
@@ -209,7 +212,8 @@ export class CharacterClass extends PageItem {
         const chooseSubclass = features
             .flat()
             .find(
-                (feature) => feature.type === ClassFeatureTypes.CHOOSE_SUBCLASS,
+                (feature) =>
+                    feature.type === CharacterFeatureTypes.CHOOSE_SUBCLASS,
             );
 
         if (!chooseSubclass) {
