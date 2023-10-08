@@ -70,9 +70,8 @@ export class CharacterRace extends PageItem {
             throw new Error('Could not find page content');
         }
 
-        const match = this.page.content.match(
-            /{{ClassQuote[^}]+image=([^|}]+)/,
-        );
+        const regex = /\[\[File\s*:\s*([^|\]]+).*|right]]/m;
+        const match = regex.exec(this.page.content);
 
         if (!match || !match[1]) {
             return null;
