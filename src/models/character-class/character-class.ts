@@ -185,24 +185,6 @@ export class CharacterClass extends PageItem {
         }
     }
 
-    private async getDescription(): Promise<string> {
-        await this.initialized[PageLoadingState.PAGE_CONTENT];
-
-        if (!this.pageTitle) {
-            throw new Error('No page title!');
-        }
-
-        const intro = await MediaWiki.getTextExtract(this.pageTitle, {
-            intro: true,
-        });
-
-        if (!intro) {
-            throw new Error('Page intro is null');
-        }
-
-        return intro.split('\n')[0].trim();
-    }
-
     private getSubclasses(): ICharacterFeatureCustomizationOption[] {
         if (!this.progression) {
             throw new Error('Could not find progression');

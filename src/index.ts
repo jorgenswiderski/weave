@@ -9,7 +9,7 @@ import { getCharacterClassData } from './models/character-class/character-class'
 import { log } from './models/logger';
 
 import { classesRouter } from './routes/classes';
-import { getCharacterRaceData } from './models/character-race/character-race';
+import { getCharacterRaceData } from './models/character-feature/character-race/character-race';
 import { racesRouter } from './routes/races';
 
 const app = express();

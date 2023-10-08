@@ -29,4 +29,22 @@ export class PageItem {
 
         this.page = data;
     }
+
+    protected async getDescription(): Promise<string> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
+        if (!this.pageTitle) {
+            throw new Error('No page title!');
+        }
+
+        const intro = await MediaWiki.getTextExtract(this.pageTitle, {
+            intro: true,
+        });
+
+        if (!intro) {
+            throw new Error('Page intro is null');
+        }
+
+        return intro.split('\n')[0].trim();
+    }
 }

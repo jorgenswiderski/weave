@@ -1,13 +1,15 @@
-import { MwnApi } from '../../api/mwn';
-import { error } from '../logger';
-import { MediaWiki } from '../media-wiki';
-import { PageItem, PageLoadingState } from '../page-item';
+import { MwnApi } from '../../../api/mwn';
+import { error } from '../../logger';
+import { MediaWiki } from '../../media-wiki';
+import { PageItem, PageLoadingState } from '../../page-item';
+import { ICharacterFeatureCustomizable } from '../feature-customization-option/types';
+import { CharacterFeatureTypes } from '../types';
 import { CharacterSubrace } from './subrace';
 
 export interface RaceInfo {
     name: string;
     description: string;
-    subraces: CharacterSubrace[];
+    choices?: CharacterSubrace[];
     image?: string;
 }
 
@@ -15,32 +17,18 @@ enum RaceLoadState {
     SUBRACES,
 }
 
-export class CharacterRace extends PageItem {
-    subraces?: CharacterSubrace[];
+export class CharacterRace
+    extends PageItem
+    implements ICharacterFeatureCustomizable
+{
+    choices?: CharacterSubrace[][];
+    type: CharacterFeatureTypes.RACE = CharacterFeatureTypes.RACE;
 
     constructor(public name: string) {
         super(name);
 
         this.initialized[RaceLoadState.SUBRACES] =
             this.getSubraces().catch(error);
-    }
-
-    private async getDescription(): Promise<string> {
-        await this.initialized[PageLoadingState.PAGE_CONTENT];
-
-        if (!this.pageTitle) {
-            throw new Error('No page title!');
-        }
-
-        const intro = await MediaWiki.getTextExtract(this.pageTitle, {
-            intro: true,
-        });
-
-        if (!intro) {
-            throw new Error('Page intro is null');
-        }
-
-        return intro.split('\n')[0].trim();
     }
 
     private async getSubraces(): Promise<void> {
@@ -53,13 +41,15 @@ export class CharacterRace extends PageItem {
         const subracePattern = /\n===\s+(.*?)\s+===\n\s*([\s\S]*?)(?===|$)/g;
 
         let match;
-        this.subraces = [];
+        this.choices = [[]];
 
         while (true) {
             match = subracePattern.exec(this.page.content);
             if (!match) break;
 
-            this.subraces.push(new CharacterSubrace(match[1], match[2].trim()));
+            this.choices[0].push(
+                new CharacterSubrace(match[1], match[2].trim()),
+            );
         }
     }
 
@@ -88,7 +78,7 @@ export class CharacterRace extends PageItem {
         return {
             name: this.name,
             description: await this.getDescription(),
-            subraces: this.subraces as CharacterSubrace[],
+            choices: this?.choices?.[0],
             image: (await this.getImage()) ?? undefined,
         };
     }

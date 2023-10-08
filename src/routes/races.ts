@@ -1,6 +1,6 @@
 // races.ts
 import express, { Request, Response, Router } from 'express';
-import { getCharacterRaceData } from '../models/character-race/character-race';
+import { getCharacterRaceData } from '../models/character-feature/character-race/character-race';
 
 export const router: Router = express.Router();
 

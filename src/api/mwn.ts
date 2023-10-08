@@ -104,12 +104,21 @@ export class MwnApi {
             return response[pageTitle];
         },
     );
+
+    static async parsePageSections(pageTitle: string, options: ApiParams) {
+        const response = await bot.request({
+            action: 'parse',
+            page: pageTitle,
+            prop: 'sections',
+            ...options,
+        });
+
+        return response?.parse?.sections;
+    }
 }
 
 // (async () => {
-//     await MwnApi.queryPage('Clericasdfa', {
-//         prop: 'extracts',
-//         exintro: true,
-//         explaintext: true,
+//     await MwnApi.parsePageSections('Dragonborn', {
+//         // format: 'json',
 //     });
 // })();

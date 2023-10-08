@@ -48,6 +48,7 @@ module.exports = {
                 next: '*',
             },
         ],
+        'no-constant-condition': ['error', { checkLoops: false }],
     },
     globals: {
         log: 'readonly',

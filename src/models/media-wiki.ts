@@ -1,4 +1,4 @@
-import { ApiRevision } from 'mwn';
+import { ApiParams, ApiRevision } from 'mwn';
 import { Db } from 'mongodb';
 import assert from 'assert';
 import crypto from 'crypto';
@@ -106,14 +106,25 @@ export class MediaWiki {
         pageTitle: string,
         options: {
             intro?: boolean;
+            section?: string;
             plainText?: boolean;
         },
     ): Promise<string | null> {
-        const data = await MwnApi.queryPage(pageTitle, {
+        const params: ApiParams = {
             prop: 'extracts',
             exintro: options?.intro ?? false,
             explaintext: options?.plainText ?? true,
-        });
+        };
+
+        if (options.section) {
+            params.section = options.section;
+
+            if (options.plainText ?? true) {
+                params.exsectionformat = 'plain';
+            }
+        }
+
+        const data = await MwnApi.queryPage(pageTitle, params);
 
         return data?.extract ?? null;
     }
@@ -146,4 +157,44 @@ export class MediaWiki {
 
         return `${CONFIG.MEDIAWIKI.BASE_URL}/images/${hash[0]}/${hash[0]}${hash[1]}/${formattedImageName}`;
     }
+
+    static async getSectionNumber(
+        pageTitle: string,
+        sectionTitle: string,
+    ): Promise<string | null> {
+        const data = await MwnApi.parsePageSections(pageTitle, {});
+
+        if (!data) {
+            return null;
+        }
+
+        const section = data.find((s: any) => s.line === sectionTitle);
+
+        return section?.number ?? null;
+    }
+
+    // FIXME
+    static async getSectionTextByName(
+        pageTitle: string,
+        sectionTitle: string,
+    ): Promise<string | null> {
+        const sectionNumber = await MediaWiki.getSectionNumber(
+            pageTitle,
+            sectionTitle,
+        );
+
+        if (!sectionNumber) {
+            throw new Error('could not find section number');
+        }
+
+        const text = await MediaWiki.getTextExtract(pageTitle, {
+            section: sectionNumber,
+        });
+
+        return text;
+    }
 }
+
+// (async () => {
+//     log(await MediaWiki.getSectionTextByName('Dragonborn', 'Black Dragonborn'));
+// })();
