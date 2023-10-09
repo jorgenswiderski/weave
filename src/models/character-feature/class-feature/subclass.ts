@@ -36,11 +36,7 @@ export class ClassSubclass
         this.choices = [
             filtered.map(
                 (page) =>
-                    new CharacterFeatureCustomizationOption(
-                        page.title.split('(')[0].trim(),
-                        page.title,
-                        page,
-                    ),
+                    new CharacterFeatureCustomizationOption(page.title, page),
             ),
         ];
     }

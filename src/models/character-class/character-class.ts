@@ -40,11 +40,12 @@ enum ClassLoadState {
     PROGRESSION = 'progression',
 }
 
-export interface ClassBasicInfo {
+export interface ClassInfo {
     name: string;
     description: string;
     subclassNames: string[];
     image?: string;
+    progression: CharacterClassProgression;
 }
 
 export class CharacterClass extends PageItem {
@@ -235,18 +236,20 @@ export class CharacterClass extends PageItem {
         return MediaWiki.getImagePath(fileName);
     }
 
-    async getBasicInfo(): Promise<ClassBasicInfo> {
+    async getInfo(): Promise<ClassInfo> {
         return {
             name: this.name,
             description: await this.getDescription(),
             subclassNames: (await this.getSubclasses()).map((sc) => sc.label),
             image: (await this.getImage()) ?? undefined,
+            progression: await this.getProgression(),
         };
     }
 
     async getProgression() {
         // Wait for full initialization
         await Promise.all(Object.values(this.initialized));
+        // FIXME: This doesn't properly wait for subclass choices to initialize
 
         return this.progression as CharacterClassProgression;
     }
