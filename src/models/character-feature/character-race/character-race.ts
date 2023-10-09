@@ -28,17 +28,17 @@ export class CharacterRace
         super(name);
 
         this.initialized[RaceLoadState.SUBRACES] =
-            this.getSubraces().catch(error);
+            this.initSubraces().catch(error);
     }
 
-    private async getSubraces(): Promise<void> {
+    private async initSubraces(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page || !this.page.content) {
             throw new Error('Could not find page content');
         }
 
-        const subracePattern = /\n===\s+(.*?)\s+===\n\s*([\s\S]*?)(?===|$)/g;
+        const subracePattern = /\n===\s*([^=]*?)\s*===\n\s*([\s\S]*?)(?===|$)/g;
 
         let match;
         this.choices = [[]];
