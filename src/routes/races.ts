@@ -7,13 +7,9 @@ export const router: Router = express.Router();
 router.get('/info', async (req: Request, res: Response) => {
     const ccd = await getCharacterRaceData();
 
-    const entries = await Promise.all(
-        ccd.map(async (race) => {
-            return [race.name, await race.getInfo()];
-        }),
-    );
+    const data = await Promise.all(ccd.map(async (race) => race.getInfo()));
 
-    res.json(Object.fromEntries(entries));
+    res.json(data);
 });
 
 export const racesRouter = router;

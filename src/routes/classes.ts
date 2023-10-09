@@ -7,13 +7,9 @@ export const router: Router = express.Router();
 router.get('/info', async (req: Request, res: Response) => {
     const ccd = await getCharacterClassData();
 
-    const entries = await Promise.all(
-        ccd.map(async (cls) => {
-            return [cls.name, await cls.getBasicInfo()];
-        }),
-    );
+    const data = await Promise.all(ccd.map(async (cls) => cls.getBasicInfo()));
 
-    res.json(Object.fromEntries(entries));
+    res.json(data);
 });
 
 router.get('/progression/:classes', async (req: Request, res: Response) => {

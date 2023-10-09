@@ -185,7 +185,11 @@ export class CharacterClass extends PageItem {
         }
     }
 
-    private getSubclasses(): ICharacterFeatureCustomizationOption[] {
+    private async getSubclasses(): Promise<
+        ICharacterFeatureCustomizationOption[]
+    > {
+        await Promise.all(Object.values(this.initialized));
+
         if (!this.progression) {
             throw new Error('Could not find progression');
         }
@@ -235,7 +239,7 @@ export class CharacterClass extends PageItem {
         return {
             name: this.name,
             description: await this.getDescription(),
-            subclassNames: this.getSubclasses().map((sc) => sc.label),
+            subclassNames: (await this.getSubclasses()).map((sc) => sc.label),
             image: (await this.getImage()) ?? undefined,
         };
     }

@@ -9,7 +9,7 @@ import { CharacterSubrace } from './subrace';
 export interface RaceInfo {
     name: string;
     description: string;
-    choices?: CharacterSubrace[];
+    choices?: CharacterSubrace[][];
     image?: string;
 }
 
@@ -78,7 +78,7 @@ export class CharacterRace
         return {
             name: this.name,
             description: await this.getDescription(),
-            choices: this?.choices?.[0],
+            choices: this?.choices ?? undefined,
             image: (await this.getImage()) ?? undefined,
         };
     }
