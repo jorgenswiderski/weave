@@ -7,13 +7,9 @@ export const router: Router = express.Router();
 router.get('/info', async (req: Request, res: Response) => {
     const backgroundsData = await getCharacterBackgroundData();
 
-    const entries = await Promise.all(
-        backgroundsData.map(async (background) => {
-            return [background.name, await background.getInfo()];
-        }),
-    );
+    const data = backgroundsData.map((background) => background.getInfo());
 
-    res.json(Object.fromEntries(entries));
+    res.json(data);
 });
 
 export const backgroundsRouter = router;
