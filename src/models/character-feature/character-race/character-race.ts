@@ -45,15 +45,17 @@ export class CharacterRace
         const subracePattern = /\n===\s*([^=]*?)\s*===\n\s*([\s\S]*?)(?===|$)/g;
 
         let match;
-        this.choices = [[]];
+        const choices: CharacterSubrace[][] = [[]];
 
         while (true) {
             match = subracePattern.exec(this.page.content);
             if (!match) break;
 
-            this.choices[0].push(
-                new CharacterSubrace(match[1], match[2].trim()),
-            );
+            choices[0].push(new CharacterSubrace(match[1], match[2].trim()));
+        }
+
+        if (choices.flat().length) {
+            this.choices = choices;
         }
     }
 
@@ -100,8 +102,8 @@ export class CharacterRace
         return {
             name: this.name,
             description: await this.getDescription(),
-            choices: this?.choices ?? undefined,
-            choiceType: this?.choices
+            choices: this?.choices?.length ? this.choices : undefined,
+            choiceType: this?.choices?.length
                 ? CharacterEvents.CHOOSE_SUBRACE
                 : undefined,
             image: (await this.getImage()) ?? undefined,
