@@ -5,13 +5,13 @@ export class CharacterFeatureCustomizationOption
     implements ICharacterFeatureCustomizationOption
 {
     description?: string;
-    label: string;
+    name: string;
 
     constructor(
         public pageTitle: string,
         public page: PageData,
     ) {
-        this.label = pageTitle.split('(')[0].trim();
+        this.name = pageTitle.split('(')[0].trim();
         this.initDescription();
     }
 
@@ -25,7 +25,7 @@ export class CharacterFeatureCustomizationOption
 
     toJSON() {
         return {
-            name: this.label,
+            name: this.name,
             description: this.description,
         };
     }

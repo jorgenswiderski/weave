@@ -11,6 +11,11 @@ export enum CharacterFeatureTypes {
     BACKGROUND = 'BACKGROUND',
 }
 
+export enum CharacterEvents {
+    CHOOSE_SUBCLASS = 'CHOOSE_SUBCLASS',
+    CHOOSE_SUBRACE = 'CHOOSE_SUBRACE',
+}
+
 export interface ICharacterFeature {
     type: CharacterFeatureTypes;
 }

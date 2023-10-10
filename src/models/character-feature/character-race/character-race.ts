@@ -2,14 +2,18 @@ import { MwnApi } from '../../../api/mwn';
 import { error } from '../../logger';
 import { MediaWiki } from '../../media-wiki';
 import { PageItem, PageLoadingState } from '../../page-item';
-import { ICharacterFeatureCustomizable } from '../feature-customization-option/types';
-import { CharacterFeatureTypes } from '../types';
+import {
+    ICharacterFeatureCustomizable,
+    ICharacterFeatureCustomizationOption,
+} from '../feature-customization-option/types';
+import { CharacterEvents, CharacterFeatureTypes } from '../types';
 import { CharacterSubrace } from './subrace';
 
-export interface RaceInfo {
+export interface RaceInfo extends ICharacterFeatureCustomizationOption {
     name: string;
     description: string;
     choices?: CharacterSubrace[][];
+    choiceType?: CharacterEvents.CHOOSE_SUBRACE;
     image?: string;
 }
 
@@ -72,6 +76,24 @@ export class CharacterRace
         return MediaWiki.getImagePath(fileName);
     }
 
+    protected async getDescription(): Promise<string> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
+        if (!this.page || !this.page.content) {
+            throw new Error('Could not find page content');
+        }
+
+        const descPattern =
+            /==\s*About\s(?:the\s)?[\w-]+?\s*==\n+([\s\S]+?)\n+=/;
+        const match = this.page.content.match(descPattern);
+
+        if (!match || !match[1]) {
+            return super.getDescription();
+        }
+
+        return MediaWiki.stripMarkup(match[1]).trim().split('\n')[0];
+    }
+
     async getInfo(): Promise<RaceInfo> {
         await this.initialized[RaceLoadState.SUBRACES];
 
@@ -79,6 +101,9 @@ export class CharacterRace
             name: this.name,
             description: await this.getDescription(),
             choices: this?.choices ?? undefined,
+            choiceType: this?.choices
+                ? CharacterEvents.CHOOSE_SUBRACE
+                : undefined,
             image: (await this.getImage()) ?? undefined,
         };
     }
