@@ -20,3 +20,4 @@ export interface ClassFeatureSpecial extends ICharacterFeature {
 }
 
 export interface IClassSubclass extends ICharacterFeatureCustomizable {}
+export interface ICharacterFeat extends ICharacterFeatureCustomizable {}

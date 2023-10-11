@@ -1,5 +1,5 @@
+import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
 import { MediaWiki } from '../../media-wiki';
-import { ICharacterFeatureCustomizationOption } from '../feature-customization-option/types';
 
 export class CharacterSubrace implements ICharacterFeatureCustomizationOption {
     label: string;

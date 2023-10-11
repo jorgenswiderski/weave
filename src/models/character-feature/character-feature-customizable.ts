@@ -1,9 +1,7 @@
+import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
 import { CharacterFeature } from './character-feature';
 import { ClassFeatureOther, ClassFeatureSpecial } from './class-feature/types';
-import {
-    ICharacterFeatureCustomizable,
-    ICharacterFeatureCustomizationOption,
-} from './feature-customization-option/types';
+import { ICharacterFeatureCustomizable } from './feature-customization-option/types';
 
 export class CharacterFeatureCustomizable
     extends CharacterFeature

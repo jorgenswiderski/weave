@@ -1,12 +1,13 @@
+import {
+    CharacterEvents,
+    ICharacterFeatureCustomizationOption,
+} from 'planner-types/src/types/character-feature-customization-option';
 import { MwnApi } from '../../../api/mwn';
 import { error } from '../../logger';
 import { MediaWiki } from '../../media-wiki';
 import { PageItem, PageLoadingState } from '../../page-item';
-import {
-    ICharacterFeatureCustomizable,
-    ICharacterFeatureCustomizationOption,
-} from '../feature-customization-option/types';
-import { CharacterEvents, CharacterFeatureTypes } from '../types';
+import { ICharacterFeatureCustomizable } from '../feature-customization-option/types';
+import { CharacterFeatureTypes } from '../types';
 import { CharacterSubrace } from './subrace';
 
 export interface RaceInfo extends ICharacterFeatureCustomizationOption {

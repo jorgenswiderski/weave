@@ -1,5 +1,5 @@
+import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
 import { MediaWiki, PageData } from '../../media-wiki';
-import { ICharacterFeatureCustomizationOption } from './types';
 
 export class CharacterFeatureCustomizationOption
     implements ICharacterFeatureCustomizationOption

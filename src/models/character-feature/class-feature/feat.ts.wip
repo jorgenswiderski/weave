@@ -1,0 +1,50 @@
+import { error } from '../../logger';
+import { CharacterFeatureCustomizable } from '../character-feature-customizable';
+import { CharacterFeatureTypes } from '../types';
+import { CharacterFeatureCustomizationOption } from '../feature-customization-option/feature-customization-option';
+import { ICharacterFeat } from './types';
+import { PageLoadingState } from '../../page-item';
+
+enum FeatLoadStates {
+    DATA = 'DATA',
+}
+
+export class CharacterFeat
+    extends CharacterFeatureCustomizable
+    implements ICharacterFeat
+{
+    constructor() {
+        super({ type: CharacterFeatureTypes.FEAT });
+
+        this.initialized[FeatLoadStates.DATA] =
+            this.fetchChoices().catch(error);
+    }
+
+    async fetchChoices(): Promise<void> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
+        if (!this.page?.content) {
+            return;
+        }
+
+        const { content } = this.page;
+        const featRegex =
+            /\|style="width: 23%;"\|{{anchor\|([^}]+)}} '''([^']+)''' \|\|\s*((?:.|\s)+?)(?=\|-|\{\{)/g;
+
+        const choices: CharacterFeatureCustomizationOption[] = [];
+        let match;
+
+        // eslint-disable-next-line no-cond-assign
+        while ((match = featRegex.exec(content)) !== null) {
+            const name = match[2].trim();
+            const description = match[3].trim();
+
+            choices.push({
+                name,
+                description,
+            });
+        }
+
+        this.choices = choices;
+    }
+}

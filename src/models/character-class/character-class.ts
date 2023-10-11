@@ -1,7 +1,7 @@
+import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
 import { MwnApi } from '../../api/mwn';
 import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
 import { IClassSubclass } from '../character-feature/class-feature/types';
-import { ICharacterFeatureCustomizationOption } from '../character-feature/feature-customization-option/types';
 import {
     ICharacterFeature,
     CharacterFeatureTypes,
