@@ -1,5 +1,5 @@
 import {
-    CharacterEvents,
+    CharacterPlannerStep,
     ICharacterFeatureCustomizationOption,
 } from 'planner-types/src/types/character-feature-customization-option';
 import { MwnApi } from '../../../api/mwn';
@@ -14,7 +14,7 @@ export interface RaceInfo extends ICharacterFeatureCustomizationOption {
     name: string;
     description: string;
     choices?: CharacterSubrace[][];
-    choiceType?: CharacterEvents.CHOOSE_SUBRACE;
+    choiceType?: CharacterPlannerStep.CHOOSE_SUBRACE;
     image?: string;
 }
 
@@ -105,7 +105,7 @@ export class CharacterRace
             description: await this.getDescription(),
             choices: this?.choices?.length ? this.choices : undefined,
             choiceType: this?.choices?.length
-                ? CharacterEvents.CHOOSE_SUBRACE
+                ? CharacterPlannerStep.CHOOSE_SUBRACE
                 : undefined,
             image: (await this.getImage()) ?? undefined,
         };
