@@ -123,9 +123,8 @@ export async function getCharacterRaceData(): Promise<CharacterRace[]> {
             (name) => new CharacterRace({ name, pageTitle: name }),
         );
 
-        // Wait for all data to load
         await Promise.all(
-            characterRaceData.map((cr) => Object.values(cr.initialized)).flat(),
+            characterRaceData.map((cr) => cr.waitForInitialization()),
         );
     }
 

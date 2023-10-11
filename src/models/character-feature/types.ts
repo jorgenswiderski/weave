@@ -2,6 +2,7 @@ import {
     CharacterPlannerStep,
     ICharacterFeatureCustomizationOption,
 } from 'planner-types/src/types/character-feature-customization-option';
+import { PageData } from '../media-wiki';
 
 export enum CharacterFeatureTypes {
     NONE = 'NONE',
@@ -19,4 +20,5 @@ export enum CharacterFeatureTypes {
 export interface ICharacterFeatureCustomizationOptionWithPage
     extends ICharacterFeatureCustomizationOption {
     pageTitle?: string;
+    page?: PageData;
 }

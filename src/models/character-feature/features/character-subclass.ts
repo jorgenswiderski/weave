@@ -3,7 +3,7 @@ import { error } from '../../logger';
 import { MediaWiki, PageData } from '../../media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
 import { MwnApi } from '../../../api/mwn';
-import { CharacterFeatureWithIntroDescription } from '../character-feature-with-intro-description';
+import { CharacterSubclassOption } from './character-subclass-option';
 
 enum SubclassLoadStates {
     CHOICES = 'CHOICES',
@@ -35,8 +35,20 @@ export class ClassSubclass extends CharacterFeatureCustomizable {
         this.choices = [
             filtered.map(
                 (page) =>
-                    new CharacterFeatureWithIntroDescription(page.title, page),
+                    new CharacterSubclassOption({
+                        name: CharacterSubclassOption.parseNameFromPageTitle(
+                            page.title,
+                        ),
+                        pageTitle: page.title,
+                        page,
+                    }),
             ),
         ];
+
+        await Promise.all(
+            (this.choices as CharacterSubclassOption[][])
+                .flat()
+                .map((sco) => sco.waitForInitialization()),
+        );
     }
 }

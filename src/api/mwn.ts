@@ -1,5 +1,5 @@
 import { ApiPage, ApiParams, Mwn } from 'mwn';
-import { memoizeWithExpiration } from '../models/utils';
+import { Utils } from '../models/utils';
 import { CONFIG } from '../models/config';
 
 type ApiParam =
@@ -21,7 +21,10 @@ const bot = new Mwn({
 
 // shorthand just to reduce boilerplate
 function memoize<T extends (...args: any[]) => any>(fn: T): T {
-    return memoizeWithExpiration(CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS, fn);
+    return Utils.memoizeWithExpiration(
+        CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
+        fn,
+    );
 }
 
 export class MwnApi {

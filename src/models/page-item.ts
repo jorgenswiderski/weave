@@ -1,20 +1,32 @@
 import { error } from './logger';
 import { MediaWiki, PageData } from './media-wiki';
+import { Utils } from './utils';
+import { WikiLoadable } from './wiki-loadable';
 
 export enum PageLoadingState {
     PAGE_CONTENT = 'page_content',
 }
 
-export class PageItem {
-    constructor(public pageTitle?: string) {
+export class PageItem extends WikiLoadable {
+    pageTitle?: string;
+    page?: PageData;
+
+    constructor({ pageTitle, page }: { pageTitle?: string; page?: PageData }) {
+        super();
+
+        this.pageTitle = pageTitle;
+        this.page = page;
+
         if (pageTitle) {
-            this.initialized[PageLoadingState.PAGE_CONTENT] =
-                this.fetchPage().catch(error);
+            if (!page?.content) {
+                this.initialized[PageLoadingState.PAGE_CONTENT] =
+                    this.fetchPage().catch(error);
+            } else {
+                this.initialized[PageLoadingState.PAGE_CONTENT] =
+                    Utils.resolvedPromise;
+            }
         }
     }
-
-    page?: PageData;
-    initialized: Record<string, Promise<any>> = {};
 
     async fetchPage(): Promise<void> {
         if (!this.pageTitle) {

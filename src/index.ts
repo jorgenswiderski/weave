@@ -23,7 +23,7 @@ const PORT = process.env.PORT || 3001;
         getCharacterRaceData(),
         getCharacterBackgroundData(),
     ]);
-})();
+})().then(() => log('Finished loading all assets'));
 
 app.use(
     cors({

@@ -11,6 +11,7 @@ import { PageItem, PageLoadingState } from '../page-item';
 import {
     CharacterClassProgression,
     CharacterClassProgressionLevel,
+    ICharacterClass,
 } from './types';
 
 function parseFeatures(
@@ -46,11 +47,11 @@ export interface ClassInfo {
     progression: CharacterClassProgression;
 }
 
-export class CharacterClass extends PageItem {
+export class CharacterClass extends PageItem implements ICharacterClass {
     private progression?: CharacterClassProgression;
 
     constructor(public name: string) {
-        super(name);
+        super({ pageTitle: name });
 
         this.initialized[ClassLoadState.PROGRESSION] =
             this.initProgression().catch(error);
@@ -147,7 +148,7 @@ export class CharacterClass extends PageItem {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page || !this.page.content) {
-            return;
+            throw new Error('Could not find character class page content');
         }
 
         // Step 1: Isolate the class progression table
@@ -195,7 +196,7 @@ export class CharacterClass extends PageItem {
     private async getSubclasses(): Promise<
         ICharacterFeatureCustomizationOption[]
     > {
-        await Promise.all(Object.values(this.initialized));
+        await this.waitForInitialization();
 
         if (!this.progression) {
             throw new Error('Could not find progression');
@@ -253,9 +254,7 @@ export class CharacterClass extends PageItem {
     }
 
     async getProgression() {
-        // Wait for full initialization
-        await Promise.all(Object.values(this.initialized));
-        // FIXME: This doesn't properly wait for subclass choices to initialize
+        await this.waitForInitialization();
 
         return this.progression as CharacterClassProgression;
     }
@@ -269,15 +268,9 @@ export async function getCharacterClassData(): Promise<CharacterClass[]> {
 
         characterClassData = classNames.map((name) => new CharacterClass(name));
 
-        // Wait for all data to load
         await Promise.all(
-            characterClassData
-                .map((cc) => Object.values(cc.initialized))
-                .flat(),
+            characterClassData.map((cc) => cc.waitForInitialization()),
         );
-
-        // const cls = characterClassData.find((c) => c.name === 'Fighter');
-        // log(cls?.progression);
     }
 
     return characterClassData;
