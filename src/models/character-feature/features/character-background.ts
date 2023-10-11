@@ -76,6 +76,7 @@ export class CharacterBackground extends CharacterFeature {
                 name: `Proficiency: ${sn}`,
                 type: GrantableEffectType.PROFICIENCY,
                 proficiency: sn.toUpperCase() as unknown as ProficiencyTypes,
+                description: `Add your proficiency bonus when making ${sn} checks.`,
             };
         });
     }
