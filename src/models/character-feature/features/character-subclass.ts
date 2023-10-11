@@ -1,27 +1,26 @@
+import { CharacterPlannerStep } from 'planner-types/src/types/character-feature-customization-option';
 import { error } from '../../logger';
 import { MediaWiki, PageData } from '../../media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
-import { CharacterFeatureTypes } from '../types';
 import { MwnApi } from '../../../api/mwn';
-import { CharacterFeatureCustomizationOption } from '../feature-customization-option/feature-customization-option';
-import { IClassSubclass } from './types';
+import { CharacterFeatureWithIntroDescription } from '../character-feature-with-intro-description';
 
 enum SubclassLoadStates {
-    DATA = 'DATA',
+    CHOICES = 'CHOICES',
 }
 
-export class ClassSubclass
-    extends CharacterFeatureCustomizable
-    implements IClassSubclass
-{
+export class ClassSubclass extends CharacterFeatureCustomizable {
     constructor(public className: string) {
-        super({ type: CharacterFeatureTypes.CHOOSE_SUBCLASS });
+        super({
+            name: `Subclass: ${className}`,
+            choiceType: CharacterPlannerStep.CHOOSE_SUBCLASS,
+        });
 
-        this.initialized[SubclassLoadStates.DATA] =
-            this.fetchSubclasses().catch(error);
+        this.initialized[SubclassLoadStates.CHOICES] =
+            this.initChoices().catch(error);
     }
 
-    private async fetchSubclasses(): Promise<void> {
+    private async initChoices(): Promise<void> {
         const allSubclassPages =
             await MwnApi.queryTitlesFromCategory('Subclasses');
         const allSubclasses = await Promise.all(
@@ -36,7 +35,7 @@ export class ClassSubclass
         this.choices = [
             filtered.map(
                 (page) =>
-                    new CharacterFeatureCustomizationOption(page.title, page),
+                    new CharacterFeatureWithIntroDescription(page.title, page),
             ),
         ];
     }

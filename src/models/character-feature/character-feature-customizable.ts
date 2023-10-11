@@ -1,24 +1,29 @@
-import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
+import {
+    CharacterPlannerStep,
+    ICharacterFeatureCustomizationOption,
+} from 'planner-types/src/types/character-feature-customization-option';
 import { CharacterFeature } from './character-feature';
-import { ClassFeatureOther, ClassFeatureSpecial } from './class-feature/types';
-import { ICharacterFeatureCustomizable } from './feature-customization-option/types';
 
-export class CharacterFeatureCustomizable
-    extends CharacterFeature
-    implements ICharacterFeatureCustomizable
-{
+interface CharacterFeatureCustomizableProps
+    extends ICharacterFeatureCustomizationOption {
+    choiceType: CharacterPlannerStep;
+}
+
+export class CharacterFeatureCustomizable extends CharacterFeature {
+    choiceType: CharacterPlannerStep;
     choices?: ICharacterFeatureCustomizationOption[][];
 
-    constructor(options: ClassFeatureOther | ClassFeatureSpecial) {
+    constructor(options: CharacterFeatureCustomizableProps) {
         super(options);
 
-        this.customizable = true;
+        this.choiceType = options.choiceType;
+        this.choices = options.choices;
     }
 
     toJSON() {
         return {
             ...super.toJSON(),
-            choiceType: this.type,
+            choiceType: this.choiceType,
             choices: this.choices,
         };
     }

@@ -9,9 +9,9 @@ import { getCharacterClassData } from './models/character-class/character-class'
 import { log } from './models/logger';
 
 import { classesRouter } from './routes/classes';
-import { getCharacterRaceData } from './models/character-feature/character-race/character-race';
+import { getCharacterRaceData } from './models/character-feature/features/character-race';
 import { racesRouter } from './routes/races';
-import { getCharacterBackgroundData } from './models/character-feature/character-background/character-background';
+import { getCharacterBackgroundData } from './models/character-feature/features/character-background';
 import { backgroundsRouter } from './routes/backgrounds';
 
 const app = express();

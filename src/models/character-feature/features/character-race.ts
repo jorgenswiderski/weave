@@ -5,10 +5,13 @@ import {
 import { MwnApi } from '../../../api/mwn';
 import { error } from '../../logger';
 import { MediaWiki } from '../../media-wiki';
-import { PageItem, PageLoadingState } from '../../page-item';
-import { ICharacterFeatureCustomizable } from '../feature-customization-option/types';
-import { CharacterFeatureTypes } from '../types';
-import { CharacterSubrace } from './subrace';
+import { PageLoadingState } from '../../page-item';
+import {
+    CharacterFeatureTypes,
+    ICharacterFeatureCustomizationOptionWithPage,
+} from '../types';
+import { CharacterSubrace } from './character-subrace';
+import { CharacterFeature } from '../character-feature';
 
 export interface RaceInfo extends ICharacterFeatureCustomizationOption {
     name: string;
@@ -19,24 +22,21 @@ export interface RaceInfo extends ICharacterFeatureCustomizationOption {
 }
 
 enum RaceLoadState {
-    SUBRACES,
+    CHOICES = 'CHOICES',
 }
 
-export class CharacterRace
-    extends PageItem
-    implements ICharacterFeatureCustomizable
-{
+export class CharacterRace extends CharacterFeature {
     choices?: CharacterSubrace[][];
     type: CharacterFeatureTypes.RACE = CharacterFeatureTypes.RACE;
 
-    constructor(public name: string) {
-        super(name);
+    constructor(options: ICharacterFeatureCustomizationOptionWithPage) {
+        super(options);
 
-        this.initialized[RaceLoadState.SUBRACES] =
-            this.initSubraces().catch(error);
+        this.initialized[RaceLoadState.CHOICES] =
+            this.initChoices().catch(error);
     }
 
-    private async initSubraces(): Promise<void> {
+    private async initChoices(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page || !this.page.content) {
@@ -98,7 +98,7 @@ export class CharacterRace
     }
 
     async getInfo(): Promise<RaceInfo> {
-        await this.initialized[RaceLoadState.SUBRACES];
+        await this.initialized[RaceLoadState.CHOICES];
 
         return {
             name: this.name,
@@ -119,7 +119,9 @@ export async function getCharacterRaceData(): Promise<CharacterRace[]> {
         const raceNames =
             await MwnApi.queryTitlesFromCategory('Playable races');
 
-        characterRaceData = raceNames.map((name) => new CharacterRace(name));
+        characterRaceData = raceNames.map(
+            (name) => new CharacterRace({ name, pageTitle: name }),
+        );
 
         // Wait for all data to load
         await Promise.all(

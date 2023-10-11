@@ -1,16 +1,22 @@
+import {
+    CharacterPlannerStep,
+    ICharacterFeatureCustomizationOption,
+} from 'planner-types/src/types/character-feature-customization-option';
+
 export enum CharacterFeatureTypes {
     NONE = 'NONE',
-    CHOOSE_SUBCLASS = 'CHOOSE_SUBCLASS',
     FEAT = 'FEAT',
     SUBCLASS_FEATURE = 'SUBCLASS_FEATURE',
     SPELLCASTING = 'SPELLCASTING',
     PACT_MAGIC = 'PACT_MAGIC',
     OTHER = 'OTHER',
 
-    RACE = 'RACE',
-    BACKGROUND = 'BACKGROUND',
+    CHOOSE_SUBCLASS = CharacterPlannerStep.CHOOSE_SUBCLASS,
+    RACE = CharacterPlannerStep.SET_RACE,
+    BACKGROUND = CharacterPlannerStep.SET_BACKGROUND,
 }
 
-export interface ICharacterFeature {
-    type: CharacterFeatureTypes;
+export interface ICharacterFeatureCustomizationOptionWithPage
+    extends ICharacterFeatureCustomizationOption {
+    pageTitle?: string;
 }

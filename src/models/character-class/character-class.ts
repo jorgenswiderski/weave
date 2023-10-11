@@ -1,11 +1,9 @@
-import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
+import {
+    CharacterPlannerStep,
+    ICharacterFeatureCustomizationOption,
+} from 'planner-types/src/types/character-feature-customization-option';
 import { MwnApi } from '../../api/mwn';
 import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
-import { IClassSubclass } from '../character-feature/class-feature/types';
-import {
-    ICharacterFeature,
-    CharacterFeatureTypes,
-} from '../character-feature/types';
 import { error } from '../logger';
 import { MediaWiki } from '../media-wiki';
 
@@ -18,7 +16,7 @@ import {
 function parseFeatures(
     characterClass: CharacterClass,
     value: string,
-): ICharacterFeature[] {
+): ICharacterFeatureCustomizationOption[] {
     if (value === '-') {
         // No features this level
         return [];
@@ -61,7 +59,10 @@ export class CharacterClass extends PageItem {
     private cleanProgressionTableData(formattedData: { [key: string]: any }[]) {
         return formattedData.map((item) => {
             const cleanedItem: {
-                [key: string]: string | number | ICharacterFeature[];
+                [key: string]:
+                    | string
+                    | number
+                    | ICharacterFeatureCustomizationOption[];
             } = {};
 
             Object.keys(item).forEach((key) => {
@@ -94,7 +95,12 @@ export class CharacterClass extends PageItem {
     }
 
     private static parseSpellSlots(
-        data: { [key: string]: string | number | ICharacterFeature[] }[],
+        data: {
+            [key: string]:
+                | string
+                | number
+                | ICharacterFeatureCustomizationOption[];
+        }[],
     ): CharacterClassProgression {
         return data.map((rawLevelData) => {
             const levelData: Partial<CharacterClassProgressionLevel> = {};
@@ -102,7 +108,7 @@ export class CharacterClass extends PageItem {
             Object.entries(rawLevelData).forEach(
                 ([key, value]: [
                     string,
-                    string | number | ICharacterFeature[],
+                    string | number | ICharacterFeatureCustomizationOption[],
                 ]) => {
                     if (
                         key === '1st' ||
@@ -200,14 +206,14 @@ export class CharacterClass extends PageItem {
             .flat()
             .find(
                 (feature) =>
-                    feature.type === CharacterFeatureTypes.CHOOSE_SUBCLASS,
+                    feature.choiceType === CharacterPlannerStep.CHOOSE_SUBCLASS,
             );
 
         if (!chooseSubclass) {
             throw new Error('Could not find subclass info');
         }
 
-        const feature = chooseSubclass as IClassSubclass;
+        const feature = chooseSubclass as ICharacterFeatureCustomizationOption;
 
         if (!feature.choices || !feature.choices[0]) {
             throw new Error('Subclass info has no choices');

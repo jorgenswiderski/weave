@@ -1,21 +1,31 @@
+import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
 import { PageItem } from '../page-item';
-import { ClassFeatureOther, ClassFeatureSpecial } from './class-feature/types';
-import { ICharacterFeature, CharacterFeatureTypes } from './types';
+import { ICharacterFeatureCustomizationOptionWithPage } from './types';
 
-export class CharacterFeature extends PageItem implements ICharacterFeature {
-    type: CharacterFeatureTypes;
-    customizable: boolean = false;
+export class CharacterFeature
+    extends PageItem
+    implements ICharacterFeatureCustomizationOption
+{
+    name: string;
+    description?: string;
+    image?: string;
 
-    constructor(options: ClassFeatureOther | ClassFeatureSpecial) {
-        super(options?.pageTitle);
+    constructor({
+        pageTitle,
+        name,
+        image,
+    }: ICharacterFeatureCustomizationOptionWithPage) {
+        super(pageTitle);
 
-        this.type = options.type;
+        this.name = name;
+        this.image = image;
     }
 
     toJSON() {
         return {
-            type: this.type,
-            customizable: this.customizable,
+            name: this.name,
+            description: this.description,
+            image: this.image,
         };
     }
 }

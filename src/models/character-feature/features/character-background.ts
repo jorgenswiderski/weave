@@ -1,17 +1,20 @@
+import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
 import { MediaWiki } from '../../media-wiki';
-import { CharacterFeatureTypes, ICharacterFeature } from '../types';
-import { BackgroundInfo } from './types';
+import { CharacterFeature } from '../character-feature';
+import { CharacterFeatureTypes } from '../types';
 
-export class CharacterBackground implements ICharacterFeature {
+export class CharacterBackground extends CharacterFeature {
     type: CharacterFeatureTypes.BACKGROUND = CharacterFeatureTypes.BACKGROUND;
     description: string;
     skills: string[];
     image?: string;
 
     constructor(
-        public name: string,
+        options: ICharacterFeatureCustomizationOption,
         private sectionContent: string,
     ) {
+        super(options);
+
         this.description = this.parseDescription();
         this.skills = this.parseSkills();
         this.image = this.getImage() ?? undefined;
@@ -54,11 +57,11 @@ export class CharacterBackground implements ICharacterFeature {
             .map((skill) => skill.replace('[[', '').replace(']]', '').trim());
     }
 
-    getInfo(): BackgroundInfo {
+    getInfo(): ICharacterFeatureCustomizationOption {
         return {
             name: this.name,
             description: this.description,
-            skills: this.skills,
+            // skills: this.skills, TODO: convert to grants
             image: this.image,
         };
     }
@@ -100,7 +103,11 @@ export async function getCharacterBackgroundData(): Promise<
         const backgroundSections = parseBackgroundSections(pageData.content);
 
         characterBackgroundData = backgroundSections.map(
-            (section) => new CharacterBackground(section.name, section.content),
+            (section) =>
+                new CharacterBackground(
+                    { name: section.name },
+                    section.content,
+                ),
         );
     }
 

@@ -1,19 +1,18 @@
 import { ICharacterClass } from '../../character-class/types';
 import { CharacterFeature } from '../character-feature';
-import { ClassSubclass } from './subclass';
-import { CharacterFeatureTypes } from '../types';
+import { ClassSubclass } from '../features/character-subclass';
 import {
-    ClassFeatureOther,
-    ClassFeatureSpecial,
-    ClassFeatureTypesSpecial,
-} from './types';
+    CharacterFeatureTypes,
+    ICharacterFeatureCustomizationOptionWithPage,
+} from '../types';
 
 export class ClassFeatureFactory {
     static construct(
         characterClass: ICharacterClass,
-        options: ClassFeatureOther | ClassFeatureSpecial,
+        type: CharacterFeatureTypes,
+        options: ICharacterFeatureCustomizationOptionWithPage,
     ): CharacterFeature {
-        if (options.type === CharacterFeatureTypes.CHOOSE_SUBCLASS) {
+        if (type === CharacterFeatureTypes.CHOOSE_SUBCLASS) {
             return new ClassSubclass(characterClass.name);
         }
 
@@ -24,7 +23,7 @@ export class ClassFeatureFactory {
         characterClass: ICharacterClass,
         featureText: string,
     ): CharacterFeature {
-        const specialCases: { [key: string]: ClassFeatureTypesSpecial } = {
+        const specialCases: { [key: string]: CharacterFeatureTypes } = {
             'eldritch invocations': CharacterFeatureTypes.NONE,
             'choose a subclass': CharacterFeatureTypes.CHOOSE_SUBCLASS,
             'subclass feature': CharacterFeatureTypes.SUBCLASS_FEATURE,
@@ -37,8 +36,8 @@ export class ClassFeatureFactory {
         // eslint-disable-next-line no-restricted-syntax
         for (const [caseText, caseType] of Object.entries(specialCases)) {
             if (featureText.toLowerCase().includes(caseText)) {
-                return ClassFeatureFactory.construct(characterClass, {
-                    type: caseType,
+                return ClassFeatureFactory.construct(characterClass, caseType, {
+                    name: caseText,
                 });
             }
         }
@@ -55,10 +54,14 @@ export class ClassFeatureFactory {
 
             const pageTitle = parts[1].split('}}')[0].trim();
 
-            return ClassFeatureFactory.construct(characterClass, {
-                type: CharacterFeatureTypes.OTHER,
-                pageTitle,
-            });
+            return ClassFeatureFactory.construct(
+                characterClass,
+                CharacterFeatureTypes.OTHER,
+                {
+                    name: pageTitle,
+                    pageTitle,
+                },
+            );
         }
 
         // Check for SmIconLink style template
@@ -66,10 +69,14 @@ export class ClassFeatureFactory {
             const parts = featureText.split('|');
             const pageTitle = parts[3].replace('}}', '').trim();
 
-            return ClassFeatureFactory.construct(characterClass, {
-                type: CharacterFeatureTypes.OTHER,
-                pageTitle,
-            });
+            return ClassFeatureFactory.construct(
+                characterClass,
+                CharacterFeatureTypes.OTHER,
+                {
+                    name: pageTitle,
+                    pageTitle,
+                },
+            );
         }
 
         // Extract link labels or whole links
@@ -82,16 +89,24 @@ export class ClassFeatureFactory {
                 const parts = match[1].split('|');
 
                 // Take the linked page title and discard the non-link text
-                return ClassFeatureFactory.construct(characterClass, {
-                    type: CharacterFeatureTypes.OTHER,
-                    pageTitle: parts[parts.length - 1].trim(),
-                });
+                return ClassFeatureFactory.construct(
+                    characterClass,
+                    CharacterFeatureTypes.OTHER,
+                    {
+                        name: parts[parts.length - 1].trim(),
+                        pageTitle: parts[parts.length - 1].trim(),
+                    },
+                );
             }
         }
 
-        return ClassFeatureFactory.construct(characterClass, {
-            type: CharacterFeatureTypes.OTHER,
-            pageTitle: featureText.trim(),
-        });
+        return ClassFeatureFactory.construct(
+            characterClass,
+            CharacterFeatureTypes.OTHER,
+            {
+                name: featureText.trim(),
+                pageTitle: featureText.trim(),
+            },
+        );
     }
 }
