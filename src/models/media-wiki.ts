@@ -160,41 +160,40 @@ export class MediaWiki {
         return `${CONFIG.MEDIAWIKI.BASE_URL}/images/${hash[0]}/${hash[0]}${hash[1]}/${formattedImageName}`;
     }
 
-    static async getSectionNumber(
-        pageTitle: string,
-        sectionTitle: string,
-    ): Promise<string | null> {
-        const data = await MwnApi.parsePageSections(pageTitle, {});
+    // static async getSectionNumber(
+    //     pageTitle: string,
+    //     sectionTitle: string,
+    // ): Promise<string | null> {
+    //     const data = await MwnApiClass.parsePageSections(pageTitle, {});
 
-        if (!data) {
-            return null;
-        }
+    //     if (!data) {
+    //         return null;
+    //     }
 
-        const section = data.find((s: any) => s.line === sectionTitle);
+    //     const section = data.find((s: any) => s.line === sectionTitle);
 
-        return section?.number ?? null;
-    }
+    //     return section?.number ?? null;
+    // }
 
-    // FIXME
-    static async getSectionTextByName(
-        pageTitle: string,
-        sectionTitle: string,
-    ): Promise<string | null> {
-        const sectionNumber = await MediaWiki.getSectionNumber(
-            pageTitle,
-            sectionTitle,
-        );
+    // static async getSectionTextByName(
+    //     pageTitle: string,
+    //     sectionTitle: string,
+    // ): Promise<string | null> {
+    //     const sectionNumber = await MediaWiki.getSectionNumber(
+    //         pageTitle,
+    //         sectionTitle,
+    //     );
 
-        if (!sectionNumber) {
-            throw new Error('could not find section number');
-        }
+    //     if (!sectionNumber) {
+    //         throw new Error('could not find section number');
+    //     }
 
-        const text = await MediaWiki.getTextExtract(pageTitle, {
-            section: sectionNumber,
-        });
+    //     const text = await MediaWiki.getTextExtract(pageTitle, {
+    //         section: sectionNumber,
+    //     });
 
-        return text;
-    }
+    //     return text;
+    // }
 }
 
 // (async () => {

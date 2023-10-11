@@ -7,11 +7,11 @@ import {
 } from '../types';
 
 export class ClassFeatureFactory {
-    static construct(
+    static async construct(
         characterClass: ICharacterClass,
         type: CharacterFeatureTypes,
         options: ICharacterFeatureCustomizationOptionWithPage,
-    ): CharacterFeature {
+    ): Promise<CharacterFeature> {
         if (type === CharacterFeatureTypes.CHOOSE_SUBCLASS) {
             return new ClassSubclass(characterClass.name);
         }
@@ -19,26 +19,39 @@ export class ClassFeatureFactory {
         return new CharacterFeature(options);
     }
 
+    static parserSpecialCases: {
+        [key: string]: { type: CharacterFeatureTypes; pageTitle?: string };
+    } = {
+        'eldritch invocations': { type: CharacterFeatureTypes.NONE },
+        'choose a subclass': {
+            type: CharacterFeatureTypes.CHOOSE_SUBCLASS,
+        },
+        'subclass feature': {
+            type: CharacterFeatureTypes.SUBCLASS_FEATURE,
+        },
+        'feats|feat': { type: CharacterFeatureTypes.FEAT, pageTitle: 'Feats' },
+        '#spellcasting': { type: CharacterFeatureTypes.SPELLCASTING },
+        '#pact magic': { type: CharacterFeatureTypes.PACT_MAGIC },
+    };
+
     static fromMarkdownString(
         characterClass: ICharacterClass,
         featureText: string,
-    ): CharacterFeature {
-        const specialCases: { [key: string]: CharacterFeatureTypes } = {
-            'eldritch invocations': CharacterFeatureTypes.NONE,
-            'choose a subclass': CharacterFeatureTypes.CHOOSE_SUBCLASS,
-            'subclass feature': CharacterFeatureTypes.SUBCLASS_FEATURE,
-            'feats|feat': CharacterFeatureTypes.FEAT,
-            '#spellcasting': CharacterFeatureTypes.SPELLCASTING,
-            '#pact magic': CharacterFeatureTypes.PACT_MAGIC,
-        };
-
+    ): Promise<CharacterFeature> {
         // Handle special labels
         // eslint-disable-next-line no-restricted-syntax
-        for (const [caseText, caseType] of Object.entries(specialCases)) {
+        for (const [caseText, data] of Object.entries(
+            ClassFeatureFactory.parserSpecialCases,
+        )) {
             if (featureText.toLowerCase().includes(caseText)) {
-                return ClassFeatureFactory.construct(characterClass, caseType, {
-                    name: caseText,
-                });
+                return ClassFeatureFactory.construct(
+                    characterClass,
+                    data.type,
+                    {
+                        name: caseText,
+                        pageTitle: data.pageTitle,
+                    },
+                );
             }
         }
 

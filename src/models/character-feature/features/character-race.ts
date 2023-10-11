@@ -2,7 +2,7 @@ import {
     CharacterPlannerStep,
     ICharacterFeatureCustomizationOption,
 } from 'planner-types/src/types/character-feature-customization-option';
-import { MwnApi } from '../../../api/mwn';
+import { MwnApiClass } from '../../../api/mwn';
 import { error } from '../../logger';
 import { MediaWiki } from '../../media-wiki';
 import { PageLoadingState } from '../../page-item';
@@ -117,7 +117,7 @@ let characterRaceData: CharacterRace[];
 export async function getCharacterRaceData(): Promise<CharacterRace[]> {
     if (!characterRaceData) {
         const raceNames =
-            await MwnApi.queryTitlesFromCategory('Playable races');
+            await MwnApiClass.queryTitlesFromCategory('Playable races');
 
         characterRaceData = raceNames.map(
             (name) => new CharacterRace({ name, pageTitle: name }),

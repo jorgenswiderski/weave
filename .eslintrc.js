@@ -49,7 +49,11 @@ module.exports = {
             },
         ],
         'no-constant-condition': ['error', { checkLoops: false }],
+        curly: ['error', 'all'],
+
+        // style rules
         'prettier/prettier': 'warn',
+        'object-shorthand': 'warn',
     },
     globals: {
         log: 'readonly',

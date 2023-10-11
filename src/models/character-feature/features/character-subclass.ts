@@ -2,7 +2,7 @@ import { CharacterPlannerStep } from 'planner-types/src/types/character-feature-
 import { error } from '../../logger';
 import { MediaWiki, PageData } from '../../media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
-import { MwnApi } from '../../../api/mwn';
+import { MwnApiClass } from '../../../api/mwn';
 import { CharacterSubclassOption } from './character-subclass-option';
 
 enum SubclassLoadStates {
@@ -22,7 +22,7 @@ export class ClassSubclass extends CharacterFeatureCustomizable {
 
     private async initChoices(): Promise<void> {
         const allSubclassPages =
-            await MwnApi.queryTitlesFromCategory('Subclasses');
+            await MwnApiClass.queryTitlesFromCategory('Subclasses');
         const allSubclasses = await Promise.all(
             allSubclassPages.map((title) => MediaWiki.getPage(title)),
         );

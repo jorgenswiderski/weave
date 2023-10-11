@@ -2,7 +2,7 @@ import {
     CharacterPlannerStep,
     ICharacterFeatureCustomizationOption,
 } from 'planner-types/src/types/character-feature-customization-option';
-import { MwnApi } from '../../api/mwn';
+import { MwnApiClass } from '../../api/mwn';
 import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
 import { error } from '../logger';
 import { MediaWiki } from '../media-wiki';
@@ -14,23 +14,25 @@ import {
     ICharacterClass,
 } from './types';
 
-function parseFeatures(
+async function parseFeatures(
     characterClass: CharacterClass,
     value: string,
-): ICharacterFeatureCustomizationOption[] {
+): Promise<ICharacterFeatureCustomizationOption[]> {
     if (value === '-') {
         // No features this level
         return [];
     }
 
-    const features = value
-        .split(', ')
-        .map((featureString: string) =>
-            ClassFeatureFactory.fromMarkdownString(
-                characterClass,
-                featureString,
+    const features = await Promise.all(
+        value
+            .split(', ')
+            .map((featureString: string) =>
+                ClassFeatureFactory.fromMarkdownString(
+                    characterClass,
+                    featureString,
+                ),
             ),
-        );
+    );
 
     return features;
 }
@@ -57,42 +59,51 @@ export class CharacterClass extends PageItem implements ICharacterClass {
             this.initProgression().catch(error);
     }
 
-    private cleanProgressionTableData(formattedData: { [key: string]: any }[]) {
-        return formattedData.map((item) => {
-            const cleanedItem: {
-                [key: string]:
-                    | string
-                    | number
-                    | ICharacterFeatureCustomizationOption[];
-            } = {};
+    private async cleanProgressionTableData(
+        formattedData: { [key: string]: any }[],
+    ) {
+        return Promise.all(
+            formattedData.map(async (item) => {
+                const cleanedItem: {
+                    [key: string]:
+                        | string
+                        | number
+                        | ICharacterFeatureCustomizationOption[];
+                } = {};
 
-            Object.keys(item).forEach((key) => {
-                const cleanedKey = MediaWiki.stripMarkup(key);
+                await Promise.all(
+                    Object.keys(item).map(async (key) => {
+                        const cleanedKey = MediaWiki.stripMarkup(key);
 
-                if (cleanedKey === 'Features') {
-                    cleanedItem[cleanedKey] = parseFeatures(this, item[key]);
-                } else {
-                    const value = MediaWiki.stripMarkup(item[key]);
+                        if (cleanedKey === 'Features') {
+                            cleanedItem[cleanedKey] = await parseFeatures(
+                                this,
+                                item[key],
+                            );
+                        } else {
+                            const value = MediaWiki.stripMarkup(item[key]);
 
-                    if (value === '-') {
-                        cleanedItem[cleanedKey] = 0;
+                            if (value === '-') {
+                                cleanedItem[cleanedKey] = 0;
 
-                        return;
-                    }
+                                return;
+                            }
 
-                    // Try to convert to integer
-                    const intValue = parseInt(value, 10);
+                            // Try to convert to integer
+                            const intValue = parseInt(value, 10);
 
-                    if (!Number.isNaN(intValue)) {
-                        cleanedItem[cleanedKey] = intValue;
-                    } else {
-                        cleanedItem[cleanedKey] = value;
-                    }
-                }
-            });
+                            if (!Number.isNaN(intValue)) {
+                                cleanedItem[cleanedKey] = intValue;
+                            } else {
+                                cleanedItem[cleanedKey] = value;
+                            }
+                        }
+                    }),
+                );
 
-            return cleanedItem;
-        });
+                return cleanedItem;
+            }),
+        );
     }
 
     private static parseSpellSlots(
@@ -182,7 +193,8 @@ export class CharacterClass extends PageItem implements ICharacterClass {
                 );
             });
 
-            const cleanedData = this.cleanProgressionTableData(formattedData);
+            const cleanedData =
+                await this.cleanProgressionTableData(formattedData);
             const dataWithSpells = CharacterClass.parseSpellSlots(cleanedData);
 
             this.progression = dataWithSpells;
@@ -264,7 +276,7 @@ let characterClassData: CharacterClass[];
 
 export async function getCharacterClassData(): Promise<CharacterClass[]> {
     if (!characterClassData) {
-        const classNames = await MwnApi.queryTitlesFromCategory('Classes');
+        const classNames = await MwnApiClass.queryTitlesFromCategory('Classes');
 
         characterClassData = classNames.map((name) => new CharacterClass(name));
 
