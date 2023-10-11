@@ -1,4 +1,9 @@
 import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
+import {
+    GrantableEffectType,
+    Proficiency,
+    ProficiencyTypes,
+} from 'planner-types/src/types/grantable-effect';
 import { MediaWiki } from '../../media-wiki';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeatureTypes } from '../types';
@@ -6,7 +11,7 @@ import { CharacterFeatureTypes } from '../types';
 export class CharacterBackground extends CharacterFeature {
     type: CharacterFeatureTypes.BACKGROUND = CharacterFeatureTypes.BACKGROUND;
     description: string;
-    skills: string[];
+    proficiencies: Proficiency[];
     image?: string;
 
     constructor(
@@ -16,7 +21,7 @@ export class CharacterBackground extends CharacterFeature {
         super(options);
 
         this.description = this.parseDescription();
-        this.skills = this.parseSkills();
+        this.proficiencies = this.getProficiencies();
         this.image = this.getImage() ?? undefined;
     }
 
@@ -44,7 +49,7 @@ export class CharacterBackground extends CharacterFeature {
         return match[1];
     }
 
-    private parseSkills(): string[] {
+    private getProficiencies(): Proficiency[] {
         const regex = /''Improves:\s*([\w\s[\],]+)''/;
         const match = regex.exec(this.sectionContent);
 
@@ -52,17 +57,35 @@ export class CharacterBackground extends CharacterFeature {
             throw new Error('Unable to parse background skills');
         }
 
-        return match[1]
+        const skillNames = match[1]
             .split(', ')
             .map((skill) => skill.replace('[[', '').replace(']]', '').trim());
+
+        return skillNames.map((sn) => {
+            if (
+                !Object.values(ProficiencyTypes).includes(
+                    sn.toUpperCase() as unknown as ProficiencyTypes,
+                )
+            ) {
+                throw new Error(
+                    `invalid proficiency type '${sn.toUpperCase()}'`,
+                );
+            }
+
+            return {
+                name: `Proficiency: ${sn}`,
+                type: GrantableEffectType.PROFICIENCY,
+                proficiency: sn.toUpperCase() as unknown as ProficiencyTypes,
+            };
+        });
     }
 
     getInfo(): ICharacterFeatureCustomizationOption {
         return {
             name: this.name,
             description: this.description,
-            // skills: this.skills, TODO: convert to grants
             image: this.image,
+            grants: this.proficiencies,
         };
     }
 }
