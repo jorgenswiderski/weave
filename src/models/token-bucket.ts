@@ -3,19 +3,19 @@ export class TokenBucket {
     private tokens: number;
     private fillRate: number;
     private lastFillTime: number;
-    lifetimeTokens: number = 0;
+    private totalTokensRequested: number = 0; // Added to track total requests
+    totalTokensGranted: number = 0;
 
     constructor(capacity: number, fillRate: number) {
-        this.capacity = capacity; // The maximum number of tokens the bucket can hold
-        this.tokens = capacity; // The current number of tokens in the bucket
-        this.fillRate = fillRate; // The rate at which the bucket fills in tokens/second
-        this.lastFillTime = Date.now(); // The last time the bucket was filled
+        this.capacity = capacity;
+        this.tokens = capacity;
+        this.fillRate = fillRate;
+        this.lastFillTime = Date.now();
     }
 
-    // Refill tokens based on how much time has passed since the last refill
     private refill(): void {
         const now = Date.now();
-        const elapsedTime = (now - this.lastFillTime) / 1000; // Convert to seconds
+        const elapsedTime = (now - this.lastFillTime) / 1000;
 
         this.tokens = Math.min(
             this.capacity,
@@ -26,23 +26,30 @@ export class TokenBucket {
     }
 
     public async acquireToken(): Promise<void> {
+        this.totalTokensRequested += 1; // Increment the total requested tokens count
+
         return new Promise((resolve) => {
             const tryAcquire = () => {
-                this.refill(); // Refill the bucket
+                this.refill();
 
                 if (this.tokens > 0) {
                     this.tokens -= 1;
-                    this.lifetimeTokens += 1;
-                    // log(this.lifetimeTokens);
+                    this.totalTokensGranted += 1;
                     resolve();
                 } else {
-                    // If no tokens are available, check again after a delay
-                    const delay = 1000 / this.fillRate; // Time until the next token is available
+                    const delay = 1000 / this.fillRate;
                     setTimeout(tryAcquire, delay);
                 }
             };
 
             tryAcquire();
         });
+    }
+
+    public getProgress(): { granted: number; total: number } {
+        return {
+            granted: this.totalTokensGranted,
+            total: this.totalTokensRequested,
+        };
     }
 }

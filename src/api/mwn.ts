@@ -8,7 +8,7 @@ const bot = new Mwn({
     apiUrl: `${CONFIG.MEDIAWIKI.BASE_URL}/api.php`,
 });
 
-const bucket = new TokenBucket(10, 3);
+export const MwnTokenBucket = new TokenBucket(10, 3);
 
 // shorthand just to reduce boilerplate
 function memoize<T extends (...args: any[]) => Promise<any>>(fn: T): T {
@@ -49,7 +49,7 @@ export class MwnApiClass {
                 this.batches[queryKey] = new RequestBatch(
                     this.batches,
                     bot,
-                    bucket,
+                    MwnTokenBucket,
                     queryKey,
                     batchAxis,
                     restOfParams,
@@ -95,7 +95,7 @@ export class MwnApiClass {
 
         do {
             // eslint-disable-next-line no-await-in-loop
-            await bucket.acquireToken();
+            await MwnTokenBucket.acquireToken();
 
             // eslint-disable-next-line no-await-in-loop
             const response = await bot.query({
@@ -125,7 +125,7 @@ export class MwnApiClass {
     }
 
     readPage = memoize(async (pageTitle: string): Promise<ApiPage> => {
-        await bucket.acquireToken();
+        await MwnTokenBucket.acquireToken();
 
         return bot.read(pageTitle);
     });

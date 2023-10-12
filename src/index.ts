@@ -13,6 +13,7 @@ import { getCharacterRaceData } from './models/character-feature/features/charac
 import { racesRouter } from './routes/races';
 import { getCharacterBackgroundData } from './models/character-feature/features/character-background';
 import { backgroundsRouter } from './routes/backgrounds';
+import { MwnProgressBar } from './api/mwn-progress-bar';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -23,7 +24,9 @@ const PORT = process.env.PORT || 3001;
         getCharacterRaceData(),
         getCharacterBackgroundData(),
     ]);
-})().then(() => log('Finished loading all assets'));
+})();
+
+new MwnProgressBar().render();
 
 app.use(
     cors({
