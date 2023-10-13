@@ -92,6 +92,7 @@ export class MediaWiki {
         v = v.replace(/\[\[.*?\|(.*?)\]\]/g, '$1'); // extract link labels
         v = v.replace(/\[\[(.*?)\]\]/g, '$1');
         v = v.replace(/{{Q\|(.*?)(?:\|.*?)?}}/g, '$1');
+        v = v.replace(/\{\{([^|}]+?)\}\}/g, '$1');
         v = v.replace(/{{.*?\|(.*?)}}/g, '$1'); // extract template parameters
         v = v.replace(/'''(.*?)'''/g, '$1'); // bold text
         v = v.replace(/''(.*?)''/g, '$1'); // italic text

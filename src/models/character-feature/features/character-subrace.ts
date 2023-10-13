@@ -1,9 +1,11 @@
 import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
+import { GrantableEffect } from 'planner-types/src/types/grantable-effect';
 import { MediaWiki } from '../../media-wiki';
 
 export class CharacterSubrace implements ICharacterFeatureCustomizationOption {
     label: string;
     description: string;
+    grants?: GrantableEffect[];
 
     constructor(
         public name: string,
@@ -35,6 +37,7 @@ export class CharacterSubrace implements ICharacterFeatureCustomizationOption {
         return {
             name: this.label,
             description: this.description,
+            grants: this.grants,
         };
     }
 }

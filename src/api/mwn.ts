@@ -184,8 +184,8 @@ export class MwnApiClass {
             cllimit: 'max',
         });
 
-        if (!data.query?.pages) {
-            throw new Error('could not find page');
+        if (!data.query?.pages?.[0]) {
+            throw new Error(`could not find page for ${pageTitle}`);
         }
 
         const categories = data.query.pages[0].categories || [];
