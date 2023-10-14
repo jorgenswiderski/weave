@@ -50,6 +50,7 @@ module.exports = {
         ],
         'no-constant-condition': ['error', { checkLoops: false }],
         curly: ['error', 'all'],
+        'no-continue': 'off',
 
         // style rules
         'prettier/prettier': 'warn',
