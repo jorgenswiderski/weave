@@ -30,7 +30,7 @@ export class ClassFeatureFactory {
         'choose a subclass': {
             type: CharacterFeatureTypes.CHOOSE_SUBCLASS,
         },
-        'subclass feature': {
+        '|subclass feature': {
             type: CharacterFeatureTypes.SUBCLASS_FEATURE,
         },
         'feats|feat': { type: CharacterFeatureTypes.FEAT, pageTitle: 'Feats' },
