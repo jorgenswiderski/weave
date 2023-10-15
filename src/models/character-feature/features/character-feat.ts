@@ -105,7 +105,11 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                     return {
                         name,
                         description,
-                        image: fx.find((effect) => effect.image)?.image,
+                        image:
+                            fx.find((effect) => effect.image)?.image ??
+                            MediaWiki.getImagePath(
+                                'PassiveFeature Generic.png',
+                            ),
                         grants: fx,
                         type: CharacterPlannerStep.FEAT,
                         choiceType:
