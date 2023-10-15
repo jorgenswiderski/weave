@@ -3,9 +3,10 @@ import {
     ICharacterFeatureCustomizationOption,
 } from 'planner-types/src/types/character-feature-customization-option';
 import { CharacterFeature } from './character-feature';
+import { ICharacterFeatureCustomizationOptionWithPage } from './types';
 
 interface CharacterFeatureCustomizableProps
-    extends ICharacterFeatureCustomizationOption {
+    extends ICharacterFeatureCustomizationOptionWithPage {
     choiceType: CharacterPlannerStep;
 }
 

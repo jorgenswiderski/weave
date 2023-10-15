@@ -1,5 +1,6 @@
 import { ICharacterClass } from '../../character-class/types';
 import { CharacterFeature } from '../character-feature';
+import { CharacterFeat } from '../features/character-feat';
 import { ClassSubclass } from '../features/character-subclass';
 import {
     CharacterFeatureTypes,
@@ -20,6 +21,10 @@ export class ClassFeatureFactory {
             return new ClassSubclass(characterClass.name, type, level);
         }
 
+        if (type === CharacterFeatureTypes.FEAT) {
+            return new CharacterFeat();
+        }
+
         return new CharacterFeature(options);
     }
 
@@ -33,6 +38,9 @@ export class ClassFeatureFactory {
         '|subclass feature': {
             type: CharacterFeatureTypes.SUBCLASS_FEATURE,
         },
+        // 'deepened pact': {
+        //     type: CharacterFeatureTypes.SUBCLASS_FEATURE,
+        // },
         'feats|feat': { type: CharacterFeatureTypes.FEAT, pageTitle: 'Feats' },
         '#spellcasting': { type: CharacterFeatureTypes.SPELLCASTING },
         '#pact magic': { type: CharacterFeatureTypes.PACT_MAGIC },

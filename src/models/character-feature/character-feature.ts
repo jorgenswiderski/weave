@@ -127,9 +127,9 @@ export class CharacterFeature
             }
 
             if (
-                categories.includes('Category:Class Actions') ||
-                categories.includes('Category:Racial Action') ||
-                categories.includes('Category:Spells')
+                page.content.includes('{{ActionPage') ||
+                page.content.includes('{{SpellPage') ||
+                page.content
             ) {
                 // uses the ActionPage template, could be either an action or a passive
                 return CharacterFeature.parseActionPage(
@@ -139,16 +139,14 @@ export class CharacterFeature
                 );
             }
 
-            if (categories.includes('Category:Passive Features')) {
-                throw new Error(
-                    `failed to parse description and image for '${pageTitle}'`,
-                );
+            throw new Error(
+                `failed to parse description and image for '${pageTitle}'`,
+            );
 
-                return {
-                    name: CharacterFeature.parseNameFromPageTitle(pageTitle),
-                    type: GrantableEffectType.CHARACTERISTIC,
-                };
-            }
+            // return {
+            //     name: CharacterFeature.parseNameFromPageTitle(pageTitle),
+            //     type: GrantableEffectType.CHARACTERISTIC,
+            // };
         } catch (e) {
             if (e instanceof PageNotFoundError) {
                 warn(
