@@ -5,9 +5,10 @@ import {
 } from 'planner-types/src/types/grantable-effect';
 import { PageItem, PageLoadingState } from '../page-item';
 import { ICharacterFeatureCustomizationOptionWithPage } from './types';
-import { error } from '../logger';
+import { error, warn } from '../logger';
 import { MwnApi } from '../../api/mwn';
 import { MediaWiki, PageData } from '../media-wiki';
+import { PageNotFoundError } from '../errors';
 
 enum CharacterFeatureLoadingStates {
     DESCRIPTION = 'DESCRIPTION',
@@ -24,12 +25,15 @@ export class CharacterFeature
     image?: string;
     grants: GrantableEffect[] = [];
 
-    constructor({
-        pageTitle,
-        page,
-        name,
-        image,
-    }: ICharacterFeatureCustomizationOptionWithPage) {
+    constructor(
+        {
+            pageTitle,
+            page,
+            name,
+            image,
+        }: ICharacterFeatureCustomizationOptionWithPage,
+        public level?: number,
+    ) {
         super({ pageTitle, page });
 
         this.name = name;
@@ -97,50 +101,62 @@ export class CharacterFeature
         pageTitle: string,
         page?: PageData,
     ): Promise<GrantableEffect | null> {
-        const categories = await MwnApi.queryCategoriesFromPage(pageTitle);
+        try {
+            const categories = await MwnApi.queryCategoriesFromPage(pageTitle);
 
-        if (
-            !categories.includes('Category:Class Actions') &&
-            !categories.includes('Category:Racial Actions') &&
-            !categories.includes('Category:Passive Features')
-        ) {
-            return null;
-        }
-
-        if (!page) {
-            const p = await MediaWiki.getPage(pageTitle);
-
-            if (p) {
-                // eslint-disable-next-line no-param-reassign
-                page = p;
+            if (
+                !categories.includes('Category:Class Actions') &&
+                !categories.includes('Category:Racial Actions') &&
+                !categories.includes('Category:Passive Features') &&
+                !categories.includes('Category:Spells')
+            ) {
+                return null;
             }
-        }
 
-        if (!page?.content) {
-            throw new Error('no page content for grantable effect');
-        }
+            if (!page) {
+                const p = await MediaWiki.getPage(pageTitle);
 
-        if (
-            categories.includes('Category:Class Actions') ||
-            categories.includes('Category:Racial Action')
-        ) {
-            // uses the ActionPage template, could be either an action or a passive
-            return CharacterFeature.parseActionPage(
-                page.content,
-                pageTitle,
-                categories,
-            );
-        }
+                if (p) {
+                    // eslint-disable-next-line no-param-reassign
+                    page = p;
+                }
+            }
 
-        if (categories.includes('Category:Passive Features')) {
-            throw new Error(
-                `failed to parse description and image for '${pageTitle}'`,
-            );
+            if (!page?.content) {
+                throw new Error('no page content for grantable effect');
+            }
 
-            return {
-                name: CharacterFeature.parseNameFromPageTitle(pageTitle),
-                type: GrantableEffectType.CHARACTERISTIC,
-            };
+            if (
+                categories.includes('Category:Class Actions') ||
+                categories.includes('Category:Racial Action') ||
+                categories.includes('Category:Spells')
+            ) {
+                // uses the ActionPage template, could be either an action or a passive
+                return CharacterFeature.parseActionPage(
+                    page.content,
+                    pageTitle,
+                    categories,
+                );
+            }
+
+            if (categories.includes('Category:Passive Features')) {
+                throw new Error(
+                    `failed to parse description and image for '${pageTitle}'`,
+                );
+
+                return {
+                    name: CharacterFeature.parseNameFromPageTitle(pageTitle),
+                    type: GrantableEffectType.CHARACTERISTIC,
+                };
+            }
+        } catch (e) {
+            if (e instanceof PageNotFoundError) {
+                warn(
+                    `Could not find page ${pageTitle} when parsing for grantable effects.`,
+                );
+            } else {
+                throw e;
+            }
         }
 
         return null;

@@ -17,6 +17,7 @@ import {
 async function parseFeatures(
     characterClass: CharacterClass,
     value: string,
+    level: number,
 ): Promise<ICharacterFeatureCustomizationOption[]> {
     if (value === '-') {
         // No features this level
@@ -30,6 +31,7 @@ async function parseFeatures(
                 ClassFeatureFactory.fromMarkdownString(
                     characterClass,
                     featureString,
+                    level,
                 ),
             ),
     );
@@ -76,10 +78,8 @@ export class CharacterClass extends PageItem implements ICharacterClass {
                         const cleanedKey = MediaWiki.stripMarkup(key);
 
                         if (cleanedKey === 'Features') {
-                            cleanedItem[cleanedKey] = await parseFeatures(
-                                this,
-                                item[key],
-                            );
+                            // Parse the features last
+                            cleanedItem[cleanedKey] = item[key];
                         } else {
                             const value = MediaWiki.stripMarkup(item[key]);
 
@@ -99,6 +99,12 @@ export class CharacterClass extends PageItem implements ICharacterClass {
                             }
                         }
                     }),
+                );
+
+                cleanedItem.Features = await parseFeatures(
+                    this,
+                    cleanedItem.Features as string,
+                    cleanedItem.Level as number,
                 );
 
                 return cleanedItem;

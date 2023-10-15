@@ -3,6 +3,7 @@ import { Utils } from '../models/utils';
 import { CONFIG } from '../models/config';
 import { TokenBucket } from '../models/token-bucket';
 import { ApiParam, RequestBatch } from './request-batch';
+import { PageNotFoundError } from '../models/errors';
 
 const bot = new Mwn({
     apiUrl: `${CONFIG.MEDIAWIKI.BASE_URL}/api.php`,
@@ -185,7 +186,7 @@ export class MwnApiClass {
         });
 
         if (!data.query?.pages?.[0]) {
-            throw new Error(`could not find page for ${pageTitle}`);
+            throw new PageNotFoundError(`could not find page for ${pageTitle}`);
         }
 
         const categories = data.query.pages[0].categories || [];

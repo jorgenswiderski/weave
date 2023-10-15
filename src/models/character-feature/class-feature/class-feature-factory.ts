@@ -11,9 +11,13 @@ export class ClassFeatureFactory {
         characterClass: ICharacterClass,
         type: CharacterFeatureTypes,
         options: ICharacterFeatureCustomizationOptionWithPage,
+        level: number,
     ): Promise<CharacterFeature> {
-        if (type === CharacterFeatureTypes.CHOOSE_SUBCLASS) {
-            return new ClassSubclass(characterClass.name);
+        if (
+            type === CharacterFeatureTypes.CHOOSE_SUBCLASS ||
+            type === CharacterFeatureTypes.SUBCLASS_FEATURE
+        ) {
+            return new ClassSubclass(characterClass.name, type, level);
         }
 
         return new CharacterFeature(options);
@@ -37,6 +41,7 @@ export class ClassFeatureFactory {
     static fromMarkdownString(
         characterClass: ICharacterClass,
         featureText: string,
+        level: number,
     ): Promise<CharacterFeature> {
         // Handle special labels
         // eslint-disable-next-line no-restricted-syntax
@@ -51,6 +56,7 @@ export class ClassFeatureFactory {
                         name: caseText,
                         pageTitle: data.pageTitle,
                     },
+                    level,
                 );
             }
         }
@@ -74,6 +80,7 @@ export class ClassFeatureFactory {
                     name: pageTitle,
                     pageTitle,
                 },
+                level,
             );
         }
 
@@ -89,6 +96,7 @@ export class ClassFeatureFactory {
                     name: pageTitle,
                     pageTitle,
                 },
+                level,
             );
         }
 
@@ -109,6 +117,7 @@ export class ClassFeatureFactory {
                         name: parts[parts.length - 1].trim(),
                         pageTitle: parts[parts.length - 1].trim(),
                     },
+                    level,
                 );
             }
         }
@@ -120,6 +129,7 @@ export class ClassFeatureFactory {
                 name: featureText.trim(),
                 pageTitle: featureText.trim(),
             },
+            level,
         );
     }
 }
