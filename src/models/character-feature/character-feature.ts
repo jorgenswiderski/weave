@@ -106,7 +106,7 @@ export class CharacterFeature
 
             if (
                 !categories.includes('Category:Class Actions') &&
-                !categories.includes('Category:Racial Actions') &&
+                !categories.includes('Category:Racial Action') &&
                 !categories.includes('Category:Passive Features') &&
                 !categories.includes('Category:Spells')
             ) {
