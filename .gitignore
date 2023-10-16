@@ -5,3 +5,4 @@ package
 *.code-workspace
 docker-compose.yml
 .eslintcache
+src/cache

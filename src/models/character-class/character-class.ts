@@ -215,8 +215,15 @@ export class CharacterClass extends PageItem implements ICharacterClass {
             throw new Error('Could not find progression');
         }
 
-        const features = this.progression.map((level) => level.Features);
-        const chooseSubclass = features.flat().find(
+        const features = this.progression.map((level) => level.Features).flat();
+
+        await Promise.all(
+            features.flatMap((feature) =>
+                Object.values((feature as unknown as PageItem).initialized),
+            ),
+        );
+
+        const chooseSubclass = features.find(
             (feature) =>
                 feature?.choices?.[0].type === // FIXME
                 CharacterPlannerStep.CHOOSE_SUBCLASS,

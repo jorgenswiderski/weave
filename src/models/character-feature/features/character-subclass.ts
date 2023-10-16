@@ -43,7 +43,10 @@ export class ClassSubclass extends CharacterFeatureCustomizable {
 
         this.choices = [
             {
-                type: CharacterPlannerStep.CHOOSE_SUBCLASS,
+                type:
+                    this.featureType === CharacterFeatureTypes.CHOOSE_SUBCLASS
+                        ? CharacterPlannerStep.CHOOSE_SUBCLASS
+                        : CharacterPlannerStep.SUBCLASS_FEATURE,
                 options: filtered.map(
                     (page) =>
                         new CharacterSubclassFeature(

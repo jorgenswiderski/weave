@@ -158,7 +158,11 @@ export class MediaWiki {
             .update(formattedImageName)
             .digest('hex');
 
-        return `${CONFIG.MEDIAWIKI.BASE_URL}/images/${hash[0]}/${hash[0]}${hash[1]}/${formattedImageName}`;
+        return `${
+            CONFIG.MEDIAWIKI.USE_IMAGE_CACHE
+                ? CONFIG.SELF_BASE_URL
+                : CONFIG.MEDIAWIKI.BASE_URL
+        }/images/${hash[0]}/${hash[0]}${hash[1]}/${formattedImageName}`;
     }
 
     // static async getSectionNumber(

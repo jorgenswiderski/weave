@@ -14,6 +14,7 @@ import { racesRouter } from './routes/races';
 import { getCharacterBackgroundData } from './models/character-feature/features/character-background';
 import { backgroundsRouter } from './routes/backgrounds';
 import { MwnProgressBar } from './api/mwn-progress-bar';
+import { imageRouter } from './routes/image';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -39,6 +40,7 @@ app.use(
 app.use('/api/classes', classesRouter);
 app.use('/api/races', racesRouter);
 app.use('/api/backgrounds', backgroundsRouter);
+app.use('/api/images', imageRouter);
 
 app.listen(PORT, () => {
     log(`Server is running on port ${PORT}`);
