@@ -1,4 +1,4 @@
-import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
+import { ICharacterOption } from 'planner-types/src/types/character-feature-customization-option';
 import {
     GrantableEffectType,
     Proficiency,
@@ -15,7 +15,7 @@ export class CharacterBackground extends CharacterFeature {
     image?: string;
 
     constructor(
-        options: ICharacterFeatureCustomizationOption,
+        options: ICharacterOption,
         private sectionContent: string,
     ) {
         super(options);
@@ -81,7 +81,7 @@ export class CharacterBackground extends CharacterFeature {
         });
     }
 
-    getInfo(): ICharacterFeatureCustomizationOption {
+    getInfo(): ICharacterOption {
         return {
             name: this.name,
             description: this.description,

@@ -1,8 +1,8 @@
-import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
+import { ICharacterOption } from 'planner-types/src/types/character-feature-customization-option';
 import { GrantableEffect } from 'planner-types/src/types/grantable-effect';
 import { MediaWiki } from '../../media-wiki';
 
-export class CharacterSubrace implements ICharacterFeatureCustomizationOption {
+export class CharacterSubrace implements ICharacterOption {
     label: string;
     description: string;
     grants?: GrantableEffect[];

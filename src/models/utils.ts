@@ -23,4 +23,8 @@ export class Utils {
     static resolvedPromise = new Promise<void>((resolve) => {
         resolve();
     });
+
+    static isNonEmptyArray(a?: any[] | null): boolean {
+        return Array.isArray(a) && a.length > 0;
+    }
 }

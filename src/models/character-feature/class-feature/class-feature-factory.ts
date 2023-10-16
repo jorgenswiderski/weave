@@ -2,16 +2,13 @@ import { ICharacterClass } from '../../character-class/types';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeat } from '../features/character-feat';
 import { ClassSubclass } from '../features/character-subclass';
-import {
-    CharacterFeatureTypes,
-    ICharacterFeatureCustomizationOptionWithPage,
-} from '../types';
+import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
 
 export class ClassFeatureFactory {
     static async construct(
         characterClass: ICharacterClass,
         type: CharacterFeatureTypes,
-        options: ICharacterFeatureCustomizationOptionWithPage,
+        options: ICharacterOptionWithPage,
         level: number,
     ): Promise<CharacterFeature> {
         if (

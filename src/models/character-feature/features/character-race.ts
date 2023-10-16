@@ -1,23 +1,23 @@
 import {
     CharacterPlannerStep,
-    ICharacterFeatureCustomizationOption,
+    ICharacterOption,
 } from 'planner-types/src/types/character-feature-customization-option';
 import { GrantableEffect } from 'planner-types/src/types/grantable-effect';
 import { MwnApiClass } from '../../../api/mwn';
 import { error } from '../../logger';
 import { MediaWiki } from '../../media-wiki';
 import { PageLoadingState } from '../../page-item';
-import {
-    CharacterFeatureTypes,
-    ICharacterFeatureCustomizationOptionWithPage,
-} from '../types';
+import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
 import { CharacterSubrace } from './character-subrace';
 import { CharacterFeature } from '../character-feature';
+import { Utils } from '../../utils';
 
-export interface RaceInfo extends ICharacterFeatureCustomizationOption {
+type RaceChoice = { type: CharacterPlannerStep; options: CharacterSubrace[] };
+
+export interface RaceInfo extends ICharacterOption {
     name: string;
     description: string;
-    choices?: CharacterSubrace[][];
+    choices?: RaceChoice[];
     choiceType?: CharacterPlannerStep.CHOOSE_SUBRACE;
     image?: string;
 }
@@ -27,17 +27,17 @@ enum RaceLoadState {
 }
 
 export class CharacterRace extends CharacterFeature {
-    choices?: CharacterSubrace[][];
+    choices?: RaceChoice[];
     type: CharacterFeatureTypes.RACE = CharacterFeatureTypes.RACE;
 
-    constructor(options: ICharacterFeatureCustomizationOptionWithPage) {
+    constructor(options: ICharacterOptionWithPage) {
         super(options);
 
         this.initialized[RaceLoadState.CHOICES] =
-            this.initChoices().catch(error);
+            this.initOptions().catch(error);
     }
 
-    private async initChoices(): Promise<void> {
+    private async initOptions(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page || !this.page.content) {
@@ -47,16 +47,20 @@ export class CharacterRace extends CharacterFeature {
         const subracePattern = /\n===\s*([^=]*?)\s*===\n\s*([\s\S]*?)(?===|$)/g;
 
         let match;
-        const choices: CharacterSubrace[][] = [[]];
+        const choices: RaceChoice[] = [
+            { type: CharacterPlannerStep.SET_RACE, options: [] },
+        ];
 
         while (true) {
             match = subracePattern.exec(this.page.content);
             if (!match) break;
 
-            choices[0].push(new CharacterSubrace(match[1], match[2].trim()));
+            choices[0].options.push(
+                new CharacterSubrace(match[1], match[2].trim()),
+            );
         }
 
-        if (choices.flat().length) {
+        if (choices[0].options.length) {
             this.choices = choices;
         }
     }
@@ -104,8 +108,10 @@ export class CharacterRace extends CharacterFeature {
         return {
             name: this.name,
             description: await this.getDescription(),
-            choices: this?.choices?.length ? this.choices : undefined,
-            choiceType: this?.choices?.length
+            choices: Utils.isNonEmptyArray(this?.choices)
+                ? this.choices
+                : undefined,
+            choiceType: Utils.isNonEmptyArray(this?.choices)
                 ? CharacterPlannerStep.CHOOSE_SUBRACE
                 : undefined,
             image: (await this.getImage()) ?? undefined,
@@ -160,7 +166,7 @@ export class CharacterRace extends CharacterFeature {
 
         if (this.choices?.[0]) {
             await Promise.all(
-                this.choices[0].map(
+                this.choices[0].options.map(
                     async (choice: CharacterSubrace): Promise<void> => {
                         if (!this.page?.content) {
                             throw new Error('could not find page content');

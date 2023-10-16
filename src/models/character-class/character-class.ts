@@ -1,6 +1,7 @@
 import {
     CharacterPlannerStep,
-    ICharacterFeatureCustomizationOption,
+    ICharacterChoice,
+    ICharacterOption,
 } from 'planner-types/src/types/character-feature-customization-option';
 import { MwnApiClass } from '../../api/mwn';
 import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
@@ -18,10 +19,10 @@ async function parseFeatures(
     characterClass: CharacterClass,
     value: string,
     level: number,
-): Promise<ICharacterFeatureCustomizationOption[]> {
+): Promise<ICharacterOption[] | null> {
     if (value === '-') {
         // No features this level
-        return [];
+        return null;
     }
 
     const features = await Promise.all(
@@ -67,10 +68,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         return Promise.all(
             formattedData.map(async (item) => {
                 const cleanedItem: {
-                    [key: string]:
-                        | string
-                        | number
-                        | ICharacterFeatureCustomizationOption[];
+                    [key: string]: string | number | ICharacterOption[];
                 } = {};
 
                 await Promise.all(
@@ -101,11 +99,13 @@ export class CharacterClass extends PageItem implements ICharacterClass {
                     }),
                 );
 
-                cleanedItem.Features = await parseFeatures(
+                const features = await parseFeatures(
                     this,
                     cleanedItem.Features as string,
                     cleanedItem.Level as number,
                 );
+
+                cleanedItem.Features = features ?? [];
 
                 return cleanedItem;
             }),
@@ -114,10 +114,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
 
     private static parseSpellSlots(
         data: {
-            [key: string]:
-                | string
-                | number
-                | ICharacterFeatureCustomizationOption[];
+            [key: string]: string | number | ICharacterOption[];
         }[],
     ): CharacterClassProgression {
         return data.map((rawLevelData) => {
@@ -126,7 +123,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
             Object.entries(rawLevelData).forEach(
                 ([key, value]: [
                     string,
-                    string | number | ICharacterFeatureCustomizationOption[],
+                    string | number | ICharacterOption[],
                 ]) => {
                     if (
                         key === '1st' ||
@@ -211,9 +208,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         }
     }
 
-    private async getSubclasses(): Promise<
-        ICharacterFeatureCustomizationOption[]
-    > {
+    private async getSubclasses(): Promise<ICharacterChoice> {
         await this.waitForInitialization();
 
         if (!this.progression) {
@@ -221,18 +216,17 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         }
 
         const features = this.progression.map((level) => level.Features);
-        const chooseSubclass = features
-            .flat()
-            .find(
-                (feature) =>
-                    feature.choiceType === CharacterPlannerStep.CHOOSE_SUBCLASS,
-            );
+        const chooseSubclass = features.flat().find(
+            (feature) =>
+                feature?.choices?.[0].type === // FIXME
+                CharacterPlannerStep.CHOOSE_SUBCLASS,
+        );
 
         if (!chooseSubclass) {
             throw new Error('Could not find subclass info');
         }
 
-        const feature = chooseSubclass as ICharacterFeatureCustomizationOption;
+        const feature = chooseSubclass as ICharacterOption;
 
         if (!feature.choices || !feature.choices[0]) {
             throw new Error('Subclass info has no choices');
@@ -265,7 +259,9 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         return {
             name: this.name,
             description: await this.getDescription(),
-            subclassNames: (await this.getSubclasses()).map((sc) => sc.name),
+            subclassNames: (await this.getSubclasses()).options.map(
+                (sc) => sc.name,
+            ),
             image: (await this.getImage()) ?? undefined,
             progression: await this.getProgression(),
         };

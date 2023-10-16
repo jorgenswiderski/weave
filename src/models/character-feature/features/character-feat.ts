@@ -1,4 +1,8 @@
-import { CharacterPlannerStep } from 'planner-types/src/types/character-feature-customization-option';
+import {
+    CharacterPlannerStep,
+    ICharacterChoice,
+    ICharacterOption,
+} from 'planner-types/src/types/character-feature-customization-option';
 import {
     GrantableEffect,
     GrantableEffectSubtype,
@@ -10,7 +14,6 @@ import { CharacterFeatureCustomizable } from '../character-feature-customizable'
 import { PageLoadingState } from '../../page-item';
 import { PageNotFoundError } from '../../errors';
 import { CharacterFeature } from '../character-feature';
-import { CharacterFeatAbilities } from './character-feat-abilities';
 
 enum SubclassLoadStates {
     CHOICES = 'CHOICES',
@@ -21,7 +24,6 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
         super({
             name: `Feat`,
             pageTitle: 'Feats',
-            choiceType: CharacterPlannerStep.FEAT,
         });
 
         this.initialized[SubclassLoadStates.CHOICES] =
@@ -131,88 +133,98 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
         });
 
         this.choices = [
-            await Promise.all(
-                Object.entries(feats).map(async ([name, data]) => {
-                    const {
-                        grants,
-                        choices: choiceTitles,
-                        description,
-                        abilityImprovement,
-                    } = data;
-                    const fx = (
-                        await Promise.all(
-                            grants.map((pageTitle) =>
-                                CharacterFeature.parsePageForGrantableEffect(
-                                    pageTitle,
-                                ),
-                            ),
-                        )
-                    ).filter(Boolean) as GrantableEffect[];
-
-                    const choices = choiceTitles.map(
-                        (title) =>
-                            new CharacterFeature({
-                                pageTitle: title,
-                                name: CharacterFeature.parseNameFromPageTitle(
-                                    title,
-                                ),
-                            }),
-                    );
-
-                    if (fx.length === 0 && choices.length === 0) {
-                        fx.push({
-                            name: CharacterFeature.parseNameFromPageTitle(name),
+            {
+                type: CharacterPlannerStep.FEAT,
+                options: await Promise.all(
+                    Object.entries(feats).map(async ([name, data]) => {
+                        const {
+                            grants,
+                            choices: choiceTitles,
                             description,
-                            type: GrantableEffectType.CHARACTERISTIC,
-                        });
-                    }
-
-                    if (abilityImprovement) {
-                        if (abilityImprovement.abilities.length > 1) {
-                            choices.push(
-                                new CharacterFeatAbilities(
-                                    {
-                                        name,
-                                    },
-                                    abilityImprovement.abilities,
-                                    abilityImprovement.points,
+                            abilityImprovement,
+                        } = data;
+                        const fx = (
+                            await Promise.all(
+                                grants.map((pageTitle) =>
+                                    CharacterFeature.parsePageForGrantableEffect(
+                                        pageTitle,
+                                    ),
                                 ),
-                            );
-                        } else {
-                            fx.push({
-                                name: `${CharacterFeature.parseNameFromPageTitle(
-                                    name,
-                                )}: ${abilityImprovement.abilities[0]}`,
-                                type: GrantableEffectType.CHARACTERISTIC,
-                                subtype: GrantableEffectSubtype.ABILITY_FEAT,
-                                values: {
-                                    [abilityImprovement.abilities[0]]:
-                                        abilityImprovement.points,
-                                },
-                                // description: `Increases your ${abilityImprovement.abilities[0]} by ${abilityImprovement.points}.`,
-                                hidden: true,
+                            )
+                        ).filter(Boolean) as GrantableEffect[];
+
+                        const choices: ICharacterChoice[] = [];
+
+                        const options: ICharacterOption[] = choiceTitles.map(
+                            (title) =>
+                                new CharacterFeature({
+                                    pageTitle: title,
+                                    name: CharacterFeature.parseNameFromPageTitle(
+                                        title,
+                                    ),
+                                }),
+                        );
+
+                        if (options.length > 0) {
+                            choices.push({
+                                type: CharacterPlannerStep.FEAT_SUBCHOICE,
+                                options,
                             });
                         }
-                    }
 
-                    return {
-                        name,
-                        description,
-                        image:
-                            fx.find((effect) => effect.image)?.image ??
-                            MediaWiki.getImagePath(
-                                'PassiveFeature Generic.png',
-                            ),
-                        grants: fx,
-                        type: CharacterPlannerStep.FEAT,
-                        choiceType:
-                            choices?.length > 0
-                                ? CharacterPlannerStep.FEAT_SUBCHOICE
-                                : undefined,
-                        choices: choices?.length > 0 ? [choices] : undefined,
-                    };
-                }),
-            ),
+                        if (fx.length === 0 && choices.length === 0) {
+                            fx.push({
+                                name: CharacterFeature.parseNameFromPageTitle(
+                                    name,
+                                ),
+                                description,
+                                type: GrantableEffectType.CHARACTERISTIC,
+                            });
+                        }
+
+                        if (abilityImprovement) {
+                            if (abilityImprovement.abilities.length > 1) {
+                                choices.push({
+                                    type: CharacterPlannerStep.FEAT_ABILITY_SCORES,
+                                    options: abilityImprovement.abilities.map(
+                                        (ability) => ({
+                                            name: ability,
+                                        }),
+                                    ),
+                                });
+                            } else {
+                                fx.push({
+                                    name: `${CharacterFeature.parseNameFromPageTitle(
+                                        name,
+                                    )}: ${abilityImprovement.abilities[0]}`,
+                                    type: GrantableEffectType.CHARACTERISTIC,
+                                    subtype:
+                                        GrantableEffectSubtype.ABILITY_FEAT,
+                                    values: {
+                                        [abilityImprovement.abilities[0]]:
+                                            abilityImprovement.points,
+                                    },
+                                    // description: `Increases your ${abilityImprovement.abilities[0]} by ${abilityImprovement.points}.`,
+                                    hidden: true,
+                                });
+                            }
+                        }
+
+                        return {
+                            name,
+                            description,
+                            image:
+                                fx.find((effect) => effect.image)?.image ??
+                                MediaWiki.getImagePath(
+                                    'PassiveFeature Generic.png',
+                                ),
+                            grants: fx,
+                            type: CharacterPlannerStep.FEAT,
+                            choices: choices?.length > 0 ? choices : undefined,
+                        };
+                    }),
+                ),
+            },
         ];
     }
 }

@@ -1,10 +1,10 @@
-import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
+import { ICharacterOption } from 'planner-types/src/types/character-feature-customization-option';
 import {
     GrantableEffect,
     GrantableEffectType,
 } from 'planner-types/src/types/grantable-effect';
 import { PageItem, PageLoadingState } from '../page-item';
-import { ICharacterFeatureCustomizationOptionWithPage } from './types';
+import { ICharacterOptionWithPage } from './types';
 import { error, warn } from '../logger';
 import { MwnApi } from '../../api/mwn';
 import { MediaWiki, PageData } from '../media-wiki';
@@ -16,22 +16,14 @@ enum CharacterFeatureLoadingStates {
     EFFECTS = 'EFFECTS',
 }
 
-export class CharacterFeature
-    extends PageItem
-    implements ICharacterFeatureCustomizationOption
-{
+export class CharacterFeature extends PageItem implements ICharacterOption {
     name: string;
     description?: string;
     image?: string;
     grants: GrantableEffect[] = [];
 
     constructor(
-        {
-            pageTitle,
-            page,
-            name,
-            image,
-        }: ICharacterFeatureCustomizationOptionWithPage,
+        { pageTitle, page, name, image }: ICharacterOptionWithPage,
         public level?: number,
     ) {
         super({ pageTitle, page });

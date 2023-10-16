@@ -20,10 +20,6 @@ export class ClassSubclass extends CharacterFeatureCustomizable {
     ) {
         super({
             name: `Subclass: ${className}`,
-            choiceType:
-                featureType === CharacterFeatureTypes.CHOOSE_SUBCLASS
-                    ? CharacterPlannerStep.CHOOSE_SUBCLASS
-                    : CharacterPlannerStep.SUBCLASS_FEATURE,
         });
 
         this.initialized[SubclassLoadStates.CHOICES] =
@@ -46,25 +42,33 @@ export class ClassSubclass extends CharacterFeatureCustomizable {
         const filtered = await ClassSubclass.getSubclassData(this.className);
 
         this.choices = [
-            filtered.map(
-                (page) =>
-                    new CharacterSubclassFeature(
-                        {
-                            name: CharacterSubclassFeature.parseNameFromPageTitle(
-                                page.title,
-                            ),
-                            pageTitle: page.title,
-                            page,
-                        },
-                        this.level,
-                    ),
-            ),
+            {
+                type: CharacterPlannerStep.CHOOSE_SUBCLASS,
+                options: filtered.map(
+                    (page) =>
+                        new CharacterSubclassFeature(
+                            {
+                                name: CharacterSubclassFeature.parseNameFromPageTitle(
+                                    page.title,
+                                ),
+                                pageTitle: page.title,
+                                page,
+                            },
+                            this.level,
+                        ),
+                ),
+            },
         ];
 
         await Promise.all(
-            (this.choices as CharacterSubclassFeature[][])
-                .flat()
-                .map((sco) => sco.waitForInitialization()),
+            (
+                this.choices as {
+                    type: CharacterPlannerStep;
+                    options: CharacterSubclassFeature[];
+                }[]
+            )
+                .flatMap((choice) => choice.options)
+                .flatMap((option) => option.waitForInitialization()),
         );
     }
 }

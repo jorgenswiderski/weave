@@ -2,13 +2,13 @@ import { GrantableEffect } from 'planner-types/src/types/grantable-effect';
 import { PageLoadingState } from '../../page-item';
 import { CharacterFeature } from '../character-feature';
 import { CharacterProgressionLevel } from '../../character-class/types';
-import { ICharacterFeatureCustomizationOptionWithPage } from '../types';
+import { ICharacterOptionWithPage } from '../types';
 import { MediaWiki, PageData } from '../../media-wiki';
 import { PageNotFoundError } from '../../errors';
 
 export class CharacterSubclassFeature extends CharacterFeature {
     constructor(
-        option: ICharacterFeatureCustomizationOptionWithPage,
+        option: ICharacterOptionWithPage,
         public level: number,
     ) {
         super(option, level);

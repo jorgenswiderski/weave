@@ -1,6 +1,6 @@
 import {
     CharacterPlannerStep,
-    ICharacterFeatureCustomizationOption,
+    ICharacterOption,
 } from 'planner-types/src/types/character-feature-customization-option';
 import { PageData } from '../media-wiki';
 
@@ -17,8 +17,7 @@ export enum CharacterFeatureTypes {
     BACKGROUND = CharacterPlannerStep.SET_BACKGROUND,
 }
 
-export interface ICharacterFeatureCustomizationOptionWithPage
-    extends ICharacterFeatureCustomizationOption {
+export interface ICharacterOptionWithPage extends ICharacterOption {
     pageTitle?: string;
     page?: PageData;
 }

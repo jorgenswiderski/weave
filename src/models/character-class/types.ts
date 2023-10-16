@@ -1,9 +1,9 @@
-import { ICharacterFeatureCustomizationOption } from 'planner-types/src/types/character-feature-customization-option';
+import { ICharacterOption } from 'planner-types/src/types/character-feature-customization-option';
 import { PageItem } from '../page-item';
 
 export interface CharacterProgressionLevel {
     Level: number;
-    Features: ICharacterFeatureCustomizationOption[];
+    Features: ICharacterOption[];
 }
 
 export interface CharacterClassProgressionLevel
