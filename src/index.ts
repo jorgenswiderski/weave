@@ -15,6 +15,8 @@ import { getCharacterBackgroundData } from './models/character-feature/features/
 import { backgroundsRouter } from './routes/backgrounds';
 import { MwnProgressBar } from './api/mwn-progress-bar';
 import { imageRouter } from './routes/image';
+import { getSpellData } from './models/spell/spell';
+import { spellsRouter } from './routes/spells';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -24,6 +26,7 @@ const PORT = process.env.PORT || 3001;
         getCharacterClassData(),
         getCharacterRaceData(),
         getCharacterBackgroundData(),
+        getSpellData(),
     ]);
 })();
 
@@ -40,6 +43,8 @@ app.use(
 app.use('/api/classes', classesRouter);
 app.use('/api/races', racesRouter);
 app.use('/api/backgrounds', backgroundsRouter);
+app.use('/api/spells', spellsRouter);
+
 app.use('/api/images', imageRouter);
 
 app.listen(PORT, () => {
