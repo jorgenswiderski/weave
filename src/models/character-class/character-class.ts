@@ -158,6 +158,32 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         });
     }
 
+    static coerceSpellsKnown(
+        data: CharacterClassProgression,
+    ): CharacterClassProgression {
+        return data.map((levelData: any) => {
+            const {
+                'Spells Learned': learned,
+                'Spells Known': known,
+                ...rest
+            } = levelData;
+
+            if (!learned) {
+                return levelData;
+            }
+
+            const totalPrevSpellsKnown = data
+                .filter((ld) => ld.Level < levelData.Level)
+                .map((ld: any) => ld['Spells Learned'])
+                .reduce((acc, v) => acc + v, 0);
+
+            return {
+                ...rest,
+                'Spells Known': learned + totalPrevSpellsKnown,
+            };
+        });
+    }
+
     async initProgression() {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
@@ -199,8 +225,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
             const cleanedData =
                 await this.cleanProgressionTableData(formattedData);
             const dataWithSpells = CharacterClass.parseSpellSlots(cleanedData);
-
-            this.progression = dataWithSpells;
+            this.progression = CharacterClass.coerceSpellsKnown(dataWithSpells);
         } else {
             throw new Error(
                 `No class progression table found for "${this.name}"`,

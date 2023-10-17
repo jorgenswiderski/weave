@@ -35,9 +35,6 @@ export class ClassFeatureFactory {
         '|subclass feature': {
             type: CharacterFeatureTypes.SUBCLASS_FEATURE,
         },
-        // 'deepened pact': {
-        //     type: CharacterFeatureTypes.SUBCLASS_FEATURE,
-        // },
         'feats|feat': { type: CharacterFeatureTypes.FEAT, pageTitle: 'Feats' },
         '#spellcasting': { type: CharacterFeatureTypes.SPELLCASTING },
         '#pact magic': { type: CharacterFeatureTypes.PACT_MAGIC },
