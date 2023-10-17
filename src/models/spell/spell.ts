@@ -14,6 +14,8 @@ enum SpellLoadState {
     SPELL_DATA = 'SPELL_DATA',
 }
 
+let spellData: Spell[];
+
 export class Spell extends PageItem implements Partial<ISpell> {
     name?: string;
     image?: string;
@@ -114,6 +116,27 @@ export class Spell extends PageItem implements Partial<ISpell> {
             'yes';
     }
 
+    // Remove spell variants eg "Disguise Self: Femme Human" or "Chromatic Orb: Fire"
+    isVariant(): boolean {
+        if (!this.name) {
+            return false;
+        }
+
+        let shortName: string;
+
+        if (this.name.startsWith('Reapply ')) {
+            shortName = this.name.split('Reapply ')[1]!;
+        } else {
+            shortName = /^[^:(]+/.exec(this.name)![0].trim();
+        }
+
+        return (
+            spellData.findIndex(
+                (spell) => this !== spell && spell.name === shortName,
+            ) >= 0
+        );
+    }
+
     toJSON() {
         return {
             name: this.name,
@@ -131,29 +154,13 @@ export class Spell extends PageItem implements Partial<ISpell> {
     }
 }
 
-let spellData: Spell[];
-
 export async function getSpellData(): Promise<Spell[]> {
     if (!spellData) {
         const classNames = await MwnApiClass.queryTitlesFromCategory('Spells');
 
         spellData = classNames.map((name) => new Spell(name));
         await Promise.all(spellData.map((cc) => cc.waitForInitialization()));
-
-        // Remove spell variants eg "Disguise Self: Femme Human" or "Chromatic Orb: Fire"
-        spellData = spellData.filter((spell) => {
-            if (!spell.name) {
-                return false;
-            }
-
-            const shortName = /^[^:(]+/.exec(spell.name)![0];
-
-            return (
-                spellData.findIndex(
-                    (spell2) => spell !== spell2 && spell2.name === shortName,
-                ) < 0
-            );
-        });
+        spellData = spellData.filter((spell) => !spell.isVariant());
     }
 
     return spellData;
