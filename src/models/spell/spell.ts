@@ -116,10 +116,17 @@ export class Spell extends PageItem implements Partial<ISpell> {
             'yes';
     }
 
+    // hardcoded variants that are tricky to catch with general logic
+    static VARIANT_SPELLS = ['Enlarge', 'Reduce'];
+
     // Remove spell variants eg "Disguise Self: Femme Human" or "Chromatic Orb: Fire"
     isVariant(): boolean {
         if (!this.name) {
             return false;
+        }
+
+        if (Spell.VARIANT_SPELLS.includes(this.name)) {
+            return true;
         }
 
         let shortName: string;
