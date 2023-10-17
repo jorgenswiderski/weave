@@ -4,8 +4,9 @@ import {
     ICharacterOption,
 } from 'planner-types/src/types/character-feature-customization-option';
 import {
+    Characteristic,
+    CharacteristicType,
     GrantableEffect,
-    GrantableEffectSubtype,
     GrantableEffectType,
 } from 'planner-types/src/types/grantable-effect';
 import { error } from '../../logger';
@@ -143,7 +144,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                             description,
                             abilityImprovement,
                         } = data;
-                        const fx = (
+                        const fx: (GrantableEffect | Characteristic)[] = (
                             await Promise.all(
                                 grants.map((pageTitle) =>
                                     CharacterFeature.parsePageForGrantableEffect(
@@ -198,8 +199,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                                         name,
                                     )}: ${abilityImprovement.abilities[0]}`,
                                     type: GrantableEffectType.CHARACTERISTIC,
-                                    subtype:
-                                        GrantableEffectSubtype.ABILITY_FEAT,
+                                    subtype: CharacteristicType.ABILITY_FEAT,
                                     values: {
                                         [abilityImprovement.abilities[0]]:
                                             abilityImprovement.points,
