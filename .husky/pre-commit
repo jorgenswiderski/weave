@@ -1,4 +1,13 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+# Run the data dump
+npm run dump-data
+
+# Check for unstaged changes in data-dump directory
+if ! git diff --exit-code data-dump; then
+  echo "There are unstaged changes in the data-dump directory. Please stage or discard them before committing."
+  exit 1
+fi
+
 npx lint-staged

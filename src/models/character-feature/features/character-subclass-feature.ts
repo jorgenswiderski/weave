@@ -1,4 +1,5 @@
 import { GrantableEffect } from 'planner-types/src/types/grantable-effect';
+import { ICharacterOption } from 'planner-types/src/types/character-feature-customization-option';
 import { PageLoadingState } from '../../page-item';
 import { CharacterFeature } from '../character-feature';
 import { CharacterProgressionLevel } from '../../character-class/types';
@@ -78,33 +79,48 @@ export class CharacterSubclassFeature extends CharacterFeature {
             Features: [],
         }));
 
-        const fxp = levelMatches.flatMap((levelContent) => {
-            const level = parseInt(levelContent[1], 10);
-            subclassFeatureLevels.push(level);
+        const effectsByLevel = await Promise.all(
+            levelMatches.map(async (levelContent) => {
+                const level = parseInt(levelContent[1], 10);
+                subclassFeatureLevels.push(level);
 
-            const saiPattern = /{{SAI\|([^|}]+?)(?:\|[^}]*?)?}}/g;
-            const iconPattern = /{{IconLink\|[^|]+\|([^|}]+?)(?:\|[^}]*?)?}}/g;
+                const saiPattern = /{{SAI\|([^|}]+?)(?:\|[^}]*?)?}}/g;
+                const iconPattern =
+                    /{{IconLink\|[^|]+\|([^|}]+?)(?:\|[^}]*?)?}}/g;
 
-            const pageTitleMatches = [
-                ...levelContent[2].matchAll(saiPattern),
-                ...levelContent[2].matchAll(iconPattern),
-            ];
+                const pageTitleMatches = [
+                    ...levelContent[2].matchAll(saiPattern),
+                    ...levelContent[2].matchAll(iconPattern),
+                ];
 
-            return pageTitleMatches.map((match) => {
-                return CharacterFeature.parsePageForGrantableEffect(
-                    match[1],
-                ).then(
-                    (effect) =>
-                        effect &&
-                        progression[level - 1].Features.push({
-                            name: match[1],
-                            grants: [effect],
-                        }),
-                );
-            });
-        });
+                return [
+                    level,
+                    (
+                        await Promise.all(
+                            pageTitleMatches.map(async (match) => {
+                                const effect =
+                                    await CharacterFeature.parsePageForGrantableEffect(
+                                        match[1],
+                                    );
 
-        await Promise.all(fxp);
+                                return effect
+                                    ? {
+                                          name: match[1],
+                                          grants: [effect],
+                                      }
+                                    : undefined;
+                            }),
+                        )
+                    ).filter(Boolean) as unknown as ICharacterOption[],
+                ];
+            }),
+        );
+
+        effectsByLevel.forEach(([level, fx]) =>
+            progression[(level as number) - 1].Features.push(
+                ...(fx as unknown as ICharacterOption[]),
+            ),
+        );
 
         return progression;
     }
