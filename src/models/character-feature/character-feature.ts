@@ -77,9 +77,11 @@ export class CharacterFeature extends PageItem implements ICharacterOption {
         return {
             // name: CharacterFeature.parseNameFromPageTitle(pageTitle),
             name: pageTitle,
-            type: categories.includes('Category:Passive Features')
-                ? GrantableEffectType.CHARACTERISTIC
-                : GrantableEffectType.ACTION,
+            type:
+                categories.includes('Category:Passive Features') ||
+                categories.includes('Category:Toggleable Passive Features')
+                    ? GrantableEffectType.CHARACTERISTIC
+                    : GrantableEffectType.ACTION,
             description: descMatch
                 ? MediaWiki.stripMarkup(descMatch[1]).trim()
                 : undefined,
@@ -100,7 +102,8 @@ export class CharacterFeature extends PageItem implements ICharacterOption {
                 !categories.includes('Category:Class Actions') &&
                 !categories.includes('Category:Racial Action') &&
                 !categories.includes('Category:Passive Features') &&
-                !categories.includes('Category:Spells')
+                !categories.includes('Category:Spells') &&
+                !categories.includes('Category:Toggleable Passive Features')
             ) {
                 return null;
             }

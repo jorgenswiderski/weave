@@ -61,6 +61,18 @@
         "noSpellSlot": false
     },
     {
+        "name": "An Apple a Day",
+        "image": "http://localhost:3001/api/images/e/ee/GenericIcon_Intent_Summon.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon Zlorb to aid you in battle.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "name": "Animal Friendship",
         "image": "http://localhost:3001/api/images/9/97/Animal_Friendship.webp",
         "level": 1,
@@ -163,6 +175,18 @@
         "noSpellSlot": false
     },
     {
+        "name": "Balm of the Moonmaiden",
+        "image": "http://localhost:3001/api/images/4/40/Action_EndGame_IsobelHeal.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "This spell allows spellcasters to heal several of their allies.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "name": "Bane",
         "image": "http://localhost:3001/api/images/3/3f/Bane_Spell.webp",
         "level": 1,
@@ -237,6 +261,18 @@
         "description": "Touch a willing creature to toughen its skin and increase its Armour Class up to 16.",
         "actionType": "ACTION",
         "concentration": true,
+        "noSpellSlot": false
+    },
+    {
+        "name": "Action EndGameAlly OwlbearCubSummon.png",
+        "image": "http://localhost:3001/api/images/e/eb/Action_EndGameAlly_OwlbearCubSummon.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon Armoured Owlbear to aid you in battle.",
+        "actionType": "ACTION",
+        "concentration": false,
         "noSpellSlot": false
     },
     {
@@ -1960,6 +1996,18 @@
         "noSpellSlot": false
     },
     {
+        "name": "Florrick's Cohort",
+        "image": "http://localhost:3001/api/images/4/44/Action_EndGameAlly_FlamingFistSummon.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon two First Attackers and a First Defender.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "name": "Fog Cloud",
         "image": "http://localhost:3001/api/images/e/ec/Fog_Cloud.webp",
         "level": 1,
@@ -2282,6 +2330,30 @@
         "noSpellSlot": false
     },
     {
+        "name": "Guildmaster Keene's Fixers",
+        "image": "http://localhost:3001/api/images/4/43/Action_EndGameAlly_KeeneSummon.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon Lady Coup and Lady Lockjaw to aid you in battle.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
+        "name": "Gur Huntwardens",
+        "image": "http://localhost:3001/api/images/f/f7/Action_EndGameAlly_GurReinforcement.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon two Gur Hunter Warriors and a Gur Hunter Sharpshooter.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "name": "Gust of Wind",
         "image": "http://localhost:3001/api/images/9/95/Gust_of_Wind.webp",
         "level": 2,
@@ -2394,6 +2466,18 @@
         "noSpellSlot": false
     },
     {
+        "name": "Hellfire Orb",
+        "image": "http://localhost:3001/api/images/1/1a/Fireball.webp",
+        "level": 6,
+        "school": "EVOCATION",
+        "ritual": false,
+        "classes": [],
+        "summary": "This spell allows spellcasters to unleash a streak of fire from their hands that ignites into a large explosion at a chosen point within range.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "name": "Hellish Rebuke",
         "image": "http://localhost:3001/api/images/d/d0/Hellish_Rebuke.webp",
         "level": 1,
@@ -2402,6 +2486,30 @@
         "classes": [],
         "summary": "This spell allows spellcasters to surround a creature in hellfire that deals Fire damage as a Reaction when taking damage from them.",
         "actionType": "REACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
+        "name": "Hellrider Platoon",
+        "image": "http://localhost:3001/api/images/6/67/Action_EndGameAlly_VeteranSummon.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon the Hellrider Paladin, Hellrider Cleric alongside with Zevlor.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
+        "name": "Hellstalker Yurgir",
+        "image": "http://localhost:3001/api/images/b/b3/Action_EndGameAlly_OrthonSummon.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon Hellstalker Yurgir to aid you in battle.",
+        "actionType": "ACTION",
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2613,6 +2721,18 @@
         "noSpellSlot": false
     },
     {
+        "name": "Ironhand Grenadiers",
+        "image": "http://localhost:3001/api/images/d/da/Action_EndGameAlly_GrenadiersSummon.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon 2 Ironhand Grenadiers, who can throw blinding bombs and shoot Smokepowder Arrows.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "name": "Karsus' Compulsion",
         "image": "http://localhost:3001/api/images/4/48/Karsus'_Compulsion.webp",
         "level": 9,
@@ -2658,6 +2778,18 @@
         "summary": "This spell allows Khalid's Gift's wearer to heal themselves for 10|Healing and increase their hit points for the same amount.",
         "description": "Heal yourself and increase your hit point maximum by 10|Healing.",
         "actionType": 0,
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
+        "name": "Kirh'raki Inferno",
+        "image": "http://localhost:3001/api/images/8/8a/Wall_of_Fire.webp",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon a upscaled version of Wall of Fire, with increased damage and aoe.",
+        "actionType": "ACTION",
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2762,6 +2894,18 @@
         ],
         "summary": "This spell allows spellcasters to make a creature move farther during a turn.",
         "description": "Increase a creature's Movement Speed by m=3|ft=10.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
+        "name": "Lorroakan's Firestorm",
+        "image": "http://localhost:3001/api/images/2/2c/Action_EndGame_RolanArtillery.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon a upscaled version of Fireball, with increased damage and aoe.",
         "actionType": "ACTION",
         "concentration": false,
         "noSpellSlot": false
@@ -2986,6 +3130,18 @@
         "noSpellSlot": false
     },
     {
+        "name": "Mizora, Agent of Avernus",
+        "image": "http://localhost:3001/api/images/0/08/Action_EndGameAlly_Mizora.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon Mizora to aid you in battle.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "name": "Moonbeam",
         "image": "http://localhost:3001/api/images/1/11/Moonbeam.webp",
         "level": 2,
@@ -2998,6 +3154,30 @@
         "summary": "This spell allows spellcasters to call down a beam of moonlight that deals Radiant damage to any creature that enters the beam or starts its turn there.",
         "actionType": "ACTION",
         "concentration": true,
+        "noSpellSlot": false
+    },
+    {
+        "name": "Netherese Orb Blast",
+        "image": "http://localhost:3001/api/images/3/3b/Action_EndGame_NethereseOrbBlast.png",
+        "level": 0,
+        "school": "",
+        "ritual": false,
+        "classes": [],
+        "description": "Gale triggers the Netherese Orb in his chest, destroying everything and everyone in a wide radius.",
+        "actionType": 0,
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
+        "name": "Nightbringer's Shadow Adepts",
+        "image": "http://localhost:3001/api/images/8/80/Action_EndGameAlly_ShadowAdepts.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon two Sharran Novices and two Sharran Fidelians.",
+        "actionType": "ACTION",
+        "concentration": false,
         "noSpellSlot": false
     },
     {
@@ -3489,6 +3669,18 @@
         "noSpellSlot": false
     },
     {
+        "name": "Retinue of the Vampire Lord",
+        "image": "http://localhost:3001/api/images/1/1a/Action_EndGameAlly_VampireCreatures.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon 2 Shadows, 2 Giant Skeletons, a Ghast, a Shadow Mastiff and a Werewolf.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "name": "Revivify",
         "image": "http://localhost:3001/api/images/2/23/Revivify.webp",
         "level": 3,
@@ -3504,6 +3696,19 @@
         "noSpellSlot": false
     },
     {
+        "name": "Revoke Guest Status",
+        "image": "http://localhost:3001/api/images/1/15/Banishment.webp",
+        "level": 5,
+        "school": "ABJURATION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Only usable as Hope, she can banish an enemy from House of Hope.",
+        "description": "Hope banishes one of the unwelcome guests from her house forever.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "image": "http://localhost:3001/api/images/3/3d/Gaseous_Form_Icon.png",
         "level": 3,
         "school": "TRANSMUTATION",
@@ -3512,6 +3717,18 @@
         "summary": "Ride the Winds is a unique Level 3 Transmutation Spell that can be cast when wearing Amulet of Windrider. It allows spellcasters to transform into a cloud.",
         "description": "Transform into a cloud, becoming Resistant to all damage, gains Advantage on Constitution, Dexterity, and Strength Saving Throws, and becomes Tiny in size. While transformed, the target won't be able to attack, cast spells, or talk.",
         "actionType": 0,
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
+        "name": "Rolan's Firestorm",
+        "image": "http://localhost:3001/api/images/2/2c/Action_EndGame_RolanArtillery.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon a upscaled version of Fireball, with increased damage and aoe.",
+        "actionType": "ACTION",
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3832,6 +4049,17 @@
         "noSpellSlot": false
     },
     {
+        "name": "Silver Harp Squadron",
+        "image": "http://localhost:3001/api/images/7/7c/Action_EndGameAlly_HarperSummon.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "image": "http://localhost:3001/api/images/c/c1/Protection_from_Energy_Acid_Icon.png",
         "level": 0,
         "school": "NONE",
@@ -4007,6 +4235,19 @@
         "noSpellSlot": false
     },
     {
+        "name": "Staggering Smite",
+        "image": "http://localhost:3001/api/images/8/82/Staggering_Smite.webp",
+        "level": 4,
+        "school": "EVOCATION",
+        "ritual": false,
+        "classes": [],
+        "summary": "This spell is only available for NPCs. It allows spellcasters to cause their weapon to attack their victims minds with Psychic damage as they strike.",
+        "description": "Possibly Staggering Smite|Stagger your target. It can't take reactions and is more likely to miss.",
+        "actionType": "BOTH",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "name": "Stinking Cloud",
         "image": "http://localhost:3001/api/images/4/46/Stinking_Cloud.webp",
         "level": 3,
@@ -4095,6 +4336,18 @@
         "noSpellSlot": false
     },
     {
+        "name": "Sword of the Silverlight",
+        "image": "http://localhost:3001/api/images/f/fb/Action_EndGameAlly_NightsongSummon.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon Dame Aylin to aid you in battle.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "name": "Tasha's Hideous Laughter",
         "image": "http://localhost:3001/api/images/9/98/Tasha's_Hideous_Laughter.webp",
         "level": 1,
@@ -4125,6 +4378,30 @@
         "noSpellSlot": false
     },
     {
+        "name": "Telekinetic Thrust",
+        "level": 0,
+        "school": "",
+        "ritual": false,
+        "classes": [],
+        "description": "Telekinetic Thrust is an ability of some undead, including Tormented Soul and Poltergeist",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
+        "name": "Teleport to Submersible",
+        "image": "http://localhost:3001/api/images/4/48/Teleport_to_Submersible.webp",
+        "level": 5,
+        "school": "CONJURATION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Omeluum can use it to teleport to the Submersible.",
+        "description": "Teleport yourself and up to one ally back to the Submersible.",
+        "actionType": "ACTION",
+        "concentration": false,
+        "noSpellSlot": false
+    },
+    {
         "name": "Thaumaturgy",
         "image": "http://localhost:3001/api/images/c/cf/Thaumaturgy.webp",
         "level": 0,
@@ -4151,6 +4428,18 @@
         "description": "Conjure the divine aspect of Bane the Accursed - a fist that hangs in the air until the end of the round before falling, crushing anyone under it for 12d10|Bludgeoning damage.",
         "actionType": "BONUS",
         "concentration": true,
+        "noSpellSlot": false
+    },
+    {
+        "name": "The Watch",
+        "image": "http://localhost:3001/api/images/1/13/Action_EndGameAlly_WatchSummon.png",
+        "level": 0,
+        "school": "CLASS ACTION",
+        "ritual": false,
+        "classes": [],
+        "summary": "Summon three Watcher Guardians.",
+        "actionType": "ACTION",
+        "concentration": false,
         "noSpellSlot": false
     },
     {
@@ -4261,6 +4550,18 @@
         "summary": "This spell allows spellcasters at melee range to siphon the life force of their target.",
         "actionType": "ACTION",
         "concentration": true,
+        "noSpellSlot": false
+    },
+    {
+        "name": "Veil of the Weird",
+        "image": "http://localhost:3001/api/images/5/59/Action_EndGame_HagInvisibility.png",
+        "level": 0,
+        "school": "ILLUSION",
+        "ritual": false,
+        "classes": [],
+        "summary": "This spell allows the caster to cast Greater Invisibility up to five creatures.",
+        "actionType": "ACTION",
+        "concentration": false,
         "noSpellSlot": false
     },
     {
