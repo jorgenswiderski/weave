@@ -3,20 +3,20 @@
         "name": "Absolute's Talisman: Aid",
         "image": "http://localhost:3001/api/images/3/33/Aid.webp",
         "level": 2,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows the Absolute's Talisman's wearer to heal themselves for 5|Healing and increase their hit points for the same amount.",
         "description": "Heal yourself and increase your hit point maximum by 5|Healing.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Acid Splash",
         "image": "http://localhost:3001/api/images/e/eb/Acid_Splash.webp",
         "level": 0,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -26,7 +26,7 @@
         ],
         "summary": "It deals Acid damage to enemies in a small area.",
         "description": "Throw a bubble of acid that damages each creature it hits.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -34,12 +34,12 @@
         "name": "Activate Call Lightning",
         "image": "http://localhost:3001/api/images/4/4f/Activate_Call_Lightning.webp",
         "level": 0,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to call down lightning again to hit all targets within range. Can only be obtained while you are concentrating on Call Lightning.",
         "description": "Call down lightning to hit all targets within range and its area of effect for 3d10|Lightning damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -47,16 +47,12 @@
         "name": "Aid",
         "image": "http://localhost:3001/api/images/3/33/Aid.webp",
         "level": 2,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Paladin",
-            "Life Domain"
-        ],
+        "classes": ["Cleric", "Paladin", "Life Domain"],
         "summary": "This spell allows spellcasters to heal and embolden their allies and themselves with resolve. Affected creatures have their maximum Hit Points increased for the duration of the spell.",
         "description": "Bolster your allies with toughness and resolve to heal and increase their Hit Points maximum.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -64,11 +60,11 @@
         "name": "An Apple a Day",
         "image": "http://localhost:3001/api/images/e/ee/GenericIcon_Intent_Summon.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon Zlorb to aid you in battle.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -76,16 +72,11 @@
         "name": "Animal Friendship",
         "image": "http://localhost:3001/api/images/9/97/Animal_Friendship.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Druid",
-            "Ranger",
-            "Nature Domain"
-        ],
+        "classes": ["Bard", "Druid", "Ranger", "Nature Domain"],
         "summary": "This spell charms a beast and convinces it you mean no harm.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -93,28 +84,22 @@
         "name": "Animate Dead",
         "image": "http://localhost:3001/api/images/1/19/Animate_Dead.webp",
         "level": 3,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Wizard",
-            "Circle of the Spores",
-            "Oathbreaker"
-        ],
+        "classes": ["Cleric", "Wizard", "Circle of the Spores", "Oathbreaker"],
         "summary": "This spell allows spellcasters to animate a corpse to create an undead servant.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
     {
         "name": "Animus Screech",
         "level": 0,
-        "school": "",
         "ritual": false,
         "classes": [],
         "summary": "Screech into your target's soul, wounding them and possibly inflicting Confused_(Condition)",
         "description": "Animus Screech is an ability of some undead, including Tormented Soul and Poltergeist",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -122,10 +107,10 @@
         "name": "Arcane Gate",
         "image": "http://localhost:3001/api/images/8/8f/Arcane_Gate.webp",
         "level": 6,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [],
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -133,16 +118,12 @@
         "name": "Arcane Lock",
         "image": "http://localhost:3001/api/images/c/cf/Arcane_Lock.webp",
         "level": 2,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Wizard",
-            "Eldritch Knight",
-            "Arcane Trickster"
-        ],
+        "classes": ["Wizard", "Eldritch Knight", "Arcane Trickster"],
         "summary": "This spell allows spellcasters to magically lock a container.",
         "description": "* Close a door or container with a magical lock. It can no longer be lockpicked or opened with Knock.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -150,13 +131,11 @@
         "name": "Armour of Agathys",
         "image": "http://localhost:3001/api/images/f/fe/Armour_of_Agathys.webp",
         "level": 1,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Warlock"
-        ],
+        "classes": ["Warlock"],
         "summary": "It allows spellcasters to create a spectral armour of frost that covers the caster and their equipment. The armour provides additional Hit Points to the caster and damages hostile targets while the added Hit Points are present.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -164,13 +143,11 @@
         "name": "Arms of Hadar",
         "image": "http://localhost:3001/api/images/7/79/Arms_of_Hadar.webp",
         "level": 1,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Warlock"
-        ],
+        "classes": ["Warlock"],
         "summary": "This spell allows the caster to summon dark tendrils and deal Necrotic damage to enemies in an area centered on the caster, preventing them from taking reactions.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -178,11 +155,11 @@
         "name": "Balm of the Moonmaiden",
         "image": "http://localhost:3001/api/images/4/40/Action_EndGame_IsobelHeal.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to heal several of their allies.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -190,16 +167,12 @@
         "name": "Bane",
         "image": "http://localhost:3001/api/images/3/3f/Bane_Spell.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Oath of Vengeance"
-        ],
+        "classes": ["Bard", "Cleric", "Oath of Vengeance"],
         "summary": "This spell allows the caster to temporarily curse enemies, making their attacks miss more often and weakening their Saving Throws.",
         "description": "Up to 3 creatures receive a d4|Physical -1d4 penalty to Attack Rolls and SavingThrows.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -207,11 +180,11 @@
         "name": "Banishing Smite (Melee)",
         "image": "http://localhost:3001/api/images/d/da/Banishing_Smite_Melee.webp",
         "level": 5,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [],
         "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banished|Banishing the target.",
-        "actionType": "BOTH",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -219,11 +192,11 @@
         "name": "Banishing Smite (Ranged)",
         "image": "http://localhost:3001/api/images/d/d8/Banishing_Smite_Ranged.webp",
         "level": 5,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [],
         "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banished|Banishing the target.",
-        "actionType": "BOTH",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -231,17 +204,12 @@
         "name": "Banishment",
         "image": "http://localhost:3001/api/images/1/15/Banishment.webp",
         "level": 4,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Sorcerer",
-            "Warlock",
-            "Wizard"
-        ],
+        "classes": ["Cleric", "Sorcerer", "Warlock", "Wizard"],
         "summary": "This spell allows spellcasters to temporarily send a target to another plane of existence.",
         "description": "Temporarily Banished|Banish your target to another plane of existence.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -249,29 +217,24 @@
         "name": "Barkskin",
         "image": "http://localhost:3001/api/images/d/d5/Barkskin.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Ranger",
-            "Nature Domain",
-            "Circle of the Land"
-        ],
+        "classes": ["Druid", "Ranger", "Nature Domain", "Circle of the Land"],
         "summary": "This spell allows spellcasters to fortify the defense of a willing creature and increase their Armour Class. While under the effect of this spell, the target's skin has a bark-like texture.",
         "description": "Touch a willing creature to toughen its skin and increase its Armour Class up to 16.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
     {
-        "name": "Action EndGameAlly OwlbearCubSummon.png",
+        "name": "Action EndGameAlly OwlbearCubSummon",
         "image": "http://localhost:3001/api/images/e/eb/Action_EndGameAlly_OwlbearCubSummon.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon Armoured Owlbear to aid you in battle.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -279,16 +242,12 @@
         "name": "Beacon of Hope",
         "image": "http://localhost:3001/api/images/9/93/Beacon_of_Hope.webp",
         "level": 3,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Life Domain",
-            "Oath of Devotion"
-        ],
+        "classes": ["Cleric", "Life Domain", "Oath of Devotion"],
         "summary": "This spell allows spellcasters to bolster their allies with hope and vitality.",
         "description": "Your allies will regain the maximum Hit Points possible when healed. They also gain Advantage on Wisdom SavingThrows and Death Saving Throws.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -296,17 +255,12 @@
         "name": "Bear's Endurance",
         "image": "http://localhost:3001/api/images/2/29/Bear's_Endurance.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the fortitude of a bear. Affected creatures gain Temporary Hit Points and Checks.",
         "description": "Creature gains Advantage on Checks and gains 7 Temporary Hit Points.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -314,12 +268,12 @@
         "name": "Beckoning Darkness",
         "image": "http://localhost:3001/api/images/e/e6/Generic_Darkness_Icon.png",
         "level": 4,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [],
         "summary": "This spell curses a creature to take Necrotic damage if it enters or starts its turn in a Lightly or Heavily Obscured area.",
         "description": "Curse a creature to be haunted by darkness. It takes 2d8|Necrotic damage if it enters or starts its turn in a Lightly or Heavily Obscured area.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -327,7 +281,7 @@
         "name": "Bestow Curse",
         "image": "http://localhost:3001/api/images/e/e7/Bestow_Curse.webp",
         "level": 3,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [
             "Bard",
@@ -338,7 +292,7 @@
             "Oathbreaker"
         ],
         "summary": "This spell allows spellcasters to curse a target with their touch.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -346,14 +300,12 @@
         "name": "Blade Barrier",
         "image": "http://localhost:3001/api/images/0/01/Blade_Barrier.webp",
         "level": 6,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Cleric"
-        ],
+        "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to summon a wall of cutting blades.",
         "description": "Summons a wall of razor-sharp blades that turns the area into Difficult Terrain and damages anyone foolish enough to come close.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -361,7 +313,7 @@
         "name": "Blade Ward",
         "image": "http://localhost:3001/api/images/0/01/Blade_Ward.webp",
         "level": 0,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [
             "Bard",
@@ -373,7 +325,7 @@
         ],
         "summary": "It allows spellcasters to become more resilient against physical damage.",
         "description": "Take only half the damage from Bludgeoning, Piercing, and Slashing attacks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -381,7 +333,7 @@
         "name": "Bless",
         "image": "http://localhost:3001/api/images/1/14/Bless.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [
             "Cleric",
@@ -392,7 +344,7 @@
         ],
         "summary": "This spell allows spellcasters to temporarily bolster themselves and their allies’ attacks and Saving Throws.",
         "description": "Bless up to 3 creatures. They gain a d4|Slashing +1d4 bonus to Attack Rolls and SavingThrows.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -400,7 +352,7 @@
         "name": "Blight",
         "image": "http://localhost:3001/api/images/7/71/Blight.webp",
         "level": 4,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [
             "Druid",
@@ -410,7 +362,7 @@
             "Circle of the Spores"
         ],
         "summary": "This spell allows spellcasters to drain the moisture and vitality from a target creature using necromantic energy. It's especially effective versus plants.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -418,11 +370,11 @@
         "name": "Blinding Smite",
         "image": "http://localhost:3001/api/images/7/7a/Blinding_Smite.webp",
         "level": 3,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "description": "Evoke a heavenly flare and possibly Blind your target",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -430,7 +382,7 @@
         "name": "Blindness",
         "image": "http://localhost:3001/api/images/1/1e/Blindness.webp",
         "level": 2,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [
             "Bard",
@@ -441,7 +393,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to magically Blinded|Blind a targeted hostile creature.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -449,14 +401,11 @@
         "name": "Blink",
         "image": "http://localhost:3001/api/images/f/fa/Blink.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Sorcerer",
-            "Archfey"
-        ],
+        "classes": ["Sorcerer", "Archfey"],
         "summary": "This spell allows the spellcaster to travel to the Ethereal Plane, becoming temporarily unassailable and unseen until they return.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -464,11 +413,11 @@
         "name": "Bludgeon the Weak",
         "image": "http://localhost:3001/api/images/c/cf/Bludgeon_the_Weak_Icon.png",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "This spell is a variant of Brand the Weak Icon|Brand the Weak that imposes vulnerability on an enemy to Bludgeoning damage.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -476,7 +425,7 @@
         "name": "Blur",
         "image": "http://localhost:3001/api/images/b/bb/Blur.webp",
         "level": 2,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -486,14 +435,15 @@
             "Eldritch Knight"
         ],
         "summary": "This spell Blurs the spellcaster's body and makes them harder to hit.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
     {
+        "name": "Bolts of Doom",
         "image": "http://localhost:3001/api/images/f/f1/Protection_from_Energy_Lightning_Icon.png",
         "level": 0,
-        "school": "NONE",
+        "school": 0,
         "ritual": false,
         "classes": [],
         "actionType": 0,
@@ -504,7 +454,7 @@
         "name": "Bone Chill",
         "image": "http://localhost:3001/api/images/7/7a/Bone_Chill.webp",
         "level": 0,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -516,14 +466,15 @@
         ],
         "summary": "It deals Necrotic damage and prevents the target from regaining Hit Points.",
         "description": "Prevent the target from healing until your next turn. An undead target receives Disadvantage on Attack Rolls.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
     {
+        "name": "Bone-shaking Thunder",
         "image": "http://localhost:3001/api/images/8/89/Protection_from_Energy_Thunder_Icon.png",
         "level": 0,
-        "school": "NONE",
+        "school": 0,
         "ritual": false,
         "classes": [],
         "actionType": 0,
@@ -534,11 +485,11 @@
         "name": "Brand the Weak",
         "image": "http://localhost:3001/api/images/2/2c/Brand_the_Weak_Full_Icon.png",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "This spell imposes vulnerability on an enemy to Bludgeoning, Slashing, or Piercing damage.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -546,13 +497,11 @@
         "name": "Branding Smite",
         "image": "http://localhost:3001/api/images/e/e8/Branding_Smite_Melee.webp",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Paladin"
-        ],
+        "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to cause their weapon to gleam with astral radiance, allow them to mark targets with light, preventing them from turning Invisible",
-        "actionType": "BOTH",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -560,28 +509,24 @@
         "name": "Bull's Strength",
         "image": "http://localhost:3001/api/images/4/48/Bull's_Strength.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the might of a bull. Affected creatures have their Checks.",
         "description": "Creature gains Advantage on Checks and its Weight Limit is doubled.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
     {
+        "name": "Burning Age",
         "image": "http://localhost:3001/api/images/b/bf/Elemental_Weapon_Fire.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "This spell is a variant of Elemental Age and imbues a weapon with fiery might, granting it bonus Fire|Fire damage and giving it an Attack Roll bonus.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -589,7 +534,7 @@
         "name": "Burning Hands",
         "image": "http://localhost:3001/api/images/7/7a/Burning_Hands.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -600,7 +545,7 @@
             "Eldritch Knight"
         ],
         "summary": "It allows spellcasters to shoot a flaming cone from their fingertips and deal Fire damage to enemies.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -608,16 +553,12 @@
         "name": "Call Lightning",
         "image": "http://localhost:3001/api/images/d/d0/Call_Lightning.webp",
         "level": 3,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Tempest Domain",
-            "Storm Sorcery"
-        ],
+        "classes": ["Druid", "Tempest Domain", "Storm Sorcery"],
         "summary": "This spell allows spellcasters to call down lightning to hit all targets within range. The spellcaster can also continue to call down lightning repeatedly on subsequent turns.",
         "description": "Call down lightning to hit all targets within range and its area of effect for 3d10|Lightning damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -625,16 +566,12 @@
         "name": "Calm Emotions",
         "image": "http://localhost:3001/api/images/9/91/Calm_Emotions.webp",
         "level": 2,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Archfey"
-        ],
+        "classes": ["Bard", "Cleric", "Archfey"],
         "summary": "This spell allows spellcasters to magically subdue intense emotions in targeted creatures. The affected target becomes neutral to the creatures it is hostile toward. It also cannot be Charmed or Frightened during the duration of the spell.",
         "description": "Humanoids can't be Charmed, Frightened, or become enraged.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -642,17 +579,12 @@
         "name": "Cat's Grace",
         "image": "http://localhost:3001/api/images/9/9b/Cat's_Grace.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the finesse of a cat. Affected creatures gain Resistance to falling damage and gain Checks.",
         "description": "Creature gains Advantage on Checks and only takes half damage from falling.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -660,24 +592,24 @@
         "name": "Celestial Haste",
         "image": "http://localhost:3001/api/images/4/44/Haste.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "Provided by equipping Gontr Mael, it allows the wielder to Hasten themselves for 5 turns without suffering the Lethargic condition when it ends.",
         "description": "Gain Celestial Haste|Hastened.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Chain Lightning",
         "image": "http://localhost:3001/api/images/a/a0/Chain_Lightning.webp",
         "level": 6,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "description": "Strike an enemy with lightning. Three more bolts will leap from the target, electrifying as many as three other enemies within range.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -685,7 +617,7 @@
         "name": "Charm Person",
         "image": "http://localhost:3001/api/images/1/11/Charm_Person.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [
             "Bard",
@@ -698,7 +630,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to temporarily charm a humanoid creature, granting Advantage on Charisma Checks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -706,7 +638,7 @@
         "name": "Chromatic Orb",
         "image": "http://localhost:3001/api/images/b/b1/Chromatic_Orb.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -715,7 +647,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to fire a ball of energy and deal the desired damage type to enemies.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -723,11 +655,11 @@
         "name": "Circle of Death",
         "image": "http://localhost:3001/api/images/e/e6/Circle_of_Death.webp",
         "level": 6,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [],
         "description": "Sculpt a massive sphere of entropic energy around a creature. Devastate the target and all surrounding creatures.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -735,7 +667,7 @@
         "name": "Cloud of Daggers",
         "image": "http://localhost:3001/api/images/2/24/Cloud_of_Daggers.webp",
         "level": 2,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [
             "Bard",
@@ -747,7 +679,7 @@
         ],
         "summary": "This spell allows spellcasters to conjure a barrage of daggers in an area that deal Slashing damage to any creature entering or starting their turn in the area.",
         "description": "Conjure a cloud of spinning daggers that attack anyone inside.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -755,16 +687,12 @@
         "name": "Cloudkill",
         "image": "http://localhost:3001/api/images/c/cc/Cloudkill.webp",
         "level": 5,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Sorcerer",
-            "Wizard",
-            "Circle of the Spores"
-        ],
+        "classes": ["Sorcerer", "Wizard", "Circle of the Spores"],
         "summary": "This spell allows spellcasters to conjure a moveable cloud that damages and obscures everything it envelops.",
         "description": "Craft a large cloud that inflicts 5d8|Poison damage per turn. You can reposition the cloud every turn. The cloud Heavily Obscures everything within it.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -772,7 +700,7 @@
         "name": "Colour Spray",
         "image": "http://localhost:3001/api/images/a/ad/Colour_Spray.webp",
         "level": 1,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
         "classes": [
             "Bard",
@@ -783,7 +711,7 @@
         ],
         "summary": "This spell allows spellcasters to temporarily blind enemies with flashing coloured light, making their attacks miss more often and shortening their attack range.",
         "description": "Blinded|Blind creatures up to a combined Healing|33 Hit Points.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -791,7 +719,7 @@
         "name": "Command",
         "image": "http://localhost:3001/api/images/f/fa/Command_Halt.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [
             "Cleric",
@@ -802,7 +730,7 @@
         ],
         "summary": "This spell allows spellcasters to order their target to flee, move closer, freeze, drop to the ground, or drop their weapon.",
         "description": "Command a creature to flee, move closer, freeze, drop to the ground or drop its weapon. The target must succeed on a Wisdom in order to resist the effects.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -810,14 +738,12 @@
         "name": "Compelled Duel",
         "image": "http://localhost:3001/api/images/e/e5/Compelled_Duel.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
-        "classes": [
-            "Paladin"
-        ],
+        "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to compel an enemy to ignore other targets and attack only the spellcaster.",
         "description": "Force an enemy to attack only you, giving it Disadvantage against other targets.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -825,12 +751,12 @@
         "name": "Cone of Cold",
         "image": "http://localhost:3001/api/images/2/24/Cone_of_Cold.webp",
         "level": 5,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to blast icy air into a region in front of them, damaging affected creatures and turning existing water surfaces into Ice Surface.",
         "description": "Make a flurry of frost, crisp air, and condensed snow crystals erupt from your hands.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -838,7 +764,7 @@
         "name": "Confusion",
         "image": "http://localhost:3001/api/images/0/0a/Confusion.webp",
         "level": 4,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [
             "Bard",
@@ -850,7 +776,7 @@
         ],
         "summary": "This spell allows spellcaster to confuse a group of creatures, drastically reducing their effectiveness in combat.",
         "description": "Befuddle a group of creatures, causing them to attack at random, wander around aimlessly, and occasionally skip turns in the stupor.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -858,13 +784,11 @@
         "name": "Conjure Barrage",
         "image": "http://localhost:3001/api/images/4/42/Conjure_Barrage.webp",
         "level": 3,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Ranger"
-        ],
+        "classes": ["Ranger"],
         "summary": "This spell allows spellcasters to summon a barrage of blades in front of them, potentially hitting multiple enemies.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -872,15 +796,12 @@
         "name": "Conjure Elemental",
         "image": "http://localhost:3001/api/images/0/0f/Conjure_Elemental.webp",
         "level": 5,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Wizard",
-            "Druid"
-        ],
+        "classes": ["Wizard", "Druid"],
         "summary": "This spell allows spellcasters to summon a Fire, Earth, Water, or Air Elemental.",
         "description": "Bend the barrier between the Planes until they disgorge an elemental ally to follow and fight for you.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -888,15 +809,12 @@
         "name": "Conjure Minor Elemental",
         "image": "http://localhost:3001/api/images/6/64/Conjure_Minor_Elemental.webp",
         "level": 4,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Wizard",
-            "Druid"
-        ],
+        "classes": ["Wizard", "Druid"],
         "summary": "Conjure 2 Mud Mephits, 2 Ice Mephites, or an Azer to fight for you.",
         "description": "Conjure a minor elemental to fight alongside you.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -904,12 +822,12 @@
         "name": "Conjure Shadow Lantern Wraith",
         "image": "http://localhost:3001/api/images/2/20/Conjure_Shadow_Lantern_Wraith.webp",
         "level": 6,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [],
         "summary": "Summon a Shadow to fight by your side.",
         "description": "Pull an undead creature from the depths of the Shadow Lantern's depraved magic to join your side in combat.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -917,13 +835,11 @@
         "name": "Conjure Woodland Being",
         "image": "http://localhost:3001/api/images/0/00/Conjure_Woodland_Being.webp",
         "level": 4,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Druid"
-        ],
+        "classes": ["Druid"],
         "summary": "This spell summons a Dryad to fight alongside the caster.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -931,26 +847,23 @@
         "name": "Contagion",
         "image": "http://localhost:3001/api/images/4/46/Contagion_Filth_Fever.webp",
         "level": 5,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Druid",
-            "Circle of the Spores"
-        ],
+        "classes": ["Cleric", "Druid", "Circle of the Spores"],
         "summary": "This spell allows spellcasters to infect their target with an affliction of their choosing, potentially resulting in the target contracting a disease.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
     {
+        "name": "Corrosive Age",
         "image": "http://localhost:3001/api/images/0/04/Elemental_Weapon_Acid.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "This spell is a variant of Elemental Age and imbues a weapon with corrosive might, granting it bonus Acid|Acid damage and giving it an Attack Roll bonus.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -958,16 +871,12 @@
         "name": "Counterspell",
         "image": "http://localhost:3001/api/images/8/83/Counterspell.webp",
         "level": 3,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Sorcerer",
-            "Warlock",
-            "Wizard"
-        ],
+        "classes": ["Sorcerer", "Warlock", "Wizard"],
         "summary": "This spell allows spellcasters to interrupt another caster's spellcasting, causing it to fail and have no effect.",
         "description": "Nullify another creature's spell as a reaction. The spell must be 3rd Level or lower. If it is higher, you must succeed a Check to nullify it, the difficulty of which is based on the spell's Level.",
-        "actionType": "REACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -975,23 +884,20 @@
         "name": "Create or Destroy Water",
         "image": "http://localhost:3001/api/images/0/0d/Create_Water.webp",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Druid",
-            "Storm Sorcery"
-        ],
+        "classes": ["Cleric", "Druid", "Storm Sorcery"],
         "summary": "This spell allows spellcasters to conjure or destroy an area of water (or water-like surfaces).",
         "description": "Choose to call forth rain or destroy a water-based surface.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
     {
+        "name": "Create Sorcery Points",
         "image": "http://localhost:3001/api/images/b/be/Create_Sorcery_Points.webp",
         "level": 1,
-        "school": "NONE",
+        "school": 0,
         "ritual": false,
         "classes": [],
         "summary": "Create Sorcery Points is a Level 2 Sorcerer Bonus Action. This ability allows Sorcerers to transform arcane magic into their innate sorcery powers.",
@@ -1004,15 +910,11 @@
         "name": "Create Undead",
         "image": "http://localhost:3001/api/images/c/c6/Create_Undead.webp",
         "level": 6,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Wizard",
-            "Warlock"
-        ],
+        "classes": ["Cleric", "Wizard", "Warlock"],
         "description": "Create a corpse as a heinous mummy that fights by your side.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1020,16 +922,12 @@
         "name": "Create Water",
         "image": "http://localhost:3001/api/images/0/0d/Create_Water.webp",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Druid",
-            "Storm Sorcery"
-        ],
+        "classes": ["Cleric", "Druid", "Storm Sorcery"],
         "summary": "This spell is a variant of Create or Destroy Water that allows spellcasters to conjure an area of water that rain from thin air and forms a water surface. Creatures standing in the area when the spell is cast will become Wet.",
         "description": "Call forth rain. It extinguishes exposed flames and forms a Water Surface.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1037,7 +935,7 @@
         "name": "Crown of Madness",
         "image": "http://localhost:3001/api/images/f/f1/Crown_of_Madness.webp",
         "level": 2,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [
             "Bard",
@@ -1050,7 +948,7 @@
         ],
         "summary": "This spell allows spellcasters to temporarily charm a humanoid creature and induce madness in their mind. The affected creature will make a melee attack against any creature within its reach.",
         "description": "Instill madness in a humanoid enemy, making them attack the creature closest to them (other than you), even if it's allied.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1058,15 +956,12 @@
         "name": "Crusader's Mantle",
         "image": "http://localhost:3001/api/images/8/84/Crusader's_Mantle.webp",
         "level": 3,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Paladin",
-            "War Domain"
-        ],
+        "classes": ["Paladin", "War Domain"],
         "summary": "This spell allows spellcasters to imbue their allies' weapons with holy power, causing them to deal additional Radiant damage.",
         "description": "Radiate a holy power that emboldens nearby allies. Their weapon attacks deal an additional 1d4|Radiant damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1074,7 +969,7 @@
         "name": "Cure Wounds",
         "image": "http://localhost:3001/api/images/e/e1/Cure_Wounds.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Bard",
@@ -1085,7 +980,7 @@
             "Life Domain"
         ],
         "summary": "This spell allows spellcasters to heal allies with divine magic through touch.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1093,12 +988,12 @@
         "name": "Curriculum of Strategy: Artistry of War",
         "image": "http://localhost:3001/api/images/e/ec/Curriculum_of_Strategy_Artistry_of_War.webp",
         "level": 5,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "Fires multiple projectiles that deal Force damage. Can only be cast once per short rest.",
         "description": "Summon the apparitions of 6 master strategists. Each apparition strikes a target of your choosing, dealing 2d6 + 6|Force damage (for a total of 12d6 + 36|Force).",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1106,7 +1001,7 @@
         "name": "Dancing Lights",
         "image": "http://localhost:3001/api/images/e/eb/Dancing_Lights.webp",
         "level": 0,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Bard",
@@ -1117,7 +1012,7 @@
         ],
         "summary": "It creates magical orbs of light that brighten an area.",
         "description": "Illuminate a m=9|ft=30 radius.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1125,7 +1020,7 @@
         "name": "Danse Macabre",
         "image": "http://localhost:3001/api/images/2/2a/Danse_Macabre.webp",
         "level": 5,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [],
         "summary": "Danse Macabre is a 5th level Necromancy spell that summons 4 uncontrollable Ghouls to fight for you.",
@@ -1138,7 +1033,7 @@
         "name": "Darkness",
         "image": "http://localhost:3001/api/images/2/24/Darkness.webp",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -1151,7 +1046,7 @@
         ],
         "summary": "This spell allows spellcasters to conjure a cloud of darkness in an area within range that obscures and Blinded|blinds those within it.",
         "description": "Create a cloud of magical darkness that Heavily Obscured|Heavily Obscures and Blinded|Blinds creatures within. Creatures cannot make ranged attacks into or out of it.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1159,7 +1054,7 @@
         "name": "Darkvision",
         "image": "http://localhost:3001/api/images/3/3a/Darkvision_Spell.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [
             "Druid",
@@ -1170,7 +1065,7 @@
             "Eldritch Knight"
         ],
         "description": "Grant a creature the ability to see in the dark out to a range of m=12|ft=40.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1178,7 +1073,7 @@
         "name": "Daylight",
         "image": "http://localhost:3001/api/images/5/52/Daylight.webp",
         "level": 3,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Cleric",
@@ -1189,14 +1084,15 @@
             "Light Domain"
         ],
         "summary": "This spell allows spellcasters to dispel darkness by summoning a sphere of light or enchanting an item to shine like the sun.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
     {
+        "name": "Deadlier than Arsenic",
         "image": "http://localhost:3001/api/images/7/72/Protection_from_Energy_Icon.png",
         "level": 0,
-        "school": "NONE",
+        "school": 0,
         "ritual": false,
         "classes": [],
         "actionType": 0,
@@ -1207,14 +1103,12 @@
         "name": "Death Ward",
         "image": "http://localhost:3001/api/images/c/c3/Death_Ward.webp",
         "level": 4,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Cleric"
-        ],
+        "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to prevent a target from dying.",
         "description": "Protect a creature from death. The next time damage would reduce it to 0 Hit Points, it remains conscious with 1 Hit Point left.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1222,15 +1116,12 @@
         "name": "Destroy Water",
         "image": "http://localhost:3001/api/images/4/4a/Destroy_Water.webp",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Druid"
-        ],
+        "classes": ["Cleric", "Druid"],
         "summary": "This spell is a variant of Create or Destroy Water that  allows spellcasters to destroy an area of water (or water-like surfaces). The spell will remove the Wet condition from creatures within its area of effect.",
         "description": "Cause water-based surfaces (such as water, steam, ice, blood and poison) to vanish.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1238,12 +1129,12 @@
         "name": "Destructive Wave",
         "image": "http://localhost:3001/api/images/1/15/Destructive_Wave.webp",
         "level": 5,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows the caster to create a massive shockwave that damages all creatures and can possibly knock them prone.",
         "description": "Create a shockwave of either divine or malevolent thunder that damages nearby creatures and possibly knocks them Prone.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1251,7 +1142,7 @@
         "name": "Detect Thoughts",
         "image": "http://localhost:3001/api/images/5/5a/Detect_Thoughts.webp",
         "level": 2,
-        "school": "DIVINATION",
+        "school": 3,
         "ritual": true,
         "classes": [
             "Bard",
@@ -1263,7 +1154,7 @@
         ],
         "summary": "This spell allows spellcasters to telepathically link to unprotected minds and hear the thoughts of targeted creatures while talking to them.",
         "description": "Focus your mind to read the thoughts of certain creatures while talking to them.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1271,12 +1162,12 @@
         "name": "Dethrone",
         "image": "http://localhost:3001/api/images/c/ca/Dethrone.webp",
         "level": 5,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [],
         "summary": "Deals Necrotic damage to one enemy. Can only be cast once per Long Rest.",
         "description": "Shred a foe's very essence by pulling on strands of the Weave.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1284,18 +1175,12 @@
         "name": "Dimension Door",
         "image": "http://localhost:3001/api/images/2/2a/Dimension_Door.webp",
         "level": 4,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Sorcerer",
-            "Warlock",
-            "Wizard",
-            "Trickery Domain"
-        ],
+        "classes": ["Bard", "Sorcerer", "Warlock", "Wizard", "Trickery Domain"],
         "summary": "This spell teleports you and an ally.",
         "description": "Teleport yourself and up to one adjacent ally to a place you can see. The ally cannot be larger than Medium.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1303,7 +1188,7 @@
         "name": "Disguise Self",
         "image": "http://localhost:3001/api/images/1/13/Disguise_Self.webp",
         "level": 1,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": true,
         "classes": [
             "Bard",
@@ -1315,7 +1200,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to temporarily change their appearance.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1323,11 +1208,11 @@
         "name": "Disintegrate",
         "image": "http://localhost:3001/api/images/2/23/Disintegrate.webp",
         "level": 6,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "description": "Shoot a thin green ray from your finger. If the spell reduces the target to 0 hit points, it disintegrates into a crumbly ash.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1335,14 +1220,12 @@
         "name": "Dispel Evil and Good",
         "image": "http://localhost:3001/api/images/e/e6/Dispel_Evil_and_Good.webp",
         "level": 5,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Cleric"
-        ],
+        "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to protect themselves from Evil and Good creatures, and allows them to break Enchantments on allies.",
         "description": "Aberrations, Celestials, Elementals, Fey, Fiends, and Undead have Disadvantage on Attack Rolls against you. You can also break Enchantments that Charmed|Charm, Frightened|Frighten, or Malefic Possession|Possesses allies.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1350,14 +1233,11 @@
         "name": "Dissonant Whispers",
         "image": "http://localhost:3001/api/images/d/db/Dissonant_Whispers.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "The Great Old One"
-        ],
+        "classes": ["Bard", "The Great Old One"],
         "summary": "This spell allows spellcasters to fill a target with terror and deal Psychic damage to them.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1365,26 +1245,22 @@
         "name": "Divine Favour",
         "image": "http://localhost:3001/api/images/8/8a/Divine_Favour.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Paladin",
-            "War Domain"
-        ],
+        "classes": ["Paladin", "War Domain"],
         "summary": "This spell allows spellcasters to empower their Weapons to deal extra Radiant|Radiant damage.",
         "description": "Your prayer empowers you with divine radiance. Your weapons deal an additional 1d4|Radiant damage.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
     {
+        "name": "Divine Smite",
         "image": "http://localhost:3001/api/images/d/d5/Divine_Smite.webp",
         "level": 1,
-        "school": "NONE",
+        "school": 0,
         "ritual": false,
-        "classes": [
-            "Paladin"
-        ],
+        "classes": ["Paladin"],
         "summary": "Divine Smite allows a Paladin to expend a Spell Slot to deal additional Radiant damage with a melee weapon attack.",
         "description": "Your weapon emanates divine might as you strike, dealing an additional 2d8|Radiant damage. Deals an additional 1d8|Radiant damage to Fiends and Undead.",
         "actionType": 0,
@@ -1395,7 +1271,7 @@
         "name": "Dominate Beast",
         "image": "http://localhost:3001/api/images/4/45/Dominate_Beast.webp",
         "level": 4,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [
             "Druid",
@@ -1406,7 +1282,7 @@
         ],
         "summary": "This spell allows spellcasters to temporarily charm a Beast into fighting alongside the caster, rather than against them.",
         "description": "Make a Beast fight alongside you. Every time the Beast takes damage, it makes a Wisdom SavingThrow against your domination.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1414,7 +1290,7 @@
         "name": "Dominate Person",
         "image": "http://localhost:3001/api/images/8/8c/Dominate_Person.webp",
         "level": 5,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [
             "Bard",
@@ -1427,7 +1303,7 @@
         ],
         "summary": "This spell allows spellcasters to force a humanoid to temporarily fight as an ally.",
         "description": "Make a humanoid fight alongside you. Every time the creature takes damage, it makes a Wisdom SavingThrow against your domination. Allies cannot be dominated.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1435,38 +1311,38 @@
         "name": "Draconic Elemental Weapon",
         "image": "http://localhost:3001/api/images/1/1a/Elemental_Weapon.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "This spell is identical to the Elemental Weapon spell, but costs no Spell Slots to cast. It imbues a weapon with a chosen energy type, increasing its damage and accuracy.",
         "description": "Imbue a weapon with elemental power. It receives a +1 bonus to Attack Rolls, and deals an additional d4|Physical 1d4 damage of your choice.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Darconic Elemental Weapon: Acid",
         "image": "http://localhost:3001/api/images/0/04/Elemental_Weapon_Acid.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "This spell is a variant of Draconic Elemental Weapon and imbues a weapon with corrosive might, granting it bonus Acid|Acid damage and giving it an Attack Roll bonus.",
         "description": "Imbue a weapon with corrosive might. It receives a +1 bonus to Attack Rolls, and deals an additional 1d4|Acid damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Drunken Inhale",
         "image": "http://localhost:3001/api/images/5/58/Action_Monster_Djinni_Inhale.png",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to damage and intoxicate creatures in an area in front of them.",
         "description": "Compel foes toward you with an intoxicating wind that makes them Drunk.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1474,17 +1350,12 @@
         "name": "Eagle's Splendour",
         "image": "http://localhost:3001/api/images/6/64/Eagle's_Splendor.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the elegance of an eagle. Affected creatures gain Checks.",
         "description": "Creature gains Advantage on Checks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1492,14 +1363,12 @@
         "name": "Eldritch Blast",
         "image": "http://localhost:3001/api/images/b/b5/Eldritch_Blast.webp",
         "level": 0,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Warlock"
-        ],
+        "classes": ["Warlock"],
         "summary": "The cantrip allows the spellcaster to shoot out an energy beam that deals Force damage, and that can be upgraded with Warlock abilities.",
         "description": "Conjure a beam of crackling energy. Deals 1d10|Force damage to a target.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1507,96 +1376,36 @@
         "name": "Elemental Age",
         "image": "http://localhost:3001/api/images/1/1a/Elemental_Weapon.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "Give the Flail of Ages an attack bonus and additional elemental damage.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Elemental Retort",
         "image": "http://localhost:3001/api/images/d/d8/Generic_Damage.webp",
         "level": 5,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to unleash a torrent of elemental damage based on each siphoned myrmidon.",
-        "actionType": "FREEACTION",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Elemental Weapon",
         "image": "http://localhost:3001/api/images/1/1a/Elemental_Weapon.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "This spell imbues a weapon with a chosen energy type, increasing its damage and accuracy.",
         "description": "Imbue a weapon with elemental power. It receives a +1 bonus to Attack Rolls, and deals an additional d4|Physical 1d4 damage of your choice.",
-        "actionType": "ACTION",
-        "concentration": false,
-        "noSpellSlot": false
-    },
-    {
-        "image": "http://localhost:3001/api/images/0/04/Elemental_Weapon_Acid.webp",
-        "level": 3,
-        "school": "TRANSMUTATION",
-        "ritual": false,
-        "classes": [],
-        "summary": "This spell is a variant of Elemental Weapon and imbues a weapon with corrosive might, granting it bonus Acid|Acid damage and giving it an Attack Roll bonus.",
-        "description": "Imbue a weapon with corrosive might. It receives a +1 bonus to Attack Rolls, and deals an additional 1d4|Acid damage.",
-        "actionType": "ACTION",
-        "concentration": false,
-        "noSpellSlot": false
-    },
-    {
-        "image": "http://localhost:3001/api/images/6/62/Elemental_Weapon_Cold.webp",
-        "level": 3,
-        "school": "TRANSMUTATION",
-        "ritual": false,
-        "classes": [],
-        "summary": "This spell is a variant of Elemental Weapon and imbues a weapon with icy might, granting it bonus Cold|Cold damage and giving it an Attack Roll bonus.",
-        "description": "Imbue a weapon with an icy might. It receives a +1 bonus to Attack Rolls, and deals an additional 1d4|Cold damage.",
-        "actionType": "ACTION",
-        "concentration": false,
-        "noSpellSlot": false
-    },
-    {
-        "image": "http://localhost:3001/api/images/b/bf/Elemental_Weapon_Fire.webp",
-        "level": 3,
-        "school": "TRANSMUTATION",
-        "ritual": false,
-        "classes": [],
-        "summary": "This spell is a variant of Elemental Weapon and imbues a weapon with fiery might, granting it bonus Fire|Fire damage and giving it an Attack Roll bonus.",
-        "description": "Imbue a weapon with fiery might. It receives a +1 bonus to Attack Rolls, and deals an additional 1d4|Fire damage.",
-        "actionType": "ACTION",
-        "concentration": false,
-        "noSpellSlot": false
-    },
-    {
-        "image": "http://localhost:3001/api/images/9/9f/Elemental_Weapon_Lightning.webp",
-        "level": 3,
-        "school": "TRANSMUTATION",
-        "ritual": false,
-        "classes": [],
-        "summary": "This spell is a variant of Elemental Weapon and imbues a weapon with electrical might, granting it bonus Lightning|Lightning damage and giving it an Attack Roll bonus.",
-        "description": "Imbue a weapon with an electrical might. It receives a +1 bonus to Attack Rolls, and deals an additional 1d4|Lightning damage.",
-        "actionType": "ACTION",
-        "concentration": false,
-        "noSpellSlot": false
-    },
-    {
-        "image": "http://localhost:3001/api/images/8/85/Elemental_Weapon_Thunder.webp",
-        "level": 3,
-        "school": "TRANSMUTATION",
-        "ritual": false,
-        "classes": [],
-        "summary": "This spell is a variant of Elemental Weapon and imbues a weapon with thunderous might, granting it bonus Thunder|Thunder damage and giving it an Attack Roll bonus.",
-        "description": "Imbue a weapon with thunderous might. It receives a +1 bonus to Attack Rolls, and deals an additional 1d4|Thunder damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1604,16 +1413,11 @@
         "name": "Enhance Ability",
         "image": "http://localhost:3001/api/images/9/9d/Enhance_Ability.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to strengthen an aspect of a creature's physical or mental attributes.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1621,7 +1425,7 @@
         "name": "Enhance Leap",
         "image": "http://localhost:3001/api/images/5/5d/Enhance_Leap.webp",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": true,
         "classes": [
             "Druid",
@@ -1633,7 +1437,7 @@
         ],
         "summary": "This spell allows spellcasters to increase a creature's Jumping distance.",
         "description": "Triple a creature's Jumping distance.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1641,7 +1445,7 @@
         "name": "Enlarge/Reduce",
         "image": "http://localhost:3001/api/images/d/d8/Enlarge_Reduce.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -1650,19 +1454,19 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to alter a creature's body size. The caster can choose to double or halve the size of the affected creature.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
     {
         "name": "Ensnaring Strands",
         "level": 1,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [],
         "summary": "Attacks may Enwebbed (Condition) the target",
         "description": "Your attack conjures thick sticky webbing that possibly Enwebbed (Condition) your target",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1670,15 +1474,12 @@
         "name": "Enthrall",
         "image": "http://localhost:3001/api/images/d/de/Enthrall.webp",
         "level": 2,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Warlock"
-        ],
+        "classes": ["Bard", "Warlock"],
         "summary": "This spells allows spellcasters to capture the attention of a creature, forcing the creature to focus on them.",
         "description": "Reduce a creature's peripheral vision and make it look at you.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1686,15 +1487,12 @@
         "name": "Evard's Black Tentacles",
         "image": "http://localhost:3001/api/images/9/9a/Evard's_Black_Tentacles.webp",
         "level": 4,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Wizard",
-            "Great Old One"
-        ],
+        "classes": ["Wizard", "Great Old One"],
         "summary": "Summons tentacles in an area that make it difficult to move and harm creatures.",
         "description": "Tentacles sprout from the ground, turning the area into Difficult Terrain|, attacking and Black Tentacles|Smothering creatures within.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1702,20 +1500,20 @@
         "name": "Exhort the Risen",
         "image": "http://localhost:3001/api/images/e/ec/Exhort_the_Risen.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [],
         "summary": "Allows you to command the undead, similar to the spell Command.",
         "description": "Subjugate the undead with your commands.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Expeditious Retreat",
         "image": "http://localhost:3001/api/images/7/77/Expeditious_Retreat.webp",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -1726,7 +1524,7 @@
         ],
         "summary": "This spell allows spellcasters to move more swiftly.",
         "description": "Gain Dash immediately and as a bonus action on each of your turns until this spell ends.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1734,10 +1532,10 @@
         "name": "Eyebite",
         "image": "http://localhost:3001/api/images/c/c3/Eyebite_Panicked.webp",
         "level": 6,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [],
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1745,17 +1543,12 @@
         "name": "Faerie Fire",
         "image": "http://localhost:3001/api/images/b/ba/Faerie_Fire.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Druid",
-            "Light Domain",
-            "The Archfey"
-        ],
+        "classes": ["Bard", "Druid", "Light Domain", "The Archfey"],
         "summary": "This spell allows spellcasters to conjure brilliant light. Any creature caught in the radius temporarily sheds faint light and prevents Invisible.",
         "description": "All targets within the light turn visible, and Attack Rolls against them have Advantage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1763,7 +1556,7 @@
         "name": "False Life",
         "image": "http://localhost:3001/api/images/4/45/False_Life.webp",
         "level": 1,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -1772,7 +1565,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to gain Temporary Hit Points.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1780,7 +1573,7 @@
         "name": "Fear",
         "image": "http://localhost:3001/api/images/1/1d/Fear.webp",
         "level": 3,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
         "classes": [
             "Bard",
@@ -1791,7 +1584,7 @@
             "Gloom Stalker"
         ],
         "summary": "This spell allows spellcasters to terrify targets by projecting phantasmal images.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1799,7 +1592,7 @@
         "name": "Feather Fall",
         "image": "http://localhost:3001/api/images/d/de/Feather_Fall.webp",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": true,
         "classes": [
             "Bard",
@@ -1810,7 +1603,7 @@
         ],
         "summary": "It allows spellcasters to make themselves and their allies light as a feather, preventing them from taking damage when falling from extreme heights.",
         "description": "You and nearby allies gain Immunity to Falling damage.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1818,16 +1611,11 @@
         "name": "Feign Death",
         "image": "http://localhost:3001/api/images/9/99/Feign_Death.webp",
         "level": 3,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Wizard"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "Wizard"],
         "summary": "This spell allows spellcasters to put their allies into a magical, protective coma, feigning death.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1835,12 +1623,12 @@
         "name": "Finger of Death",
         "image": "http://localhost:3001/api/images/1/14/Generic_Death.webp",
         "level": 0,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [],
         "summary": "It is only available to Apostle of Myrkul after it consumes a Necromite and has the condition Reaper's Rewards.",
         "description": "Point at a foe to cause searing pain.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1848,7 +1636,7 @@
         "name": "Fire Bolt",
         "image": "http://localhost:3001/api/images/d/d0/Fire_Bolt.webp",
         "level": 0,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Wizard",
@@ -1858,7 +1646,7 @@
         ],
         "summary": "It allows the caster to hurl a bolt of fire at an enemy.",
         "description": "Hurl a mote of fire.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1866,15 +1654,12 @@
         "name": "Fire Shield",
         "image": "http://localhost:3001/api/images/9/94/Fire_Shield.webp",
         "level": 4,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Wizard",
-            "The Fiend"
-        ],
+        "classes": ["Wizard", "The Fiend"],
         "summary": "This spell shields the spellcaster with luminous energy.",
         "description": "Wreathe your body in flames that shed light in a ft=10 radius, provide Resistance to Fire or Cold damage, and retaliate against melee attacks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1882,28 +1667,24 @@
         "name": "Fireball",
         "image": "http://localhost:3001/api/images/1/1a/Fireball.webp",
         "level": 3,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Sorcerer",
-            "Wizard",
-            "Light Domain",
-            "The Fiend"
-        ],
+        "classes": ["Sorcerer", "Wizard", "Light Domain", "The Fiend"],
         "summary": "This spell allows spellcasters to unleash a streak of fire from their hands that ignites into a large explosion at a chosen point within range.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
     {
+        "name": "Firebolt?",
         "image": "http://localhost:3001/api/images/d/d0/Fire_Bolt.webp",
         "level": 0,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "It allows the caster to hurl a bolt of fire at an enemy. This is a copy of Fire Bolt except there is a 10% chance of casting a Fireball on yourself.",
         "description": "Hurl a mote of fire.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1911,20 +1692,19 @@
         "name": "Flame Blade",
         "image": "http://localhost:3001/api/images/8/8a/Flame_Blade.webp",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Druid"
-        ],
+        "classes": ["Druid"],
         "summary": "This spell allows spellcasters to summon a fiery scimitar in their free hand that sheds bright light. Casters can make a melee weapon attack with the blade to deal Fire damage to enemies.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
     {
+        "name": "Flame of Wrath",
         "image": "http://localhost:3001/api/images/e/e2/Protection_from_Energy_Fire_Icon.png",
         "level": 0,
-        "school": "NONE",
+        "school": 0,
         "ritual": false,
         "classes": [],
         "actionType": 0,
@@ -1935,17 +1715,12 @@
         "name": "Flame Strike",
         "image": "http://localhost:3001/api/images/0/0b/Flame_Strike.webp",
         "level": 5,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Light Domain",
-            "War Domain",
-            "Fiend"
-        ],
+        "classes": ["Cleric", "Light Domain", "War Domain", "Fiend"],
         "summary": "This spells allows the caster to make a pillar of divine flame at a chosen location dealing   5d6 | Fire damage and  5d6 | Radiant damage.",
         "description": "Make a pillar of divine fire roar down from the heavens like the wrath of affronted angels.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1953,7 +1728,7 @@
         "name": "Flaming Sphere",
         "image": "http://localhost:3001/api/images/a/a8/Flaming_Sphere.webp",
         "level": 2,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [
             "Druid",
@@ -1963,7 +1738,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to conjure a Flaming Sphere that can attack and burn enemies.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1971,12 +1746,12 @@
         "name": "Flesh to Gold",
         "image": "http://localhost:3001/api/images/d/d1/Spell_Transmutation_FleshToStone.png",
         "level": 6,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "Trap a target and turn it into gold after 3 turns.",
         "description": "Restrain a target and, after 3 rounds, the target becomes inactive solid gold until the spell ends. The target will Petrify if it does not suceed its Saving Throw within 3 turns. notes",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -1984,14 +1759,12 @@
         "name": "Flesh to Stone",
         "image": "http://localhost:3001/api/images/2/2b/Flesh_to_Stone.webp",
         "level": 6,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Wizard"
-        ],
+        "classes": ["Wizard"],
         "summary": "Atrophy a foe, Restraining them until they temporarily turn to stone.",
         "description": "Atrophy a foe, Restrained|Restraining them until they temporarily turn to stone. The target will Petrified|Petrify if it does not succeed its Saving Throw within 3 turns.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -1999,11 +1772,11 @@
         "name": "Florrick's Cohort",
         "image": "http://localhost:3001/api/images/4/44/Action_EndGameAlly_FlamingFistSummon.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon two First Attackers and a First Defender.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2011,7 +1784,7 @@
         "name": "Fog Cloud",
         "image": "http://localhost:3001/api/images/e/ec/Fog_Cloud.webp",
         "level": 1,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [
             "Druid",
@@ -2024,7 +1797,7 @@
         ],
         "summary": "It allows spellcasters to summon a sphere of fog on an area in range and heavily obscure the area. Creatures within the area are Blinded.",
         "description": "Create a cloud of dense fog to Heavily Obscured|Heavily Obscure and Blinded|Blind creatures within.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2032,17 +1805,12 @@
         "name": "Fox's Cunning",
         "image": "http://localhost:3001/api/images/1/10/Fox's_Cunning.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the slyness of a fox. Affected creatures gain Checks.",
         "description": "Creature gains Advantage on Checks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2050,17 +1818,11 @@
         "name": "Freedom of Movement",
         "image": "http://localhost:3001/api/images/5/55/Freedom_of_Movement.webp",
         "level": 4,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "War Domain",
-            "Tempest Domain"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "War Domain", "Tempest Domain"],
         "summary": "This spell allows spellcasters to imbue an ally with the ability to avoid some slowing effects.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2068,7 +1830,7 @@
         "name": "Friends",
         "image": "http://localhost:3001/api/images/2/22/Friends.webp",
         "level": 0,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [
             "Bard",
@@ -2079,14 +1841,15 @@
             "Arcane Trickster"
         ],
         "summary": "It makes the caster appear more charismatic to the affected creature.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
     {
+        "name": "Frost of Dark Winter",
         "image": "http://localhost:3001/api/images/b/b2/Protection_from_Energy_Cold_Icon.png",
         "level": 0,
-        "school": "NONE",
+        "school": 0,
         "ritual": false,
         "classes": [],
         "summary": "Frost of Dark Winter is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of ice and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
@@ -2098,16 +1861,11 @@
         "name": "Gaseous Form",
         "image": "http://localhost:3001/api/images/d/df/Gaseous_Form.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Sorcerer",
-            "Warlock",
-            "Wizard",
-            "Circle of the Spores"
-        ],
+        "classes": ["Sorcerer", "Warlock", "Wizard", "Circle of the Spores"],
         "summary": "This spell allows spellcasters to transform themselves or an ally into a cloud of mist to avoid attacks, reduce size, and gain Advantage on some Saving Throws.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2115,18 +1873,18 @@
         "name": "Ghoulish Touch",
         "image": "http://localhost:3001/api/images/e/ed/Generic_Physical.webp",
         "level": 1,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [],
         "summary": "This spell is only found granted by Ring of Exalted Marrow. It allows the user to attack a target and possibly Paralysed|Paralyse them.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Githborn: Flying Boots",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "Bestow the ability to Fly upon yourself.",
@@ -2136,13 +1894,14 @@
         "noSpellSlot": false
     },
     {
+        "name": "Glacial Age",
         "image": "http://localhost:3001/api/images/6/62/Elemental_Weapon_Cold.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "This spell is a variant of Elemental Age and imbues a weapon with icy might, granting it bonus Cold|Cold damage and giving it an Attack Roll bonus.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2150,11 +1909,11 @@
         "name": "Globe of Invulnerability",
         "image": "http://localhost:3001/api/images/b/bb/Globe_of_Invulnerability.webp",
         "level": 6,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [],
         "description": "Create a barrier that makes creatures and objects inside it Immune to all damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2162,21 +1921,18 @@
         "name": "Glyph of Warding",
         "image": "http://localhost:3001/api/images/9/9b/Glyph_of_Warding.webp",
         "level": 3,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Wizard"
-        ],
+        "classes": ["Bard", "Cleric", "Wizard"],
         "summary": "This spell allows spellcasters to inscribe a ward that can trigger various magical effects when stepped on by an enemy.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
     {
+        "name": "Glyph of warding: Sleep",
         "level": 0,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [],
         "actionType": 0,
@@ -2187,14 +1943,11 @@
         "name": "Goodberry",
         "image": "http://localhost:3001/api/images/d/dd/Goodberry.webp",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Ranger"
-        ],
+        "classes": ["Druid", "Ranger"],
         "summary": "This spell allows spellcasters to create magical berries which have healing properties when eaten.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2202,16 +1955,12 @@
         "name": "Grant Flight",
         "image": "http://localhost:3001/api/images/8/88/Grant_Flight.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Sorcerer",
-            "Warlock",
-            "Wizard"
-        ],
+        "classes": ["Sorcerer", "Warlock", "Wizard"],
         "summary": "This spell allows spellcasters to grant a creature they touch the ability to fly.",
         "description": "Bestow the ability to Flight|Fly upon yourself or an ally.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2219,14 +1968,11 @@
         "name": "Grasping Vine",
         "image": "http://localhost:3001/api/images/f/fd/Grasping_Vine.webp",
         "level": 4,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Nature Domain"
-        ],
+        "classes": ["Druid", "Nature Domain"],
         "summary": "This spell allows spellcasters to summon a Grasping Vine which can pull enemies toward itself.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2234,16 +1980,12 @@
         "name": "Grease",
         "image": "http://localhost:3001/api/images/2/22/Grease.webp",
         "level": 1,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Wizard",
-            "Arcane Trickster",
-            "Eldritch Knight"
-        ],
+        "classes": ["Wizard", "Arcane Trickster", "Eldritch Knight"],
         "summary": "It allows spellcasters to conjure flammable grease on the ground within range and turn it into Difficult Terrain.",
         "description": "Cover the ground in flammable grease. It becomes Difficult Terrain and creatures within can fall Prone.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2251,17 +1993,12 @@
         "name": "Greater Invisibility",
         "image": "http://localhost:3001/api/images/f/f5/Greater_Invisibility.webp",
         "level": 4,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Sorcerer",
-            "The Archfey",
-            "Wizard"
-        ],
+        "classes": ["Bard", "Sorcerer", "The Archfey", "Wizard"],
         "summary": "This spell allows spellcasters to provide a more resilient form of Invisibility for their allies.",
         "description": "Turn a creature Invisible. Attacks against it have Disadvantage. It attacks with Advantage. Invisibility breaks when you fail increasingly harder Stealth Ability Checks on attacking, casting spells or interacting with items.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2269,17 +2006,12 @@
         "name": "Greater Restoration",
         "image": "http://localhost:3001/api/images/b/b3/Greater_Restoration.webp",
         "level": 5,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Life Domain"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "Life Domain"],
         "summary": "This spell allows spellcasters to removes Charm, Petrification, Stun, and Curses from a creature.",
         "description": "Touch a creature and negate any Charmed|Charm, Petrified|Petrification, Stunned|Stun, or cursed.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2287,15 +2019,12 @@
         "name": "Guardian of Faith",
         "image": "http://localhost:3001/api/images/8/87/Guardian_of_Faith_Spell.webp",
         "level": 4,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Light Domain"
-        ],
+        "classes": ["Cleric", "Light Domain"],
         "summary": "This spell allows spellcasters to summon a divine guardian who sacrifices its Hit Points to damage enemies.",
         "description": "Call forth a divine guardian that attacks nearby enemies. Every time it deals damage, the guardian loses an equal amount of Hit Points. Lasts 10 turns. The guardian is stationary. When an enemy is in range, it uses an attack called \"Strike of the Guardian\". It has a range of 3m and deals 20 Radiant damage. On a DEX save, enemies still take half damage. It has 60 Hit Points.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2303,14 +2032,11 @@
         "name": "Guidance",
         "image": "http://localhost:3001/api/images/8/8b/Guidance.webp",
         "level": 0,
-        "school": "DIVINATION",
+        "school": 3,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Druid"
-        ],
+        "classes": ["Cleric", "Druid"],
         "summary": "This cantrip allows spellcasters to grant a temporary bonus to a creature's Ability Checks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2318,14 +2044,12 @@
         "name": "Guiding Bolt",
         "image": "http://localhost:3001/api/images/b/b5/Guiding_Bolt.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Cleric"
-        ],
+        "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to hit enemies with radiant bolt that deals Radiant damage and grants Attack Roll made against them.",
         "description": "The next Attack Roll against this target has Advantage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2333,11 +2057,11 @@
         "name": "Guildmaster Keene's Fixers",
         "image": "http://localhost:3001/api/images/4/43/Action_EndGameAlly_KeeneSummon.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon Lady Coup and Lady Lockjaw to aid you in battle.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2345,11 +2069,11 @@
         "name": "Gur Huntwardens",
         "image": "http://localhost:3001/api/images/f/f7/Action_EndGameAlly_GurReinforcement.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon two Gur Hunter Warriors and a Gur Hunter Sharpshooter.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2357,7 +2081,7 @@
         "name": "Gust of Wind",
         "image": "http://localhost:3001/api/images/9/95/Gust_of_Wind.webp",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Druid",
@@ -2370,7 +2094,7 @@
         ],
         "summary": "This spell allows spellcasters to conjure a squall to clear dangerous gasses or throw creatures back, potentially causing a dangerous fall.",
         "description": "Summon a strong wind that clears all clouds. Any creatures caught in the gale who fail a Strength SavingThrow will be pushed back ft=17 and be thrown Off Balance.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2378,14 +2102,12 @@
         "name": "Hail of Thorns",
         "image": "http://localhost:3001/api/images/0/0b/Hail_of_Thorns.webp",
         "level": 1,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Ranger"
-        ],
+        "classes": ["Ranger"],
         "summary": "This spell allows spellcasters to make ranged attacks and potentially deal AoE Piercing damage to enemies.",
         "description": "Shoot a volley of thorns. They deal weapon damage|Physical and explode, dealing an additional 1d10|Piercing damage to the target and surrounding creatures.",
-        "actionType": "BOTH",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2393,13 +2115,11 @@
         "name": "Harm",
         "image": "http://localhost:3001/api/images/c/c4/Harm.webp",
         "level": 6,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
-        "classes": [
-            "Cleric"
-        ],
+        "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to make an enemy much more feeble.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2407,15 +2127,11 @@
         "name": "Haste",
         "image": "http://localhost:3001/api/images/4/44/Haste.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Sorcerer",
-            "Wizard",
-            "Oath of Vengeance"
-        ],
+        "classes": ["Sorcerer", "Wizard", "Oath of Vengeance"],
         "summary": "This spell allows spellcasters to allow their allies to become Hastened.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2423,14 +2139,11 @@
         "name": "Heal",
         "image": "http://localhost:3001/api/images/3/36/Heal.webp",
         "level": 6,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Druid"
-        ],
+        "classes": ["Cleric", "Druid"],
         "summary": "This spell allows spellcasters to substantially heal a target by recovering Hit Points and removing Diseases.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2438,15 +2151,11 @@
         "name": "Healing Word",
         "image": "http://localhost:3001/api/images/d/db/Healing_Word.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid"
-        ],
+        "classes": ["Bard", "Cleric", "Druid"],
         "summary": "This spell allows spellcasters to heal allies that they can see within range.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2454,14 +2163,11 @@
         "name": "Heat Metal",
         "image": "http://localhost:3001/api/images/0/06/Heat_Metal.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Druid"
-        ],
+        "classes": ["Bard", "Druid"],
         "summary": "This spell allows spellcasters to heat up a metal weapon or armour on the targeted creature, forcing them to let go or receive damage or suffer various penalties.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2469,11 +2175,11 @@
         "name": "Hellfire Orb",
         "image": "http://localhost:3001/api/images/1/1a/Fireball.webp",
         "level": 6,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to unleash a streak of fire from their hands that ignites into a large explosion at a chosen point within range.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2481,11 +2187,11 @@
         "name": "Hellish Rebuke",
         "image": "http://localhost:3001/api/images/d/d0/Hellish_Rebuke.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [],
+        "classes": ["Warlock", "Oathbreaker", "Asmodeus Tiefling"],
         "summary": "This spell allows spellcasters to surround a creature in hellfire that deals Fire damage as a Reaction when taking damage from them.",
-        "actionType": "REACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2493,11 +2199,11 @@
         "name": "Hellrider Platoon",
         "image": "http://localhost:3001/api/images/6/67/Action_EndGameAlly_VeteranSummon.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon the Hellrider Paladin, Hellrider Cleric alongside with Zevlor.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2505,11 +2211,11 @@
         "name": "Hellstalker Yurgir",
         "image": "http://localhost:3001/api/images/b/b3/Action_EndGameAlly_OrthonSummon.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon Hellstalker Yurgir to aid you in battle.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2517,14 +2223,12 @@
         "name": "Heroes' Feast",
         "image": "http://localhost:3001/api/images/3/35/Heroes'_Feast.webp",
         "level": 6,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Cleric"
-        ],
+        "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to summon a bountiful smorgasbord to bolster themselves and their allies and strengthen their resolve.",
         "description": "You and everyone around can't be Poisoned, Diseased, or Frightened. Everyone's maximum Hit Points increases by 12, and they make Wisdom SavingThrows with Advantage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2532,14 +2236,11 @@
         "name": "Heroism",
         "image": "http://localhost:3001/api/images/6/67/Heroism.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Paladin"
-        ],
+        "classes": ["Bard", "Paladin"],
         "summary": "This spell allows spellcasters to instill themselves or an ally with courage. The affected creature cannot be Frightened and gains Temporary Hit Points.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2547,13 +2248,11 @@
         "name": "Hex",
         "image": "http://localhost:3001/api/images/5/58/Hex.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
-        "classes": [
-            "Warlock"
-        ],
+        "classes": ["Warlock"],
         "summary": "This spell allows spellcasters to put a curse on a creature and deal additional Necrotic damage to the targeted creature. The curse also imposes Disadvantage on a chosen ability check.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2561,17 +2260,11 @@
         "name": "Hold Monster",
         "image": "http://localhost:3001/api/images/b/b4/Hold_Monster.webp",
         "level": 5,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Sorcerer",
-            "Warlock",
-            "Wizard",
-            "War Domain"
-        ],
+        "classes": ["Bard", "Sorcerer", "Warlock", "Wizard", "War Domain"],
         "summary": "This spell allows spellcasters to Paralyse a creature, preventing them from acting and making them vulnerable to attacks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2579,7 +2272,7 @@
         "name": "Hold Person",
         "image": "http://localhost:3001/api/images/6/69/Hold_Person.webp",
         "level": 2,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [
             "Bard",
@@ -2594,7 +2287,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to hold a target humanoid in place. The affected creature is unable to move and act and is much more susceptible to attacks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2602,13 +2295,11 @@
         "name": "Hunger of Hadar",
         "image": "http://localhost:3001/api/images/f/f6/Hunger_of_Hadar.webp",
         "level": 3,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Warlock"
-        ],
+        "classes": ["Warlock"],
         "summary": "It creates an area that deals damage and inflicts conditions to creatures in it, including reduced movement speed.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2616,16 +2307,11 @@
         "name": "Hypnotic Pattern",
         "image": "http://localhost:3001/api/images/5/5a/Hypnotic_Pattern.webp",
         "level": 3,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Sorcerer",
-            "Warlock",
-            "Wizard"
-        ],
+        "classes": ["Bard", "Sorcerer", "Warlock", "Wizard"],
         "summary": "This spell allows spellcasters to hypnotise all creatures within an area.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2633,7 +2319,7 @@
         "name": "Ice Knife",
         "image": "http://localhost:3001/api/images/0/08/Ice_Knife.webp",
         "level": 1,
-        "school": "NONE",
+        "school": 0,
         "ritual": false,
         "classes": [
             "Druid",
@@ -2643,7 +2329,7 @@
             "Eldritch Knight"
         ],
         "summary": "The caster throws a shard of ice, which explodes and leaves behind an icy surface.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2651,17 +2337,12 @@
         "name": "Ice Storm",
         "image": "http://localhost:3001/api/images/8/8c/Ice_Storm.webp",
         "level": 4,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Sorcerer",
-            "Wizard",
-            "Tempest Domain"
-        ],
+        "classes": ["Druid", "Sorcerer", "Wizard", "Tempest Domain"],
         "summary": "This spell allows spellcasters to summon an ice storm to strike an area.",
         "description": "Impel a storm of hail and ice to crash from the sky, covering the ground and striking all objects and creatures within range, dealing Bludgeoning and Cold damage. It also creates an Ice Surface that lasts 2 turns.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2669,15 +2350,12 @@
         "name": "Inflict Wounds",
         "image": "http://localhost:3001/api/images/0/04/Inflict_Wounds.webp",
         "level": 1,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Oathbreaker"
-        ],
+        "classes": ["Cleric", "Oathbreaker"],
         "summary": "This spell allows the spellcaster to make a melee attack that inflicts Necrotic damage.",
         "description": "Putrefy a creature with Necrotic energy filling your hands.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2685,7 +2363,7 @@
         "name": "Insect Plague",
         "image": "http://localhost:3001/api/images/6/63/Insect_Plague.webp",
         "level": 5,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [
             "Cleric",
@@ -2696,7 +2374,7 @@
         ],
         "summary": "This spell allows spellcasters to create a damaging, debilitating swarm of insects over a section of the battlefield.",
         "description": "Locusts attack everyone within range, make the area Checks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2704,7 +2382,7 @@
         "name": "Invisibility",
         "image": "http://localhost:3001/api/images/4/45/Invisibility.webp",
         "level": 2,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
         "classes": [
             "Bard",
@@ -2716,7 +2394,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to turn themselves and other creatures Invisible to the naked eye.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2724,11 +2402,11 @@
         "name": "Ironhand Grenadiers",
         "image": "http://localhost:3001/api/images/d/da/Action_EndGameAlly_GrenadiersSummon.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon 2 Ironhand Grenadiers, who can throw blinding bombs and shoot Smokepowder Arrows.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2736,10 +2414,10 @@
         "name": "Karsus' Compulsion",
         "image": "http://localhost:3001/api/images/4/48/Karsus'_Compulsion.webp",
         "level": 9,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [],
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2747,19 +2425,19 @@
         "name": "Keeper's Fee",
         "image": "http://localhost:3001/api/images/6/6d/Generic_Control.webp",
         "level": 0,
-        "school": "",
         "ritual": false,
         "classes": [],
         "summary": "It is uniquely known by Helsik.",
         "description": "Magically snatch a weapon from the target's hand.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
     {
+        "name": "Kereska's Favour",
         "image": "http://localhost:3001/api/images/7/72/Protection_from_Energy_Icon.png",
         "level": 0,
-        "school": "NONE",
+        "school": 0,
         "ritual": false,
         "classes": [],
         "summary": "Kereska's Favour is a unique Level 4 Evocation Spell that allows its caster to imbue themselves with an element and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
@@ -2772,7 +2450,7 @@
         "name": "Khalid's Gift: Aid",
         "image": "http://localhost:3001/api/images/3/33/Aid.webp",
         "level": 3,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows Khalid's Gift's wearer to heal themselves for 10|Healing and increase their hit points for the same amount.",
@@ -2785,11 +2463,11 @@
         "name": "Kirh'raki Inferno",
         "image": "http://localhost:3001/api/images/8/8a/Wall_of_Fire.webp",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon a upscaled version of Wall of Fire, with increased damage and aoe.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2797,7 +2475,7 @@
         "name": "Knock",
         "image": "http://localhost:3001/api/images/2/2c/Knock.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [
             "Bard",
@@ -2808,7 +2486,7 @@
         ],
         "summary": "This spell allows spellcasters to unlock non-magical locks.",
         "description": "Unlock an object that is held shut by a mundane lock.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2816,11 +2494,11 @@
         "name": "Legacy of Avernus: Searing Smite",
         "image": "http://localhost:3001/api/images/0/09/Searing_Smite_Icon.png",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows a *",
-        "actionType": "BOTH",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -2828,7 +2506,7 @@
         "name": "Lesser Restoration",
         "image": "http://localhost:3001/api/images/7/7d/Lesser_Restoration.webp",
         "level": 2,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [
             "Bard",
@@ -2841,7 +2519,7 @@
         ],
         "summary": "This spell allows the spellcaster to cure an adjacent creature.",
         "description": "Cure a creature from diseased, poisoned, Paralysed|Paralysis, or blinded.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2849,7 +2527,7 @@
         "name": "Light",
         "image": "http://localhost:3001/api/images/e/e2/Light.webp",
         "level": 0,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Bard",
@@ -2861,7 +2539,7 @@
         ],
         "summary": "It makes an object shed light in a small area.",
         "description": "Infuse an object with an aura of light. Only affects one target at a time.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2869,12 +2547,12 @@
         "name": "Lightning Bolt",
         "image": "http://localhost:3001/api/images/5/5f/Lightning_Bolt.webp",
         "level": 3,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to discharge a bolt of lightning in any direction, potentially hitting multiple creatures.",
         "description": "Call forth a blast of lightning that hits all creatures in the line of the eruption.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2882,7 +2560,7 @@
         "name": "Longstrider",
         "image": "http://localhost:3001/api/images/1/1b/Longstrider.webp",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": true,
         "classes": [
             "Bard",
@@ -2894,7 +2572,7 @@
         ],
         "summary": "This spell allows spellcasters to make a creature move farther during a turn.",
         "description": "Increase a creature's Movement Speed by m=3|ft=10.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2902,11 +2580,11 @@
         "name": "Lorroakan's Firestorm",
         "image": "http://localhost:3001/api/images/2/2c/Action_EndGame_RolanArtillery.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon a upscaled version of Fireball, with increased damage and aoe.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2914,19 +2592,19 @@
         "name": "Lovely Assistant",
         "image": "http://localhost:3001/api/images/2/20/Animate_Dead_Zombie_Icon.png",
         "level": 5,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [],
         "summary": "When Malus Thorm's assistants are dead, he will use this Spell to reanimate them.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Mage Armour",
         "image": "http://localhost:3001/api/images/5/51/Mage_Armour.webp",
         "level": 1,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -2935,7 +2613,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows unarmoured spellcasters to surround themselves with magical protection.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2943,7 +2621,7 @@
         "name": "Mage Hand",
         "image": "http://localhost:3001/api/images/b/b3/Mage_Hand.webp",
         "level": 0,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [
             "Bard",
@@ -2954,7 +2632,7 @@
             "Eldritch Knight"
         ],
         "summary": "It conjures a spectral hand that can interact with objects.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2962,7 +2640,7 @@
         "name": "Magic Missile",
         "image": "http://localhost:3001/api/images/d/d8/Magic_Missile.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -2971,7 +2649,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to hit enemies with multiple projectiles that deal Force damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -2979,7 +2657,7 @@
         "name": "Magic Weapon",
         "image": "http://localhost:3001/api/images/4/4e/Magic_Weapon.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [
             "Paladin",
@@ -2990,14 +2668,15 @@
         ],
         "summary": "This spell allows spellcasters to infuse a weapon with arcane energy, making it magical.",
         "description": "Infuse a weapon with arcane energy. The weapon becomes magical, receiving a +1 bonus to Attack Rolls and Damage Rolls.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
     {
+        "name": "Mammon's Tax",
         "image": "http://localhost:3001/api/images/d/d8/Generic_Damage.webp",
         "level": 1,
-        "school": "NONE",
+        "school": 0,
         "ritual": false,
         "classes": [],
         "summary": "Mammon's Tax is a Class Action known by Helsik. It deals 6d6 Slashing damage to a target for every 500 gold it has.",
@@ -3010,16 +2689,11 @@
         "name": "Mass Cure Wounds",
         "image": "http://localhost:3001/api/images/4/44/Mass_Cure_Wounds.webp",
         "level": 5,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Life Domain"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "Life Domain"],
         "summary": "This spell allows spellcasters to heal several of their allies.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3027,14 +2701,12 @@
         "name": "Mass Healing Word",
         "image": "http://localhost:3001/api/images/d/d9/Mass_Healing_Word.webp",
         "level": 3,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Cleric"
-        ],
+        "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to heal several allies that they can see within range.",
         "description": "Call out words of restoration to heal up to 6 creatures for 1d4 + Spellcasting Modifier|Healing.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3042,7 +2714,7 @@
         "name": "Melf's Acid Arrow",
         "image": "http://localhost:3001/api/images/b/b4/Melf's_Acid_Arrow.webp",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Wizard",
@@ -3051,7 +2723,7 @@
             "Arcane Trickster"
         ],
         "summary": "This spell allows spellcasters to shoot a magical arrow that deals Acid|Acid damage to a target on impact and at the end of its next turn.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3059,11 +2731,11 @@
         "name": "Mind Flayer Domination",
         "image": "http://localhost:3001/api/images/8/80/Dominate_Person_Icon.png",
         "level": 0,
-        "school": "ENCHANTMENT <!-- THE GAME LISTS IT AS AN ENCHANTMENT CANTRIP AS OF PATCH 3 HOTFIX 7 -->",
+        "school": 4,
         "ritual": false,
         "classes": [],
         "summary": "Mind Flayer Domination is an Action and Dominate a nearby humanoid.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3071,7 +2743,7 @@
         "name": "Minor Illusion",
         "image": "http://localhost:3001/api/images/7/77/Minor_Illusion.webp",
         "level": 0,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
         "classes": [
             "Bard",
@@ -3083,7 +2755,7 @@
             "Way of Shadow"
         ],
         "summary": "It conjures a simple illusion to distract creatures.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3091,7 +2763,7 @@
         "name": "Mirror Image",
         "image": "http://localhost:3001/api/images/d/d9/Mirror_Image.webp",
         "level": 2,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -3103,7 +2775,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to create 3 illusory duplicates of themselves to distract attackers.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3111,7 +2783,7 @@
         "name": "Misty Step",
         "image": "http://localhost:3001/api/images/3/30/Misty_Step.webp",
         "level": 2,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -3125,7 +2797,7 @@
         ],
         "summary": "This spell allows spellcasters to teleport themselves to an unoccupied space that they can see.",
         "description": "Surrounded by silver mist, you teleport to an unoccupied space you can see.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3133,11 +2805,11 @@
         "name": "Mizora, Agent of Avernus",
         "image": "http://localhost:3001/api/images/0/08/Action_EndGameAlly_Mizora.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon Mizora to aid you in battle.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3145,14 +2817,11 @@
         "name": "Moonbeam",
         "image": "http://localhost:3001/api/images/1/11/Moonbeam.webp",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Oath of the Ancients"
-        ],
+        "classes": ["Druid", "Oath of the Ancients"],
         "summary": "This spell allows spellcasters to call down a beam of moonlight that deals Radiant damage to any creature that enters the beam or starts its turn there.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3160,7 +2829,6 @@
         "name": "Netherese Orb Blast",
         "image": "http://localhost:3001/api/images/3/3b/Action_EndGame_NethereseOrbBlast.png",
         "level": 0,
-        "school": "",
         "ritual": false,
         "classes": [],
         "description": "Gale triggers the Netherese Orb in his chest, destroying everything and everyone in a wide radius.",
@@ -3172,11 +2840,11 @@
         "name": "Nightbringer's Shadow Adepts",
         "image": "http://localhost:3001/api/images/8/80/Action_EndGameAlly_ShadowAdepts.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon two Sharran Novices and two Sharran Fidelians.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3184,11 +2852,11 @@
         "name": "Otiluke's Freezing Sphere",
         "image": "http://localhost:3001/api/images/8/84/Otiluke's_Freezing_Sphere.webp",
         "level": 6,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "description": "Create a ball of churning ice that can be launched instantly to generate a frosty explosion or stored for later use.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3196,13 +2864,11 @@
         "name": "Otiluke's Resilient Sphere",
         "image": "http://localhost:3001/api/images/7/79/Otiluke's_Resilient_Sphere.webp",
         "level": 4,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Wizard"
-        ],
+        "classes": ["Wizard"],
         "description": "Enclose a target in a sphere of shimmering force, reducing its movement speed by half, and blocking all incoming and outgoing damage",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3210,15 +2876,12 @@
         "name": "Otto's Irresistible Dance",
         "image": "http://localhost:3001/api/images/9/98/Otto's_Irresistible_Dance.webp",
         "level": 6,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Wizard"
-        ],
+        "classes": ["Bard", "Wizard"],
         "summary": "This spell allows spellcasters to force a creature to stay in place, inactive.",
         "description": "Cause a creature to start dancing, making it unable to take Move. Its attackers have Advantage on Attack Rolls. The dancer has Disadvantage on Attack Rolls and Dexterity SavingThrows.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3226,17 +2889,12 @@
         "name": "Owl's Wisdom",
         "image": "http://localhost:3001/api/images/a/a7/Owl's_Wisdom.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the intuition of an owl. Affected creatures gain Checks.",
         "description": "Creature gains Advantage on Checks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3244,12 +2902,12 @@
         "name": "Paralyzing Ray",
         "image": "http://localhost:3001/api/images/7/75/Generic_Damage_Icon.png",
         "level": 3,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [],
         "summary": "This spell paralyzes its target.",
         "description": "Paralyzes its target.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3257,16 +2915,12 @@
         "name": "Pass Without Trace",
         "image": "http://localhost:3001/api/images/e/eb/Pass_Without_Trace.webp",
         "level": 2,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Ranger",
-            "Trickery Domain"
-        ],
+        "classes": ["Druid", "Ranger", "Trickery Domain"],
         "summary": "This spell allows spellcasters to grants themselves and nearby allies a bonus to Checks.",
         "description": "Call forth a veil of shadow and silence that gives you and nearby allies a +10 bonus to Checks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3274,7 +2928,7 @@
         "name": "Phantasmal Force",
         "image": "http://localhost:3001/api/images/c/c1/Phantasmal_Force.webp",
         "level": 2,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
         "classes": [
             "Bard",
@@ -3287,7 +2941,7 @@
         ],
         "summary": "This spell allows spellcasters to flood a target creature's mind with an illusion of the last thing that attacked it, dealing 1d6|Psychic damage per turn, changing to the last type of damage inflicted upon the target.",
         "description": "Deal damage to a creature each turn. The type of damage changes to the last type of damage the creature suffered.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3295,14 +2949,12 @@
         "name": "Phantasmal Killer",
         "image": "http://localhost:3001/api/images/1/11/Phantasmal_Killer.webp",
         "level": 4,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
-        "classes": [
-            "Wizard"
-        ],
+        "classes": ["Wizard"],
         "summary": "This spell allows spellcasters to temporarily haunt a creatures mind with illusions, dealing damage, prevents movement, and has Disadvantage on Ability Checks and Attack Rolls.",
         "description": "Haunt a creature with illusions of its greatest fears. It takes 4d10|Psychic Damage per turn, cannot move, has Disadvantage on Ability Checks and Attack Rolls",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3310,11 +2962,11 @@
         "name": "Pierce the Weak",
         "image": "http://localhost:3001/api/images/6/69/Pierce_the_Weak_Icon.png",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "This spell is a variant of Brand the Weak Icon|Brand the Weak that imposes vulnerability on an enemy to Piercing damage.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3322,13 +2974,11 @@
         "name": "Planar Ally",
         "image": "http://localhost:3001/api/images/a/a3/Planar_Ally_Icon.png",
         "level": 6,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Cleric"
-        ],
+        "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to summon an Elemental, Celestial, or Fiend for aid.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3336,16 +2986,11 @@
         "name": "Planar Binding",
         "image": "http://localhost:3001/api/images/2/2e/Planar_Binding.webp",
         "level": 5,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Wizard"
-        ],
+        "classes": ["Bard", "Cleric", "Druid", "Wizard"],
         "summary": "This spell allows spellcasters to take control of a Celestial, Elemental, Fey, or Fiend.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3353,7 +2998,7 @@
         "name": "Plant Growth",
         "image": "http://localhost:3001/api/images/9/9a/Plant_Growth.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [
             "Bard",
@@ -3364,7 +3009,7 @@
             "Oath of the Ancients"
         ],
         "summary": "This spell allows spellcasters to cause an area to expel weeds from the ground, quartering the movement speed of all creatures travelling through the area.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3372,7 +3017,7 @@
         "name": "Poison Spray",
         "image": "http://localhost:3001/api/images/5/58/Poison_Spray.webp",
         "level": 0,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [
             "Druid",
@@ -3386,7 +3031,7 @@
         ],
         "summary": "This cantrip allows spellcasters to deal Poison damage to a target.",
         "description": "Project a puff of noxious gas, dealing 1d12|Poison to a target.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3394,42 +3039,24 @@
         "name": "Polymorph",
         "image": "http://localhost:3001/api/images/1/14/Polymorph.webp",
         "level": 4,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Druid",
-            "Sorcerer",
-            "Wizard",
-            "Trickery Domain"
-        ],
+        "classes": ["Bard", "Druid", "Sorcerer", "Wizard", "Trickery Domain"],
         "summary": "This spell transforms a creature into a sheep.",
         "description": "Transform a creature into a harmless sheep. If the sheep's Hit Points drop to 0, the target reverts to its original form with its original Hit Points.",
-        "actionType": "ACTION",
-        "concentration": true,
-        "noSpellSlot": false
-    },
-    {
-        "image": "http://localhost:3001/api/images/c/c1/Wild_Shape_Dire_Raven.webp",
-        "level": 3,
-        "school": "TRANSMUTATION",
-        "ritual": false,
-        "classes": [],
-        "summary": "Polymorph: Dire Raven is a Class Action granted by Corvid Token that transforms you into a Dire Raven once per Long Rest.",
-        "description": "Take the shape of a dire raven that can avoid attention and Blinded|Blind enemies. It has 13|Healing.",
         "actionType": 0,
-        "concentration": false,
+        "concentration": true,
         "noSpellSlot": false
     },
     {
         "name": "Possession",
         "image": "http://localhost:3001/api/images/6/6d/Generic_Control.webp",
         "level": 5,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to possess a creature, forcing it to do their bidding and dealing Necrotic damage every turn.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3437,13 +3064,11 @@
         "name": "Prayer of Healing",
         "image": "http://localhost:3001/api/images/c/ca/Prayer_Of_Healing.webp",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Cleric"
-        ],
+        "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to heal all allies within range.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3451,14 +3076,11 @@
         "name": "Produce Flame",
         "image": "http://localhost:3001/api/images/3/39/Produce_Flame.webp",
         "level": 0,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Druid"
-        ],
+        "classes": ["Cleric", "Druid"],
         "summary": "This cantrip creates a blue flame in the caster's palm that emanates light and can be thrown at enemies.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3466,10 +3088,9 @@
         "name": "Promise of Wealth",
         "image": "http://localhost:3001/api/images/6/6d/Generic_Control.webp",
         "level": 6,
-        "school": "DIVINATION",
         "ritual": false,
         "classes": [],
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3477,7 +3098,7 @@
         "name": "Protection from Energy",
         "image": "http://localhost:3001/api/images/7/7e/Protection_from_Energy.webp",
         "level": 3,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [
             "Cleric",
@@ -3489,7 +3110,7 @@
             "Oath of Vengeance"
         ],
         "summary": "This spell allows spellcasters to grant a creature they touch Resistance to an element of their choice.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3497,7 +3118,7 @@
         "name": "Protection from Evil and Good",
         "image": "http://localhost:3001/api/images/0/0c/Protection_from_Evil_and_Good.webp",
         "level": 1,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [
             "Cleric",
@@ -3509,7 +3130,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to surround themselves with magical protection against Aberrations, Celestials, Elementals, Fey, Fiends, and Undead.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3517,17 +3138,12 @@
         "name": "Protection from Poison",
         "image": "http://localhost:3001/api/images/9/9d/Protection_from_Poison.webp",
         "level": 2,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Druid",
-            "Paladin",
-            "Ranger"
-        ],
+        "classes": ["Cleric", "Druid", "Paladin", "Ranger"],
         "summary": "This spell allows spellcasters to grant a creature they touch protection from Poisonous effects.",
         "description": "Touch a creature to grant it protection against Poisonous influences. You neutralize all Poisons that affect it, grant it Advantage on SavingThrows against being Poisoned|inline=true, and Resistance to Poison damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3535,35 +3151,20 @@
         "name": "Ray of Enfeeblement",
         "image": "http://localhost:3001/api/images/a/ad/Ray_of_Enfeeblement.webp",
         "level": 2,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
-        "classes": [
-            "Warlock",
-            "Wizard",
-            "Arcane Trickster",
-            "Eldritch Knight"
-        ],
+        "classes": ["Warlock", "Wizard", "Arcane Trickster", "Eldritch Knight"],
         "summary": "This spell allows spellcasters to make a ranged spell attack against a creature and sap their Strength. A weakened creature deals half damage with weapon attacks that use Strength.",
         "description": "Weaken a foe: they deal half damage with weapon attacks using Strength.",
-        "actionType": "ACTION",
-        "concentration": true,
-        "noSpellSlot": false
-    },
-    {
-        "level": 0,
-        "school": "NONE",
-        "ritual": false,
-        "classes": [],
-        "description": "Ray of Fear is a unique Level 3 Necromancy Spell granted by equipping the amulet, The Spectator Eyes. Ray of Fear Frightens your target.",
         "actionType": 0,
-        "concentration": false,
+        "concentration": true,
         "noSpellSlot": false
     },
     {
         "name": "Ray of Frost",
         "image": "http://localhost:3001/api/images/1/13/Ray_of_Frost.webp",
         "level": 0,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -3573,7 +3174,7 @@
         ],
         "summary": "It deals Cold damage to the target and slows it down.",
         "description": "Reduces the target's Movement Speed by m=3|ft=10.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3581,7 +3182,7 @@
         "name": "Ray of Sickness",
         "image": "http://localhost:3001/api/images/b/b8/Ray_of_Sickness.webp",
         "level": 1,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -3591,7 +3192,7 @@
         ],
         "summary": "This spell allows spellcasters to hit enemies with a ray of nauseating energy that deals Poison damage, and potentially Poisons them.",
         "description": "Possibly Poisoned|Poisons the target.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3599,12 +3200,12 @@
         "name": "Rays of Fire",
         "image": "http://localhost:3001/api/images/3/39/Rays_of_Fire_Full_Icon.png",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to hurl 3 rays of fire at targets within range. The rays can all target the same creature, or they can be dispersed to different targets.",
         "description": "Hurl 3 rays of fire. Each ray deals 3d6|Fire damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3612,11 +3213,11 @@
         "name": "Recast Speak with Dead",
         "image": "http://localhost:3001/api/images/f/f5/Recast_Speak_with_Dead.webp",
         "level": 3,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": true,
         "classes": [],
         "summary": "This ability allows spellcasters to recast Speak with Dead without consuming a spell slot.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3624,12 +3225,12 @@
         "name": "Recast Sunbeam",
         "image": "http://localhost:3001/api/images/d/d9/Recast_Sunbeam.webp",
         "level": 6,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to project a beam of light, Blinding and dealing Radiant damage to everything in its path. It can then be recast on subsequent turns without expending a Spell Slot.",
         "description": "Call forth another beam of light that sears and Blinded|Blinds all creatures in its path, without expending a spell slot.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3637,7 +3238,7 @@
         "name": "Remove Curse",
         "image": "http://localhost:3001/api/images/2/20/Remove_Curse.webp",
         "level": 3,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [
             "Cleric",
@@ -3648,7 +3249,7 @@
         ],
         "summary": "This spell allows spellcasters to remove all curses afflicting a target through touch.",
         "description": "Touch a creature or object to remove all Curses and Hexes affecting it.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3656,15 +3257,12 @@
         "name": "Resistance",
         "image": "http://localhost:3001/api/images/c/c3/Resistance.webp",
         "level": 0,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Druid"
-        ],
+        "classes": ["Cleric", "Druid"],
         "summary": "This cantrip grants a temporary bonus to a creature's SavingThrows.",
         "description": "Make a target more resistant to spell effects and conditions: it receives a d4|Physical +1d4 bonus to SavingThrows.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3672,11 +3270,11 @@
         "name": "Retinue of the Vampire Lord",
         "image": "http://localhost:3001/api/images/1/1a/Action_EndGameAlly_VampireCreatures.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon 2 Shadows, 2 Giant Skeletons, a Ghast, a Shadow Mastiff and a Werewolf.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3684,14 +3282,11 @@
         "name": "Revivify",
         "image": "http://localhost:3001/api/images/2/23/Revivify.webp",
         "level": 3,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Paladin"
-        ],
+        "classes": ["Cleric", "Paladin"],
         "summary": "This spell allows the spellcaster to bring a dead Companion back to life.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3699,19 +3294,20 @@
         "name": "Revoke Guest Status",
         "image": "http://localhost:3001/api/images/1/15/Banishment.webp",
         "level": 5,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [],
         "summary": "Only usable as Hope, she can banish an enemy from House of Hope.",
         "description": "Hope banishes one of the unwelcome guests from her house forever.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
     {
+        "name": "Ride the Winds",
         "image": "http://localhost:3001/api/images/3/3d/Gaseous_Form_Icon.png",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "Ride the Winds is a unique Level 3 Transmutation Spell that can be cast when wearing Amulet of Windrider. It allows spellcasters to transform into a cloud.",
@@ -3724,11 +3320,11 @@
         "name": "Rolan's Firestorm",
         "image": "http://localhost:3001/api/images/2/2c/Action_EndGame_RolanArtillery.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon a upscaled version of Fireball, with increased damage and aoe.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3736,14 +3332,12 @@
         "name": "Sacred Flame",
         "image": "http://localhost:3001/api/images/0/0c/Sacred_Flame.webp",
         "level": 0,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Cleric"
-        ],
+        "classes": ["Cleric"],
         "summary": "It deals Radiant damage to a target.",
         "description": "Engulf a target in a flame-like radiance.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3751,14 +3345,11 @@
         "name": "Sanctuary",
         "image": "http://localhost:3001/api/images/3/33/Sanctuary.webp",
         "level": 1,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Paladin"
-        ],
+        "classes": ["Cleric", "Paladin"],
         "summary": "This spell allows spellcasters to ward themselves or an ally against enemy attacks.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3766,7 +3357,7 @@
         "name": "Scorching Ray",
         "image": "http://localhost:3001/api/images/7/76/Scorching_Ray.webp",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -3778,7 +3369,7 @@
         ],
         "summary": "This spell allows spellcasters to hurl 3 rays of fire at targets within range. You can either target a single creature or multiple creatures with the rays. Each ray rolls a separate Attack Roll and deals Fire damage.",
         "description": "Hurl 3 rays of fire. Each ray deals 2d6|Fire damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3786,13 +3377,11 @@
         "name": "Searing Smite",
         "image": "http://localhost:3001/api/images/d/da/Searing_Smite.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Paladin"
-        ],
+        "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to cause their melee weapon to flare with white-hot intensity, searing their targets on hit.",
-        "actionType": "BOTH",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3800,16 +3389,12 @@
         "name": "See Invisibility",
         "image": "http://localhost:3001/api/images/b/ba/See_Invisibility.webp",
         "level": 2,
-        "school": "DIVINATION",
+        "school": 3,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Sorcerer",
-            "Wizard"
-        ],
+        "classes": ["Bard", "Sorcerer", "Wizard"],
         "summary": "This spell allows spellcasters to see Invisible objects and creatures within range while not Incapacitated. Creatures within range which fail on a Dexterity Saving Throw are revealed to others.",
         "description": "Become able to see Invisible creatures, and possibly reveal them to others.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3817,17 +3402,11 @@
         "name": "Seeming",
         "image": "http://localhost:3001/api/images/1/19/Seeming.webp",
         "level": 5,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Sorcerer",
-            "Wizard",
-            "Archfey",
-            "Trickery Domain"
-        ],
+        "classes": ["Bard", "Sorcerer", "Wizard", "Archfey", "Trickery Domain"],
         "summary": "This spell allows spellcasters to disguise their allies.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3835,7 +3414,7 @@
         "name": "Selûne's Dream",
         "image": "http://localhost:3001/api/images/c/cc/Selûne's_Dream.webp",
         "level": 0,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "Selûne's Dream is a Cantrip (Evocation). It heals an ally, but may also put them to sleep. Selûne's Dream is in game only as a once per Long Rest action granted by the item Amulet of Selûne's Chosen.",
@@ -3847,43 +3426,42 @@
         "name": "Sethan: Reduce",
         "image": "http://localhost:3001/api/images/9/9b/Reduce.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Sethan: Spiritual Greataxe",
         "image": "http://localhost:3001/api/images/8/8b/Spiritual_Weapon_Greataxe.webp",
         "level": 6,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell is similar to the Cleric spell Spiritual Weapon: Greataxe. It allows the user to summon a floating Greataxe that can attack enemies.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Shadow Blade",
         "image": "http://localhost:3001/api/images/e/e8/Shadow_Blade.webp",
         "level": 2,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
-        "classes": [
-            "Item"
-        ],
+        "classes": ["Item"],
         "summary": "Create a Shadow Blade (Weapon) in your main hand that deals Psychic damage.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
+        "name": "Shar's Aegis",
         "image": "http://localhost:3001/api/images/c/c3/Shield_of_Faith_Icon.png",
         "level": 1,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [],
         "summary": "Shar's Aegis is a 1st level Abjuration spell that increases your Armour Class by 2 similar to Shield of Faith.",
@@ -3896,11 +3474,11 @@
         "name": "Shar's Darkness",
         "image": "http://localhost:3001/api/images/4/46/Darkness_Icon.png",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "Create a dark shroud that Heavily Obscures and Blinds creatures within. Creatures cannot make ranged attacks into or out of it.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3908,7 +3486,7 @@
         "name": "Shatter",
         "image": "http://localhost:3001/api/images/4/4c/Shatter.webp",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Bard",
@@ -3920,7 +3498,7 @@
             "Arcane Trickster"
         ],
         "summary": "This spell allows the spellcaster to generate a deafening noise explosion that can damage multiple creatures and objects. This spell is extra potent against inorganic targets, who must make their Saving Throw at Disadvantage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3928,7 +3506,7 @@
         "name": "Shield",
         "image": "http://localhost:3001/api/images/c/c8/Shield_Spell.webp",
         "level": 1,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -3937,7 +3515,7 @@
             "Eldritch Knight"
         ],
         "description": "When you are about to be hit by an enemy, use your Reaction to increase your Armour Class by 5. You also take no damage from Magic Missile. These effects last until the start of your next turn.",
-        "actionType": "REACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3945,29 +3523,24 @@
         "name": "Shield of Devotion: Aid",
         "image": "http://localhost:3001/api/images/3/33/Aid.webp",
         "level": 3,
-        "school": "",
         "ritual": false,
         "classes": [],
         "summary": "This spell allows Shield of Devotion's wearer to heal themselves for 10|Healing and increase their hit points for the same amount.",
         "description": "Heal yourself and increase your hit point maximum by 10|Healing.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Shield of Faith",
         "image": "http://localhost:3001/api/images/4/46/Shield_of_Faith.webp",
         "level": 1,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Paladin",
-            "War Domain"
-        ],
+        "classes": ["Cleric", "Paladin", "War Domain"],
         "summary": "This spell allows spellcasters to surround themselves or an ally with divine protection and gain a bonus to their Armour Class.",
         "description": "Surround a creature with a shimmering field of magic that increases its Armour Class by 2.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -3975,11 +3548,10 @@
         "name": "Shield of Screams",
         "image": "http://localhost:3001/api/images/6/6d/Generic_Control.webp",
         "level": 2,
-        "school": "ABJURATION",
         "ritual": false,
         "classes": [],
         "summary": "It is only known by Nere. It increases his Armour Class by 3 and deals 2d6 psychic damage to melee attackers.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -3987,14 +3559,11 @@
         "name": "Shillelagh",
         "image": "http://localhost:3001/api/images/8/8f/Shillelagh.webp",
         "level": 0,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Nature Domain"
-        ],
+        "classes": ["Druid", "Nature Domain"],
         "summary": "It imbues the caster's weapon with nature power.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4002,7 +3571,7 @@
         "name": "Shocking Grasp",
         "image": "http://localhost:3001/api/images/0/08/Shocking_Grasp.webp",
         "level": 0,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -4012,7 +3581,7 @@
         ],
         "summary": "It makes a melee attack that inflictsLightning damage and prevents the target from taking Reactions.",
         "description": "The target cannot use Reactions. This spell has Advantage on creatures with metal Armour.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4020,12 +3589,12 @@
         "name": "Sights of the Seelie: Summon Deva",
         "image": "http://localhost:3001/api/images/d/d4/Sights_of_the_Seelie_Summon_Deva_Icon.png",
         "level": 5,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [],
         "summary": "Summa a Deva. The Deva can cast Wrathful Smite, Revivify and Concussive Smash. Can only be cast once per short rest.",
         "description": "Summa a Deva. The Deva can cast Wrathful Smite, Revivify and Concussive Smash. Can only be cast once per short rest.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4033,7 +3602,7 @@
         "name": "Silence",
         "image": "http://localhost:3001/api/images/f/f4/Silence.webp",
         "level": 2,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": true,
         "classes": [
             "Bard",
@@ -4044,7 +3613,7 @@
         ],
         "summary": "This spell allows spellcasters to summon a sphere of absolute quietness in an area within range. Creatures within this sphere are immune to Thunder damage and cannot cast verbal spells.",
         "description": "Create a sound-proof sphere. All within are Silenced and Immune to Thunder damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4052,17 +3621,18 @@
         "name": "Silver Harp Squadron",
         "image": "http://localhost:3001/api/images/7/7c/Action_EndGameAlly_HarperSummon.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
     {
+        "name": "Sizzling Cataclysm",
         "image": "http://localhost:3001/api/images/c/c1/Protection_from_Energy_Acid_Icon.png",
         "level": 0,
-        "school": "NONE",
+        "school": 0,
         "ritual": false,
         "classes": [],
         "summary": "Sizzling Cataclysm is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of acid and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
@@ -4074,11 +3644,11 @@
         "name": "Slash the Weak",
         "image": "http://localhost:3001/api/images/9/99/Slash_the_Weak_Icon.png",
         "level": 1,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "This spell is a variant of Brand the Weak Icon|Brand the Weak that imposes vulnerability on an enemy to Slashing damage.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4086,7 +3656,7 @@
         "name": "Sleep",
         "image": "http://localhost:3001/api/images/c/c4/Sleep.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [
             "Bard",
@@ -4097,7 +3667,7 @@
             "The Archfey"
         ],
         "summary": "It allows the spellcaster to temporarily make conscious creatures fall into a deep slumber.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4105,7 +3675,7 @@
         "name": "Sleet Storm",
         "image": "http://localhost:3001/api/images/b/b9/Sleet_Storm.webp",
         "level": 3,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [
             "Druid",
@@ -4116,7 +3686,7 @@
             "Storm Sorcery"
         ],
         "summary": "This spell allows spellcasters to call forth a storm that douses fire, creates an Ice Surface, and disrupts the Concentration of spellcasters.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4124,7 +3694,7 @@
         "name": "Slow",
         "image": "http://localhost:3001/api/images/5/5f/Slow.webp",
         "level": 3,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [
             "Bard",
@@ -4136,7 +3706,7 @@
         ],
         "summary": "This spell allows spellcasters to reduce movement speed, Armour Class, and Dexterity Saving Throws, and limit actions.",
         "description": "Alter time around up to 6 enemies to Slow them. They won't get far, they can't do much, and they're easier to hit.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4144,11 +3714,11 @@
         "name": "Sorrowful Lash",
         "image": "http://localhost:3001/api/images/5/57/Sorrowful_Lash.webp",
         "level": 0,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "It deals damage to a target and pulls it closer to the caster. It is essentially equivalent to the Thorn Whip cantrip except it uses a bonus",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4156,7 +3726,7 @@
         "name": "Speak with Animals",
         "image": "http://localhost:3001/api/images/9/94/Speak_with_Animals.webp",
         "level": 1,
-        "school": "DIVINATION",
+        "school": 3,
         "ritual": true,
         "classes": [
             "Bard",
@@ -4168,7 +3738,7 @@
         ],
         "summary": "This spell allows spellcasters to understand and talk to beasts and animals for a day.",
         "description": "Gain the ability to comprehend and communicate with beasts.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4176,14 +3746,11 @@
         "name": "Speak with Dead",
         "image": "http://localhost:3001/api/images/f/fa/Speak_with_Dead.webp",
         "level": 3,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": true,
-        "classes": [
-            "Bard",
-            "Cleric"
-        ],
+        "classes": ["Bard", "Cleric"],
         "summary": "This spell allows spellcasters to grant a semblance of life to a corpse, allowing it to answer questions.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4191,16 +3758,11 @@
         "name": "Spike Growth",
         "image": "http://localhost:3001/api/images/4/40/Spike_Growth.webp",
         "level": 2,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Ranger",
-            "Nature Domain",
-            "Circle of the Land}"
-        ],
+        "classes": ["Druid", "Ranger", "Nature Domain", "Circle of the Land}"],
         "summary": "This spell allows spellcasters to transform an area of land into a hazardous spiky terrain. Creatures walking through the area have their speed halved and take Piercing damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4208,14 +3770,11 @@
         "name": "Spirit Guardians",
         "image": "http://localhost:3001/api/images/7/71/Spirit_Guardians_Spell.webp",
         "level": 3,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "War Domain"
-        ],
+        "classes": ["Cleric", "War Domain"],
         "summary": "This spell allows spellcasters to call forth spirits to damage nearby targets and slow their Movement.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4223,14 +3782,11 @@
         "name": "Spiritual Weapon",
         "image": "http://localhost:3001/api/images/1/18/Spiritual_Weapon_Halberd.webp",
         "level": 2,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "War Domain"
-        ],
+        "classes": ["Cleric", "War Domain"],
         "summary": "Summons a floating weapon that can attack enemies. You can choose between several different weapons, and each has a different Weapon Action.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4238,12 +3794,12 @@
         "name": "Staggering Smite",
         "image": "http://localhost:3001/api/images/8/82/Staggering_Smite.webp",
         "level": 4,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell is only available for NPCs. It allows spellcasters to cause their weapon to attack their victims minds with Psychic damage as they strike.",
         "description": "Possibly Staggering Smite|Stagger your target. It can't take reactions and is more likely to miss.",
-        "actionType": "BOTH",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4251,17 +3807,12 @@
         "name": "Stinking Cloud",
         "image": "http://localhost:3001/api/images/4/46/Stinking_Cloud.webp",
         "level": 3,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Bard",
-            "Sorcerer",
-            "Wizard",
-            "Fiend"
-        ],
+        "classes": ["Bard", "Sorcerer", "Wizard", "Fiend"],
         "summary": "This spell allows spellcasters to create a nauseating cloud of gas that can prevent creatures from taking Actions. Targets must make Constitution SavingThrows every turn while they're in the area of effect or become Nauseous.",
         "description": "Create a cloud of gas so nauseating it prevents creatures from taking actions.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4269,16 +3820,11 @@
         "name": "Stoneskin",
         "image": "http://localhost:3001/api/images/1/16/Stoneskin.webp",
         "level": 4,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Sorcerer",
-            "Wizard",
-            "War Domain"
-        ],
+        "classes": ["Druid", "Sorcerer", "Wizard", "War Domain"],
         "summary": "This spell allows spellcasters to harden the skin of their ally, granting them Resistance to non-magical physical damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4286,11 +3832,11 @@
         "name": "Strengthened Shillelagh",
         "image": "http://localhost:3001/api/images/f/f9/Strengthened_Shillelagh.webp",
         "level": 0,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "It imbues the caster's weapon with nature power.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4298,7 +3844,6 @@
         "name": "Summon Gilded Hellsboar",
         "image": "http://localhost:3001/api/images/f/f8/Find_Familiar_Cat.webp",
         "level": 1,
-        "school": "CONJURATION",
         "ritual": false,
         "classes": [],
         "summary": "It is uniquely known by Helsik. It summons a level 3 Gilded Hellsboar from a corpse.",
@@ -4311,11 +3856,11 @@
         "name": "Summon Quothe the Raven",
         "image": "http://localhost:3001/api/images/f/f3/Summon_Quothe_the_Raven.webp",
         "level": 3,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": true,
         "classes": [],
         "summary": "Summons the raven Quothe.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4323,15 +3868,11 @@
         "name": "Sunbeam",
         "image": "http://localhost:3001/api/images/9/91/Sunbeam.webp",
         "level": 6,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Sorcerer",
-            "Wizard"
-        ],
+        "classes": ["Druid", "Sorcerer", "Wizard"],
         "summary": "This spell allows spellcasters to project a beam of light, Blinding and dealing Radiant damage to everything in its path. You can then use Recast Sunbeam on subsequent turns without expending a Spell Slot.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4339,11 +3880,11 @@
         "name": "Sword of the Silverlight",
         "image": "http://localhost:3001/api/images/f/fb/Action_EndGameAlly_NightsongSummon.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon Dame Aylin to aid you in battle.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4351,7 +3892,7 @@
         "name": "Tasha's Hideous Laughter",
         "image": "http://localhost:3001/api/images/9/98/Tasha's_Hideous_Laughter.webp",
         "level": 1,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
         "classes": [
             "Bard",
@@ -4361,7 +3902,7 @@
             "Eldritch Knight"
         ],
         "summary": "It allows spellcasters to send a targeted creature into a fit of laughter, falling Prone.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4369,22 +3910,21 @@
         "name": "Telekinesis",
         "image": "http://localhost:3001/api/images/5/5f/Telekinesis.webp",
         "level": 5,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to throw creatures and objects around with only their mind.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
     {
         "name": "Telekinetic Thrust",
         "level": 0,
-        "school": "",
         "ritual": false,
         "classes": [],
         "description": "Telekinetic Thrust is an ability of some undead, including Tormented Soul and Poltergeist",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4392,12 +3932,12 @@
         "name": "Teleport to Submersible",
         "image": "http://localhost:3001/api/images/4/48/Teleport_to_Submersible.webp",
         "level": 5,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [],
         "summary": "Omeluum can use it to teleport to the Submersible.",
         "description": "Teleport yourself and up to one ally back to the Submersible.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4405,15 +3945,12 @@
         "name": "Thaumaturgy",
         "image": "http://localhost:3001/api/images/c/cf/Thaumaturgy.webp",
         "level": 0,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Cleric",
-            "Zariel Tiefling"
-        ],
+        "classes": ["Cleric", "Zariel Tiefling"],
         "summary": "It temporarily improves the caster's Intimidation and Performance checks.",
         "description": "Gain Advantage on Checks.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4421,12 +3958,12 @@
         "name": "The Closed Fist of Bane",
         "image": "http://localhost:3001/api/images/4/48/Generic_Explosion.webp",
         "level": 6,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows Gortash to conjure a giant fist that falls to the ground, punching for a great deal of Bludgeoning damage.",
         "description": "Conjure the divine aspect of Bane the Accursed - a fist that hangs in the air until the end of the round before falling, crushing anyone under it for 12d10|Bludgeoning damage.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4434,11 +3971,11 @@
         "name": "The Watch",
         "image": "http://localhost:3001/api/images/1/13/Action_EndGameAlly_WatchSummon.png",
         "level": 0,
-        "school": "CLASS ACTION",
+        "school": 9,
         "ritual": false,
         "classes": [],
         "summary": "Summon three Watcher Guardians.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4446,14 +3983,11 @@
         "name": "Thorn Whip",
         "image": "http://localhost:3001/api/images/e/e9/Thorn_Whip.webp",
         "level": 0,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Nature Domain"
-        ],
+        "classes": ["Druid", "Nature Domain"],
         "summary": "It deals damage to a target and pulls it closer to the caster.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4461,13 +3995,11 @@
         "name": "Thunderous Smite",
         "image": "http://localhost:3001/api/images/c/c1/Thunderous_Smite.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Paladin"
-        ],
+        "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to cause their weapon to ring with Thunder as they strike, pushing targets away and potentially knocking them Prone.",
-        "actionType": "BOTH",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4475,7 +4007,7 @@
         "name": "Thunderwave",
         "image": "http://localhost:3001/api/images/d/da/Thunderwave.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Bard",
@@ -4488,7 +4020,7 @@
         ],
         "summary": "This spell allows spellcasters to project out a deafening force that can hit multiple creatures and objects. Creatures hit by this force are potentially pushed away from the spellcaster.",
         "description": "Release a wave of thunderous force that pushes away all creatures and objects in an area, while also dealing Thunder damage.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4496,7 +4028,7 @@
         "name": "True Strike",
         "image": "http://localhost:3001/api/images/f/ff/True_Strike.webp",
         "level": 0,
-        "school": "DIVINATION",
+        "school": 3,
         "ritual": false,
         "classes": [
             "Bard",
@@ -4508,7 +4040,7 @@
         ],
         "summary": "The caster gains Advantage on their next Attack Roll against the target.",
         "description": "Gain Advantage on your next Attack Roll.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4516,24 +4048,24 @@
         "name": "Tyr's Protection",
         "image": "http://localhost:3001/api/images/c/c3/Shield_of_Faith_Icon.png",
         "level": 1,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
         "classes": [],
         "summary": "This spell is identical to the Shield of Faith spell, but costs no Spell Slots to cast. It allows spellcasters to surround themselves or an ally with divine protection and gain a bonus to their Armour Class.",
         "description": "Surround a creature with a shimmering field of magic that increases its Armour Class by 2. Spell ends when the Sword of Justice is unequipped.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": true,
-        "noSpellSlot": true
+        "noSpellSlot": false
     },
     {
         "name": "Tyrant's Bindings",
         "image": "http://localhost:3001/api/images/6/6d/Generic_Control.webp",
         "level": 6,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows Gortash to restrict your movement and deal a ton of damage to you and your party.",
-        "actionType": "BONUS",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4541,14 +4073,11 @@
         "name": "Vampiric Touch",
         "image": "http://localhost:3001/api/images/f/f9/Vampiric_Touch.webp",
         "level": 3,
-        "school": "NECROMANCY",
+        "school": 7,
         "ritual": false,
-        "classes": [
-            "Warlock",
-            "Wizard"
-        ],
+        "classes": ["Warlock", "Wizard"],
         "summary": "This spell allows spellcasters at melee range to siphon the life force of their target.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4556,11 +4085,11 @@
         "name": "Veil of the Weird",
         "image": "http://localhost:3001/api/images/5/59/Action_EndGame_HagInvisibility.png",
         "level": 0,
-        "school": "ILLUSION",
+        "school": 6,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows the caster to cast Greater Invisibility up to five creatures.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4568,14 +4097,12 @@
         "name": "Vicious Mockery",
         "image": "http://localhost:3001/api/images/9/9f/Vicious_Mockery.webp",
         "level": 0,
-        "school": "ENCHANTMENT",
+        "school": 4,
         "ritual": false,
-        "classes": [
-            "Bard"
-        ],
+        "classes": ["Bard"],
         "summary": "It deals Psychic damage to enemies and inflicts Disadvantage on their Attack Rolls.",
         "description": "Insult a creature: it has Disadvantage on its next Attack Roll.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4583,12 +4110,12 @@
         "name": "Wall of Fire",
         "image": "http://localhost:3001/api/images/8/8a/Wall_of_Fire.webp",
         "level": 4,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to create a long, fiery barrier, damaging anything in the area.",
         "description": "Create a blazing wall of fire, Burning anyone who dares stand too close. Deals Fire to anything that moves into or starts it's turn in the area.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4596,13 +4123,11 @@
         "name": "Wall of Ice",
         "image": "http://localhost:3001/api/images/c/c9/Wall_of_Ice.webp",
         "level": 6,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Wizard"
-        ],
+        "classes": ["Wizard"],
         "description": "Raise a wall of solid ice that deals 10d6|Cold damage to anyone standing in its way. When the ice is broken, it leaves behind a cloud of frigid air that deals 10d6|Cold per turn to creatures within.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4610,16 +4135,11 @@
         "name": "Wall of Stone",
         "image": "http://localhost:3001/api/images/4/4f/Wall_of_Stone.webp",
         "level": 5,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Druid",
-            "Sorcerer",
-            "Wizard",
-            "Nature Domain"
-        ],
+        "classes": ["Druid", "Sorcerer", "Wizard", "Nature Domain"],
         "summary": "This spell allows spellcasters to create a solid stone barrier.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4627,14 +4147,12 @@
         "name": "Wall of Thorns",
         "image": "http://localhost:3001/api/images/4/49/Wall_of_Thorns.webp",
         "level": 6,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
-        "classes": [
-            "Druid"
-        ],
+        "classes": ["Druid"],
         "summary": "This spell allows spellcasters to conjure a wall of brambles, Entangling and damaging any creatures who are in the area, or trying to pass through.",
         "description": "Create a wall of pliable, twisting thorns surrounded by Entangling vines. Creatures can move through the wall, but take 7d8|Piercing damage per turn, their Movement Speed is halved due to Difficult Terrain, and they may become Entangled.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4642,14 +4160,12 @@
         "name": "Warden of Vitality",
         "image": "http://localhost:3001/api/images/a/a7/Warden_of_Vitality.webp",
         "level": 3,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Paladin"
-        ],
+        "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to heal allies repeatedly with Restore Vitality using only Bonus Actions for 10 turns.",
         "description": "While this aura lasts, you can cast Restore Vitality as a bonus to heal yourself or nearby allies by 2d6|Healing.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4657,13 +4173,11 @@
         "name": "Warding Bond",
         "image": "http://localhost:3001/api/images/2/20/Warding_Bond.webp",
         "level": 2,
-        "school": "ABJURATION",
+        "school": 1,
         "ritual": false,
-        "classes": [
-            "Cleric"
-        ],
+        "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to bolster an ally's defenses while also sharing any damage they receive.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4671,7 +4185,7 @@
         "name": "Web",
         "image": "http://localhost:3001/api/images/2/2a/Web.webp",
         "level": 2,
-        "school": "CONJURATION",
+        "school": 2,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -4682,7 +4196,7 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to conjure a mass of sticky and flammable web at an area within range. Creatures moving or entering this area have their speed halved and can become Enwebbed.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     },
@@ -4690,13 +4204,11 @@
         "name": "Wind Walk",
         "image": "http://localhost:3001/api/images/6/66/Wind_Walk.webp",
         "level": 6,
-        "school": "TRANSMUTATION",
+        "school": 8,
         "ritual": false,
-        "classes": [
-            "Druid"
-        ],
+        "classes": ["Druid"],
         "summary": "This spell allows spellcasters to transform a group of allies into a cloud of mist. This form offers damage Resistance, Advantage on some Saving Throws, and the ability to Fly.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": false,
         "noSpellSlot": false
     },
@@ -4704,7 +4216,7 @@
         "name": "Witch Bolt",
         "image": "http://localhost:3001/api/images/e/ec/Witch_Bolt.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
         "classes": [
             "Sorcerer",
@@ -4715,34 +4227,19 @@
         ],
         "summary": "It allows spellcasters to hit enemies with a blue ray of electrifying energy that deals Lightning damage to them initially and also on subsequent turns.",
         "description": "Link yourself to a target with a bolt of lightning. Deal an additional 1d12|Lightning each turn by activating it.",
-        "actionType": "ACTION",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
-    },
-    {
-        "name": "Ray of Fear",
-        "image": "http://localhost:3001/api/images/5/5e/Generic_Necrotic.webp",
-        "level": 3,
-        "school": "NECROMANCY",
-        "ritual": false,
-        "classes": [],
-        "summary": "Wounding Ray  is a class action used by Spectators. It allows them to shoot a ray which deals Necrotic damage.",
-        "description": "Shoot an eye ray that deals immense damage.",
-        "actionType": "ACTION",
-        "concentration": false,
-        "noSpellSlot": true
     },
     {
         "name": "Wrathful Smite",
         "image": "http://localhost:3001/api/images/7/7d/Wrathful_Smite.webp",
         "level": 1,
-        "school": "EVOCATION",
+        "school": 5,
         "ritual": false,
-        "classes": [
-            "Paladin"
-        ],
+        "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to channel their wrath through their melee weapon, possibly Frightened|Frightening their target on hit.",
-        "actionType": "BOTH",
+        "actionType": 0,
         "concentration": true,
         "noSpellSlot": false
     }

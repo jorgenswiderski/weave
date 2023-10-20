@@ -1,4 +1,3 @@
-import assert from 'assert';
 import {
     ActionType,
     ISpell,
@@ -7,8 +6,11 @@ import {
 import { MwnApiClass } from '../../api/mwn';
 import { PageNotFoundError } from '../errors';
 import { error } from '../logger';
-import { MediaWiki } from '../media-wiki';
 import { PageItem, PageLoadingState } from '../page-item';
+import {
+    MediaWikiTemplateParser,
+    MediaWikiTemplateParserConfig,
+} from '../mw-template-parser';
 
 enum SpellLoadState {
     SPELL_DATA = 'SPELL_DATA',
@@ -37,7 +39,7 @@ export class Spell extends PageItem implements Partial<ISpell> {
             this.initData().catch(error);
     }
 
-    private static parseValueFromSpellPageTemplate(
+    static parseValueFromSpellPageTemplate(
         wikitext: string,
         key: string,
     ): string | undefined {
@@ -54,66 +56,58 @@ export class Spell extends PageItem implements Partial<ISpell> {
             throw new PageNotFoundError();
         }
 
-        const { content } = this.page;
+        const { image, plainText, boolean } = MediaWikiTemplateParser.Parsers;
+        const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
 
-        this.name = Spell.parseValueFromSpellPageTemplate(content, 'name');
+        const config: Record<string, MediaWikiTemplateParserConfig> = {
+            name: { parser: plainText, default: this.pageTitle },
+            image: {
+                parser: image,
+                default: undefined,
+            },
+            level: {
+                parser: (value) =>
+                    value === 'cantrip' ? 0 : parseInt(value || '0', 10),
+                default: 0,
+            },
+            school: {
+                parser: parseEnum(SpellSchool),
+                default: SpellSchool.NONE,
+            },
+            ritual: { parser: boolean, default: false },
+            classes: {
+                parser: (value) =>
+                    value
+                        ?.split(',')
+                        .map((c) => c.trim())
+                        .filter((c) => c !== '') || [],
+                default: [],
+            },
+            summary: {
+                parser: plainText,
+                default: undefined,
+            },
+            description: {
+                parser: plainText,
+                default: undefined,
+            },
+            actionType: {
+                key: 'action type',
+                parser: parseEnum(ActionType),
+                default: ActionType.NONE,
+            },
+            concentration: { parser: boolean, default: false },
+            noSpellSlot: {
+                key: 'no spell slot',
+                parser: boolean,
+                default: false,
+            },
+        };
 
-        const image = Spell.parseValueFromSpellPageTemplate(content, 'image');
-        this.image = image ? MediaWiki.getImagePath(image) : undefined;
-
-        const levelStr = Spell.parseValueFromSpellPageTemplate(
-            content,
-            'level',
+        Object.assign(
+            this,
+            MediaWikiTemplateParser.parseTemplate(this.page, config),
         );
-
-        this.level = levelStr === 'cantrip' ? 0 : parseInt(levelStr || '0', 10);
-
-        assert(!Number.isNaN(this.level));
-
-        this.school =
-            (Spell.parseValueFromSpellPageTemplate(
-                content,
-                'school',
-            )?.toUpperCase() as unknown as SpellSchool) ?? SpellSchool.NONE;
-
-        this.ritual =
-            Spell.parseValueFromSpellPageTemplate(content, 'ritual') === 'yes';
-
-        this.classes =
-            Spell.parseValueFromSpellPageTemplate(content, 'classes')
-                ?.split(',')
-                .map((c) => c.trim())
-                .filter((c) => c !== '') || [];
-
-        const summary = Spell.parseValueFromSpellPageTemplate(
-            content,
-            'summary',
-        );
-
-        this.summary = summary ? MediaWiki.stripMarkup(summary) : undefined;
-
-        const description = Spell.parseValueFromSpellPageTemplate(
-            content,
-            'description',
-        );
-
-        this.description = description
-            ? MediaWiki.stripMarkup(description)
-            : undefined;
-
-        this.actionType =
-            (Spell.parseValueFromSpellPageTemplate(
-                content,
-                'action type',
-            )?.toUpperCase() as unknown as ActionType) ?? ActionType.NONE;
-
-        this.concentration =
-            Spell.parseValueFromSpellPageTemplate(content, 'concentration') ===
-            'yes';
-
-        this.noSpellSlot =
-            Spell.parseValueFromSpellPageTemplate(content, 'no spell slot') ===
-            'yes';
     }
 
     // hardcoded variants that are tricky to catch with general logic
