@@ -17,6 +17,7 @@ enum SpellLoadState {
 }
 
 let spellData: Spell[];
+let spellDataById: Map<number, Spell> | null = null;
 
 export class Spell extends PageItem implements Partial<ISpell> {
     name?: string;
@@ -30,7 +31,7 @@ export class Spell extends PageItem implements Partial<ISpell> {
     actionType?: ActionType;
     concentration?: boolean;
     noSpellSlot?: boolean;
-    // otherData: Record<string, string> = {};
+    id?: number;
 
     constructor(pageTitle: string) {
         super({ pageTitle });
@@ -55,6 +56,8 @@ export class Spell extends PageItem implements Partial<ISpell> {
         if (!this.page?.content) {
             throw new PageNotFoundError();
         }
+
+        this.id = this.page.pageId;
 
         const { image, plainText, boolean } = MediaWikiTemplateParser.Parsers;
         const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
@@ -151,6 +154,7 @@ export class Spell extends PageItem implements Partial<ISpell> {
             actionType: this.actionType,
             concentration: this.concentration,
             noSpellSlot: this.noSpellSlot,
+            id: this.id,
         };
     }
 }
@@ -162,7 +166,18 @@ export async function getSpellData(): Promise<Spell[]> {
         spellData = classNames.map((name) => new Spell(name));
         await Promise.all(spellData.map((cc) => cc.waitForInitialization()));
         spellData = spellData.filter((spell) => !spell.isVariant());
+
+        spellDataById = new Map<number, Spell>();
+        spellData.forEach((spell) => spellDataById!.set(spell.id!, spell));
     }
 
     return spellData;
+}
+
+export async function getSpellDataById() {
+    if (!spellDataById) {
+        await getSpellData();
+    }
+
+    return spellDataById!;
 }

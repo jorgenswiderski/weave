@@ -6,13 +6,13 @@
         "grants": [
             {
                 "name": "Proficiency: Insight",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "INSIGHT",
                 "description": "Add your proficiency bonus when making Insight checks."
             },
             {
                 "name": "Proficiency: Religion",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "RELIGION",
                 "description": "Add your proficiency bonus when making Religion checks."
             }
@@ -25,13 +25,13 @@
         "grants": [
             {
                 "name": "Proficiency: Deception",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "DECEPTION",
                 "description": "Add your proficiency bonus when making Deception checks."
             },
             {
                 "name": "Proficiency: Sleight of Hand",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "SLEIGHT OF HAND",
                 "description": "Add your proficiency bonus when making Sleight of Hand checks."
             }
@@ -44,13 +44,13 @@
         "grants": [
             {
                 "name": "Proficiency: Deception",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "DECEPTION",
                 "description": "Add your proficiency bonus when making Deception checks."
             },
             {
                 "name": "Proficiency: Stealth",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "STEALTH",
                 "description": "Add your proficiency bonus when making Stealth checks."
             }
@@ -63,13 +63,13 @@
         "grants": [
             {
                 "name": "Proficiency: Acrobatics",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "ACROBATICS",
                 "description": "Add your proficiency bonus when making Acrobatics checks."
             },
             {
                 "name": "Proficiency: Performance",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "PERFORMANCE",
                 "description": "Add your proficiency bonus when making Performance checks."
             }
@@ -82,13 +82,13 @@
         "grants": [
             {
                 "name": "Proficiency: Animal Handling",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "ANIMAL HANDLING",
                 "description": "Add your proficiency bonus when making Animal Handling checks."
             },
             {
                 "name": "Proficiency: Survival",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "SURVIVAL",
                 "description": "Add your proficiency bonus when making Survival checks."
             }
@@ -101,13 +101,13 @@
         "grants": [
             {
                 "name": "Proficiency: Insight",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "INSIGHT",
                 "description": "Add your proficiency bonus when making Insight checks."
             },
             {
                 "name": "Proficiency: Persuasion",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "PERSUASION",
                 "description": "Add your proficiency bonus when making Persuasion checks."
             }
@@ -120,13 +120,13 @@
         "grants": [
             {
                 "name": "Proficiency: Medicine",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "MEDICINE",
                 "description": "Add your proficiency bonus when making Medicine checks."
             },
             {
                 "name": "Proficiency: Intimidation",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "INTIMIDATION",
                 "description": "Add your proficiency bonus when making Intimidation checks."
             }
@@ -139,13 +139,13 @@
         "grants": [
             {
                 "name": "Proficiency: History",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "HISTORY",
                 "description": "Add your proficiency bonus when making History checks."
             },
             {
                 "name": "Proficiency: Persuasion",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "PERSUASION",
                 "description": "Add your proficiency bonus when making Persuasion checks."
             }
@@ -158,13 +158,13 @@
         "grants": [
             {
                 "name": "Proficiency: Athletics",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "ATHLETICS",
                 "description": "Add your proficiency bonus when making Athletics checks."
             },
             {
                 "name": "Proficiency: Survival",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "SURVIVAL",
                 "description": "Add your proficiency bonus when making Survival checks."
             }
@@ -177,13 +177,13 @@
         "grants": [
             {
                 "name": "Proficiency: Arcana",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "ARCANA",
                 "description": "Add your proficiency bonus when making Arcana checks."
             },
             {
                 "name": "Proficiency: History",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "HISTORY",
                 "description": "Add your proficiency bonus when making History checks."
             }
@@ -196,13 +196,13 @@
         "grants": [
             {
                 "name": "Proficiency: Athletics",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "ATHLETICS",
                 "description": "Add your proficiency bonus when making Athletics checks."
             },
             {
                 "name": "Proficiency: Intimidation",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "INTIMIDATION",
                 "description": "Add your proficiency bonus when making Intimidation checks."
             }
@@ -215,13 +215,13 @@
         "grants": [
             {
                 "name": "Proficiency: Sleight of Hand",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "SLEIGHT OF HAND",
                 "description": "Add your proficiency bonus when making Sleight of Hand checks."
             },
             {
                 "name": "Proficiency: Stealth",
-                "type": "PROFICIENCY",
+                "type": 3,
                 "proficiency": "STEALTH",
                 "description": "Add your proficiency bonus when making Stealth checks."
             }

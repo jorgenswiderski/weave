@@ -1,10 +1,13 @@
 // items.ts
 import express, { Request, Response, Router } from 'express';
-import { getEquipmentItemData } from '../models/equipment/equipment-item';
+import {
+    getEquipmentItemData,
+    getEquipmentItemInfoById,
+} from '../models/equipment/equipment-item';
 
 export const router: Router = express.Router();
 
-router.get('/equipment', async (req: Request, res: Response) => {
+router.get('/equipment/type', async (req: Request, res: Response) => {
     const typesParam = req.query.types as string | undefined;
     let types: number[] | undefined;
 
@@ -15,6 +18,16 @@ router.get('/equipment', async (req: Request, res: Response) => {
     const itemData = await getEquipmentItemData(types);
 
     res.json(itemData);
+});
+
+router.get('/equipment/id', async (req: Request, res: Response) => {
+    const ids = (req.query.ids as string)
+        .split(',')
+        .map((val) => parseInt(val, 10));
+
+    const itemData = await getEquipmentItemInfoById();
+
+    res.json(ids.map((id) => itemData.get(id)));
 });
 
 export const itemsRouter = router;

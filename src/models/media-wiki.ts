@@ -10,6 +10,7 @@ export interface PageData extends ApiRevision {
     title: string;
     revisionId: any;
     categories: any;
+    pageId: number;
 }
 
 export class MediaWiki {
@@ -57,6 +58,7 @@ export class MediaWiki {
 
         const data = {
             ...content.revisions[0],
+            pageId: content.pageid,
             title: pageTitle,
             revisionId: latestRevisionId,
             categories,
@@ -74,6 +76,7 @@ export class MediaWiki {
                 {
                     $set: {
                         ...content.revisions[0],
+                        pageId: content.pageid,
                         revisionId: latestRevisionId,
                         categories,
                         lastFetched: currentTime,
@@ -164,6 +167,8 @@ export class MediaWiki {
                 : CONFIG.MEDIAWIKI.BASE_URL
         }/images/${hash[0]}/${hash[0]}${hash[1]}/${formattedImageName}`;
     }
+
+    // static getImagePath = (name: string) => name;
 
     // static async getSectionNumber(
     //     pageTitle: string,

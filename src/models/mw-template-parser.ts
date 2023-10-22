@@ -5,6 +5,7 @@ import { error } from './logger';
 type ParserFunction = (
     value: string,
     config: MediaWikiTemplateParserConfig,
+    page: PageData,
 ) => any;
 
 export interface MediaWikiTemplateParserConfig {
@@ -51,7 +52,7 @@ export class MediaWikiTemplateParser {
         key: string,
     ): string | undefined {
         const commentless = wikitext.replace(/<!--[\s\S]*?-->/g, '');
-        const regex = new RegExp(`\\|\\s*${key}\\s*=(.*?)\\n\\|`, 'i');
+        const regex = new RegExp(`\\|\\s*${key}\\s*=([\\s\\S]*?)\\n\\|`, 'i');
         const match = commentless.match(regex);
 
         return match ? match[1].trim() : undefined;
@@ -69,7 +70,7 @@ export class MediaWikiTemplateParser {
 
         return Object.fromEntries(
             Object.entries(config).map(([prop, baseConfig]) => {
-                const itemConfig = { ...baseConfig, key: prop };
+                const itemConfig = { key: prop, ...baseConfig };
 
                 const value =
                     MediaWikiTemplateParser.parseValueFromWikiTemplate(
@@ -90,7 +91,7 @@ export class MediaWikiTemplateParser {
                 return [
                     prop,
                     itemConfig.parser
-                        ? itemConfig.parser(value, itemConfig)
+                        ? itemConfig.parser(value, itemConfig, page)
                         : value,
                 ];
             }),

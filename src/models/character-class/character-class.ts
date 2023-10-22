@@ -47,7 +47,6 @@ enum ClassLoadState {
 export interface ClassInfo {
     name: string;
     description: string;
-    subclassNames: string[];
     image?: string;
     progression: CharacterClassProgression;
 }
@@ -291,9 +290,6 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         return {
             name: this.name,
             description: await this.getDescription(),
-            subclassNames: (await this.getSubclasses()).options.map(
-                (sc) => sc.name,
-            ),
             image: (await this.getImage()) ?? undefined,
             progression: await this.getProgression(),
         };

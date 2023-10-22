@@ -1,8 +1,18 @@
 // spells.ts
 import express, { Request, Response, Router } from 'express';
-import { getSpellData } from '../models/spell/spell';
+import { getSpellData, getSpellDataById } from '../models/spell/spell';
 
 export const router: Router = express.Router();
+
+router.get('/info/id', async (req: Request, res: Response) => {
+    const ids = (req.query.ids as string)
+        .split(',')
+        .map((val) => parseInt(val, 10));
+
+    const itemData = await getSpellDataById();
+
+    res.json(ids.map((id) => itemData.get(id)));
+});
 
 router.get('/info', async (req: Request, res: Response) => {
     const spellData = await getSpellData();

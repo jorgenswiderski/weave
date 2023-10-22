@@ -3,7 +3,7 @@ import fs from 'fs';
 import https from 'https';
 import path from 'path';
 import { CONFIG } from '../models/config';
-import { error } from '../models/logger';
+import { error, log } from '../models/logger';
 
 const rootDir = path.dirname(require.main!.filename);
 const IMAGE_CACHE_DIR = path.join(rootDir, 'cache');
@@ -67,6 +67,7 @@ router.get('/:imagePath(*)', async (req: Request, res: Response) => {
             response.pipe(writer);
 
             writer.on('finish', () => {
+                log(`Cached ${localImagePath}.`);
                 res.sendFile(localImagePath);
             });
 

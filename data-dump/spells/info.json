@@ -8,9 +8,10 @@
         "classes": [],
         "summary": "This spell allows the Absolute's Talisman's wearer to heal themselves for 5|Healing and increase their hit points for the same amount.",
         "description": "Heal yourself and increase your hit point maximum by 5|Healing.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 23845
     },
     {
         "name": "Acid Splash",
@@ -26,9 +27,10 @@
         ],
         "summary": "It deals Acid damage to enemies in a small area.",
         "description": "Throw a bubble of acid that damages each creature it hits.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1638
     },
     {
         "name": "Activate Call Lightning",
@@ -39,9 +41,10 @@
         "classes": [],
         "summary": "This spell allows spellcasters to call down lightning again to hit all targets within range. Can only be obtained while you are concentrating on Call Lightning.",
         "description": "Call down lightning to hit all targets within range and its area of effect for 3d10|Lightning damage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 22186
     },
     {
         "name": "Aid",
@@ -52,9 +55,10 @@
         "classes": ["Cleric", "Paladin", "Life Domain"],
         "summary": "This spell allows spellcasters to heal and embolden their allies and themselves with resolve. Affected creatures have their maximum Hit Points increased for the duration of the spell.",
         "description": "Bolster your allies with toughness and resolve to heal and increase their Hit Points maximum.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2305
     },
     {
         "name": "An Apple a Day",
@@ -64,9 +68,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon Zlorb to aid you in battle.",
-        "actionType": 0,
+        "description": "Summon Zlorb - a shapeshifting monstrosity that can adopt the aspect of several monsters and beasts.\n\nThe caster can only use this feature once in their adventure.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24414
     },
     {
         "name": "Animal Friendship",
@@ -76,9 +82,11 @@
         "ritual": false,
         "classes": ["Bard", "Druid", "Ranger", "Nature Domain"],
         "summary": "This spell charms a beast and convinces it you mean no harm.",
-        "actionType": 0,
+        "description": "Convince a beast not to attack you.\n\nThe creature must have an Intelligence of 3 or less.\nCondition ends early if you or an ally hurts the target.\nIn higher difficulty modes, the target might become hostile when the spell ends.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1985
     },
     {
         "name": "Animate Dead",
@@ -88,9 +96,11 @@
         "ritual": false,
         "classes": ["Cleric", "Wizard", "Circle of the Spores", "Oathbreaker"],
         "summary": "This spell allows spellcasters to animate a corpse to create an undead servant.",
-        "actionType": 0,
+        "description": "Animate a corpse to create an undead servant while not in combat.\n\nThe target must be a Medium or Small corpse.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2757
     },
     {
         "name": "Animus Screech",
@@ -99,9 +109,10 @@
         "classes": [],
         "summary": "Screech into your target's soul, wounding them and possibly inflicting Confused_(Condition)",
         "description": "Animus Screech is an ability of some undead, including Tormented Soul and Poltergeist",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 13676
     },
     {
         "name": "Arcane Gate",
@@ -110,9 +121,11 @@
         "school": 2,
         "ritual": false,
         "classes": [],
-        "actionType": 0,
+        "description": "Create two linked teleportation portals within range. All creatures, including enemies, may travel between the two portals as a free action.\n\nThe game's pathfinding will automatically navigate through a portal if it is the shorter route.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8040
     },
     {
         "name": "Arcane Lock",
@@ -123,9 +136,10 @@
         "classes": ["Wizard", "Eldritch Knight", "Arcane Trickster"],
         "summary": "This spell allows spellcasters to magically lock a container.",
         "description": "* Close a door or container with a magical lock. It can no longer be lockpicked or opened with Knock.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6662
     },
     {
         "name": "Armour of Agathys",
@@ -135,9 +149,11 @@
         "ritual": false,
         "classes": ["Warlock"],
         "summary": "It allows spellcasters to create a spectral armour of frost that covers the caster and their equipment. The armour provides additional Hit Points to the caster and damages hostile targets while the added Hit Points are present.",
-        "actionType": 0,
+        "description": "Gain 5 and deal 5|Cold Cold|damage to any creature that hits you with a melee attack.\n\nCan only have Temporary Hit Points from one source.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1988
     },
     {
         "name": "Arms of Hadar",
@@ -147,9 +163,11 @@
         "ritual": false,
         "classes": ["Warlock"],
         "summary": "This spell allows the caster to summon dark tendrils and deal Necrotic damage to enemies in an area centered on the caster, preventing them from taking reactions.",
-        "actionType": 0,
+        "description": "Prevent targets from using reactions. \n\nOn Save: Targets still take half damage but are able to use reactions.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1995
     },
     {
         "name": "Balm of the Moonmaiden",
@@ -159,9 +177,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to heal several of their allies.",
-        "actionType": 0,
+        "description": "Call upon Isobel to offer a furtive prayer to Selûne, healing up to 6 nearby allies.\n\nThe caster can only use this feature once in their adventure.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24407
     },
     {
         "name": "Bane",
@@ -172,9 +192,10 @@
         "classes": ["Bard", "Cleric", "Oath of Vengeance"],
         "summary": "This spell allows the caster to temporarily curse enemies, making their attacks miss more often and weakening their Saving Throws.",
         "description": "Up to 3 creatures receive a d4|Physical -1d4 penalty to Attack Rolls and SavingThrows.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1998
     },
     {
         "name": "Banishing Smite (Melee)",
@@ -184,9 +205,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banished|Banishing the target.",
-        "actionType": 0,
+        "description": "Possibly Banished|Banish your target to another plane of existence.\n\nTargets with 50 Hit Points or more can't be Banished.",
+        "actionType": 4,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 11915
     },
     {
         "name": "Banishing Smite (Ranged)",
@@ -196,9 +219,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banished|Banishing the target.",
-        "actionType": 0,
+        "description": "Possibly Banished|Banish your target to another plane of existence.\n\nTargets with 50 Hit Points or more can't be Banished.",
+        "actionType": 4,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 17142
     },
     {
         "name": "Banishment",
@@ -209,9 +234,10 @@
         "classes": ["Cleric", "Sorcerer", "Warlock", "Wizard"],
         "summary": "This spell allows spellcasters to temporarily send a target to another plane of existence.",
         "description": "Temporarily Banished|Banish your target to another plane of existence.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6575
     },
     {
         "name": "Barkskin",
@@ -222,9 +248,10 @@
         "classes": ["Druid", "Ranger", "Nature Domain", "Circle of the Land"],
         "summary": "This spell allows spellcasters to fortify the defense of a willing creature and increase their Armour Class. While under the effect of this spell, the target's skin has a bark-like texture.",
         "description": "Touch a willing creature to toughen its skin and increase its Armour Class up to 16.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2319
     },
     {
         "name": "Action EndGameAlly OwlbearCubSummon",
@@ -234,9 +261,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon Armoured Owlbear to aid you in battle.",
-        "actionType": 0,
+        "description": "Summon your owlbear cub - all grown up and ready to rage - in full armour.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24437
     },
     {
         "name": "Beacon of Hope",
@@ -247,9 +276,10 @@
         "classes": ["Cleric", "Life Domain", "Oath of Devotion"],
         "summary": "This spell allows spellcasters to bolster their allies with hope and vitality.",
         "description": "Your allies will regain the maximum Hit Points possible when healed. They also gain Advantage on Wisdom SavingThrows and Death Saving Throws.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2736
     },
     {
         "name": "Bear's Endurance",
@@ -260,9 +290,10 @@
         "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the fortitude of a bear. Affected creatures gain Temporary Hit Points and Checks.",
         "description": "Creature gains Advantage on Checks and gains 7 Temporary Hit Points.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2366
     },
     {
         "name": "Beckoning Darkness",
@@ -273,9 +304,10 @@
         "classes": [],
         "summary": "This spell curses a creature to take Necrotic damage if it enters or starts its turn in a Lightly or Heavily Obscured area.",
         "description": "Curse a creature to be haunted by darkness. It takes 2d8|Necrotic damage if it enters or starts its turn in a Lightly or Heavily Obscured area.",
-        "actionType": 0,
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 13946
     },
     {
         "name": "Bestow Curse",
@@ -292,9 +324,11 @@
             "Oathbreaker"
         ],
         "summary": "This spell allows spellcasters to curse a target with their touch.",
-        "actionType": 0,
+        "description": "Curse a creature with your touch. The curse either bestows Disadvantage on Checks and SavingThrows, Disadvantage on Attack Rolls, lets you deal additional damage to the target, or robs it of its Actions.\n\nThe effect of the curse is based on the variant selected, and lasts for 10 turns.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2714
     },
     {
         "name": "Blade Barrier",
@@ -305,9 +339,10 @@
         "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to summon a wall of cutting blades.",
         "description": "Summons a wall of razor-sharp blades that turns the area into Difficult Terrain and damages anyone foolish enough to come close.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8078
     },
     {
         "name": "Blade Ward",
@@ -325,9 +360,10 @@
         ],
         "summary": "It allows spellcasters to become more resilient against physical damage.",
         "description": "Take only half the damage from Bludgeoning, Piercing, and Slashing attacks.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1641
     },
     {
         "name": "Bless",
@@ -344,9 +380,10 @@
         ],
         "summary": "This spell allows spellcasters to temporarily bolster themselves and their allies’ attacks and Saving Throws.",
         "description": "Bless up to 3 creatures. They gain a d4|Slashing +1d4 bonus to Attack Rolls and SavingThrows.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1610
     },
     {
         "name": "Blight",
@@ -362,9 +399,11 @@
             "Circle of the Spores"
         ],
         "summary": "This spell allows spellcasters to drain the moisture and vitality from a target creature using necromantic energy. It's especially effective versus plants.",
-        "actionType": 0,
+        "description": "Deals 8d8|Necrotic to a target. Plants take maximum damage from this spell, and have Disadvantage on the SavingThrow against it.\n\nOn Save: Target still takes half damage.\n\nNo effect on undead and constructs.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6581
     },
     {
         "name": "Blinding Smite",
@@ -374,9 +413,10 @@
         "ritual": false,
         "classes": [],
         "description": "Evoke a heavenly flare and possibly Blind your target",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 10343
     },
     {
         "name": "Blindness",
@@ -393,9 +433,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to magically Blinded|Blind a targeted hostile creature.",
-        "actionType": 0,
+        "description": "Limit a foe's sight range. It is easier to hit, and the creature will miss more often.\n\nAttack Rolls against it have Advantage and the foe attacks with Disadvantage.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2322
     },
     {
         "name": "Blink",
@@ -405,9 +447,11 @@
         "ritual": false,
         "classes": ["Sorcerer", "Archfey"],
         "summary": "This spell allows the spellcaster to travel to the Ethereal Plane, becoming temporarily unassailable and unseen until they return.",
-        "actionType": 0,
+        "description": "Available only in combat.\n\nAt the end of your turn, roll a  d20. On 11 or higher, you vanish into the Ethereal Plane. While there, you can't be harmed or seen in this world. \n\nWhen you do vanish, your presence here is a representation of the location you'll come back to. You can choose to teleport it up to m=6|ft=20.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8191
     },
     {
         "name": "Bludgeon the Weak",
@@ -416,10 +460,12 @@
         "school": 8,
         "ritual": false,
         "classes": [],
-        "summary": "This spell is a variant of Brand the Weak Icon|Brand the Weak that imposes vulnerability on an enemy to Bludgeoning damage.",
-        "actionType": 0,
+        "summary": "This spell is a variant of Brand the Weak that imposes vulnerability on an enemy to Bludgeoning damage.",
+        "description": "Make an enemy Vulnerable to Bludgeoning damage.\n\nThis effect lasts 3 turns, or until the target takes damage.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 13011
     },
     {
         "name": "Blur",
@@ -435,9 +481,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell Blurs the spellcaster's body and makes them harder to hit.",
-        "actionType": 0,
+        "description": "Your body becomes Blurred. Attackers have Disadvantage on Attack Rolls against you.\n\nDoesn't affect creatures that don't rely on sight or that can see through illusions.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1353
     },
     {
         "name": "Bolts of Doom",
@@ -446,9 +494,12 @@
         "school": 0,
         "ritual": false,
         "classes": [],
+        "summary": "Bolts of Doom is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of lightning and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's lightning bolts to gain Resistance to Lightning damage. Your lightning spells deal additional Lightning damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, gain 2 Lightning Charges. While attuned to Kereska's lightning you can cast Chain Lightning and Lightning Bolt.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8066
     },
     {
         "name": "Bone Chill",
@@ -466,9 +517,10 @@
         ],
         "summary": "It deals Necrotic damage and prevents the target from regaining Hit Points.",
         "description": "Prevent the target from healing until your next turn. An undead target receives Disadvantage on Attack Rolls.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1645
     },
     {
         "name": "Bone-shaking Thunder",
@@ -477,9 +529,12 @@
         "school": 0,
         "ritual": false,
         "classes": [],
+        "summary": "Bone-shaking Thunder is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of thunder and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's thunder to gain Resistance to Thunder damage. Your thunder spells deal additional Thunder damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Reverberation upon the target. While attuned to Kereska's thunder you can cast Shatter and Destructive Wave.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8061
     },
     {
         "name": "Brand the Weak",
@@ -489,9 +544,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell imposes vulnerability on an enemy to Bludgeoning, Slashing, or Piercing damage.",
-        "actionType": 0,
+        "description": "Expose the weak points of an enemy. They become Vulnerable to Bludgeoning, Slashing, or Piercing damage.\n\nThis effect lasts 3 turns, or until the target takes damage.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 13015
     },
     {
         "name": "Branding Smite",
@@ -501,9 +558,11 @@
         "ritual": false,
         "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to cause their weapon to gleam with astral radiance, allow them to mark targets with light, preventing them from turning Invisible",
-        "actionType": 0,
+        "description": "Your weapon gleams with astral radiance as you strike and possibly mark your targets with light, preventing it from turning Invisible. \n\n* If the spellcaster misses the initial Attack, the spell slot and bonus are not consumed. This spell, unlike other Smite Spells, will work with Ranged weaponry.",
+        "actionType": 4,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2836
     },
     {
         "name": "Bull's Strength",
@@ -514,9 +573,10 @@
         "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the might of a bull. Affected creatures have their Checks.",
         "description": "Creature gains Advantage on Checks and its Weight Limit is doubled.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2367
     },
     {
         "name": "Burning Age",
@@ -526,9 +586,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell is a variant of Elemental Age and imbues a weapon with fiery might, granting it bonus Fire|Fire damage and giving it an Attack Roll bonus.",
-        "actionType": 0,
+        "description": "Gain a +1 bonus to Attack Rolls, and deals an additional 1d4|Fire damage.\n\nThe blade can be unequipped and equipped again, but has to stay on the spellcaster's person",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 23311
     },
     {
         "name": "Burning Hands",
@@ -545,9 +607,11 @@
             "Eldritch Knight"
         ],
         "summary": "It allows spellcasters to shoot a flaming cone from their fingertips and deal Fire damage to enemies.",
-        "actionType": 0,
+        "description": "Each flammable target is hit with 3d6|Fire Fire|damage.\n\nOn Save: Targets still take half damage.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2008
     },
     {
         "name": "Call Lightning",
@@ -558,9 +622,10 @@
         "classes": ["Druid", "Tempest Domain", "Storm Sorcery"],
         "summary": "This spell allows spellcasters to call down lightning to hit all targets within range. The spellcaster can also continue to call down lightning repeatedly on subsequent turns.",
         "description": "Call down lightning to hit all targets within range and its area of effect for 3d10|Lightning damage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2702
     },
     {
         "name": "Calm Emotions",
@@ -571,9 +636,10 @@
         "classes": ["Bard", "Cleric", "Archfey"],
         "summary": "This spell allows spellcasters to magically subdue intense emotions in targeted creatures. The affected target becomes neutral to the creatures it is hostile toward. It also cannot be Charmed or Frightened during the duration of the spell.",
         "description": "Humanoids can't be Charmed, Frightened, or become enraged.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2331
     },
     {
         "name": "Cat's Grace",
@@ -584,9 +650,10 @@
         "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the finesse of a cat. Affected creatures gain Resistance to falling damage and gain Checks.",
         "description": "Creature gains Advantage on Checks and only takes half damage from falling.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2368
     },
     {
         "name": "Celestial Haste",
@@ -597,9 +664,10 @@
         "classes": [],
         "summary": "Provided by equipping Gontr Mael, it allows the wielder to Hasten themselves for 5 turns without suffering the Lethargic condition when it ends.",
         "description": "Gain Celestial Haste|Hastened.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 13192
     },
     {
         "name": "Chain Lightning",
@@ -609,9 +677,10 @@
         "ritual": false,
         "classes": [],
         "description": "Strike an enemy with lightning. Three more bolts will leap from the target, electrifying as many as three other enemies within range.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7950
     },
     {
         "name": "Charm Person",
@@ -630,9 +699,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to temporarily charm a humanoid creature, granting Advantage on Charisma Checks.",
-        "actionType": 0,
+        "description": "Charm a humanoid to prevent it from attacking you. You gain Advantage on Charisma Checks in dialogue.\n\nEnemies have Advantage on SavingThrows against being Charmed.\n\nCondition ends early if you or an ally hurts the target.\nIn higher difficulty modes, the target might accuse you of enchanting them.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 999
     },
     {
         "name": "Chromatic Orb",
@@ -647,9 +718,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to fire a ball of energy and deal the desired damage type to enemies.",
-        "actionType": 0,
+        "description": "Hurl a sphere of energy.\n\nIt deals 3d8|Thunder damage, or 2d8 Acid, Cold, Fire, Lightning or Poison damage and creates a surface.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2032
     },
     {
         "name": "Circle of Death",
@@ -659,9 +732,10 @@
         "ritual": false,
         "classes": [],
         "description": "Sculpt a massive sphere of entropic energy around a creature. Devastate the target and all surrounding creatures.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7951
     },
     {
         "name": "Cloud of Daggers",
@@ -679,9 +753,10 @@
         ],
         "summary": "This spell allows spellcasters to conjure a barrage of daggers in an area that deal Slashing damage to any creature entering or starting their turn in the area.",
         "description": "Conjure a cloud of spinning daggers that attack anyone inside.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2338
     },
     {
         "name": "Cloudkill",
@@ -692,9 +767,10 @@
         "classes": ["Sorcerer", "Wizard", "Circle of the Spores"],
         "summary": "This spell allows spellcasters to conjure a moveable cloud that damages and obscures everything it envelops.",
         "description": "Craft a large cloud that inflicts 5d8|Poison damage per turn. You can reposition the cloud every turn. The cloud Heavily Obscures everything within it.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7960
     },
     {
         "name": "Colour Spray",
@@ -711,9 +787,10 @@
         ],
         "summary": "This spell allows spellcasters to temporarily blind enemies with flashing coloured light, making their attacks miss more often and shortening their attack range.",
         "description": "Blinded|Blind creatures up to a combined Healing|33 Hit Points.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2054
     },
     {
         "name": "Command",
@@ -730,9 +807,10 @@
         ],
         "summary": "This spell allows spellcasters to order their target to flee, move closer, freeze, drop to the ground, or drop their weapon.",
         "description": "Command a creature to flee, move closer, freeze, drop to the ground or drop its weapon. The target must succeed on a Wisdom in order to resist the effects.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 3061
     },
     {
         "name": "Compelled Duel",
@@ -743,9 +821,10 @@
         "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to compel an enemy to ignore other targets and attack only the spellcaster.",
         "description": "Force an enemy to attack only you, giving it Disadvantage against other targets.",
-        "actionType": 0,
+        "actionType": 2,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2816
     },
     {
         "name": "Cone of Cold",
@@ -756,9 +835,10 @@
         "classes": [],
         "summary": "This spell allows spellcasters to blast icy air into a region in front of them, damaging affected creatures and turning existing water surfaces into Ice Surface.",
         "description": "Make a flurry of frost, crisp air, and condensed snow crystals erupt from your hands.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7943
     },
     {
         "name": "Confusion",
@@ -776,9 +856,10 @@
         ],
         "summary": "This spell allows spellcaster to confuse a group of creatures, drastically reducing their effectiveness in combat.",
         "description": "Befuddle a group of creatures, causing them to attack at random, wander around aimlessly, and occasionally skip turns in the stupor.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6707
     },
     {
         "name": "Conjure Barrage",
@@ -788,9 +869,11 @@
         "ritual": false,
         "classes": ["Ranger"],
         "summary": "This spell allows spellcasters to summon a barrage of blades in front of them, potentially hitting multiple enemies.",
-        "actionType": 0,
+        "description": "Channel your weapon's essence into a destructive, widespread volley. Deal Physical|Weapon Damage, plus an additional d8|Physical 2d8 damage of the same Type to enemies within a cone in front of you. This spell can be cast with either your melee weapon or ranged weapon.\n\nOn a successful Dexterity SavingThrow, targets still take half damage.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 10345
     },
     {
         "name": "Conjure Elemental",
@@ -801,9 +884,10 @@
         "classes": ["Wizard", "Druid"],
         "summary": "This spell allows spellcasters to summon a Fire, Earth, Water, or Air Elemental.",
         "description": "Bend the barrier between the Planes until they disgorge an elemental ally to follow and fight for you.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8415
     },
     {
         "name": "Conjure Minor Elemental",
@@ -814,9 +898,10 @@
         "classes": ["Wizard", "Druid"],
         "summary": "Conjure 2 Mud Mephits, 2 Ice Mephites, or an Azer to fight for you.",
         "description": "Conjure a minor elemental to fight alongside you.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7998
     },
     {
         "name": "Conjure Shadow Lantern Wraith",
@@ -827,9 +912,10 @@
         "classes": [],
         "summary": "Summon a Shadow to fight by your side.",
         "description": "Pull an undead creature from the depths of the Shadow Lantern's depraved magic to join your side in combat.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 14005
     },
     {
         "name": "Conjure Woodland Being",
@@ -839,9 +925,11 @@
         "ritual": false,
         "classes": ["Druid"],
         "summary": "This spell summons a Dryad to fight alongside the caster.",
-        "actionType": 0,
+        "description": "Conjure a Dryad to fight alongside you.\nShe can use Nature's Step, Entangle enemies, and summon a Fallen Lover|Wood Woad.\n\n10|14|11|14|15|18|hp=22|ac=13\n\n=== Abilities ===\n\n==== Twisted Oak Crook|40 ====\n* Make a melee attack, dealing 3d6 + Strength Modifier|Bludgeoning damage.\n\n==== Strengthened Shillelagh|w=40 ====\n* Your staff or club becomes magical: it deals 4d8|Bludgeoning damage and uses yours Spellcasting Ability for Attack Rolls\n\n==== Entangle (Dryad)|Entangle|w=40 ====\n* Create a vine surface, slowing down creatures, possibly Entangled|Entangling them.\n\n==== Fallen Lover|w=40 ====\n* Summon a wood woad bound to your tree to fight alongside you.\n\n==== Spike Growth|w=40 ====\n* Shape a piece of ground into hard spikes. Movement is halfed. A creature walking on the spikes takes 2d4|Piercing damage for every 1.5m / 5ft it moves.\n\n=== Passives ===\n==== Grasp of the Forest|w=40 ====\n* Weapon attacks can Entangled|Entangle the target.\n\n==== Magic Resistance|w=40 ====\n* Has Advantage on Saving Throws against spells and other magical effects. \n\n==== Nature's Step|w=40 ====\n* You and your nearby allies aren't affected by Difficult Terrain, can't be Restrained or Paralysed, and gain Resistance to Poison damage.\n\n==== Permanently Armed|w=40 ====\n* Creature can't be disarmed.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 10882
     },
     {
         "name": "Contagion",
@@ -851,9 +939,11 @@
         "ritual": false,
         "classes": ["Cleric", "Druid", "Circle of the Spores"],
         "summary": "This spell allows spellcasters to infect their target with an affliction of their choosing, potentially resulting in the target contracting a disease.",
-        "actionType": 0,
+        "description": "Poison a target and possibly afflict them with a disease of your choice.\n\nOnce infected, the target will roll a Constitution SavingThrow each turn. If it accumulates 3 successes, it recovers. If it accumulates 3 failures, it contracts the Disease chosen by the spellcaster.\n\nDiseases:\n* Contagion: Filth Fever|w=40\n* Contagion: Flesh Rot|w=40\n* Contagion: Slimy Doom|w=40\n* Contagion: Seizure|w=40\n* Contagion: Mindfire|w=40\n* Contagion: Blinding Sickness|w=40",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8412
     },
     {
         "name": "Corrosive Age",
@@ -863,9 +953,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell is a variant of Elemental Age and imbues a weapon with corrosive might, granting it bonus Acid|Acid damage and giving it an Attack Roll bonus.",
-        "actionType": 0,
+        "description": "Gain a +1 bonus to Attack Rolls, and deals an additional 1d4|Acid damage.\n\nThe blade can be unequipped and equipped again, but has to stay on the spellcaster's person",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 23309
     },
     {
         "name": "Counterspell",
@@ -876,9 +968,10 @@
         "classes": ["Sorcerer", "Warlock", "Wizard"],
         "summary": "This spell allows spellcasters to interrupt another caster's spellcasting, causing it to fail and have no effect.",
         "description": "Nullify another creature's spell as a reaction. The spell must be 3rd Level or lower. If it is higher, you must succeed a Check to nullify it, the difficulty of which is based on the spell's Level.",
-        "actionType": 0,
+        "actionType": 3,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2737
     },
     {
         "name": "Create or Destroy Water",
@@ -889,9 +982,10 @@
         "classes": ["Cleric", "Druid", "Storm Sorcery"],
         "summary": "This spell allows spellcasters to conjure or destroy an area of water (or water-like surfaces).",
         "description": "Choose to call forth rain or destroy a water-based surface.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2089
     },
     {
         "name": "Create Sorcery Points",
@@ -904,7 +998,8 @@
         "description": "Spend Spell Slots to gain Sorcery Points. The level of spell slot spent creates the equivalent number in sp|forceplural=yes",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1388
     },
     {
         "name": "Create Undead",
@@ -914,9 +1009,10 @@
         "ritual": false,
         "classes": ["Cleric", "Wizard", "Warlock"],
         "description": "Create a corpse as a heinous mummy that fights by your side.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9156
     },
     {
         "name": "Create Water",
@@ -927,9 +1023,10 @@
         "classes": ["Cleric", "Druid", "Storm Sorcery"],
         "summary": "This spell is a variant of Create or Destroy Water that allows spellcasters to conjure an area of water that rain from thin air and forms a water surface. Creatures standing in the area when the spell is cast will become Wet.",
         "description": "Call forth rain. It extinguishes exposed flames and forms a Water Surface.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2090
     },
     {
         "name": "Crown of Madness",
@@ -948,9 +1045,10 @@
         ],
         "summary": "This spell allows spellcasters to temporarily charm a humanoid creature and induce madness in their mind. The affected creature will make a melee attack against any creature within its reach.",
         "description": "Instill madness in a humanoid enemy, making them attack the creature closest to them (other than you), even if it's allied.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2339
     },
     {
         "name": "Crusader's Mantle",
@@ -961,9 +1059,10 @@
         "classes": ["Paladin", "War Domain"],
         "summary": "This spell allows spellcasters to imbue their allies' weapons with holy power, causing them to deal additional Radiant damage.",
         "description": "Radiate a holy power that emboldens nearby allies. Their weapon attacks deal an additional 1d4|Radiant damage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8122
     },
     {
         "name": "Cure Wounds",
@@ -980,9 +1079,11 @@
             "Life Domain"
         ],
         "summary": "This spell allows spellcasters to heal allies with divine magic through touch.",
-        "actionType": 0,
+        "description": "Healing|Heal a creature you can touch.\n\nNo effect on undead and constructs.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1611
     },
     {
         "name": "Curriculum of Strategy: Artistry of War",
@@ -993,9 +1094,10 @@
         "classes": [],
         "summary": "Fires multiple projectiles that deal Force damage. Can only be cast once per short rest.",
         "description": "Summon the apparitions of 6 master strategists. Each apparition strikes a target of your choosing, dealing 2d6 + 6|Force damage (for a total of 12d6 + 36|Force).",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9135
     },
     {
         "name": "Dancing Lights",
@@ -1012,9 +1114,10 @@
         ],
         "summary": "It creates magical orbs of light that brighten an area.",
         "description": "Illuminate a m=9|ft=30 radius.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1647
     },
     {
         "name": "Danse Macabre",
@@ -1027,7 +1130,8 @@
         "description": "Create 4 ghouls that fight alongside you.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 11496
     },
     {
         "name": "Darkness",
@@ -1046,9 +1150,10 @@
         ],
         "summary": "This spell allows spellcasters to conjure a cloud of darkness in an area within range that obscures and Blinded|blinds those within it.",
         "description": "Create a cloud of magical darkness that Heavily Obscured|Heavily Obscures and Blinded|Blinds creatures within. Creatures cannot make ranged attacks into or out of it.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2342
     },
     {
         "name": "Darkvision",
@@ -1064,10 +1169,12 @@
             "Arcane Trickster",
             "Eldritch Knight"
         ],
+        "summary": "This spell allows spellcasters to alter a creature's sight, granting them the ability to see in the dark.\n\n:For the passive feature inherent to races and monsters, see {{SAI|Darkvision (Passive Feature).}}\n:For the Way of the Shadow Monk ability, see {{SAI|Shadow Arts: Darkvision.}}",
         "description": "Grant a creature the ability to see in the dark out to a range of m=12|ft=40.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2348
     },
     {
         "name": "Daylight",
@@ -1084,9 +1191,11 @@
             "Light Domain"
         ],
         "summary": "This spell allows spellcasters to dispel darkness by summoning a sphere of light or enchanting an item to shine like the sun.",
-        "actionType": 0,
+        "description": "Enchant an item to shine like the sun or summon a sphere of sunlight that dispels all darkness around it.\n\nUntil Long Rest",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2686
     },
     {
         "name": "Deadlier than Arsenic",
@@ -1095,9 +1204,12 @@
         "school": 0,
         "ritual": false,
         "classes": [],
+        "summary": "Deadlier than Arsenic is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of poison and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's poison to gain Resistance to Poison damage. Your Poison spells deal additional Poison damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Poisoned upon the target. While attuned to Kereska's poison you can cast Cloudkill and Ray of Sickness.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8059
     },
     {
         "name": "Death Ward",
@@ -1108,9 +1220,10 @@
         "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to prevent a target from dying.",
         "description": "Protect a creature from death. The next time damage would reduce it to 0 Hit Points, it remains conscious with 1 Hit Point left.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6709
     },
     {
         "name": "Destroy Water",
@@ -1121,9 +1234,10 @@
         "classes": ["Cleric", "Druid"],
         "summary": "This spell is a variant of Create or Destroy Water that  allows spellcasters to destroy an area of water (or water-like surfaces). The spell will remove the Wet condition from creatures within its area of effect.",
         "description": "Cause water-based surfaces (such as water, steam, ice, blood and poison) to vanish.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2096
     },
     {
         "name": "Destructive Wave",
@@ -1134,9 +1248,10 @@
         "classes": [],
         "summary": "This spell allows the caster to create a massive shockwave that damages all creatures and can possibly knock them prone.",
         "description": "Create a shockwave of either divine or malevolent thunder that damages nearby creatures and possibly knocks them Prone.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6830
     },
     {
         "name": "Detect Thoughts",
@@ -1154,9 +1269,10 @@
         ],
         "summary": "This spell allows spellcasters to telepathically link to unprotected minds and hear the thoughts of targeted creatures while talking to them.",
         "description": "Focus your mind to read the thoughts of certain creatures while talking to them.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2350
     },
     {
         "name": "Dethrone",
@@ -1167,9 +1283,10 @@
         "classes": [],
         "summary": "Deals Necrotic damage to one enemy. Can only be cast once per Long Rest.",
         "description": "Shred a foe's very essence by pulling on strands of the Weave.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9136
     },
     {
         "name": "Dimension Door",
@@ -1180,9 +1297,10 @@
         "classes": ["Bard", "Sorcerer", "Warlock", "Wizard", "Trickery Domain"],
         "summary": "This spell teleports you and an ally.",
         "description": "Teleport yourself and up to one adjacent ally to a place you can see. The ally cannot be larger than Medium.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6735
     },
     {
         "name": "Disguise Self",
@@ -1199,10 +1317,12 @@
             "Arcane Trickster",
             "Eldritch Knight"
         ],
-        "summary": "This spell allows spellcasters to temporarily change their appearance.",
-        "actionType": 0,
+        "summary": "This spell allows spellcasters to temporarily change their appearance. While active, gain access to the action Dispel Disguise to end the effect.",
+        "description": "Magically change all aspects of your appearance.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2117
     },
     {
         "name": "Disintegrate",
@@ -1212,9 +1332,10 @@
         "ritual": false,
         "classes": [],
         "description": "Shoot a thin green ray from your finger. If the spell reduces the target to 0 hit points, it disintegrates into a crumbly ash.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7952
     },
     {
         "name": "Dispel Evil and Good",
@@ -1225,9 +1346,10 @@
         "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to protect themselves from Evil and Good creatures, and allows them to break Enchantments on allies.",
         "description": "Aberrations, Celestials, Elementals, Fey, Fiends, and Undead have Disadvantage on Attack Rolls against you. You can also break Enchantments that Charmed|Charm, Frightened|Frighten, or Malefic Possession|Possesses allies.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8410
     },
     {
         "name": "Dissonant Whispers",
@@ -1237,9 +1359,11 @@
         "ritual": false,
         "classes": ["Bard", "The Great Old One"],
         "summary": "This spell allows spellcasters to fill a target with terror and deal Psychic damage to them.",
-        "actionType": 0,
+        "description": "Frightened|Frighten a creature: it will be easier to hit and cannot move.\n\nOn a successful Wisdom, the creature only takes half damage.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2162
     },
     {
         "name": "Divine Favour",
@@ -1250,9 +1374,10 @@
         "classes": ["Paladin", "War Domain"],
         "summary": "This spell allows spellcasters to empower their Weapons to deal extra Radiant|Radiant damage.",
         "description": "Your prayer empowers you with divine radiance. Your weapons deal an additional 1d4|Radiant damage.",
-        "actionType": 0,
+        "actionType": 2,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2817
     },
     {
         "name": "Divine Smite",
@@ -1262,10 +1387,11 @@
         "ritual": false,
         "classes": ["Paladin"],
         "summary": "Divine Smite allows a Paladin to expend a Spell Slot to deal additional Radiant damage with a melee weapon attack.",
-        "description": "Your weapon emanates divine might as you strike, dealing an additional 2d8|Radiant damage. Deals an additional 1d8|Radiant damage to Fiends and Undead.",
+        "description": "Your weapon emanates divine might as you strike, dealing an additional 2d8|Radiant|drs=t damage. Deals an additional 1d8|Radiant|drs=t damage to Fiends and Undead.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 3940
     },
     {
         "name": "Dominate Beast",
@@ -1282,9 +1408,10 @@
         ],
         "summary": "This spell allows spellcasters to temporarily charm a Beast into fighting alongside the caster, rather than against them.",
         "description": "Make a Beast fight alongside you. Every time the Beast takes damage, it makes a Wisdom SavingThrow against your domination.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7935
     },
     {
         "name": "Dominate Person",
@@ -1303,9 +1430,10 @@
         ],
         "summary": "This spell allows spellcasters to force a humanoid to temporarily fight as an ally.",
         "description": "Make a humanoid fight alongside you. Every time the creature takes damage, it makes a Wisdom SavingThrow against your domination. Allies cannot be dominated.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7946
     },
     {
         "name": "Draconic Elemental Weapon",
@@ -1314,11 +1442,12 @@
         "school": 8,
         "ritual": false,
         "classes": [],
-        "summary": "This spell is identical to the Elemental Weapon spell, but costs no Spell Slots to cast. It imbues a weapon with a chosen energy type, increasing its damage and accuracy.",
+        "summary": "This spell imbues a weapon with a chosen energy type, increasing its damage and accuracy.\n\nThis item spell is similar to the Paladin spell Elemental Weapon.",
         "description": "Imbue a weapon with elemental power. It receives a +1 bonus to Attack Rolls, and deals an additional d4|Physical 1d4 damage of your choice.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 23484
     },
     {
         "name": "Darconic Elemental Weapon: Acid",
@@ -1329,9 +1458,10 @@
         "classes": [],
         "summary": "This spell is a variant of Draconic Elemental Weapon and imbues a weapon with corrosive might, granting it bonus Acid|Acid damage and giving it an Attack Roll bonus.",
         "description": "Imbue a weapon with corrosive might. It receives a +1 bonus to Attack Rolls, and deals an additional 1d4|Acid damage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 23507
     },
     {
         "name": "Drunken Inhale",
@@ -1342,9 +1472,10 @@
         "classes": [],
         "summary": "This spell allows spellcasters to damage and intoxicate creatures in an area in front of them.",
         "description": "Compel foes toward you with an intoxicating wind that makes them Drunk.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 10942
     },
     {
         "name": "Eagle's Splendour",
@@ -1355,9 +1486,10 @@
         "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the elegance of an eagle. Affected creatures gain Checks.",
         "description": "Creature gains Advantage on Checks.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2369
     },
     {
         "name": "Eldritch Blast",
@@ -1368,9 +1500,10 @@
         "classes": ["Warlock"],
         "summary": "The cantrip allows the spellcaster to shoot out an energy beam that deals Force damage, and that can be upgraded with Warlock abilities.",
         "description": "Conjure a beam of crackling energy. Deals 1d10|Force damage to a target.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1651
     },
     {
         "name": "Elemental Age",
@@ -1380,9 +1513,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Give the Flail of Ages an attack bonus and additional elemental damage.",
-        "actionType": 0,
+        "description": "Give the Flail of Ages a +1 bonus to Attack Rolls and an additional Acid, Cold or Fire damage to its strikes depending on the elemental age embodied.\n\nThe flail can be unequipped and equipped again, but has to stay on the spell caster's person.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 9575
     },
     {
         "name": "Elemental Retort",
@@ -1392,9 +1527,10 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to unleash a torrent of elemental damage based on each siphoned myrmidon.",
-        "actionType": 0,
+        "description": "When you take damage, you can retaliate, blasting your attacker with the elemental damage of each myrmidon currently Elemental Siphon|Siphoned.\n\nDamage:\n3d8|Lightning (Conditional) + 3d8|Poison (Conditional) + 3d8|Fire (Conditional) + 3d8|Cold (Conditional)",
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 19285
     },
     {
         "name": "Elemental Weapon",
@@ -1405,9 +1541,10 @@
         "classes": [],
         "summary": "This spell imbues a weapon with a chosen energy type, increasing its damage and accuracy.",
         "description": "Imbue a weapon with elemental power. It receives a +1 bonus to Attack Rolls, and deals an additional d4|Physical 1d4 damage of your choice.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9678
     },
     {
         "name": "Enhance Ability",
@@ -1417,9 +1554,11 @@
         "ritual": false,
         "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to strengthen an aspect of a creature's physical or mental attributes.",
-        "actionType": 0,
+        "description": "Bestow a magical enchantment upon an ally. They gain Advantage on Ability.\n\n* Until Long Rest",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2358
     },
     {
         "name": "Enhance Leap",
@@ -1437,9 +1576,10 @@
         ],
         "summary": "This spell allows spellcasters to increase a creature's Jumping distance.",
         "description": "Triple a creature's Jumping distance.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2252
     },
     {
         "name": "Enlarge/Reduce",
@@ -1454,21 +1594,24 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to alter a creature's body size. The caster can choose to double or halve the size of the affected creature.",
-        "actionType": 0,
+        "description": "Make a creature larger or smaller. Either option has a duration of 10 turns.\n\nThis affects their weapon damage and Checks and SavingThrows.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2375
     },
     {
         "name": "Ensnaring Strands",
+        "image": "http://localhost:3001/api/images/f/fb/Ensnaring_Strands.webp",
         "level": 1,
         "school": 2,
         "ritual": false,
         "classes": [],
         "summary": "Attacks may Enwebbed (Condition) the target",
         "description": "Your attack conjures thick sticky webbing that possibly Enwebbed (Condition) your target",
-        "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9082
     },
     {
         "name": "Enthrall",
@@ -1479,9 +1622,10 @@
         "classes": ["Bard", "Warlock"],
         "summary": "This spells allows spellcasters to capture the attention of a creature, forcing the creature to focus on them.",
         "description": "Reduce a creature's peripheral vision and make it look at you.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8166
     },
     {
         "name": "Evard's Black Tentacles",
@@ -1492,9 +1636,10 @@
         "classes": ["Wizard", "Great Old One"],
         "summary": "Summons tentacles in an area that make it difficult to move and harm creatures.",
         "description": "Tentacles sprout from the ground, turning the area into Difficult Terrain|, attacking and Black Tentacles|Smothering creatures within.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6712
     },
     {
         "name": "Exhort the Risen",
@@ -1505,9 +1650,10 @@
         "classes": [],
         "summary": "Allows you to command the undead, similar to the spell Command.",
         "description": "Subjugate the undead with your commands.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 23706
     },
     {
         "name": "Expeditious Retreat",
@@ -1524,9 +1670,10 @@
         ],
         "summary": "This spell allows spellcasters to move more swiftly.",
         "description": "Gain Dash immediately and as a bonus action on each of your turns until this spell ends.",
-        "actionType": 0,
+        "actionType": 2,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2171
     },
     {
         "name": "Eyebite",
@@ -1535,9 +1682,11 @@
         "school": 7,
         "ritual": false,
         "classes": [],
-        "actionType": 0,
+        "description": "Your eyes become black corridors walled in teeth, your gaze capable of inflicting dread, sickness, or putting creatures to sleep.  While Concentrating,  you may cast Eyebite without expending a spell slot.\n\nEach round, up to ten rounds while concentrating, you can inflict of the following effects on a target:\n* Eyebite: Panicked|w=40\n* Eyebite: Sickened|w=40\n* Eyebite: Asleep|w=40",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8017
     },
     {
         "name": "Faerie Fire",
@@ -1548,9 +1697,10 @@
         "classes": ["Bard", "Druid", "Light Domain", "The Archfey"],
         "summary": "This spell allows spellcasters to conjure brilliant light. Any creature caught in the radius temporarily sheds faint light and prevents Invisible.",
         "description": "All targets within the light turn visible, and Attack Rolls against them have Advantage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2175
     },
     {
         "name": "False Life",
@@ -1565,9 +1715,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to gain Temporary Hit Points.",
-        "actionType": 0,
+        "description": "Bolster yourself with a necromantic facsimile of life to gain 7.\n\nCan only have Temporary Hit Points from one source.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2178
     },
     {
         "name": "Fear",
@@ -1584,9 +1736,11 @@
             "Gloom Stalker"
         ],
         "summary": "This spell allows spellcasters to terrify targets by projecting phantasmal images.",
-        "actionType": 0,
+        "description": "Project an image so frightening it makes targets drop everything and become Fearful. They will be easier to hit and cannot move. If the target ends their turn where they can't see you, they can make another SavingThrow to shake off their fear.\n\nAffected targets become Fearful for 2 turns and Disarmed for 1 turn.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2700
     },
     {
         "name": "Feather Fall",
@@ -1603,9 +1757,10 @@
         ],
         "summary": "It allows spellcasters to make themselves and their allies light as a feather, preventing them from taking damage when falling from extreme heights.",
         "description": "You and nearby allies gain Immunity to Falling damage.",
-        "actionType": 0,
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2181
     },
     {
         "name": "Feign Death",
@@ -1615,9 +1770,11 @@
         "ritual": false,
         "classes": ["Bard", "Cleric", "Druid", "Wizard"],
         "summary": "This spell allows spellcasters to put their allies into a magical, protective coma, feigning death.",
-        "actionType": 0,
+        "description": "Put an ally in a protective coma. They become Resistant to all damage except Psychic. Disease and Poison no longer have any effect.\n\nRemoved when Help|Helped.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2713
     },
     {
         "name": "Finger of Death",
@@ -1628,9 +1785,10 @@
         "classes": [],
         "summary": "It is only available to Apostle of Myrkul after it consumes a Necromite and has the condition Reaper's Rewards.",
         "description": "Point at a foe to cause searing pain.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 12920
     },
     {
         "name": "Fire Bolt",
@@ -1646,9 +1804,10 @@
         ],
         "summary": "It allows the caster to hurl a bolt of fire at an enemy.",
         "description": "Hurl a mote of fire.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1653
     },
     {
         "name": "Fire Shield",
@@ -1659,9 +1818,10 @@
         "classes": ["Wizard", "The Fiend"],
         "summary": "This spell shields the spellcaster with luminous energy.",
         "description": "Wreathe your body in flames that shed light in a ft=10 radius, provide Resistance to Fire or Cold damage, and retaliate against melee attacks.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6736
     },
     {
         "name": "Fireball",
@@ -1669,11 +1829,13 @@
         "level": 3,
         "school": 5,
         "ritual": false,
-        "classes": ["Sorcerer", "Wizard", "Light Domain", "The Fiend"],
+        "classes": [],
         "summary": "This spell allows spellcasters to unleash a streak of fire from their hands that ignites into a large explosion at a chosen point within range.",
-        "actionType": 0,
+        "description": "Shoot a bright flame from your fingers that explodes upon contact, torching everything in the vicinity for  8d6|Fire  damage.\n\nOn a successful Saving Throw, targets still take half damage.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2677
     },
     {
         "name": "Firebolt?",
@@ -1684,9 +1846,10 @@
         "classes": [],
         "summary": "It allows the caster to hurl a bolt of fire at an enemy. This is a copy of Fire Bolt except there is a 10% chance of casting a Fireball on yourself.",
         "description": "Hurl a mote of fire.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 23326
     },
     {
         "name": "Flame Blade",
@@ -1696,9 +1859,11 @@
         "ritual": false,
         "classes": ["Druid"],
         "summary": "This spell allows spellcasters to summon a fiery scimitar in their free hand that sheds bright light. Casters can make a melee weapon attack with the blade to deal Fire damage to enemies.",
-        "actionType": 0,
+        "description": "Conjure a flaming Scimitar in your hand that deals 3d6|Fire damage. It sheds a bright light in a m=3|ft=10 radius and a dim light in a m=6|ft=20 radius. 10.\n\n Flame Blade",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2391
     },
     {
         "name": "Flame of Wrath",
@@ -1707,9 +1872,12 @@
         "school": 0,
         "ritual": false,
         "classes": [],
+        "summary": "Flame of Wrath is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of fire and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's flame to gain Resistance to Fire damage. Your fire spells deal additional Fire damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, gain 1 turn of Heat. \nWhile attuned to Kereska's flame you can cast Fireball and Wall of Fire.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8071
     },
     {
         "name": "Flame Strike",
@@ -1720,9 +1888,10 @@
         "classes": ["Cleric", "Light Domain", "War Domain", "Fiend"],
         "summary": "This spells allows the caster to make a pillar of divine flame at a chosen location dealing   5d6 | Fire damage and  5d6 | Radiant damage.",
         "description": "Make a pillar of divine fire roar down from the heavens like the wrath of affronted angels.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8139
     },
     {
         "name": "Flaming Sphere",
@@ -1738,9 +1907,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to conjure a Flaming Sphere that can attack and burn enemies.",
-        "actionType": 0,
+        "description": "Summon a Flaming Sphere that deals 2d6|Fire damage to nearby enemies and objects. It also sheds bright light in a m=6|ft=20 radius, and dim light for an additional m=6|ft=20. 10.\n\nSummon:\n\nFlaming Sphere|100 Flaming Sphere\n\n* Its resources are a m=9|ft=30}} of [[Movement Speed.\n\nIt receives the following Class Action:\n* Ram|w=40: Slam into an enemy creature or object. On a successful Save, the target still takes half damage.\n** Damage: 2d6|Fire (Save to halve)\n** {{Action|Bonus}}\n** melee\n\nIt also receives the following toggleable passive feature:\n* Ablaze|w=40: When the sphere is ablaze, it leaves behind a Fire Surface and deals 2d6|Fire to nearby creatures and objects.\n** Damage:2d6|Fire (Save to halve)\n** radius|m=1.5|ft=5",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2658
     },
     {
         "name": "Flesh to Gold",
@@ -1751,9 +1922,10 @@
         "classes": [],
         "summary": "Trap a target and turn it into gold after 3 turns.",
         "description": "Restrain a target and, after 3 rounds, the target becomes inactive solid gold until the spell ends. The target will Petrify if it does not suceed its Saving Throw within 3 turns. notes",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9097
     },
     {
         "name": "Flesh to Stone",
@@ -1764,9 +1936,10 @@
         "classes": ["Wizard"],
         "summary": "Atrophy a foe, Restraining them until they temporarily turn to stone.",
         "description": "Atrophy a foe, Restrained|Restraining them until they temporarily turn to stone. The target will Petrified|Petrify if it does not succeed its Saving Throw within 3 turns.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 11505
     },
     {
         "name": "Florrick's Cohort",
@@ -1776,9 +1949,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon two First Attackers and a First Defender.",
-        "actionType": 0,
+        "description": "Summon Florrick's personal guard - highly defensive warriors who can hold their own in melee.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24426
     },
     {
         "name": "Fog Cloud",
@@ -1797,9 +1972,10 @@
         ],
         "summary": "It allows spellcasters to summon a sphere of fog on an area in range and heavily obscure the area. Creatures within the area are Blinded.",
         "description": "Create a cloud of dense fog to Heavily Obscured|Heavily Obscure and Blinded|Blind creatures within.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2190
     },
     {
         "name": "Fox's Cunning",
@@ -1810,9 +1986,10 @@
         "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the slyness of a fox. Affected creatures gain Checks.",
         "description": "Creature gains Advantage on Checks.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2370
     },
     {
         "name": "Freedom of Movement",
@@ -1822,9 +1999,11 @@
         "ritual": false,
         "classes": ["Bard", "Cleric", "Druid", "War Domain", "Tempest Domain"],
         "summary": "This spell allows spellcasters to imbue an ally with the ability to avoid some slowing effects.",
-        "actionType": 0,
+        "description": "Snap an ally out of any Stunned|Stun. Difficult Terrain can't slow them down, and they can't be magically Paralysed or Restrained. \n\nIf the target is restrained by non-magical means, it can spend melee of Movement to free itself.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6737
     },
     {
         "name": "Friends",
@@ -1841,9 +2020,11 @@
             "Arcane Trickster"
         ],
         "summary": "It makes the caster appear more charismatic to the affected creature.",
-        "actionType": 0,
+        "description": "Gain Advantage on Charisma Checks against a non-hostile creature.\n\nIn higher difficulty modes, the target might accuse you of enchanting them.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1661
     },
     {
         "name": "Frost of Dark Winter",
@@ -1853,9 +2034,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Frost of Dark Winter is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of ice and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's ice to gain Resistance to Cold damage. Your Cold spells deal additional Cold damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Encrusted with Frost|Frost upon the target. While attuned to Kereska's ice you can cast Cone of Cold and Ice Storm.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8068
     },
     {
         "name": "Gaseous Form",
@@ -1865,9 +2048,11 @@
         "ritual": false,
         "classes": ["Sorcerer", "Warlock", "Wizard", "Circle of the Spores"],
         "summary": "This spell allows spellcasters to transform themselves or an ally into a cloud of mist to avoid attacks, reduce size, and gain Advantage on some Saving Throws.",
-        "actionType": 0,
+        "description": "Transform yourself or an ally into a tiny gas cloud. It can't fall, and fits through small openings. It is very hard to damage.\n\nThe cloud has Advantage on Constitution, Dexterity, and Strength SavingThrows.\n\nWhile transformed, the target won't be able to attack, cast spells, or talk.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2815
     },
     {
         "name": "Ghoulish Touch",
@@ -1877,21 +2062,25 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell is only found granted by Ring of Exalted Marrow. It allows the user to attack a target and possibly Paralysed|Paralyse them.",
-        "actionType": 0,
+        "description": "Lash out with deadly claws and possibly Paralysed|Paralyse the target.\n\nElves and undead cannot be Paralysed by this attack.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 23716
     },
     {
         "name": "Githborn: Flying Boots",
+        "image": "http://localhost:3001/api/images/c/c7/Fly.webp",
         "level": 3,
         "school": 8,
         "ritual": false,
         "classes": [],
         "summary": "Bestow the ability to Fly upon yourself.",
-        "description": "Bestow the ability to Fly upon yourself.",
-        "actionType": 0,
+        "description": "Bestow the ability to Fly (Class Action)|Fly upon yourself.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 10933
     },
     {
         "name": "Glacial Age",
@@ -1901,9 +2090,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell is a variant of Elemental Age and imbues a weapon with icy might, granting it bonus Cold|Cold damage and giving it an Attack Roll bonus.",
-        "actionType": 0,
+        "description": "Gain a +1 bonus to Attack Rolls, and deals an additional 1d4|Cold damage.\n\nThe blade can be unequipped and equipped again, but has to stay on the spellcaster's person",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 23310
     },
     {
         "name": "Globe of Invulnerability",
@@ -1913,9 +2104,10 @@
         "ritual": false,
         "classes": [],
         "description": "Create a barrier that makes creatures and objects inside it Immune to all damage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8039
     },
     {
         "name": "Glyph of Warding",
@@ -1925,9 +2117,11 @@
         "ritual": false,
         "classes": ["Bard", "Cleric", "Wizard"],
         "summary": "This spell allows spellcasters to inscribe a ward that can trigger various magical effects when stepped on by an enemy.",
-        "actionType": 0,
+        "description": "Inscribe a circle of arcane glyphs on the ground. When stepped on by an enemy the selected magical effect will trigger.\n\nThe glyph will last until triggered, or until a Long Rest.\n\nOnly one glyph can be active at a time.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2770
     },
     {
         "name": "Glyph of warding: Sleep",
@@ -1937,7 +2131,8 @@
         "classes": [],
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2804
     },
     {
         "name": "Goodberry",
@@ -1947,9 +2142,11 @@
         "ritual": false,
         "classes": ["Druid", "Ranger"],
         "summary": "This spell allows spellcasters to create magical berries which have healing properties when eaten.",
-        "actionType": 0,
+        "description": "Conjure four magical berries for yourself or a companion. Creatures who eat a berry regain 1d4|Healing.\nEach berry counts as one Camp Supplies.\nThe berries appear in the targeted creature's inventory and disappear after a Long Rest.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2192
     },
     {
         "name": "Grant Flight",
@@ -1960,9 +2157,10 @@
         "classes": ["Sorcerer", "Warlock", "Wizard"],
         "summary": "This spell allows spellcasters to grant a creature they touch the ability to fly.",
         "description": "Bestow the ability to Flight|Fly upon yourself or an ally.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9507
     },
     {
         "name": "Grasping Vine",
@@ -1972,9 +2170,11 @@
         "ritual": false,
         "classes": ["Druid", "Nature Domain"],
         "summary": "This spell allows spellcasters to summon a Grasping Vine which can pull enemies toward itself.",
-        "actionType": 0,
+        "description": "Summon a giant vine capable of dragging creatures toward itself.\n\n10\n\nThe Grasping Vine has 6 Hit Points, an Armour Class of 10, and the following ability:\n\nGrasping Pull|w=40\n* Grasp a target and pull it m=6|ft=20 toward you.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9706
     },
     {
         "name": "Grease",
@@ -1985,9 +2185,10 @@
         "classes": ["Wizard", "Arcane Trickster", "Eldritch Knight"],
         "summary": "It allows spellcasters to conjure flammable grease on the ground within range and turn it into Difficult Terrain.",
         "description": "Cover the ground in flammable grease. It becomes Difficult Terrain and creatures within can fall Prone.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2196
     },
     {
         "name": "Greater Invisibility",
@@ -1998,9 +2199,10 @@
         "classes": ["Bard", "Sorcerer", "The Archfey", "Wizard"],
         "summary": "This spell allows spellcasters to provide a more resilient form of Invisibility for their allies.",
         "description": "Turn a creature Invisible. Attacks against it have Disadvantage. It attacks with Advantage. Invisibility breaks when you fail increasingly harder Stealth Ability Checks on attacking, casting spells or interacting with items.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7926
     },
     {
         "name": "Greater Restoration",
@@ -2011,9 +2213,10 @@
         "classes": ["Bard", "Cleric", "Druid", "Life Domain"],
         "summary": "This spell allows spellcasters to removes Charm, Petrification, Stun, and Curses from a creature.",
         "description": "Touch a creature and negate any Charmed|Charm, Petrified|Petrification, Stunned|Stun, or cursed.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8407
     },
     {
         "name": "Guardian of Faith",
@@ -2024,9 +2227,10 @@
         "classes": ["Cleric", "Light Domain"],
         "summary": "This spell allows spellcasters to summon a divine guardian who sacrifices its Hit Points to damage enemies.",
         "description": "Call forth a divine guardian that attacks nearby enemies. Every time it deals damage, the guardian loses an equal amount of Hit Points. Lasts 10 turns. The guardian is stationary. When an enemy is in range, it uses an attack called \"Strike of the Guardian\". It has a range of 3m and deals 20 Radiant damage. On a DEX save, enemies still take half damage. It has 60 Hit Points.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8120
     },
     {
         "name": "Guidance",
@@ -2036,9 +2240,11 @@
         "ritual": false,
         "classes": ["Cleric", "Druid"],
         "summary": "This cantrip allows spellcasters to grant a temporary bonus to a creature's Ability Checks.",
-        "actionType": 0,
+        "description": "The target gains d4|Physical +1d4 bonus to Ability Checks.\n\n10",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1615
     },
     {
         "name": "Guiding Bolt",
@@ -2049,9 +2255,10 @@
         "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to hit enemies with radiant bolt that deals Radiant damage and grants Attack Roll made against them.",
         "description": "The next Attack Roll against this target has Advantage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2200
     },
     {
         "name": "Guildmaster Keene's Fixers",
@@ -2061,9 +2268,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon Lady Coup and Lady Lockjaw to aid you in battle.",
-        "actionType": 0,
+        "description": "Summon two elite assassasin mercenaries from the Guild's ranks.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24424
     },
     {
         "name": "Gur Huntwardens",
@@ -2073,9 +2282,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon two Gur Hunter Warriors and a Gur Hunter Sharpshooter.",
-        "actionType": 0,
+        "description": "Summon Gur Monster hunters to hinder enemies while slipping in and out of the frontlines.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24425
     },
     {
         "name": "Gust of Wind",
@@ -2094,9 +2305,10 @@
         ],
         "summary": "This spell allows spellcasters to conjure a squall to clear dangerous gasses or throw creatures back, potentially causing a dangerous fall.",
         "description": "Summon a strong wind that clears all clouds. Any creatures caught in the gale who fail a Strength SavingThrow will be pushed back ft=17 and be thrown Off Balance.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6700
     },
     {
         "name": "Hail of Thorns",
@@ -2107,9 +2319,10 @@
         "classes": ["Ranger"],
         "summary": "This spell allows spellcasters to make ranged attacks and potentially deal AoE Piercing damage to enemies.",
         "description": "Shoot a volley of thorns. They deal weapon damage|Physical and explode, dealing an additional 1d10|Piercing damage to the target and surrounding creatures.",
-        "actionType": 0,
+        "actionType": 4,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2203
     },
     {
         "name": "Harm",
@@ -2119,9 +2332,11 @@
         "ritual": false,
         "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to make an enemy much more feeble.",
-        "actionType": 0,
+        "description": "Reduce a target's maximum Hit Points, but never below 1.\n\nOn Save: Target still takes half damage, but its maximum Hit Points are not reduced.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8346
     },
     {
         "name": "Haste",
@@ -2131,9 +2346,11 @@
         "ritual": false,
         "classes": ["Sorcerer", "Wizard", "Oath of Vengeance"],
         "summary": "This spell allows spellcasters to allow their allies to become Hastened.",
-        "actionType": 0,
+        "description": "Target yourself or an ally to become Hastened. The creature has a +2 bonus to Armour Class, Advantage on Dexterity SavingThrows, its Movement Speed is doubled, and can take one additional Action per turn. \n\nWhen the condition ends, the creature becomes Lethargic.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2764
     },
     {
         "name": "Heal",
@@ -2143,9 +2360,11 @@
         "ritual": false,
         "classes": ["Cleric", "Druid"],
         "summary": "This spell allows spellcasters to substantially heal a target by recovering Hit Points and removing Diseases.",
-        "actionType": 0,
+        "description": "Heals a target's wounds and remove Blindness and any Diseases.\n\nNo effect on undead and constructs.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6569
     },
     {
         "name": "Healing Word",
@@ -2155,9 +2374,11 @@
         "ritual": false,
         "classes": ["Bard", "Cleric", "Druid"],
         "summary": "This spell allows spellcasters to heal allies that they can see within range.",
-        "actionType": 0,
+        "description": "Healing|Heal a creature you can see.\n\nNo effect on undead and constructs.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1635
     },
     {
         "name": "Heat Metal",
@@ -2167,9 +2388,11 @@
         "ritual": false,
         "classes": ["Bard", "Druid"],
         "summary": "This spell allows spellcasters to heat up a metal weapon or armour on the targeted creature, forcing them to let go or receive damage or suffer various penalties.",
-        "actionType": 0,
+        "description": "Cause a metal Weapon or Ability Checks. If the creature is only wearing metal armour, it always receives Disadvantage. \n\nIf the creature is still touching the metal, you can use a Bonus Action on subsequent turns to Reapply Heat Metal to deal another 2d8|Fire damage and force the creature to let go or receive Disadvantage.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2645
     },
     {
         "name": "Hellfire Orb",
@@ -2179,9 +2402,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to unleash a streak of fire from their hands that ignites into a large explosion at a chosen point within range.",
-        "actionType": 0,
+        "description": "Hurl an exploding ball of hellfire that damages all nearby creatures and objects.\n\nHellfire burns with more fervour than any mortal flame, ignoring Immunity to Fire damage.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24627
     },
     {
         "name": "Hellish Rebuke",
@@ -2191,9 +2416,11 @@
         "ritual": false,
         "classes": ["Warlock", "Oathbreaker", "Asmodeus Tiefling"],
         "summary": "This spell allows spellcasters to surround a creature in hellfire that deals Fire damage as a Reaction when taking damage from them.",
-        "actionType": 0,
+        "description": "React to your next attacker with flames that deal 2d10|Fire damage. \n\nOn Save: Target still takes half damage.",
+        "actionType": 3,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2205
     },
     {
         "name": "Hellrider Platoon",
@@ -2203,9 +2430,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon the Hellrider Paladin, Hellrider Cleric alongside with Zevlor.",
-        "actionType": 0,
+        "description": "Summon Zevlor's Hellriders to Smite foes and support frontline allies.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24393
     },
     {
         "name": "Hellstalker Yurgir",
@@ -2215,9 +2444,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon Hellstalker Yurgir to aid you in battle.",
-        "actionType": 0,
+        "description": "Summon Yurgir the orthon - a deadly combatant at range or in melee who can become Invisible immediately after attacking.\n\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24429
     },
     {
         "name": "Heroes' Feast",
@@ -2228,9 +2459,10 @@
         "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to summon a bountiful smorgasbord to bolster themselves and their allies and strengthen their resolve.",
         "description": "You and everyone around can't be Poisoned, Diseased, or Frightened. Everyone's maximum Hit Points increases by 12, and they make Wisdom SavingThrows with Advantage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9244
     },
     {
         "name": "Heroism",
@@ -2240,9 +2472,11 @@
         "ritual": false,
         "classes": ["Bard", "Paladin"],
         "summary": "This spell allows spellcasters to instill themselves or an ally with courage. The affected creature cannot be Frightened and gains Temporary Hit Points.",
-        "actionType": 0,
+        "description": "Make yourself or a target immune to Frightened and gain 5 Temporary Hit Points each turn.\n\nPrerequisite Icon Can only have Temporary Hit Points from one source.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2264
     },
     {
         "name": "Hex",
@@ -2252,9 +2486,11 @@
         "ritual": false,
         "classes": ["Warlock"],
         "summary": "This spell allows spellcasters to put a curse on a creature and deal additional Necrotic damage to the targeted creature. The curse also imposes Disadvantage on a chosen ability check.",
-        "actionType": 0,
+        "description": "Make your attacks deal an additional 1d6|Necrotic Necrotic|damage damage [sic] to the target and give it Disadvantage on Checks on an Ability of your choosing.\n\nIf the target dies before the spell ends, you can Reapply Hex to a new creature without expending a Spell Slot.",
+        "actionType": 2,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2223
     },
     {
         "name": "Hold Monster",
@@ -2264,9 +2500,11 @@
         "ritual": false,
         "classes": ["Bard", "Sorcerer", "Warlock", "Wizard", "War Domain"],
         "summary": "This spell allows spellcasters to Paralyse a creature, preventing them from acting and making them vulnerable to attacks.",
-        "actionType": 0,
+        "description": "Paralysed|Paralyse a creature. It can't Move, Act, or React. Attacks from within m=3|ft=10 are always Critical Hits.\n* No effect on undead.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7948
     },
     {
         "name": "Hold Person",
@@ -2287,9 +2525,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to hold a target humanoid in place. The affected creature is unable to move and act and is much more susceptible to attacks.",
-        "actionType": 0,
+        "description": "Hold a humanoid enemy still. They can't Move, Act, or React. Attacks from within m=3|ft=10 are always Critical Hits.\n\nAt the end of each turn, the affected creature can make a Wisdom SavingThrow to end this condition.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2382
     },
     {
         "name": "Hunger of Hadar",
@@ -2299,9 +2539,11 @@
         "ritual": false,
         "classes": ["Warlock"],
         "summary": "It creates an area that deals damage and inflicts conditions to creatures in it, including reduced movement speed.",
-        "actionType": 0,
+        "description": "Creatures within this black sphere are Blinded and take damage at the end of their turn and the start of their turn.\n\nCreatures starting their turn in the area take 2d6|Cold damage. Creatures ending their turn in the area possibly take 2d6|Acid damage.\n\nThe area is Difficult Terrain.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2826
     },
     {
         "name": "Hypnotic Pattern",
@@ -2311,15 +2553,17 @@
         "ritual": false,
         "classes": ["Bard", "Sorcerer", "Warlock", "Wizard"],
         "summary": "This spell allows spellcasters to hypnotise all creatures within an area.",
-        "actionType": 0,
+        "description": "Hypnotised|Hypnotise creatures that can see the pattern. They cannot attack you. They cannot move or act.\n\nThis spell can be cast while you are Silenced.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2743
     },
     {
         "name": "Ice Knife",
         "image": "http://localhost:3001/api/images/0/08/Ice_Knife.webp",
         "level": 1,
-        "school": 0,
+        "school": 2,
         "ritual": false,
         "classes": [
             "Druid",
@@ -2329,9 +2573,11 @@
             "Eldritch Knight"
         ],
         "summary": "The caster throws a shard of ice, which explodes and leaves behind an icy surface.",
-        "actionType": 0,
+        "description": "Throw a shard of ice that deals 1d10|Piercing damage. It explodes and deals 2d6|Cold damage to anyone nearby. It leaves an Ice Surface. On miss, the shard of ice still explodes.\n\nThis spell can be cast while you are Silenced.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6660
     },
     {
         "name": "Ice Storm",
@@ -2342,9 +2588,10 @@
         "classes": ["Druid", "Sorcerer", "Wizard", "Tempest Domain"],
         "summary": "This spell allows spellcasters to summon an ice storm to strike an area.",
         "description": "Impel a storm of hail and ice to crash from the sky, covering the ground and striking all objects and creatures within range, dealing Bludgeoning and Cold damage. It also creates an Ice Surface that lasts 2 turns.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6724
     },
     {
         "name": "Inflict Wounds",
@@ -2355,9 +2602,10 @@
         "classes": ["Cleric", "Oathbreaker"],
         "summary": "This spell allows the spellcaster to make a melee attack that inflicts Necrotic damage.",
         "description": "Putrefy a creature with Necrotic energy filling your hands.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2247
     },
     {
         "name": "Insect Plague",
@@ -2374,9 +2622,10 @@
         ],
         "summary": "This spell allows spellcasters to create a damaging, debilitating swarm of insects over a section of the battlefield.",
         "description": "Locusts attack everyone within range, make the area Checks.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7949
     },
     {
         "name": "Invisibility",
@@ -2394,9 +2643,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to turn themselves and other creatures Invisible to the naked eye.",
-        "actionType": 0,
+        "description": "Touch a creature to turn it Invisible. Attacks against it have Disadvantage. It attacks with Advantage.\n\nInvisibility breaks when you fail Checks on attacking, casting spells, or interacting with items.Bug\n\nCondition ends early if the creature attacks or casts a spell.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2174
     },
     {
         "name": "Ironhand Grenadiers",
@@ -2406,9 +2657,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon 2 Ironhand Grenadiers, who can throw blinding bombs and shoot Smokepowder Arrows.",
-        "actionType": 0,
+        "description": "Summon the Ironhand Gnomes to damage and debilitate with thrown grenades.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24435
     },
     {
         "name": "Karsus' Compulsion",
@@ -2417,9 +2670,12 @@
         "school": 4,
         "ritual": false,
         "classes": [],
-        "actionType": 0,
+        "summary": "Karsus' Compulsion is a Level 9 Enchantment Spell.nograd=1\nChannel the stones' magic to control the Crown of Karsus.",
+        "description": "Channel the stones' magic to control the Crown of Karsus and dominate the Netherbrain.\n\nThe caster must Channelling Karsus' Compulsion|channel this spell until their next turn for it to take effect.\n\nEnds if caster is {{Cond|Incapacitated, Stunned, Polymorphed, or Knocked Out.}}",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 14474
     },
     {
         "name": "Keeper's Fee",
@@ -2429,22 +2685,24 @@
         "classes": [],
         "summary": "It is uniquely known by Helsik.",
         "description": "Magically snatch a weapon from the target's hand.",
-        "actionType": 0,
+        "actionType": 2,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 13795
     },
     {
         "name": "Kereska's Favour",
         "image": "http://localhost:3001/api/images/7/72/Protection_from_Energy_Icon.png",
-        "level": 0,
-        "school": 0,
+        "level": 4,
+        "school": 5,
         "ritual": false,
         "classes": [],
-        "summary": "Kereska's Favour is a unique Level 4 Evocation Spell that allows its caster to imbue themselves with an element and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "summary": "It allows its caster to imbue themselves with an element and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
         "description": "Imbue yourself with elemental energy sourced from the draconic goddess, Kereska.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 8054
     },
     {
         "name": "Khalid's Gift: Aid",
@@ -2455,9 +2713,10 @@
         "classes": [],
         "summary": "This spell allows Khalid's Gift's wearer to heal themselves for 10|Healing and increase their hit points for the same amount.",
         "description": "Heal yourself and increase your hit point maximum by 10|Healing.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 19805
     },
     {
         "name": "Kirh'raki Inferno",
@@ -2467,9 +2726,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon a upscaled version of Wall of Fire, with increased damage and aoe.",
-        "actionType": 0,
+        "description": "Command the red dragon of Supreme Kith'rak Voss to breathe a wall of fire onto the battlefield.\n\nThe caster can only use this feature once in their adventure.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24431
     },
     {
         "name": "Knock",
@@ -2486,9 +2747,10 @@
         ],
         "summary": "This spell allows spellcasters to unlock non-magical locks.",
         "description": "Unlock an object that is held shut by a mundane lock.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8088
     },
     {
         "name": "Legacy of Avernus: Searing Smite",
@@ -2498,9 +2760,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell allows a *",
-        "actionType": 0,
+        "description": "Your weapon flares with white-hot intensity. It deals an extra  2d6| Fire damage and marks the target with Searing Smite.\n\n* A target with Searing Smite takes 1d6|Fire damage every turn, until it succeeds on a Constitution SavingThrow.\n* If the spellcaster misses the initial Attack, the spell slot and Bonus Action Icon|Bonus Action|size=24px are not consumed.",
+        "actionType": 4,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 10417
     },
     {
         "name": "Lesser Restoration",
@@ -2519,9 +2783,10 @@
         ],
         "summary": "This spell allows the spellcaster to cure an adjacent creature.",
         "description": "Cure a creature from diseased, poisoned, Paralysed|Paralysis, or blinded.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2617
     },
     {
         "name": "Light",
@@ -2539,9 +2804,10 @@
         ],
         "summary": "It makes an object shed light in a small area.",
         "description": "Infuse an object with an aura of light. Only affects one target at a time.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 796
     },
     {
         "name": "Lightning Bolt",
@@ -2552,9 +2818,10 @@
         "classes": [],
         "summary": "This spell allows spellcasters to discharge a bolt of lightning in any direction, potentially hitting multiple creatures.",
         "description": "Call forth a blast of lightning that hits all creatures in the line of the eruption.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8092
     },
     {
         "name": "Longstrider",
@@ -2572,9 +2839,10 @@
         ],
         "summary": "This spell allows spellcasters to make a creature move farther during a turn.",
         "description": "Increase a creature's Movement Speed by m=3|ft=10.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2253
     },
     {
         "name": "Lorroakan's Firestorm",
@@ -2584,9 +2852,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon a upscaled version of Fireball, with increased damage and aoe.",
-        "actionType": 0,
+        "description": "Lorroakan uses all the arcane might of Ramazith's Tower to call down a fiery barrage. \nOn a successful Saving Throw, targets still take half damage.\n\nThe caster can only use this feature once in their adventure.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24417
     },
     {
         "name": "Lovely Assistant",
@@ -2596,9 +2866,11 @@
         "ritual": false,
         "classes": [],
         "summary": "When Malus Thorm's assistants are dead, he will use this Spell to reanimate them.",
-        "actionType": 0,
+        "description": "The Surgeon reanimates the corpse of one of his nurses.\n\nThe target must be a Medium or Small corpse.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 21356
     },
     {
         "name": "Mage Armour",
@@ -2613,9 +2885,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows unarmoured spellcasters to surround themselves with magical protection.",
-        "actionType": 0,
+        "description": "Surround an unarmoured creature in a protective magical force. Its Armour Class increases to 13 + its Dexterity modifier.\n\nPrerequisite: The target can't be wearing Armour.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2256
     },
     {
         "name": "Mage Hand",
@@ -2632,9 +2906,11 @@
             "Eldritch Knight"
         ],
         "summary": "It conjures a spectral hand that can interact with objects.",
-        "actionType": 0,
+        "description": "Create a spectral hand that can manipulate and interact with objects.\n\nDuration: 10 turns.\n\nThis cantrip can only be cast once per short rest.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1662
     },
     {
         "name": "Magic Missile",
@@ -2649,9 +2925,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to hit enemies with multiple projectiles that deal Force damage.",
-        "actionType": 0,
+        "description": "Create three darts of magical force, each dealing 1d4 + 1|Force damage to its target.\n\nThe darts always hit their target, and can each be targeted individually.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2291
     },
     {
         "name": "Magic Weapon",
@@ -2668,9 +2946,10 @@
         ],
         "summary": "This spell allows spellcasters to infuse a weapon with arcane energy, making it magical.",
         "description": "Infuse a weapon with arcane energy. The weapon becomes magical, receiving a +1 bonus to Attack Rolls and Damage Rolls.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2827
     },
     {
         "name": "Mammon's Tax",
@@ -2683,7 +2962,8 @@
         "description": "Rend the flesh of a greedy creature, dealing 6d6 Slashing damage for every 500 gold it has.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 13799
     },
     {
         "name": "Mass Cure Wounds",
@@ -2693,9 +2973,11 @@
         "ritual": false,
         "classes": ["Bard", "Cleric", "Druid", "Life Domain"],
         "summary": "This spell allows spellcasters to heal several of their allies.",
-        "actionType": 0,
+        "description": "Unleash a soothing hum of energy that heals you and nearby allies.\n\nNo effect on Undead and Constructs",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7961
     },
     {
         "name": "Mass Healing Word",
@@ -2706,9 +2988,10 @@
         "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to heal several allies that they can see within range.",
         "description": "Call out words of restoration to heal up to 6 creatures for 1d4 + Spellcasting Modifier|Healing.",
-        "actionType": 0,
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2678
     },
     {
         "name": "Melf's Acid Arrow",
@@ -2723,9 +3006,11 @@
             "Arcane Trickster"
         ],
         "summary": "This spell allows spellcasters to shoot a magical arrow that deals Acid|Acid damage to a target on impact and at the end of its next turn.",
-        "actionType": 0,
+        "description": "Shoot a green arrow that bursts in a spray of acid. Deals 4d4|Acid damage immediately and 2d4|Acid damage at the end of the target's next turn.\n\nIf the spell misses, the target still takes half the initial damage, but no damage at the end of its next turn.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1045
     },
     {
         "name": "Mind Flayer Domination",
@@ -2735,9 +3020,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Mind Flayer Domination is an Action and Dominate a nearby humanoid.",
-        "actionType": 0,
+        "description": "Dominate a nearby humanoid. Allies are unaffected.\n\nEach time the dominated creature takes damage, it may repeat the SavingThrow against your domination.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 20551
     },
     {
         "name": "Minor Illusion",
@@ -2755,9 +3042,11 @@
             "Way of Shadow"
         ],
         "summary": "It conjures a simple illusion to distract creatures.",
-        "actionType": 0,
+        "description": "Create an illusion that compels nearby creatures to investigate.\n\nYou can remain hidden while casting this spell.\n\nThis spell can be cast while you are Silenced.\n\nDuration: 10 turns.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1663
     },
     {
         "name": "Mirror Image",
@@ -2775,9 +3064,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to create 3 illusory duplicates of themselves to distract attackers.",
-        "actionType": 0,
+        "description": "Create 3 illusory duplicates of yourself to distract attackers. Each duplicate increases your Armour Class by 3. \n\nWhenever you successfully evade an attack, one of the duplicates disappears.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2521
     },
     {
         "name": "Misty Step",
@@ -2797,9 +3088,10 @@
         ],
         "summary": "This spell allows spellcasters to teleport themselves to an unoccupied space that they can see.",
         "description": "Surrounded by silver mist, you teleport to an unoccupied space you can see.",
-        "actionType": 0,
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2644
     },
     {
         "name": "Mizora, Agent of Avernus",
@@ -2809,9 +3101,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon Mizora to aid you in battle.",
-        "actionType": 0,
+        "description": "Summon Wyll's pactmistress to rain down powerful infernal sorcery and possibly Disintegrate your foes.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24434
     },
     {
         "name": "Moonbeam",
@@ -2821,9 +3115,11 @@
         "ritual": false,
         "classes": ["Druid", "Oath of the Ancients"],
         "summary": "This spell allows spellcasters to call down a beam of moonlight that deals Radiant damage to any creature that enters the beam or starts its turn there.",
-        "actionType": 0,
+        "description": "Call down a silvery beam of pale light that deals 2d10|Radiant damage to any creatures that enters it or starts its turn in the light. You can use an ranged}}. On a successful [[Constitution SavingThrow, targets still take half damage.\n\n10\n\nWhen cast, the spellcaster gains the following ability:\n* Move Moonbeam: Move the beam of moonlight up to ranged. The beam of light damages any creature that enters the beam or starts its turn in the light.\n** Damage:2d10|Radiant\n** Action\n** On Save: Targets still take half damage.\n** 10",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2541
     },
     {
         "name": "Netherese Orb Blast",
@@ -2834,7 +3130,8 @@
         "description": "Gale triggers the Netherese Orb in his chest, destroying everything and everyone in a wide radius.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24438
     },
     {
         "name": "Nightbringer's Shadow Adepts",
@@ -2844,9 +3141,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon two Sharran Novices and two Sharran Fidelians.",
-        "actionType": 0,
+        "description": "Summon powerful Sharran clerics and their warrior underlings to battle.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24432
     },
     {
         "name": "Otiluke's Freezing Sphere",
@@ -2856,9 +3155,10 @@
         "ritual": false,
         "classes": [],
         "description": "Create a ball of churning ice that can be launched instantly to generate a frosty explosion or stored for later use.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 10348
     },
     {
         "name": "Otiluke's Resilient Sphere",
@@ -2868,9 +3168,10 @@
         "ritual": false,
         "classes": ["Wizard"],
         "description": "Enclose a target in a sphere of shimmering force, reducing its movement speed by half, and blocking all incoming and outgoing damage",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 10346
     },
     {
         "name": "Otto's Irresistible Dance",
@@ -2881,9 +3182,10 @@
         "classes": ["Bard", "Wizard"],
         "summary": "This spell allows spellcasters to force a creature to stay in place, inactive.",
         "description": "Cause a creature to start dancing, making it unable to take Move. Its attackers have Advantage on Attack Rolls. The dancer has Disadvantage on Attack Rolls and Dexterity SavingThrows.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8898
     },
     {
         "name": "Owl's Wisdom",
@@ -2894,9 +3196,10 @@
         "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
         "summary": "This spell allows spellcasters to bestow a creature the intuition of an owl. Affected creatures gain Checks.",
         "description": "Creature gains Advantage on Checks.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2371
     },
     {
         "name": "Paralyzing Ray",
@@ -2905,11 +3208,12 @@
         "school": 7,
         "ritual": false,
         "classes": [],
-        "summary": "This spell paralyzes its target.",
-        "description": "Paralyzes its target.",
-        "actionType": 0,
+        "summary": "This spell Paralysed|paralyses its target.",
+        "description": "Paralysed|Paralyses its target.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 11745
     },
     {
         "name": "Pass Without Trace",
@@ -2920,9 +3224,10 @@
         "classes": ["Druid", "Ranger", "Trickery Domain"],
         "summary": "This spell allows spellcasters to grants themselves and nearby allies a bonus to Checks.",
         "description": "Call forth a veil of shadow and silence that gives you and nearby allies a +10 bonus to Checks.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2630
     },
     {
         "name": "Phantasmal Force",
@@ -2941,9 +3246,10 @@
         ],
         "summary": "This spell allows spellcasters to flood a target creature's mind with an illusion of the last thing that attacked it, dealing 1d6|Psychic damage per turn, changing to the last type of damage inflicted upon the target.",
         "description": "Deal damage to a creature each turn. The type of damage changes to the last type of damage the creature suffered.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2633
     },
     {
         "name": "Phantasmal Killer",
@@ -2954,9 +3260,10 @@
         "classes": ["Wizard"],
         "summary": "This spell allows spellcasters to temporarily haunt a creatures mind with illusions, dealing damage, prevents movement, and has Disadvantage on Ability Checks and Attack Rolls.",
         "description": "Haunt a creature with illusions of its greatest fears. It takes 4d10|Psychic Damage per turn, cannot move, has Disadvantage on Ability Checks and Attack Rolls",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8408
     },
     {
         "name": "Pierce the Weak",
@@ -2965,10 +3272,12 @@
         "school": 8,
         "ritual": false,
         "classes": [],
-        "summary": "This spell is a variant of Brand the Weak Icon|Brand the Weak that imposes vulnerability on an enemy to Piercing damage.",
-        "actionType": 0,
+        "summary": "This spell is a variant of Brand the Weak that imposes vulnerability on an enemy to Piercing damage.",
+        "description": "Make an enemy Vulnerable to Piercing damage.\n\nThis effect lasts 3 turns, or until the target takes damage.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 13020
     },
     {
         "name": "Planar Ally",
@@ -2978,9 +3287,11 @@
         "ritual": false,
         "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to summon an Elemental, Celestial, or Fiend for aid.",
-        "actionType": 0,
+        "description": "Beseech one of these otherworldly entities for aid. Summon either an Elemental, Celestial, or Fiend to fight for you.\n\nUntil Long Rest",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9245
     },
     {
         "name": "Planar Binding",
@@ -2990,9 +3301,11 @@
         "ritual": false,
         "classes": ["Bard", "Cleric", "Druid", "Wizard"],
         "summary": "This spell allows spellcasters to take control of a Celestial, Elemental, Fey, or Fiend.",
-        "actionType": 0,
+        "description": "Target an otherworldly creature and attach its consciousness to your own. It will follow and fight for you as an ally.\n\nTarget must be a Celestial, Elemental, Fey, or a Fiend.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8418
     },
     {
         "name": "Plant Growth",
@@ -3009,9 +3322,11 @@
             "Oath of the Ancients"
         ],
         "summary": "This spell allows spellcasters to cause an area to expel weeds from the ground, quartering the movement speed of all creatures travelling through the area.",
-        "actionType": 0,
+        "description": "Make weeds burst from the ground and smother the area. Creatures moving through the weeds have their Movement Speed quartered.\n* There is no SavingThrow against this effect.\n* Any Fire damage will burn away the surface, effectively ending the spell.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2679
     },
     {
         "name": "Poison Spray",
@@ -3031,9 +3346,10 @@
         ],
         "summary": "This cantrip allows spellcasters to deal Poison damage to a target.",
         "description": "Project a puff of noxious gas, dealing 1d12|Poison to a target.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1665
     },
     {
         "name": "Polymorph",
@@ -3044,9 +3360,10 @@
         "classes": ["Bard", "Druid", "Sorcerer", "Wizard", "Trickery Domain"],
         "summary": "This spell transforms a creature into a sheep.",
         "description": "Transform a creature into a harmless sheep. If the sheep's Hit Points drop to 0, the target reverts to its original form with its original Hit Points.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6731
     },
     {
         "name": "Possession",
@@ -3056,9 +3373,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to possess a creature, forcing it to do their bidding and dealing Necrotic damage every turn.",
-        "actionType": 0,
+        "description": "Possess a creature, forcing it to act according to your will and dealing 4d8|Necrotic damage to it every turn.\n\nWhile possessing another creature, you cannot be targeted by spells or attacks.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 22356
     },
     {
         "name": "Prayer of Healing",
@@ -3068,9 +3387,11 @@
         "ritual": false,
         "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to heal all allies within range.",
-        "actionType": 0,
+        "description": "Heal all allies you can see within range by 2d8 + Spellcasting Modifier|Healing.\n\nCan only be used outside of combat. This spell has no effect on Undead and Constructs.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2620
     },
     {
         "name": "Produce Flame",
@@ -3080,9 +3401,11 @@
         "ritual": false,
         "classes": ["Cleric", "Druid"],
         "summary": "This cantrip creates a blue flame in the caster's palm that emanates light and can be thrown at enemies.",
-        "actionType": 0,
+        "description": "A flame in your hand sheds a light in a m=9|ft=30 radius and deals 1d8|Fire Fire|damage when thrown.\n\nThrowing the flame immediately after you conjure it does not cost an Action. Extinguishing or throwing it on subsequent turns costs an Action. The throw has a range of m=9|ft=30.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1670
     },
     {
         "name": "Promise of Wealth",
@@ -3090,9 +3413,12 @@
         "level": 6,
         "ritual": false,
         "classes": [],
-        "actionType": 0,
+        "summary": "It is a uniquely known by Infectious Greed}}. This creature gains an additional 6d6|Slashing damage and [[Advantage|advantage on attack rolls.",
+        "description": "Mark a target with Promise of Wealth. Your Allies with Infectious Greed gain Advantage on Attack Rolls against it, convinced it carries great wealth.",
+        "actionType": 2,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 13782
     },
     {
         "name": "Protection from Energy",
@@ -3110,9 +3436,11 @@
             "Oath of Vengeance"
         ],
         "summary": "This spell allows spellcasters to grant a creature they touch Resistance to an element of their choice.",
-        "actionType": 0,
+        "description": "Touch a creature to grant it Resistance to Acid, Cold, Fire, Lightning, or Thunder damage.\n\nUntil Long Rest",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2692
     },
     {
         "name": "Protection from Evil and Good",
@@ -3130,9 +3458,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to surround themselves with magical protection against Aberrations, Celestials, Elementals, Fey, Fiends, and Undead.",
-        "actionType": 0,
+        "description": "Protect an ally against the attacks and powers of Aberrations, Celestials, Elementals, Fey, Fiends, and Undead.\n\nThe targets can't be Charmed, Frightened, or possessed by them, and when these creatures attack it, they have Disadvantage.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2268
     },
     {
         "name": "Protection from Poison",
@@ -3143,9 +3473,10 @@
         "classes": ["Cleric", "Druid", "Paladin", "Ranger"],
         "summary": "This spell allows spellcasters to grant a creature they touch protection from Poisonous effects.",
         "description": "Touch a creature to grant it protection against Poisonous influences. You neutralize all Poisons that affect it, grant it Advantage on SavingThrows against being Poisoned|inline=true, and Resistance to Poison damage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2625
     },
     {
         "name": "Ray of Enfeeblement",
@@ -3156,9 +3487,10 @@
         "classes": ["Warlock", "Wizard", "Arcane Trickster", "Eldritch Knight"],
         "summary": "This spell allows spellcasters to make a ranged spell attack against a creature and sap their Strength. A weakened creature deals half damage with weapon attacks that use Strength.",
         "description": "Weaken a foe: they deal half damage with weapon attacks using Strength.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2387
     },
     {
         "name": "Ray of Frost",
@@ -3174,9 +3506,10 @@
         ],
         "summary": "It deals Cold damage to the target and slows it down.",
         "description": "Reduces the target's Movement Speed by m=3|ft=10.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1691
     },
     {
         "name": "Ray of Sickness",
@@ -3192,9 +3525,10 @@
         ],
         "summary": "This spell allows spellcasters to hit enemies with a ray of nauseating energy that deals Poison damage, and potentially Poisons them.",
         "description": "Possibly Poisoned|Poisons the target.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2294
     },
     {
         "name": "Rays of Fire",
@@ -3205,9 +3539,10 @@
         "classes": [],
         "summary": "This spell allows spellcasters to hurl 3 rays of fire at targets within range. The rays can all target the same creature, or they can be dispersed to different targets.",
         "description": "Hurl 3 rays of fire. Each ray deals 3d6|Fire damage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 11028
     },
     {
         "name": "Recast Speak with Dead",
@@ -3217,9 +3552,11 @@
         "ritual": true,
         "classes": [],
         "summary": "This ability allows spellcasters to recast Speak with Dead without consuming a spell slot.",
-        "actionType": 0,
+        "description": "Cast Speak with Dead on a different corpse without expending a spell slot.\n\nSkeletons and creatures killed with Acid, Fire, Lightning, Necrotic, or Radiant damage no longer have a mouth and can't be made to talk using this spell.\n\nDoesn't work on Undead.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 22241
     },
     {
         "name": "Recast Sunbeam",
@@ -3230,9 +3567,10 @@
         "classes": [],
         "summary": "This spell allows spellcasters to project a beam of light, Blinding and dealing Radiant damage to everything in its path. It can then be recast on subsequent turns without expending a Spell Slot.",
         "description": "Call forth another beam of light that sears and Blinded|Blinds all creatures in its path, without expending a spell slot.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 22515
     },
     {
         "name": "Remove Curse",
@@ -3249,9 +3587,10 @@
         ],
         "summary": "This spell allows spellcasters to remove all curses afflicting a target through touch.",
         "description": "Touch a creature or object to remove all Curses and Hexes affecting it.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2680
     },
     {
         "name": "Resistance",
@@ -3262,9 +3601,10 @@
         "classes": ["Cleric", "Druid"],
         "summary": "This cantrip grants a temporary bonus to a creature's SavingThrows.",
         "description": "Make a target more resistant to spell effects and conditions: it receives a d4|Physical +1d4 bonus to SavingThrows.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1622
     },
     {
         "name": "Retinue of the Vampire Lord",
@@ -3274,9 +3614,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon 2 Shadows, 2 Giant Skeletons, a Ghast, a Shadow Mastiff and a Werewolf.",
-        "actionType": 0,
+        "description": "Summon an undead horde to overwhelm a section of the battlefield.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24430
     },
     {
         "name": "Revivify",
@@ -3286,9 +3628,11 @@
         "ritual": false,
         "classes": ["Cleric", "Paladin"],
         "summary": "This spell allows the spellcaster to bring a dead Companion back to life.",
-        "actionType": 0,
+        "description": "Revive a companion. They return to life with 1 Hit point.\n\n* Can only target a companion character who is dead.\n* The target of Revivify can be relocated within the spell's area of effect.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2711
     },
     {
         "name": "Revoke Guest Status",
@@ -3299,13 +3643,14 @@
         "classes": [],
         "summary": "Only usable as Hope, she can banish an enemy from House of Hope.",
         "description": "Hope banishes one of the unwelcome guests from her house forever.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24258
     },
     {
         "name": "Ride the Winds",
-        "image": "http://localhost:3001/api/images/3/3d/Gaseous_Form_Icon.png",
+        "image": "http://localhost:3001/api/images/d/df/Gaseous_Form.webp",
         "level": 3,
         "school": 8,
         "ritual": false,
@@ -3314,7 +3659,8 @@
         "description": "Transform into a cloud, becoming Resistant to all damage, gains Advantage on Constitution, Dexterity, and Strength Saving Throws, and becomes Tiny in size. While transformed, the target won't be able to attack, cast spells, or talk.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9510
     },
     {
         "name": "Rolan's Firestorm",
@@ -3324,9 +3670,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon a upscaled version of Fireball, with increased damage and aoe.",
-        "actionType": 0,
+        "description": "Call upon Rolan, freed from the limitations of Lorroakan, to unleash a fiery barrage from the heights of Ramazith's Tower.On a successful Saving Throw, targets still take half damage.\n\nThe caster can only use this feature once in their adventure.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24415
     },
     {
         "name": "Sacred Flame",
@@ -3337,9 +3685,10 @@
         "classes": ["Cleric"],
         "summary": "It deals Radiant damage to a target.",
         "description": "Engulf a target in a flame-like radiance.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1631
     },
     {
         "name": "Sanctuary",
@@ -3349,9 +3698,11 @@
         "ritual": false,
         "classes": ["Cleric", "Paladin"],
         "summary": "This spell allows spellcasters to ward themselves or an ally against enemy attacks.",
-        "actionType": 0,
+        "description": "You or an ally cannot be targeted until you attack or harm a creature. You can still take damage from area spells.\n\nUntil the affected entity attacks or harms another creature, it cannot be targeted by enemy attacks. However, it can still take damage from spells that influence a larger area.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2818
     },
     {
         "name": "Scorching Ray",
@@ -3369,9 +3720,10 @@
         ],
         "summary": "This spell allows spellcasters to hurl 3 rays of fire at targets within range. You can either target a single creature or multiple creatures with the rays. Each ray rolls a separate Attack Roll and deals Fire damage.",
         "description": "Hurl 3 rays of fire. Each ray deals 2d6|Fire damage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2530
     },
     {
         "name": "Searing Smite",
@@ -3381,9 +3733,11 @@
         "ritual": false,
         "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to cause their melee weapon to flare with white-hot intensity, searing their targets on hit.",
-        "actionType": 0,
+        "description": "Your weapon flares with white-hot intensity. It deals, on top of weapon damage, an extra 1d6|Fire damage and marks the target with Searing Smite.\n\n* A target with Searing Smite takes 1d6|Fire damage every turn, until it succeeds on a Constitution SavingThrow.\n* If the spellcaster misses the initial Attack, the Spell Slot and bonus are not consumed.",
+        "actionType": 4,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2828
     },
     {
         "name": "See Invisibility",
@@ -3394,9 +3748,10 @@
         "classes": ["Bard", "Sorcerer", "Wizard"],
         "summary": "This spell allows spellcasters to see Invisible objects and creatures within range while not Incapacitated. Creatures within range which fail on a Dexterity Saving Throw are revealed to others.",
         "description": "Become able to see Invisible creatures, and possibly reveal them to others.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6582
     },
     {
         "name": "Seeming",
@@ -3406,9 +3761,11 @@
         "ritual": false,
         "classes": ["Bard", "Sorcerer", "Wizard", "Archfey", "Trickery Domain"],
         "summary": "This spell allows spellcasters to disguise their allies.",
-        "actionType": 0,
+        "description": "Disguise up to 4 members of your adventuring party.  Initial disguises are chosen at random.  Each affected party member may then choose a new disguise a single time as an Action.\n\nDisguises last until dispelled as an Action using Dispel Disguise.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8032
     },
     {
         "name": "Selûne's Dream",
@@ -3418,9 +3775,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Selûne's Dream is a Cantrip (Evocation). It heals an ally, but may also put them to sleep. Selûne's Dream is in game only as a once per Long Rest action granted by the item Amulet of Selûne's Chosen.",
+        "description": "An ally you touch regains hit points, but possibly falls Sleeping|asleep.\n\nNo effect on undead and constructs.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 11837
     },
     {
         "name": "Sethan: Reduce",
@@ -3429,9 +3788,12 @@
         "school": 8,
         "ritual": false,
         "classes": [],
-        "actionType": 0,
+        "summary": "This spell allows users to decrease a creature's body size. Affected creatures deal less damage with their weapons and have Disadvantage on Checks and Saving Throws.\n\nThis item spell is similar to the spell Reduce.",
+        "description": "Make a creature smaller.\n\nIts weapons deal d4|Physical 1d4 less damage (minimum of 1 damage). It has Disadvantage on Checks and SavingThrows.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 20577
     },
     {
         "name": "Sethan: Spiritual Greataxe",
@@ -3440,10 +3802,12 @@
         "school": 5,
         "ritual": false,
         "classes": [],
-        "summary": "This spell is similar to the Cleric spell Spiritual Weapon: Greataxe. It allows the user to summon a floating Greataxe that can attack enemies.",
-        "actionType": 0,
+        "summary": "This spell allows the user to summon a floating Greataxe that can attack enemies.\n\nThis item spell is similar to the Cleric spell Spiritual Weapon: Greataxe.",
+        "description": "Summon a spiritual twin of Sethan in a point you can see, dealing 3d8+2|Force damage on a hit.\n\nThe Greataxe is Immune to Psychic and Poison damage, and Resistant to all other Damage Types.\n* Its resources are a m=6|ft=20}} of [[Movement Speed. It can Fly using its Movement Speed.\n* 10. Only one Spiritual Weapon may be summoned at any time.\nIt receives the following Class Action:\n* Spell Evocation SpiritualWeapon Greataxe Greataxe Slash: Cleave into your target with your mighty head.\n** Damage:3d8 + 1|Bludgeoning + 2|Force\n** {{Action|Bonus}}\n** melee\n\nIt also receives the following Weapon Action:\n* Lacerate\n** {{Action|Bonus}}\n** melee\n** Short Rest\n\nBleeding|duration=2",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 20576
     },
     {
         "name": "Shadow Blade",
@@ -3453,9 +3817,11 @@
         "ritual": false,
         "classes": ["Item"],
         "summary": "Create a Shadow Blade (Weapon) in your main hand that deals Psychic damage.",
-        "actionType": 0,
+        "description": "Weave a shadowy shortsword in your hand that deals 2d8|Psychic damage.\n\nWhen you use the sword to attack a target that is in dim light or darkness, you make the Attack Roll with Advantage. \n\nThe shadow blade can be unequipped and equipped again, but must remain on the spellcaster's person.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 8797
     },
     {
         "name": "Shar's Aegis",
@@ -3464,11 +3830,12 @@
         "school": 1,
         "ritual": false,
         "classes": [],
-        "summary": "Shar's Aegis is a 1st level Abjuration spell that increases your Armour Class by 2 similar to Shield of Faith.",
-        "description": "Encase yourself with a shimmering field of magic that increases your Armour Class by 2.",
-        "actionType": 0,
+        "summary": "This spell  allows spellcasters to surround themselves or an ally with divine protection and gain a bonus to their Armour Class.\n\nThis item spell is similar to the spell Shield of Faith.",
+        "description": "Surround a creature with a shimmering field of magic that increases its Armour Class by 2.",
+        "actionType": 2,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 15526
     },
     {
         "name": "Shar's Darkness",
@@ -3478,9 +3845,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Create a dark shroud that Heavily Obscures and Blinds creatures within. Creatures cannot make ranged attacks into or out of it.",
-        "actionType": 0,
+        "description": "Create a dark shroud that Heavily Obscures and Blinds creatures within. Creatures cannot make ranged attacks into or out of it.\n\nPer Turn",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 12136
     },
     {
         "name": "Shatter",
@@ -3498,9 +3867,11 @@
             "Arcane Trickster"
         ],
         "summary": "This spell allows the spellcaster to generate a deafening noise explosion that can damage multiple creatures and objects. This spell is extra potent against inorganic targets, who must make their Saving Throw at Disadvantage.",
-        "actionType": 0,
+        "description": "Damages all nearby creatures and objects. Creatures made of inorganic material such as stone have Disadvantage on their SavingThrow. \n\nOn Save: Targets still take half damage.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2542
     },
     {
         "name": "Shield",
@@ -3514,22 +3885,26 @@
             "Arcane Trickster",
             "Eldritch Knight"
         ],
+        "summary": "This spell allows spellcasters to avoid being hit by an enemy attack at the last possible instant. It also completely nullifies Magic Missile.\n\nSee also: Shields for the Equipment type.",
         "description": "When you are about to be hit by an enemy, use your Reaction to increase your Armour Class by 5. You also take no damage from Magic Missile. These effects last until the start of your next turn.",
-        "actionType": 0,
+        "actionType": 3,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2704
     },
     {
         "name": "Shield of Devotion: Aid",
         "image": "http://localhost:3001/api/images/3/33/Aid.webp",
         "level": 3,
+        "school": 1,
         "ritual": false,
         "classes": [],
         "summary": "This spell allows Shield of Devotion's wearer to heal themselves for 10|Healing and increase their hit points for the same amount.",
         "description": "Heal yourself and increase your hit point maximum by 10|Healing.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 23683
     },
     {
         "name": "Shield of Faith",
@@ -3540,9 +3915,10 @@
         "classes": ["Cleric", "Paladin", "War Domain"],
         "summary": "This spell allows spellcasters to surround themselves or an ally with divine protection and gain a bonus to their Armour Class.",
         "description": "Surround a creature with a shimmering field of magic that increases its Armour Class by 2.",
-        "actionType": 0,
+        "actionType": 2,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2272
     },
     {
         "name": "Shield of Screams",
@@ -3551,9 +3927,11 @@
         "ritual": false,
         "classes": [],
         "summary": "It is only known by Nere. It increases his Armour Class by 3 and deals 2d6 psychic damage to melee attackers.",
-        "actionType": 0,
+        "description": "Recall the voices of all who scorned you - and how they screamed in the end. They form a shield around you.\n\nYour Armour Class increases by 3, and anyone who hits you with a melee attack takes 2d6|Psychic damage.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6168
     },
     {
         "name": "Shillelagh",
@@ -3563,9 +3941,11 @@
         "ritual": false,
         "classes": ["Druid", "Nature Domain"],
         "summary": "It imbues the caster's weapon with nature power.",
-        "actionType": 0,
+        "description": "Quarterstaff or Club Required.\n\nYour staff or d8|Physical}} 1d8 + [[Ability Score Modifier|Wisdom Modifier|Bludgeoning damage, and uses your Spellcasting Ability for Attack Rolls.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1692
     },
     {
         "name": "Shocking Grasp",
@@ -3581,9 +3961,10 @@
         ],
         "summary": "It makes a melee attack that inflictsLightning damage and prevents the target from taking Reactions.",
         "description": "The target cannot use Reactions. This spell has Advantage on creatures with metal Armour.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1695
     },
     {
         "name": "Sights of the Seelie: Summon Deva",
@@ -3594,9 +3975,10 @@
         "classes": [],
         "summary": "Summa a Deva. The Deva can cast Wrathful Smite, Revivify and Concussive Smash. Can only be cast once per short rest.",
         "description": "Summa a Deva. The Deva can cast Wrathful Smite, Revivify and Concussive Smash. Can only be cast once per short rest.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 14174
     },
     {
         "name": "Silence",
@@ -3613,9 +3995,10 @@
         ],
         "summary": "This spell allows spellcasters to summon a sphere of absolute quietness in an area within range. Creatures within this sphere are immune to Thunder damage and cannot cast verbal spells.",
         "description": "Create a sound-proof sphere. All within are Silenced and Immune to Thunder damage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2333
     },
     {
         "name": "Silver Harp Squadron",
@@ -3624,9 +4007,12 @@
         "school": 9,
         "ritual": false,
         "classes": [],
-        "actionType": 0,
+        "summary": "Summon the following Harpers: Harper Naysa, Harper Lymn, Harper Antony\nMay change depending on their alive status during Act 2 verify",
+        "description": "Summon elite Harper archers to provide ranged support from your back ranks.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24391
     },
     {
         "name": "Sizzling Cataclysm",
@@ -3636,9 +4022,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Sizzling Cataclysm is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of acid and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's acid to gain Resistance to Acid damage. Your acid spells deal additional Acid damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Noxious Fumes upon the target. While attuned to Kereska's acid you can cast Melf's Acid Arrow and Hunger of Hadar.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8057
     },
     {
         "name": "Slash the Weak",
@@ -3648,9 +4036,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell is a variant of Brand the Weak Icon|Brand the Weak that imposes vulnerability on an enemy to Slashing damage.",
-        "actionType": 0,
+        "description": "Make an enemy Vulnerable to Slashing damage.\n\nThis effect lasts 3 turns, or until the target takes damage.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 13018
     },
     {
         "name": "Sleep",
@@ -3667,9 +4057,11 @@
             "The Archfey"
         ],
         "summary": "It allows the spellcaster to temporarily make conscious creatures fall into a deep slumber.",
-        "actionType": 0,
+        "description": "Put creatures into a magical slumber. Select targets up to a combined 24 Hit Points.\n\nThe condition ends upon taking damage.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2277
     },
     {
         "name": "Sleet Storm",
@@ -3686,9 +4078,11 @@
             "Storm Sorcery"
         ],
         "summary": "This spell allows spellcasters to call forth a storm that douses fire, creates an Ice Surface, and disrupts the Concentration of spellcasters.",
-        "actionType": 0,
+        "description": "Call forth a storm that douses fire, creates an Ice Surface, and forces spellcasters to succeed at a Concentration SavingThrow in order to maintain Concentration.\n\nIce is a surface that is considered Prone}} on a failed [[Dexterity SavingThrow.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2738
     },
     {
         "name": "Slow",
@@ -3706,9 +4100,10 @@
         ],
         "summary": "This spell allows spellcasters to reduce movement speed, Armour Class, and Dexterity Saving Throws, and limit actions.",
         "description": "Alter time around up to 6 enemies to Slow them. They won't get far, they can't do much, and they're easier to hit.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8091
     },
     {
         "name": "Sorrowful Lash",
@@ -3718,9 +4113,11 @@
         "ritual": false,
         "classes": [],
         "summary": "It deals damage to a target and pulls it closer to the caster. It is essentially equivalent to the Thorn Whip cantrip except it uses a bonus",
-        "actionType": 0,
+        "description": "Pulls the creature m=3|ft=10 closer to you.\n\nThe target can't be pulled if it is Huge in size.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9049
     },
     {
         "name": "Speak with Animals",
@@ -3738,9 +4135,10 @@
         ],
         "summary": "This spell allows spellcasters to understand and talk to beasts and animals for a day.",
         "description": "Gain the ability to comprehend and communicate with beasts.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1585
     },
     {
         "name": "Speak with Dead",
@@ -3750,9 +4148,11 @@
         "ritual": true,
         "classes": ["Bard", "Cleric"],
         "summary": "This spell allows spellcasters to grant a semblance of life to a corpse, allowing it to answer questions.",
-        "actionType": 0,
+        "description": "Grant a semblance of life to a corpse, allowing it to answer questions. \n\nSkeletons and creatures killed with Acid, Fire, Lightning, Necrotic, Radiant damage no longer have a mouth and can't be made to talk using this spell.\n\nCasting this spell also grants the ability Recast Speak with Dead, which allows the spellcaster to recast the spell without expending a spell slot, until the next Long Rest.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2761
     },
     {
         "name": "Spike Growth",
@@ -3762,9 +4162,11 @@
         "ritual": false,
         "classes": ["Druid", "Ranger", "Nature Domain", "Circle of the Land}"],
         "summary": "This spell allows spellcasters to transform an area of land into a hazardous spiky terrain. Creatures walking through the area have their speed halved and take Piercing damage.",
-        "actionType": 0,
+        "description": "Shape a piece of ground into hard spikes. A creature walking on the spikes takes 2d4|Piercing damage for every melee it moves.\n\nThe spikes are Difficult Terrain, halving a creature's Movement Speed.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2324
     },
     {
         "name": "Spirit Guardians",
@@ -3774,9 +4176,11 @@
         "ritual": false,
         "classes": ["Cleric", "War Domain"],
         "summary": "This spell allows spellcasters to call forth spirits to damage nearby targets and slow their Movement.",
-        "actionType": 0,
+        "description": "Call forth spirits to protect you. Nearby enemies take 3d8|Radiant or 3d8|Necrotic damage per turn, and their Movement Speed is halved. Lasts for 10 turns.\n\nOn a successful Save, targets still take half damage. \n\nCaster can't become Invisible while Concentrating on this spell.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2715
     },
     {
         "name": "Spiritual Weapon",
@@ -3786,9 +4190,11 @@
         "ritual": false,
         "classes": ["Cleric", "War Domain"],
         "summary": "Summons a floating weapon that can attack enemies. You can choose between several different weapons, and each has a different Weapon Action.",
-        "actionType": 0,
+        "description": "Summon a floating, spectral weapon of your choice that attacks your enemies alongside you. The weapon is Immune to Psychic and Poison damage, and Resistant to all other Damage Types.\n\n10. Only one Spiritual Weapon may be summoned at any time.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8123
     },
     {
         "name": "Staggering Smite",
@@ -3799,9 +4205,10 @@
         "classes": [],
         "summary": "This spell is only available for NPCs. It allows spellcasters to cause their weapon to attack their victims minds with Psychic damage as they strike.",
         "description": "Possibly Staggering Smite|Stagger your target. It can't take reactions and is more likely to miss.",
-        "actionType": 0,
+        "actionType": 4,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24602
     },
     {
         "name": "Stinking Cloud",
@@ -3812,9 +4219,10 @@
         "classes": ["Bard", "Sorcerer", "Wizard", "Fiend"],
         "summary": "This spell allows spellcasters to create a nauseating cloud of gas that can prevent creatures from taking Actions. Targets must make Constitution SavingThrows every turn while they're in the area of effect or become Nauseous.",
         "description": "Create a cloud of gas so nauseating it prevents creatures from taking actions.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2762
     },
     {
         "name": "Stoneskin",
@@ -3824,9 +4232,11 @@
         "ritual": false,
         "classes": ["Druid", "Sorcerer", "Wizard", "War Domain"],
         "summary": "This spell allows spellcasters to harden the skin of their ally, granting them Resistance to non-magical physical damage.",
-        "actionType": 0,
+        "description": "Turn a creature's flesh hard as stone. It takes only half the damage of all non-magical Bludgeoning, Piercing, and Slashing damage.\n\nLong Rest",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7936
     },
     {
         "name": "Strengthened Shillelagh",
@@ -3836,9 +4246,11 @@
         "ritual": false,
         "classes": [],
         "summary": "It imbues the caster's weapon with nature power.",
-        "actionType": 0,
+        "description": "Quarterstaff or Club Required.\n\nYour staff or 4d8|Bludgeoning}} damage, and uses your [[Ability Score Modifier|Spellcasting Ability for Attack Rolls.",
+        "actionType": 2,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 22300
     },
     {
         "name": "Summon Gilded Hellsboar",
@@ -3850,7 +4262,8 @@
         "description": "Summon a boar, its tusks and tapered body agleam with gold, to fight alongside you.",
         "actionType": 0,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 13786
     },
     {
         "name": "Summon Quothe the Raven",
@@ -3860,9 +4273,11 @@
         "ritual": true,
         "classes": [],
         "summary": "Summons the raven Quothe.",
-        "actionType": 0,
+        "description": "Summon a raven familiar that can Blind enemies with its beak. \n\nWhen a hostile creature kills the raven familiar, they must succeed a Dexterity Saving Throw or become Ensnared.\n\nUntil Long Rest",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 15206
     },
     {
         "name": "Sunbeam",
@@ -3872,9 +4287,11 @@
         "ritual": false,
         "classes": ["Druid", "Sorcerer", "Wizard"],
         "summary": "This spell allows spellcasters to project a beam of light, Blinding and dealing Radiant damage to everything in its path. You can then use Recast Sunbeam on subsequent turns without expending a Spell Slot.",
-        "actionType": 0,
+        "description": "A beam of brilliant light sears and Blinded|Blinds all creatures in its path.\n\n10\n\nFor the duration of the spell, Sunbeam can be recast using an action, but without expending a Spell Slot.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8409
     },
     {
         "name": "Sword of the Silverlight",
@@ -3884,9 +4301,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon Dame Aylin to aid you in battle.",
-        "actionType": 0,
+        "description": "Summon Dame Aylin, Selûnes shining paladin, to join your side in battle.\n\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24436
     },
     {
         "name": "Tasha's Hideous Laughter",
@@ -3902,9 +4321,11 @@
             "Eldritch Knight"
         ],
         "summary": "It allows spellcasters to send a targeted creature into a fit of laughter, falling Prone.",
-        "actionType": 0,
+        "description": "Leave a creature Prone with laughter, without the ability to get up.\n\nThe creature must have an Intelligence of 5 or more.\nThe target can try to shake off the effect each time it takes damage.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2281
     },
     {
         "name": "Telekinesis",
@@ -3914,9 +4335,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell allows spellcasters to throw creatures and objects around with only their mind.",
-        "actionType": 0,
+        "description": "Throw a creature or object up to m=18|ft=60 with a thought. Once per turn, you can use Telekinesis again without expending a Spell Slot. Heavier items deal more damage when thrown in this manner.\n\n10",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8025
     },
     {
         "name": "Telekinetic Thrust",
@@ -3924,9 +4347,10 @@
         "ritual": false,
         "classes": [],
         "description": "Telekinetic Thrust is an ability of some undead, including Tormented Soul and Poltergeist",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24179
     },
     {
         "name": "Teleport to Submersible",
@@ -3937,9 +4361,10 @@
         "classes": [],
         "summary": "Omeluum can use it to teleport to the Submersible.",
         "description": "Teleport yourself and up to one ally back to the Submersible.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24403
     },
     {
         "name": "Thaumaturgy",
@@ -3950,9 +4375,10 @@
         "classes": ["Cleric", "Zariel Tiefling"],
         "summary": "It temporarily improves the caster's Intimidation and Performance checks.",
         "description": "Gain Advantage on Checks.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1634
     },
     {
         "name": "The Closed Fist of Bane",
@@ -3963,9 +4389,10 @@
         "classes": [],
         "summary": "This spell allows Gortash to conjure a giant fist that falls to the ground, punching for a great deal of Bludgeoning damage.",
         "description": "Conjure the divine aspect of Bane the Accursed - a fist that hangs in the air until the end of the round before falling, crushing anyone under it for 12d10|Bludgeoning damage.",
-        "actionType": 0,
+        "actionType": 2,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 21050
     },
     {
         "name": "The Watch",
@@ -3975,9 +4402,11 @@
         "ritual": false,
         "classes": [],
         "summary": "Summon three Watcher Guardians.",
-        "actionType": 0,
+        "description": "Summon some of the City Watch's great weapon fighters to protect their home.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24428
     },
     {
         "name": "Thorn Whip",
@@ -3987,9 +4416,11 @@
         "ritual": false,
         "classes": ["Druid", "Nature Domain"],
         "summary": "It deals damage to a target and pulls it closer to the caster.",
-        "actionType": 0,
+        "description": "Pulls the creature m=3|ft=10 closer to you.\n\nThe target cannot be pulled if it is Huge in size.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1693
     },
     {
         "name": "Thunderous Smite",
@@ -3999,9 +4430,11 @@
         "ritual": false,
         "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to cause their weapon to ring with Thunder as they strike, pushing targets away and potentially knocking them Prone.",
-        "actionType": 0,
+        "description": "Your weapon rings with thunder as you strike, pushing your target m=3|ft=10 away and possibly knocking them Prone. \n\nIf the spellcaster misses the initial Attack, the Spell Slot and Bonus Action are not consumed.",
+        "actionType": 4,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2833
     },
     {
         "name": "Thunderwave",
@@ -4020,9 +4453,10 @@
         ],
         "summary": "This spell allows spellcasters to project out a deafening force that can hit multiple creatures and objects. Creatures hit by this force are potentially pushed away from the spellcaster.",
         "description": "Release a wave of thunderous force that pushes away all creatures and objects in an area, while also dealing Thunder damage.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2296
     },
     {
         "name": "True Strike",
@@ -4040,9 +4474,10 @@
         ],
         "summary": "The caster gains Advantage on their next Attack Roll against the target.",
         "description": "Gain Advantage on your next Attack Roll.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 1696
     },
     {
         "name": "Tyr's Protection",
@@ -4051,11 +4486,12 @@
         "school": 1,
         "ritual": false,
         "classes": [],
-        "summary": "This spell is identical to the Shield of Faith spell, but costs no Spell Slots to cast. It allows spellcasters to surround themselves or an ally with divine protection and gain a bonus to their Armour Class.",
+        "summary": "This spell  allows spellcasters to surround themselves or an ally with divine protection and gain a bonus to their Armour Class.\n\nThis item spell is similar to the spell Shield of Faith.",
         "description": "Surround a creature with a shimmering field of magic that increases its Armour Class by 2. Spell ends when the Sword of Justice is unequipped.",
-        "actionType": 0,
+        "actionType": 2,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": true,
+        "id": 20740
     },
     {
         "name": "Tyrant's Bindings",
@@ -4065,9 +4501,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell allows Gortash to restrict your movement and deal a ton of damage to you and your party.",
-        "actionType": 0,
+        "description": "Create heavy magical chains that bind to your targets, halving their Movement speed.\n\nIf the chains are still present at the beginning of your next turn, they break, dealing 8d8|Force damage to all targets.",
+        "actionType": 2,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 21042
     },
     {
         "name": "Vampiric Touch",
@@ -4077,9 +4515,11 @@
         "ritual": false,
         "classes": ["Warlock", "Wizard"],
         "summary": "This spell allows spellcasters at melee range to siphon the life force of their target.",
-        "actionType": 0,
+        "description": "Touch an enemy to siphon their life force and regain half as many Hit Points.\n\nFor 10 turns, you can use Vampiric Touch again without expending an additional Spell Slot.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2739
     },
     {
         "name": "Veil of the Weird",
@@ -4089,9 +4529,11 @@
         "ritual": false,
         "classes": [],
         "summary": "This spell allows the caster to cast Greater Invisibility up to five creatures.",
-        "actionType": 0,
+        "description": "Channel Auntie Ethel's hag magic to render 5 creatures within range Invisible.\n\nThe caster can only use this feature once in their adventure.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 24387
     },
     {
         "name": "Vicious Mockery",
@@ -4102,9 +4544,10 @@
         "classes": ["Bard"],
         "summary": "It deals Psychic damage to enemies and inflicts Disadvantage on their Attack Rolls.",
         "description": "Insult a creature: it has Disadvantage on its next Attack Roll.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2261
     },
     {
         "name": "Wall of Fire",
@@ -4115,9 +4558,10 @@
         "classes": [],
         "summary": "This spell allows spellcasters to create a long, fiery barrier, damaging anything in the area.",
         "description": "Create a blazing wall of fire, Burning anyone who dares stand too close. Deals Fire to anything that moves into or starts it's turn in the area.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 7938
     },
     {
         "name": "Wall of Ice",
@@ -4127,9 +4571,10 @@
         "ritual": false,
         "classes": ["Wizard"],
         "description": "Raise a wall of solid ice that deals 10d6|Cold damage to anyone standing in its way. When the ice is broken, it leaves behind a cloud of frigid air that deals 10d6|Cold per turn to creatures within.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 9198
     },
     {
         "name": "Wall of Stone",
@@ -4139,9 +4584,11 @@
         "ritual": false,
         "classes": ["Druid", "Sorcerer", "Wizard", "Nature Domain"],
         "summary": "This spell allows spellcasters to create a solid stone barrier.",
-        "actionType": 0,
+        "description": "Raise a wall of non-magical, solid stone.\n\nThe wall can be created between any two points within range as long as there is a clear path between them.  It is made up of Stone Pillars with 30 HP each, immune to Psychic and vulnerable to Force and Thunder damage.  Pillars block movement and line of sight.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 8034
     },
     {
         "name": "Wall of Thorns",
@@ -4152,9 +4599,10 @@
         "classes": ["Druid"],
         "summary": "This spell allows spellcasters to conjure a wall of brambles, Entangling and damaging any creatures who are in the area, or trying to pass through.",
         "description": "Create a wall of pliable, twisting thorns surrounded by Entangling vines. Creatures can move through the wall, but take 7d8|Piercing damage per turn, their Movement Speed is halved due to Difficult Terrain, and they may become Entangled.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 10350
     },
     {
         "name": "Warden of Vitality",
@@ -4165,9 +4613,10 @@
         "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to heal allies repeatedly with Restore Vitality using only Bonus Actions for 10 turns.",
         "description": "While this aura lasts, you can cast Restore Vitality as a bonus to heal yourself or nearby allies by 2d6|Healing.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 10342
     },
     {
         "name": "Warding Bond",
@@ -4177,9 +4626,11 @@
         "ritual": false,
         "classes": ["Cleric"],
         "summary": "This spell allows spellcasters to bolster an ally's defenses while also sharing any damage they receive.",
-        "actionType": 0,
+        "description": "Ward an ally. They gain Resistance to all damage, and a +1 bonus to their ArmourClass and SavingThrows.\nEach time the target takes damage, the spellcaster takes the same amount of damage.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 6908
     },
     {
         "name": "Web",
@@ -4196,9 +4647,11 @@
             "Eldritch Knight"
         ],
         "summary": "This spell allows spellcasters to conjure a mass of sticky and flammable web at an area within range. Creatures moving or entering this area have their speed halved and can become Enwebbed.",
-        "actionType": 0,
+        "description": "Cover an area in thick, flammable webbing that can Enwebbed|Enweb creatures within.\n\nAn ally can use its Help action to try and tear away the webs.",
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2288
     },
     {
         "name": "Wind Walk",
@@ -4208,9 +4661,11 @@
         "ritual": false,
         "classes": ["Druid"],
         "summary": "This spell allows spellcasters to transform a group of allies into a cloud of mist. This form offers damage Resistance, Advantage on some Saving Throws, and the ability to Fly.",
-        "actionType": 0,
+        "description": "Transform yourself and all nearby party members into tiny clouds of mist to avoid attacks. You become Resistant to non-magical damage, gain Advantage on Tiny in size. You also gain the ability to Flight|Fly.\n\nPrerequisite Icon While transformed, you won't be able to attack, cast spells, or talk.",
+        "actionType": 1,
         "concentration": false,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 10351
     },
     {
         "name": "Witch Bolt",
@@ -4227,9 +4682,10 @@
         ],
         "summary": "It allows spellcasters to hit enemies with a blue ray of electrifying energy that deals Lightning damage to them initially and also on subsequent turns.",
         "description": "Link yourself to a target with a bolt of lightning. Deal an additional 1d12|Lightning each turn by activating it.",
-        "actionType": 0,
+        "actionType": 1,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2300
     },
     {
         "name": "Wrathful Smite",
@@ -4239,8 +4695,10 @@
         "ritual": false,
         "classes": ["Paladin"],
         "summary": "This spell allows spellcasters to channel their wrath through their melee weapon, possibly Frightened|Frightening their target on hit.",
-        "actionType": 0,
+        "description": "Your weapon absorbs your wrath as you strike, possibly Frightened|Frightening your target.\n\n* If the spellcaster misses the initial Attack, the Spell Slot and Bonus Action are not consumed.",
+        "actionType": 4,
         "concentration": true,
-        "noSpellSlot": false
+        "noSpellSlot": false,
+        "id": 2835
     }
 ]

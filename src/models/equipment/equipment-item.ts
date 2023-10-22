@@ -11,7 +11,7 @@ import {
 import { MwnApiClass } from '../../api/mwn';
 import { PageNotFoundError } from '../errors';
 import { error } from '../logger';
-import { MediaWiki } from '../media-wiki';
+import { MediaWiki, PageData } from '../media-wiki';
 import { PageItem, PageLoadingState } from '../page-item';
 import {
     MediaWikiTemplateParser,
@@ -37,6 +37,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
     source?: string;
     notes?: string[];
     proficiency?: EquipmentItemProficiency;
+    id?: number;
 
     baseArmorClass?: number;
     bonusArmorClass?: number;
@@ -49,14 +50,45 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             this.initData().catch(error);
     }
 
-    private static parseEffects(effectText: string): GrantableEffect[] {
-        const effectPattern = /\n\s*\*\s*'''(.*?):'''\s*(.*?)(?:\n|$)/g;
+    private static parseEffects(
+        effectText: string,
+        config: MediaWikiTemplateParserConfig,
+        page: PageData,
+    ): GrantableEffect[] {
+        const namedEffectPattern = /\*\s*'''(.*?):'''\s*(.*?)(?:\n|$)/g;
 
-        return Array.from(effectText.matchAll(effectPattern)).map((match) => ({
-            name: MediaWiki.stripMarkup(match[1]),
-            description: MediaWiki.stripMarkup(match[2]),
+        const effects: GrantableEffect[] = Array.from(
+            effectText.matchAll(namedEffectPattern),
+        ).map((match) => ({
+            name: MediaWiki.stripMarkup(match[1]).trim(),
+            description: MediaWiki.stripMarkup(match[2]).trim(),
             type: GrantableEffectType.CHARACTERISTIC,
         }));
+
+        const anonEffectPattern = /\*\s+([^'].+)/g;
+
+        const anonEffects = Array.from(
+            effectText.matchAll(anonEffectPattern),
+        ).map((match) => ({
+            name: 'Anonymous Effect',
+            description: MediaWiki.stripMarkup(match[1]).trim(),
+            type: GrantableEffectType.CHARACTERISTIC,
+            hidden: true,
+        }));
+
+        effects.push(...anonEffects);
+
+        if (anonEffects.length > 0) {
+            effects.push({
+                name: page.title,
+                description: anonEffects
+                    .map((effect) => effect.description)
+                    .join('\n'),
+                type: GrantableEffectType.CHARACTERISTIC,
+            });
+        }
+
+        return effects;
     }
 
     private async initData(): Promise<void> {
@@ -72,6 +104,8 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         ) {
             return;
         }
+
+        this.id = this.page.pageId;
 
         const { image, plainText, int, float } =
             MediaWikiTemplateParser.Parsers;
@@ -105,7 +139,11 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             weightLb: { parser: float, default: undefined },
             price: { parser: int, default: undefined },
             uid: { default: undefined },
-            effects: { parser: EquipmentItem.parseEffects, default: [] },
+            effects: {
+                key: 'special',
+                parser: EquipmentItem.parseEffects,
+                default: [],
+            },
             source: { parser: (value) => value.split('*'), default: undefined }, // FIXME
             notes: { parser: (value) => value.split('*'), default: undefined }, // FIXME
         };
@@ -136,11 +174,13 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             baseArmorClass: this.baseArmorClass,
             bonusArmorClass: this.bonusArmorClass,
             enchantment: this.enchantment,
+            id: this.id,
         };
     }
 }
 
 let itemData: Record<string, EquipmentItem[]> | null = null;
+let itemDataById: Map<number, EquipmentItem> | null = null;
 
 export async function getEquipmentItemData(
     types?: EquipmentItemType[],
@@ -184,6 +224,9 @@ export async function getEquipmentItemData(
             },
             {} as Record<string, EquipmentItem[]>,
         );
+
+        itemDataById = new Map<number, EquipmentItem>();
+        data.forEach((item) => itemDataById!.set(item.id!, item));
     }
 
     if (!types) {
@@ -199,4 +242,12 @@ export async function getEquipmentItemData(
     });
 
     return filteredData;
+}
+
+export async function getEquipmentItemInfoById() {
+    if (!itemDataById) {
+        await getEquipmentItemData();
+    }
+
+    return itemDataById!;
 }
