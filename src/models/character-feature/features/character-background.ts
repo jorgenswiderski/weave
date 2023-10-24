@@ -7,12 +7,18 @@ import {
 import { MediaWiki } from '../../media-wiki';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeatureTypes } from '../types';
+import { PageNotFoundError } from '../../errors';
+
+enum BackgroundLoadingStates {
+    ID = 'BACKGROUND_ID',
+}
 
 export class CharacterBackground extends CharacterFeature {
     type: CharacterFeatureTypes.BACKGROUND = CharacterFeatureTypes.BACKGROUND;
     description: string;
     proficiencies: Proficiency[];
     image?: string;
+    id?: number;
 
     constructor(
         options: ICharacterOption,
@@ -23,6 +29,8 @@ export class CharacterBackground extends CharacterFeature {
         this.description = this.parseDescription();
         this.proficiencies = this.getProficiencies();
         this.image = this.getImage() ?? undefined;
+
+        this.initialized[BackgroundLoadingStates.ID] = this.initId();
     }
 
     private getImage(): string | null {
@@ -81,12 +89,25 @@ export class CharacterBackground extends CharacterFeature {
         });
     }
 
-    getInfo(): ICharacterOption {
+    private async initId(): Promise<void> {
+        const page = await MediaWiki.getPage(this.name);
+
+        if (!page) {
+            throw new PageNotFoundError(
+                `could not find background ${this.name}`,
+            );
+        }
+
+        this.id = page.pageId;
+    }
+
+    getInfo(): ICharacterOption & { id: number } {
         return {
             name: this.name,
             description: this.description,
             image: this.image,
             grants: this.proficiencies,
+            id: this.id!,
         };
     }
 }

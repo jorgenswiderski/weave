@@ -195,8 +195,8 @@ export async function getEquipmentItemData(
             'Shields',
             'Helmets',
             'Cloaks',
-            'Handwear',
-            'Footwear',
+            'Gloves',
+            'Boots',
             'Amulets',
             'Rings',
         ];

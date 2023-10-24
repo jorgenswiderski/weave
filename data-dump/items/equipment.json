@@ -387,6 +387,18 @@
             "id": 9509
         },
         {
+            "name": "Barnabus' Collar",
+            "image": "http://localhost:3001/api/images/e/ec/Amulet_Necklace_A_Silver_A_Faded.png",
+            "icon": "http://localhost:3001/api/images/2/26/Amulet_Necklace_A_Silver_A_Unfaded_Icon.png",
+            "description": "Barnabus' Collar is a common Amulet. It has no enchantments.",
+            "quote": "Necklace the Gnoll Master gave Barnabus when she first met him.",
+            "type": 1,
+            "rarity": 1,
+            "effects": [],
+            "proficiency": 0,
+            "id": 25072
+        },
+        {
             "name": "Beastmaster's Chain",
             "image": "http://localhost:3001/api/images/8/89/Amulet_Necklace_D_Bronze_A_Faded.png",
             "icon": "http://localhost:3001/api/images/6/6d/Amulet_Necklace_D_Bronze_A_Unfaded_Icon.png",
@@ -1236,14 +1248,921 @@
     ],
     "2": [
         {
-            "name": "Plain Boots",
-            "description": "Plain Boots are a common footwear.",
+            "name": "Acrobat Shoes",
+            "image": "http://localhost:3001/api/images/e/e9/Acrobat_Shoes_Icon.png",
+            "icon": "http://localhost:3001/api/images/5/56/Acrobat_Shoes_Unfaded_Icon.png",
+            "description": "Acrobat Shoes is a pair of rare Boots that grants a bonus to Acrobatics and Advantage on Dexterity Saving Throws.",
+            "quote": "These flexible shoes were once owned by Audreyne Willoughs, who, in a somewhat ironic twist if fate, ran away from the circus to join her parents back home.",
+            "type": 2,
+            "rarity": 3,
+            "price": 35,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Acrobatics +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Advantage on Dexterity Saving Throws.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Acrobat Shoes",
+                    "description": "Acrobatics +1\nAdvantage on Dexterity Saving Throws.",
+                    "type": 2
+                }
+            ],
+            "id": 10634
+        },
+        {
+            "name": "Blackguard's Greaves",
+            "image": "http://localhost:3001/api/images/0/02/Boots_Metal_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/9/9b/Boots_Metal_1_Unfaded_Icon.png",
+            "description": "Blackguard's Greaves are a rare pair of Greaves that grant their wearer a permanent Longstrider effect and a +1 bonus to Athletics.",
+            "quote": "Clad on the desiccated feet of a death knight, these boots have walked a long and terrible path. They strode through the tattered remains of their owner's oath. With every heavy footstep, they have sounded pure fear into the hearts of men.",
+            "type": 2,
+            "rarity": 3,
+            "price": 640,
+            "effects": [],
+            "proficiency": 2,
+            "id": 11830
+        },
+        {
+            "name": "Bonespike Boots",
+            "image": "http://localhost:3001/api/images/8/86/Bonespike_Boots_Icon.png",
+            "icon": "http://localhost:3001/api/images/0/0b/Bonespike_Boots_Unfaded_Icon.png",
+            "description": "Bonespike Boots are a Very rare pair of Boots that give the character access to the Brutal Leap ability.",
+            "quote": "Armour designed for the aerodynamic leaping and striking and general screaming of your standard barbarian.",
+            "type": 2,
+            "rarity": 4,
+            "price": 70,
+            "effects": [
+                {
+                    "name": "Evasive Instinct",
+                    "description": "You have a +1 bonus to ArmourClass and Saving Throws as long as you are not wearing shield.",
+                    "type": 2
+                },
+                {
+                    "name": "Refined Vaulting",
+                    "description": "Jump (Bonus Action)|Jump distance is increased by 1.5m / 5ft.",
+                    "type": 2
+                }
+            ],
+            "id": 9391
+        },
+        {
+            "name": "Boots of Aid and Comfort",
+            "image": "http://localhost:3001/api/images/4/41/Boots_of_Aid_and_Comfort_Icon.png",
+            "icon": "http://localhost:3001/api/images/3/30/Boots_of_Aid_and_Comfort_Unfaded_Icon.png",
+            "description": "Boots of Aid and Comfort are an uncommon pair of Temporary Hit Points to creatures healed by the wearer.",
+            "quote": "Sturdy and well-worn, these boots make a snug fit on any wearer.",
+            "type": 2,
+            "rarity": 2,
+            "price": 70,
+            "effects": [
+                {
+                    "name": "The Comeback",
+                    "description": "When the wearer heals a target, it gains an additional 3 Temporary Hit Points.",
+                    "type": 2
+                }
+            ],
+            "id": 3438
+        },
+        {
+            "name": "Boots of Apparent Death",
+            "image": "http://localhost:3001/api/images/1/10/Shoes_A_Faded.png",
+            "icon": "http://localhost:3001/api/images/f/f8/Shoes_A_Unfaded_Icon.png",
+            "description": "Boots of Apparent Death are a rare set of Boots that grants the wearer the ability to cast Feign Death once per Short Rest.",
+            "quote": "Practical jokes with these boots often involve all your stuff being stolen by opportunistic cousins.",
+            "type": 2,
+            "rarity": 3,
+            "price": 190,
+            "effects": [
+                {
+                    "name": "Feign Death|w=40",
+                    "description": "Can cast at Level 3 (Short Rest).",
+                    "type": 2
+                }
+            ],
+            "id": 9539
+        },
+        {
+            "name": "Boots of Arcane Bolstering",
+            "image": "http://localhost:3001/api/images/9/93/Boots_of_Arcane_Bolstering_Icon.png",
+            "icon": "http://localhost:3001/api/images/5/5e/Boots_of_Arcane_Bolstering_Unfaded_Icon.png",
+            "description": "Boots of Arcane Bolstering is a pair of rare Boots that grants Arcane Charge each time the wearer Dashes, adding +1 bonus to damage with spells while Threatened.",
+            "quote": "Fizzling barbs of enchantment magic crackle from the laces of these boots.",
+            "type": 2,
+            "rarity": 3,
+            "price": 190,
+            "effects": [
+                {
+                    "name": "Rapid Caster",
+                    "description": "Each time they Dash, the wearer gains Arcane Charge for 2.",
+                    "type": 2
+                }
+            ],
+            "id": 8851
+        },
+        {
+            "name": "Boots of Brilliance",
+            "image": "http://localhost:3001/api/images/0/0c/Shoes_Bard_Faded.png",
+            "icon": "http://localhost:3001/api/images/e/e4/Shoes_Bard_Unfaded_Icon.png",
+            "description": "The Boots of Brilliance are a rare pair of Boots that allow the wearer to replenish one Bardic Inspiration charge once per long rest.",
+            "quote": "Tiny bells are sewn into the boots' cuffs. They jingle subtly with every step.",
+            "type": 2,
+            "rarity": 3,
+            "price": 190,
+            "effects": [
+                {
+                    "name": "Restore Bardic Inspiration",
+                    "description": "Once per Long Rest you can use your Action to play your instrument and restore one of your Bardic Inspiration charges.",
+                    "type": 2
+                }
+            ],
+            "id": 3592
+        },
+        {
+            "name": "Boots of Elemental Momentum",
+            "image": "http://localhost:3001/api/images/4/42/Boots_of_Elemental_Momentum_Icon.png",
+            "icon": "http://localhost:3001/api/images/f/f8/Boots_of_Elemental_Momentum_Unfaded_Icon.png",
+            "description": "The Boots of Elemental Momentum are an uncommon pair of Boots that grant Momentum whenever the wearer deals elemental damage with a spell or cantrip.",
+            "quote": "Toughened metal boots, highly insulated with heavy leather and padding for use in any and all elements.",
+            "type": 2,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Elemental Momentum",
+                    "description": "Whenever the wearer deals Acid, Cold, Fire, Lightning or Thunder damage with Spells or Cantrip, they gain Momentum for 2.",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 8643
+        },
+        {
+            "name": "Boots of Genial Striding",
+            "image": "http://localhost:3001/api/images/5/5c/Boots_of_Genial_Striding_Icon.png",
+            "icon": "http://localhost:3001/api/images/f/f3/Boots_of_Genial_Striding_Unfaded_Icon.png",
+            "description": "The Boots of Genial Striding is a pair of rare Boots that allow the wearer to move over difficult terrain without impediment.",
+            "quote": "The soles of these boots warp and shift like warm clay manipulared by an unseen sculptor's hands.",
+            "type": 2,
+            "rarity": 3,
+            "price": 190,
+            "effects": [
+                {
+                    "name": "Genial Strider",
+                    "description": "The wearer's Movement Speed is unimpeded by Difficult Terrain",
+                    "type": 2
+                }
+            ],
+            "id": 8143
+        },
+        {
+            "name": "Boots of Persistence",
+            "image": "http://localhost:3001/api/images/a/ae/Boots_of_Persistence_Icon.png",
+            "description": "Boots of Persistence is a pair of Boots that grant their wearer permanent Freedom of Movement and Longstrider effects.",
+            "quote": "'If I had a copper for all the adventurin folk I seen gutted or cut up, or clawed like they was made of wet paper, just cause they couldn't move quick enough when speed might have saved em... well, I'd be suckin good brandy from crystal rather than this fuckin swill.' - Overheard in a tavern in Baldur's Gate.",
+            "type": 2,
+            "rarity": 4,
+            "price": 1300,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Dexterity Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Boots of Persistence",
+                    "description": "Dexterity Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 8049
+        },
+        {
+            "name": "Boots of Psionic Movement",
+            "image": "http://localhost:3001/api/images/7/7e/Boots_Metal_Githyanki_B_Magic_Faded.png",
+            "icon": "http://localhost:3001/api/images/3/36/Boots_Metal_Githyanki_B_Magic_Unfaded_Icon.png",
+            "description": "Boots of Psionic Movement are a very rare pair of Boots that allow Githyanki wearers to fly, and enhances their attacks with Psychic|Psychic damage.",
+            "quote": "When not atop their dragons, gith are not particularly air-worthy. This is probably for the best. The imposition of downward gravity tends to put most people in a mood.",
+            "type": 2,
+            "rarity": 4,
+            "price": 450,
+            "effects": [
+                {
+                    "name": "Flying Strike",
+                    "description": "When a githyanki casts Fly, their next melee weapon attack deals an additional 1d4|Psychic damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Githborn: Flying Boots|w=40",
+                    "description": "Can cast Fly, (Long Rest).",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Dexterity Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Boots of Psionic Movement",
+                    "description": "Dexterity Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 10931
+        },
+        {
+            "name": "Boots of Speed",
+            "image": "http://localhost:3001/api/images/f/f2/Boots_of_Speed_Icon.png",
+            "icon": "http://localhost:3001/api/images/3/33/Boots_of_Speed_Unfaded_Icon.png",
+            "description": "The Boots of Speed is a pair of rare Attacks of Opportunity on them.",
+            "quote": "Featherlaced and flexible of sole, these boots have been used to round up - and outrun - many a foe.",
+            "type": 2,
+            "rarity": 3,
+            "price": 190,
+            "effects": [
+                {
+                    "name": "Click Heels",
+                    "description": "Click the heels of your boots as a bonus to gain Click Heels for 1.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "This condition doubles your Opportunity Attacks against you.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Boots of Speed",
+                    "description": "This condition doubles your Opportunity Attacks against you.",
+                    "type": 2
+                }
+            ],
+            "id": 3473
+        },
+        {
+            "name": "Boots of Stormy Clamour",
+            "image": "http://localhost:3001/api/images/0/0b/Boots_of_Stormy_Clamour_Icon.png",
+            "icon": "http://localhost:3001/api/images/f/fe/Boots_of_Stormy_Clamour_Unfaded_Icon.png",
+            "description": "The Boots of Stormy Clamour are an uncommon pair of Boots that inflicts the Reverberation condition on a creature when afflicting it with another condition.",
+            "quote": "Pearls of thunder rumble at the back of your skull with every step taken in these boots.",
+            "type": 2,
+            "rarity": 2,
+            "price": 70,
+            "effects": [
+                {
+                    "name": "Arcane Echomalefaction",
+                    "description": "When the wearer inflicts a condition upon a hostile creature, they also inflict 2 turns of Reverberation.",
+                    "type": 2
+                }
+            ],
+            "id": 9227
+        },
+        {
+            "name": "Boots of Striding",
+            "image": "http://localhost:3001/api/images/f/f0/Boots_Metal_F_Faded.png",
+            "icon": "http://localhost:3001/api/images/f/fb/Boots_Metal_F_Unfaded_Icon.png",
+            "description": "The Boots of Striding are an uncommon pair of Boots that grants the wearer a burst of speed whenever they begin concentrating on a spell.",
+            "quote": "The metal of these graves is confortably warm against your shins, as through heated by your mere precence.",
+            "type": 2,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Focused Stride",
+                    "description": "When you cast a spell that requires Concentration, you gain Momentum. While you are concentrating, you cannot be pushed or get knocked Prone.",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 3472
+        },
+        {
+            "name": "Boots of Uninhibited Kushigo",
+            "image": "http://localhost:3001/api/images/5/54/Boots_of_Uninhibited_Kushigo_Icon.png",
+            "icon": "http://localhost:3001/api/images/1/1e/Boots_of_Uninhibited_Kushigo_Unfaded_Icon.png",
+            "description": "The Boots of Uninhibited Kushigo are a rare pair of Boots that add your Wisdom modifier to your unarmed strikes' damage.",
+            "quote": "During a hilltop battle that soaked the slopes in gore, Kushigo's best friend Irishi was scalped before he could help her.  The enemy held up the bloody wig, and Kushigo fell upon one, and then another, until he had killed so many that they hung from his antlered shoulders like skewered effigies.",
+            "type": 2,
+            "rarity": 3,
+            "price": 190,
+            "effects": [
+                {
+                    "name": "Experienced And Deadly",
+                    "description": "The wearer deals additional damage equal to their Wisdom Modifier with Unarmed Strike|unarmed strikes.",
+                    "type": 2
+                }
+            ],
+            "id": 8084
+        },
+        {
+            "name": "Boots of Very Fast Blinking",
+            "image": "http://localhost:3001/api/images/0/0c/Shoes_Bard_Faded.png",
+            "icon": "http://localhost:3001/api/images/e/e4/Shoes_Bard_Unfaded_Icon.png",
+            "description": "Boots of Very Fast Blinking are an uncommon pair of Boots that grant the wearer the ability to cast Misty Step once per turn, but with the drawback that their clothes are left behind.",
+            "quote": "You can cast Misty Step with the caveat that you will teleport leaving your clothes behind.",
+            "type": 2,
+            "rarity": 2,
+            "price": 1,
+            "effects": [],
+            "proficiency": 0,
+            "id": 11382
+        },
+        {
+            "name": "Cinder Shoes",
+            "image": "http://localhost:3001/api/images/e/ef/Boots_Leather_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/4/4a/Boots_Leather_1_Unfaded_Icon.png",
+            "description": "Cinder Shoes is a pair of uncommon Boots that grants Heat whenever the wearer Burned|Burn an enemy.",
+            "quote": "Despite the many scorch marks, these leather boots are somehow still supple and intact.",
+            "type": 2,
+            "rarity": 2,
+            "price": 70,
+            "effects": [
+                {
+                    "name": "Cinders",
+                    "description": "Whenever you Burning|Burn an enemy, you gain 2 turns of Heat.",
+                    "type": 2
+                }
+            ],
+            "id": 9146
+        },
+        {
+            "name": "Dark Justiciar Boots",
+            "image": "http://localhost:3001/api/images/0/02/Boots_Metal_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/9/9b/Boots_Metal_1_Unfaded_Icon.png",
+            "description": "The Dark Justiciar Boots are a rare pair of Boots that grants the wearer better Dexteritys and the ability to cast Shadow Teleportation once per Short Rest.",
+            "quote": "Scratched in places, scorched in others, and worn thin at the heel, these boots bear the indelible marks of experience.",
+            "type": 2,
+            "rarity": 3,
+            "price": 240,
+            "effects": [
+                {
+                    "name": "Shadow Teleportation|w=40",
+                    "description": "Teleport to an unoccupied, obscured spot.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Dexterity Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Dark Justiciar Boots",
+                    "description": "Dexterity Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 13944
+        },
+        {
+            "name": "Disintegrating Night Walkers",
+            "image": "http://localhost:3001/api/images/4/4f/Disintegrating_Nightwalkers_Icon.png",
+            "icon": "http://localhost:3001/api/images/4/42/Disintegrating_Nightwalkers_Unfaded_Icon.png",
+            "description": "The Disintegrating Night Walkers are a pair of very rare Misty Step}} once per [[Short Rest.",
+            "quote": "Darker than a starless night, Night Walker are made for secrecy in honour of Shar. This particular pair was found deep in the ruins of an Underdark fortress. Though the leather is old and the magic is fading, the boots were recently cleaned and oiled with care.",
+            "type": 2,
+            "rarity": 4,
+            "price": 360,
+            "effects": [
+                {
+                    "name": "Night Walker",
+                    "description": "Can't be Enwebbed, Entangled, or Ensnared and can't slip on Grease or Ice.",
+                    "type": 2
+                },
+                {
+                    "name": "Misty Step|w=40",
+                    "description": "Cast the spell at Level 2 (Short Rest).",
+                    "type": 2
+                }
+            ],
+            "id": 3468
+        },
+        {
+            "name": "Evasive Shoes",
+            "image": "http://localhost:3001/api/images/f/f8/Shoes_G_Magic_Faded.png",
+            "icon": "http://localhost:3001/api/images/b/be/Shoes_G_Magic_Unfaded_Icon.png",
+            "description": "The Evasive Shoes are a rare pair of Boots that give a small bonus to Acrobatics and Armour Class.",
+            "quote": "Rogues in Waterdeep prefer these spring-loaded boots that make evading the city watch a breeze.",
+            "type": 2,
+            "rarity": 3,
+            "price": 95,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Acrobatics +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Armour Class +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Evasive Shoes",
+                    "description": "Acrobatics +1\nArmour Class +1",
+                    "type": 2
+                }
+            ],
+            "id": 8012
+        },
+        {
+            "name": "Featherlight Boots",
+            "image": "http://localhost:3001/api/images/d/d6/Featherlight_Boots_Icon.png",
+            "icon": "http://localhost:3001/api/images/9/98/Featherlight_Boots_Unfaded_Icon.png",
+            "description": "The Featherlight Boots are an uncommon pair of Boots that grants the wearer additional speed while greatly injured.",
+            "quote": "The soft and supple leather glides over your skin. Wearing them feels like running barefoot.",
+            "type": 2,
+            "rarity": 2,
+            "price": 380,
+            "effects": [
+                {
+                    "name": "Burst of Speed",
+                    "description": "When the wearer has 50% Hit Points or less, their Movement Speed is increased by 3m / 10ft.",
+                    "type": 2
+                }
+            ],
+            "id": 3589
+        },
+        {
+            "name": "Githyanki Boots",
+            "image": "http://localhost:3001/api/images/0/05/Githyanki_Boots_Icon.png",
+            "quote": "Lavishly decorated boots, crafted on faraway planes from stolen metals and poached rubies.",
+            "type": 2,
+            "rarity": 1,
+            "price": 30,
+            "effects": [],
+            "proficiency": 2,
+            "id": 8424
+        },
+        {
+            "name": "Grovetender Boots",
+            "image": "http://localhost:3001/api/images/4/4f/Grovetender_Boots_Icon.png",
+            "icon": "http://localhost:3001/api/images/7/7a/Grovetender_Boots_Unfaded_Icon.png",
+            "description": "Grovetender Boots are a common pair of Boots.",
             "quote": "These boots are well-maintained and clean, though their soles are thin from wear.",
+            "type": 2,
+            "rarity": 1,
+            "price": 15,
+            "effects": [],
+            "id": 8646
+        },
+        {
+            "name": "Hardily Constructed Boots",
+            "image": "http://localhost:3001/api/images/1/10/Shoes_A_Faded.png",
+            "icon": "http://localhost:3001/api/images/f/f8/Shoes_A_Unfaded_Icon.png",
+            "description": "Hardily Constructed Boots are a common pair of boots.",
+            "quote": "Made of tough, well-worn leather, these boots have survived years of use, and can survive many more.",
             "type": 2,
             "rarity": 1,
             "effects": [],
             "proficiency": 0,
-            "id": 11849
+            "id": 17532
+        },
+        {
+            "name": "Helldusk Boots",
+            "image": "http://localhost:3001/api/images/8/82/Helldusk_Boots_Icon.png",
+            "icon": "http://localhost:3001/api/images/4/49/Helldusk_Boots_Unfaded_Icon.png",
+            "description": "The Helldusk Boots are a very rare pair of Boots that allows the wearer to ignore Difficult Terrain and being forcibly moved by hostile spells or action, to use a reaction to succeed on a SavingThrow, and to use the Hellcrawler bonus action.",
+            "quote": "No ore takes better to being forged than the infernal iron of Avernus, where the archdevil Zariel presides.",
+            "type": 2,
+            "rarity": 4,
+            "price": 450,
+            "effects": [
+                {
+                    "name": "Steadfast",
+                    "description": "You cannot be forcibly moved by a foe's spells or actions, and you ignore the effects of Difficult Terrain.",
+                    "type": 2
+                },
+                {
+                    "name": "Infernal Evasion",
+                    "description": "When you fail a SavingThrow, you may use your reaction to succeed instead.",
+                    "type": 2
+                },
+                {
+                    "name": "Hellcrawler|w=40",
+                    "description": "Teleport to an area and deal 2d8|Fire damage where you land. The impact blast spreads in a 3m / 10ft zone.",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 11724
+        },
+        {
+            "name": "Hoarfrost Boots",
+            "image": "http://localhost:3001/api/images/8/8b/Hoarfrost_Boots_Icon.png",
+            "icon": "http://localhost:3001/api/images/7/7c/Hoarfrost_Boots_Unfaded_Icon.png",
+            "description": "Hoarfrost Boots are an uncommon pair of Boots that allow the wearer to not slip on icy surfaces.",
+            "quote": "A smattering of tiny ice crystals have formed cleats on the soles of these hardy boots.",
+            "type": 2,
+            "rarity": 2,
+            "price": 70,
+            "effects": [
+                {
+                    "name": "Hoarfrost Balance",
+                    "description": "You cannot fall Prone while traversing icy terrain.",
+                    "type": 2
+                }
+            ],
+            "id": 8743
+        },
+        {
+            "name": "Karlach's Boots",
+            "image": "http://localhost:3001/api/images/2/21/Boots_Leather_2_Faded.png",
+            "icon": "http://localhost:3001/api/images/4/4c/Boots_Leather_2_Unfaded_Icon.png",
+            "description": "Karlach's Boots is the default Camp Clothing for Karlach.",
+            "quote": "Warmed by occasionally wiggling infernal toes.",
+            "type": 2,
+            "rarity": 1,
+            "effects": [],
+            "proficiency": 0,
+            "id": 16276
+        },
+        {
+            "name": "Leather Boots",
+            "image": "http://localhost:3001/api/images/7/73/Boots_Leather_Faded.png",
+            "icon": "http://localhost:3001/api/images/8/8d/Boots_Leather_Unfaded_Icon.png",
+            "description": "Leather Boots are a common pair of Boots.",
+            "quote": "These boots are well-maintained and clean, though their soles are thin from wear.",
+            "type": 2,
+            "rarity": 1,
+            "price": 15,
+            "effects": [],
+            "id": 3518
+        },
+        {
+            "name": "Leather Boots (Barbarian)",
+            "image": "http://localhost:3001/api/images/8/80/Shoes_Barbarian_Faded.png",
+            "icon": "http://localhost:3001/api/images/5/5d/Shoes_Barbarian_Unfaded_Icon.png",
+            "description": "Leather Boots (Barbarian) are a common pair of Boots.",
+            "quote": "Warm, supple boots, made to cross the roughest of terrains with ease.",
+            "type": 2,
+            "rarity": 1,
+            "price": 5,
+            "effects": [],
+            "id": 3600
+        },
+        {
+            "name": "Linebreaker Boots",
+            "image": "http://localhost:3001/api/images/c/c3/Linebreaker_Boots_Icon.png",
+            "icon": "http://localhost:3001/api/images/f/f2/Linebreaker_Boots_Unfaded_Icon.png",
+            "description": "The Linebreaker Boots are a rare pair of Boots that grants the wearer Wrath whenever they Dash.",
+            "quote": "Lightweight fur and leather, designed to speed the wearer's charge into battle.",
+            "type": 2,
+            "rarity": 3,
+            "price": 190,
+            "effects": [
+                {
+                    "name": "Adrenaline Rush",
+                    "description": "When the wearer Dash|Dashes or takes a similar action during combat, they gain Wrath for 2.",
+                    "type": 2
+                }
+            ],
+            "id": 3626
+        },
+        {
+            "name": "Lonely Left Boot of Elvenkind",
+            "image": "http://localhost:3001/api/images/f/f7/Shoes_E_Faded.png",
+            "icon": "http://localhost:3001/api/images/9/9c/Shoes_E_Unfaded_Icon.png",
+            "description": "Lonely Left Boot of Elvenkind are a common pair of Boots.",
+            "quote": "This is the left boot of the famous magical footwear. Unfortunately, useless without its pair.",
+            "type": 2,
+            "rarity": 1,
+            "price": 5,
+            "effects": [],
+            "id": 19371
+        },
+        {
+            "name": "Metallic Boots",
+            "image": "http://localhost:3001/api/images/6/67/Boots_Metal_Faded.png",
+            "icon": "http://localhost:3001/api/images/0/08/Boots_Metal_Unfaded_Icon.png",
+            "description": "Metallic Boots are a common pair of Boots.",
+            "quote": "Scratched in places, scorched in others, and worn thin at the heel, these boots bear the indelible marks of experience.",
+            "type": 2,
+            "rarity": 1,
+            "price": 200,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Athletics +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Metallic Boots",
+                    "description": "Athletics +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 3578
+        },
+        {
+            "name": "Monastic Boots",
+            "image": "http://localhost:3001/api/images/8/8f/Boots_Monk_Faded.png",
+            "icon": "http://localhost:3001/api/images/6/6c/Boots_Monk_Unfaded_Icon.png",
+            "description": "Monastic Boots are a common pair of Boots.",
+            "quote": "Made of tough, well-worn leather, these boots have survived years of use, and can survive many more.",
+            "type": 2,
+            "rarity": 1,
+            "price": 5,
+            "effects": [],
+            "id": 8651
+        },
+        {
+            "name": "Mystra's Grace",
+            "image": "http://localhost:3001/api/images/e/ef/Boots_Leather_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/4/4a/Boots_Leather_1_Unfaded_Icon.png",
+            "description": "Mystra's Grace is an uncommon pair of Boots that allow the wearer to cast the Feather Fall spell at will.",
+            "quote": "Wearing these boots is like walking on cotton clouds.",
+            "type": 2,
+            "rarity": 2,
+            "price": 70,
+            "effects": [
+                {
+                    "name": "Feather Fall|w=40",
+                    "description": "Can cast at will at Level 1.",
+                    "type": 2
+                }
+            ],
+            "id": 3523
+        },
+        {
+            "name": "Oathbreaker Knights Boots",
+            "image": "http://localhost:3001/api/images/f/f0/Boots_Metal_F_Faded.png",
+            "icon": "http://localhost:3001/api/images/f/fb/Boots_Metal_F_Unfaded_Icon.png",
+            "description": "Oathbreaker Knights Boots are a common medium-armor footwear that grants the wearer Athletics +1",
+            "quote": "Scratched in places, scorched in others, and worn thin at the heel, these boots bear the indelible marks of experience.",
+            "type": 2,
+            "rarity": 1,
+            "price": 30,
+            "effects": [],
+            "proficiency": 2,
+            "id": 11848
+        },
+        {
+            "name": "Simple Boots",
+            "image": "http://localhost:3001/api/images/6/6e/Shoes_Faded.png",
+            "icon": "http://localhost:3001/api/images/0/0a/Shoes_Unfaded_Icon.png",
+            "description": "Simple Boots are a common pair of Boots.",
+            "quote": "Made of tough, well-worn leather, these boots have survived years of use, and can survive many more.",
+            "type": 2,
+            "rarity": 1,
+            "price": 5,
+            "effects": [],
+            "id": 3519
+        },
+        {
+            "name": "Slinging Shoes",
+            "image": "http://localhost:3001/api/images/b/b3/Slinging_Shoes_Icon.png",
+            "icon": "http://localhost:3001/api/images/3/34/Slinging_Shoes_Unfaded_Icon.png",
+            "description": "Slinging Shoes is a pair of Boots that deal psychic damage and return to the wearer when thrown.",
+            "quote": "These shoes were formerly enchanted to return to their owner's feet. This caused a great deal of trouble for owners, who, while wearing a slipper or a nice heeled number, kept being kicked in the ankles by jealous footwear.",
+            "type": 2,
+            "rarity": 3,
+            "price": 35,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Dexterity Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Slinging Shoes",
+                    "description": "Dexterity Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "id": 12280
+        },
+        {
+            "name": "Spaceshunt Boots",
+            "image": "http://localhost:3001/api/images/5/50/Spaceshunt_Boots_Icon.png",
+            "icon": "http://localhost:3001/api/images/4/42/Spaceshunt_Boots_Unfaded_Icon.png",
+            "description": "Spaceshunt Boots is a rare pair of Boots that allow the wearer to cast the Dimension Door spell as an Action once per Long Rest.",
+            "quote": "These boots are well-maintained and clean, though their soles are thin from wear.",
+            "type": 2,
+            "rarity": 3,
+            "price": 190,
+            "effects": [
+                {
+                    "name": "Dimension Door|w=40",
+                    "description": "Can cast Dimension Door once per Long Rest.",
+                    "type": 2
+                }
+            ],
+            "id": 11613
+        },
+        {
+            "name": "Spiderstep Boots",
+            "image": "http://localhost:3001/api/images/5/59/Spiderstep_Boots_Icon.png",
+            "icon": "http://localhost:3001/api/images/b/b5/Spiderstep_Boots_Unfaded_Icon.png",
+            "description": "The Spiderstep Boots are an uncommon pair of Boots that allow the wearer to walk across webs freely.",
+            "quote": "Slightly sticky to the touch, these boots have an excellent grip.",
+            "type": 2,
+            "rarity": 2,
+            "price": 70,
+            "effects": [
+                {
+                    "name": "Spider Step",
+                    "description": "Immune to being Enwebbed. Your Movement Speed is not affected by web surfaces.",
+                    "type": 2
+                }
+            ],
+            "id": 3628
+        },
+        {
+            "name": "Springstep Boots",
+            "image": "http://localhost:3001/api/images/6/6a/Springstep_Boots_Icon.png",
+            "icon": "http://localhost:3001/api/images/a/a6/Springstep_Boots_Unfaded_Icon.png",
+            "description": "Springstep Boots is a pair of rare Boots that allows the wearer to gain Momentum whenever they dash in combat, further improving their Movement Speed.",
+            "quote": "Supple leather rebounds with every step, as if urging the wearer on.",
+            "type": 2,
+            "rarity": 3,
+            "price": 190,
+            "effects": [
+                {
+                    "name": "Swift Strides",
+                    "description": "When the wearer Dash|Dashes or takes a similar action during combat, they gain Momentum for 3.",
+                    "type": 2
+                }
+            ],
+            "id": 3470
+        },
+        {
+            "name": "Swiresy Shoes",
+            "image": "http://localhost:3001/api/images/6/60/Shoes_D_Faded.png",
+            "icon": "http://localhost:3001/api/images/a/a9/Shoes_D_Unfaded_Icon.png",
+            "description": "The Swiresy Shoes are a pair of rare Jumping distance and Acrobatics skill.",
+            "quote": "Likely fashioned in tribute to the extremely small, high-vaulting rascal who pillaged many a hen house - Lupperdiddle Swires.",
+            "type": 2,
+            "rarity": 3,
+            "price": 35,
+            "effects": [
+                {
+                    "name": "Refined Vaulting Jump",
+                    "description": "Jump (Bonus Action)|Jump distance is increased by 1.5m.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Acrobatics +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Swiresy Shoes",
+                    "description": "Acrobatics +1",
+                    "type": 2
+                }
+            ],
+            "id": 7886
+        },
+        {
+            "name": "The Speedy Lightfeet",
+            "image": "http://localhost:3001/api/images/7/7e/The_Speedy_Lightfeet_Icon.png",
+            "icon": "http://localhost:3001/api/images/1/1a/The_Speedy_Lightfeet_Unfaded_Icon.png",
+            "description": "The Speedy Lightfeet are a pair of rare Boots that allow the wearer to gain Lightning Charges when Dashing in combat.",
+            "quote": "It is said The Speedy Lightfeet were the first of many lightning inventions made by Yrre the Sparkstruck. The boots' old, frayed edges zap and crackle with even the slightest movement.",
+            "type": 2,
+            "rarity": 3,
+            "price": 240,
+            "effects": [
+                {
+                    "name": "Speedy Sparks",
+                    "description": "When the wearer Dash|Dashes or takes a similar action in combat, they gain 3 Lightning Charges.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Athletics +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "The Speedy Lightfeet",
+                    "description": "Athletics +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 1325
+        },
+        {
+            "name": "The Watersparkers",
+            "image": "http://localhost:3001/api/images/b/b3/The_Watersparkers_Icon.png",
+            "icon": "http://localhost:3001/api/images/1/10/The_Watersparkers_Unfaded_Icon.png",
+            "description": "The Watersparkers are a pair of rare Boots that allow the wearer to electrify water surfaces and gain Lightning Charges.",
+            "quote": "An enormous storm was raging the first time Yrre the Sparkstruck left the Underdark. The deep gnome's interest in lightning at once became an all-consuming obsession, and they would spend the rest of their years trying to recreate that storm's power themselves.",
+            "type": 2,
+            "rarity": 3,
+            "price": 190,
+            "effects": [
+                {
+                    "name": "Electrify Water",
+                    "description": "When the wearer stands in water during combat, it becomes electrified.",
+                    "type": 2
+                },
+                {
+                    "name": "Watersparks",
+                    "description": "If the wearer starts their turn on an electrified surface, they gain 3 Lightning Charges.",
+                    "type": 2
+                }
+            ],
+            "id": 1321
+        },
+        {
+            "name": "Tyrannical Jackboots",
+            "image": "http://localhost:3001/api/images/4/43/Tyrannical_Jackboots_Icon.png",
+            "icon": "http://localhost:3001/api/images/1/11/Tyrannical_Jackboots_Unfaded_Icon.png",
+            "description": "Tyrannical Jackboots are an uncommon pair of Boots that grant a +1 bonus to Charisma checks and Saving Throws.",
+            "quote": "Each step taken in Gortash's shoes is a reflection of the man himself: quick, sharp, and terrible.",
+            "type": 2,
+            "rarity": 2,
+            "price": 100,
+            "effects": [
+                {
+                    "name": "Scintillating",
+                    "description": "You gain a +1 bonus to Charisma Ability Checks and Saving Throws.",
+                    "type": 2
+                }
+            ],
+            "id": 12236
+        },
+        {
+            "name": "Unwanted Masterwork Greaves",
+            "image": "http://localhost:3001/api/images/0/02/Boots_Metal_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/9/9b/Boots_Metal_1_Unfaded_Icon.png",
+            "description": "Unwanted Masterwork Greaves are a rare pair of Boots that provide a bonus to Athletics. It is part of the Unwanted set.",
+            "quote": "These boots are stamped with the marks of a cancelled commission. Despite their discarded fate, they still hum with complex infernal arcana.",
+            "type": 2,
+            "rarity": 3,
+            "price": 240,
+            "effects": [],
+            "proficiency": 2,
+            "id": 13498
+        },
+        {
+            "name": "Varsh Ko'kuu's Boots",
+            "image": "http://localhost:3001/api/images/1/10/Shoes_A_Faded.png",
+            "icon": "http://localhost:3001/api/images/f/f8/Shoes_A_Unfaded_Icon.png",
+            "description": "The Varsh Ko'kuu's Boots are an uncommon pair of Boots that grant immunity to Acid Surfaces and Resistance to Acid|Acid damage.",
+            "quote": "Though the leather is slick with acid, the corrosive liquid doesn't seem to damage the boots - nor does it penetrate.",
+            "type": 2,
+            "rarity": 2,
+            "price": 70,
+            "effects": [
+                {
+                    "name": "Caretaker's Care",
+                    "description": "Acidic Surfaces don't affect you, and you are Acid|double|nocat=true Resistant to Acid damage.",
+                    "type": 2
+                }
+            ],
+            "id": 8706
+        },
+        {
+            "name": "Vital Conduit Boots",
+            "image": "http://localhost:3001/api/images/5/52/Boots_Metal_Githyanki_Magic_Faded.png",
+            "icon": "http://localhost:3001/api/images/1/1f/Boots_Metal_Githyanki_Magic_Unfaded_Icon.png",
+            "description": "The Vital Conduit Boots are a pair of rare Boots that grants the wearer temporary Hit Points when they cast a Spell that requires Concentration.",
+            "quote": "Tenser's notes on arcane displacement were not only read by wizards - other avid readers included entreprising smiths eager to break into the magic items market",
+            "type": 2,
+            "rarity": 3,
+            "price": 240,
+            "effects": [
+                {
+                    "name": "Vital Conduit",
+                    "description": "Grants the wearer 8 Temporary Hit Points when they cast a Spell that requires Concentration.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Athletics +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Vital Conduit Boots",
+                    "description": "Athletics +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 4764
         }
     ],
     "3": [
@@ -2173,6 +3092,1601 @@
             "proficiency": 0,
             "baseArmorClass": 10,
             "id": 9499
+        }
+    ],
+    "5": [
+        {
+            "name": "Abyss Beckoners",
+            "image": "http://localhost:3001/api/images/9/95/Gloves_Leather_F_Faded.png",
+            "icon": "http://localhost:3001/api/images/9/9b/Gloves_Leather_F_Unfaded_Icon.png",
+            "description": "The Abyss Beckoners are a very rare pair of gloves that improve the damage resistance of summons at the risk of driving them Demonspirit Madness|Mad.",
+            "quote": "Demons will bite their masters, slaves, comrades, and, on occasion, themselves. They bite on principle, and are functionally piranha with extra steps.",
+            "type": 5,
+            "rarity": 4,
+            "price": 450,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Demonspirit Aura|w=40: The wearer's summoned creatures have resistance to all damage except Psychic damage. At the start of the summoned creatures turn, it must succeed a Wisdom|dc=13 or be driven Demonspirit Madness|Mad.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Abyss Beckoners",
+                    "description": "Demonspirit Aura|w=40: The wearer's summoned creatures have resistance to all damage except Psychic damage. At the start of the summoned creatures turn, it must succeed a Wisdom|dc=13 or be driven Demonspirit Madness|Mad.",
+                    "type": 2
+                }
+            ],
+            "id": 8142
+        },
+        {
+            "name": "Bhaalist Gloves",
+            "image": "http://localhost:3001/api/images/6/65/Gloves_Leather_G_Faded.png",
+            "icon": "http://localhost:3001/api/images/c/c1/Gloves_Leather_G_Unfaded_Icon.png",
+            "description": "Bhaalist Gloves are a very rare pair of Gloves that allow the wearer to Garrote a target.\nSpoilerWarning",
+            "quote": "When the Lord of Murder, Bhaal, was rendered mortal, he knew his days were numbered. His vile machinations had gained him many enemies. Those days ran out and Bhaal was indeed killed, not by a god, but by a man with hawkish features named Cyric.",
+            "type": 5,
+            "rarity": 4,
+            "price": 540,
+            "effects": [
+                {
+                    "name": "Garrotte|w=40",
+                    "description": "Wrap a shadow rope around a Humanoid creature's throat to deal 1d10|Bludgeoning damage and start Garrotting it (STR|dc=14 to avoid becoming Garrotted for 3) Short Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Attack Rolls +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Bhaalist Gloves",
+                    "description": "Attack Rolls +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 11947
+        },
+        {
+            "name": "Blackguard's Gauntlets",
+            "image": "http://localhost:3001/api/images/7/75/Gloves_of_Metal_E_Faded.png",
+            "icon": "http://localhost:3001/api/images/f/f1/Gloves_of_Metal_E_Unfaded_Icon.png",
+            "description": "Blackguard's Gauntlets are a rare pair of Gauntlets that grant their wearer +1 Attack, +1 Strength Saving Throws, and allows them to cast Inflict Wounds as a 4th level spell once per Long Rest.",
+            "quote": "For some paladins, the iron-clad grip that an oath holds can be too much to bear. When these champions fail and falter, their hands that would guide turn cold, hard, and piercing.",
+            "type": 5,
+            "rarity": 3,
+            "price": 800,
+            "effects": [],
+            "proficiency": 2,
+            "id": 11825
+        },
+        {
+            "name": "Bonespike Gloves",
+            "image": "http://localhost:3001/api/images/4/42/Gloves_Barbarian_Magic_B_Faded.png",
+            "icon": "http://localhost:3001/api/images/1/11/Gloves_Barbarian_Magic_B_Unfaded_Icon.png",
+            "description": "Bonespike Gloves is a pair of very rare gloves that make your attacks ignore Resistance to Slashing, Piercing, and Bludgeoning damage.",
+            "quote": "These gloves were soaked in the marrow of a Dragon Turtle, its bones broken and their fluid drained in sloppy chunks into vats.",
+            "type": 5,
+            "rarity": 4,
+            "price": 300,
+            "effects": [
+                {
+                    "name": "Exoskeletal Reinforcement",
+                    "description": "Your attacks ignore Resistance to Slashing, Piercing, and Bludgeoning damage.",
+                    "type": 2
+                }
+            ],
+            "id": 8552
+        },
+        {
+            "name": "Bracers of Defence",
+            "image": "http://localhost:3001/api/images/0/05/Bracers_of_Defence_Icon.png",
+            "icon": "http://localhost:3001/api/images/a/a2/Bracers_of_Defence_Unfaded_Icon.png",
+            "description": "Bracers of Defence are a rare pair of Gloves that increase the wearer's Armour Class by 2 when unarmoured and not holding a shield.",
+            "quote": "Delicate twists of magical iron - painstakingly gilded - have been fashioned into these fortifying vambraces.",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [
+                {
+                    "name": "Become the Bulwark",
+                    "description": "You gain a +2 bonus to Armour Class as long as you are not wearing shield.",
+                    "type": 2
+                }
+            ],
+            "id": 6732
+        },
+        {
+            "name": "Braindrain Gloves",
+            "image": "http://localhost:3001/api/images/a/a3/Gloves_Leather_H_Faded.png",
+            "icon": "http://localhost:3001/api/images/2/20/Gloves_Leather_H_Unfaded_Icon.png",
+            "description": "Braindrain Gloves are an uncommon pair of Gloves that inflicts Mental Fatigue on a foe whenever the wearer deals Psychic|Psychic damage to them.",
+            "quote": "Somewhere deep in the spongy grey matter and little jiggly bits that comprise the brain, the memory of the slimy tadpole slithering over your eyeball lingers...",
+            "type": 5,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Mental Interference",
+                    "description": "When you deal Psychic damage, you also inflict Mental Fatigue for 2 turns.",
+                    "type": 2
+                }
+            ],
+            "id": 10738
+        },
+        {
+            "name": "Cerebral Citadel Gloves",
+            "image": "http://localhost:3001/api/images/7/7a/Gloves_Metal_H_Faded.png",
+            "icon": "http://localhost:3001/api/images/3/35/Gloves_Metal_H_Unfaded_Icon.png",
+            "description": "The Cerebral Citadel Gloves are rare gloves that provide a bonus to Attack Rolls and Saving Throws when a character Charms or Frightens a creature.",
+            "quote": "The taut violet leather is drier than snakeskin, and puckered at each knuckle with shallow mouth-shaped pits.",
+            "type": 5,
+            "rarity": 3,
+            "price": 290,
+            "effects": [
+                {
+                    "name": "Illithid Euphoria",
+                    "description": "Charmed|Charm or Frightened|Frighten a creature to gain a d4|Piercing 1d4 bonus to Attack Rolls and Saving Throws",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Cerebral Citadel Gloves",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "id": 11911
+        },
+        {
+            "name": "Cindersnap Gloves",
+            "image": "http://localhost:3001/api/images/c/c3/Leather_Gloves_Icon.png",
+            "icon": "http://localhost:3001/api/images/c/c0/Leather_Gloves_Unfaded_Icon.png",
+            "description": "Cindersnap Gloves are a rare pair of Gloves.",
+            "quote": "'What moves faster, a loosed crossbow bolt or a windblown cinder? Let's find out.' - Overheard during a Flaming Fist raid in Baldur's Gate.",
+            "type": 5,
+            "rarity": 3,
+            "price": 240,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Cast Protection from Missiles once per Short Rest:",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Target gains Resistance to Physical damage from ranged weapons.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Cindersnap Gloves",
+                    "description": "Cast Protection from Missiles once per Short Rest:\nTarget gains Resistance to Physical damage from ranged weapons.",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 10587
+        },
+        {
+            "name": "Craterflesh Gloves",
+            "image": "http://localhost:3001/api/images/b/b0/Gloves_Metal_C_Faded.png",
+            "icon": "http://localhost:3001/api/images/1/16/Gloves_Metal_C_Unfaded_Icon.png",
+            "description": "Craterflesh Gloves are a rare pair of Force}} damage on a [[Critical Hit.\nSpoilerWarning",
+            "quote": "Indents on the fingertips of these gloves are ringed with tiny meteorites, lined in a shimmering purple light rather than the rich red of astral flame.",
+            "type": 5,
+            "rarity": 3,
+            "price": 290,
+            "effects": [
+                {
+                    "name": "Craterous Wounds",
+                    "description": "Whenever you score a Critical Hit, deal an additional 1d6|Force|drs=t damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Craterflesh Gloves",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 11937
+        },
+        {
+            "name": "Daredevil Gloves",
+            "image": "http://localhost:3001/api/images/b/b1/Gloves_Leather_D_Faded.png",
+            "icon": "http://localhost:3001/api/images/8/82/Gloves_Leather_D_Unfaded_Icon.png",
+            "description": "Daredevil Gloves are a rare pair of Gloves that enhance Spell Attack Rolls and enable casting spells without the disadvantage of having an adjacent enemy.",
+            "quote": "Delicate twists of magical iron - painstakingly gilded - have been fashioned into these fortifying vambraces.",
+            "type": 5,
+            "rarity": 3,
+            "price": 240,
+            "effects": [
+                {
+                    "name": "Doom Lobber",
+                    "description": "The wearer gains a +1 bonus to Spell Attack Rolls.",
+                    "type": 2
+                },
+                {
+                    "name": "Daredevil Proximity",
+                    "description": "Your Ranged Spell Attacks are made as melee spell attacks when you are adjacent to a hostile creaure. This effect can be toggled off.",
+                    "type": 2
+                }
+            ],
+            "id": 8694
+        },
+        {
+            "name": "Dark Displacement Gloves",
+            "image": "http://localhost:3001/api/images/a/a3/Gloves_Leather_H_Faded.png",
+            "icon": "http://localhost:3001/api/images/2/20/Gloves_Leather_H_Unfaded_Icon.png",
+            "description": "Dark Displacement Gloves are a rare pair of Gloves that grant their wearer a +1 Attack Roll bonus when attacking with thrown items. They can swap positions with the target if they fail a Dexterity Saving Throw. They also grant +1 Sleight of Hand.",
+            "quote": "Rudimentary teleportation sigils mark the palms of these gloves, like coiled snakes in a bath of pitch.",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [
+                {
+                    "name": "Subtle Swap",
+                    "description": "You gain a +1 bonus to Attack Rolls when Throw|throwing, and may swap positions with the target if they fail a Dexterity SavingThrow.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Sleight of Hand +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Dark Displacement Gloves",
+                    "description": "Sleight of Hand +1",
+                    "type": 2
+                }
+            ],
+            "id": 11796
+        },
+        {
+            "name": "Dark Justiciar Gauntlets (Rare)",
+            "image": "http://localhost:3001/api/images/d/d5/Dark_Justiciar_Gauntlets_Icon.png",
+            "icon": "http://localhost:3001/api/images/f/ff/Dark_Justiciar_Gauntlets_Unfaded_Icon.png",
+            "description": "The Dark Justiciar Gauntlets are a rare pair of Gloves that cause weapon attacks to deal an additional Necrotic|1d4 Necrotic damage. It also grants better Strengths and allows the wearer to cast Beckoning Darkness once per turn.",
+            "quote": "The grip of darkness is a fear felt by many. The grip of a Dark Justiciar's Gauntlets is a sacred fear reserved for an unfortunate few.",
+            "type": 5,
+            "rarity": 3,
+            "price": 290,
+            "effects": [
+                {
+                    "name": "Umbral Attack",
+                    "description": "Your weapon attacks deal an additional 1d4|Necrotic damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Can cast Generic Darkness Icon|Beckoning Darkness as a 4th level spell using Strength as the Spellcasting Ability.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Per turn",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Dark Justiciar Gauntlets (Rare)",
+                    "description": "Strength Saving Throws +1\nCan cast Generic Darkness Icon|Beckoning Darkness as a 4th level spell using Strength as the Spellcasting Ability.\nPer turn",
+                    "type": 2
+                }
+            ],
+            "id": 13947
+        },
+        {
+            "name": "Dark Justiciar Gauntlets (Uncommon)",
+            "image": "http://localhost:3001/api/images/d/d5/Dark_Justiciar_Gauntlets_Icon.png",
+            "icon": "http://localhost:3001/api/images/f/ff/Dark_Justiciar_Gauntlets_Unfaded_Icon.png",
+            "description": "The Dark Justiciar Gauntlets are an uncommon pair of Gloves that cause weapon attacks to deal an additional Necrotic|1d4 Necrotic damage.",
+            "quote": "The grip of darkness is a fear felt by many. The grip of a Dark Justiciar's Gauntlets is a sacred fear reserved for an unfortunate few.",
+            "type": 5,
+            "rarity": 2,
+            "price": 110,
+            "effects": [
+                {
+                    "name": "Umbral Attack",
+                    "description": "Your weapon attacks deal an additional 1d4|Necrotic damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Dark Justiciar Gauntlets (Uncommon)",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "id": 10670
+        },
+        {
+            "name": "Drow Leather Gloves",
+            "image": "http://localhost:3001/api/images/4/44/Gloves_Leather_Drow_Faded.png",
+            "icon": "http://localhost:3001/api/images/f/f8/Gloves_Leather_Drow_Unfaded_Icon.png",
+            "description": "Drow Leather Gloves are a common pair of Gloves worn by the Drow.",
+            "quote": "Fabricated from lizard hides in the depths of the Underdark, these gloves were never meant to see the light of day.",
+            "type": 5,
+            "rarity": 1,
+            "price": 20,
+            "effects": [],
+            "id": 3533
+        },
+        {
+            "name": "Flawed Helldusk Gloves",
+            "image": "http://localhost:3001/api/images/d/d8/Gloves_Metal_G_Faded.png",
+            "icon": "http://localhost:3001/api/images/c/cb/Gloves_Metal_G_Unfaded_Icon.png",
+            "description": "Flawed Helldusk Gloves are a rare pair of Fire|1d4 Fire}} damage to weapon attacks. Unarmed attacks deal an additional Necrotic|1d4 Necrotic damage and have a chance to inflict [[Condition#Bleeding|Bleeding.",
+            "quote": "'Beneath those horrible sounds of... well, let's call it what it was: torment, Beneath the tormented screams I heard this moaning sound like many people in pain, and I heard the ringing of a great hammer. Carixim's forge was close.' - Overheard from the smith Dammon",
+            "type": 5,
+            "rarity": 3,
+            "price": 290,
+            "effects": [
+                {
+                    "name": "Lesser Infernal Touch",
+                    "description": "Your weapon attacks deal an additional 1d4|Fire damage. Your Unarmed Strike|unarmed attacks deal an additional 1d4|Necrotic damage, and can possibly inflict Bleeding (CON|dc=13 to negate Bleeding).",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength SavingThrows +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Flawed Helldusk Gloves",
+                    "description": "Strength SavingThrows +1",
+                    "type": 2
+                }
+            ],
+            "id": 10196
+        },
+        {
+            "name": "Fleetfingers",
+            "image": "http://localhost:3001/api/images/5/53/Fleetfingers_Icon.png",
+            "icon": "http://localhost:3001/api/images/b/b0/Fleetfingers_Unfaded_Icon.png",
+            "description": "The Fleetfingers are an uncommon pair of Gloves that allow the wearer to take a running leap.",
+            "quote": "Plain leather with a faint but unmistakable buzz - as if eager to put idle hands to work.",
+            "type": 5,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Running Jump",
+                    "description": "Once per turn, after the wearer Dash|Dashes or takes a similar action, they can Jump (Bonus Action)|Jump without using a bonus.",
+                    "type": 2
+                }
+            ],
+            "id": 3521
+        },
+        {
+            "name": "Gauntlet of the Tyrant",
+            "image": "http://localhost:3001/api/images/4/45/Gauntlet_of_the_Tyrant_Icon.png",
+            "icon": "http://localhost:3001/api/images/e/e7/Gauntlet_of_the_Tyrant_Unfaded_Icon.png",
+            "description": "Gauntlet of the Tyrant is a gauntlet that is initially wielded by Lord Enver Gortash",
+            "quote": "A tyrant's grip must be one of cool, unforgiving, and intricately realised steel. It cannot budge, cannot falter, no matter the pressure, and its fingertips must deeply pierce those who would struggle against it.",
+            "type": 5,
+            "rarity": 4,
+            "price": 300,
+            "effects": [
+                {
+                    "name": "Command|w=40",
+                    "description": "Cast the Command spell as a third level spell on three creatures once per Long Rest.",
+                    "type": 2
+                }
+            ],
+            "id": 9679
+        },
+        {
+            "name": "Gauntlets of Frost Giant Strength",
+            "image": "http://localhost:3001/api/images/1/19/Gauntlets_of_Hill_Giant_Strength_Icon.png",
+            "description": "Gauntlets of Hill Giant Strength are very rare Gloves that can be obtained from the House of Hope.",
+            "quote": "Your basic hill giant is just a landslide with a digestive system.",
+            "type": 5,
+            "rarity": 4,
+            "price": 540,
+            "effects": [],
+            "proficiency": 0,
+            "id": 8557
+        },
+        {
+            "name": "Gauntlets of Surging Accuracy",
+            "image": "http://localhost:3001/api/images/7/7f/Gloves_Scalemail_A_Faded.png",
+            "icon": "http://localhost:3001/api/images/c/cd/Gloves_Scalemail_A_Unfaded_Icon.png",
+            "description": "Gauntlets of Surging Accuracy are a rare pair of Gloves that give the wearer a +1d4 bonus to Attack Rolls for the rest of their turn when using Action Surge.",
+            "quote": "Made from steel hammered thin, these gauntlets are a fine investment for any warrior.",
+            "type": 5,
+            "rarity": 3,
+            "price": 300,
+            "effects": [
+                {
+                    "name": "Surge Accuracy",
+                    "description": "When you use Action Surge Icon|Action Surge, gain a d4|Piercing +1d4 bonus to Attack Rolls for the rest of your turn.",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 10581
+        },
+        {
+            "name": "Gauntlets of the Warmaster",
+            "image": "http://localhost:3001/api/images/7/75/Gloves_of_Metal_E_Faded.png",
+            "icon": "http://localhost:3001/api/images/f/f1/Gloves_of_Metal_E_Unfaded_Icon.png",
+            "description": "Gauntlets of the Warmaster are a very rare pair of Gauntlets that grant their wielder +1 on Manoeuvres to Disadvantage.",
+            "quote": "Clothing doesn't tend to have much personality. That comes down to how it's worn. Yet these gloves exude a confidence, an intangible aura of expertise.",
+            "type": 5,
+            "rarity": 4,
+            "price": 1600,
+            "effects": [],
+            "proficiency": 2,
+            "id": 10892
+        },
+        {
+            "name": "Gemini Gloves",
+            "image": "http://localhost:3001/api/images/4/4e/Gemini_Gloves_Icon.png",
+            "icon": "http://localhost:3001/api/images/9/96/Gemini_Gloves_Unfaded_Icon.png",
+            "description": "The Gemini Gloves are a very rare pair of Gloves that grants the wearer the to ability to cast Cantrip that can target foes or allies twice.",
+            "quote": "Designed by an arcane smith with half-vision. He made these gloves to make sure his spells hit their target.",
+            "type": 5,
+            "rarity": 4,
+            "price": 720,
+            "effects": [],
+            "proficiency": 0,
+            "id": 8825
+        },
+        {
+            "name": "Gloves of Archery",
+            "image": "http://localhost:3001/api/images/5/50/Gloves_of_Archery_icon.png",
+            "description": "Gloves of Archery are an uncommon Gloves that grants the wearer Proficiency with Longbows and Shortbows, as well as +2 damage with ranged weapon attacks.",
+            "quote": "Banded in dark iron, these gloves are embossed with the brass likeness of an elf against a trio of arrows in flight.",
+            "type": 5,
+            "rarity": 2,
+            "price": 60,
+            "effects": [
+                {
+                    "name": "Corellon's Guiding Hand",
+                    "description": "You gain Proficiency with Longbows and Shortbows. In addition, your ranged weapon attacks deal an additional 2 damage.",
+                    "type": 2
+                }
+            ],
+            "notes": ["", "UUID: 6d84b9e5-e9e4-477c-8d5b-a3f232a4415a"],
+            "proficiency": 0,
+            "id": 6784
+        },
+        {
+            "name": "Gloves of Baneful Striking",
+            "image": "http://localhost:3001/api/images/a/a2/Gloves_Leather_B_Faded.png",
+            "icon": "http://localhost:3001/api/images/d/dd/Gloves_Leather_B_Unfaded_Icon.png",
+            "description": "The Gloves of Baneful Striking are an uncommon pair of gloves.",
+            "quote": "The slightest movement of leather makes a dark energy seep out of the gloves.",
+            "type": 5,
+            "rarity": 2,
+            "price": 225,
+            "effects": [
+                {
+                    "name": "Baneful Strike",
+                    "description": "Whenever you deal damage with a weapon attack, the target receives a d4|Piercing -1d4 penalty to its SavingThrow against your next spell.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "2",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of Baneful Striking",
+                    "description": "2",
+                    "type": 2
+                }
+            ],
+            "id": 11756
+        },
+        {
+            "name": "Gloves of Battlemage's Power",
+            "image": "http://localhost:3001/api/images/b/b1/Gloves_Metal_I_Faded.png",
+            "icon": "http://localhost:3001/api/images/8/8f/Gloves_Metal_I_Unfaded_Icon.png",
+            "description": "Gloves of Battlemage's Power is a set of rare Gloves that allows the wearer to gain Arcane Acuity Condition Icon|Arcane Acuity (Condition)|Arcane Acuity for 1 turn whenever their Weapon Attack Roll inflicts a condition.",
+            "quote": "Bands of blue light snap and contract when the gloved fingertips are pressed together - evidence of the arcane polarity linking them.",
+            "type": 5,
+            "rarity": 3,
+            "price": 290,
+            "effects": [],
+            "proficiency": 0,
+            "id": 10875
+        },
+        {
+            "name": "Gloves of Belligerent Skies",
+            "image": "http://localhost:3001/api/images/e/e4/Gloves_of_Belligerent_Skies_Icon.png",
+            "icon": "http://localhost:3001/api/images/d/d0/Gloves_of_Belligerent_Skies_Unfaded_Icon.png",
+            "description": "The Gloves of Belligerent Skies are an uncommon pair of Gloves that inflict Reverberation when the wearer deals Thunder, Lightning or Radiant damage.",
+            "quote": "Balling your fingers into fists while wearing these gloves causes a sonorous chime, like the fusion of a tempest and a church bell, to resound inside your skull.",
+            "type": 5,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Thunderous Conversion",
+                    "description": "When the wearer deals Thunder, Lightning, or Radiant damage, inflict 2 turns of Reverberation upon the target(s).",
+                    "type": 2
+                }
+            ],
+            "id": 8712
+        },
+        {
+            "name": "Gloves of Cinder and Sizzle",
+            "image": "http://localhost:3001/api/images/6/60/Gloves_of_Cinder_and_Sizzle_Icon.png",
+            "icon": "http://localhost:3001/api/images/b/b7/Gloves_of_Cinder_and_Sizzle_Unfaded_Icon.png",
+            "description": "The Gloves of Cinder and Sizzle are a rare pair of Scorching Ray}} once per [[Long Rest.",
+            "quote": "It was through scrying and observing blazing elementals that the monks of Plumgully Temple mastered the art of fighting fire with fists, and vice versa.",
+            "type": 5,
+            "rarity": 3,
+            "price": 240,
+            "effects": [
+                {
+                    "name": "Dragonfire Fists",
+                    "description": "Your Unarmed Strike|unarmed attacks deal an additional 1d4|Fire.",
+                    "type": 2
+                },
+                {
+                    "name": "Scorching Ray|w=40",
+                    "description": "Can cast at Level 3 (Long Rest).",
+                    "type": 2
+                }
+            ],
+            "id": 6897
+        },
+        {
+            "name": "Gloves of Crushing",
+            "image": "http://localhost:3001/api/images/f/f7/Gloves_Cloth_A_Faded.png",
+            "icon": "http://localhost:3001/api/images/9/9b/Gloves_Cloth_A_Unfaded_Icon.png",
+            "description": "Gloves of Crushing are a rare pair of Gloves that enhance unarmed Attack Rolls and unarmed attacks damage.",
+            "quote": "Stiched into the fabric of these gloves are the words: Largest and Largesse, For The Discerning Murderer.",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [
+                {
+                    "name": "Crushing Blows",
+                    "description": "The wearer gains a +1 bonus to Unarmed Strike|unarmed Attack Rolls and their unarmed attacks deal an additional 2|Bludgeoning damage.",
+                    "type": 2
+                }
+            ],
+            "id": 8837
+        },
+        {
+            "name": "Gloves of Dexterity",
+            "image": "http://localhost:3001/api/images/2/27/Gloves_Leather_2_Faded.png",
+            "icon": "http://localhost:3001/api/images/6/64/Gloves_Leather_2_Unfaded_Icon.png",
+            "description": "The Gloves of Dexterity are a very rare pair of gloves that give a character 18 Dexterity and increase their Attack Rolls by 1.",
+            "quote": "The point at which the gloves meet the wrist is form-fitting and very snug; almost a hint at the supple quickness and skill these gloves permit the wearer.",
+            "type": 5,
+            "rarity": 4,
+            "price": 300,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Set the wearer's Dexterity score to 18. The enchantment has no effect if their Dexterity score is higher without it.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of Dexterity",
+                    "description": "Set the wearer's Dexterity score to 18. The enchantment has no effect if their Dexterity score is higher without it.",
+                    "type": 2
+                }
+            ],
+            "id": 6895
+        },
+        {
+            "name": "Gloves of Fire Resistance",
+            "image": "http://localhost:3001/api/images/c/cb/Gloves_Leather_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/c/cb/Gloves_Leather_1_Unfaded_Icon.png",
+            "description": "The Gloves of Fire Resistance are an uncommon pair of gloves that grant the wearer Resistance to Fire|Fire damage while heavily wounded.",
+            "quote": "These gloves are cool to the touch, chilling the tips of the wearer's fingers.",
+            "type": 5,
+            "rarity": 2,
+            "price": 260,
+            "effects": [
+                {
+                    "name": "Chilling Grace",
+                    "description": "When the wearer has 50% Fire}} Fire M [[Resistance.",
+                    "type": 2
+                }
+            ],
+            "id": 3454
+        },
+        {
+            "name": "Gloves of Flint and Steel",
+            "image": "http://localhost:3001/api/images/c/cb/Gloves_Leather_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/c/cb/Gloves_Leather_1_Unfaded_Icon.png",
+            "description": "The Gloves of Flint and Steel are an uncommon pair of gloves that allow the wearer to set enemies ablaze whenever they deal Fire damage.",
+            "quote": "The inside of these gloves are roughened from the pull and release of countless arrows.",
+            "type": 5,
+            "rarity": 2,
+            "price": 310,
+            "effects": [
+                {
+                    "name": "Hot Little Hands",
+                    "description": "When the wearer deals Fire damage, the target has to succeed a Constitution Saving Throw or start Burning.",
+                    "type": 2
+                }
+            ],
+            "id": 3453
+        },
+        {
+            "name": "Gloves of Hail of Thorns",
+            "image": "http://localhost:3001/api/images/c/cb/Gloves_Leather_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/c/cb/Gloves_Leather_1_Unfaded_Icon.png",
+            "description": "Gloves of Hail of Thorns are an uncommon pair of Gloves that grants the wearer the to ability to cast Hail of Thorns.",
+            "quote": "Whoever previously owned these gloves marked each with a series of thirty superficial scrapes, six per finger. What they indicate is unclear.",
+            "type": 5,
+            "rarity": 2,
+            "price": 140,
+            "effects": [
+                {
+                    "name": "Hail Of Thorns|w=40",
+                    "description": "Cast the spell Hail of Thorns once per Short Rest",
+                    "type": 2
+                }
+            ],
+            "id": 6825
+        },
+        {
+            "name": "Gloves of Heroism",
+            "image": "http://localhost:3001/api/images/4/47/Gloves_Metal_1_Faded.png",
+            "description": "The Gloves of Heroism are an uncommon pair of gloves that grants you Heroism whenever you use your Channel Oath spells.",
+            "quote": "Suede covers the palms of these gloves — ensuring a soft, comforting touch for anyone in need of help.",
+            "type": 5,
+            "rarity": 2,
+            "price": 110,
+            "effects": [
+                {
+                    "name": "Warding Hands",
+                    "description": "When you use your Channel Oath spells, you gain Heroism.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of Heroism",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 12312
+        },
+        {
+            "name": "Gloves of Missile Snaring",
+            "image": "http://localhost:3001/api/images/3/3a/Gloves_of_Missile_Snaring_Icon.png",
+            "icon": "http://localhost:3001/api/images/0/0e/Gloves_of_Missile_Snaring_Unfaded_Icon.png",
+            "description": "Gloves of Missile Snaring is a rare pair of gloves that allows the wearer to reduce incoming ranged damage as a Reaction.",
+            "quote": "These gloves seem to meld to your skin - supple, snug and dextrous as one could hope for.",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "This costs a Reaction to use.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of Missile Snaring",
+                    "description": "This costs a Reaction to use.",
+                    "type": 2
+                }
+            ],
+            "id": 7913
+        },
+        {
+            "name": "Gloves of Power",
+            "image": "http://localhost:3001/api/images/c/cb/Gloves_Leather_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/c/cb/Gloves_Leather_1_Unfaded_Icon.png",
+            "description": "Gloves of Power are an uncommon pair of Gloves that allows the wearer to inflict Bane on weapon attacks.",
+            "quote": "Blessed by Priestess Gut, these gauntlets provide additional aid to any who bear the Absolute's mark upon their flesh.",
+            "type": 5,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Absolute's Bane",
+                    "description": "On a melee hit, possibly inflict a d4|Slashing -1d4 penalty to the target's Attack Rolls and SavingThrows.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Sleight of Hand +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of Power",
+                    "description": "Sleight of Hand +1",
+                    "type": 2
+                }
+            ],
+            "id": 3430
+        },
+        {
+            "name": "Gloves of Soul Catching",
+            "image": "http://localhost:3001/api/images/f/f9/Gloves_of_Soul_Catching_Icon.png",
+            "icon": "http://localhost:3001/api/images/1/11/Gloves_of_Soul_Catching_Unfaded_Icon.png",
+            "description": "The Gloves of Soul Catching are a legendary pair of Gloves that grant many benefits to its wearer. It is a reward for the quest Save Hope.",
+            "quote": "Formerly worn by Autumnal Baskin, a professional meditator turned bare-knuckle champion, who gained enlightenment via two methods. The second was getting a lot of fighting acumen. Advanced cosmic harmony is a nose. Sometimes you've got to break it a few times to get the best of things.",
+            "type": 5,
+            "rarity": 5,
+            "price": 960,
+            "effects": [],
+            "proficiency": 0,
+            "id": 11418
+        },
+        {
+            "name": "Gloves of Succour",
+            "image": "http://localhost:3001/api/images/7/78/Metallic_Gloves_Magical_Icon.png",
+            "description": "The Gloves of Succour are an uncommon pair of gloves that grant a creature healed by a Paladin's Lay on Hands resistance against weapon attacks.",
+            "quote": "Suede covers the palms of these gloves - ensuring a soft, comforting touch for anyone in need of help.",
+            "type": 5,
+            "rarity": 2,
+            "price": 350,
+            "effects": [
+                {
+                    "name": "Warding Hands",
+                    "description": "When you use Lay on Hands on a target with 50% or less of its Hit Points left, you also grant it Resistance against Bludgeoning, Piercing, and Slashing damage dealt by weapon attacks.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of Succour",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 3437
+        },
+        {
+            "name": "Gloves of the Automaton",
+            "image": "http://localhost:3001/api/images/4/47/Gloves_Metal_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/9/90/Gloves_Metal_1_Unfaded_Icon.png",
+            "description": "The Gloves of the Automaton are a rare pair of Construct and they gain Advantage on weapon attacks for 10 turns.",
+            "quote": "Llena the Many-Times-Married would use these gloves to blend in with the statues in her courtyard. This would allow her to avoid her plethora of husbands. Anything for a moment's peace.",
+            "type": 5,
+            "rarity": 3,
+            "price": 290,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Grants Circuitry Interface for 10 turns, once per Short Rest:",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "You are considered a Construct. Your weapon Attack Rolls have Advantage, and you have Lightning M resistance to Lightning damage.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Bonus",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Short Rest",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of the Automaton",
+                    "description": "Grants Circuitry Interface for 10 turns, once per Short Rest:\nYou are considered a Construct. Your weapon Attack Rolls have Advantage, and you have Lightning M resistance to Lightning damage.\nBonus\nShort Rest",
+                    "type": 2
+                }
+            ],
+            "id": 9533
+        },
+        {
+            "name": "Gloves of the Balanced Hands",
+            "image": "http://localhost:3001/api/images/a/a3/Gloves_Leather_H_Faded.png",
+            "icon": "http://localhost:3001/api/images/2/20/Gloves_Leather_H_Unfaded_Icon.png",
+            "description": "Gloves of the Balanced Hands are a rare pair of Gloves that adds your Ability Modifier to the damage when you make an attack with your off-hand weapon.",
+            "quote": "Formerly worn by Doubleway Douglas Fairbanks, who was so ambidextrous his tears ran down the back of his neck.",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Two-Weapon Fighting|w=40: When you make an attack with your off-hand weapon, you can add your Ability Modifier to the damage of the attack.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of the Balanced Hands",
+                    "description": "Two-Weapon Fighting|w=40: When you make an attack with your off-hand weapon, you can add your Ability Modifier to the damage of the attack.",
+                    "type": 2
+                }
+            ],
+            "id": 10191
+        },
+        {
+            "name": "Gloves of The Duellist",
+            "image": "http://localhost:3001/api/images/9/95/Gloves_Leather_F_Faded.png",
+            "icon": "http://localhost:3001/api/images/9/9b/Gloves_Leather_F_Unfaded_Icon.png",
+            "description": "Gloves of The Duellist are a rare pair of Gloves that enhance melee weapon Attack Rolls when the wearer only holds one weapon in the main hand.",
+            "quote": "Ways of beginning a duel have varied over the years. Perhaps the most famous is the Bildumbacher Method, in which the instigator drips paint thinner onto the opponent's socks.",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [
+                {
+                    "name": "Duelling Gloves",
+                    "description": "While only holding one weapon in your main hand and nothing in your free hand, gain a +2 bonus to melee weapon Attack Rolls.",
+                    "type": 2
+                }
+            ],
+            "id": 8844
+        },
+        {
+            "name": "Gloves of the Growling Underdog",
+            "image": "http://localhost:3001/api/images/7/75/Gloves_of_Metal_E_Faded.png",
+            "icon": "http://localhost:3001/api/images/f/f1/Gloves_of_Metal_E_Unfaded_Icon.png",
+            "description": "The Gloves of the Growling Underdog are an uncommon pair of Gloves that grant its wearer Advantage on their melee attack rolls while surrounded by 2 or more enemies.",
+            "quote": "Crowded taprooms. Packed feast halls. Bustling market bazaars. Chances to be social? Sure. Chance to be violent. Absolutely.",
+            "type": 5,
+            "rarity": 2,
+            "price": 110,
+            "effects": [
+                {
+                    "name": "Underdog's Bravery",
+                    "description": "The wearer gains Advantage on melee Attack Rolls while surrounded by 2 or more foes.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of the Growling Underdog",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "id": 4762
+        },
+        {
+            "name": "Gloves of Thievery",
+            "image": "http://localhost:3001/api/images/a/a9/Gloves_of_Thievery_Icon.png",
+            "icon": "http://localhost:3001/api/images/4/41/Gloves_of_Thievery_Unfaded_Icon.png",
+            "description": "Gloves of Thievery are an uncommon pair of Gloves that give the wearer Advantage on Sleight of Hand checks.",
+            "quote": "Useful for bank vaults, locked chests and bolted barns.",
+            "type": 5,
+            "rarity": 2,
+            "price": 60,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Advantage on Sleight of Hand Checks.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of Thievery",
+                    "description": "Advantage on Sleight of Hand Checks.",
+                    "type": 2
+                }
+            ],
+            "id": 6826
+        },
+        {
+            "name": "Gloves of Uninhibited Kushigo",
+            "image": "http://localhost:3001/api/images/0/07/Gloves_of_Uninhibited_Kushigo_Icon.png",
+            "icon": "http://localhost:3001/api/images/5/56/Gloves_of_Uninhibited_Kushigo_Unfaded_Icon.png",
+            "description": "Gloves of Uninhibited Kushigo is a rare pair of gloves that deals additional damage with Improvised Weapons attacks.",
+            "quote": "Forsaking his infamous  armour, Kushigo left Irishi's body and  wandered naked, without thought or care, into the barren countryside. The land was flat and desolate under the red-gold sun, compared to his lonely heart, it seemed alive with joy.",
+            "type": 5,
+            "rarity": 3,
+            "price": 240,
+            "effects": [],
+            "id": 8075
+        },
+        {
+            "name": "Helldusk Gloves",
+            "image": "http://localhost:3001/api/images/3/3c/Helldusk_Gloves_Icon.png",
+            "icon": "http://localhost:3001/api/images/1/14/Helldusk_Gloves_Unfaded_Icon.png",
+            "description": "Helldusk Gloves are a very rare pair of Gloves that grant bonuses to spellcasting, weapon attacks, and unarmed attacks.",
+            "quote": "What precisely confers eternal punishment, reward, absolution? Perhaps it's not just belief in a god. Perhaps the deciding factor is whether the gods believe in you.",
+            "type": 5,
+            "rarity": 4,
+            "price": 540,
+            "effects": [],
+            "proficiency": 0,
+            "id": 8541
+        },
+        {
+            "name": "Hellrider's Pride",
+            "image": "http://localhost:3001/api/images/4/47/Gloves_Metal_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/9/90/Gloves_Metal_1_Unfaded_Icon.png",
+            "description": "The Hellrider's Pride are an uncommon pair of Gloves that grant a creature resistance to the physical damage of weapon attacks when healed by the wearer of these gauntlets.",
+            "quote": "A waft of sulphur emanates from these proudly-kept gauntlets.",
+            "type": 5,
+            "rarity": 2,
+            "price": 110,
+            "effects": [
+                {
+                    "name": "Helm's Protection",
+                    "description": "When you heal another creature, it gains Resistance to Bludgeoning, Piercing, and Slashing damage dealt by weapon attacks.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Hellrider's Pride",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "id": 3443
+        },
+        {
+            "name": "Herbalist's Gloves",
+            "image": "http://localhost:3001/api/images/c/cb/Gloves_Leather_1_Faded.png",
+            "icon": "http://localhost:3001/api/images/c/cb/Gloves_Leather_1_Unfaded_Icon.png",
+            "description": "The Herbalist's Gloves are an uncommon pair of gloves that cleanse poison from those the wearer heals.",
+            "quote": "The leather smells faintly of herbs, as if washed in an herbal bath.",
+            "type": 5,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Cleansing Touch",
+                    "description": "If the wearer heals a Poisoned creature, it is no longer poisoned.",
+                    "type": 2
+                }
+            ],
+            "id": 3436
+        },
+        {
+            "name": "Hr'a'cknir Bracers",
+            "image": "http://localhost:3001/api/images/a/a2/Hr'a'cknir_Bracers_Icon.png",
+            "icon": "http://localhost:3001/api/images/7/74/Hr'a'cknir_Bracers_Unfaded_Icon.png",
+            "description": "Hr'a'cknir Bracers is a very rare set of Telekinesis Icon|Telekinesis}} once per [[Short Rest.",
+            "quote": "The planar silver cladding of these forearm bracers allows the wielder to channel the latent astral energies floating in the Weave",
+            "type": 5,
+            "rarity": 4,
+            "price": 540,
+            "effects": [],
+            "proficiency": 0,
+            "id": 10733
+        },
+        {
+            "name": "Ichorous Gloves",
+            "image": "http://localhost:3001/api/images/2/27/Gloves_Leather_2_Faded.png",
+            "icon": "http://localhost:3001/api/images/6/64/Gloves_Leather_2_Unfaded_Icon.png",
+            "description": "Ichorous Gloves are an uncommon set of Noxious Fumes on targets that are dealt Acid|Acid damage.",
+            "quote": "These gloves smell like beef mince left to rot in a privy pail.",
+            "type": 5,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Ichorous Corrosion",
+                    "description": "When the wearer deals Acid damage, they also inflict Noxious Fumes on the target(s).",
+                    "type": 2
+                }
+            ],
+            "id": 9551
+        },
+        {
+            "name": "Jhannyl's Gloves",
+            "image": "http://localhost:3001/api/images/7/70/Gloves_Leather_3_Faded.png",
+            "icon": "http://localhost:3001/api/images/f/f6/Gloves_Leather_3_Unfaded_Icon.png",
+            "description": "Jhannyl's Gloves are a rare pair of Lesser Restoration Icon|Lesser Restoration}} on themselves when they become [[Blinded, Paralysed or Poisoned.",
+            "quote": "Divine runes accentuate the finger pads. While not a religious sect, the Harpers do not demand the occlusion of religion in their members.",
+            "type": 5,
+            "rarity": 3,
+            "price": 240,
+            "effects": [
+                {
+                    "name": "Defy Villainy",
+                    "description": "When the wearer becomes Blinded, Paralysed or Poisoned, they automatically cast Lesser Restoration on themselves.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "SavingThrows +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Jhannyl's Gloves",
+                    "description": "SavingThrows +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 12918
+        },
+        {
+            "name": "Knock Knuckle Gloves",
+            "image": "http://localhost:3001/api/images/2/27/Gloves_Leather_2_Faded.png",
+            "description": "Knock Knuckle Gloves are uncommon Gloves that grant the spell Knock.",
+            "quote": "In the palm of the left glove is a glossy scarlet solution that coats Thieves' Tools, making them more reliable. In the right, arcane symbols wax and wane.",
+            "type": 5,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Knock|w=40",
+                    "description": "Grants Knock once per Long Rest.",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 10986
+        },
+        {
+            "name": "Leather Gloves",
+            "image": "http://localhost:3001/api/images/c/c3/Leather_Gloves_Icon.png",
+            "icon": "http://localhost:3001/api/images/c/c0/Leather_Gloves_Unfaded_Icon.png",
+            "description": "Leather Gloves are a common pair of Gloves. While coming in varying appearances, these gloves offer no benefits beyond cosmetic appeal or as an item to sell off.",
+            "quote": "These supple gloves provide both flexibility and protection.",
+            "type": 5,
+            "rarity": 1,
+            "price": 20,
+            "effects": [],
+            "id": 3520
+        },
+        {
+            "name": "Legacy of the Masters",
+            "image": "http://localhost:3001/api/images/b/b0/Gloves_Metal_C_Faded.png",
+            "icon": "http://localhost:3001/api/images/1/16/Gloves_Metal_C_Unfaded_Icon.png",
+            "description": "The Legacy of the Masters are a very rare pair of Gloves that enhance your attacks with weapons.",
+            "quote": "Formerly the property of the royalty of Threskel, these gauntlets impart some of the prince of Threskel's legendary skill with weapons.",
+            "type": 5,
+            "rarity": 4,
+            "price": 570,
+            "effects": [
+                {
+                    "name": "Arming Enhancement",
+                    "description": "Gain a +2 Bonus to Attack Roll Icon|Attack Roll|attack and damage rolls with weapons.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Legacy of the Masters",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 8478
+        },
+        {
+            "name": "Luminous Gloves",
+            "image": "http://localhost:3001/api/images/0/0c/Gloves_Metal_D_Faded.png",
+            "icon": "http://localhost:3001/api/images/0/05/Gloves_Metal_D_Unfaded_Icon.png",
+            "description": "The Luminous Gloves are an uncommon pair of Gloves that causes the wearer's Radiant|Radiant damage to afflict struck foes with the Radiating Orb condition.",
+            "quote": "The pads of each fingertip shine from the fabric with a garish glow.",
+            "type": 5,
+            "rarity": 2,
+            "price": 110,
+            "effects": [
+                {
+                    "name": "Radiating Orb Gloves",
+                    "description": "When the wearer deals Radiant damage, the target receives 1 turn of Radiating Orb.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Luminous Gloves",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "id": 9594
+        },
+        {
+            "name": "Martial Exertion Gloves",
+            "image": "http://localhost:3001/api/images/9/95/Gloves_Leather_F_Faded.png",
+            "icon": "http://localhost:3001/api/images/9/9b/Gloves_Leather_F_Unfaded_Icon.png",
+            "description": "Martial Exertion Gloves are a rare pair of Gloves that allows the wearer to gain an additional attack and double its movement speed for one turn at the cost of taking some damage.",
+            "quote": "'You drop and give me thirty you sumbitch; you think a bugbear's gonna roll over and let you rub his tummy? One two three four - keep going maggot! Stronger, better, tougher!' - Any Sword Coast Drill Sergeant, Invariably",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [
+                {
+                    "name": "Martial Exertion Icon|Martial Exertion",
+                    "description": "Push past your physical limits, taking 6d6|Piercing damage to gain an additional attack per turn and to double your movement speed.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Short Rest",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Martial Exertion Gloves",
+                    "description": "Short Rest",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 11803
+        },
+        {
+            "name": "Metallic Gloves",
+            "image": "http://localhost:3001/api/images/8/8d/Gloves_Metal_Icon.png",
+            "icon": "http://localhost:3001/api/images/5/5c/Gloves_Metal_Unfaded_Icon.png",
+            "description": "Metallic Gloves are a common pair of Gloves.",
+            "quote": "Made from steel hammered thin, these gauntlets are a fine investment for any warrior.",
+            "type": 5,
+            "rarity": 1,
+            "price": 40,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Metallic Gloves",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
+            "proficiency": 2,
+            "id": 3532
+        },
+        {
+            "name": "Netherstone-Studded Gauntlet",
+            "image": "http://localhost:3001/api/images/0/01/Netherstone-Studded_Gauntlet_Icon.png",
+            "icon": "http://localhost:3001/api/images/8/88/Netherstone-Studded_Gauntlet_Unfaded_Icon.png",
+            "description": "Netherstone-Studded Gauntlet is a gauntlet that is wielded by Lord Enver Gortash",
+            "quote": "A tyrant's grip must be one of cool, unforgiving, and intricately realised steel. It cannot budge, cannot falter, no matter the pressure, and its fingertips must deeply pierce those who would struggle against it.",
+            "type": 5,
+            "rarity": 4,
+            "price": 300,
+            "effects": [],
+            "id": 15115
+        },
+        {
+            "name": "Nimblefinger Gloves",
+            "image": "http://localhost:3001/api/images/6/65/Gloves_Leather_G_Faded.png",
+            "icon": "http://localhost:3001/api/images/c/c1/Gloves_Leather_G_Unfaded_Icon.png",
+            "description": "Nimblefinger Gloves are a rare pair of Dwarves, and a bonus to Sleight of Hand.",
+            "quote": "For the right wearer, these supple doeskin gloves offer both comfort and protection - alongside a perfectly attuned sense of where one's fingers are, and what pocket they're picking.",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [
+                {
+                    "name": "Nimblefinger",
+                    "description": "Gnomes are granted +2 to Halfling}}s and Race Dwarf|Dwarf|Dwarves gain +1 [[Dexterity.",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 11793
+        },
+        {
+            "name": "Poisoner's Gloves",
+            "image": "http://localhost:3001/api/images/1/1c/Gloves_Leather_E_Faded.png",
+            "icon": "http://localhost:3001/api/images/6/67/Gloves_Leather_E_Unfaded_Icon.png",
+            "description": "Poisoner's Gloves are a rare set of Gloves that has a chance to Poisoned|poison a target every time it's dealt Poison damage.",
+            "quote": "While the leather is clean and well-maintained, a cold, acrid smell permeates these gloves.",
+            "type": 5,
+            "rarity": 3,
+            "price": 240,
+            "effects": [
+                {
+                    "name": "Envenom",
+                    "description": "Whenever you deal Poison damage, the target needs to succeed a  Constitution or become Poisoned.",
+                    "type": 2
+                }
+            ],
+            "id": 9544
+        },
+        {
+            "name": "Quickspell Gloves",
+            "image": "http://localhost:3001/api/images/b/b1/Gloves_Leather_D_Faded.png",
+            "icon": "http://localhost:3001/api/images/8/82/Gloves_Leather_D_Unfaded_Icon.png",
+            "description": "Quickspell Gloves are a pair of Very Rare Gloves that grant the wearer the ability to cast a Cantrip as a Bonus Action instead of an Action, once per Short Rest.",
+            "quote": "These gloves were worn by the wizard Bucknard, who always maintained that speed was most important in spellcasting. This, because even if you royally bugger up the spell, you've got enough time to leg it away afterward.",
+            "type": 5,
+            "rarity": 4,
+            "price": 750,
+            "effects": [
+                {
+                    "name": "Quickspell Flinger",
+                    "description": "Bonus}} instead. This effect can be used once per [[Short Rest.",
+                    "type": 2
+                }
+            ],
+            "id": 8866
+        },
+        {
+            "name": "Raven Gloves",
+            "image": "http://localhost:3001/api/images/7/70/Gloves_Leather_3_Faded.png",
+            "icon": "http://localhost:3001/api/images/f/f6/Gloves_Leather_3_Unfaded_Icon.png",
+            "description": "Raven Gloves are rare Gloves that allow the wear to summon a Raven.",
+            "quote": "Dark and suitably moody, these gloves are perfect for wearing while thinking about poetry",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [],
+            "proficiency": 0,
+            "id": 11609
+        },
+        {
+            "name": "Reason's Grasp",
+            "image": "http://localhost:3001/api/images/a/a7/Reasons_Grasp_Icon.png",
+            "icon": "http://localhost:3001/api/images/0/0f/Reasons_Grasp_Unfaded_Icon.png",
+            "description": "Reason's Grasp are an uncommon pair of Gloves that give the wearer temp hp if they choose to end their Rage.",
+            "quote": "The snug fit of these gloves resist a balled fist - as if favouring the open hand of peace.",
+            "type": 5,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Ever Vigilant",
+                    "description": "When the wearer chooses to end their Rage, they gain 15.",
+                    "type": 2
+                }
+            ],
+            "id": 3593
+        },
+        {
+            "name": "Seraphic Pugilist Gloves",
+            "image": "http://localhost:3001/api/images/0/07/Gloves_of_Uninhibited_Kushigo_Icon.png",
+            "icon": "http://localhost:3001/api/images/5/56/Gloves_of_Uninhibited_Kushigo_Unfaded_Icon.png",
+            "description": "Seraphic Pugilist Gloves are a rare pair of gloves that give additional 1d4 Radiant damage to unarmed attacks and give the ability to cast Guiding Bolt.",
+            "quote": "Apparently this is what happens to your handwear when you clock an angel in the chops.",
+            "type": 5,
+            "rarity": 3,
+            "price": 240,
+            "effects": [],
+            "proficiency": 0,
+            "id": 8126
+        },
+        {
+            "name": "Servitor of the Black Hand Gloves",
+            "image": "http://localhost:3001/api/images/6/60/Gloves_of_Cinder_and_Sizzle_Icon.png",
+            "icon": "http://localhost:3001/api/images/b/b7/Gloves_of_Cinder_and_Sizzle_Unfaded_Icon.png",
+            "description": "The Servitor of the Black Hand Gloves are a rare pair of Force}} damage to unarmed attacks and allows the wearer to cast Fear once per [[Long Rest.",
+            "quote": "Covetous of Mystra's command of the Weave, Bane the Black Hand extends his grasp, each finger comprised of ten thousand fanatics, adjuncts of his evil will.",
+            "type": 5,
+            "rarity": 3,
+            "price": 240,
+            "effects": [
+                {
+                    "name": "Enervating Suffusion",
+                    "description": "Your Unarmed Strike|unarmed attacks deal an additional 1d4|Force damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Fear|w=40",
+                    "description": "Project an image so frightening it makes targets drop everything and become Fearful.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Long Rest",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Servitor of the Black Hand Gloves",
+                    "description": "Long Rest",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 11743
+        },
+        {
+            "name": "Snow-Dusted Monastery Gloves",
+            "image": "http://localhost:3001/api/images/6/60/Gloves_of_Cinder_and_Sizzle_Icon.png",
+            "icon": "http://localhost:3001/api/images/b/b7/Gloves_of_Cinder_and_Sizzle_Unfaded_Icon.png",
+            "description": "Snow-Dusted Monastery Gloves are a rare pair of Gloves that cause the wearer's unarmed attacks to deal an additional Cold|1d4 Cold damage. It also grants the ability to cast Ice Knife as a 3rd level spell once per Long Rest.",
+            "quote": "Cracking your knuckles in these gloves dislodges puffy drifts of snow from your fingers.",
+            "type": 5,
+            "rarity": 3,
+            "price": 1125,
+            "effects": [],
+            "proficiency": 0,
+            "id": 10893
+        },
+        {
+            "name": "Spellmight Gloves",
+            "image": "http://localhost:3001/api/images/b/b1/Gloves_Leather_D_Faded.png",
+            "icon": "http://localhost:3001/api/images/8/82/Gloves_Leather_D_Unfaded_Icon.png",
+            "description": "Spellmight Gloves are a pair of very rare Gloves that allow the wearer to deal additional damage at the cost of accuracy.",
+            "quote": "Designed for the jobbing spellcaster, these gloves are well-insulated to prevent digit immolation for the somatically inept.",
+            "type": 5,
+            "rarity": 4,
+            "price": 300,
+            "effects": [],
+            "proficiency": 0,
+            "id": 9683
+        },
+        {
+            "name": "Spellseeking Gloves",
+            "image": "http://localhost:3001/api/images/c/ce/Spellseeking_Gloves_Faded.png",
+            "icon": "http://localhost:3001/api/images/6/66/Spellseeking_Gloves_Unfaded_Icon.png",
+            "description": "Spellseeking Gloves are rare Gloves that allow the wearer to spend a Sorcery Point to gain Advantage when making a spell attack roll.",
+            "quote": "Sorcerers operate on a first-come, first-blasted basis.",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [],
+            "proficiency": 0,
+            "id": 11789
+        },
+        {
+            "name": "Stalker Gloves",
+            "image": "http://localhost:3001/api/images/9/95/Gloves_Leather_F_Faded.png",
+            "description": "The Stalker Gloves are a rare pair of gloves which improve the wearer's Sneak Attack and Initiative.",
+            "quote": "It's a difficult life being a modern rogue - everyone expects the surprise attack. These gloves assist in making sure that the surprisee doesn't live long enough to decide whether they were surprised.",
+            "type": 5,
+            "rarity": 3,
+            "price": 400,
+            "effects": [
+                {
+                    "name": "Seldom Caught Unawares",
+                    "description": "You gain a +1 bonus to Initiative Rolls.",
+                    "type": 2
+                },
+                {
+                    "name": "Skullduggery Attack",
+                    "description": "Your Sneak Attack deals an additional 1d4|Force|drs=t damage.",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 10889
+        },
+        {
+            "name": "Swordmaster Gloves",
+            "image": "http://localhost:3001/api/images/6/65/Gloves_Leather_G_Faded.png",
+            "icon": "http://localhost:3001/api/images/c/c1/Gloves_Leather_G_Unfaded_Icon.png",
+            "description": "The Swordmaster Gloves are a rare pair of Gloves that grant proficiency in three types of sword and provide a bonus to melee Attack Rolls.",
+            "quote": "The famous drow with his heart of gold, Drizzt Do'Urden, is not the pioneer of the 'twin sword style' of fighting, though he was among the best practitioners.",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [],
+            "id": 8008
+        },
+        {
+            "name": "The Reviving Hands",
+            "image": "http://localhost:3001/api/images/0/0c/Gloves_Metal_D_Faded.png",
+            "icon": "http://localhost:3001/api/images/0/05/Gloves_Metal_D_Unfaded_Icon.png",
+            "description": "The Reviving Hands are a very rare pair of Gloves that grants the wearer the to ability to cast Revivify and provides additional buffs of Blade Ward and Death Ward to creatures healed or revived by the wearer respectively.",
+            "quote": "Stitched into the lining is the phrase: 'Yes all right, all right, stop moaning and get up'.",
+            "type": 5,
+            "rarity": 4,
+            "price": 912,
+            "effects": [],
+            "proficiency": 2,
+            "id": 8425
+        },
+        {
+            "name": "The Sparkle Hands",
+            "image": "http://localhost:3001/api/images/c/ca/The_Sparkle_Hands_Icon.png",
+            "icon": "http://localhost:3001/api/images/3/3c/The_Sparkle_Hands_Unfaded_Icon.png",
+            "description": "The Sparkle Hands are a pair of uncommon Gloves that grant Lightning Charges  on unarmed attacks and provides  Advantage against metal constructs and armored foes while charged.",
+            "quote": "'Sometimes I just want to feel that spark,' Yrre the Sparkstruck said. 'Feel the lightning course through me.'",
+            "type": 5,
+            "rarity": 3,
+            "price": 110,
+            "effects": [
+                {
+                    "name": "Conductive Strikes",
+                    "description": "On a hit with an Unarmed Strike|unarmed attack, the wearer gains 2 Lightning Charges.",
+                    "type": 2
+                },
+                {
+                    "name": "Effective Transmitter",
+                    "description": "While imbued with Lightning Charges, attacks against metal constructs and foes wearing metal armour gain Advantage.",
+                    "type": 2
+                }
+            ],
+            "id": 1320
+        },
+        {
+            "name": "Thermoarcanic Gloves",
+            "image": "http://localhost:3001/api/images/6/65/Gloves_Leather_G_Faded.png",
+            "icon": "http://localhost:3001/api/images/c/c1/Gloves_Leather_G_Unfaded_Icon.png",
+            "description": "Thermoarcanic Gloves are an uncommon pair of Heat whenever they deal Fire|Fire damage.",
+            "quote": "Ash dusts the gloves' fingers, darkening their seams.",
+            "type": 5,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Arcane Ashes",
+                    "description": "Whenever you deal Fire damage, you gain 2 turns of Heat.",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 9622
+        },
+        {
+            "name": "Thunderpalm Strikers",
+            "image": "http://localhost:3001/api/images/6/60/Gloves_of_Cinder_and_Sizzle_Icon.png",
+            "icon": "http://localhost:3001/api/images/b/b7/Gloves_of_Cinder_and_Sizzle_Unfaded_Icon.png",
+            "description": "Thunderpalm Strikers are a rare pair of Thunder}} damage to unarmed attacks and allow the wearer to cast Thunderwave Icon|Thunderwave once per [[Long Rest.",
+            "quote": "Each blow landed while wearing these gloves produces the rumbling boom of a thousand demons' ravenous stomachs.",
+            "type": 5,
+            "rarity": 3,
+            "price": 450,
+            "effects": [
+                {
+                    "name": "Booming Blows",
+                    "description": "Your Unarmed Strike|unarmed attacks deal an additional 1d4|Thunder damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Thunderwave|w=40",
+                    "description": "Can cast at 3rd level.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Long Rest",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Thunderpalm Strikers",
+                    "description": "Long Rest",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 11790
+        },
+        {
+            "name": "Unlucky Thief's Gloves",
+            "image": "http://localhost:3001/api/images/f/f1/Gloves_Monk_Faded.png",
+            "icon": "http://localhost:3001/api/images/8/84/Gloves_Monk_Unfaded_Icon.png",
+            "description": "Unlucky Thief's Gloves are an uncommon Gloves that grants the wearer +2 to Sleight of Hands.",
+            "quote": "Whenever the wearer steals anything, a piece of coal appears in their pocket, like a tiny, dusty condemnation.",
+            "type": 5,
+            "rarity": 2,
+            "price": 1,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Provides a +2 bonus to Sleight of Hands, and adds a piece of Charcoal to the wearer's inventory for each item they steal.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "After stealing 20 times, will inflict burning condition to the player for 1.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Unlucky Thief's Gloves",
+                    "description": "Provides a +2 bonus to Sleight of Hands, and adds a piece of Charcoal to the wearer's inventory for each item they steal.\nAfter stealing 20 times, will inflict burning condition to the player for 1.",
+                    "type": 2
+                }
+            ],
+            "proficiency": 0,
+            "id": 19299
+        },
+        {
+            "name": "Unwanted Masterwork Gauntlets",
+            "image": "http://localhost:3001/api/images/a/a5/Unwanted_Masterwork_Gauntlets_Icon.png",
+            "icon": "http://localhost:3001/api/images/2/23/Unwanted_Masterwork_Gauntlets_Unfaded_Icon.png",
+            "description": "Unwanted Masterwork Gauntlets are a rare pair of Gloves that provide a bonus to Attack Rolls and Strength Saving Throws. It is part of the Unwanted set.",
+            "quote": "These gauntlets spark with unfinished, yet still potent, devilish magic - indicative of a cancelled blacksmith's commission.",
+            "type": 5,
+            "rarity": 3,
+            "price": 300,
+            "effects": [],
+            "proficiency": 2,
+            "id": 13497
+        },
+        {
+            "name": "Winter's Clutches",
+            "image": "http://localhost:3001/api/images/9/95/Gloves_Leather_F_Faded.png",
+            "icon": "http://localhost:3001/api/images/9/9b/Gloves_Leather_F_Unfaded_Icon.png",
+            "description": "The Winter's Clutches are an uncommon pair of Gloves that allow the wearer to encrust with frost enemies whenever they deal Cold damage.",
+            "quote": "Likely these originated in Icewind Dale, where tempers run as hot as hearths, and frozen rivers trace the arm of the dale in a network of blue-white tributaries.",
+            "type": 5,
+            "rarity": 2,
+            "price": 90,
+            "effects": [
+                {
+                    "name": "Winter's Clutches",
+                    "description": "When the wearer deals Cold damage, inflict 2 turns of Encrusted with Frost upon the target(s).",
+                    "type": 2
+                }
+            ],
+            "id": 8487
+        },
+        {
+            "name": "Wondrous Gloves",
+            "image": "http://localhost:3001/api/images/1/1c/Gloves_Leather_E_Faded.png",
+            "icon": "http://localhost:3001/api/images/6/67/Gloves_Leather_E_Unfaded_Icon.png",
+            "description": "The Wondrous Gloves are a rare pair of gloves that increase AC and give Bards an additional Bardic Inspiration.",
+            "quote": "A series of motivational quotes have been enthusiastically removed from the embroidery of these gloves, as if in protest.",
+            "type": 5,
+            "rarity": 3,
+            "price": 160,
+            "effects": [
+                {
+                    "name": "Troubadour's Wonder",
+                    "description": "Your ArmourClass increases by 1. In addition, if you have Bardic Inspiration, you gain 1 more use of it.",
+                    "type": 2
+                }
+            ],
+            "id": 6894
         }
     ],
     "6": [
