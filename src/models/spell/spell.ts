@@ -1,8 +1,18 @@
 import {
-    ActionType,
     ISpell,
+    SpellDamageSaveEffect,
     SpellSchool,
-} from 'planner-types/src/types/spells';
+} from 'planner-types/src/types/spell';
+import { DamageType } from 'planner-types/src/types/equipment-item';
+import {
+    ActionAreaCategory,
+    ActionAreaOfEffectType,
+    ActionAreaShape,
+    ActionRangeType,
+    ActionRechargeFrequency,
+    ActionType,
+} from 'planner-types/src/types/action';
+import { AbilityScore } from 'planner-types/src/types/ability';
 import { MwnApiClass } from '../../api/mwn';
 import { PageNotFoundError } from '../errors';
 import { error } from '../logger';
@@ -31,6 +41,38 @@ export class Spell extends PageItem implements Partial<ISpell> {
     actionType?: ActionType;
     concentration?: boolean;
     noSpellSlot?: boolean;
+
+    attackRoll?: boolean;
+    damage?: string;
+    damageType?: DamageType;
+    damageSave?: AbilityScore;
+    damageSaveEffect?: SpellDamageSaveEffect;
+    damagePer?: string;
+    range?: ActionRangeType;
+    rangeM?: number;
+    rangeFt?: number;
+    aoe?: ActionAreaOfEffectType;
+    aoeM?: number;
+    aoeFt?: number;
+    condition?: string;
+    conditionDuration?: number;
+    conditionSave?: AbilityScore;
+    areaName?: string;
+    areaCategory?: ActionAreaCategory;
+    areaShape?: ActionAreaShape;
+    areaRangeM?: number;
+    areaRangeFt?: number;
+    areaDuration?: number;
+    areaTurnStartDamage?: string;
+    areaTurnStartDamageType?: DamageType;
+    areaTurnStartDamageSave?: AbilityScore;
+    areaTurnStartDamageSaveEffect?: SpellDamageSaveEffect;
+    areaTurnEndDamage?: string;
+    higherLevels?: string;
+    variants?: string[];
+    notes?: string;
+    recharge?: ActionRechargeFrequency;
+
     id?: number;
 
     constructor(pageTitle: string) {
@@ -59,7 +101,8 @@ export class Spell extends PageItem implements Partial<ISpell> {
 
         this.id = this.page.pageId;
 
-        const { image, plainText, boolean } = MediaWikiTemplateParser.Parsers;
+        const { image, plainText, boolean, int } =
+            MediaWikiTemplateParser.Parsers;
         const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
 
         const config: Record<string, MediaWikiTemplateParserConfig> = {
@@ -99,11 +142,156 @@ export class Spell extends PageItem implements Partial<ISpell> {
                 parser: parseEnum(ActionType),
                 default: ActionType.NONE,
             },
+            attackRoll: { key: 'attack roll', parser: boolean, default: false },
+            damage: { parser: plainText, default: undefined },
+            damageType: {
+                key: 'damage type',
+                parser: parseEnum(DamageType),
+                default: undefined,
+            },
             concentration: { parser: boolean, default: false },
             noSpellSlot: {
                 key: 'no spell slot',
                 parser: boolean,
                 default: false,
+            },
+            damageSave: {
+                key: 'damage save',
+                parser: parseEnum(AbilityScore),
+                default: undefined,
+            },
+            damageSaveEffect: {
+                key: 'damage save effect',
+                parser: parseEnum(SpellDamageSaveEffect),
+                default: SpellDamageSaveEffect.negate,
+            },
+            damagePer: {
+                key: 'damage per',
+                parser: plainText,
+                default: undefined,
+            },
+            range: {
+                parser: parseEnum(ActionRangeType),
+                default: undefined,
+            },
+            rangeM: {
+                key: 'range m',
+                parser: int,
+                default: undefined,
+            },
+            rangeFt: {
+                key: 'range ft',
+                parser: int,
+                default: undefined,
+            },
+            aoe: {
+                parser: parseEnum(ActionAreaOfEffectType),
+                default: undefined,
+            },
+            aoeM: {
+                key: 'aoe m',
+                parser: int,
+                default: undefined,
+            },
+            aoeFt: {
+                key: 'aoe ft',
+                parser: int,
+                default: undefined,
+            },
+            condition: {
+                parser: plainText,
+                default: undefined,
+            },
+            conditionDuration: {
+                key: 'condition duration',
+                parser: int,
+                default: undefined,
+            },
+            conditionSave: {
+                key: 'condition save',
+                parser: parseEnum(AbilityScore),
+                default: undefined,
+            },
+            areaName: {
+                key: 'area',
+                parser: plainText,
+                default: undefined,
+            },
+            areaCategory: {
+                key: 'area category',
+                parser: parseEnum(ActionAreaCategory),
+                default: undefined,
+            },
+            areaShape: {
+                key: 'area shape',
+                parser: parseEnum(ActionAreaShape),
+                default: undefined,
+            },
+            areaRangeM: {
+                key: 'area range m',
+                parser: int,
+                default: undefined,
+            },
+            areaRangeFt: {
+                key: 'area range ft',
+                parser: int,
+                default: undefined,
+            },
+            areaDuration: {
+                key: 'area duration',
+                parser: int,
+                default: undefined,
+            },
+            areaTurnStartDamage: {
+                key: 'area turn start damage',
+                parser: plainText,
+                default: undefined,
+            },
+            areaTurnStartDamageType: {
+                key: 'area turn start damage type',
+                parser: parseEnum(DamageType),
+                default: undefined,
+            },
+            areaTurnStartDamageSave: {
+                key: 'area turn start damage save',
+                parser: parseEnum(AbilityScore),
+                default: undefined,
+            },
+            areaTurnStartDamageSaveEffect: {
+                key: 'area turn start damage save effect',
+                parser: parseEnum(SpellDamageSaveEffect),
+                default: SpellDamageSaveEffect.negate,
+            },
+            areaTurnEndDamage: {
+                key: 'area turn end damage',
+                parser: plainText,
+                default: undefined,
+            },
+            higherLevels: {
+                // FIXME: type is "content"
+                key: 'higher levels',
+                parser: plainText,
+                default: undefined,
+            },
+            variants: {
+                // FIXME
+                parser: (value) => {
+                    const variants = value
+                        ?.split(',')
+                        .map((v) => v.trim())
+                        .filter((v) => v.length);
+
+                    return variants.length > 0 ? variants : undefined;
+                },
+                default: undefined,
+            },
+            notes: {
+                parser: plainText,
+                default: undefined,
+            },
+            recharge: {
+                parser: parseEnum(ActionRechargeFrequency),
+                default: undefined,
             },
         };
 
@@ -166,6 +354,37 @@ export class Spell extends PageItem implements Partial<ISpell> {
             concentration: this.concentration,
             noSpellSlot: this.noSpellSlot,
             id: this.id,
+
+            attackRoll: this.attackRoll,
+            damage: this.damage,
+            damageType: this.damageType,
+            damageSave: this.damageSave,
+            damageSaveEffect: this.damageSaveEffect,
+            damagePer: this.damagePer,
+            range: this.range,
+            rangeM: this.rangeM,
+            rangeFt: this.rangeFt,
+            aoe: this.aoe,
+            aoeM: this.aoeM,
+            aoeFt: this.aoeFt,
+            condition: this.condition,
+            conditionDuration: this.conditionDuration,
+            conditionSave: this.conditionSave,
+            areaName: this.areaName,
+            areaCategory: this.areaCategory,
+            areaShape: this.areaShape,
+            areaRangeM: this.areaRangeM,
+            areaRangeFt: this.areaRangeFt,
+            areaDuration: this.areaDuration,
+            areaTurnStartDamage: this.areaTurnStartDamage,
+            areaTurnStartDamageType: this.areaTurnStartDamageType,
+            areaTurnStartDamageSave: this.areaTurnStartDamageSave,
+            areaTurnStartDamageSaveEffect: this.areaTurnStartDamageSaveEffect,
+            areaTurnEndDamage: this.areaTurnEndDamage,
+            higherLevels: this.higherLevels,
+            variants: this.variants,
+            notes: this.notes,
+            recharge: this.recharge,
         };
     }
 }
