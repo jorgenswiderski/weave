@@ -3931,7 +3931,10 @@
                     "type": 2
                 }
             ],
-            "notes": ["", "UUID: 6d84b9e5-e9e4-477c-8d5b-a3f232a4415a"],
+            "notes": [
+                "",
+                "UUID: 6d84b9e5-e9e4-477c-8d5b-a3f232a4415a"
+            ],
             "proficiency": 0,
             "id": 6784
         },
@@ -12765,7 +12768,10 @@
             "weightLb": 2,
             "price": 310,
             "effects": [],
-            "notes": ["", "UUID: cf19058b-2be6-411c-9227-7058053fa37a"],
+            "notes": [
+                "",
+                "UUID: cf19058b-2be6-411c-9227-7058053fa37a"
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 8687,

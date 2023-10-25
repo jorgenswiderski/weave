@@ -52,7 +52,11 @@
         "level": 2,
         "school": 1,
         "ritual": false,
-        "classes": ["Cleric", "Paladin", "Life Domain"],
+        "classes": [
+            "Cleric",
+            "Paladin",
+            "Life Domain"
+        ],
         "summary": "This spell allows spellcasters to heal and embolden their allies and themselves with resolve. Affected creatures have their maximum Hit Points increased for the duration of the spell.",
         "description": "Bolster your allies with toughness and resolve to heal and increase their Hit Points maximum.",
         "actionType": 1,
@@ -80,7 +84,12 @@
         "level": 1,
         "school": 4,
         "ritual": false,
-        "classes": ["Bard", "Druid", "Ranger", "Nature Domain"],
+        "classes": [
+            "Bard",
+            "Druid",
+            "Ranger",
+            "Nature Domain"
+        ],
         "summary": "This spell charms a beast and convinces it you mean no harm.",
         "description": "Convince a beast not to attack you.\n\nThe creature must have an Intelligence of 3 or less.\nCondition ends early if you or an ally hurts the target.\nIn higher difficulty modes, the target might become hostile when the spell ends.",
         "actionType": 1,
@@ -94,7 +103,12 @@
         "level": 3,
         "school": 7,
         "ritual": false,
-        "classes": ["Cleric", "Wizard", "Circle of the Spores", "Oathbreaker"],
+        "classes": [
+            "Cleric",
+            "Wizard",
+            "Circle of the Spores",
+            "Oathbreaker"
+        ],
         "summary": "This spell allows spellcasters to animate a corpse to create an undead servant.",
         "description": "Animate a corpse to create an undead servant while not in combat.\n\nThe target must be a Medium or Small corpse.",
         "actionType": 1,
@@ -133,7 +147,11 @@
         "level": 2,
         "school": 1,
         "ritual": false,
-        "classes": ["Wizard", "Eldritch Knight", "Arcane Trickster"],
+        "classes": [
+            "Wizard",
+            "Eldritch Knight",
+            "Arcane Trickster"
+        ],
         "summary": "This spell allows spellcasters to magically lock a container.",
         "description": "* Close a door or container with a magical lock. It can no longer be lockpicked or opened with Knock.",
         "actionType": 1,
@@ -147,7 +165,9 @@
         "level": 1,
         "school": 1,
         "ritual": false,
-        "classes": ["Warlock"],
+        "classes": [
+            "Warlock"
+        ],
         "summary": "It allows spellcasters to create a spectral armour of frost that covers the caster and their equipment. The armour provides additional Hit Points to the caster and damages hostile targets while the added Hit Points are present.",
         "description": "Gain 5 and deal 5|Cold Cold|damage to any creature that hits you with a melee attack.\n\nCan only have Temporary Hit Points from one source.",
         "actionType": 1,
@@ -161,7 +181,9 @@
         "level": 1,
         "school": 2,
         "ritual": false,
-        "classes": ["Warlock"],
+        "classes": [
+            "Warlock"
+        ],
         "summary": "This spell allows the caster to summon dark tendrils and deal Necrotic damage to enemies in an area centered on the caster, preventing them from taking reactions.",
         "description": "Prevent targets from using reactions. \n\nOn Save: Targets still take half damage but are able to use reactions.",
         "actionType": 1,
@@ -189,7 +211,11 @@
         "level": 1,
         "school": 4,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Oath of Vengeance"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Oath of Vengeance"
+        ],
         "summary": "This spell allows the caster to temporarily curse enemies, making their attacks miss more often and weakening their Saving Throws.",
         "description": "Up to 3 creatures receive a d4|Physical -1d4 penalty to Attack Rolls and SavingThrows.",
         "actionType": 1,
@@ -231,7 +257,12 @@
         "level": 4,
         "school": 1,
         "ritual": false,
-        "classes": ["Cleric", "Sorcerer", "Warlock", "Wizard"],
+        "classes": [
+            "Cleric",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to temporarily send a target to another plane of existence.",
         "description": "Temporarily Banished|Banish your target to another plane of existence.",
         "actionType": 1,
@@ -245,7 +276,12 @@
         "level": 2,
         "school": 8,
         "ritual": false,
-        "classes": ["Druid", "Ranger", "Nature Domain", "Circle of the Land"],
+        "classes": [
+            "Druid",
+            "Ranger",
+            "Nature Domain",
+            "Circle of the Land"
+        ],
         "summary": "This spell allows spellcasters to fortify the defense of a willing creature and increase their Armour Class. While under the effect of this spell, the target's skin has a bark-like texture.",
         "description": "Touch a willing creature to toughen its skin and increase its Armour Class up to 16.",
         "actionType": 1,
@@ -273,7 +309,11 @@
         "level": 3,
         "school": 1,
         "ritual": false,
-        "classes": ["Cleric", "Life Domain", "Oath of Devotion"],
+        "classes": [
+            "Cleric",
+            "Life Domain",
+            "Oath of Devotion"
+        ],
         "summary": "This spell allows spellcasters to bolster their allies with hope and vitality.",
         "description": "Your allies will regain the maximum Hit Points possible when healed. They also gain Advantage on Wisdom SavingThrows and Death Saving Throws.",
         "actionType": 1,
@@ -287,7 +327,12 @@
         "level": 2,
         "school": 8,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Sorcerer"
+        ],
         "summary": "This spell allows spellcasters to bestow a creature the fortitude of a bear. Affected creatures gain Temporary Hit Points and Checks.",
         "description": "Creature gains Advantage on Checks and gains 7 Temporary Hit Points.",
         "actionType": 1,
@@ -336,7 +381,9 @@
         "level": 6,
         "school": 5,
         "ritual": false,
-        "classes": ["Cleric"],
+        "classes": [
+            "Cleric"
+        ],
         "summary": "This spell allows spellcasters to summon a wall of cutting blades.",
         "description": "Summons a wall of razor-sharp blades that turns the area into Difficult Terrain and damages anyone foolish enough to come close.",
         "actionType": 1,
@@ -445,7 +492,10 @@
         "level": 3,
         "school": 8,
         "ritual": false,
-        "classes": ["Sorcerer", "Archfey"],
+        "classes": [
+            "Sorcerer",
+            "Archfey"
+        ],
         "summary": "This spell allows the spellcaster to travel to the Ethereal Plane, becoming temporarily unassailable and unseen until they return.",
         "description": "Available only in combat.\n\nAt the end of your turn, roll a  d20. On 11 or higher, you vanish into the Ethereal Plane. While there, you can't be harmed or seen in this world. \n\nWhen you do vanish, your presence here is a representation of the location you'll come back to. You can choose to teleport it up to m=6|ft=20.",
         "actionType": 1,
@@ -556,7 +606,9 @@
         "level": 2,
         "school": 5,
         "ritual": false,
-        "classes": ["Paladin"],
+        "classes": [
+            "Paladin"
+        ],
         "summary": "This spell allows spellcasters to cause their weapon to gleam with astral radiance, allow them to mark targets with light, preventing them from turning Invisible",
         "description": "Your weapon gleams with astral radiance as you strike and possibly mark your targets with light, preventing it from turning Invisible. \n\n* If the spellcaster misses the initial Attack, the spell slot and bonus are not consumed. This spell, unlike other Smite Spells, will work with Ranged weaponry.",
         "actionType": 4,
@@ -570,7 +622,12 @@
         "level": 2,
         "school": 8,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Sorcerer"
+        ],
         "summary": "This spell allows spellcasters to bestow a creature the might of a bull. Affected creatures have their Checks.",
         "description": "Creature gains Advantage on Checks and its Weight Limit is doubled.",
         "actionType": 1,
@@ -619,7 +676,11 @@
         "level": 3,
         "school": 2,
         "ritual": false,
-        "classes": ["Druid", "Tempest Domain", "Storm Sorcery"],
+        "classes": [
+            "Druid",
+            "Tempest Domain",
+            "Storm Sorcery"
+        ],
         "summary": "This spell allows spellcasters to call down lightning to hit all targets within range. The spellcaster can also continue to call down lightning repeatedly on subsequent turns.",
         "description": "Call down lightning to hit all targets within range and its area of effect for 3d10|Lightning damage.",
         "actionType": 1,
@@ -633,7 +694,11 @@
         "level": 2,
         "school": 4,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Archfey"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Archfey"
+        ],
         "summary": "This spell allows spellcasters to magically subdue intense emotions in targeted creatures. The affected target becomes neutral to the creatures it is hostile toward. It also cannot be Charmed or Frightened during the duration of the spell.",
         "description": "Humanoids can't be Charmed, Frightened, or become enraged.",
         "actionType": 1,
@@ -647,7 +712,12 @@
         "level": 2,
         "school": 8,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Sorcerer"
+        ],
         "summary": "This spell allows spellcasters to bestow a creature the finesse of a cat. Affected creatures gain Resistance to falling damage and gain Checks.",
         "description": "Creature gains Advantage on Checks and only takes half damage from falling.",
         "actionType": 1,
@@ -764,7 +834,11 @@
         "level": 5,
         "school": 2,
         "ritual": false,
-        "classes": ["Sorcerer", "Wizard", "Circle of the Spores"],
+        "classes": [
+            "Sorcerer",
+            "Wizard",
+            "Circle of the Spores"
+        ],
         "summary": "This spell allows spellcasters to conjure a moveable cloud that damages and obscures everything it envelops.",
         "description": "Craft a large cloud that inflicts 5d8|Poison damage per turn. You can reposition the cloud every turn. The cloud Heavily Obscures everything within it.",
         "actionType": 1,
@@ -818,7 +892,9 @@
         "level": 1,
         "school": 4,
         "ritual": false,
-        "classes": ["Paladin"],
+        "classes": [
+            "Paladin"
+        ],
         "summary": "This spell allows spellcasters to compel an enemy to ignore other targets and attack only the spellcaster.",
         "description": "Force an enemy to attack only you, giving it Disadvantage against other targets.",
         "actionType": 2,
@@ -867,7 +943,9 @@
         "level": 3,
         "school": 2,
         "ritual": false,
-        "classes": ["Ranger"],
+        "classes": [
+            "Ranger"
+        ],
         "summary": "This spell allows spellcasters to summon a barrage of blades in front of them, potentially hitting multiple enemies.",
         "description": "Channel your weapon's essence into a destructive, widespread volley. Deal Physical|Weapon Damage, plus an additional d8|Physical 2d8 damage of the same Type to enemies within a cone in front of you. This spell can be cast with either your melee weapon or ranged weapon.\n\nOn a successful Dexterity SavingThrow, targets still take half damage.",
         "actionType": 1,
@@ -881,7 +959,10 @@
         "level": 5,
         "school": 2,
         "ritual": false,
-        "classes": ["Wizard", "Druid"],
+        "classes": [
+            "Wizard",
+            "Druid"
+        ],
         "summary": "This spell allows spellcasters to summon a Fire, Earth, Water, or Air Elemental.",
         "description": "Bend the barrier between the Planes until they disgorge an elemental ally to follow and fight for you.",
         "actionType": 1,
@@ -895,7 +976,10 @@
         "level": 4,
         "school": 2,
         "ritual": false,
-        "classes": ["Wizard", "Druid"],
+        "classes": [
+            "Wizard",
+            "Druid"
+        ],
         "summary": "Conjure 2 Mud Mephits, 2 Ice Mephites, or an Azer to fight for you.",
         "description": "Conjure a minor elemental to fight alongside you.",
         "actionType": 1,
@@ -923,7 +1007,9 @@
         "level": 4,
         "school": 2,
         "ritual": false,
-        "classes": ["Druid"],
+        "classes": [
+            "Druid"
+        ],
         "summary": "This spell summons a Dryad to fight alongside the caster.",
         "description": "Conjure a Dryad to fight alongside you.\nShe can use Nature's Step, Entangle enemies, and summon a Fallen Lover|Wood Woad.\n\n10|14|11|14|15|18|hp=22|ac=13\n\n=== Abilities ===\n\n==== Twisted Oak Crook|40 ====\n* Make a melee attack, dealing 3d6 + Strength Modifier|Bludgeoning damage.\n\n==== Strengthened Shillelagh|w=40 ====\n* Your staff or club becomes magical: it deals 4d8|Bludgeoning damage and uses yours Spellcasting Ability for Attack Rolls\n\n==== Entangle (Dryad)|Entangle|w=40 ====\n* Create a vine surface, slowing down creatures, possibly Entangled|Entangling them.\n\n==== Fallen Lover|w=40 ====\n* Summon a wood woad bound to your tree to fight alongside you.\n\n==== Spike Growth|w=40 ====\n* Shape a piece of ground into hard spikes. Movement is halfed. A creature walking on the spikes takes 2d4|Piercing damage for every 1.5m / 5ft it moves.\n\n=== Passives ===\n==== Grasp of the Forest|w=40 ====\n* Weapon attacks can Entangled|Entangle the target.\n\n==== Magic Resistance|w=40 ====\n* Has Advantage on Saving Throws against spells and other magical effects. \n\n==== Nature's Step|w=40 ====\n* You and your nearby allies aren't affected by Difficult Terrain, can't be Restrained or Paralysed, and gain Resistance to Poison damage.\n\n==== Permanently Armed|w=40 ====\n* Creature can't be disarmed.",
         "actionType": 1,
@@ -937,7 +1023,11 @@
         "level": 5,
         "school": 7,
         "ritual": false,
-        "classes": ["Cleric", "Druid", "Circle of the Spores"],
+        "classes": [
+            "Cleric",
+            "Druid",
+            "Circle of the Spores"
+        ],
         "summary": "This spell allows spellcasters to infect their target with an affliction of their choosing, potentially resulting in the target contracting a disease.",
         "description": "Poison a target and possibly afflict them with a disease of your choice.\n\nOnce infected, the target will roll a Constitution SavingThrow each turn. If it accumulates 3 successes, it recovers. If it accumulates 3 failures, it contracts the Disease chosen by the spellcaster.\n\nDiseases:\n* Contagion: Filth Fever|w=40\n* Contagion: Flesh Rot|w=40\n* Contagion: Slimy Doom|w=40\n* Contagion: Seizure|w=40\n* Contagion: Mindfire|w=40\n* Contagion: Blinding Sickness|w=40",
         "actionType": 1,
@@ -965,7 +1055,11 @@
         "level": 3,
         "school": 1,
         "ritual": false,
-        "classes": ["Sorcerer", "Warlock", "Wizard"],
+        "classes": [
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to interrupt another caster's spellcasting, causing it to fail and have no effect.",
         "description": "Nullify another creature's spell as a reaction. The spell must be 3rd Level or lower. If it is higher, you must succeed a Check to nullify it, the difficulty of which is based on the spell's Level.",
         "actionType": 3,
@@ -979,7 +1073,11 @@
         "level": 1,
         "school": 8,
         "ritual": false,
-        "classes": ["Cleric", "Druid", "Storm Sorcery"],
+        "classes": [
+            "Cleric",
+            "Druid",
+            "Storm Sorcery"
+        ],
         "summary": "This spell allows spellcasters to conjure or destroy an area of water (or water-like surfaces).",
         "description": "Choose to call forth rain or destroy a water-based surface.",
         "actionType": 1,
@@ -1007,7 +1105,11 @@
         "level": 6,
         "school": 7,
         "ritual": false,
-        "classes": ["Cleric", "Wizard", "Warlock"],
+        "classes": [
+            "Cleric",
+            "Wizard",
+            "Warlock"
+        ],
         "description": "Create a corpse as a heinous mummy that fights by your side.",
         "actionType": 1,
         "concentration": false,
@@ -1020,7 +1122,11 @@
         "level": 1,
         "school": 8,
         "ritual": false,
-        "classes": ["Cleric", "Druid", "Storm Sorcery"],
+        "classes": [
+            "Cleric",
+            "Druid",
+            "Storm Sorcery"
+        ],
         "summary": "This spell is a variant of Create or Destroy Water that allows spellcasters to conjure an area of water that rain from thin air and forms a water surface. Creatures standing in the area when the spell is cast will become Wet.",
         "description": "Call forth rain. It extinguishes exposed flames and forms a Water Surface.",
         "actionType": 1,
@@ -1056,7 +1162,10 @@
         "level": 3,
         "school": 5,
         "ritual": false,
-        "classes": ["Paladin", "War Domain"],
+        "classes": [
+            "Paladin",
+            "War Domain"
+        ],
         "summary": "This spell allows spellcasters to imbue their allies' weapons with holy power, causing them to deal additional Radiant damage.",
         "description": "Radiate a holy power that emboldens nearby allies. Their weapon attacks deal an additional 1d4|Radiant damage.",
         "actionType": 1,
@@ -1217,7 +1326,9 @@
         "level": 4,
         "school": 1,
         "ritual": false,
-        "classes": ["Cleric"],
+        "classes": [
+            "Cleric"
+        ],
         "summary": "This spell allows spellcasters to prevent a target from dying.",
         "description": "Protect a creature from death. The next time damage would reduce it to 0 Hit Points, it remains conscious with 1 Hit Point left.",
         "actionType": 1,
@@ -1231,7 +1342,10 @@
         "level": 1,
         "school": 8,
         "ritual": false,
-        "classes": ["Cleric", "Druid"],
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
         "summary": "This spell is a variant of Create or Destroy Water that  allows spellcasters to destroy an area of water (or water-like surfaces). The spell will remove the Wet condition from creatures within its area of effect.",
         "description": "Cause water-based surfaces (such as water, steam, ice, blood and poison) to vanish.",
         "actionType": 1,
@@ -1294,7 +1408,13 @@
         "level": 4,
         "school": 2,
         "ritual": false,
-        "classes": ["Bard", "Sorcerer", "Warlock", "Wizard", "Trickery Domain"],
+        "classes": [
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard",
+            "Trickery Domain"
+        ],
         "summary": "This spell teleports you and an ally.",
         "description": "Teleport yourself and up to one adjacent ally to a place you can see. The ally cannot be larger than Medium.",
         "actionType": 1,
@@ -1343,7 +1463,9 @@
         "level": 5,
         "school": 1,
         "ritual": false,
-        "classes": ["Cleric"],
+        "classes": [
+            "Cleric"
+        ],
         "summary": "This spell allows spellcasters to protect themselves from Evil and Good creatures, and allows them to break Enchantments on allies.",
         "description": "Aberrations, Celestials, Elementals, Fey, Fiends, and Undead have Disadvantage on Attack Rolls against you. You can also break Enchantments that Charmed|Charm, Frightened|Frighten, or Malefic Possession|Possesses allies.",
         "actionType": 1,
@@ -1357,7 +1479,10 @@
         "level": 1,
         "school": 4,
         "ritual": false,
-        "classes": ["Bard", "The Great Old One"],
+        "classes": [
+            "Bard",
+            "The Great Old One"
+        ],
         "summary": "This spell allows spellcasters to fill a target with terror and deal Psychic damage to them.",
         "description": "Frightened|Frighten a creature: it will be easier to hit and cannot move.\n\nOn a successful Wisdom, the creature only takes half damage.",
         "actionType": 1,
@@ -1371,7 +1496,10 @@
         "level": 1,
         "school": 5,
         "ritual": false,
-        "classes": ["Paladin", "War Domain"],
+        "classes": [
+            "Paladin",
+            "War Domain"
+        ],
         "summary": "This spell allows spellcasters to empower their Weapons to deal extra Radiant|Radiant damage.",
         "description": "Your prayer empowers you with divine radiance. Your weapons deal an additional 1d4|Radiant damage.",
         "actionType": 2,
@@ -1385,7 +1513,9 @@
         "level": 1,
         "school": 0,
         "ritual": false,
-        "classes": ["Paladin"],
+        "classes": [
+            "Paladin"
+        ],
         "summary": "Divine Smite allows a Paladin to expend a Spell Slot to deal additional Radiant damage with a melee weapon attack.",
         "description": "Your weapon emanates divine might as you strike, dealing an additional 2d8|Radiant|drs=t damage. Deals an additional 1d8|Radiant|drs=t damage to Fiends and Undead.",
         "actionType": 0,
@@ -1483,7 +1613,12 @@
         "level": 2,
         "school": 8,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Sorcerer"
+        ],
         "summary": "This spell allows spellcasters to bestow a creature the elegance of an eagle. Affected creatures gain Checks.",
         "description": "Creature gains Advantage on Checks.",
         "actionType": 1,
@@ -1497,7 +1632,9 @@
         "level": 0,
         "school": 5,
         "ritual": false,
-        "classes": ["Warlock"],
+        "classes": [
+            "Warlock"
+        ],
         "summary": "The cantrip allows the spellcaster to shoot out an energy beam that deals Force damage, and that can be upgraded with Warlock abilities.",
         "description": "Conjure a beam of crackling energy. Deals 1d10|Force damage to a target.",
         "actionType": 1,
@@ -1552,7 +1689,12 @@
         "level": 2,
         "school": 8,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Sorcerer"
+        ],
         "summary": "This spell allows spellcasters to strengthen an aspect of a creature's physical or mental attributes.",
         "description": "Bestow a magical enchantment upon an ally. They gain Advantage on Ability.\n\n* Until Long Rest",
         "actionType": 1,
@@ -1619,7 +1761,10 @@
         "level": 2,
         "school": 4,
         "ritual": false,
-        "classes": ["Bard", "Warlock"],
+        "classes": [
+            "Bard",
+            "Warlock"
+        ],
         "summary": "This spells allows spellcasters to capture the attention of a creature, forcing the creature to focus on them.",
         "description": "Reduce a creature's peripheral vision and make it look at you.",
         "actionType": 1,
@@ -1633,7 +1778,10 @@
         "level": 4,
         "school": 2,
         "ritual": false,
-        "classes": ["Wizard", "Great Old One"],
+        "classes": [
+            "Wizard",
+            "Great Old One"
+        ],
         "summary": "Summons tentacles in an area that make it difficult to move and harm creatures.",
         "description": "Tentacles sprout from the ground, turning the area into Difficult Terrain|, attacking and Black Tentacles|Smothering creatures within.",
         "actionType": 1,
@@ -1694,7 +1842,12 @@
         "level": 1,
         "school": 5,
         "ritual": false,
-        "classes": ["Bard", "Druid", "Light Domain", "The Archfey"],
+        "classes": [
+            "Bard",
+            "Druid",
+            "Light Domain",
+            "The Archfey"
+        ],
         "summary": "This spell allows spellcasters to conjure brilliant light. Any creature caught in the radius temporarily sheds faint light and prevents Invisible.",
         "description": "All targets within the light turn visible, and Attack Rolls against them have Advantage.",
         "actionType": 1,
@@ -1768,7 +1921,12 @@
         "level": 3,
         "school": 7,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "Wizard"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to put their allies into a magical, protective coma, feigning death.",
         "description": "Put an ally in a protective coma. They become Resistant to all damage except Psychic. Disease and Poison no longer have any effect.\n\nRemoved when Help|Helped.",
         "actionType": 1,
@@ -1815,7 +1973,10 @@
         "level": 4,
         "school": 5,
         "ritual": false,
-        "classes": ["Wizard", "The Fiend"],
+        "classes": [
+            "Wizard",
+            "The Fiend"
+        ],
         "summary": "This spell shields the spellcaster with luminous energy.",
         "description": "Wreathe your body in flames that shed light in a ft=10 radius, provide Resistance to Fire or Cold damage, and retaliate against melee attacks.",
         "actionType": 1,
@@ -1857,7 +2018,9 @@
         "level": 2,
         "school": 5,
         "ritual": false,
-        "classes": ["Druid"],
+        "classes": [
+            "Druid"
+        ],
         "summary": "This spell allows spellcasters to summon a fiery scimitar in their free hand that sheds bright light. Casters can make a melee weapon attack with the blade to deal Fire damage to enemies.",
         "description": "Conjure a flaming Scimitar in your hand that deals 3d6|Fire damage. It sheds a bright light in a m=3|ft=10 radius and a dim light in a m=6|ft=20 radius. 10.\n\n Flame Blade",
         "actionType": 2,
@@ -1885,7 +2048,12 @@
         "level": 5,
         "school": 5,
         "ritual": false,
-        "classes": ["Cleric", "Light Domain", "War Domain", "Fiend"],
+        "classes": [
+            "Cleric",
+            "Light Domain",
+            "War Domain",
+            "Fiend"
+        ],
         "summary": "This spells allows the caster to make a pillar of divine flame at a chosen location dealing   5d6 | Fire damage and  5d6 | Radiant damage.",
         "description": "Make a pillar of divine fire roar down from the heavens like the wrath of affronted angels.",
         "actionType": 1,
@@ -1933,7 +2101,9 @@
         "level": 6,
         "school": 8,
         "ritual": false,
-        "classes": ["Wizard"],
+        "classes": [
+            "Wizard"
+        ],
         "summary": "Atrophy a foe, Restraining them until they temporarily turn to stone.",
         "description": "Atrophy a foe, Restrained|Restraining them until they temporarily turn to stone. The target will Petrified|Petrify if it does not succeed its Saving Throw within 3 turns.",
         "actionType": 1,
@@ -1983,7 +2153,12 @@
         "level": 2,
         "school": 8,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Sorcerer"
+        ],
         "summary": "This spell allows spellcasters to bestow a creature the slyness of a fox. Affected creatures gain Checks.",
         "description": "Creature gains Advantage on Checks.",
         "actionType": 1,
@@ -1997,7 +2172,13 @@
         "level": 4,
         "school": 1,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "War Domain", "Tempest Domain"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "War Domain",
+            "Tempest Domain"
+        ],
         "summary": "This spell allows spellcasters to imbue an ally with the ability to avoid some slowing effects.",
         "description": "Snap an ally out of any Stunned|Stun. Difficult Terrain can't slow them down, and they can't be magically Paralysed or Restrained. \n\nIf the target is restrained by non-magical means, it can spend melee of Movement to free itself.",
         "actionType": 1,
@@ -2046,7 +2227,12 @@
         "level": 3,
         "school": 8,
         "ritual": false,
-        "classes": ["Sorcerer", "Warlock", "Wizard", "Circle of the Spores"],
+        "classes": [
+            "Sorcerer",
+            "Warlock",
+            "Wizard",
+            "Circle of the Spores"
+        ],
         "summary": "This spell allows spellcasters to transform themselves or an ally into a cloud of mist to avoid attacks, reduce size, and gain Advantage on some Saving Throws.",
         "description": "Transform yourself or an ally into a tiny gas cloud. It can't fall, and fits through small openings. It is very hard to damage.\n\nThe cloud has Advantage on Constitution, Dexterity, and Strength SavingThrows.\n\nWhile transformed, the target won't be able to attack, cast spells, or talk.",
         "actionType": 1,
@@ -2115,7 +2301,11 @@
         "level": 3,
         "school": 1,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Wizard"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to inscribe a ward that can trigger various magical effects when stepped on by an enemy.",
         "description": "Inscribe a circle of arcane glyphs on the ground. When stepped on by an enemy the selected magical effect will trigger.\n\nThe glyph will last until triggered, or until a Long Rest.\n\nOnly one glyph can be active at a time.",
         "actionType": 1,
@@ -2140,7 +2330,10 @@
         "level": 1,
         "school": 8,
         "ritual": false,
-        "classes": ["Druid", "Ranger"],
+        "classes": [
+            "Druid",
+            "Ranger"
+        ],
         "summary": "This spell allows spellcasters to create magical berries which have healing properties when eaten.",
         "description": "Conjure four magical berries for yourself or a companion. Creatures who eat a berry regain 1d4|Healing.\nEach berry counts as one Camp Supplies.\nThe berries appear in the targeted creature's inventory and disappear after a Long Rest.",
         "actionType": 1,
@@ -2154,7 +2347,11 @@
         "level": 3,
         "school": 8,
         "ritual": false,
-        "classes": ["Sorcerer", "Warlock", "Wizard"],
+        "classes": [
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to grant a creature they touch the ability to fly.",
         "description": "Bestow the ability to Flight|Fly upon yourself or an ally.",
         "actionType": 1,
@@ -2168,7 +2365,10 @@
         "level": 4,
         "school": 2,
         "ritual": false,
-        "classes": ["Druid", "Nature Domain"],
+        "classes": [
+            "Druid",
+            "Nature Domain"
+        ],
         "summary": "This spell allows spellcasters to summon a Grasping Vine which can pull enemies toward itself.",
         "description": "Summon a giant vine capable of dragging creatures toward itself.\n\n10\n\nThe Grasping Vine has 6 Hit Points, an Armour Class of 10, and the following ability:\n\nGrasping Pull|w=40\n* Grasp a target and pull it m=6|ft=20 toward you.",
         "actionType": 1,
@@ -2182,7 +2382,11 @@
         "level": 1,
         "school": 2,
         "ritual": false,
-        "classes": ["Wizard", "Arcane Trickster", "Eldritch Knight"],
+        "classes": [
+            "Wizard",
+            "Arcane Trickster",
+            "Eldritch Knight"
+        ],
         "summary": "It allows spellcasters to conjure flammable grease on the ground within range and turn it into Difficult Terrain.",
         "description": "Cover the ground in flammable grease. It becomes Difficult Terrain and creatures within can fall Prone.",
         "actionType": 1,
@@ -2196,7 +2400,12 @@
         "level": 4,
         "school": 6,
         "ritual": false,
-        "classes": ["Bard", "Sorcerer", "The Archfey", "Wizard"],
+        "classes": [
+            "Bard",
+            "Sorcerer",
+            "The Archfey",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to provide a more resilient form of Invisibility for their allies.",
         "description": "Turn a creature Invisible. Attacks against it have Disadvantage. It attacks with Advantage. Invisibility breaks when you fail increasingly harder Stealth Ability Checks on attacking, casting spells or interacting with items.",
         "actionType": 1,
@@ -2210,7 +2419,12 @@
         "level": 5,
         "school": 1,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "Life Domain"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Life Domain"
+        ],
         "summary": "This spell allows spellcasters to removes Charm, Petrification, Stun, and Curses from a creature.",
         "description": "Touch a creature and negate any Charmed|Charm, Petrified|Petrification, Stunned|Stun, or cursed.",
         "actionType": 1,
@@ -2224,7 +2438,10 @@
         "level": 4,
         "school": 2,
         "ritual": false,
-        "classes": ["Cleric", "Light Domain"],
+        "classes": [
+            "Cleric",
+            "Light Domain"
+        ],
         "summary": "This spell allows spellcasters to summon a divine guardian who sacrifices its Hit Points to damage enemies.",
         "description": "Call forth a divine guardian that attacks nearby enemies. Every time it deals damage, the guardian loses an equal amount of Hit Points. Lasts 10 turns. The guardian is stationary. When an enemy is in range, it uses an attack called \"Strike of the Guardian\". It has a range of 3m and deals 20 Radiant damage. On a DEX save, enemies still take half damage. It has 60 Hit Points.",
         "actionType": 1,
@@ -2238,7 +2455,10 @@
         "level": 0,
         "school": 3,
         "ritual": false,
-        "classes": ["Cleric", "Druid"],
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
         "summary": "This cantrip allows spellcasters to grant a temporary bonus to a creature's Ability Checks.",
         "description": "The target gains d4|Physical +1d4 bonus to Ability Checks.\n\n10",
         "actionType": 1,
@@ -2252,7 +2472,9 @@
         "level": 1,
         "school": 5,
         "ritual": false,
-        "classes": ["Cleric"],
+        "classes": [
+            "Cleric"
+        ],
         "summary": "This spell allows spellcasters to hit enemies with radiant bolt that deals Radiant damage and grants Attack Roll made against them.",
         "description": "The next Attack Roll against this target has Advantage.",
         "actionType": 1,
@@ -2316,7 +2538,9 @@
         "level": 1,
         "school": 2,
         "ritual": false,
-        "classes": ["Ranger"],
+        "classes": [
+            "Ranger"
+        ],
         "summary": "This spell allows spellcasters to make ranged attacks and potentially deal AoE Piercing damage to enemies.",
         "description": "Shoot a volley of thorns. They deal weapon damage|Physical and explode, dealing an additional 1d10|Piercing damage to the target and surrounding creatures.",
         "actionType": 4,
@@ -2330,7 +2554,9 @@
         "level": 6,
         "school": 7,
         "ritual": false,
-        "classes": ["Cleric"],
+        "classes": [
+            "Cleric"
+        ],
         "summary": "This spell allows spellcasters to make an enemy much more feeble.",
         "description": "Reduce a target's maximum Hit Points, but never below 1.\n\nOn Save: Target still takes half damage, but its maximum Hit Points are not reduced.",
         "actionType": 1,
@@ -2344,7 +2570,11 @@
         "level": 3,
         "school": 8,
         "ritual": false,
-        "classes": ["Sorcerer", "Wizard", "Oath of Vengeance"],
+        "classes": [
+            "Sorcerer",
+            "Wizard",
+            "Oath of Vengeance"
+        ],
         "summary": "This spell allows spellcasters to allow their allies to become Hastened.",
         "description": "Target yourself or an ally to become Hastened. The creature has a +2 bonus to Armour Class, Advantage on Dexterity SavingThrows, its Movement Speed is doubled, and can take one additional Action per turn. \n\nWhen the condition ends, the creature becomes Lethargic.",
         "actionType": 1,
@@ -2358,7 +2588,10 @@
         "level": 6,
         "school": 5,
         "ritual": false,
-        "classes": ["Cleric", "Druid"],
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
         "summary": "This spell allows spellcasters to substantially heal a target by recovering Hit Points and removing Diseases.",
         "description": "Heals a target's wounds and remove Blindness and any Diseases.\n\nNo effect on undead and constructs.",
         "actionType": 1,
@@ -2372,7 +2605,11 @@
         "level": 1,
         "school": 5,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid"
+        ],
         "summary": "This spell allows spellcasters to heal allies that they can see within range.",
         "description": "Healing|Heal a creature you can see.\n\nNo effect on undead and constructs.",
         "actionType": 2,
@@ -2386,7 +2623,10 @@
         "level": 2,
         "school": 8,
         "ritual": false,
-        "classes": ["Bard", "Druid"],
+        "classes": [
+            "Bard",
+            "Druid"
+        ],
         "summary": "This spell allows spellcasters to heat up a metal weapon or armour on the targeted creature, forcing them to let go or receive damage or suffer various penalties.",
         "description": "Cause a metal Weapon or Ability Checks. If the creature is only wearing metal armour, it always receives Disadvantage. \n\nIf the creature is still touching the metal, you can use a Bonus Action on subsequent turns to Reapply Heat Metal to deal another 2d8|Fire damage and force the creature to let go or receive Disadvantage.",
         "actionType": 1,
@@ -2414,7 +2654,11 @@
         "level": 1,
         "school": 5,
         "ritual": false,
-        "classes": ["Warlock", "Oathbreaker", "Asmodeus Tiefling"],
+        "classes": [
+            "Warlock",
+            "Oathbreaker",
+            "Asmodeus Tiefling"
+        ],
         "summary": "This spell allows spellcasters to surround a creature in hellfire that deals Fire damage as a Reaction when taking damage from them.",
         "description": "React to your next attacker with flames that deal 2d10|Fire damage. \n\nOn Save: Target still takes half damage.",
         "actionType": 3,
@@ -2456,7 +2700,9 @@
         "level": 6,
         "school": 2,
         "ritual": false,
-        "classes": ["Cleric"],
+        "classes": [
+            "Cleric"
+        ],
         "summary": "This spell allows spellcasters to summon a bountiful smorgasbord to bolster themselves and their allies and strengthen their resolve.",
         "description": "You and everyone around can't be Poisoned, Diseased, or Frightened. Everyone's maximum Hit Points increases by 12, and they make Wisdom SavingThrows with Advantage.",
         "actionType": 1,
@@ -2470,7 +2716,10 @@
         "level": 1,
         "school": 4,
         "ritual": false,
-        "classes": ["Bard", "Paladin"],
+        "classes": [
+            "Bard",
+            "Paladin"
+        ],
         "summary": "This spell allows spellcasters to instill themselves or an ally with courage. The affected creature cannot be Frightened and gains Temporary Hit Points.",
         "description": "Make yourself or a target immune to Frightened and gain 5 Temporary Hit Points each turn.\n\nPrerequisite Icon Can only have Temporary Hit Points from one source.",
         "actionType": 1,
@@ -2484,7 +2733,9 @@
         "level": 1,
         "school": 4,
         "ritual": false,
-        "classes": ["Warlock"],
+        "classes": [
+            "Warlock"
+        ],
         "summary": "This spell allows spellcasters to put a curse on a creature and deal additional Necrotic damage to the targeted creature. The curse also imposes Disadvantage on a chosen ability check.",
         "description": "Make your attacks deal an additional 1d6|Necrotic Necrotic|damage damage [sic] to the target and give it Disadvantage on Checks on an Ability of your choosing.\n\nIf the target dies before the spell ends, you can Reapply Hex to a new creature without expending a Spell Slot.",
         "actionType": 2,
@@ -2498,7 +2749,13 @@
         "level": 5,
         "school": 4,
         "ritual": false,
-        "classes": ["Bard", "Sorcerer", "Warlock", "Wizard", "War Domain"],
+        "classes": [
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard",
+            "War Domain"
+        ],
         "summary": "This spell allows spellcasters to Paralyse a creature, preventing them from acting and making them vulnerable to attacks.",
         "description": "Paralysed|Paralyse a creature. It can't Move, Act, or React. Attacks from within m=3|ft=10 are always Critical Hits.\n* No effect on undead.",
         "actionType": 1,
@@ -2537,7 +2794,9 @@
         "level": 3,
         "school": 2,
         "ritual": false,
-        "classes": ["Warlock"],
+        "classes": [
+            "Warlock"
+        ],
         "summary": "It creates an area that deals damage and inflicts conditions to creatures in it, including reduced movement speed.",
         "description": "Creatures within this black sphere are Blinded and take damage at the end of their turn and the start of their turn.\n\nCreatures starting their turn in the area take 2d6|Cold damage. Creatures ending their turn in the area possibly take 2d6|Acid damage.\n\nThe area is Difficult Terrain.",
         "actionType": 1,
@@ -2551,7 +2810,12 @@
         "level": 3,
         "school": 6,
         "ritual": false,
-        "classes": ["Bard", "Sorcerer", "Warlock", "Wizard"],
+        "classes": [
+            "Bard",
+            "Sorcerer",
+            "Warlock",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to hypnotise all creatures within an area.",
         "description": "Hypnotised|Hypnotise creatures that can see the pattern. They cannot attack you. They cannot move or act.\n\nThis spell can be cast while you are Silenced.",
         "actionType": 1,
@@ -2585,7 +2849,12 @@
         "level": 4,
         "school": 5,
         "ritual": false,
-        "classes": ["Druid", "Sorcerer", "Wizard", "Tempest Domain"],
+        "classes": [
+            "Druid",
+            "Sorcerer",
+            "Wizard",
+            "Tempest Domain"
+        ],
         "summary": "This spell allows spellcasters to summon an ice storm to strike an area.",
         "description": "Impel a storm of hail and ice to crash from the sky, covering the ground and striking all objects and creatures within range, dealing Bludgeoning and Cold damage. It also creates an Ice Surface that lasts 2 turns.",
         "actionType": 1,
@@ -2599,7 +2868,10 @@
         "level": 1,
         "school": 7,
         "ritual": false,
-        "classes": ["Cleric", "Oathbreaker"],
+        "classes": [
+            "Cleric",
+            "Oathbreaker"
+        ],
         "summary": "This spell allows the spellcaster to make a melee attack that inflicts Necrotic damage.",
         "description": "Putrefy a creature with Necrotic energy filling your hands.",
         "actionType": 1,
@@ -2971,7 +3243,12 @@
         "level": 5,
         "school": 5,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "Life Domain"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Life Domain"
+        ],
         "summary": "This spell allows spellcasters to heal several of their allies.",
         "description": "Unleash a soothing hum of energy that heals you and nearby allies.\n\nNo effect on Undead and Constructs",
         "actionType": 1,
@@ -2985,7 +3262,9 @@
         "level": 3,
         "school": 5,
         "ritual": false,
-        "classes": ["Cleric"],
+        "classes": [
+            "Cleric"
+        ],
         "summary": "This spell allows spellcasters to heal several allies that they can see within range.",
         "description": "Call out words of restoration to heal up to 6 creatures for 1d4 + Spellcasting Modifier|Healing.",
         "actionType": 2,
@@ -3113,7 +3392,10 @@
         "level": 2,
         "school": 5,
         "ritual": false,
-        "classes": ["Druid", "Oath of the Ancients"],
+        "classes": [
+            "Druid",
+            "Oath of the Ancients"
+        ],
         "summary": "This spell allows spellcasters to call down a beam of moonlight that deals Radiant damage to any creature that enters the beam or starts its turn there.",
         "description": "Call down a silvery beam of pale light that deals 2d10|Radiant damage to any creatures that enters it or starts its turn in the light. You can use an ranged}}. On a successful [[Constitution SavingThrow, targets still take half damage.\n\n10\n\nWhen cast, the spellcaster gains the following ability:\n* Move Moonbeam: Move the beam of moonlight up to ranged. The beam of light damages any creature that enters the beam or starts its turn in the light.\n** Damage:2d10|Radiant\n** Action\n** On Save: Targets still take half damage.\n** 10",
         "actionType": 1,
@@ -3166,7 +3448,9 @@
         "level": 4,
         "school": 5,
         "ritual": false,
-        "classes": ["Wizard"],
+        "classes": [
+            "Wizard"
+        ],
         "description": "Enclose a target in a sphere of shimmering force, reducing its movement speed by half, and blocking all incoming and outgoing damage",
         "actionType": 1,
         "concentration": false,
@@ -3179,7 +3463,10 @@
         "level": 6,
         "school": 4,
         "ritual": false,
-        "classes": ["Bard", "Wizard"],
+        "classes": [
+            "Bard",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to force a creature to stay in place, inactive.",
         "description": "Cause a creature to start dancing, making it unable to take Move. Its attackers have Advantage on Attack Rolls. The dancer has Disadvantage on Attack Rolls and Dexterity SavingThrows.",
         "actionType": 1,
@@ -3193,7 +3480,12 @@
         "level": 2,
         "school": 8,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "Sorcerer"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Sorcerer"
+        ],
         "summary": "This spell allows spellcasters to bestow a creature the intuition of an owl. Affected creatures gain Checks.",
         "description": "Creature gains Advantage on Checks.",
         "actionType": 1,
@@ -3221,7 +3513,11 @@
         "level": 2,
         "school": 1,
         "ritual": false,
-        "classes": ["Druid", "Ranger", "Trickery Domain"],
+        "classes": [
+            "Druid",
+            "Ranger",
+            "Trickery Domain"
+        ],
         "summary": "This spell allows spellcasters to grants themselves and nearby allies a bonus to Checks.",
         "description": "Call forth a veil of shadow and silence that gives you and nearby allies a +10 bonus to Checks.",
         "actionType": 1,
@@ -3257,7 +3553,9 @@
         "level": 4,
         "school": 6,
         "ritual": false,
-        "classes": ["Wizard"],
+        "classes": [
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to temporarily haunt a creatures mind with illusions, dealing damage, prevents movement, and has Disadvantage on Ability Checks and Attack Rolls.",
         "description": "Haunt a creature with illusions of its greatest fears. It takes 4d10|Psychic Damage per turn, cannot move, has Disadvantage on Ability Checks and Attack Rolls",
         "actionType": 1,
@@ -3285,7 +3583,9 @@
         "level": 6,
         "school": 2,
         "ritual": false,
-        "classes": ["Cleric"],
+        "classes": [
+            "Cleric"
+        ],
         "summary": "This spell allows spellcasters to summon an Elemental, Celestial, or Fiend for aid.",
         "description": "Beseech one of these otherworldly entities for aid. Summon either an Elemental, Celestial, or Fiend to fight for you.\n\nUntil Long Rest",
         "actionType": 1,
@@ -3299,7 +3599,12 @@
         "level": 5,
         "school": 1,
         "ritual": false,
-        "classes": ["Bard", "Cleric", "Druid", "Wizard"],
+        "classes": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to take control of a Celestial, Elemental, Fey, or Fiend.",
         "description": "Target an otherworldly creature and attach its consciousness to your own. It will follow and fight for you as an ally.\n\nTarget must be a Celestial, Elemental, Fey, or a Fiend.",
         "actionType": 1,
@@ -3357,7 +3662,13 @@
         "level": 4,
         "school": 8,
         "ritual": false,
-        "classes": ["Bard", "Druid", "Sorcerer", "Wizard", "Trickery Domain"],
+        "classes": [
+            "Bard",
+            "Druid",
+            "Sorcerer",
+            "Wizard",
+            "Trickery Domain"
+        ],
         "summary": "This spell transforms a creature into a sheep.",
         "description": "Transform a creature into a harmless sheep. If the sheep's Hit Points drop to 0, the target reverts to its original form with its original Hit Points.",
         "actionType": 1,
@@ -3385,7 +3696,9 @@
         "level": 2,
         "school": 5,
         "ritual": false,
-        "classes": ["Cleric"],
+        "classes": [
+            "Cleric"
+        ],
         "summary": "This spell allows spellcasters to heal all allies within range.",
         "description": "Heal all allies you can see within range by 2d8 + Spellcasting Modifier|Healing.\n\nCan only be used outside of combat. This spell has no effect on Undead and Constructs.",
         "actionType": 1,
@@ -3399,7 +3712,10 @@
         "level": 0,
         "school": 2,
         "ritual": false,
-        "classes": ["Cleric", "Druid"],
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
         "summary": "This cantrip creates a blue flame in the caster's palm that emanates light and can be thrown at enemies.",
         "description": "A flame in your hand sheds a light in a m=9|ft=30 radius and deals 1d8|Fire Fire|damage when thrown.\n\nThrowing the flame immediately after you conjure it does not cost an Action. Extinguishing or throwing it on subsequent turns costs an Action. The throw has a range of m=9|ft=30.",
         "actionType": 1,
@@ -3470,7 +3786,12 @@
         "level": 2,
         "school": 1,
         "ritual": false,
-        "classes": ["Cleric", "Druid", "Paladin", "Ranger"],
+        "classes": [
+            "Cleric",
+            "Druid",
+            "Paladin",
+            "Ranger"
+        ],
         "summary": "This spell allows spellcasters to grant a creature they touch protection from Poisonous effects.",
         "description": "Touch a creature to grant it protection against Poisonous influences. You neutralize all Poisons that affect it, grant it Advantage on SavingThrows against being Poisoned|inline=true, and Resistance to Poison damage.",
         "actionType": 1,
@@ -3484,7 +3805,12 @@
         "level": 2,
         "school": 7,
         "ritual": false,
-        "classes": ["Warlock", "Wizard", "Arcane Trickster", "Eldritch Knight"],
+        "classes": [
+            "Warlock",
+            "Wizard",
+            "Arcane Trickster",
+            "Eldritch Knight"
+        ],
         "summary": "This spell allows spellcasters to make a ranged spell attack against a creature and sap their Strength. A weakened creature deals half damage with weapon attacks that use Strength.",
         "description": "Weaken a foe: they deal half damage with weapon attacks using Strength.",
         "actionType": 1,
@@ -3598,7 +3924,10 @@
         "level": 0,
         "school": 1,
         "ritual": false,
-        "classes": ["Cleric", "Druid"],
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
         "summary": "This cantrip grants a temporary bonus to a creature's SavingThrows.",
         "description": "Make a target more resistant to spell effects and conditions: it receives a d4|Physical +1d4 bonus to SavingThrows.",
         "actionType": 1,
@@ -3626,7 +3955,10 @@
         "level": 3,
         "school": 7,
         "ritual": false,
-        "classes": ["Cleric", "Paladin"],
+        "classes": [
+            "Cleric",
+            "Paladin"
+        ],
         "summary": "This spell allows the spellcaster to bring a dead Companion back to life.",
         "description": "Revive a companion. They return to life with 1 Hit point.\n\n* Can only target a companion character who is dead.\n* The target of Revivify can be relocated within the spell's area of effect.",
         "actionType": 1,
@@ -3682,7 +4014,9 @@
         "level": 0,
         "school": 5,
         "ritual": false,
-        "classes": ["Cleric"],
+        "classes": [
+            "Cleric"
+        ],
         "summary": "It deals Radiant damage to a target.",
         "description": "Engulf a target in a flame-like radiance.",
         "actionType": 1,
@@ -3696,7 +4030,10 @@
         "level": 1,
         "school": 1,
         "ritual": false,
-        "classes": ["Cleric", "Paladin"],
+        "classes": [
+            "Cleric",
+            "Paladin"
+        ],
         "summary": "This spell allows spellcasters to ward themselves or an ally against enemy attacks.",
         "description": "You or an ally cannot be targeted until you attack or harm a creature. You can still take damage from area spells.\n\nUntil the affected entity attacks or harms another creature, it cannot be targeted by enemy attacks. However, it can still take damage from spells that influence a larger area.",
         "actionType": 2,
@@ -3731,7 +4068,9 @@
         "level": 1,
         "school": 5,
         "ritual": false,
-        "classes": ["Paladin"],
+        "classes": [
+            "Paladin"
+        ],
         "summary": "This spell allows spellcasters to cause their melee weapon to flare with white-hot intensity, searing their targets on hit.",
         "description": "Your weapon flares with white-hot intensity. It deals, on top of weapon damage, an extra 1d6|Fire damage and marks the target with Searing Smite.\n\n* A target with Searing Smite takes 1d6|Fire damage every turn, until it succeeds on a Constitution SavingThrow.\n* If the spellcaster misses the initial Attack, the Spell Slot and bonus are not consumed.",
         "actionType": 4,
@@ -3745,7 +4084,11 @@
         "level": 2,
         "school": 3,
         "ritual": false,
-        "classes": ["Bard", "Sorcerer", "Wizard"],
+        "classes": [
+            "Bard",
+            "Sorcerer",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to see Invisible objects and creatures within range while not Incapacitated. Creatures within range which fail on a Dexterity Saving Throw are revealed to others.",
         "description": "Become able to see Invisible creatures, and possibly reveal them to others.",
         "actionType": 1,
@@ -3759,7 +4102,13 @@
         "level": 5,
         "school": 6,
         "ritual": false,
-        "classes": ["Bard", "Sorcerer", "Wizard", "Archfey", "Trickery Domain"],
+        "classes": [
+            "Bard",
+            "Sorcerer",
+            "Wizard",
+            "Archfey",
+            "Trickery Domain"
+        ],
         "summary": "This spell allows spellcasters to disguise their allies.",
         "description": "Disguise up to 4 members of your adventuring party.  Initial disguises are chosen at random.  Each affected party member may then choose a new disguise a single time as an Action.\n\nDisguises last until dispelled as an Action using Dispel Disguise.",
         "actionType": 1,
@@ -3815,7 +4164,9 @@
         "level": 2,
         "school": 6,
         "ritual": false,
-        "classes": ["Item"],
+        "classes": [
+            "Item"
+        ],
         "summary": "Create a Shadow Blade (Weapon) in your main hand that deals Psychic damage.",
         "description": "Weave a shadowy shortsword in your hand that deals 2d8|Psychic damage.\n\nWhen you use the sword to attack a target that is in dim light or darkness, you make the Attack Roll with Advantage. \n\nThe shadow blade can be unequipped and equipped again, but must remain on the spellcaster's person.",
         "actionType": 2,
@@ -3912,7 +4263,11 @@
         "level": 1,
         "school": 1,
         "ritual": false,
-        "classes": ["Cleric", "Paladin", "War Domain"],
+        "classes": [
+            "Cleric",
+            "Paladin",
+            "War Domain"
+        ],
         "summary": "This spell allows spellcasters to surround themselves or an ally with divine protection and gain a bonus to their Armour Class.",
         "description": "Surround a creature with a shimmering field of magic that increases its Armour Class by 2.",
         "actionType": 2,
@@ -3939,7 +4294,10 @@
         "level": 0,
         "school": 8,
         "ritual": false,
-        "classes": ["Druid", "Nature Domain"],
+        "classes": [
+            "Druid",
+            "Nature Domain"
+        ],
         "summary": "It imbues the caster's weapon with nature power.",
         "description": "Quarterstaff or Club Required.\n\nYour staff or d8|Physical}} 1d8 + [[Ability Score Modifier|Wisdom Modifier|Bludgeoning damage, and uses your Spellcasting Ability for Attack Rolls.",
         "actionType": 2,
@@ -4146,7 +4504,10 @@
         "level": 3,
         "school": 7,
         "ritual": true,
-        "classes": ["Bard", "Cleric"],
+        "classes": [
+            "Bard",
+            "Cleric"
+        ],
         "summary": "This spell allows spellcasters to grant a semblance of life to a corpse, allowing it to answer questions.",
         "description": "Grant a semblance of life to a corpse, allowing it to answer questions. \n\nSkeletons and creatures killed with Acid, Fire, Lightning, Necrotic, Radiant damage no longer have a mouth and can't be made to talk using this spell.\n\nCasting this spell also grants the ability Recast Speak with Dead, which allows the spellcaster to recast the spell without expending a spell slot, until the next Long Rest.",
         "actionType": 1,
@@ -4160,7 +4521,12 @@
         "level": 2,
         "school": 8,
         "ritual": false,
-        "classes": ["Druid", "Ranger", "Nature Domain", "Circle of the Land}"],
+        "classes": [
+            "Druid",
+            "Ranger",
+            "Nature Domain",
+            "Circle of the Land}"
+        ],
         "summary": "This spell allows spellcasters to transform an area of land into a hazardous spiky terrain. Creatures walking through the area have their speed halved and take Piercing damage.",
         "description": "Shape a piece of ground into hard spikes. A creature walking on the spikes takes 2d4|Piercing damage for every melee it moves.\n\nThe spikes are Difficult Terrain, halving a creature's Movement Speed.",
         "actionType": 1,
@@ -4174,7 +4540,10 @@
         "level": 3,
         "school": 2,
         "ritual": false,
-        "classes": ["Cleric", "War Domain"],
+        "classes": [
+            "Cleric",
+            "War Domain"
+        ],
         "summary": "This spell allows spellcasters to call forth spirits to damage nearby targets and slow their Movement.",
         "description": "Call forth spirits to protect you. Nearby enemies take 3d8|Radiant or 3d8|Necrotic damage per turn, and their Movement Speed is halved. Lasts for 10 turns.\n\nOn a successful Save, targets still take half damage. \n\nCaster can't become Invisible while Concentrating on this spell.",
         "actionType": 1,
@@ -4188,7 +4557,10 @@
         "level": 2,
         "school": 5,
         "ritual": false,
-        "classes": ["Cleric", "War Domain"],
+        "classes": [
+            "Cleric",
+            "War Domain"
+        ],
         "summary": "Summons a floating weapon that can attack enemies. You can choose between several different weapons, and each has a different Weapon Action.",
         "description": "Summon a floating, spectral weapon of your choice that attacks your enemies alongside you. The weapon is Immune to Psychic and Poison damage, and Resistant to all other Damage Types.\n\n10. Only one Spiritual Weapon may be summoned at any time.",
         "actionType": 2,
@@ -4216,7 +4588,12 @@
         "level": 3,
         "school": 2,
         "ritual": false,
-        "classes": ["Bard", "Sorcerer", "Wizard", "Fiend"],
+        "classes": [
+            "Bard",
+            "Sorcerer",
+            "Wizard",
+            "Fiend"
+        ],
         "summary": "This spell allows spellcasters to create a nauseating cloud of gas that can prevent creatures from taking Actions. Targets must make Constitution SavingThrows every turn while they're in the area of effect or become Nauseous.",
         "description": "Create a cloud of gas so nauseating it prevents creatures from taking actions.",
         "actionType": 1,
@@ -4230,7 +4607,12 @@
         "level": 4,
         "school": 1,
         "ritual": false,
-        "classes": ["Druid", "Sorcerer", "Wizard", "War Domain"],
+        "classes": [
+            "Druid",
+            "Sorcerer",
+            "Wizard",
+            "War Domain"
+        ],
         "summary": "This spell allows spellcasters to harden the skin of their ally, granting them Resistance to non-magical physical damage.",
         "description": "Turn a creature's flesh hard as stone. It takes only half the damage of all non-magical Bludgeoning, Piercing, and Slashing damage.\n\nLong Rest",
         "actionType": 1,
@@ -4285,7 +4667,11 @@
         "level": 6,
         "school": 5,
         "ritual": false,
-        "classes": ["Druid", "Sorcerer", "Wizard"],
+        "classes": [
+            "Druid",
+            "Sorcerer",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters to project a beam of light, Blinding and dealing Radiant damage to everything in its path. You can then use Recast Sunbeam on subsequent turns without expending a Spell Slot.",
         "description": "A beam of brilliant light sears and Blinded|Blinds all creatures in its path.\n\n10\n\nFor the duration of the spell, Sunbeam can be recast using an action, but without expending a Spell Slot.",
         "actionType": 1,
@@ -4372,7 +4758,10 @@
         "level": 0,
         "school": 8,
         "ritual": false,
-        "classes": ["Cleric", "Zariel Tiefling"],
+        "classes": [
+            "Cleric",
+            "Zariel Tiefling"
+        ],
         "summary": "It temporarily improves the caster's Intimidation and Performance checks.",
         "description": "Gain Advantage on Checks.",
         "actionType": 1,
@@ -4414,7 +4803,10 @@
         "level": 0,
         "school": 8,
         "ritual": false,
-        "classes": ["Druid", "Nature Domain"],
+        "classes": [
+            "Druid",
+            "Nature Domain"
+        ],
         "summary": "It deals damage to a target and pulls it closer to the caster.",
         "description": "Pulls the creature m=3|ft=10 closer to you.\n\nThe target cannot be pulled if it is Huge in size.",
         "actionType": 1,
@@ -4428,7 +4820,9 @@
         "level": 1,
         "school": 5,
         "ritual": false,
-        "classes": ["Paladin"],
+        "classes": [
+            "Paladin"
+        ],
         "summary": "This spell allows spellcasters to cause their weapon to ring with Thunder as they strike, pushing targets away and potentially knocking them Prone.",
         "description": "Your weapon rings with thunder as you strike, pushing your target m=3|ft=10 away and possibly knocking them Prone. \n\nIf the spellcaster misses the initial Attack, the Spell Slot and Bonus Action are not consumed.",
         "actionType": 4,
@@ -4513,7 +4907,10 @@
         "level": 3,
         "school": 7,
         "ritual": false,
-        "classes": ["Warlock", "Wizard"],
+        "classes": [
+            "Warlock",
+            "Wizard"
+        ],
         "summary": "This spell allows spellcasters at melee range to siphon the life force of their target.",
         "description": "Touch an enemy to siphon their life force and regain half as many Hit Points.\n\nFor 10 turns, you can use Vampiric Touch again without expending an additional Spell Slot.",
         "actionType": 1,
@@ -4541,7 +4938,9 @@
         "level": 0,
         "school": 4,
         "ritual": false,
-        "classes": ["Bard"],
+        "classes": [
+            "Bard"
+        ],
         "summary": "It deals Psychic damage to enemies and inflicts Disadvantage on their Attack Rolls.",
         "description": "Insult a creature: it has Disadvantage on its next Attack Roll.",
         "actionType": 1,
@@ -4569,7 +4968,9 @@
         "level": 6,
         "school": 5,
         "ritual": false,
-        "classes": ["Wizard"],
+        "classes": [
+            "Wizard"
+        ],
         "description": "Raise a wall of solid ice that deals 10d6|Cold damage to anyone standing in its way. When the ice is broken, it leaves behind a cloud of frigid air that deals 10d6|Cold per turn to creatures within.",
         "actionType": 1,
         "concentration": true,
@@ -4582,7 +4983,12 @@
         "level": 5,
         "school": 5,
         "ritual": false,
-        "classes": ["Druid", "Sorcerer", "Wizard", "Nature Domain"],
+        "classes": [
+            "Druid",
+            "Sorcerer",
+            "Wizard",
+            "Nature Domain"
+        ],
         "summary": "This spell allows spellcasters to create a solid stone barrier.",
         "description": "Raise a wall of non-magical, solid stone.\n\nThe wall can be created between any two points within range as long as there is a clear path between them.  It is made up of Stone Pillars with 30 HP each, immune to Psychic and vulnerable to Force and Thunder damage.  Pillars block movement and line of sight.",
         "actionType": 1,
@@ -4596,7 +5002,9 @@
         "level": 6,
         "school": 2,
         "ritual": false,
-        "classes": ["Druid"],
+        "classes": [
+            "Druid"
+        ],
         "summary": "This spell allows spellcasters to conjure a wall of brambles, Entangling and damaging any creatures who are in the area, or trying to pass through.",
         "description": "Create a wall of pliable, twisting thorns surrounded by Entangling vines. Creatures can move through the wall, but take 7d8|Piercing damage per turn, their Movement Speed is halved due to Difficult Terrain, and they may become Entangled.",
         "actionType": 1,
@@ -4610,7 +5018,9 @@
         "level": 3,
         "school": 5,
         "ritual": false,
-        "classes": ["Paladin"],
+        "classes": [
+            "Paladin"
+        ],
         "summary": "This spell allows spellcasters to heal allies repeatedly with Restore Vitality using only Bonus Actions for 10 turns.",
         "description": "While this aura lasts, you can cast Restore Vitality as a bonus to heal yourself or nearby allies by 2d6|Healing.",
         "actionType": 1,
@@ -4624,7 +5034,9 @@
         "level": 2,
         "school": 1,
         "ritual": false,
-        "classes": ["Cleric"],
+        "classes": [
+            "Cleric"
+        ],
         "summary": "This spell allows spellcasters to bolster an ally's defenses while also sharing any damage they receive.",
         "description": "Ward an ally. They gain Resistance to all damage, and a +1 bonus to their ArmourClass and SavingThrows.\nEach time the target takes damage, the spellcaster takes the same amount of damage.",
         "actionType": 1,
@@ -4659,7 +5071,9 @@
         "level": 6,
         "school": 8,
         "ritual": false,
-        "classes": ["Druid"],
+        "classes": [
+            "Druid"
+        ],
         "summary": "This spell allows spellcasters to transform a group of allies into a cloud of mist. This form offers damage Resistance, Advantage on some Saving Throws, and the ability to Fly.",
         "description": "Transform yourself and all nearby party members into tiny clouds of mist to avoid attacks. You become Resistant to non-magical damage, gain Advantage on Tiny in size. You also gain the ability to Flight|Fly.\n\nPrerequisite Icon While transformed, you won't be able to attack, cast spells, or talk.",
         "actionType": 1,
@@ -4693,7 +5107,9 @@
         "level": 1,
         "school": 5,
         "ritual": false,
-        "classes": ["Paladin"],
+        "classes": [
+            "Paladin"
+        ],
         "summary": "This spell allows spellcasters to channel their wrath through their melee weapon, possibly Frightened|Frightening their target on hit.",
         "description": "Your weapon absorbs your wrath as you strike, possibly Frightened|Frightening your target.\n\n* If the spellcaster misses the initial Attack, the Spell Slot and Bonus Action are not consumed.",
         "actionType": 4,

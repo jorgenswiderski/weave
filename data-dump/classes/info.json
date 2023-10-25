@@ -2970,7 +2970,15 @@
                 "bardin|forceplural=yes": 3,
                 "Cantrips Known": 2,
                 "Spells Known": 4,
-                "Spell Slots": [null, 2, 0, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 2,
@@ -3002,7 +3010,15 @@
                 "bardin|forceplural=yes": 3,
                 "Cantrips Known": 2,
                 "Spells Known": 5,
-                "Spell Slots": [null, 3, 0, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 3,
@@ -3115,7 +3131,15 @@
                 "bardin|forceplural=yes": 3,
                 "Cantrips Known": 2,
                 "Spells Known": 6,
-                "Spell Slots": [null, 4, 2, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 4,
@@ -3945,7 +3969,15 @@
                 "bardin|forceplural=yes": 3,
                 "Cantrips Known": 3,
                 "Spells Known": 7,
-                "Spell Slots": [null, 4, 3, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 5,
@@ -3970,7 +4002,15 @@
                 "bardin|forceplural=yes": 4,
                 "Cantrips Known": 3,
                 "Spells Known": 8,
-                "Spell Slots": [null, 4, 3, 2, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    2,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 6,
@@ -4034,7 +4074,15 @@
                 "bardin|forceplural=yes": 4,
                 "Cantrips Known": 3,
                 "Spells Known": 9,
-                "Spell Slots": [null, 4, 3, 3, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 7,
@@ -4043,7 +4091,15 @@
                 "bardin|forceplural=yes": 4,
                 "Cantrips Known": 3,
                 "Spells Known": 10,
-                "Spell Slots": [null, 4, 3, 3, 1, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    1,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 8,
@@ -4873,7 +4929,15 @@
                 "bardin|forceplural=yes": 5,
                 "Cantrips Known": 3,
                 "Spells Known": 11,
-                "Spell Slots": [null, 4, 3, 3, 2, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    2,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 9,
@@ -4882,7 +4946,15 @@
                 "bardin|forceplural=yes": 5,
                 "Cantrips Known": 3,
                 "Spells Known": 12,
-                "Spell Slots": [null, 4, 3, 3, 3, 1, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    1,
+                    0
+                ]
             },
             {
                 "Level": 10,
@@ -4918,7 +4990,15 @@
                 "bardin|forceplural=yes": 5,
                 "Cantrips Known": 4,
                 "Spells Known": 13,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    0
+                ]
             },
             {
                 "Level": 11,
@@ -4927,7 +5007,15 @@
                 "bardin|forceplural=yes": 5,
                 "Cantrips Known": 4,
                 "Spells Known": 14,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 1]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    1
+                ]
             },
             {
                 "Level": 12,
@@ -5757,7 +5845,15 @@
                 "bardin|forceplural=yes": 5,
                 "Cantrips Known": 4,
                 "Spells Known": 15,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 1]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    1
+                ]
             }
         ]
     },
@@ -5987,7 +6083,15 @@
                 ],
                 "Channel Divinity Charges": 0,
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 2, 0, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 2,
@@ -6109,7 +6213,15 @@
                 ],
                 "Channel Divinity Charges": 1,
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 3, 0, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 3,
@@ -6117,7 +6229,15 @@
                 "Features": [],
                 "Channel Divinity Charges": 1,
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 4, 2, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 4,
@@ -6946,7 +7066,15 @@
                 ],
                 "Channel Divinity Charges": 1,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 5,
@@ -6966,7 +7094,15 @@
                 ],
                 "Channel Divinity Charges": 1,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 2, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    2,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 6,
@@ -7056,7 +7192,15 @@
                 ],
                 "Channel Divinity Charges": 2,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 3, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 7,
@@ -7064,7 +7208,15 @@
                 "Features": [],
                 "Channel Divinity Charges": 2,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 3, 1, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    1,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 8,
@@ -7995,7 +8147,15 @@
                 ],
                 "Channel Divinity Charges": 2,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 3, 2, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    2,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 9,
@@ -8003,7 +8163,15 @@
                 "Features": [],
                 "Channel Divinity Charges": 2,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 3, 3, 1, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    1,
+                    0
+                ]
             },
             {
                 "Level": 10,
@@ -8023,7 +8191,15 @@
                 ],
                 "Channel Divinity Charges": 2,
                 "Cantrips Known": 5,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    0
+                ]
             },
             {
                 "Level": 11,
@@ -8031,7 +8207,15 @@
                 "Features": [],
                 "Channel Divinity Charges": 2,
                 "Cantrips Known": 5,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 1]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    1
+                ]
             },
             {
                 "Level": 12,
@@ -8860,7 +9044,15 @@
                 ],
                 "Channel Divinity Charges": 2,
                 "Cantrips Known": 5,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 1]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    1
+                ]
             }
         ]
     },
@@ -8879,7 +9071,15 @@
                     }
                 ],
                 "Cantrips Known": 2,
-                "Spell Slots": [null, 2, 0, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 2,
@@ -9026,14 +9226,30 @@
                     }
                 ],
                 "Cantrips Known": 2,
-                "Spell Slots": [null, 3, 0, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 3,
                 "Proficiency Bonus": 2,
                 "Features": [],
                 "Cantrips Known": 2,
-                "Spell Slots": [null, 4, 2, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 4,
@@ -9865,14 +10081,30 @@
                     }
                 ],
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 4, 3, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 5,
                 "Proficiency Bonus": 3,
                 "Features": [],
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 4, 3, 2, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    2,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 6,
@@ -9936,14 +10168,30 @@
                     }
                 ],
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 4, 3, 3, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 7,
                 "Proficiency Bonus": 3,
                 "Features": [],
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 4, 3, 3, 1, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    1,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 8,
@@ -10775,14 +11023,30 @@
                     }
                 ],
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 4, 3, 3, 2, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    2,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 9,
                 "Proficiency Bonus": 4,
                 "Features": [],
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 4, 3, 3, 3, 1, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    1,
+                    0
+                ]
             },
             {
                 "Level": 10,
@@ -10864,14 +11128,30 @@
                     }
                 ],
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    0
+                ]
             },
             {
                 "Level": 11,
                 "Proficiency Bonus": 4,
                 "Features": [],
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 1]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    1
+                ]
             },
             {
                 "Level": 12,
@@ -11699,7 +11979,15 @@
                     }
                 ],
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 1]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    1
+                ]
             }
         ]
     },
@@ -18868,7 +19156,12 @@
                     }
                 ],
                 "Lay on Hands Charges": 3,
-                "Spell Slots": [null, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 2,
@@ -18895,7 +19188,12 @@
                     }
                 ],
                 "Lay on Hands Charges": 3,
-                "Spell Slots": [null, 2, 0, 0]
+                "Spell Slots": [
+                    null,
+                    2,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 3,
@@ -18914,7 +19212,12 @@
                     }
                 ],
                 "Lay on Hands Charges": 3,
-                "Spell Slots": [null, 3, 0, 0]
+                "Spell Slots": [
+                    null,
+                    3,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 4,
@@ -19742,7 +20045,12 @@
                     }
                 ],
                 "Lay on Hands Charges": 4,
-                "Spell Slots": [null, 3, 0, 0]
+                "Spell Slots": [
+                    null,
+                    3,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 5,
@@ -19761,7 +20069,12 @@
                     }
                 ],
                 "Lay on Hands Charges": 4,
-                "Spell Slots": [null, 4, 2, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    2,
+                    0
+                ]
             },
             {
                 "Level": 6,
@@ -19780,7 +20093,12 @@
                     }
                 ],
                 "Lay on Hands Charges": 4,
-                "Spell Slots": [null, 4, 2, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    2,
+                    0
+                ]
             },
             {
                 "Level": 7,
@@ -19851,7 +20169,12 @@
                     }
                 ],
                 "Lay on Hands Charges": 4,
-                "Spell Slots": [null, 4, 3, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    0
+                ]
             },
             {
                 "Level": 8,
@@ -20679,14 +21002,24 @@
                     }
                 ],
                 "Lay on Hands Charges": 4,
-                "Spell Slots": [null, 4, 3, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    0
+                ]
             },
             {
                 "Level": 9,
                 "Proficiency Bonus": 4,
                 "Features": [],
                 "Lay on Hands Charges": 4,
-                "Spell Slots": [null, 4, 3, 2]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    2
+                ]
             },
             {
                 "Level": 10,
@@ -20705,7 +21038,12 @@
                     }
                 ],
                 "Lay on Hands Charges": 5,
-                "Spell Slots": [null, 4, 3, 2]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    2
+                ]
             },
             {
                 "Level": 11,
@@ -20724,7 +21062,12 @@
                     }
                 ],
                 "Lay on Hands Charges": 5,
-                "Spell Slots": [null, 4, 3, 3]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3
+                ]
             },
             {
                 "Level": 12,
@@ -21552,7 +21895,12 @@
                     }
                 ],
                 "Lay on Hands Charges": 5,
-                "Spell Slots": [null, 4, 3, 3]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3
+                ]
             }
         ]
     },
@@ -21575,7 +21923,12 @@
                     }
                 ],
                 "Spells Known": 0,
-                "Spell Slots": [null, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 2,
@@ -21591,7 +21944,12 @@
                     }
                 ],
                 "Spells Known": 2,
-                "Spell Slots": [null, 2, 0, 0]
+                "Spell Slots": [
+                    null,
+                    2,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 3,
@@ -21715,7 +22073,12 @@
                     }
                 ],
                 "Spells Known": 3,
-                "Spell Slots": [null, 3, 0, 0]
+                "Spell Slots": [
+                    null,
+                    3,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 4,
@@ -22543,7 +22906,12 @@
                     }
                 ],
                 "Spells Known": 3,
-                "Spell Slots": [null, 3, 0, 0]
+                "Spell Slots": [
+                    null,
+                    3,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 5,
@@ -22562,7 +22930,12 @@
                     }
                 ],
                 "Spells Known": 4,
-                "Spell Slots": [null, 4, 2, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    2,
+                    0
+                ]
             },
             {
                 "Level": 6,
@@ -22578,7 +22951,12 @@
                     }
                 ],
                 "Spells Known": 4,
-                "Spell Slots": [null, 4, 2, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    2,
+                    0
+                ]
             },
             {
                 "Level": 7,
@@ -22648,7 +23026,12 @@
                     }
                 ],
                 "Spells Known": 5,
-                "Spell Slots": [null, 4, 3, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    0
+                ]
             },
             {
                 "Level": 8,
@@ -23487,14 +23870,24 @@
                     }
                 ],
                 "Spells Known": 5,
-                "Spell Slots": [null, 4, 3, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    0
+                ]
             },
             {
                 "Level": 9,
                 "Proficiency Bonus": 4,
                 "Features": [],
                 "Spells Known": 6,
-                "Spell Slots": [null, 4, 3, 2]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    2
+                ]
             },
             {
                 "Level": 10,
@@ -23521,7 +23914,12 @@
                     }
                 ],
                 "Spells Known": 6,
-                "Spell Slots": [null, 4, 3, 2]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    2
+                ]
             },
             {
                 "Level": 11,
@@ -23572,7 +23970,12 @@
                     }
                 ],
                 "Spells Known": 7,
-                "Spell Slots": [null, 4, 3, 3]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3
+                ]
             },
             {
                 "Level": 12,
@@ -24400,7 +24803,12 @@
                     }
                 ],
                 "Spells Known": 7,
-                "Spell Slots": [null, 4, 3, 3]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3
+                ]
             }
         ]
     },
@@ -28303,7 +28711,15 @@
                 ],
                 "Cantrips Known": 4,
                 "Spells Known": 2,
-                "Spell Slots": [null, 2, 0, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 2,
@@ -28339,7 +28755,15 @@
                 ],
                 "Cantrips Known": 4,
                 "Spells Known": 3,
-                "Spell Slots": [null, 3, 0, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 3,
@@ -28353,7 +28777,15 @@
                 ],
                 "Cantrips Known": 4,
                 "Spells Known": 4,
-                "Spell Slots": [null, 4, 2, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 4,
@@ -29183,7 +29615,15 @@
                 ],
                 "Cantrips Known": 5,
                 "Spells Known": 5,
-                "Spell Slots": [null, 4, 3, 0, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 5,
@@ -29192,7 +29632,15 @@
                 "Features": [],
                 "Cantrips Known": 5,
                 "Spells Known": 6,
-                "Spell Slots": [null, 4, 3, 2, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    2,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 6,
@@ -29306,7 +29754,15 @@
                 ],
                 "Cantrips Known": 5,
                 "Spells Known": 7,
-                "Spell Slots": [null, 4, 3, 3, 0, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 7,
@@ -29315,7 +29771,15 @@
                 "Features": [],
                 "Cantrips Known": 5,
                 "Spells Known": 8,
-                "Spell Slots": [null, 4, 3, 3, 1, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    1,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 8,
@@ -30145,7 +30609,15 @@
                 ],
                 "Cantrips Known": 5,
                 "Spells Known": 9,
-                "Spell Slots": [null, 4, 3, 3, 2, 0, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    2,
+                    0,
+                    0
+                ]
             },
             {
                 "Level": 9,
@@ -30154,7 +30626,15 @@
                 "Features": [],
                 "Cantrips Known": 5,
                 "Spells Known": 10,
-                "Spell Slots": [null, 4, 3, 3, 3, 1, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    1,
+                    0
+                ]
             },
             {
                 "Level": 10,
@@ -30168,7 +30648,15 @@
                 ],
                 "Cantrips Known": 6,
                 "Spells Known": 11,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 0]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    0
+                ]
             },
             {
                 "Level": 11,
@@ -30221,7 +30709,15 @@
                 ],
                 "Cantrips Known": 6,
                 "Spells Known": 12,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 1]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    1
+                ]
             },
             {
                 "Level": 12,
@@ -31051,7 +31547,15 @@
                 ],
                 "Cantrips Known": 6,
                 "Spells Known": 13,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 1]
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    1
+                ]
             }
         ]
     },
@@ -33929,7 +34433,15 @@
                 ],
                 "arcrec": 1,
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 2, 0, 0, 0, 0, 0],
+                "Spell Slots": [
+                    null,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
                 "Spells Known": 6
             },
             {
@@ -34066,7 +34578,15 @@
                 ],
                 "arcrec": 1,
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 3, 0, 0, 0, 0, 0],
+                "Spell Slots": [
+                    null,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
                 "Spells Known": 8
             },
             {
@@ -34075,7 +34595,15 @@
                 "Features": [],
                 "arcrec": 2,
                 "Cantrips Known": 3,
-                "Spell Slots": [null, 4, 2, 0, 0, 0, 0],
+                "Spell Slots": [
+                    null,
+                    4,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
                 "Spells Known": 10
             },
             {
@@ -34905,7 +35433,15 @@
                 ],
                 "arcrec": 2,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 0, 0, 0, 0],
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
                 "Spells Known": 12
             },
             {
@@ -34914,7 +35450,15 @@
                 "Features": [],
                 "arcrec": 3,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 2, 0, 0, 0],
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    2,
+                    0,
+                    0,
+                    0
+                ],
                 "Spells Known": 14
             },
             {
@@ -35111,7 +35655,15 @@
                 ],
                 "arcrec": 3,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 3, 0, 0, 0],
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    0,
+                    0,
+                    0
+                ],
                 "Spells Known": 16
             },
             {
@@ -35120,7 +35672,15 @@
                 "Features": [],
                 "arcrec": 4,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 3, 1, 0, 0],
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    1,
+                    0,
+                    0
+                ],
                 "Spells Known": 18
             },
             {
@@ -35950,7 +36510,15 @@
                 ],
                 "arcrec": 4,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 3, 2, 0, 0],
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    2,
+                    0,
+                    0
+                ],
                 "Spells Known": 20
             },
             {
@@ -35959,7 +36527,15 @@
                 "Features": [],
                 "arcrec": 5,
                 "Cantrips Known": 4,
-                "Spell Slots": [null, 4, 3, 3, 3, 1, 0],
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    1,
+                    0
+                ],
                 "Spells Known": 22
             },
             {
@@ -36090,7 +36666,15 @@
                 ],
                 "arcrec": 5,
                 "Cantrips Known": 5,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 0],
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    0
+                ],
                 "Spells Known": 24
             },
             {
@@ -36099,7 +36683,15 @@
                 "Features": [],
                 "arcrec": 6,
                 "Cantrips Known": 5,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 1],
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    1
+                ],
                 "Spells Known": 26
             },
             {
@@ -36929,7 +37521,15 @@
                 ],
                 "arcrec": 6,
                 "Cantrips Known": 5,
-                "Spell Slots": [null, 4, 3, 3, 3, 2, 1],
+                "Spell Slots": [
+                    null,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2,
+                    1
+                ],
                 "Spells Known": 28
             }
         ]
