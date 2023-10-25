@@ -103,14 +103,14 @@ export class Spell extends PageItem implements Partial<ISpell> {
 
         this.id = this.page.pageId;
 
-        const { image, plainText, boolean, int } =
+        const { noOp, plainText, boolean, int } =
             MediaWikiTemplateParser.Parsers;
         const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
 
         const config: Record<string, MediaWikiTemplateParserConfig> = {
             name: { parser: plainText, default: this.pageTitle },
             image: {
-                parser: image,
+                parser: noOp,
                 default: undefined,
             },
             level: {

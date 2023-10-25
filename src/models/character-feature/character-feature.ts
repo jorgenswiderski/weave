@@ -85,9 +85,7 @@ export class CharacterFeature extends PageItem implements ICharacterOption {
             description: descMatch
                 ? MediaWiki.stripMarkup(descMatch[1]).trim()
                 : undefined,
-            image: imageMatch
-                ? MediaWiki.getImagePath(imageMatch[1].trim())
-                : undefined,
+            image: imageMatch ? imageMatch[1].trim() : undefined,
         };
     }
 

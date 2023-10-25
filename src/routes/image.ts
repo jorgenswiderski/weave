@@ -2,12 +2,14 @@ import express, { Request, Response, Router } from 'express';
 import fs from 'fs';
 import https from 'https';
 import path from 'path';
-import { CONFIG } from '../models/config';
 import { error, log } from '../models/logger';
+import { MediaWiki } from '../models/media-wiki';
 
 const rootDir = path.dirname(require.main!.filename);
 const IMAGE_CACHE_DIR = path.join(rootDir, 'cache');
-const failedRequests: { [imagePath: string]: number } = {};
+const failedRequests: {
+    [imagePath: string]: { code: number; message: string };
+} = {};
 
 const ensureDirectoryExistence = async (filePath: string) => {
     const dirName = path.dirname(filePath);
@@ -22,12 +24,17 @@ const ensureDirectoryExistence = async (filePath: string) => {
 
 export const router: Router = express.Router();
 
-router.get('/:imagePath(*)', async (req: Request, res: Response) => {
-    const { imagePath } = req.params;
-    const localImagePath = path.join(IMAGE_CACHE_DIR, imagePath);
+router.get('/:imageName', async (req: Request, res: Response) => {
+    const { imageName } = req.params;
+    const localImagePath = path.join(
+        IMAGE_CACHE_DIR,
+        MediaWiki.getImagePath(imageName),
+    );
 
-    if (failedRequests[imagePath]) {
-        res.status(failedRequests[imagePath]).send('Known failed request');
+    if (failedRequests[imageName]) {
+        res.status(failedRequests[imageName].code).send(
+            failedRequests[imageName].message,
+        );
 
         return;
     }
@@ -41,46 +48,57 @@ router.get('/:imagePath(*)', async (req: Request, res: Response) => {
         // File does not exist, we'll fetch from remote next.
     }
 
-    const remotePath = `${CONFIG.MEDIAWIKI.BASE_URL}/images/${imagePath}`;
+    try {
+        const remoteUrl = await MediaWiki.resolveImageRedirect(imageName);
 
-    https
-        .get(remotePath, async (response) => {
-            if (
-                response.statusCode &&
-                (response.statusCode < 200 || response.statusCode >= 300)
-            ) {
-                if (response.statusCode >= 400 && response.statusCode < 500) {
-                    failedRequests[imagePath] = response.statusCode;
+        https
+            .get(remoteUrl, async (response) => {
+                if (
+                    response.statusCode &&
+                    (response.statusCode < 200 || response.statusCode >= 300)
+                ) {
+                    if (
+                        response.statusCode >= 400 &&
+                        response.statusCode < 500
+                    ) {
+                        failedRequests[imageName] = {
+                            code: response.statusCode,
+                            message:
+                                response.statusMessage ?? 'Unspecified error',
+                        };
+                    }
+
+                    res.status(response.statusCode).send(
+                        response.statusMessage ?? 'Error fetching the image',
+                    );
+
+                    return;
                 }
 
-                res.status(response.statusCode).send(
-                    'Error fetching the image',
-                );
+                // Ensure all subdirectories exist before writing
+                await ensureDirectoryExistence(localImagePath);
 
-                return;
-            }
+                const writer = fs.createWriteStream(localImagePath);
+                response.pipe(writer);
 
-            // Ensure all subdirectories exist before writing
-            await ensureDirectoryExistence(localImagePath);
+                writer.on('finish', () => {
+                    log(`Cached ${localImagePath}.`);
+                    res.sendFile(localImagePath);
+                });
 
-            const writer = fs.createWriteStream(localImagePath);
-            response.pipe(writer);
-
-            writer.on('finish', () => {
-                log(`Cached ${localImagePath}.`);
-                res.sendFile(localImagePath);
+                writer.on('error', (writeError) => {
+                    error(writeError);
+                    res.status(500).send('Error saving the image');
+                });
+            })
+            .on('error', (err) => {
+                // Handle other types of errors (e.g. network issues)
+                error(err);
+                res.status(500).send('Failed to retrieve the image');
             });
-
-            writer.on('error', (writeError) => {
-                error(writeError);
-                res.status(500).send('Error saving the image');
-            });
-        })
-        .on('error', (err) => {
-            // Handle other types of errors (e.g. network issues)
-            error(err);
-            res.status(500).send('Failed to retrieve the image');
-        });
+    } catch (err) {
+        res.status(404).send('Remote asset not found');
+    }
 });
 
 export const imageRouter = router;

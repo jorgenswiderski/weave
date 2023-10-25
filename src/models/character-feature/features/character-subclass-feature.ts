@@ -46,7 +46,7 @@ export class CharacterSubclassFeature extends CharacterFeature {
             throw new Error('could not initialize subclass image');
         }
 
-        this.image = MediaWiki.getImagePath(match[1]);
+        this.image = match[1];
     }
 
     static async getProgression(

@@ -14,13 +14,13 @@
                                 "name": "Acid Breath",
                                 "type": 1,
                                 "description": "Spew forth a cone of acid.",
-                                "image": "http://localhost:3001/api/images/5/54/Acid_Breath.webp"
+                                "image": "Acid Breath.webp"
                             },
                             {
                                 "name": "Draconic Ancestry (Acid)",
                                 "type": 2,
                                 "description": "The blood of ancient dragons flow through your veins. You are Resistant to Acid damage.",
-                                "image": "http://localhost:3001/api/images/5/50/Draconic_Ancestry_Acid.webp"
+                                "image": "Draconic Ancestry Acid.webp"
                             }
                         ]
                     },
@@ -32,13 +32,13 @@
                                 "name": "Fire Breath (Line)",
                                 "type": 1,
                                 "description": "Spew forth a column of fire.",
-                                "image": "http://localhost:3001/api/images/9/9c/Fire_Breath_Line.webp"
+                                "image": "Fire Breath Line.webp"
                             },
                             {
                                 "name": "Draconic Ancestry (Fire)",
                                 "type": 2,
                                 "description": "The blood of ancient dragons flow through your veins. You are Resistant to Fire damage.",
-                                "image": "http://localhost:3001/api/images/0/0b/Draconic_Ancestry_Fire.webp"
+                                "image": "Draconic Ancestry Fire.webp"
                             }
                         ]
                     },
@@ -50,13 +50,13 @@
                                 "name": "Acid Breath",
                                 "type": 1,
                                 "description": "Spew forth a cone of acid.",
-                                "image": "http://localhost:3001/api/images/5/54/Acid_Breath.webp"
+                                "image": "Acid Breath.webp"
                             },
                             {
                                 "name": "Draconic Ancestry (Acid)",
                                 "type": 2,
                                 "description": "The blood of ancient dragons flow through your veins. You are Resistant to Acid damage.",
-                                "image": "http://localhost:3001/api/images/5/50/Draconic_Ancestry_Acid.webp"
+                                "image": "Draconic Ancestry Acid.webp"
                             }
                         ]
                     },
@@ -68,13 +68,13 @@
                                 "name": "Poison Breath",
                                 "type": 1,
                                 "description": "Spew forth a cone of poison.",
-                                "image": "http://localhost:3001/api/images/9/9a/Poison_Breath.webp"
+                                "image": "Poison Breath.webp"
                             },
                             {
                                 "name": "Draconic Ancestry (Poison)",
                                 "type": 2,
                                 "description": "The blood of ancient dragons flow through your veins. You are Resistant to Poison damage.",
-                                "image": "http://localhost:3001/api/images/a/a1/Draconic_Ancestry_Poison.webp"
+                                "image": "Draconic Ancestry Poison.webp"
                             }
                         ]
                     },
@@ -86,13 +86,13 @@
                                 "name": "Frost Breath",
                                 "type": 1,
                                 "description": "Spew forth a cone of ice.",
-                                "image": "http://localhost:3001/api/images/b/bb/Frost_Breath.webp"
+                                "image": "Frost Breath.webp"
                             },
                             {
                                 "name": "Draconic Ancestry (Cold)",
                                 "type": 2,
                                 "description": "The blood of ancient dragons flow through your veins. You are Resistant to Cold damage.",
-                                "image": "http://localhost:3001/api/images/b/b9/Draconic_Ancestry_Cold.webp"
+                                "image": "Draconic Ancestry Cold.webp"
                             }
                         ]
                     }
@@ -100,7 +100,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "http://localhost:3001/api/images/a/a6/Race_Dragonborn.png",
+        "image": "Race Dragonborn.png",
         "grants": []
     },
     {
@@ -124,25 +124,25 @@
             }
         ],
         "choiceType": 8,
-        "image": "http://localhost:3001/api/images/1/1a/Race_Drow.png",
+        "image": "Race Drow.png",
         "grants": [
             {
                 "name": "Drow Weapon Training",
                 "type": 2,
                 "description": "You have Proficiency with the Rapier, Shortsword, and Hand Crossbow.",
-                "image": "http://localhost:3001/api/images/0/03/Drow_Weapon_Training.webp"
+                "image": "Drow Weapon Training.webp"
             },
             {
                 "name": "Superior Darkvision",
                 "type": 2,
                 "description": "Can see in the dark up to 24m.",
-                "image": "http://localhost:3001/api/images/4/4e/Superior_Darkvision.webp"
+                "image": "Superior Darkvision.webp"
             },
             {
                 "name": "Fey Ancestry",
                 "type": 2,
                 "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
-                "image": "http://localhost:3001/api/images/a/a2/Fey_Ancestry.webp"
+                "image": "Fey Ancestry.webp"
             }
         ]
     },
@@ -161,7 +161,7 @@
                                 "name": "Dwarven Toughness",
                                 "type": 2,
                                 "description": "You have 1 extra maximum Hit Points per level.",
-                                "image": "http://localhost:3001/api/images/1/17/|summary_=_'''Dwarven_Toughness'''_is_a_passive_feature_that_increases_a_creature's_[[Hit_Points|Hit_Point]]_maximum_by_1,_and_again_by_1_again_every_time_they_gain_a_level._It_is_a_Subrace_Trait_for_all_[[Gold_Dwarf]]_characters."
+                                "image": "|summary = '''Dwarven Toughness''' is a passive feature that increases a creature's [[Hit Points|Hit Point]] maximum by 1, and again by 1 again every time they gain a level. It is a Subrace Trait for all [[Gold Dwarf]] characters."
                             }
                         ]
                     },
@@ -173,7 +173,7 @@
                                 "name": "Dwarven Armour Training",
                                 "type": 2,
                                 "description": "You have Armour Proficiency with Light and Medium Armour.",
-                                "image": "http://localhost:3001/api/images/1/1c/Dwarven_Armour_Training.webp"
+                                "image": "Dwarven Armour Training.webp"
                             }
                         ]
                     },
@@ -185,13 +185,13 @@
                                 "name": "Superior Darkvision",
                                 "type": 2,
                                 "description": "Can see in the dark up to 24m.",
-                                "image": "http://localhost:3001/api/images/4/4e/Superior_Darkvision.webp"
+                                "image": "Superior Darkvision.webp"
                             },
                             {
                                 "name": "Duergar Resilience",
                                 "type": 2,
                                 "description": "You have Advantage on Saving Throws  against illusions and against being Charmed or Paralysed.",
-                                "image": "http://localhost:3001/api/images/9/93/Duergar_Resilience.webp"
+                                "image": "Duergar Resilience.webp"
                             }
                         ]
                     }
@@ -199,19 +199,19 @@
             }
         ],
         "choiceType": 8,
-        "image": "http://localhost:3001/api/images/d/d3/Race_Dwarf.png",
+        "image": "Race Dwarf.png",
         "grants": [
             {
                 "name": "Dwarven Combat Training",
                 "type": 2,
                 "description": "You have Proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammers.",
-                "image": "http://localhost:3001/api/images/5/52/Dwarven_Combat_Training.webp"
+                "image": "Dwarven Combat Training.webp"
             },
             {
                 "name": "Dwarven Resilience",
                 "type": 2,
                 "description": "You have Advantage on Saving Throws against being Poisoned|inline=true, and you have Resistance against Poison damage.",
-                "image": "http://localhost:3001/api/images/b/b2/Dwarven_Resilience.webp"
+                "image": "Dwarven Resilience.webp"
             }
         ]
     },
@@ -236,38 +236,38 @@
             }
         ],
         "choiceType": 8,
-        "image": "http://localhost:3001/api/images/e/ec/Race_Elf.png",
+        "image": "Race Elf.png",
         "grants": [
             {
                 "name": "Elven Weapon Training",
                 "type": 2,
                 "description": "You have Proficiency with the Longsword, Shortsword, Shortbow, and Longbow.",
-                "image": "http://localhost:3001/api/images/c/c2/Elven_Weapon_Training.webp"
+                "image": "Elven Weapon Training.webp"
             },
             {
                 "name": "Fey Ancestry",
                 "type": 2,
                 "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
-                "image": "http://localhost:3001/api/images/a/a2/Fey_Ancestry.webp"
+                "image": "Fey Ancestry.webp"
             }
         ]
     },
     {
         "name": "Githyanki",
         "description": "Githyanki are peerless warriors from the Astral Plane, known for their legendary silver blades and red dragon mounts. They seek the total destruction of Mind Flayers, whose ancient empire enslaved the Gith for millennia.",
-        "image": "http://localhost:3001/api/images/a/af/Race_Githyanki.png",
+        "image": "Race Githyanki.png",
         "grants": [
             {
                 "name": "Astral Knowledge",
                 "type": 2,
                 "description": "Gain Ability.",
-                "image": "http://localhost:3001/api/images/d/d3/Astral_Knowledge.webp"
+                "image": "Astral Knowledge.webp"
             },
             {
                 "name": "Martial Prodigy",
                 "type": 2,
                 "description": "A lifetime of relentless training gave you Armor Proficiency with Light and Medium Armour, as well as Proficiency with the Shortsword, Longsword, and Greatsword.",
-                "image": "http://localhost:3001/api/images/4/4e/Martial_Prodigy.webp"
+                "image": "Martial Prodigy.webp"
             }
         ]
     },
@@ -286,7 +286,7 @@
                                 "name": "Artificer's Lore",
                                 "type": 2,
                                 "description": "Add twice your Proficiency Bonus to History checks.",
-                                "image": "http://localhost:3001/api/images/5/58/Artificer's_Lore.webp"
+                                "image": "Artificer's Lore.webp"
                             }
                         ]
                     },
@@ -298,7 +298,7 @@
                                 "name": "Speak with Animals",
                                 "type": 1,
                                 "description": "Gain the ability to comprehend and communicate with beasts.",
-                                "image": "http://localhost:3001/api/images/9/94/Speak_with_Animals.webp"
+                                "image": "Speak with Animals.webp"
                             }
                         ]
                     },
@@ -310,13 +310,13 @@
                                 "name": "Superior Darkvision",
                                 "type": 2,
                                 "description": "Can see in the dark up to 24m.",
-                                "image": "http://localhost:3001/api/images/4/4e/Superior_Darkvision.webp"
+                                "image": "Superior Darkvision.webp"
                             },
                             {
                                 "name": "Stone Camouflage",
                                 "type": 2,
                                 "description": "You have Advantage on Stealth checks.",
-                                "image": "http://localhost:3001/api/images/4/4c/Stone_Camouflage.webp"
+                                "image": "Stone Camouflage.webp"
                             }
                         ]
                     }
@@ -324,13 +324,13 @@
             }
         ],
         "choiceType": 8,
-        "image": "http://localhost:3001/api/images/c/cd/Race_Gnome.png",
+        "image": "Race Gnome.png",
         "grants": [
             {
                 "name": "Gnome Cunning",
                 "type": 2,
                 "description": "You have Advantage on Intelligence, Wisdom, and Charisma Saving Throws.",
-                "image": "http://localhost:3001/api/images/7/7c/Gnome_Cunning.webp"
+                "image": "Gnome Cunning.webp"
             }
         ]
     },
@@ -360,44 +360,44 @@
             }
         ],
         "choiceType": 8,
-        "image": "http://localhost:3001/api/images/d/dd/Race_Half-Elf.png",
+        "image": "Race Half-Elf.png",
         "grants": [
             {
                 "name": "Civil Militia",
                 "type": 2,
                 "description": "You have Weapon Proficiency with spears, pikes, halberds, and glaives, and Armour Proficiency with Light Armour and Shields.",
-                "image": "http://localhost:3001/api/images/a/aa/Civil_Militia.webp"
+                "image": "Civil Militia.webp"
             },
             {
                 "name": "Fey Ancestry",
                 "type": 2,
                 "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
-                "image": "http://localhost:3001/api/images/a/a2/Fey_Ancestry.webp"
+                "image": "Fey Ancestry.webp"
             }
         ]
     },
     {
         "name": "Half-Orc",
         "description": "Half-Orcs exhibit a blend of orcish and human characteristics, and their appearance varies widely. Creatures of intense emotion, Half-Orcs are more inclined to act than contemplate - whether the rage burning their bodies compels them to fight, or the love filling their hearts inspires acts of incredible kindness.",
-        "image": "http://localhost:3001/api/images/a/ad/Race_Half-Orc.png",
+        "image": "Race Half-Orc.png",
         "grants": [
             {
                 "name": "Darkvision (Passive Feature)",
                 "type": 2,
                 "description": "Can see in the dark up to 12m.",
-                "image": "http://localhost:3001/api/images/7/7f/Darkvision.webp}}"
+                "image": "Darkvision.webp}}"
             },
             {
                 "name": "Relentless Endurance",
                 "type": 2,
                 "description": "If you reach 0 hit points, you regain 1|Healing instead of becoming Downed.",
-                "image": "http://localhost:3001/api/images/3/38/Relentless_Endurance.webp"
+                "image": "Relentless Endurance.webp"
             },
             {
                 "name": "Savage Attacks",
                 "type": 2,
                 "description": "When you land a Critical Hit with a melee weapon attack, you deal an extra dice of weapon damage.",
-                "image": "http://localhost:3001/api/images/d/df/Savage_Attacks.webp"
+                "image": "Savage Attacks.webp"
             }
         ]
     },
@@ -416,7 +416,7 @@
                                 "name": "Naturally Stealthy",
                                 "type": 2,
                                 "description": "Your nimble nature makes you skilled at concealment. You have Advantage on Checks.",
-                                "image": "http://localhost:3001/api/images/1/11/Naturally_Stealthy.webp"
+                                "image": "Naturally Stealthy.webp"
                             }
                         ]
                     },
@@ -428,7 +428,7 @@
                                 "name": "Strongheart Resilience",
                                 "type": 2,
                                 "description": "You have Advantage on Poison}} and [[Damage_Types#Resistance|Resistance to Poison damage.",
-                                "image": "http://localhost:3001/api/images/4/44/Strongheart_Resilience.webp"
+                                "image": "Strongheart Resilience.webp"
                             }
                         ]
                     }
@@ -436,38 +436,38 @@
             }
         ],
         "choiceType": 8,
-        "image": "http://localhost:3001/api/images/3/35/Race_Halfling.png",
+        "image": "Race Halfling.png",
         "grants": [
             {
                 "name": "Halfling Luck",
                 "type": 2,
                 "description": "When you roll a 1 for an Attack Roll, Ability Check, or Saving Throw, you can reroll the die and must use the new roll.",
-                "image": "http://localhost:3001/api/images/9/9b/Halfling_Luck.webp"
+                "image": "Halfling Luck.webp"
             },
             {
                 "name": "Brave",
                 "type": 2,
                 "description": "You have Advantage on Saving Throws against Frightened.",
-                "image": "http://localhost:3001/api/images/e/e1/Brave.webp"
+                "image": "Brave.webp"
             }
         ]
     },
     {
         "name": "Human",
         "description": "The most common face to see in Faerûn, humans are known for their tenacity, creativity, and endless capacity for growth.",
-        "image": "http://localhost:3001/api/images/6/6c/Race_Human.png",
+        "image": "Race Human.png",
         "grants": [
             {
                 "name": "Civil Militia",
                 "type": 2,
                 "description": "You have Weapon Proficiency with spears, pikes, halberds, and glaives, and Armour Proficiency with Light Armour and Shields.",
-                "image": "http://localhost:3001/api/images/a/aa/Civil_Militia.webp"
+                "image": "Civil Militia.webp"
             },
             {
                 "name": "Human Versatility",
                 "type": 2,
                 "description": "Select an additional Skill to be Proficient in. Your carrying capacity is increased by a quarter.",
-                "image": "http://localhost:3001/api/images/9/98/Human_Versatility.webp"
+                "image": "Human Versatility.webp"
             }
         ]
     },
@@ -497,7 +497,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "http://localhost:3001/api/images/6/66/Race_Tiefling.png",
+        "image": "Race Tiefling.png",
         "grants": [
             {
                 "name": "Hellish Resistance",

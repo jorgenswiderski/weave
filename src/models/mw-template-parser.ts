@@ -16,7 +16,7 @@ export interface MediaWikiTemplateParserConfig {
 
 export class MediaWikiTemplateParser {
     static Parsers: Record<string, ParserFunction> = {
-        image: (value) => (value ? MediaWiki.getImagePath(value) : undefined),
+        noOp: (value) => value,
         plainText: (value) =>
             value ? MediaWiki.stripMarkup(value) : undefined,
         int: (value: string) => {

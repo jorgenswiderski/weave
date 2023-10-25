@@ -41,9 +41,7 @@ export class CharacterBackground extends CharacterFeature {
             return null;
         }
 
-        const fileName = match[1].trim();
-
-        return MediaWiki.getImagePath(fileName);
+        return match[1].trim();
     }
 
     private parseDescription(): string {

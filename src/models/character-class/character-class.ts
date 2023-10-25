@@ -281,9 +281,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
             return null;
         }
 
-        const fileName = match[1].trim();
-
-        return MediaWiki.getImagePath(fileName);
+        return match[1].trim();
     }
 
     async getInfo(): Promise<ClassInfo> {

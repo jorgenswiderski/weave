@@ -3,8 +3,8 @@ import { Db } from 'mongodb';
 import assert from 'assert';
 import crypto from 'crypto';
 import { MongoCollections, getMongoDb } from './mongo';
-import { MwnApi } from '../api/mwn';
 import { CONFIG } from './config';
+import { MwnApi } from '../api/mwn';
 
 export interface PageData extends ApiRevision {
     title: string;
@@ -154,18 +154,18 @@ export class MediaWiki {
         };
     }
 
+    static getEncodedImageName(imageName: string): string {
+        return imageName.replace(/ /g, '_');
+    }
+
     static getImagePath(imageName: string): string {
-        const formattedImageName = imageName.replace(/ /g, '_');
+        const formattedImageName = MediaWiki.getEncodedImageName(imageName);
         const hash = crypto
             .createHash('md5')
             .update(formattedImageName)
             .digest('hex');
 
-        return `${
-            CONFIG.MEDIAWIKI.USE_IMAGE_CACHE
-                ? CONFIG.SELF_BASE_URL
-                : CONFIG.MEDIAWIKI.BASE_URL
-        }/images/${hash[0]}/${hash[0]}${hash[1]}/${formattedImageName}`;
+        return `/${hash[0]}/${hash[0]}${hash[1]}/${formattedImageName}`;
     }
 
     // static getImagePath = (name: string) => name;
@@ -204,6 +204,24 @@ export class MediaWiki {
 
     //     return text;
     // }
+
+    static async resolveImageRedirect(imageName: string): Promise<string> {
+        // convert _ to spaces to account for some rareish bad data
+        const page = await MwnApi.queryPage(
+            `File:${imageName.replace(/_/g, ' ')}`,
+            {
+                prop: 'imageinfo',
+                iiprop: 'url',
+                format: 'json',
+            },
+        );
+
+        if (!page) {
+            throw new Error('Image not found');
+        }
+
+        return page.imageinfo[0].url;
+    }
 }
 
 // (async () => {
