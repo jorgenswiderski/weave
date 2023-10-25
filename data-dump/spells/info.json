@@ -322,25 +322,6 @@
         "id": 2736
     },
     {
-        "name": "Bear's Endurance",
-        "image": "http://localhost:3001/api/images/2/29/Bear's_Endurance.webp",
-        "level": 2,
-        "school": 8,
-        "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
-        "summary": "This spell allows spellcasters to bestow a creature the fortitude of a bear. Affected creatures gain Temporary Hit Points and Checks.",
-        "description": "Creature gains Advantage on Checks and gains 7 Temporary Hit Points.",
-        "actionType": 1,
-        "concentration": true,
-        "noSpellSlot": false,
-        "id": 2366
-    },
-    {
         "name": "Beckoning Darkness",
         "image": "http://localhost:3001/api/images/e/e6/Generic_Darkness_Icon.png",
         "level": 4,
@@ -617,25 +598,6 @@
         "id": 2836
     },
     {
-        "name": "Bull's Strength",
-        "image": "http://localhost:3001/api/images/4/48/Bull's_Strength.webp",
-        "level": 2,
-        "school": 8,
-        "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
-        "summary": "This spell allows spellcasters to bestow a creature the might of a bull. Affected creatures have their Checks.",
-        "description": "Creature gains Advantage on Checks and its Weight Limit is doubled.",
-        "actionType": 1,
-        "concentration": true,
-        "noSpellSlot": false,
-        "id": 2367
-    },
-    {
         "name": "Burning Age",
         "image": "http://localhost:3001/api/images/b/bf/Elemental_Weapon_Fire.webp",
         "level": 3,
@@ -705,25 +667,6 @@
         "concentration": true,
         "noSpellSlot": false,
         "id": 2331
-    },
-    {
-        "name": "Cat's Grace",
-        "image": "http://localhost:3001/api/images/9/9b/Cat's_Grace.webp",
-        "level": 2,
-        "school": 8,
-        "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
-        "summary": "This spell allows spellcasters to bestow a creature the finesse of a cat. Affected creatures gain Resistance to falling damage and gain Checks.",
-        "description": "Creature gains Advantage on Checks and only takes half damage from falling.",
-        "actionType": 1,
-        "concentration": true,
-        "noSpellSlot": false,
-        "id": 2368
     },
     {
         "name": "Celestial Haste",
@@ -1608,25 +1551,6 @@
         "id": 10942
     },
     {
-        "name": "Eagle's Splendour",
-        "image": "http://localhost:3001/api/images/6/64/Eagle's_Splendor.webp",
-        "level": 2,
-        "school": 8,
-        "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
-        "summary": "This spell allows spellcasters to bestow a creature the elegance of an eagle. Affected creatures gain Checks.",
-        "description": "Creature gains Advantage on Checks.",
-        "actionType": 1,
-        "concentration": true,
-        "noSpellSlot": false,
-        "id": 2369
-    },
-    {
         "name": "Eldritch Blast",
         "image": "http://localhost:3001/api/images/b/b5/Eldritch_Blast.webp",
         "level": 0,
@@ -2146,25 +2070,6 @@
         "concentration": true,
         "noSpellSlot": false,
         "id": 2190
-    },
-    {
-        "name": "Fox's Cunning",
-        "image": "http://localhost:3001/api/images/1/10/Fox's_Cunning.webp",
-        "level": 2,
-        "school": 8,
-        "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
-        "summary": "This spell allows spellcasters to bestow a creature the slyness of a fox. Affected creatures gain Checks.",
-        "description": "Creature gains Advantage on Checks.",
-        "actionType": 1,
-        "concentration": true,
-        "noSpellSlot": false,
-        "id": 2370
     },
     {
         "name": "Freedom of Movement",
@@ -3473,25 +3378,6 @@
         "concentration": true,
         "noSpellSlot": false,
         "id": 8898
-    },
-    {
-        "name": "Owl's Wisdom",
-        "image": "http://localhost:3001/api/images/a/a7/Owl's_Wisdom.webp",
-        "level": 2,
-        "school": 8,
-        "ritual": false,
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
-        "summary": "This spell allows spellcasters to bestow a creature the intuition of an owl. Affected creatures gain Checks.",
-        "description": "Creature gains Advantage on Checks.",
-        "actionType": 1,
-        "concentration": true,
-        "noSpellSlot": false,
-        "id": 2371
     },
     {
         "name": "Paralyzing Ray",

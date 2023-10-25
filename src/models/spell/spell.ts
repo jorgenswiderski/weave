@@ -114,7 +114,18 @@ export class Spell extends PageItem implements Partial<ISpell> {
     }
 
     // hardcoded variants that are tricky to catch with general logic
-    static VARIANT_SPELLS = ['Enlarge', 'Reduce'];
+    static VARIANT_SPELLS = [
+        'Enlarge',
+        'Reduce',
+
+        // Enhance Ability
+        "Bear's Endurance",
+        "Bull's Strength",
+        "Cat's Grace",
+        "Eagle's Splendour",
+        "Fox's Cunning",
+        "Owl's Wisdom",
+    ];
 
     // Remove spell variants eg "Disguise Self: Femme Human" or "Chromatic Orb: Fire"
     isVariant(): boolean {
