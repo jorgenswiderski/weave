@@ -45,6 +45,8 @@ export class Spell extends PageItem implements Partial<ISpell> {
     attackRoll?: boolean;
     damage?: string;
     damageType?: DamageType;
+    extraDamage?: string;
+    extraDamageType?: DamageType;
     damageSave?: AbilityScore;
     damageSaveEffect?: SpellDamageSaveEffect;
     damagePer?: string;
@@ -146,6 +148,16 @@ export class Spell extends PageItem implements Partial<ISpell> {
             damage: { parser: plainText, default: undefined },
             damageType: {
                 key: 'damage type',
+                parser: parseEnum(DamageType),
+                default: undefined,
+            },
+            extraDamage: {
+                key: 'extra damage',
+                parser: plainText,
+                default: undefined,
+            },
+            extraDamageType: {
+                key: 'extra damage type',
                 parser: parseEnum(DamageType),
                 default: undefined,
             },
@@ -358,6 +370,8 @@ export class Spell extends PageItem implements Partial<ISpell> {
             attackRoll: this.attackRoll,
             damage: this.damage,
             damageType: this.damageType,
+            extraDamage: this.extraDamage,
+            extraDamageType: this.extraDamageType,
             damageSave: this.damageSave,
             damageSaveEffect: this.damageSaveEffect,
             damagePer: this.damagePer,
