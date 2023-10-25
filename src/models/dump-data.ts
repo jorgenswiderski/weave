@@ -10,7 +10,7 @@ import { getCharacterBackgroundData } from './character-feature/features/charact
 import { getCharacterRaceData } from './character-feature/features/character-race';
 import { getSpellData } from './spell/spell';
 import { getMongoDb } from './mongo';
-import { getEquipmentItemData } from './equipment/equipment-item';
+import { getEquipmentItemData } from './equipment/equipment';
 
 async function getInfo(data: any[]) {
     return Promise.all(data.map((datum) => datum.getInfo()));

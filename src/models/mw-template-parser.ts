@@ -36,10 +36,14 @@ export class MediaWikiTemplateParser {
     > = {
         parseEnum:
             (enumType: any) =>
-            (value: string, config: MediaWikiTemplateParserConfig) => {
+            (
+                value: string,
+                config: MediaWikiTemplateParserConfig,
+                page: PageData,
+            ) => {
                 if (!('default' in config) && !(value in enumType)) {
                     throw new Error(
-                        `Failed to map '${config.key}' value '${value}' to enum.`,
+                        `Failed to map '${config.key}' value '${value}' to enum (${page.title}).`,
                     );
                 }
 

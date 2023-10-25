@@ -8,7 +8,6 @@ import {
     IEquipmentItem,
     ItemRarity,
 } from 'planner-types/src/types/equipment-item';
-import { MwnApiClass } from '../../api/mwn';
 import { PageNotFoundError } from '../errors';
 import { error } from '../logger';
 import { MediaWiki, PageData } from '../media-wiki';
@@ -91,7 +90,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return effects;
     }
 
-    private async initData(): Promise<void> {
+    protected async initData(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page?.content) {
@@ -135,8 +134,8 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             },
             enchantment: { parser: int, default: undefined },
             rarity: { parser: parseEnum(ItemRarity), default: ItemRarity.NONE },
-            weightKg: { parser: float, default: undefined },
-            weightLb: { parser: float, default: undefined },
+            weightKg: { key: 'weight kg', parser: float, default: undefined },
+            weightLb: { key: 'weight lb', parser: float, default: undefined },
             price: { parser: int, default: undefined },
             uid: { default: undefined },
             effects: {
@@ -177,77 +176,4 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             id: this.id,
         };
     }
-}
-
-let itemData: Record<string, EquipmentItem[]> | null = null;
-let itemDataById: Map<number, EquipmentItem> | null = null;
-
-export async function getEquipmentItemData(
-    types?: EquipmentItemType[],
-): Promise<Record<string, EquipmentItem[]>> {
-    if (!itemData) {
-        const categories = [
-            'Equipment',
-            'Clothing',
-            'Light Armour',
-            'Medium Armour',
-            'Heavy Armour',
-            'Shields',
-            'Helmets',
-            'Cloaks',
-            'Gloves',
-            'Boots',
-            'Amulets',
-            'Rings',
-        ];
-
-        const equipmentItemNames = await Promise.all(
-            categories.map((category) =>
-                MwnApiClass.queryTitlesFromCategory(category),
-            ),
-        );
-        const uniqueNames = [...new Set(equipmentItemNames.flat())];
-        const data = uniqueNames.map((name) => new EquipmentItem(name));
-        await Promise.all(data.map((item) => item.waitForInitialization()));
-
-        itemData = data.reduce(
-            (acc, item) => {
-                if (item.type) {
-                    if (!acc[item.type]) {
-                        acc[item.type] = [];
-                    }
-
-                    acc[item.type].push(item);
-                }
-
-                return acc;
-            },
-            {} as Record<string, EquipmentItem[]>,
-        );
-
-        itemDataById = new Map<number, EquipmentItem>();
-        data.forEach((item) => itemDataById!.set(item.id!, item));
-    }
-
-    if (!types) {
-        return itemData;
-    }
-
-    const filteredData: Record<string, EquipmentItem[]> = {};
-
-    types.forEach((type) => {
-        if (itemData![type]) {
-            filteredData[type] = itemData![type];
-        }
-    });
-
-    return filteredData;
-}
-
-export async function getEquipmentItemInfoById() {
-    if (!itemDataById) {
-        await getEquipmentItemData();
-    }
-
-    return itemDataById!;
 }

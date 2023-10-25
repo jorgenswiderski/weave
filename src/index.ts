@@ -17,8 +17,8 @@ import { MwnProgressBar } from './api/mwn-progress-bar';
 import { imageRouter } from './routes/image';
 import { getSpellData } from './models/spell/spell';
 import { spellsRouter } from './routes/spells';
-import { getEquipmentItemData } from './models/equipment/equipment-item';
 import { itemsRouter } from './routes/items';
+import { getEquipmentItemData } from './models/equipment/equipment';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -35,10 +35,27 @@ const PORT = process.env.PORT || 3001;
 
 new MwnProgressBar().render();
 
+const allowedOrigins = [
+    'http://localhost:3000',
+    // 'https://52de-65-25-226-60.ngrok-free.app',
+];
+
 app.use(
     cors({
-        origin: 'http://localhost:3000', // Replace with your frontend's address. Use '*' to allow any origin (not recommended for production).
-        methods: ['GET', 'POST'], // Specify which methods are allowed
+        origin(origin, callback) {
+            // Allow requests with no origin (like mobile apps or curl requests)
+            if (!origin) return callback(null, true);
+
+            if (allowedOrigins.indexOf(origin) === -1) {
+                log(origin);
+                const msg = `The CORS policy for this site does not allow access from the specified Origin.`;
+
+                return callback(new Error(msg), false);
+            }
+
+            return callback(null, true);
+        },
+        methods: ['GET', 'POST'],
         allowedHeaders: ['Content-Type', 'Authorization'],
     }),
 );

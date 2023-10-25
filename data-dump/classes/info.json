@@ -23564,20 +23564,7 @@
                                         "name": "Hunter",
                                         "description": "Hunters seek the most dangerous prey in Faerûn, from ancient dragons to massive hordes of undead, and excel at slaying them all.",
                                         "image": "http://localhost:3001/api/images/c/c1/Class_Ranger_Hunter_Badge_Icon.png",
-                                        "grants": [
-                                            {
-                                                "name": "Volley",
-                                                "type": 1,
-                                                "description": "Fire a cascade of arrows upon nearby enemies.",
-                                                "image": "http://localhost:3001/api/images/2/29/Volley.webp"
-                                            },
-                                            {
-                                                "name": "Whirlwind Attack",
-                                                "type": 1,
-                                                "description": "Strike out at all nearby foes, making separate attacks rolls against each target.",
-                                                "image": "http://localhost:3001/api/images/4/4e/Whirlwind_Attack.webp"
-                                            }
-                                        ]
+                                        "grants": []
                                     }
                                 ]
                             }
