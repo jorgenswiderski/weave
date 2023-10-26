@@ -19,6 +19,7 @@ import { spellsRouter } from './routes/spells';
 import { itemsRouter } from './routes/items';
 import { getEquipmentItemData } from './models/equipment/equipment';
 import { initActionsAndSpells } from './models/action/init';
+import { actionsRouter } from './routes/actions';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -64,6 +65,7 @@ app.use(
 app.use('/api/classes', classesRouter);
 app.use('/api/races', racesRouter);
 app.use('/api/backgrounds', backgroundsRouter);
+app.use('/api/actions', actionsRouter);
 app.use('/api/spells', spellsRouter);
 app.use('/api/items', itemsRouter);
 

@@ -9,9 +9,9 @@ router.get('/info/id', async (req: Request, res: Response) => {
         .split(',')
         .map((val) => parseInt(val, 10));
 
-    const itemData = await getSpellDataById();
+    const spellData = await getSpellDataById();
 
-    res.json(ids.map((id) => itemData.get(id)));
+    res.json(ids.map((id) => spellData.get(id)));
 });
 
 router.get('/info', async (req: Request, res: Response) => {
