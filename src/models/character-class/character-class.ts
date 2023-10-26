@@ -2,6 +2,7 @@ import {
     CharacterPlannerStep,
     ICharacterChoice,
     ICharacterOption,
+    ICharacterOptionWithStubs,
 } from 'planner-types/src/types/character-feature-customization-option';
 import { MwnApiClass } from '../../api/mwn';
 import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
@@ -19,7 +20,7 @@ async function parseFeatures(
     characterClass: CharacterClass,
     value: string,
     level: number,
-): Promise<ICharacterOption[] | null> {
+): Promise<ICharacterOptionWithStubs[] | null> {
     if (value === '-') {
         // No features this level
         return null;
@@ -67,7 +68,10 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         return Promise.all(
             formattedData.map(async (item) => {
                 const cleanedItem: {
-                    [key: string]: string | number | ICharacterOption[];
+                    [key: string]:
+                        | string
+                        | number
+                        | ICharacterOptionWithStubs[];
                 } = {};
 
                 await Promise.all(
@@ -113,7 +117,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
 
     private static parseSpellSlots(
         data: {
-            [key: string]: string | number | ICharacterOption[];
+            [key: string]: string | number | ICharacterOptionWithStubs[];
         }[],
     ): CharacterClassProgression {
         return data.map((rawLevelData) => {
@@ -122,7 +126,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
             Object.entries(rawLevelData).forEach(
                 ([key, value]: [
                     string,
-                    string | number | ICharacterOption[],
+                    string | number | ICharacterOptionWithStubs[],
                 ]) => {
                     if (
                         key === '1st' ||

@@ -11,28 +11,7 @@
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the charcoal colouration and fizzling, acid breath of black dragons.",
                         "grants": [
                             {
-                                "name": "Acid Breath",
-                                "type": 1,
-                                "subtype": 1,
-                                "id": 6607,
-                                "action": {
-                                    "name": "Acid Breath",
-                                    "damage": "amount:2d6, type:Acid",
-                                    "image": "Acid Breath.webp",
-                                    "level": 0,
-                                    "school": 0,
-                                    "summary": "Acid Breath is a Dragonborn racial action. This ability allows them to breathe a column of damaging acid in a target direction.",
-                                    "description": "Spew forth a cone of acid.",
-                                    "ritual": false,
-                                    "concentration": false,
-                                    "id": 6607,
-                                    "attackRoll": false,
-                                    "range": 3,
-                                    "aoe": 2,
-                                    "aoeM": 5,
-                                    "aoeFt": 17,
-                                    "cost": 1
-                                }
+                                "ref": "a6607"
                             },
                             {
                                 "name": "Draconic Ancestry (Acid)",
@@ -47,28 +26,7 @@
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the burnished ochre hue and flickering, fiery breath of brass dragons.",
                         "grants": [
                             {
-                                "name": "Fire Breath (Line)",
-                                "type": 1,
-                                "subtype": 1,
-                                "id": 4756,
-                                "action": {
-                                    "name": "Fire Breath (Line)",
-                                    "damage": "amount:2d6, type:Fire",
-                                    "image": "Fire Breath Line.webp",
-                                    "level": 0,
-                                    "school": 0,
-                                    "summary": "Fire Breath is a Brass Dragonborn racial action. This ability allows them to breathe a line of damaging flame in a target direction.\n\nSee also: Fire Breath (Cone) for the Gold Dragonborn and Red Dragonborn racial action.",
-                                    "description": "Spew forth a column of fire.",
-                                    "ritual": false,
-                                    "concentration": false,
-                                    "id": 4756,
-                                    "attackRoll": false,
-                                    "range": 3,
-                                    "aoe": 4,
-                                    "aoeM": 5,
-                                    "aoeFt": 17,
-                                    "cost": 1
-                                }
+                                "ref": "a4756"
                             },
                             {
                                 "name": "Draconic Ancestry (Fire)",
@@ -83,28 +41,7 @@
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the pink-gold colouration and corrosive breath of copper dragons.",
                         "grants": [
                             {
-                                "name": "Acid Breath",
-                                "type": 1,
-                                "subtype": 1,
-                                "id": 6607,
-                                "action": {
-                                    "name": "Acid Breath",
-                                    "damage": "amount:2d6, type:Acid",
-                                    "image": "Acid Breath.webp",
-                                    "level": 0,
-                                    "school": 0,
-                                    "summary": "Acid Breath is a Dragonborn racial action. This ability allows them to breathe a column of damaging acid in a target direction.",
-                                    "description": "Spew forth a cone of acid.",
-                                    "ritual": false,
-                                    "concentration": false,
-                                    "id": 6607,
-                                    "attackRoll": false,
-                                    "range": 3,
-                                    "aoe": 2,
-                                    "aoeM": 5,
-                                    "aoeFt": 17,
-                                    "cost": 1
-                                }
+                                "ref": "a6607"
                             },
                             {
                                 "name": "Draconic Ancestry (Acid)",
@@ -119,28 +56,7 @@
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the brilliant emerald aspect and stinking, putrid breath of green dragons.",
                         "grants": [
                             {
-                                "name": "Poison Breath",
-                                "type": 1,
-                                "subtype": 1,
-                                "id": 6664,
-                                "action": {
-                                    "name": "Poison Breath",
-                                    "damage": "amount:2d6, type:Poison",
-                                    "image": "Poison Breath.webp",
-                                    "level": 0,
-                                    "school": 0,
-                                    "summary": "Poison Breath is a Dragonborn racial action. This ability allows them to breathe a column of poisonous breath in a target direction.",
-                                    "description": "Spew forth a cone of poison.",
-                                    "ritual": false,
-                                    "concentration": false,
-                                    "id": 6664,
-                                    "attackRoll": false,
-                                    "range": 3,
-                                    "aoe": 2,
-                                    "aoeM": 5,
-                                    "aoeFt": 17,
-                                    "cost": 1
-                                }
+                                "ref": "a6664"
                             },
                             {
                                 "name": "Draconic Ancestry (Poison)",
@@ -155,28 +71,7 @@
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the glinting shine and scorching cold breath of silver dragons.",
                         "grants": [
                             {
-                                "name": "Frost Breath",
-                                "type": 1,
-                                "subtype": 1,
-                                "id": 4721,
-                                "action": {
-                                    "name": "Frost Breath",
-                                    "damage": "amount:2d6, type:Cold",
-                                    "image": "Frost Breath.webp",
-                                    "level": 0,
-                                    "school": 0,
-                                    "summary": "Frost Breath is a Dragonborn racial action. This ability allows them to breathe a cone of damaging cold energy in a target direction.",
-                                    "description": "Spew forth a cone of ice.",
-                                    "ritual": false,
-                                    "concentration": false,
-                                    "id": 4721,
-                                    "attackRoll": false,
-                                    "range": 3,
-                                    "aoe": 2,
-                                    "aoeM": 5,
-                                    "aoeFt": 17,
-                                    "cost": 1
-                                }
+                                "ref": "a4721"
                             },
                             {
                                 "name": "Draconic Ancestry (Cold)",
@@ -385,36 +280,7 @@
                         "description": "Even smaller than their cousins and twice as reclusive, Forest Gnomes are rare sight in Faerûn. They master magic and craftmanship in their distant, idyllic groves.",
                         "grants": [
                             {
-                                "name": "Speak with Animals",
-                                "type": 1,
-                                "subtype": 3,
-                                "id": 1585,
-                                "action": {
-                                    "name": "Speak with Animals",
-                                    "image": "Speak with Animals.webp",
-                                    "level": 1,
-                                    "school": 3,
-                                    "summary": "This spell allows spellcasters to understand and talk to beasts and animals for a day.",
-                                    "description": "Gain the ability to comprehend and communicate with beasts.",
-                                    "ritual": true,
-                                    "concentration": false,
-                                    "id": 1585,
-                                    "attackRoll": false,
-                                    "range": 3,
-                                    "condition": "Speak with Animals",
-                                    "notes": "* Wildhearts can cast this spell once per Long Rest.\n* Forest Gnomes can cast this spell once per Long Rest.\n* Also granted to Warlocks who choose the Eldritch Invocation Beast Speech at level 2+.",
-                                    "cost": 1,
-                                    "classes": [
-                                        "Bard",
-                                        "Druid",
-                                        "Ranger",
-                                        "Barbarian",
-                                        "Paladin",
-                                        "Nature Domain"
-                                    ],
-                                    "noSpellSlot": false,
-                                    "isVariant": false
-                                }
+                                "ref": "s1585"
                             }
                         ]
                     },

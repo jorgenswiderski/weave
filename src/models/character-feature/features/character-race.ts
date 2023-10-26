@@ -1,6 +1,6 @@
 import {
     CharacterPlannerStep,
-    ICharacterOption,
+    ICharacterOptionWithStubs,
 } from 'planner-types/src/types/character-feature-customization-option';
 import { GrantableEffect } from 'planner-types/src/types/grantable-effect';
 import { MwnApiClass } from '../../../api/mwn';
@@ -14,7 +14,7 @@ import { Utils } from '../../utils';
 
 type RaceChoice = { type: CharacterPlannerStep; options: CharacterSubrace[] };
 
-export interface RaceInfo extends ICharacterOption {
+export interface RaceInfo extends ICharacterOptionWithStubs {
     name: string;
     description: string;
     choices?: RaceChoice[];

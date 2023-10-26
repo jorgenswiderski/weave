@@ -1,11 +1,10 @@
-import { ICharacterOption } from 'planner-types/src/types/character-feature-customization-option';
+import { ICharacterOptionWithStubs } from 'planner-types/src/types/character-feature-customization-option';
 import {
-    ActionEffectType,
     GrantableEffect,
     GrantableEffectType,
-    IActionEffect,
 } from 'planner-types/src/types/grantable-effect';
 import { IAction, ISpell } from 'planner-types/src/types/action';
+import { StaticallyReferenceable } from 'planner-types/src/models/static-reference/types';
 import { PageItem, PageLoadingState } from '../page-item';
 import { ICharacterOptionWithPage } from './types';
 import { error, warn } from '../logger';
@@ -14,6 +13,8 @@ import { MediaWiki, PageData } from '../media-wiki';
 import { PageNotFoundError } from '../errors';
 import { getSpellDataById } from '../action/spell';
 import { getActionDataById } from '../action/action';
+import { SpellStub } from '../static-reference/spell-stub';
+import { ActionStub } from '../static-reference/action-stub';
 
 enum CharacterFeatureLoadingStates {
     DESCRIPTION = 'DESCRIPTION',
@@ -21,11 +22,14 @@ enum CharacterFeatureLoadingStates {
     EFFECTS = 'EFFECTS',
 }
 
-export class CharacterFeature extends PageItem implements ICharacterOption {
+export class CharacterFeature
+    extends PageItem
+    implements ICharacterOptionWithStubs
+{
     name: string;
     description?: string;
     image?: string;
-    grants: GrantableEffect[] = [];
+    grants: (GrantableEffect | StaticallyReferenceable)[] = [];
 
     constructor(
         { pageTitle, page, name, image }: ICharacterOptionWithPage,
@@ -73,7 +77,7 @@ export class CharacterFeature extends PageItem implements ICharacterOption {
         pageTitle: string,
         pageId: number,
         categories: string[],
-    ): Promise<GrantableEffect> {
+    ): Promise<GrantableEffect | StaticallyReferenceable> {
         const descMatch =
             /\|\s*description\s*=\s*([\s\S]+?)\n\|\s*[\w\s]+=/g.exec(
                 pageContent,
@@ -93,17 +97,9 @@ export class CharacterFeature extends PageItem implements ICharacterOption {
                 if (!spells.has(pageId)) {
                     error(`Could not find spell for ${pageTitle} (${pageId})`);
                 } else {
-                    const spell = spells.get(pageId)!;
+                    const spell = spells.get(pageId)! as ISpell;
 
-                    const effect: IActionEffect = {
-                        name: spell.name!,
-                        type: effectType,
-                        subtype: ActionEffectType.SPELL_ACTION,
-                        id: spell.id!,
-                        action: spell as ISpell,
-                    };
-
-                    return effect;
+                    return new SpellStub(spell);
                 }
             }
 
@@ -113,17 +109,9 @@ export class CharacterFeature extends PageItem implements ICharacterOption {
                 if (!actions.has(pageId)) {
                     error(`Could not find action for ${pageTitle} (${pageId})`);
                 } else {
-                    const action = actions.get(pageId)!;
+                    const action = actions.get(pageId)! as IAction;
 
-                    const effect: IActionEffect = {
-                        name: action.name!,
-                        type: effectType,
-                        subtype: ActionEffectType.CLASS_ACTION,
-                        id: action.id!,
-                        action: action as IAction,
-                    };
-
-                    return effect;
+                    return new ActionStub(action);
                 }
             }
         }
@@ -142,7 +130,7 @@ export class CharacterFeature extends PageItem implements ICharacterOption {
     static async parsePageForGrantableEffect(
         pageTitle: string,
         page?: PageData,
-    ): Promise<GrantableEffect | null> {
+    ): Promise<GrantableEffect | StaticallyReferenceable | null> {
         try {
             const categories = await MwnApi.queryCategoriesFromPage(pageTitle);
 

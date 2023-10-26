@@ -1,9 +1,9 @@
-import { ICharacterChoice } from 'planner-types/src/types/character-feature-customization-option';
+import { ICharacterChoiceWithStubs } from 'planner-types/src/types/character-feature-customization-option';
 import { CharacterFeature } from './character-feature';
 import { ICharacterOptionWithPage } from './types';
 
 export class CharacterFeatureCustomizable extends CharacterFeature {
-    choices?: ICharacterChoice[];
+    choices?: ICharacterChoiceWithStubs[];
 
     constructor(options: ICharacterOptionWithPage) {
         super(options);

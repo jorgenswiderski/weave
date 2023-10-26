@@ -1,7 +1,7 @@
 import {
     CharacterPlannerStep,
-    ICharacterChoice,
-    ICharacterOption,
+    ICharacterChoiceWithStubs,
+    ICharacterOptionWithStubs,
 } from 'planner-types/src/types/character-feature-customization-option';
 import {
     Characteristic,
@@ -154,17 +154,18 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                             )
                         ).filter(Boolean) as GrantableEffect[];
 
-                        const choices: ICharacterChoice[] = [];
+                        const choices: ICharacterChoiceWithStubs[] = [];
 
-                        const options: ICharacterOption[] = choiceTitles.map(
-                            (title) =>
-                                new CharacterFeature({
-                                    pageTitle: title,
-                                    name: CharacterFeature.parseNameFromPageTitle(
-                                        title,
-                                    ),
-                                }),
-                        );
+                        const options: ICharacterOptionWithStubs[] =
+                            choiceTitles.map(
+                                (title) =>
+                                    new CharacterFeature({
+                                        pageTitle: title,
+                                        name: CharacterFeature.parseNameFromPageTitle(
+                                            title,
+                                        ),
+                                    }),
+                            );
 
                         if (options.length > 0) {
                             choices.push({
