@@ -12,6 +12,7 @@ import { getMongoDb } from './mongo';
 import { getEquipmentItemData } from './equipment/equipment';
 import { getSpellData } from './action/spell';
 import { getActionData } from './action/action';
+import { initActionsAndSpells } from './action/init';
 
 async function getInfo(data: any[]) {
     return Promise.all(data.map((datum) => datum.getInfo()));
@@ -20,6 +21,7 @@ async function getInfo(data: any[]) {
 async function dump() {
     try {
         await getMongoDb();
+        await initActionsAndSpells();
 
         const datas = {
             'classes/info': getInfo(await getCharacterClassData()),

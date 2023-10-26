@@ -1,4 +1,3 @@
-import { DamageType } from 'planner-types/src/types/equipment-item';
 import {
     ActionAreaCategory,
     ActionAreaOfEffectType,
@@ -11,6 +10,7 @@ import {
     IActionBase,
 } from 'planner-types/src/types/action';
 import { AbilityScore } from 'planner-types/src/types/ability';
+import { DamageType } from 'planner-types/src/types/damage';
 import { PageNotFoundError } from '../errors';
 import { error } from '../logger';
 import { PageItem, PageLoadingState } from '../page-item';

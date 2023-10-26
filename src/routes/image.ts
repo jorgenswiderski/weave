@@ -4,6 +4,7 @@ import https from 'https';
 import path from 'path';
 import { error, log } from '../models/logger';
 import { MediaWiki } from '../models/media-wiki';
+import { MwnTokenBucket } from '../api/mwn';
 
 const rootDir = path.dirname(require.main!.filename);
 const IMAGE_CACHE_DIR = path.join(rootDir, 'cache');
@@ -50,6 +51,8 @@ router.get('/:imageName', async (req: Request, res: Response) => {
 
     try {
         const remoteUrl = await MediaWiki.resolveImageRedirect(imageName);
+
+        await MwnTokenBucket.acquireNTokens(3);
 
         https
             .get(remoteUrl, async (response) => {

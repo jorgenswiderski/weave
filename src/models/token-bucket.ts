@@ -3,7 +3,7 @@ export class TokenBucket {
     private tokens: number;
     private fillRate: number;
     private lastFillTime: number;
-    private totalTokensRequested: number = 0; // Added to track total requests
+    private totalTokensRequested: number = 0;
     totalTokensGranted: number = 0;
 
     constructor(capacity: number, fillRate: number) {
@@ -44,6 +44,10 @@ export class TokenBucket {
 
             tryAcquire();
         });
+    }
+
+    public async acquireNTokens(n: number): Promise<any[]> {
+        return Promise.all(new Array(n).fill(this.acquireToken()));
     }
 
     public getProgress(): { granted: number; total: number } {

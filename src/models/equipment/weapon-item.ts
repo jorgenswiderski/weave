@@ -1,12 +1,12 @@
 import { IActionEffect } from 'planner-types/src/types/grantable-effect';
 import {
-    DamageType,
     IWeaponItem,
     WeaponCategory,
     WeaponHandedness,
     WeaponRange,
     WeaponRangeType,
 } from 'planner-types/src/types/equipment-item';
+import { DamageType } from 'planner-types/src/types/damage';
 import { PageNotFoundError } from '../errors';
 import {
     MediaWikiTemplateParser,

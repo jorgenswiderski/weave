@@ -18,19 +18,18 @@ import { imageRouter } from './routes/image';
 import { spellsRouter } from './routes/spells';
 import { itemsRouter } from './routes/items';
 import { getEquipmentItemData } from './models/equipment/equipment';
-import { getSpellData } from './models/action/spell';
-import { getActionData } from './models/action/action';
+import { initActionsAndSpells } from './models/action/init';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 (async () => {
+    await initActionsAndSpells();
+
     await Promise.all([
         getCharacterClassData(),
         getCharacterRaceData(),
         getCharacterBackgroundData(),
-        getSpellData(),
-        getActionData(),
         getEquipmentItemData(),
     ]);
 })();

@@ -1,14 +1,19 @@
 import { ICharacterOption } from 'planner-types/src/types/character-feature-customization-option';
 import {
+    ActionEffectType,
     GrantableEffect,
     GrantableEffectType,
+    IActionEffect,
 } from 'planner-types/src/types/grantable-effect';
+import { IAction, ISpell } from 'planner-types/src/types/action';
 import { PageItem, PageLoadingState } from '../page-item';
 import { ICharacterOptionWithPage } from './types';
 import { error, warn } from '../logger';
 import { MwnApi } from '../../api/mwn';
 import { MediaWiki, PageData } from '../media-wiki';
 import { PageNotFoundError } from '../errors';
+import { getSpellDataById } from '../action/spell';
+import { getActionDataById } from '../action/action';
 
 enum CharacterFeatureLoadingStates {
     DESCRIPTION = 'DESCRIPTION',
@@ -63,25 +68,70 @@ export class CharacterFeature extends PageItem implements ICharacterOption {
     // eslint-disable-next-line class-methods-use-this, @typescript-eslint/no-empty-function
     async initImage(): Promise<void> {}
 
-    private static parseActionPage(
+    private static async parseActionPage(
         pageContent: string,
         pageTitle: string,
+        pageId: number,
         categories: string[],
-    ): GrantableEffect {
+    ): Promise<GrantableEffect> {
         const descMatch =
             /\|\s*description\s*=\s*([\s\S]+?)\n\|\s*[\w\s]+=/g.exec(
                 pageContent,
             );
         const imageMatch = /\|\s*image\s*=\s*(.+)/.exec(pageContent);
 
+        const effectType =
+            categories.includes('Category:Passive Features') ||
+            categories.includes('Category:Toggleable Passive Features')
+                ? GrantableEffectType.CHARACTERISTIC
+                : GrantableEffectType.ACTION;
+
+        if (effectType === GrantableEffectType.ACTION) {
+            if (pageContent.includes('{{SpellPage')) {
+                const spells = await getSpellDataById();
+
+                if (!spells.has(pageId)) {
+                    error(`Could not find spell for ${pageTitle} (${pageId})`);
+                } else {
+                    const spell = spells.get(pageId)!;
+
+                    const effect: IActionEffect = {
+                        name: spell.name!,
+                        type: effectType,
+                        subtype: ActionEffectType.SPELL_ACTION,
+                        id: spell.id!,
+                        action: spell as ISpell,
+                    };
+
+                    return effect;
+                }
+            }
+
+            if (pageContent.includes('{{ActionPage')) {
+                const actions = await getActionDataById();
+
+                if (!actions.has(pageId)) {
+                    error(`Could not find action for ${pageTitle} (${pageId})`);
+                } else {
+                    const action = actions.get(pageId)!;
+
+                    const effect: IActionEffect = {
+                        name: action.name!,
+                        type: effectType,
+                        subtype: ActionEffectType.SPELL_ACTION,
+                        id: action.id!,
+                        action: action as IAction,
+                    };
+
+                    return effect;
+                }
+            }
+        }
+
         return {
             // name: CharacterFeature.parseNameFromPageTitle(pageTitle),
             name: pageTitle,
-            type:
-                categories.includes('Category:Passive Features') ||
-                categories.includes('Category:Toggleable Passive Features')
-                    ? GrantableEffectType.CHARACTERISTIC
-                    : GrantableEffectType.ACTION,
+            type: effectType,
             description: descMatch
                 ? MediaWiki.stripMarkup(descMatch[1]).trim()
                 : undefined,
@@ -125,9 +175,10 @@ export class CharacterFeature extends PageItem implements ICharacterOption {
                 page.content
             ) {
                 // uses the ActionPage template, could be either an action or a passive
-                return CharacterFeature.parseActionPage(
+                return await CharacterFeature.parseActionPage(
                     page.content,
                     pageTitle,
+                    page.pageId,
                     categories,
                 );
             }

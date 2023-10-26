@@ -4,13 +4,13 @@ import {
     ISpell,
 } from 'planner-types/src/types/action';
 import { AbilityScore } from 'planner-types/src/types/ability';
-import { MwnApiClass } from '../../api/mwn';
 import { PageNotFoundError } from '../errors';
 import {
     MediaWikiTemplateParser,
     MediaWikiTemplateParserConfig,
 } from '../mw-template-parser';
 import { ActionBase } from './action-base';
+import { error } from '../logger';
 
 let spellData: Spell[];
 let spellDataById: Map<number, Spell> | null = null;
@@ -22,7 +22,9 @@ export class Spell extends ActionBase implements Partial<ISpell> {
     damageSaveEffect?: ActionDamageSaveEffect;
     damagePer?: string;
     higherLevels?: string;
-    variants?: string[];
+    variantNames?: string[];
+    variants?: ISpell[];
+    isVariant: boolean = false;
 
     protected async initData(): Promise<void> {
         await super.initData();
@@ -74,8 +76,8 @@ export class Spell extends ActionBase implements Partial<ISpell> {
                 parser: plainText,
                 default: undefined,
             },
-            variants: {
-                // FIXME
+            variantNames: {
+                key: 'variants',
                 parser: (value) => {
                     const variants = value
                         ?.split(',')
@@ -94,45 +96,6 @@ export class Spell extends ActionBase implements Partial<ISpell> {
         );
     }
 
-    // hardcoded variants that are tricky to catch with general logic
-    static VARIANT_SPELLS = [
-        'Enlarge',
-        'Reduce',
-
-        // Enhance Ability
-        "Bear's Endurance",
-        "Bull's Strength",
-        "Cat's Grace",
-        "Eagle's Splendour",
-        "Fox's Cunning",
-        "Owl's Wisdom",
-    ];
-
-    // Remove spell variants eg "Disguise Self: Femme Human" or "Chromatic Orb: Fire"
-    isVariant(): boolean {
-        if (!this.name) {
-            return false;
-        }
-
-        if (Spell.VARIANT_SPELLS.includes(this.name)) {
-            return true;
-        }
-
-        let shortName: string;
-
-        if (this.name.startsWith('Reapply ')) {
-            shortName = this.name.split('Reapply ')[1]!;
-        } else {
-            shortName = /^[^:(]+/.exec(this.name)![0].trim();
-        }
-
-        return (
-            spellData.findIndex(
-                (spell) => this !== spell && spell.name === shortName,
-            ) >= 0
-        );
-    }
-
     toJSON(): Partial<ISpell> {
         const result: Partial<ISpell> = super.toJSON();
 
@@ -144,6 +107,7 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             'damagePer',
             'higherLevels',
             'variants',
+            'isVariant',
         ];
 
         keys.forEach((key) => {
@@ -156,25 +120,80 @@ export class Spell extends ActionBase implements Partial<ISpell> {
     }
 }
 
+export async function initSpellData(spellNames: string[]): Promise<void> {
+    spellData = spellNames.map((name) => new Spell(name));
+    await Promise.all(spellData.map((cc) => cc.waitForInitialization()));
+
+    // Set variant status
+    const variants = new Map<string, Spell>();
+
+    // Remove horizontal variants (siblings)
+    // These spells include themself as a variant, so just remove all variants for these spells
+    spellData.forEach((spell) => {
+        if (spell.variantNames?.includes(spell.name!)) {
+            // eslint-disable-next-line no-param-reassign
+            delete spell.variantNames;
+        }
+    });
+
+    spellData
+        .filter((spell) => spell.variantNames)
+        .flatMap((spell) => spell.variantNames!)
+        .forEach((name) =>
+            variants.set(name, spellData.find((spell) => spell.name === name)!),
+        );
+
+    spellData.forEach((spell) => {
+        if (variants.has(spell.name!)) {
+            // eslint-disable-next-line no-param-reassign
+            spell.isVariant = true;
+        }
+
+        if (spell.variantNames) {
+            // eslint-disable-next-line no-param-reassign
+            spell.variants = spell.variantNames.map(
+                (name) => variants.get(name)!,
+            ) as ISpell[];
+        }
+    });
+
+    spellDataById = new Map<number, Spell>();
+
+    spellData.forEach((spell) => {
+        if (spellDataById!.has(spell.id!)) {
+            const other = spellDataById!.get(spell.id!)!;
+
+            error(
+                `Spell data conflict between ${other.pageTitle} (${other.id}) and ${spell.pageTitle} (${spell.id})`,
+            );
+        }
+
+        spellDataById!.set(spell.id!, spell);
+    });
+}
+
+async function waitForInit(): Promise<void> {
+    const executor = (resolve: any) => {
+        if (spellData) {
+            resolve();
+
+            return;
+        }
+
+        setTimeout(() => executor(resolve), 500);
+    };
+
+    return new Promise(executor);
+}
+
 export async function getSpellData(): Promise<Spell[]> {
-    if (!spellData) {
-        const classNames = await MwnApiClass.queryTitlesFromCategory('Spells');
-
-        spellData = classNames.map((name) => new Spell(name));
-        await Promise.all(spellData.map((cc) => cc.waitForInitialization()));
-        spellData = spellData.filter((spell) => !spell.isVariant());
-
-        spellDataById = new Map<number, Spell>();
-        spellData.forEach((spell) => spellDataById!.set(spell.id!, spell));
-    }
+    await waitForInit();
 
     return spellData;
 }
 
 export async function getSpellDataById() {
-    if (!spellDataById) {
-        await getSpellData();
-    }
+    await waitForInit();
 
     return spellDataById!;
 }

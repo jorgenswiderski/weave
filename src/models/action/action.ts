@@ -6,7 +6,6 @@ import {
     MediaWikiTemplateParserConfig,
 } from '../mw-template-parser';
 import { ActionBase } from './action-base';
-import { MwnApiClass } from '../../api/mwn';
 
 let actionData: Action[];
 let actionDataById: Map<number, Action> | null = null;
@@ -74,31 +73,49 @@ export class Action extends ActionBase implements Partial<IAction> {
     }
 }
 
+export async function initActionData(actionNames: string[]): Promise<void> {
+    actionData = actionNames.map((name) => new Action(name));
+
+    await Promise.all(
+        actionData.map((action) => action.waitForInitialization()),
+    );
+
+    actionDataById = new Map<number, Action>();
+
+    actionData.forEach((action) => {
+        if (actionDataById!.has(action.id!)) {
+            const other = actionDataById!.get(action.id!);
+            throw new Error(
+                `action data conflict between ${other?.name} (${other?.id}) and ${action.name} (${action.id})`,
+            );
+        }
+
+        actionDataById!.set(action.id!, action);
+    });
+}
+
+async function waitForInit(): Promise<void> {
+    const executor = (resolve: any) => {
+        if (actionData) {
+            resolve();
+
+            return;
+        }
+
+        setTimeout(() => executor(resolve), 500);
+    };
+
+    return new Promise(executor);
+}
+
 export async function getActionData(): Promise<Action[]> {
-    if (!actionData) {
-        const actionNames =
-            await MwnApiClass.queryTitlesFromCategory('Actions');
-        const spellNames = await MwnApiClass.queryTitlesFromCategory('Spells');
-
-        actionData = actionNames
-            .filter((name) => !spellNames.includes(name))
-            .map((name) => new Action(name));
-
-        await Promise.all(
-            actionData.map((action) => action.waitForInitialization()),
-        );
-
-        actionDataById = new Map<number, Action>();
-        actionData.forEach((action) => actionDataById!.set(action.id!, action));
-    }
+    await waitForInit();
 
     return actionData;
 }
 
 export async function getActionDataById() {
-    if (!actionDataById) {
-        await getActionData();
-    }
+    await waitForInit();
 
     return actionDataById!;
 }
