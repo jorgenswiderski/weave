@@ -1,4 +1,7 @@
+import { CONFIG as SharedConfig } from 'planner-types/src/models/config';
+
 export const CONFIG = {
+    ...SharedConfig,
     MWN: {
         MEMOIZATION_DURATION_IN_MILLIS: parseInt(
             process.env.MWN_MEMOIZATION_DURATION_IN_MILLIS ?? '5000',
