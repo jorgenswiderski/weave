@@ -118,7 +118,7 @@ export class CharacterFeature extends PageItem implements ICharacterOption {
                     const effect: IActionEffect = {
                         name: action.name!,
                         type: effectType,
-                        subtype: ActionEffectType.SPELL_ACTION,
+                        subtype: ActionEffectType.CLASS_ACTION,
                         id: action.id!,
                         action: action as IAction,
                     };

@@ -14,7 +14,7 @@
                             {
                                 "name": "Rage",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 1085,
                                 "action": {
                                     "name": "Rage",
@@ -60,7 +60,7 @@
                             {
                                 "name": "Reckless Attack",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 1146,
                                 "action": {
                                     "name": "Reckless Attack",
@@ -115,7 +115,7 @@
                                             {
                                                 "name": "Frenzy",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1103,
                                                 "action": {
                                                     "name": "Frenzy",
@@ -137,7 +137,7 @@
                                             {
                                                 "name": "Frenzied Strike",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1105,
                                                 "action": {
                                                     "name": "Frenzied Strike",
@@ -159,7 +159,7 @@
                                             {
                                                 "name": "Enraged Throw",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1107,
                                                 "action": {
                                                     "name": "Enraged Throw",
@@ -191,7 +191,7 @@
                                             {
                                                 "name": "Rage: Wild Magic",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7924,
                                                 "action": {
                                                     "name": "Rage: Wild Magic",
@@ -212,7 +212,7 @@
                                             {
                                                 "name": "Magic Awareness",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7925,
                                                 "action": {
                                                     "name": "Magic Awareness",
@@ -274,7 +274,7 @@
                                             {
                                                 "name": "Rage: Bear Heart",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1147,
                                                 "action": {
                                                     "name": "Rage: Bear Heart",
@@ -296,7 +296,7 @@
                                             {
                                                 "name": "Unrelenting Ferocity",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1148,
                                                 "action": {
                                                     "name": "Unrelenting Ferocity",
@@ -317,7 +317,7 @@
                                             {
                                                 "name": "Rage: Eagle Heart",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1151,
                                                 "action": {
                                                     "name": "Rage: Eagle Heart",
@@ -339,7 +339,7 @@
                                             {
                                                 "name": "Rage: Elk Heart",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1153,
                                                 "action": {
                                                     "name": "Rage: Elk Heart",
@@ -361,7 +361,7 @@
                                             {
                                                 "name": "Rage: Tiger Heart",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1154,
                                                 "action": {
                                                     "name": "Rage: Tiger Heart",
@@ -383,7 +383,7 @@
                                             {
                                                 "name": "Rage: Wolf Heart",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1157,
                                                 "action": {
                                                     "name": "Rage: Wolf Heart",
@@ -405,7 +405,7 @@
                                             {
                                                 "name": "Inciting Howl",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1156,
                                                 "action": {
                                                     "name": "Inciting Howl",
@@ -1360,7 +1360,7 @@
                                             {
                                                 "name": "Bolstering Magic: Boon",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16446,
                                                 "action": {
                                                     "name": "Bolstering Magic: Boon",
@@ -1382,7 +1382,7 @@
                                             {
                                                 "name": "Bolstering Magic: Level 1 Spell Slot",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16457,
                                                 "action": {
                                                     "name": "Bolstering Magic: Level 1 Spell Slot",
@@ -1402,7 +1402,7 @@
                                             {
                                                 "name": "Bolstering Magic: Level 2 Spell Slot",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16458,
                                                 "action": {
                                                     "name": "Bolstering Magic: Level 2 Spell Slot",
@@ -2381,7 +2381,7 @@
                                             {
                                                 "name": "Intimidating Presence",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 9534,
                                                 "action": {
                                                     "name": "Intimidating Presence",
@@ -2404,7 +2404,7 @@
                                             {
                                                 "name": "Maintain Intimidating Presence",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 9536,
                                                 "action": {
                                                     "name": "Maintain Intimidating Presence",
@@ -2434,7 +2434,7 @@
                                             {
                                                 "name": "Unstable Backlash",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 9532,
                                                 "action": {
                                                     "name": "Unstable Backlash",
@@ -3334,7 +3334,7 @@
                             {
                                 "name": "Bardic Inspiration",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 2650,
                                 "action": {
                                     "name": "Bardic Inspiration",
@@ -3378,7 +3378,7 @@
                             {
                                 "name": "Song of Rest",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 3378,
                                 "action": {
                                     "name": "Song of Rest",
@@ -3440,7 +3440,7 @@
                                             {
                                                 "name": "Cutting Words",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 3397,
                                                 "action": {
                                                     "name": "Cutting Words",
@@ -3467,7 +3467,7 @@
                                             {
                                                 "name": "Defensive Flourish (Melee)",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18881,
                                                 "action": {
                                                     "name": "Defensive Flourish (Melee)",
@@ -3488,7 +3488,7 @@
                                             {
                                                 "name": "Defensive Flourish (Ranged)",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18888,
                                                 "action": {
                                                     "name": "Defensive Flourish (Ranged)",
@@ -3510,7 +3510,7 @@
                                             {
                                                 "name": "Slashing Flourish (Melee)",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18880,
                                                 "action": {
                                                     "name": "Slashing Flourish (Melee)",
@@ -3531,7 +3531,7 @@
                                             {
                                                 "name": "Slashing Flourish (Ranged)",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18890,
                                                 "action": {
                                                     "name": "Slashing Flourish (Ranged)",
@@ -3551,7 +3551,7 @@
                                             {
                                                 "name": "Mobile Flourish (Melee)",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18897,
                                                 "action": {
                                                     "name": "Mobile Flourish (Melee)",
@@ -3573,7 +3573,7 @@
                                             {
                                                 "name": "Mobile Flourish (Ranged)",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18898,
                                                 "action": {
                                                     "name": "Mobile Flourish (Ranged)",
@@ -3614,7 +3614,7 @@
                                             {
                                                 "name": "Combat Inspiration",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 4016,
                                                 "action": {
                                                     "name": "Combat Inspiration",
@@ -4544,7 +4544,7 @@
                             {
                                 "name": "Countercharm",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 6659,
                                 "action": {
                                     "name": "Countercharm",
@@ -6705,7 +6705,7 @@
                                             {
                                                 "name": "Warding Flare",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 8005,
                                                 "action": {
                                                     "name": "Warding Flare",
@@ -7035,7 +7035,7 @@
                                             {
                                                 "name": "Wrath of the Storm",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 9201,
                                                 "action": {
                                                     "name": "Wrath of the Storm",
@@ -7146,7 +7146,7 @@
                                             {
                                                 "name": "Blessing of the Trickster",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 734,
                                                 "action": {
                                                     "name": "Blessing of the Trickster",
@@ -8110,7 +8110,7 @@
                                             {
                                                 "name": "War Priest",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 9203,
                                                 "action": {
                                                     "name": "War Priest",
@@ -8210,7 +8210,7 @@
                             {
                                 "name": "Turn Undead",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 741,
                                 "action": {
                                     "name": "Turn Undead",
@@ -8261,7 +8261,7 @@
                                             {
                                                 "name": "Preserve Life",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 720,
                                                 "action": {
                                                     "name": "Preserve Life",
@@ -8290,7 +8290,7 @@
                                             {
                                                 "name": "Radiance of the Dawn",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 728,
                                                 "action": {
                                                     "name": "Radiance of the Dawn",
@@ -8318,7 +8318,7 @@
                                             {
                                                 "name": "Charm Animals and Plants",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 9704,
                                                 "action": {
                                                     "name": "Charm Animals and Plants",
@@ -8345,7 +8345,7 @@
                                             {
                                                 "name": "Destructive Wrath",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 6828,
                                                 "action": {
                                                     "name": "Destructive Wrath",
@@ -8370,7 +8370,7 @@
                                             {
                                                 "name": "Invoke Duplicity",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 736,
                                                 "action": {
                                                     "name": "Invoke Duplicity",
@@ -10266,7 +10266,7 @@
                                             {
                                                 "name": "Divine Strike",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 13565,
                                                 "action": {
                                                     "name": "Divine Strike",
@@ -10306,7 +10306,7 @@
                                             {
                                                 "name": "Divine Strike",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 13565,
                                                 "action": {
                                                     "name": "Divine Strike",
@@ -10333,7 +10333,7 @@
                                             {
                                                 "name": "Divine Strike",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 13565,
                                                 "action": {
                                                     "name": "Divine Strike",
@@ -10360,7 +10360,7 @@
                                             {
                                                 "name": "Divine Strike",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 13565,
                                                 "action": {
                                                     "name": "Divine Strike",
@@ -10387,7 +10387,7 @@
                                             {
                                                 "name": "Divine Strike",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 13565,
                                                 "action": {
                                                     "name": "Divine Strike",
@@ -10449,7 +10449,7 @@
                             {
                                 "name": "Divine Intervention",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 7954,
                                 "action": {
                                     "name": "Divine Intervention",
@@ -11371,7 +11371,7 @@
                             {
                                 "name": "Wild Shape",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 664,
                                 "action": {
                                     "name": "Wild Shape",
@@ -11403,7 +11403,7 @@
                                             {
                                                 "name": "Natural Recovery",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 684,
                                                 "action": {
                                                     "name": "Natural Recovery",
@@ -11608,7 +11608,7 @@
                                             {
                                                 "name": "Lunar Mend",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1434,
                                                 "action": {
                                                     "name": "Lunar Mend",
@@ -11628,7 +11628,7 @@
                                             {
                                                 "name": "Wild Shape",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 664,
                                                 "action": {
                                                     "name": "Wild Shape",
@@ -11646,7 +11646,7 @@
                                             {
                                                 "name": "Combat Wild Shape",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 6468,
                                                 "action": {
                                                     "name": "Combat Wild Shape",
@@ -11665,7 +11665,7 @@
                                             {
                                                 "name": "Wild Shape",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 664,
                                                 "action": {
                                                     "name": "Wild Shape",
@@ -11683,7 +11683,7 @@
                                             {
                                                 "name": "Wild Shape: Bear",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 15259,
                                                 "action": {
                                                     "name": "Wild Shape: Bear",
@@ -11745,7 +11745,7 @@
                                             {
                                                 "name": "Halo of Spores",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7876,
                                                 "action": {
                                                     "name": "Halo of Spores",
@@ -11767,7 +11767,7 @@
                                             {
                                                 "name": "Symbiotic Entity",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7877,
                                                 "action": {
                                                     "name": "Symbiotic Entity",
@@ -11786,7 +11786,7 @@
                                             {
                                                 "name": "Halo of Spores",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7876,
                                                 "action": {
                                                     "name": "Halo of Spores",
@@ -12738,7 +12738,7 @@
                                             {
                                                 "name": "Halo of Spores",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7876,
                                                 "action": {
                                                     "name": "Halo of Spores",
@@ -12760,7 +12760,7 @@
                                             {
                                                 "name": "Fungal Infestation",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 8527,
                                                 "action": {
                                                     "name": "Fungal Infestation",
@@ -13696,7 +13696,7 @@
                                             {
                                                 "name": "Wild Shape: Air Myrmidon",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 15263,
                                                 "action": {
                                                     "name": "Wild Shape: Air Myrmidon",
@@ -13714,7 +13714,7 @@
                                             {
                                                 "name": "Wild Shape: Earth Myrmidon",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 15264,
                                                 "action": {
                                                     "name": "Wild Shape: Earth Myrmidon",
@@ -13732,7 +13732,7 @@
                                             {
                                                 "name": "Wild Shape: Fire Myrmidon",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 15265,
                                                 "action": {
                                                     "name": "Wild Shape: Fire Myrmidon",
@@ -13750,7 +13750,7 @@
                                             {
                                                 "name": "Wild Shape: Water Myrmidon",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 15266,
                                                 "action": {
                                                     "name": "Wild Shape: Water Myrmidon",
@@ -13775,7 +13775,7 @@
                                             {
                                                 "name": "Halo of Spores",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7876,
                                                 "action": {
                                                     "name": "Halo of Spores",
@@ -14686,7 +14686,7 @@
                             {
                                 "name": "Second Wind",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 759,
                                 "action": {
                                     "name": "Second Wind",
@@ -14722,7 +14722,7 @@
                             {
                                 "name": "Action Surge",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 762,
                                 "action": {
                                     "name": "Action Surge",
@@ -14783,7 +14783,7 @@
                                             {
                                                 "name": "Weapon Bond",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 14413,
                                                 "action": {
                                                     "name": "Weapon Bond",
@@ -21311,7 +21311,7 @@
                         "grants": [
                             {
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 7873,
                                 "action": {
                                     "damage": "amount: 1d4, type: Bludgeoning, mod: Dexterity",
@@ -21408,7 +21408,7 @@
                                             {
                                                 "name": "Shadow Arts: Hide",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18484,
                                                 "action": {
                                                     "name": "Shadow Arts: Hide",
@@ -21428,7 +21428,7 @@
                                             {
                                                 "name": "Shadow Arts: Pass Without Trace",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18515,
                                                 "action": {
                                                     "name": "Shadow Arts: Pass Without Trace",
@@ -21450,7 +21450,7 @@
                                             {
                                                 "name": "Shadow Arts: Darkness",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18516,
                                                 "action": {
                                                     "name": "Shadow Arts: Darkness",
@@ -21477,7 +21477,7 @@
                                             {
                                                 "name": "Shadow Arts: Darkvision",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18519,
                                                 "action": {
                                                     "name": "Shadow Arts: Darkvision",
@@ -21497,7 +21497,7 @@
                                             {
                                                 "name": "Shadow Arts: Silence",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18843,
                                                 "action": {
                                                     "name": "Shadow Arts: Silence",
@@ -21529,7 +21529,7 @@
                                             {
                                                 "name": "Blade of Rime",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7857,
                                                 "action": {
                                                     "name": "Blade of Rime",
@@ -21560,7 +21560,7 @@
                                             {
                                                 "name": "Chill of the Mountain",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7858,
                                                 "action": {
                                                     "name": "Chill of the Mountain",
@@ -21581,7 +21581,7 @@
                                             {
                                                 "name": "Fangs of the Fire Snake",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7859,
                                                 "action": {
                                                     "name": "Fangs of the Fire Snake",
@@ -21605,7 +21605,7 @@
                                             {
                                                 "name": "Fist of Four Thunders",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7860,
                                                 "action": {
                                                     "name": "Fist of Four Thunders",
@@ -21628,7 +21628,7 @@
                                             {
                                                 "name": "Fist of Unbroken Air",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7861,
                                                 "action": {
                                                     "name": "Fist of Unbroken Air",
@@ -21652,7 +21652,7 @@
                                             {
                                                 "name": "Rush of the Gale Spirits",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 8962,
                                                 "action": {
                                                     "name": "Rush of the Gale Spirits",
@@ -21675,7 +21675,7 @@
                                             {
                                                 "name": "Shaping of the Ice",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7862,
                                                 "action": {
                                                     "name": "Shaping of the Ice",
@@ -21695,7 +21695,7 @@
                                             {
                                                 "name": "Sphere of Elemental Balance",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 8973,
                                                 "action": {
                                                     "name": "Sphere of Elemental Balance",
@@ -21714,7 +21714,7 @@
                                             {
                                                 "name": "Sweeping Cinder Strike",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7863,
                                                 "action": {
                                                     "name": "Sweeping Cinder Strike",
@@ -21735,7 +21735,7 @@
                                             {
                                                 "name": "Touch of the Storm",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7864,
                                                 "action": {
                                                     "name": "Touch of the Storm",
@@ -21756,7 +21756,7 @@
                                             {
                                                 "name": "Water Whip",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7865,
                                                 "action": {
                                                     "name": "Water Whip",
@@ -21788,7 +21788,7 @@
                                         "grants": [
                                             {
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7873,
                                                 "action": {
                                                     "damage": "amount: 1d4, type: Bludgeoning, mod: Dexterity",
@@ -21807,7 +21807,7 @@
                                             {
                                                 "name": "Flurry of Blows: Topple",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18397,
                                                 "action": {
                                                     "name": "Flurry of Blows: Topple",
@@ -21829,7 +21829,7 @@
                                             {
                                                 "name": "Flurry of Blows: Stagger",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18390,
                                                 "action": {
                                                     "name": "Flurry of Blows: Stagger",
@@ -21851,7 +21851,7 @@
                                             {
                                                 "name": "Flurry of Blows: Push",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18401,
                                                 "action": {
                                                     "name": "Flurry of Blows: Push",
@@ -21880,7 +21880,7 @@
                             {
                                 "name": "Deflect Missiles",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 8404,
                                 "action": {
                                     "name": "Deflect Missiles",
@@ -22733,7 +22733,7 @@
                             {
                                 "name": "Slow Fall",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 8238,
                                 "action": {
                                     "name": "Slow Fall",
@@ -22777,7 +22777,7 @@
                             {
                                 "name": "Stunning Strike (Melee)",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 8937,
                                 "action": {
                                     "name": "Stunning Strike (Melee)",
@@ -22804,7 +22804,7 @@
                             {
                                 "name": "Stunning Strike (Unarmed)",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 8936,
                                 "action": {
                                     "name": "Stunning Strike (Unarmed)",
@@ -22860,7 +22860,7 @@
                                             {
                                                 "name": "Shadow Step",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18422,
                                                 "action": {
                                                     "name": "Shadow Step",
@@ -22897,7 +22897,7 @@
                                             {
                                                 "name": "Embrace of the Inferno",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 14447,
                                                 "action": {
                                                     "name": "Embrace of the Inferno",
@@ -22917,7 +22917,7 @@
                                             {
                                                 "name": "Gong of the Summit",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7868,
                                                 "action": {
                                                     "name": "Gong of the Summit",
@@ -22967,7 +22967,7 @@
                                             {
                                                 "name": "Wholeness of Body",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 8916,
                                                 "action": {
                                                     "name": "Wholeness of Body",
@@ -23902,7 +23902,7 @@
                                             {
                                                 "name": "Fist of Four Thunders",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7860,
                                                 "action": {
                                                     "name": "Fist of Four Thunders",
@@ -23925,7 +23925,7 @@
                                             {
                                                 "name": "Fist of Unbroken Air",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7861,
                                                 "action": {
                                                     "name": "Fist of Unbroken Air",
@@ -23949,7 +23949,7 @@
                                             {
                                                 "name": "Sweeping Cinder Strike",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7863,
                                                 "action": {
                                                     "name": "Sweeping Cinder Strike",
@@ -23970,7 +23970,7 @@
                                             {
                                                 "name": "Touch of the Storm",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7864,
                                                 "action": {
                                                     "name": "Touch of the Storm",
@@ -23991,7 +23991,7 @@
                                             {
                                                 "name": "Water Whip",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7865,
                                                 "action": {
                                                     "name": "Water Whip",
@@ -24017,7 +24017,7 @@
                                             {
                                                 "name": "Embrace of the Inferno",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 14447,
                                                 "action": {
                                                     "name": "Embrace of the Inferno",
@@ -24037,7 +24037,7 @@
                                             {
                                                 "name": "Gong of the Summit",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7868,
                                                 "action": {
                                                     "name": "Gong of the Summit",
@@ -24069,7 +24069,7 @@
                                             {
                                                 "name": "Ki Resonation: Punch (Action)",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18744,
                                                 "action": {
                                                     "name": "Ki Resonation: Punch (Action)",
@@ -24092,7 +24092,7 @@
                                             {
                                                 "name": "Ki Resonation: Punch (Bonus Action)",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18745,
                                                 "action": {
                                                     "name": "Ki Resonation: Punch (Bonus Action)",
@@ -24115,7 +24115,7 @@
                                             {
                                                 "name": "Ki Resonation: Blast",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18748,
                                                 "action": {
                                                     "name": "Ki Resonation: Blast",
@@ -24190,7 +24190,7 @@
                                             {
                                                 "name": "Shadow Strike",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18858,
                                                 "action": {
                                                     "name": "Shadow Strike",
@@ -24214,7 +24214,7 @@
                                             {
                                                 "name": "Shadow Strike: Unarmed",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 18859,
                                                 "action": {
                                                     "name": "Shadow Strike: Unarmed",
@@ -24245,7 +24245,7 @@
                                             {
                                                 "name": "Flames of the Phoenix",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 10776,
                                                 "action": {
                                                     "name": "Flames of the Phoenix",
@@ -24264,7 +24264,7 @@
                                             {
                                                 "name": "Mist Stance",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 14026,
                                                 "action": {
                                                     "name": "Mist Stance",
@@ -25153,7 +25153,7 @@
                             {
                                 "name": "Divine Sense",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 3399,
                                 "action": {
                                     "name": "Divine Sense",
@@ -25179,7 +25179,7 @@
                             {
                                 "name": "Lay on Hands",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 4023,
                                 "action": {
                                     "name": "Lay on Hands",
@@ -25216,7 +25216,7 @@
                                             {
                                                 "name": "Holy Rebuke",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 3400,
                                                 "action": {
                                                     "name": "Holy Rebuke",
@@ -25245,7 +25245,7 @@
                                             {
                                                 "name": "Healing Radiance",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 3995,
                                                 "action": {
                                                     "name": "Healing Radiance",
@@ -25276,7 +25276,7 @@
                                             {
                                                 "name": "Inquisitor's Might",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 6888,
                                                 "action": {
                                                     "name": "Inquisitor's Might",
@@ -25305,7 +25305,7 @@
                                             {
                                                 "name": "Spiteful Suffering",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 3610,
                                                 "action": {
                                                     "name": "Spiteful Suffering",
@@ -25357,7 +25357,7 @@
                             {
                                 "name": "Divine Smite",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 3940,
                                 "action": {
                                     "name": "Divine Smite",
@@ -26309,7 +26309,7 @@
                                             {
                                                 "name": "Aura of Devotion",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7988,
                                                 "action": {
                                                     "name": "Aura of Devotion",
@@ -27238,7 +27238,7 @@
                             {
                                 "name": "Aura of Courage",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 7987,
                                 "action": {
                                     "name": "Aura of Courage",
@@ -27279,7 +27279,7 @@
                             {
                                 "name": "Improved Divine Smite",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 12941,
                                 "action": {
                                     "name": "Improved Divine Smite",
@@ -28208,7 +28208,7 @@
                                             {
                                                 "name": "Summon Companion",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 850,
                                                 "action": {
                                                     "name": "Summon Companion",
@@ -28229,7 +28229,7 @@
                                             {
                                                 "name": "Bear Companion",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 14208,
                                                 "action": {
                                                     "name": "Bear Companion",
@@ -28250,7 +28250,7 @@
                                             {
                                                 "name": "Boar Companion",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 14209,
                                                 "action": {
                                                     "name": "Boar Companion",
@@ -28271,7 +28271,7 @@
                                             {
                                                 "name": "Dire Raven Companion",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 14210,
                                                 "action": {
                                                     "name": "Dire Raven Companion",
@@ -28298,7 +28298,7 @@
                                             {
                                                 "name": "Wolf Spider Companion",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 14212,
                                                 "action": {
                                                     "name": "Wolf Spider Companion",
@@ -28326,7 +28326,7 @@
                                             {
                                                 "name": "Umbral Shroud",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 17899,
                                                 "action": {
                                                     "name": "Umbral Shroud",
@@ -28359,7 +28359,7 @@
                                             {
                                                 "name": "Dread Ambusher: Hide",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 17897,
                                                 "action": {
                                                     "name": "Dread Ambusher: Hide",
@@ -29291,7 +29291,7 @@
                                             {
                                                 "name": "Giant Killer",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 1441,
                                                 "action": {
                                                     "name": "Giant Killer",
@@ -31157,7 +31157,7 @@
                             {
                                 "name": "Hide in Plain Sight",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 6711,
                                 "action": {
                                     "name": "Hide in Plain Sight",
@@ -32103,7 +32103,7 @@
                             {
                                 "name": "Sneak Attack (Melee)",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 882,
                                 "action": {
                                     "name": "Sneak Attack (Melee)",
@@ -32128,7 +32128,7 @@
                             {
                                 "name": "Sneak Attack (Ranged)",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 883,
                                 "action": {
                                     "name": "Sneak Attack (Ranged)",
@@ -32160,7 +32160,7 @@
                             {
                                 "name": "Cunning Action: Dash",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 889,
                                 "action": {
                                     "name": "Cunning Action: Dash",
@@ -32186,7 +32186,7 @@
                             {
                                 "name": "Cunning Action: Disengage",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 890,
                                 "action": {
                                     "name": "Cunning Action: Disengage",
@@ -32212,7 +32212,7 @@
                             {
                                 "name": "Cunning Action: Hide",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 6574,
                                 "action": {
                                     "name": "Cunning Action: Hide",
@@ -37349,7 +37349,7 @@
                                             {
                                                 "name": "Infiltration Expertise",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 14257,
                                                 "action": {
                                                     "name": "Infiltration Expertise",
@@ -37377,7 +37377,7 @@
                                             {
                                                 "name": "Supreme Sneak",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 7855,
                                                 "action": {
                                                     "name": "Supreme Sneak",
@@ -39144,7 +39144,7 @@
                                             {
                                                 "name": "Tides of Chaos",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 17206,
                                                 "action": {
                                                     "name": "Tides of Chaos",
@@ -39193,7 +39193,7 @@
                             {
                                 "name": "Create Spell Slot",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 1387,
                                 "action": {
                                     "name": "Create Spell Slot",
@@ -39217,7 +39217,7 @@
                             {
                                 "name": "Create Sorcery Points",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 1388,
                                 "action": {
                                     "name": "Create Sorcery Points",
@@ -40151,7 +40151,7 @@
                                             {
                                                 "name": "Elemental Affinity: Resistance",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 17223,
                                                 "action": {
                                                     "name": "Elemental Affinity: Resistance",
@@ -40183,7 +40183,7 @@
                                             {
                                                 "name": "Heart of the Storm: Lightning",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 15151,
                                                 "action": {
                                                     "name": "Heart of the Storm: Lightning",
@@ -40207,7 +40207,7 @@
                                             {
                                                 "name": "Heart of the Storm: Thunder",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 15152,
                                                 "action": {
                                                     "name": "Heart of the Storm: Thunder",
@@ -40495,7 +40495,7 @@
                                             {
                                                 "name": "Bend Luck",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 17215,
                                                 "action": {
                                                     "name": "Bend Luck",
@@ -41453,7 +41453,7 @@
                                             {
                                                 "name": "Storm's Fury",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 15144,
                                                 "action": {
                                                     "name": "Storm's Fury",
@@ -41480,7 +41480,7 @@
                                             {
                                                 "name": "Controlled Chaos",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 17211,
                                                 "action": {
                                                     "name": "Controlled Chaos",
@@ -42382,7 +42382,7 @@
                                             {
                                                 "name": "Fey Presence",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 4651,
                                                 "action": {
                                                     "name": "Fey Presence",
@@ -43691,7 +43691,7 @@
                                             {
                                                 "name": "Misty Escape",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 8188,
                                                 "action": {
                                                     "name": "Misty Escape",
@@ -43769,7 +43769,7 @@
                                             {
                                                 "name": "Entropic Ward",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 8187,
                                                 "action": {
                                                     "name": "Entropic Ward",
@@ -44691,7 +44691,7 @@
                                             {
                                                 "name": "Fiendish Resilience",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 8231,
                                                 "action": {
                                                     "name": "Fiendish Resilience",
@@ -45610,7 +45610,7 @@
                             {
                                 "name": "Arcane Recovery",
                                 "type": 1,
-                                "subtype": 3,
+                                "subtype": 1,
                                 "id": 1519,
                                 "action": {
                                     "name": "Arcane Recovery",
@@ -45727,7 +45727,7 @@
                                             {
                                                 "name": "Portent",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 6658,
                                                 "action": {
                                                     "name": "Portent",
@@ -45753,7 +45753,7 @@
                                             {
                                                 "name": "Hypnotic Gaze",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16814,
                                                 "action": {
                                                     "name": "Hypnotic Gaze",
@@ -45795,7 +45795,7 @@
                                             {
                                                 "name": "Improved Minor Illusion",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16818,
                                                 "action": {
                                                     "name": "Improved Minor Illusion",
@@ -46784,7 +46784,7 @@
                                             {
                                                 "name": "Projected Ward",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16831,
                                                 "action": {
                                                     "name": "Projected Ward",
@@ -46839,7 +46839,7 @@
                                             {
                                                 "name": "Instinctive Charm",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16834,
                                                 "action": {
                                                     "name": "Instinctive Charm",
@@ -46881,7 +46881,7 @@
                                             {
                                                 "name": "See Invisibility (Class Action)",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 20027,
                                                 "action": {
                                                     "name": "See Invisibility (Class Action)",
@@ -46903,7 +46903,7 @@
                                             {
                                                 "name": "See Invisibility (Class Action)",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 20027,
                                                 "action": {
                                                     "name": "See Invisibility (Class Action)",
@@ -47163,7 +47163,7 @@
                                             {
                                                 "name": "Transmuter's Stone",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16839,
                                                 "action": {
                                                     "name": "Transmuter's Stone",
@@ -47183,7 +47183,7 @@
                                             {
                                                 "name": "Transmuter's Stone: Constitution",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 20158,
                                                 "action": {
                                                     "name": "Transmuter's Stone: Constitution",
@@ -47203,7 +47203,7 @@
                                             {
                                                 "name": "Transmuter's Stone: Darkvision",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 20159,
                                                 "action": {
                                                     "name": "Transmuter's Stone: Darkvision",
@@ -47223,7 +47223,7 @@
                                             {
                                                 "name": "Transmuter's Stone: Speed",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 20164,
                                                 "action": {
                                                     "name": "Transmuter's Stone: Speed",
@@ -47243,7 +47243,7 @@
                                             {
                                                 "name": "Transmuter's Stone: Acid Resistance",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 20166,
                                                 "action": {
                                                     "name": "Transmuter's Stone: Acid Resistance",
@@ -47263,7 +47263,7 @@
                                             {
                                                 "name": "Transmuter's Stone: Cold Resistance",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 20167,
                                                 "action": {
                                                     "name": "Transmuter's Stone: Cold Resistance",
@@ -47283,7 +47283,7 @@
                                             {
                                                 "name": "Transmuter's Stone: Fire Resistance",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 20168,
                                                 "action": {
                                                     "name": "Transmuter's Stone: Fire Resistance",
@@ -47303,7 +47303,7 @@
                                             {
                                                 "name": "Transmuter's Stone: Lightning Resistance",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 20169,
                                                 "action": {
                                                     "name": "Transmuter's Stone: Lightning Resistance",
@@ -47323,7 +47323,7 @@
                                             {
                                                 "name": "Transmuter's Stone: Thunder Resistance",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 20170,
                                                 "action": {
                                                     "name": "Transmuter's Stone: Thunder Resistance",
@@ -48277,7 +48277,7 @@
                                             {
                                                 "name": "Third Eye: Darkvision",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16851,
                                                 "action": {
                                                     "name": "Third Eye: Darkvision",
@@ -48297,7 +48297,7 @@
                                             {
                                                 "name": "Third Eye: See Invisibility",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16852,
                                                 "action": {
                                                     "name": "Third Eye: See Invisibility",
@@ -48350,7 +48350,7 @@
                                             {
                                                 "name": "Illusory Self",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16855,
                                                 "action": {
                                                     "name": "Illusory Self",
@@ -48388,7 +48388,7 @@
                                             {
                                                 "name": "Shapechanger",
                                                 "type": 1,
-                                                "subtype": 3,
+                                                "subtype": 1,
                                                 "id": 16857,
                                                 "action": {
                                                     "name": "Shapechanger",
