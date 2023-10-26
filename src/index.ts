@@ -15,10 +15,10 @@ import { getCharacterBackgroundData } from './models/character-feature/features/
 import { backgroundsRouter } from './routes/backgrounds';
 import { MwnProgressBar } from './api/mwn-progress-bar';
 import { imageRouter } from './routes/image';
-import { getSpellData } from './models/spell/spell';
 import { spellsRouter } from './routes/spells';
 import { itemsRouter } from './routes/items';
 import { getEquipmentItemData } from './models/equipment/equipment';
+import { getSpellData } from './models/action/spell';
 
 const app = express();
 const PORT = process.env.PORT || 3001;

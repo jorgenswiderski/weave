@@ -8,9 +8,9 @@ import { error, log } from './logger';
 import { getCharacterClassData } from './character-class/character-class';
 import { getCharacterBackgroundData } from './character-feature/features/character-background';
 import { getCharacterRaceData } from './character-feature/features/character-race';
-import { getSpellData } from './spell/spell';
 import { getMongoDb } from './mongo';
 import { getEquipmentItemData } from './equipment/equipment';
+import { getSpellData } from './action/spell';
 
 async function getInfo(data: any[]) {
     return Promise.all(data.map((datum) => datum.getInfo()));

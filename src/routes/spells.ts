@@ -1,6 +1,6 @@
 // spells.ts
 import express, { Request, Response, Router } from 'express';
-import { getSpellData, getSpellDataById } from '../models/spell/spell';
+import { getSpellData, getSpellDataById } from '../models/action/spell';
 
 export const router: Router = express.Router();
 
