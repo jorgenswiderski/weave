@@ -19,6 +19,7 @@ import { spellsRouter } from './routes/spells';
 import { itemsRouter } from './routes/items';
 import { getEquipmentItemData } from './models/equipment/equipment';
 import { getSpellData } from './models/action/spell';
+import { getActionData } from './models/action/action';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -29,6 +30,7 @@ const PORT = process.env.PORT || 3001;
         getCharacterRaceData(),
         getCharacterBackgroundData(),
         getSpellData(),
+        getActionData(),
         getEquipmentItemData(),
     ]);
 })();

@@ -225,7 +225,7 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
             areaTurnStartDamageSaveEffect: {
                 key: 'area turn start damage save effect',
                 parser: parseEnum(ActionDamageSaveEffect),
-                default: ActionDamageSaveEffect.negate,
+                default: undefined,
             },
             areaTurnEndDamage: {
                 key: 'area turn end damage',

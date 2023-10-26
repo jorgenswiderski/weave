@@ -11,6 +11,7 @@ import { getCharacterRaceData } from './character-feature/features/character-rac
 import { getMongoDb } from './mongo';
 import { getEquipmentItemData } from './equipment/equipment';
 import { getSpellData } from './action/spell';
+import { getActionData } from './action/action';
 
 async function getInfo(data: any[]) {
     return Promise.all(data.map((datum) => datum.getInfo()));
@@ -25,6 +26,7 @@ async function dump() {
             'races/info': getInfo(await getCharacterRaceData()),
             'backgrounds/info': getInfo(await getCharacterBackgroundData()),
             'spells/info': getSpellData(),
+            'actions/info': getActionData(),
             'items/equipment': getEquipmentItemData(),
         };
 

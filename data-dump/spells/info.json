@@ -66,7 +66,6 @@
         "aoe": 1,
         "aoeM": 2,
         "aoeFt": 7,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -112,7 +111,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -132,7 +130,6 @@
         "range": 1,
         "condition": "Charmed",
         "conditionDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Bard",
@@ -294,7 +291,6 @@
         "range": 1,
         "rangeM": 24,
         "rangeFt": 48,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -389,7 +385,6 @@
         "condition": "Banished",
         "conditionDuration": 2,
         "conditionSave": 6,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Cleric",
@@ -437,7 +432,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -460,7 +454,6 @@
         "aoeFt": 30,
         "condition": "Beacon of Hope",
         "conditionDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* This spell also affects the caster despite the description only mentioning allies.",
         "cost": 1,
         "classes": [
@@ -545,7 +538,6 @@
         "rangeM": 18,
         "rangeFt": 60,
         "condition": "Difficult Terrain",
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Cleric"
@@ -652,7 +644,6 @@
         "condition": "Blinded",
         "conditionDuration": 10,
         "conditionSave": 3,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -763,7 +754,6 @@
         "id": 8066,
         "attackRoll": false,
         "condition": "Crackling with Kereska's Lightning",
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -810,7 +800,6 @@
         "id": 8061,
         "attackRoll": false,
         "condition": "Rumbling with Kereska's Thunder",
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -855,7 +844,6 @@
         "condition": "Branding Smite",
         "conditionDuration": 10,
         "conditionSave": 3,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 3,
         "classes": [
             "Paladin"
@@ -934,7 +922,6 @@
         "aoeFt": 7,
         "condition": "Call Lightning",
         "conditionDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Druid",
@@ -986,7 +973,6 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Celestial Haste",
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": true,
@@ -1373,7 +1359,6 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* Circle of the Lands who choose the Arctic or Forest Land at level 7 learn this spell automatically.",
         "cost": 1,
         "classes": [
@@ -1419,7 +1404,6 @@
         "id": 10882,
         "attackRoll": false,
         "range": 1,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Druid"
@@ -1538,7 +1522,6 @@
         "concentration": false,
         "id": 1388,
         "attackRoll": false,
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -1587,7 +1570,6 @@
         "areaShape": 1,
         "areaRangeM": 2,
         "areaRangeFt": 5,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Cleric",
@@ -1615,7 +1597,6 @@
         "condition": "Crown of Madness",
         "conditionDuration": 3,
         "conditionSave": 5,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Bard",
@@ -1694,7 +1675,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 54,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -1744,7 +1724,6 @@
         "attackRoll": false,
         "rangeM": 9,
         "rangeFt": 30,
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -1846,7 +1825,6 @@
         "id": 8059,
         "attackRoll": false,
         "condition": "Vessel for Kereska's Poison",
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -1887,7 +1865,6 @@
         "aoe": 1,
         "aoeM": 4,
         "aoeFt": 13,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Cleric",
@@ -1916,7 +1893,6 @@
         "rangeFt": 30,
         "condition": "Prone",
         "conditionDuration": 1,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -1935,7 +1911,6 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Detect Thoughts",
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* Granted by Uncovered Mysteries. Long Rest\n* Granted by Mask of Soul Perception. Short Rest\n* Granted by Potion of Mind Reading.\n* When attempting to use Detect Thoughts on an NPC, an Intelligence or Wisdom Ability Check is rolled. On a failure, the NPC may become hostile.",
         "cost": 1,
         "classes": [
@@ -1964,7 +1939,6 @@
         "attackRoll": false,
         "rangeM": 30,
         "rangeFt": 90,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -1984,7 +1958,6 @@
         "id": 6735,
         "attackRoll": false,
         "range": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* Granted by Spaceshunt Boots. Long Rest",
         "cost": 1,
         "classes": [
@@ -2156,7 +2129,6 @@
         "concentration": false,
         "id": 3940,
         "attackRoll": true,
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [
             "Paladin"
         ],
@@ -2303,7 +2275,6 @@
         "id": 1651,
         "attackRoll": true,
         "range": 1,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Warlock"
@@ -2323,7 +2294,6 @@
         "concentration": false,
         "id": 9575,
         "attackRoll": false,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 2,
         "classes": [],
         "noSpellSlot": true,
@@ -2347,7 +2317,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 5,
         "classes": [],
         "noSpellSlot": true,
@@ -2528,7 +2497,6 @@
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* Granted by Strange Tendril Amulet. Long Rest",
         "cost": 1,
         "classes": [
@@ -2575,7 +2543,6 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Expeditious Retreat",
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 2,
         "classes": [
             "Sorcerer",
@@ -2625,7 +2592,6 @@
         "condition": "Faerie Fire",
         "conditionDuration": 10,
         "conditionSave": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Bard",
@@ -2707,7 +2673,6 @@
         "aoeFt": 30,
         "condition": "Feather Fall",
         "conditionDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* Draconic Bloodline of Silver (Cold) Ancestry learns this spell automatically.",
         "cost": 2,
         "classes": [
@@ -2736,7 +2701,6 @@
         "rangeFt": 5,
         "condition": "Feigning Death",
         "conditionDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Bard",
@@ -2898,7 +2862,6 @@
         "id": 8071,
         "attackRoll": false,
         "condition": "Gripped by Kereska's Flame",
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -3000,7 +2963,6 @@
         "rangeFt": 60,
         "condition": "Petrified",
         "conditionSave": 3,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Wizard"
@@ -3021,7 +2983,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -3049,7 +3010,6 @@
         "areaRangeM": 5,
         "areaRangeFt": 15,
         "areaDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* Draconic Bloodline of Bronze (Lightning) Ancestry learns this spell automatically.",
         "cost": 1,
         "classes": [
@@ -3128,7 +3088,6 @@
         "id": 8068,
         "attackRoll": false,
         "condition": "Conduit of Kereska's Ice",
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -3187,7 +3146,6 @@
         "attackRoll": false,
         "condition": "Flight",
         "conditionDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 2,
         "classes": [],
         "noSpellSlot": false,
@@ -3353,7 +3311,6 @@
         "areaRangeM": 5,
         "areaRangeFt": 15,
         "areaDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* Draconic Bloodline of Black (Acid) Ancestry learns this spell automatically.",
         "cost": 1,
         "classes": [
@@ -3472,7 +3429,6 @@
         "rangeFt": 60,
         "condition": "Guiding Bolt",
         "conditionDuration": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Cleric"
@@ -3493,7 +3449,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -3512,7 +3467,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -3755,7 +3709,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -3774,7 +3727,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -3990,7 +3942,6 @@
         "areaRangeM": 2,
         "areaRangeFt": 7,
         "areaDuration": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* Creatures on an Prone}} on failing a [[Dexterity SavingThrow.",
         "cost": 1,
         "classes": [
@@ -4057,7 +4008,6 @@
         "id": 2247,
         "attackRoll": true,
         "range": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Cleric",
@@ -4120,7 +4070,6 @@
         "range": 2,
         "condition": "Invisible",
         "conditionDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Bard",
@@ -4148,7 +4097,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -4168,7 +4116,6 @@
         "rangeM": 6,
         "rangeFt": 20,
         "condition": "Channelling Karsus' Compulsion",
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* Granted by holding the Triune Netherstone. This spell may only be cast by a Mind Flayer.\n* This is one of only three 9th Level spells featured in Baldur's Gate 3. verify The other two are:\n** Wish, cast by Vlaakith at the end of Creche Y'llek if the player doubts her power.\n** Power Word Kill, a special variant of which is cast by Farslayer of Bhaal Ghislev in the Undercity Ruins.\n* Unlike Wish and Power Word Kill, Karsus' Compulsion was created specifically for Baldur's Gate 3.",
         "cost": 1,
         "classes": [],
@@ -4188,7 +4135,6 @@
         "rangeFt": 60,
         "condition": "Cursed: Strength",
         "conditionDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 2,
         "classes": [],
         "noSpellSlot": false,
@@ -4205,7 +4151,6 @@
         "concentration": false,
         "id": 8054,
         "attackRoll": false,
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": true,
         "damageSaveEffect": 1,
@@ -4301,7 +4246,6 @@
         "condition": "searing smite",
         "conditionDuration": 10,
         "conditionSave": 3,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 3,
         "classes": [],
         "noSpellSlot": false,
@@ -4396,7 +4340,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Longstrider",
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Bard",
@@ -4431,7 +4374,6 @@
         "aoe": 1,
         "aoeM": 6,
         "aoeFt": 12,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -4452,7 +4394,6 @@
         "range": 1,
         "rangeM": 8,
         "rangeFt": 27,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 2,
         "classes": [],
         "noSpellSlot": true,
@@ -4471,7 +4412,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Mage Armour",
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -4522,7 +4462,6 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* The Shield spell causes the caster to take no damage from Magic Missile.\n* The level 10 Evocation feature Empowered Evocation will add the wizard's intelligence modifier to each missile.\n* When interacting with effects like Death Ward and dealing multiple attacks to the same creature, if the 1st attack was sufficient to Downed|down the target, the 2nd attack will apply beforeDeath Ward activates leaving the target with 1HP. An action with three attacks, however, would result in the creature being downed. A player character with Death Ward applied would need to receive 6 attack applications to fully die: 2 to break the ward, 1 to get downed, then 3 more to fail 3 Death Saving Throws. This effect seems to apply to all multi-application attacks such Scorching Ray and Eldritch Blast (as of 4.1.1.3669438).",
         "cost": 1,
         "classes": [
@@ -4574,7 +4513,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -4668,7 +4606,6 @@
         "rangeFt": 60,
         "condition": "Dominated",
         "conditionDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -4770,7 +4707,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -4813,7 +4749,6 @@
         "concentration": false,
         "id": 24438,
         "attackRoll": false,
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -4831,7 +4766,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -4850,7 +4784,6 @@
         "id": 10348,
         "attackRoll": false,
         "range": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -4873,7 +4806,6 @@
         "condition": "Otiluke's Resilient Sphere",
         "conditionDuration": 3,
         "conditionSave": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Wizard"
@@ -4921,7 +4853,6 @@
         "rangeFt": 60,
         "condition": "Paralysed",
         "conditionDuration": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false
@@ -5231,7 +5162,6 @@
         "rangeFt": 60,
         "condition": "Promise of Wealth",
         "conditionDuration": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 2,
         "classes": [],
         "noSpellSlot": false,
@@ -5431,7 +5361,6 @@
         "attackRoll": false,
         "rangeM": 9,
         "rangeFt": 30,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -5519,7 +5448,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -5541,7 +5469,6 @@
         "aoe": 1,
         "aoeM": 9,
         "aoeFt": 30,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Cleric",
@@ -5564,7 +5491,6 @@
         "range": 1,
         "condition": "Banished",
         "conditionSave": 6,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -5582,7 +5508,6 @@
         "id": 9510,
         "attackRoll": false,
         "condition": "Gaseous Form",
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -5608,7 +5533,6 @@
         "aoe": 1,
         "aoeM": 6,
         "aoeFt": 12,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -5653,7 +5577,6 @@
         "range": 1,
         "condition": "Sanctuary",
         "conditionDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 2,
         "classes": [
             "Cleric",
@@ -5777,7 +5700,6 @@
         "condition": "Sleeping",
         "conditionDuration": 2,
         "conditionSave": 3,
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -5877,7 +5799,6 @@
         "areaRangeM": 5,
         "areaRangeFt": 15,
         "areaDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -5991,7 +5912,6 @@
         "range": 1,
         "condition": "Shield of Screams",
         "conditionDuration": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 2,
         "classes": [],
         "noSpellSlot": false,
@@ -6058,7 +5978,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -6082,7 +6001,6 @@
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 100,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Bard",
@@ -6107,7 +6025,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -6125,7 +6042,6 @@
         "id": 8057,
         "attackRoll": false,
         "condition": "Adrip with Kereska's Acid",
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* As of 2023-08-08, the in-game tooltip is incorrect and states this variant grants the spells granted by Deadlier than Arsenic instead.",
         "classes": [],
         "noSpellSlot": false,
@@ -6165,7 +6081,6 @@
         "range": 1,
         "condition": "Sleeping",
         "conditionDuration": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Bard",
@@ -6295,7 +6210,6 @@
         "rangeM": 9,
         "rangeFt": 30,
         "condition": "Recast Speak with Dead",
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Bard",
@@ -6407,7 +6321,6 @@
         "attackRoll": false,
         "condition": "Staggering Smite",
         "conditionDuration": 1,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 3,
         "classes": [],
         "noSpellSlot": false,
@@ -6492,7 +6405,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "areaTurnStartDamageSaveEffect": 1,
         "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1
@@ -6511,7 +6423,6 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -6560,7 +6471,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -6583,7 +6493,6 @@
         "condition": "Hideous Laughter",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Bard",
@@ -6642,7 +6551,6 @@
         "concentration": false,
         "id": 24403,
         "attackRoll": false,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -6661,7 +6569,6 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Thaumaturgy",
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [
             "Cleric",
@@ -6702,7 +6609,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 36,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -6749,7 +6655,6 @@
         "condition": "prone",
         "conditionDuration": 1,
         "conditionSave": 1,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 3,
         "classes": [
             "Paladin"
@@ -6775,7 +6680,6 @@
         "aoe": 3,
         "aoeM": 5,
         "aoeFt": 17,
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* If an affected creature passes the SavingThrow, in addition to only taking half damage, they are also not pushed back.",
         "cost": 1,
         "classes": [
@@ -6896,7 +6800,6 @@
         "rangeFt": 12,
         "condition": "Greater Invisibility",
         "conditionDuration": 2,
-        "areaTurnStartDamageSaveEffect": 1,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -7149,7 +7052,6 @@
         "range": 1,
         "condition": "Witch Bolt",
         "conditionDuration": 10,
-        "areaTurnStartDamageSaveEffect": 1,
         "notes": "* Draconic Bloodline of Blue (Lightning) Ancestry learns this spell automatically.",
         "cost": 1,
         "classes": [
