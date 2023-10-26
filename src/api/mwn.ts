@@ -9,7 +9,7 @@ const bot = new Mwn({
     apiUrl: `${CONFIG.MEDIAWIKI.BASE_URL}/api.php`,
 });
 
-export const MwnTokenBucket = new TokenBucket(50, 10);
+export const MwnTokenBucket = new TokenBucket(75, 3);
 
 // shorthand just to reduce boilerplate
 function memoize<T extends (...args: any[]) => Promise<any>>(fn: T): T {
@@ -92,19 +92,24 @@ export class MwnApiClass {
         includeSubcategories: boolean = false,
     ): Promise<string[]> {
         let titles: string[] = [];
-        let cmcontinue: ApiParam;
+        let cmcontinue: ApiParam | null = null;
 
         do {
             // eslint-disable-next-line no-await-in-loop
             await MwnTokenBucket.acquireToken();
 
-            // eslint-disable-next-line no-await-in-loop
-            const response = await bot.query({
+            const params: ApiParams = {
                 list: 'categorymembers',
                 cmtitle: `Category:${categoryName}`,
                 cmlimit: 500, // maximum allowed for most users
-                // cmcontinue,
-            });
+            };
+
+            if (cmcontinue) {
+                params.cmcontinue = cmcontinue;
+            }
+
+            // eslint-disable-next-line no-await-in-loop
+            const response = await bot.query(params);
 
             const members = response?.query?.categorymembers || [];
 
