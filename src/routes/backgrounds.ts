@@ -4,7 +4,7 @@ import { getCharacterBackgroundData } from '../models/character-feature/features
 
 export const router: Router = express.Router();
 
-router.get('/info/id', async (req: Request, res: Response) => {
+router.get('/id', async (req: Request, res: Response) => {
     const ids = (req.query.ids as string)
         .split(',')
         .map((val) => parseInt(val, 10));
@@ -17,7 +17,7 @@ router.get('/info/id', async (req: Request, res: Response) => {
     res.json(Object.fromEntries(filtered.map((datum) => [datum.id, datum])));
 });
 
-router.get('/info', async (req: Request, res: Response) => {
+router.get('/', async (req: Request, res: Response) => {
     const backgroundsData = await getCharacterBackgroundData();
 
     const data = backgroundsData.map((background) => background.getInfo());

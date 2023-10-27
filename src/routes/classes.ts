@@ -4,7 +4,7 @@ import { getCharacterClassData } from '../models/character-class/character-class
 
 export const router: Router = express.Router();
 
-router.get('/info', async (req: Request, res: Response) => {
+router.get('/', async (req: Request, res: Response) => {
     const ccd = await getCharacterClassData();
 
     const data = await Promise.all(ccd.map(async (cls) => cls.getInfo()));
