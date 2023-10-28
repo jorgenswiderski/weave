@@ -3,7 +3,7 @@ import express, { Request, Response, Router } from 'express';
 import {
     getEquipmentItemData,
     getEquipmentItemInfoById,
-} from '../models/equipment/equipment';
+} from '../../models/equipment/equipment';
 
 export const router: Router = express.Router();
 

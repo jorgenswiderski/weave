@@ -7,19 +7,12 @@ import express from 'express';
 import cors from 'cors';
 import { getCharacterClassData } from './models/character-class/character-class';
 import { log } from './models/logger';
-
-import { classesRouter } from './routes/classes';
 import { getCharacterRaceData } from './models/character-feature/features/character-race';
-import { racesRouter } from './routes/races';
 import { getCharacterBackgroundData } from './models/character-feature/features/character-background';
-import { backgroundsRouter } from './routes/backgrounds';
 import { MwnProgressBar } from './api/mwn-progress-bar';
-import { imageRouter } from './routes/image';
-import { spellsRouter } from './routes/spells';
-import { itemsRouter } from './routes/items';
 import { getEquipmentItemData } from './models/equipment/equipment';
 import { initActionsAndSpells } from './models/action/init';
-import { actionsRouter } from './routes/actions';
+import { apiRouter } from './routes';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -59,14 +52,7 @@ app.use(
     }),
 );
 
-app.use('/api/classes', classesRouter);
-app.use('/api/races', racesRouter);
-app.use('/api/backgrounds', backgroundsRouter);
-app.use('/api/actions', actionsRouter);
-app.use('/api/spells', spellsRouter);
-app.use('/api/items', itemsRouter);
-
-app.use('/api/images', imageRouter);
+app.use('/api', apiRouter);
 
 app.listen(PORT, () => {
     log(`Server is running on port ${PORT}`);

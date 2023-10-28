@@ -1,6 +1,6 @@
 // classes.ts
 import express, { Request, Response, Router } from 'express';
-import { getCharacterClassData } from '../models/character-class/character-class';
+import { getCharacterClassData } from '../../models/character-class/character-class';
 
 export const router: Router = express.Router();
 

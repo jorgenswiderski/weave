@@ -1,6 +1,6 @@
 // backgrounds.ts
 import express, { Request, Response, Router } from 'express';
-import { getCharacterBackgroundData } from '../models/character-feature/features/character-background';
+import { getCharacterBackgroundData } from '../../models/character-feature/features/character-background';
 
 export const router: Router = express.Router();
 
