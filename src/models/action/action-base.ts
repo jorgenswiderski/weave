@@ -57,6 +57,9 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
     areaTurnStartDamageSave?: AbilityScore;
     areaTurnStartDamageSaveEffect?: ActionDamageSaveEffect;
     areaTurnEndDamage?: string;
+    areaTurnEndDamageType?: DamageType;
+    areaTurnEndDamageSave?: AbilityScore;
+    areaTurnEndDamageSaveEffect?: ActionDamageSaveEffect;
     notes?: string;
     recharge?: ActionRechargeFrequency;
     cost?: ActionResource;
@@ -232,6 +235,21 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
                 parser: plainText,
                 default: undefined,
             },
+            areaTurnEndDamageType: {
+                key: 'area turn end damage type',
+                parser: parseEnum(DamageType),
+                default: undefined,
+            },
+            areaTurnEndDamageSave: {
+                key: 'area turn end damage save',
+                parser: parseEnum(AbilityScore),
+                default: undefined,
+            },
+            areaTurnEndDamageSaveEffect: {
+                key: 'area turn end damage save effect',
+                parser: parseEnum(ActionDamageSaveEffect),
+                default: undefined,
+            },
             notes: {
                 parser: plainText,
                 default: undefined,
@@ -286,6 +304,9 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
             'areaTurnStartDamageSave',
             'areaTurnStartDamageSaveEffect',
             'areaTurnEndDamage',
+            'areaTurnEndDamageType',
+            'areaTurnEndDamageSave',
+            'areaTurnEndDamageSaveEffect',
             'notes',
             'recharge',
             'cost',

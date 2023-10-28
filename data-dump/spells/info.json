@@ -9881,6 +9881,9 @@
         "areaTurnStartDamage": "2d6",
         "areaTurnStartDamageType": 5,
         "areaTurnEndDamage": "2d6",
+        "areaTurnEndDamageType": 8,
+        "areaTurnEndDamageSave": 2,
+        "areaTurnEndDamageSaveEffect": 0,
         "cost": 1,
         "classes": [
             "Warlock"
