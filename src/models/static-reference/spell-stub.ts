@@ -1,24 +1,23 @@
-import { ISpell } from 'planner-types/src/types/action';
-import {
-    StaticReferenceHandle,
-    StaticallyReferenceable,
-} from 'planner-types/src/models/static-reference/types';
-import { StaticReference } from 'planner-types/src/models/static-reference/static-reference';
 import { SpellStubConstructor } from 'planner-types/src/models/static-reference/stubs';
+import {
+    CompressableRecord,
+    CompressableRecordHandle,
+} from 'planner-types/src/models/compressable-record/types';
+import { RecordCompressor } from 'planner-types/src/models/compressable-record/compressable-record';
+import { ISpell } from 'planner-types/src/types/action';
+import { CHOICE_ID_NOT_SET_BY_SERVER } from './types';
 
-let ref: {
-    create: (id: number) => StaticReferenceHandle;
-};
+let compress: (id: number, choiceId: string) => CompressableRecordHandle;
 
-export class SpellStub implements StaticallyReferenceable {
+export class SpellStub implements CompressableRecord {
     id: number;
 
-    constructor(public action: ISpell) {
-        this.id = action.id;
+    constructor(public spell: ISpell) {
+        this.id = spell.id;
     }
 
-    toJSON(): StaticReferenceHandle {
-        return ref.create(this.id);
+    toJSON(): CompressableRecordHandle {
+        return compress(this.id, CHOICE_ID_NOT_SET_BY_SERVER);
     }
 }
 
@@ -27,4 +26,4 @@ export class SpellStub implements StaticallyReferenceable {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const typeCheck: SpellStubConstructor = SpellStub;
 
-ref = StaticReference.registerClass(SpellStub, 's');
+compress = RecordCompressor.registerClass(SpellStub, 1);

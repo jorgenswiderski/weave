@@ -4,7 +4,7 @@ import {
     GrantableEffectType,
 } from 'planner-types/src/types/grantable-effect';
 import { IAction, ISpell } from 'planner-types/src/types/action';
-import { StaticallyReferenceable } from 'planner-types/src/models/static-reference/types';
+import { CompressableRecord } from 'planner-types/src/models/compressable-record/types';
 import { PageItem, PageLoadingState } from '../page-item';
 import { ICharacterOptionWithPage } from './types';
 import { error, warn } from '../logger';
@@ -29,7 +29,7 @@ export class CharacterFeature
     name: string;
     description?: string;
     image?: string;
-    grants: (GrantableEffect | StaticallyReferenceable)[] = [];
+    grants: (GrantableEffect | CompressableRecord)[] = [];
 
     constructor(
         { pageTitle, page, name, image }: ICharacterOptionWithPage,
@@ -77,7 +77,7 @@ export class CharacterFeature
         pageTitle: string,
         pageId: number,
         categories: string[],
-    ): Promise<GrantableEffect | StaticallyReferenceable> {
+    ): Promise<GrantableEffect | CompressableRecord> {
         const descMatch =
             /\|\s*description\s*=\s*([\s\S]+?)\n\|\s*[\w\s]+=/g.exec(
                 pageContent,
@@ -130,7 +130,7 @@ export class CharacterFeature
     static async parsePageForGrantableEffect(
         pageTitle: string,
         page?: PageData,
-    ): Promise<GrantableEffect | StaticallyReferenceable | null> {
+    ): Promise<GrantableEffect | CompressableRecord | null> {
         try {
             const categories = await MwnApi.queryCategoriesFromPage(pageTitle);
 

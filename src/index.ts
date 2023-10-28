@@ -37,10 +37,7 @@ const PORT = process.env.PORT || 3001;
 
 new MwnProgressBar().render();
 
-const allowedOrigins = [
-    'http://localhost:3000',
-    // 'https://52de-65-25-226-60.ngrok-free.app',
-];
+const allowedOrigins = ['http://localhost:3000'];
 
 app.use(
     cors({

@@ -226,6 +226,21 @@
         "cost": 1
     },
     {
+        "name": "Beak Attack (Shadow-Cursed Raven)",
+        "damage": "amount:1d6, type:Piercing, mod:Dexterity",
+        "image": "Beak Attack.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Beak Attack is a Shadow-Cursed Raven Action. Ravens use this ability to make a melee attack that deals Piercing Damage to enemies.",
+        "description": "Peck at a target.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25431,
+        "attackRoll": true,
+        "range": 2,
+        "cost": 1
+    },
+    {
         "name": "Bear Companion",
         "image": "Bear Companion.webp",
         "level": 0,
@@ -646,6 +661,21 @@
         "rangeM": 6,
         "rangeFt": 20,
         "condition": "Controlled"
+    },
+    {
+        "name": "Daddy's Lecture",
+        "damage": "amount:3d10, type:Necrotic",
+        "image": "Inflict Wounds.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Daddy's Lecture is a unique action available to Daddy. It deals 3d10|Necrotic damage.",
+        "description": "Daddy infuses his hand with putrefying energy to discipline the naughty children.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25423,
+        "attackRoll": true,
+        "rangeM": 12,
+        "cost": 1
     },
     {
         "name": "Dash",
@@ -1423,6 +1453,22 @@
         "cost": 1
     },
     {
+        "name": "Life Drain",
+        "damage": "amount:2d8, type:Necrotic, mod: Dexterity",
+        "image": "Generic Death.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Life Drain is a class action available to 2d8|Necrotic}} damage and kills a target if their [[hit points reach zero.",
+        "description": "Possibly drain a target's hit point by 2d8. The target dies if its hit points are reduced to 0.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25420,
+        "attackRoll": true,
+        "range": 2,
+        "condition": "Life Drain",
+        "cost": 1
+    },
+    {
         "name": "Lightning Aura",
         "damage": "amount:1d6, type:Lightning",
         "image": "Lightning Aura.webp",
@@ -1492,6 +1538,20 @@
         "rangeFt": 30,
         "condition": "Frightened",
         "conditionDuration": 2,
+        "cost": 1
+    },
+    {
+        "name": "Matriarch's Call",
+        "image": "Generic Acid.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Matriarch's Call is a unique action available to the Phase Spider Matriarch. It lets her hatch a nearby clutch of eggs.",
+        "description": "The spider matriarch calls on her brood, causing her nearby eggs to hatch.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25451,
+        "attackRoll": false,
+        "rangeM": 3,
         "cost": 1
     },
     {
@@ -1633,6 +1693,22 @@
         "attackRoll": false,
         "range": 3,
         "condition": "One with the Shadows",
+        "cost": 1
+    },
+    {
+        "name": "Orb of Negation",
+        "image": "Generic Explosion.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Orb of Negation is an action available to The Netherbrain. It creates several floating orbs which will deal  20~200|Force damage to everything within range at the end of the next round.",
+        "description": "The Grand Design cannot be disrupted - manifest an orb of Netherese arcana that explodes on its turn, obliterating everything within range.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25573,
+        "attackRoll": false,
+        "rangeM": 30,
+        "condition": "Marked for Negation",
+        "conditionDuration": 1,
         "cost": 1
     },
     {
@@ -2005,6 +2081,23 @@
         "conditionDuration": 1
     },
     {
+        "name": "Shadowjaw Bite",
+        "damage": "amount:2d6, type:Piercing, mod:Strength",
+        "image": "Bite.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Shadowjaw Bite is a unique action available to Doggy, which deals 2d6|Piercing damage and possibly knocks a target prone.",
+        "description": "Sink your teeth into a target and possibly knock it Prone.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25428,
+        "attackRoll": true,
+        "range": 2,
+        "condition": "Prone",
+        "conditionDuration": 1,
+        "cost": 1
+    },
+    {
         "name": "Shapechanger",
         "image": "Shapechanger.webp",
         "level": 0,
@@ -2306,6 +2399,20 @@
         "id": 18492,
         "attackRoll": true,
         "range": 1
+    },
+    {
+        "name": "Spider Queen's Wrath",
+        "image": "Rage.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Spider Queen's Wrath is an action available to the Phase Spider Matriarch. It gives her the condition Spider Queen's Wrath, which gives her an additional action per turn, +2 Strength and Resistance to physical damage.",
+        "description": "Gain one additional attack per turn. Increase Strength by 2 and grant Resistance to physical damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25458,
+        "attackRoll": false,
+        "range": 3,
+        "condition": "Spider Queen's Wrath"
     },
     {
         "name": "Spiteful Suffering",
@@ -2668,6 +2775,40 @@
         "cost": 1
     },
     {
+        "name": "Venomous Bite (Phase Spider)",
+        "damage": "amount:2d6, type:Poison",
+        "image": "Venomous Bite Spider Icon.png",
+        "level": 0,
+        "school": 0,
+        "summary": "Venomous Discharge is an action available to the Phase Spider Matriarch that deals 2d6|Poison, 1d8|Piercing and possibly an additional 2d6|Poison damage as well as possibly Poisoned|poisoning the target.",
+        "description": "Bite a target and possibly Poison it.\n\nDeals 2~12 Poison damage and 5~12 Piercing damage, and possibly injects a venom that deals 2~12 Poison damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25466,
+        "attackRoll": true,
+        "range": 2,
+        "condition": "Poisoned",
+        "conditionDuration": 2,
+        "cost": 1
+    },
+    {
+        "name": "Venomous Discharge",
+        "damage": "amount:2d6, type:Poison, mod:Dexterity",
+        "image": "Generic Poison.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Venomous Discharge is an action available to Phase Spiders that deals 2d6|Poison damage and possibly Poisoned|poisons the target.",
+        "description": "Spit out a venomous substance and possibly Poison those it hits.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25456,
+        "attackRoll": true,
+        "rangeM": 12,
+        "condition": "Poisoned",
+        "conditionDuration": 2,
+        "cost": 1
+    },
+    {
         "name": "Venomous Regurgitation",
         "damage": "amount:6d8+4,type:Poison",
         "image": "Generic Poison.webp",
@@ -2726,6 +2867,23 @@
         "id": 14413,
         "attackRoll": false,
         "range": 3,
+        "cost": 1
+    },
+    {
+        "name": "Web (Phase Spider)",
+        "image": "Web Spider Icon.png",
+        "level": 0,
+        "school": 0,
+        "summary": "Web is an action available to Phase Spiders that lets them create a Webbed surface, and possibly Enwebbed|Enwebs creatures within the area.",
+        "description": "Expel a thick, flammable webbing that slows creatures and possibly Enwebs them.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25452,
+        "attackRoll": false,
+        "rangeM": 18,
+        "areaName": "Web",
+        "areaRangeM": 3,
+        "areaDuration": 10,
         "cost": 1
     },
     {
