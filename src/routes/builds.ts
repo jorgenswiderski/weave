@@ -105,6 +105,7 @@ router.put('/update/:id', async (req: Request, res: Response) => {
 router.get('/get/:id', async (req: Request, res: Response) => {
     try {
         const { id } = req.params as { id: BuildId };
+        const ip = Utils.getClientIp(req);
 
         if (typeof id !== 'string' || !Utils.isUuid(id)) {
             res.status(400).json({ error: 'Invalid input' });
@@ -112,7 +113,7 @@ router.get('/get/:id', async (req: Request, res: Response) => {
             return;
         }
 
-        const build = await Builds.get(id);
+        const build = await Builds.get(id, ip);
         res.json(build);
     } catch (err) {
         if (err instanceof BuildNotFoundError) {

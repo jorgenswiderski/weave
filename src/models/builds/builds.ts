@@ -115,7 +115,7 @@ export class Builds {
         }
     }
 
-    static async get(id: BuildId): Promise<Build> {
+    static async get(id: BuildId, ip: string): Promise<Build> {
         const collection = await this.getCollection();
 
         const build = (await collection.findOneAndUpdate(
@@ -133,8 +133,9 @@ export class Builds {
             );
         }
 
-        const { encoded, version } = build;
+        const { encoded, version, ip: documentIp } = build;
+        const mayEdit = ip === documentIp;
 
-        return { encoded, version, id };
+        return { encoded, version, id, mayEdit };
     }
 }
