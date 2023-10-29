@@ -104,6 +104,7 @@ export class Builds {
                     encoded: encodedData,
                     version: buildVersion,
                     lastAccessedUtc: Date.now(),
+                    lastModifiedUtc: Date.now(),
                 },
             },
         );
