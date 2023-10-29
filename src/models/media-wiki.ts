@@ -205,22 +205,31 @@ export class MediaWiki {
     //     return text;
     // }
 
-    static async resolveImageRedirect(imageName: string): Promise<string> {
+    static async resolveImageRedirect(
+        imageName: string,
+        width?: number,
+    ): Promise<string> {
         // convert _ to spaces to account for some rareish bad data
+        const params: any = {
+            prop: 'imageinfo',
+            iiprop: 'url',
+            format: 'json',
+        };
+
+        if (width) {
+            params.iiurlwidth = width;
+        }
+
         const page = await MwnApi.queryPage(
             `File:${imageName.replace(/_/g, ' ')}`,
-            {
-                prop: 'imageinfo',
-                iiprop: 'url',
-                format: 'json',
-            },
+            params,
         );
 
-        if (!page) {
+        if (!page || !page.imageinfo || page.imageinfo.length === 0) {
             throw new Error('Image not found');
         }
 
-        return page.imageinfo[0].url;
+        return page.imageinfo[0]?.thumburl ?? page.imageinfo[0].url;
     }
 }
 

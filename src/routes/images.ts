@@ -12,7 +12,7 @@ const IMAGE_CACHE_DIR = path.join(rootDir, 'cache');
 const failedRequests: {
     [imagePath: string]: { code: number; message: string };
 } = {};
-const resolvedImageUrls: { [imageName: string]: string } = {};
+const resolvedImageUrls: { [imageKey: string]: string } = {};
 
 const ensureDirectoryExistence = async (filePath: string) => {
     const dirName = path.dirname(filePath);
@@ -29,6 +29,13 @@ export const router: Router = express.Router();
 
 router.get('/:imageName', async (req: Request, res: Response) => {
     const { imageName } = req.params;
+    const { width: widthRaw } = req.query;
+
+    // Convert width to number if it's a valid string representation of a number
+    const width =
+        typeof widthRaw === 'string' && !Number.isNaN(Number(widthRaw))
+            ? Number(widthRaw)
+            : undefined;
 
     if (failedRequests[imageName]) {
         res.status(failedRequests[imageName].code).send(
@@ -39,12 +46,13 @@ router.get('/:imageName', async (req: Request, res: Response) => {
     }
 
     let localImagePath: string;
+    const imageKey = JSON.stringify({ imageName, width });
 
     if (CONFIG.MEDIAWIKI.USE_LOCAL_IMAGE_CACHE) {
         // Proceed with caching mechanism
         localImagePath = path.join(
             IMAGE_CACHE_DIR,
-            MediaWiki.getImagePath(imageName),
+            MediaWiki.getImagePath(`${imageName}${width ? `-${width}px` : ''}`),
         );
 
         try {
@@ -55,15 +63,18 @@ router.get('/:imageName', async (req: Request, res: Response) => {
         } catch (err) {
             // File does not exist, we'll fetch from remote next.
         }
-    } else if (resolvedImageUrls[imageName]) {
-        res.redirect(resolvedImageUrls[imageName]);
+    } else if (resolvedImageUrls[imageKey]) {
+        res.redirect(resolvedImageUrls[imageKey]);
 
         return;
     }
 
     try {
-        const remoteUrl = await MediaWiki.resolveImageRedirect(imageName);
-        resolvedImageUrls[imageName] = remoteUrl;
+        const remoteUrl = await MediaWiki.resolveImageRedirect(
+            imageName,
+            width,
+        );
+        resolvedImageUrls[imageKey] = remoteUrl;
 
         if (!CONFIG.MEDIAWIKI.USE_LOCAL_IMAGE_CACHE) {
             res.redirect(remoteUrl);
