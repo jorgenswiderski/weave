@@ -2,15 +2,17 @@ import express, { Request, Response, Router } from 'express';
 import fs from 'fs';
 import https from 'https';
 import path from 'path';
-import { error, log } from '../models/logger';
+import { error } from '../models/logger';
 import { MediaWiki } from '../models/media-wiki';
 import { MwnTokenBucket } from '../api/mwn';
+import { CONFIG } from '../models/config';
 
 const rootDir = path.dirname(require.main!.filename);
 const IMAGE_CACHE_DIR = path.join(rootDir, 'cache');
 const failedRequests: {
     [imagePath: string]: { code: number; message: string };
 } = {};
+const resolvedImageUrls: { [imageName: string]: string } = {};
 
 const ensureDirectoryExistence = async (filePath: string) => {
     const dirName = path.dirname(filePath);
@@ -27,10 +29,6 @@ export const router: Router = express.Router();
 
 router.get('/:imageName', async (req: Request, res: Response) => {
     const { imageName } = req.params;
-    const localImagePath = path.join(
-        IMAGE_CACHE_DIR,
-        MediaWiki.getImagePath(imageName),
-    );
 
     if (failedRequests[imageName]) {
         res.status(failedRequests[imageName].code).send(
@@ -40,17 +38,38 @@ router.get('/:imageName', async (req: Request, res: Response) => {
         return;
     }
 
-    try {
-        await fs.promises.access(localImagePath);
-        res.sendFile(localImagePath);
+    let localImagePath: string;
+
+    if (CONFIG.MEDIAWIKI.USE_LOCAL_IMAGE_CACHE) {
+        // Proceed with caching mechanism
+        localImagePath = path.join(
+            IMAGE_CACHE_DIR,
+            MediaWiki.getImagePath(imageName),
+        );
+
+        try {
+            await fs.promises.access(localImagePath);
+            res.sendFile(localImagePath);
+
+            return;
+        } catch (err) {
+            // File does not exist, we'll fetch from remote next.
+        }
+    } else if (resolvedImageUrls[imageName]) {
+        res.redirect(resolvedImageUrls[imageName]);
 
         return;
-    } catch (err) {
-        // File does not exist, we'll fetch from remote next.
     }
 
     try {
         const remoteUrl = await MediaWiki.resolveImageRedirect(imageName);
+        resolvedImageUrls[imageName] = remoteUrl;
+
+        if (!CONFIG.MEDIAWIKI.USE_LOCAL_IMAGE_CACHE) {
+            res.redirect(remoteUrl);
+
+            return;
+        }
 
         await MwnTokenBucket.acquireNTokens(3);
 
@@ -85,7 +104,6 @@ router.get('/:imageName', async (req: Request, res: Response) => {
                 response.pipe(writer);
 
                 writer.on('finish', () => {
-                    log(`Cached ${localImagePath}.`);
                     res.sendFile(localImagePath);
                 });
 

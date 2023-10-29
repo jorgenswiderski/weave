@@ -14,7 +14,7 @@ export const CONFIG = {
             10,
         ),
         BASE_URL: process.env.MEDIAWIKI_BASE_URL,
-        USE_IMAGE_CACHE: process.env.USE_IMAGE_CACHE === 'true',
+        USE_LOCAL_IMAGE_CACHE: process.env.USE_LOCAL_IMAGE_CACHE === 'true',
     },
     SELF_BASE_URL: process.env.SELF_BASE_URL,
     BUILDS: {
