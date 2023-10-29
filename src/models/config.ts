@@ -19,7 +19,15 @@ export const CONFIG = {
     SELF_BASE_URL: process.env.SELF_BASE_URL,
     BUILDS: {
         MAX_ENCODED_BUILD_LENGTH: parseInt(
-            process.env.MAX_ENCODED_BUILD_LENGTH ?? '10240',
+            process.env.BUILDS_MAX_ENCODED_LENGTH ?? '10240',
+            10,
+        ),
+        MAX_BUILD_CREATED_RECENTLY: parseInt(
+            process.env.BUILDS_MAX_CREATED_RECENTLY ?? '50',
+            10,
+        ),
+        RECENCY_WINDOW_IN_MILLIS: parseInt(
+            process.env.BUILDS_RECENCY_WINDOW_IN_MILLIS ?? '604800000',
             10,
         ),
     },

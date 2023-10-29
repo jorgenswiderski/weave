@@ -16,6 +16,7 @@ router.use(express.json());
 router.post('/create', async (req: Request, res: Response) => {
     try {
         const { encodedData, buildVersion } = req.body;
+        const ip = Utils.getClientIp(req);
 
         if (
             typeof encodedData !== 'string' ||
@@ -26,7 +27,7 @@ router.post('/create', async (req: Request, res: Response) => {
             return;
         }
 
-        const buildId = await Builds.create(encodedData, buildVersion);
+        const buildId = await Builds.create(encodedData, buildVersion, ip);
         res.status(201).json({ buildId });
     } catch (err) {
         if (err instanceof BuildDataTooLargeError) {
@@ -43,6 +44,7 @@ router.post('/create', async (req: Request, res: Response) => {
 router.delete('/delete/:id', async (req: Request, res: Response) => {
     try {
         const { id } = req.params as { id: BuildId };
+        const ip = Utils.getClientIp(req);
 
         if (typeof id !== 'string') {
             res.status(400).json({ error: 'Invalid input' });
@@ -50,7 +52,7 @@ router.delete('/delete/:id', async (req: Request, res: Response) => {
             return;
         }
 
-        await Builds.delete(id);
+        await Builds.delete(id, ip);
         res.status(204).send();
     } catch (err) {
         error(err);
@@ -61,6 +63,7 @@ router.delete('/delete/:id', async (req: Request, res: Response) => {
 router.put('/update/:id', async (req: Request, res: Response) => {
     try {
         const { id } = req.params as { id: BuildId };
+        const ip = Utils.getClientIp(req);
 
         if (typeof id !== 'string') {
             res.status(400).json({ error: 'Invalid input' });
@@ -79,7 +82,7 @@ router.put('/update/:id', async (req: Request, res: Response) => {
             return;
         }
 
-        await Builds.update(id, encodedData, buildVersion);
+        await Builds.update(id, encodedData, buildVersion, ip);
         res.status(204).send();
     } catch (err) {
         if (err instanceof BuildDataTooLargeError) {

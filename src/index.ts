@@ -47,7 +47,7 @@ app.use(
 
             return callback(null, true);
         },
-        methods: ['GET', 'POST'],
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
         allowedHeaders: ['Content-Type', 'Authorization'],
     }),
 );

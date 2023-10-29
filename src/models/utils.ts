@@ -1,4 +1,5 @@
 import { SharedUtils } from 'planner-types/src/models/utils';
+import { Request } from 'express';
 
 export class Utils extends SharedUtils {
     static memoizeWithExpiration<T extends (...args: any[]) => any>(
@@ -28,5 +29,23 @@ export class Utils extends SharedUtils {
 
     static isNonEmptyArray(a?: any[] | null): boolean {
         return Array.isArray(a) && a.length > 0;
+    }
+
+    static getClientIp(req: Request): string {
+        // The X-Forwarded-For header can contain a list of IP addresses.
+        // The first one in the list should be the original client's IP address.
+        const forwarded = req.headers['x-forwarded-for'];
+
+        const str =
+            typeof forwarded === 'string'
+                ? forwarded.split(',')[0].trim()
+                : req.ip;
+
+        // If the IP address is an IPv6-mapped IPv4 address, convert it to IPv4 format
+        if (str.includes('::ffff:')) {
+            return str.split(':').pop()!;
+        }
+
+        return str;
     }
 }
