@@ -1,4 +1,6 @@
-export class Utils {
+import { SharedUtils } from 'planner-types/src/models/utils';
+
+export class Utils extends SharedUtils {
     static memoizeWithExpiration<T extends (...args: any[]) => any>(
         ttl: number,
         fn: T,

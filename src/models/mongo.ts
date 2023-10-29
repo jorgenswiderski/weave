@@ -4,6 +4,7 @@ let mdb: any;
 
 export enum MongoCollections {
     MW_PAGES = 'MW_PAGES',
+    BUILDS = 'BUILDS',
 }
 
 export async function getMongoDb() {

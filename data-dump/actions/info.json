@@ -270,6 +270,38 @@
         "cost": 1
     },
     {
+        "name": "Bite (Cloaker)",
+        "damage": "amount:3d6, type:Piercing, mod:Strength",
+        "image": "Bite.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Bite is an action available to Cloakers that lets them deal piercing damage and cause Bleeding.",
+        "description": "Bite a target.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25780,
+        "attackRoll": true,
+        "range": 2,
+        "condition": "bleeding",
+        "conditionDuration": 5,
+        "cost": 1
+    },
+    {
+        "name": "Bite (General)",
+        "damage": "amount:2d4, type:Piercing, mod:Dexterity",
+        "image": "Bite.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Bite is an action that deals piercing damage.",
+        "description": "Bite a target.",
+        "ritual": false,
+        "concentration": false,
+        "id": 24749,
+        "attackRoll": true,
+        "range": 2,
+        "cost": 1
+    },
+    {
         "name": "Blade of Rime",
         "damage": "amount:1d10, type:Piercing",
         "image": "Blade of Rime.webp",
@@ -1587,6 +1619,23 @@
         "condition": "Gaseous Form"
     },
     {
+        "name": "Moan",
+        "damage": "amount:1d6, type:Psychic",
+        "image": "Generic Control.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Moan is an action available to Cloaker Phantasms that lets them deal psychic damage and Frightened|Frighten enemies.",
+        "description": "Produce a piercing moan and Frighten nearby creatures.\n\nNo effect on aberrations.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25789,
+        "attackRoll": false,
+        "rangeM": 4,
+        "condition": "Frightened",
+        "conditionDuration": 2,
+        "cost": 1
+    },
+    {
         "name": "Mobile Flourish (Melee)",
         "damage": "amounttext:Weapon, type:Physical",
         "image": "Mobile Flourish Melee.webp",
@@ -1635,6 +1684,25 @@
         "aoeFt": 30,
         "condition": "Selune's Blessing: Lunar Brand",
         "cost": 1
+    },
+    {
+        "name": "Multiattack (Cloaker)",
+        "damage": "amount:3d6, type:Piercing, mod:Strength",
+        "image": "Multiattack_Earth_Elemental.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Multiattack is an action available to Cloakers, that allows them to deal damage twice.",
+        "description": "Aim multiple attacks at a target that cause Gaping Wounds and Bleeding.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25775,
+        "attackRoll": true,
+        "range": 2,
+        "condition": "Gaping Wounds",
+        "conditionDuration": 5,
+        "cost": 1,
+        "condition2": "Bleeding",
+        "condition2Duration": 5
     },
     {
         "name": "Natural Recovery",
@@ -1785,6 +1853,20 @@
         "condition2": "Singing Sword: Song"
     },
     {
+        "name": "Phantasms",
+        "image": "",
+        "level": 0,
+        "school": 0,
+        "summary": "Phantasms is an action available to Cloakers that lets them summon up to three illusory duplicates per battle.",
+        "description": "Fill the shadows with three illusory duplicates of yourself that can hurt and Frightened|Frighten creatures with their haunting Moans.\n\n\nCosts  movement | m = 15 | ft =",
+        "ritual": false,
+        "concentration": false,
+        "id": 25788,
+        "attackRoll": false,
+        "rangeM": 100,
+        "cost": 1
+    },
+    {
         "name": "Poison Breath",
         "damage": "amount:2d6, type:Poison",
         "image": "Poison Breath.webp",
@@ -1912,6 +1994,23 @@
         "cost": 2
     },
     {
+        "name": "Rotting Fist",
+        "damage": "amount:2d6, type:Bludgeoning, mod: Strength",
+        "image": "Unarmed Strike Icon.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Rotting Fist is a class action available to Ancient Servants. It deals 2d6+3|Bludgeoning and 3d6|Necrotic damage, and possibly causes Mummy Rot.",
+        "description": "Drive your fist into a foe and possibly afflict them with Mummy Rot.",
+        "ritual": false,
+        "concentration": false,
+        "id": 23199,
+        "attackRoll": true,
+        "range": 2,
+        "condition": "Mummy Rot",
+        "conditionDuration": 10,
+        "cost": 1
+    },
+    {
         "name": "Rotting Regurgitation",
         "damage": "amount:8d10+4,type:Necrotic",
         "image": "Generic Necrotic.webp",
@@ -2023,7 +2122,7 @@
         "range": 3,
         "aoeM": 9,
         "aoeFt": 30,
-        "condition": "Pass Without Trace"
+        "condition": "Pass Without Trace Aura"
     },
     {
         "name": "Shadow Arts: Silence",
@@ -2887,23 +2986,6 @@
         "cost": 1
     },
     {
-        "name": "Whirlwind Attack",
-        "damage": "amounttext:Weapon, type:Physical",
-        "image": "Whirlwind Attack.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Whirlwind Attack is a Hunter Class Action. This ability allows Hunters to attack an aoe radius with their melee attack rather than a single target.",
-        "description": "Strike out at all nearby foes, making separate attacks rolls against each target.",
-        "ritual": false,
-        "concentration": false,
-        "id": 11612,
-        "attackRoll": false,
-        "range": 3,
-        "aoeM": 3,
-        "aoeFt": 10,
-        "cost": 1
-    },
-    {
         "name": "Wholeness of Body",
         "image": "Wholeness of Body.webp",
         "level": 0,
@@ -3466,21 +3548,6 @@
         "attackRoll": false
     },
     {
-        "name": "Bite (Rat)",
-        "damage": "amount:2d4, type:Piercing, mod:Dexterity",
-        "image": "Bite.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bite (Rat) is a Class Action available to Rats.",
-        "description": "Bite a target.",
-        "ritual": false,
-        "concentration": false,
-        "id": 24749,
-        "attackRoll": true,
-        "range": 2,
-        "cost": 1
-    },
-    {
         "name": "Bite (Vampire Spawn)",
         "damage": "amount: 2d6, type: Necrotic",
         "image": "Bite.webp",
@@ -4024,7 +4091,7 @@
         "level": 0,
         "school": 0,
         "summary": "Duelling is a Fighting Style passive feature.",
-        "description": "When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.",
+        "description": "When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.You can carry a shield in your free hand and still gain this bonus.",
         "ritual": false,
         "concentration": false,
         "id": 17363,
@@ -4978,7 +5045,7 @@
         "level": 0,
         "school": 0,
         "summary": "Magical Secrets is a level 10 Bard class feature in which they learn 2 Spells from a set belonging to other classes. College of Lores get Magical Secrets an additional time at level 6.",
-        "description": "Your versatile knack for the arcane lets you learn magic from every discipline. Choose some additional spells to add to your repertoire.\n\n== Available Spells ==\nLevel 6 College of Lores are limited to level 3 Spells.\n\n====Cantrips====\n style = column-width: 20em; list-style-type: none;\n* Bone Chill|w=40\n* Eldritch Blast|w=40\n* Fire Bolt|w=40\n* Ray of Frost|w=40\n* Sacred Flame|w=40\ndiv col end\n\n====Level 1 Spells====\n style = column-width: 20em; list-style-type: none;\n* Armour of Agathys|w=40\n* Bless|w=40|c=16\n* Chromatic Orb|w=40\n* Command|w=40\n* Entangle|w=40|c=16\n* False Life|w=40\n* Guiding Bolt|w=40\n* Hellish Rebuke|w=40\n* Hex|w=40|c=16\n* Hunter's Mark|w=40|c=16\n* Ice Knife|w=40\n* Magic Missile|w=40\n* Sanctuary|w=40\n* Thunderous Smite|w=40\ndiv col end\n\n====Level 2 Spells====\n style = column-width: 20em; list-style-type: none;\n* Arcane Lock|w=40\n* Blur|w=40|c=16\n* Darkness|w=40|c=16\n* Darkvision (Spell)|Darkvision|w=40\n* Misty Step|w=40\n* Pass Without Trace|w=40|c=16\n* Ray of Enfeeblement|w=40|c=16\n* Scorching Ray|w=40\n* Spike Growth|w=40|c=16\n* Spiritual Weapon|w=40\n* Web|w=40|c=16\ndiv col end\n\n====Level 3 Spells====\n style = column-width: 20em; list-style-type: none;\n* Animate Dead|w=40\n* Call Lightning|w=40|c=16\n* Counterspell|w=40\n* Crusader's Mantle|w=40|c=16\n* Daylight|w=40\n* Fireball|w=40\n* Grant Flight|w=40|c=16\n* Gaseous Form|w=40|c=16\n* Haste|w=40|c=16\n* Hunger of Hadar|w=40|c=16\n* Lightning Bolt|w=40\n* Mass Healing Word|w=40\n* Remove Curse|w=40\n* Revivify|w=40\n* Sleet Storm|w=40|c=16\n* Slow|w=40|c=16\n* Spirit Guardians|w=40|c=16\n* Vampiric Touch|w=40|c=16\n* Warden of Vitality|w=40\ndiv col end\n\n====Level 4 Spells====\n style = column-width: 20em; list-style-type: none;\n* Banishment|w=40|c=16\n* Blight|w=40\n* Death Ward|w=40\n* Dominate Beast|w=40|c=16\n* Fire Shield|w=40\n* Guardian of Faith (Spell)|Guardian of Faith|w=40\n* Ice Storm|w=40\n* Wall of Fire|w=40|c=16\ndiv col end\n\n====Level 5 Spells====\n style = column-width: 20em; list-style-type: none;\n* Banishing Smite (Melee)|Banishing Smite|w=40\n* Cone of Cold|w=40\n* Conjure Elemental|w=40\n* Contagion|w=40\n* Wall of Stone|w=40|c=16\ndiv col end",
+        "description": "Your versatile knack for the arcane lets you learn magic from every discipline. Choose some additional spells to add to your repertoire.\n\n== Available Spells ==\nLevel 6 College of Lores are limited to level 3 Spells.\n\n====Cantrips====\n style = column-width: 20em; list-style-type: none;\n* Bone Chill|w=40\n* Eldritch Blast|w=40\n* Fire Bolt|w=40\n* Ray of Frost|w=40\n* Sacred Flame|w=40\ndiv col end\n\n====Level 1 Spells====\n style = column-width: 20em; list-style-type: none;\n* Armour of Agathys|w=40\n* Bless|w=40|c=16\n* Chromatic Orb|w=40\n* Command|w=40\n* Entangle|w=40|c=16\n* False Life|w=40\n* Guiding Bolt|w=40\n* Hellish Rebuke|w=40\n* Hex|w=40|c=16\n* Hunter's Mark|w=40|c=16\n* Ice Knife|w=40\n* Magic Missile|w=40\n* Sanctuary|w=40\n* Thunderous Smite|w=40\ndiv col end\n\n====Level 2 Spells====\n style = column-width: 20em; list-style-type: none;\n* Arcane Lock|w=40\n* Blur|w=40|c=16\n* Darkness|w=40|c=16\n* Darkvision (Spell)|Darkvision|w=40\n* Misty Step|w=40\n* Pass Without Trace|w=40|c=16\n* Ray of Enfeeblement|w=40|c=16\n* Scorching Ray|w=40\n* Spike Growth|w=40|c=16\n* Spiritual Weapon|w=40\n* Web|w=40|c=16\ndiv col end\n\n====Level 3 Spells====\n style = column-width: 20em; list-style-type: none;\n* Animate Dead|w=40\n* Call Lightning|w=40|c=16\n* Counterspell|w=40\n* Crusader's Mantle|w=40|c=16\n* Daylight|w=40\n* Fireball|w=40\n* Gaseous Form|w=40|c=16\n* Grant Flight|w=40|c=16\n* Haste|w=40|c=16\n* Hunger of Hadar|w=40|c=16\n* Lightning Bolt|w=40\n* Mass Healing Word|w=40\n* Remove Curse|w=40\n* Revivify|w=40\n* Sleet Storm|w=40|c=16\n* Slow|w=40|c=16\n* Spirit Guardians|w=40|c=16\n* Vampiric Touch|w=40|c=16\n* Warden of Vitality|w=40\ndiv col end\n\n====Level 4 Spells====\n style = column-width: 20em; list-style-type: none;\n* Banishment|w=40|c=16\n* Blight|w=40\n* Death Ward|w=40\n* Dominate Beast|w=40|c=16\n* Fire Shield|w=40\n* Guardian of Faith (Spell)|Guardian of Faith|w=40\n* Ice Storm|w=40\n* Wall of Fire|w=40|c=16\ndiv col end\n\n====Level 5 Spells====\n style = column-width: 20em; list-style-type: none;\n* Banishing Smite (Melee)|Banishing Smite|w=40\n* Cone of Cold|w=40\n* Conjure Elemental|w=40\n* Contagion|w=40\n* Wall of Stone|w=40|c=16\ndiv col end",
         "ritual": false,
         "concentration": false,
         "id": 6674,
@@ -5841,23 +5908,6 @@
         "concentration": false,
         "id": 10331,
         "attackRoll": false
-    },
-    {
-        "name": "Rotting Fist",
-        "damage": "amount:2d6, type:Bludgeoning, mod: Strength",
-        "image": "Unarmed Strike Icon.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Rotting Fist is a class action available to Ancient Servants. It deals 2d6+3|Bludgeoning and 3d6|Necrotic damage, and possibly causes Mummy Rot.",
-        "description": "Drive your fist into a foe and possibly afflict them with Mummy Rot.",
-        "ritual": false,
-        "concentration": false,
-        "id": 23199,
-        "attackRoll": true,
-        "range": 2,
-        "condition": "Mummy Rot",
-        "conditionDuration": 10,
-        "cost": 1
     },
     {
         "name": "Sanctified Stalker",
@@ -7270,21 +7320,6 @@
         "rangeFt": 333,
         "condition": "Ritual Chant: Bhaal's Power Word Kill",
         "conditionDuration": 5,
-        "notes": "As part of the challenge to enter the temple, Farslayer of Bhaal Ghislev has begun chanting. It can cast Bhaal's Power Word Kill once its profane ritual ends. Exiting the Farslayer's chanting range of 183 ft / 55m makes its enemeis invulnerable to the effect. Slaying the Farslayer stops the ritual and wins the conflict.",
-        "cost": 1
-    },
-    {
-        "name": "Bone-shaking Thunder",
-        "image": "Protection from Energy Thunder Icon.png",
-        "level": 0,
-        "school": 0,
-        "summary": "Bone-shaking Thunder is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of thunder and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
-        "description": "Embrace Kereska's thunder to gain Resistance to Thunder damage. Your thunder spells deal additional Thunder damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Reverberation upon the target. While attuned to Kereska's thunder you can cast Shatter and Destructive Wave.",
-        "ritual": false,
-        "concentration": false,
-        "id": 8061,
-        "attackRoll": false,
-        "condition": "Rumbling with Kereska's Thunder",
         "cost": 1
     },
     {
@@ -7316,20 +7351,6 @@
         "cost": 1
     },
     {
-        "name": "Deadlier than Arsenic",
-        "image": "Protection from Energy Icon.png",
-        "level": 0,
-        "school": 0,
-        "summary": "Deadlier than Arsenic is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of poison and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
-        "description": "Embrace Kereska's poison to gain Resistance to Poison damage. Your Poison spells deal additional Poison damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Poisoned upon the target. While attuned to Kereska's poison you can cast Cloudkill and Ray of Sickness.",
-        "ritual": false,
-        "concentration": false,
-        "id": 8059,
-        "attackRoll": false,
-        "condition": "Vessel for Kereska's Poison",
-        "cost": 1
-    },
-    {
         "name": "Divine Smite",
         "damage": "amount:weapon",
         "image": "Divine Smite.webp",
@@ -7344,32 +7365,32 @@
         "cost": 1
     },
     {
-        "name": "Flame of Wrath",
-        "image": "Protection from Energy Fire Icon.png",
+        "name": "Guildmaster Keene's Fixers",
+        "image": "Action EndGameAlly KeeneSummon.png",
         "level": 0,
         "school": 0,
-        "summary": "Flame of Wrath is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of fire and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
-        "description": "Embrace Kereska's flame to gain Resistance to Fire damage. Your fire spells deal additional Fire damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, gain 1 turn of Heat. \nWhile attuned to Kereska's flame you can cast Fireball and Wall of Fire.",
+        "summary": "Guildmaster Keene's Fixers is a unique Class Action only available during the Confront the Elder Brain quest. It allows you to summon Lady Coup and Lady Lockjaw to aid you in the final battle.",
+        "description": "Summon two elite assassasin mercenaries from the Guild's ranks.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
         "ritual": false,
         "concentration": false,
-        "id": 8071,
+        "id": 24424,
         "attackRoll": false,
-        "condition": "Gripped by Kereska's Flame",
-        "cost": 1
+        "rangeM": 18,
+        "rangeFt": 36
     },
     {
-        "name": "Frost of Dark Winter",
-        "image": "Protection from Energy Cold Icon.png",
+        "name": "Gur Huntwardens",
+        "image": "Action EndGameAlly GurReinforcement.png",
         "level": 0,
         "school": 0,
-        "summary": "Frost of Dark Winter is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of ice and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
-        "description": "Embrace Kereska's ice to gain Resistance to Cold damage. Your Cold spells deal additional Cold damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Encrusted with Frost|Frost upon the target. While attuned to Kereska's ice you can cast Cone of Cold and Ice Storm.",
+        "summary": "Gur Huntwardens is a unique Class Action only available during the Confront the Elder Brain quest. It allows you to summon two Gur Hunter Warriors and a Gur Hunter Sharpshooter to aid you in the final battle.",
+        "description": "Summon Gur Monster hunters to hinder enemies while slipping in and out of the frontlines.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
         "ritual": false,
         "concentration": false,
-        "id": 8068,
+        "id": 24425,
         "attackRoll": false,
-        "condition": "Conduit of Kereska's Ice",
-        "cost": 1
+        "rangeM": 18,
+        "rangeFt": 60
     },
     {
         "name": "Karsus' Compulsion",
@@ -7386,7 +7407,8 @@
         "rangeFt": 20,
         "condition": "Channelling Karsus' Compulsion",
         "notes": "* Granted by holding the Triune Netherstone. This spell may only be cast by a Mind Flayer.\n* This is one of only three 9th Level spells featured in Baldur's Gate 3. verify The other two are:\n** Wish, cast by Vlaakith at the end of Creche Y'llek if the player doubts her power.\n** Power Word Kill, a special variant of which is cast by Farslayer of Bhaal Ghislev in the Undercity Ruins.\n* Unlike Wish and Power Word Kill, Karsus' Compulsion was created specifically for Baldur's Gate 3.",
-        "cost": 1
+        "cost": 1,
+        "condition2": "Chains of Karsus"
     },
     {
         "name": "Mammon's Tax",
@@ -7447,21 +7469,6 @@
         "condition": "Sleeping",
         "conditionDuration": 2,
         "conditionSave": 3,
-        "cost": 1
-    },
-    {
-        "name": "Sizzling Cataclysm",
-        "image": "Protection from Energy Acid Icon.png",
-        "level": 0,
-        "school": 0,
-        "summary": "Sizzling Cataclysm is a unique Level 4 Evocation Spell and a variant of Kereska's Favour that allows its caster to imbue themselves with the power of acid and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
-        "description": "Embrace Kereska's acid to gain Resistance to Acid damage. Your acid spells deal additional Acid damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Noxious Fumes upon the target. While attuned to Kereska's acid you can cast Melf's Acid Arrow and Hunger of Hadar.",
-        "ritual": false,
-        "concentration": false,
-        "id": 8057,
-        "attackRoll": false,
-        "condition": "Adrip with Kereska's Acid",
-        "notes": "* As of 2023-08-08, the in-game tooltip is incorrect and states this variant grants the spells granted by Deadlier than Arsenic instead.",
         "cost": 1
     }
 ]

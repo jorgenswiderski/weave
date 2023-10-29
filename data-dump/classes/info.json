@@ -512,13 +512,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -902,7 +902,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -916,7 +916,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -1519,13 +1519,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -1909,7 +1909,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -1923,7 +1923,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -2442,13 +2442,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -2832,7 +2832,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -2846,7 +2846,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -3088,7 +3088,7 @@
                                             {
                                                 "name": "Duelling",
                                                 "type": 2,
-                                                "description": "When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.",
+                                                "description": "When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.You can carry a shield in your free hand and still gain this bonus.",
                                                 "image": "Duelling.webp"
                                             },
                                             {
@@ -3471,13 +3471,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -3861,7 +3861,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -3875,7 +3875,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -4431,13 +4431,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -4821,7 +4821,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -4835,7 +4835,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -4981,7 +4981,7 @@
                             {
                                 "name": "Magical Secrets",
                                 "type": 2,
-                                "description": "Your versatile knack for the arcane lets you learn magic from every discipline. Choose some additional spells to add to your repertoire.\n\n== Available Spells ==\nLevel 6 College of Lores are limited to level 3 Spells.\n\n====Cantrips====\n style = column-width: 20em; list-style-type: none;\n* Bone Chill|w=40\n* Eldritch Blast|w=40\n* Fire Bolt|w=40\n* Ray of Frost|w=40\n* Sacred Flame|w=40\ndiv col end\n\n====Level 1 Spells====\n style = column-width: 20em; list-style-type: none;\n* Armour of Agathys|w=40\n* Bless|w=40|c=16\n* Chromatic Orb|w=40\n* Command|w=40\n* Entangle|w=40|c=16\n* False Life|w=40\n* Guiding Bolt|w=40\n* Hellish Rebuke|w=40\n* Hex|w=40|c=16\n* Hunter's Mark|w=40|c=16\n* Ice Knife|w=40\n* Magic Missile|w=40\n* Sanctuary|w=40\n* Thunderous Smite|w=40\ndiv col end\n\n====Level 2 Spells====\n style = column-width: 20em; list-style-type: none;\n* Arcane Lock|w=40\n* Blur|w=40|c=16\n* Darkness|w=40|c=16\n* Darkvision (Spell)|Darkvision|w=40\n* Misty Step|w=40\n* Pass Without Trace|w=40|c=16\n* Ray of Enfeeblement|w=40|c=16\n* Scorching Ray|w=40\n* Spike Growth|w=40|c=16\n* Spiritual Weapon|w=40\n* Web|w=40|c=16\ndiv col end\n\n====Level 3 Spells====\n style = column-width: 20em; list-style-type: none;\n* Animate Dead|w=40\n* Call Lightning|w=40|c=16\n* Counterspell|w=40\n* Crusader's Mantle|w=40|c=16\n* Daylight|w=40\n* Fireball|w=40\n* Grant Flight|w=40|c=16\n* Gaseous Form|w=40|c=16\n* Haste|w=40|c=16\n* Hunger of Hadar|w=40|c=16\n* Lightning Bolt|w=40\n* Mass Healing Word|w=40\n* Remove Curse|w=40\n* Revivify|w=40\n* Sleet Storm|w=40|c=16\n* Slow|w=40|c=16\n* Spirit Guardians|w=40|c=16\n* Vampiric Touch|w=40|c=16\n* Warden of Vitality|w=40\ndiv col end\n\n====Level 4 Spells====\n style = column-width: 20em; list-style-type: none;\n* Banishment|w=40|c=16\n* Blight|w=40\n* Death Ward|w=40\n* Dominate Beast|w=40|c=16\n* Fire Shield|w=40\n* Guardian of Faith (Spell)|Guardian of Faith|w=40\n* Ice Storm|w=40\n* Wall of Fire|w=40|c=16\ndiv col end\n\n====Level 5 Spells====\n style = column-width: 20em; list-style-type: none;\n* Banishing Smite (Melee)|Banishing Smite|w=40\n* Cone of Cold|w=40\n* Conjure Elemental|w=40\n* Contagion|w=40\n* Wall of Stone|w=40|c=16\ndiv col end",
+                                "description": "Your versatile knack for the arcane lets you learn magic from every discipline. Choose some additional spells to add to your repertoire.\n\n== Available Spells ==\nLevel 6 College of Lores are limited to level 3 Spells.\n\n====Cantrips====\n style = column-width: 20em; list-style-type: none;\n* Bone Chill|w=40\n* Eldritch Blast|w=40\n* Fire Bolt|w=40\n* Ray of Frost|w=40\n* Sacred Flame|w=40\ndiv col end\n\n====Level 1 Spells====\n style = column-width: 20em; list-style-type: none;\n* Armour of Agathys|w=40\n* Bless|w=40|c=16\n* Chromatic Orb|w=40\n* Command|w=40\n* Entangle|w=40|c=16\n* False Life|w=40\n* Guiding Bolt|w=40\n* Hellish Rebuke|w=40\n* Hex|w=40|c=16\n* Hunter's Mark|w=40|c=16\n* Ice Knife|w=40\n* Magic Missile|w=40\n* Sanctuary|w=40\n* Thunderous Smite|w=40\ndiv col end\n\n====Level 2 Spells====\n style = column-width: 20em; list-style-type: none;\n* Arcane Lock|w=40\n* Blur|w=40|c=16\n* Darkness|w=40|c=16\n* Darkvision (Spell)|Darkvision|w=40\n* Misty Step|w=40\n* Pass Without Trace|w=40|c=16\n* Ray of Enfeeblement|w=40|c=16\n* Scorching Ray|w=40\n* Spike Growth|w=40|c=16\n* Spiritual Weapon|w=40\n* Web|w=40|c=16\ndiv col end\n\n====Level 3 Spells====\n style = column-width: 20em; list-style-type: none;\n* Animate Dead|w=40\n* Call Lightning|w=40|c=16\n* Counterspell|w=40\n* Crusader's Mantle|w=40|c=16\n* Daylight|w=40\n* Fireball|w=40\n* Gaseous Form|w=40|c=16\n* Grant Flight|w=40|c=16\n* Haste|w=40|c=16\n* Hunger of Hadar|w=40|c=16\n* Lightning Bolt|w=40\n* Mass Healing Word|w=40\n* Remove Curse|w=40\n* Revivify|w=40\n* Sleet Storm|w=40|c=16\n* Slow|w=40|c=16\n* Spirit Guardians|w=40|c=16\n* Vampiric Touch|w=40|c=16\n* Warden of Vitality|w=40\ndiv col end\n\n====Level 4 Spells====\n style = column-width: 20em; list-style-type: none;\n* Banishment|w=40|c=16\n* Blight|w=40\n* Death Ward|w=40\n* Dominate Beast|w=40|c=16\n* Fire Shield|w=40\n* Guardian of Faith (Spell)|Guardian of Faith|w=40\n* Ice Storm|w=40\n* Wall of Fire|w=40|c=16\ndiv col end\n\n====Level 5 Spells====\n style = column-width: 20em; list-style-type: none;\n* Banishing Smite (Melee)|Banishing Smite|w=40\n* Cone of Cold|w=40\n* Conjure Elemental|w=40\n* Contagion|w=40\n* Wall of Stone|w=40|c=16\ndiv col end",
                                 "image": "Class Bard Badge Icon.png"
                             }
                         ]
@@ -5347,13 +5347,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -5737,7 +5737,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -5751,7 +5751,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -6569,13 +6569,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -6959,7 +6959,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -6973,7 +6973,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -7548,13 +7548,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -7938,7 +7938,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -7952,7 +7952,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -8547,13 +8547,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -8937,7 +8937,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -8951,7 +8951,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -9581,13 +9581,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -9971,7 +9971,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -9985,7 +9985,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -10523,13 +10523,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -10913,7 +10913,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -10927,7 +10927,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -11483,13 +11483,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -11873,7 +11873,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -11887,7 +11887,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -12677,13 +12677,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -13067,7 +13067,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -13081,7 +13081,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -13520,13 +13520,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -13910,7 +13910,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -13924,7 +13924,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -14437,13 +14437,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -14827,7 +14827,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -14841,7 +14841,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -14994,7 +14994,7 @@
                                             {
                                                 "name": "Duelling",
                                                 "type": 2,
-                                                "description": "When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.",
+                                                "description": "When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.You can carry a shield in your free hand and still gain this bonus.",
                                                 "image": "Duelling.webp"
                                             },
                                             {
@@ -15383,13 +15383,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -15773,7 +15773,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -15787,7 +15787,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -16488,13 +16488,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -16878,7 +16878,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -16892,7 +16892,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -17505,13 +17505,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -17895,7 +17895,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -17909,7 +17909,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -18558,13 +18558,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -18948,7 +18948,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -18962,7 +18962,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -19549,13 +19549,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -19939,7 +19939,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -19953,7 +19953,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -20506,13 +20506,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -20896,7 +20896,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -20910,7 +20910,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -21399,13 +21399,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -21789,7 +21789,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -21803,7 +21803,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -22410,13 +22410,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -22800,7 +22800,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -22814,7 +22814,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -23363,13 +23363,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -23753,7 +23753,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -23767,7 +23767,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -24307,13 +24307,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -24697,7 +24697,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -24711,7 +24711,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -25524,13 +25524,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -25914,7 +25914,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -25928,7 +25928,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -26405,13 +26405,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -26795,7 +26795,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -26809,7 +26809,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -27289,13 +27289,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -27679,7 +27679,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -27693,7 +27693,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -28134,13 +28134,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -28524,7 +28524,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -28538,7 +28538,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -29118,13 +29118,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -29508,7 +29508,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -29522,7 +29522,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -30112,13 +30112,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -30502,7 +30502,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -30516,7 +30516,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -31050,13 +31050,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -31440,7 +31440,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -31454,7 +31454,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -31562,7 +31562,6 @@
     {
         "name": "Warlock",
         "description": "Warlock is a character Class in Baldur's Gate 3. Warlocks channel their patron's pact magic to fight enemies and aid allies in combat. Warlocks use Charisma as their primary ability score.",
-        "image": "Class Warlock Badge Icon.png",
         "progression": [
             {
                 "Level": 1,
@@ -32032,13 +32031,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -32422,7 +32421,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -32436,7 +32435,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -32971,13 +32970,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -33361,7 +33360,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -33375,7 +33374,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -33899,13 +33898,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -34289,7 +34288,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -34303,7 +34302,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -34936,13 +34935,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -35326,7 +35325,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -35340,7 +35339,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -36013,13 +36012,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -36403,7 +36402,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -36417,7 +36416,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {
@@ -37024,13 +37023,13 @@
                                     {
                                         "name": "Heavy Armour Master",
                                         "description": "Heavy Armour Master|w=30\n:* Increase your Strength by 1, to a maximum of 20.\n:* Incoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
-                                        "image": "Heavily Armoured.webp",
+                                        "image": "Heavily Armour Master.webp",
                                         "grants": [
                                             {
                                                 "name": "Heavy Armour Master",
                                                 "type": 2,
                                                 "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nRequires Proficiency with Heavy Armour",
-                                                "image": "Heavily Armoured.webp"
+                                                "image": "Heavily Armour Master.webp"
                                             },
                                             {
                                                 "name": "Heavy Armour Master: Strength",
@@ -37414,7 +37413,7 @@
                                     },
                                     {
                                         "name": "Spell Sniper",
-                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips do scale with character level, just like a spellcaster's cantrips.",
+                                        "description": "Spell Sniper|w=30\n:* You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n:* Notes:\n:** The cantrip you learn must be one of these:\n:*** Bone Chill\n:*** Eldritch Blast\n:*** Fire Bolt\n:*** Ray of Frost\n:*** Shocking Grasp\n:*** Thorn Whip\n:** These cantrips use the character's Spellcasting Ability. For example, if a Cleric chooses Eldritch Blast with this feat, they use their Wisdom modifier and not their Charisma modifier.",
                                         "image": "Spell Sniper.webp",
                                         "grants": [
                                             {
@@ -37428,7 +37427,7 @@
                                     },
                                     {
                                         "name": "Tavern Brawler",
-                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.Bug",
+                                        "description": "Tavern Brawler|w=30\n:* Increase your Strength or Constitution by 1, to a maximum of 20.\n:* When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.\n:* Note: Unarmed attacks that use Dexterity as a modifier still gain the strength modifier as a bonus with this feat and thus don't get the Dexterity modifier applied twice to the attack.",
                                         "image": "Tavern Brawler.webp",
                                         "grants": [
                                             {

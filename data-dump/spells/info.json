@@ -1,5 +1,20 @@
 [
     {
+        "name": "Telekinetic Thrust",
+        "image": "",
+        "level": 0,
+        "description": "Telekinetic Thrust is an ability of some undead, including Tormented Soul and Poltergeist",
+        "ritual": false,
+        "concentration": false,
+        "id": 24179,
+        "attackRoll": false,
+        "range": 2,
+        "cost": 1,
+        "classes": [],
+        "noSpellSlot": false,
+        "isVariant": false
+    },
+    {
         "name": "Absolute's Talisman: Aid",
         "damage": "5",
         "image": "Aid.webp",
@@ -91,7 +106,7 @@
         "aoeM": 9,
         "aoeFt": 30,
         "condition": "Aid",
-        "notes": "* Downed allies return back to the fight and heal an additional 1 hit point.\n* Granted by:\n**Khalid's Gift (Khalid's Gift: Aid) at Lv3 equivalent \n**Shield of Devotion (Shield of Devotion: Aid) at Lv3\n**Absolute's Talisman at Lv2\n* Long Rest\n* When granted from an item, it only affects the wearer.",
+        "notes": "* Downed allies return back to the fight and heal an additional 1 hit point.\n* Granted by:\n**Khalid's Gift (Khalid's Gift: Aid) at Lv3 equivalent \n**Shield of Devotion (Shield of Devotion: Aid) at Lv3\n**Absolute's Talisman at Lv2\n* Long Rest\n* When granted from an item, it only affects the wearer.\n* This is the only healing spell available to player characters that affects Undead and Constructs.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -508,7 +523,7 @@
         "damageType": 13,
         "image": "",
         "level": 0,
-        "summary": "Screech into your target's soul, wounding them and possibly inflicting Confused_(Condition)",
+        "summary": "Screech into your target's soul, wounding them and possibly inflicting Confused",
         "description": "Animus Screech is an ability of some undead, including Tormented Soul and Poltergeist",
         "ritual": false,
         "concentration": false,
@@ -1508,7 +1523,8 @@
             "Sorcerer",
             "Wizard",
             "Arcane Trickster",
-            "Eldritch Knight"
+            "Eldritch Knight",
+            "Circle of the Spores"
         ],
         "noSpellSlot": false,
         "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 2nd.",
@@ -1584,6 +1600,23 @@
         "isVariant": false
     },
     {
+        "name": "Bolts of Doom",
+        "image": "Protection from Energy Lightning Icon.png",
+        "level": 4,
+        "school": 5,
+        "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of lightning and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's lightning bolts to gain Resistance to Lightning damage. Your lightning spells deal additional Lightning damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, gain 1 Lightning Charge. While attuned to Kereska's lightning you can cast Chain Lightning and Lightning Bolt once each per Short Rest.",
+        "ritual": false,
+        "concentration": false,
+        "id": 8066,
+        "attackRoll": false,
+        "condition": "Crackling with Kereska's Lightning",
+        "classes": [],
+        "noSpellSlot": false,
+        "damageSaveEffect": 1,
+        "isVariant": true
+    },
+    {
         "name": "Bone Chill",
         "damage": "1d8",
         "damageType": 11,
@@ -1613,6 +1646,23 @@
         "noSpellSlot": false,
         "higherLevels": "When the spellcaster reaches Level 5, the damage increases by another d8|Necrotic Necrotic|1d8 Necrotic damage, for a total of 2d8|Necrotic.\nWhen the spellcaster reaches Level 10, the damage increases by another d8|Necrotic Necrotic|1d8 Necrotic damage, for a total of 3d8|Necrotic.",
         "isVariant": false
+    },
+    {
+        "name": "Bone-shaking Thunder",
+        "image": "Protection from Energy Thunder Icon.png",
+        "level": 4,
+        "school": 5,
+        "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of thunder and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's thunder to gain Resistance to Thunder damage. Your thunder spells deal additional Thunder damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Reverberation upon the target. While attuned to Kereska's thunder you can cast Shatter and Destructive Wave once each per Short Rest.",
+        "ritual": false,
+        "concentration": false,
+        "id": 8061,
+        "attackRoll": false,
+        "condition": "Rumbling with Kereska's Thunder",
+        "classes": [],
+        "noSpellSlot": false,
+        "damageSaveEffect": 1,
+        "isVariant": true
     },
     {
         "name": "Brand the Weak",
@@ -1980,7 +2030,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Enhance Ability: Cat's Grace",
-        "notes": "* Granted by The Graceful Cloth Icon The Graceful Cloth.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -2472,8 +2521,6 @@
         "areaRangeM": 2,
         "areaRangeFt": 7,
         "areaDuration": 10,
-        "areaTurnStartDamage": "4d4",
-        "areaTurnStartDamageType": 1,
         "cost": 1,
         "classes": [
             "Bard",
@@ -2501,7 +2548,6 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "condition": "Cloudkill",
         "areaName": "Cloudkill",
         "areaCategory": 1,
         "areaRangeM": 6,
@@ -2539,7 +2585,6 @@
         "conditionDuration": 1,
         "cost": 1,
         "classes": [
-            "Bard",
             "Sorcerer",
             "Wizard",
             "Arcane Trickster",
@@ -2790,7 +2835,7 @@
         "id": 23712,
         "attackRoll": false,
         "range": 1,
-        "condition": "Disarmed",
+        "condition": "Command: Drop",
         "conditionDuration": 1,
         "conditionSave": 5,
         "cost": 1,
@@ -3004,7 +3049,7 @@
         "condition": "Confused",
         "conditionDuration": 3,
         "conditionSave": 5,
-        "notes": "* Circle of the Lands who choose the Coast Land at level 7 learn this spell automatically.\n* Also granted to Warlocks who choose the Eldritch Invocation Dreadful Word at level 7+.",
+        "notes": "* Circle of the Lands who choose the Coast Land at level 7 learn this spell automatically.\n* Also granted to Warlocks who choose the Eldritch Invocation Dreadful Word at level 7+.\n* This spell does not target allies who are included in the area of effect.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -4496,6 +4541,23 @@
         "isVariant": true
     },
     {
+        "name": "Deadlier than Arsenic",
+        "image": "Protection from Energy Icon.png",
+        "level": 4,
+        "school": 5,
+        "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of poison and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's poison to gain Resistance to Poison damage. Your Poison spells deal additional Poison damage equal to your Proficiency Bonus.\n\nWhen you deal spell damage, inflict 1 turn of Poisoned upon the target. While attuned to Kereska's poison you can cast Cloudkill and Ray of Sickness once each per Short Rest.",
+        "ritual": false,
+        "concentration": false,
+        "id": 8059,
+        "attackRoll": false,
+        "condition": "Vessel for Kereska's Poison",
+        "classes": [],
+        "noSpellSlot": false,
+        "damageSaveEffect": 1,
+        "isVariant": true
+    },
+    {
         "name": "Death Ward",
         "image": "Death Ward.webp",
         "level": 4,
@@ -4655,7 +4717,7 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Disguise Self",
-        "notes": "* Draconic Bloodline of Gold (Fire) Ancestry learns this spell automatically.\n* Also granted to Warlocks who choose the Eldritch Invocation Mask of Many Faces at level 2+.\n* Can be used to gain race specific bonuses on equipment and dialogue options if the player disguises as the corresponding race.\n* Since the spell changes Creature Size it can be used to fit through some entrances with size requirements.\n* Allows using Speak with Dead on creatures you've killed yourself.",
+        "notes": "* Draconic Bloodline of Gold (Fire) Ancestry learns this spell automatically.\n* Also granted to Warlocks who choose the Eldritch Invocation Mask of Many Faces at level 2+.\n* Can be used to gain race specific bonuses on equipment and dialogue options if the player disguises as the corresponding race.\n* Since the spell changes Creature Size it can be used to fit through some entrances with size requirements.\n* Allows using Speak with Dead on creatures you've killed yourself.\n* This does not grant the disguise's racial features. For example, a Halfling disguised as a Wood Elf will still only have 7.5 m movement speed.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -6762,7 +6824,7 @@
         "name": "Drunken Inhale",
         "damage": "4d8",
         "damageType": 9,
-        "image": "Action Monster Djinni Inhale.png",
+        "image": "Drunken Inhale.webp",
         "level": 1,
         "school": 5,
         "summary": "This spell allows spellcasters to damage and intoxicate creatures in an area in front of them.",
@@ -6778,7 +6840,7 @@
         "condition": "Drunk",
         "conditionDuration": 1,
         "conditionSave": 3,
-        "notes": "* This spell may only be available to Djinni that are summoned using the level 6 spell Planar Ally.Verify\n** When cast in this way, this spell doesn't consume a Spell Slot.",
+        "notes": "* This spell may only be available to a Djinni summoned with the level 6 spell Planar Ally.Verify\n** When cast in this way, this spell doesn't consume a Spell Slot.",
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -6798,7 +6860,7 @@
         "id": 2369,
         "attackRoll": false,
         "range": 2,
-        "condition": "Eagle's Splendor",
+        "condition": "Enhance Ability: Eagle's Splendor",
         "cost": 1,
         "classes": [
             "Bard",
@@ -6830,7 +6892,7 @@
         ],
         "noSpellSlot": false,
         "damageSaveEffect": 1,
-        "higherLevels": "The spell creates multiple beams at higher levels: 1d10|Force|per=ray\n* 2 beams at Level 5\n* 3 beams at Level 10\nYou can either target a single creature or multiple creatures with the beams. Each beam rolls a separate Attack Roll.",
+        "higherLevels": "The spell creates multiple beams at higher levels: 1d10|Force|per=ray\n* 2 beams at Level 5 (scales on character level, sum of all class levels)\n* 3 beams at Level 10 (same)\nYou can either target a single creature or multiple creatures with the beams. Each beam rolls a separate Attack Roll.",
         "isVariant": false
     },
     {
@@ -6909,7 +6971,7 @@
         "level": 5,
         "school": 5,
         "summary": "This spell allows spellcasters to unleash a torrent of elemental damage based on each siphoned myrmidon.",
-        "description": "When you take damage, you can retaliate, blasting your attacker with the elemental damage of each myrmidon currently Elemental Siphon|Siphoned.\n\nDamage:\n3d8|Lightning (Conditional) + 3d8|Poison (Conditional) + 3d8|Fire (Conditional) + 3d8|Cold (Conditional)",
+        "description": "When you take damage, you can retaliate, blasting your attacker with the elemental damage of each myrmidon currently Elemental Siphon|Siphoned.\n\nDamage:\n3d8|Lightning|con\n + 3d8|Poison|con\n + 3d8|Fire|con\n + 3d8|Cold|con",
         "ritual": false,
         "concentration": false,
         "id": 19285,
@@ -7206,7 +7268,6 @@
                 "attackRoll": false,
                 "range": 2,
                 "condition": "Enhance Ability: Cat's Grace",
-                "notes": "* Granted by The Graceful Cloth Icon The Graceful Cloth.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -7684,6 +7745,7 @@
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
+        "damageSave": 5,
         "variants": [
             {
                 "name": "Eyebite: Panicked",
@@ -7705,6 +7767,7 @@
                 "cost": 1,
                 "classes": [],
                 "noSpellSlot": false,
+                "damageSave": 5,
                 "isVariant": true
             },
             {
@@ -7726,6 +7789,7 @@
                 "cost": 1,
                 "classes": [],
                 "noSpellSlot": false,
+                "damageSave": 5,
                 "isVariant": true
             },
             {
@@ -7747,6 +7811,7 @@
                 "cost": 1,
                 "classes": [],
                 "noSpellSlot": false,
+                "damageSave": 5,
                 "isVariant": true
             }
         ],
@@ -7771,6 +7836,7 @@
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
+        "damageSave": 5,
         "isVariant": true
     },
     {
@@ -7793,6 +7859,7 @@
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
+        "damageSave": 5,
         "isVariant": true
     },
     {
@@ -7814,6 +7881,7 @@
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
+        "damageSave": 5,
         "isVariant": true
     },
     {
@@ -7887,6 +7955,7 @@
         "condition": "Feared",
         "conditionDuration": 2,
         "conditionSave": 5,
+        "notes": "* This spell does not target allies who are included in the area of effect.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -8216,6 +8285,23 @@
         "isVariant": false
     },
     {
+        "name": "Flame of Wrath",
+        "image": "Protection from Energy Fire Icon.png",
+        "level": 4,
+        "school": 5,
+        "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of fire and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's flame to gain Resistance to Fire damage. Your fire spells deal additional Fire damage equal to your Proficiency Bonus.\n\nWhen you deal spell damage, gain 1 turn of Heat. \nWhile attuned to Kereska's flame you can cast Fireball and Wall of Fire once each per Short Rest.",
+        "ritual": false,
+        "concentration": false,
+        "id": 8071,
+        "attackRoll": false,
+        "condition": "Gripped by Kereska's Flame",
+        "classes": [],
+        "noSpellSlot": false,
+        "damageSaveEffect": 1,
+        "isVariant": true
+    },
+    {
         "name": "Flame Strike",
         "damage": "5d6",
         "damageType": 4,
@@ -8281,11 +8367,11 @@
     },
     {
         "name": "Flesh to Gold",
-        "image": "Spell Transmutation FleshToStone.png",
+        "image": "Flesh to Gold.webp",
         "level": 6,
         "school": 8,
         "summary": "Trap a target and turn it into gold after 3 turns.",
-        "description": "Restrain a target and, after 3 rounds, the target becomes inactive solid gold until the spell ends. The target will Petrify if it does not suceed its Saving Throw within 3 turns. notes",
+        "description": "Restrained|Restrain a target and, after 3 rounds, the target becomes inactive solid gold until the spell ends. The target will Petrified|Petrify if it does not suceed its Saving Throw within 3 turns. notes",
         "ritual": false,
         "concentration": true,
         "id": 9097,
@@ -8294,7 +8380,7 @@
         "rangeFt": 60,
         "condition": "Goldified",
         "conditionSave": 3,
-        "notes": "* Can only be used once by consuming the Spell Transmutation FleshToStone|Flesh to Stone}}, can be learned by level 11 Wizards and [[Warlocks.\n* Does not consume a spell slot when used, only an action.\n* The target must fail four SavingThrows in total in order to turn to gold. Each turn the target fails a saving throw, it will progress to a new stage of the Flesh to Gold debuff, all of which are identical in effect to Restrained:\n** Flesh to Gold: Stage 1: Affected entity cannot move as its body begins to turn to gold over the course of 3 turns.\n** Flesh to Gold: Stage 2: Affected entity cannot move as its body is turning to gold.\n** Flesh to Gold: Stage 3: Affected entity cannot move as its body enters the final stage of goldification.",
+        "notes": "* Can only be used once by consuming the Flesh to Stone}}, can be learned by level 11 Wizards and [[Warlocks.\n* Does not consume a spell slot when used, only an action.\n* The target must fail four SavingThrows in total in order to turn to gold. Each turn the target fails a saving throw, it will progress to a new stage of the Flesh to Gold debuff, all of which are identical in effect to Restrained:\n** Flesh to Gold: Stage 1: Affected entity cannot move as its body begins to turn to gold over the course of 3 turns.\n** Flesh to Gold: Stage 2: Affected entity cannot move as its body is turning to gold.\n** Flesh to Gold: Stage 3: Affected entity cannot move as its body enters the final stage of goldification.",
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -8305,8 +8391,8 @@
         "image": "Flesh to Stone.webp",
         "level": 6,
         "school": 8,
-        "summary": "Atrophy a foe, Restraining them until they temporarily turn to stone.",
-        "description": "Atrophy a foe, Restrained|Restraining them until they temporarily turn to stone. The target will Petrified|Petrify if it does not succeed its Saving Throw within 3 turns.",
+        "summary": "Atrophy a foe, Flesh to Stone: Restrained Stage 1|Restraining them until they temporarily turn to stone.",
+        "description": "Atrophy a foe, Flesh to Stone: Restrained Stage 1|Restraining them until they temporarily turn to stone. The target will Petrified|Petrify if it does not succeed its Saving Throw within 3 turns.",
         "ritual": false,
         "concentration": false,
         "id": 11505,
@@ -8358,7 +8444,7 @@
         ],
         "noSpellSlot": false,
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: Affects a larger area when cast with Spell Slots of higher Level.",
+        "higherLevels": "Upcast: When this spell is cast at 2nd level or higher, its area of effect increases by 2 m / 7 ft for each spell slot level above 1st.",
         "isVariant": false
     },
     {
@@ -8437,6 +8523,23 @@
         ],
         "noSpellSlot": false,
         "isVariant": false
+    },
+    {
+        "name": "Frost of Dark Winter",
+        "image": "Protection from Energy Cold Icon.png",
+        "level": 4,
+        "school": 5,
+        "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of ice and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's ice to gain Resistance to Cold damage. Your Cold spells deal additional Cold damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Encrusted with Frost|Frost upon the target. While attuned to Kereska's ice you can cast Cone of Cold and Ice Storm once each per Short Rest.",
+        "ritual": false,
+        "concentration": false,
+        "id": 8068,
+        "attackRoll": false,
+        "condition": "Conduit of Kereska's Ice",
+        "classes": [],
+        "noSpellSlot": false,
+        "damageSaveEffect": 1,
+        "isVariant": true
     },
     {
         "name": "Gaseous Form",
@@ -9206,44 +9309,6 @@
         "classes": [
             "Cleric"
         ],
-        "noSpellSlot": false,
-        "damageSaveEffect": 1,
-        "isVariant": false
-    },
-    {
-        "name": "Guildmaster Keene's Fixers",
-        "image": "Action EndGameAlly KeeneSummon.png",
-        "level": 0,
-        "school": 9,
-        "summary": "Summon Lady Coup and Lady Lockjaw to aid you in battle.",
-        "description": "Summon two elite assassasin mercenaries from the Guild's ranks.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
-        "ritual": false,
-        "concentration": false,
-        "id": 24424,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 36,
-        "cost": 1,
-        "classes": [],
-        "noSpellSlot": false,
-        "damageSaveEffect": 1,
-        "isVariant": false
-    },
-    {
-        "name": "Gur Huntwardens",
-        "image": "Action EndGameAlly GurReinforcement.png",
-        "level": 0,
-        "school": 9,
-        "summary": "Summon two Gur Hunter Warriors and a Gur Hunter Sharpshooter.",
-        "description": "Summon Gur Monster hunters to hinder enemies while slipping in and out of the frontlines.\n\nDismissed after combat until re-summoned.\n\nCan't be summoned again if killed in combat.",
-        "ritual": false,
-        "concentration": false,
-        "id": 24425,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 36,
-        "cost": 1,
-        "classes": [],
         "noSpellSlot": false,
         "damageSaveEffect": 1,
         "isVariant": false
@@ -10151,12 +10216,109 @@
         "noSpellSlot": true,
         "damageSaveEffect": 1,
         "variants": [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
+            {
+                "name": "Sizzling Cataclysm",
+                "image": "Protection from Energy Acid Icon.png",
+                "level": 4,
+                "school": 5,
+                "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of acid and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+                "description": "Embrace Kereska's acid to gain Resistance to Acid damage. Your acid spells deal additional Acid damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Noxious Fumes upon the target. While attuned to Kereska's acid you can cast Melf's Acid Arrow and Hunger of Hadar once each per Short Rest.",
+                "ritual": false,
+                "concentration": false,
+                "id": 8057,
+                "attackRoll": false,
+                "condition": "Adrip with Kereska's Acid",
+                "notes": "* As of 2023-08-08, the in-game tooltip is incorrect and states this variant grants the spells granted by Deadlier than Arsenic instead.",
+                "classes": [],
+                "noSpellSlot": false,
+                "damageSaveEffect": 1,
+                "isVariant": true
+            },
+            {
+                "name": "Deadlier than Arsenic",
+                "image": "Protection from Energy Icon.png",
+                "level": 4,
+                "school": 5,
+                "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of poison and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+                "description": "Embrace Kereska's poison to gain Resistance to Poison damage. Your Poison spells deal additional Poison damage equal to your Proficiency Bonus.\n\nWhen you deal spell damage, inflict 1 turn of Poisoned upon the target. While attuned to Kereska's poison you can cast Cloudkill and Ray of Sickness once each per Short Rest.",
+                "ritual": false,
+                "concentration": false,
+                "id": 8059,
+                "attackRoll": false,
+                "condition": "Vessel for Kereska's Poison",
+                "classes": [],
+                "noSpellSlot": false,
+                "damageSaveEffect": 1,
+                "isVariant": true
+            },
+            {
+                "name": "Bone-shaking Thunder",
+                "image": "Protection from Energy Thunder Icon.png",
+                "level": 4,
+                "school": 5,
+                "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of thunder and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+                "description": "Embrace Kereska's thunder to gain Resistance to Thunder damage. Your thunder spells deal additional Thunder damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Reverberation upon the target. While attuned to Kereska's thunder you can cast Shatter and Destructive Wave once each per Short Rest.",
+                "ritual": false,
+                "concentration": false,
+                "id": 8061,
+                "attackRoll": false,
+                "condition": "Rumbling with Kereska's Thunder",
+                "classes": [],
+                "noSpellSlot": false,
+                "damageSaveEffect": 1,
+                "isVariant": true
+            },
+            {
+                "name": "Bolts of Doom",
+                "image": "Protection from Energy Lightning Icon.png",
+                "level": 4,
+                "school": 5,
+                "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of lightning and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+                "description": "Embrace Kereska's lightning bolts to gain Resistance to Lightning damage. Your lightning spells deal additional Lightning damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, gain 1 Lightning Charge. While attuned to Kereska's lightning you can cast Chain Lightning and Lightning Bolt once each per Short Rest.",
+                "ritual": false,
+                "concentration": false,
+                "id": 8066,
+                "attackRoll": false,
+                "condition": "Crackling with Kereska's Lightning",
+                "classes": [],
+                "noSpellSlot": false,
+                "damageSaveEffect": 1,
+                "isVariant": true
+            },
+            {
+                "name": "Frost of Dark Winter",
+                "image": "Protection from Energy Cold Icon.png",
+                "level": 4,
+                "school": 5,
+                "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of ice and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+                "description": "Embrace Kereska's ice to gain Resistance to Cold damage. Your Cold spells deal additional Cold damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Encrusted with Frost|Frost upon the target. While attuned to Kereska's ice you can cast Cone of Cold and Ice Storm once each per Short Rest.",
+                "ritual": false,
+                "concentration": false,
+                "id": 8068,
+                "attackRoll": false,
+                "condition": "Conduit of Kereska's Ice",
+                "classes": [],
+                "noSpellSlot": false,
+                "damageSaveEffect": 1,
+                "isVariant": true
+            },
+            {
+                "name": "Flame of Wrath",
+                "image": "Protection from Energy Fire Icon.png",
+                "level": 4,
+                "school": 5,
+                "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of fire and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+                "description": "Embrace Kereska's flame to gain Resistance to Fire damage. Your fire spells deal additional Fire damage equal to your Proficiency Bonus.\n\nWhen you deal spell damage, gain 1 turn of Heat. \nWhile attuned to Kereska's flame you can cast Fireball and Wall of Fire once each per Short Rest.",
+                "ritual": false,
+                "concentration": false,
+                "id": 8071,
+                "attackRoll": false,
+                "condition": "Gripped by Kereska's Flame",
+                "classes": [],
+                "noSpellSlot": false,
+                "damageSaveEffect": 1,
+                "isVariant": true
+            }
         ],
         "isVariant": false
     },
@@ -10234,16 +10396,16 @@
         "damage": "weapon",
         "extraDamage": "2d6",
         "extraDamageType": 4,
-        "image": "Searing Smite Icon.png",
+        "image": "Searing Smite.webp",
         "level": 1,
         "school": 5,
         "summary": "This spell allows a *",
-        "description": "Your weapon flares with white-hot intensity. It deals an extra  2d6| Fire damage and marks the target with Searing Smite.\n\n* A target with Searing Smite takes 1d6|Fire damage every turn, until it succeeds on a Constitution SavingThrow.\n* If the spellcaster misses the initial Attack, the spell slot and Bonus Action Icon|Bonus Action|size=24px are not consumed.",
+        "description": "Your weapon flares with white-hot intensity. It deals an extra  2d6| Fire damage and marks the target with Searing Smite.\n\n* A target with Searing Smite takes 1d6|Fire damage every turn, until it succeeds on a Constitution SavingThrow.\n* If the spellcaster misses the initial Attack, the spell slot and bonus are not consumed.",
         "ritual": false,
         "concentration": true,
         "id": 10417,
         "attackRoll": false,
-        "condition": "searing smite",
+        "condition": "Searing Smite",
         "conditionDuration": 10,
         "conditionSave": 3,
         "cost": 3,
@@ -10853,7 +11015,7 @@
         "aoe": 1,
         "aoeM": 9,
         "aoeFt": 30,
-        "condition": "Pass Without Trace",
+        "condition": "Pass Without Trace Aura",
         "notes": "* Way of Shadows gain the ability to cast this spell at level 3, at the cost of ki|2.",
         "cost": 1,
         "classes": [
@@ -12489,6 +12651,24 @@
         "isVariant": false
     },
     {
+        "name": "Sizzling Cataclysm",
+        "image": "Protection from Energy Acid Icon.png",
+        "level": 4,
+        "school": 5,
+        "summary": "It is a variant of Kereska's Favour that allows its caster to imbue themselves with the power of acid and unlock resistances and spells associated with it. It is granted by Markoheshkir.",
+        "description": "Embrace Kereska's acid to gain Resistance to Acid damage. Your acid spells deal additional Acid damage equal to your Proficiency Bonus.\n\n\nWhen you deal spell damage, inflict 1 turn of Noxious Fumes upon the target. While attuned to Kereska's acid you can cast Melf's Acid Arrow and Hunger of Hadar once each per Short Rest.",
+        "ritual": false,
+        "concentration": false,
+        "id": 8057,
+        "attackRoll": false,
+        "condition": "Adrip with Kereska's Acid",
+        "notes": "* As of 2023-08-08, the in-game tooltip is incorrect and states this variant grants the spells granted by Deadlier than Arsenic instead.",
+        "classes": [],
+        "noSpellSlot": false,
+        "damageSaveEffect": 1,
+        "isVariant": true
+    },
+    {
         "name": "Slash the Weak",
         "image": "Slash the Weak Icon.png",
         "level": 1,
@@ -12528,6 +12708,7 @@
             "Bard",
             "Sorcerer",
             "Wizard",
+            "Knowledge Domain",
             "Arcane Trickster",
             "Eldritch Knight",
             "The Archfey"
@@ -12595,6 +12776,7 @@
             "Knowledge Domain"
         ],
         "noSpellSlot": false,
+        "damageSave": 5,
         "isVariant": false
     },
     {
@@ -12711,7 +12893,8 @@
         "aoe": 1,
         "aoeM": 3,
         "aoeFt": 10,
-        "condition": "Spirit Guardians",
+        "condition": "Spirit Guardians Aura",
+        "conditionDuration": 19,
         "areaDuration": 10,
         "notes": "* When Sanctuary is cast on a someone currently using Spirit Guardians, the Spirit Guardians spell ends immediately.",
         "cost": 1,
@@ -12739,6 +12922,8 @@
                 "aoe": 1,
                 "aoeM": 3,
                 "aoeFt": 10,
+                "condition": "Spirit Guardians Aura",
+                "conditionDuration": 10,
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -12767,6 +12952,8 @@
                 "aoe": 1,
                 "aoeM": 3,
                 "aoeFt": 10,
+                "condition": "Spirit Guardians Aura",
+                "conditionDuration": 10,
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -12798,6 +12985,8 @@
         "aoe": 1,
         "aoeM": 3,
         "aoeFt": 10,
+        "condition": "Spirit Guardians Aura",
+        "conditionDuration": 10,
         "cost": 1,
         "classes": [
             "Cleric",
@@ -12826,6 +13015,8 @@
         "aoe": 1,
         "aoeM": 3,
         "aoeFt": 10,
+        "condition": "Spirit Guardians Aura",
+        "conditionDuration": 10,
         "cost": 1,
         "classes": [
             "Cleric",
@@ -13325,21 +13516,6 @@
         "isVariant": false
     },
     {
-        "name": "Telekinetic Thrust",
-        "image": "",
-        "level": 0,
-        "description": "Telekinetic Thrust is an ability of some undead, including Tormented Soul and Poltergeist",
-        "ritual": false,
-        "concentration": false,
-        "id": 24179,
-        "attackRoll": false,
-        "range": 2,
-        "cost": 1,
-        "classes": [],
-        "noSpellSlot": false,
-        "isVariant": false
-    },
-    {
         "name": "Teleport to Submersible",
         "image": "Teleport to Submersible.webp",
         "level": 5,
@@ -13623,6 +13799,7 @@
         "areaCategory": 3,
         "areaRangeM": 36,
         "areaRangeFt": 120,
+        "areaDuration": 10,
         "areaTurnStartDamage": "5d8",
         "areaTurnStartDamageType": 4,
         "areaTurnStartDamageSave": 2,
@@ -13844,6 +14021,26 @@
         "noSpellSlot": false,
         "damageSaveEffect": 1,
         "higherLevels": "Upcast: The initial damage increases by 1d12|Lightning per level.",
+        "isVariant": false
+    },
+    {
+        "name": "Withering Touch",
+        "damage": "4d8 + 3",
+        "damageType": 11,
+        "image": "Inflict Wounds.webp",
+        "level": 4,
+        "school": 7,
+        "summary": "This spell allows the spellcaster to make a melee attack that inflicts Necrotic damage.",
+        "description": "Touch a nearby creature and pour your fetid magic through its very soul.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25807,
+        "attackRoll": true,
+        "range": 2,
+        "cost": 1,
+        "classes": [],
+        "noSpellSlot": false,
+        "damageSaveEffect": 1,
         "isVariant": false
     },
     {

@@ -245,18 +245,18 @@
             "effects": [
                 {
                     "name": "Selûne's Dream|w=40",
-                    "description": "Can cast the cantrip as an Action once per Long Rest.",
+                    "description": "Can cast the cantrip as an Action once per long rest.",
                     "type": 2
                 },
                 {
                     "name": "Anonymous Effect",
-                    "description": "An ally you touch regains 1d8 + Spellcasting Modifier hit points, but possibly falls Asleep.",
+                    "description": "An ally you touch regains 1d8 + Spellcasting Modifier|Healing but possibly falls Sleeping|asleep.",
                     "type": 2,
                     "hidden": true
                 },
                 {
                     "name": "Anonymous Effect",
-                    "description": "Must succeed a Constitution Saving Throw or fall asleep for 2 turns.",
+                    "description": "Must succeed a CON or fall asleep for 2 turns.",
                     "type": 2,
                     "hidden": true
                 },
@@ -268,7 +268,7 @@
                 },
                 {
                     "name": "Amulet of Selûne's Chosen",
-                    "description": "An ally you touch regains 1d8 + Spellcasting Modifier hit points, but possibly falls Asleep.\nMust succeed a Constitution Saving Throw or fall asleep for 2 turns.\nNo effect on undead and constructs.",
+                    "description": "An ally you touch regains 1d8 + Spellcasting Modifier|Healing but possibly falls Sleeping|asleep.\nMust succeed a CON or fall asleep for 2 turns.\nNo effect on undead and constructs.",
                     "type": 2
                 }
             ],
@@ -2469,7 +2469,7 @@
             "effects": [
                 {
                     "name": "Absorb Elements|w=40",
-                    "description": "Absorb elemental damage once per Short Rest. Take half damage from the next elemental attack targeting you, and and deal an additional d6|Piercing 1d6 of that element type on your next attack.",
+                    "description": "Absorb elemental damage once per Short Rest. Take half damage from the next elemental attack targeting you, and deal an additional d6|Piercing 1d6 of that element type on your next attack.",
                     "type": 2
                 }
             ],
@@ -2722,6 +2722,7 @@
         {
             "name": "Armour of Uninhibited Kushigo",
             "image": "Armour of Uninhibited Kushigo Icon.png",
+            "icon": "Armour of Uninhibited Kushigo Unfaded Icon.png",
             "description": "The Armour of Uninhibited Kushigo is an uncommon piece of Clothing that grants the wearer Mage Armour Icon Kushigo Counter.",
             "quote": "Long ago, Kushigo was a warrior. Bedecked in an enormous set of plate steel, its shoulder pauldrons fashioned like great antlered stags, his arrival on a battlefield spelled doom for the enemy.Yet this armour - so light and fine - speaks nothing to that legacy.",
             "type": 4,
@@ -2748,6 +2749,7 @@
         {
             "name": "Barbarian Clothes",
             "image": "Barbarian Clothes Icon.png",
+            "icon": "Barbarian Clothes Unfaded Icon.png",
             "description": "Barbarian Clothes are a common piece of Clothing.",
             "quote": "A rough combination of furs, leathers, and supple fabrics, made for a life outside civilisation.",
             "type": 4,
@@ -2761,6 +2763,7 @@
         },
         {
             "name": "Bided Time",
+            "image": "Bided Time Icon.png",
             "description": "Bided Time is a set of uncommon Clothing that causes the wearer to gain Arcane Charge Condition Icon|Arcane Charge (Condition)|Arcane Charge whenever they are hit by a melee attack.",
             "quote": "Revenge is best served. Hot or cold makes no difference.",
             "type": 4,
@@ -2776,6 +2779,7 @@
         {
             "name": "Bloodguzzler Garb",
             "image": "Bloodguzzler Garb Icon.png",
+            "icon": "Bloodguzzler Garb Unfaded Icon.png",
             "description": "The Bloodguzzler Garb is a rare piece of Wrath when an enemy damages the wearer.",
             "quote": "No sooner does blood speck the armour than it's absorbed, as if sustaining something within.",
             "type": 4,
@@ -2796,6 +2800,7 @@
         {
             "name": "Bonespike Garb",
             "image": "Bonespike Garb Icon.png",
+            "icon": "Bonespike Garb Unfaded Icon.png",
             "description": "Bonespike Garb is a very rare Clothing that grants temporary hit points when using Rage.",
             "quote": "Sharp juts and knobbly nodules of bone stud this armour, as if something ancient sank its teeth deep into the leather and they got stuck there.",
             "type": 4,
@@ -2811,6 +2816,7 @@
         {
             "name": "Cloth of Authority",
             "image": "Cloth of Authority Icon.png",
+            "icon": "Cloth of Authority Unfaded Icon.png",
             "description": "Cloth of Authority is a rare piece of Clothing that grants immunity to emotion-altering conditions and grants +1 Armour Class and Advantage on Intimidation and Insight checks.",
             "quote": "One can hardly be called a lord if they aren't dressed as such. A cursory glance at Gortash's finery would reveal intricate garb - a closer look would reveal a maddening attention to even the most minute details of the filigree.",
             "type": 4,
@@ -2847,6 +2853,7 @@
         },
         {
             "name": "Drunken Cloth",
+            "image": "Drunken Cloth Icon.png",
             "description": "Drunken Cloth is a rare piece of Clothing.",
             "quote": "Long ago, Kushigo was a warrior. Bedecked in enormous, stag-antlered plate, his arrival spelled doom for the enemy. This flimsy cloth speaks nothing to that legacy.",
             "type": 4,
@@ -2868,6 +2875,7 @@
         {
             "name": "Enraging Heart Garb",
             "image": "Enraging Heart Garb Icon.png",
+            "icon": "Enraging Heart Garb Unfaded Icon.png",
             "description": "The Enraging Heart Garb is a rare piece of Wrath while the wearer is Raging.",
             "quote": "Created by a designer and an enchanter who were going through a messy divorce at the time. As such the armour is filled with passive-aggresive rage.",
             "type": 4,
@@ -2899,6 +2907,7 @@
         {
             "name": "Garb of the Land and Sky",
             "image": "Garb of the Land and Sky Icon.png",
+            "icon": "Garb of the Land and Sky Unfaded Icon.png",
             "description": "Garb of the Land and Sky is rare Force|1d8 Force}} damage. It also grants +1 [[Armour Class.",
             "quote": "Long ago, Kushigo was a warrior. Bedecked in an enormous set of plate steel, its shoulder pauldrons fashioned like great antlered stags, his arrival on a battlefield spelled doom for the enemy.Yet this armour - so light and fine - speaks nothing to the legacy.",
             "type": 4,
@@ -2935,6 +2944,7 @@
         {
             "name": "Icebite Robe",
             "image": "Icebite Robe Icon.png",
+            "icon": "Icebite Robe Unfaded Icon.png",
             "description": "Icebite Robe is a rare piece of Resistance to Cold|Cold damage and allows them to cast Armour of Agathys as a 3rd level spell once per Long Rest.",
             "quote": "Delicate ferns of frost glitter in the lining of this robe.",
             "type": 4,
@@ -2972,6 +2982,7 @@
         {
             "name": "Infernal Robe",
             "image": "Infernal Robe Icon.png",
+            "icon": "Infernal Robe Unfaded Icon.png",
             "description": "The Infernal Robe is a very rare piece of clothing that grant Resistance to Fire damage and the ability to cast the Fire-damage version of Fire Shield.",
             "quote": "Presumably Mizora was not always a sensuous and manipulative benefactor of troubled souls like Wyll. Negotiating the hierarchies of hell result in changes of form - but was she ever less beautiful, less erudite, less willful?",
             "type": 4,
@@ -3009,6 +3020,7 @@
         {
             "name": "Monastic Robes",
             "image": "Monastic Robes Icon.png",
+            "icon": "Monastic Robes Unfaded Icon.png",
             "description": "Monastic Robes are a common piece of Clothing.",
             "quote": "This garment's pristine condition despite years of martial training speaks to a supremely disciplined owner.",
             "type": 4,
@@ -3023,6 +3035,7 @@
         {
             "name": "Moon Devotion Robe",
             "image": "Moon Devotion Robe Icon.png",
+            "icon": "Moon Devotion Robe Unfaded Icon.png",
             "description": "Moon Devotion Robe is a very rare Clothing.",
             "quote": "A memory from her childhood: a warm bed. Through the cracked window, she could see the moonlight cupping the plums in the tree as if in silver hands. The name of the goddess Selûne came to her, and never left.",
             "type": 4,
@@ -3038,6 +3051,7 @@
         {
             "name": "Obsidian Laced Robe",
             "image": "Obsidian Laced Robe Icon.png",
+            "icon": "Obsidian Laced Robe Unfaded Icon.png",
             "description": "Obsidian Laced Robe is rare Fire|5~8}} damage to enemies on a successful [[Saving Throw against their spells. Also grants Resistance to Fire|Fire damage.",
             "quote": "The inside of this robe is dark and faceted like volcanic glass, yet the material is light and soft. Against the skin, it also produces a heat like a toasty fire on a day of snow.",
             "type": 4,
@@ -3069,6 +3083,7 @@
         {
             "name": "Poisoner's Robe",
             "image": "Poisoners Robe Icon.png",
+            "icon": "Poisoners Robe Unfaded Icon.png",
             "description": "The Poisoner's Robe is an uncommon piece of Clothing that makes the wearer's poison spells deal more damage.",
             "quote": "Found in the Spider Queen's stomach, this robe emanates a sour smell and stings to the touch.",
             "type": 4,
@@ -3089,6 +3104,7 @@
         {
             "name": "Potent Robe",
             "image": "Potent Robe Icon.png",
+            "icon": "Potent Robe Unfaded Icon.png",
             "description": "The Potent Robe is a very rare piece of clothing that uses your Charisma modifier to increase your cantrips' damage as well as give you temporary hit points.",
             "quote": "This robe is a difficult look to pull off unless one is blessed with an otherwordly charisma.",
             "type": 4,
@@ -3125,6 +3141,7 @@
         {
             "name": "Robe of Exquisite Focus",
             "image": "Robe of Exquisite Focus Icon.png",
+            "icon": "Robe of Exquisite Focus Unfaded Icon.png",
             "description": "The Robe of Exquisite Focus is a rare piece of Clothing that increase its wearer's Spell Save DC.",
             "quote": "This robe once belonged to one of the great Wizard Tenser's lecturers. While in university, Tenser used to practice spells on this robe, sometimes resulting in wonderful arcane discovery.",
             "type": 4,
@@ -3145,6 +3162,7 @@
         {
             "name": "Robe of Summer",
             "image": "Robe of Summer Icon.png",
+            "icon": "Robe of Summer Unfaded Icon.png",
             "description": "The Robe of Summer is an uncommon piece of Resistance to Cold|Cold damage.",
             "quote": "This robe's thin fabric is pleasantly warm to the touch.",
             "type": 4,
@@ -3170,6 +3188,7 @@
         },
         {
             "name": "Robe of Supreme Defences",
+            "image": "Robe of Supreme Defences Icon.png",
             "description": "The Robe of Supreme Defences is a very rare Clothing that boosts your defences, when you are concentrating on a spell.",
             "quote": "Long ago, the young wizard Bigby noticed his friend Tenser spending a lot of time with his robe. One of nature's pranksters Bigby sent his dog, Bigboy, to savage the garnment. The ensuing struggle between canine and nude wizard was brutal, and eventually lead to Tenser designing more durable robes like this one.",
             "type": 4,
@@ -3190,6 +3209,7 @@
         },
         {
             "name": "Robe of the Weave",
+            "image": "Robe of the Weave Icon.png",
             "description": "Robe of the Weave is a very rare Clothing that allows the wearer to heal when succeeding a saving throw against a spell.",
             "quote": "Earnest little Edith Cluckle was a small girl when she asked to be the great wizard Otiluke's apprentice. He scoffed at her, but was quickly abashed when Mystra herself endowed Edith with this very cloak.",
             "type": 4,
@@ -3217,6 +3237,7 @@
         {
             "name": "Shelter of Athkatla",
             "image": "Shelter of Athkatla Icon.png",
+            "icon": "Shelter of Athkatla Unfaded Icon.png",
             "description": "Shelter of Athkatla is a rare Clothing looted from Lorroakan.",
             "quote": "Mantled in the sublime majesty of this cloak, you magically sense Lorroakan's complex feelings for his homeland. Merriment and comfort go hand in hand with a jilted sentiment around his lovers and his family. And the old friends he thought of, but would never see again.",
             "type": 4,
@@ -3232,6 +3253,7 @@
         {
             "name": "Simple Robe",
             "image": "Simple Robe Icon.png",
+            "icon": "Simple Robe Unfaded Icon.png",
             "description": "A Simple Robe is a common piece of Clothing.",
             "quote": "Crafted with care, this robe will protect you from the elements. It won't do much against a sword's thrust, though.",
             "type": 4,
@@ -3246,6 +3268,7 @@
         {
             "name": "Sorcerer Robe",
             "image": "Sorcerer Robe Icon.png",
+            "icon": "Sorcerer Robe Unfaded Icon.png",
             "description": "The Sorcerer Robe is a common piece of Clothing.",
             "quote": "Neat leather bands keep the trailing cloth secure. Singed sleeves are a liability for any spellcaster.",
             "type": 4,
@@ -3260,6 +3283,7 @@
         {
             "name": "The Graceful Cloth",
             "image": "The Graceful Cloth Icon.png",
+            "icon": "The Graceful Cloth Unfaded Icon.png",
             "description": "The Graceful Cloth is a rare piece of Clothing that gives its wearer +2 Dexterity.",
             "quote": "A garment worn by one of three monks who fought together against Headless Serpent, Secret Venom, a gang in the port city of Nyanzaru. This was worn by Roahton Mobar, whose stances were broad and strong.",
             "type": 4,
@@ -3301,6 +3325,7 @@
         {
             "name": "The Mighty Cloth",
             "image": "The Graceful Cloth Icon.png",
+            "icon": "The Graceful Cloth Unfaded Icon.png",
             "description": "The Mighty Cloth is a rare piece of Clothing that gives its wearer +2 Strength.",
             "quote": "A garment worn by one of three monks who fought together against Headless Serpent, Secret Venom, a gang in the port city of Nyanzaru. This was worn by Kimigha Poji, whose stances were narrow and swift.",
             "type": 4,
@@ -3326,6 +3351,7 @@
         {
             "name": "The Protecty Sparkswall",
             "image": "The Protecty Sparkswall Icon.png",
+            "icon": "The Protecty Sparkswall Unfaded Icon.png",
             "description": "The Protecty Sparkswall is an rare Clothing that buffs the wearer's defences while they have Lightning Charges.",
             "quote": "Yrre the Sparkstruck was raised in the Underdark, and so they weren't surprised that power begets envy, and envy begets violence. They were prepared.",
             "type": 4,
@@ -3346,6 +3372,7 @@
         {
             "name": "Veil of the Morning",
             "image": "Veil of the Morning Icon.png",
+            "icon": "Veil of the Morning Unfaded Icon.png",
             "description": "Veil of the Morning is a very rare Clothing that imposes Disadvantage on Undead Attack Rolls against the wearer, grants the wearer Advantage against Undead spells and actions, and allows the wearer to Turn Undead.",
             "quote": "Crafted from celestial feathers, bottled sunlight, and ink from the pages of sacred scripture, it's a wonder the maker didn't hang cloves of garlic from this robe, so anathema is it to the undead.",
             "type": 4,
@@ -3361,6 +3388,7 @@
         {
             "name": "Vest of Soul Rejuvenation",
             "image": "Vest of Soul Rejuvenation Icon.png",
+            "icon": "Vest of Soul Rejuvenation Unfaded Icon.png",
             "description": "Vest of Soul Rejuvenation is a very rare Clothing that allows the wearer to heal on a successful saving throw against a spell, among other bonuses.",
             "quote": "A garment worn by one of three monks who fought together against Headless Serpent, Secret Venom, a gang in the port city of Nyanzaru. This was worn by Strigga Morkoscavich, whose stances moved fluidly, flawlessly and who defanged the Serpent one blustery night.",
             "type": 4,
@@ -3376,6 +3404,7 @@
         {
             "name": "Viconia's Priestess Robe",
             "image": "Viconia's Priestess Robe icon.png",
+            "icon": "Viconia's Priestess Robe Unfaded icon.png",
             "description": "Viconia's Priestess Robe is a robe worn by the Sharan Priestess Viconia",
             "quote": "Listening to the magical hum this robe emits dulls your senses, thoughts, feelings - everything. Listen too long, and you can almost hear the screaming chitters of a thousand spiders devoured by encroaching, hungry darkness. Almost.",
             "type": 4,
@@ -3391,6 +3420,7 @@
         {
             "name": "Wavemother's Robe",
             "image": "Wavemother's Robe Icon.png",
+            "icon": "Wavemother's Robe Unfaded Icon.png",
             "description": "Wavemother's Robe is a very rare Clothing obtained from siding with the Temple of Umberlee during Chapter Three.",
             "quote": "Tales tell of a most wonderous fish, scales resplendent, an intricate jewel that shone beneath the sea. When it died, the Wavemother gifted its hide as a robe to her most devoted follower - and demanded she drown the sailors that kill her gem-bright fish.",
             "type": 4,
@@ -6055,6 +6085,7 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 90,
+            "uid": "MAG_Frost_GenerateFrostOnStatusApply_Hat",
             "effects": [],
             "id": 10682
         },
@@ -6414,7 +6445,7 @@
             "name": "Grymskull Helm",
             "image": "Grymskull Helm Icon.png",
             "icon": "Grymskull Helm Unfaded Icon.png",
-            "description": "The Grymskull Helm is a rare Helmet that sends attackers Reeling when they hit the wearer with a melee attack.",
+            "description": "The Grymskull Helm is a very rare helmet that grants fire resistance and protects its wearer from critical hits.",
             "quote": "Once home to an inscrutable machine intelligence, Grym's skull now serves as a simple helm.",
             "type": 7,
             "rarity": 4,
@@ -9661,7 +9692,7 @@
                 },
                 {
                     "name": "Ghoulish Touch|w=40",
-                    "description": "Can cast at Level 1. Lash out with deadly claws to deal 2d6|Necrotic damage and possibly Paralyse the target. (Long Rest)",
+                    "description": "Can cast at Level 1. Lash out with deadly claws to deal 2d6|Necrotic damage and possibly inflict Paralysed on the target. (Long Rest)",
                     "type": 2
                 }
             ],
@@ -10585,7 +10616,7 @@
                 },
                 {
                     "name": "Shield Bash|w=40",
-                    "description": "When a foe hits you with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity Saving Throw.",
+                    "description": "When a foe hits you with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity.",
                     "type": 2
                 }
             ],
@@ -11301,10 +11332,11 @@
             "weightKg": 1.8,
             "weightLb": 4,
             "price": 310,
+            "uid": "MAG_Fire_HeatOnWeaponDamage_Battleaxe",
             "effects": [
                 {
                     "name": "Thermodynamo",
-                    "description": "Whenever you deal damage with this weapon, you gain 2 turns of Heat.",
+                    "description": "Whenever you deal damage with this weapon, you gain 2 turns of Heat (Per attack).",
                     "type": 2
                 }
             ],
@@ -12379,23 +12411,27 @@
             "effects": [
                 {
                     "name": "Scarlet Remittance",
-                    "description": "Gain a +1 bonus to Attack Rolls, damage, and Spell Save DC for every foe you slay, up to a maximum of +3.",
+                    "description": "Gain a +1 bonus to Attack Rolls, damageDRS, and Spell Save DC for every foe you slay, up to a maximum of +3.",
+                    "type": 2
+                },
+                {
+                    "name": "Scarlet Saturation|w=40",
+                    "description": "If you have a +3 bonus from Scarlet Remittance, consume it to make your next attack a Critical Hit (Long rest).",
+                    "type": 2
+                },
+                {
+                    "name": "Scarlet Stupor|w=40",
+                    "description": "If you have a +3 bonus from Scarlet Remittance, consume it to give hostile creatures disadvantage on saving throws aganst your spells (Long rest).",
+                    "type": 2
+                },
+                {
+                    "name": "Scarlet Regeneration|w=40",
+                    "description": "If you have a +3 bonus from Scarlet Remittance, consume it to regain 3d10|Healing (Long Rest).",
                     "type": 2
                 },
                 {
                     "name": "Sweet Bloodletting",
                     "description": "Possibly inflict Bleeding when hitting a creature with this weapon while Hiding or Invisible.",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "The damage bonus granted by this item is treated as a \"DRS.\"",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Rhapsody",
-                    "description": "The damage bonus granted by this item is treated as a \"DRS.\"",
                     "type": 2
                 }
             ],
@@ -13454,7 +13490,7 @@
             "effects": [
                 {
                     "name": "Thermodynamo",
-                    "description": "Whenever you deal damage with this weapon, you gain 2 turns of Heat.",
+                    "description": "Whenever you deal damage with this weapon, you gain 2 turns of Heat (Per attack).",
                     "type": 2
                 }
             ],
@@ -13479,7 +13515,7 @@
             "name": "Sethan",
             "image": "Greataxe PlusTwo Icon.png",
             "icon": "Greataxe PlusTwo Unfaded Icon.png",
-            "description": "Sethan is a very rare Greataxe that grants its wielder the Sethan: Spiritual Greataxe and Sethan: Reduce weapon actions.",
+            "description": "Sethan is a very rare greataxe that grants its wielder the Sethan: Spiritual Greataxe and Sethan: Reduce weapon actions.",
             "quote": "When this axe careens through the air towards an unfortunate head - the whistle of its spiritual counterpart is never far behind.",
             "type": 18,
             "rarity": 4,
@@ -13490,12 +13526,12 @@
             "effects": [
                 {
                     "name": "Sethan: Spiritual Greataxe|w=40",
-                    "description": "Summon a spiritual twin of Sethan in a point you can see, dealing  3d8 + Spellcasting Modifier | Force damage on a hit (Long Rest).",
+                    "description": "Summon a spiritual twin of Sethan in a point you can see, dealing  3d8 + spellcasting modifier | Force damage on a hit (Long rest).",
                     "type": 2
                 },
                 {
                     "name": "Sethan: Reduce|w=40",
-                    "description": "Make a creature smaller. Its weapons deal d4|Physical 1d4 less damage (minimum of 1 damage). It has Disadvantage on Strength Ability Checks and SavingThrows (Long Rest).",
+                    "description": "Make a creature smaller. Its weapons deal d4|Physical 1d4 less damage (minimum of 1 damage). It has Disadvantage on Strength Ability Checks and SavingThrows (Long rest).",
                     "type": 2
                 }
             ],
@@ -13761,7 +13797,7 @@
             "name": "Balduran's Giantslayer",
             "image": "Balduran Giantslayer Icon.png",
             "icon": "Balduran Giantslayer Unfaded Icon.png",
-            "description": "Balduran's Giantslayer is a legendary Greatsword that receives doubled damage bonus from Strength and grants special bonuses against Large, Huge, and Gargantuan creatures.",
+            "description": "Balduran's Giantslayer is a legendary greatsword that receives doubled damage bonus from Strength and grants special bonuses against Large, Huge, and Gargantuan creatures.",
             "quote": "Wielded by Balduran, the founder of Baldur's Gate and friend to his guardian dragon, a great glittering wyrm called Ansur. Fellowship can be undone, though, as easily as you or I might unlace the strings of our shoes, and it was in a time of skullduggery and hardship that Balduran killed Ansur, carrying out the deed with this sword.",
             "type": 20,
             "rarity": 5,
@@ -13772,12 +13808,12 @@
             "effects": [
                 {
                     "name": "Giantslayer",
-                    "description": "On a hit, double the damage from your Strength Modifier. This weapon grants you Advantage on Attack Rolls against Large, Huge or Gargantuan creatures.",
+                    "description": "On a hit, double the damage from your modifier. This weapon grants you advantage on attack rolls against Large, Huge or Gargantuan creatures.",
                     "type": 2
                 },
                 {
                     "name": "Giant Form|w=40",
-                    "description": "Grow to a fearsome size. Your weapons deal an additional d6|Physical 1d6 damage and you gain 27 and Advantage on Strength Ability Checks and SavingThrows (Short Rest).",
+                    "description": "Grow to a fearsome size. Your weapons deal an additional d6|Physical 1d6 damage and you gain 27 and advantage on Strength ability checks and saving throws (short rest).",
                     "type": 2
                 }
             ],
@@ -13801,14 +13837,14 @@
             "name": "Everburn Blade",
             "image": "Greatsword B PlusOne Icon.png",
             "icon": "Greatsword B PlusOne Unfaded Icon.png",
-            "description": "Everburn Blade is an uncommon Greatsword that deals additional |Fire damage.",
+            "description": "Everburn Blade is an uncommon greatsword that deals additional |Fire damage.",
             "quote": "Silent flames surge the length of the blade as soon as it clears the scabbard.",
             "type": 20,
             "rarity": 2,
             "weightKg": 2.7,
             "weightLb": 5.4,
             "price": 130,
-            "uid": "MAG_Fire_AlwaysDippedInFire _Greatsword",
+            "uid": "MAG_Fire_AlwaysDippedInFire_Greatsword",
             "effects": [],
             "proficiency": 0,
             "id": 3339,
@@ -13830,7 +13866,7 @@
             "name": "Githyanki Greatsword",
             "image": "Githyanki Greatsword Icon.png",
             "icon": "Githyanki Greatsword Unfaded Icon.png",
-            "description": "Githyanki Greatsword is an uncommon Greatsword that deals additional |Psychic damage when wielded by a Githyanki.",
+            "description": "Githyanki Greatsword is an uncommon greatsword that deals additional |Psychic damage when wielded by a githyanki.",
             "quote": "Though heavily decorated and inlaid with rubies, the blade's sharp edge suggests its use isn't merely ornamental.",
             "type": 20,
             "rarity": 2,
@@ -13841,7 +13877,7 @@
             "effects": [
                 {
                     "name": "Githborn Psionic Weapon",
-                    "description": "When wielded by a Githyanki this weapon deals an additional 1d4|Psychic damage.",
+                    "description": "When wielded by a githyanki this weapon deals an additional 1d4|Psychic damage.",
                     "type": 2
                 }
             ],
@@ -13893,7 +13929,7 @@
             "name": "Greatsword +1",
             "image": "Greatsword PlusOne Icon.png",
             "icon": "Greatsword PlusOne Unfaded Icon.png",
-            "description": "Greatsword +1 is an uncommon, lightly enchanted Greatsword.",
+            "description": "Greatsword +1 is an uncommon, lightly enchanted greatsword.",
             "quote": "The thick leather straps wrapped around the base of the blade creak under a solid grip.",
             "type": 20,
             "rarity": 2,
@@ -14007,7 +14043,7 @@
             "name": "Silver Sword of the Astral Plane",
             "image": "Githyanki_Greatsword_Icon.png",
             "icon": "Githyanki Greatsword Item Icon.png",
-            "description": "Silver Sword of the Astral Plane is a legendary Greatsword that grants special bonuses when wielded by a Githyanki.",
+            "description": "Silver Sword of the Astral Plane is a legendary greatsword that grants special bonuses when wielded by a githyanki.",
             "quote": "The fervour with which the githyanki express devotion to their queen is admirable to some, disquieting to others. When confronted with the fallibility of the divine (since no one is wholly perfect), who knows what reactions such folk might evince.",
             "type": 20,
             "rarity": 5,
@@ -14018,12 +14054,12 @@
             "effects": [
                 {
                     "name": "Githborn Psionic Weapon",
-                    "description": "When wielded by a Githyanki this weapon deals an additional 1d6|Psychic damage.",
+                    "description": "When wielded by a githyanki this weapon deals an additional 1d6|Psychic damage.",
                     "type": 2
                 },
                 {
                     "name": "Githborn Psionic Resistance",
-                    "description": "A Githyanki holding this weapon has Advantage on Intelligence, Wisdom, and Charismas, Resistance to |Psychic damage, and cannot be Charmed.",
+                    "description": "A githyanki holding this weapon has advantage on Intelligence, Wisdom, and Charismas, resistance to |Psychic damage, and cannot be Charmed.",
                     "type": 2
                 }
             ],
@@ -14047,7 +14083,7 @@
             "name": "Soulbreaker Greatsword",
             "image": "Githyanki Greatsword Red Faded.png",
             "icon": "Githyanki Greatsword Red Unfaded Icon.png",
-            "description": "Soulbreaker Greatsword is a rare Greatsword that grants a bonus to |Psychic}} damage when wielded by a [[Githyanki.",
+            "description": "Soulbreaker Greatsword is a rare greatsword that grants a bonus to |Psychic}} damage when wielded by a [[githyanki.",
             "quote": "The sharp metal whispers to you. Pleading. Cursing... Echoes of slain foes.",
             "type": 20,
             "rarity": 3,
@@ -14058,12 +14094,12 @@
             "effects": [
                 {
                     "name": "Githborn Psionic Weapon",
-                    "description": "When wielded by a Githyanki this weapon deals an additional 1d4|Psychic damage.",
+                    "description": "When wielded by a githyanki this weapon deals an additional 1d4|Psychic damage.",
                     "type": 2
                 },
                 {
                     "name": "Seldom Caught Unawares",
-                    "description": "You gain a +2 bonus to Initiative Rolls.",
+                    "description": "You gain a +2 bonus to Initiative rolls.",
                     "type": 2
                 }
             ],
@@ -14128,7 +14164,7 @@
             "name": "Svartlebee's Woundseeker",
             "image": "Greatsword B Icon.png",
             "icon": "Greatsword B Unfaded Icon.png",
-            "description": "Svartlebee's Woundseeker is an uncommon Greatsword that grants its wielder bonus to Attack Rolls against already damaged creatures.",
+            "description": "Svartlebee's Woundseeker is an uncommon greatsword that grants its wielder bonus to Attack Rolls against already damaged creatures.",
             "quote": "Wielded by Svartlebee The Custodian, so named because he had the following reputation: Have you got someone in your life causing a mess? Send Svartlebee a missive. He shall clean them up, and then clean up the crime scene.",
             "type": 20,
             "rarity": 2,
@@ -15771,6 +15807,7 @@
             "weightKg": 1.1,
             "weightLb": 2.2,
             "price": 310,
+            "uid": "MAG_ChargedLightning_Longbow",
             "effects": [
                 {
                     "name": "Electric Blood",
@@ -16860,7 +16897,24 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 190,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Yeenoghu's Gift",
+                    "description": "Hitting an enemy with this weapon heals the wielder for 1d6|Healing - but they can go Mad if they don't continue hitting an enemy each turn.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "After attacking, grants Yeenoghu's Gift for 5 turns. Must strike an enemy every turn or be struck by Mad|Mad.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Shattered Flail",
+                    "description": "After attacking, grants Yeenoghu's Gift for 5 turns. Must strike an enemy every turn or be struck by Mad|Mad.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 2,
             "id": 4211,
@@ -17464,7 +17518,7 @@
             "effects": [
                 {
                     "name": "Invisible Weapon",
-                    "description": "This weapon is Invisible while equipped. It loses this property for 2 rounds on a missed Attack Rolls.",
+                    "description": "This weapon is Invisible Weapon|Invisible while equipped. It loses this property for 2 rounds on a missed Attack Roll.",
                     "type": 2
                 }
             ],
@@ -19240,6 +19294,7 @@
         {
             "name": "Kurwin's Cauteriser",
             "image": "Scimitar PlusOne Icon.png",
+            "icon": "Scimitar PlusOne Unfaded Icon.png",
             "quote": "Mortician Kurwin was known to use his trusty Cauteriser on all sorts of interesting subjects. At first there were cadavers, then people who wouldn't be missed, and it was only after he targeted a well-liked tavern owner that he was ratted out to the law.",
             "type": 36,
             "rarity": 2,
@@ -20082,6 +20137,7 @@
         {
             "name": "Fleshrender",
             "image": "Fleshrender Icon.png",
+            "icon": "Fleshrender Unfaded Icon.png",
             "description": "Fleshrender is a rare Shortsword that allows the wielder to make a diabolical strike, possibly stymying their target's ability to heal.\nSpoilerWarning",
             "quote": "The previous owner was going to call this sword Barney, but he got such a bollocking from his friends that he named it Fleshrender instead, and sulked for a whole tenday afterward.",
             "type": 38,
@@ -21468,9 +21524,8 @@
             "rangeType": 1,
             "handedness": 2,
             "damage": "1d6 + 3",
-            "damageType": 1,
+            "damageType": 2,
             "damageVersatile": "1d8 + 3",
-            "extraDamage": "1d6 Fire",
             "range": 0,
             "finesse": false,
             "heavy": false,
@@ -21737,7 +21792,8 @@
         },
         {
             "name": "Hammer of the Just",
-            "image": "Hammer of the Just Icon.png",
+            "image": "Warhammer PlusOne Icon.png",
+            "icon": "Warhammer PlusOne Unfaded Icon.png",
             "description": "Hammer of the Just is a rare Warhammer that deals additional Radiant damage, additional Bludgeoning damage to Fiends and Undead, and allows the wielder to cast Detect Thoughts.",
             "quote": "Tyr is often known as the Maimed God - a descriptor he shares with most victims of this heavy warhammer.",
             "type": 43,

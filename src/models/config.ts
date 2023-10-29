@@ -17,4 +17,10 @@ export const CONFIG = {
         USE_IMAGE_CACHE: process.env.USE_IMAGE_CACHE === 'true',
     },
     SELF_BASE_URL: process.env.SELF_BASE_URL,
+    BUILDS: {
+        MAX_ENCODED_BUILD_LENGTH: parseInt(
+            process.env.MAX_ENCODED_BUILD_LENGTH ?? '10240',
+            10,
+        ),
+    },
 };
