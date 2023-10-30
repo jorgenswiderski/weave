@@ -1,10 +1,13 @@
-import { ICharacterOptionWithStubs } from 'planner-types/src/types/character-feature-customization-option';
+import { ICharacterOptionWithStubs } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import {
     GrantableEffect,
     GrantableEffectType,
-} from 'planner-types/src/types/grantable-effect';
-import { IAction, ISpell } from 'planner-types/src/types/action';
-import { CompressableRecord } from 'planner-types/src/models/compressable-record/types';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
+import {
+    IAction,
+    ISpell,
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
+import { CompressableRecord } from '@jorgenswiderski/tomekeeper-shared/dist/models/compressable-record/types';
 import { PageItem, PageLoadingState } from '../page-item';
 import { ICharacterOptionWithPage } from './types';
 import { error, warn } from '../logger';

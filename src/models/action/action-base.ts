@@ -8,9 +8,9 @@ import {
     ActionResource,
     ActionSchool,
     IActionBase,
-} from 'planner-types/src/types/action';
-import { AbilityScore } from 'planner-types/src/types/ability';
-import { DamageType } from 'planner-types/src/types/damage';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
+import { AbilityScore } from '@jorgenswiderski/tomekeeper-shared/dist/types/ability';
+import { DamageType } from '@jorgenswiderski/tomekeeper-shared/dist/types/damage';
 import { PageNotFoundError } from '../errors';
 import { error } from '../logger';
 import { PageItem, PageLoadingState } from '../page-item';

@@ -1,8 +1,8 @@
 import {
     CharacterPlannerStep,
     ICharacterOptionWithStubs,
-} from 'planner-types/src/types/character-feature-customization-option';
-import { GrantableEffect } from 'planner-types/src/types/grantable-effect';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
+import { GrantableEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import { MwnApiClass } from '../../../api/mwn';
 import { error } from '../../logger';
 import { MediaWiki } from '../../media-wiki';

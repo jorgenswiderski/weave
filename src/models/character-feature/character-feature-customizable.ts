@@ -1,4 +1,4 @@
-import { ICharacterChoiceWithStubs } from 'planner-types/src/types/character-feature-customization-option';
+import { ICharacterChoiceWithStubs } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { CharacterFeature } from './character-feature';
 import { ICharacterOptionWithPage } from './types';
 

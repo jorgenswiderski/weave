@@ -1,9 +1,9 @@
-import { ICharacterOption } from 'planner-types/src/types/character-feature-customization-option';
+import { ICharacterOption } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import {
     GrantableEffectType,
     Proficiency,
     ProficiencyTypes,
-} from 'planner-types/src/types/grantable-effect';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import { MediaWiki } from '../../media-wiki';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeatureTypes } from '../types';

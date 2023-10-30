@@ -1,7 +1,11 @@
 // builds.ts
 import { v4 as uuid } from 'uuid';
 import { Db, WithId } from 'mongodb';
-import { Build, BuildId, BuildWithInfo } from 'planner-types/src/types/builds';
+import {
+    Build,
+    BuildId,
+    BuildWithInfo,
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/builds';
 import { CONFIG } from '../config';
 import {
     BuildDataTooLargeError,

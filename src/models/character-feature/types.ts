@@ -1,7 +1,7 @@
 import {
     CharacterPlannerStep,
     ICharacterOption,
-} from 'planner-types/src/types/character-feature-customization-option';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { PageData } from '../media-wiki';
 
 export enum CharacterFeatureTypes {

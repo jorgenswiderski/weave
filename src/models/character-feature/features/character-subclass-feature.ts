@@ -1,5 +1,5 @@
-import { GrantableEffect } from 'planner-types/src/types/grantable-effect';
-import { ICharacterOption } from 'planner-types/src/types/character-feature-customization-option';
+import { GrantableEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
+import { ICharacterOption } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { PageLoadingState } from '../../page-item';
 import { CharacterFeature } from '../character-feature';
 import { CharacterProgressionLevel } from '../../character-class/types';

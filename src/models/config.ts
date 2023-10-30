@@ -1,4 +1,4 @@
-import { CONFIG as SharedConfig } from 'planner-types/src/models/config';
+import { CONFIG as SharedConfig } from '@jorgenswiderski/tomekeeper-shared/dist/models/config';
 
 export const CONFIG = {
     ...SharedConfig,

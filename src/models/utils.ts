@@ -1,4 +1,4 @@
-import { SharedUtils } from 'planner-types/src/models/utils';
+import { SharedUtils } from '@jorgenswiderski/tomekeeper-shared/dist/models/utils';
 import { Request } from 'express';
 
 export class Utils extends SharedUtils {

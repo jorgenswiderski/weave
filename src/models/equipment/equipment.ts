@@ -1,4 +1,4 @@
-import { EquipmentItemType } from 'planner-types/src/types/equipment-item';
+import { EquipmentItemType } from '@jorgenswiderski/tomekeeper-shared/dist/types/equipment-item';
 import { MwnApiClass } from '../../api/mwn';
 import { MediaWiki } from '../media-wiki';
 import { EquipmentItem } from './equipment-item';

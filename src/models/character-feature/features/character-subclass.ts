@@ -1,4 +1,4 @@
-import { CharacterPlannerStep } from 'planner-types/src/types/character-feature-customization-option';
+import { CharacterPlannerStep } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { error } from '../../logger';
 import { MediaWiki, PageData } from '../../media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';

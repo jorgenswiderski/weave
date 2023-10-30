@@ -1,10 +1,10 @@
-import { IAction } from 'planner-types/src/types/action';
-import { ActionStubConstructor } from 'planner-types/src/models/static-reference/stubs';
+import { IAction } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
+import { ActionStubConstructor } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/stubs';
 import {
     CompressableRecord,
     CompressableRecordHandle,
-} from 'planner-types/src/models/compressable-record/types';
-import { RecordCompressor } from 'planner-types/src/models/compressable-record/compressable-record';
+} from '@jorgenswiderski/tomekeeper-shared/dist/models/compressable-record/types';
+import { RecordCompressor } from '@jorgenswiderski/tomekeeper-shared/dist/models/compressable-record/compressable-record';
 import { CHOICE_ID_NOT_SET_BY_SERVER } from './types';
 
 let compress: (id: number, choiceId: string) => CompressableRecordHandle;

@@ -3,7 +3,7 @@ import {
     ICharacterChoice,
     ICharacterOption,
     ICharacterOptionWithStubs,
-} from 'planner-types/src/types/character-feature-customization-option';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { MwnApiClass } from '../../api/mwn';
 import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
 import { error } from '../logger';

@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { BuildId } from 'planner-types/src/types/builds';
+import { BuildId } from '@jorgenswiderski/tomekeeper-shared/dist/types/builds';
 import { Builds } from '../models/builds/builds';
 import {
     BuildDataTooLargeError,

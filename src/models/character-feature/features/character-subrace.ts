@@ -1,5 +1,5 @@
-import { ICharacterOption } from 'planner-types/src/types/character-feature-customization-option';
-import { GrantableEffect } from 'planner-types/src/types/grantable-effect';
+import { ICharacterOption } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
+import { GrantableEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import { MediaWiki } from '../../media-wiki';
 
 export class CharacterSubrace implements ICharacterOption {

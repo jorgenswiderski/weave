@@ -2,8 +2,8 @@ import {
     ActionDamageSaveEffect,
     ActionResource,
     ISpell,
-} from 'planner-types/src/types/action';
-import { AbilityScore } from 'planner-types/src/types/ability';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
+import { AbilityScore } from '@jorgenswiderski/tomekeeper-shared/dist/types/ability';
 import { PageNotFoundError } from '../errors';
 import {
     MediaWikiTemplateParser,

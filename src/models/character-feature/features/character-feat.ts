@@ -2,13 +2,13 @@ import {
     CharacterPlannerStep,
     ICharacterChoiceWithStubs,
     ICharacterOptionWithStubs,
-} from 'planner-types/src/types/character-feature-customization-option';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import {
     Characteristic,
     CharacteristicType,
     GrantableEffect,
     GrantableEffectType,
-} from 'planner-types/src/types/grantable-effect';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import { error } from '../../logger';
 import { MediaWiki } from '../../media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';

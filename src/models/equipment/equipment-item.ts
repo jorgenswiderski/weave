@@ -1,13 +1,13 @@
 import {
     GrantableEffect,
     GrantableEffectType,
-} from 'planner-types/src/types/grantable-effect';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import {
     EquipmentItemProficiency,
     EquipmentItemType,
     IEquipmentItem,
     ItemRarity,
-} from 'planner-types/src/types/equipment-item';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/equipment-item';
 import { PageNotFoundError } from '../errors';
 import { error } from '../logger';
 import { MediaWiki, PageData } from '../media-wiki';

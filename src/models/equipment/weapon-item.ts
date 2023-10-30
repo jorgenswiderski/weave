@@ -1,12 +1,12 @@
-import { IActionEffect } from 'planner-types/src/types/grantable-effect';
+import { IActionEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import {
     IWeaponItem,
     WeaponCategory,
     WeaponHandedness,
     WeaponRange,
     WeaponRangeType,
-} from 'planner-types/src/types/equipment-item';
-import { DamageType } from 'planner-types/src/types/damage';
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/equipment-item';
+import { DamageType } from '@jorgenswiderski/tomekeeper-shared/dist/types/damage';
 import { PageNotFoundError } from '../errors';
 import {
     MediaWikiTemplateParser,
