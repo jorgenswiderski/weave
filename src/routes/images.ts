@@ -16,13 +16,7 @@ const resolvedImageUrls: { [imageKey: string]: string } = {};
 
 const ensureDirectoryExistence = async (filePath: string) => {
     const dirName = path.dirname(filePath);
-
-    if (fs.existsSync(dirName)) {
-        return;
-    }
-
-    await ensureDirectoryExistence(dirName);
-    await fs.promises.mkdir(dirName);
+    await fs.promises.mkdir(dirName, { recursive: true });
 };
 
 export const router: Router = express.Router();
