@@ -52,7 +52,9 @@ jobs:
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         runs-on: ubuntu-latest
         steps:
-            - uses: appleboy/ssh-action@master
+            - name: SSH and Deploy
+              id: deploy
+              uses: appleboy/ssh-action@master
               with:
                   host: ${{ secrets.EC2_HOST }}
                   username: ${{ secrets.EC2_USERNAME }}
@@ -68,4 +70,19 @@ jobs:
                       password=${{ secrets.GHP_TOKEN }}
                       EOF
                       git pull origin master
+                      docker-compose down
+                      docker-compose up --build -d
+
+            - name: Rollback
+              if: failure() && steps.deploy.outcome == 'failure'
+              uses: appleboy/ssh-action@master
+              with:
+                  host: ${{ secrets.EC2_HOST }}
+                  username: ${{ secrets.EC2_USERNAME }}
+                  key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+                  script: |
+                      set -e
+                      cd weave
+                      git reset --hard HEAD~1
+                      docker-compose down
                       docker-compose up --build -d
