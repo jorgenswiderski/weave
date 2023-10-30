@@ -10112,6 +10112,25 @@
         "isVariant": false
     },
     {
+        "name": "Incinerate",
+        "damage": "8d8",
+        "damageType": 4,
+        "image": "Flame Strike.webp",
+        "level": 6,
+        "school": 5,
+        "summary": "It is a unique spell to Raphael, requiring two Soul Charges and dealing 8d8|Fire damage.",
+        "description": "Spend 8~64|Fire damage soul to wreath a target in malevolent flame.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25952,
+        "attackRoll": false,
+        "aoe": 1,
+        "notes": "* This spell requires the use of two Soul Charges from Raphael.",
+        "classes": [],
+        "noSpellSlot": false,
+        "isVariant": false
+    },
+    {
         "name": "Inflict Wounds",
         "damage": "3d10",
         "damageType": 11,

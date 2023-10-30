@@ -48,7 +48,12 @@ app.use(
             return callback(null, true);
         },
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD'],
-        allowedHeaders: ['Content-Type', 'Authorization'],
+        allowedHeaders: [
+            'Content-Type',
+            'Authorization',
+            'Baggage',
+            'Sentry-Trace',
+        ],
     }),
 );
 
