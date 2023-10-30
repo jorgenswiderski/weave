@@ -2380,6 +2380,20 @@
         "cost": 1
     },
     {
+        "name": "Soul Drain",
+        "damage": "amount:12d6, type:Necrotic",
+        "image": "Vampiric Touch.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Soul Drain is an action available to Raphael that lets him restore hit points and deal Necrotic damage to creatures that are Infernal Stun|Soul Wrenched.",
+        "description": "Drain the life force of an Infernal Stun|Infernal Stunned creature, restoring your hit points by half the damage dealt.",
+        "ritual": false,
+        "concentration": false,
+        "id": 25944,
+        "attackRoll": false,
+        "rangeM": 18
+    },
+    {
         "name": "Sphere of Elemental Balance",
         "image": "Chromatic Orb.webp",
         "level": 0,

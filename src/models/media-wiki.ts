@@ -165,7 +165,7 @@ export class MediaWiki {
             .update(formattedImageName)
             .digest('hex');
 
-        return `/${hash[0]}/${hash[0]}${hash[1]}/${formattedImageName}`;
+        return `/${hash[0]}/${hash[0]}${hash[1]}`;
     }
 
     // static getImagePath = (name: string) => name;

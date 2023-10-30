@@ -278,7 +278,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         }
 
         const match = this.page.content.match(
-            /{{ClassQuote[^}]+image=([^|}]+)/,
+            /{{ClassQuote[^}]+image\s*=\s*([^|}]+)/,
         );
 
         if (!match || !match[1]) {

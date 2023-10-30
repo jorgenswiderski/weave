@@ -31562,6 +31562,7 @@
     {
         "name": "Warlock",
         "description": "Warlock is a character Class in Baldur's Gate 3. Warlocks channel their patron's pact magic to fight enemies and aid allies in combat. Warlocks use Charisma as their primary ability score.",
+        "image": "Class Warlock Badge Icon.png",
         "progression": [
             {
                 "Level": 1,
