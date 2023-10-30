@@ -17,7 +17,7 @@
         "type-check": "tsc --noEmit --skipLibCheck",
         "check": "npm run lint-fix && npm run type-check",
         "dump-data": "ts-node src/models/dump-data.ts",
-        "preinstall": "echo \"@jorgenswiderski:registry=https://npm.pkg.github.com/\n//npm.pkg.github.com/:_authToken=${GITHUB_PACKAGES_TOKEN}\" > .npmrc"
+        "preinstall": "echo \"@jorgenswiderski:registry=https://npm.pkg.github.com/\n//npm.pkg.github.com/:_authToken=${GHP_TOKEN}\" > .npmrc"
     },
     "keywords": [],
     "author": "Jorgen Swiderski",

@@ -19,7 +19,7 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        GITHUB_PACKAGES_TOKEN: ${GITHUB_PACKAGES_TOKEN}
+        GHP_TOKEN: ${GHP_TOKEN}
     container_name: weave
     env_file:
       - .env

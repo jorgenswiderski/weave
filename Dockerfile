@@ -6,8 +6,8 @@ WORKDIR /usr/src/app
 # Install app dependencies
 COPY package*.json ./
 
-ARG GITHUB_PACKAGES_TOKEN
-ENV GITHUB_PACKAGES_TOKEN=$GITHUB_PACKAGES_TOKEN
+ARG GHP_TOKEN
+ENV GHP_TOKEN=$GHP_TOKEN
 RUN npm run preinstall
 
 RUN npm install
