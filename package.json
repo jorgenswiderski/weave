@@ -7,7 +7,7 @@
         "test": "jest --passWithNoTests",
         "start": "ts-node src/index.ts",
         "build": "tsc",
-        "serve": "node dist/index.js",
+        "start-prod": "node dist/index.js",
         "prepare": "husky install",
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "lint-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
@@ -16,7 +16,8 @@
         "decompose": "docker-compose down",
         "type-check": "tsc --noEmit --skipLibCheck",
         "check": "npm run lint-fix && npm run type-check",
-        "dump-data": "ts-node src/models/dump-data.ts"
+        "dump-data": "ts-node src/models/dump-data.ts",
+        "preinstall": "echo \"@jorgenswiderski:registry=https://npm.pkg.github.com/\n//npm.pkg.github.com/:_authToken=${GITHUB_PACKAGES_TOKEN}\" > .npmrc"
     },
     "keywords": [],
     "author": "Jorgen Swiderski",

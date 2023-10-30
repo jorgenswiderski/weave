@@ -6,3 +6,5 @@ package
 docker-compose.yml
 .eslintcache
 src/cache
+.npmrc
+dist/
