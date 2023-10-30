@@ -60,5 +60,9 @@ jobs:
                   script: |
                       set -e
                       cd weave
+                      git config --global credential.helper store
+                      echo "url=https://github.com" >> ~/.git-credentials
+                      echo "   username=x-access-token" >> ~/.git-credentials
+                      echo "   password=${{ secrets.GHP_TOKEN }}" >> ~/.git-credentials          
                       git pull origin master
                       docker-compose up --build -d
