@@ -30,7 +30,10 @@ const PORT = process.env.PORT || 3001;
 
 new MwnProgressBar().render();
 
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = [
+    'http://localhost:3000',
+    'https://tomekeeper.vercel.app',
+];
 
 app.use(
     cors({
