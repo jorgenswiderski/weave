@@ -1945,6 +1945,21 @@
         "aoeFt": 30
     },
     {
+        "name": "Summon Companion",
+        "image": "Summon Companion.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Summon Companion is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
+        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
+        "ritual": false,
+        "concentration": false,
+        "id": 850,
+        "attackRoll": false,
+        "rangeM": 18,
+        "rangeFt": 60,
+        "cost": 1
+    },
+    {
         "name": "Reckless Attack",
         "damage": "amounttext:Main Hand Weapon, type:Physical",
         "image": "Reckless Attack.webp",
@@ -2594,21 +2609,6 @@
         "range": 2,
         "condition": "Stunned",
         "conditionDuration": 1
-    },
-    {
-        "name": "Summon Companion",
-        "image": "Summon Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Summon Companion is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 850,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "cost": 1
     },
     {
         "name": "Supreme Sneak",

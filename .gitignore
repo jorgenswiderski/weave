@@ -7,3 +7,5 @@ package
 src/cache
 .npmrc
 dist/
+docker-compose.yml
+Dockerfile
