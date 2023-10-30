@@ -3,7 +3,6 @@ package
 .env
 .env.*
 *.code-workspace
-docker-compose.yml
 .eslintcache
 src/cache
 .npmrc

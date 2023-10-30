@@ -1,0 +1,32 @@
+version: '3'
+
+volumes:
+  tome-data:
+
+services:
+  mongodb:
+    image: mongo
+    container_name: tome-db
+    env_file:
+      - .env.mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - tome-data:/data/db
+
+  node-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        GITHUB_PACKAGES_TOKEN: ${GITHUB_PACKAGES_TOKEN}
+    container_name: weave
+    env_file:
+      - .env
+    ports:
+      - '3001:3001'
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
