@@ -1,9 +1,14 @@
-import 'newrelic';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 /* eslint-disable import/first */
+// eslint-disable-next-line import/order
+import { CONFIG } from './models/config';
+
+if (!CONFIG.IS_DEV) {
+    import('newrelic');
+}
 
 import express from 'express';
 import cors from 'cors';
