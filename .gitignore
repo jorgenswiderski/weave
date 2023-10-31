@@ -6,6 +6,7 @@ package
 .eslintcache
 src/cache
 .npmrc
-dist/
+dist
 docker-compose.yml
 Dockerfile
+static-image-cache

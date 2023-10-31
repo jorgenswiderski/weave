@@ -16,6 +16,7 @@ import {
     ICharacterClass,
 } from './types';
 import { ImageCacheService } from '../image-cache-service';
+import { CharacterFeature } from '../character-feature/character-feature';
 
 async function parseFeatures(
     characterClass: CharacterClass,
@@ -110,6 +111,12 @@ export class CharacterClass extends PageItem implements ICharacterClass {
                 );
 
                 cleanedItem.Features = features ?? [];
+
+                await Promise.all(
+                    cleanedItem.Features.map((feature) =>
+                        (feature as CharacterFeature).waitForInitialization(),
+                    ),
+                );
 
                 return cleanedItem;
             }),
