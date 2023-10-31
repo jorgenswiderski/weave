@@ -6,6 +6,7 @@ import { CharacterProgressionLevel } from '../../character-class/types';
 import { ICharacterOptionWithPage } from '../types';
 import { MediaWiki, PageData } from '../../media-wiki';
 import { PageNotFoundError } from '../../errors';
+import { ImageCacheService } from '../../image-cache-service';
 
 export class CharacterSubclassFeature extends CharacterFeature {
     constructor(
@@ -47,6 +48,10 @@ export class CharacterSubclassFeature extends CharacterFeature {
         }
 
         this.image = match[1];
+
+        if (this.image) {
+            ImageCacheService.cacheImage(this.image);
+        }
     }
 
     static async getProgression(

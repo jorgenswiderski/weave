@@ -18,6 +18,7 @@ import { getSpellDataById } from '../action/spell';
 import { getActionDataById } from '../action/action';
 import { SpellStub } from '../static-reference/spell-stub';
 import { ActionStub } from '../static-reference/action-stub';
+import { ImageCacheService } from '../image-cache-service';
 
 enum CharacterFeatureLoadingStates {
     DESCRIPTION = 'DESCRIPTION',
@@ -44,6 +45,10 @@ export class CharacterFeature
 
         if (image) {
             this.image = image;
+
+            if (this.image) {
+                ImageCacheService.cacheImage(this.image);
+            }
         } else {
             this.initialized[CharacterFeatureLoadingStates.IMAGE] =
                 this.initImage().catch(error);

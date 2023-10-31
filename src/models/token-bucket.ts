@@ -47,7 +47,9 @@ export class TokenBucket {
     }
 
     public async acquireNTokens(n: number): Promise<any[]> {
-        return Promise.all(new Array(n).fill(this.acquireToken()));
+        return Promise.all(
+            new Array(n).fill(null).map(() => this.acquireToken()),
+        );
     }
 
     public getProgress(): { granted: number; total: number } {

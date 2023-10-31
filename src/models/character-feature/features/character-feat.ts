@@ -15,6 +15,7 @@ import { CharacterFeatureCustomizable } from '../character-feature-customizable'
 import { PageLoadingState } from '../../page-item';
 import { PageNotFoundError } from '../../errors';
 import { CharacterFeature } from '../character-feature';
+import { ImageCacheService } from '../../image-cache-service';
 
 enum SubclassLoadStates {
     CHOICES = 'CHOICES',
@@ -211,12 +212,18 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                             }
                         }
 
+                        const image =
+                            fx.find((effect) => effect.image)?.image ??
+                            'PassiveFeature Generic.png';
+
+                        if (image) {
+                            ImageCacheService.cacheImage(image);
+                        }
+
                         return {
                             name,
                             description,
-                            image:
-                                fx.find((effect) => effect.image)?.image ??
-                                'PassiveFeature Generic.png',
+                            image,
                             grants: fx,
                             type: CharacterPlannerStep.FEAT,
                             choices: choices?.length > 0 ? choices : undefined,

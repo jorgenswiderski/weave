@@ -18,6 +18,7 @@ import {
     MediaWikiTemplateParser,
     MediaWikiTemplateParserConfig,
 } from '../mw-template-parser';
+import { ImageCacheService } from '../image-cache-service';
 
 enum ActionLoadState {
     ACTION_BASE_DATA = 'ACTION_BASE_DATA',
@@ -264,6 +265,10 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
             this,
             MediaWikiTemplateParser.parseTemplate(this.page, config),
         );
+
+        if (this.image) {
+            ImageCacheService.cacheImage(this.image);
+        }
     }
 
     toJSON(): Partial<IActionBase> {

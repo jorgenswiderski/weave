@@ -1492,6 +1492,7 @@
             "weightKg": 0.55,
             "weightLb": 1.1,
             "price": 190,
+            "uid": "MAG_CQCaster_ArcaneChargeAfterDash_Boots",
             "effects": [
                 {
                     "name": "Rapid Caster",
@@ -2250,7 +2251,7 @@
             "effects": [
                 {
                     "name": "Speedy Sparks",
-                    "description": "When the wearer Dash|Dashes or takes a similar action in combat, they gain 3 Lightning Charges.",
+                    "description": "When the wearer Dash|Dashes or takes a similar action in combat, they gain 3 Lightning Charges (Per turn).",
                     "type": 2
                 },
                 {
@@ -4703,19 +4704,8 @@
             "price": 160,
             "effects": [
                 {
-                    "name": "Martial Exertion Icon|Martial Exertion",
-                    "description": "Push past your physical limits, taking 6d6|Piercing damage to gain an additional attack per turn and to double your movement speed.",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Short Rest",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Martial Exertion Gloves",
-                    "description": "Short Rest",
+                    "name": "Martial Exertion|w=40",
+                    "description": "Push past your physical limits, taking 6d6|Piercing damage to gain an additional attack per turn and to double your movement speed Short Rest.",
                     "type": 2
                 }
             ],
@@ -5152,10 +5142,11 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 90,
+            "uid": "MAG_Frost_GenerateFrostOnDamage_Gloves",
             "effects": [
                 {
                     "name": "Winter's Clutches",
-                    "description": "When the wearer deals Cold damage, inflict 2 turns of Encrusted with Frost upon the target(s).",
+                    "description": "When the wearer deals Cold damage, inflict 2 turns of Encrusted with Frost upon the target(s) (Per attackIt is not stated in-game, but Winter's Clutches can only activate once per attack even if you hit multiple targets at once. Area of effect spells such as Cone of Cold will only apply Encrusted with Frost to the first target in the combat log.).",
                     "type": 2
                 }
             ],

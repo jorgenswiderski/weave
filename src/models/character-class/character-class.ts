@@ -15,6 +15,7 @@ import {
     CharacterClassProgressionLevel,
     ICharacterClass,
 } from './types';
+import { ImageCacheService } from '../image-cache-service';
 
 async function parseFeatures(
     characterClass: CharacterClass,
@@ -285,7 +286,13 @@ export class CharacterClass extends PageItem implements ICharacterClass {
             return null;
         }
 
-        return match[1].trim();
+        const image = match[1].trim();
+
+        if (image) {
+            ImageCacheService.cacheImage(image);
+        }
+
+        return image;
     }
 
     async getInfo(): Promise<ClassInfo> {
