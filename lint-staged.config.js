@@ -1,5 +1,5 @@
 module.exports = {
-    '*': 'scripts/dump-data-check.sh',
+    'src/**/*': 'scripts/dump-data-check.sh',
     '*.{js,jsx,ts,tsx}': [
         'eslint . --ext .js,.ts --cache',
         'npm run format',
