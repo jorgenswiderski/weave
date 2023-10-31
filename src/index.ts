@@ -1,8 +1,10 @@
+import 'newrelic';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 /* eslint-disable import/first */
+
 import express from 'express';
 import cors from 'cors';
 import { getCharacterClassData } from './models/character-class/character-class';
