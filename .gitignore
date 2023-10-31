@@ -10,3 +10,4 @@ dist
 docker-compose.yml
 Dockerfile
 static-image-cache
+newrelic-infra.yml

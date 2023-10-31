@@ -29,6 +29,7 @@
         "express": "^4.18.2",
         "mongodb": "^6.1.0",
         "mwn": "^2.0.1",
+        "newrelic": "^11.5.0",
         "uuid": "^9.0.1"
     },
     "devDependencies": {
