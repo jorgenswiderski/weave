@@ -6006,12 +6006,12 @@
                                         "description": "Your faith has made you the very thunder that quakes the black firmament, the lightning coursing through the veins of a terrible storm.",
                                         "image": "Tempest_Domain_Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                9201,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "name": "Wrath of the Storm",
+                                                "type": 2,
+                                                "description": "As a reaction, strike back at an attacking creature, dealing 2d8|Lightning or 2d8|Thunder damage. The target takes half damage on a successful SavingThrow.",
+                                                "image": "Generic Thunder.webp"
+                                            },
                                             [
                                                 "#",
                                                 1,

@@ -14,6 +14,13 @@ module.exports = {
                 '@typescript-eslint/lines-between-class-members': 'off',
             },
         },
+
+        {
+            files: ['scripts/**/*.ts'],
+            parserOptions: {
+                project: './scripts/tsconfig.scripts.json',
+            },
+        },
     ],
     settings: {
         'import/parsers': {
