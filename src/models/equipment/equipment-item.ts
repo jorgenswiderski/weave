@@ -16,6 +16,7 @@ import {
     MediaWikiTemplateParser,
     MediaWikiTemplateParserConfig,
 } from '../mw-template-parser';
+import { ImageCacheService } from '../image-cache-service';
 
 enum EquipmentItemLoadState {
     SPELL_DATA = 'SPELL_DATA',
@@ -150,6 +151,10 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             this,
             MediaWikiTemplateParser.parseTemplate(this.page, config),
         );
+
+        if (this.image) {
+            ImageCacheService.cacheImage(this.image);
+        }
     }
 
     toJSON() {

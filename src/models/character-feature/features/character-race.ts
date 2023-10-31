@@ -11,6 +11,7 @@ import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
 import { CharacterSubrace } from './character-subrace';
 import { CharacterFeature } from '../character-feature';
 import { Utils } from '../../utils';
+import { ImageCacheService } from '../../image-cache-service';
 
 type RaceChoice = { type: CharacterPlannerStep; options: CharacterSubrace[] };
 
@@ -79,7 +80,13 @@ export class CharacterRace extends CharacterFeature {
             return null;
         }
 
-        return match[1].trim();
+        const image = match[1].trim();
+
+        if (image) {
+            ImageCacheService.cacheImage(image);
+        }
+
+        return image;
     }
 
     protected async getDescription(): Promise<string> {

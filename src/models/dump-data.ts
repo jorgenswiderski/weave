@@ -13,6 +13,7 @@ import { getEquipmentItemData } from './equipment/equipment';
 import { getSpellData } from './action/spell';
 import { getActionData } from './action/action';
 import { initActionsAndSpells } from './action/init';
+import { ImageCacheService } from './image-cache-service';
 
 async function getInfo(data: any[]) {
     return Promise.all(data.map((datum) => datum.getInfo()));
@@ -56,4 +57,5 @@ async function dump() {
     }
 }
 
+ImageCacheService.enabled = true;
 dump();
