@@ -2,6 +2,8 @@ import { CONFIG as SharedConfig } from '@jorgenswiderski/tomekeeper-shared/dist/
 
 export const CONFIG = {
     ...SharedConfig,
+
+    IS_DEV: process.env.ENVIRONMENT === 'dev',
     MWN: {
         MEMOIZATION_DURATION_IN_MILLIS: parseInt(
             process.env.MWN_MEMOIZATION_DURATION_IN_MILLIS ?? '5000',
