@@ -34,6 +34,8 @@ export class ImageCacheModel {
 
     static async loadPreloadSizes(): Promise<void> {
         try {
+            await this.ensureDirectoryExistence(this.preloadSizesPath);
+
             const data = await fs.promises.readFile(
                 this.preloadSizesPath,
                 'utf-8',
