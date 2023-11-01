@@ -2,13 +2,11 @@ import path from 'path';
 import fs from 'fs';
 import https from 'https';
 import { IncomingMessage } from 'http';
+import writeFileAtomic from 'write-file-atomic';
 import { MediaWiki } from './media-wiki';
 import { MwnTokenBucket } from '../api/mwn';
 import { CONFIG } from './config';
-
-const rootDir = path.dirname(require.main!.filename);
-const IMAGE_CACHE_DIR = path.join(rootDir, 'cache');
-const cachedResponses: { [imageKey: string]: ResponseRedirect } = {};
+import { error, log } from './logger';
 
 interface ImageCacheResponse {
     isUnknownSize?: boolean;
@@ -23,6 +21,48 @@ interface ResponseRedirect extends ImageCacheResponse {
 }
 
 export class ImageCacheModel {
+    static rootDir = path.dirname(require.main!.filename);
+    static IMAGE_CACHE_DIR = path.join(this.rootDir, 'cache');
+
+    // Local Cache: Off
+    static cachedResponses: { [imageKey: string]: ResponseRedirect } = {};
+    static preloadSizesPath = path.join(
+        this.IMAGE_CACHE_DIR,
+        'preload-sizes.json',
+    );
+    static preloadSizes: { [imageName: string]: number } = {};
+
+    static async loadPreloadSizes(): Promise<void> {
+        try {
+            const data = await fs.promises.readFile(
+                this.preloadSizesPath,
+                'utf-8',
+            );
+
+            this.preloadSizes = JSON.parse(data);
+        } catch (err) {
+            if ((err as any)?.code === 'ENOENT') {
+                this.preloadSizes = {};
+            } else {
+                throw err;
+            }
+        }
+    }
+
+    private static async savePreloadSizes(): Promise<void> {
+        try {
+            await writeFileAtomic(
+                this.preloadSizesPath,
+                JSON.stringify(this.preloadSizes, null, 4),
+            );
+
+            log('Flushed preload sizes');
+        } catch (err) {
+            error('Failed to flush preload sizes');
+            error(err);
+        }
+    }
+
     private static async httpsGet(url: string): Promise<IncomingMessage> {
         return new Promise((resolve, reject) => {
             const req = https.get(url, (response) => {
@@ -94,7 +134,7 @@ export class ImageCacheModel {
         );
 
         const imageDir = path.join(
-            IMAGE_CACHE_DIR,
+            this.IMAGE_CACHE_DIR,
             MediaWiki.getImagePath(imageName),
             fileNameWithoutExtension,
         );
@@ -155,7 +195,7 @@ export class ImageCacheModel {
         preload: boolean = false,
     ): Promise<ResponseImage | ResponseRedirect> {
         let localImagePath: string;
-        const imageKey = JSON.stringify({ imageName, width });
+        const imageKey = JSON.stringify({ imageName, width, preload });
         let isUnknownSize = false;
 
         if (CONFIG.MEDIAWIKI.USE_LOCAL_IMAGE_CACHE) {
@@ -173,8 +213,19 @@ export class ImageCacheModel {
 
             isUnknownSize =
                 isUnknownSize || (localImage.isUnknownSize ?? false);
-        } else if (cachedResponses[imageKey]) {
-            return cachedResponses[imageKey];
+        } else {
+            if (this.cachedResponses[imageKey]) {
+                return this.cachedResponses[imageKey];
+            }
+
+            if (!width) {
+                if (this.preloadSizes[imageName]) {
+                    // eslint-disable-next-line no-param-reassign
+                    width = this.preloadSizes[imageName];
+                } else {
+                    isUnknownSize = true;
+                }
+            }
         }
 
         const remoteUrl = await MediaWiki.resolveImageRedirect(
@@ -184,7 +235,10 @@ export class ImageCacheModel {
 
         if (!CONFIG.MEDIAWIKI.USE_LOCAL_IMAGE_CACHE) {
             const result = { isUnknownSize, redirect: remoteUrl };
-            cachedResponses[imageKey] = result;
+
+            if (!preload || !isUnknownSize) {
+                this.cachedResponses[imageKey] = result;
+            }
 
             return result;
         }
@@ -195,34 +249,46 @@ export class ImageCacheModel {
         return { isUnknownSize, file: localImagePath };
     }
 
-    static async resizePreloadImage(
-        imageName: string,
-        width: number,
-    ): Promise<any> {
+    private static getLocalImagePath(imageName: string, width: number): string {
         const fileNameWithoutExtension = path.basename(
             imageName,
             path.extname(imageName),
         );
 
         const imageDir = path.join(
-            IMAGE_CACHE_DIR,
+            this.IMAGE_CACHE_DIR,
             MediaWiki.getImagePath(imageName),
             fileNameWithoutExtension,
         );
 
-        const localImagePath = path.join(
-            imageDir,
-            `${width}${path.extname(imageName)}`,
-        );
+        return path.join(imageDir, `${width}${path.extname(imageName)}`);
+    }
 
-        try {
-            await fs.promises.access(localImagePath);
+    static async resizePreloadImage(
+        imageName: string,
+        width: number,
+    ): Promise<any> {
+        if (CONFIG.MEDIAWIKI.USE_LOCAL_IMAGE_CACHE) {
+            const localImagePath = this.getLocalImagePath(imageName, width);
 
-            return;
-        } catch (err) {
-            // continue
+            try {
+                await fs.promises.access(localImagePath);
+
+                return;
+            } catch (err) {
+                // continue
+            }
+
+            await this.fetchRemoteImage(imageName, localImagePath, width);
+        } else {
+            this.preloadSizes[imageName] = Math.max(
+                this.preloadSizes[imageName] ?? 0,
+                width,
+            );
+
+            this.savePreloadSizes();
         }
-
-        await this.fetchRemoteImage(imageName, localImagePath, width);
     }
 }
+
+ImageCacheModel.loadPreloadSizes();
