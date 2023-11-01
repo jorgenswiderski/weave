@@ -94,6 +94,10 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             this,
             MediaWikiTemplateParser.parseTemplate(this.page, config),
         );
+
+        if (this.classes && this.classes.length > 0) {
+            this.markUsed();
+        }
     }
 
     toJSON(): Partial<ISpell> {
