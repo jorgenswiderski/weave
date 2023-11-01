@@ -11,12 +11,12 @@ const ensureDirectoryExistence = async (filePath: string) => {
     await fs.promises.mkdir(dirName, { recursive: true });
 };
 
-class StaticImageCacheServiceSingleton {
+class ImageCacheServiceSingleton {
     private readonly imageCacheDir: string;
     private imagePromises: Array<Promise<void>> = [];
 
     constructor() {
-        this.imageCacheDir = '../netherview/public/media-wiki-assets';
+        this.imageCacheDir = '../netherview/public';
     }
 
     enabled: boolean = false;
@@ -149,4 +149,4 @@ class StaticImageCacheServiceSingleton {
     }
 }
 
-export const StaticImageCacheService = new StaticImageCacheServiceSingleton();
+export const ImageCacheService = new ImageCacheServiceSingleton();

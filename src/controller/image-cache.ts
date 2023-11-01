@@ -16,12 +16,13 @@ export class ImageClassController {
             p?: string;
         };
 
+        const preload: boolean = p === 'pre';
+        const usePreloadSize: boolean = p === 'post';
+
         const width: number | undefined =
-            typeof w === 'string' && !Number.isNaN(Number(w))
+            !usePreloadSize && typeof w === 'string' && !Number.isNaN(Number(w))
                 ? Number(w)
                 : undefined;
-
-        const preload: boolean = typeof p !== 'undefined';
 
         if (CONFIG.IS_DEV && !preload && !width) {
             warn(
@@ -40,22 +41,20 @@ export class ImageClassController {
             const image = await ImageCacheModel.getImage(
                 imageName,
                 width,
-                preload,
+                preload || usePreloadSize,
             );
-
-            if (image.isUnknownSize) {
-                res.setHeader(
-                    'Access-Control-Expose-Headers',
-                    'X-Unknown-Size',
-                );
-
-                res.setHeader('X-Unknown-Size', 'true');
-            }
 
             if ('file' in image) {
                 res.sendFile(image.file);
             } else if ('redirect' in image) {
-                res.redirect(image.redirect);
+                if (preload) {
+                    res.json({
+                        remote: image.redirect,
+                        isUnknownSize: image.isUnknownSize,
+                    });
+                } else {
+                    res.redirect(302, image.redirect);
+                }
             } else {
                 throw new Error();
             }
