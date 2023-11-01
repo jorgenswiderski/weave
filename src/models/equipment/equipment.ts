@@ -6,7 +6,7 @@ import { MwnApiClass } from '../../api/mwn';
 import { MediaWiki } from '../media-wiki';
 import { EquipmentItem } from './equipment-item';
 import { WeaponItem } from './weapon-item';
-import { ImageCacheService } from '../image-cache-service';
+import { StaticImageCacheService } from '../static-image-cache-service';
 
 let itemData: Record<string, EquipmentItem[]> | null = null;
 let itemDataById: Map<number, EquipmentItem> | null = null;
@@ -59,7 +59,8 @@ export async function getEquipmentItemData(
         );
 
         filtered.forEach(
-            (item) => item.image && ImageCacheService.cacheImage(item.image),
+            (item) =>
+                item.image && StaticImageCacheService.cacheImage(item.image),
         );
 
         itemData = filtered.reduce(

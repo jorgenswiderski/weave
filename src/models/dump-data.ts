@@ -13,7 +13,7 @@ import { getEquipmentItemData } from './equipment/equipment';
 import { getSpellDataFiltered } from './action/spell';
 import { getActionDataFiltered } from './action/action';
 import { initActionsAndSpells } from './action/init';
-import { ImageCacheService } from './image-cache-service';
+import { StaticImageCacheService } from './static-image-cache-service';
 
 async function getInfo(data: any[]) {
     return Promise.all(data.map((datum) => datum.getInfo()));
@@ -48,8 +48,8 @@ async function dump() {
             }),
         );
 
-        await ImageCacheService.waitForAllImagesToCache();
-        await ImageCacheService.cleanupCache();
+        await StaticImageCacheService.waitForAllImagesToCache();
+        await StaticImageCacheService.cleanupCache();
 
         log('Data dump complete.');
         process.exit(0);
@@ -60,5 +60,5 @@ async function dump() {
     }
 }
 
-ImageCacheService.enabled = true;
+StaticImageCacheService.enabled = true;
 dump();

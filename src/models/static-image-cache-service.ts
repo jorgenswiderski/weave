@@ -11,7 +11,7 @@ const ensureDirectoryExistence = async (filePath: string) => {
     await fs.promises.mkdir(dirName, { recursive: true });
 };
 
-class ImageCacheServiceSingleton {
+class StaticImageCacheServiceSingleton {
     private readonly imageCacheDir: string;
     private imagePromises: Array<Promise<void>> = [];
 
@@ -149,4 +149,4 @@ class ImageCacheServiceSingleton {
     }
 }
 
-export const ImageCacheService = new ImageCacheServiceSingleton();
+export const StaticImageCacheService = new StaticImageCacheServiceSingleton();

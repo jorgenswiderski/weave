@@ -18,7 +18,7 @@ import {
     MediaWikiTemplateParser,
     MediaWikiTemplateParserConfig,
 } from '../mw-template-parser';
-import { ImageCacheService } from '../image-cache-service';
+import { StaticImageCacheService } from '../static-image-cache-service';
 
 enum ActionLoadState {
     ACTION_BASE_DATA = 'ACTION_BASE_DATA',
@@ -326,7 +326,7 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
 
     markUsed(): void {
         if (this.image) {
-            ImageCacheService.cacheImage(this.image);
+            StaticImageCacheService.cacheImage(this.image);
         }
 
         this.used = true;

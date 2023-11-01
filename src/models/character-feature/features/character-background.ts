@@ -8,7 +8,7 @@ import { MediaWiki } from '../../media-wiki';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeatureTypes } from '../types';
 import { PageNotFoundError } from '../../errors';
-import { ImageCacheService } from '../../image-cache-service';
+import { StaticImageCacheService } from '../../static-image-cache-service';
 
 enum BackgroundLoadingStates {
     ID = 'BACKGROUND_ID',
@@ -32,7 +32,7 @@ export class CharacterBackground extends CharacterFeature {
         this.image = this.getImage() ?? undefined;
 
         if (this.image) {
-            ImageCacheService.cacheImage(this.image);
+            StaticImageCacheService.cacheImage(this.image);
         }
 
         this.initialized[BackgroundLoadingStates.ID] = this.initId();

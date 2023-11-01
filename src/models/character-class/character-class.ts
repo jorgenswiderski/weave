@@ -15,7 +15,7 @@ import {
     CharacterClassProgressionLevel,
     ICharacterClass,
 } from './types';
-import { ImageCacheService } from '../image-cache-service';
+import { StaticImageCacheService } from '../static-image-cache-service';
 import { CharacterFeature } from '../character-feature/character-feature';
 
 async function parseFeatures(
@@ -296,7 +296,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         const image = match[1].trim();
 
         if (image) {
-            ImageCacheService.cacheImage(image);
+            StaticImageCacheService.cacheImage(image);
         }
 
         return image;
