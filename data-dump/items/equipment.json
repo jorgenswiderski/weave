@@ -419,20 +419,6 @@
             "id": 9509
         },
         {
-            "name": "Barnabus' Collar",
-            "image": "Amulet Necklace A Silver A Faded.png",
-            "icon": "Amulet Necklace A Silver A Unfaded Icon.png",
-            "description": "Barnabus' Collar is a common Amulet. It has no enchantments.",
-            "quote": "Necklace the Gnoll Master gave Barnabus when she first met him.",
-            "type": 1,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.11,
-            "effects": [],
-            "proficiency": 0,
-            "id": 25072
-        },
-        {
             "name": "Beastmaster's Chain",
             "image": "Amulet Necklace D Bronze A Faded.png",
             "icon": "Amulet Necklace D Bronze A Unfaded Icon.png",
@@ -482,20 +468,6 @@
             "id": 4265
         },
         {
-            "name": "Bronze Necklace",
-            "image": "Amulet Necklace B Bronze A Faded.png",
-            "icon": "Amulet Necklace B Bronze A Unfaded Icon.png",
-            "description": "A Bronze Necklace is a common Amulet that's primary purpose is to sell for gold.",
-            "quote": "Though shining brilliantly, this necklace smells distinctively of rust.",
-            "type": 1,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 20,
-            "effects": [],
-            "id": 5661
-        },
-        {
             "name": "Broodmother's Revenge",
             "image": "Amulet Necklace F Bronze A 1 Faded.png",
             "icon": "Amulet Necklace F Bronze A 1 Unfaded Icon.png",
@@ -526,20 +498,6 @@
                 }
             ],
             "id": 3451
-        },
-        {
-            "name": "Burnished Necklace",
-            "image": "Amulet Necklace C Bronze A Faded.png",
-            "icon": "Amulet Necklace C Bronze A Unfaded Icon.png",
-            "description": "Burnished Necklaces are unenchanted Amulets found as random loot.",
-            "quote": "Bright and polished, this necklace was clearly cherished by its previous owner.",
-            "type": 1,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "effects": [],
-            "proficiency": 0,
-            "id": 5893
         },
         {
             "name": "Champion's Chain",
@@ -588,20 +546,6 @@
             ],
             "proficiency": 0,
             "id": 12900
-        },
-        {
-            "name": "Dog Collar",
-            "image": "Dog Collar Icon.png",
-            "icon": "Dog Collar Unfaded Icon.png",
-            "description": "Dog Collar is a common Amulet. Primarily of use for barter or sale to Traders.",
-            "quote": "An old, leather collar for a large dog. The name 'Myrna' is engraved on the tag, surrounded by a plethora of indecipherable runes.",
-            "type": 1,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 20,
-            "effects": [],
-            "id": 9037
         },
         {
             "name": "Envoy's Amulet",
@@ -688,20 +632,6 @@
             ],
             "proficiency": 0,
             "id": 10284
-        },
-        {
-            "name": "Gold Necklace",
-            "image": "Amulet Necklace B Gold A Faded.png",
-            "icon": "Amulet Necklace B Gold A Unfaded Icon.png",
-            "description": "A Gold Necklace is a common Amulet. Primarily of use for barter or sale to Traders.",
-            "quote": "Tiny, ageless flower petals fill the amber stones of this necklace.",
-            "type": 1,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 35,
-            "effects": [],
-            "id": 8349
         },
         {
             "name": "Hammergrim Mist Amulet",
@@ -1034,34 +964,6 @@
             "id": 9541
         },
         {
-            "name": "Silver Locket",
-            "image": "Amulet Necklace A Silver A Faded.png",
-            "icon": "Amulet Necklace A Silver A Unfaded Icon.png",
-            "description": "Silver Locket is a common Amulet. It has no enchantments.",
-            "quote": "A finely crafted silver locket, engraved with the words 'For Papa.'",
-            "type": 1,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.11,
-            "effects": [],
-            "proficiency": 0,
-            "id": 6040
-        },
-        {
-            "name": "Silver Necklace",
-            "image": "Amulet Necklace B Silver A Faded.png",
-            "icon": "Amulet Necklace B Silver A Unfaded Icon.png",
-            "description": "A Silver Necklace is a common Amulet that's primary purpose is to sell for gold.",
-            "quote": "Sapphire necklaces are popular among Baldur's Gate's patriars as mourning garb - the heavy teardrop-shaped stones represent the weight of their loss.",
-            "type": 1,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 25,
-            "effects": [],
-            "id": 5655
-        },
-        {
             "name": "Silver Pendant",
             "image": "Silver Pendant Icon.png",
             "icon": "Silver Pendant Unfaded Icon.png",
@@ -1222,18 +1124,6 @@
                 }
             ],
             "id": 3586
-        },
-        {
-            "name": "Tarnished Locket",
-            "description": "Tarnished Locket is a common Amulet without any enchantments.",
-            "quote": "This locket opens to reveal an intricate illustration of a stone tower. The words 'Elturel: Strength in Unity' are inscribed across the top.",
-            "type": 1,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.11,
-            "effects": [],
-            "proficiency": 0,
-            "id": 17298
         },
         {
             "name": "The Amulet of Lost Voices",
@@ -1863,47 +1753,6 @@
             "id": 3589
         },
         {
-            "name": "Githyanki Boots",
-            "image": "Githyanki Boots Icon.png",
-            "quote": "Lavishly decorated boots, crafted on faraway planes from stolen metals and poached rubies.",
-            "type": 2,
-            "rarity": 1,
-            "weightKg": 2,
-            "weightLb": 4.41,
-            "price": 30,
-            "effects": [],
-            "proficiency": 2,
-            "id": 8424
-        },
-        {
-            "name": "Grovetender Boots",
-            "image": "Grovetender Boots Icon.png",
-            "icon": "Grovetender Boots Unfaded Icon.png",
-            "description": "Grovetender Boots are a common pair of Boots.",
-            "quote": "These boots are well-maintained and clean, though their soles are thin from wear.",
-            "type": 2,
-            "rarity": 1,
-            "weightKg": 0.55,
-            "weightLb": 1.1,
-            "price": 15,
-            "effects": [],
-            "id": 8646
-        },
-        {
-            "name": "Hardily Constructed Boots",
-            "image": "Shoes A Faded.png",
-            "icon": "Shoes A Unfaded Icon.png",
-            "description": "Hardily Constructed Boots are a common pair of boots.",
-            "quote": "Made of tough, well-worn leather, these boots have survived years of use, and can survive many more.",
-            "type": 2,
-            "rarity": 1,
-            "weightKg": 0.55,
-            "weightLb": 1.1,
-            "effects": [],
-            "proficiency": 0,
-            "id": 17532
-        },
-        {
             "name": "Helldusk Boots",
             "image": "Helldusk Boots Icon.png",
             "icon": "Helldusk Boots Unfaded Icon.png",
@@ -1955,48 +1804,6 @@
             "id": 8743
         },
         {
-            "name": "Karlach's Boots",
-            "image": "Boots Leather 2 Faded.png",
-            "icon": "Boots Leather 2 Unfaded Icon.png",
-            "description": "Karlach's Boots is the default Camp Clothing for Karlach.",
-            "quote": "Warmed by occasionally wiggling infernal toes.",
-            "type": 2,
-            "rarity": 1,
-            "weightKg": 0.55,
-            "weightLb": 1.1,
-            "effects": [],
-            "proficiency": 0,
-            "id": 16276
-        },
-        {
-            "name": "Leather Boots",
-            "image": "Boots Leather Faded.png",
-            "icon": "Boots Leather Unfaded Icon.png",
-            "description": "Leather Boots are a common pair of Boots.",
-            "quote": "These boots are well-maintained and clean, though their soles are thin from wear.",
-            "type": 2,
-            "rarity": 1,
-            "weightKg": 0.55,
-            "weightLb": 1.1,
-            "price": 15,
-            "effects": [],
-            "id": 3518
-        },
-        {
-            "name": "Leather Boots (Barbarian)",
-            "image": "Shoes Barbarian Faded.png",
-            "icon": "Shoes Barbarian Unfaded Icon.png",
-            "description": "Leather Boots (Barbarian) are a common pair of Boots.",
-            "quote": "Warm, supple boots, made to cross the roughest of terrains with ease.",
-            "type": 2,
-            "rarity": 1,
-            "weightKg": 0.55,
-            "weightLb": 1.1,
-            "price": 5,
-            "effects": [],
-            "id": 3600
-        },
-        {
             "name": "Linebreaker Boots",
             "image": "Linebreaker Boots Icon.png",
             "icon": "Linebreaker Boots Unfaded Icon.png",
@@ -2017,61 +1824,6 @@
             "id": 3626
         },
         {
-            "name": "Lonely Left Boot of Elvenkind",
-            "image": "Shoes E Faded.png",
-            "icon": "Shoes E Unfaded Icon.png",
-            "description": "Lonely Left Boot of Elvenkind are a common pair of Boots.",
-            "quote": "This is the left boot of the famous magical footwear. Unfortunately, useless without its pair.",
-            "type": 2,
-            "rarity": 1,
-            "weightKg": 0.55,
-            "weightLb": 1.1,
-            "price": 5,
-            "effects": [],
-            "id": 19371
-        },
-        {
-            "name": "Metallic Boots",
-            "image": "Boots Metal Faded.png",
-            "icon": "Boots Metal Unfaded Icon.png",
-            "description": "Metallic Boots are a common pair of Boots.",
-            "quote": "Scratched in places, scorched in others, and worn thin at the heel, these boots bear the indelible marks of experience.",
-            "type": 2,
-            "rarity": 1,
-            "weightKg": 2,
-            "weightLb": 4,
-            "price": 200,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Athletics +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Metallic Boots",
-                    "description": "Athletics +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 2,
-            "id": 3578
-        },
-        {
-            "name": "Monastic Boots",
-            "image": "Boots Monk Faded.png",
-            "icon": "Boots Monk Unfaded Icon.png",
-            "description": "Monastic Boots are a common pair of Boots.",
-            "quote": "Made of tough, well-worn leather, these boots have survived years of use, and can survive many more.",
-            "type": 2,
-            "rarity": 1,
-            "weightKg": 0.55,
-            "weightLb": 1.1,
-            "price": 5,
-            "effects": [],
-            "id": 8651
-        },
-        {
             "name": "Mystra's Grace",
             "image": "Boots Leather 1 Faded.png",
             "icon": "Boots Leather 1 Unfaded Icon.png",
@@ -2090,35 +1842,6 @@
                 }
             ],
             "id": 3523
-        },
-        {
-            "name": "Oathbreaker Knights Boots",
-            "image": "Boots Metal F Faded.png",
-            "icon": "Boots Metal F Unfaded Icon.png",
-            "description": "Oathbreaker Knights Boots are a common medium-armor footwear that grants the wearer Athletics +1",
-            "quote": "Scratched in places, scorched in others, and worn thin at the heel, these boots bear the indelible marks of experience.",
-            "type": 2,
-            "rarity": 1,
-            "weightKg": 2,
-            "weightLb": null,
-            "price": 30,
-            "effects": [],
-            "proficiency": 2,
-            "id": 11848
-        },
-        {
-            "name": "Simple Boots",
-            "image": "Shoes Faded.png",
-            "icon": "Shoes Unfaded Icon.png",
-            "description": "Simple Boots are a common pair of Boots.",
-            "quote": "Made of tough, well-worn leather, these boots have survived years of use, and can survive many more.",
-            "type": 2,
-            "rarity": 1,
-            "weightKg": 0.55,
-            "weightLb": 1.1,
-            "price": 5,
-            "effects": [],
-            "id": 3519
         },
         {
             "name": "Slinging Shoes",
@@ -2383,18 +2106,6 @@
         }
     ],
     "3": [
-        {
-            "name": "Cape of the Red Prince",
-            "image": "Cape of the Red Prince Icon.png",
-            "quote": "A noble warrior's cloak, woven in the heart of an ancient empire.",
-            "type": 3,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "effects": [],
-            "proficiency": 0,
-            "id": 10305
-        },
         {
             "name": "Cindermoth Cloak",
             "image": "Cindermoth Cloak Faded.png",
@@ -3796,20 +3507,6 @@
             "id": 10670
         },
         {
-            "name": "Drow Leather Gloves",
-            "image": "Gloves Leather Drow Faded.png",
-            "icon": "Gloves Leather Drow Unfaded Icon.png",
-            "description": "Drow Leather Gloves are a common pair of Gloves worn by the Drow.",
-            "quote": "Fabricated from lizard hides in the depths of the Underdark, these gloves were never meant to see the light of day.",
-            "type": 5,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 20,
-            "effects": [],
-            "id": 3533
-        },
-        {
             "name": "Flawed Helldusk Gloves",
             "image": "Gloves Metal G Faded.png",
             "icon": "Gloves Metal G Unfaded Icon.png",
@@ -4615,20 +4312,6 @@
             "id": 10986
         },
         {
-            "name": "Leather Gloves",
-            "image": "Leather Gloves Icon.png",
-            "icon": "Leather Gloves Unfaded Icon.png",
-            "description": "Leather Gloves are a common pair of Gloves. While coming in varying appearances, these gloves offer no benefits beyond cosmetic appeal or as an item to sell off.",
-            "quote": "These supple gloves provide both flexibility and protection.",
-            "type": 5,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 20,
-            "effects": [],
-            "id": 3520
-        },
-        {
             "name": "Legacy of the Masters",
             "image": "Gloves Metal C Faded.png",
             "icon": "Gloves Metal C Unfaded Icon.png",
@@ -4711,33 +4394,6 @@
             ],
             "proficiency": 0,
             "id": 11803
-        },
-        {
-            "name": "Metallic Gloves",
-            "image": "Gloves Metal Icon.png",
-            "icon": "Gloves Metal Unfaded Icon.png",
-            "description": "Metallic Gloves are a common pair of Gloves.",
-            "quote": "Made from steel hammered thin, these gauntlets are a fine investment for any warrior.",
-            "type": 5,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 40,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Strength Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Metallic Gloves",
-                    "description": "Strength Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 2,
-            "id": 3532
         },
         {
             "name": "Netherstone-Studded Gauntlet",
@@ -5718,32 +5374,6 @@
     ],
     "7": [
         {
-            "name": "Adjustable Steel Helm",
-            "image": "Metal Helmet B 2 Faded.png",
-            "icon": "",
-            "quote": "Grated and fixable, so the wearer might gulp cool air during a fight.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 1,
-            "weightLb": 2,
-            "price": 40,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Adjustable Steel Helm",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 2,
-            "id": 24733
-        },
-        {
             "name": "Assassin of Bhaal Cowl",
             "image": "Assassin of Bhaal Cowl Icon.png",
             "icon": "Assassin of Bhaal Cowl Unfaded Icon.png",
@@ -5768,20 +5398,6 @@
             ],
             "proficiency": 0,
             "id": 11953
-        },
-        {
-            "name": "Bicorne of the Sea Beast",
-            "image": "Bicorne_of_the_Sea_Beast_Item.png",
-            "icon": "Bicorne_of_the_Sea_Beast_Item_Icon.png",
-            "quote": "A battered two-point hat that's seen the wear and tear of rebellion.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 1,
-            "effects": [],
-            "proficiency": 0,
-            "id": 20300
         },
         {
             "name": "Birthright",
@@ -5844,20 +5460,6 @@
                 }
             ],
             "id": 8555
-        },
-        {
-            "name": "Brimmed Hat",
-            "image": "Wizard Hat Icon.png",
-            "icon": "Wizard Hat Unfaded Icon.png",
-            "description": "Brimmed Hat is a common Non-Armour Headwear.",
-            "quote": "This wizardly hat has a little embroidered rabbit inside its lining - the rabbit is called snowball, and once he was lost, never to be found.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 5,
-            "effects": [],
-            "id": 7910
         },
         {
             "name": "Browbeaten Circlet",
@@ -5939,20 +5541,6 @@
                 }
             ],
             "id": 10680
-        },
-        {
-            "name": "Circlet",
-            "image": "Circlet Icon.png",
-            "icon": "Circlet Unfaded Icon.png",
-            "description": "The Circlet is a common Circlet.",
-            "quote": "Provides its wearer a touch of elegance but no additional protection.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 15,
-            "effects": [],
-            "id": 3511
         },
         {
             "name": "Circlet of Blasting",
@@ -6113,32 +5701,6 @@
             "id": 9751
         },
         {
-            "name": "Cracked Helm of Shar",
-            "image": "Cracked Helm of Shar Faded.png",
-            "icon": "",
-            "description": "Cracked Helm of Shar is a common Helmet that improves the wearer's Constitution Saving Throws.",
-            "quote": "Battered by age and use, this once-fine helmet feels like a ghost of a bygone time.",
-            "type": 7,
-            "weightKg": 1,
-            "weightLb": 2,
-            "price": 40,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Cracked Helm of Shar",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 2,
-            "id": 24747
-        },
-        {
             "name": "Dark Justiciar Helm",
             "image": "Dark Justiciar Helm Icon.png",
             "icon": "Dark Justiciar Helm Unfaded Icon.png",
@@ -6235,26 +5797,6 @@
             "id": 3947
         },
         {
-            "name": "Devilfoil Mask",
-            "image": "Devilfoil Mask Icon.png",
-            "icon": "Devilfoil Mask Unfaded Icon.png",
-            "description": "A Devilfoil Mask is a common Helmet worn by Merregons that increases the wearer's Strength by 1 and decreases the wearer's Intelligence, Wisdom, and Charisma by 1 per nearby mask. \n\nWhen first picked up, the character who did so will make a Skill Check at a DC 10 to identify it as a mask for a Merregon.",
-            "quote": "Beneath a layer of dust, the mask still gleams. An innocent smile and wide, searching eyes - seeking its own kind.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 50,
-            "effects": [
-                {
-                    "name": "Infernal Legion",
-                    "description": "Grants the Infernal Legion condition while worn.",
-                    "type": 2
-                }
-            ],
-            "id": 3591
-        },
-        {
             "name": "Diadem of Arcane Synergy",
             "image": "Diadem of Arcane Synergy Icon.png",
             "icon": "Diadem of Arcane Synergy Unfaded Icon.png",
@@ -6275,32 +5817,6 @@
             "id": 8739
         },
         {
-            "name": "Fierce Golden Helm",
-            "image": "Metal Helmet Icon.png",
-            "icon": "",
-            "quote": "Aureate twists in the metal give a sheen like polluted sunlight.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 1,
-            "weightLb": 2,
-            "price": 40,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Fierce Golden Helm",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 2,
-            "id": 24735
-        },
-        {
             "name": "Fistbreaker Helm",
             "image": "Fistbreaker Helm Icon.png",
             "icon": "Fistbreaker Helm Unfaded Icon.png",
@@ -6319,33 +5835,6 @@
                 }
             ],
             "id": 8842
-        },
-        {
-            "name": "Flaming Fist Helmet",
-            "image": "Flaming Fist Helmet Icon.png",
-            "icon": "Flaming Fist Helmet Unfaded Icon.png",
-            "description": "A Flaming Fist Helmet is a common Helmet.",
-            "quote": "The brutish thuggery of the Enforcer's position is summarized in this helmet's design.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 1,
-            "weightLb": 2,
-            "price": 40,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Flaming Fist Helmet",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 2,
-            "id": 9103
         },
         {
             "name": "Flawed Helldusk Helmet",
@@ -6378,59 +5867,6 @@
             ],
             "proficiency": 2,
             "id": 9403
-        },
-        {
-            "name": "Frayed Drow Hood",
-            "image": "Frayed Drow Hood Icon.png",
-            "icon": "Frayed Drow Hood Unfaded Icon.png",
-            "description": "A Frayed Drow Hood is a common Helmet.",
-            "quote": "A supple leather cowl. Its spiderweb embroidery is stained, and pieces of leather and thread are slowly disintegrating.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 25,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Dexterity Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Frayed Drow Hood",
-                    "description": "Dexterity Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 1,
-            "id": 3517
-        },
-        {
-            "name": "Goldgloss Heraldic Helm",
-            "image": "Metal Helmet 1 Faded.png",
-            "icon": "",
-            "quote": "Hard as golden dragonscales.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 1,
-            "weightLb": 2,
-            "price": 40,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Goldgloss Heraldic Helm",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 2,
-            "id": 24731
         },
         {
             "name": "Grymskull Helm",
@@ -6629,33 +6065,6 @@
             ],
             "proficiency": 2,
             "id": 10321
-        },
-        {
-            "name": "Helmet",
-            "image": "Metal Helmet Icon.png",
-            "icon": "Metal Helmet Unfaded Icon.png",
-            "description": "A Helmet is a common Helmet.",
-            "quote": "Any padding that once lined this helmet has long since worn away.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 1,
-            "weightLb": 2,
-            "price": 40,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Helmet",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 2,
-            "id": 3515
         },
         {
             "name": "Helmet of Arcane Acuity",
@@ -6860,20 +6269,6 @@
             "id": 10578
         },
         {
-            "name": "Ignoble Hat",
-            "image": "Ignoble Hat Icon.png",
-            "icon": "Ignoble Hat Unfaded Icon.png",
-            "description": "Ignoble Hat is a common Non-Armour Headwear.",
-            "quote": "Foppish and fluffy and built for just the right sort of dome accustomed to having it set upon the head by other people.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "effects": [],
-            "proficiency": 0,
-            "id": 9330
-        },
-        {
             "name": "Jannath's Hat",
             "image": "Jannath's Hat Icon.png",
             "description": "Jannath's Hat is a very rare headwear that gives advantage to persuasion and deception checks.",
@@ -6938,33 +6333,6 @@
             "id": 3949
         },
         {
-            "name": "Leather Helmet",
-            "image": "Leather Helmet Icon.png",
-            "icon": "Leather Helmet Item Icon.png",
-            "description": "A Leather Helmet is a common Helmet.",
-            "quote": "Layers of leather were boiled and moulded to create this rugged cap. It still smells a bit of tannins.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 25,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Dexterity Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Leather Helmet",
-                    "description": "Dexterity Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 1,
-            "id": 3516
-        },
-        {
             "name": "Marksmanship Hat",
             "image": "Marksmanship Hat Icon.png",
             "description": "Marksmanship Hat is an uncommon hat that grants its wearer a bonus to attack rolls.",
@@ -7015,20 +6383,6 @@
             "id": 8778
         },
         {
-            "name": "Old Floppy Hat",
-            "image": "Old Floppy Hat Faded.png",
-            "icon": "Old Floppy Hat Unfaded Icon.png",
-            "description": "Old Floppy Hat is a common Non-Armour Headwear.",
-            "quote": "Whacked around more often than a clown in a tragedy.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "effects": [],
-            "proficiency": 0,
-            "id": 13415
-        },
-        {
             "name": "Pyroquickness Hat",
             "image": "Pyroquickness Hat Icon.png",
             "icon": "Pyroquickness Hat Unfaded Icon.png",
@@ -7041,46 +6395,6 @@
             "price": 160,
             "effects": [],
             "id": 13431
-        },
-        {
-            "name": "Regal Helm",
-            "image": "Metal Helmet F Faded.png",
-            "icon": "",
-            "quote": "As royal as taxation.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 1,
-            "weightLb": 2,
-            "price": 40,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Regal Helm",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 2,
-            "id": 24726
-        },
-        {
-            "name": "Rufflesome Blaggart Hat",
-            "image": "Rufflesome Blaggart Hat Faded.png",
-            "icon": "Rufflesome Blaggart Hat Unfaded Icon.png",
-            "description": "Rufflesome Blaggart Hat is a common Non-Armour Headwear.",
-            "quote": "For the discerning ranonteur, spinning of stories, and peacockish personality.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "effects": [],
-            "proficiency": 0,
-            "id": 11640
         },
         {
             "name": "Sarevok's Horned Helmet",
@@ -7231,32 +6545,6 @@
             "id": 8155
         },
         {
-            "name": "Triumphal Helm",
-            "image": "Metal Helmet Icon.png",
-            "icon": "",
-            "quote": "Worn ceremonially by commanders and general at the head of parades.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 1,
-            "weightLb": 2,
-            "price": 40,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Triumphal Helm",
-                    "description": "Constitution Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "proficiency": 2,
-            "id": 24734
-        },
-        {
             "name": "Wapira's Crown",
             "image": "Wapiras Crown Icon.png",
             "icon": "Wapiras Crown Unfaded Icon.png",
@@ -7301,61 +6589,6 @@
                 }
             ],
             "id": 3525
-        },
-        {
-            "name": "Whispering Mask",
-            "image": "Whispering Mask Icon.png",
-            "icon": "Whispering Mask Unfaded Icon.png",
-            "description": "Whispering Mask is a common Helmet with connections to Auntie Ethel. SpoilerWarning",
-            "quote": "Soft, unintelligible whispers seep from the dark wood, ringing in your ears and resounding in your skull.",
-            "type": 7,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 1,
-            "effects": [
-                {
-                    "name": "Uncanny Sight",
-                    "description": "Can see objects hidden to the unaided eye.",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "size=25|Part of the Flock Passive Icon|Part of the Flock (Passive Feature)|Part of the Flock: Auntie Ethel welcomes you, dearie.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "While Auntie Ethel is alive, the wearer of this mask must make a WIS every turn. If failed, they become a Hag's Pawn (controlled by Auntie Ethel).",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "The negative effects of this mask can be prevented by casting Protection from Evil and Good before equipping the mask (note: seems not to work as of hotfix 5).",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "If Auntie Ethel is dead, the mask can be worn with no ill effects.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "This allows you to pass through the locked vine door in the -351|581}}, behind which lies an alternative entrance to the [[Underdark.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Whispering Mask",
-                    "description": "size=25|Part of the Flock Passive Icon|Part of the Flock (Passive Feature)|Part of the Flock: Auntie Ethel welcomes you, dearie.\nWhile Auntie Ethel is alive, the wearer of this mask must make a WIS every turn. If failed, they become a Hag's Pawn (controlled by Auntie Ethel).\nThe negative effects of this mask can be prevented by casting Protection from Evil and Good before equipping the mask (note: seems not to work as of hotfix 5).\nIf Auntie Ethel is dead, the mask can be worn with no ill effects.\nThis allows you to pass through the locked vine door in the -351|581}}, behind which lies an alternative entrance to the [[Underdark.",
-                    "type": 2
-                }
-            ],
-            "id": 3950
         }
     ],
     "8": [
@@ -8815,21 +8048,6 @@
     ],
     "10": [
         {
-            "name": "'Magic' Ring",
-            "image": "Ring A Simple Gold Faded.png",
-            "icon": "Ring A Simple Gold Unfaded Icon.png",
-            "description": "'Magic' Ring is a common Ring which can be sold or bartered with.",
-            "quote": "The runes encircling this ring appear to have been scratched into the metal with a rock.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 3,
-            "effects": [],
-            "proficiency": 0,
-            "id": 18514
-        },
-        {
             "name": "After Death Do Us Part",
             "image": "Partner Ring B Faded.png",
             "icon": "Partner Ring B Unfaded Icon.png",
@@ -8844,20 +8062,6 @@
             "effects": [],
             "proficiency": 0,
             "id": 21578
-        },
-        {
-            "name": "Amethyst Ring",
-            "image": "Ring D Gold A Faded.png",
-            "icon": "Ring D Gold A Unfaded Icon.png",
-            "description": "An Amethyst Ring is a common type of Ring. Primarily of use for bartering or sale to Traders.",
-            "quote": "An unusual piece, this gold-studded amethyst caused a stir at the Wide plaza in Baldur's Gate",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 20,
-            "effects": [],
-            "id": 5657
         },
         {
             "name": "Band of the Mystic Scoundrel",
@@ -8903,20 +8107,6 @@
             "id": 3614
         },
         {
-            "name": "Bronze Ring",
-            "image": "Ring D Faded.png",
-            "icon": "Ring D Unfaded Icon.png",
-            "description": "A Bronze Ring describes a variety of common Ring, primarily of value for use in trading or bartering with vendors.",
-            "quote": "A purple gemstone set in bronze, this ring has been crafted by a steady and practised hand.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 14,
-            "effects": [],
-            "id": 8001
-        },
-        {
             "name": "Burnished Ring",
             "image": "Ring A Gem A Gold 1 Faded.png",
             "icon": "Ring A Gem A Gold 1 Unfaded Icon.png",
@@ -8960,20 +8150,6 @@
             "id": 10406
         },
         {
-            "name": "Carnelian Ring",
-            "image": "Ring C Faded.png",
-            "icon": "Ring C Unfaded Icon.png",
-            "description": "An Carnelian Ring is a common Ring. Primarily of use for bartering or sale to Traders.",
-            "quote": "Considered a token of good fortune, this ring's stones are perfectly smooth.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 14,
-            "effects": [],
-            "id": 7995
-        },
-        {
             "name": "Caustic Band",
             "image": "Ring F Silver A 1 Faded.png",
             "icon": "Ring F Silver A 1 Unfaded Icon.png",
@@ -8994,21 +8170,6 @@
             ],
             "proficiency": 0,
             "id": 6889
-        },
-        {
-            "name": "Copper Band",
-            "image": "Ring G Faded.png",
-            "icon": "Ring G Unfaded Icon.png",
-            "description": "A Copper Band is a common type of Ring. Primarily of use for bartering or sale to Traders.",
-            "quote": "This chunky copper ring is embedded with dark green stones.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 14,
-            "effects": [],
-            "proficiency": 0,
-            "id": 5872
         },
         {
             "name": "Coruscation Ring",
@@ -9081,21 +8242,6 @@
             "id": 11509
         },
         {
-            "name": "Dark Ring",
-            "image": "Ring I Faded.png",
-            "icon": "Ring I Unfaded Icon.png",
-            "description": "A Dark Ring is a common type of ring. Primarily of use for bartering or sale to Traders. \n}}\n{{EquipmentPage",
-            "quote": "With a sharpened gemstone at its centre, this ring is capable of cutting the very flesh it decorates.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 14,
-            "effects": [],
-            "proficiency": 0,
-            "id": 8000
-        },
-        {
             "name": "Djinni Ring",
             "image": "Ring D 1 Faded.png",
             "icon": "Ring D 1 Unfaded Icon.png",
@@ -9116,34 +8262,6 @@
             ],
             "proficiency": 0,
             "id": 11380
-        },
-        {
-            "name": "Dowry Ring",
-            "image": "Ring A Simple Gold Faded.png",
-            "icon": "Ring A Simple Gold Unfaded Icon.png",
-            "description": "A Dowry Ring is a common type of Ring. It can be sold or bartered with, but it is better used to complete a related Quest.",
-            "quote": "A simple gold ring with a simple inscription: 'From Miri and Benryn'.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 20,
-            "effects": [],
-            "id": 9000
-        },
-        {
-            "name": "Emerald Ring",
-            "image": "Ring B Faded.png",
-            "icon": "Ring B Unfaded Icon.png",
-            "description": "An Emerald Ring is a common type of Ring. Primarily of use for barter or sale to Traders.",
-            "quote": "Imported in bulk from Calimshan, the gemstone set in this ring is roughly finished and marred with visible flaws.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 14,
-            "effects": [],
-            "id": 5658
         },
         {
             "name": "Eversight Ring",
@@ -9276,49 +8394,6 @@
             "id": 10880
         },
         {
-            "name": "Garnet Ring",
-            "image": "Ring H Faded.png",
-            "icon": "Ring H Unfaded Icon.png",
-            "description": "A Garnet Ring is a common type of Ring. Primarily of use for barter or sale to Traders.",
-            "quote": "The garnet at the centerpiece of this ring is like an unblinking, malevolent eye.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 20,
-            "effects": [],
-            "id": 5659
-        },
-        {
-            "name": "Gold Band",
-            "image": "Ring G Gold A Faded.png",
-            "icon": "Ring G Gold A Unfaded Icon.png",
-            "description": "A Gold Band is a common type of Ring. Primarily of use for bartering or sale to Traders.",
-            "quote": "A weighted gold ring embellished with emeralds of varying sizes. Simple, but elegant.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 20,
-            "effects": [],
-            "proficiency": 0,
-            "id": 8465
-        },
-        {
-            "name": "Gold Ring",
-            "image": "Ring C Gold A Faded.png",
-            "icon": "Ring C Gold A Unfaded Icon.png",
-            "description": "A Gold Ring is a common type of Ring. Primarily of use for barter or sale to Traders.",
-            "quote": "A mythical creature, depicted in full flight, has been delicately carved into this ring.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 20,
-            "effects": [],
-            "id": 7994
-        },
-        {
             "name": "Guiding Light",
             "image": "Ring D Gold A 1 Faded.png",
             "icon": "Ring D Gold A 1 Unfaded Icon.png",
@@ -9416,21 +8491,6 @@
             "id": 3556
         },
         {
-            "name": "Onyx Ring",
-            "image": "Ring I Silver A Faded.png",
-            "icon": "Ring I Silver A Unfaded Icon.png",
-            "description": "An Onyx Ring is a common type of Ring. Primarily of use for barter or sale to Traders.",
-            "quote": "This silver band is inlaid with onyx and tempered to a sharpened point. Beautiful, but dangerous.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 18,
-            "effects": [],
-            "proficiency": 0,
-            "id": 5660
-        },
-        {
             "name": "Orphic Ring",
             "image": "Ring B Gem B Gold 1 Faded.png",
             "icon": "Ring B Gem B Gold 1 Unfaded Icon.png",
@@ -9452,20 +8512,6 @@
             "id": 12863
         },
         {
-            "name": "Peridot Ring",
-            "image": "Ring B Silver A Faded.png",
-            "icon": "Ring B Silver A Unfaded Icon.png",
-            "description": "A Peridot Ring is a common type of Ring. Primarily of use for bartering or sale to Traders.",
-            "quote": "Considered sacred by some gnomes and halflings, the gem set in this ring sparkles brilliantly.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "effects": [],
-            "proficiency": 0,
-            "id": 8466
-        },
-        {
             "name": "Poisoner's Ring",
             "image": "Ring G Gold A 1 Faded.png",
             "icon": "Ring G Gold A 1 Unfaded Icon.png",
@@ -9485,20 +8531,6 @@
                 }
             ],
             "id": 14937
-        },
-        {
-            "name": "Polished Ring",
-            "image": "Ring E Silver A Faded.png",
-            "icon": "Ring E Silver A Unfaded Icon.png",
-            "description": "A Polished Ring is a common type of Ring. Primarily of use for bartering or sale to Traders.",
-            "quote": "Each purple gemstone set in this thin silver band has been polished until it gleams.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "effects": [],
-            "proficiency": 0,
-            "id": 8467
         },
         {
             "name": "Ring of Absolute Force",
@@ -9551,20 +8583,6 @@
                 }
             ],
             "id": 8721
-        },
-        {
-            "name": "Ring of Being Really Invisible",
-            "image": "Ring A Simple Gold Faded.png",
-            "description": "An Ring of Being Really Invisible is a common type of Ring. Primarily of use for bartering or sale to Traders.",
-            "quote": "This ring is missing its gem - or perhaps it's just very invisible.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 2,
-            "effects": [],
-            "proficiency": 0,
-            "id": 9290
         },
         {
             "name": "Ring of Blink",
@@ -10100,20 +9118,6 @@
             "id": 8849
         },
         {
-            "name": "Ruby Ring",
-            "image": "Ring C Silver A Faded.png",
-            "icon": "Ring C Silver A Unfaded Icon.png",
-            "description": "A Ruby Ring is a common Ring. Primarily of use for bartering or sale to Traders.",
-            "quote": "The setting around the ruby is chipped and scratched, as if somebody had tried to lever the gem free.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 18,
-            "effects": [],
-            "id": 8352
-        },
-        {
             "name": "Seemingly Gleaming Ring",
             "image": "Ring H Gold A 1 Faded.png",
             "icon": "Ring H Gold A 1 Unfaded Icon.png",
@@ -10214,20 +9218,6 @@
                 }
             ],
             "id": 7914
-        },
-        {
-            "name": "Silver Band",
-            "image": "Ring G Silver A Faded.png",
-            "icon": "Ring G Silver A Unfaded Icon.png",
-            "description": "A Silver Band is a common type of Ring. Primarily of use for bartering or sale to Traders.",
-            "quote": "Calishite emeralds are embedded in this heavy silver ring.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "effects": [],
-            "proficiency": 0,
-            "id": 8469
         },
         {
             "name": "Smuggler's Ring",
@@ -10454,21 +9444,6 @@
             "id": 12867
         },
         {
-            "name": "Tourmaline Ring",
-            "image": "Ring F Silver A Faded.png",
-            "icon": "Ring F Silver A Unfaded Icon.png",
-            "description": "A Tourmaline Ring is a common type of Ring. Primarily of use for bartering or sale to Traders.",
-            "quote": "A slim-fitting silver band, decorated with a mint green gemstone.",
-            "type": 10,
-            "rarity": 1,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 18,
-            "effects": [],
-            "proficiency": 0,
-            "id": 8471
-        },
-        {
             "name": "True Love's Caress",
             "image": "Ring B 1 Faded.png",
             "icon": "Ring B 1 Unfaded Icon.png",
@@ -10616,21 +9591,6 @@
             "id": 13
         },
         {
-            "name": "Fossilised Shell",
-            "image": "Fossilised Shell Icon.png",
-            "icon": "Fossilised Shell Unfaded Icon.png",
-            "description": "The Fossilised Shell is a common Shield worn by the primitive Kuo-toa of the Underdark.",
-            "quote": "Sticky, rope-like seaweed is wrapped around this oversized shell, allowing it to be fashioned as a shield.",
-            "type": 11,
-            "rarity": 1,
-            "weightKg": 2.7,
-            "weightLb": 5.4,
-            "price": 6,
-            "effects": [],
-            "proficiency": 4,
-            "id": 8107
-        },
-        {
             "name": "Gloomstrand Shield",
             "image": "Safeguard Shield Icon.png",
             "icon": "Safeguard Shield Unfaded Icon.png",
@@ -10768,38 +9728,6 @@
             "id": 12174
         },
         {
-            "name": "Metal Shield",
-            "image": "Metal Shield Flaming Fist Icon.png",
-            "icon": "Metal Shield Flaming Fist Unfaded Icon.png",
-            "description": "The Metal Shield is a common Shield emblazoned with the symbol of the Flaming Fist mercenaries.",
-            "quote": "Though the metal is only of moderate quality, a proud, flaming fist decorates the front of this shield.",
-            "type": 11,
-            "rarity": 1,
-            "weightKg": 2.7,
-            "weightLb": 5.4,
-            "price": 50,
-            "effects": [],
-            "proficiency": 4,
-            "bonusArmorClass": 2,
-            "id": 3506
-        },
-        {
-            "name": "Organic Shield",
-            "image": "Wood Woad Shield Icon.png",
-            "icon": "Wood Woad Shield Unfaded Icon.png",
-            "description": "An Organic Shield is a common Shield.",
-            "quote": "These three small stumps make for a peculiar but effective shield.",
-            "type": 11,
-            "rarity": 1,
-            "weightKg": 2.7,
-            "weightLb": 5.4,
-            "price": 50,
-            "effects": [],
-            "proficiency": 4,
-            "bonusArmorClass": 2,
-            "id": 3677
-        },
-        {
             "name": "Safeguard Shield",
             "image": "Safeguard Shield Icon.png",
             "icon": "Safeguard Shield Unfaded Icon.png",
@@ -10814,21 +9742,6 @@
             "proficiency": 4,
             "bonusArmorClass": 2,
             "id": 7854
-        },
-        {
-            "name": "Scrapwood Shield",
-            "image": "Scrapwood Shield Icon.png",
-            "description": "A Scrapwood Shield is a common Shield used by Goblins.",
-            "quote": "A hand-like symbol is artlessly painted on the front of this wood shield.",
-            "type": 11,
-            "rarity": 1,
-            "weightKg": 2.7,
-            "weightLb": 5.4,
-            "price": 15,
-            "effects": [],
-            "proficiency": 4,
-            "bonusArmorClass": 2,
-            "id": 3587
         },
         {
             "name": "Sentinel Shield",
@@ -10967,22 +9880,6 @@
             "id": 11813
         },
         {
-            "name": "Studded Shield",
-            "image": "Studded Shield Icon.png",
-            "icon": "Studded Shield Unfaded Icon.png",
-            "description": "A Studded Shield is a common Shield.",
-            "quote": "The side of this shield has a slightly lighter colour - as if part of it was cut away and replaced.",
-            "type": 11,
-            "rarity": 1,
-            "weightKg": 2.7,
-            "weightLb": 5.4,
-            "price": 15,
-            "effects": [],
-            "proficiency": 4,
-            "bonusArmorClass": 2,
-            "id": 3505
-        },
-        {
             "name": "Swires' Sledboard",
             "image": "Swires sledboard.png",
             "icon": "Swires sledboard Unfaded Icon.png",
@@ -11030,22 +9927,6 @@
             "proficiency": 4,
             "bonusArmorClass": 2,
             "id": 2397
-        },
-        {
-            "name": "Training Shield",
-            "image": "Training Shield Icon.png",
-            "icon": "Training Shield Unfaded Icon.png",
-            "description": "The Training Shield is a common Shield that is reserved for practice instead of real fighting. Considering it isn't sold anywhere, requires stealing and is inferior to other shields it can be considered little more than junk.",
-            "quote": "A light, wooden shield, full of dents and cuts.",
-            "type": 11,
-            "rarity": 1,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 3,
-            "effects": [],
-            "proficiency": 4,
-            "bonusArmorClass": 1,
-            "id": 8888
         },
         {
             "name": "Viconia's Walking Fortress",
@@ -11115,22 +9996,6 @@
             "proficiency": 4,
             "bonusArmorClass": 2,
             "id": 6869
-        },
-        {
-            "name": "Wooden Shield",
-            "image": "Wooden Shield Icon.png",
-            "icon": "Wooden Shield Unfaded Icon.png",
-            "description": "A Wooden Shield is a common Shield.",
-            "quote": "Despite the chips and the dents, you can still make out the faded painting of a flower on the face of this shield.",
-            "type": 11,
-            "rarity": 1,
-            "weightKg": 2.7,
-            "weightLb": 5.4,
-            "price": 15,
-            "effects": [],
-            "proficiency": 4,
-            "bonusArmorClass": 2,
-            "id": 8654
         }
     ],
     "12": [

@@ -13,6 +13,7 @@ const ensureDirectoryExistence = async (filePath: string) => {
 
 class ImageCacheServiceSingleton {
     private readonly imageCacheDir: string;
+    private imagePromises: Array<Promise<void>> = [];
 
     constructor() {
         this.imageCacheDir = '../netherview/public';
@@ -22,78 +23,128 @@ class ImageCacheServiceSingleton {
     checked: Record<string, true> = {};
 
     public async cacheImage(imageName: string): Promise<void> {
-        try {
-            if (!this.enabled) {
-                return;
-            }
+        const imagePromise = (async () => {
+            try {
+                if (!this.enabled) {
+                    return;
+                }
 
-            if (this.checked[imageName]) {
-                return;
-            }
+                if (this.checked[imageName]) {
+                    return;
+                }
 
-            this.checked[imageName] = true;
+                this.checked[imageName] = true;
 
-            const localImagePath = path.join(
-                this.imageCacheDir,
-                MediaWiki.getImagePath(imageName),
-                imageName,
-            );
+                const localImagePath = path.join(
+                    this.imageCacheDir,
+                    MediaWiki.getImagePath(imageName),
+                    imageName,
+                );
 
-            const oldImagePath = path.join(this.imageCacheDir, imageName);
+                if (fs.existsSync(localImagePath)) {
+                    return;
+                }
 
-            if (fs.existsSync(oldImagePath)) {
+                const remoteUrl =
+                    await MediaWiki.resolveImageRedirect(imageName);
                 await ensureDirectoryExistence(localImagePath);
-                await fs.promises.rename(oldImagePath, localImagePath);
 
-                return;
+                await MwnTokenBucket.acquireNTokens(4);
+
+                const response = await new Promise<http.IncomingMessage>(
+                    (resolve, reject) => {
+                        https
+                            .get(remoteUrl, (res) => {
+                                if (
+                                    res.statusCode &&
+                                    (res.statusCode < 200 ||
+                                        res.statusCode >= 300)
+                                ) {
+                                    reject(
+                                        new Error(
+                                            `Failed to fetch image: Status Code ${res.statusCode}`,
+                                        ),
+                                    );
+                                } else {
+                                    resolve(res);
+                                }
+                            })
+                            .on('error', (err) => {
+                                reject(err);
+                            });
+                    },
+                );
+
+                const writer = fs.createWriteStream(localImagePath);
+                response.pipe(writer);
+
+                await new Promise<void>((resolve, reject) => {
+                    writer.on('finish', resolve);
+
+                    writer.on('error', (err) => {
+                        reject(err);
+                    });
+                });
+
+                log(`Image cached successfully: ${imageName}`);
+            } catch (err) {
+                error(`Failed to cache image: ${imageName}`);
             }
+        })();
 
-            if (fs.existsSync(localImagePath)) {
-                return;
-            }
+        this.imagePromises.push(imagePromise);
 
-            const remoteUrl = await MediaWiki.resolveImageRedirect(imageName);
-            await ensureDirectoryExistence(localImagePath);
+        return imagePromise;
+    }
 
-            await MwnTokenBucket.acquireNTokens(6);
+    public async waitForAllImagesToCache(): Promise<void> {
+        await Promise.all(this.imagePromises);
+    }
 
-            const response = await new Promise<http.IncomingMessage>(
-                (resolve, reject) => {
-                    https
-                        .get(remoteUrl, (res) => {
-                            if (
-                                res.statusCode &&
-                                (res.statusCode < 200 || res.statusCode >= 300)
-                            ) {
-                                reject(
-                                    new Error(
-                                        `Failed to fetch image: Status Code ${res.statusCode}`,
-                                    ),
-                                );
-                            } else {
-                                resolve(res);
-                            }
-                        })
-                        .on('error', (err) => {
-                            reject(err);
-                        });
-                },
+    private async getAllFiles(dir: string): Promise<string[]> {
+        const entries = await fs.promises.readdir(dir, { withFileTypes: true });
+        const files = entries
+            .filter((file) => !file.isDirectory())
+            .map((file) => path.join(dir, file.name));
+
+        const folders = entries.filter((folder) => folder.isDirectory());
+
+        await Promise.all(
+            folders.map(async (folder) => {
+                files.push(
+                    ...(await this.getAllFiles(path.join(dir, folder.name))),
+                );
+            }),
+        );
+
+        return files;
+    }
+
+    public async cleanupCache(): Promise<void> {
+        try {
+            const allFiles = await this.getAllFiles(
+                path.join(this.imageCacheDir, 'media-wiki-assets'),
+            );
+            const filesToDelete = allFiles.filter(
+                (file) => !this.checked[path.basename(file)],
             );
 
-            const writer = fs.createWriteStream(localImagePath);
-            response.pipe(writer);
-
-            await new Promise<void>((resolve, reject) => {
-                writer.on('finish', resolve);
-
-                writer.on('error', (err) => {
-                    reject(err);
-                });
-            });
-
-            log(`Image cached successfully: ${imageName}`);
+            await Promise.all(
+                filesToDelete.map(async (file) => {
+                    try {
+                        await fs.promises.unlink(file);
+                        log(`Image removed from cache: ${path.basename(file)}`);
+                    } catch (err) {
+                        error(
+                            `Failed to remove image from cache: ${path.basename(
+                                file,
+                            )}`,
+                        );
+                    }
+                }),
+            );
         } catch (err) {
-            error(`Failed to cache image: ${imageName}`);
+            error('Failed to cleanup image cache');
         }
     }
 }

@@ -14,8 +14,8 @@ import { error, warn } from '../logger';
 import { MwnApi } from '../../api/mwn';
 import { MediaWiki, PageData } from '../media-wiki';
 import { PageNotFoundError } from '../errors';
-import { getSpellDataById } from '../action/spell';
-import { getActionDataById } from '../action/action';
+import { Spell, getSpellDataById } from '../action/spell';
+import { Action, getActionDataById } from '../action/action';
 import { SpellStub } from '../static-reference/spell-stub';
 import { ActionStub } from '../static-reference/action-stub';
 import { ImageCacheService } from '../image-cache-service';
@@ -105,9 +105,10 @@ export class CharacterFeature
                 if (!spells.has(pageId)) {
                     error(`Could not find spell for ${pageTitle} (${pageId})`);
                 } else {
-                    const spell = spells.get(pageId)! as ISpell;
+                    const spell = spells.get(pageId)! as Spell;
+                    spell.markUsed();
 
-                    return new SpellStub(spell);
+                    return new SpellStub(spell as ISpell);
                 }
             }
 
@@ -117,9 +118,10 @@ export class CharacterFeature
                 if (!actions.has(pageId)) {
                     error(`Could not find action for ${pageTitle} (${pageId})`);
                 } else {
-                    const action = actions.get(pageId)! as IAction;
+                    const action = actions.get(pageId)! as Action;
+                    action.markUsed();
 
-                    return new ActionStub(action);
+                    return new ActionStub(action as IAction);
                 }
             }
         }
