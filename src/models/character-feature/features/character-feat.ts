@@ -15,7 +15,7 @@ import { CharacterFeatureCustomizable } from '../character-feature-customizable'
 import { PageLoadingState } from '../../page-item';
 import { PageNotFoundError } from '../../errors';
 import { CharacterFeature } from '../character-feature';
-import { ImageCacheService } from '../../image-cache-service';
+import { StaticImageCacheService } from '../../static-image-cache-service';
 
 enum SubclassLoadStates {
     CHOICES = 'CHOICES',
@@ -217,7 +217,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                             'PassiveFeature Generic.png';
 
                         if (image) {
-                            ImageCacheService.cacheImage(image);
+                            StaticImageCacheService.cacheImage(image);
                         }
 
                         return {
