@@ -8,6 +8,5 @@ src/cache
 .npmrc
 dist
 docker-compose.yml
-Dockerfile
 newrelic-infra.yml
 newrelic_agent.log
