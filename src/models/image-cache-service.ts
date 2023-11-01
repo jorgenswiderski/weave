@@ -15,7 +15,7 @@ class ImageCacheServiceSingleton {
     private readonly imageCacheDir: string;
 
     constructor() {
-        this.imageCacheDir = 'static-image-cache';
+        this.imageCacheDir = '../netherview/public';
     }
 
     enabled: boolean = false;

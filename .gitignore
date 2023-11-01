@@ -9,6 +9,5 @@ src/cache
 dist
 docker-compose.yml
 Dockerfile
-static-image-cache
 newrelic-infra.yml
 newrelic_agent.log

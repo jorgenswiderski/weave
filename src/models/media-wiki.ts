@@ -1,10 +1,10 @@
 import { ApiParams, ApiRevision } from 'mwn';
 import { Db } from 'mongodb';
 import assert from 'assert';
-import crypto from 'crypto';
 import { MongoCollections, getMongoDb } from './mongo';
 import { CONFIG } from './config';
 import { MwnApi } from '../api/mwn';
+import { Utils } from './utils';
 
 export interface PageData extends ApiRevision {
     title: string;
@@ -154,56 +154,8 @@ export class MediaWiki {
         };
     }
 
-    static getEncodedImageName(imageName: string): string {
-        return imageName.replace(/ /g, '_');
-    }
-
-    static getImagePath(imageName: string): string {
-        const formattedImageName = MediaWiki.getEncodedImageName(imageName);
-        const hash = crypto
-            .createHash('md5')
-            .update(formattedImageName)
-            .digest('hex');
-
-        return `/${hash[0]}/${hash[0]}${hash[1]}`;
-    }
-
-    // static getImagePath = (name: string) => name;
-
-    // static async getSectionNumber(
-    //     pageTitle: string,
-    //     sectionTitle: string,
-    // ): Promise<string | null> {
-    //     const data = await MwnApiClass.parsePageSections(pageTitle, {});
-
-    //     if (!data) {
-    //         return null;
-    //     }
-
-    //     const section = data.find((s: any) => s.line === sectionTitle);
-
-    //     return section?.number ?? null;
-    // }
-
-    // static async getSectionTextByName(
-    //     pageTitle: string,
-    //     sectionTitle: string,
-    // ): Promise<string | null> {
-    //     const sectionNumber = await MediaWiki.getSectionNumber(
-    //         pageTitle,
-    //         sectionTitle,
-    //     );
-
-    //     if (!sectionNumber) {
-    //         throw new Error('could not find section number');
-    //     }
-
-    //     const text = await MediaWiki.getTextExtract(pageTitle, {
-    //         section: sectionNumber,
-    //     });
-
-    //     return text;
-    // }
+    static getImagePath: (imageName: string) => string = (imageName: string) =>
+        Utils.getMediaWikiImagePath(imageName, false);
 
     static async resolveImageRedirect(
         imageName: string,
@@ -232,7 +184,3 @@ export class MediaWiki {
         return page.imageinfo[0]?.thumburl ?? page.imageinfo[0].url;
     }
 }
-
-// (async () => {
-//     log(await MediaWiki.getSectionTextByName('Dragonborn', 'Black Dragonborn'));
-// })();
