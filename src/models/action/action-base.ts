@@ -67,6 +67,8 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
 
     id?: number;
 
+    used: boolean = false;
+
     constructor(pageTitle: string) {
         super({ pageTitle });
 
@@ -265,10 +267,6 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
             this,
             MediaWikiTemplateParser.parseTemplate(this.page, config),
         );
-
-        if (this.image) {
-            ImageCacheService.cacheImage(this.image);
-        }
     }
 
     toJSON(): Partial<IActionBase> {
@@ -324,5 +322,13 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
         });
 
         return result;
+    }
+
+    markUsed(): void {
+        if (this.image) {
+            ImageCacheService.cacheImage(this.image);
+        }
+
+        this.used = true;
     }
 }

@@ -10,8 +10,8 @@ import { getCharacterBackgroundData } from './character-feature/features/charact
 import { getCharacterRaceData } from './character-feature/features/character-race';
 import { getMongoDb } from './mongo';
 import { getEquipmentItemData } from './equipment/equipment';
-import { getSpellData } from './action/spell';
-import { getActionData } from './action/action';
+import { getSpellDataFiltered } from './action/spell';
+import { getActionDataFiltered } from './action/action';
 import { initActionsAndSpells } from './action/init';
 import { ImageCacheService } from './image-cache-service';
 
@@ -28,8 +28,8 @@ async function dump() {
             'classes/info': getInfo(await getCharacterClassData()),
             'races/info': getInfo(await getCharacterRaceData()),
             'backgrounds/info': getInfo(await getCharacterBackgroundData()),
-            'spells/info': getSpellData(),
-            'actions/info': getActionData(),
+            'spells/info': getSpellDataFiltered(),
+            'actions/info': getActionDataFiltered(),
             'items/equipment': getEquipmentItemData(),
         };
 
@@ -47,6 +47,9 @@ async function dump() {
                 log(`Dumped ${routeName} to ${path}.`);
             }),
         );
+
+        await ImageCacheService.waitForAllImagesToCache();
+        await ImageCacheService.cleanupCache();
 
         log('Data dump complete.');
         process.exit(0);

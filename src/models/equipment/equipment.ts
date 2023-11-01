@@ -1,8 +1,12 @@
-import { EquipmentItemType } from '@jorgenswiderski/tomekeeper-shared/dist/types/equipment-item';
+import {
+    EquipmentItemType,
+    ItemRarity,
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/equipment-item';
 import { MwnApiClass } from '../../api/mwn';
 import { MediaWiki } from '../media-wiki';
 import { EquipmentItem } from './equipment-item';
 import { WeaponItem } from './weapon-item';
+import { ImageCacheService } from '../image-cache-service';
 
 let itemData: Record<string, EquipmentItem[]> | null = null;
 let itemDataById: Map<number, EquipmentItem> | null = null;
@@ -47,7 +51,18 @@ export async function getEquipmentItemData(
         ];
         await Promise.all(data.map((item) => item.waitForInitialization()));
 
-        itemData = data.reduce(
+        const filtered = data.filter(
+            (item) =>
+                (item?.rarity && item?.rarity > ItemRarity.common) ||
+                item.baseArmorClass ||
+                item instanceof WeaponItem,
+        );
+
+        filtered.forEach(
+            (item) => item.image && ImageCacheService.cacheImage(item.image),
+        );
+
+        itemData = filtered.reduce(
             (acc, item) => {
                 if (item.type) {
                     if (!acc[item.type]) {
@@ -63,7 +78,7 @@ export async function getEquipmentItemData(
         );
 
         itemDataById = new Map<number, EquipmentItem>();
-        data.forEach((item) => itemDataById!.set(item.id!, item));
+        filtered.forEach((item) => itemDataById!.set(item.id!, item));
     }
 
     if (!types) {

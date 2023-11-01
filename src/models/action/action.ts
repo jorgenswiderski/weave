@@ -122,3 +122,9 @@ export async function getActionDataById() {
 
     return actionDataById!;
 }
+
+export async function getActionDataFiltered(): Promise<Action[]> {
+    const actions = await getActionData();
+
+    return actions.filter((action) => action.used);
+}
