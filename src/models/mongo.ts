@@ -1,4 +1,5 @@
 import { MongoClient } from 'mongodb';
+import { CONFIG } from './config';
 
 let mdb: any;
 
@@ -10,8 +11,8 @@ export enum MongoCollections {
 export async function getMongoDb() {
     if (!mdb) {
         mdb = (async () => {
-            const client = await MongoClient.connect(
-                `mongodb://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_HOST}:${process.env.MONGO_PORT}`,
+            const client = new MongoClient(
+                `mongodb://${CONFIG.MONGO.USERNAME}:${CONFIG.MONGO.PASSWORD}@${CONFIG.MONGO.HOST}:${CONFIG.MONGO.PORT}`,
             );
 
             return client.db('mongodb');
