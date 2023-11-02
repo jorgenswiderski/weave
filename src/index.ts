@@ -19,6 +19,7 @@ import { initActionsAndSpells } from './models/action/init';
 import { apiRouter } from './routes';
 
 async function main() {
+    warn('Weave is starting...');
     new MwnProgressBar().render();
     await initActionsAndSpells();
 
