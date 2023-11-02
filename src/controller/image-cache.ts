@@ -24,7 +24,7 @@ export class ImageClassController {
                 ? Number(w)
                 : undefined;
 
-        if (CONFIG.IS_DEV && !preload && !width) {
+        if (CONFIG.IS_DEV && !preload && !usePreloadSize && !width) {
             warn(
                 `Warning: Serving image '${imageName}' with no specified width.`,
             );

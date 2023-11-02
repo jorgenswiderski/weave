@@ -26,39 +26,51 @@ export class ImageCacheModel {
 
     // Local Cache: Off
     static cachedResponses: { [imageKey: string]: ResponseRedirect } = {};
-    static preloadSizesPath = path.join(
-        this.IMAGE_CACHE_DIR,
-        'preload-sizes.json',
-    );
+
+    static preloadSizesFile = 'preload-sizes.json';
     static preloadSizes: { [imageName: string]: number } = {};
 
-    static async loadPreloadSizes(): Promise<void> {
+    static async loadFileFromCache(
+        fileName: string,
+    ): Promise<Record<string, any>> {
         try {
-            await this.ensureDirectoryExistence(this.preloadSizesPath);
+            const filePath = path.join(this.IMAGE_CACHE_DIR, fileName);
+            await this.ensureDirectoryExistence(filePath);
+            const data = await fs.promises.readFile(filePath, 'utf-8');
 
-            const data = await fs.promises.readFile(
-                this.preloadSizesPath,
-                'utf-8',
-            );
-
-            this.preloadSizes = JSON.parse(data);
+            return JSON.parse(data);
         } catch (err) {
             if ((err as any)?.code === 'ENOENT') {
-                this.preloadSizes = {};
-            } else {
-                throw err;
+                return {};
             }
+
+            throw err;
         }
     }
 
-    private static async savePreloadSizes(): Promise<void> {
+    private static async flushPreloadSizes(): Promise<void> {
         try {
             await writeFileAtomic(
-                this.preloadSizesPath,
+                path.join(this.IMAGE_CACHE_DIR, this.preloadSizesFile),
                 JSON.stringify(this.preloadSizes, null, 4),
             );
         } catch (err) {
-            error('Failed to flush preload sizes');
+            error('Failed to flush preload sizes:');
+            error(err);
+        }
+    }
+
+    static assetMapFile = 'remote-asset-map.json';
+    static assetMap: { [imageKey: string]: string } = {};
+
+    private static async flushAssetMap(): Promise<void> {
+        try {
+            await writeFileAtomic(
+                path.join(this.IMAGE_CACHE_DIR, this.assetMapFile),
+                JSON.stringify(this.assetMap, null, 4),
+            );
+        } catch (err) {
+            error('Failed to flush asset map:');
             error(err);
         }
     }
@@ -100,15 +112,33 @@ export class ImageCacheModel {
         });
     }
 
+    private static async resolveImageRedirect(
+        imageName: string,
+        width?: number,
+    ): Promise<string> {
+        const key = JSON.stringify({ imageName, width });
+
+        if (this.assetMap[key]) {
+            return this.assetMap[key];
+        }
+
+        const remoteUrl = await MediaWiki.resolveImageRedirect(
+            imageName,
+            width,
+        );
+
+        this.assetMap[key] = remoteUrl;
+        this.flushAssetMap();
+
+        return remoteUrl;
+    }
+
     private static async fetchRemoteImage(
         imageName: string,
         localImagePath: string,
         width?: number,
     ) {
-        const remoteUrl = await MediaWiki.resolveImageRedirect(
-            imageName,
-            width,
-        );
+        const remoteUrl = await this.resolveImageRedirect(imageName, width);
 
         await MwnTokenBucket.acquireNTokens(width ? 1 : 3);
         const response = await this.httpsGet(remoteUrl);
@@ -228,12 +258,9 @@ export class ImageCacheModel {
             }
         }
 
-        const remoteUrl = await MediaWiki.resolveImageRedirect(
-            imageName,
-            width,
-        );
-
         if (!CONFIG.MEDIAWIKI.USE_LOCAL_IMAGE_CACHE) {
+            const remoteUrl = await this.resolveImageRedirect(imageName, width);
+
             const result = { isUnknownSize, redirect: remoteUrl };
 
             if (!preload || !isUnknownSize) {
@@ -244,6 +271,7 @@ export class ImageCacheModel {
         }
 
         localImagePath = localImagePath!;
+
         await this.fetchRemoteImage(imageName, localImagePath, width);
 
         return { isUnknownSize, file: localImagePath };
@@ -286,9 +314,17 @@ export class ImageCacheModel {
                 width,
             );
 
-            this.savePreloadSizes();
+            this.flushPreloadSizes();
         }
     }
 }
 
-ImageCacheModel.loadPreloadSizes();
+(async () => {
+    ImageCacheModel.preloadSizes = await ImageCacheModel.loadFileFromCache(
+        ImageCacheModel.preloadSizesFile,
+    );
+
+    ImageCacheModel.assetMap = await ImageCacheModel.loadFileFromCache(
+        ImageCacheModel.assetMapFile,
+    );
+})();
