@@ -70,7 +70,7 @@ jobs:
                       password=${{ secrets.GHP_TOKEN }}
                       EOF
                       git pull origin master
-                      docker-compose down
+                      docker-compose pull mongo
                       docker-compose up --build -d
 
             - name: Rollback
@@ -84,7 +84,7 @@ jobs:
                       set -e
                       cd weave
                       git reset --hard HEAD~1
-                      docker-compose down
+                      docker-compose pull mongo
                       docker-compose up --build -d
 
             - name: Cleanup Docker Environment
