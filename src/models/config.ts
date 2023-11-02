@@ -9,6 +9,10 @@ export const CONFIG = {
             process.env.MWN_MEMOIZATION_DURATION_IN_MILLIS ?? '5000',
             10,
         ),
+        REQUEST_BATCHING_WINDOW_IN_MILLIS: parseInt(
+            process.env.MWN_REQUEST_BATCHING_WINDOW_IN_MILLIS ?? '100',
+            10,
+        ),
     },
     MEDIAWIKI: {
         REVISION_CHECK_THROTTLE_IN_MILLIS: parseInt(
