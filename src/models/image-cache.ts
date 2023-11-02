@@ -6,7 +6,7 @@ import writeFileAtomic from 'write-file-atomic';
 import { MediaWiki } from './media-wiki';
 import { MwnTokenBucket } from '../api/mwn';
 import { CONFIG } from './config';
-import { error, log } from './logger';
+import { error } from './logger';
 
 interface ImageCacheResponse {
     isUnknownSize?: boolean;
@@ -57,8 +57,6 @@ export class ImageCacheModel {
                 this.preloadSizesPath,
                 JSON.stringify(this.preloadSizes, null, 4),
             );
-
-            log('Flushed preload sizes');
         } catch (err) {
             error('Failed to flush preload sizes');
             error(err);
