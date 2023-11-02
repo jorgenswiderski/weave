@@ -90,6 +90,7 @@ export class CharacterFeature
             /\|\s*description\s*=\s*([\s\S]+?)\n\|\s*[\w\s]+=/g.exec(
                 pageContent,
             );
+
         const imageMatch = /\|\s*image\s*=\s*(.+)/.exec(pageContent);
 
         const effectType =

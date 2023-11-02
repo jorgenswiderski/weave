@@ -37,6 +37,7 @@ export class Builds {
 
     private static async countRecentBuildsByUser(ip: string): Promise<number> {
         const collection = await this.getCollection();
+
         const windowStart = new Date(
             Date.now() - CONFIG.BUILDS.RECENCY_WINDOW_IN_MILLIS,
         );
@@ -101,6 +102,7 @@ export class Builds {
         this.checkBuildLength(encodedData, buildVersion);
 
         const collection = await this.getCollection();
+
         const result = await collection.updateOne(
             { id, ip },
             {

@@ -75,6 +75,7 @@ export class CharacterSubclassFeature extends CharacterFeature {
 
         const levelSection =
             /\n===\s*Level\s(\d+)\s*===\s*\n([\s\S]*?)(?=\n===\s*Level|$)/g;
+
         const levelMatches = [...sectionMatch[1].matchAll(levelSection)];
 
         const progression: CharacterProgressionLevel[] = Array.from({
@@ -90,6 +91,7 @@ export class CharacterSubclassFeature extends CharacterFeature {
                 subclassFeatureLevels.push(level);
 
                 const saiPattern = /{{SAI\|([^|}]+?)(?:\|[^}]*?)?}}/g;
+
                 const iconPattern =
                     /{{IconLink\|[^|]+\|([^|}]+?)(?:\|[^}]*?)?}}/g;
 

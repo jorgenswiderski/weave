@@ -29,6 +29,7 @@ export class ClassSubclass extends CharacterFeatureCustomizable {
     static async getSubclassData(className: string): Promise<PageData[]> {
         const allSubclassPages =
             await MwnApiClass.queryTitlesFromCategory('Subclasses');
+
         const allSubclasses = await Promise.all(
             allSubclassPages.map((title) => MediaWiki.getPage(title)),
         );

@@ -11,6 +11,7 @@ const failedRequests: {
 export class ImageClassController {
     static async getImage(req: Request, res: Response): Promise<void> {
         const { imageName } = req.params;
+
         const { w, p } = req.query as {
             w?: string;
             p?: string;

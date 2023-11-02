@@ -120,6 +120,7 @@ function parseBackgroundSections(
 ): { name: string; content: string }[] {
     const regex =
         /\n=\s*([\w\s]+)\s*=\s*\n([\s\S]*?)(?=\n=\s*[\w\s]+\s*=\s*\n|\s*$)/g;
+
     const matches: { name: string; content: string }[] = [];
     let match;
 

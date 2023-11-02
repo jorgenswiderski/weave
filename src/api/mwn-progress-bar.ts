@@ -10,9 +10,11 @@ export class MwnProgressBar {
         setInterval(() => {
             const { tokens, capacity, granted, requested } =
                 MwnTokenBucket.getStatus();
+
             const pending = requested - granted;
 
             MwnTokenBucket.refill();
+
             const msg = `Loading wiki assets | Pending: ${pending} | Bucket: ${Math.floor(
                 tokens,
             )} / ${capacity}`;
