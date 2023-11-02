@@ -10,7 +10,7 @@ dotenv.config();
 import express from 'express';
 import cors from 'cors';
 import { getCharacterClassData } from './models/character-class/character-class';
-import { debug, log, warn } from './models/logger';
+import { log, warn } from './models/logger';
 import { getCharacterRaceData } from './models/character-feature/features/character-race';
 import { getCharacterBackgroundData } from './models/character-feature/features/character-background';
 import { MwnProgressBar } from './api/mwn-progress-bar';
@@ -19,9 +19,9 @@ import { initActionsAndSpells } from './models/action/init';
 import { apiRouter } from './routes';
 
 async function main() {
-    debug('=====================================================');
+    log('=====================================================');
     warn('Weave is starting...');
-    debug('=====================================================');
+    log('=====================================================');
 
     new MwnProgressBar().render();
     await initActionsAndSpells();
@@ -70,10 +70,10 @@ async function main() {
     app.use('/api', apiRouter);
 
     app.listen(PORT, () => {
-        debug('=====================================================');
+        log('=====================================================');
         warn('Weave is ready!');
         log(`Server is running on port ${PORT}`);
-        debug('=====================================================');
+        log('=====================================================');
     });
 }
 
