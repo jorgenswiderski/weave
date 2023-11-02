@@ -13,7 +13,7 @@ export class TokenBucket {
         this.lastFillTime = Date.now();
     }
 
-    private refill(): void {
+    refill(): void {
         const now = Date.now();
         const elapsedTime = (now - this.lastFillTime) / 1000;
 
@@ -52,10 +52,14 @@ export class TokenBucket {
         );
     }
 
-    public getProgress(): { granted: number; total: number } {
-        return {
-            granted: this.totalTokensGranted,
-            total: this.totalTokensRequested,
-        };
+    public getStatus() {
+        const {
+            tokens,
+            capacity,
+            totalTokensGranted: granted,
+            totalTokensRequested: requested,
+        } = this;
+
+        return { tokens, capacity, granted, requested };
     }
 }
