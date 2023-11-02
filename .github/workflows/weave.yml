@@ -101,4 +101,4 @@ jobs:
                       docker image prune -f
                       docker container prune -f
                       docker network prune -f
-                      docker builder prune -f --filter "until=72h"
+                      docker builder prune -f
