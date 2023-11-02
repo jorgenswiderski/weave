@@ -84,7 +84,7 @@ jobs:
                       set -e
                       cd weave
                       git reset --hard HEAD~1
-                      docker-compose pull mongo
+                      docker-compose pull
                       docker-compose up --build -d
 
             - name: Cleanup Docker Environment
