@@ -26,7 +26,7 @@ const bunyan = Bunyan.createLogger({
             }) as any,
         },
         {
-            level: 'error',
+            level: 'warn',
             type: 'raw',
             stream: new RotatingFileStream({
                 path: 'logs/weave-error.log',
