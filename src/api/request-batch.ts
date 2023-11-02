@@ -1,5 +1,6 @@
 import { ApiParams, ApiResponse, Mwn } from 'mwn';
 import { TokenBucket } from '../models/token-bucket';
+import { CONFIG } from '../models/config';
 
 export type ApiParam =
     | string
@@ -18,7 +19,8 @@ export class RequestBatch {
     output?: Promise<ApiResponse>;
     timeout?: NodeJS.Timeout;
 
-    private static batchingInterval: number = 100;
+    private static batchingInterval: number =
+        CONFIG.MWN.REQUEST_BATCHING_WINDOW_IN_MILLIS;
     private resolve?: (value: ApiResponse | PromiseLike<ApiResponse>) => void;
     private inputs: ApiParam[] = [];
 
