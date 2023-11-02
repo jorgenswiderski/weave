@@ -9,7 +9,7 @@ const bot = new Mwn({
     apiUrl: `${CONFIG.MEDIAWIKI.BASE_URL}/api.php`,
 });
 
-export const MwnTokenBucket = new TokenBucket(75, 3);
+export const MwnTokenBucket = new TokenBucket(100, 3);
 
 // shorthand just to reduce boilerplate
 function memoize<T extends (...args: any[]) => Promise<any>>(fn: T): T {

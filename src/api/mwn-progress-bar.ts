@@ -13,7 +13,7 @@ export class MwnProgressBar {
             const pending = requested - granted;
 
             MwnTokenBucket.refill();
-            const msg = `Loading wiki assets... Pending: ${pending} | Bucket: ${Math.floor(
+            const msg = `Loading wiki assets | Pending: ${pending} | Bucket: ${Math.floor(
                 tokens,
             )} / ${capacity}`;
 
@@ -22,7 +22,7 @@ export class MwnProgressBar {
             }
 
             if (pending > 0 || this.filling) {
-                if (this.eventCount % 10 === 0) {
+                if (this.eventCount % 5 === 0) {
                     log(msg);
 
                     if (capacity === tokens) {
@@ -34,6 +34,6 @@ export class MwnProgressBar {
             }
 
             this.eventCount += 1;
-        }, 500);
+        }, 1000);
     }
 }
