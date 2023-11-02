@@ -6,15 +6,13 @@ WORKDIR /usr/src/app
 # Install app dependencies
 COPY package*.json ./
 
-ARG GHP_TOKEN
-ENV GHP_TOKEN=$GHP_TOKEN
-RUN npm run preinstall
-
-RUN npm install
-
 # Bundle app source
 COPY . .
 
+ARG GHP_TOKEN
+ENV GHP_TOKEN=$GHP_TOKEN
+RUN npm run preinstall
+RUN npm install
 RUN npm run build
 
 EXPOSE 3001
