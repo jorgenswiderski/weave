@@ -47,6 +47,7 @@ class StaticImageCacheServiceSingleton {
 
                 const remoteUrl =
                     await MediaWiki.resolveImageRedirect(imageName);
+
                 await ensureDirectoryExistence(localImagePath);
 
                 await MwnTokenBucket.acquireNTokens(4);
@@ -103,6 +104,7 @@ class StaticImageCacheServiceSingleton {
 
     private async getAllFiles(dir: string): Promise<string[]> {
         const entries = await fs.promises.readdir(dir, { withFileTypes: true });
+
         const files = entries
             .filter((file) => !file.isDirectory())
             .map((file) => path.join(dir, file.name));
@@ -125,6 +127,7 @@ class StaticImageCacheServiceSingleton {
             const allFiles = await this.getAllFiles(
                 path.join(this.imageCacheDir, 'media-wiki-assets'),
             );
+
             const filesToDelete = allFiles.filter(
                 (file) => !this.checked[path.basename(file)],
             );

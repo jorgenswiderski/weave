@@ -41,6 +41,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
 
         const featPattern =
             /\|{{anchor\|([^}]+)}} '''(.*?)'''[^|]*?\|\|([\s\S]*?)(?=\|-\n|\|-|$)/g;
+
         const grantPattern = /[^*]\s*'''{{SAI\|(.*?)\|/g;
         const choicePattern = /\*\s*'''{{SAI\|(.*?)[|}]/g;
 
@@ -67,6 +68,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
             const featName = match[2].trim();
             const grants: string[] = [];
             const choices: string[] = [];
+
             let abilityImprovement: {
                 abilities: string[];
                 points: number;
@@ -109,6 +111,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
 
                     if (abilityImprovementMatch) {
                         const abilities = abilityImprovementMatch.slice(1, -1); // Exclude the last group which is the amount
+
                         const points = parseInt(
                             abilityImprovementMatch[
                                 abilityImprovementMatch.length - 1
@@ -145,6 +148,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                             description,
                             abilityImprovement,
                         } = data;
+
                         const fx: (GrantableEffect | Characteristic)[] = (
                             await Promise.all(
                                 grants.map((pageTitle) =>

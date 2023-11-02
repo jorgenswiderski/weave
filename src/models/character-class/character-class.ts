@@ -212,6 +212,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         if (match) {
             const tableContent = match[1];
             const rows = [...tableContent.matchAll(rowRegex)];
+
             const parsedRows = rows.map((row) => {
                 const cells = [...row[1].matchAll(cellRegex)];
 
@@ -235,6 +236,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
 
             const cleanedData =
                 await this.cleanProgressionTableData(formattedData);
+
             const dataWithSpells = CharacterClass.parseSpellSlots(cleanedData);
             this.progression = CharacterClass.coerceSpellsKnown(dataWithSpells);
         } else {

@@ -97,6 +97,7 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
 
         const { noOp, plainText, boolean, int } =
             MediaWikiTemplateParser.Parsers;
+
         const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
 
         const config: Record<string, MediaWikiTemplateParserConfig> = {

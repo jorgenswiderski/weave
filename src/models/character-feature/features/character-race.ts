@@ -48,6 +48,7 @@ export class CharacterRace extends CharacterFeature {
         const subracePattern = /\n===\s*([^=]*?)\s*===\n\s*([\s\S]*?)(?===|$)/g;
 
         let match;
+
         const choices: RaceChoice[] = [
             { type: CharacterPlannerStep.SET_RACE, options: [] },
         ];
@@ -98,6 +99,7 @@ export class CharacterRace extends CharacterFeature {
 
         const descPattern =
             /==\s*About\s(?:the\s)?[\w-]+?\s*==\n+([\s\S]+?)\n+=/;
+
         const match = this.page.content.match(descPattern);
 
         if (!match || !match[1]) {
@@ -135,6 +137,7 @@ export class CharacterRace extends CharacterFeature {
         const raceFeaturesSectionMatch = this.page.content.match(
             /====\s*Rac\w+ \w+s\s*====\n([\s\S]+?)\n=/,
         );
+
         const raceFeaturesSection = raceFeaturesSectionMatch
             ? raceFeaturesSectionMatch[1]
             : '';

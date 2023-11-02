@@ -56,6 +56,7 @@ export class RequestBatch {
             ...(params as any),
             [batchAxis]: inputs,
         });
+
         resolve(data);
     }
 

@@ -35,12 +35,14 @@ export async function getEquipmentItemData(
                 MwnApiClass.queryTitlesFromCategory(category),
             ),
         );
+
         const uniqueNames = [...new Set(equipmentItemNames.flat())];
         const pages = await Promise.all(uniqueNames.map(MediaWiki.getPage));
 
         const weaponNames = pages
             .filter((page) => page?.content?.includes('{{WeaponPage'))
             .map((page) => page!.title);
+
         const armourNames = pages
             .filter((page) => page?.content?.includes('{{EquipmentPage'))
             .map((page) => page!.title);
@@ -49,6 +51,7 @@ export async function getEquipmentItemData(
             ...armourNames.map((name) => new EquipmentItem(name)),
             ...weaponNames.map((name) => new WeaponItem(name)),
         ];
+
         await Promise.all(data.map((item) => item.waitForInitialization()));
 
         const filtered = data.filter(

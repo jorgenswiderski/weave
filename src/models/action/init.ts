@@ -5,6 +5,7 @@ import { initSpellData } from './spell';
 
 export async function initActionsAndSpells(): Promise<void> {
     const categories = ['Actions', 'Class Actions', 'Spells'];
+
     const actionNames = [
         ...new Set(
             (
@@ -33,6 +34,7 @@ export async function initActionsAndSpells(): Promise<void> {
     const actions = uniquePages
         .filter((page) => page?.content?.includes('{{ActionPage'))
         .map((page) => page?.title!);
+
     const spells = uniquePages
         .filter((page) => page?.content?.includes('{{SpellPage'))
         .map((page) => page?.title!);
