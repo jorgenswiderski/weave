@@ -10,7 +10,7 @@ dotenv.config();
 import express from 'express';
 import cors from 'cors';
 import { getCharacterClassData } from './models/character-class/character-class';
-import { log } from './models/logger';
+import { log, warn } from './models/logger';
 import { getCharacterRaceData } from './models/character-feature/features/character-race';
 import { getCharacterBackgroundData } from './models/character-feature/features/character-background';
 import { MwnProgressBar } from './api/mwn-progress-bar';
@@ -30,6 +30,10 @@ const PORT = process.env.PORT || 3001;
         getCharacterBackgroundData(),
         getEquipmentItemData(),
     ]);
+
+    log('=============================================================');
+    warn('Weave is ready!');
+    log('=============================================================');
 })();
 
 new MwnProgressBar().render();

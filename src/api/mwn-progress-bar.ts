@@ -1,44 +1,39 @@
-import { CONFIG } from '../models/config';
-import { log } from '../models/logger';
+import { debug, log } from '../models/logger';
 import { MwnTokenBucket } from './mwn';
 
 export class MwnProgressBar {
-    private static renderProgressBar(
-        granted: number,
-        total: number,
-        width: number = 50,
-    ) {
-        // Calculate the number of characters to fill in
-        const fillAmount = Math.round((granted / total) * width);
+    eventCount = 0;
 
-        // Generate the progress bar string
-        const progressBar = `Loading wiki assets... [${'#'.repeat(
-            fillAmount,
-        )}${'-'.repeat(width - fillAmount)}]`;
-
-        if (CONFIG.IS_DEV) {
-            // Use a carriage return to move the cursor back to the beginning of the line
-            process.stdout.write(`\r${progressBar} ${granted}/${total}`);
-        } else if (granted === total || granted % 20 === 0) {
-            // Don't use carriage return on remote environment, just throttle a bit instead.
-            log(`${progressBar} ${granted}/${total}`);
-        }
-    }
-
-    progress?: { granted: number; total: number };
+    filling = false;
 
     render() {
         setInterval(() => {
-            const progress = MwnTokenBucket.getProgress();
+            const { tokens, capacity, granted, requested } =
+                MwnTokenBucket.getStatus();
+            const pending = requested - granted;
 
-            if (JSON.stringify(progress) !== JSON.stringify(this.progress)) {
-                this.progress = progress;
+            MwnTokenBucket.refill();
+            const msg = `Loading wiki assets... Pending: ${pending} | Bucket: ${Math.floor(
+                tokens,
+            )} / ${capacity}`;
 
-                MwnProgressBar.renderProgressBar(
-                    progress.granted,
-                    progress.total,
-                );
+            if (capacity - tokens >= 5) {
+                this.filling = true;
             }
-        }, 100);
+
+            if (pending > 0 || this.filling) {
+                if (this.eventCount % 10 === 0) {
+                    log(msg);
+
+                    if (capacity === tokens) {
+                        this.filling = false;
+                    }
+                } else {
+                    debug(msg);
+                }
+            }
+
+            this.eventCount += 1;
+        }, 500);
     }
 }
