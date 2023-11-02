@@ -19,7 +19,10 @@ import { initActionsAndSpells } from './models/action/init';
 import { apiRouter } from './routes';
 
 async function main() {
+    debug('=====================================================');
     warn('Weave is starting...');
+    debug('=====================================================');
+
     new MwnProgressBar().render();
     await initActionsAndSpells();
 
@@ -67,10 +70,10 @@ async function main() {
     app.use('/api', apiRouter);
 
     app.listen(PORT, () => {
-        debug('=============================================================');
+        debug('=====================================================');
         warn('Weave is ready!');
         log(`Server is running on port ${PORT}`);
-        debug('=============================================================');
+        debug('=====================================================');
     });
 }
 
