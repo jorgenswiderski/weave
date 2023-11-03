@@ -13,6 +13,7 @@ import {
     TooManyRequestsError,
 } from './types';
 import { MongoCollections, getMongoDb } from '../mongo';
+import { debug, log } from '../logger';
 
 export class Builds {
     private static checkBuildLength(
@@ -79,6 +80,8 @@ export class Builds {
 
         await collection.insertOne(build);
 
+        log(`User ${ip} created build ${build.id}`);
+
         return buildId;
     }
 
@@ -91,6 +94,8 @@ export class Builds {
                 'Could not find a build with that id and IP address',
             );
         }
+
+        log(`User ${ip} deleted build ${id}`);
     }
 
     static async update(
@@ -120,6 +125,8 @@ export class Builds {
                 'Could not find a build with that id and IP address',
             );
         }
+
+        log(`User ${ip} updated build ${id}`);
     }
 
     static async get(id: BuildId, ip: string): Promise<Build> {
@@ -139,6 +146,8 @@ export class Builds {
                 'Could not find a build to fetch with that id',
             );
         }
+
+        debug(`User ${ip} fetched build ${build.id}`);
 
         const { encoded, version, ip: documentIp } = build;
         const mayEdit = ip === documentIp;
