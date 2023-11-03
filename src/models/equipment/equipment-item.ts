@@ -34,7 +34,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
     uid?: string;
     effects?: GrantableEffect[];
     source?: string;
-    notes?: string[];
+    // notes?: string[];
     proficiency?: EquipmentItemProficiency;
     id?: number;
 
@@ -54,7 +54,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         config: MediaWikiTemplateParserConfig,
         page: PageData,
     ): GrantableEffect[] {
-        const namedEffectPattern = /\*\s*'''(.*?):'''\s*(.*?)(?:\n|$)/g;
+        const namedEffectPattern = /\*\s*'''(.*?):?''':?\s*(.*?)(?:\n|$)/g;
 
         const effects: GrantableEffect[] = Array.from(
             effectText.matchAll(namedEffectPattern),
@@ -143,7 +143,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 default: [],
             },
             source: { parser: (value) => value.split('*'), default: undefined }, // FIXME
-            notes: { parser: (value) => value.split('*'), default: undefined }, // FIXME
+            // notes: { parser: (value) => value.split('*'), default: undefined }, // FIXME
         };
 
         Object.assign(
@@ -167,7 +167,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             uid: this.uid,
             effects: this.effects,
             source: this.source,
-            notes: this.notes,
+            // notes: this.notes,
             proficiency: this.proficiency,
             baseArmorClass: this.baseArmorClass,
             bonusArmorClass: this.bonusArmorClass,

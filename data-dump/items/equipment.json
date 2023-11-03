@@ -98,7 +98,13 @@
             "weightLb": 0.2,
             "price": 120,
             "uid": "QUEST_LOW_Bhaal_Amulet",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "First Blood",
+                    "description": "On a hit, inflict Bleeding upon targets that have maximum Hit Points.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 8046
         },
@@ -333,7 +339,13 @@
             "weightLb": 0.2,
             "price": 190,
             "uid": "MAG_EGW_OfTheDrunkard_Amulet",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Booze Remedy",
+                    "description": "While wearing this amulet, regain 2d4|Healing per turn while Drunk. Additionally, increase the duration of your inebriation by 5 rounds.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 12246
         },
@@ -960,7 +972,13 @@
             "weightLb": 0.1,
             "price": 65,
             "uid": "TWN_NecklaceOfCharming",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Charm Person|w=40",
+                    "description": "Can cast at Level 1, once per Short Rest.",
+                    "type": 2
+                }
+            ],
             "id": 9541
         },
         {
@@ -1302,7 +1320,18 @@
             "weightKg": 2,
             "weightLb": 4,
             "price": 640,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Strider Movement",
+                    "description": "You gain Longstrider.",
+                    "type": 2
+                },
+                {
+                    "name": "Athletics",
+                    "description": "+1",
+                    "type": 2
+                }
+            ],
             "proficiency": 2,
             "id": 11830
         },
@@ -1326,6 +1355,11 @@
                 {
                     "name": "Refined Vaulting",
                     "description": "Jump (Bonus Action)|Jump distance is increased by 1.5m / 5ft.",
+                    "type": 2
+                },
+                {
+                    "name": "Brutal Leap|w=40",
+                    "description": "Leap at a target and possibly knock it Prone.",
                     "type": 2
                 }
             ],
@@ -1428,6 +1462,11 @@
                     "name": "Elemental Momentum",
                     "description": "Whenever the wearer deals Acid, Cold, Fire, Lightning or Thunder damage with Spells or Cantrip, they gain Momentum for 2.",
                     "type": 2
+                },
+                {
+                    "name": "Athletics",
+                    "description": "+1",
+                    "type": 2
                 }
             ],
             "proficiency": 2,
@@ -1456,6 +1495,7 @@
         {
             "name": "Boots of Persistence",
             "image": "Boots of Persistence Icon.png",
+            "icon": "Boots of Persistence Unfaded Icon.png",
             "description": "Boots of Persistence is a pair of Boots that grant their wearer permanent Freedom of Movement and Longstrider effects.",
             "quote": "'If I had a copper for all the adventurin folk I seen gutted or cut up, or clawed like they was made of wet paper, just cause they couldn't move quick enough when speed might have saved em... well, I'd be suckin good brandy from crystal rather than this fuckin swill.' - Overheard in a tavern in Baldur's Gate.",
             "type": 2,
@@ -1464,6 +1504,11 @@
             "weightLb": 4,
             "price": 1300,
             "effects": [
+                {
+                    "name": "Legendary Mobility",
+                    "description": "You gain Freedom of Movement and Longstrider.",
+                    "type": 2
+                },
                 {
                     "name": "Anonymous Effect",
                     "description": "Dexterity Saving Throws +1",
@@ -1583,6 +1628,11 @@
                     "name": "Focused Stride",
                     "description": "When you cast a spell that requires Concentration, you gain Momentum. While you are concentrating, you cannot be pushed or get knocked Prone.",
                     "type": 2
+                },
+                {
+                    "name": "Athletics",
+                    "description": "+1",
+                    "type": 2
                 }
             ],
             "proficiency": 2,
@@ -1619,7 +1669,13 @@
             "weightKg": 0.55,
             "weightLb": null,
             "price": 1,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Misty Step|w=40",
+                    "description": "Can cast once per turn. The caster's clothes are left behind.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 11382
         },
@@ -1856,6 +1912,11 @@
             "price": 35,
             "effects": [
                 {
+                    "name": "Shoe Slinger",
+                    "description": "Returns to its owner when thrown. On a hit deal an additional 2d4|Psychic damage.",
+                    "type": 2
+                },
+                {
                     "name": "Anonymous Effect",
                     "description": "Dexterity Saving Throws +1",
                     "type": 2,
@@ -2048,7 +2109,13 @@
             "weightKg": 2,
             "weightLb": 4,
             "price": 240,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Athletics +1",
+                    "description": "",
+                    "type": 2
+                }
+            ],
             "proficiency": 2,
             "id": 13498
         },
@@ -2260,7 +2327,13 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 70,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Caustic Reprisal",
+                    "description": "Whenever a creature deals melee damage to the wearer, that creature takes 1d4|Acid Damage.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 10823
         },
@@ -2275,7 +2348,13 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 1134,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Crusader's Mantle|w=40",
+                    "description": "Can cast at Level 3, once per Long Rest.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 9462
         },
@@ -2290,7 +2369,13 @@
             "weightKg": 0.5,
             "weightLb": 1.1,
             "price": 360,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Dominate Person|w=40",
+                    "description": "Can cast at Level 5, once per Long Rest.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 10979
         },
@@ -2425,7 +2510,24 @@
             "weightKg": 0.5,
             "weightLb": 1.1,
             "price": 190,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Damp Aegis",
+                    "description": "During Combat, once per turn, the cloak grants the wearer Water Layer Protection until the wearer takes damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Immune to Burning. Fire}} damage but [[Vulnerable to Lightning and Cold damage.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Wavemother's Cloak",
+                    "description": "Immune to Burning. Fire}} damage but [[Vulnerable to Lightning and Cold damage.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 10917
         }
@@ -2476,6 +2578,7 @@
         {
             "name": "Bided Time",
             "image": "Bided Time Icon.png",
+            "icon": "Bided Time Unfaded Icon.png",
             "description": "Bided Time is a set of uncommon Clothing that causes the wearer to gain Arcane Charge Condition Icon|Arcane Charge (Condition)|Arcane Charge whenever they are hit by a melee attack.",
             "quote": "Revenge is best served. Hot or cold makes no difference.",
             "type": 4,
@@ -2520,7 +2623,18 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 4160,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Slabjaw Determination",
+                    "description": "You gain 15 Temporary Hit Points whenever you Rage.",
+                    "type": 2
+                },
+                {
+                    "name": "Exoskeletal Endurance",
+                    "description": "Reduce all incoming damage by 2. When the wearer is struck by a melee attack, the attacker takes 3|Piercing damage.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "baseArmorClass": 10,
             "id": 8033
@@ -2566,6 +2680,7 @@
         {
             "name": "Drunken Cloth",
             "image": "Drunken Cloth Icon.png",
+            "icon": "Drunken Cloth Unfaded Icon.png",
             "description": "Drunken Cloth is a rare piece of Clothing.",
             "quote": "Long ago, Kushigo was a warrior. Bedecked in enormous, stag-antlered plate, his arrival spelled doom for the enemy. This flimsy cloth speaks nothing to that legacy.",
             "type": 4,
@@ -2755,7 +2870,40 @@
             "weightKg": 1.8,
             "weightLb": 1,
             "price": 1600,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Selûne's Protection",
+                    "description": "While the wearer has Mage Armour, each successful Saving Throw causes the source of the Saving Throw to take 1-4|Radiant damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Mage Armour|Lunar Bulwark|w=40",
+                    "description": "Can cast Lunar Bulwark once per Long Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Produce Flame|w=40",
+                    "description": "Can cast Produce Flame.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Advantage on Constitution Saving Throws.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Moon Devotion Robe",
+                    "description": "Advantage on Constitution Saving Throws.\nSaving Throws +1",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "baseArmorClass": 10,
             "id": 12919
@@ -2901,6 +3049,7 @@
         {
             "name": "Robe of Supreme Defences",
             "image": "Robe of Supreme Defences Icon.png",
+            "icon": "Robe of Supreme Defences Unfaded Icon.png",
             "description": "The Robe of Supreme Defences is a very rare Clothing that boosts your defences, when you are concentrating on a spell.",
             "quote": "Long ago, the young wizard Bigby noticed his friend Tenser spending a lot of time with his robe. One of nature's pranksters Bigby sent his dog, Bigboy, to savage the garnment. The ensuing struggle between canine and nude wizard was brutal, and eventually lead to Tenser designing more durable robes like this one.",
             "type": 4,
@@ -2922,6 +3071,7 @@
         {
             "name": "Robe of the Weave",
             "image": "Robe of the Weave Icon.png",
+            "icon": "Robe of the Weave Unfaded Icon.png",
             "description": "Robe of the Weave is a very rare Clothing that allows the wearer to heal when succeeding a saving throw against a spell.",
             "quote": "Earnest little Edith Cluckle was a small girl when she asked to be the great wizard Otiluke's apprentice. He scoffed at her, but was quickly abashed when Mystra herself endowed Edith with this very cloak.",
             "type": 4,
@@ -2930,6 +3080,16 @@
             "weightLb": 3.6,
             "price": 2900,
             "effects": [
+                {
+                    "name": "Arcane Enchantment",
+                    "description": "You gain a +1 bonus to Spell Save DC and Spell Attack Rolls.",
+                    "type": 2
+                },
+                {
+                    "name": "Weave Eater",
+                    "description": "Whenever the wearer succeeds a Saving Throw against a spell, they regain Healing|1~6 hit points.",
+                    "type": 2
+                },
                 {
                     "name": "Anonymous Effect",
                     "description": "Armour Class +2",
@@ -2957,7 +3117,18 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 1000,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Spell Resistance",
+                    "description": "You have Advantage on Saving Throws against spells.",
+                    "type": 2
+                },
+                {
+                    "name": "Mirror Image|w=40",
+                    "description": "Cast Mirror Image once per Long Rest.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "baseArmorClass": 10,
             "id": 8606
@@ -3073,6 +3244,11 @@
             "price": 260,
             "effects": [
                 {
+                    "name": "High Spellcasting",
+                    "description": "You gain a +1 bonus to Spell Save DC.",
+                    "type": 2
+                },
+                {
                     "name": "Sparkswall Armour",
                     "description": "The wearer has +1 to ArmourClass and SavingThrows as long as they have Lightning Charges.",
                     "type": 2
@@ -3092,7 +3268,18 @@
             "weightKg": 1.8,
             "weightLb": 1,
             "price": 1600,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Let The Undead Blanch With Fear!",
+                    "description": "Undead have Disadvantage on Attack Rolls against you, and you have Advantage on Saving Throws against their actions and spells.",
+                    "type": 2
+                },
+                {
+                    "name": "Turn Undead|w=40",
+                    "description": "Can cast Turn Undead once per Long Rest.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "baseArmorClass": 10,
             "id": 9492
@@ -3108,7 +3295,29 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 4160,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Defier's Rejuvenation",
+                    "description": "Whenever the wearer succeeds on a SavingThrow against a Spell, they regain  1d4 .",
+                    "type": 2
+                },
+                {
+                    "name": "Greater Kushigo Counter",
+                    "description": "The wearer can use a reaction to make an Unarmed Strike against any attacker that misses.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Armour Class +2",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Vest of Soul Rejuvenation",
+                    "description": "Armour Class +2",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "baseArmorClass": 10,
             "id": 8035
@@ -3124,7 +3333,29 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 1600,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Shar's Umbrae",
+                    "description": "While Stealth Checks.",
+                    "type": 2
+                },
+                {
+                    "name": "Sharran Veil",
+                    "description": "Shield of Faith also grants you a +2 to all Saving Throws.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Armour Class +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Viconia's Priestess Robe",
+                    "description": "Armour Class +1",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "baseArmorClass": 10,
             "id": 9680
@@ -3140,7 +3371,34 @@
             "weightKg": 1.8,
             "weightLb": 1,
             "price": 2240,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Temperature Adjustment",
+                    "description": "You have resistance to Fire and Cold Damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Watery Rejuvenation",
+                    "description": "If the wearer is standing in a Water Surface at the start of their turn, they heal 1-4|Healing.",
+                    "type": 2
+                },
+                {
+                    "name": "Create or Destroy Water|w=40",
+                    "description": "Cast Create or Destroy Water once per Short Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Armour Class +1.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Wavemother's Robe",
+                    "description": "Armour Class +1.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "baseArmorClass": 10,
             "id": 9499
@@ -3216,7 +3474,30 @@
             "weightKg": 0.5,
             "weightLb": 1.1,
             "price": 800,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Inflict Wounds|w=40",
+                    "description": "Can cast Inflict Wounds as a 4th level spell once per Long Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Attack Roll Icon|Attack Roll|Attack +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Blackguard's Gauntlets",
+                    "description": "Strength Saving Throws +1\nAttack Roll Icon|Attack Roll|Attack +1",
+                    "type": 2
+                }
+            ],
             "proficiency": 2,
             "id": 11825
         },
@@ -3570,6 +3851,16 @@
             "price": 300,
             "effects": [
                 {
+                    "name": "Enervating Suffusion",
+                    "description": "Your Unarmed Strike|unarmed attacks deal an additional 1d4|Force damage.",
+                    "type": 2
+                },
+                {
+                    "name": "High Spellcasting",
+                    "description": "You gain a +1 bonus to Spell Save DC.",
+                    "type": 2
+                },
+                {
                     "name": "Command|w=40",
                     "description": "Cast the Command spell as a third level spell on three creatures once per Long Rest.",
                     "type": 2
@@ -3580,6 +3871,7 @@
         {
             "name": "Gauntlets of Frost Giant Strength",
             "image": "Gauntlets of Hill Giant Strength Icon.png",
+            "icon": "Gauntlets of Hill Giant Strength Unfaded Icon.png",
             "description": "Gauntlets of Hill Giant Strength are very rare Gloves that can be obtained from the House of Hope.",
             "quote": "Your basic hill giant is just a landslide with a digestive system.",
             "type": 5,
@@ -3623,7 +3915,24 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 1600,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Heightened Manoeuvre",
+                    "description": "Targets have Disadvantage on Saving Throws against your Manoeuvre and Weapon Actions.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Attack +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gauntlets of the Warmaster",
+                    "description": "Attack +1",
+                    "type": 2
+                }
+            ],
             "proficiency": 2,
             "id": 10892
         },
@@ -3638,7 +3947,24 @@
             "weightKg": 0.5,
             "weightLb": 1.1,
             "price": 720,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Adroit Caster",
+                    "description": "Cantrips targeting foes and allies can target an additional creature. The same target can be chosen twice. Can be used once per Short Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Note: Eldritch Blast only receives one additional blast and not a new full set, e.g. a level 10 warlock gets 4 (3+1) blasts and not 6 (2x3)",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gemini Gloves",
+                    "description": "Note: Eldritch Blast only receives one additional blast and not a new full set, e.g. a level 10 warlock gets 4 (3+1) blasts and not 6 (2x3)",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 8825
         },
@@ -3658,10 +3984,6 @@
                     "description": "You gain Proficiency with Longbows and Shortbows. In addition, your ranged weapon attacks deal an additional 2 damage.",
                     "type": 2
                 }
-            ],
-            "notes": [
-                "",
-                "UUID: 6d84b9e5-e9e4-477c-8d5b-a3f232a4415a"
             ],
             "proficiency": 0,
             "id": 6784
@@ -3708,7 +4030,24 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 290,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Battlemage's Power",
+                    "description": "Whenever your Weapon Attack Roll inflicts a condition, you gain Arcane Acuity for 1.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of Battlemage's Power",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 10875
         },
@@ -3790,6 +4129,11 @@
             "price": 300,
             "effects": [
                 {
+                    "name": "Attack",
+                    "description": "+1",
+                    "type": 2
+                },
+                {
                     "name": "Anonymous Effect",
                     "description": "Set the wearer's Dexterity score to 18. The enchantment has no effect if their Dexterity score is higher without it.",
                     "type": 2,
@@ -3866,6 +4210,7 @@
         {
             "name": "Gloves of Heroism",
             "image": "Gloves Metal 1 Faded.png",
+            "icon": "Gloves Metal 1 Unfaded Icon.png",
             "description": "The Gloves of Heroism are an uncommon pair of gloves that grants you Heroism whenever you use your Channel Oath spells.",
             "quote": "Suede covers the palms of these gloves — ensuring a soft, comforting touch for anyone in need of help.",
             "type": 5,
@@ -3906,6 +4251,11 @@
             "weightLb": 1,
             "price": 160,
             "effects": [
+                {
+                    "name": "Missile Snaring",
+                    "description": "You can intercept missiles from ranged weapon attacks, reducing their damage by {{DieIcon|d10|Physical 1d10 + your Dexterity modifier}}.",
+                    "type": 2
+                },
                 {
                     "name": "Anonymous Effect",
                     "description": "This costs a Reaction to use.",
@@ -3962,7 +4312,29 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 960,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Soul Fist",
+                    "description": "Your Unarmed Strike|unarmed attacks deal an additional 1d10|Force damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Soul Catching",
+                    "description": "Once per turn, on an Unarmed Strike|unarmed hit, you regain 10|Healing. Alternatively, you may forego healing to gain Advantage on Attack Rolls and Saving Throws until the end of your next turn.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Constitution|30 +2, up to 20.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of Soul Catching",
+                    "description": "Constitution|30 +2, up to 20.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 11418
         },
@@ -4155,7 +4527,13 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 240,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Kushigo's Might",
+                    "description": "The wearer deals an additional d4|Physical 1d4 damage with Throw Attacks and attacks made with Improvised_Melee_Weapon|Improvised Weapons.",
+                    "type": 2
+                }
+            ],
             "id": 8075
         },
         {
@@ -4169,7 +4547,29 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 540,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Infernal Acuity",
+                    "description": "You gain +1 bonus to Spell Attack Rolls and Spell Save DC.",
+                    "type": 2
+                },
+                {
+                    "name": "Infernal Touch",
+                    "description": "Your weapon attacks deal an additional 1d6|Fire damage. Your Unarmed Strike|unarmed attacks deal an additional 1d6|Necrotic damage, and can possibly inflict Bleeding (CON|dc=15 to negate Bleeding).",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Short Rest",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Helldusk Gloves",
+                    "description": "Short Rest",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 8541
         },
@@ -4235,7 +4635,35 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 540,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Mage Hand|Quickened Mage Hand|w=40",
+                    "description": "You can cast Mage Hand as a Bonus.",
+                    "type": 2
+                },
+                {
+                    "name": "Telekinesis|w=40",
+                    "description": "Can cast Strength}} as the [[Spellcasting Modifier|Spellcasting Ability.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength SavingThrows +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Short Rest",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Hr'a'cknir Bracers",
+                    "description": "Strength SavingThrows +1\nShort Rest",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 10733
         },
@@ -4294,6 +4722,7 @@
         {
             "name": "Knock Knuckle Gloves",
             "image": "Gloves Leather 2 Faded.png",
+            "icon": "Gloves Leather 2 Unfaded Icon.png",
             "description": "Knock Knuckle Gloves are uncommon Gloves that grant the spell Knock.",
             "quote": "In the palm of the left glove is a glossy scarlet solution that coats Thieves' Tools, making them more reliable. In the right, arcane symbols wax and wane.",
             "type": 5,
@@ -4302,6 +4731,11 @@
             "weightLb": 1.1,
             "price": 90,
             "effects": [
+                {
+                    "name": "Sleight of Hand",
+                    "description": "+1",
+                    "type": 2
+                },
                 {
                     "name": "Knock|w=40",
                     "description": "Grants Knock once per Long Rest.",
@@ -4406,7 +4840,23 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 300,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Enervating Suffusion",
+                    "description": "Your Unarmed Strike|unarmed attacks deal an additional 1d4|Force damage.",
+                    "type": 2
+                },
+                {
+                    "name": "High Spellcasting",
+                    "description": "You gain a +1 bonus to Spell Save DC.",
+                    "type": 2
+                },
+                {
+                    "name": "Command|w=40",
+                    "description": "",
+                    "type": 2
+                }
+            ],
             "id": 15115
         },
         {
@@ -4424,6 +4874,11 @@
                 {
                     "name": "Nimblefinger",
                     "description": "Gnomes are granted +2 to Halfling}}s and Race Dwarf|Dwarf|Dwarves gain +1 [[Dexterity.",
+                    "type": 2
+                },
+                {
+                    "name": "Sleight of Hand",
+                    "description": "+1",
                     "type": 2
                 }
             ],
@@ -4481,7 +4936,13 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 160,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Summon Quothe the Raven|w=40",
+                    "description": "Allows the wearer to cast Summon Quothe the Raven",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 11609
         },
@@ -4516,7 +4977,29 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 240,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Angelclocker Knuckles",
+                    "description": "Your Unarmed Strike|unarmed attacks deal an additional 1d4|Radiant damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Guiding Bolt|w=40",
+                    "description": "Cast Guiding Bolt once per Long Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Guiding Bolt|w=40: Cast Guiding Bolt once per Long Rest.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Seraphic Pugilist Gloves",
+                    "description": "Guiding Bolt|w=40: Cast Guiding Bolt once per Long Rest.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 8126
         },
@@ -4568,7 +5051,18 @@
             "weightKg": 0.5,
             "weightLb": null,
             "price": 1125,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Chilling Strike",
+                    "description": "Your Unarmed Strike|unarmed attacks deal an additional 1d4|Cold damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Ice Knife|w=40",
+                    "description": "Can cast at Level 3 (Long Rest).",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 10893
         },
@@ -4583,7 +5077,13 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 300,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Spellmight",
+                    "description": "When casting a spell that requires an Attack Roll, you can take a -5 penalty to the roll to deal an additional d8|Piercing 1d8 damage.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 9683
         },
@@ -4605,6 +5105,7 @@
         {
             "name": "Stalker Gloves",
             "image": "Gloves Leather F Faded.png",
+            "icon": "Gloves Leather F Unfaded Icon.png",
             "description": "The Stalker Gloves are a rare pair of gloves which improve the wearer's Sneak Attack and Initiative.",
             "quote": "It's a difficult life being a modern rogue - everyone expects the surprise attack. These gloves assist in making sure that the surprisee doesn't live long enough to decide whether they were surprised.",
             "type": 5,
@@ -4638,7 +5139,13 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 160,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Sword Mastery",
+                    "description": "You gain Proficiency with shortswords, longswords, and greatswords. In addition, you gain a +1 bonus to melee Attack Rolls.",
+                    "type": 2
+                }
+            ],
             "id": 8008
         },
         {
@@ -4652,7 +5159,29 @@
             "weightKg": 0.5,
             "weightLb": 1.1,
             "price": 912,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Aegis Palms",
+                    "description": "When you heal a creature, it gains the effect of Blade Ward. When you Revivify|Revive a creature it gains the effect of Death Ward.",
+                    "type": 2
+                },
+                {
+                    "name": "Revivify|w=40",
+                    "description": "Can cast the spell Revivify once per Long Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "The Reviving Hands",
+                    "description": "Strength Saving Throws +1",
+                    "type": 2
+                }
+            ],
             "proficiency": 2,
             "id": 8425
         },
@@ -4783,7 +5312,25 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 300,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Attack Roll Icon|Attack Roll|Attack +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Strength SavingThrows +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Unwanted Masterwork Gauntlets",
+                    "description": "Attack Roll Icon|Attack Roll|Attack +1\nStrength SavingThrows +1",
+                    "type": 2
+                }
+            ],
             "proficiency": 2,
             "id": 13497
         },
@@ -4879,7 +5426,30 @@
             "weightKg": 20,
             "weightLb": 40,
             "price": 3200,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Eternal Devotion|w=40",
+                    "description": "Recite your Oath to regain 1 Paladin chaoat.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Action",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Long Rest",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Armour of Devotion",
+                    "description": "Action\nLong Rest",
+                    "type": 2
+                }
+            ],
             "proficiency": 3,
             "baseArmorClass": 18,
             "id": 10412
@@ -4896,7 +5466,18 @@
             "weightLb": 40,
             "price": 6400,
             "uid": "MAG_EndGame_Plate_Armor",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Magical Plate",
+                    "description": "All incoming damage is reduced by 2.",
+                    "type": 2
+                },
+                {
+                    "name": "Legendary Persistence",
+                    "description": "You gain Resistance and Blade Ward.",
+                    "type": 2
+                }
+            ],
             "proficiency": 3,
             "baseArmorClass": 20,
             "id": 8048
@@ -5022,7 +5603,29 @@
             "weightKg": 19,
             "weightLb": 42,
             "price": 1900,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Superior Plate",
+                    "description": "You take 1 less Piercing damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Body Aid",
+                    "description": "Gain a +1 bonus to Strength Saving Throws and Ability Checks.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Constitution +2 (Max 20)",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Dwarven Splintmail",
+                    "description": "Constitution +2 (Max 20)",
+                    "type": 2
+                }
+            ],
             "proficiency": 3,
             "baseArmorClass": 19,
             "id": 11395
@@ -5038,7 +5641,23 @@
             "weightKg": 20,
             "weightLb": 44,
             "price": 6400,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Magical Plate",
+                    "description": "All incoming damage is reduced by 2.",
+                    "type": 2
+                },
+                {
+                    "name": "Endurance by Fire",
+                    "description": "You have fire|double|nocat=true Resistance to Fire damage and a +2 bonus to Saving Throws.",
+                    "type": 2
+                },
+                {
+                    "name": "Fire Shield|w=40",
+                    "description": "Can cast Fire Shield once per Long Rest.",
+                    "type": 2
+                }
+            ],
             "proficiency": 3,
             "baseArmorClass": 19,
             "id": 11805
@@ -5169,6 +5788,7 @@
         {
             "name": "Protective Plate",
             "image": "Plate Armour Icon.png",
+            "icon": "Plate Armour Unfaded Icon.png",
             "description": "Protective Plate is a set of Heavy Resistance to Necrotic damage.",
             "type": 6,
             "rarity": 2,
@@ -5195,6 +5815,7 @@
         {
             "name": "Reaper's Embrace",
             "image": "Reaper's Embrace Icon.png",
+            "icon": "Reaper's Embrace Unfaded Icon.png",
             "description": "Reaper's Embrace is a very rare heavy Armour that can be obtained from Ketheric Thorm.",
             "quote": "Heavy steel bones and teeth enclose the armour's chest and neck like a grotesque exoskeleton that both swallows and protects the wearer.",
             "type": 6,
@@ -5665,7 +6286,13 @@
             "weightLb": 1,
             "price": 90,
             "uid": "MAG_Frost_GenerateFrostOnStatusApply_Hat",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Coldbrim Chill",
+                    "description": "Once per turn, any condition inflicted on a target also applies 2 turns of Encrusted with Frost.",
+                    "type": 2
+                }
+            ],
             "id": 10682
         },
         {
@@ -5829,6 +6456,11 @@
             "price": 60,
             "effects": [
                 {
+                    "name": "High Spellcasting",
+                    "description": "You gain a +1 bonus to Spell Save DC.",
+                    "type": 2
+                },
+                {
                     "name": "Seldom Caught Unawares",
                     "description": "You gain a +1 bonus to Initiative Rolls.",
                     "type": 2
@@ -5937,7 +6569,13 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 90,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Fire Acuity",
+                    "description": "Whenever you deal Fire damage, you gain Arcane Acuity for 2.",
+                    "type": 2
+                }
+            ],
             "id": 7907
         },
         {
@@ -5951,7 +6589,13 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 90,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Thunderous Acuity",
+                    "description": "Whenever you deal Thunder damage, you gain Arcane Acuity for 1.",
+                    "type": 2
+                }
+            ],
             "id": 8846
         },
         {
@@ -5998,6 +6642,7 @@
         {
             "name": "Helldusk Helmet",
             "image": "Helldusk Helmet Icon.png",
+            "icon": "Helldusk Helmet Unfaded Icon.png",
             "description": "Helldusk Helmet is a very rare Helmet that can be obtained from the House of Hope.",
             "quote": "It is said that Carixim, the fiending titan whose flesh squirms with twenty-thousand trapped souls, forged the pieces of this armour set.",
             "type": 7,
@@ -6028,6 +6673,7 @@
         {
             "name": "Helm of Balduran",
             "image": "Helm of Balduran Icon.png",
+            "icon": "Helm of Balduran Unfaded Icon.png",
             "description": "Helm of Balduran is a legendary Headwear once worn by the fabled founder of Baldur's Gate, Balduran, and grants hit points every turn along with stun and critical hit immunities.",
             "quote": "This helm, worn atop the pate of Balduran the Brave, still gleams as if with the untarnished splendour of his legacy. Baldur's Gate itself bears his name, and tales of his exploits have turned the heads and hearts of many.",
             "type": 7,
@@ -6239,7 +6885,13 @@
             "weightLb": 1,
             "price": 70,
             "uid": "c5a627ff-7fc5-4cde-81ca-e4fb57cb38d6",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Arcane Enchantment",
+                    "description": "You gain a +2 bonus to Spell Save DC and Spell Attack Rolls.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 8344
         },
@@ -6271,6 +6923,7 @@
         {
             "name": "Jannath's Hat",
             "image": "Jannath's Hat Icon.png",
+            "icon": "Jannath's Hat Unfaded Icon.png",
             "description": "Jannath's Hat is a very rare headwear that gives advantage to persuasion and deception checks.",
             "quote": "The corner of modern fashion that this hat currently occupies might well be called Optimistic.",
             "type": 7,
@@ -6342,7 +6995,13 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 24,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Marksmanship",
+                    "description": "You gain a +1 bonus to ranged Attack Rolls (including spell attack rolls).",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 8171
         },
@@ -6357,7 +7016,18 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 1300,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Soul Perception",
+                    "description": "Gain a +2 bonus to Attack Rolls, Initiative Rolls, and Perception Checks.",
+                    "type": 2
+                },
+                {
+                    "name": "Detect Thoughts|w=40",
+                    "description": "Can cast at Level 2, once per Short Rest",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 11738
         },
@@ -6393,12 +7063,19 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 160,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Fiery Return",
+                    "description": "When you deal Fire damage with a leveled spell, you Burning|Burn yourself and gain an additional Bonus this round.",
+                    "type": 2
+                }
+            ],
             "id": 13431
         },
         {
             "name": "Sarevok's Horned Helmet",
             "image": "Sarevok's Horned Helmet Icon.png",
+            "icon": "Sarevok's Horned Helmet Unfaded Icon.png",
             "description": "Sarevok's Horned Helmet is a very rare Headwear that grants Darkvision (Passive Feature)|Darkvision to its wearer, among other bonuses.",
             "quote": "The last sight Sarevok witnessed as a mortal was his sibling's knife. This duel, the first between Bhaalspawn, is worshipped still by the cult of Bhaal, who now believe that no act is more sacred than fratricide between spawn before the altar of their Dread Lord.",
             "type": 7,
@@ -6407,6 +7084,16 @@
             "weightLb": 4,
             "price": 1600,
             "effects": [
+                {
+                    "name": "Deathbringer's Sight",
+                    "description": "You gain Darkvision (Passive Feature)|Darkvision up to a range of 10 ft / 3 m, or 50 ft / 15 m if you already have it. The number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack.",
+                    "type": 2
+                },
+                {
+                    "name": "Dauntless",
+                    "description": "You can't be Frightened, and cannot be afflicted with other emotion-altering conditions.",
+                    "type": 2
+                },
                 {
                     "name": "Anonymous Effect",
                     "description": "+1 to cons",
@@ -6527,7 +7214,13 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 35,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Glorious Pointy Hat",
+                    "description": "You gain a bonus to your Persuasion Checks equal to your Intelligence Modifier.",
+                    "type": 2
+                }
+            ],
             "id": 12884
         },
         {
@@ -6541,7 +7234,13 @@
             "weightKg": 0.5,
             "weightLb": 1.1,
             "price": 90,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Shadespell",
+                    "description": "While the wearer is obscured in shadow, their spells gain a +1 bonus to Spell Save DC, making them more likely to succeed.",
+                    "type": 2
+                }
+            ],
             "id": 8155
         },
         {
@@ -6619,7 +7318,23 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 1700,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "High Spellcasting",
+                    "description": "You gain a +1 bonus to Spell Save DC.",
+                    "type": 2
+                },
+                {
+                    "name": "Green Bed Regeneration",
+                    "description": "When starting your turn on Plant Growth|Plant Growth Surface or Vine Surface regain  1d4 .",
+                    "type": 2
+                },
+                {
+                    "name": "Plant Growth|w=40",
+                    "description": "Allows the wearer to cast Plant Growth",
+                    "type": 2
+                }
+            ],
             "proficiency": 1,
             "baseArmorClass": 13,
             "id": 9476
@@ -6635,7 +7350,18 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 1400,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Lunar Beastial Vitality",
+                    "description": "You gain Healing|22 temporary hit points after casting Wild Shape. While those temporary hit points are active reduce all incoming damage by 1.",
+                    "type": 2
+                },
+                {
+                    "name": "Lunar Bestial Fortitude",
+                    "description": "You have a +2 bonus to Armour Class. You also have Advantage on Saving Throws against spells. This effect persists while using your druidic Wild Shape ability.",
+                    "type": 2
+                }
+            ],
             "proficiency": 1,
             "baseArmorClass": 11,
             "id": 9497
@@ -6651,7 +7377,18 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 1400,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Malefic Funghi",
+                    "description": "The wearer gains a +1 bonus to Spell Save DC and when dealing Necrotic damage, they deal an additional 1|Necrotic Damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Spore Sacks",
+                    "description": "While imbued with Symbiotic Entity, you can spread Bibberbang Spores, Timmask Spores, and Haste Spores.",
+                    "type": 2
+                }
+            ],
             "proficiency": 1,
             "baseArmorClass": 13,
             "id": 9496
@@ -6667,7 +7404,18 @@
             "weightKg": 5.85,
             "weightLb": 12.8,
             "price": 2000,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Aura of Murder",
+                    "description": "Enemies within m=2|ft=6.5 become Piercing|vulnerable|nocat=true Piercing}} damage, unless they are Piercing|resistant|nocat=true Resistant or Piercing|immune|nocat=true [[Immune to it.",
+                    "type": 2
+                },
+                {
+                    "name": "Ambusher",
+                    "description": "Gain a +2 bonus to Initiative Rolls.",
+                    "type": 2
+                }
+            ],
             "proficiency": 1,
             "baseArmorClass": 14,
             "id": 11951
@@ -6753,7 +7501,29 @@
             "weightKg": 5.85,
             "weightLb": 12.8,
             "price": 2000,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Ambusher",
+                    "description": "+2 bonus to Initiative Rolls.",
+                    "type": 2
+                },
+                {
+                    "name": "Shield|w=40",
+                    "description": "Can cast Shield once per Short Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Advantage on Stealth checks.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Elegant Studded Leather",
+                    "description": "Advantage on Stealth checks.",
+                    "type": 2
+                }
+            ],
             "proficiency": 1,
             "baseArmorClass": 14,
             "id": 10991
@@ -6914,6 +7684,7 @@
         {
             "name": "Penumbral Armour",
             "image": "Penumbral Armour Icon.png",
+            "icon": "Penumbral Armour Unfaded Icon.png",
             "description": "Penumbral Armour is a rare Light Armour that enhances Stealth when the wearer is Obscured.",
             "quote": "One of the Relics of Deep Duerra's rebellious children. Kitted out though they were for escape, the older siblings had a horrible time encouraging their younger brothers and sisters, who at the crux were frightened of what their mother would do to them should they be caught.",
             "type": 8,
@@ -7019,6 +7790,11 @@
             "weightLb": 12.8,
             "price": 1150,
             "effects": [
+                {
+                    "name": "Stealthy",
+                    "description": "Gain +1 bonus to Stealth Checks",
+                    "type": 2
+                },
                 {
                     "name": "Anonymous Effect",
                     "description": "Advantage on Constitution Saving Throws",
@@ -7506,7 +8282,18 @@
             "weightKg": 9,
             "weightLb": 18,
             "price": 510,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Elven Chain",
+                    "description": "You are considered Proficient with this armour while wearing it.",
+                    "type": 2
+                },
+                {
+                    "name": "Elven Agility",
+                    "description": "The wearer has a +2 bonus to Initiative Rolls and Advantage on Dexterity Saving Throws",
+                    "type": 2
+                }
+            ],
             "proficiency": 2,
             "baseArmorClass": 14,
             "id": 8315
@@ -7522,7 +8309,23 @@
             "weightKg": 12,
             "weightLb": 26,
             "price": 2900,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Seldom Caught Unawares",
+                    "description": "You gain a +2 bonus to Initiative rolls.",
+                    "type": 2
+                },
+                {
+                    "name": "Endurance by Fire",
+                    "description": "You have Fire|double|nocat=true Resistance to Fire damage and a +2 bonus to SavingThrows.",
+                    "type": 2
+                },
+                {
+                    "name": "Fire Shield (Warm)|w=40",
+                    "description": "Can cast Fire Shield (Warm) once per Long Rest.",
+                    "type": 2
+                }
+            ],
             "proficiency": 2,
             "baseArmorClass": 16,
             "id": 11401
@@ -7620,6 +8423,11 @@
                 {
                     "name": "Balance",
                     "description": "Gain a +1 bonus to Dexterity SavingThrows and Ability Checks.",
+                    "type": 2
+                },
+                {
+                    "name": "Nature",
+                    "description": "+1.",
                     "type": 2
                 }
             ],
@@ -7739,7 +8547,24 @@
             "weightKg": 12,
             "weightLb": 25,
             "price": 1450,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Psionic Ward",
+                    "description": "If the item detects that the wearer is Gith, they have Psychic|double|nocat=true Resistance to Psychic damage.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Whenever the wearer succeeds on a SavingThrow against a spell, they regain 1d4|Healing.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Psionic Ward Armour",
+                    "description": "Whenever the wearer succeeds on a SavingThrow against a spell, they regain 1d4|Healing.",
+                    "type": 2
+                }
+            ],
             "proficiency": 2,
             "baseArmorClass": 15,
             "id": 10734
@@ -7959,6 +8784,11 @@
             "price": 510,
             "effects": [
                 {
+                    "name": "Superior Material",
+                    "description": "You take 1 less Slashing damage.",
+                    "type": 2
+                },
+                {
                     "name": "Countershock",
                     "description": "When the wearer takes damage while having Lightning Charges, the attacker must succeed a Dexterity Saving Throw or become Shocked.",
                     "type": 2
@@ -8035,6 +8865,11 @@
             "weightLb": 24,
             "price": 640,
             "effects": [
+                {
+                    "name": "Exotic Material",
+                    "description": "Add your Ability Checks.",
+                    "type": 2
+                },
                 {
                     "name": "Ambusher",
                     "description": "Gain a +1 bonus to Initiative Rolls.",
@@ -9531,7 +10366,23 @@
             "weightKg": 2.7,
             "weightLb": 4.5,
             "price": 300,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Absolute's Aegis Awareness",
+                    "description": "If the wielder bears the Absolute's Brand, all damage received from spells is reduced by 1.",
+                    "type": 2
+                },
+                {
+                    "name": "Shield Bash|w=40:",
+                    "description": "When a foe hits you with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity SavingThrow.",
+                    "type": 2
+                },
+                {
+                    "name": "Fire Shield (Chill)|Fire Shield: Chill|w=40",
+                    "description": "Cast the spell at Level 4, once per Long Rest.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "bonusArmorClass": 2,
             "id": 13395
@@ -9660,6 +10511,7 @@
         {
             "name": "Ironvine Shield",
             "image": "Wood Woad Shield Icon.png",
+            "icon": "Wood Woad Shield Unfaded Icon.png",
             "description": "Ironvine Shield is an uncommon Shield that damages an attacker if the wielder is using a weapon empowered with Shillelagh.",
             "quote": "Each whorl and groove and worm-curled twist of this shield evokes a tangle of bog-stuck trees in rain-swollen vines.",
             "type": 11,
@@ -9683,7 +10535,29 @@
             "weightKg": 2.7,
             "weightLb": 5.4,
             "price": 300,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Shield Bash|w=40",
+                    "description": "When a foe hits you with a melee attack, use a reaction to knock them Prone unless they succeed a Dexterity SavingThrow.",
+                    "type": 2
+                },
+                {
+                    "name": "Darkness Cloak|w=40",
+                    "description": "Use a bonus once per Short Rest to cast Darkness Cloak.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Advantage on Perception Ability Checks.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Justiciar's Greatshield",
+                    "description": "Advantage on Perception Ability Checks.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "bonusArmorClass": 2,
             "id": 11807
@@ -9754,7 +10628,18 @@
             "weightKg": 2.7,
             "weightLb": 4.5,
             "price": 1140,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Heightened Awareness",
+                    "description": "Gain a +3 bonus to Initiative rolls and Advantage on Perception Ability Checks.",
+                    "type": 2
+                },
+                {
+                    "name": "Shield Bash|w=40",
+                    "description": "When a foe hits you with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity SavingThrow.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "bonusArmorClass": 2,
             "id": 10413
@@ -9858,7 +10743,18 @@
             "weightKg": 2.7,
             "weightLb": 5.4,
             "price": 190,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Shield Bash|w=40",
+                    "description": "When a foe hits you with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity SavingThrow.",
+                    "type": 2
+                },
+                {
+                    "name": "Shield|w=40",
+                    "description": "Cast as a reaction once per Long Rest.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "bonusArmorClass": 2,
             "id": 13778
@@ -9874,7 +10770,23 @@
             "weightKg": 2.7,
             "weightLb": 5.9,
             "price": 570,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Dreadful Hewer",
+                    "description": "Your foes have Disadvantage on Saving Throws to resist your spells or actions that inflict Fearful|Fear.",
+                    "type": 2
+                },
+                {
+                    "name": "Additional Spell Slot",
+                    "description": "You gain 1 level 1 Spell Slot.",
+                    "type": 2
+                },
+                {
+                    "name": "Shield Bash|w=40",
+                    "description": "When a foe hits you with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity Saving Throw.",
+                    "type": 2
+                }
+            ],
             "proficiency": 4,
             "bonusArmorClass": 2,
             "id": 11813
@@ -9894,6 +10806,11 @@
                 {
                     "name": "Shield Conduit",
                     "description": "The shield shrouds the wearer with Force Conduit at the start of its turn in combat.",
+                    "type": 2
+                },
+                {
+                    "name": "Shield Bash|w=40:",
+                    "description": "When a foe hits you with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity SavingThrow.",
                     "type": 2
                 }
             ],
@@ -9976,7 +10893,19 @@
             "weightKg": 2.7,
             "weightLb": 5,
             "price": 70,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Advantage on Perception Checks",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Watcher's Shield",
+                    "description": "Advantage on Perception Checks",
+                    "type": 2
+                }
+            ],
             "proficiency": 4,
             "bonusArmorClass": 2,
             "id": 10879
@@ -9992,7 +10921,30 @@
             "weightKg": 1.2,
             "weightLb": 2.7,
             "price": 115,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Woad's Ensnaring Strike",
+                    "description": "Your attack summons thorny vines that possibly Ensnared|Ensnare your target.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Bonus",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Short Rest",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Wood Woad Shield",
+                    "description": "Bonus\nShort Rest",
+                    "type": 2
+                }
+            ],
             "proficiency": 4,
             "bonusArmorClass": 2,
             "id": 6869
@@ -10682,7 +11634,13 @@
             "weightKg": 0.45,
             "weightLb": 0.99,
             "price": 480,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Arcane Absorption",
+                    "description": "When you kill an enemy with a melee attack, regain one of your spent 1st Level Spell Slots.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 9164,
@@ -10780,6 +11738,11 @@
                     "type": 2
                 },
                 {
+                    "name": "Bound Weapon Condition Icon|Bound Weapon (Condition)|Bound Weapon",
+                    "description": "Main Hand Only",
+                    "type": 2
+                },
+                {
                     "name": "Exploit Weakness",
                     "description": "Creatures hit with this weapon receive Vulnerability to Piercing damage.",
                     "type": 2
@@ -10787,6 +11750,11 @@
                 {
                     "name": "True Strike Riposte",
                     "description": "When a creature misses you with a melee attack, you may retaliate and gain True Strike.",
+                    "type": 2
+                },
+                {
+                    "name": "ArmourClass +1",
+                    "description": "",
                     "type": 2
                 },
                 {
@@ -10840,7 +11808,29 @@
             "weightKg": 0.45,
             "weightLb": 0.9,
             "price": 190,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Chilling Counter",
+                    "description": "When a creature misses you with an attack, it must succeed a DC 13 Constitution Saving Throw or be Chilled for 2 turns.",
+                    "type": 2
+                },
+                {
+                    "name": "Armour Class",
+                    "description": "+1",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Off-Hand Only",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Cold Snap",
+                    "description": "Off-Hand Only",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 9190,
             "category": 2,
@@ -11093,7 +12083,13 @@
             "weightKg": 0.45,
             "weightLb": 0.9,
             "price": 65,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Rupturing",
+                    "description": "On a hit, the target must succeed a DC 13 Constitution Saving Throw or become Ruptured.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 6847,
@@ -11121,7 +12117,13 @@
             "weightKg": 0.45,
             "weightLb": 0.9,
             "price": 65,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Prey Upon the Weak",
+                    "description": "This weapon deals an additional Piercing|1~4 Piercing damage against targets with 50% of their hit points or fewer.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 8603,
@@ -11474,7 +12476,19 @@
             "weightKg": 0.45,
             "weightLb": 0.9,
             "price": 80,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Silenced|Silences targets on hit.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Sussur Dagger",
+                    "description": "Silenced|Silences targets on hit.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 4406,
@@ -11528,7 +12542,13 @@
             "weightKg": 0.45,
             "weightLb": 0.9,
             "price": 260,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Goblin's Undoing",
+                    "description": "Goblins have Disadvantage on Attack Rolls against the wielder.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 3015,
             "category": 2,
@@ -11668,10 +12688,17 @@
             "weightKg": 0.9,
             "weightLb": 2,
             "price": 310,
-            "effects": [],
-            "notes": [
-                "",
-                "UUID: cf19058b-2be6-411c-9227-7058053fa37a"
+            "effects": [
+                {
+                    "name": "Steel Physiology",
+                    "description": "Reduce incoming Bludgeoning, Piercing, and Slashing damage by 1.",
+                    "type": 2
+                },
+                {
+                    "name": "ArmourClass",
+                    "description": "+1",
+                    "type": 2
+                }
             ],
             "proficiency": 0,
             "enchantment": 1,
@@ -12189,7 +13216,13 @@
             "weightLb": 6.3,
             "price": 380,
             "uid": "MAG_PHB_Defender_Greataxe",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Defensive Attack",
+                    "description": "When making your first attack of the round, you can reduce this weapon's Enchantment by 1 to increase your ArmourClass and SavingThrow bonus by 1.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 2,
             "id": 9117,
@@ -12419,7 +13452,13 @@
             "weightLb": 6.3,
             "price": 130,
             "uid": "MAG_WYRM_UndeadBane_GreatAxe",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Slay the Wicked",
+                    "description": "This weapon deals an additional 1d6|Slashing damage against Fiends and Undead.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 10311,
@@ -13343,7 +14382,13 @@
             "weightLb": 5.4,
             "price": 130,
             "uid": "WPN_Tower_AutomatonHalberd",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Overcharge",
+                    "description": "Chance to Stunned|Stun the wielderNotes, unless it is a Construct.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 3794,
@@ -13402,7 +14447,13 @@
             "weightLb": 5.4,
             "price": 130,
             "uid": "MAG_ZOC_ForceConduit_Halberd",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Skinburster Force",
+                    "description": "When the wielder deals melee damage with this weapon, they gain 2 turns of Force Conduit.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 8717,
@@ -14947,6 +15998,7 @@
             "rarity": 1,
             "weightKg": 1.35,
             "weightLb": null,
+            "price": 40,
             "effects": [],
             "proficiency": 0,
             "id": 13247,
@@ -15030,6 +16082,11 @@
                 {
                     "name": "Commander's Strike|w=40",
                     "description": "Direct an ally to strike a foe. The ally uses a Reaction on their next turn to make a weapon attack. Once per Short Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Charisma",
+                    "description": "+2",
                     "type": 2
                 }
             ],
@@ -15372,7 +16429,18 @@
             "weightKg": 1.35,
             "weightLb": 2.7,
             "price": 250,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Shapeshifter Slayer",
+                    "description": "This weapon deals an additional 1d4 damage against shapeshifters or polymorphed creatures.",
+                    "type": 2
+                },
+                {
+                    "name": "Magical Durability",
+                    "description": "The wielder has a +2 bonus to Saving Throws against spells.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 2,
             "id": 8599,
@@ -15642,7 +16710,24 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 370,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Willing Whip",
+                    "description": "Grants Resistance to Necrotic damage. Deals an additional 1d6|Necrotic damage to nearby targets, including the wielder.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Due to the Resistance granted by the weapon, the wielder takes only 1~3|Necrotic damage. However, nearby allies take full damage.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Loviatar's Scourge",
+                    "description": "Due to the Resistance granted by the weapon, the wielder takes only 1~3|Necrotic damage. However, nearby allies take full damage.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 4216,
             "category": 2,
@@ -16376,6 +17461,11 @@
                     "name": "Invisible Weapon",
                     "description": "This weapon is Invisible Weapon|Invisible while equipped. It loses this property for 2 rounds on a missed Attack Roll.",
                     "type": 2
+                },
+                {
+                    "name": "Invisible",
+                    "description": "Affected entity can't be disarmed. It has Advantage on Attack Rolls. It scores a Critical Hit when rolling a 19.",
+                    "type": 2
                 }
             ],
             "proficiency": 0,
@@ -16609,7 +17699,13 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 190,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Arcane Enchantment",
+                    "description": "You gain a +1 bonus to Spell Save DC and Spell Attack Rolls.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 2,
             "id": 8600,
@@ -16738,7 +17834,18 @@
             "weightKg": 1.8,
             "weightLb": 3.9,
             "price": 310,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Heightened Necromancy",
+                    "description": "Creatures have Disadvantage on SavingThrows against your Necromancy Spells.",
+                    "type": 2
+                },
+                {
+                    "name": "Arms of Hadar|w=40",
+                    "description": "Cast the spell once per Long Rest.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 9599,
@@ -16823,7 +17930,23 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 640,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Arcane Enchantment",
+                    "description": "You gain a +1 bonus to Spell Save DC and Spell Attack Rolls.",
+                    "type": 2
+                },
+                {
+                    "name": "Arcane Battery",
+                    "description": "Alleviate the arcane burden of spellcasting with the power of this staff. The next spell you cast doesn't cost a spell slot. Once per Long Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Kereska's Favour|w=40",
+                    "description": "",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 2,
             "id": 8052,
@@ -17174,6 +18297,7 @@
             "name": "Ritual Staff",
             "image": "Goblin Staff Faded.png",
             "icon": "Goblin Staff Unfaded Icon.png",
+            "description": "The Ritual Staff is a mundane, nonmagical variant of the simple melee weapon that can be wielded in one hand, or with both hands for extra damage.\n\nBeyond its unique appearance, this staff has the same stats of a normal Quarterstaff.",
             "quote": "Streaks of tendon and sinew cling to the animal skill lashed atop of this wooden staff.",
             "type": 34,
             "rarity": 1,
@@ -17289,7 +18413,18 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 480,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Heightened Necromancy",
+                    "description": "Creatures have Disadvantage on Necromancy spells.",
+                    "type": 2
+                },
+                {
+                    "name": "Life Essence Harvest",
+                    "description": "When the wielder kills a hostile creature with a spell, they greedily absorb its energy and gain Life Essence until their next Long Rest.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 2,
             "id": 10576,
@@ -17612,6 +18747,11 @@
                     "type": 2
                 },
                 {
+                    "name": "Bound Weapon",
+                    "description": "",
+                    "type": 2
+                },
+                {
                     "name": "Anonymous Effect",
                     "description": "Can cast Blight at 4th level.",
                     "type": 2,
@@ -17660,6 +18800,16 @@
             "weightLb": 1.8,
             "price": 1300,
             "effects": [
+                {
+                    "name": "Elegant Duellist",
+                    "description": "While your off-hand is empty, you score a reaction per turn.",
+                    "type": 2
+                },
+                {
+                    "name": "Withering Cut",
+                    "description": "On a hit with a melee weapon, use a reaction to deal additional Necrotic damage equal to your Proficiency Bonus.",
+                    "type": 2
+                },
                 {
                     "name": "Anonymous Effect",
                     "description": "Challenge to Duel|w=40",
@@ -18389,6 +19539,11 @@
             "weightLb": 2.7,
             "price": 190,
             "effects": [
+                {
+                    "name": "Poisonous Synergy",
+                    "description": "While Concentrating, your melee weapon attacks deal an additional 1d4|Poison.",
+                    "type": 2
+                },
                 {
                     "name": "Ensnaring Strike (Melee)|w=40",
                     "description": "Can cast once per Long Rest.",
@@ -19213,6 +20368,11 @@
             "price": 300,
             "effects": [
                 {
+                    "name": "Shadow Blade",
+                    "description": "You have Advantage on Attack Rolls against Lightly or Heavily Obscured targets when using this blade.",
+                    "type": 2
+                },
+                {
                     "name": "Anonymous Effect",
                     "description": "Performance +1",
                     "type": 2,
@@ -19644,7 +20804,13 @@
             "weightKg": 0.9,
             "weightLb": 1.8,
             "price": 190,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "BOOOAL's Blessing",
+                    "description": "Advantage on Attack Rolls against Bleeding creatures, as long as there are Kuo-toa to worship BOOOAL.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 3708,
             "category": 2,
@@ -19671,7 +20837,19 @@
             "weightKg": 0.9,
             "weightLb": 1.8,
             "price": 120,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Silenced|Silences targets on hit.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Sussur Sickle",
+                    "description": "Silenced|Silences targets on hit.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 4627,
@@ -19978,6 +21156,16 @@
             "weightLb": 5.4,
             "price": 640,
             "effects": [
+                {
+                    "name": "Shar's Blessing",
+                    "description": "You gain Advantage on SavingThrows while Lightly or Heavily Obscured. This weapon deals an additional 1d6 damage to creatures that are Lightly or Heavily Obscured.",
+                    "type": 2
+                },
+                {
+                    "name": "Blind Immunity",
+                    "description": "The wearer cannot be Blinded.",
+                    "type": 2
+                },
                 {
                     "name": "Shar's Darkness|w=40",
                     "description": "Cast once Per Turn.",
@@ -20662,6 +21850,11 @@
                     "name": "Slay the Wicked",
                     "description": "This weapon deals an additional 1d6|Bludgeoning damage against Fiends and Undead.",
                     "type": 2
+                },
+                {
+                    "name": "Detect Thoughts|w=40",
+                    "description": "Can cast the spell once, per Long Rest.",
+                    "type": 2
                 }
             ],
             "proficiency": 0,
@@ -20880,6 +22073,7 @@
             "weightKg": 0.9,
             "weightLb": 1.8,
             "price": 100,
+            "uid": "a42bf0f7-3a78-4aae-b94f-ed92a89e847c",
             "effects": [
                 {
                     "name": "Dig Deep",
