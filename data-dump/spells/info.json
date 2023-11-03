@@ -17,7 +17,6 @@
         "rangeFt": 60,
         "aoeM": 2,
         "aoeFt": 7,
-        "notes": "* In BG3, this cantrip is the only direct offensive area of effect option without the expenditure of resources that can be done on a per turn basis",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -46,7 +45,6 @@
         "aoeM": 9,
         "aoeFt": 30,
         "condition": "Aid",
-        "notes": "* Downed allies return back to the fight and heal an additional 1 hit point.\n* Granted by:\n**Khalid's Gift (Khalid's Gift: Aid) at Lv3 equivalent \n**Shield of Devotion (Shield of Devotion: Aid) at Lv3\n**Absolute's Talisman at Lv2\n* Long Rest\n* When granted from an item, it only affects the wearer.\n* This is the only healing spell available to player characters that affects Undead and Constructs.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -96,7 +94,6 @@
         "attackRoll": false,
         "rangeM": 3,
         "rangeFt": 10,
-        "notes": "* Patch 3 introduced a bug where skeletons summoned by this spell do not have weapons.\n* Warlocks with the Pact of the Tome Pact Boon can cast this spell once per Long Rest once they receive Deepened Pact at level 5.\n* It is important to note that most friendly and neutral NPCs will respond to undead minions with horror, causing them to express alarm and flee from proximity of the thralls, in some cases to their death. To avoid this, selecting the chain icon next to the summoner player and leaving the thrall at some distance before interacting with certain vendors or achievement related NPCs is advised.\n* Casting with a level 4 spellslot allows to raise 3 minions instead of 1.\n* Casting with a level 5 spellslot allows to raise a ghoul or a flying ghoul.\n* These Summoned Undead do not have weapons so are not affected by Aura of Hate from Oathbreaker Paladin",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -119,7 +116,6 @@
                 "attackRoll": false,
                 "rangeM": 3,
                 "rangeFt": 10,
-                "notes": "* Patch 3 introduced a bug where skeletons summoned by this spell do not have weapons.\n* Warlocks with the Pact of the Tome Pact Boon can cast this spell once per Long Rest once they receive Deepened Pact at level 5.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -141,6 +137,7 @@
                 "id": 21420,
                 "attackRoll": false,
                 "rangeM": 3,
+                "rangeFt": 10,
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -163,7 +160,6 @@
                 "attackRoll": false,
                 "rangeM": 3,
                 "rangeFt": 10,
-                "notes": "* This zombie applies a condition called Crawling Gnaw. If an enemy is killed while having this condition, a Newborn Zombie is automatically spawned from their corpse.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -186,7 +182,6 @@
                 "attackRoll": false,
                 "rangeM": 3,
                 "rangeFt": 10,
-                "notes": "* This zombie applies a condition called Crawling Gnaw. If an enemy is killed while having this condition, a Newborn Zombie is automatically spawned from their corpse.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -250,7 +245,6 @@
                 "attackRoll": false,
                 "rangeM": 3,
                 "rangeFt": 10,
-                "notes": "*Despite the description saying it specialises in ranged combat, all of its abilities/attacks are melee.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -296,7 +290,6 @@
         "attackRoll": false,
         "rangeM": 3,
         "rangeFt": 10,
-        "notes": "*Despite the description saying it specialises in ranged combat, all of its abilities/attacks are melee.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -381,7 +374,6 @@
         "attackRoll": false,
         "rangeM": 3,
         "rangeFt": 10,
-        "notes": "* Patch 3 introduced a bug where skeletons summoned by this spell do not have weapons.\n* Warlocks with the Pact of the Tome Pact Boon can cast this spell once per Long Rest once they receive Deepened Pact at level 5.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -403,6 +395,7 @@
         "id": 21420,
         "attackRoll": false,
         "rangeM": 3,
+        "rangeFt": 10,
         "cost": 1,
         "classes": [
             "Cleric",
@@ -425,7 +418,6 @@
         "attackRoll": false,
         "rangeM": 3,
         "rangeFt": 10,
-        "notes": "* This zombie applies a condition called Crawling Gnaw. If an enemy is killed while having this condition, a Newborn Zombie is automatically spawned from their corpse.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -448,7 +440,6 @@
         "attackRoll": false,
         "rangeM": 3,
         "rangeFt": 10,
-        "notes": "* This zombie applies a condition called Crawling Gnaw. If an enemy is killed while having this condition, a Newborn Zombie is automatically spawned from their corpse.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -498,6 +489,7 @@
             "Warlock"
         ],
         "noSpellSlot": false,
+        "higherLevels": "Upcast: Gain an additional 5 and deal an additional 5 Cold damage per level.",
         "isVariant": false
     },
     {
@@ -593,7 +585,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Barkskin",
-        "notes": "* While similar to Mage Armour, Barkskin doesn't modify the base armour class, it instead sets the total armour class to 16 if it would have been lower.",
         "cost": 1,
         "classes": [
             "Druid",
@@ -621,7 +612,6 @@
         "aoeFt": 30,
         "condition": "Beacon of Hope",
         "conditionDuration": 10,
-        "notes": "* This spell also affects the caster despite the description only mentioning allies.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -668,7 +658,6 @@
         "id": 2714,
         "attackRoll": false,
         "range": 2,
-        "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -696,7 +685,6 @@
                 "condition": "Cursed: Dread",
                 "conditionDuration": 10,
                 "conditionSave": 5,
-                "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -725,7 +713,6 @@
                 "condition": "Cursed: Additional Damage",
                 "conditionDuration": 10,
                 "conditionSave": 5,
-                "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -754,7 +741,6 @@
                 "condition": "Cursed: Attack Disadvantage",
                 "conditionDuration": 10,
                 "conditionSave": 5,
-                "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -783,7 +769,6 @@
                 "condition": "Cursed: Strength",
                 "conditionDuration": 10,
                 "conditionSave": 5,
-                "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -812,7 +797,6 @@
                 "condition": "Cursed: Dexterity",
                 "conditionDuration": 10,
                 "conditionSave": 5,
-                "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -841,7 +825,6 @@
                 "condition": "Cursed: Constitution",
                 "conditionDuration": 10,
                 "conditionSave": 5,
-                "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -870,7 +853,6 @@
                 "condition": "Cursed: Intelligence",
                 "conditionDuration": 10,
                 "conditionSave": 5,
-                "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -899,7 +881,6 @@
                 "condition": "Cursed: Wisdom",
                 "conditionDuration": 10,
                 "conditionSave": 5,
-                "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -928,7 +909,6 @@
                 "condition": "Cursed: Charisma",
                 "conditionDuration": 10,
                 "conditionSave": 6,
-                "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -960,7 +940,6 @@
         "condition": "Cursed: Additional Damage",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -989,7 +968,6 @@
         "condition": "Cursed: Attack Disadvantage",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -1018,7 +996,6 @@
         "condition": "Cursed: Charisma",
         "conditionDuration": 10,
         "conditionSave": 6,
-        "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -1047,7 +1024,6 @@
         "condition": "Cursed: Constitution",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -1076,7 +1052,6 @@
         "condition": "Cursed: Dexterity",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -1105,7 +1080,6 @@
         "condition": "Cursed: Dread",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -1134,7 +1108,6 @@
         "condition": "Cursed: Intelligence",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -1163,7 +1136,6 @@
         "condition": "Cursed: Strength",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -1192,7 +1164,6 @@
         "condition": "Cursed: Wisdom",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Sign of Ill Omen at level 5+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -1223,6 +1194,7 @@
         "rangeM": 18,
         "rangeFt": 60,
         "condition": "Difficult Terrain",
+        "conditionDuration": 1,
         "cost": 1,
         "classes": [
             "Cleric"
@@ -1302,7 +1274,6 @@
         "attackRoll": false,
         "rangeM": 9,
         "rangeFt": 30,
-        "notes": "* Circle of the Lands who choose the Coast Land at level 7 learn this spell automatically.\n* Granted by Woe. Long Rest\n* The description given is not entirely correct in how the spell functions:\n** When the target of this spell succeeds in their saving throw, they still take half damage, regardless if they are considered plants or not",
         "cost": 1,
         "classes": [
             "Druid",
@@ -1382,7 +1353,6 @@
         "range": 3,
         "condition": "Blurred",
         "conditionDuration": 10,
-        "notes": "* Granted by Shifting Corpus Ring. Long Rest",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -1573,7 +1543,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Enhance Ability: Bull's Strength",
-        "notes": "* Granted by The Graceful Cloth Icon The Mighty Cloth.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -1600,7 +1569,6 @@
         "attackRoll": false,
         "aoeM": 5,
         "aoeFt": 17,
-        "notes": "* Draconic Bloodline of Red (Fire) Ancestry learns this spell automatically.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -1667,7 +1635,6 @@
         "condition": "Calmed",
         "conditionDuration": 10,
         "conditionSave": 6,
-        "notes": "* When used on targets who are already Charmed, Frightened, or Enraged, this spell will end those mind-affecting conditions immediately.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -1743,7 +1710,6 @@
         "id": 2032,
         "attackRoll": true,
         "range": 1,
-        "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -1768,7 +1734,6 @@
                 "id": 2047,
                 "attackRoll": true,
                 "range": 1,
-                "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
                 "cost": 1,
                 "classes": [
                     "Sorcerer",
@@ -1797,7 +1762,6 @@
                 "areaRangeM": 2,
                 "areaRangeFt": 7,
                 "areaDuration": 2,
-                "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
                 "cost": 1,
                 "classes": [
                     "Sorcerer",
@@ -1826,7 +1790,6 @@
                 "areaRangeM": 2,
                 "areaRangeFt": 7,
                 "areaDuration": 2,
-                "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
                 "cost": 1,
                 "classes": [
                     "Sorcerer",
@@ -1855,7 +1818,6 @@
                 "areaRangeM": 2,
                 "areaRangeFt": 7,
                 "areaDuration": 2,
-                "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
                 "cost": 1,
                 "classes": [
                     "Sorcerer",
@@ -1884,7 +1846,6 @@
                 "areaRangeM": 2,
                 "areaRangeFt": 7,
                 "areaDuration": 2,
-                "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
                 "cost": 1,
                 "classes": [
                     "Sorcerer",
@@ -1913,7 +1874,6 @@
                 "areaRangeM": 2,
                 "areaRangeFt": 7,
                 "areaDuration": 7,
-                "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.\n* Even though the tooltip description says it Poisons creatures, it instead just deals Poison damage instead.",
                 "cost": 1,
                 "classes": [
                     "Sorcerer",
@@ -1945,7 +1905,6 @@
         "areaRangeM": 2,
         "areaRangeFt": 7,
         "areaDuration": 2,
-        "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -1974,7 +1933,6 @@
         "areaRangeM": 2,
         "areaRangeFt": 7,
         "areaDuration": 2,
-        "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -2003,7 +1961,6 @@
         "areaRangeM": 2,
         "areaRangeFt": 7,
         "areaDuration": 2,
-        "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -2032,7 +1989,6 @@
         "areaRangeM": 2,
         "areaRangeFt": 7,
         "areaDuration": 2,
-        "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -2061,7 +2017,6 @@
         "areaRangeM": 2,
         "areaRangeFt": 7,
         "areaDuration": 7,
-        "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.\n* Even though the tooltip description says it Poisons creatures, it instead just deals Poison damage instead.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -2085,7 +2040,6 @@
         "id": 2047,
         "attackRoll": true,
         "range": 1,
-        "notes": "* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -2151,7 +2105,6 @@
         "areaTurnStartDamageType": 9,
         "areaTurnStartDamageSave": 3,
         "areaTurnStartDamageSaveEffect": 0,
-        "notes": "* Circle of the Lands who choose the Swamp or Underdark Land at level 9 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -2543,7 +2496,6 @@
         "condition": "Confused",
         "conditionDuration": 3,
         "conditionSave": 5,
-        "notes": "* Circle of the Lands who choose the Coast Land at level 7 learn this spell automatically.\n* Also granted to Warlocks who choose the Eldritch Invocation Dreadful Word at level 7+.\n* This spell does not target allies who are included in the area of effect.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -2691,7 +2643,6 @@
         "id": 8415,
         "attackRoll": false,
         "range": 1,
-        "notes": "* Circle of the Lands who choose the Coast or Mountain Land at level 9 learn this spell automatically.\n* Also granted to Warlocks who choose the Eldritch Invocation Minions of Chaos at level 9+.",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -2792,7 +2743,6 @@
                 "id": 14272,
                 "attackRoll": false,
                 "range": 1,
-                "notes": "* This spell is cast by upcasting Conjure Elemental to a 6th level spell slot.",
                 "cost": 1,
                 "classes": [
                     "Wizard",
@@ -2813,7 +2763,6 @@
                 "id": 14271,
                 "attackRoll": false,
                 "range": 1,
-                "notes": "* This spell is cast by upcasting Conjure Elemental to a 6th level spell slot.",
                 "cost": 1,
                 "classes": [
                     "Wizard",
@@ -2834,7 +2783,6 @@
                 "id": 14270,
                 "attackRoll": false,
                 "range": 1,
-                "notes": "* This spell is cast by upcasting Conjure Elemental to a 6th level spell slot.",
                 "cost": 1,
                 "classes": [
                     "Wizard",
@@ -2855,7 +2803,6 @@
                 "id": 14268,
                 "attackRoll": false,
                 "range": 1,
-                "notes": "* This spell is cast by upcasting Conjure Elemental to a 6th level spell slot.",
                 "cost": 1,
                 "classes": [
                     "Wizard",
@@ -2899,7 +2846,6 @@
         "id": 14272,
         "attackRoll": false,
         "range": 1,
-        "notes": "* This spell is cast by upcasting Conjure Elemental to a 6th level spell slot.",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -2940,7 +2886,6 @@
         "id": 14271,
         "attackRoll": false,
         "range": 1,
-        "notes": "* This spell is cast by upcasting Conjure Elemental to a 6th level spell slot.",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -2981,7 +2926,6 @@
         "id": 14270,
         "attackRoll": false,
         "range": 1,
-        "notes": "* This spell is cast by upcasting Conjure Elemental to a 6th level spell slot.",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -3022,7 +2966,6 @@
         "id": 14268,
         "attackRoll": false,
         "range": 1,
-        "notes": "* This spell is cast by upcasting Conjure Elemental to a 6th level spell slot.",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -3045,7 +2988,6 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "notes": "* Circle of the Lands who choose the Arctic or Forest Land at level 7 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -3217,7 +3159,6 @@
         "range": 2,
         "condition": "Contagion Poisoned",
         "conditionSave": 3,
-        "notes": "* Circle of the Lands who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3238,7 +3179,6 @@
                 "id": 11031,
                 "attackRoll": true,
                 "range": 2,
-                "notes": "* Circle of the Lands who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -3260,7 +3200,6 @@
                 "id": 11053,
                 "attackRoll": true,
                 "range": 2,
-                "notes": "* Circle of the Land Druids who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -3282,7 +3221,6 @@
                 "id": 11060,
                 "attackRoll": true,
                 "range": 2,
-                "notes": "* Circle of the Land Druids who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -3304,7 +3242,6 @@
                 "id": 11046,
                 "attackRoll": true,
                 "range": 2,
-                "notes": "* Circle of the Land Druids who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -3326,7 +3263,6 @@
                 "id": 11057,
                 "attackRoll": true,
                 "range": 2,
-                "notes": "* Circle of the Land Druids who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -3348,7 +3284,6 @@
                 "id": 11072,
                 "attackRoll": true,
                 "range": 2,
-                "notes": "* Circle of the Land Druids who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -3373,7 +3308,6 @@
         "id": 11072,
         "attackRoll": true,
         "range": 2,
-        "notes": "* Circle of the Land Druids who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3395,7 +3329,6 @@
         "id": 11031,
         "attackRoll": true,
         "range": 2,
-        "notes": "* Circle of the Lands who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3417,7 +3350,6 @@
         "id": 11053,
         "attackRoll": true,
         "range": 2,
-        "notes": "* Circle of the Land Druids who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3439,7 +3371,6 @@
         "id": 11057,
         "attackRoll": true,
         "range": 2,
-        "notes": "* Circle of the Land Druids who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3461,7 +3392,6 @@
         "id": 11046,
         "attackRoll": true,
         "range": 2,
-        "notes": "* Circle of the Land Druids who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3483,7 +3413,6 @@
         "id": 11060,
         "attackRoll": true,
         "range": 2,
-        "notes": "* Circle of the Land Druids who choose the Arctic, Forest, or Underdark Land at level 9 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3505,7 +3434,6 @@
         "id": 2737,
         "attackRoll": false,
         "range": 1,
-        "notes": "*Granted by Staff of Interruption\n*Even a failed Counterspell will feed the Abjuration Arcane Ward.\n* In 5e, an upcast Counterspell will automatically counter a spell if the spellslot level matches or exceeds the to-be-countered spell. Couterspelling a spell of a higher spellslot level requires the counterspelling caster to make an ability check, with a DC of 10 + (Level of to-be-countered spell). The spellcasting ability is added to the d20 roll of the counterspelling caster.\n** It is not certain at this time if this mechanic was identically implemented in BG3.",
         "cost": 4,
         "classes": [
             "Sorcerer",
@@ -3533,7 +3461,6 @@
         "aoeFt": 13,
         "condition": "Wet",
         "conditionDuration": 3,
-        "notes": "*Create water applies the Wet condition: Vulnerability to Cold and Lightning damage (double damage).\n*Lightning Spells cast on water causes the Shocked condition: Removing their reaction and having a chance to stun. \n*Electrified Water + a Fire Spell causes Electrified Steam, which resets the Shocked and Wet conditions.\n*A Cold spell freezes the water/mist and creates an Ice Surface, causing Difficult Terrain (half Movement Speed) and may cause creatures in the area to fall prone status effect Prone unless succeeding a DEX Save. (e.g. Create Water + Glyph of Warding).",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3618,7 +3545,6 @@
         "range": 1,
         "rangeM": 3,
         "rangeFt": 10,
-        "notes": "* Also granted by Crypt Lord Ring. Long Rest",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3709,7 +3635,6 @@
         "aoeFt": 30,
         "condition": "Crusader's Mantle",
         "conditionDuration": 10,
-        "notes": "* Also granted by Mantle of the Holy Warrior. Short Rest",
         "cost": 1,
         "classes": [
             "Paladin",
@@ -3792,7 +3717,6 @@
         "areaRangeM": 5,
         "areaRangeFt": 17,
         "areaDuration": 10,
-        "notes": "* Drow, Drow Half-Elfs, and Asmodeus Tieflings can only cast the spell once per Long Rest.\n* Way of Shadows gain the ability to cast this spell at level 3, at the cost of 2Monk_Ki_IconKi Points.\n* Effects that grant sight in magical darkness, such as the Warlock Eldritch Invocation Devil's Sight, Eversight Ring from act 2, and Helldusk Helmet from act 3, allow ranged attacks into and out of this spell's area.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -3845,7 +3769,6 @@
         "id": 2686,
         "attackRoll": false,
         "range": 1,
-        "notes": "* Circle of the Land's who choose the Grassland Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3872,7 +3795,6 @@
                 "aoe": 1,
                 "aoeM": 15,
                 "aoeFt": 50,
-                "notes": "* Circle of the Land Druids who choose the Grassland Land at level 5 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -3901,7 +3823,6 @@
                 "aoeM": 15,
                 "aoeFt": 50,
                 "condition": "Daylight",
-                "notes": "* Circle of the Lands who choose the Grassland Land at level 5 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -3933,7 +3854,6 @@
         "aoeM": 15,
         "aoeFt": 50,
         "condition": "Daylight",
-        "notes": "* Circle of the Lands who choose the Grassland Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3961,7 +3881,6 @@
         "aoe": 1,
         "aoeM": 15,
         "aoeFt": 50,
-        "notes": "* Circle of the Land Druids who choose the Grassland Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -3987,7 +3906,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Death Ward",
-        "notes": "* When the creature affected is hit with spells like Magic Missile and is receiving multiple attacks as part of one spell, assuming the 1st attack was sufficient to Downed|down the creature with Death Ward applied, the 2nd attack appears to apply before the Death Ward activates, which means that after 2 attacks the creature would lose the Death Ward but remain with 1HP. If the initial attack would have 3 applications then the creature would be Downed] on 1st attack and again on 3rd attack. In case of Avatars it means that, whilst having a Death Ward applied, they would need to receive 6 attack applications to fully die: 2 to break down the ward, 1 to get downed and 3 more to fail 3 Death Saves. This effect seems to apply to all multi-application attacks, like Scorching Ray and Eldritch Blast (as of 4.1.1.3669438).",
         "cost": 1,
         "classes": [
             "Cleric"
@@ -4040,6 +3958,7 @@
         "rangeFt": 30,
         "condition": "Prone",
         "conditionDuration": 1,
+        "conditionSave": 3,
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -4059,7 +3978,6 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Detect Thoughts",
-        "notes": "* Granted by Uncovered Mysteries. Long Rest\n* Granted by Mask of Soul Perception. Short Rest\n* Granted by Potion of Mind Reading.\n* When attempting to use Detect Thoughts on an NPC, an Intelligence or Wisdom Ability Check is rolled. On a failure, the NPC may become hostile.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -4085,7 +4003,6 @@
         "id": 6735,
         "attackRoll": false,
         "range": 2,
-        "notes": "* Granted by Spaceshunt Boots. Long Rest",
         "cost": 1,
         "classes": [
             "Bard",
@@ -4111,7 +4028,6 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Disguise Self",
-        "notes": "* Draconic Bloodline of Gold (Fire) Ancestry learns this spell automatically.\n* Also granted to Warlocks who choose the Eldritch Invocation Mask of Many Faces at level 2+.\n* Can be used to gain race specific bonuses on equipment and dialogue options if the player disguises as the corresponding race.\n* Since the spell changes Creature Size it can be used to fit through some entrances with size requirements.\n* Allows using Speak with Dead on creatures you've killed yourself.\n* This does not grant the disguise's racial features. For example, a Halfling disguised as a Wood Elf will still only have 7.5 m movement speed.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -5970,7 +5886,6 @@
         "condition": "Dominated",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* Granted by Nymph Cloak. Long Rest",
         "cost": 1,
         "classes": [
             "Bard",
@@ -6090,7 +6005,6 @@
                 "attackRoll": false,
                 "range": 2,
                 "condition": "Enhance Ability: Bull's Strength",
-                "notes": "* Granted by The Graceful Cloth Icon The Mighty Cloth.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -6192,7 +6106,6 @@
         "range": 2,
         "condition": "Jump",
         "conditionDuration": 10,
-        "notes": "* When this spell is gained through the Githyanki racial ability, it can only be cast once per Long Rest",
         "cost": 1,
         "classes": [
             "Druid",
@@ -6221,7 +6134,6 @@
         "condition": "Enlarged",
         "conditionDuration": 10,
         "conditionSave": 3,
-        "notes": "* The Constitution Saving Throw only applies when the spell is cast on a non-party member.\n* When Duergar cast this spell as a racial ability, it can only be cast once per Long Rest.\n* Enlarge increases the Size category of the target creature by 1. This affects the maximum size of creature it can Throw or use as an Improvised Melee Weapon, and vice-versa. For example, a creature of Medium size can only throw creatures of Small size or smaller. When Enlarged, a Medium creature becomes Large and can throw other creatures of Medium size or smaller.\n* While not stated in the spell description, Enlarge also increases the weight of the target creature. The formula used is: Original Weight * 2.35 = New Weight (plus additional weight, if needed, to place creature in the correct size category) (See Creature Size for more information.)\n* Unarmed Strikes are affected by Enlarge.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -6245,7 +6157,6 @@
         "attackRoll": false,
         "rangeM": 9,
         "rangeFt": 30,
-        "notes": "* Enlarge/Reduce changes the Size category of the target creature, which affects the maximum size of creature it can Throw or use as an Improvised Melee Weapon, and vice-versa.\n* While not stated in the spell description, Enlarge/Reduce also increases or decreases the weight of the target creature (depending on the selected variant).",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -6271,7 +6182,6 @@
                 "condition": "Enlarged",
                 "conditionDuration": 10,
                 "conditionSave": 3,
-                "notes": "* The Constitution Saving Throw only applies when the spell is cast on a non-party member.\n* When Duergar cast this spell as a racial ability, it can only be cast once per Long Rest.\n* Enlarge increases the Size category of the target creature by 1. This affects the maximum size of creature it can Throw or use as an Improvised Melee Weapon, and vice-versa. For example, a creature of Medium size can only throw creatures of Small size or smaller. When Enlarged, a Medium creature becomes Large and can throw other creatures of Medium size or smaller.\n* While not stated in the spell description, Enlarge also increases the weight of the target creature. The formula used is: Original Weight * 2.35 = New Weight (plus additional weight, if needed, to place creature in the correct size category) (See Creature Size for more information.)\n* Unarmed Strikes are affected by Enlarge.",
                 "cost": 1,
                 "classes": [
                     "Sorcerer",
@@ -6298,7 +6208,6 @@
                 "condition": "Reduced",
                 "conditionDuration": 10,
                 "conditionSave": 3,
-                "notes": "* The Constitution Saving Throw only applies when the spell is cast on a non-party member.\n* Reduce decreases the Size category of the target creature by 1. This affects the maximum size of creature it can Throw or use as an Improvised Melee Weapon, and vice-versa. For example, a creature of Medium size can only be thrown by a Large or larger creature. When Reduced, a Medium creature becomes Small and can be thrown by a Medium creature.\n* While not stated in the spell description, Reduce also decreases the weight of the target creature. The formula used is: Original Weight / 2.35 = New Weight (minus additional weight, if needed, to place creature in the correct size category) (See Creature Size for more information.)",
                 "cost": 1,
                 "classes": [
                     "Sorcerer",
@@ -6439,7 +6348,6 @@
         "condition": "Enthralled",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* There is a chance of failure, cause unknown.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -6472,7 +6380,6 @@
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 10,
-        "notes": "* Granted by Strange Tendril Amulet. Long Rest",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -6549,7 +6456,6 @@
         "attackRoll": false,
         "range": 3,
         "condition": "False Life",
-        "notes": "* Also granted to Fiendish Vigour}} at level 2+. When gained in this way, the spell can be cast at will and doesn't expend [[Spells#Spell Slots|Spell Slots.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -6579,7 +6485,6 @@
         "condition": "Feared",
         "conditionDuration": 2,
         "conditionSave": 5,
-        "notes": "* This spell does not target allies who are included in the area of effect.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -6610,7 +6515,6 @@
         "aoeFt": 30,
         "condition": "Feather Fall",
         "conditionDuration": 10,
-        "notes": "* Draconic Bloodline of Silver (Cold) Ancestry learns this spell automatically.",
         "cost": 2,
         "classes": [
             "Bard",
@@ -6664,7 +6568,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "notes": "* The raven is the only standard familiar given a specific name: \"Quothe\". This is a reference to Edgar Allen Poe's poem \"The Raven\", and probably also the raven Quoth who appears in Terry Pratchett's Discworld novels (himself a reference to \"The Raven\").",
         "cost": 1,
         "classes": [
             "Eldritch Knight",
@@ -6690,7 +6593,6 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "notes": "* High Elf and High Half-Elf versions are from the Wizard spell list and scale hit rate off of Intelligence. You need to explicitly choose the class version to scale off of a separate stat.\n** For example: for Sorcerer when selecting the spell in the keyboard interface this will be designated with CHA for the Sorcerer version that scales off of Charisma and INT for the race (Wizard) version that scales off of Intelligence.",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -6714,7 +6616,6 @@
         "id": 6736,
         "attackRoll": false,
         "range": 3,
-        "notes": "*Granted by Absolute's Protector (Chill only)\n* Also granted by Flame Enamelled Armour (Warm only) Long Rest",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -6736,7 +6637,6 @@
                 "range": 2,
                 "condition": "Fire Shield: Warm",
                 "conditionDuration": 10,
-                "notes": "* Also granted by Flame Enamelled Armour. Long Rest\n* Also granted by Infernal Robe. Long Rest",
                 "cost": 1,
                 "classes": [
                     "Wizard",
@@ -6759,7 +6659,6 @@
                 "range": 2,
                 "condition": "Fire Shield: Chill",
                 "conditionDuration": 10,
-                "notes": "*Granted by Absolute's Protector",
                 "cost": 1,
                 "classes": [
                     "Wizard",
@@ -6785,7 +6684,6 @@
         "range": 2,
         "condition": "Fire Shield: Chill",
         "conditionDuration": 10,
-        "notes": "*Granted by Absolute's Protector",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -6808,7 +6706,6 @@
         "range": 2,
         "condition": "Fire Shield: Warm",
         "conditionDuration": 10,
-        "notes": "* Also granted by Flame Enamelled Armour. Long Rest\n* Also granted by Infernal Robe. Long Rest",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -6856,7 +6753,6 @@
         "id": 2391,
         "attackRoll": false,
         "range": 3,
-        "notes": "* The blade can be equipped in either the main hand or the off hand, and can be unequipped, but must stay on the spellcaster's person. The blade has no Weapon Actions tied to it other than basic attack.\n\n* The blade uses the spellcaster's Spellcasting Ability (Wisdom for Druids or Charisma for Tieflings) for Attack Rolls instead of Strength or Dexterity, but no modifier is added to the Damage Roll.",
         "cost": 2,
         "classes": [
             "Druid"
@@ -6884,7 +6780,6 @@
         "aoe": 1,
         "aoeM": 3,
         "aoeFt": 10,
-        "notes": "* Flame strike is often compared with Fireball:\n** When cast with a level 5 spellslot, both deal 10d6 damage total, though Flame Strike has a slight advantage in general due to the mixed damage type it has. Fire damage is often resisted and radiant damage is often not.\n** Relatedly, Flame Strike imparts two separate instances of damage for the affect targets, once radiant, once fire. This has many mechanical benefits, but the main one is that it forces all targets who are concentrating to each roll a Concentration Saving Throw twice.\n** Fireball requires a direct trajectory between the caster and the target for the fireball to travel, Flame Strike can be used within range as long as the caster has sight on the target location.\n** Fireball has a 33% larger radius of effect when compared to Flame Strike\n* In 5e, Flame Strike deals 2d6 less damage than a level 5 fireball, while having half the effect radius.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -6974,7 +6869,6 @@
         "areaRangeM": 5,
         "areaRangeFt": 15,
         "areaDuration": 10,
-        "notes": "* Draconic Bloodline of Bronze (Lightning) Ancestry learns this spell automatically.",
         "cost": 1,
         "classes": [
             "Druid",
@@ -7054,7 +6948,6 @@
         "rangeFt": 30,
         "condition": "Friends",
         "conditionDuration": 10,
-        "notes": "If cast on companions, they will lose 10 approval when the effect ends, regardless of difficulty.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7080,7 +6973,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Gaseous Form",
-        "notes": "* Circle of the Lands who choose the Underdark Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -7107,7 +6999,6 @@
         "aoe": 1,
         "aoeM": 4,
         "aoeFt": 13,
-        "notes": "* When the glyph is triggered, those affected by it each rolls a  Dexterity SavingThrow. If a creature successfully saves, they only take half the damage for the damaging variants of this spell, and suffers no ill effect for the non-damaging variants.\n* Only those considered an enemy can trigger the glyph, for the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot in the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* If the glyph is cast in an area where hostile creatures are already present, it triggers immediately.\n* When the glyph is triggered everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet. This is true for most AOE spells but it is especially so for the sleep variant of Glyph of Warding:\n** The shared Initiative system means an ally can immediately shove/help the spellcaster awake should they fall asleep due to their own glyph.\n** Magical Sleep Immunity is fairly common, either from an Elixir of Peerless Focus or from Fey Ancestry\n*** Shadowheart, being a Half-Elf Cleric, can naturally utilize this tactic starting from level 5.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7136,7 +7027,6 @@
                 "condition": "Sleeping",
                 "conditionDuration": 2,
                 "conditionSave": 2,
-                "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet. This is true for most AOE spells but it is especially so for the sleep variant of Glyph of Warding:\n** The shared Initiative system means an ally can immediately shove/help the spellcaster awake should they fall asleep due to their own glyph.\n** Magical Sleep Immunity is fairly common, either from an Elixir of Peerless Focus or from Fey Ancestry\n*** Shadowheart, being a Half-Elf Cleric, can naturally utilize this tactic starting from level 5.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -7162,7 +7052,6 @@
                 "aoe": 1,
                 "aoeM": 4,
                 "aoeFt": 13,
-                "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -7190,7 +7079,6 @@
                 "aoe": 1,
                 "aoeM": 4,
                 "aoeFt": 13,
-                "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -7221,7 +7109,6 @@
                 "aoe": 1,
                 "aoeM": 4,
                 "aoeFt": 13,
-                "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -7252,7 +7139,6 @@
                 "aoe": 1,
                 "aoeM": 4,
                 "aoeFt": 13,
-                "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -7283,7 +7169,6 @@
                 "aoe": 1,
                 "aoeM": 4,
                 "aoeFt": 13,
-                "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -7314,7 +7199,6 @@
                 "aoe": 1,
                 "aoeM": 4,
                 "aoeFt": 13,
-                "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
                 "cost": 1,
                 "classes": [
                     "Bard",
@@ -7348,7 +7232,6 @@
         "aoe": 1,
         "aoeM": 4,
         "aoeFt": 13,
-        "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7379,7 +7262,6 @@
         "aoe": 1,
         "aoeM": 4,
         "aoeFt": 13,
-        "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7408,7 +7290,6 @@
         "aoe": 1,
         "aoeM": 4,
         "aoeFt": 13,
-        "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7436,7 +7317,6 @@
         "aoe": 1,
         "aoeM": 4,
         "aoeFt": 13,
-        "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7467,7 +7347,6 @@
         "aoe": 1,
         "aoeM": 4,
         "aoeFt": 13,
-        "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7499,7 +7378,6 @@
         "condition": "Sleeping",
         "conditionDuration": 2,
         "conditionSave": 2,
-        "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet. This is true for most AOE spells but it is especially so for the sleep variant of Glyph of Warding:\n** The shared Initiative system means an ally can immediately shove/help the spellcaster awake should they fall asleep due to their own glyph.\n** Magical Sleep Immunity is fairly common, either from an Elixir of Peerless Focus or from Fey Ancestry\n*** Shadowheart, being a Half-Elf Cleric, can naturally utilize this tactic starting from level 5.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7527,7 +7405,6 @@
         "aoe": 1,
         "aoeM": 4,
         "aoeFt": 13,
-        "notes": "* Only those considered an enemy can trigger the glyph. For the player's party this is indicated via a red circle beneath the creature, red outlines when highlighted, and denoted by a red dot on the minimap. Neutral, friendly, and allied creatures (highlighted yellow/green/blue respectively) can safely go through the glyph.\n** This makes using the glyph as a trap difficult for many encounters. Specifically, those that normally only consider creatures hostile after dialogue.\n* When the glyph is triggered, everyone within the area is affected, regardless of allegiance.\n* When the spellcaster is surrounded by enemies, sometimes it is worth throwing the glyph down right at their feet.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7597,7 +7474,6 @@
         "attackRoll": false,
         "rangeM": 9,
         "rangeFt": 30,
-        "notes": "* Circle of the Lands who choose the Forest or Swamp Land at level 7 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Druid",
@@ -7628,7 +7504,6 @@
         "areaRangeM": 5,
         "areaRangeFt": 15,
         "areaDuration": 10,
-        "notes": "* Draconic Bloodline of Black (Acid) Ancestry learns this spell automatically.",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -7655,7 +7530,6 @@
         "rangeFt": 5,
         "condition": "Greater Invisibility",
         "conditionDuration": 10,
-        "notes": "* The first DC is 15. The following checks start at a DC of 17, increasing by 1 per check.\n* Circle of the Lands who choose the Underdark Land at level 7 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7678,7 +7552,6 @@
         "id": 8407,
         "attackRoll": false,
         "range": 2,
-        "notes": "* Circle of the Lands who choose the Coast or Grassland Land at level 9 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7724,7 +7597,6 @@
         "range": 2,
         "condition": "Guidance",
         "conditionDuration": 10,
-        "notes": "* Also granted to Warlocks who choose Pact of the Tome as their Pact Boon at level 3.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -7757,6 +7629,7 @@
         ],
         "noSpellSlot": false,
         "damageSaveEffect": 1,
+        "higherLevels": "Upcast: Deals an additional 1d6|Radiant damage per level.",
         "isVariant": false
     },
     {
@@ -7776,7 +7649,6 @@
         "condition": "Off Balance",
         "conditionDuration": 1,
         "conditionSave": 1,
-        "notes": "* Granted by Amulet of Windrider. Short Rest\n* A successful SavingThrow means that a creature is neither pushed back, nor goes Off Balance",
         "cost": 1,
         "classes": [
             "Druid",
@@ -7858,7 +7730,6 @@
         "rangeFt": 30,
         "condition": "Hastened",
         "conditionDuration": 10,
-        "notes": "* Circle of the Lands who choose the Arctic or Grassland Land at level 5 learn this spell automatically.\n* Warlocks with the Pact of the Tome Pact Boon can cast this spell once per Long Rest once they receive Deepened Pact at level 5.\n* Granted by Darkfire Shortbow. Long Rest\n* A shorter version of Haste called Celestial Haste is granted by Gontr Mael. Long Rest",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -7931,7 +7802,6 @@
         "condition": "Heat Metal",
         "conditionDuration": 10,
         "conditionSave": 3,
-        "notes": "*The bonus action cast provided by the Heat Metal condition receives the same upcasting damage bonus as the main cast.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -7982,7 +7852,6 @@
         "aoeM": 18,
         "aoeFt": 60,
         "condition": "Thoroughly Stuffed",
-        "notes": "* Creates a temporary Feast Supplies container for 10 turns that contains 46-58 Camp Supplies and 1 bottle of Water. The items will drop on the floor when the container expires.\n* The buff from this spell will disappear if the caster unprepares the spell. This may be a bug as this does not happen with the similar spell Aid.",
         "cost": 1,
         "classes": [
             "Cleric"
@@ -8025,7 +7894,6 @@
         "id": 2223,
         "attackRoll": false,
         "range": 1,
-        "notes": "* If the target dies before spell's duration ends, gain size=28|Reapply Hex Icon|Reapply Hex\n* Hex damage is applied multiple times for multiple successful Attack Rolls. Example scenarios:\n** Warlock hits the target with a melee or ranged weapon attack: additional 1d6|Necrotic.\n** Level 1 Warlock casts Eldritch Blast and hits the target: additional 1d6|Necrotic.\n** Level 5 Warlock casts Eldritch Blast and hits the target with both rays: additional 2d6|Necrotic, for hitting twice.\n** Level 3 Warlock casts Scorching Ray and hits the target with all three rays: additional 3d6|Necrotic, for hitting three times.\n** Level 5 Warlock casts Scorching Ray and hits the target with all four rays: additional 4d6|Necrotic, for hitting four times.\n* Hex is only triggered by hitting the target with a successful Attack Roll, and not by other sources of damage. Example scenarios:\n** Warlock casts Magic Missile (which does not require Attack Rolls): no additional damage from Hex.\n** Warlock casts Fireball (which is a Saving Throw, not an Attack Roll): no additional damage from Hex.\n* Clarification: The in-game description says it grants 'Disadvantage on an Ability of your choosing', but it only applies to Checks, not all rolls utilising that Ability: the target still rolls normally on Saving Throws and Attack rolls.\n* In Early Access Patch 9, there was a bugged interaction between Hex and the Eldritch Invocation Agonising Blast, which caused Agonising Blast bonus damage to be applied an extra time for each instance of Hex damage.\n** In the case of a level 5 Warlock with two Eldritch Blast beams, this means Agonising Blast damage would be applied a total of 4 times, if both beams hit: once for each beam, and once for each instance of Hex damage.",
         "cost": 2,
         "classes": [
             "Warlock"
@@ -8417,7 +8285,6 @@
         "condition": "Hypnotised",
         "conditionDuration": 2,
         "conditionSave": 5,
-        "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -8454,7 +8321,6 @@
         "areaRangeM": 2,
         "areaRangeFt": 7,
         "areaDuration": 2,
-        "notes": "* Creatures on an Prone}} on failing a [[Dexterity SavingThrow.",
         "cost": 1,
         "classes": [
             "Druid",
@@ -8494,7 +8360,6 @@
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 2,
-        "notes": "* Circle of the Lands who choose the Arctic Land at level 7 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Druid",
@@ -8613,7 +8478,6 @@
         "id": 8088,
         "attackRoll": false,
         "range": 1,
-        "notes": "* Knock can instantly open any non-magical lock regardless of its lockpicking difficulty\n** Locks that resist Knock will have a status denoting so\n* Granted by Knock Knuckle Gloves. Long Rest",
         "cost": 1,
         "classes": [
             "Bard",
@@ -8637,7 +8501,6 @@
         "id": 2617,
         "attackRoll": false,
         "range": 2,
-        "notes": "* Granted by Amulet of Silvanus. Long Rest",
         "cost": 1,
         "classes": [
             "Bard",
@@ -8665,7 +8528,6 @@
         "range": 2,
         "condition": "Light",
         "conditionSave": 2,
-        "notes": "* When cast on a character, it will apply the effect to their active weapon.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -8723,7 +8585,6 @@
         "aoe": 4,
         "aoeM": 30,
         "aoeFt": 100,
-        "notes": "* Circle of the Lands who choose the Mountain Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -8795,7 +8656,6 @@
         "id": 1662,
         "attackRoll": false,
         "range": 1,
-        "notes": "* Githyanki and Arcane Tricksters can cast a special version of Mage Hand that is invisible.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -8824,7 +8684,6 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "notes": "* The Shield spell causes the caster to take no damage from Magic Missile.\n* The level 10 Evocation feature Empowered Evocation will add the wizard's intelligence modifier to each missile.\n* When interacting with effects like Death Ward and dealing multiple attacks to the same creature, if the 1st attack was sufficient to Downed|down the target, the 2nd attack will apply beforeDeath Ward activates leaving the target with 1HP. An action with three attacks, however, would result in the creature being downed. A player character with Death Ward applied would need to receive 6 attack applications to fully die: 2 to break the ward, 1 to get downed, then 3 more to fail 3 Death Saving Throws. This effect seems to apply to all multi-application attacks such Scorching Ray and Eldritch Blast (as of 4.1.1.3669438).",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -8851,7 +8710,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Magic Weapon",
-        "notes": "* The bonus to attack and damage from Magic Weapon does stack with inherent enchantments on weapons.\n* This can only be applied to melee weapons.",
         "cost": 1,
         "classes": [
             "Paladin",
@@ -8928,7 +8786,6 @@
         "id": 1045,
         "attackRoll": false,
         "range": 1,
-        "notes": "* Can be cast with Melf's First Staff once per Long Rest. The spell uses a caster's existing spellcasting ability modifier, or otherwise uses Charisma as its casting modifier for a character without a spellcasting ability modifier.",
         "cost": 1,
         "classes": [
             "Wizard",
@@ -8954,7 +8811,6 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "notes": "* Illusions can cast a special version of Minor Illusion as a Bonus Action.\n* Outside of combat, causes most NPCs to walk towards the illusion and surround it.\n* During combat, this causes enemies to turn towards the illusion.\n* Springs traps if cast on top of the trap\n* Placed on top of a vent it prevents gas from coming out\n* Will disappear if you concentrate on another spell, but will not break concentration for existing spells",
         "cost": 1,
         "classes": [
             "Bard",
@@ -9010,7 +8866,6 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "notes": "* Granted by Amulet of Misty Step. Short Rest\n* Also granted by Disintegrating Night Walkers. Short Rest",
         "cost": 2,
         "classes": [
             "Sorcerer",
@@ -9042,7 +8897,6 @@
         "range": 1,
         "aoeM": 1,
         "aoeFt": 3,
-        "notes": "* Granted by Selûne's Spear of Night. Long Rest",
         "cost": 1,
         "classes": [
             "Druid",
@@ -9095,7 +8949,6 @@
         "condition": "Otto's Irresistible Dance",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* Unlike most other control spells, the target of Otto’s Irresistible Dance does not get to attempt a saving throw when the spell is first cast, meaning their turn is very likely to be wasted.\n** Counterspell is one of the very few ways to prevent this from happening\n* (Possible Bug) As of Patch 3, the target of this spell does not get to attempt to make saving throws on subsequent turns which makes it an irresistible 10 round crowd control ability.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -9144,7 +8997,6 @@
         "aoeM": 9,
         "aoeFt": 30,
         "condition": "Pass Without Trace Aura",
-        "notes": "* Way of Shadows gain the ability to cast this spell at level 3, at the cost of ki|2.",
         "cost": 1,
         "classes": [
             "Druid",
@@ -9218,7 +9070,6 @@
         "id": 9245,
         "attackRoll": false,
         "range": 1,
-        "notes": "* Granted by Infernal Rapier Icon Infernal Rapier. (Cambion only) Long Rest",
         "cost": 1,
         "classes": [
             "Cleric"
@@ -9275,7 +9126,6 @@
                 "id": 10939,
                 "attackRoll": false,
                 "range": 1,
-                "notes": "* Granted by Infernal Rapier Icon Infernal Rapier. Long Rest",
                 "cost": 1,
                 "classes": [
                     "Cleric"
@@ -9298,7 +9148,6 @@
         "id": 10939,
         "attackRoll": false,
         "range": 1,
-        "notes": "* Granted by Infernal Rapier Icon Infernal Rapier. Long Rest",
         "cost": 1,
         "classes": [
             "Cleric"
@@ -9386,7 +9235,6 @@
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 10,
-        "notes": "* Circle of the Lands who choose the Forest Land at level 5 learn this spell automatically",
         "cost": 1,
         "classes": [
             "Bard",
@@ -9447,7 +9295,6 @@
         "condition": "Polymorphed",
         "conditionDuration": 5,
         "conditionSave": 5,
-        "notes": "* Circle of the Lands who choose the Grassland Land at level 7 learn this spell automatically.\n* Also granted to Warlocks who choose the Eldritch Invocation Sculptor of Flesh at level 7+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -9516,7 +9363,6 @@
         "id": 2692,
         "attackRoll": false,
         "range": 2,
-        "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -9542,7 +9388,6 @@
                 "attackRoll": false,
                 "range": 2,
                 "condition": "Protection from Energy: Acid",
-                "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -9569,7 +9414,6 @@
                 "attackRoll": false,
                 "range": 2,
                 "condition": "Protection from Energy: Cold",
-                "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -9596,7 +9440,6 @@
                 "attackRoll": false,
                 "range": 2,
                 "condition": "Protection from Energy: Fire",
-                "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -9623,7 +9466,6 @@
                 "attackRoll": false,
                 "range": 2,
                 "condition": "Protection from Energy: Lightning",
-                "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -9650,7 +9492,6 @@
                 "attackRoll": false,
                 "range": 2,
                 "condition": "Protection from Energy: Thunder",
-                "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
                 "cost": 1,
                 "classes": [
                     "Cleric",
@@ -9680,7 +9521,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Protection from Energy: Acid",
-        "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -9707,7 +9547,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Protection from Energy: Cold",
-        "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -9734,7 +9573,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Protection from Energy: Fire",
-        "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -9761,7 +9599,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Protection from Energy: Lightning",
-        "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -9788,7 +9625,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Protection from Energy: Thunder",
-        "notes": "* Circle of the Lands who choose the Desert Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -9815,7 +9651,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Protection from Evil and Good",
-        "notes": "* Granted to Rangers who pick Keeper of the Veil as their Favoured Enemy at level 1. Long Rest",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -9923,7 +9758,6 @@
         "condition": "Poisoned",
         "conditionDuration": 2,
         "conditionSave": 3,
-        "notes": "* Draconic Bloodlines of Green (Poison) Ancestry learn this spell automatically.\n* Also granted to Warlocks who choose the Book of Ancient Secrets}} at level 7+. When gained in this way, the spell can be cast once per [[Long Rest and doesn't expend Spell Slots.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -9978,7 +9812,7 @@
         "classes": [
             "Warlock"
         ],
-        "noSpellSlot": false,
+        "noSpellSlot": true,
         "isVariant": false
     },
     {
@@ -10019,7 +9853,6 @@
         "condition": "Reduced",
         "conditionDuration": 10,
         "conditionSave": 3,
-        "notes": "* The Constitution Saving Throw only applies when the spell is cast on a non-party member.\n* Reduce decreases the Size category of the target creature by 1. This affects the maximum size of creature it can Throw or use as an Improvised Melee Weapon, and vice-versa. For example, a creature of Medium size can only be thrown by a Large or larger creature. When Reduced, a Medium creature becomes Small and can be thrown by a Medium creature.\n* While not stated in the spell description, Reduce also decreases the weight of the target creature. The formula used is: Original Weight / 2.35 = New Weight (minus additional weight, if needed, to place creature in the correct size category) (See Creature Size for more information.)",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -10116,7 +9949,6 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "notes": "This cantrip is also granted to Rangers who pick Sanctified Stalker as their Favoured Enemy at level 1.",
         "cost": 1,
         "classes": [
             "Cleric"
@@ -10163,7 +9995,6 @@
         "id": 2530,
         "attackRoll": true,
         "range": 1,
-        "notes": "* Granted by Circlet of Blasting. Long Rest\n* Also granted by Gloves of Cinder and Sizzle. Long Rest\n* Also granted by Hellfire Hand Crossbow as a 3rd level spell. Short Rest\n* A target afflicted by Hex will take an additional 1d6|Necrotic damage from each ray.\n* When interacting with effects like Death Ward and dealing multiple attacks to the same creature, assuming the 1st attack was sufficient to Downed|down the target the 2nd attack appears to apply before the Death Ward activates, which means that after 2 attacks the target would lose the Death Ward but remain with 1HP. If the initial attack would have 3 applications then the target would be Downed|downed on 1st attack and again on 3rd attack. In case of Avatars it means that, whilst having a Death Ward applied, they would need to receive 6 attack applications to fully die: 2 to break down the ward, 1 to get downed and 3 more to fail 3 Death Saves. This effect seems to apply to all multi-application attacks, like Magic Missile and Eldritch Blast (as of 4.1.1.3669438).",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -10194,7 +10025,6 @@
         "condition": "Searing Smite",
         "conditionDuration": 10,
         "conditionSave": 3,
-        "notes": "* Zariel Tieflings can only cast the spell once per Long Rest.\n* Also granted by  Skybreaker. Long Rest.",
         "cost": 3,
         "classes": [
             "Paladin"
@@ -10289,7 +10119,6 @@
         "range": 1,
         "aoeM": 3,
         "aoeFt": 10,
-        "notes": "* Granted by  Sentient Amulet (Rare) and Sentient Amulet (Very Rare).",
         "cost": 1,
         "classes": [
             "Bard",
@@ -10343,7 +10172,6 @@
         "attackRoll": false,
         "range": 1,
         "condition": "Shield of Faith",
-        "notes": "* Also granted by Sword of Justice as Tyr's Protection with Short Rest.\n* Also granted by Dark Justiciar Half-Plate (Rare) and Dark Justiciar Half-Plate (Very Rare) as Shar's Aegis with Long Rest.\n* Larian Homebrew: In the original D&D 5th Edition Tabletop the spell only lasts a maximum of 10 minutes (100 Turns).",
         "cost": 2,
         "classes": [
             "Cleric",
@@ -10391,7 +10219,6 @@
         "range": 2,
         "condition": "Shocking Grasp",
         "conditionDuration": 1,
-        "notes": "Characters with the War Caster: Opportunity Spell|War Caster feat can cast this cantrip on enemies moving out of their melee range as a reaction, even if they don't know this spell.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -10481,7 +10308,6 @@
         "areaRangeM": 9,
         "areaRangeFt": 30,
         "areaDuration": 10,
-        "notes": "* Circle of the Lands who choose the Arctic or Coast Land at level 5 learn this spell automatically.\n* Any Fire damage will burn away the surface for the turn. If the caster continues to concentrate, the ice surface will form again the following turn.",
         "cost": 1,
         "classes": [
             "Druid",
@@ -10509,7 +10335,6 @@
         "condition": "Slowed",
         "conditionDuration": 10,
         "conditionSave": 5,
-        "notes": "* Also granted to Warlocks who choose the Eldritch Invocation Mire the Mind at level 5+.\n* Despite what the in-game description says, this spell applies a -2 penalty to all SavingThrows, not just Dexterity.\n* Enemies automatically repeat the Wisdom Saving Throw at the end of each of their turns, ending the effect on a success.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -10536,7 +10361,6 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Speak with Animals",
-        "notes": "* Wildhearts can cast this spell once per Long Rest.\n* Forest Gnomes can cast this spell once per Long Rest.\n* Also granted to Warlocks who choose the Eldritch Invocation Beast Speech at level 2+.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -10620,7 +10444,6 @@
         "condition": "Spirit Guardians Aura",
         "conditionDuration": 19,
         "areaDuration": 10,
-        "notes": "* When Sanctuary is cast on a someone currently using Spirit Guardians, the Spirit Guardians spell ends immediately.",
         "cost": 1,
         "classes": [
             "Cleric",
@@ -11044,7 +10867,6 @@
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 10,
-        "notes": "* Circle of the Lands who choose the Swamp or Underdark Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -11067,7 +10889,6 @@
         "id": 7936,
         "attackRoll": false,
         "range": 2,
-        "notes": "* Circle of the Lands who choose the Mountain Land at level 7 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Druid",
@@ -11097,7 +10918,6 @@
         "condition": "Blinded",
         "conditionDuration": 10,
         "conditionSave": 3,
-        "notes": "* Granted by The Blood of Lathander. Long Rest\n* This spell creates a beam of light from the caster out to a distance of m=18|ft=60. The beam is m=2.5|ft=8 wide.",
         "cost": 1,
         "classes": [
             "Druid",
@@ -11155,7 +10975,6 @@
         "condition": "Telekinesis",
         "conditionDuration": 10,
         "conditionSave": 1,
-        "notes": "* Granted by Hr'a'cknir Bracers",
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -11174,6 +10993,7 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Thaumaturgy",
+        "conditionDuration": 10,
         "cost": 1,
         "classes": [
             "Cleric",
@@ -11198,7 +11018,6 @@
         "attackRoll": true,
         "rangeM": 9,
         "rangeFt": 30,
-        "notes": "* Also granted to Warlocks who choose Pact of the Tome as their Pact Boon at level 3.",
         "cost": 1,
         "classes": [
             "Druid",
@@ -11251,7 +11070,6 @@
         "aoe": 3,
         "aoeM": 5,
         "aoeFt": 17,
-        "notes": "* If an affected creature passes the SavingThrow, in addition to only taking half damage, they are also not pushed back.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -11282,7 +11100,6 @@
         "range": 1,
         "condition": "True Strike",
         "conditionDuration": 2,
-        "notes": "* This cantrip is also granted to Rangers who pick Mage Breaker as their Favoured Enemy at level 1.\n* The description of True Strike is among the more confusingly worded, and thus is prone to being misunderstood. To wit:\n** Only the caster of this spell gains Advantage on their next attack against the affected target, never their allies.\n** Only the first attack roll following the application of the condition gains Advantage. The condition is removed immediately afterward, whether the attack roll is a hit or a miss.\n** The duration is 2 turns, but this includes the turn on which the condition is applied. This is true of many spells, but is especially important for short duration spells.\n* True Strike is rarely considered worth using due to its opportunity cost; a full action must be spent on it to improve the chances of hitting once. Most of the time, if two actions are available (whether on the same turn or not), attacking twice is more effective than attacking once with advantage due to damage bonuses.\n* However, True Strike is not considered aggressive, so the caster could cast it just before combat to gain its benefits without having to spend an action mid-fight. This eliminates the opportunity cost. Note that the duration is only 2 turns (12 seconds while not in turn-based mode).\n* Another niche use case exists for an Arcane Trickster making a Sneak Attack (Melee)|Sneak Attack. If the caster is out of spell slots, and no allies can flank for a sneak attack, and there is no other way to gain advantage for an attack roll, spending a single action on True Strike to enable a single sneak attack can be considered efficient.\n** In such cases, True Strike can be even more useful when using the Sneak Attack (Ranged)|ranged version of sneak attack, since this allows the caster to benefit from the range of the cantrip, especially with a High Ground bonus. At such distances, however, it is typically easier to just use a Bonus Action to hide first and obtain Advantage.",
         "cost": 1,
         "classes": [
             "Bard",
@@ -11311,7 +11128,6 @@
         "range": 2,
         "condition": "Vampiric Touch",
         "conditionDuration": 10,
-        "notes": "* Circle of the Lands who choose the Swamp Land at level 5 learn this spell automatically.",
         "cost": 1,
         "classes": [
             "Warlock",
@@ -11339,7 +11155,6 @@
         "rangeFt": 60,
         "condition": "Vicious Mockery",
         "conditionDuration": 1,
-        "notes": "* Also granted to Warlocks who choose Pact of the Tome as their Pact Boon at level 3.",
         "cost": 1,
         "classes": [
             "Bard"
@@ -11373,7 +11188,6 @@
         "areaTurnStartDamageType": 4,
         "areaTurnStartDamageSave": 2,
         "areaTurnStartDamageSaveEffect": 0,
-        "notes": "* Circle of the Lands who choose the Desert Land at level 7 learn this spell automatically.\n* This spell creates a wall from the first targeted point to the second targeted point, a distance of up to m=36|ft=120. The wall is m=3|ft=10 wide.",
         "cost": 1,
         "classes": [],
         "noSpellSlot": false,
@@ -11456,7 +11270,6 @@
         "areaTurnStartDamageType": 2,
         "areaTurnStartDamageSave": 2,
         "areaTurnStartDamageSaveEffect": 0,
-        "notes": "* This spell creates a wall from the first targeted point to the second targeted point, a distance of up to m=36|ft=120. The wall is m=4|ft=13 wide.",
         "cost": 1,
         "classes": [
             "Druid"
@@ -11500,7 +11313,6 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Warding Bond",
-        "notes": "* Also granted by the ring True Love's Embrace. The spell can only be cast once per Long Rest, and the target must be wearing the matching ring, True Love's Caress.\n* Also granted by the shield Viconia's Walking Fortress.",
         "cost": 1,
         "classes": [
             "Cleric"
@@ -11528,7 +11340,6 @@
         "areaRangeM": 4,
         "areaRangeFt": 13,
         "areaDuration": 10,
-        "notes": "* This spell is also accessible to Beast Masters through Wolf Spider Companion.\n* Spiderstep Boots grant immunity to Enwebbed|Enweb.",
         "cost": 1,
         "classes": [
             "Sorcerer",
@@ -11578,7 +11389,6 @@
         "range": 1,
         "condition": "Witch Bolt",
         "conditionDuration": 10,
-        "notes": "* Draconic Bloodline of Blue (Lightning) Ancestry learns this spell automatically.",
         "cost": 1,
         "classes": [
             "Sorcerer",

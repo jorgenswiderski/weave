@@ -56,7 +56,12 @@ export class MediaWikiTemplateParser {
         key: string,
     ): string | undefined {
         const commentless = wikitext.replace(/<!--[\s\S]*?-->/g, '');
-        const regex = new RegExp(`\\|\\s*${key}\\s*=([\\s\\S]*?)\\n\\|`, 'i');
+
+        const regex = new RegExp(
+            `\\|\\s*${key}\\s*=([\\s\\S]*?)\\n(?:\\||}})`,
+            'i',
+        );
+
         const match = commentless.match(regex);
 
         return match ? match[1].trim() : undefined;

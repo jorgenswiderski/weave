@@ -61,7 +61,7 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
     areaTurnEndDamageType?: DamageType;
     areaTurnEndDamageSave?: AbilityScore;
     areaTurnEndDamageSaveEffect?: ActionDamageSaveEffect;
-    notes?: string;
+    // notes?: string;
     recharge?: ActionRechargeFrequency;
     cost?: ActionResource;
 
@@ -254,10 +254,10 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
                 parser: parseEnum(ActionDamageSaveEffect),
                 default: undefined,
             },
-            notes: {
-                parser: plainText,
-                default: undefined,
-            },
+            // notes: {
+            //     parser: plainText,
+            //     default: undefined,
+            // },
             recharge: {
                 parser: parseEnum(ActionRechargeFrequency),
                 default: undefined,
@@ -311,7 +311,7 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
             'areaTurnEndDamageType',
             'areaTurnEndDamageSave',
             'areaTurnEndDamageSaveEffect',
-            'notes',
+            // 'notes',
             'recharge',
             'cost',
         ];

@@ -46,8 +46,7 @@
         "concentration": false,
         "id": 1519,
         "attackRoll": false,
-        "range": 3,
-        "notes": "The recovered spell slots must have a combined level that is less than or equal to half your Wizard level (rounded up), with a maximum of a 5th level Spell Slot.\n* For example: \n** When a Level 3 Wizard uses Arcane Recovery:\n*** The highest Level of Spell Slots that can be recovered is: 3 ÷ 2 = 1.5 ≈ 2\n*** The total number of Spell Slots that can be recovered is: two Level 1 Spell Slots&emsp;or&emsp;one Level 2 Spell Slot.\n** When a Level 5 Wizard uses Arcane Recovery:\n*** The highest Level of Spell Slots that can be recovered is: 5 ÷ 2 = 2.5 ≈ 3\n*** The total number of Spell Slots that can be recovered is: three Level 1 Spell Slots&emsp;or&emsp;one Level 2 Spell Slot and one Level 1 Spell Slot&emsp;or&emsp;one Level 3 Spell Slot."
+        "range": 3
     },
     {
         "name": "Aura of Courage",
@@ -444,8 +443,7 @@
         "attackRoll": false,
         "aoe": 3,
         "aoeM": 5,
-        "aoeFt": 17,
-        "notes": "When creatures succeeds in saving, they will not be pushed back, but will still take half the damage."
+        "aoeFt": 17
     },
     {
         "name": "Fist of Unbroken Air",
@@ -1486,8 +1484,7 @@
         "ritual": false,
         "concentration": false,
         "id": 1387,
-        "attackRoll": false,
-        "notes": "}}\n\n{| class=\"wikitable\" style=\"min-width:300px; text-align:center;\""
+        "attackRoll": false
     },
     {
         "name": "Cunning Action: Dash",
@@ -1583,7 +1580,6 @@
         "concentration": false,
         "id": 7954,
         "attackRoll": false,
-        "notes": "A character cannot use Divine Intervention more than once, even by respecing. However, you can use respecing to get Divine Intervention a number of times equal to the number of characters you have available, since each character may use it once. Both Arm Thy Servant and Golden Generosity can be used outside of combat and the items they create stick around indefinitely (although, of course, the items created by Golden Generosity are consumable).\n\nThe items generated in the Bestowed Bounty are tied to each save. The first cast of Bestowed Bounty on a save will always give the same items, the second a different set, and so on. This means that save-scumming to get a better roll on the chest is not possible.\n\nThe base value of the Devotee's Mace, created by Arm Thy Servant, is 640 gold. It costs 200 gold to respec a character into a cleric, create the Devotee's Mace, and then change back (or to recruit a hireling and respec them into a cleric). You could use this as a source of cash, if you were somehow running low on funds at level 10.\n\nReturn to top",
         "cost": 5
     },
     {
@@ -2003,7 +1999,6 @@
         "attackRoll": false,
         "condition": "Invisible",
         "conditionDuration": 1,
-        "notes": "* Prior to patch 3, this interrupted the current concentration spell when it activated.",
         "cost": 4
     },
     {
@@ -2117,7 +2112,7 @@
     },
     {
         "name": "Rage: Wild Magic",
-        "image": "Rage Icon.png\n}}{{ up to date | 2023-09-04 }} {{ActionPage",
+        "image": "Rage Icon.png",
         "level": 0,
         "school": 0,
         "summary": "Rage: Wild Magic is a Wild Magic Barbarian Bonus Action. When you Rage, it causes a random magical effect to happen.",
