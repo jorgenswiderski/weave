@@ -39,7 +39,7 @@ async function main() {
     const allowedOrigins = [
         'http://localhost:3000',
         'https://tomekeeper.vercel.app',
-        /^https:\/\/netherview-.*-jorgenswiderski-projects\.vercel\.app$/,
+        /^https:\/\/netherview-.*-jorgenswiderskis-projects\.vercel\.app$/,
     ];
 
     app.use(
