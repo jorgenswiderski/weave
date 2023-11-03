@@ -36,6 +36,9 @@ async function main() {
     const app = express();
     const PORT = process.env.PORT || 3001;
 
+    // Trust NGINX reverse proxy
+    app.set('trust proxy', '172.16.0.0/12');
+
     const allowedOrigins = [
         'http://localhost:3000',
         'https://tomekeeper.vercel.app',
