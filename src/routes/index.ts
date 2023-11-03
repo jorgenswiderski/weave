@@ -7,6 +7,10 @@ import { error } from '../models/logger';
 
 export const router: Router = express.Router();
 
+router.use('/data', dataRouter);
+router.use('/images', imageRouter);
+router.use('/builds', buildsRouter);
+
 // Error handling middleware
 const errorHandler: ErrorRequestHandler = (err, req, res /* , next */) => {
     error(err.stack);
@@ -14,9 +18,5 @@ const errorHandler: ErrorRequestHandler = (err, req, res /* , next */) => {
 };
 
 router.use(errorHandler);
-
-router.use('/data', dataRouter);
-router.use('/images', imageRouter);
-router.use('/builds', buildsRouter);
 
 export const apiRouter = router;
