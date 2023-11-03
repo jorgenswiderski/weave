@@ -1,11 +1,11 @@
-if (process.env.ENVIRONMENT !== 'dev') {
-    import('newrelic');
-}
-
 /* eslint-disable import/first */
 import dotenv from 'dotenv';
 
 dotenv.config();
+
+if (process.env.ENVIRONMENT !== 'dev') {
+    import('newrelic');
+}
 
 import express from 'express';
 import cors from 'cors';
