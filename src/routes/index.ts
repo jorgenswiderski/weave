@@ -12,7 +12,8 @@ router.use('/images', imageRouter);
 router.use('/builds', buildsRouter);
 
 // Error handling middleware
-const errorHandler: ErrorRequestHandler = (err, req, res /* , next */) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
     error('Error handling middleware invoked');
     debug(res); // Log the response object
     debug(typeof res.status); // Check the type of res.status
