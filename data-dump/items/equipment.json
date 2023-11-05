@@ -849,7 +849,7 @@
             "name": "Periapt of Wound Closure",
             "image": "Periapt of Wound Closure Icon.png",
             "icon": "Periapt of Wound Closure Unfaded Icon.png",
-            "description": "Periapt of Wound Closure is a rare Amulet that automatically stabilizes a downed user at the start of their turn and maximizes the amount of hit points.",
+            "description": "Periapt of Wound Closure is a rare Amulet that automatically stabilizes a downed user at the start of their turn and maximizes the amount of hit points restored when healing.",
             "quote": "Sometimes the best thing you can do for your friend is to stop bleeding and give them a chance to sort everything out.",
             "type": 1,
             "rarity": 3,
@@ -2482,7 +2482,7 @@
             "name": "Vivacious Cloak",
             "image": "Vivacious Cloak Faded.png",
             "icon": "Vivacious Cloak Unfaded Icon.png",
-            "description": "Vivacious Cloak is an uncommon Cloak that grants the wearer 7 temporary Hit Points when casting a spell in melee.",
+            "description": "Vivacious Cloak is an uncommon Cloak that grants the wearer 8 temporary Hit Points when casting a spell in melee.",
             "quote": "The sheer mortal terror of the low-vitality spellcaster (who can be blown over by a wafted spoon) can be partially offset by cloaks like this one.",
             "type": 3,
             "rarity": 2,
@@ -2492,7 +2492,7 @@
             "effects": [
                 {
                     "name": "Arcane Vivaciousness",
-                    "description": "You gain 7 Spell while in melee.",
+                    "description": "You gain 8 spell while in melee.",
                     "type": 2
                 }
             ],
@@ -8093,7 +8093,13 @@
             "weightKg": 9,
             "weightLb": 18,
             "price": 650,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Superior Material",
+                    "description": "You take 1 less Slashing damage.",
+                    "type": 2
+                }
+            ],
             "proficiency": 2,
             "baseArmorClass": 14,
             "enchantment": 1,
@@ -8609,7 +8615,8 @@
         },
         {
             "name": "Scale Mail +1",
-            "image": "Scale Mail +1 Item Icon.png",
+            "image": "Scale Mail B PlusOne Icon.png",
+            "icon": "Scale Mail B PlusOne Unfaded Icon.png",
             "description": "Scale Mail +1 is a uncommon Medium Armour.",
             "quote": "The work of a skilled craftsman, this scale shirt offers better protection than most.",
             "type": 9,
@@ -8742,6 +8749,17 @@
                 {
                     "name": "Sharpened Snare",
                     "description": "Creatures have Disadvantage on SavingThrows when resisting your attacks and spells that inflict Restrained.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "As of patch #4, this ability affects Ensnaring Strike, Wood Woad Shield, Cruel Sting, and Bhaalist Gloves",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Sharpened Snare Cuirass",
+                    "description": "As of patch #4, this ability affects Ensnaring Strike, Wood Woad Shield, Cruel Sting, and Bhaalist Gloves",
                     "type": 2
                 }
             ],
@@ -8913,7 +8931,7 @@
             "effects": [
                 {
                     "name": "Illusion Quickening",
-                    "description": "After hitting a creature with a weapon attack, you can cast illusion or enchantment spells as a Bonus.",
+                    "description": "After hitting a creature with a weapon attack, you can cast enchantment spells as a Bonus.",
                     "type": 2
                 }
             ],
@@ -10188,6 +10206,22 @@
                 }
             ],
             "id": 3432
+        },
+        {
+            "name": "Szarr Family Ring",
+            "image": "Szarr Family Ring Unfaded Icon.png",
+            "icon": "Szarr Family Ring Unfaded Icon.png",
+            "description": "Szarr Family Ring is a story Ring that opens several doors in the Szarr Palace and Cazador's Dungeon.",
+            "quote": "This ring carries the symbol of the Szarr family and has an inscription in some crusty old language.",
+            "type": 10,
+            "rarity": 6,
+            "weightKg": 0.05,
+            "weightLb": 0.1,
+            "price": 20,
+            "uid": "",
+            "effects": [],
+            "proficiency": 0,
+            "id": 27036
         },
         {
             "name": "Tarnished Ring",
@@ -12279,7 +12313,7 @@
                 },
                 {
                     "name": "Scarlet Stupor|w=40",
-                    "description": "If you have a +3 bonus from Scarlet Remittance, consume it to give hostile creatures disadvantage on saving throws aganst your spells (Long rest).",
+                    "description": "If you have a +3 bonus from Scarlet Remittance, consume it to give hostile creatures disadvantage on saving throws against your spells (Long rest).",
                     "type": 2
                 },
                 {
@@ -12896,7 +12930,7 @@
             "effects": [
                 {
                     "name": "Outer-Entity Slayer",
-                    "description": "When wielding against Fey, Fiends, or Undead foes, this weapon ha a +1d4 bonus to Damage and Attack Rolls.",
+                    "description": "When wielding against Fey, Fiends, or Undead foes, this weapon has a +1d4 bonus to Damage and Attack Rolls.",
                     "type": 2
                 }
             ],
@@ -13173,7 +13207,7 @@
             "name": "Blooded Greataxe",
             "image": "Blooded Greataxe Icon.png",
             "icon": "Blooded Greataxe Unfaded Icon.png",
-            "description": "Blooded Greataxe is a rare Greataxe that deals additional |Slashing damage when the wielder has 50% Hp or less.",
+            "description": "Blooded Greataxe is a rare greataxe that deals additional |Slashing damage when the wielder has 50% hp or less.",
             "quote": "Stained brown and reeking of iron, this greataxe once belonged to a killer so deranged, his name was magically scrubbed from all histories.",
             "type": 18,
             "rarity": 3,
@@ -13184,7 +13218,7 @@
             "effects": [
                 {
                     "name": "Relentless Revenge",
-                    "description": "When the wielder has 50% Hp or less, they deal an additional 1d4|Slashing damage.",
+                    "description": "When the wielder has 50% hp or less, they deal an additional 1d4|Slashing damage.",
                     "type": 2
                 }
             ],
@@ -13208,7 +13242,7 @@
             "name": "Defender Greataxe",
             "image": "Greataxe PlusTwo Icon.png",
             "icon": "Greataxe PlusTwo Unfaded Icon.png",
-            "description": "Defender Greataxe is a rare Greataxe that can be reduced in its Enchantment on the first attack of the round to increase wielder's ArmourClass and SavingThrow bonus.",
+            "description": "Defender Greataxe is a rare greataxe that can be reduced in its enchantment on the first attack of the round to increase wielder's ArmourClass and SavingThrow bonus.",
             "quote": "The power of this axe lies in a fluctuating arcane enchantment thatflows between the beard and the edge of the axe, and the wielder themselves.",
             "type": 18,
             "rarity": 3,
@@ -13243,7 +13277,7 @@
             "name": "Doom Axe",
             "image": "Greataxe PlusOne Icon.png",
             "icon": "Greataxe PlusOne Unfaded Icon.png",
-            "description": "Doom Axe is an uncommon Greataxe that afflicts targets with Bone Chilled condition on each successful hit.",
+            "description": "Doom Axe is an uncommon greataxe that afflicts targets with Bone Chilled condition on each successful hit.",
             "quote": "Bringer of that which it is.",
             "type": 18,
             "rarity": 2,
@@ -13277,7 +13311,7 @@
             "name": "Exterminator's Axe",
             "image": "Greataxe PlusOne Icon.png",
             "icon": "Greataxe PlusOne Unfaded Icon.png",
-            "description": "Exterminator's Axe is an uncommon Greataxe that deals additional |Fire damage to Plants, Insects, and Small creatures.",
+            "description": "Exterminator's Axe is an uncommon greataxe that deals additional |Fire damage to Plants, Insects, and Small creatures.",
             "quote": "The intricate engravings on this axe's blade and handle make plain the skill of its smith.",
             "type": 18,
             "rarity": 2,
@@ -13285,13 +13319,7 @@
             "weightLb": 6.3,
             "price": 130,
             "uid": "UND_DuergarRaft_PestKillerAxe",
-            "effects": [
-                {
-                    "name": "Scourge of Pests",
-                    "description": "Deals an additional 1d6|Fire damage to Plants, Insects or Small creatures.",
-                    "type": 2
-                }
-            ],
+            "effects": [],
             "proficiency": 0,
             "id": 3426,
             "category": 1,
@@ -13339,7 +13367,7 @@
             "name": "Greataxe +1",
             "image": "Greataxe PlusOne Icon.png",
             "icon": "Greataxe PlusOne Unfaded Icon.png",
-            "description": "Greataxe +1 is an uncommon, lightly enchanted Greataxe.",
+            "description": "Greataxe +1 is an uncommon, lightly enchanted greataxe.",
             "quote": "A small prayer decorates the hilt of this axe. It resonates in your head when you touch it.",
             "type": 18,
             "rarity": 2,
@@ -13368,7 +13396,7 @@
             "name": "Hellfire Greataxe",
             "image": "Greataxe PlusTwo Icon.png",
             "icon": "Greataxe PlusTwo Unfaded Icon.png",
-            "description": "Hellfire Greataxe is a very rare Greataxe that deals additional |Fire damage, afflicts its wielder with Heat on each successful hit, and grants the Hellflame Cleave weapon action.",
+            "description": "Hellfire Greataxe is a very rare greataxe that deals additional |Fire damage, afflicts its wielder with Heat on each successful hit, and grants the Hellflame Cleave weapon action.",
             "quote": "Anything hit by this has the life expectancy of a glass hammer.",
             "type": 18,
             "rarity": 4,
@@ -13415,7 +13443,7 @@
             "effects": [
                 {
                     "name": "Sethan: Spiritual Greataxe|w=40",
-                    "description": "Summon a spiritual twin of Sethan in a point you can see, dealing  3d8 + spellcasting modifier | Force damage on a hit (Long rest).",
+                    "description": "Summon a spiritual twin of Sethan in a point you can see, dealing  3d8 + spellcasting modifier | ForceVerify damage on a hit (Long rest).",
                     "type": 2
                 },
                 {
@@ -13444,7 +13472,7 @@
             "name": "The Undead Bane",
             "image": "Greataxe B PlusOne Icon.png",
             "icon": "Greataxe B PlusOne Unfaded Icon.png",
-            "description": "The Undead Bane is an uncommon Greataxe that deals additional |Slashing damage against Fiends and Profane Scourge weapon action.",
+            "description": "The Undead Bane is an uncommon greataxe that deals additional |Slashing damage against Fiends and Profane Scourge weapon action.",
             "quote": "Wielded by the indomitable Ser Lexia. Although her eagerness to destroy evil in all its forms was constant, she often took time to make little gifts for her friends.",
             "type": 18,
             "rarity": 2,
@@ -13479,7 +13507,7 @@
             "name": "Very Heavy Greataxe",
             "image": "Greataxe B PlusOne Icon.png",
             "icon": "Greataxe B PlusOne Unfaded Icon.png",
-            "description": "Very Heavy Greataxe is an uncommon Greataxe that grants its wielder the Gargantuan Cleave weapon action.",
+            "description": "Very Heavy Greataxe is an uncommon greataxe that grants its wielder the Gargantuan Cleave weapon action.",
             "quote": "It's really very heavy.",
             "type": 18,
             "rarity": 2,
@@ -13853,7 +13881,7 @@
             "name": "Jorgoral's Greatsword",
             "image": "Greatsword B PlusOne Icon.png",
             "icon": "Greatsword B PlusOne Unfaded Icon.png",
-            "description": "Jorgoral's Greatsword is a rare Greatsword that grants its wielder the Colossal Onslaught weapon action.",
+            "description": "Jorgoral's Greatsword is a rare greatsword that grants its wielder the Colossal Onslaught weapon action.",
             "quote": "Strong castle-forged steel surmounts a grip of sturdy leather - this immense sword is capable of disembowelling giants in a single swipe.",
             "type": 20,
             "rarity": 3,
@@ -14018,7 +14046,7 @@
             "name": "Sussur Greatsword",
             "image": "Sussur Greatsword Icon.png",
             "icon": "Sussur Greatsword Unfaded Icon.png",
-            "description": "Sussur Greatsword is a rare Greatsword that Silenced|Silences targets on each successful hit.",
+            "description": "Sussur Greatsword is a rare greatsword that Silenced|Silences targets on each successful hit.",
             "quote": "Sussur roots extend from this sword's hilt into the blade itself. It yearns to drink magic, silencing every creature it strikes.",
             "type": 20,
             "rarity": 3,
@@ -14094,7 +14122,7 @@
             "name": "Sword of Chaos",
             "image": "Greatsword PlusTwo Icon.png",
             "icon": "Greatsword PlusTwo Unfaded Icon.png",
-            "description": "Sword of Chaos is a very rare Greatsword that deals additional |Necrotic damage and regains wielder's health on each successful hit.",
+            "description": "Sword of Chaos is a very rare greatsword that deals additional |Necrotic damage and regains wielder's health on each successful hit.",
             "quote": "The sword of Sarevok, brother of Gorion's Ward and child of the evil god Bhaal. Though much of its power died with him, the sword is still formidable, and glows with a malevolent light.",
             "type": 20,
             "rarity": 4,
@@ -14130,7 +14158,7 @@
             "name": "Sword of Justice",
             "image": "Sword of Justice Icon.png",
             "icon": "Sword of Justice Unfaded Icon.png",
-            "description": "Sword of Justice is an uncommon Greatsword that grants its wielder the Tyr's Protection weapon action.",
+            "description": "Sword of Justice is an uncommon greatsword that grants its wielder the Tyr's Protection weapon action.",
             "quote": "The words 'Deliverance. Justice. Vengeance.' are engraved on the base of this sword. They echo in your mind.",
             "type": 20,
             "rarity": 2,
@@ -14141,7 +14169,7 @@
             "effects": [
                 {
                     "name": "Tyr's Protection|w=40",
-                    "description": "Surround a creature with a shimmering field of magic that increases its ArmourClass by 2. Spell ends when the Sword of Justice is unequipped (Short Rest).",
+                    "description": "Surround a creature with a shimmering field of magic that increases its ArmourClass by 2. Spell ends when the Sword of Justice is unequipped (short rest).",
                     "type": 2
                 }
             ],
@@ -14165,12 +14193,13 @@
             "name": "Watcher Greatsword",
             "image": "Greatsword B Icon.png",
             "icon": "Greatsword B Unfaded Icon.png",
-            "description": "Watcher Greatsword is a common Greatsword. It can only be used by Steel Watchers.",
+            "description": "Watcher Greatsword is a common greatsword. It can only be used by Steel Watchers.",
             "type": 20,
             "rarity": 1,
             "weightKg": 100,
             "weightLb": 200,
             "price": 65,
+            "uid": "WPN_WATCHER_Greatsword_B",
             "effects": [],
             "proficiency": 0,
             "id": 11856,
@@ -14221,7 +14250,7 @@
             "name": "Halberd +1",
             "image": "Halberd PlusOne Icon.png",
             "icon": "Halberd PlusOne Unfaded Icon.png",
-            "description": "Halberd +1 is an uncommon, lightly enchanted Halberd.",
+            "description": "Halberd +1 is an uncommon, lightly enchanted halberd.",
             "quote": "This halberd's spike is black with ash that cannot be washed away.",
             "type": 21,
             "rarity": 2,
@@ -14250,7 +14279,7 @@
             "name": "Halberd of Vigilance",
             "image": "Halberd PlusTwo Icon.png",
             "icon": "Halberd PlusTwo Unfaded Icon.png",
-            "description": "Halberd of Vigilance is a very rare Halberd that deals additional |Force damage, gives bonus to Initiative, and grants Advantage on Perception checks and Reactions.",
+            "description": "Halberd of Vigilance is a very rare halberd that deals additional |Force damage, gives bonus to Initiative, and grants Advantage on Perception checks and Reactions.",
             "quote": "A variant of this halberd's design was thrown out in the early stages of development by its forgemaster. This was because the halberd kept expressing itself. 'ALARM!' it would shriek in peril. 'POTENCY FILLS ME LIKE A SONG OF HOPE!' it roared in triumph.",
             "type": 21,
             "rarity": 4,
@@ -14291,7 +14320,7 @@
             "name": "Harmonium Halberd",
             "image": "Halberd PlusOne Icon.png",
             "icon": "Halberd PlusOne Unfaded Icon.png",
-            "description": "Harmonium Halberd is a rare Halberd that grants its wielder additional Strength at the cost of some Intelligence and Wisdom.",
+            "description": "Harmonium Halberd is a rare halberd that grants its wielder additional Strength at the cost of some Intelligence and Wisdom.",
             "quote": "The platinum inlays of this halberd hum an otherworldy harmony in the key of C, heightening the wielder's vigour but diminishing their mental faculties. The sound it makes is pining, as if far from its rightful home.",
             "type": 21,
             "rarity": 3,
@@ -14344,7 +14373,7 @@
             "name": "Hellbeard Halberd",
             "image": "Merregon Halberd Icon.png",
             "icon": "Merregon Halberd Unfaded Icon.png",
-            "description": "Hellbeard Halberd is a rare Halberd that deals additional |Poison damage.",
+            "description": "Hellbeard Halberd is a rare halberd that deals additional |Poison damage.",
             "quote": "Salvaged from the beard of a dead infernal leviathan, whose facial hair was formed from the weapons of an army it had once vanquished.",
             "type": 21,
             "rarity": 3,
@@ -14374,7 +14403,7 @@
             "name": "Light of Creation",
             "image": "Light of Creation Icon.png",
             "icon": "Light of Creation Unfaded Icon.png",
-            "description": "Light of Creation is an uncommon Halberd that deals additional Lightning damage, but has a chance to Stunned|Stun its wielder on each successful attack.",
+            "description": "Light of Creation is an uncommon halberd that deals additional Lightning damage, but has a chance to Stunned|Stun its wielder on each successful attack.",
             "quote": "Small lodestones have been inserted along the halberd's shaft, a strange blue current running through them.",
             "type": 21,
             "rarity": 2,
@@ -14410,7 +14439,7 @@
             "name": "Merregon Halberd",
             "image": "Merregon Halberd Icon.png",
             "icon": "Merregon Halberd Unfaded Icon.png",
-            "description": "Merregon Halberd is an uncommon, lightly enchanted Halberd.",
+            "description": "Merregon Halberd is an uncommon, lightly enchanted halberd.",
             "quote": "Sharp teeth grow out of the halberd's dark metal - if it is indeed metal at all.",
             "type": 21,
             "rarity": 2,
@@ -14439,7 +14468,7 @@
             "name": "The Skinburster",
             "image": "Halberd PlusOne Icon.png",
             "icon": "Halberd PlusOne Unfaded Icon.png",
-            "description": "The Skinburster is an uncommon Halberd that grants its wielder Force Conduit on each successful hit.",
+            "description": "The Skinburster is an uncommon halberd that grants its wielder Force Conduit on each successful hit.",
             "quote": "In mellow light, the halberd's curved steel head eerily resembles a grin.",
             "type": 21,
             "rarity": 2,
@@ -14900,7 +14929,7 @@
             "effects": [
                 {
                     "name": "Illuminating Shot|w=40",
-                    "description": "Use a Bonus to make a melee attack roll, Fire a shimmering bolt that inflicts 1 turn of Radiating Orb upon the target.",
+                    "description": "Fire a shimmering bolt that inflicts 1 turn of Radiating Orb upon the target.",
                     "type": 2
                 }
             ],
@@ -16328,7 +16357,7 @@
             "effects": [
                 {
                     "name": "Phalar Aluve: Melody|w=40",
-                    "description": "The sword hums in anticipation, ready to Phalar Aluve: Sing|Sing or Phalar Aluve: Shriek|Shriek.",
+                    "description": "The sword hums in anticipation, ready to Phalar Aluve: Sing|Sing or Phalar Aluve: Shriek|Shriek. Effect ends when Phalar Aluve is unequipped.",
                     "type": 2
                 },
                 {
@@ -16968,7 +16997,7 @@
             "name": "Corpsegrinder",
             "image": "Maul PlusTwo Icon.png",
             "icon": "Maul PlusTwo Unfaded Icon.png",
-            "description": "Corpsegrinder is a rare Maul that deals additional |Thunder damage and grants its wielder the Grand Slam weapon action.",
+            "description": "Corpsegrinder is a rare maul that deals additional |Thunder damage and grants its wielder the Grand Slam weapon action.",
             "quote": "Reliable and trustworthy, you could not hope for more respectable company than this maul whilst traversing the forlorn places of the world.",
             "type": 31,
             "rarity": 3,
@@ -16998,7 +17027,7 @@
             "name": "Doom Hammer",
             "image": "Maul PlusOne Icon.png",
             "icon": "Maul PlusOne Unfaded Icon.png",
-            "description": "Doom Hammer is an uncommon Maul that afflicts targets with Bone Chilled condition on each successful hit.",
+            "description": "Doom Hammer is an uncommon maul that afflicts targets with Bone Chilled condition on each successful hit.",
             "quote": "Bringer of that which it is.",
             "type": 31,
             "rarity": 2,
@@ -17032,7 +17061,7 @@
             "name": "Foebreaker",
             "image": "Maul PlusTwo Icon.png",
             "icon": "Maul PlusTwo Unfaded Icon.png",
-            "description": "Foebreaker is a very rare Maul that ignores Bludgeoning Resistance of targets.",
+            "description": "Foebreaker is a very rare maul that ignores Bludgeoning resistance of targets.",
             "quote": "As heavy and opposed to nonsense as the wearied hammer of a sentencing magistrate.",
             "type": 31,
             "rarity": 4,
@@ -17043,7 +17072,7 @@
             "effects": [
                 {
                     "name": "Lethal Weapon",
-                    "description": "This weapon ignores Bludgeoning Resistance.",
+                    "description": "This weapon ignores Bludgeoning resistance.",
                     "type": 2
                 }
             ],
@@ -17067,7 +17096,7 @@
             "name": "Hamarhraft",
             "image": "Hamarhraft Icon.png",
             "icon": "Hamarhraft Unfaded Icon.png",
-            "description": "Hamarhraft is an uncommon Maul that deals Thunder damage in an area around the wielder when they land a Jump (Bonus Action)|Jump.",
+            "description": "Hamarhraft is an uncommon maul that deals Thunder damage in an area around the wielder when they land a Jump (Bonus Action)|Jump.",
             "quote": "The Dwarven grammar is garbled, but the weapon's name suggests something about the importance of first impressions.",
             "type": 31,
             "rarity": 2,
@@ -17129,7 +17158,7 @@
             "name": "Maul +1",
             "image": "Maul PlusOne Icon.png",
             "icon": "Maul PlusOne Unfaded Icon.png",
-            "description": "Maul +1 is an uncommon, lightly enchanted Maul.",
+            "description": "Maul +1 is an uncommon, lightly enchanted maul.",
             "quote": "A weapon of dwarven make: elegant, but strong enough to last several human lifetimes.",
             "type": 31,
             "rarity": 2,
@@ -17359,6 +17388,7 @@
         {
             "name": "Pike",
             "image": "Pike Faded.png",
+            "icon": "Pike Unfaded Icon.png",
             "quote": "This pike's broad steel head has been repeatedly bent and hammered back into its original shape.",
             "type": 33,
             "rarity": 0,
@@ -17930,6 +17960,7 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 640,
+            "uid": "MAG_TheChromatic_Staff",
             "effects": [
                 {
                     "name": "Arcane Enchantment",
@@ -20241,7 +20272,7 @@
             "effects": [
                 {
                     "name": "Organ Rearranger",
-                    "description": "The wielder scores a Critical Hit when rolling a 19. When they roll 2 damage or less, reroll the dice, taking the highest result.  (This effect applies to all attack and damage rolls while the weapon is equipped, whether they be physical or magical attacks, and not just rolls made using the weapon itself.)",
+                    "description": "Reduce the number you need to roll a Critical Hit while attacking by 1. This effect can stack. When you roll 2 damage or less, reroll the dice, taking the highest result.  (This effect applies to all attack and damage rolls while the weapon is equipped, whether they be physical or magical attacks, and not just rolls made using the weapon itself.)",
                     "type": 2
                 },
                 {
@@ -20434,7 +20465,6 @@
             "icon": "Shortsword Yurgir Icon.png",
             "quote": "This dagger's handle is smooth and light, its jagged blade sharpened into a thin, cruel edge.",
             "type": 38,
-            "rarity": 0,
             "weightKg": 0.9,
             "weightLb": 1.8,
             "price": 16,
@@ -21220,6 +21250,7 @@
         {
             "name": "Spear +1",
             "image": "Spear PlusOne Icon.png",
+            "icon": "Spear PlusOne Unfaded Icon.png",
             "quote": "Forged by dwarven hands, and prized by all warriors who wish to keep their foe at a distance.",
             "type": 41,
             "rarity": 2,
@@ -21619,6 +21650,7 @@
         {
             "name": "Azer Warhammer",
             "image": "Azer Warhammer.png",
+            "icon": "Azer Warhammer Unfaded Icon.png",
             "description": "Hits with this weapon deal an additional 1d6|Fire damage.",
             "quote": "Flecks of volcanic glass gleam darkly from the head of this warhammer - obsidian eyes regarding the world with the narrow, spite-inflamed convictions of its azer wielder.",
             "type": 43,

@@ -108,7 +108,7 @@
                 "image": "Animate Dead Skeleton.webp",
                 "level": 3,
                 "school": 7,
-                "summary": "This spell allows spellcasters to animate a corpse to create a skeleton that focuses on ranged weaponry. They must target a corpse, and the skeleton lasts until killed or until the next long rest.\n\nThis spell is a variation of Animate Dead.",
+                "summary": "This spell allows spellcasters to animate a corpse to create a skeleton|Skeleton that focuses on ranged weaponry. They must target a corpse, and the skeleton lasts until killed or until the next long rest.\n\nThis spell is a variation of Animate Dead.",
                 "description": "Create a Skeleton that specialises in ranged combat.\n\nThe target must be a Medium or Small corpse.",
                 "ritual": false,
                 "concentration": false,
@@ -195,7 +195,7 @@
                 "image": "Animate Dead Ghoul.webp",
                 "level": 5,
                 "school": 7,
-                "summary": "This spell allows spellcasters to animate a corpse to create a ghoul. Requires a corpse, and lasts until long rest.\n\nThis spell is a variation of Animate Dead.",
+                "summary": "This spell allows spellcasters to animate a corpse to create a ghoul|Ghoul (Animate Dead). Requires a corpse, and lasts until long rest.\n\nThis spell is a variation of Animate Dead.",
                 "description": "Create a ghoul that specialises in melee combat.\n\nThe target must be a Medium or Small corpse.",
                 "ritual": false,
                 "concentration": false,
@@ -324,7 +324,7 @@
         "image": "Animate Dead Ghoul.webp",
         "level": 5,
         "school": 7,
-        "summary": "This spell allows spellcasters to animate a corpse to create a ghoul. Requires a corpse, and lasts until long rest.\n\nThis spell is a variation of Animate Dead.",
+        "summary": "This spell allows spellcasters to animate a corpse to create a ghoul|Ghoul (Animate Dead). Requires a corpse, and lasts until long rest.\n\nThis spell is a variation of Animate Dead.",
         "description": "Create a ghoul that specialises in melee combat.\n\nThe target must be a Medium or Small corpse.",
         "ritual": false,
         "concentration": false,
@@ -366,7 +366,7 @@
         "image": "Animate Dead Skeleton.webp",
         "level": 3,
         "school": 7,
-        "summary": "This spell allows spellcasters to animate a corpse to create a skeleton that focuses on ranged weaponry. They must target a corpse, and the skeleton lasts until killed or until the next long rest.\n\nThis spell is a variation of Animate Dead.",
+        "summary": "This spell allows spellcasters to animate a corpse to create a skeleton|Skeleton that focuses on ranged weaponry. They must target a corpse, and the skeleton lasts until killed or until the next long rest.\n\nThis spell is a variation of Animate Dead.",
         "description": "Create a Skeleton that specialises in ranged combat.\n\nThe target must be a Medium or Small corpse.",
         "ritual": false,
         "concentration": false,
@@ -2746,7 +2746,8 @@
                 "cost": 1,
                 "classes": [
                     "Wizard",
-                    "Druid"
+                    "Druid",
+                    "Bard"
                 ],
                 "noSpellSlot": false,
                 "isVariant": true
@@ -2766,7 +2767,8 @@
                 "cost": 1,
                 "classes": [
                     "Wizard",
-                    "Druid"
+                    "Druid",
+                    "Bard"
                 ],
                 "noSpellSlot": false,
                 "isVariant": true
@@ -2786,7 +2788,8 @@
                 "cost": 1,
                 "classes": [
                     "Wizard",
-                    "Druid"
+                    "Druid",
+                    "Bard"
                 ],
                 "noSpellSlot": false,
                 "isVariant": true
@@ -2806,7 +2809,8 @@
                 "cost": 1,
                 "classes": [
                     "Wizard",
-                    "Druid"
+                    "Druid",
+                    "Bard"
                 ],
                 "noSpellSlot": false,
                 "isVariant": true
@@ -2849,7 +2853,8 @@
         "cost": 1,
         "classes": [
             "Wizard",
-            "Druid"
+            "Druid",
+            "Bard"
         ],
         "noSpellSlot": false,
         "isVariant": true
@@ -2889,7 +2894,8 @@
         "cost": 1,
         "classes": [
             "Wizard",
-            "Druid"
+            "Druid",
+            "Bard"
         ],
         "noSpellSlot": false,
         "isVariant": true
@@ -2929,7 +2935,8 @@
         "cost": 1,
         "classes": [
             "Wizard",
-            "Druid"
+            "Druid",
+            "Bard"
         ],
         "noSpellSlot": false,
         "isVariant": true
@@ -2969,7 +2976,8 @@
         "cost": 1,
         "classes": [
             "Wizard",
-            "Druid"
+            "Druid",
+            "Bard"
         ],
         "noSpellSlot": false,
         "isVariant": true
@@ -3023,7 +3031,7 @@
                 "level": 4,
                 "school": 2,
                 "summary": "It is a variant of Conjure Minor Elemental that summons two Ice Mephits.",
-                "description": "Conjure two ice mephits from the Elemental Chaos. They can Chromatic Orb: Cold|Hurl and Ice Breath|Exhale ice, and Death Burst|Explode when they die.\n\n7|13|12|9|11|12|hp=21|ac=11\n\n=== Abilities ===\n\n==== Freezing Claws|w=40 ====\n* Lash out with ice-cold claws, dealing 1d4 + Dexterity Modifier|Slashing damage + 2d6|Cold damage.\n\n==== Ice Breath|w=40 ====\n* Exhale a cone of ice to damage foes for 2d6|Cold damage.\n\n==== Chromatic Orb: Cold|w=40 ====\n* Hurl freezing energy that damages the target for 2d8|Cold damage and creates a frosty surface to knock creatures Prone.\n\n==== Death Burst (Cold)|Death Burst|w=40 ====\n* Explode in a burst of ice that damages all nearby creatures for 4d6|Cold damage.\n\n==== Fly (Class Action)|Fly|w=40 ====\n* Fly to a target position using your movement speed\n\n=== Passives ===\n==== Darkvision (Passive Feature)|Darkvision|w=40 ====\n* Can see in the dark up to 12m / 40ft.\n\n==== Death Burst: Cold|w=40 ====\n* When the mephit dies, it explodes in a burst of ice that deals 2d6|Cold damage to all creatures within 2m / 7ft.",
+                "description": "Conjure two ice mephits from the Elemental Chaos. They can Chromatic Orb: Cold|Hurl and Ice Breath|Exhale ice, and Death Burst (Cold)|Explode when they die.",
                 "ritual": false,
                 "concentration": false,
                 "id": 22268,
@@ -3089,7 +3097,7 @@
         "level": 4,
         "school": 2,
         "summary": "It is a variant of Conjure Minor Elemental that summons two Ice Mephits.",
-        "description": "Conjure two ice mephits from the Elemental Chaos. They can Chromatic Orb: Cold|Hurl and Ice Breath|Exhale ice, and Death Burst|Explode when they die.\n\n7|13|12|9|11|12|hp=21|ac=11\n\n=== Abilities ===\n\n==== Freezing Claws|w=40 ====\n* Lash out with ice-cold claws, dealing 1d4 + Dexterity Modifier|Slashing damage + 2d6|Cold damage.\n\n==== Ice Breath|w=40 ====\n* Exhale a cone of ice to damage foes for 2d6|Cold damage.\n\n==== Chromatic Orb: Cold|w=40 ====\n* Hurl freezing energy that damages the target for 2d8|Cold damage and creates a frosty surface to knock creatures Prone.\n\n==== Death Burst (Cold)|Death Burst|w=40 ====\n* Explode in a burst of ice that damages all nearby creatures for 4d6|Cold damage.\n\n==== Fly (Class Action)|Fly|w=40 ====\n* Fly to a target position using your movement speed\n\n=== Passives ===\n==== Darkvision (Passive Feature)|Darkvision|w=40 ====\n* Can see in the dark up to 12m / 40ft.\n\n==== Death Burst: Cold|w=40 ====\n* When the mephit dies, it explodes in a burst of ice that deals 2d6|Cold damage to all creatures within 2m / 7ft.",
+        "description": "Conjure two ice mephits from the Elemental Chaos. They can Chromatic Orb: Cold|Hurl and Ice Breath|Exhale ice, and Death Burst (Cold)|Explode when they die.",
         "ritual": false,
         "concentration": false,
         "id": 22268,
@@ -3954,7 +3962,7 @@
         "concentration": false,
         "id": 6830,
         "attackRoll": false,
-        "rangeM": 6,
+        "rangeM": 9,
         "rangeFt": 30,
         "condition": "Prone",
         "conditionDuration": 1,
@@ -8805,7 +8813,7 @@
         "summary": "It conjures a simple illusion to distract creatures.",
         "description": "Create an illusion that compels nearby creatures to investigate.\n\nYou can remain hidden while casting this spell.\n\nThis spell can be cast while you are Silenced.\n\nDuration: 10 turns.",
         "ritual": false,
-        "concentration": true,
+        "concentration": false,
         "id": 1663,
         "attackRoll": false,
         "range": 1,
@@ -11198,6 +11206,8 @@
     },
     {
         "name": "Wall of Ice",
+        "damage": "10d6",
+        "damageType": 5,
         "image": "Wall of Ice.webp",
         "level": 6,
         "school": 5,
@@ -11222,6 +11232,7 @@
             "Wizard"
         ],
         "noSpellSlot": false,
+        "damageSave": 2,
         "damageSaveEffect": 1,
         "isVariant": false
     },
@@ -11257,7 +11268,7 @@
         "level": 6,
         "school": 2,
         "summary": "This spell allows spellcasters to conjure a wall of brambles, Entangling and damaging any creatures who are in the area, or trying to pass through.",
-        "description": "Create a wall of pliable, twisting thorns surrounded by Entangling vines. Creatures can move through the wall, but take 7d8|Piercing damage per turn, their Movement Speed is halved due to Difficult Terrain, and they may become Entangled.",
+        "description": "Create a wall of pliable, twisting thorns surrounded by Entangling vines. Creatures can move through the wall, but take 7d8|Piercing damage per turn, their Movement Speed is quartered due to Difficult Terrain, and they may become Entangled.",
         "ritual": false,
         "concentration": true,
         "id": 10350,
