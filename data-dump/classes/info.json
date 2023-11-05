@@ -336,7 +336,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -645,7 +645,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -794,7 +794,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -1343,7 +1343,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -1652,7 +1652,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -1801,7 +1801,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -2266,7 +2266,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -2575,7 +2575,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -2724,7 +2724,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -3295,7 +3295,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -3604,7 +3604,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -3753,7 +3753,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -4255,7 +4255,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -4564,7 +4564,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -4713,7 +4713,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -5171,7 +5171,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -5480,7 +5480,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -5629,7 +5629,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -5901,12 +5901,6 @@
                                         "description": "The Life domain is an aspect of many good deities, offering spells that protect and restore the mind, body, and soul.",
                                         "image": "Class Cleric Life Badge Icon.png",
                                         "grants": [
-                                            {
-                                                "name": "Disciple of Life",
-                                                "type": 2,
-                                                "description": "Your devotion empowers your healing spell, the target regains additional hit points equal to  2 + the spell's level.",
-                                                "image": "Disciple of Life.webp"
-                                            },
                                             [
                                                 "#",
                                                 1,
@@ -5918,7 +5912,13 @@
                                                 1,
                                                 1611,
                                                 "choiceId not set by server"
-                                            ]
+                                            ],
+                                            {
+                                                "name": "Disciple of Life",
+                                                "type": 2,
+                                                "description": "Your devotion empowers your healing spell, the target regains additional hit points equal to  2 + the spell's level.",
+                                                "image": "Disciple of Life.webp"
+                                            }
                                         ]
                                     },
                                     {
@@ -5926,12 +5926,6 @@
                                         "description": "The Light domain is offered by deities of justice, majesty, and primordial flame, providing spells that dispel darkness and harm the undead.",
                                         "image": "Light Domain Subclass 300px.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                8005,
-                                                "choiceId not set by server"
-                                            ],
                                             [
                                                 "#",
                                                 1,
@@ -5949,6 +5943,12 @@
                                                 1,
                                                 2175,
                                                 "choiceId not set by server"
+                                            ],
+                                            [
+                                                "#",
+                                                2,
+                                                8005,
+                                                "choiceId not set by server"
                                             ]
                                         ]
                                     },
@@ -5957,6 +5957,18 @@
                                         "description": "You embody the vast viridian power of the natural world, an avatar of the subtle divinity of fruitfall, avian migration, woodland silence, and the landslide's roaring fury.",
                                         "image": "Nature_Domain_Icon.png",
                                         "grants": [
+                                            [
+                                                "#",
+                                                1,
+                                                1585,
+                                                "choiceId not set by server"
+                                            ],
+                                            [
+                                                "#",
+                                                1,
+                                                1985,
+                                                "choiceId not set by server"
+                                            ],
                                             {
                                                 "name": "Acolyte of Nature",
                                                 "type": 2,
@@ -5986,18 +5998,6 @@
                                                 1,
                                                 1693,
                                                 "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1585,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1985,
-                                                "choiceId not set by server"
                                             ]
                                         ]
                                     },
@@ -6006,12 +6006,6 @@
                                         "description": "Your faith has made you the very thunder that quakes the black firmament, the lightning coursing through the veins of a terrible storm.",
                                         "image": "Tempest_Domain_Icon.png",
                                         "grants": [
-                                            {
-                                                "name": "Wrath of the Storm",
-                                                "type": 2,
-                                                "description": "As a reaction, strike back at an attacking creature, dealing 2d8|Lightning or 2d8|Thunder damage. The target takes half damage on a successful SavingThrow.",
-                                                "image": "Generic Thunder.webp"
-                                            },
                                             [
                                                 "#",
                                                 1,
@@ -6023,6 +6017,24 @@
                                                 1,
                                                 2190,
                                                 "choiceId not set by server"
+                                            ],
+                                            {
+                                                "name": "Wrath of the Storm",
+                                                "type": 2,
+                                                "description": "As a reaction, strike back at an attacking creature, dealing 2d8|Lightning or 2d8|Thunder damage. The target takes half damage on a successful SavingThrow.",
+                                                "image": "Generic Thunder.webp"
+                                            },
+                                            [
+                                                "#",
+                                                2,
+                                                26548,
+                                                "choiceId not set by server"
+                                            ],
+                                            [
+                                                "#",
+                                                2,
+                                                26551,
+                                                "choiceId not set by server"
                                             ]
                                         ]
                                     },
@@ -6031,12 +6043,6 @@
                                         "description": "A domain shared by wicked, chaotic, and mischievous deities alike, those who channel Trickery specialise in deception and illusion magic.",
                                         "image": "Class Cleric Trickery Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                734,
-                                                "choiceId not set by server"
-                                            ],
                                             [
                                                 "#",
                                                 1,
@@ -6048,6 +6054,12 @@
                                                 1,
                                                 2117,
                                                 "choiceId not set by server"
+                                            ],
+                                            [
+                                                "#",
+                                                2,
+                                                734,
+                                                "choiceId not set by server"
                                             ]
                                         ]
                                     },
@@ -6058,12 +6070,6 @@
                                         "grants": [
                                             [
                                                 "#",
-                                                2,
-                                                9203,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
                                                 1,
                                                 2817,
                                                 "choiceId not set by server"
@@ -6072,6 +6078,12 @@
                                                 "#",
                                                 1,
                                                 2272,
+                                                "choiceId not set by server"
+                                            ],
+                                            [
+                                                "#",
+                                                2,
+                                                9203,
                                                 "choiceId not set by server"
                                             ]
                                         ]
@@ -6393,7 +6405,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -6702,7 +6714,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -6851,7 +6863,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -7119,7 +7131,14 @@
                                         "name": "Knowledge Domain",
                                         "description": "Adaptable and adroit in all manner of languages and skills, your mind is an intellectual cup brimming with exquisite knowing.",
                                         "image": "Knowledge Domain Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            [
+                                                "#",
+                                                2,
+                                                26957,
+                                                "choiceId not set by server"
+                                            ]
+                                        ]
                                     },
                                     {
                                         "name": "Life Domain",
@@ -7151,7 +7170,14 @@
                                         "name": "Nature Domain",
                                         "description": "You embody the vast viridian power of the natural world, an avatar of the subtle divinity of fruitfall, avian migration, woodland silence, and the landslide's roaring fury.",
                                         "image": "Nature_Domain_Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            [
+                                                "#",
+                                                2,
+                                                26958,
+                                                "choiceId not set by server"
+                                            ]
+                                        ]
                                     },
                                     {
                                         "name": "Tempest Domain",
@@ -7170,7 +7196,14 @@
                                         "name": "Trickery Domain",
                                         "description": "A domain shared by wicked, chaotic, and mischievous deities alike, those who channel Trickery specialise in deception and illusion magic.",
                                         "image": "Class Cleric Trickery Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            [
+                                                "#",
+                                                2,
+                                                18418,
+                                                "choiceId not set by server"
+                                            ]
+                                        ]
                                     },
                                     {
                                         "name": "War Domain",
@@ -7372,7 +7405,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -7681,7 +7714,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -7830,7 +7863,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -8066,14 +8099,7 @@
                                         "name": "Life Domain",
                                         "description": "The Life domain is an aspect of many good deities, offering spells that protect and restore the mind, body, and soul.",
                                         "image": "Class Cleric Life Badge Icon.png",
-                                        "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                13565,
-                                                "choiceId not set by server"
-                                            ]
-                                        ]
+                                        "grants": []
                                     },
                                     {
                                         "name": "Light Domain",
@@ -8092,53 +8118,25 @@
                                         "name": "Nature Domain",
                                         "description": "You embody the vast viridian power of the natural world, an avatar of the subtle divinity of fruitfall, avian migration, woodland silence, and the landslide's roaring fury.",
                                         "image": "Nature_Domain_Icon.png",
-                                        "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                13565,
-                                                "choiceId not set by server"
-                                            ]
-                                        ]
+                                        "grants": []
                                     },
                                     {
                                         "name": "Tempest Domain",
                                         "description": "Your faith has made you the very thunder that quakes the black firmament, the lightning coursing through the veins of a terrible storm.",
                                         "image": "Tempest_Domain_Icon.png",
-                                        "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                13565,
-                                                "choiceId not set by server"
-                                            ]
-                                        ]
+                                        "grants": []
                                     },
                                     {
                                         "name": "Trickery Domain",
                                         "description": "A domain shared by wicked, chaotic, and mischievous deities alike, those who channel Trickery specialise in deception and illusion magic.",
                                         "image": "Class Cleric Trickery Badge Icon.png",
-                                        "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                13565,
-                                                "choiceId not set by server"
-                                            ]
-                                        ]
+                                        "grants": []
                                     },
                                     {
                                         "name": "War Domain",
                                         "description": "Fortified by holy zeal, you brandish an arsenal of sacramental savagery to use against those you deem unrighteous.",
                                         "image": "War Domain Icon.png",
-                                        "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                13565,
-                                                "choiceId not set by server"
-                                            ]
-                                        ]
+                                        "grants": []
                                     }
                                 ]
                             }
@@ -8371,7 +8369,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -8680,7 +8678,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -8829,7 +8827,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -9405,7 +9403,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -9714,7 +9712,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -9863,7 +9861,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -10094,7 +10092,19 @@
             {
                 "Level": 5,
                 "Proficiency Bonus": 3,
-                "Features": [],
+                "Features": [
+                    {
+                        "name": "Wild Strike",
+                        "grants": [
+                            {
+                                "name": "Wild Strike",
+                                "type": 2,
+                                "description": "You can make an additional attack after making an unarmed strike while in wildshape.",
+                                "image": "Wild Strike.webp"
+                            }
+                        ]
+                    }
+                ],
                 "Cantrips Known": 3,
                 "Spell Slots": [
                     null,
@@ -10347,7 +10357,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -10656,7 +10666,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -10805,7 +10815,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -11307,7 +11317,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -11616,7 +11626,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -11765,7 +11775,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -12501,7 +12511,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -12810,7 +12820,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -12959,7 +12969,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -13344,7 +13354,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -13653,7 +13663,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -13802,7 +13812,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -14261,7 +14271,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -14570,7 +14580,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -14719,7 +14729,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -15207,7 +15217,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -15516,7 +15526,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -15665,7 +15675,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -16312,7 +16322,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -16621,7 +16631,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -16770,7 +16780,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -17329,7 +17339,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -17638,7 +17648,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -17787,7 +17797,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -18382,7 +18392,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -18691,7 +18701,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -18840,7 +18850,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -19373,7 +19383,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -19682,7 +19692,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -19831,7 +19841,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -20330,7 +20340,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -20639,7 +20649,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -20788,7 +20798,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -21223,7 +21233,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -21532,7 +21542,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -21681,7 +21691,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -22234,7 +22244,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -22543,7 +22553,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -22692,7 +22702,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -23187,7 +23197,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -23496,7 +23506,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -23645,7 +23655,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -24131,7 +24141,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -24440,7 +24450,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -24589,7 +24599,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -25166,7 +25176,26 @@
                                         "name": "Assassin",
                                         "description": "You prefer to deal sublime punishment to a single foe at a time - not in a duel, mind, because a duel implies chivalry, and you're too busy getting the job done for honour.",
                                         "image": "Class Rogue Assassin Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "name": "Assassin's Alacrity",
+                                                "type": 2,
+                                                "description": "Quick as an alley cat in a rain-dark city, you immediately restore your action and bonus at the start of combat",
+                                                "image": "Assassin's Alacrity.webp"
+                                            },
+                                            {
+                                                "name": "Assassinate: Ambush",
+                                                "type": 2,
+                                                "description": "Any successful Surprised}} creature is a [[Critical Hit.",
+                                                "image": "Generic Threat.webp"
+                                            },
+                                            {
+                                                "name": "Assassinate: Initiative",
+                                                "type": 2,
+                                                "description": "You are deadliest against unprepared enemies. In combat, you have Advantage on Attack Rolls against creatures that haven't taken a turn yet.",
+                                                "image": "Assassinate Initiative.webp"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Thief",
@@ -25348,7 +25377,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -25657,7 +25686,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -25806,7 +25835,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -26229,7 +26258,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -26538,7 +26567,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -26687,7 +26716,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -27113,7 +27142,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -27422,7 +27451,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -27571,7 +27600,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -27958,7 +27987,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -28267,7 +28296,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -28416,7 +28445,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -28942,7 +28971,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -29251,7 +29280,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -29400,7 +29429,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -29678,30 +29707,6 @@
                                         "description": "Whether crackling with the energy of ancient deluges or pierced by gales and hurricanes, your lineage is a strange tapestry scrawled by a tempest.",
                                         "image": "Storm Sorcery Subclass Icon.png",
                                         "grants": [
-                                            {
-                                                "name": "Heart of the Storm",
-                                                "type": 2,
-                                                "description": "When you cast a Spell of Level 1 or higher that deals Lightning or Thunder damage, you cause a small, local storm. All enemies within m=6|ft=20 take  (Sorcerer Level / 2) | Lightning or  (Sorcerer Level / 2) | Thunder.",
-                                                "image": "Heart of the Storm.webp"
-                                            },
-                                            [
-                                                "#",
-                                                2,
-                                                15151,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                15152,
-                                                "choiceId not set by server"
-                                            ],
-                                            {
-                                                "name": "Heart of the Storm: Resistance",
-                                                "type": 2,
-                                                "description": "You are Resistant to Lightning and Thunder damage",
-                                                "image": "Heart of the Storm Resistance.webp"
-                                            },
                                             [
                                                 "#",
                                                 1,
@@ -29731,7 +29736,31 @@
                                                 1,
                                                 2702,
                                                 "choiceId not set by server"
-                                            ]
+                                            ],
+                                            {
+                                                "name": "Heart of the Storm",
+                                                "type": 2,
+                                                "description": "When you cast a Spell of Level 1 or higher that deals Lightning or Thunder damage, you cause a small, local storm. All enemies within m=6|ft=20 take  (Sorcerer Level / 2) | Lightning or  (Sorcerer Level / 2) | Thunder.",
+                                                "image": "Heart of the Storm.webp"
+                                            },
+                                            [
+                                                "#",
+                                                2,
+                                                15151,
+                                                "choiceId not set by server"
+                                            ],
+                                            [
+                                                "#",
+                                                2,
+                                                15152,
+                                                "choiceId not set by server"
+                                            ],
+                                            {
+                                                "name": "Heart of the Storm: Resistance",
+                                                "type": 2,
+                                                "description": "You are Resistant to Lightning and Thunder damage",
+                                                "image": "Heart of the Storm Resistance.webp"
+                                            }
                                         ]
                                     },
                                     {
@@ -29936,7 +29965,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -30245,7 +30274,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -30394,7 +30423,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -30874,7 +30903,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -31183,7 +31212,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -31332,7 +31361,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -31856,7 +31885,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -32165,7 +32194,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -32314,7 +32343,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -32795,7 +32824,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -33104,7 +33133,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -33253,7 +33282,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -33723,7 +33752,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -34032,7 +34061,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -34181,7 +34210,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -34760,7 +34789,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -35069,7 +35098,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -35218,7 +35247,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -35837,7 +35866,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -36146,7 +36175,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -36295,7 +36324,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {
@@ -36848,7 +36877,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class|w=30\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder|w=30\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -37157,7 +37186,7 @@
                                     },
                                     {
                                         "name": "Martial Adept",
-                                        "description": "Martial Adept|w=30\n:* Learn two manoeuvres from the Short or Long Rest.",
+                                        "description": "Martial Adept|w=30\n:* Learn two [https://bg3.wiki/wiki/Manoeuvres Manoeuvres] from the Short or Long Rest.",
                                         "image": "Martial Adept.webp",
                                         "grants": [
                                             {
@@ -37306,7 +37335,7 @@
                                     },
                                     {
                                         "name": "Ritual Caster",
-                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be one of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
+                                        "description": "Ritual Caster: Free Spells|w=30\n:* You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice.\n:* Note: the spell must be two of these:\n:** Enhance Leap\n:** Disguise Self\n:** Find Familiar\n:** Longstrider\n:** Speak with Animals\n:** Speak with Dead",
                                         "image": "Resilient.webp",
                                         "grants": [
                                             {

@@ -254,7 +254,7 @@
     },
     {
         "name": "Githyanki",
-        "description": "Githyanki are peerless warriors from the Astral Plane, known for their legendary silver blades and red dragon mounts. They seek the total destruction of Mind Flayers, whose ancient empire enslaved the Gith for millennia.",
+        "description": "Githyanki are peerless warriors from the mind flayers, whose ancient empire enslaved the ancestral gith for millennia.",
         "image": "Race Githyanki.png",
         "grants": [
             {

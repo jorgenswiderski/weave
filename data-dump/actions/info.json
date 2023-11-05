@@ -245,7 +245,7 @@
         "image": "Cloak of Shadows.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of Shadow action that allows you to enter the shadows and disappear from sight.",
+        "summary": "PAGENAME is a Way of Shadow and Trickery Domain action that allows you to enter the shadows and disappear from sight.",
         "description": "Wrap yourself in shadows to become Cloak of Shadows|Invisible if you are Obscured.\n\nInvisibility ends early if you attack, cast another spell, take an action, or take damage.",
         "ritual": false,
         "concentration": false,
@@ -314,20 +314,6 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "cost": 1
-    },
-    {
-        "name": "Divine Strike",
-        "damage": "amounttext:Weapon, type:Physical",
-        "image": "Divine Strike Radiant Melee.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Divine Strike is a Weapon Action-like ability available to level 8 Life,  Trickery, Nature, Tempest, and War. Divine Strike deals 1 ~ 8 additional damage upon a weapon strike (either melee or ranged) of a type dependent on the chosen Domain.",
-        "description": "* Divine Strike Radiant Melee Icon Melee Skill: Once per turn deal 1d8 {Variation Damage Type} damage in addition to your weapon's {Weapon Damage} {Weapon Type} damage.\n* Divine Strike Radiant Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8 {Variation Damage Type} damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 13565,
-        "attackRoll": true,
         "cost": 1
     },
     {
@@ -795,7 +781,7 @@
         "image": "Summon Companion.webp",
         "level": 0,
         "school": 0,
-        "summary": "Summon Companion is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
+        "summary": "Ranger's Companion is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
         "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
         "ritual": false,
         "concentration": false,
@@ -804,6 +790,18 @@
         "rangeM": 18,
         "rangeFt": 60,
         "cost": 1
+    },
+    {
+        "name": "Read Thoughts",
+        "image": "Read Thoughts.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Read Thought is a Knowledge Domain Action. This ability allows the Cleric to channel divine power and read the thoughts of certain creatures while talking to them.",
+        "description": "Read the thoughts of certain creatures while talking to them.",
+        "ritual": false,
+        "concentration": true,
+        "id": 26957,
+        "attackRoll": false
     },
     {
         "name": "Reckless Attack",
@@ -1438,7 +1436,7 @@
         "image": "Wild Shape.webp",
         "level": 0,
         "school": 0,
-        "summary": "Combat Wild Shape is a Circle of the Moon Druid Bonus Action that allows them to Wild Shape. They gain access to all base Druid Wild Shape forms as well as their own exclusive forms.",
+        "summary": "Combat Wild Shape is a Circle of the Moon Bonus Action that allows them to Wild Shape. They gain access to all base Druid Wild Shape forms as well as their own exclusive forms.",
         "description": "As a Bonus Action, you can assume the form of a beast. You can transform twice per Short Rest.\n\nThis ability otherwise acts as Wild Shape.",
         "ritual": false,
         "concentration": false,
@@ -1543,6 +1541,18 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60
+    },
+    {
+        "name": "Dampen Elements",
+        "image": "Dampen Elements.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Dampen Elements is a Nature Domain Reaction. This ability allows the Cleric to channel divine power and grant the player or one of their companions receiving elemental damage Resistance to that type.",
+        "description": "When you or an ally gets hit with Acid, Cold, Fire, Lightning, or Thunder damage, you can use your reaction to halve the attack's damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 26958,
+        "attackRoll": false
     },
     {
         "name": "Deflect Missiles",
@@ -2490,6 +2500,34 @@
         "concentration": false,
         "id": 15266,
         "attackRoll": false
+    },
+    {
+        "name": "Wrath of the Storm: Lightning",
+        "damage": "amount:2d8, type:Lightning",
+        "image": "Wrath of the Storm Lightning.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Wrath of the Storm: Lightning is a Tempest Domain Reaction. It allows the Cleric to strike back at an attacking creature using a reaction, doing Lightning damage.",
+        "description": "If a nearby enemy attacks you, you can retaliate with a strike of lightning that deals 2d8|Lightning damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 26548,
+        "attackRoll": false,
+        "cost": 4
+    },
+    {
+        "name": "Wrath of the Storm: Thunder",
+        "damage": "amount:2d8, type:Thunder",
+        "image": "Wrath of the Storm Thunder.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Wrath of the Storm: Thunder is a Tempest Domain Reaction. It allows the Cleric to strike back at an attacking creature using a reaction, doing Thunder damage.",
+        "description": "If a nearby enemy attacks you, you can retaliate with a burst of thunder that deals 2d8|Thunder damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 26551,
+        "attackRoll": false,
+        "cost": 4
     },
     {
         "name": "Create Sorcery Points",
