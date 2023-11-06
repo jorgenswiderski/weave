@@ -1,4 +1,7 @@
-import { ICharacterOptionWithStubs } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
+import {
+    ICharacterChoiceWithStubs,
+    ICharacterOptionWithStubs,
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import {
     GrantableEffect,
     GrantableEffectType,
@@ -7,7 +10,7 @@ import {
     IAction,
     ISpell,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
-import { CompressableRecord } from '@jorgenswiderski/tomekeeper-shared/dist/models/compressable-record/types';
+import { StaticallyReferenceable } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/types';
 import { PageItem, PageLoadingState } from '../page-item';
 import { ICharacterOptionWithPage } from './types';
 import { error, warn } from '../logger';
@@ -33,7 +36,8 @@ export class CharacterFeature
     name: string;
     description?: string;
     image?: string;
-    grants: (GrantableEffect | CompressableRecord)[] = [];
+    grants: (GrantableEffect | StaticallyReferenceable)[] = [];
+    choices?: ICharacterChoiceWithStubs[];
 
     constructor(
         { pageTitle, page, name, image }: ICharacterOptionWithPage,
@@ -85,7 +89,7 @@ export class CharacterFeature
         pageTitle: string,
         pageId: number,
         categories: string[],
-    ): Promise<GrantableEffect | CompressableRecord> {
+    ): Promise<GrantableEffect | StaticallyReferenceable> {
         const descMatch =
             /\|\s*description\s*=\s*([\s\S]+?)\n\|\s*[\w\s]+=/g.exec(
                 pageContent,
@@ -141,7 +145,7 @@ export class CharacterFeature
     static async parsePageForGrantableEffect(
         pageTitle: string,
         page?: PageData,
-    ): Promise<GrantableEffect | CompressableRecord | null> {
+    ): Promise<GrantableEffect | StaticallyReferenceable | null> {
         try {
             const categories = await MwnApi.queryCategoriesFromPage(pageTitle);
 
@@ -169,8 +173,8 @@ export class CharacterFeature
             }
 
             if (
-                page.content.includes('{{ActionPage') ||
-                page.content.includes('{{SpellPage') ||
+                // page.content.includes('{{ActionPage') ||
+                // page.content.includes('{{SpellPage')
                 page.content
             ) {
                 // uses the ActionPage template, could be either an action or a passive

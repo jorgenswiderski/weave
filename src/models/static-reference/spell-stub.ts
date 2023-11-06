@@ -1,29 +1,31 @@
-import { SpellStubConstructor } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/stubs';
-import {
-    CompressableRecord,
-    CompressableRecordHandle,
-} from '@jorgenswiderski/tomekeeper-shared/dist/models/compressable-record/types';
-import { RecordCompressor } from '@jorgenswiderski/tomekeeper-shared/dist/models/compressable-record/compressable-record';
+import { SpellEffectStubConstructor } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/stubs';
 import { ISpell } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
-import { CHOICE_ID_NOT_SET_BY_SERVER } from './types';
+import { StaticReference } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/static-reference';
+import {
+    StaticReferenceHandle,
+    StaticallyReferenceable,
+} from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/types';
 
-let compress: (id: number, choiceId: string) => CompressableRecordHandle;
+let ref: {
+    pool: Map<number, SpellStub>;
+    create: (id: number) => StaticReferenceHandle;
+};
 
-export class SpellStub implements CompressableRecord {
+export class SpellStub implements StaticallyReferenceable {
     id: number;
 
     constructor(public spell: ISpell) {
         this.id = spell.id;
     }
 
-    toJSON(): CompressableRecordHandle {
-        return compress(this.id, CHOICE_ID_NOT_SET_BY_SERVER);
+    toJSON(): StaticReferenceHandle {
+        return ref.create(this.id);
     }
 }
 
 // Assure that the constructor signature matches that defined by the class stub
 // See stubs.ts for more info
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const typeCheck: SpellStubConstructor = SpellStub;
+const typeCheck: SpellEffectStubConstructor = SpellStub;
 
-compress = RecordCompressor.registerClass(SpellStub, 1);
+ref = StaticReference.registerClass(SpellStub, 's');
