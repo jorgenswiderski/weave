@@ -11,12 +11,9 @@
                     {
                         "name": "Rage",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                1085,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a1085"
+                            }
                         ]
                     },
                     {
@@ -41,12 +38,9 @@
                     {
                         "name": "Reckless Attack",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                1146,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a1146"
+                            }
                         ]
                     },
                     {
@@ -80,24 +74,15 @@
                                         "description": "Violence is both a means and an end. You follow a path of untrammeled fury, slick with blood, as you thrill in the chaos of battle, heedless of your own well-being.",
                                         "image": "Class Barbarian Berserker Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                1103,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                1105,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                1107,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a1103"
+                                            },
+                                            {
+                                                "ref": "a1105"
+                                            },
+                                            {
+                                                "ref": "a1107"
+                                            }
                                         ]
                                     },
                                     {
@@ -105,18 +90,12 @@
                                         "description": "The wild influence of magic has transformed you, suffusing you with arcane power that churns within you, waiting to be released.",
                                         "image": "Wild_Magic_Barbarian_Subclass_Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                7924,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7925,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a7924"
+                                            },
+                                            {
+                                                "ref": "a7925"
+                                            }
                                         ]
                                     },
                                     {
@@ -124,54 +103,30 @@
                                         "description": "Your attunement with nature and its beasts inspires your rage, empowering you with supernatural might.",
                                         "image": "Class Barbarian Wildheart Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                1585,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                1147,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                1148,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                1151,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                1153,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                1154,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                1157,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                1156,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s1585"
+                                            },
+                                            {
+                                                "ref": "a1147"
+                                            },
+                                            {
+                                                "ref": "a1148"
+                                            },
+                                            {
+                                                "ref": "a1151"
+                                            },
+                                            {
+                                                "ref": "a1153"
+                                            },
+                                            {
+                                                "ref": "a1154"
+                                            },
+                                            {
+                                                "ref": "a1157"
+                                            },
+                                            {
+                                                "ref": "a1156"
+                                            }
                                         ]
                                     }
                                 ]
@@ -1062,12 +1017,9 @@
                                                 "description": "Your rage becomes all-consuming, repelling outside influence.\n\nWhile Frenzied, you can't be Charmed or Frightened, and Calm Emotions no longer ends your rage.",
                                                 "image": "Mindless Rage.webp"
                                             },
-                                            [
-                                                "#",
-                                                1,
-                                                2331,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s2331"
+                                            }
                                         ]
                                     },
                                     {
@@ -1075,24 +1027,15 @@
                                         "description": "The wild influence of magic has transformed you, suffusing you with arcane power that churns within you, waiting to be released.",
                                         "image": "Wild_Magic_Barbarian_Subclass_Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                16446,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                16457,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                16458,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a16446"
+                                            },
+                                            {
+                                                "ref": "a16457"
+                                            },
+                                            {
+                                                "ref": "a16458"
+                                            }
                                         ]
                                     },
                                     {
@@ -2052,18 +1995,12 @@
                                         "description": "Violence is both a means and an end. You follow a path of untrammeled fury, slick with blood, as you thrill in the chaos of battle, heedless of your own well-being.",
                                         "image": "Class Barbarian Berserker Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                9534,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                9536,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a9534"
+                                            },
+                                            {
+                                                "ref": "a9536"
+                                            }
                                         ]
                                     },
                                     {
@@ -2071,12 +2008,9 @@
                                         "description": "The wild influence of magic has transformed you, suffusing you with arcane power that churns within you, waiting to be released.",
                                         "image": "Wild_Magic_Barbarian_Subclass_Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                9532,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a9532"
+                                            }
                                         ]
                                     },
                                     {
@@ -2958,12 +2892,9 @@
                     {
                         "name": "Bardic Inspiration",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                2650,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a2650"
+                            }
                         ]
                     }
                 ],
@@ -2987,12 +2918,9 @@
                     {
                         "name": "Song of Rest",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                3378,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a3378"
+                            }
                         ]
                     },
                     {
@@ -3036,12 +2964,9 @@
                                         "description": "You pursue beauty and truth, collecting knowledge from scholarly tomes to peasants' tales, and use your gifts to hold both audiences and enemies spellbound.",
                                         "image": "College Of Lore Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                3397,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a3397"
+                                            }
                                         ]
                                     },
                                     {
@@ -3049,42 +2974,24 @@
                                         "description": "Bards of the College of Swords are called blades, and they entertain through daring feats of weapon prowess.",
                                         "image": "Class Bard Swords Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                18881,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18888,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18880,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18890,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18897,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18898,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "a18881"
+                                            },
+                                            {
+                                                "ref": "a18888"
+                                            },
+                                            {
+                                                "ref": "a18880"
+                                            },
+                                            {
+                                                "ref": "a18890"
+                                            },
+                                            {
+                                                "ref": "a18897"
+                                            },
+                                            {
+                                                "ref": "a18898"
+                                            },
                                             {
                                                 "name": "Duelling",
                                                 "type": 2,
@@ -3104,12 +3011,9 @@
                                         "description": "You wander the land to witness and relate the deeds of the mighty, keeping alive the memory of heroes of the past and inspiring heroes of the future.",
                                         "image": "Class Bard Valour Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                4016,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a4016"
+                                            }
                                         ]
                                     }
                                 ]
@@ -4019,12 +3923,9 @@
                     {
                         "name": "Countercharm",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                6659,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a6659"
+                            }
                         ]
                     },
                     {
@@ -5882,18 +5783,12 @@
                                         "description": "Adaptable and adroit in all manner of languages and skills, your mind is an intellectual cup brimming with exquisite knowing.",
                                         "image": "Knowledge Domain Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                3061,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2277,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s3061"
+                                            },
+                                            {
+                                                "ref": "s2277"
+                                            }
                                         ]
                                     },
                                     {
@@ -5901,18 +5796,12 @@
                                         "description": "The Life domain is an aspect of many good deities, offering spells that protect and restore the mind, body, and soul.",
                                         "image": "Class Cleric Life Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                1610,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1611,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "s1610"
+                                            },
+                                            {
+                                                "ref": "s1611"
+                                            },
                                             {
                                                 "name": "Disciple of Life",
                                                 "type": 2,
@@ -5926,30 +5815,18 @@
                                         "description": "The Light domain is offered by deities of justice, majesty, and primordial flame, providing spells that dispel darkness and harm the undead.",
                                         "image": "Light Domain Subclass 300px.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                796,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2008,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2175,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                8005,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s796"
+                                            },
+                                            {
+                                                "ref": "s2008"
+                                            },
+                                            {
+                                                "ref": "s2175"
+                                            },
+                                            {
+                                                "ref": "a8005"
+                                            }
                                         ]
                                     },
                                     {
@@ -5957,48 +5834,30 @@
                                         "description": "You embody the vast viridian power of the natural world, an avatar of the subtle divinity of fruitfall, avian migration, woodland silence, and the landslide's roaring fury.",
                                         "image": "Nature_Domain_Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                1585,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1985,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "s1585"
+                                            },
+                                            {
+                                                "ref": "s1985"
+                                            },
                                             {
                                                 "name": "Acolyte of Nature",
                                                 "type": 2,
                                                 "description": "Learn one of the following cantrips: Poison Spray, Produce Flame, Shillelagh, Thorn Whip.\n\nGet one of the following proficiencies: Animal Handling, Nature, Survival.",
                                                 "image": "Acolyte of Nature.webp"
                                             },
-                                            [
-                                                "#",
-                                                1,
-                                                1665,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1670,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1692,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1693,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s1665"
+                                            },
+                                            {
+                                                "ref": "s1670"
+                                            },
+                                            {
+                                                "ref": "s1692"
+                                            },
+                                            {
+                                                "ref": "s1693"
+                                            }
                                         ]
                                     },
                                     {
@@ -6006,36 +5865,24 @@
                                         "description": "Your faith has made you the very thunder that quakes the black firmament, the lightning coursing through the veins of a terrible storm.",
                                         "image": "Tempest_Domain_Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                2296,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2190,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "s2296"
+                                            },
+                                            {
+                                                "ref": "s2190"
+                                            },
                                             {
                                                 "name": "Wrath of the Storm",
                                                 "type": 2,
                                                 "description": "As a reaction, strike back at an attacking creature, dealing 2d8|Lightning or 2d8|Thunder damage. The target takes half damage on a successful SavingThrow.",
                                                 "image": "Generic Thunder.webp"
                                             },
-                                            [
-                                                "#",
-                                                2,
-                                                26548,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                26551,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a26548"
+                                            },
+                                            {
+                                                "ref": "a26551"
+                                            }
                                         ]
                                     },
                                     {
@@ -6043,24 +5890,15 @@
                                         "description": "A domain shared by wicked, chaotic, and mischievous deities alike, those who channel Trickery specialise in deception and illusion magic.",
                                         "image": "Class Cleric Trickery Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                999,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2117,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                734,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s999"
+                                            },
+                                            {
+                                                "ref": "s2117"
+                                            },
+                                            {
+                                                "ref": "a734"
+                                            }
                                         ]
                                     },
                                     {
@@ -6068,24 +5906,15 @@
                                         "description": "Fortified by holy zeal, you brandish an arsenal of sacramental savagery to use against those you deem unrighteous.",
                                         "image": "War Domain Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                2817,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2272,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                9203,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s2817"
+                                            },
+                                            {
+                                                "ref": "s2272"
+                                            },
+                                            {
+                                                "ref": "a9203"
+                                            }
                                         ]
                                     }
                                 ]
@@ -6112,12 +5941,9 @@
                     {
                         "name": "Turn Undead",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                741,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a741"
+                            }
                         ]
                     },
                     {
@@ -6145,12 +5971,9 @@
                                         "description": "The Life domain is an aspect of many good deities, offering spells that protect and restore the mind, body, and soul.",
                                         "image": "Class Cleric Life Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                720,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a720"
+                                            }
                                         ]
                                     },
                                     {
@@ -6158,12 +5981,9 @@
                                         "description": "The Light domain is offered by deities of justice, majesty, and primordial flame, providing spells that dispel darkness and harm the undead.",
                                         "image": "Light Domain Subclass 300px.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                728,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a728"
+                                            }
                                         ]
                                     },
                                     {
@@ -6171,12 +5991,9 @@
                                         "description": "You embody the vast viridian power of the natural world, an avatar of the subtle divinity of fruitfall, avian migration, woodland silence, and the landslide's roaring fury.",
                                         "image": "Nature_Domain_Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                9704,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a9704"
+                                            }
                                         ]
                                     },
                                     {
@@ -6184,12 +6001,9 @@
                                         "description": "Your faith has made you the very thunder that quakes the black firmament, the lightning coursing through the veins of a terrible storm.",
                                         "image": "Tempest_Domain_Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                6828,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a6828"
+                                            }
                                         ]
                                     },
                                     {
@@ -6197,12 +6011,9 @@
                                         "description": "A domain shared by wicked, chaotic, and mischievous deities alike, those who channel Trickery specialise in deception and illusion magic.",
                                         "image": "Class Cleric Trickery Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                736,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a736"
+                                            }
                                         ]
                                     },
                                     {
@@ -7132,12 +6943,9 @@
                                         "description": "Adaptable and adroit in all manner of languages and skills, your mind is an intellectual cup brimming with exquisite knowing.",
                                         "image": "Knowledge Domain Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                26957,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a26957"
+                                            }
                                         ]
                                     },
                                     {
@@ -7171,12 +6979,9 @@
                                         "description": "You embody the vast viridian power of the natural world, an avatar of the subtle divinity of fruitfall, avian migration, woodland silence, and the landslide's roaring fury.",
                                         "image": "Nature_Domain_Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                26958,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a26958"
+                                            }
                                         ]
                                     },
                                     {
@@ -7197,12 +7002,9 @@
                                         "description": "A domain shared by wicked, chaotic, and mischievous deities alike, those who channel Trickery specialise in deception and illusion magic.",
                                         "image": "Class Cleric Trickery Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                18418,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a18418"
+                                            }
                                         ]
                                     },
                                     {
@@ -8178,12 +7980,9 @@
                     {
                         "name": "Divine Intervention",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                7954,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a7954"
+                            }
                         ]
                     }
                 ],
@@ -9086,12 +8885,9 @@
                     {
                         "name": "Wild Shape",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                664,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a664"
+                            }
                         ]
                     },
                     {
@@ -9106,48 +8902,27 @@
                                         "description": "Druids of this Circle connect to powerful magic that flows through the earth and binds all living things together.",
                                         "image": "Class Druid Land Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                684,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1615,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1665,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1670,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1622,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1692,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1693,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a684"
+                                            },
+                                            {
+                                                "ref": "s1615"
+                                            },
+                                            {
+                                                "ref": "s1665"
+                                            },
+                                            {
+                                                "ref": "s1670"
+                                            },
+                                            {
+                                                "ref": "s1622"
+                                            },
+                                            {
+                                                "ref": "s1692"
+                                            },
+                                            {
+                                                "ref": "s1693"
+                                            }
                                         ]
                                     },
                                     {
@@ -9155,36 +8930,21 @@
                                         "description": "Druids sworn to the moon draw on its mercurial nature to transform into massive creatures and primal elementals.",
                                         "image": "Class Druid Moon Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                1434,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                664,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                6468,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                664,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                15259,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a1434"
+                                            },
+                                            {
+                                                "ref": "a664"
+                                            },
+                                            {
+                                                "ref": "a6468"
+                                            },
+                                            {
+                                                "ref": "a664"
+                                            },
+                                            {
+                                                "ref": "a15259"
+                                            }
                                         ]
                                     },
                                     {
@@ -9192,30 +8952,18 @@
                                         "description": "Viewing death, necrosis, fungal growth, and sporulation as just another part of life, you can manipulate such spores to augment yourself and harm your foes.",
                                         "image": "Class Druid Spores Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                1645,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7876,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7877,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7876,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s1645"
+                                            },
+                                            {
+                                                "ref": "a7876"
+                                            },
+                                            {
+                                                "ref": "a7877"
+                                            },
+                                            {
+                                                "ref": "a7876"
+                                            }
                                         ]
                                     }
                                 ]
@@ -10158,18 +9906,12 @@
                                         "description": "Viewing death, necrosis, fungal growth, and sporulation as just another part of life, you can manipulate such spores to augment yourself and harm your foes.",
                                         "image": "Class Druid Spores Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                7876,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                8527,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a7876"
+                                            },
+                                            {
+                                                "ref": "a8527"
+                                            }
                                         ]
                                     }
                                 ]
@@ -11087,30 +10829,18 @@
                                         "description": "Druids sworn to the moon draw on its mercurial nature to transform into massive creatures and primal elementals.",
                                         "image": "Class Druid Moon Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                15263,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                15264,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                15265,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                15266,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a15263"
+                                            },
+                                            {
+                                                "ref": "a15264"
+                                            },
+                                            {
+                                                "ref": "a15265"
+                                            },
+                                            {
+                                                "ref": "a15266"
+                                            }
                                         ]
                                     },
                                     {
@@ -11118,12 +10848,9 @@
                                         "description": "Viewing death, necrosis, fungal growth, and sporulation as just another part of life, you can manipulate such spores to augment yourself and harm your foes.",
                                         "image": "Class Druid Spores Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                7876,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "a7876"
+                                            },
                                             {
                                                 "name": "Spreading Spores (Passive Feature)",
                                                 "type": 2,
@@ -12013,12 +11740,9 @@
                     {
                         "name": "Second Wind",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                759,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a759"
+                            }
                         ]
                     },
                     {
@@ -12034,12 +11758,9 @@
                     {
                         "name": "Action Surge",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                762,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a762"
+                            }
                         ]
                     }
                 ]
@@ -12079,276 +11800,141 @@
                                         "description": "Eldritch Knights study magic to supplement their weaponry, allowing them to overcome resistance from the toughest foes.",
                                         "image": "Class Fighter Eldritch Knight Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                14413,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1638,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1641,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1645,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1647,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1653,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1661,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                796,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1662,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1663,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1665,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1691,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1695,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1696,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2008,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2032,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2291,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2256,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2268,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2704,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2296,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2300,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2008,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                999,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2032,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2054,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2117,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2171,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2178,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2181,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1389,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2190,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2196,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                6660,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2252,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2253,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2256,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2291,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2268,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2294,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2704,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2277,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2281,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2296,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2300,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a14413"
+                                            },
+                                            {
+                                                "ref": "s1638"
+                                            },
+                                            {
+                                                "ref": "s1641"
+                                            },
+                                            {
+                                                "ref": "s1645"
+                                            },
+                                            {
+                                                "ref": "s1647"
+                                            },
+                                            {
+                                                "ref": "s1653"
+                                            },
+                                            {
+                                                "ref": "s1661"
+                                            },
+                                            {
+                                                "ref": "s796"
+                                            },
+                                            {
+                                                "ref": "s1662"
+                                            },
+                                            {
+                                                "ref": "s1663"
+                                            },
+                                            {
+                                                "ref": "s1665"
+                                            },
+                                            {
+                                                "ref": "s1691"
+                                            },
+                                            {
+                                                "ref": "s1695"
+                                            },
+                                            {
+                                                "ref": "s1696"
+                                            },
+                                            {
+                                                "ref": "s2008"
+                                            },
+                                            {
+                                                "ref": "s2032"
+                                            },
+                                            {
+                                                "ref": "s2291"
+                                            },
+                                            {
+                                                "ref": "s2256"
+                                            },
+                                            {
+                                                "ref": "s2268"
+                                            },
+                                            {
+                                                "ref": "s2704"
+                                            },
+                                            {
+                                                "ref": "s2296"
+                                            },
+                                            {
+                                                "ref": "s2300"
+                                            },
+                                            {
+                                                "ref": "s2008"
+                                            },
+                                            {
+                                                "ref": "s999"
+                                            },
+                                            {
+                                                "ref": "s2032"
+                                            },
+                                            {
+                                                "ref": "s2054"
+                                            },
+                                            {
+                                                "ref": "s2117"
+                                            },
+                                            {
+                                                "ref": "s2171"
+                                            },
+                                            {
+                                                "ref": "s2178"
+                                            },
+                                            {
+                                                "ref": "s2181"
+                                            },
+                                            {
+                                                "ref": "s1389"
+                                            },
+                                            {
+                                                "ref": "s2190"
+                                            },
+                                            {
+                                                "ref": "s2196"
+                                            },
+                                            {
+                                                "ref": "s6660"
+                                            },
+                                            {
+                                                "ref": "s2252"
+                                            },
+                                            {
+                                                "ref": "s2253"
+                                            },
+                                            {
+                                                "ref": "s2256"
+                                            },
+                                            {
+                                                "ref": "s2291"
+                                            },
+                                            {
+                                                "ref": "s2268"
+                                            },
+                                            {
+                                                "ref": "s2294"
+                                            },
+                                            {
+                                                "ref": "s2704"
+                                            },
+                                            {
+                                                "ref": "s2277"
+                                            },
+                                            {
+                                                "ref": "s2281"
+                                            },
+                                            {
+                                                "ref": "s2296"
+                                            },
+                                            {
+                                                "ref": "s2300"
+                                            }
                                         ]
                                     }
                                 ]
@@ -14073,42 +13659,24 @@
                                                 "description": "You have honed your body and magic for war. After you cast a cantrip, you can make a weapon attack using a bonus.",
                                                 "image": "War Magic.webp"
                                             },
-                                            [
-                                                "#",
-                                                1,
-                                                6662,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2342,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                6700,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1045,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2530,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2542,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s6662"
+                                            },
+                                            {
+                                                "ref": "s2342"
+                                            },
+                                            {
+                                                "ref": "s6700"
+                                            },
+                                            {
+                                                "ref": "s1045"
+                                            },
+                                            {
+                                                "ref": "s2530"
+                                            },
+                                            {
+                                                "ref": "s2542"
+                                            }
                                         ]
                                     }
                                 ]
@@ -15950,12 +15518,9 @@
                     {
                         "name": "Flurry of Blows",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                7873,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a7873"
+                            }
                         ]
                     }
                 ]
@@ -16000,42 +15565,24 @@
                                         "description": "You value the arts of stealth and subterfuge, bending the shadows to your will to strike without warning.",
                                         "image": "Class Monk Shadow Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                1663,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18484,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18515,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18516,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18519,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18843,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s1663"
+                                            },
+                                            {
+                                                "ref": "a18484"
+                                            },
+                                            {
+                                                "ref": "a18515"
+                                            },
+                                            {
+                                                "ref": "a18516"
+                                            },
+                                            {
+                                                "ref": "a18519"
+                                            },
+                                            {
+                                                "ref": "a18843"
+                                            }
                                         ]
                                     },
                                     {
@@ -16043,72 +15590,39 @@
                                         "description": "You focus your ki to bend the elements to your will, using them as an extension of your own body.",
                                         "image": "Class Monk Four Elements Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                7857,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7858,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7859,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7860,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7861,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                8962,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7862,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                8973,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7863,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7864,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7865,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "a7857"
+                                            },
+                                            {
+                                                "ref": "a7858"
+                                            },
+                                            {
+                                                "ref": "a7859"
+                                            },
+                                            {
+                                                "ref": "a7860"
+                                            },
+                                            {
+                                                "ref": "a7861"
+                                            },
+                                            {
+                                                "ref": "a8962"
+                                            },
+                                            {
+                                                "ref": "a7862"
+                                            },
+                                            {
+                                                "ref": "a8973"
+                                            },
+                                            {
+                                                "ref": "a7863"
+                                            },
+                                            {
+                                                "ref": "a7864"
+                                            },
+                                            {
+                                                "ref": "a7865"
+                                            },
                                             {
                                                 "name": "Harmony of Fire and Water",
                                                 "type": 1,
@@ -16122,30 +15636,18 @@
                                         "description": "You specialise in unarmed combat, using your hands and control of ki to heal or inflict grievous hurt.",
                                         "image": "Class Monk Open Hand Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                7873,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18397,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18390,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18401,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a7873"
+                                            },
+                                            {
+                                                "ref": "a18397"
+                                            },
+                                            {
+                                                "ref": "a18390"
+                                            },
+                                            {
+                                                "ref": "a18401"
+                                            }
                                         ]
                                     }
                                 ]
@@ -16155,12 +15657,9 @@
                     {
                         "name": "Deflect Missiles",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                8404,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a8404"
+                            }
                         ]
                     }
                 ]
@@ -16995,12 +16494,9 @@
                     {
                         "name": "Slow Fall",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                8238,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a8238"
+                            }
                         ]
                     }
                 ]
@@ -17026,23 +16522,17 @@
                     {
                         "name": "Stunning Strike (Melee)",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                8937,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a8937"
+                            }
                         ]
                     },
                     {
                         "name": "Stunning Strike (Unarmed)",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                8936,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a8936"
+                            }
                         ]
                     }
                 ]
@@ -17077,12 +16567,9 @@
                                         "description": "You value the arts of stealth and subterfuge, bending the shadows to your will to strike without warning.",
                                         "image": "Class Monk Shadow Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                18422,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a18422"
+                                            }
                                         ]
                                     },
                                     {
@@ -17096,18 +16583,12 @@
                                                 "description": "Hold a humanoid enemy still. They can't move, act or react. Attacks from within 3m are always critical hits.",
                                                 "image": "Hold Person.webp"
                                             },
-                                            [
-                                                "#",
-                                                2,
-                                                14447,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7868,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a14447"
+                                            },
+                                            {
+                                                "ref": "a7868"
+                                            }
                                         ]
                                     },
                                     {
@@ -17133,12 +16614,9 @@
                                                 "description": "Your hands sap the ki from your enemies' bodies. Your unarmed attacks deal an additional 1d4 + Wisdom Modifier|Radiant damage.",
                                                 "image": "Manifestation of Soul.webp"
                                             },
-                                            [
-                                                "#",
-                                                2,
-                                                8916,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a8916"
+                                            }
                                         ]
                                     }
                                 ]
@@ -18053,54 +17531,33 @@
                                                 "description": "Your affinity with elemental ki deepens. Several of your offensive Four Elements features deal an additional dice of damage, your Clench of the North Wind can hold an additional creature, and your Embrace of the Inferno fires an extra ray.\n\n* Fist of Four Thunders damage increases to 3d8|Thunder (from 2d8)\n* Fist of Unbroken Air damage increases to 4d10|Bludgeoning (from 3d10)\n* Sweeping Cinder Strike damage increases to 4d6|Fire (from 3d6)\n* Touch of the Storm damage increases to 2d10|Lightning (from 1d10)\n* Water Whip damage increases to 4d10|Thunder (from 3d10)\n* Clench of the North Wind can hold an additional creature.\n* Embrace of the Inferno fires an additional ray.\n* Gong of the Summit damage increases to 4d8|Thunder (from 3d8)",
                                                 "image": "Generic Magical.webp"
                                             },
-                                            [
-                                                "#",
-                                                2,
-                                                7860,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7861,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7863,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7864,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7865,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "a7860"
+                                            },
+                                            {
+                                                "ref": "a7861"
+                                            },
+                                            {
+                                                "ref": "a7863"
+                                            },
+                                            {
+                                                "ref": "a7864"
+                                            },
+                                            {
+                                                "ref": "a7865"
+                                            },
                                             {
                                                 "name": "Clench of the North Wind",
                                                 "type": 1,
                                                 "description": "Hold a humanoid enemy still. They can't move, act or react. Attacks from within 3m are always critical hits.",
                                                 "image": "Hold Person.webp"
                                             },
-                                            [
-                                                "#",
-                                                2,
-                                                14447,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                7868,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a14447"
+                                            },
+                                            {
+                                                "ref": "a7868"
+                                            }
                                         ]
                                     },
                                     {
@@ -18108,24 +17565,15 @@
                                         "description": "You specialise in unarmed combat, using your hands and control of ki to heal or inflict grievous hurt.",
                                         "image": "Class Monk Open Hand Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                18744,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18745,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18748,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a18744"
+                                            },
+                                            {
+                                                "ref": "a18745"
+                                            },
+                                            {
+                                                "ref": "a18748"
+                                            }
                                         ]
                                     }
                                 ]
@@ -18177,18 +17625,12 @@
                                         "description": "You value the arts of stealth and subterfuge, bending the shadows to your will to strike without warning.",
                                         "image": "Class Monk Shadow Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                18858,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                18859,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a18858"
+                                            },
+                                            {
+                                                "ref": "a18859"
+                                            }
                                         ]
                                     },
                                     {
@@ -18196,18 +17638,12 @@
                                         "description": "You focus your ki to bend the elements to your will, using them as an extension of your own body.",
                                         "image": "Class Monk Four Elements Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                10776,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                14026,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "a10776"
+                                            },
+                                            {
+                                                "ref": "a14026"
+                                            },
                                             {
                                                 "name": "Ride the Wind",
                                                 "type": 1,
@@ -19078,23 +18514,17 @@
                     {
                         "name": "Divine Sense",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                3399,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a3399"
+                            }
                         ]
                     },
                     {
                         "name": "Lay on Hands",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                4023,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a4023"
+                            }
                         ]
                     },
                     {
@@ -19113,12 +18543,9 @@
                                         "description": "Following the ideal of the knight in shining armour, you act with honour and virtue to protect the weak and pursue the greater good.",
                                         "image": "Paladin Oath of Devotion Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                3400,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a3400"
+                                            }
                                         ]
                                     },
                                     {
@@ -19126,12 +18553,9 @@
                                         "description": "You fight on the side of light in the cosmic struggle against darkness to preserve the sanctity of life and the beauty of nature.",
                                         "image": "Paladin Oath of the Ancients Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                3995,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a3995"
+                                            }
                                         ]
                                     },
                                     {
@@ -19139,12 +18563,9 @@
                                         "description": "You have set aside even your own purity to right wrongs and deliver justice to those who have committed the most grievous sins.",
                                         "image": "Paladin Oath of Vengeance.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                6888,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a6888"
+                                            }
                                         ]
                                     },
                                     {
@@ -19152,12 +18573,9 @@
                                         "description": "You have broken your sacred Oath in pursuit of power and ambition. Only darkness remains to fuel you now.",
                                         "image": "Paladin Oathbreaker Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                3610,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a3610"
+                                            }
                                         ]
                                     }
                                 ]
@@ -19188,12 +18606,9 @@
                     {
                         "name": "Divine Smite",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                3940,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a3940"
+                            }
                         ]
                     }
                 ],
@@ -20126,12 +19541,9 @@
                                         "description": "Following the ideal of the knight in shining armour, you act with honour and virtue to protect the weak and pursue the greater good.",
                                         "image": "Paladin Oath of Devotion Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                7988,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a7988"
+                                            }
                                         ]
                                     },
                                     {
@@ -21038,12 +20450,9 @@
                     {
                         "name": "Aura of Courage",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                7987,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a7987"
+                            }
                         ]
                     }
                 ],
@@ -21062,12 +20471,9 @@
                     {
                         "name": "Improved Divine Smite",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                12941,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a12941"
+                            }
                         ]
                     }
                 ],
@@ -21977,42 +21383,27 @@
                                         "description": "Beast Masters bind themselves to an animal companion, sharing an intelligent bond that flourishes in and out of combat.",
                                         "image": "Class Ranger Beast Master Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                850,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                14208,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                14209,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                14210,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "a850"
+                                            },
+                                            {
+                                                "ref": "a14208"
+                                            },
+                                            {
+                                                "ref": "a14209"
+                                            },
+                                            {
+                                                "ref": "a14210"
+                                            },
                                             {
                                                 "name": "Wolf Companion",
                                                 "type": 1,
                                                 "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
                                                 "image": "Wolf Companion.webp"
                                             },
-                                            [
-                                                "#",
-                                                2,
-                                                14212,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a14212"
+                                            }
                                         ]
                                     },
                                     {
@@ -22020,12 +21411,9 @@
                                         "description": "Emerging like a horrible gift from the envelope of darkness and shadow, you ambush and put down your foes before they can even scream.",
                                         "image": "Gloom Stalker Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                17899,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "a17899"
+                                            },
                                             {
                                                 "name": "Superior Darkvision",
                                                 "type": 2,
@@ -22038,18 +21426,12 @@
                                                 "description": "You specialise in taking out foes swiftly and ruthlessly.\n\nYou gain a +3 bonus to Initiative.\n\nOn the first turn of combat, your Movement Speed increases by m=3|ft=10, and you can make an attack that deals an additional d8|Physical1d8 damage",
                                                 "image": "Dread Ambusher Melee.webp"
                                             },
-                                            [
-                                                "#",
-                                                2,
-                                                17897,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2117,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a17897"
+                                            },
+                                            {
+                                                "ref": "s2117"
+                                            }
                                         ]
                                     },
                                     {
@@ -22063,12 +21445,9 @@
                                                 "description": "Once per turn, your weapon attack deals an extra 1d8|Physical|drs=t damage if the target is below its hit point maximum.",
                                                 "image": "Colossus Slayer.webp"
                                             },
-                                            [
-                                                "#",
-                                                2,
-                                                1441,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "a1441"
+                                            },
                                             {
                                                 "name": "Horde Breaker",
                                                 "type": 2,
@@ -23914,12 +23293,9 @@
                     {
                         "name": "Hide in Plain Sight",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                6711,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a6711"
+                            }
                         ]
                     }
                 ],
@@ -24846,23 +24222,17 @@
                     {
                         "name": "Sneak Attack (Melee)",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                882,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a882"
+                            }
                         ]
                     },
                     {
                         "name": "Sneak Attack (Ranged)",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                883,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a883"
+                            }
                         ]
                     }
                 ]
@@ -24875,34 +24245,25 @@
                     {
                         "name": "Cunning Action: Dash",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                889,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a889"
+                            }
                         ]
                     },
                     {
                         "name": "Cunning Action: Disengage",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                890,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a890"
+                            }
                         ]
                     },
                     {
                         "name": "Cunning Action: Hide",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                6574,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a6574"
+                            }
                         ]
                     }
                 ]
@@ -24924,252 +24285,129 @@
                                         "description": "Arcane Tricksters are rogues with a clever touch of magic, using illusions and enchantments to keep their opponents on the back foot.",
                                         "image": "Class Rogue Trickster Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                1662,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1638,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1641,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1645,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1647,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1653,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1661,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                796,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1663,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1665,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1691,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1695,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1696,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                999,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2054,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2117,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2277,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2281,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2008,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                999,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2032,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2054,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2117,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2171,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2252,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2178,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2181,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1389,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2190,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2196,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                6660,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2253,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2256,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2291,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2268,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2294,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2704,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2277,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2281,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2296,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2300,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s1662"
+                                            },
+                                            {
+                                                "ref": "s1638"
+                                            },
+                                            {
+                                                "ref": "s1641"
+                                            },
+                                            {
+                                                "ref": "s1645"
+                                            },
+                                            {
+                                                "ref": "s1647"
+                                            },
+                                            {
+                                                "ref": "s1653"
+                                            },
+                                            {
+                                                "ref": "s1661"
+                                            },
+                                            {
+                                                "ref": "s796"
+                                            },
+                                            {
+                                                "ref": "s1663"
+                                            },
+                                            {
+                                                "ref": "s1665"
+                                            },
+                                            {
+                                                "ref": "s1691"
+                                            },
+                                            {
+                                                "ref": "s1695"
+                                            },
+                                            {
+                                                "ref": "s1696"
+                                            },
+                                            {
+                                                "ref": "s999"
+                                            },
+                                            {
+                                                "ref": "s2054"
+                                            },
+                                            {
+                                                "ref": "s2117"
+                                            },
+                                            {
+                                                "ref": "s2277"
+                                            },
+                                            {
+                                                "ref": "s2281"
+                                            },
+                                            {
+                                                "ref": "s2008"
+                                            },
+                                            {
+                                                "ref": "s999"
+                                            },
+                                            {
+                                                "ref": "s2032"
+                                            },
+                                            {
+                                                "ref": "s2054"
+                                            },
+                                            {
+                                                "ref": "s2117"
+                                            },
+                                            {
+                                                "ref": "s2171"
+                                            },
+                                            {
+                                                "ref": "s2252"
+                                            },
+                                            {
+                                                "ref": "s2178"
+                                            },
+                                            {
+                                                "ref": "s2181"
+                                            },
+                                            {
+                                                "ref": "s1389"
+                                            },
+                                            {
+                                                "ref": "s2190"
+                                            },
+                                            {
+                                                "ref": "s2196"
+                                            },
+                                            {
+                                                "ref": "s6660"
+                                            },
+                                            {
+                                                "ref": "s2253"
+                                            },
+                                            {
+                                                "ref": "s2256"
+                                            },
+                                            {
+                                                "ref": "s2291"
+                                            },
+                                            {
+                                                "ref": "s2268"
+                                            },
+                                            {
+                                                "ref": "s2294"
+                                            },
+                                            {
+                                                "ref": "s2704"
+                                            },
+                                            {
+                                                "ref": "s2277"
+                                            },
+                                            {
+                                                "ref": "s2281"
+                                            },
+                                            {
+                                                "ref": "s2296"
+                                            },
+                                            {
+                                                "ref": "s2300"
+                                            }
                                         ]
                                     },
                                     {
@@ -26960,12 +26198,9 @@
                                         "description": "You prefer to deal sublime punishment to a single foe at a time - not in a duel, mind, because a duel implies chivalry, and you're too busy getting the job done for honour.",
                                         "image": "Class Rogue Assassin Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                14257,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a14257"
+                                            }
                                         ]
                                     },
                                     {
@@ -26973,12 +26208,9 @@
                                         "description": "Thieves use their skills in stealth and larceny to acquire whatever they wish, whether from a third story window or the depths of long-forgotten ruins.",
                                         "image": "Class Rogue Thief Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                7855,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a7855"
+                                            }
                                         ]
                                     }
                                 ]
@@ -28725,12 +27957,9 @@
                                                 "description": "Unruly magic sparks and fizzes through your veins. Each time you cast a spell of Level 1 or higher, your magic might surge and trigger a random magic effect.\n\n:Wild Magic table (Sorcerer)",
                                                 "image": "Wild Magic Turn Magic.webp"
                                             },
-                                            [
-                                                "#",
-                                                2,
-                                                17206,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a17206"
+                                            }
                                         ]
                                     }
                                 ]
@@ -28762,23 +27991,17 @@
                     {
                         "name": "Create Spell Slot",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                1387,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a1387"
+                            }
                         ]
                     },
                     {
                         "name": "Create Sorcery Points",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                1388,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a1388"
+                            }
                         ]
                     }
                 ],
@@ -29694,12 +28917,9 @@
                                                 "description": "When you cast a spell that deals damage of the type associated with your draconic ancestry, you add your Modifier to the damage",
                                                 "image": "Elemental Affinity Damage.webp"
                                             },
-                                            [
-                                                "#",
-                                                2,
-                                                17223,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a17223"
+                                            }
                                         ]
                                     },
                                     {
@@ -29707,54 +28927,33 @@
                                         "description": "Whether crackling with the energy of ancient deluges or pierced by gales and hurricanes, your lineage is a strange tapestry scrawled by a tempest.",
                                         "image": "Storm Sorcery Subclass Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                1,
-                                                2296,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2089,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                6700,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2738,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2702,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "s2296"
+                                            },
+                                            {
+                                                "ref": "s2089"
+                                            },
+                                            {
+                                                "ref": "s6700"
+                                            },
+                                            {
+                                                "ref": "s2738"
+                                            },
+                                            {
+                                                "ref": "s2702"
+                                            },
                                             {
                                                 "name": "Heart of the Storm",
                                                 "type": 2,
                                                 "description": "When you cast a Spell of Level 1 or higher that deals Lightning or Thunder damage, you cause a small, local storm. All enemies within m=6|ft=20 take  (Sorcerer Level / 2) | Lightning or  (Sorcerer Level / 2) | Thunder.",
                                                 "image": "Heart of the Storm.webp"
                                             },
-                                            [
-                                                "#",
-                                                2,
-                                                15151,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                15152,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "a15151"
+                                            },
+                                            {
+                                                "ref": "a15152"
+                                            },
                                             {
                                                 "name": "Heart of the Storm: Resistance",
                                                 "type": 2,
@@ -29768,12 +28967,9 @@
                                         "description": "Your powers come from ancient forces of chaos. They churn within you -- waiting to burst free at any time.",
                                         "image": "Class Sorcerer Wild Magic Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                17215,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a17215"
+                                            }
                                         ]
                                     }
                                 ]
@@ -30710,12 +29906,9 @@
                                         "description": "Whether crackling with the energy of ancient deluges or pierced by gales and hurricanes, your lineage is a strange tapestry scrawled by a tempest.",
                                         "image": "Storm Sorcery Subclass Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                15144,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a15144"
+                                            }
                                         ]
                                     },
                                     {
@@ -30723,12 +29916,9 @@
                                         "description": "Your powers come from ancient forces of chaos. They churn within you -- waiting to burst free at any time.",
                                         "image": "Class Sorcerer Wild Magic Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                17211,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a17211"
+                                            }
                                         ]
                                     }
                                 ]
@@ -31613,24 +30803,15 @@
                                         "description": "Graced by a lady or lord of the fey, you are imbued with all the sumptuous and scary qualities of your patron's extraordinary realm.",
                                         "image": "Class Warlock Archfey Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                4651,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2175,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2277,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a4651"
+                                            },
+                                            {
+                                                "ref": "s2175"
+                                            },
+                                            {
+                                                "ref": "s2277"
+                                            }
                                         ]
                                     },
                                     {
@@ -31644,18 +30825,12 @@
                                                 "description": "Whenever you reduce a hostile creature to 0 Charisma Modifier + [[Warlock Level}} temporary hit points.",
                                                 "image": "Dark One's Blessing.webp"
                                             },
-                                            [
-                                                "#",
-                                                1,
-                                                2008,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                3061,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s2008"
+                                            },
+                                            {
+                                                "ref": "s3061"
+                                            }
                                         ]
                                     },
                                     {
@@ -31669,18 +30844,12 @@
                                                 "description": "When you land a Critical Hit against a creature, that creature and any nearby enemies must succeed a Wisdom Saving Throw or become Frightened until the end of their next turn.",
                                                 "image": "Mortal Reminder.webp"
                                             },
-                                            [
-                                                "#",
-                                                1,
-                                                2162,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2281,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s2162"
+                                            },
+                                            {
+                                                "ref": "s2281"
+                                            }
                                         ]
                                     }
                                 ]
@@ -32604,18 +31773,12 @@
                                         "description": "Graced by a lady or lord of the fey, you are imbued with all the sumptuous and scary qualities of your patron's extraordinary realm.",
                                         "image": "Class Warlock Archfey Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                8188,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                2644,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a8188"
+                                            },
+                                            {
+                                                "ref": "s2644"
+                                            }
                                         ]
                                     },
                                     {
@@ -32636,12 +31799,9 @@
                                         "description": "Warlocks bound to eldritch beings in the Far Realms work toward inscrutable goals, gaining strange powers over entropy and the mind.",
                                         "image": "Class Warlock Great Old One Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                8187,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a8187"
+                                            }
                                         ]
                                     }
                                 ]
@@ -33545,12 +32705,9 @@
                                         "description": "Warlocks in service to fiends work toward corrupting, destructive ends -- intentionally or otherwise -- and receive hellish blessings in turn.",
                                         "image": "Class Warlock Fiend Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                8231,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a8231"
+                                            }
                                         ]
                                     },
                                     {
@@ -34451,12 +33608,9 @@
                     {
                         "name": "Arcane Recovery",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                1519,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "a1519"
+                            }
                         ]
                     }
                 ],
@@ -34508,12 +33662,9 @@
                                                 "description": "Call forth rain. It extinguishes exposed flames and forms a Water Surface.",
                                                 "image": "Create Water.webp"
                                             },
-                                            [
-                                                "#",
-                                                1,
-                                                2090,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "s2090"
+                                            }
                                         ]
                                     },
                                     {
@@ -34521,12 +33672,9 @@
                                         "description": "You peer through time itself and can sculpt the future, like temporal clay, into a more favourable form.",
                                         "image": "Class Wizard Divination Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                6658,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a6658"
+                                            }
                                         ]
                                     },
                                     {
@@ -34534,12 +33682,9 @@
                                         "description": "Your magic influences, beguiles, and bends the will and conviction of those around you.",
                                         "image": "Class Wizard Enchantment Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                16814,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a16814"
+                                            }
                                         ]
                                     },
                                     {
@@ -34560,18 +33705,12 @@
                                         "description": "You specialise in unravelling and restitching the fabric of reality to fool the unwary, the gullible, and the monstrous.",
                                         "image": "Class Wizard Illusion Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                16818,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                1,
-                                                1663,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a16818"
+                                            },
+                                            {
+                                                "ref": "s1663"
+                                            }
                                         ]
                                     },
                                     {
@@ -35506,12 +34645,9 @@
                                         "description": "Abjuration spells summon wards, banish enemies, and nullify magic, suitable for those who wish to defend themselves and others.",
                                         "image": "Class Wizard Abjuration Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                16831,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a16831"
+                                            }
                                         ]
                                     },
                                     {
@@ -35545,12 +34681,9 @@
                                         "description": "Your magic influences, beguiles, and bends the will and conviction of those around you.",
                                         "image": "Class Wizard Enchantment Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                16834,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a16834"
+                                            }
                                         ]
                                     },
                                     {
@@ -35571,18 +34704,12 @@
                                         "description": "You specialise in unravelling and restitching the fabric of reality to fool the unwary, the gullible, and the monstrous.",
                                         "image": "Class Wizard Illusion Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                20027,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                20027,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a20027"
+                                            },
+                                            {
+                                                "ref": "a20027"
+                                            }
                                         ]
                                     },
                                     {
@@ -35596,12 +34723,9 @@
                                                 "description": "You gain the Animate Dead spell, if you didn't have it already",
                                                 "image": "Undead Thralls Animate Dead.webp"
                                             },
-                                            [
-                                                "#",
-                                                1,
-                                                2757,
-                                                "choiceId not set by server"
-                                            ],
+                                            {
+                                                "ref": "s2757"
+                                            },
                                             {
                                                 "name": "Undead Thralls: Additional Undead",
                                                 "type": 2,
@@ -35621,60 +34745,33 @@
                                         "description": "Your innate fascination with the structure of things has granted you an incredible power over crude matter and its manipulation.",
                                         "image": "Class Wizard Transmutation Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                16839,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                20158,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                20159,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                20164,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                20166,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                20167,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                20168,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                20169,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                20170,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a16839"
+                                            },
+                                            {
+                                                "ref": "a20158"
+                                            },
+                                            {
+                                                "ref": "a20159"
+                                            },
+                                            {
+                                                "ref": "a20164"
+                                            },
+                                            {
+                                                "ref": "a20166"
+                                            },
+                                            {
+                                                "ref": "a20167"
+                                            },
+                                            {
+                                                "ref": "a20168"
+                                            },
+                                            {
+                                                "ref": "a20169"
+                                            },
+                                            {
+                                                "ref": "a20170"
+                                            }
                                         ]
                                     }
                                 ]
@@ -36609,18 +35706,12 @@
                                         "description": "You peer through time itself and can sculpt the future, like temporal clay, into a more favourable form.",
                                         "image": "Class Wizard Divination Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                16851,
-                                                "choiceId not set by server"
-                                            ],
-                                            [
-                                                "#",
-                                                2,
-                                                16852,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a16851"
+                                            },
+                                            {
+                                                "ref": "a16852"
+                                            }
                                         ]
                                     },
                                     {
@@ -36654,12 +35745,9 @@
                                         "description": "You specialise in unravelling and restitching the fabric of reality to fool the unwary, the gullible, and the monstrous.",
                                         "image": "Class Wizard Illusion Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                16855,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a16855"
+                                            }
                                         ]
                                     },
                                     {
@@ -36680,12 +35768,9 @@
                                         "description": "Your innate fascination with the structure of things has granted you an incredible power over crude matter and its manipulation.",
                                         "image": "Class Wizard Transmutation Badge Icon.png",
                                         "grants": [
-                                            [
-                                                "#",
-                                                2,
-                                                16857,
-                                                "choiceId not set by server"
-                                            ]
+                                            {
+                                                "ref": "a16857"
+                                            }
                                         ]
                                     }
                                 ]

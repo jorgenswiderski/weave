@@ -10,12 +10,9 @@
                         "name": "Black Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the charcoal colouration and fizzling, acid breath of black dragons.",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                6607,
-                                "choiceId not set by server"
-                            ],
+                            {
+                                "ref": "a6607"
+                            },
                             {
                                 "name": "Draconic Ancestry (Acid)",
                                 "type": 2,
@@ -28,12 +25,9 @@
                         "name": "Brass Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the burnished ochre hue and flickering, fiery breath of brass dragons.",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                4756,
-                                "choiceId not set by server"
-                            ],
+                            {
+                                "ref": "a4756"
+                            },
                             {
                                 "name": "Draconic Ancestry (Fire)",
                                 "type": 2,
@@ -46,12 +40,9 @@
                         "name": "Copper Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the pink-gold colouration and corrosive breath of copper dragons.",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                6607,
-                                "choiceId not set by server"
-                            ],
+                            {
+                                "ref": "a6607"
+                            },
                             {
                                 "name": "Draconic Ancestry (Acid)",
                                 "type": 2,
@@ -64,12 +55,9 @@
                         "name": "Green Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the brilliant emerald aspect and stinking, putrid breath of green dragons.",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                6664,
-                                "choiceId not set by server"
-                            ],
+                            {
+                                "ref": "a6664"
+                            },
                             {
                                 "name": "Draconic Ancestry (Poison)",
                                 "type": 2,
@@ -82,12 +70,9 @@
                         "name": "Silver Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the glinting shine and scorching cold breath of silver dragons.",
                         "grants": [
-                            [
-                                "#",
-                                2,
-                                4721,
-                                "choiceId not set by server"
-                            ],
+                            {
+                                "ref": "a4721"
+                            },
                             {
                                 "name": "Draconic Ancestry (Cold)",
                                 "type": 2,
@@ -294,12 +279,9 @@
                         "name": "Forest Gnomes",
                         "description": "Even smaller than their cousins and twice as reclusive, Forest Gnomes are rare sight in Faerûn. They master magic and craftmanship in their distant, idyllic groves.",
                         "grants": [
-                            [
-                                "#",
-                                1,
-                                1585,
-                                "choiceId not set by server"
-                            ]
+                            {
+                                "ref": "s1585"
+                            }
                         ]
                     },
                     {
