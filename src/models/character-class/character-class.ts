@@ -4,7 +4,6 @@ import {
     ICharacterOption,
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
-import { CompressableRecord } from '@jorgenswiderski/tomekeeper-shared/dist/models/compressable-record/types';
 import { MwnApiClass } from '../../api/mwn';
 import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
 import { error } from '../logger';
@@ -23,7 +22,7 @@ async function parseFeatures(
     characterClass: CharacterClass,
     value: string,
     level: number,
-): Promise<(ICharacterOptionWithStubs | CompressableRecord)[] | null> {
+): Promise<ICharacterOptionWithStubs[] | null> {
     if (value === '-') {
         // No features this level
         return null;
@@ -74,7 +73,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
                     [key: string]:
                         | string
                         | number
-                        | (ICharacterOptionWithStubs | CompressableRecord)[];
+                        | ICharacterOptionWithStubs[];
                 } = {};
 
                 await Promise.all(
@@ -114,10 +113,8 @@ export class CharacterClass extends PageItem implements ICharacterClass {
                 cleanedItem.Features = features ?? [];
 
                 await Promise.all(
-                    cleanedItem.Features.map(
-                        (feature) =>
-                            feature instanceof CharacterFeature &&
-                            feature.waitForInitialization(),
+                    cleanedItem.Features.map((feature) =>
+                        (feature as CharacterFeature).waitForInitialization(),
                     ),
                 );
 
@@ -128,10 +125,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
 
     private static parseSpellSlots(
         data: {
-            [key: string]:
-                | string
-                | number
-                | (ICharacterOptionWithStubs | CompressableRecord)[];
+            [key: string]: string | number | ICharacterOptionWithStubs[];
         }[],
     ): CharacterClassProgression {
         return data.map((rawLevelData) => {
@@ -140,11 +134,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
             Object.entries(rawLevelData).forEach(
                 ([key, value]: [
                     string,
-                    (
-                        | string
-                        | number
-                        | (ICharacterOptionWithStubs | CompressableRecord)[]
-                    ),
+                    string | number | ICharacterOptionWithStubs[],
                 ]) => {
                     if (
                         key === '1st' ||
