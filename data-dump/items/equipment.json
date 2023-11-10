@@ -1683,7 +1683,7 @@
             "name": "Cinder Shoes",
             "image": "Boots Leather 1 Faded.png",
             "icon": "Boots Leather 1 Unfaded Icon.png",
-            "description": "Cinder Shoes is a pair of uncommon Boots that grants Heat whenever the wearer Burned|Burn an enemy.",
+            "description": "Cinder Shoes is a pair of uncommon Boots that grants Heat whenever the wearer Burning|Burns an enemy.",
             "quote": "Despite the many scorch marks, these leather boots are somehow still supple and intact.",
             "type": 2,
             "rarity": 2,
@@ -3897,7 +3897,7 @@
             "effects": [
                 {
                     "name": "Surge Accuracy",
-                    "description": "When you use Action Surge Icon|Action Surge, gain a d4|Piercing +1d4 bonus to Attack Rolls for the rest of your turn.",
+                    "description": "When you use Action Surge, gain a d4|Piercing +1d4 bonus to Attack Rolls for the rest of your turn.",
                     "type": 2
                 }
             ],
@@ -3971,6 +3971,7 @@
         {
             "name": "Gloves of Archery",
             "image": "Gloves of Archery icon.png",
+            "icon": "Gloves of Archery Unfaded Icon.png",
             "description": "Gloves of Archery are an uncommon Gloves that grants the wearer Proficiency with Longbows and Shortbows, as well as +2 damage with ranged weapon attacks.",
             "quote": "Banded in dark iron, these gloves are embossed with the brass likeness of an elf against a trio of arrows in flight.",
             "type": 5,
@@ -5349,7 +5350,7 @@
             "effects": [
                 {
                     "name": "Winter's Clutches",
-                    "description": "When the wearer deals Cold damage, inflict 2 turns of Encrusted with Frost upon the target(s) (Per attackIt is not stated in-game, but Winter's Clutches can only activate once per attack even if you hit multiple targets at once. Area of effect spells such as Cone of Cold will only apply Encrusted with Frost to the first target in the combat log.).",
+                    "description": "When the wearer deals Cold damage, inflict 2 turns of Encrusted with Frost upon the target(s) (Per attack).",
                     "type": 2
                 }
             ],
@@ -15228,6 +15229,33 @@
             "thrown": false,
             "cantDualWield": false,
             "dippable": false
+        },
+        {
+            "name": "Watcher Crossbow",
+            "image": "Hellfire Engine Crossbow Icon.png",
+            "icon": "Hellfire Engine Crossbow Unfaded Icon.png",
+            "type": 24,
+            "rarity": 1,
+            "weightKg": 50,
+            "weightLb": 110,
+            "price": 65,
+            "uid": "",
+            "effects": [],
+            "proficiency": 0,
+            "id": 27383,
+            "category": 1,
+            "rangeType": 1,
+            "handedness": 3,
+            "damage": "3d10",
+            "damageType": 2,
+            "range": 1,
+            "finesse": false,
+            "heavy": false,
+            "light": false,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": false
         }
     ],
     "25": [
@@ -19263,6 +19291,34 @@
             "thrown": false,
             "cantDualWield": false,
             "dippable": true
+        },
+        {
+            "name": "Flame Blade (Weapon)",
+            "image": "Flame Blade Weapon.png",
+            "description": "Flame Blade (Weapon) is a magical, conjured variant of the Scimitars family of weapons. It is a martial melee weapon wielded in one hand. As a finesse weapon, it can benefit from the wielder's Dexterity and not just their Strength.",
+            "quote": "An ethereal scimitar made of living fire",
+            "type": 36,
+            "rarity": 0,
+            "weightKg": 0.5,
+            "weightLb": 1,
+            "price": 30,
+            "uid": "UNI_WPN_HUM_Scimitar_FlameBlade",
+            "effects": [],
+            "proficiency": 0,
+            "id": 27571,
+            "category": 1,
+            "rangeType": 1,
+            "handedness": 1,
+            "damage": "3d6",
+            "damageType": 4,
+            "range": 0,
+            "finesse": true,
+            "heavy": false,
+            "light": true,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": false
         },
         {
             "name": "Goblin Scimitar",
