@@ -179,16 +179,6 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                             });
                         }
 
-                        if (fx.length === 0 && choices.length === 0) {
-                            fx.push({
-                                name: CharacterFeature.parseNameFromPageTitle(
-                                    name,
-                                ),
-                                description,
-                                type: GrantableEffectType.CHARACTERISTIC,
-                            });
-                        }
-
                         if (abilityImprovement) {
                             if (abilityImprovement.abilities.length > 1) {
                                 choices.push({

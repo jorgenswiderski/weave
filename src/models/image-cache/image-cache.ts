@@ -3,10 +3,11 @@ import fs from 'fs';
 import https from 'https';
 import { IncomingMessage } from 'http';
 import writeFileAtomic from 'write-file-atomic';
-import { MediaWiki } from './media-wiki';
-import { MwnTokenBucket } from '../api/mwn';
-import { CONFIG } from './config';
-import { error } from './logger';
+import { MediaWiki } from '../media-wiki';
+import { MwnTokenBucket } from '../../api/mwn';
+import { CONFIG } from '../config';
+import { error } from '../logger';
+import { RemoteImageError } from './types';
 
 interface ImageCacheResponse {
     isUnknownSize?: boolean;
@@ -147,7 +148,7 @@ export class ImageCacheModel {
             response.statusCode &&
             (response.statusCode < 200 || response.statusCode >= 300)
         ) {
-            throw new Error();
+            throw new RemoteImageError(response.statusCode);
         }
 
         await this.writeResponseToFile(response, localImagePath);

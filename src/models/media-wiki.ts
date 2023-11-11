@@ -5,6 +5,7 @@ import { MongoCollections, getMongoDb } from './mongo';
 import { CONFIG } from './config';
 import { MwnApi } from '../api/mwn';
 import { Utils } from './utils';
+import { RemoteImageError } from './image-cache/types';
 
 export interface PageData extends ApiRevision {
     title: string;
@@ -178,7 +179,7 @@ export class MediaWiki {
         );
 
         if (!page || !page.imageinfo || page.imageinfo.length === 0) {
-            throw new Error('Image not found');
+            throw new RemoteImageError(404);
         }
 
         return page.imageinfo[0]?.thumburl ?? page.imageinfo[0].url;

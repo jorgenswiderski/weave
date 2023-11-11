@@ -1,8 +1,9 @@
 import { Request, Response } from 'express';
 import assert from 'assert';
-import { ImageCacheModel } from '../models/image-cache';
+import { ImageCacheModel } from '../models/image-cache/image-cache';
 import { error, warn } from '../models/logger';
 import { CONFIG } from '../models/config';
+import { RemoteImageError } from '../models/image-cache/types';
 
 const failedRequests: {
     [imagePath: string]: { code: number; message: string };
@@ -60,13 +61,25 @@ export class ImageClassController {
                 throw new Error();
             }
         } catch (err) {
-            // FIXME: Not all exceptions are 404!
-            failedRequests[imageName] = {
-                code: 404,
-                message: 'Remote asset not found',
-            };
+            if (err instanceof RemoteImageError) {
+                if (err.statusCode >= 400 && err.statusCode < 500) {
+                    failedRequests[imageName] = {
+                        code: err.statusCode,
+                        message: 'Remote asset not found',
+                    };
+                }
 
-            res.status(404).send('Remote asset not found');
+                warn(`Failed image request: ${imageName} (${err.statusCode})`);
+
+                res.status(err.statusCode).send(
+                    'Failed to acquire remote asset',
+                );
+
+                return;
+            }
+
+            error(err);
+            res.status(500).send('Internal server error');
         }
     }
 
