@@ -6502,6 +6502,31 @@
             "id": 9403
         },
         {
+            "name": "Gibus of the Worshipful Servant",
+            "image": "Gibus of the Worshipful Servant Icon.png",
+            "icon": "Gibus of the Worshipful Servant Unfaded Icon.png",
+            "description": "Gibus of the Worshipful Servant is a rare Momentum equal to the wearer's Charisma Modifier at the start of combat and Advantage on Concentrating Saving Throws.",
+            "quote": "Corroded by Sceleritas' insouciant perversion, this little gibus hat was worn by the Butler before he sank throat-deep into Bhaal's clutches. Once, it was beyond besmirchment. Once, it was lovely.",
+            "type": 7,
+            "rarity": 3,
+            "weightKg": 0.5,
+            "weightLb": 1,
+            "price": 35,
+            "effects": [
+                {
+                    "name": "Lickspittle's Alertness",
+                    "description": "At the start of combat, the wearer gains Momentum equal to their Charisma Modifier.",
+                    "type": 2
+                },
+                {
+                    "name": "Multitasking",
+                    "description": "You gain Advantage on Concentration Icon|Concentration|Concentrating Saving Throws.",
+                    "type": 2
+                }
+            ],
+            "id": 10754
+        },
+        {
             "name": "Grymskull Helm",
             "image": "Grymskull Helm Icon.png",
             "icon": "Grymskull Helm Unfaded Icon.png",
@@ -7151,6 +7176,37 @@
             ],
             "proficiency": 1,
             "id": 3946
+        },
+        {
+            "name": "Shapeshifter Hat",
+            "image": "Shapeshifter Hat Icon.png",
+            "icon": "Shapeshifter Hat Unfaded Icon.png",
+            "description": "Shapeshifter Hat is a very rare Headwear that grants the wearer one more Wild Shape charge per Long Rest.",
+            "quote": "'Trust is the most fundamental part of wild-shaping. Not trusting others, but trusting yourself. Because the assumption of an animalistic form comes part and parcel with risk - that you'll like being a beast. Like it too much. You've got to trust yourself to the extent that you're comfortable courting that danger. Trust yourself the way you trust a marital partner with your heart.' - Mac Tire, Moon Druid",
+            "type": 7,
+            "rarity": 4,
+            "weightKg": 0.5,
+            "weightLb": 1,
+            "price": 70,
+            "effects": [
+                {
+                    "name": "Nature's Embrace",
+                    "description": "Increase your Wild Shape Charge by 1. This additional charge is restored upon taking a Long Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Nature +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Shapeshifter Hat",
+                    "description": "Nature +1",
+                    "type": 2
+                }
+            ],
+            "id": 10750
         },
         {
             "name": "Steelwatcher Helmet",
