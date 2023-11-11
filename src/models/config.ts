@@ -21,6 +21,14 @@ export const CONFIG = {
         ),
         BASE_URL: process.env.MEDIAWIKI_BASE_URL,
         USE_LOCAL_IMAGE_CACHE: process.env.USE_LOCAL_IMAGE_CACHE === 'true',
+        IMAGE_CACHE_DURATION: parseInt(
+            process.env.MEDIAWIKI_IMAGE_CACHE_DURATION ?? '172800000',
+            10,
+        ),
+        IMAGE_CACHE_REFRESH_TIME: parseInt(
+            process.env.MEDIAWIKI_IMAGE_CACHE_REFRESH_TIME ?? '86400000',
+            10,
+        ),
     },
     SELF_BASE_URL: process.env.SELF_BASE_URL,
     BUILDS: {
