@@ -6,7 +6,7 @@ import writeFileAtomic from 'write-file-atomic';
 import { MediaWiki } from '../media-wiki';
 import { MwnTokenBucket } from '../../api/mwn';
 import { CONFIG } from '../config';
-import { error } from '../logger';
+import { debug, error } from '../logger';
 import { RemoteImageError } from './types';
 
 interface ImageCacheResponse {
@@ -63,12 +63,19 @@ export class ImageCacheModel {
 
     static assetMapFile = 'remote-asset-map.json';
     static assetMap: { [imageKey: string]: string } = {};
+    static assetCacheTimeFile = 'remote-asset-cache-time.json';
+    static assetCacheTime: { [remoteImageUrl: string]: number } = {};
 
     private static async flushAssetMap(): Promise<void> {
         try {
             await writeFileAtomic(
                 path.join(this.IMAGE_CACHE_DIR, this.assetMapFile),
                 JSON.stringify(this.assetMap, null, 4),
+            );
+
+            await writeFileAtomic(
+                path.join(this.IMAGE_CACHE_DIR, this.assetCacheTimeFile),
+                JSON.stringify(this.assetCacheTime, null, 4),
             );
         } catch (err) {
             error('Failed to flush asset map:');
@@ -120,7 +127,29 @@ export class ImageCacheModel {
         const key = JSON.stringify({ imageName, width });
 
         if (this.assetMap[key]) {
-            return this.assetMap[key];
+            const remoteUrl = this.assetMap[key];
+            const cacheTime = this.assetCacheTime[remoteUrl];
+
+            if (cacheTime) {
+                const age = Date.now() - cacheTime;
+
+                if (age < CONFIG.MEDIAWIKI.IMAGE_CACHE_DURATION) {
+                    if (age > CONFIG.MEDIAWIKI.IMAGE_CACHE_REFRESH_TIME) {
+                        MediaWiki.resolveImageRedirect(imageName, width)
+                            .catch(error)
+                            .then(() => {
+                                debug(
+                                    `Refreshed remote image cache for '${imageName}'`,
+                                );
+
+                                this.assetCacheTime[remoteUrl] = Date.now();
+                                this.flushAssetMap();
+                            });
+                    }
+
+                    return this.assetMap[key];
+                }
+            }
         }
 
         const remoteUrl = await MediaWiki.resolveImageRedirect(
@@ -128,6 +157,7 @@ export class ImageCacheModel {
             width,
         );
 
+        this.assetCacheTime[remoteUrl] = Date.now();
         this.assetMap[key] = remoteUrl;
         this.flushAssetMap();
 
@@ -327,5 +357,9 @@ export class ImageCacheModel {
 
     ImageCacheModel.assetMap = await ImageCacheModel.loadFileFromCache(
         ImageCacheModel.assetMapFile,
+    );
+
+    ImageCacheModel.assetCacheTime = await ImageCacheModel.loadFileFromCache(
+        ImageCacheModel.assetCacheTimeFile,
     );
 })();
