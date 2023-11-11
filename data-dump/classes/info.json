@@ -21618,12 +21618,6 @@
                                                 "type": 2,
                                                 "description": "Advantage on SavingThrows against being Frightened.",
                                                 "image": "Steel Will.webp"
-                                            },
-                                            {
-                                                "name": "Multiattack Defense",
-                                                "type": 2,
-                                                "description": "When a enemy attacks you, they suffer -4 penalty to additional Attack Rolls against you until start of their next turn.",
-                                                "image": "Multiattack Defense.webp"
                                             }
                                         ]
                                     }
