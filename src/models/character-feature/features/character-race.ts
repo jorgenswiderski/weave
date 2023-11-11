@@ -205,6 +205,16 @@ export class CharacterRace extends CharacterFeature {
             );
         }
     }
+
+    async isSpoiler(): Promise<boolean> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
+        if (!this.page || !this.page.content) {
+            throw new Error('Could not find page content');
+        }
+
+        return this.page.content.includes('{{SpoilerWarning}}');
+    }
 }
 
 let characterRaceData: CharacterRace[];
@@ -214,12 +224,20 @@ export async function getCharacterRaceData(): Promise<CharacterRace[]> {
         const raceNames =
             await MwnApiClass.queryTitlesFromCategory('Playable races');
 
-        characterRaceData = raceNames.map(
+        const races = raceNames.map(
             (name) => new CharacterRace({ name, pageTitle: name }),
         );
 
+        await Promise.all(races.map((cr) => cr.waitForInitialization()));
+
+        characterRaceData = [];
+
         await Promise.all(
-            characterRaceData.map((cr) => cr.waitForInitialization()),
+            races.map(async (race) => {
+                if (!(await race.isSpoiler())) {
+                    characterRaceData.push(race);
+                }
+            }),
         );
     }
 
