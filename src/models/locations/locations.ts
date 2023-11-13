@@ -9,6 +9,7 @@ import { ItemSourceLocation } from '@jorgenswiderski/tomekeeper-shared/dist/type
 import { PageNotFoundError } from '../errors';
 import { warn } from '../logger';
 import { MediaWiki } from '../media-wiki';
+import { CharacterFeature } from '../character-feature/character-feature';
 
 class GameLocationNode {
     parent?: GameLocationNode;
@@ -50,10 +51,20 @@ export class GameLocation
     ) {
         super();
 
-        this.name = name;
         this.id = id;
         this.depth = depth ?? parent.depth + 1;
+        this.name = this.parseName(name);
         parent.addChild(this);
+    }
+
+    parseName(title: string): string {
+        if (this.depth === 1) {
+            assert(title.startsWith('Act'));
+
+            return `Act ${this.parent.children.length + 1}`;
+        }
+
+        return CharacterFeature.parseNameFromPageTitle(title);
     }
 
     toJSON() {
