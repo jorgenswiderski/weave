@@ -1,7 +1,7 @@
 [
     {
         "name": "Dragonborn",
-        "description": "Dragonborn resemble draconic humanoids. They are a proud race that values clan and skills above all else. Once enslaved by dragons, they strive to be self-sufficient, not wanting to be beholden to anyone, not even the gods. Dragonborn can have scales in a variety of colours, and may or may not have a tail.",
+        "description": "Dragonborn are a playable race in Baldur's Gate 3. Dragonborn have resistance to a type of energy damage and are able to make deadly breath weapon attacks. These abilities are affected by their Dragonborn subrace.",
         "choices": [
             {
                 "type": 2,
@@ -9,77 +9,27 @@
                     {
                         "name": "Black Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the charcoal colouration and fizzling, acid breath of black dragons.",
-                        "grants": [
-                            {
-                                "ref": "a6607"
-                            },
-                            {
-                                "name": "Draconic Ancestry (Acid)",
-                                "type": 2,
-                                "description": "The blood of ancient dragons flow through your veins. You are Resistant to Acid damage.",
-                                "image": "Draconic Ancestry Acid.webp"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Brass Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the burnished ochre hue and flickering, fiery breath of brass dragons.",
-                        "grants": [
-                            {
-                                "ref": "a4756"
-                            },
-                            {
-                                "name": "Draconic Ancestry (Fire)",
-                                "type": 2,
-                                "description": "The blood of ancient dragons flow through your veins. You are Resistant to Fire damage.",
-                                "image": "Draconic Ancestry Fire.webp"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Copper Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the pink-gold colouration and corrosive breath of copper dragons.",
-                        "grants": [
-                            {
-                                "ref": "a6607"
-                            },
-                            {
-                                "name": "Draconic Ancestry (Acid)",
-                                "type": 2,
-                                "description": "The blood of ancient dragons flow through your veins. You are Resistant to Acid damage.",
-                                "image": "Draconic Ancestry Acid.webp"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Green Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the brilliant emerald aspect and stinking, putrid breath of green dragons.",
-                        "grants": [
-                            {
-                                "ref": "a6664"
-                            },
-                            {
-                                "name": "Draconic Ancestry (Poison)",
-                                "type": 2,
-                                "description": "The blood of ancient dragons flow through your veins. You are Resistant to Poison damage.",
-                                "image": "Draconic Ancestry Poison.webp"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Silver Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the glinting shine and scorching cold breath of silver dragons.",
-                        "grants": [
-                            {
-                                "ref": "a4721"
-                            },
-                            {
-                                "name": "Draconic Ancestry (Cold)",
-                                "type": 2,
-                                "description": "The blood of ancient dragons flow through your veins. You are Resistant to Cold damage.",
-                                "image": "Draconic Ancestry Cold.webp"
-                            }
-                        ]
+                        "grants": []
                     }
                 ]
             }
@@ -110,26 +60,7 @@
         ],
         "choiceType": 8,
         "image": "Race Drow.png",
-        "grants": [
-            {
-                "name": "Drow Weapon Training",
-                "type": 2,
-                "description": "You have Proficiency with the Rapier, Shortsword, and Hand Crossbow.",
-                "image": "Drow Weapon Training.webp"
-            },
-            {
-                "name": "Superior Darkvision",
-                "type": 2,
-                "description": "Can see in the dark up to 24m.",
-                "image": "Superior Darkvision.webp"
-            },
-            {
-                "name": "Fey Ancestry",
-                "type": 2,
-                "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
-                "image": "Fey Ancestry.webp"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Dwarf",
@@ -141,64 +72,24 @@
                     {
                         "name": "Gold Dwarves",
                         "description": "Gold Dwarves are known for their confidence and keen intuition. The culture of their Deep Kingdom values family, ritual, and fine craftsmanship.",
-                        "grants": [
-                            {
-                                "name": "Dwarven Toughness",
-                                "type": 2,
-                                "description": "You have 1 extra maximum Hit Points per level.",
-                                "image": "|summary = '''Dwarven Toughness''' is a passive feature that increases a creature's [[Hit Points|Hit Point]] maximum by 1, and again by 1 again every time they gain a level. It is a Subrace Trait for all [[Gold Dwarf]] characters."
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Shield Dwarves",
                         "description": "Shield Dwarves survived a long fall from grace, surrendering many of their ancient kingdoms in wars with Goblins and Orcs. These losses have lead to a cynical mindset, yet Shield Dwarves will endure anything to restore their ancestral homelands.",
-                        "grants": [
-                            {
-                                "name": "Dwarven Armour Training",
-                                "type": 2,
-                                "description": "You have Armour Proficiency with Light and Medium Armour.",
-                                "image": "Dwarven Armour Training.webp"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Duergar",
                         "description": "Once enslaved by the eldritch Mind Flayers, Duergar adapted to freedom with harsh practicality. Their cold demeanours and gift of stealth are well-known through the Underdark.",
-                        "grants": [
-                            {
-                                "name": "Superior Darkvision",
-                                "type": 2,
-                                "description": "Can see in the dark up to 24m.",
-                                "image": "Superior Darkvision.webp"
-                            },
-                            {
-                                "name": "Duergar Resilience",
-                                "type": 2,
-                                "description": "You have Advantage on Saving Throws  against illusions and against being Charmed or Paralysed.",
-                                "image": "Duergar Resilience.webp"
-                            }
-                        ]
+                        "grants": []
                     }
                 ]
             }
         ],
         "choiceType": 8,
         "image": "Race Dwarf.png",
-        "grants": [
-            {
-                "name": "Dwarven Combat Training",
-                "type": 2,
-                "description": "You have Proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammers.",
-                "image": "Dwarven Combat Training.webp"
-            },
-            {
-                "name": "Dwarven Resilience",
-                "type": 2,
-                "description": "You have Advantage on Saving Throws against being Poisoned|inline=true, and you have Resistance against Poison damage.",
-                "image": "Dwarven Resilience.webp"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Elf",
@@ -222,39 +113,13 @@
         ],
         "choiceType": 8,
         "image": "Race Elf.png",
-        "grants": [
-            {
-                "name": "Elven Weapon Training",
-                "type": 2,
-                "description": "You have Proficiency with the Longsword, Shortsword, Shortbow, and Longbow.",
-                "image": "Elven Weapon Training.webp"
-            },
-            {
-                "name": "Fey Ancestry",
-                "type": 2,
-                "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
-                "image": "Fey Ancestry.webp"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Githyanki",
         "description": "Githyanki are peerless warriors from the mind flayers, whose ancient empire enslaved the ancestral gith for millennia.",
         "image": "Race Githyanki.png",
-        "grants": [
-            {
-                "name": "Astral Knowledge",
-                "type": 2,
-                "description": "Gain Ability.",
-                "image": "Astral Knowledge.webp"
-            },
-            {
-                "name": "Martial Prodigy",
-                "type": 2,
-                "description": "A lifetime of relentless training gave you Armor Proficiency with Light and Medium Armour, as well as Proficiency with the Shortsword, Longsword, and Greatsword.",
-                "image": "Martial Prodigy.webp"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Gnome",
@@ -266,14 +131,7 @@
                     {
                         "name": "Rock Gnomes",
                         "description": "The most commonly seen gnome on Faerûn's surface, Rock Gnomes are named as such for their hardiness and affinity to metal.",
-                        "grants": [
-                            {
-                                "name": "Artificer's Lore",
-                                "type": 2,
-                                "description": "Add twice your Proficiency Bonus to History checks.",
-                                "image": "Artificer's Lore.webp"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Forest Gnomes",
@@ -287,34 +145,14 @@
                     {
                         "name": "Deep Gnomes",
                         "description": "More guarded than their surface cousins, Deep Gnomes survive in the Underdark with darkvision and skillful stealth.",
-                        "grants": [
-                            {
-                                "name": "Superior Darkvision",
-                                "type": 2,
-                                "description": "Can see in the dark up to 24m.",
-                                "image": "Superior Darkvision.webp"
-                            },
-                            {
-                                "name": "Stone Camouflage",
-                                "type": 2,
-                                "description": "You have Advantage on Stealth checks.",
-                                "image": "Stone Camouflage.webp"
-                            }
-                        ]
+                        "grants": []
                     }
                 ]
             }
         ],
         "choiceType": 8,
         "image": "Race Gnome.png",
-        "grants": [
-            {
-                "name": "Gnome Cunning",
-                "type": 2,
-                "description": "You have Advantage on Intelligence, Wisdom, and Charisma Saving Throws.",
-                "image": "Gnome Cunning.webp"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Half-Elf",
@@ -343,45 +181,13 @@
         ],
         "choiceType": 8,
         "image": "Race Half-Elf.png",
-        "grants": [
-            {
-                "name": "Civil Militia",
-                "type": 2,
-                "description": "You have Weapon Proficiency with spears, pikes, halberds, and glaives, and Armour Proficiency with Light Armour and Shields.",
-                "image": "Civil Militia.webp"
-            },
-            {
-                "name": "Fey Ancestry",
-                "type": 2,
-                "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
-                "image": "Fey Ancestry.webp"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Half-Orc",
         "description": "Half-Orcs exhibit a blend of orcish and human characteristics, and their appearance varies widely. Creatures of intense emotion, Half-Orcs are more inclined to act than contemplate - whether the rage burning their bodies compels them to fight, or the love filling their hearts inspires acts of incredible kindness.",
         "image": "Race Half-Orc.png",
-        "grants": [
-            {
-                "name": "Darkvision (Passive Feature)",
-                "type": 2,
-                "description": "Can see in the dark up to 12m.",
-                "image": "Darkvision.webp}}"
-            },
-            {
-                "name": "Relentless Endurance",
-                "type": 2,
-                "description": "If you reach 0 hit points, you regain 1|Healing instead of becoming Downed.",
-                "image": "Relentless Endurance.webp"
-            },
-            {
-                "name": "Savage Attacks",
-                "type": 2,
-                "description": "When you land a Critical Hit with a melee weapon attack, you deal an extra dice of weapon damage.",
-                "image": "Savage Attacks.webp"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Halfling",
@@ -393,65 +199,25 @@
                     {
                         "name": "Lightfoot Halflings",
                         "description": "Lightfoot Halflings are stealthy but social, travelling all over Faerûn to make a name for themselves.",
-                        "grants": [
-                            {
-                                "name": "Naturally Stealthy",
-                                "type": 2,
-                                "description": "Your nimble nature makes you skilled at concealment. You have Advantage on Checks.",
-                                "image": "Naturally Stealthy.webp"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Strongheart Halflings",
                         "description": "Legends say dwarven blood gave stronghearts their hardiness. Resistant to poison and wellsprings of endurance, these halflings easily hold their own.",
-                        "grants": [
-                            {
-                                "name": "Strongheart Resilience",
-                                "type": 2,
-                                "description": "You have Advantage on Poison}} and [[Damage_Types#Resistance|Resistance to Poison damage.",
-                                "image": "Strongheart Resilience.webp"
-                            }
-                        ]
+                        "grants": []
                     }
                 ]
             }
         ],
         "choiceType": 8,
         "image": "Race Halfling.png",
-        "grants": [
-            {
-                "name": "Halfling Luck",
-                "type": 2,
-                "description": "When you roll a 1 for an Attack Roll, Ability Check, or Saving Throw, you can reroll the die and must use the new roll.",
-                "image": "Halfling Luck.webp"
-            },
-            {
-                "name": "Brave",
-                "type": 2,
-                "description": "You have Advantage on Saving Throws against Frightened.",
-                "image": "Brave.webp"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Human",
         "description": "The most common face to see in Faerûn, humans are known for their tenacity, creativity, and endless capacity for growth.",
         "image": "Race Human.png",
-        "grants": [
-            {
-                "name": "Civil Militia",
-                "type": 2,
-                "description": "You have Weapon Proficiency with spears, pikes, halberds, and glaives, and Armour Proficiency with Light Armour and Shields.",
-                "image": "Civil Militia.webp"
-            },
-            {
-                "name": "Human Versatility",
-                "type": 2,
-                "description": "Select an additional Skill to be Proficient in. Your carrying capacity is increased by a quarter.",
-                "image": "Human Versatility.webp"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Tiefling",
@@ -480,11 +246,6 @@
         ],
         "choiceType": 8,
         "image": "Race Tiefling.png",
-        "grants": [
-            {
-                "name": "Hellish Resistance",
-                "type": 2
-            }
-        ]
+        "grants": []
     }
 ]

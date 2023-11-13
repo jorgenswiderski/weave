@@ -26,11 +26,17 @@ export class MediaWiki {
         // just return the cached content.
         const currentTime = Date.now();
 
-        if (
-            cachedPage &&
-            currentTime - (cachedPage.lastFetched || 0) <
-                CONFIG.MEDIAWIKI.REVISION_CHECK_THROTTLE_IN_MILLIS
-        ) {
+        const lastTime = cachedPage?.lastFetched || 0;
+        // Add a %age variance to the the throttle to evenly distribute the cache rebuilding over time
+        const variance = CONFIG.MEDIAWIKI.REVISION_CHECK_THROTTLE_VARIANCE;
+
+        const rngFactor =
+            1.0 + Utils.randomSeeded(lastTime) * variance * 2 - variance;
+
+        const throttle =
+            CONFIG.MEDIAWIKI.REVISION_CHECK_THROTTLE_IN_MILLIS * rngFactor;
+
+        if (cachedPage && currentTime - lastTime < throttle) {
             return cachedPage as unknown as PageData;
         }
 

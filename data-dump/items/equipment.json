@@ -2810,18 +2810,25 @@
             "name": "Infernal Robe",
             "image": "Infernal Robe Icon.png",
             "icon": "Infernal Robe Unfaded Icon.png",
-            "description": "The Infernal Robe is a very rare piece of clothing that grant Resistance to Fire damage and the ability to cast the Fire-damage version of Fire Shield.",
+            "description": "Infernal Robe is a very rare piece of resistant to Fire damage and grants the Fire Shield (Warm) (level 4) spell on a long rest cooldown.",
             "quote": "Presumably Mizora was not always a sensuous and manipulative benefactor of troubled souls like Wyll. Negotiating the hierarchies of hell result in changes of form - but was she ever less beautiful, less erudite, less willful?",
             "type": 4,
             "rarity": 4,
             "weightKg": 1.8,
             "weightLb": 4,
-            "price": 1,
+            "price": 1600,
+            "uid": "ORI_Wyll_Infernal_Robe",
             "effects": [
                 {
                     "name": "Fire Shield (Warm)|w=40",
-                    "description": "Cast Fire Shield (Warm) once per Long Rest.",
+                    "description": "Cast as a level 4 spell (long rest).",
                     "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Grants Fire|double|nocat=true Resistance to Fire|Fire damage.",
+                    "type": 2,
+                    "hidden": true
                 },
                 {
                     "name": "Anonymous Effect",
@@ -2830,14 +2837,8 @@
                     "hidden": true
                 },
                 {
-                    "name": "Anonymous Effect",
-                    "description": "Grants Fire|double|nocat=true Resistance to Fire damage.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
                     "name": "Infernal Robe",
-                    "description": "Armour Class +1\nGrants Fire|double|nocat=true Resistance to Fire damage.",
+                    "description": "Grants Fire|double|nocat=true Resistance to Fire|Fire damage.\nArmour Class +1",
                     "type": 2
                 }
             ],
@@ -3183,22 +3184,6 @@
                 {
                     "name": "Nimble As a Cat",
                     "description": "You gain a +1 bonus to your Dexterity SavingThrow and also increase your Jump (Bonus Action)|Jump distance by 1.5m.",
-                    "type": 2
-                },
-                {
-                    "name": "Martial Arts Lethality",
-                    "description": "Gain a +1 bonus to Unarmed Strike|Unarmed Attack Rolls and the damage of Throw|throwing attacks.",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "ArmourClass +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "The Graceful Cloth",
-                    "description": "ArmourClass +1",
                     "type": 2
                 }
             ],
@@ -5430,24 +5415,7 @@
             "effects": [
                 {
                     "name": "Eternal Devotion|w=40",
-                    "description": "Recite your Oath to regain 1 Paladin chaoat.",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Action",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Long Rest",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Armour of Devotion",
-                    "description": "Action\nLong Rest",
+                    "description": "Recite your Oath to regain 1 Paladin chaoat (Long Rest).",
                     "type": 2
                 }
             ],
@@ -5871,7 +5839,13 @@
             "weightKg": 17,
             "weightLb": 37,
             "price": 200,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Body Aid",
+                    "description": "Gain a +1 bonus to Strength Saving Throws and Ability Checks.",
+                    "type": 2
+                }
+            ],
             "proficiency": 3,
             "baseArmorClass": 15,
             "enchantment": 1,
@@ -7359,6 +7333,7 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 40,
+            "uid": "ARM_Leather",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 11,
@@ -7375,6 +7350,7 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 1700,
+            "uid": "MAG_Druid_Land_Magic_Leather_Armor",
             "effects": [
                 {
                     "name": "High Spellcasting",
@@ -7407,6 +7383,7 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 1400,
+            "uid": "MAG_Druid_Moon_Magic_Leather_Armor",
             "effects": [
                 {
                     "name": "Lunar Beastial Vitality",
@@ -7434,6 +7411,7 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 1400,
+            "uid": "MAG_Druid_Spore_Magic_Leather_Armor",
             "effects": [
                 {
                     "name": "Malefic Funghi",
@@ -7442,7 +7420,7 @@
                 },
                 {
                     "name": "Spore Sacks",
-                    "description": "While imbued with Symbiotic Entity, you can spread Bibberbang Spores, Timmask Spores, and Haste Spores.",
+                    "description": "While imbued with Symbiotic Entity, you can spread Bibberbang Spores, Timmask Spores, and Haste Spores (Condition).",
                     "type": 2
                 }
             ],
@@ -7461,6 +7439,7 @@
             "weightKg": 5.85,
             "weightLb": 12.8,
             "price": 2000,
+            "uid": "MAG_Bhaalist_Armor",
             "effects": [
                 {
                     "name": "Aura of Murder",
@@ -7488,6 +7467,7 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 160,
+            "uid": "MAG_Bard_TempHP_Armor",
             "effects": [
                 {
                     "name": "Remedial Rhymes",
@@ -7510,6 +7490,7 @@
             "weightKg": 3.6,
             "weightLb": 7.2,
             "price": 70,
+            "uid": "ARM_Padded_Broken",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 11,
@@ -7526,6 +7507,7 @@
             "weightKg": 5.85,
             "weightLb": 12.9,
             "price": 1000,
+            "uid": "ARM_StuddedLeather_Drow",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 12,
@@ -7542,6 +7524,7 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 40,
+            "uid": "MAG_Druid_Magic_Leather_Armor",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 11,
@@ -7558,6 +7541,7 @@
             "weightKg": 5.85,
             "weightLb": 12.8,
             "price": 2000,
+            "uid": "MAG_EndGame_StuddedLeather_Armor",
             "effects": [
                 {
                     "name": "Ambusher",
@@ -7596,6 +7580,7 @@
             "weightKg": 5.85,
             "weightLb": 12.89,
             "price": 130,
+            "uid": "ARM_StuddedLeather_Drow_Faded",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 12,
@@ -7612,6 +7597,7 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 130,
+            "uid": "ARM_Leather_1",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 12,
@@ -7628,6 +7614,7 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 380,
+            "uid": "ARM_Leather_2",
             "effects": [
                 {
                     "name": "Stealthy",
@@ -7656,6 +7643,7 @@
             "weightKg": 3.6,
             "weightLb": 8,
             "price": 70,
+            "uid": "ARM_Padded",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 11,
@@ -7704,6 +7692,7 @@
             "weightKg": 3.6,
             "weightLb": 8,
             "price": 105,
+            "uid": "ARM_Padded_1",
             "effects": [
                 {
                     "name": "Superior Padding",
@@ -7726,6 +7715,7 @@
             "weightKg": 3.6,
             "weightLb": 8,
             "price": 310,
+            "uid": "ARM_Padded_2",
             "effects": [
                 {
                     "name": "Superior Padding",
@@ -7749,6 +7739,7 @@
             "weightKg": 5.85,
             "weightLb": 13,
             "price": 1000,
+            "uid": "MAG_Shadow_StealthBonusWhileObscured_Armor",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 12,
@@ -7765,6 +7756,7 @@
             "weightKg": 4.5,
             "weightLb": 10,
             "price": 160,
+            "uid": "ARM_Leather_1_Red",
             "effects": [
                 {
                     "name": "Stealthy",
@@ -7787,6 +7779,7 @@
             "weightKg": 4.5,
             "weightLb": 10,
             "price": 40,
+            "uid": "ARM_Robe_Selunite",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 11,
@@ -7803,6 +7796,7 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 130,
+            "uid": "MAG_Harpers_ArmorOfShadows",
             "effects": [
                 {
                     "name": "Shadeclinger",
@@ -7830,6 +7824,7 @@
             "weightKg": 4.5,
             "weightLb": 9,
             "price": 40,
+            "uid": "ARM_Bard_A",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 11,
@@ -7846,6 +7841,7 @@
             "weightKg": 5.8,
             "weightLb": 12.8,
             "price": 1150,
+            "uid": "GOB_DrowCommander_Armor_Leather",
             "effects": [
                 {
                     "name": "Stealthy",
@@ -7879,6 +7875,7 @@
             "weightKg": 5.9,
             "weightLb": 12.9,
             "price": 100,
+            "uid": "ARM_StuddedLeather",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 12,
@@ -7895,6 +7892,7 @@
             "weightKg": 5.85,
             "weightLb": 12.9,
             "price": 260,
+            "uid": "ARM_StuddedLeather_1",
             "effects": [],
             "proficiency": 1,
             "baseArmorClass": 13,
@@ -7912,6 +7910,7 @@
             "weightKg": 5.85,
             "weightLb": 12.9,
             "price": 770,
+            "uid": "ARM_StuddedLeather_2",
             "effects": [
                 {
                     "name": "Superior Padding",
@@ -7954,7 +7953,13 @@
                     "type": 2
                 },
                 {
-                    "name": "Critical strike immunity",
+                    "name": "Anonymous Effect",
+                    "description": "Attackers can't land Critical Hits on the wearer.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Adamantine Scale Mail",
                     "description": "Attackers can't land Critical Hits on the wearer.",
                     "type": 2
                 }
@@ -8194,7 +8199,7 @@
             "name": "Damaged Dark Justiciar Armour",
             "image": "Dark Justiciar Mail Icon.png",
             "icon": "Dark Justiciar Mail Unfaded Icon.png",
-            "description": "A Medium Armour that is the degraded version of Dark Justiciar Mail.",
+            "description": "A Medium Armour that is the degraded version of Dark Justiciar Mail. It is part of the Dark Justiciar Set.",
             "quote": "Though time has tarnished this armour's metal and cracked its leather, the black sheen of Shar's symbol shines eternal from its chestpiece.",
             "type": 9,
             "rarity": 1,
@@ -8857,6 +8862,7 @@
             "weightKg": 9,
             "weightLb": 18,
             "price": 510,
+            "uid": "MAG_ChargedLightning_Electrocute_Armor",
             "effects": [
                 {
                     "name": "Superior Material",
@@ -8865,7 +8871,7 @@
                 },
                 {
                     "name": "Countershock",
-                    "description": "When the wearer takes damage while having Lightning Charges, the attacker must succeed a Dexterity Saving Throw or become Shocked.",
+                    "description": "When the wearer takes damage while having Lightning Charges, the attacker must succeed a Dexterity|dc=14 or become Shocked.",
                     "type": 2
                 }
             ],
@@ -9404,7 +9410,7 @@
             "name": "Orphic Ring",
             "image": "Ring B Gem B Gold 1 Faded.png",
             "icon": "Ring B Gem B Gold 1 Unfaded Icon.png",
-            "description": "Orphic Ring is a very rare Ring that allows the wearer to cast Confusion (level 5) once per Long Rest.",
+            "description": "Orphic Ring is a very rare ring that grants its wearer the Confusion (level 5) spell on a long rest cooldown.",
             "quote": "When light catches this ring at the right angle, it pulses with a dizzying, intoxicating glow befitting the jewellery of the Prince of the Comet.",
             "type": 10,
             "rarity": 4,
@@ -9415,7 +9421,7 @@
             "effects": [
                 {
                     "name": "Confusion|w=40",
-                    "description": "Befuddle a group of creatures, causing them to attack at random, wander around aimlessly, and occasionally skip turns in the stupor. (Long Rest)",
+                    "description": "Cast as a level 5 spell (long rest).",
                     "type": 2
                 }
             ],
@@ -9957,7 +9963,7 @@
             "effects": [
                 {
                     "name": "Spiteful Thunder",
-                    "description": "When the wearer deals Thunder damage to a Reverberation|Reverberating creature, it becomes Dazed unless it succeeds a Constitution SavingThrow.",
+                    "description": "When the wearer deals Thunder damagenotes to a Reverberation|Reverberating creature, it becomes Dazed unless it succeeds a Constitution|dc=13.",
                     "type": 2
                 }
             ],
@@ -10010,7 +10016,7 @@
             "name": "Risky Ring",
             "image": "Ring E Gold A 1 Faded.png",
             "icon": "Ring E Gold A 1 Unfaded Icon.png",
-            "description": "The Risky Ring is a rare Ring that grants Advantage on Attack Rolls but recieve Disadvantage on SavingThrows.",
+            "description": "The Risky Ring is a rare Ring that grants Advantage on Attack Rolls but receive Disadvantage on SavingThrows.",
             "quote": "Life is just a series of risks taken while blindfolded.",
             "type": 10,
             "rarity": 3,
@@ -12360,7 +12366,7 @@
             "effects": [
                 {
                     "name": "Scarlet Remittance",
-                    "description": "Gain a +1 bonus to Attack Rolls, damageDRS, and Spell Save DC for every foe you slay, up to a maximum of +3.",
+                    "description": "Gain a +1 bonus to Attack Rolls, damage, and Spell Save DC for every foenotes you slay, up to a maximum of +3.",
                     "type": 2
                 },
                 {
@@ -12419,26 +12425,8 @@
                     "type": 2
                 },
                 {
-                    "name": "Anonymous Effect",
-                    "description": "Blood Sacrifice Icon Blood Sacrifice: Pain is a path to power. Take 1d4|Slashing damage to receive a +1d4 bonus to Attack Rolls and Saving Throws.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "{{action|bonus}}",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Ritual Dagger",
-                    "description": "Blood Sacrifice Icon Blood Sacrifice: Pain is a path to power. Take 1d4|Slashing damage to receive a +1d4 bonus to Attack Rolls and Saving Throws.\n{{action|bonus}}\n1",
+                    "name": "Blood Sacrifice|w=40 (bonus)",
+                    "description": "Pain is a path to power. Take 1d4|Slashing damage to receive a +1d4 bonus to Attack Rolls and Saving Throws.",
                     "type": 2
                 }
             ],
@@ -12853,7 +12841,7 @@
                 },
                 {
                     "name": "Elemental Age|w=40",
-                    "description": "Can cast at Level 3, once per Long Rest.",
+                    "description": "Cast as a level 3 spell (Long Rest).",
                     "type": 2
                 },
                 {
@@ -13014,7 +13002,7 @@
             "name": "Drakethroat Glaive",
             "image": "Glaive PlusTwo Icon.png",
             "icon": "Glaive PlusTwo Unfaded Icon.png",
-            "description": "Drakethroat Glaive is a rare Glaive that grants its wielder the Draconic Elemental Weapon weapon action and a bonus to Dragonborn breath racial actions.",
+            "description": "Drakethroat Glaive is a rare glaive that grants its wielder the Draconic Elemental Weapon weapon action and a bonus to dragonborn breath racial actions.",
             "quote": "Kereska, the draconic goddess of arcane knowledge, gifted this glaive to a dragonborn when facing off against a group of carbuncular spiders. How their arachnid legs curled and blackened before that night's dark business was done!",
             "type": 17,
             "rarity": 3,
@@ -13025,7 +13013,7 @@
             "effects": [
                 {
                     "name": "Vicious Dragon Breath",
-                    "description": "Enemies have Disadvantage on Saving Throws against your Dragonborn breath weapon.",
+                    "description": "Enemies have Disadvantage on Saving Throws against your dragonborn breath weapon.",
                     "type": 2
                 },
                 {
@@ -13082,7 +13070,7 @@
             "name": "Glaive +1",
             "image": "Glaive PlusOne Icon.png",
             "icon": "Glaive PlusOne Unfaded Icon.png",
-            "description": "Glaive +1 is an uncommon, lightly enchanted Glaive.",
+            "description": "Glaive +1 is an uncommon, lightly enchanted glaive.",
             "quote": "Fashioned by expert elven hands to be both deadly and beautiful.",
             "type": 17,
             "rarity": 2,
@@ -13111,7 +13099,7 @@
             "name": "Monster Slayer Glaive",
             "image": "Glaive PlusOne Icon.png",
             "icon": "Glaive PlusOne Unfaded Icon.png",
-            "description": "Monster Slayer Glaive is a rare Glaive that deals additional damage against Monstrosities and increases its wielder's Jump (Bonus Action)|Jump distance.",
+            "description": "Monster Slayer Glaive is a rare glaive that deals additional damage against Monstrosities and increases its wielder's Jump (Bonus Action)|Jump distance.",
             "quote": "Monster-slaying is a rare calling, not for the faint of heart. It requires temperance, discipline, and usually a very big stick with something pointy at the end. The best thing about spears is that the ugly parts of combat are happening at the other end.",
             "type": 17,
             "rarity": 3,
@@ -13151,23 +13139,24 @@
             "name": "Moonlight Glaive",
             "image": "Glaive PlusOne Icon.png",
             "icon": "Glaive PlusOne Unfaded Icon.png",
-            "description": "Moonlight Glaive is a rare +2 Glaive with a permanent 1d4|Radiant}} damage and it grants access to the unique [[Moonlight Butterflies (Weapon Action)|Moonlight Butterflies Weapon Action.",
+            "description": "Moonlight Glaive is a rare glaive that deals additional |Radiant damage, has a permanent Light effect, and grants its wielder the Moonlight Butterflies weapon action.",
             "quote": "A gift from Dame Aylin and her radiant goddess, this weapon's contours hold a silver-white beauty akin to the nightly lantern that climbs the firmament each evening.",
             "type": 17,
             "rarity": 3,
             "weightKg": 2.7,
             "weightLb": 5.4,
             "price": 380,
+            "uid": "MAG_Moonlight_Glaive",
             "effects": [
                 {
                     "name": "Anonymous Effect",
-                    "description": "Light Spell Icon Moonlight Glaive: Glowing: This object shines with a glowing light in a radius of 6m.",
+                    "description": "Light|w=40 Moonlight Glaive: Glowing: This object shines with a glowing light in a radius of 6 m / 20 ft.",
                     "type": 2,
                     "hidden": true
                 },
                 {
                     "name": "Moonlight Glaive",
-                    "description": "Light Spell Icon Moonlight Glaive: Glowing: This object shines with a glowing light in a radius of 6m.",
+                    "description": "Light|w=40 Moonlight Glaive: Glowing: This object shines with a glowing light in a radius of 6 m / 20 ft.",
                     "type": 2
                 }
             ],
@@ -13180,35 +13169,30 @@
             "damage": "1d10 + 2",
             "damageType": 1,
             "extraDamage": "1d4 Radiant",
-            "range": 1,
             "finesse": false,
-            "heavy": false,
+            "heavy": true,
             "light": false,
             "reach": true,
             "thrown": false,
             "cantDualWield": false,
-            "dippable": false
+            "dippable": true
         },
         {
             "name": "Sorrow",
             "image": "Glaive PlusOne Icon.png",
             "icon": "Glaive PlusOne Unfaded Icon.png",
+            "description": "Sorrow is a rare glaive that grants its wielder the Sorrowful Lash cantrip on a one turn cooldown.",
             "quote": "For every drop of blood spilled, a piece of the soul perishes - until nothing remains but regret.",
             "type": 17,
             "rarity": 3,
             "weightKg": 2.7,
             "weightLb": 5.4,
             "price": 380,
+            "uid": "DEN_HalsinBlade",
             "effects": [
                 {
-                    "name": "Anonymous Effect",
-                    "description": "Thorn Whip Icon Sorrowful Lash: Cast Sorrowful Lash once per turn as a bonus.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Sorrow",
-                    "description": "Thorn Whip Icon Sorrowful Lash: Cast Sorrowful Lash once per turn as a bonus.",
+                    "name": "Sorrowful Lash|w=40",
+                    "description": "Pulls the creature m=3|ft=10 closer to you (Per turn).",
                     "type": 2
                 }
             ],
@@ -13220,7 +13204,6 @@
             "handedness": 3,
             "damage": "1d10 + 1",
             "damageType": 1,
-            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -13233,12 +13216,14 @@
             "name": "The Dancing Breeze",
             "image": "Glaive PlusTwo Icon.png",
             "icon": "Glaive PlusTwo Unfaded Icon.png",
+            "description": "The Dancing Breeze is a very rare glaive that grants its wielder the Whirlwind Attack weapon action.",
             "quote": "Tiny specks of blood are fused into the blade, as if the glaive is feeding on them.",
             "type": 17,
             "rarity": 4,
             "weightKg": 2.7,
-            "weightLb": 5,
+            "weightLb": 5.4,
             "price": 2400,
+            "uid": "MAG_Finesse_Glaive",
             "effects": [],
             "proficiency": 0,
             "enchantment": 2,
@@ -13246,17 +13231,15 @@
             "category": 1,
             "rangeType": 1,
             "handedness": 3,
-            "damage": "1d10 +2",
+            "damage": "1d10 + 2",
             "damageType": 1,
-            "damageVersatile": "1d10 +2",
-            "range": 0,
-            "finesse": true,
-            "heavy": false,
+            "finesse": false,
+            "heavy": true,
             "light": false,
             "reach": true,
             "thrown": false,
             "cantDualWield": false,
-            "dippable": false
+            "dippable": true
         }
     ],
     "18": [
@@ -13300,7 +13283,7 @@
             "image": "Greataxe PlusTwo Icon.png",
             "icon": "Greataxe PlusTwo Unfaded Icon.png",
             "description": "Defender Greataxe is a rare greataxe that can be reduced in its enchantment on the first attack of the round to increase wielder's ArmourClass and SavingThrow bonus.",
-            "quote": "The power of this axe lies in a fluctuating arcane enchantment thatflows between the beard and the edge of the axe, and the wielder themselves.",
+            "quote": "The power of this axe lies in a fluctuating arcane enchantment that flows between the beard and the edge of the axe, and the wielder themselves.",
             "type": 18,
             "rarity": 3,
             "weightKg": 3.15,
@@ -13376,7 +13359,13 @@
             "weightLb": 6.3,
             "price": 130,
             "uid": "UND_DuergarRaft_PestKillerAxe",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Scourge of Pests",
+                    "description": "Deals an additional 1d6|Fire damage to Plants, Insects or Small creatures.",
+                    "type": 2
+                }
+            ],
             "proficiency": 0,
             "id": 3426,
             "category": 1,
@@ -13529,7 +13518,7 @@
             "name": "The Undead Bane",
             "image": "Greataxe B PlusOne Icon.png",
             "icon": "Greataxe B PlusOne Unfaded Icon.png",
-            "description": "The Undead Bane is an uncommon greataxe that deals additional |Slashing damage against Fiends and Profane Scourge weapon action.",
+            "description": "The Undead Bane is an uncommon greataxe that deals additional |Slashing damage against Fiends and Undead and grants its wielder the Profane Scourge weapon action.",
             "quote": "Wielded by the indomitable Ser Lexia. Although her eagerness to destroy evil in all its forms was constant, she often took time to make little gifts for her friends.",
             "type": 18,
             "rarity": 2,
@@ -13601,6 +13590,7 @@
             "weightKg": 4.5,
             "weightLb": 9.9,
             "price": 65,
+            "uid": "MAG_Poison_Greatclub",
             "effects": [],
             "proficiency": 0,
             "enchantment": 1,
@@ -15010,13 +15000,7 @@
             "weightKg": 8.1,
             "weightLb": 17.8,
             "price": 960,
-            "effects": [
-                {
-                    "name": "Illuminating Shot|w=40",
-                    "description": "Fire a shimmering bolt that inflicts 1 turn of Radiating Orb upon the target.",
-                    "type": 2
-                }
-            ],
+            "effects": [],
             "proficiency": 0,
             "enchantment": 2,
             "id": 9573,
@@ -15228,6 +15212,7 @@
             "weightKg": 8.1,
             "weightLb": 17.8,
             "price": 960,
+            "uid": "MAG_WATCHER_Human_Crossbow",
             "effects": [
                 {
                     "name": "Lightning Arrow|w=40",
@@ -15656,7 +15641,7 @@
                 },
                 {
                     "name": "Celestial Haste|w=40",
-                    "description": "Can cast once per Long Rest.",
+                    "description": "Cast as a level 3 spell (Long Rest).",
                     "type": 2
                 }
             ],
@@ -16158,6 +16143,36 @@
             "dippable": false
         },
         {
+            "name": "Ceremonial Longsword",
+            "image": "Longsword +1 Icon.png",
+            "icon": "Longsword +1 Unfaded Icon.png",
+            "description": "Ceremonial Longsword is an uncommon, lightly enchanted longsword. It is used to solve the Dawnmaster's Crest puzzle in the Rosymorn Monastery.",
+            "quote": "A complex filigree wraps around the base of this blade - the runes on the side suggesting it is not merely decorative.",
+            "type": 29,
+            "rarity": 2,
+            "weightKg": 1.35,
+            "weightLb": 2.7,
+            "price": 55,
+            "effects": [],
+            "proficiency": 0,
+            "enchantment": 1,
+            "id": 27687,
+            "category": 1,
+            "rangeType": 1,
+            "handedness": 2,
+            "damage": "1d8 + 1",
+            "damageType": 1,
+            "damageVersatile": "1d10 + 1",
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": false,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": true
+        },
+        {
             "name": "Cruel Sting",
             "image": "Longsword +1 Icon.png",
             "icon": "Longsword +1 Unfaded Icon.png",
@@ -16379,6 +16394,7 @@
             "weightKg": 1.35,
             "weightLb": 2.7,
             "price": 250,
+            "uid": "MAG_Finesse_Longsword",
             "effects": [],
             "proficiency": 0,
             "enchantment": 1,
@@ -18555,6 +18571,7 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 480,
+            "uid": "MAG_GreaterNecromancy_Staff",
             "effects": [
                 {
                     "name": "Heightened Necromancy",
@@ -18676,7 +18693,7 @@
                 },
                 {
                     "name": "Arcane Battery",
-                    "description": "Alleviate the arcane burden of spellcasting with the power of this staff. The next spell you cast doesn't cost a spell slot.",
+                    "description": "Alleviate the arcane burden of spellcasting with the power of this staff. The next spell you cast doesn't cost a spell slot. Once per Long Rest.",
                     "type": 2
                 }
             ],
@@ -18953,20 +18970,8 @@
                     "type": 2
                 },
                 {
-                    "name": "Anonymous Effect",
-                    "description": "Challenge to Duel|w=40",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Dueller's Enthusiasm|w=40",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Duellist's Prerogative",
-                    "description": "Challenge to Duel|w=40\nDueller's Enthusiasm|w=40",
+                    "name": "Challenge to Duel|w=40",
+                    "description": "Cast as a level 1 spell.",
                     "type": 2
                 }
             ],
@@ -18998,13 +19003,8 @@
             "weightKg": 0.9,
             "weightLb": 1.8,
             "price": 380,
-            "effects": [
-                {
-                    "name": "Mellow Harmony|w=40",
-                    "description": "You make a Performance Check, success granting all your melee weapon attacks additional damage equal to your Charisma Modifier (min.1).",
-                    "type": 2
-                }
-            ],
+            "uid": "MAG_Harpers_Harmonizing_Rapier",
+            "effects": [],
             "proficiency": 0,
             "enchantment": 1,
             "id": 9586,
@@ -19295,13 +19295,8 @@
             "weightKg": 1.35,
             "weightLb": 2.9,
             "price": 480,
-            "effects": [
-                {
-                    "name": "Perfectly Balanced Strike",
-                    "description": "Send Belm snaking out with an adder's speed, the very exemplar of swiftness embodied in steel.",
-                    "type": 2
-                }
-            ],
+            "uid": "MAG_PHB_OfSpeed_Scimitar",
+            "effects": [],
             "proficiency": 0,
             "enchantment": 2,
             "id": 9175,
@@ -19408,45 +19403,18 @@
             "name": "Justiciar's Scimitar",
             "image": "Justiciar's Scimitar Icon.png",
             "icon": "Justiciar's Scimitar Unfaded Icon.png",
-            "description": "Justiciar's Scimitar is a very rare see notes) weapon that can blind an opponent if the wielder strikes with Advantage.",
+            "description": "Justiciar's Scimitar is a very rare Scimitarnotes weapon that can blind an opponent if the wielder strikes with Advantage.",
             "quote": "This light, curved blade is as unusual and unforgiving as the Darkness it strikes from.",
             "type": 36,
             "rarity": 4,
             "weightKg": 1.35,
             "weightLb": 2.7,
             "price": 480,
+            "uid": "MAG_Justiciar_Scimitar",
             "effects": [
                 {
                     "name": "Shadow-Blinding",
                     "description": "If you attack with Advantage, you have a chance to Blind your target.",
-                    "type": 2
-                },
-                {
-                    "name": "Shadowsoaked Blow",
-                    "description": "** action",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "action",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Short Rest",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Strike an enemy, adding your Proficiency Bonus to the damage. Moreover, if the attack hits, it also deals an additional 1d6|Psychic damage. This attack doesn't break concealment.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Justiciar's Scimitar",
-                    "description": "action\nShort Rest\nStrike an enemy, adding your Proficiency Bonus to the damage. Moreover, if the attack hits, it also deals an additional 1d6|Psychic damage. This attack doesn't break concealment.",
                     "type": 2
                 }
             ],
@@ -19825,7 +19793,7 @@
             "effects": [
                 {
                     "name": "Blood-Curdling Emission",
-                    "description": "On a hit, possibly inflict Frightened (WIS|dc=12 negates verify). Gain +1d4 bonus to attack and damage rolls against Frightened creatures.",
+                    "description": "On a hit, possibly inflict Frightened (WIS|dc=12 negates). Gain +1d4 bonus to attack and damage rolls against Frightened creatures.",
                     "type": 2
                 }
             ],
@@ -20789,6 +20757,7 @@
             "weightKg": 0.9,
             "weightLb": 2,
             "price": 190,
+            "uid": "MAG_Shadow_Shortsword",
             "effects": [],
             "proficiency": 0,
             "enchantment": 1,
@@ -20973,13 +20942,7 @@
             "weightKg": 0.9,
             "weightLb": 1.8,
             "price": 190,
-            "effects": [
-                {
-                    "name": "BOOOAL's Blessing",
-                    "description": "Advantage on Attack Rolls against Bleeding creatures, as long as there are Kuo-toa to worship BOOOAL.",
-                    "type": 2
-                }
-            ],
+            "effects": [],
             "proficiency": 0,
             "id": 3708,
             "category": 2,
@@ -20987,6 +20950,7 @@
             "handedness": 1,
             "damage": "2d4",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": false,
             "light": true,
@@ -21459,6 +21423,7 @@
             "weightKg": 1.35,
             "weightLb": 2.7,
             "price": 200,
+            "uid": "CHA_CompassSpear",
             "effects": [
                 {
                     "name": "Death's Promise",
@@ -21512,7 +21477,7 @@
                 },
                 {
                     "name": "Anonymous Effect",
-                    "description": "DEX|dc=8 to negate Blind",
+                    "description": "DEX|dc=11 to negate Blind",
                     "type": 2,
                     "hidden": true
                 },
@@ -21524,7 +21489,7 @@
                 },
                 {
                     "name": "Vision of the Absolute",
-                    "description": "DEX|dc=8 to negate Blind\n2",
+                    "description": "DEX|dc=11 to negate Blind\n2",
                     "type": 2
                 }
             ],
@@ -21588,6 +21553,7 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 840,
+            "uid": "MAG_TheThorns_Trident",
             "effects": [
                 {
                     "name": "Zephyr Connection",
@@ -21740,6 +21706,7 @@
             "damage": "1d6 + 3",
             "damageType": 2,
             "damageVersatile": "1d8 + 3",
+            "extraDamage": "1d6 cold",
             "range": 0,
             "finesse": false,
             "heavy": false,
@@ -21986,6 +21953,7 @@
             "weightKg": 2.7,
             "weightLb": 5.4,
             "price": 300,
+            "uid": "GOB_GoblinKing_Warhammer",
             "effects": [],
             "proficiency": 0,
             "enchantment": 1,
@@ -22290,6 +22258,7 @@
             "weightKg": 0.9,
             "weightLb": 1.8,
             "price": 100,
+            "uid": "MAG_Revitalizing_Warpick",
             "effects": [],
             "proficiency": 0,
             "enchantment": 1,
