@@ -48,4 +48,17 @@ export class Utils extends SharedUtils {
 
         return str;
     }
+
+    // Linear congruential generator (LCG) that generates a number between 0 and 1 based on the given seed
+    static randomSeeded(seed: number): number {
+        // LCG parameters
+        const a = 1664525;
+        const c = 1013904223;
+        const m = 2 ** 32;
+
+        // Generate the next seed and return a pseudo-random number between 0 and 1
+        const nextSeed = (a * seed + c) % m;
+
+        return nextSeed / m;
+    }
 }
