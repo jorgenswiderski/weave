@@ -120,11 +120,11 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
         if (characterPages.length > 1) {
             warn(
-                `Item '${item.name}' has a source that mentions multiple characters`,
+                `Item '${item.name}' has a source that mentions multiple characters, coercing to first character`,
             );
         }
 
-        if (characterPages.length === 1) {
+        if (characterPages.length > 0) {
             return [
                 {
                     name: characterPages[0].title,
@@ -177,7 +177,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             const config: Record<string, MediaWikiTemplateParserConfig> = {
                 location: {
                     parser: (value) => {
-                        const match = value.match(/\[\[([^|\]]+).*?]]/);
+                        const match = value.match(/\[\[([^#|\]]+).*?]]/);
 
                         return match?.[1];
                     },
@@ -190,10 +190,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                     config,
                 );
 
-            if (
-                locationPageTitle &&
-                gameLocationByPageTitle.has(locationPageTitle)
-            ) {
+            if (locationPageTitle) {
                 return gameLocationByPageTitle.get(locationPageTitle);
             }
         }
@@ -205,7 +202,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         source: string,
         item: EquipmentItem,
     ): Promise<ItemSource | undefined> {
-        const pageTitleMatch = /\[\[([^|\]]+).*?]]/g;
+        const pageTitleMatch = /\[\[([^#|\]]+).*?]]/g;
 
         const pageTitles = Array.from(source.matchAll(pageTitleMatch)).map(
             (match) => match[1],
@@ -221,12 +218,6 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                             data: (await MediaWiki.getPage(title))!,
                         };
                     } catch (err) {
-                        if (err instanceof Error) {
-                            warn(err.message);
-                        } else {
-                            error(err);
-                        }
-
                         return undefined;
                     }
                 }),

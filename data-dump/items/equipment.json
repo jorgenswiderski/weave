@@ -259,6 +259,10 @@
                             "name": "Zhentarim Basement",
                             "id": 4185
                         }
+                    },
+                    "character": {
+                        "name": "Brem",
+                        "id": 14233
                     }
                 },
                 {
@@ -988,6 +992,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Glut",
+                        "id": 6021
                     }
                 }
             ],
@@ -1078,6 +1086,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Spaw",
+                        "id": 6032
                     }
                 }
             ],
@@ -1349,7 +1361,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act One",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Inner Sanctum",
+                            "id": 13258
+                        }
+                    },
+                    "character": {
+                        "name": "Arabella",
+                        "id": 1039
+                    }
+                }
+            ],
             "id": 3444
         },
         {
@@ -3449,6 +3485,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Glut",
+                        "id": 6021
                     }
                 }
             ],
@@ -5712,6 +5752,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Rath",
+                        "id": 1031
                     }
                 }
             ],
@@ -6155,6 +6199,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -6174,6 +6222,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -6193,6 +6245,10 @@
                             "name": "Ramazith's Tower",
                             "id": 14155
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 }
             ],
@@ -6252,6 +6308,10 @@
                             "name": "House of Grief",
                             "id": 12279
                         }
+                    },
+                    "character": {
+                        "name": "Viconia DeVir",
+                        "id": 8342
                     }
                 }
             ],
@@ -8910,6 +8970,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -8929,6 +8993,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -8948,6 +9016,10 @@
                             "name": "Ramazith's Tower",
                             "id": 14155
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 }
             ],
@@ -9701,6 +9773,29 @@
                 }
             ],
             "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act One",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Under-world"
+                        },
+                        "region": {
+                            "name": "Underdark",
+                            "id": 4325
+                        },
+                        "location": {
+                            "name": "Ebonlake Grotto",
+                            "id": 3974
+                        }
+                    },
+                    "character": {
+                        "name": "Glut",
+                        "id": 6021
+                    }
+                },
                 {
                     "location": {
                         "act": {
@@ -10922,6 +11017,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -10941,6 +11040,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -10960,6 +11063,10 @@
                             "name": "Ramazith's Tower",
                             "id": 14155
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 }
             ],
@@ -12030,6 +12137,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Strange Ox",
+                        "id": 10897
                     }
                 },
                 {
@@ -13523,6 +13634,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -13542,6 +13657,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -13561,6 +13680,10 @@
                             "name": "Ramazith's Tower",
                             "id": 14155
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 }
             ],
@@ -16806,6 +16929,10 @@
                             "name": "Arcane Tower",
                             "id": 4366
                         }
+                    },
+                    "character": {
+                        "name": "Bernard",
+                        "id": 4373
                     }
                 }
             ],
@@ -17149,6 +17276,10 @@
                             "name": "Open Hand Temple",
                             "id": 12249
                         }
+                    },
+                    "character": {
+                        "name": "Tara",
+                        "id": 11003
                     }
                 }
             ],
@@ -17794,6 +17925,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -17813,6 +17948,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -17832,6 +17971,10 @@
                             "name": "Ramazith's Tower",
                             "id": 14155
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 }
             ],
@@ -18283,6 +18426,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Strange Ox",
+                        "id": 10897
                     }
                 }
             ],
@@ -19398,6 +19545,10 @@
                             "name": "Gauntlet of Shar",
                             "id": 10466
                         }
+                    },
+                    "character": {
+                        "name": "Lyrthindor",
+                        "id": 11809
                     }
                 }
             ],
@@ -20779,6 +20930,10 @@
                             "name": "Moonrise Towers",
                             "id": 4552
                         }
+                    },
+                    "character": {
+                        "name": "Balthazar",
+                        "id": 10857
                     }
                 }
             ],
@@ -20862,6 +21017,10 @@
                             "name": "Moonrise Towers",
                             "id": 4552
                         }
+                    },
+                    "character": {
+                        "name": "Balthazar",
+                        "id": 10857
                     }
                 },
                 {
@@ -24954,7 +25113,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act One",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "The Risen Road",
+                            "id": 4403
+                        }
+                    },
+                    "character": {
+                        "name": "Anders",
+                        "id": 4443
+                    }
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 3341,
@@ -25411,8 +25594,8 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "Grymforge",
-                            "id": 4546
+                            "name": "Abandoned Refuge",
+                            "id": 11302
                         }
                     }
                 },
@@ -30788,6 +30971,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -30807,6 +30994,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 },
                 {
@@ -30826,6 +31017,10 @@
                             "name": "Ramazith's Tower",
                             "id": 14155
                         }
+                    },
+                    "character": {
+                        "name": "Rolan",
+                        "id": 4779
                     }
                 }
             ],
@@ -31838,8 +32033,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Riverside Teahouse",
-                            "id": 4504
+                            "name": "Overgrown Tunnel",
+                            "id": 4525
                         }
                     }
                 }
@@ -33007,6 +33202,10 @@
                             "name": "Gauntlet of Shar",
                             "id": 10466
                         }
+                    },
+                    "character": {
+                        "name": "Lyrthindor",
+                        "id": 11809
                     }
                 }
             ],
