@@ -14,6 +14,7 @@ export async function initActionsAndSpells(): Promise<void> {
         'Bonus actions',
         'Reactions',
         'Free actions',
+        'Movement-expending actions',
     ];
 
     const actionNames = [
