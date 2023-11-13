@@ -17,6 +17,7 @@ import { MwnProgressBar } from './api/mwn-progress-bar';
 import { getEquipmentItemData } from './models/equipment/equipment';
 import { initActionsAndSpells } from './models/action/init';
 import { apiRouter } from './routes';
+import { initLocations } from './models/locations/locations';
 
 async function main() {
     log('=====================================================');
@@ -24,7 +25,8 @@ async function main() {
     log('=====================================================');
 
     new MwnProgressBar().render();
-    await initActionsAndSpells();
+
+    await Promise.all([initActionsAndSpells(), initLocations()]);
 
     await Promise.all([
         getCharacterClassData(),

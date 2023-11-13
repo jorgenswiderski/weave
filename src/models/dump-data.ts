@@ -14,6 +14,7 @@ import { getSpellDataFiltered } from './action/spell';
 import { getActionDataFiltered } from './action/action';
 import { initActionsAndSpells } from './action/init';
 import { StaticImageCacheService } from './static-image-cache-service';
+import { initLocations } from './locations/locations';
 
 async function getInfo(data: any[]) {
     return Promise.all(data.map((datum) => datum.getInfo()));
@@ -22,6 +23,7 @@ async function getInfo(data: any[]) {
 async function dump() {
     try {
         await getMongoDb();
+        await initLocations();
         await initActionsAndSpells();
 
         const datas = {

@@ -8,14 +8,24 @@ import {
     IEquipmentItem,
     ItemRarity,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/equipment-item';
+import assert from 'assert';
+import {
+    ItemSource,
+    ItemSourceCharacter,
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
-import { error } from '../logger';
+import { error, warn } from '../logger';
 import { MediaWiki, PageData } from '../media-wiki';
 import { PageItem, PageLoadingState } from '../page-item';
 import {
     MediaWikiTemplateParser,
     MediaWikiTemplateParserConfig,
 } from '../mw-template-parser';
+import {
+    GameLocation,
+    gameLocationById,
+    gameLocationByPageTitle,
+} from '../locations/locations';
 
 enum EquipmentItemLoadState {
     SPELL_DATA = 'SPELL_DATA',
@@ -33,7 +43,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
     price?: number;
     uid?: string;
     effects?: GrantableEffect[];
-    source?: string;
+    sources?: ItemSource[];
     // notes?: string[];
     proficiency?: EquipmentItemProficiency;
     id?: number;
@@ -90,6 +100,130 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return effects;
     }
 
+    protected static async parseSource(
+        source: string,
+        item: EquipmentItem,
+    ): Promise<ItemSource | undefined> {
+        const pageTitleMatch = /\[\[([^|\]]+).*?]]/g;
+
+        const pageTitles = Array.from(source.matchAll(pageTitleMatch)).map(
+            (match) => match[1],
+        );
+
+        const pages = (
+            await Promise.all(
+                pageTitles.map(async (title) => {
+                    try {
+                        return {
+                            title,
+                            info: await MediaWiki.getPageInfo(title),
+                            data: (await MediaWiki.getPage(title))!,
+                        };
+                    } catch (err) {
+                        if (err instanceof Error) {
+                            warn(err.message);
+                        } else {
+                            error(err);
+                        }
+
+                        return undefined;
+                    }
+                }),
+            )
+        ).filter(Boolean) as {
+            title: string;
+            info: { latestRevisionId: number; categories: string[] };
+            data: PageData;
+        }[];
+
+        // Parse character source, if it exists
+
+        let character: ItemSourceCharacter | undefined;
+
+        const characterPages = pages.filter((page) =>
+            page.info.categories.includes('Category:Characters'),
+        );
+
+        if (characterPages.length > 1) {
+            warn(
+                `Item '${item.name}' has a source that mentions multiple characters`,
+            );
+        }
+
+        if (characterPages.length === 1) {
+            character = {
+                name: characterPages[0].title,
+                id: characterPages[0].data.pageId,
+            };
+        }
+
+        // Parse location source
+
+        let location: GameLocation | undefined;
+
+        const locationPages = pages.filter((page) =>
+            gameLocationById.has(page.data.pageId),
+        );
+
+        if (locationPages.length > 0) {
+            if (locationPages.length === 1) {
+                location = gameLocationById.get(locationPages[0].data.pageId);
+            } else if (locationPages.length > 1) {
+                const locations = locationPages
+                    .map((loc) => gameLocationById.get(loc.data.pageId))
+                    .filter(Boolean) as GameLocation[];
+
+                assert(locations.length > 0);
+
+                // Find the location with the highest depth value (most specific location)
+                locations.sort((a, b) => b.depth - a.depth);
+
+                if (
+                    locations.length > 1 &&
+                    locations[0].depth === locations[1].depth
+                ) {
+                    warn(
+                        `Item '${item.name}' has a source that mentions multiple locations with the same depth`,
+                    );
+                }
+
+                location = locations[0];
+            }
+        } else if (character) {
+            const config: Record<string, MediaWikiTemplateParserConfig> = {
+                location: {
+                    parser: (value) => {
+                        const match = value.match(/\[\[([^|\]]+).*?]]/);
+
+                        return match?.[1];
+                    },
+                },
+            };
+
+            const { location: locationPageTitle } =
+                MediaWikiTemplateParser.parseTemplate(
+                    characterPages[0].data,
+                    config,
+                );
+
+            if (
+                locationPageTitle &&
+                gameLocationByPageTitle.has(locationPageTitle)
+            ) {
+                location = gameLocationByPageTitle.get(locationPageTitle);
+            }
+        }
+
+        if (location) {
+            return {
+                location: location.getItemSourceLocation(),
+                character,
+            };
+        }
+
+        return undefined;
+    }
+
     protected async initData(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
@@ -142,14 +276,39 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 parser: EquipmentItem.parseEffects,
                 default: [],
             },
-            source: { parser: (value) => value.split('*'), default: undefined }, // FIXME
+
+            // Passed to initSources, not assigned to this
+            sources: {
+                key: 'where to find',
+                parser: (value) =>
+                    value
+                        .split('*')
+                        .map((str) => str.trim())
+                        .filter((str) => str.length > 0),
+                default: undefined,
+            },
             // notes: { parser: (value) => value.split('*'), default: undefined }, // FIXME
         };
 
-        Object.assign(
-            this,
-            MediaWikiTemplateParser.parseTemplate(this.page, config),
+        const { sources, ...rest } = MediaWikiTemplateParser.parseTemplate(
+            this.page,
+            config,
         );
+
+        if (sources) {
+            this.sources = (
+                await Promise.all(
+                    sources.map((source: string) =>
+                        EquipmentItem.parseSource(source, this),
+                    ),
+                )
+            ).filter(Boolean) as ItemSource[];
+        }
+        //  else {
+        //     this.sources = [];
+        // }
+
+        Object.assign(this, rest);
     }
 
     toJSON() {
@@ -166,7 +325,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             price: this.price,
             uid: this.uid,
             effects: this.effects,
-            source: this.source,
+            sources: this.sources,
             // notes: this.notes,
             proficiency: this.proficiency,
             baseArmorClass: this.baseArmorClass,

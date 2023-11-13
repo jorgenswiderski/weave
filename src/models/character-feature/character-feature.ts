@@ -88,7 +88,7 @@ export class CharacterFeature
         pageContent: string,
         pageTitle: string,
         pageId: number,
-        categories: string[],
+        categories: { titles: string[]; includes: (name: string) => boolean },
     ): Promise<GrantableEffect | StaticallyReferenceable> {
         const descMatch =
             /\|\s*description\s*=\s*([\s\S]+?)\n\|\s*[\w\s]+=/g.exec(
