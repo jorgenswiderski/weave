@@ -366,10 +366,7 @@
                 "image": "Darkvision.webp"
             },
             {
-                "name": "Relentless Endurance",
-                "type": 1,
-                "description": "If you reach 0 hit points, you regain 1|Healing instead of becoming Downed.",
-                "image": "Relentless Endurance.webp"
+                "ref": "a6277"
             },
             {
                 "name": "Savage Attacks",

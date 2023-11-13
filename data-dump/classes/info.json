@@ -12,10 +12,7 @@
                         "name": "Rage",
                         "grants": [
                             {
-                                "name": "Rage",
-                                "type": 1,
-                                "description": "Available only in combat.\n\nWhile Raging, you are stronger, and you deal 2 extra damage with melee and improvised weapons, and when throwing objects.\n\nYou have Resistance to physical damage, and Advantage on Strength Checks and Saving Throws.\n\nRage ends early if you don't attack an enemy or take damage each turn.\n\nYou can't cast or concentrate on spells while raging.",
-                                "image": "Rage.webp"
+                                "ref": "a1085"
                             }
                         ]
                     },
@@ -78,22 +75,13 @@
                                         "image": "Class Barbarian Berserker Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Frenzy",
-                                                "type": 1,
-                                                "description": "Available only in combat.\n\nYour Rage turns into a frenzy! You gain Frenzied Strike and Enraged Throw. You can also make an Improvised Melee Weapon (Bonus Action)|Improvised Melee Weapon as a bonus action.\n\nYou have Resistance to physical damage, and Advantage on Strength Checks and Saving Throws.\n\nRage ends early if you don't attack an enemy or take damage each turn.\n\nYou can't cast or concentrate on spells while raging.",
-                                                "image": "Frenzy.webp"
+                                                "ref": "a1103"
                                             },
                                             {
-                                                "name": "Frenzied Strike",
-                                                "type": 1,
-                                                "description": "As a bonus action, make a melee attack with your equipped weapon.\n\n* Will cause a stack of Frenzied Strain on the barbarian.\n* Available only when Frenzied.",
-                                                "image": "Frenzied Strike.webp"
+                                                "ref": "a1105"
                                             },
                                             {
-                                                "name": "Enraged Throw",
-                                                "type": 1,
-                                                "description": "Pick up an item or creature and throw it at a target, dealing additional damage and knocking it Prone.\n\nYour Strength affects the additional damage and how much weight you can throw. Heavier items deal more damage.\n\nThe damage of weapons with the thrown property is the same as the weapon's melee damage.\n\nAvailable only when Frenzied.",
-                                                "image": "Enraged Throw.webp"
+                                                "ref": "a1107"
                                             }
                                         ]
                                     },
@@ -103,16 +91,10 @@
                                         "image": "Wild_Magic_Barbarian_Subclass_Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Rage: Wild Magic",
-                                                "type": 1,
-                                                "description": "Enter a Rage to gain resistance against physical damage and deal extra melee damage. Barbarians gain Rage at level 1.",
-                                                "image": "Rage Icon.png"
+                                                "ref": "a7924"
                                             },
                                             {
-                                                "name": "Magic Awareness",
-                                                "type": 1,
-                                                "description": "Anyone within range adds their Proficiency Bonus to Saving Throws against spells.",
-                                                "image": "Magic Awareness.webp"
+                                                "ref": "a7925"
                                             }
                                         ]
                                     },
@@ -125,37 +107,22 @@
                                                 "ref": "s1585"
                                             },
                                             {
-                                                "name": "Rage: Bear Heart",
-                                                "type": 1,
-                                                "description": "Go into a Rage that makes you tough enough to stand up to any punishment.\n\nYou can use Unrelenting Ferocity, and have Resistance to all damage types except psychic damage.\n\nRage ends early if you haven't attacked a creature or taken damage since your last turn.",
-                                                "image": "Rage Bear Heart.webp"
+                                                "ref": "a1147"
                                             },
                                             {
                                                 "ref": "a1148"
                                             },
                                             {
-                                                "name": "Rage: Eagle Heart",
-                                                "type": 1,
-                                                "description": "Go into a Rage that makes you near untouchable. You can use Diving Strike.\n\nFoes also have Disadvantage on Opportunity Attacks against you, and you can use Dash Bonus Action|Dash as a bonus action.\n\nRage ends early if you haven't attacked a creature or taken damage since your last turn.",
-                                                "image": "Rage Eagle Heart.webp"
+                                                "ref": "a1151"
                                             },
                                             {
-                                                "name": "Rage: Elk Heart",
-                                                "type": 1,
-                                                "description": "Go into a Rage that grants you extraordinary swiftness.\n\nYou can use Primal Stampede, and your Movement Speed increases by m=4.5|ft=15.\n\nRage ends early if you haven't attacked a creature or taken damage since your last turn.",
-                                                "image": "Rage Elk Heart.webp"
+                                                "ref": "a1153"
                                             },
                                             {
-                                                "name": "Rage: Tiger Heart",
-                                                "type": 1,
-                                                "description": "Go into a Rage that empowers your leaps.\n\nYou can use Tiger's Bloodlust, and your jump distance increases by m=4.5|ft=15.\n\nRage ends early if you haven't attacked a creature or taken damage since your last turn.",
-                                                "image": "Rage Tiger Heart.webp"
+                                                "ref": "a1154"
                                             },
                                             {
-                                                "name": "Rage: Wolf Heart",
-                                                "type": 1,
-                                                "description": "Go into a Rage so inciting it spurs on your allies.\n\nYou can use Inciting Howl, and each ally within earshot can move an additional 3m / 10ft during their next turn.\n\nRage ends early if you haven't attacked a creature or taken damage since your last turn.",
-                                                "image": "Rage Wolf Heart.webp"
+                                                "ref": "a1157"
                                             },
                                             {
                                                 "ref": "a1156"
@@ -2026,10 +1993,7 @@
                                         "image": "Wild_Magic_Barbarian_Subclass_Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Unstable Backlash",
-                                                "type": 1,
-                                                "description": "While Raging, when you take damage or fail a Wild Magic effect that replaces the current one.",
-                                                "image": "Generic Magical.webp"
+                                                "ref": "a9532"
                                             }
                                         ]
                                     },
@@ -2905,10 +2869,7 @@
                         "name": "Bardic Inspiration",
                         "grants": [
                             {
-                                "name": "Bardic Inspiration",
-                                "type": 1,
-                                "description": "Inspire an ally to go beyond their capabilities with your performance. They can add a {{DieIcon|d6|Physical+1d6}} bonus to their next Attack Roll, Ability Check, or Saving Throw.",
-                                "image": "Bardic Inspiration.webp"
+                                "ref": "a2650"
                             }
                         ]
                     }
@@ -2980,10 +2941,7 @@
                                         "image": "College Of Lore Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Cutting Words",
-                                                "type": 1,
-                                                "description": "Use your wit to distract a creature and sap its confidence. It receives a {{DieIcon|d6|Physical-1d6}} penalty to Attack Roll, Ability Check, or Saving Throw.",
-                                                "image": "Cutting Words.webp"
+                                                "ref": "a3397"
                                             }
                                         ]
                                     },
@@ -3030,10 +2988,7 @@
                                         "image": "Class Bard Valour Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Combat Inspiration",
-                                                "type": 1,
-                                                "description": "Inspire an ally to add a {{DieIcon|d6|Physical+1d6}} bonus to their next Attack Roll, Ability Check, Saving Throw, weapon damage, or Armour Class.",
-                                                "image": "Bardic Inspiration.webp"
+                                                "ref": "a4016"
                                             }
                                         ]
                                     }
@@ -3937,10 +3892,7 @@
                         "name": "Countercharm",
                         "grants": [
                             {
-                                "name": "Countercharm",
-                                "type": 1,
-                                "description": "You and any allies within m=9|ft=30 have Advantage on SavingThrows against being Charmed or Frightened.",
-                                "image": "Countercharm.webp"
+                                "ref": "a6659"
                             }
                         ]
                     },
@@ -5825,10 +5777,7 @@
                                                 "ref": "s2175"
                                             },
                                             {
-                                                "name": "Warding Flare",
-                                                "type": 1,
-                                                "description": "Shield yourself with divine light. Use your reaction to impose Disadvantage on an attacker, possibly causing their attack to miss.",
-                                                "image": "Warding Flare.webp"
+                                                "ref": "a8005"
                                             }
                                         ]
                                     },
@@ -5881,16 +5830,10 @@
                                                 "image": "Generic Thunder.webp"
                                             },
                                             {
-                                                "name": "Wrath of the Storm: Lightning",
-                                                "type": 1,
-                                                "description": "If a nearby enemy attacks you, you can retaliate with a strike of lightning that deals 2d8|Lightning damage.",
-                                                "image": "Wrath of the Storm Lightning.webp"
+                                                "ref": "a26548"
                                             },
                                             {
-                                                "name": "Wrath of the Storm: Thunder",
-                                                "type": 1,
-                                                "description": "If a nearby enemy attacks you, you can retaliate with a burst of thunder that deals 2d8|Thunder damage.",
-                                                "image": "Wrath of the Storm Thunder.webp"
+                                                "ref": "a26551"
                                             }
                                         ]
                                     },
@@ -5922,10 +5865,7 @@
                                                 "ref": "s2272"
                                             },
                                             {
-                                                "name": "War Priest",
-                                                "type": 1,
-                                                "description": "When you make an unarmed or weapon attack, you can spend a War Priest to make an additional attack as a bonus.\n\nA War Domain Cleric begins with three War Priest|forceplural=yes per long rest. This increases to:\n\n* Four charges at Cleric Level 5\n* Five charges at Cleric Level 8\n* Six charges at Cleric Level 11",
-                                                "image": "War Priest.webp"
+                                                "ref": "a9203"
                                             }
                                         ]
                                     }
@@ -6014,10 +5954,7 @@
                                         "image": "Tempest_Domain_Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Destructive Wrath",
-                                                "type": 1,
-                                                "description": "When you roll Thunder or Lightning damage, you can use your Channel Divinity to deal maximum damage instead.",
-                                                "image": "Destructive Wrath.webp"
+                                                "ref": "a6828"
                                             }
                                         ]
                                     },
@@ -6037,10 +5974,7 @@
                                         "image": "War Domain Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Guided Strike",
-                                                "type": 1,
-                                                "description": "Guided Strike is a Reaction available to War Domain Clerics. This ability allows these Clerics to gain +10 to an Attack Roll at the cost of one Channel Divinity Charge. This does not cost a Reaction to use.",
-                                                "image": "Guided Strike.webp"
+                                                "ref": "a9099"
                                             }
                                         ]
                                     }
@@ -6987,10 +6921,7 @@
                                         "image": "Nature_Domain_Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Dampen Elements",
-                                                "type": 1,
-                                                "description": "When you or an ally gets hit with Acid, Cold, Fire, Lightning, or Thunder damage, you can use your reaction to halve the attack's damage.",
-                                                "image": "Dampen Elements.webp"
+                                                "ref": "a26958"
                                             }
                                         ]
                                     },
@@ -7000,10 +6931,7 @@
                                         "image": "Tempest_Domain_Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Thunderbolt Strike",
-                                                "type": 1,
-                                                "description": "When you deal Thunder or Lightning damage to a creature that is Large or smaller, you can also push it up to m=3|ft=10.",
-                                                "image": "Thunderbolt Strike.webp"
+                                                "ref": "a13686"
                                             }
                                         ]
                                     },
@@ -7023,10 +6951,7 @@
                                         "image": "War Domain Icon.png",
                                         "grants": [
                                             {
-                                                "name": "War God's Blessing",
-                                                "type": 1,
-                                                "description": "War God's Blessing is a Reaction available to War Domain Clerics. This ability allows these Clerics to grant their ally a +10 to an Attack Roll at the cost of one Channel Divinity Charge. This does not cost a Reaction to use.",
-                                                "image": "War God's Blessing.webp"
+                                                "ref": "a11776"
                                             }
                                         ]
                                     }
@@ -8925,28 +8850,19 @@
                                         "image": "Class Druid Moon Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Lunar Mend",
-                                                "type": 1,
-                                                "description": "Expend Spell Slots to regain Hit Points while wild shaped.\n\nYou regain 1d8|Healing per Spell Slot level.",
-                                                "image": "Lunar Mend.webp"
+                                                "ref": "a1434"
                                             },
                                             {
                                                 "ref": "a664"
                                             },
                                             {
-                                                "name": "Combat Wild Shape",
-                                                "type": 1,
-                                                "description": "As a Bonus Action, you can assume the form of a beast. You can transform twice per Short Rest.\n\nThis ability otherwise acts as Wild Shape.",
-                                                "image": "Wild Shape.webp"
+                                                "ref": "a6468"
                                             },
                                             {
                                                 "ref": "a664"
                                             },
                                             {
-                                                "name": "Wild Shape: Bear",
-                                                "type": 1,
-                                                "description": "Take the shape of a Bear with high Hit Points that can goad enemies into attacking it.",
-                                                "image": "Wild Shape Bear.webp"
+                                                "ref": "a15259"
                                             },
                                             {
                                                 "ref": "a1192"
@@ -8962,19 +8878,13 @@
                                                 "ref": "s1645"
                                             },
                                             {
-                                                "name": "Halo of Spores",
-                                                "type": 1,
-                                                "description": "Unleash a cloud of necrotic spores upon a target. This uses a reaction, so other reactions won't trigger this turn.",
-                                                "image": "Halo of Spores.webp"
+                                                "ref": "a7876"
                                             },
                                             {
                                                 "ref": "a7877"
                                             },
                                             {
-                                                "name": "Halo of Spores",
-                                                "type": 1,
-                                                "description": "Unleash a cloud of necrotic spores upon a target. This uses a reaction, so other reactions won't trigger this turn.",
-                                                "image": "Halo of Spores.webp"
+                                                "ref": "a7876"
                                             }
                                         ]
                                     }
@@ -9911,16 +9821,10 @@
                                         "image": "Class Druid Spores Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Halo of Spores",
-                                                "type": 1,
-                                                "description": "Unleash a cloud of necrotic spores upon a target. This uses a reaction, so other reactions won't trigger this turn.",
-                                                "image": "Halo of Spores.webp"
+                                                "ref": "a7876"
                                             },
                                             {
-                                                "name": "Fungal Infestation",
-                                                "type": 1,
-                                                "description": "Raises a mildewed, mould-encrusted zombie from a corpse.\n\nTarget must be a beast or humanoid corpse.",
-                                                "image": "Fungal Infestation.webp"
+                                                "ref": "a8527"
                                             }
                                         ]
                                     }
@@ -10832,10 +10736,7 @@
                                         "image": "Class Druid Moon Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Wild Shape: Air Myrmidon",
-                                                "type": 1,
-                                                "description": "Take the shape of an Air Myrmidon who gains the ability to fly and to cast lightning spells. \n\nThis shape consumes 2 Wild Shape charges, and comes equipped with a Flail of the Vortex that adds +1d8|Lightning to every attack.",
-                                                "image": "Wild Shape Air Myrmidon.webp"
+                                                "ref": "a15263"
                                             },
                                             {
                                                 "ref": "a18931"
@@ -10844,16 +10745,10 @@
                                                 "ref": "a18933"
                                             },
                                             {
-                                                "name": "Fly (Class Action)",
-                                                "type": 1,
-                                                "description": "Fly to a target position",
-                                                "image": "Fly.webp"
+                                                "ref": "a17231"
                                             },
                                             {
-                                                "name": "Wild Shape: Earth Myrmidon",
-                                                "type": 1,
-                                                "description": "Take the shape of an Earth Myrmidon who gains the ability to fly and to cast earth spells.\n\nThis shape consumes 2 Wild Shape charges.",
-                                                "image": "Earth Myrmidon.webp"
+                                                "ref": "a15264"
                                             },
                                             {
                                                 "ref": "a18958"
@@ -10862,28 +10757,16 @@
                                                 "ref": "a18959"
                                             },
                                             {
-                                                "name": "Burrow (Earth Myrmidon)",
-                                                "type": 1,
-                                                "description": "Let the ground swallow you up, only for you to re-emerge in a terrific burst of earth, damaging nearby foes.",
-                                                "image": "Burrow.webp"
+                                                "ref": "a18961"
                                             },
                                             {
-                                                "name": "Muck to Metal",
-                                                "type": 1,
-                                                "description": "Harden your slippery body into a substance like steel, increasing your Armour Class by 2, but reducing your Movement Speed by m=6|ft=20.",
-                                                "image": "Muck to Metal.webp"
+                                                "ref": "a18964"
                                             },
                                             {
-                                                "name": "Elemental Warp",
-                                                "type": 1,
-                                                "description": "Surrounded by silver mist, you teleport to an unoccupied space you can see.",
-                                                "image": "Elemental Warp.webp"
+                                                "ref": "a16348"
                                             },
                                             {
-                                                "name": "Wild Shape: Fire Myrmidon",
-                                                "type": 1,
-                                                "description": "Take the shape of a Fire Myrmidon who gains the ability to fly and to cast fire spells.\n\nThis shape consumes 2 Wild Shape charges, and comes equipped with a +3 Scimitar that adds +1d6|Fire to every attack.",
-                                                "image": "Fire Myrmidon.webp"
+                                                "ref": "a15265"
                                             },
                                             {
                                                 "ref": "a18976"
@@ -10892,22 +10775,13 @@
                                                 "ref": "a18977"
                                             },
                                             {
-                                                "name": "Elemental Warp",
-                                                "type": 1,
-                                                "description": "Surrounded by silver mist, you teleport to an unoccupied space you can see.",
-                                                "image": "Elemental Warp.webp"
+                                                "ref": "a16348"
                                             },
                                             {
-                                                "name": "Fly (Class Action)",
-                                                "type": 1,
-                                                "description": "Fly to a target position",
-                                                "image": "Fly.webp"
+                                                "ref": "a17231"
                                             },
                                             {
-                                                "name": "Wild Shape: Water Myrmidon",
-                                                "type": 1,
-                                                "description": "Take the shape of a Water Myrmidon who gains the ability to fly and to cast healing and cold spells.\n\nThis shape consumes 2 Wild Shape charges, and comes equipped with a +3 Trident that adds +1d6|Cold to every attack.",
-                                                "image": "Water Myrmidon.webp"
+                                                "ref": "a15266"
                                             },
                                             {
                                                 "ref": "a18991"
@@ -10916,16 +10790,10 @@
                                                 "ref": "a18994"
                                             },
                                             {
-                                                "name": "Elemental Warp",
-                                                "type": 1,
-                                                "description": "Surrounded by silver mist, you teleport to an unoccupied space you can see.",
-                                                "image": "Elemental Warp.webp"
+                                                "ref": "a16348"
                                             },
                                             {
-                                                "name": "Fly (Class Action)",
-                                                "type": 1,
-                                                "description": "Fly to a target position",
-                                                "image": "Fly.webp"
+                                                "ref": "a17231"
                                             }
                                         ]
                                     },
@@ -10935,10 +10803,7 @@
                                         "image": "Class Druid Spores Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Halo of Spores",
-                                                "type": 1,
-                                                "description": "Unleash a cloud of necrotic spores upon a target. This uses a reaction, so other reactions won't trigger this turn.",
-                                                "image": "Halo of Spores.webp"
+                                                "ref": "a7876"
                                             },
                                             {
                                                 "name": "Spreading Spores (Passive Feature)",
@@ -11822,10 +11687,7 @@
                         "name": "Second Wind",
                         "grants": [
                             {
-                                "name": "Second Wind",
-                                "type": 1,
-                                "description": "Draw on your stamina to protect yourself. You regain 1d10 + Fighter Level|Healing.",
-                                "image": "Second Wind.webp"
+                                "ref": "a759"
                             }
                         ]
                     },
@@ -11843,10 +11705,7 @@
                         "name": "Action Surge",
                         "grants": [
                             {
-                                "name": "Action Surge",
-                                "type": 1,
-                                "description": "Available only in combat.\n\nImmediately gain an extra action to use this turn.",
-                                "image": "Action Surge.webp"
+                                "ref": "a762"
                             }
                         ]
                     }
@@ -14645,10 +14504,7 @@
                                                 "image": "Great Weapon Fighting.webp"
                                             },
                                             {
-                                                "name": "Protection",
-                                                "type": 1,
-                                                "description": "When you have a Shield, impose Disadvantage on an enemy who attacks one of your allies when you are within melee. You must be able to see the enemy.",
-                                                "image": "Protection.webp"
+                                                "ref": "a17368"
                                             },
                                             {
                                                 "name": "Two-Weapon Fighting",
@@ -15574,10 +15430,7 @@
                         "name": "Flurry of Blows",
                         "grants": [
                             {
-                                "name": "Flurry of Blows",
-                                "type": 1,
-                                "description": "Punch twice in quick succession.",
-                                "image": "Flurry of Blows.webp"
+                                "ref": "a7873"
                             }
                         ]
                     }
@@ -15627,10 +15480,7 @@
                                                 "ref": "s1663"
                                             },
                                             {
-                                                "name": "Shadow Arts: Hide",
-                                                "type": 1,
-                                                "description": "Hide from enemies by succeeding at Stealth checks. Stick to the dark and avoid enemy sightlines. Attacking or casting a spell will reveal your location.",
-                                                "image": "Hide Bonus Action.webp"
+                                                "ref": "a18484"
                                             },
                                             {
                                                 "ref": "a18515"
@@ -15698,28 +15548,16 @@
                                         "image": "Class Monk Open Hand Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Flurry of Blows",
-                                                "type": 1,
-                                                "description": "Punch twice in quick succession.",
-                                                "image": "Flurry of Blows.webp"
+                                                "ref": "a7873"
                                             },
                                             {
-                                                "name": "Flurry of Blows: Topple",
-                                                "type": 1,
-                                                "description": "Punch twice in quick succession and potentially knock the target Prone (Condition)|Prone.",
-                                                "image": "Flurry of Blows Topple.webp"
+                                                "ref": "a18397"
                                             },
                                             {
-                                                "name": "Flurry of Blows: Stagger",
-                                                "type": 1,
-                                                "description": "Punch twice in quick succession and Open Hand Technique: Staggered (Condition)|Stagger the target, making it unable to take Reactions.",
-                                                "image": "Flurry of Blows Stagger.webp"
+                                                "ref": "a18390"
                                             },
                                             {
-                                                "name": "Flurry of Blows: Push",
-                                                "type": 1,
-                                                "description": "Punch twice in quick succession and potentially push your target m=5|ft=16 away.",
-                                                "image": "Flurry of Blows Push.webp"
+                                                "ref": "a18401"
                                             }
                                         ]
                                     }
@@ -15731,10 +15569,7 @@
                         "name": "Deflect Missiles",
                         "grants": [
                             {
-                                "name": "Deflect Missiles",
-                                "type": 1,
-                                "description": "Use your reaction to reduce the damage from a ranged weapon attack by 1d10 + your Dexterity Modifier + your monk level. If the damage is reduced to 0, you use a Ki Point to Deflect the Missile.",
-                                "image": "Deflect Missiles.webp"
+                                "ref": "a8404"
                             }
                         ]
                     }
@@ -16563,10 +16398,7 @@
                         "name": "Slow Fall",
                         "grants": [
                             {
-                                "name": "Slow Fall",
-                                "type": 1,
-                                "description": "When you fall, you can use your reaction to gain Resistance to Falling damage.",
-                                "image": "Slow Fall.webp"
+                                "ref": "a8238"
                             }
                         ]
                     }
@@ -16639,10 +16471,7 @@
                                         "image": "Class Monk Shadow Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Shadow Step",
-                                                "type": 1,
-                                                "description": "Teleport from shadow to shadow.\n\nAfterwards, you have Advantage on your next melee Attack Roll.",
-                                                "image": "Shadow Step.webp"
+                                                "ref": "a18422"
                                             }
                                         ]
                                     },
@@ -17635,16 +17464,10 @@
                                                 "ref": "a18744"
                                             },
                                             {
-                                                "name": "Ki Resonation: Punch (Bonus Action)",
-                                                "type": 1,
-                                                "description": "Hit a creature with your bare fists, making the ki in its body Resonating Ki|Resonate with yours.\n\nYou can then make this ki explode with Ki Resonation: Blast.",
-                                                "image": "Ki Resonation Punch.webp"
+                                                "ref": "a18745"
                                             },
                                             {
-                                                "name": "Ki Resonation: Blast",
-                                                "type": 1,
-                                                "description": "Detonate the ki of a creature Resonating Ki|Resonating with you, hitting the creature and anyone within m=5|ft=16 of it.\n\nThe resulting explosion causes any nearby creatures Resonating with you to also detonate.",
-                                                "image": "Ki Resonation Blast.webp"
+                                                "ref": "a18748"
                                             }
                                         ]
                                     }
@@ -18579,10 +18402,7 @@
                         "name": "Divine Sense",
                         "grants": [
                             {
-                                "name": "Divine Sense",
-                                "type": 1,
-                                "description": "Tap into your spiritual awareness to gain Advantage on Attack Rolls against celestials, fiends, and undead.",
-                                "image": "Divine Sense.webp"
+                                "ref": "a3399"
                             }
                         ]
                     },
@@ -18621,10 +18441,7 @@
                                         "image": "Paladin Oath of the Ancients Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Healing Radiance",
-                                                "type": 1,
-                                                "description": "Heal yourself and all nearby allies for Proficiency Bonus + Paladin Level + Charisma Modifier hit points. Regain another Proficiency Bonus + Paladin Level + Charisma Modifier hit points next turn.\n\nNo effect on undead and constructs.",
-                                                "image": "Healing Radiance.webp"
+                                                "ref": "a3995"
                                             }
                                         ]
                                     },
@@ -18634,10 +18451,7 @@
                                         "image": "Paladin Oath of Vengeance.png",
                                         "grants": [
                                             {
-                                                "name": "Inquisitor's Might",
-                                                "type": 1,
-                                                "description": "You or an ally's weapon attacks deal an additional +Charisma Radiant damage and can Dazed|Daze enemies for 1 turn.",
-                                                "image": "Inquisitor's Might.webp"
+                                                "ref": "a6888"
                                             }
                                         ]
                                     },
@@ -21470,10 +21284,7 @@
                                                 "image": "Dread Ambusher Melee.webp"
                                             },
                                             {
-                                                "name": "Dread Ambusher: Hide",
-                                                "type": 1,
-                                                "description": "Hide from enemies by succeeding at Stealth checks. Stick to the dark and avoid enemy sightlines. Attacking or casting a spell will reveal your location.",
-                                                "image": "Dread Ambusher Hide.webp"
+                                                "ref": "a17897"
                                             },
                                             {
                                                 "ref": "s2117"
@@ -21492,10 +21303,7 @@
                                                 "image": "Colossus Slayer.webp"
                                             },
                                             {
-                                                "name": "Giant Killer",
-                                                "type": 1,
-                                                "description": "If a Large or bigger creature attacks you, you can use your Reaction to retaliate with a melee attack.\n\nPrerequisite: You must be able to see the creature, and it must be within 1.5m / 5ft of you.",
-                                                "image": "Giant Killer.webp"
+                                                "ref": "a1441"
                                             },
                                             {
                                                 "name": "Horde Breaker",
@@ -24274,10 +24082,7 @@
                         "name": "Cunning Action: Dash",
                         "grants": [
                             {
-                                "name": "Cunning Action: Dash",
-                                "type": 1,
-                                "description": "Cover more distance this turn: double your movement speed.",
-                                "image": "Cunning Action Dash.webp"
+                                "ref": "a889"
                             }
                         ]
                     },
@@ -24285,10 +24090,7 @@
                         "name": "Cunning Action: Disengage",
                         "grants": [
                             {
-                                "name": "Cunning Action: Disengage",
-                                "type": 1,
-                                "description": "Retreat safely. Moving won't provoke Opportunity Attacks.",
-                                "image": "Cunning Action Disengage.webp"
+                                "ref": "a890"
                             }
                         ]
                     },
@@ -24296,10 +24098,7 @@
                         "name": "Cunning Action: Hide",
                         "grants": [
                             {
-                                "name": "Cunning Action: Hide",
-                                "type": 1,
-                                "description": "Hide from enemies by succeeding at Stealth checks. Stick to the dark and avoid enemy sightlines. Attacking or casting a spell will reveal your location.",
-                                "image": "Cunning Action Hide.webp"
+                                "ref": "a6574"
                             }
                         ]
                     }
@@ -27966,10 +27765,7 @@
                                                 "image": "Wild Magic Turn Magic.webp"
                                             },
                                             {
-                                                "name": "Tides of Chaos",
-                                                "type": 1,
-                                                "description": "Gain Advantage on your next Attack Roll, D20|25 Wild Magic surge afterwards.",
-                                                "image": "Tides of Chaos.webp"
+                                                "ref": "a17206"
                                             }
                                         ]
                                     }
@@ -28003,10 +27799,7 @@
                         "name": "Create Spell Slot",
                         "grants": [
                             {
-                                "name": "Create Spell Slot",
-                                "type": 1,
-                                "description": "Spend Sorcery Points to unlock a Spell Slot. The conversion rate is listed in the table below.",
-                                "image": "Create Spell Slot.webp"
+                                "ref": "a1387"
                             }
                         ]
                     },
@@ -28014,10 +27807,7 @@
                         "name": "Create Sorcery Points",
                         "grants": [
                             {
-                                "name": "Create Sorcery Points",
-                                "type": 1,
-                                "description": "Spend Spell Slots to gain Sorcery Points. The level of spell slot spent creates the equivalent number in sp|forceplural=yes",
-                                "image": "Create Sorcery Points.webp"
+                                "ref": "a1388"
                             }
                         ]
                     }
@@ -28927,10 +28717,7 @@
                                                 "image": "Elemental Affinity Damage.webp"
                                             },
                                             {
-                                                "name": "Elemental Affinity: Resistance",
-                                                "type": 1,
-                                                "description": "When you cast a spell that deals damage matching your draconic ancestry, you can spend a sp|1 to gain Resistance to that damage type.",
-                                                "image": "Elemental Affinity Resistance.webp"
+                                                "ref": "a17223"
                                             }
                                         ]
                                     },
@@ -28961,16 +28748,10 @@
                                                 "image": "Heart of the Storm.webp"
                                             },
                                             {
-                                                "name": "Heart of the Storm: Lightning",
-                                                "type": 1,
-                                                "description": "When you cast a Spell of Level 1 or higher that deals Lightning damage, you cause a small, local storm. All enemies within m=6|ft=20 take (Sorcerer Level / 2)|Lightning damage.",
-                                                "image": "Heart of the Storm Lightning.webp"
+                                                "ref": "a15151"
                                             },
                                             {
-                                                "name": "Heart of the Storm: Thunder",
-                                                "type": 1,
-                                                "description": "When you cast a Spell of Level 1 or higher that deals Thunder damage, you cause a small, local storm. All enemies within m=6|ft=20 take (Sorcerer Level / 2)|Thunder damage.",
-                                                "image": "Heart of the Storm Thunder.webp"
+                                                "ref": "a15152"
                                             },
                                             {
                                                 "name": "Heart of the Storm: Resistance",
@@ -28986,10 +28767,7 @@
                                         "image": "Class Sorcerer Wild Magic Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Bend Luck",
-                                                "type": 1,
-                                                "description": "Give a target a {{DieIcon|d4|Physical1d4}} bonus or penalty to an Attack Roll, D20|25 Ability Check, or SavingThrow.",
-                                                "image": "Bend Luck.webp"
+                                                "ref": "a17215"
                                             }
                                         ]
                                     }
@@ -29914,10 +29692,7 @@
                                         "image": "Class Sorcerer Draconic Bloodline Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Fly (Class Action)",
-                                                "type": 1,
-                                                "description": "Fly to a target position",
-                                                "image": "Fly.webp"
+                                                "ref": "a17231"
                                             }
                                         ]
                                     },
@@ -29927,10 +29702,7 @@
                                         "image": "Storm Sorcery Subclass Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Storm's Fury",
-                                                "type": 1,
-                                                "description": "When you are hit by a melee attack, you deal (Sorcerer Level)|Lightning damage to the attacker and potentially push them away.",
-                                                "image": "Storm's Fury.webp"
+                                                "ref": "a15144"
                                             }
                                         ]
                                     },
@@ -29940,10 +29712,7 @@
                                         "image": "Class Sorcerer Wild Magic Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Controlled Chaos",
-                                                "type": 1,
-                                                "description": "Induce a Wild Magic Surge Effect on a nearby spellcaster casting a Spell.",
-                                                "image": "Wild Magic Turn Magic.webp"
+                                                "ref": "a17211"
                                             }
                                         ]
                                     }
@@ -31784,10 +31553,7 @@
                                         "image": "Class Warlock Archfey Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Misty Escape",
-                                                "type": 1,
-                                                "description": "Upon taking damage, become Invisible. On your next turn, you can cast Misty Step, though this will break your invisibility.",
-                                                "image": "Misty Escape.webp"
+                                                "ref": "a8188"
                                             },
                                             {
                                                 "ref": "s2644"
@@ -31813,10 +31579,7 @@
                                         "image": "Class Warlock Great Old One Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Entropic Ward",
-                                                "type": 1,
-                                                "description": "Impose Disadvantage on an Attack Roll against you. If the attack misses, you gain Advantage on your next Attack Roll against the attacker for 1 turn.",
-                                                "image": "Entropic Ward.webp"
+                                                "ref": "a8187"
                                             }
                                         ]
                                     }
@@ -33670,10 +33433,7 @@
                                         "image": "Class Wizard Divination Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Portent",
-                                                "type": 1,
-                                                "description": "Your dreams grant you glimpses that let you influence the future.\n\nAfter each Long Rest, you gain two random Portent Dice. During the day, you can use your reaction to change the die of any Attack Roll or Saving Throw rolled near you to one of your Portent Dice.\n\nEach Portent Die can only be used once, and you lose your unused Portent Dice at the end of the day.",
-                                                "image": "Portent.webp"
+                                                "ref": "a6658"
                                             }
                                         ]
                                     },
@@ -33709,10 +33469,7 @@
                                         "image": "Class Wizard Illusion Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Improved Minor Illusion",
-                                                "type": 1,
-                                                "description": "You can cast Minor Illusion as a bonus action. \n\nYou can remain hidden while casting this spell.\n\nThis spell can be cast while you are Silenced",
-                                                "image": "Improved Minor Illusion.webp"
+                                                "ref": "a16818"
                                             },
                                             {
                                                 "ref": "s1663"
@@ -34644,10 +34401,7 @@
                                         "image": "Class Wizard Abjuration Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Projected Ward",
-                                                "type": 1,
-                                                "description": "When a nearby ally takes damage and you have an active Arcane Ward, you can sacrifice your ward to reduce the damage they take.",
-                                                "image": "Projected Ward.webp"
+                                                "ref": "a16831"
                                             }
                                         ]
                                     },
@@ -34680,10 +34434,7 @@
                                         "image": "Class Wizard Enchantment Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Instinctive Charm",
-                                                "type": 1,
-                                                "description": "Charmed (Condition)|Charm an enemy attacking you. They will attack a new target if possible as a reaction.",
-                                                "image": "Instinctive Charm.webp"
+                                                "ref": "a16834"
                                             }
                                         ]
                                     },
@@ -34719,10 +34470,7 @@
                                         "image": "Class Wizard Necromancy Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Undead Thralls: Animate Dead",
-                                                "type": 1,
-                                                "description": "You gain the Animate Dead spell, if you didn't have it already",
-                                                "image": "Undead Thralls Animate Dead.webp"
+                                                "ref": "a16836"
                                             },
                                             {
                                                 "ref": "s2757"
@@ -34747,58 +34495,31 @@
                                         "image": "Class Wizard Transmutation Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Transmuter's Stone",
-                                                "type": 1,
-                                                "description": "Store some of your transmutation magic in a small stone. A creature carrying the stone gains a benefit of your choice.\n\nOnce you have created a stone, you need to cast a Transmutation spell of Level 1 or higher or take a Long Rest before you can create another one.",
-                                                "image": "Transmuter's Stone.webp"
+                                                "ref": "a16839"
                                             },
                                             {
-                                                "name": "Transmuter's Stone: Constitution",
-                                                "type": 1,
-                                                "description": "Create a stone that grants the carrier Proficiency in Constitution Saving Throws.",
-                                                "image": "Transmuter's Stone Constitution.webp"
+                                                "ref": "a20158"
                                             },
                                             {
-                                                "name": "Transmuter's Stone: Darkvision",
-                                                "type": 1,
-                                                "description": "Create a stone that lets the carrier see in the dark out to a range of m=18|ft=60.",
-                                                "image": "Transmuter's Stone Darkvision.webp"
+                                                "ref": "a20159"
                                             },
                                             {
-                                                "name": "Transmuter's Stone: Speed",
-                                                "type": 1,
-                                                "description": "Create a stone that increases the carrier's movement speed by m=3|ft=10.",
-                                                "image": "Transmuter's Stone Speed.webp"
+                                                "ref": "a20164"
                                             },
                                             {
-                                                "name": "Transmuter's Stone: Acid Resistance",
-                                                "type": 1,
-                                                "description": "Create a stone that grants the carrier Resistance to Acid damage.",
-                                                "image": "Transmuter's Stone Resistance.webp"
+                                                "ref": "a20166"
                                             },
                                             {
-                                                "name": "Transmuter's Stone: Cold Resistance",
-                                                "type": 1,
-                                                "description": "Create a stone that grants the carrier Resistance to Cold damage.",
-                                                "image": "Transmuter's Stone Resistance.webp"
+                                                "ref": "a20167"
                                             },
                                             {
-                                                "name": "Transmuter's Stone: Fire Resistance",
-                                                "type": 1,
-                                                "description": "Create a stone that grants the carrier Resistance to Fire damage.",
-                                                "image": "Transmuter's Stone Resistance.webp"
+                                                "ref": "a20168"
                                             },
                                             {
-                                                "name": "Transmuter's Stone: Lightning Resistance",
-                                                "type": 1,
-                                                "description": "Create a stone that grants the carrier Resistance to Lightning damage.",
-                                                "image": "Transmuter's Stone Resistance.webp"
+                                                "ref": "a20169"
                                             },
                                             {
-                                                "name": "Transmuter's Stone: Thunder Resistance",
-                                                "type": 1,
-                                                "description": "Create a stone that grants the carrier Resistance to Thunder damage.",
-                                                "image": "Transmuter's Stone Resistance.webp"
+                                                "ref": "a20170"
                                             }
                                         ]
                                     }
@@ -35766,10 +35487,7 @@
                                         "image": "Class Wizard Illusion Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Illusory Self",
-                                                "type": 1,
-                                                "description": "Interpose an illusory duplicate of yourself between you and an attacker's strike, making them miss their attack. \n\nYou must Short Rest to use this feature again.",
-                                                "image": "Illusory Self.webp"
+                                                "ref": "a16855"
                                             }
                                         ]
                                     },
@@ -35795,10 +35513,7 @@
                                                 "ref": "a16857"
                                             },
                                             {
-                                                "name": "Fly (Class Action)",
-                                                "type": 1,
-                                                "description": "Fly to a target position",
-                                                "image": "Fly.webp"
+                                                "ref": "a17231"
                                             }
                                         ]
                                     }

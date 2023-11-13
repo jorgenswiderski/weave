@@ -14,7 +14,7 @@ import {
     ItemSourceCharacter,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
-import { debug, error, warn } from '../logger';
+import { debug, error } from '../logger';
 import { MediaWiki, PageData } from '../media-wiki';
 import { PageItem, PageLoadingState } from '../page-item';
 import {
@@ -112,17 +112,17 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
     protected static parseItemSourceCharacter(
         pages: ItemSourcePageInfo[],
-        item: EquipmentItem,
+        // item: EquipmentItem,
     ): [ItemSourceCharacter | undefined, ItemSourcePageInfo[]] {
         const characterPages = pages.filter((page) =>
             page.info.categories.includes('Category:Characters'),
         );
 
-        if (characterPages.length > 1) {
-            warn(
-                `Item '${item.name}' has a source that mentions multiple characters, coercing to first character`,
-            );
-        }
+        // if (characterPages.length > 1) {
+        //     warn(
+        //         `Item '${item.name}' has a source that mentions multiple characters, coercing to first character`,
+        //     );
+        // }
 
         if (characterPages.length > 0) {
             return [
@@ -162,14 +162,14 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 // Find the location with the highest depth value (most specific location)
                 locations.sort((a, b) => b.depth - a.depth);
 
-                if (
-                    locations.length > 1 &&
-                    locations[0].depth === locations[1].depth
-                ) {
-                    warn(
-                        `Item '${item.name}' has a source that mentions multiple locations with the same depth`,
-                    );
-                }
+                // if (
+                //     locations.length > 1 &&
+                //     locations[0].depth === locations[1].depth
+                // ) {
+                //     warn(
+                //         `Item '${item.name}' has a source that mentions multiple locations with the same depth`,
+                //     );
+                // }
 
                 return locations[0];
             }
@@ -226,7 +226,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
         const [character, characterPages] = this.parseItemSourceCharacter(
             pages,
-            item,
+            // item,
         );
 
         const location: GameLocation | undefined = this.parseGameLocation(

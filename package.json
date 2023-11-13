@@ -16,7 +16,7 @@
         "decompose": "docker-compose down",
         "type-check": "tsc --noEmit --skipLibCheck",
         "check": "npm run lint-fix && npm run type-check",
-        "dump-data": "ts-node src/models/dump-data.ts",
+        "dump-data": "ts-node src/models/dump-data.ts | bunyan -o short",
         "preinstall": "echo \"@jorgenswiderski:registry=https://npm.pkg.github.com/\n//npm.pkg.github.com/:_authToken=${GHP_TOKEN}\" > .npmrc",
         "link": "npm i @jorgenswiderski/tomekeeper-shared@latest && npm link @jorgenswiderski/tomekeeper-shared"
     },
