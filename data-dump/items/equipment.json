@@ -482,7 +482,27 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Shattered Sanctum",
+                            "id": 4134
+                        }
+                    }
+                }
+            ],
             "id": 3564
         },
         {
@@ -522,6 +542,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Ormn",
+                        "id": 12287
                     }
                 }
             ],
@@ -694,7 +718,27 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Under-world"
+                        },
+                        "region": {
+                            "name": "Underdark",
+                            "id": 4325
+                        }
+                    },
+                    "character": {
+                        "name": "Minotaur",
+                        "id": 4329
+                    }
+                }
+            ],
             "id": 3461
         },
         {
@@ -1197,6 +1241,10 @@
                             "name": "Ruined Battlefield",
                             "id": 10340
                         }
+                    },
+                    "character": {
+                        "name": "Shadow-Cursed Needle Blight",
+                        "id": 8562
                     }
                 }
             ],
@@ -1790,6 +1838,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Lava Elemental",
+                        "id": 6192
                     }
                 }
             ],
@@ -2033,6 +2085,10 @@
                             "name": "Moonrise Towers",
                             "id": 4552
                         }
+                    },
+                    "character": {
+                        "name": "Mimic",
+                        "id": 4780
                     }
                 }
             ],
@@ -2414,6 +2470,10 @@
                             "name": "Underdark",
                             "id": 4325
                         }
+                    },
+                    "character": {
+                        "name": "Spectator",
+                        "id": 4355
                     }
                 }
             ],
@@ -2476,7 +2536,27 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Under-world"
+                        },
+                        "region": {
+                            "name": "Underdark",
+                            "id": 4325
+                        },
+                        "location": {
+                            "name": "Arcane Tower",
+                            "id": 4366
+                        }
+                    }
+                }
+            ],
             "id": 3555
         },
         {
@@ -2602,6 +2682,10 @@
                             "name": "Murder Tribunal",
                             "id": 14112
                         }
+                    },
+                    "character": {
+                        "name": "That Which Lurks",
+                        "id": 15506
                     }
                 }
             ],
@@ -4720,6 +4804,10 @@
                         "region": {
                             "name": "Rivington",
                             "id": 11636
+                        },
+                        "location": {
+                            "name": "Circus of the Last Days",
+                            "id": 11641
                         }
                     },
                     "character": {
@@ -5066,6 +5154,10 @@
                             "name": "Underdark",
                             "id": 4325
                         }
+                    },
+                    "character": {
+                        "name": "Bulette",
+                        "id": 4340
                     }
                 }
             ],
@@ -5609,7 +5701,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Whispering Depths",
+                            "id": 4197
+                        }
+                    },
+                    "character": {
+                        "name": "Phase Spider Matriarch",
+                        "id": 4421
+                    }
+                }
+            ],
             "baseArmorClass": 10,
             "id": 3531
         },
@@ -6531,6 +6647,10 @@
                             "name": "Murder Tribunal",
                             "id": 14112
                         }
+                    },
+                    "character": {
+                        "name": "That Which Watches",
+                        "id": 15505
                     }
                 }
             ],
@@ -8812,37 +8932,6 @@
             "id": 11803
         },
         {
-            "name": "Netherstone-Studded Gauntlet",
-            "image": "Netherstone-Studded Gauntlet Icon.png",
-            "icon": "Netherstone-Studded Gauntlet Unfaded Icon.png",
-            "description": "Netherstone-Studded Gauntlet is a gauntlet that is wielded by Lord Enver Gortash",
-            "quote": "A tyrant's grip must be one of cool, unforgiving, and intricately realised steel. It cannot budge, cannot falter, no matter the pressure, and its fingertips must deeply pierce those who would struggle against it.",
-            "type": 5,
-            "rarity": 4,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 300,
-            "effects": [
-                {
-                    "name": "Enervating Suffusion",
-                    "description": "Your Unarmed Strike|unarmed attacks deal an additional 1d4|Force damage.",
-                    "type": 2
-                },
-                {
-                    "name": "High Spellcasting",
-                    "description": "You gain a +1 bonus to Spell Save DC.",
-                    "type": 2
-                },
-                {
-                    "name": "Command|w=40",
-                    "description": "",
-                    "type": 2
-                }
-            ],
-            "sources": [],
-            "id": 15115
-        },
-        {
             "name": "Nimblefinger Gloves",
             "image": "Gloves Leather G Faded.png",
             "icon": "Gloves Leather G Unfaded Icon.png",
@@ -9688,6 +9777,10 @@
                         "region": {
                             "name": "Rivington",
                             "id": 11636
+                        },
+                        "location": {
+                            "name": "Circus of the Last Days",
+                            "id": 11641
                         }
                     },
                     "character": {
@@ -9828,6 +9921,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Lava Elemental",
+                        "id": 6192
                     }
                 }
             ],
@@ -10082,6 +10179,10 @@
                             "name": "Murder Tribunal",
                             "id": 14112
                         }
+                    },
+                    "character": {
+                        "name": "That Which Guards",
+                        "id": 13253
                     }
                 }
             ],
@@ -11582,6 +11683,10 @@
                             "name": "Sorcerous Sundries",
                             "id": 9472
                         }
+                    },
+                    "character": {
+                        "name": "Lava Elemental",
+                        "id": 6192
                     }
                 }
             ],
@@ -16430,6 +16535,10 @@
                             "name": "House of Hope",
                             "id": 8537
                         }
+                    },
+                    "character": {
+                        "name": "Spectator",
+                        "id": 4355
                     }
                 }
             ],
@@ -16841,7 +16950,27 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Under-world"
+                        },
+                        "region": {
+                            "name": "Underdark",
+                            "id": 4325
+                        },
+                        "location": {
+                            "name": "Grymforge",
+                            "id": 4546
+                        }
+                    }
+                }
+            ],
             "id": 3624
         },
         {
@@ -17510,28 +17639,6 @@
             "id": 10926
         },
         {
-            "name": "Ring of Fire",
-            "image": "Ring I Silver A 1 Faded.png",
-            "icon": "Ring I Silver A 1 Unfaded Icon.png",
-            "description": "The Ring of Fire is an uncommon Ring that grants the wearer additional fire damage when dealing fire damage.",
-            "quote": "A burning heat radiates from this ring, warming the wearer from head to toe.",
-            "type": 10,
-            "rarity": 2,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 270,
-            "uid": "MAG_Fire_IncreasedDamage_Ring",
-            "effects": [
-                {
-                    "name": "Burning Fury",
-                    "description": "When dealing Fire damage, the wearer deals an additional Fire|1 Fire damage.",
-                    "type": 2
-                }
-            ],
-            "sources": [],
-            "id": 3590
-        },
-        {
             "name": "Ring of Flinging",
             "image": "Ring C Silver A Faded.png",
             "icon": "Ring C Silver A Unfaded Icon.png",
@@ -17733,6 +17840,10 @@
                         "region": {
                             "name": "Shadow-Cursed Lands",
                             "id": 8117
+                        },
+                        "location": {
+                            "name": "Ruined Battlefield",
+                            "id": 10340
                         }
                     }
                 }
@@ -18194,6 +18305,10 @@
                             "name": "Abandoned Windmill",
                             "id": 12251
                         }
+                    },
+                    "character": {
+                        "name": "Mind Flayer",
+                        "id": 4348
                     }
                 }
             ],
@@ -20031,6 +20146,10 @@
                             "name": "Murder Tribunal",
                             "id": 14112
                         }
+                    },
+                    "character": {
+                        "name": "That Which Guards",
+                        "id": 13253
                     }
                 }
             ],
@@ -20291,6 +20410,10 @@
                             "name": "Sunlit Wetlands",
                             "id": 4204
                         }
+                    },
+                    "character": {
+                        "name": "Wood Woad",
+                        "id": 4417
                     }
                 }
             ],
@@ -21152,7 +21275,31 @@
             "weightLb": 1.8,
             "price": 10,
             "effects": [],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Sunlit Wetlands",
+                            "id": 4204
+                        }
+                    },
+                    "character": {
+                        "name": "Wood Woad",
+                        "id": 4417
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 10542,
             "category": 2,
@@ -22597,35 +22744,6 @@
             "thrown": false,
             "cantDualWield": false,
             "dippable": true
-        },
-        {
-            "name": "Dart +2",
-            "image": "Dart PlusTwo Icon.png",
-            "icon": "Dart PlusTwo Unfaded Icon.png",
-            "quote": "Pegasus feathers lend this dart remarkable speed, as well as a pleasant jasmine fragrance.",
-            "type": 15,
-            "rarity": 3,
-            "weightKg": 0.225,
-            "weightLb": 0.5,
-            "price": 1,
-            "effects": [],
-            "sources": [],
-            "proficiency": 0,
-            "enchantment": 2,
-            "id": 14734,
-            "category": 2,
-            "rangeType": 1,
-            "handedness": 3,
-            "damage": "1d4 + 2",
-            "damageType": 2,
-            "range": 1,
-            "finesse": true,
-            "heavy": false,
-            "light": false,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": true
         }
     ],
     "16": [
@@ -22980,6 +23098,10 @@
                             "name": "Moonrise Towers Rooftop",
                             "id": 12131
                         }
+                    },
+                    "character": {
+                        "name": "Susdera",
+                        "id": 27051
                     }
                 },
                 {
@@ -24743,6 +24865,10 @@
                             "name": "House of Healing Morgue",
                             "id": 10617
                         }
+                    },
+                    "character": {
+                        "name": "Hollow Armour",
+                        "id": 12329
                     }
                 }
             ],
@@ -25185,6 +25311,25 @@
                             "id": 12160
                         }
                     }
+                },
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Rivington",
+                            "id": 11636
+                        }
+                    },
+                    "character": {
+                        "name": "Steel Watcher (creature)",
+                        "id": 13838
+                    }
                 }
             ],
             "proficiency": 0,
@@ -25578,6 +25723,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Merregon Legionnaire",
+                        "id": 6336
                     }
                 },
                 {
@@ -25721,6 +25870,10 @@
                         "region": {
                             "name": "Rivington",
                             "id": 11636
+                        },
+                        "location": {
+                            "name": "Circus of the Last Days",
+                            "id": 11641
                         }
                     },
                     "character": {
@@ -26010,6 +26163,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Hellsboar",
+                        "id": 6340
                     }
                 }
             ],
@@ -26892,7 +27049,27 @@
             "price": 65,
             "uid": "",
             "effects": [],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Rivington",
+                            "id": 11636
+                        }
+                    },
+                    "character": {
+                        "name": "Steel Watcher (creature)",
+                        "id": 13838
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 27383,
             "category": 1,
@@ -27474,6 +27651,10 @@
                             "name": "Steel Watch Foundry",
                             "id": 12160
                         }
+                    },
+                    "character": {
+                        "name": "Steel Watcher Titan",
+                        "id": 13993
                     }
                 }
             ],
@@ -28001,36 +28182,6 @@
             "dippable": true
         },
         {
-            "name": "Arduous Flame Blade",
-            "image": "Longsword +1 Icon.png",
-            "icon": "Longsword +1 Unfaded Icon.png",
-            "quote": "The extent of cultural idolatry amongst members of the Flaming Fist is anyone's guess, but fascination with fire is plain and unambiguously obsessive.",
-            "type": 29,
-            "rarity": 3,
-            "weightKg": 1.35,
-            "weightLb": 2.9,
-            "price": 250,
-            "effects": [],
-            "sources": [],
-            "proficiency": 0,
-            "enchantment": 1,
-            "id": 9166,
-            "category": 1,
-            "rangeType": 1,
-            "handedness": 2,
-            "damage": "1d8",
-            "damageType": 1,
-            "damageVersatile": "1d10",
-            "range": 0,
-            "finesse": false,
-            "heavy": false,
-            "light": false,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": false
-        },
-        {
             "name": "Battle-Worn Blade",
             "image": "Broken Longsword Icon.png",
             "icon": "Broken Longsword Item Icon.png",
@@ -28118,6 +28269,10 @@
                             "name": "Murder Tribunal",
                             "id": 14112
                         }
+                    },
+                    "character": {
+                        "name": "That Which Guards",
+                        "id": 13253
                     }
                 }
             ],
@@ -28471,40 +28626,6 @@
             "dippable": true
         },
         {
-            "name": "Infernal Longsword",
-            "image": "",
-            "quote": "Precise infernal runes are woven into this weapon's filigree, implying a creator well-versed in hellish arcana.",
-            "type": 29,
-            "rarity": 3,
-            "weightKg": 1.35,
-            "weightLb": 2.97,
-            "price": 250,
-            "effects": [
-                {
-                    "name": "Infernal Weapon",
-                    "description": "On a hit, the affected entity deals an additional 3|Poison damage and can possibly Poison its target.",
-                    "type": 2
-                }
-            ],
-            "proficiency": 0,
-            "enchantment": 1,
-            "id": 9600,
-            "category": 1,
-            "rangeType": 1,
-            "handedness": 2,
-            "damage": "1d8+1",
-            "damageType": 1,
-            "damageVersatile": "1d10+1",
-            "range": 0,
-            "finesse": false,
-            "heavy": false,
-            "light": false,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": false
-        },
-        {
             "name": "Katana",
             "image": "Katana Icon.png",
             "icon": "Katana Unfaded Icon.png",
@@ -28827,36 +28948,6 @@
             "thrown": false,
             "cantDualWield": false,
             "dippable": true
-        },
-        {
-            "name": "Render of Scrumptious Flesh",
-            "image": "Longsword PlusTwo Icon.png",
-            "icon": "Longsword PlusTwo Unfaded Icon.png",
-            "quote": "It might be your imagination, but when blood runs over the blade, you could swear you hear... slurping.",
-            "type": 29,
-            "rarity": 3,
-            "weightKg": 1.35,
-            "weightLb": 2.97,
-            "price": 250,
-            "effects": [],
-            "proficiency": 0,
-            "enchantment": 2,
-            "id": 9624,
-            "category": 1,
-            "rangeType": 1,
-            "handedness": 2,
-            "damage": "1d8+2",
-            "damageType": 1,
-            "damageVersatile": "1d10+2",
-            "extraDamage": "1d4 Necrotic",
-            "range": 0,
-            "finesse": false,
-            "heavy": false,
-            "light": false,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": false
         },
         {
             "name": "Rusty Longsword",
@@ -31818,6 +31909,10 @@
                         "region": {
                             "name": "Rivington",
                             "id": 11636
+                        },
+                        "location": {
+                            "name": "Circus of the Last Days",
+                            "id": 11641
                         }
                     },
                     "character": {
@@ -34364,7 +34459,27 @@
             "price": 1,
             "uid": "",
             "effects": [],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Rivington",
+                            "id": 11636
+                        },
+                        "location": {
+                            "name": "Gur Camp",
+                            "id": 12253
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 19862,
             "category": 2,
@@ -34576,7 +34691,27 @@
             "price": 1,
             "uid": "",
             "effects": [],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Rivington",
+                            "id": 11636
+                        },
+                        "location": {
+                            "name": "Gur Camp",
+                            "id": 12253
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 19861,
             "category": 2,
@@ -36406,6 +36541,10 @@
                             "name": "Owlbear Nest",
                             "id": 4202
                         }
+                    },
+                    "character": {
+                        "name": "Owlbear",
+                        "id": 4449
                     }
                 }
             ],
@@ -36812,6 +36951,10 @@
                             "name": "Rosymorn Monastery",
                             "id": 10319
                         }
+                    },
+                    "character": {
+                        "name": "Giant Eagle",
+                        "id": 9254
                     }
                 }
             ],

@@ -112,10 +112,12 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
     protected static parseItemSourceCharacter(
         pages: ItemSourcePageInfo[],
-        // item: EquipmentItem,
+        item: EquipmentItem,
     ): [ItemSourceCharacter | undefined, ItemSourcePageInfo[]] {
-        const characterPages = pages.filter((page) =>
-            page.info.categories.includes('Category:Characters'),
+        const characterPages = pages.filter(
+            (page) =>
+                page.info.categories.includes('Category:Characters') ||
+                page.info.categories.includes('Category:Creatures'),
         );
 
         // if (characterPages.length > 1) {
@@ -125,6 +127,12 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         // }
 
         if (characterPages.length > 0) {
+            if (!characterPages[0].data.content?.includes('{{CharacterInfo')) {
+                error(
+                    `Item '${item.name}' source page '${characterPages[0].title}' has no CharacterInfo template!`,
+                );
+            }
+
             return [
                 {
                     name: characterPages[0].title,
@@ -203,10 +211,14 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         item: EquipmentItem,
     ): Promise<ItemSource | undefined> {
         const pageTitleMatch = /\[\[([^#|\]]+).*?]]/g;
+        const coordsTemplateMatch = /{{Coords\|-?\d+\|-?\d+\|([^}]+)}}/g;
 
-        const pageTitles = Array.from(source.matchAll(pageTitleMatch)).map(
-            (match) => match[1],
-        );
+        const matches = [
+            ...source.matchAll(pageTitleMatch),
+            ...source.matchAll(coordsTemplateMatch),
+        ];
+
+        const pageTitles = matches.map((match) => match[1]);
 
         const pages = (
             await Promise.all(
@@ -226,7 +238,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
         const [character, characterPages] = this.parseItemSourceCharacter(
             pages,
-            // item,
+            item,
         );
 
         const location: GameLocation | undefined = this.parseGameLocation(
@@ -354,7 +366,8 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
         return (
             !this.page.content.includes('{{Legacy Content}}') &&
-            !this.page.content.includes('{{Unobtainable}}')
+            !this.page.content.includes('{{Unobtainable}}') &&
+            !this.page.content.includes('{{Inaccessible}}')
         );
     }
 
