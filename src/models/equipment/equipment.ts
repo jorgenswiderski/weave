@@ -56,9 +56,10 @@ export async function getEquipmentItemData(
 
         const filtered = data.filter(
             (item) =>
-                (item?.rarity && item?.rarity > ItemRarity.common) ||
-                item.baseArmorClass ||
-                item instanceof WeaponItem,
+                item.obtainable &&
+                ((item?.rarity && item?.rarity > ItemRarity.common) ||
+                    item.baseArmorClass ||
+                    item instanceof WeaponItem),
         );
 
         filtered.forEach(

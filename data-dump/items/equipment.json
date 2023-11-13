@@ -7650,96 +7650,6 @@
             "id": 6895
         },
         {
-            "name": "Gloves of Fire Resistance",
-            "image": "Gloves Leather 1 Faded.png",
-            "icon": "Gloves Leather 1 Unfaded Icon.png",
-            "description": "The Gloves of Fire Resistance are an uncommon pair of gloves that grant the wearer Resistance to Fire|Fire damage while heavily wounded.",
-            "quote": "These gloves are cool to the touch, chilling the tips of the wearer's fingers.",
-            "type": 5,
-            "rarity": 2,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 260,
-            "effects": [
-                {
-                    "name": "Chilling Grace",
-                    "description": "When the wearer has 50% Fire}} Fire M [[Resistance.",
-                    "type": 2
-                }
-            ],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act One",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Under-world"
-                        },
-                        "region": {
-                            "name": "Underdark",
-                            "id": 4325
-                        },
-                        "location": {
-                            "name": "Ebonlake Grotto",
-                            "id": 3974
-                        }
-                    },
-                    "character": {
-                        "name": "Baelen Bonecloak",
-                        "id": 12352
-                    }
-                }
-            ],
-            "id": 3454
-        },
-        {
-            "name": "Gloves of Flint and Steel",
-            "image": "Gloves Leather 1 Faded.png",
-            "icon": "Gloves Leather 1 Unfaded Icon.png",
-            "description": "The Gloves of Flint and Steel are an uncommon pair of gloves that allow the wearer to set enemies ablaze whenever they deal Fire damage.",
-            "quote": "The inside of these gloves are roughened from the pull and release of countless arrows.",
-            "type": 5,
-            "rarity": 2,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 310,
-            "effects": [
-                {
-                    "name": "Hot Little Hands",
-                    "description": "When the wearer deals Fire damage, the target has to succeed a Constitution Saving Throw or start Burning.",
-                    "type": 2
-                }
-            ],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act One",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Under-world"
-                        },
-                        "region": {
-                            "name": "Underdark",
-                            "id": 4325
-                        },
-                        "location": {
-                            "name": "Ebonlake Grotto",
-                            "id": 3974
-                        }
-                    },
-                    "character": {
-                        "name": "Baelen Bonecloak",
-                        "id": 12352
-                    }
-                }
-            ],
-            "id": 3453
-        },
-        {
             "name": "Gloves of Hail of Thorns",
             "image": "Gloves Leather 1 Faded.png",
             "icon": "Gloves Leather 1 Unfaded Icon.png",
@@ -8002,38 +7912,6 @@
             "sources": [],
             "proficiency": 0,
             "id": 11418
-        },
-        {
-            "name": "Gloves of Succour",
-            "image": "Metallic Gloves Magical Icon.png",
-            "description": "The Gloves of Succour are an uncommon pair of gloves that grant a creature healed by a Paladin's Lay on Hands resistance against weapon attacks.",
-            "quote": "Suede covers the palms of these gloves - ensuring a soft, comforting touch for anyone in need of help.",
-            "type": 5,
-            "rarity": 2,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 350,
-            "effects": [
-                {
-                    "name": "Warding Hands",
-                    "description": "When you use Lay on Hands on a target with 50% or less of its Hit Points left, you also grant it Resistance against Bludgeoning, Piercing, and Slashing damage dealt by weapon attacks.",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Strength Saving Throws +1",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Gloves of Succour",
-                    "description": "Strength Saving Throws +1",
-                    "type": 2
-                }
-            ],
-            "sources": [],
-            "proficiency": 2,
-            "id": 3437
         },
         {
             "name": "Gloves of the Automaton",
@@ -14875,29 +14753,6 @@
             "id": 9414
         },
         {
-            "name": "Chain of Liberation",
-            "image": "Chain of Liberation Icon.png",
-            "icon": "Chain of Liberation Unfaded Icon.png",
-            "description": "The Chain of Liberation is an uncommon Medium Armour that allows the wearer to sacrifice their Momentum to rush forward and avoid Attacks of Opportunity.",
-            "quote": "Linked rings crackle with energy, just waiting to be released.",
-            "type": 9,
-            "rarity": 2,
-            "weightKg": 9,
-            "weightLb": 18,
-            "price": 480,
-            "effects": [
-                {
-                    "name": "Sprint",
-                    "description": "Once per turn, the wearer can reduce the duration of their Momentum by 1 turn to Sprint, rushing forward in a straight 6m / 20ft. line that doesn't provoke Opportunity Attacks.",
-                    "type": 2
-                }
-            ],
-            "sources": [],
-            "proficiency": 2,
-            "baseArmorClass": 13,
-            "id": 3471
-        },
-        {
             "name": "Chain Shirt",
             "image": "Chain Shirt Icon.png",
             "icon": "Chain Shirt Unfaded Icon.png",
@@ -17983,51 +17838,6 @@
             "id": 9555
         },
         {
-            "name": "Ring of Restorative Gravity",
-            "image": "Ring D Silver A 1 Faded.png",
-            "icon": "Ring D Silver A 1 Unfaded Icon.png",
-            "description": "The Ring of Restorative Gravity is an uncommon Ring that pulls creatures towards the wearer when healed by them.",
-            "quote": "A hymn to Eilistraee is inscribed along the inside of this ring, which is surprisingly heavy when worn.",
-            "type": 10,
-            "rarity": 2,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 600,
-            "effects": [
-                {
-                    "name": "Saviour's Allure",
-                    "description": "When the wearer heals another creature, it is pulled 2m / 7ft towards them.",
-                    "type": 2
-                }
-            ],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act One",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Under-world"
-                        },
-                        "region": {
-                            "name": "Underdark",
-                            "id": 4325
-                        },
-                        "location": {
-                            "name": "Ebonlake Grotto",
-                            "id": 3974
-                        }
-                    },
-                    "character": {
-                        "name": "Omeluum",
-                        "id": 3542
-                    }
-                }
-            ],
-            "id": 3611
-        },
-        {
             "name": "Ring of Salving",
             "image": "Ring D Silver A 1 Faded.png",
             "icon": "Ring D Silver A 1 Unfaded Icon.png",
@@ -20513,57 +20323,6 @@
             "dippable": false
         },
         {
-            "name": "Rebound Battleaxe",
-            "image": "Battleaxe PlusOne Icon.png",
-            "icon": "Battleaxe PlusOne Unfaded Icon.png",
-            "quote": "This axe is so loyal, it will sometimes return to wielders it favours.",
-            "type": 12,
-            "rarity": 3,
-            "weightKg": 1.8,
-            "weightLb": 3.9,
-            "price": 310,
-            "effects": [
-                {
-                    "name": "Favoured Weapon",
-                    "description": "This weapon has a +1 bonus to damage and Attack Rolls.",
-                    "type": 2
-                },
-                {
-                    "name": "It's All In The Wrists",
-                    "description": "This weapon has the Thrown property and deals an additional 1d4|Thunder damage when thrown.",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "This blade's magical powers only function if it's Bound to an Warlocks's Pact Weapon.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Rebound Battleaxe",
-                    "description": "This blade's magical powers only function if it's Bound to an Warlocks's Pact Weapon.",
-                    "type": 2
-                }
-            ],
-            "proficiency": 0,
-            "enchantment": 1,
-            "id": 9621,
-            "category": 1,
-            "rangeType": 1,
-            "handedness": 2,
-            "damage": "1d8 + 1",
-            "damageType": 1,
-            "damageVersatile": "1d10 + 1",
-            "range": 0,
-            "finesse": false,
-            "heavy": false,
-            "light": false,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": false
-        },
-        {
             "name": "Thermodynamo Axe",
             "image": "Battleaxe PlusOne Icon.png",
             "icon": "Battleaxe PlusOne Unfaded Icon.png",
@@ -21281,40 +21040,6 @@
     ],
     "14": [
         {
-            "name": "Arcane Absorption Dagger",
-            "image": "Arcane Absorption Dagger Icon.png",
-            "icon": "Arcane Absorption Dagger Unfaded Icon.png",
-            "quote": "The leather grip of this knife is decorated with jugs. As you turn it, you can see that the jug begins empty and fills.\n\nIt's only when you reach the final image that you can see a man's severed head over the jug, filling with beads of blood.",
-            "type": 14,
-            "rarity": 4,
-            "weightKg": 0.45,
-            "weightLb": 0.99,
-            "price": 480,
-            "effects": [
-                {
-                    "name": "Arcane Absorption",
-                    "description": "When you kill an enemy with a melee attack, regain one of your spent 1st Level Spell Slots.",
-                    "type": 2
-                }
-            ],
-            "proficiency": 0,
-            "enchantment": 1,
-            "id": 9164,
-            "category": 2,
-            "rangeType": 1,
-            "handedness": 1,
-            "damage": "1d4 + 1",
-            "damageType": 12,
-            "range": 0,
-            "finesse": true,
-            "heavy": false,
-            "light": true,
-            "reach": false,
-            "thrown": true,
-            "cantDualWield": false,
-            "dippable": false
-        },
-        {
             "name": "Artificial Leech",
             "image": "Artificial Leech Faded.png",
             "icon": "Artificial Leech Unfaded Icon.png",
@@ -21746,42 +21471,6 @@
             "thrown": true,
             "cantDualWield": false,
             "dippable": true
-        },
-        {
-            "name": "Dagger of Shar",
-            "image": "Dagger PlusOne Icon.png",
-            "icon": "Dagger PlusOne Unfaded Icon.png",
-            "quote": "This dagger's handle is smooth and light, its jagged blade sharpened into a thin, cruel edge.",
-            "type": 14,
-            "rarity": 2,
-            "weightKg": 0.45,
-            "weightLb": 0.99,
-            "price": 270,
-            "uid": "DEN_Apprentice_DaggerOfShar",
-            "effects": [
-                {
-                    "name": "Grip of Shadows",
-                    "description": "Deals an additional 1d6|Necrotic damage if the target is not standing in sunlight.",
-                    "type": 2
-                }
-            ],
-            "sources": [],
-            "proficiency": 0,
-            "id": 9549,
-            "category": 2,
-            "rangeType": 1,
-            "handedness": 1,
-            "damage": "1d4",
-            "damageType": 2,
-            "extraDamage": "1d6 Necrotic",
-            "range": 0,
-            "finesse": true,
-            "heavy": false,
-            "light": true,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": false
         },
         {
             "name": "Dolor Amarus",
@@ -23722,41 +23411,6 @@
             "rangeType": 1,
             "handedness": 3,
             "damage": "1d12 + 2",
-            "damageType": 1,
-            "finesse": false,
-            "heavy": true,
-            "light": false,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": true
-        },
-        {
-            "name": "Doom Axe",
-            "image": "Greataxe PlusOne Icon.png",
-            "icon": "Greataxe PlusOne Unfaded Icon.png",
-            "description": "Doom Axe is an uncommon greataxe that afflicts targets with Bone Chilled condition on each successful hit.",
-            "quote": "Bringer of that which it is.",
-            "type": 18,
-            "rarity": 2,
-            "weightKg": 3.15,
-            "weightLb": 6.3,
-            "price": 65,
-            "uid": "",
-            "effects": [
-                {
-                    "name": "Edge of Terror",
-                    "description": "Each strike fills the target with a chilling dread that prevents it from regaining Hp. Undead creatures also get Disadvantage on Attack Rolls.",
-                    "type": 2
-                }
-            ],
-            "sources": [],
-            "proficiency": 0,
-            "id": 3422,
-            "category": 1,
-            "rangeType": 1,
-            "handedness": 3,
-            "damage": "1d12",
             "damageType": 1,
             "finesse": false,
             "heavy": true,
@@ -26445,48 +26099,6 @@
             "dippable": true
         },
         {
-            "name": "Magical Hand Crossbow",
-            "image": "Hand Crossbow PlusOne Icon.png",
-            "icon": "Hand Crossbow PlusOne Unfaded Icon.png",
-            "quote": "The string of this crossbow, secured tightly against the stock, came from the lyre of a powerful bard who gave up his days as a magical minstrel for a more ascetic life.",
-            "type": 23,
-            "rarity": 4,
-            "weightKg": 0.9,
-            "weightLb": 1.8,
-            "price": 770,
-            "uid": "",
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Cunning Combo: When you shoot a target at close range, you can make an additional melee attack against it as a reaction.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Magical Hand Crossbow",
-                    "description": "Cunning Combo: When you shoot a target at close range, you can make an additional melee attack against it as a reaction.",
-                    "type": 2
-                }
-            ],
-            "sources": [],
-            "proficiency": 0,
-            "enchantment": 2,
-            "id": 21893,
-            "category": 1,
-            "rangeType": 1,
-            "handedness": 1,
-            "damage": "1d6 + 2",
-            "damageType": 2,
-            "range": 2,
-            "finesse": false,
-            "heavy": false,
-            "light": true,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": true
-        },
-        {
             "name": "Ne'er Misser",
             "image": "Hand Crossbow PlusOne Icon.png",
             "icon": "Hand Crossbow PlusOne Unfaded Icon.png",
@@ -28387,59 +27999,6 @@
             "damageType": 1,
             "damageVersatile": "1d10+1",
             "extraDamage": "1d4 Psychic",
-            "range": 0,
-            "finesse": false,
-            "heavy": false,
-            "light": false,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": false
-        },
-        {
-            "name": "Blood-Bound Blade",
-            "image": "Longsword +1 Icon.png",
-            "icon": "Longsword +1 Unfaded Icon.png",
-            "quote": "This weapon was wielded by the lionlike eldritch knight Cypress of the Starfeller clan, who took on challenges of the heart and mind with palpable brilliance, and fought with a skill and heated intensity that was almost solar.",
-            "type": 29,
-            "rarity": 3,
-            "weightKg": 1.35,
-            "weightLb": 2.9,
-            "price": 250,
-            "uid": "MAG_Bonded_Lethal_Longsword",
-            "effects": [
-                {
-                    "name": "Favoured Weapon",
-                    "description": "This weapon as a +1 bonus to damage and Attack Roll.",
-                    "type": 2
-                },
-                {
-                    "name": "Synchronicity",
-                    "description": "This weapon deals additional damage equal to your Proficiency Bonus.",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "This blade's magical powers only function if it's Bound to an Eldritch Knight or is a Warlock's Pact Weapon.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Blood-Bound Blade",
-                    "description": "This blade's magical powers only function if it's Bound to an Eldritch Knight or is a Warlock's Pact Weapon.",
-                    "type": 2
-                }
-            ],
-            "sources": [],
-            "proficiency": 0,
-            "enchantment": 1,
-            "id": 9186,
-            "category": 1,
-            "rangeType": 1,
-            "handedness": 2,
-            "damage": "1d8 + 1",
-            "damageType": 1,
-            "damageVersatile": "1d10 + 1",
             "range": 0,
             "finesse": false,
             "heavy": false,
@@ -36670,36 +36229,6 @@
         }
     ],
     "42": [
-        {
-            "name": "Allandra's Whelm",
-            "image": "Allandra's Whelm Icon.png",
-            "icon": "Allandra's Whelm Unfaded Icon.png",
-            "quote": "When Allandra was a girl, she saw a hot spall of matter fire through the sky. She wished upon this falling star, but instead of getting an answer from the sky, she got one from the sea in the voice of Umberlee, goddess of the endless fathom.",
-            "type": 42,
-            "rarity": 3,
-            "weightKg": 1.8,
-            "weightLb": 3.9,
-            "price": 250,
-            "effects": [],
-            "proficiency": 0,
-            "enchantment": 2,
-            "id": 9160,
-            "category": 1,
-            "rangeType": 1,
-            "handedness": 2,
-            "damage": "1d6 + 2",
-            "damageType": 2,
-            "damageVersatile": "1d8 + 2",
-            "extraDamage": "1d4 Cold",
-            "range": 0,
-            "finesse": false,
-            "heavy": false,
-            "light": false,
-            "reach": false,
-            "thrown": true,
-            "cantDualWield": false,
-            "dippable": false
-        },
         {
             "name": "Nyrulna",
             "image": "Nyrulna Icon.png",
