@@ -780,6 +780,7 @@
             "weightLb": 0.04,
             "price": 1,
             "effects": [],
+            "proficiency": 0,
             "id": 3577
         },
         {
@@ -1233,6 +1234,27 @@
             "id": 7940
         },
         {
+            "name": "Tressym Collar",
+            "image": "Amulet Necklace A Bronze A 1 Faded.png",
+            "icon": "Amulet Necklace A Bronze A 1 Unfaded Icon.png",
+            "description": "Tressym Collar is a very rare Amulet that allows the wearer to cast Telekinesis once per Long Rest.",
+            "quote": "The gem in this collar's centre is placed as a common courtesy: It allows the tressym's summoner to be identified and complained to in the case of bereaved pet woners or pidgeon-masters. This one glows with a Waterdhaven name: Gale Dekarios.",
+            "type": 1,
+            "rarity": 4,
+            "weightKg": 0.05,
+            "weightLb": 0.1,
+            "price": 360,
+            "uid": "MAG_Taras_Collar_Amulet",
+            "effects": [
+                {
+                    "name": "Telekinesis|w=40",
+                    "description": "Cast as a level 5 spell (Long Rest).",
+                    "type": 2
+                }
+            ],
+            "id": 27744
+        },
+        {
             "name": "Uncovered Mysteries",
             "image": "Amulet Necklace B Silver A 1 Faded.png",
             "icon": "Amulet Necklace B Silver A 1 Unfaded Icon.png",
@@ -1626,7 +1648,7 @@
             "effects": [
                 {
                     "name": "Focused Stride",
-                    "description": "When you cast a spell that requires Concentration, you gain Momentum. While you are concentrating, you cannot be pushed or get knocked Prone.",
+                    "description": "When you cast a spell that requires Concentration, you gain Momentum for 1 turn. While you are concentrating, you cannot be pushed or get knocked Prone.",
                     "type": 2
                 },
                 {
@@ -2631,7 +2653,7 @@
                 },
                 {
                     "name": "Exoskeletal Endurance",
-                    "description": "Reduce all incoming damage by 2. When the wearer is struck by a melee attack, the attacker takes 3|Piercing damage.",
+                    "description": "Reduce all incoming damage by 2. When the wearer is struck by a melee attack, the attacker takes Constitution modifier|Piercing damage.",
                     "type": 2
                 }
             ],
@@ -2913,7 +2935,7 @@
             "name": "Obsidian Laced Robe",
             "image": "Obsidian Laced Robe Icon.png",
             "icon": "Obsidian Laced Robe Unfaded Icon.png",
-            "description": "Obsidian Laced Robe is rare Fire|5~8}} damage to enemies on a successful [[Saving Throw against their spells. Also grants Resistance to Fire|Fire damage.",
+            "description": "Obsidian Laced Robe is rare piece of Fire}} damage to enemies on a successful [[Saving Throw against their spells, and grants its wearer resistance to Fire|Fire damage.",
             "quote": "The inside of this robe is dark and faceted like volcanic glass, yet the material is light and soft. Against the skin, it also produces a heat like a toasty fire on a day of snow.",
             "type": 4,
             "rarity": 3,
@@ -2923,18 +2945,18 @@
             "effects": [
                 {
                     "name": "Flaming Revenge",
-                    "description": "On a successful SavingThrow against a foe's spell, deal 5~8|Fire damage to them.",
+                    "description": "On a successful SavingThrow against a foe's 1d4 + [[proficiency bonus|Fire}} damage to them.",
                     "type": 2
                 },
                 {
                     "name": "Anonymous Effect",
-                    "description": "Grants fire|double|nocat=true Resistance to Fire damage.",
+                    "description": "Grants fire|double|nocat=true resistance to Fire|Fire damage.",
                     "type": 2,
                     "hidden": true
                 },
                 {
                     "name": "Obsidian Laced Robe",
-                    "description": "Grants fire|double|nocat=true Resistance to Fire damage.",
+                    "description": "Grants fire|double|nocat=true resistance to Fire|Fire damage.",
                     "type": 2
                 }
             ],
@@ -3201,6 +3223,7 @@
             "weightKg": 1.8,
             "weightLb": 3.6,
             "price": 800,
+            "uid": "MAG_BarbMonk_Offensive_Cloth",
             "effects": [
                 {
                     "name": "Bull's Strength",
@@ -3209,7 +3232,12 @@
                 },
                 {
                     "name": "Unwavering bull",
-                    "description": "You cannot be pushed against your will and have an Advantage on SavingThrows against being Restrained",
+                    "description": "You cannot be pushed against your will and have an Advantage on SavingThrows against being Restrained.",
+                    "type": 2
+                },
+                {
+                    "name": "Bull Rush|w=40",
+                    "description": "Charge forward and possibly knock your foes back m=3|ft=10.",
                     "type": 2
                 }
             ],
@@ -3723,7 +3751,7 @@
                 },
                 {
                     "name": "Anonymous Effect",
-                    "description": "Can cast Generic Darkness Icon|Beckoning Darkness as a 4th level spell using Strength as the Spellcasting Ability.",
+                    "description": "Can cast Generic Darkness Icon|Beckoning Darkness as a 4th level spell using (DC 14).",
                     "type": 2,
                     "hidden": true
                 },
@@ -3735,7 +3763,7 @@
                 },
                 {
                     "name": "Dark Justiciar Gauntlets (Rare)",
-                    "description": "Strength Saving Throws +1\nCan cast Generic Darkness Icon|Beckoning Darkness as a 4th level spell using Strength as the Spellcasting Ability.\nPer turn",
+                    "description": "Strength Saving Throws +1\nCan cast Generic Darkness Icon|Beckoning Darkness as a 4th level spell using (DC 14).\nPer turn",
                     "type": 2
                 }
             ],
@@ -4184,10 +4212,11 @@
             "weightKg": 0.5,
             "weightLb": 1.1,
             "price": 140,
+            "uid": "UNI_PLA_ZhentCave_Gloves",
             "effects": [
                 {
-                    "name": "Hail Of Thorns|w=40",
-                    "description": "Cast the spell Hail of Thorns once per Short Rest",
+                    "name": "Hail of Thorns|w=40",
+                    "description": "Cast Hail of Thorns as a level 1 spell once per Short Rest.",
                     "type": 2
                 }
             ],
@@ -4369,7 +4398,7 @@
             "effects": [
                 {
                     "name": "Anonymous Effect",
-                    "description": "Grants Circuitry Interface for 10 turns, once per Short Rest:",
+                    "description": "Grants Circuitry Interface class ability which applies Form of Artifice for 10 (Short rest).",
                     "type": 2,
                     "hidden": true
                 },
@@ -4392,8 +4421,14 @@
                     "hidden": true
                 },
                 {
+                    "name": "Anonymous Effect",
+                    "description": "Strengths +1.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
                     "name": "Gloves of the Automaton",
-                    "description": "Grants Circuitry Interface for 10 turns, once per Short Rest:\nYou are considered a Construct. Your weapon Attack Rolls have Advantage, and you have Lightning M resistance to Lightning damage.\nBonus\nShort Rest",
+                    "description": "Grants Circuitry Interface class ability which applies Form of Artifice for 10 (Short rest).\nYou are considered a Construct. Your weapon Attack Rolls have Advantage, and you have Lightning M resistance to Lightning damage.\nBonus\nShort Rest\nStrengths +1.",
                     "type": 2
                 }
             ],
@@ -9641,6 +9676,17 @@
                     "name": "Feywild Sparks",
                     "description": "While your sorcerous Tides of Chaos feature is active, you will always trigger a Wild Magic Surge when casting spells.",
                     "type": 2
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "The wearer of this item gains a +1 bonus to Spell Save DC (not shown by in-game tooltip).",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Ring of Feywild Sparks",
+                    "description": "The wearer of this item gains a +1 bonus to Spell Save DC (not shown by in-game tooltip).",
+                    "type": 2
                 }
             ],
             "id": 10926
@@ -9766,7 +9812,7 @@
             "name": "Ring of Mind-Shielding",
             "image": "Ring G Silver A 1 Faded.png",
             "icon": "Ring G Silver A 1 Unfaded Icon.png",
-            "description": "The Ring of Mind-Shielding is a rare Ring that prevents the wearer's tadpole from growing stronger, at the cost of not being able to use its abilities.",
+            "description": "The Ring of Mind-Shielding is a rare Ring that gives advantage on saving throws against being Charmed.",
             "quote": "This ring is forged from a smooth, alien metal, capped with eyes of emerald that watch the world unblinking.",
             "type": 10,
             "rarity": 3,
@@ -10215,6 +10261,7 @@
                     "type": 2
                 }
             ],
+            "proficiency": 0,
             "id": 3622
         },
         {
@@ -10465,7 +10512,7 @@
             "price": 300,
             "effects": [
                 {
-                    "name": "Absolute's Aegis Awareness",
+                    "name": "Absolute's Aegis",
                     "description": "If the wielder bears the Absolute's Brand, all damage received from spells is reduced by 1.",
                     "type": 2
                 },
@@ -11856,25 +11903,13 @@
                 },
                 {
                     "name": "Anonymous Effect",
-                    "description": "Can cast True Strike Icon|True Strike.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Bonus Action Icon Bonus Action",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Recharge Icons Recharge: Short Rest",
+                    "description": "True Strike|w=40 (bonus):''' Cast as a cantrip (Short Rest.",
                     "type": 2,
                     "hidden": true
                 },
                 {
                     "name": "Bloodthirst",
-                    "description": "Can cast True Strike Icon|True Strike.\nBonus Action Icon Bonus Action\nRecharge Icons Recharge: Short Rest",
+                    "description": "True Strike|w=40 (bonus):''' Cast as a cantrip (Short Rest.",
                     "type": 2
                 }
             ],
@@ -12037,6 +12072,7 @@
             "weightKg": 0.45,
             "weightLb": 0.99,
             "price": 270,
+            "uid": "DEN_Apprentice_DaggerOfShar",
             "effects": [
                 {
                     "name": "Grip of Shadows",
@@ -13233,7 +13269,7 @@
             "handedness": 3,
             "damage": "1d10 + 2",
             "damageType": 1,
-            "finesse": false,
+            "finesse": true,
             "heavy": true,
             "light": false,
             "reach": true,
@@ -13466,6 +13502,7 @@
             "damage": "1d12 + 2",
             "damageType": 1,
             "extraDamage": "1d6 Fire",
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -14081,6 +14118,7 @@
             "handedness": 3,
             "damage": "2d6 + 1",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -15635,7 +15673,7 @@
                     "type": 2
                 },
                 {
-                    "name": "Gontr Mael: Glowing",
+                    "name": "Gontr Mael: Glowing|w=40",
                     "description": "This object shines with a glowing light in a radius of 6m.",
                     "type": 2
                 },
@@ -15942,7 +15980,8 @@
         },
         {
             "name": "Arduous Flame Blade",
-            "image": "",
+            "image": "Longsword +1 Icon.png",
+            "icon": "Longsword +1 Unfaded Icon.png",
             "quote": "The extent of cultural idolatry amongst members of the Flaming Fist is anyone's guess, but fascination with fire is plain and unambiguously obsessive.",
             "type": 29,
             "rarity": 3,
@@ -17657,26 +17696,8 @@
             "price": 310,
             "effects": [
                 {
-                    "name": "Anonymous Effect",
-                    "description": "Generic Utility Icon Whossa Large Fellow?: Wielder can cast Enlarge Icon|Enlarge on themselves.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Long Rest",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Self",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Bigboy's Chew Toy",
-                    "description": "Generic Utility Icon Whossa Large Fellow?: Wielder can cast Enlarge Icon|Enlarge on themselves.\nLong Rest\nSelf",
+                    "name": "Whossa Large Fellow?|w=40",
+                    "description": "Wielder can cast Enlarge Icon|Enlarge on themselves (Long Rest).",
                     "type": 2
                 }
             ],
@@ -17736,7 +17757,8 @@
         },
         {
             "name": "Caitiff Staff",
-            "image": "",
+            "image": "Quarterstaff PlusOne Icon.png",
+            "icon": "Quarterstaff PlusOne Unfaded Icon.png",
             "quote": "The texture of magic granted by a warlock's patron is largely dependent upon the patron themselves - for example, your standard eldritch patron's probably going to work some eyeball-mottled tentacles in there somewhere.",
             "type": 34,
             "rarity": 3,
@@ -18095,7 +18117,7 @@
                     "type": 2
                 },
                 {
-                    "name": "Arcane Battery",
+                    "name": "Arcane Battery|w=40",
                     "description": "Alleviate the arcane burden of spellcasting with the power of this staff. The next spell you cast doesn't cost a spell slot. Once per Long Rest.",
                     "type": 2
                 },
@@ -18692,7 +18714,7 @@
                     "type": 2
                 },
                 {
-                    "name": "Arcane Battery",
+                    "name": "Arcane Battery|w=40",
                     "description": "Alleviate the arcane burden of spellcasting with the power of this staff. The next spell you cast doesn't cost a spell slot. Once per Long Rest.",
                     "type": 2
                 }
@@ -21225,6 +21247,35 @@
             "thrown": false,
             "cantDualWield": false,
             "dippable": false
+        },
+        {
+            "name": "Rusty Spear",
+            "image": "Rusty Spear Faded.png",
+            "icon": "Rusty Spear Unfaded.png",
+            "quote": "While the handle is well made, the metal point is pitted with rust, and brittle as frozen underwear in the hands of a stone giant.",
+            "type": 41,
+            "rarity": 1,
+            "weightKg": 1.35,
+            "weightLb": 2.7,
+            "price": 10,
+            "uid": "",
+            "effects": [],
+            "proficiency": 0,
+            "id": 27754,
+            "category": 2,
+            "rangeType": 1,
+            "handedness": 2,
+            "damage": "1d6",
+            "damageType": 2,
+            "damageVersatile": "1d8",
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": false,
+            "reach": false,
+            "thrown": true,
+            "cantDualWield": false,
+            "dippable": true
         },
         {
             "name": "Selûne's Spear of Night",

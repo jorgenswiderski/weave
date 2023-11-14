@@ -1,5 +1,5 @@
 import { ApiParams, ApiRevision } from 'mwn';
-import { Db } from 'mongodb';
+import { Db, MongoError } from 'mongodb';
 import assert from 'assert';
 import { MongoCollections, getMongoDb } from './mongo';
 import { CONFIG } from './config';
@@ -73,11 +73,12 @@ export class MediaWiki {
         };
 
         assert(
-            typeof data.content === 'string' && 'Page content must be a string',
+            typeof data.content === 'string',
+            'Page content must be a string',
         );
 
         // Store or update the page content, revision ID, and categories in MongoDB
-        if (cachedPage) {
+        try {
             await pageCollection.updateOne(
                 { title: pageTitle },
                 {
@@ -89,9 +90,22 @@ export class MediaWiki {
                         lastFetched: currentTime,
                     },
                 },
+                { upsert: true },
             );
-        } else {
-            await pageCollection.insertOne(data);
+        } catch (err) {
+            if (
+                err instanceof MongoError &&
+                err.code === 11000 /* Duplicate key */
+            ) {
+                // The upsert failed due to a unique index constraint being
+                // violated by 2 or more concurrent insert operations
+                //
+                // Since readPage is memoized, the content of the document is
+                // basically guaranteed to be identical to the data in this
+                // context, so we can just do nothing
+            } else {
+                throw err;
+            }
         }
 
         return data;
