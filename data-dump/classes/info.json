@@ -268,13 +268,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -825,10 +822,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -914,10 +908,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -1255,13 +1246,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -1812,10 +1800,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -1901,10 +1886,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -2161,13 +2143,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -2718,10 +2697,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -2807,10 +2783,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -3152,13 +3125,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -3709,10 +3679,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -3798,10 +3765,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -4101,13 +4065,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -4658,10 +4619,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -4747,10 +4705,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -5009,13 +4964,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -5566,10 +5518,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -5655,10 +5604,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -5909,14 +5855,7 @@
                                         "name": "Knowledge Domain",
                                         "description": "Adaptable and adroit in all manner of languages and skills, your mind is an intellectual cup brimming with exquisite knowing.",
                                         "image": "Knowledge Domain Icon.png",
-                                        "grants": [
-                                            {
-                                                "name": "Knowledge of the Ages",
-                                                "type": 1,
-                                                "description": "Gain Ability.",
-                                                "image": "Knowledge of the Ages.webp"
-                                            }
-                                        ]
+                                        "grants": []
                                     },
                                     {
                                         "name": "Life Domain",
@@ -6142,13 +6081,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -6699,10 +6635,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -6788,10 +6721,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -7119,13 +7049,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -7676,10 +7603,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -7765,10 +7689,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -8072,13 +7993,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -8629,10 +8547,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -8718,10 +8633,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -9050,13 +8962,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -9607,10 +9516,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -9696,10 +9602,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -9990,13 +9893,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -10547,10 +10447,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -10636,10 +10533,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -10975,13 +10869,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -11532,10 +11423,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -11621,10 +11509,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -12020,13 +11905,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -12577,10 +12459,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -12666,10 +12545,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -12855,13 +12731,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -13412,10 +13285,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -13501,10 +13371,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -13746,13 +13613,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -14303,10 +14167,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -14392,10 +14253,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -14441,10 +14299,7 @@
                         "name": "Indomitable",
                         "grants": [
                             {
-                                "name": "Indomitable",
-                                "type": 2,
-                                "description": "Whenever you fail a Saving Throw, you can roll again, using the new result instead.",
-                                "image": "Indomitable.webp"
+                                "ref": "a17563"
                             }
                         ]
                     }
@@ -14681,13 +14536,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -15238,10 +15090,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -15327,10 +15176,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -15533,12 +15379,6 @@
                                             },
                                             {
                                                 "ref": "a7865"
-                                            },
-                                            {
-                                                "name": "Harmony of Fire and Water",
-                                                "type": 1,
-                                                "description": "While not in combat, regain half of your ki|forceplural=y (rounded down).",
-                                                "image": "Harmony of Fire and Water.webp"
                                             }
                                         ]
                                     },
@@ -15709,13 +15549,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -16266,10 +16103,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -16355,10 +16189,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -16480,12 +16311,6 @@
                                         "description": "You focus your ki to bend the elements to your will, using them as an extension of your own body.",
                                         "image": "Class Monk Four Elements Badge Icon.png",
                                         "grants": [
-                                            {
-                                                "name": "Clench of the North Wind",
-                                                "type": 1,
-                                                "description": "Hold a humanoid enemy still. They can't move, act or react. Attacks from within 3m are always critical hits.",
-                                                "image": "Hold Person.webp"
-                                            },
                                             {
                                                 "ref": "a14447"
                                             },
@@ -16697,13 +16522,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -17254,10 +17076,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -17343,10 +17162,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -17442,12 +17258,6 @@
                                                 "ref": "a7865"
                                             },
                                             {
-                                                "name": "Clench of the North Wind",
-                                                "type": 1,
-                                                "description": "Hold a humanoid enemy still. They can't move, act or react. Attacks from within 3m are always critical hits.",
-                                                "image": "Hold Person.webp"
-                                            },
-                                            {
                                                 "ref": "a14447"
                                             },
                                             {
@@ -17538,12 +17348,6 @@
                                             },
                                             {
                                                 "ref": "a14026"
-                                            },
-                                            {
-                                                "name": "Ride the Wind",
-                                                "type": 1,
-                                                "description": "Gain the ability to Fly.",
-                                                "image": "Fly_Icon.png"
                                             }
                                         ]
                                     },
@@ -17700,13 +17504,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -18257,10 +18058,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -18346,10 +18144,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -18662,13 +18457,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -19219,10 +19011,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -19308,10 +19097,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -19449,14 +19235,7 @@
                                         "name": "Oathbreaker",
                                         "description": "You have broken your sacred Oath in pursuit of power and ambition. Only darkness remains to fuel you now.",
                                         "image": "Paladin Oathbreaker Icon.png",
-                                        "grants": [
-                                            {
-                                                "name": "Aura of Hate",
-                                                "type": 1,
-                                                "description": "You and any nearby fiends (and undead) gain additional damage to melee weapon attacks equal to your Charisma Modifier. The aura disappears if you fall Unconscious.",
-                                                "image": "Aura of Hate Icon.png"
-                                            }
-                                        ]
+                                        "grants": []
                                     }
                                 ]
                             }
@@ -19602,13 +19381,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -20159,10 +19935,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -20248,10 +20021,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -20481,13 +20251,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -21038,10 +20805,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -21127,10 +20891,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -21251,12 +21012,6 @@
                                             },
                                             {
                                                 "ref": "a14210"
-                                            },
-                                            {
-                                                "name": "Wolf Companion",
-                                                "type": 1,
-                                                "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-                                                "image": "Wolf Companion.webp"
                                             },
                                             {
                                                 "ref": "a14212"
@@ -21457,13 +21212,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -22014,10 +21766,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -22103,10 +21852,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -22405,13 +22151,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -22962,10 +22705,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -23051,10 +22791,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -23338,13 +23075,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -23895,10 +23629,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -23984,10 +23715,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -24428,13 +24156,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -24985,10 +24710,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -25074,10 +24796,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -25301,13 +25020,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -25858,10 +25574,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -25947,10 +25660,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -26174,13 +25884,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -26731,10 +26438,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -26820,10 +26524,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -27011,13 +26712,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -27568,10 +27266,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -27657,10 +27352,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -27978,13 +27670,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -28535,10 +28224,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -28624,10 +28310,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -28937,13 +28620,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -29494,10 +29174,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -29583,10 +29260,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -29865,13 +29539,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -30422,10 +30093,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -30511,10 +30179,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -30818,13 +30483,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -31375,10 +31037,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -31464,10 +31123,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -31740,13 +31396,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -32297,10 +31950,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -32386,10 +32036,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -32657,13 +32304,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -33214,10 +32858,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -33303,10 +32944,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -33668,13 +33306,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -34225,10 +33860,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -34314,10 +33946,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -34689,13 +34318,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -35246,10 +34872,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -35335,10 +34958,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11
@@ -35683,13 +35303,10 @@
                                     {
                                         "name": "Defensive Duellist",
                                         "description": "Defensive Duellist|w=30\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                        "image": "Defensive Duellist.webp",
+                                        "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
-                                                "name": "Defensive Duellist",
-                                                "type": 2,
-                                                "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
-                                                "image": "Defensive Duellist.webp"
+                                                "ref": "a4936"
                                             }
                                         ],
                                         "type": 11
@@ -36240,10 +35857,7 @@
                                                 "image": "Shield Master.webp"
                                             },
                                             {
-                                                "name": "Shield Master: Block",
-                                                "type": 2,
-                                                "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
-                                                "image": "Shield Master Block.webp"
+                                                "ref": "a21510"
                                             }
                                         ],
                                         "type": 11
@@ -36329,10 +35943,7 @@
                                                 "image": "War Caster Concentration.webp"
                                             },
                                             {
-                                                "name": "War Caster: Opportunity Spell",
-                                                "type": 2,
-                                                "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
-                                                "image": "War Caster Concentration.webp"
+                                                "ref": "a21508"
                                             }
                                         ],
                                         "type": 11

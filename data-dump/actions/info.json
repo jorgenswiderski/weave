@@ -633,6 +633,19 @@
         "cost": 1
     },
     {
+        "name": "Defensive Duellist",
+        "image": "Defensive Duellist.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Defensive Duellist is a Reaction obtainable by a Finesse Weapon weapon, you can temporarily increases your ArmourClass.",
+        "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+        "ritual": false,
+        "concentration": false,
+        "id": 4936,
+        "attackRoll": false,
+        "cost": 4
+    },
+    {
         "name": "Defensive Flourish (Melee)",
         "damage": "amounttext:Weapon, type:Physical",
         "image": "Defensive Flourish Melee.webp",
@@ -1453,6 +1466,18 @@
         "condition": "Inciting Howl",
         "conditionDuration": 1,
         "cost": 1
+    },
+    {
+        "name": "Indomitable",
+        "image": "Indomitable.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Indomitable is a Fighter reaction/passive feature that lets you reroll a failed Saving Throw.",
+        "description": "Whenever you fail a Saving Throw, you can roll again, using the new result instead.",
+        "ritual": false,
+        "concentration": false,
+        "id": 17563,
+        "attackRoll": false
     },
     {
         "name": "Infiltration Expertise",
@@ -2371,6 +2396,20 @@
         "cost": 1
     },
     {
+        "name": "Shield Master: Block",
+        "image": "Shield Master Block.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Shield Master: Block is a reaction/toggleable passive feature obtainable by the Spell that requires you to make a DEX.",
+        "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
+        "ritual": false,
+        "concentration": false,
+        "id": 21510,
+        "attackRoll": false,
+        "range": 3,
+        "cost": 4
+    },
+    {
         "name": "Shred Armour",
         "damage": "amount:2d4, type: Piercing, mod: Strength",
         "image": "Shred Armor.webp",
@@ -2929,6 +2968,20 @@
         "condition": "Vow of Enmity",
         "conditionDuration": 10,
         "cost": 2
+    },
+    {
+        "name": "War Caster: Opportunity Spell",
+        "image": "War Caster Concentration.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "War Caster Opportunity Spell is a reaction/passive feature obtainable by the Shocking Grasp}} at an enemy when they leave your melee range. This can be done instead of the usual [[Opportunity Attack.",
+        "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
+        "ritual": false,
+        "concentration": false,
+        "id": 21508,
+        "attackRoll": false,
+        "range": 2,
+        "cost": 4
     },
     {
         "name": "War God's Blessing",

@@ -8,7 +8,6 @@ import {
     IEquipmentItem,
     ItemRarity,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/equipment-item';
-import assert from 'assert';
 import {
     ItemSource,
     ItemSourceCharacter,
@@ -26,13 +25,14 @@ import {
     gameLocationById,
     gameLocationByPageTitle,
 } from '../locations/locations';
+import { CharacterFeature } from '../character-feature/character-feature';
 
 let counter = 0;
 
 type ItemSourcePageInfo = {
     title: string;
-    info: { latestRevisionId: number; categories: string[] };
-    data: PageData;
+    info?: { latestRevisionId: number; categories: string[] };
+    data?: PageData;
 };
 
 enum EquipmentItemLoadState {
@@ -113,12 +113,12 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
     protected static parseItemSourceCharacter(
         pages: ItemSourcePageInfo[],
         item: EquipmentItem,
-    ): [ItemSourceCharacter | undefined, ItemSourcePageInfo[]] {
+    ): [ItemSourceCharacter | undefined, Required<ItemSourcePageInfo[]>] {
         const characterPages = pages.filter(
             (page) =>
-                page.info.categories.includes('Category:Characters') ||
-                page.info.categories.includes('Category:Creatures'),
-        );
+                page.info?.categories.includes('Category:Characters') ||
+                page.info?.categories.includes('Category:Creatures'),
+        ) as Required<ItemSourcePageInfo>[];
 
         // if (characterPages.length > 1) {
         //     warn(
@@ -135,7 +135,9 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
             return [
                 {
-                    name: characterPages[0].title,
+                    name: CharacterFeature.parseNameFromPageTitle(
+                        characterPages[0].title,
+                    ),
                     id: characterPages[0].data.pageId,
                 },
                 characterPages,
@@ -145,28 +147,30 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return [undefined, characterPages];
     }
 
-    protected static parseGameLocation(
+    protected static async parseGameLocation(
         pages: ItemSourcePageInfo[],
         item: EquipmentItem,
-        characterPages: ItemSourcePageInfo[],
+        characterPages: Required<ItemSourcePageInfo>[],
         character?: ItemSourceCharacter,
-    ): GameLocation | undefined {
-        const locationPages = pages.filter((page) =>
-            gameLocationById.has(page.data.pageId),
+    ): Promise<GameLocation | undefined> {
+        const locationPages = pages.filter(({ data, title }) =>
+            data?.pageId
+                ? gameLocationById.has(data.pageId)
+                : gameLocationByPageTitle.has(title),
         );
 
-        if (locationPages.length > 0) {
-            if (locationPages.length === 1) {
-                return gameLocationById.get(locationPages[0].data.pageId);
+        const locations = locationPages.map(({ data, title }) =>
+            data?.pageId
+                ? gameLocationById.get(data.pageId)!
+                : gameLocationByPageTitle.get(title)!,
+        );
+
+        if (locations.length > 0) {
+            if (locations.length === 1) {
+                return locations[0];
             }
 
-            if (locationPages.length > 1) {
-                const locations = locationPages
-                    .map((loc) => gameLocationById.get(loc.data.pageId))
-                    .filter(Boolean) as GameLocation[];
-
-                assert(locations.length > 0);
-
+            if (locations.length > 1) {
                 // Find the location with the highest depth value (most specific location)
                 locations.sort((a, b) => b.depth - a.depth);
 
@@ -199,7 +203,16 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 );
 
             if (locationPageTitle) {
-                return gameLocationByPageTitle.get(locationPageTitle);
+                try {
+                    // Get the real page title, in case of redirects
+                    const page = await MediaWiki.getPage(locationPageTitle);
+
+                    if (page) {
+                        return gameLocationByPageTitle.get(page.title);
+                    }
+                } catch (err) {
+                    error(err);
+                }
             }
         }
 
@@ -224,12 +237,18 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             await Promise.all(
                 pageTitles.map(async (title) => {
                     try {
+                        const page = (await MediaWiki.getPage(title))!;
+
                         return {
-                            title,
+                            title: page.title,
                             info: await MediaWiki.getPageInfo(title),
-                            data: (await MediaWiki.getPage(title))!,
+                            data: page,
                         };
                     } catch (err) {
+                        if (gameLocationByPageTitle.has(title)) {
+                            return { title };
+                        }
+
                         return undefined;
                     }
                 }),
@@ -241,10 +260,10 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             item,
         );
 
-        const location: GameLocation | undefined = this.parseGameLocation(
+        const location = await this.parseGameLocation(
             pages,
             item,
-            characterPages,
+            characterPages as Required<ItemSourcePageInfo>[],
             character,
         );
 

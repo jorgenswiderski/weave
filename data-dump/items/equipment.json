@@ -11736,8 +11736,7 @@
                             "id": 8117
                         },
                         "location": {
-                            "name": "Last Light Inn",
-                            "id": 8129
+                            "name": "Last Light Inn - Cellar"
                         }
                     }
                 }
@@ -25327,7 +25326,7 @@
                         }
                     },
                     "character": {
-                        "name": "Steel Watcher (creature)",
+                        "name": "Steel Watcher",
                         "id": 13838
                     }
                 }
@@ -27065,7 +27064,7 @@
                         }
                     },
                     "character": {
-                        "name": "Steel Watcher (creature)",
+                        "name": "Steel Watcher",
                         "id": 13838
                     }
                 }
@@ -28651,8 +28650,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Lower City",
-                            "id": 11839
+                            "name": "Golbraith's Cellar"
                         }
                     }
                 },
