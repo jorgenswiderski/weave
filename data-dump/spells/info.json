@@ -6750,7 +6750,7 @@
         "level": 3,
         "school": 5,
         "summary": "This spell allows spellcasters to unleash a streak of fire from their hands that ignites into a large explosion at a chosen point within range.",
-        "description": "Shoot a bright flame from your fingers that explodes upon contact, torching everything in the vicinity for  8d6|Fire  damage.\n\nOn a successful Saving Throw, targets still take half damage.",
+        "description": "Shoot a bright flame from your fingers that explodes upon contact, torching everything in the vicinity for 8d6|Fire  damage. On a successful Saving Throw, targets still take half damage.",
         "ritual": false,
         "concentration": false,
         "id": 2677,
@@ -8303,7 +8303,7 @@
         "level": 3,
         "school": 6,
         "summary": "This spell allows spellcasters to hypnotise all creatures within an area.",
-        "description": "Hypnotised|Hypnotise creatures that can see the pattern. They cannot attack you. They cannot move or act.\n\nThis spell can be cast while you are Silenced.",
+        "description": "Hypnotised|Hypnotise creatures that can see the pattern. They cannot attack you. They cannot move nor act.\n\nThis spell can be cast while you are Silenced.",
         "ritual": false,
         "concentration": true,
         "id": 2743,
@@ -9407,6 +9407,7 @@
             "Oath of Vengeance"
         ],
         "noSpellSlot": false,
+        "damageSaveEffect": 1,
         "variants": [
             {
                 "name": "Protection from Energy: Acid",
