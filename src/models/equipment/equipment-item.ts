@@ -191,7 +191,15 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                     parser: (value) => {
                         const match = value.match(/\[\[([^#|\]]+).*?]]/);
 
-                        return match?.[1];
+                        if (match?.[1]) {
+                            return match[1];
+                        }
+
+                        const coordsTemplateMatch = value.match(
+                            /{{Coords\|-?\d+\|-?\d+\|([^}]+)}}/,
+                        );
+
+                        return coordsTemplateMatch?.[1];
                     },
                 },
             };

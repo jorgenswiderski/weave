@@ -9386,7 +9386,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Rivington",
+                            "id": 11636
+                        },
+                        "location": {
+                            "name": "Circus of the Last Days",
+                            "id": 11641
+                        }
+                    },
+                    "character": {
+                        "name": "Lucretious",
+                        "id": 11630
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 9683
         },
@@ -35053,7 +35077,31 @@
             "weightLb": 1.8,
             "price": 16,
             "effects": [],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 2",
+                            "id": 4949
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Shadow-Cursed Lands",
+                            "id": 8117
+                        },
+                        "location": {
+                            "name": "Gauntlet of Shar",
+                            "id": 10466
+                        }
+                    },
+                    "character": {
+                        "name": "Yurgir",
+                        "id": 8161
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 24406,
             "category": 1,
