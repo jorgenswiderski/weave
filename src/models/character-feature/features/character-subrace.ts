@@ -26,7 +26,9 @@ export class CharacterSubrace implements ICharacterOption {
                 return this.content;
             }
 
-            throw new Error('Unable to parse description from content');
+            throw new Error(
+                `Unable to parse description from content of page ${this.name}`,
+            );
         }
 
         // Return the first non-null capturing group (either from ''...'' or from {{Q|...}})

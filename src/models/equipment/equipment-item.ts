@@ -14,7 +14,7 @@ import {
     ItemSourceQuest,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
-import { debug, error, warn } from '../logger';
+import { error, warn } from '../logger';
 import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { PageItem, PageLoadingState } from '../page-item';
 import {
@@ -27,8 +27,6 @@ import {
     gameLocationByPageTitle,
 } from '../locations/locations';
 import { MediaWikiParser } from '../media-wiki/wikitext-parser';
-
-let counter = 0;
 
 type ItemSourcePageInfo = {
     title: string;
@@ -425,8 +423,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 !this.name.match(/\+\d$/) &&
                 rest.rarity > ItemRarity.common
             ) {
-                counter += 1;
-                debug(counter, this.name);
+                warn(`Failed to parse sources for item '${this.name}'`);
             }
         }
 

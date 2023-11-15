@@ -148,6 +148,8 @@ export class CharacterFeature
         page?: PageData,
     ): Promise<GrantableEffect | StaticallyReferenceable | null> {
         try {
+            // eslint-disable-next-line no-param-reassign
+            pageTitle = pageTitle.replace(/_/g, ' ');
             const categories = await MwnApi.queryCategoriesFromPage(pageTitle);
 
             if (

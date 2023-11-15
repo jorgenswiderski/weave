@@ -45,6 +45,10 @@ export class CharacterRace extends CharacterFeature {
             throw new Error('Could not find page content');
         }
 
+        if (await this.isSpoiler()) {
+            return;
+        }
+
         const subracePattern = /\n===\s*([^=]*?)\s*===\n\s*([\s\S]*?)(?===|$)/g;
 
         let match;

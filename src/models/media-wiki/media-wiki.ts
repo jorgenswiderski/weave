@@ -6,6 +6,7 @@ import { CONFIG } from '../config';
 import { MwnApi } from '../../api/mwn';
 import { Utils } from '../utils';
 import { RemoteImageError } from '../image-cache/types';
+import { debug } from '../logger';
 
 export interface PageData extends ApiRevision {
     title: string;
@@ -92,6 +93,8 @@ export class MediaWiki {
                 },
                 { upsert: true },
             );
+
+            debug(`Updated page '${pageTitle}'`);
         } catch (err) {
             if (
                 err instanceof MongoError &&

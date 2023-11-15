@@ -1,6 +1,8 @@
 import {
+    ActionCostBehavior,
     ActionDamageSaveEffect,
     ActionResource,
+    ActionResourceFromString,
     ISpell,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { AbilityScore } from '@jorgenswiderski/tomekeeper-shared/dist/types/ability';
@@ -11,6 +13,7 @@ import {
 } from '../media-wiki/mw-template-parser';
 import { ActionBase } from './action-base';
 import { error } from '../logger';
+import { PageData } from '../media-wiki/media-wiki';
 
 let spellData: Spell[];
 let spellDataById: Map<number, Spell> | null = null;
@@ -26,6 +29,69 @@ export class Spell extends ActionBase implements Partial<ISpell> {
     variants?: ISpell[];
     isVariant: boolean = false;
 
+    protected parseCosts(): void {
+        if (!this.page?.content) {
+            throw new PageNotFoundError();
+        }
+
+        const actionResourceParser = (
+            value: string,
+            config: MediaWikiTemplateParserConfig,
+            page: PageData,
+        ) => {
+            const values = value.split(',').map((val) => val.trim());
+
+            if (
+                !values.every(
+                    (val) => value === '' || val in ActionResourceFromString,
+                )
+            ) {
+                error(
+                    `Failed to map '${config.key}' value '${value}' to enum (${page.title}).`,
+                );
+            }
+
+            const isHitCost = value === 'hit cost';
+
+            return values.map((val) => ({
+                resource: ActionResourceFromString[val],
+                amount: 1,
+                behavior: isHitCost ? ActionCostBehavior.onHit : undefined,
+            }));
+        };
+
+        // FIXME
+        const defaultCost = [{ resource: ActionResource.action, amount: 1 }];
+
+        if (this.level && this.level > 0) {
+            defaultCost.push({
+                resource: ActionResource[
+                    `spellSlot${this.level}` as any
+                ] as unknown as ActionResource,
+                amount: 1,
+            });
+        }
+
+        const config: Record<string, MediaWikiTemplateParserConfig> = {
+            cost: {
+                parser: actionResourceParser,
+                default: defaultCost,
+            },
+            hitCost: {
+                key: 'hit cost',
+                parser: actionResourceParser,
+                default: [],
+            },
+        };
+
+        const { cost, hitCost } = MediaWikiTemplateParser.parseTemplate(
+            this.page,
+            config,
+        );
+
+        this.costs = [...cost, ...hitCost];
+    }
+
     protected async initData(): Promise<void> {
         await super.initData();
 
@@ -34,6 +100,7 @@ export class Spell extends ActionBase implements Partial<ISpell> {
         }
 
         const { plainText, boolean } = MediaWikiTemplateParser.Parsers;
+
         const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
 
         const config: Record<string, MediaWikiTemplateParserConfig> = {
@@ -44,11 +111,6 @@ export class Spell extends ActionBase implements Partial<ISpell> {
                         .map((c) => c.trim())
                         .filter((c) => c !== '') || [],
                 default: [],
-            },
-            cost: {
-                key: 'action type',
-                parser: parseEnum(ActionResource),
-                default: undefined,
             },
             noSpellSlot: {
                 key: 'no spell slot',
@@ -94,6 +156,8 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             this,
             MediaWikiTemplateParser.parseTemplate(this.page, config),
         );
+
+        this.parseCosts();
 
         if (this.classes && this.classes.length > 0) {
             this.markUsed();

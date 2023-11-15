@@ -14,7 +14,17 @@
         "rangeFt": 60,
         "condition": "Abjure Enemy: Frightened",
         "conditionDuration": 3,
-        "cost": 1,
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ],
         "condition2": "Abjure Enemy: Slowed",
         "condition2Duration": 3
     },
@@ -34,7 +44,13 @@
         "aoe": 2,
         "aoeM": 5,
         "aoeFt": 17,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Action Surge",
@@ -49,7 +65,9 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Action Surge",
-        "conditionDuration": 1
+        "conditionDuration": 1,
+        "recharge": 2,
+        "costs": []
     },
     {
         "name": "Arcane Recovery",
@@ -63,7 +81,17 @@
         "id": 1519,
         "attackRoll": false,
         "range": 3,
-        "cost": 1
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 6,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Astral Knowledge",
@@ -77,7 +105,12 @@
         "id": 6593,
         "attackRoll": false,
         "condition": "Astral Knowledge",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Aura of Courage",
@@ -91,10 +124,16 @@
         "id": 7987,
         "attackRoll": false,
         "range": 3,
+        "aoe": 5,
         "aoeM": 3,
         "aoeFt": 10,
         "condition": "Aura of Courage",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Aura of Devotion",
@@ -108,10 +147,16 @@
         "id": 7988,
         "attackRoll": false,
         "range": 3,
+        "aoe": 5,
         "aoeM": 3,
         "aoeFt": 10,
         "condition": "Aura of Devotion",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Aura of Protection",
@@ -125,10 +170,16 @@
         "id": 7986,
         "attackRoll": false,
         "range": 3,
+        "aoe": 5,
         "aoeM": 3,
         "aoeFt": 10,
         "condition": "Aura of Protection",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Aura of Warding",
@@ -142,10 +193,16 @@
         "id": 7990,
         "attackRoll": false,
         "range": 3,
+        "aoe": 5,
         "aoeM": 3,
         "aoeFt": 10,
         "condition": "Aura of Warding",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Bardic Inspiration",
@@ -161,7 +218,16 @@
         "rangeM": 18,
         "rangeFt": 60,
         "condition": "Bardic Inspiration",
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 7,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Beak Attack (Dire Raven Wild Shape)",
@@ -176,7 +242,12 @@
         "id": 1177,
         "attackRoll": true,
         "range": 2,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Bear Companion",
@@ -191,7 +262,13 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Bend Luck",
@@ -208,7 +285,16 @@
         "rangeFt": 60,
         "condition": "Bend Luck: Ability Check Bonus",
         "conditionDuration": 2,
-        "cost": 4,
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            },
+            {
+                "resource": 21,
+                "amount": 2
+            }
+        ],
         "condition2": "Bend Luck: Ability Check Penalty",
         "condition2Duration": 2
     },
@@ -226,7 +312,13 @@
         "rangeM": 9,
         "rangeFt": 30,
         "condition": "Benign Transposition: Spent",
-        "cost": 1
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Bite (Sabre-Toothed Tiger)",
@@ -243,7 +335,12 @@
         "range": 2,
         "condition": "Prone",
         "conditionDuration": 2,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Blade of Rime",
@@ -269,7 +366,16 @@
         "areaRangeM": 2,
         "areaRangeFt": 7,
         "areaDuration": 2,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Blessing of the Trickster",
@@ -285,7 +391,12 @@
         "rangeM": 1,
         "rangeFt": 5,
         "condition": "Blessing of the Trickster",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Boar Companion",
@@ -300,7 +411,13 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Bolstering Magic: Boon",
@@ -316,7 +433,13 @@
         "range": 2,
         "condition": "Bolstering Magic: Boon",
         "conditionDuration": 10,
-        "cost": 1
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Bolstering Magic: Level 1 Spell Slot",
@@ -330,7 +453,13 @@
         "id": 16457,
         "attackRoll": false,
         "range": 2,
-        "cost": 1
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Bolstering Magic: Level 2 Spell Slot",
@@ -344,7 +473,13 @@
         "id": 16458,
         "attackRoll": false,
         "range": 2,
-        "cost": 1
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Bolstering Magic: Level 3 Spell Slot",
@@ -358,7 +493,13 @@
         "id": 16460,
         "attackRoll": false,
         "range": 2,
-        "cost": 1
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Burrow (Earth Myrmidon)",
@@ -375,9 +516,15 @@
         "range": 1,
         "rangeM": 12,
         "rangeFt": 40,
+        "aoe": 1,
         "aoeM": 3,
         "aoeFt": 10,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Charm Animals and Plants",
@@ -392,7 +539,16 @@
         "attackRoll": false,
         "rangeM": 9,
         "rangeFt": 30,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 8,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Chill of the Mountain",
@@ -408,7 +564,16 @@
         "attackRoll": false,
         "range": 1,
         "condition": "Ray of Frost",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Cinderous Swipe",
@@ -426,7 +591,12 @@
         "aoe": 2,
         "aoeM": 5,
         "aoeFt": 16,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Cloak of Shadows",
@@ -441,7 +611,12 @@
         "attackRoll": false,
         "condition": "Cloak of Shadows",
         "conditionDuration": 10,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Combat Inspiration",
@@ -457,7 +632,16 @@
         "rangeM": 18,
         "rangeFt": 60,
         "condition": "Combat Inspiration",
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 7,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Combat Wild Shape",
@@ -471,7 +655,16 @@
         "id": 6468,
         "attackRoll": false,
         "range": 3,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 24,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Control Undead",
@@ -487,7 +680,17 @@
         "rangeM": 6,
         "rangeFt": 20,
         "condition": "Controlled",
-        "cost": 1
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Controlled Chaos",
@@ -500,7 +703,12 @@
         "concentration": false,
         "id": 17211,
         "attackRoll": false,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Countercharm",
@@ -517,7 +725,16 @@
         "rangeFt": 30,
         "condition": "Countercharm",
         "conditionDuration": 3,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            },
+            {
+                "resource": 7,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Create Sorcery Points",
@@ -530,7 +747,12 @@
         "concentration": false,
         "id": 1388,
         "attackRoll": false,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Create Spell Slot",
@@ -543,7 +765,16 @@
         "concentration": false,
         "id": 1387,
         "attackRoll": false,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 21,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Cunning Action: Dash",
@@ -558,7 +789,12 @@
         "attackRoll": false,
         "condition": "Dash",
         "conditionDuration": 1,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Cunning Action: Disengage",
@@ -573,7 +809,12 @@
         "attackRoll": false,
         "condition": "Disengage",
         "conditionDuration": 1,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Cunning Action: Hide",
@@ -587,7 +828,12 @@
         "id": 6574,
         "attackRoll": false,
         "condition": "Hiding",
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Cutting Words",
@@ -602,7 +848,16 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            },
+            {
+                "resource": 7,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Dampen Elements",
@@ -615,7 +870,16 @@
         "concentration": false,
         "id": 26958,
         "attackRoll": false,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            },
+            {
+                "resource": 8,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Dash",
@@ -630,7 +894,12 @@
         "attackRoll": false,
         "condition": "Dash",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Defensive Duellist",
@@ -643,7 +912,13 @@
         "concentration": false,
         "id": 4936,
         "attackRoll": false,
-        "cost": 4
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Defensive Flourish (Melee)",
@@ -657,9 +932,20 @@
         "concentration": false,
         "id": 18881,
         "attackRoll": true,
+        "range": 4,
         "condition": "Defensive Flourish",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 7,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
     },
     {
         "name": "Defensive Flourish (Ranged)",
@@ -676,7 +962,17 @@
         "range": 1,
         "condition": "Defensive Flourish",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 7,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
     },
     {
         "name": "Deflect Missiles",
@@ -689,7 +985,12 @@
         "concentration": false,
         "id": 8404,
         "attackRoll": false,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Destructive Wrath",
@@ -702,7 +1003,12 @@
         "concentration": false,
         "id": 6828,
         "attackRoll": false,
-        "cost": 8
+        "costs": [
+            {
+                "resource": 8,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Dire Raven Companion",
@@ -717,7 +1023,13 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Disengage",
@@ -732,7 +1044,12 @@
         "attackRoll": false,
         "condition": "Disengage",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Divine Intervention",
@@ -745,7 +1062,12 @@
         "concentration": false,
         "id": 7954,
         "attackRoll": false,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Divine Sense",
@@ -758,9 +1080,16 @@
         "concentration": false,
         "id": 3399,
         "attackRoll": false,
+        "range": 3,
         "condition": "Divine Sense",
         "conditionDuration": 2,
-        "cost": 2
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Dread Ambusher: Hide",
@@ -774,7 +1103,12 @@
         "id": 17897,
         "attackRoll": false,
         "condition": "Hiding",
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Dreadful Aspect",
@@ -788,11 +1122,22 @@
         "id": 3606,
         "attackRoll": false,
         "range": 3,
+        "aoe": 5,
         "aoeM": 9,
         "aoeFt": 30,
         "condition": "Frightened",
         "conditionDuration": 10,
-        "cost": 1
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Elemental Affinity: Resistance",
@@ -806,7 +1151,16 @@
         "id": 17223,
         "attackRoll": false,
         "condition": "Elemental Affinity: Resistance",
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            },
+            {
+                "resource": 21,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Elemental Warp",
@@ -821,7 +1175,12 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Embrace of the Inferno",
@@ -836,7 +1195,16 @@
         "attackRoll": true,
         "rangeM": 18,
         "rangeFt": 60,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 3
+            }
+        ]
     },
     {
         "name": "Enhanced Jump",
@@ -849,7 +1217,16 @@
         "concentration": false,
         "id": 18921,
         "attackRoll": false,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 4,
+                "amount": 10
+            }
+        ]
     },
     {
         "name": "Enraged Throw",
@@ -867,7 +1244,12 @@
         "rangeFt": 3,
         "condition": "Prone",
         "conditionDuration": 1,
-        "cost": 2,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ],
         "condition2Duration": 1
     },
     {
@@ -881,7 +1263,14 @@
         "concentration": false,
         "id": 8187,
         "attackRoll": false,
-        "cost": 4
+        "range": 4,
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Explosive Icicle",
@@ -898,6 +1287,7 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
+        "aoe": 1,
         "aoeM": 2,
         "aoeFt": 6,
         "areaName": "Ice",
@@ -906,7 +1296,12 @@
         "areaRangeM": 2,
         "areaRangeFt": 6,
         "areaDuration": 2,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Fangs of the Fire Snake",
@@ -925,7 +1320,16 @@
         "rangeFt": 20,
         "condition": "Fangs of the Fire Snake",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Fey Presence",
@@ -942,7 +1346,13 @@
         "rangeFt": 10,
         "condition": "Charmed",
         "conditionDuration": 2,
-        "cost": 1,
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ],
         "condition2": "Frightened",
         "condition2Duration": 2
     },
@@ -957,7 +1367,13 @@
         "concentration": false,
         "id": 8231,
         "attackRoll": false,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Fire Breath (Line)",
@@ -975,7 +1391,13 @@
         "aoe": 4,
         "aoeM": 5,
         "aoeFt": 17,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Fist of Four Thunders",
@@ -992,7 +1414,16 @@
         "aoe": 3,
         "aoeM": 5,
         "aoeFt": 17,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Fist of Unbroken Air",
@@ -1011,7 +1442,16 @@
         "rangeFt": 30,
         "condition": "Prone",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Flames of the Phoenix",
@@ -1025,7 +1465,16 @@
         "concentration": false,
         "id": 10776,
         "attackRoll": false,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 4
+            }
+        ]
     },
     {
         "damage": "amount: 1d4, type: Bludgeoning, mod: Dexterity",
@@ -1039,7 +1488,16 @@
         "id": 7873,
         "attackRoll": false,
         "range": 2,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Flurry of Blows: Push",
@@ -1054,7 +1512,16 @@
         "id": 18401,
         "attackRoll": true,
         "range": 2,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Flurry of Blows: Stagger",
@@ -1071,7 +1538,16 @@
         "range": 2,
         "condition": "Open Hand Technique: Staggered",
         "conditionDuration": 1,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Flurry of Blows: Topple",
@@ -1088,7 +1564,17 @@
         "range": 2,
         "condition": "Prone",
         "conditionDuration": 1,
-        "cost": 2
+        "conditionSave": 2,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Fly (Class Action)",
@@ -1102,7 +1588,13 @@
         "id": 17231,
         "attackRoll": false,
         "rangeM": 18,
-        "rangeFt": 60
+        "rangeFt": 60,
+        "costs": [
+            {
+                "resource": 5,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Frenzied Strike",
@@ -1116,9 +1608,16 @@
         "concentration": false,
         "id": 1105,
         "attackRoll": true,
+        "range": 4,
         "condition": "Frenzied Strain",
         "conditionDuration": 1,
-        "cost": 2
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Frenzy",
@@ -1134,7 +1633,16 @@
         "range": 3,
         "condition": "Frenzied",
         "conditionDuration": 10,
-        "cost": 2,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
         "condition2": "Rage Impeded"
     },
     {
@@ -1153,7 +1661,13 @@
         "aoe": 2,
         "aoeM": 5,
         "aoeFt": 17,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Fungal Infestation",
@@ -1167,7 +1681,16 @@
         "id": 8527,
         "attackRoll": false,
         "rangeM": 3,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            },
+            {
+                "resource": 10,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Giant Killer",
@@ -1182,7 +1705,12 @@
         "id": 1441,
         "attackRoll": false,
         "range": 2,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Goading Roar",
@@ -1199,7 +1727,13 @@
         "aoeFt": 30,
         "condition": "Goaded",
         "conditionDuration": 2,
-        "cost": 1
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Gong of the Summit",
@@ -1219,7 +1753,16 @@
         "aoe": 1,
         "aoeM": 3,
         "aoeFt": 10,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 3
+            }
+        ]
     },
     {
         "name": "Grounded Thunder Strike",
@@ -1236,7 +1779,12 @@
         "range": 2,
         "condition": "Prone",
         "conditionDuration": 2,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Guided Strike",
@@ -1250,7 +1798,12 @@
         "id": 9099,
         "attackRoll": false,
         "range": 3,
-        "cost": 8
+        "costs": [
+            {
+                "resource": 8,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Halo of Spores",
@@ -1266,7 +1819,12 @@
         "attackRoll": false,
         "rangeM": 6,
         "rangeFt": 20,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Healing Radiance",
@@ -1281,11 +1839,21 @@
         "id": 3995,
         "attackRoll": false,
         "range": 3,
+        "aoe": 5,
         "aoeM": 3,
         "aoeFt": 10,
         "condition": "Healing Radiance",
         "conditionDuration": 1,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Healing Vapours",
@@ -1308,7 +1876,12 @@
         "areaRangeM": 9,
         "areaRangeFt": 30,
         "areaDuration": 3,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Heart of the Storm: Lightning",
@@ -1326,7 +1899,12 @@
         "aoe": 1,
         "aoeM": 6,
         "aoeFt": 20,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Heart of the Storm: Thunder",
@@ -1344,7 +1922,12 @@
         "aoe": 1,
         "aoeM": 6,
         "aoeFt": 20,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Help",
@@ -1359,7 +1942,12 @@
         "attackRoll": false,
         "rangeM": 2,
         "rangeFt": 5,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Hide in Plain Sight",
@@ -1373,7 +1961,12 @@
         "id": 6711,
         "attackRoll": false,
         "condition": "Hide in Plain Sight",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Holy Rebuke",
@@ -1390,7 +1983,16 @@
         "rangeFt": 30,
         "condition": "Holy Rebuke",
         "conditionDuration": 2,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Hypnotic Gaze",
@@ -1406,7 +2008,14 @@
         "range": 2,
         "condition": "Hypnotic Gaze",
         "conditionDuration": 2,
-        "cost": 1
+        "conditionSave": 5,
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Illusory Self",
@@ -1418,7 +2027,14 @@
         "ritual": false,
         "concentration": false,
         "id": 16855,
-        "attackRoll": false
+        "attackRoll": false,
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Improved Divine Smite",
@@ -1432,7 +2048,12 @@
         "concentration": false,
         "id": 12941,
         "attackRoll": false,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Improved Minor Illusion",
@@ -1447,7 +2068,12 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Inciting Howl",
@@ -1465,7 +2091,12 @@
         "aoeFt": 30,
         "condition": "Inciting Howl",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Indomitable",
@@ -1477,7 +2108,9 @@
         "ritual": false,
         "concentration": false,
         "id": 17563,
-        "attackRoll": false
+        "attackRoll": false,
+        "recharge": 1,
+        "costs": []
     },
     {
         "name": "Infiltration Expertise",
@@ -1492,7 +2125,12 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Disguise Self",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Inquisitor's Might",
@@ -1509,7 +2147,16 @@
         "rangeFt": 30,
         "condition": "Inquisitor's Might",
         "conditionDuration": 2,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Instinctive Charm",
@@ -1524,7 +2171,13 @@
         "attackRoll": false,
         "condition": "Charmed",
         "conditionDuration": 1,
-        "cost": 4,
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ],
         "condition2": "Instinctive Charm: Unaffected"
     },
     {
@@ -1542,7 +2195,13 @@
         "rangeFt": 30,
         "condition": "Frightened",
         "conditionDuration": 2,
-        "cost": 1
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Invisibility (Air Myrmidon)",
@@ -1557,7 +2216,13 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Invisible",
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Invoke Duplicity",
@@ -1572,7 +2237,16 @@
         "attackRoll": false,
         "rangeM": 9,
         "rangeFt": 30,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 8,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Jugular Strike (Sabre-Toothed Tiger)",
@@ -1587,7 +2261,12 @@
         "id": 18910,
         "attackRoll": true,
         "range": 2,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Ki Resonation: Blast",
@@ -1604,9 +2283,15 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
+        "aoe": 1,
         "aoeM": 5,
         "aoeFt": 16,
-        "cost": 18
+        "costs": [
+            {
+                "resource": 11,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Ki Resonation: Punch (Action)",
@@ -1623,7 +2308,12 @@
         "range": 2,
         "condition": "Resonating Ki",
         "conditionDuration": 10,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Ki Resonation: Punch (Bonus Action)",
@@ -1640,7 +2330,12 @@
         "range": 2,
         "condition": "Resonating Ki",
         "conditionDuration": 10,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Lay on Hands",
@@ -1654,7 +2349,16 @@
         "id": 4023,
         "attackRoll": false,
         "range": 2,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 18,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Lunar Mend",
@@ -1668,7 +2372,13 @@
         "concentration": false,
         "id": 1434,
         "attackRoll": false,
-        "cost": 2
+        "range": 3,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Magic Awareness",
@@ -1685,7 +2395,12 @@
         "rangeFt": 10,
         "condition": "Magic Awareness",
         "conditionDuration": 1,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Maintain Hypnotic Gaze",
@@ -1701,7 +2416,12 @@
         "range": 2,
         "condition": "Hypnotic Gaze",
         "conditionDuration": 2,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Maintain Intimidating Presence",
@@ -1718,7 +2438,13 @@
         "rangeFt": 30,
         "condition": "Frightened",
         "conditionDuration": 2,
-        "cost": 1
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Minor Conjuration: Create Water",
@@ -1742,7 +2468,13 @@
         "areaShape": 1,
         "areaRangeM": 2,
         "areaRangeFt": 5,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Mist Stance",
@@ -1756,7 +2488,16 @@
         "id": 14026,
         "attackRoll": false,
         "condition": "Gaseous Form",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 4
+            }
+        ]
     },
     {
         "name": "Misty Escape",
@@ -1771,7 +2512,13 @@
         "attackRoll": false,
         "condition": "Invisible",
         "conditionDuration": 1,
-        "cost": 4
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Mobile Flourish (Melee)",
@@ -1788,7 +2535,17 @@
         "range": 2,
         "condition": "Mobile Flourish Target",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 7,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
     },
     {
         "name": "Mobile Flourish (Ranged)",
@@ -1805,7 +2562,17 @@
         "range": 1,
         "condition": "Mobile Flourish Target",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 7,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
     },
     {
         "name": "Muck to Metal",
@@ -1820,7 +2587,13 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Transmuted to Steel",
-        "conditionDuration": 4
+        "conditionDuration": 4,
+        "costs": [
+            {
+                "resource": 4,
+                "amount": 20
+            }
+        ]
     },
     {
         "name": "Myrmidon's Immolation",
@@ -1836,7 +2609,12 @@
         "range": 3,
         "condition": "Hastened",
         "conditionDuration": 3,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Natural Recovery",
@@ -1849,7 +2627,18 @@
         "concentration": false,
         "id": 684,
         "attackRoll": false,
-        "cost": 1
+        "range": 3,
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 19,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Nature's Wrath",
@@ -1866,7 +2655,17 @@
         "rangeFt": 10,
         "condition": "Nature's Wrath",
         "conditionDuration": 10,
-        "cost": 1
+        "conditionSave": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Poison Breath",
@@ -1884,7 +2683,13 @@
         "aoe": 2,
         "aoeM": 5,
         "aoeFt": 17,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Portent",
@@ -1897,7 +2702,12 @@
         "concentration": false,
         "id": 6658,
         "attackRoll": false,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Preserve Life",
@@ -1912,9 +2722,19 @@
         "id": 720,
         "attackRoll": false,
         "range": 3,
+        "aoe": 5,
         "aoeM": 9,
         "aoeFt": 30,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 8,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Projected Ward",
@@ -1930,7 +2750,12 @@
         "range": 1,
         "rangeM": 9,
         "rangeFt": 30,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Protection",
@@ -1943,7 +2768,12 @@
         "concentration": false,
         "id": 17368,
         "attackRoll": false,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Radiance of the Dawn",
@@ -1957,9 +2787,19 @@
         "concentration": false,
         "id": 728,
         "attackRoll": false,
+        "aoe": 5,
         "aoeM": 9,
         "aoeFt": 30,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 8,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Rage",
@@ -1975,7 +2815,16 @@
         "range": 3,
         "condition": "Rage",
         "conditionDuration": 10,
-        "cost": 2,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
         "condition2": "Rage Impeded"
     },
     {
@@ -1992,7 +2841,16 @@
         "range": 3,
         "condition": "Rage: Bear Heart",
         "conditionDuration": 10,
-        "cost": 2,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
         "condition2": "Rage Impeded"
     },
     {
@@ -2009,7 +2867,16 @@
         "range": 3,
         "condition": "Rage: Eagle Heart",
         "conditionDuration": 10,
-        "cost": 2,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
         "condition2": "Rage Impeded"
     },
     {
@@ -2026,7 +2893,16 @@
         "range": 3,
         "condition": "Rage: Elk Heart",
         "conditionDuration": 10,
-        "cost": 2,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
         "condition2": "Rage Impeded"
     },
     {
@@ -2043,7 +2919,16 @@
         "range": 3,
         "condition": "Rage: Tiger Heart",
         "conditionDuration": 10,
-        "cost": 2,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
         "condition2": "Rage Impeded"
     },
     {
@@ -2060,7 +2945,16 @@
         "range": 3,
         "condition": "Rage",
         "conditionDuration": 10,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Rage: Wolf Heart",
@@ -2076,7 +2970,16 @@
         "range": 3,
         "condition": "Rage: Wolf Heart",
         "conditionDuration": 10,
-        "cost": 2,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
         "condition2": "Rage Impeded"
     },
     {
@@ -2098,7 +3001,12 @@
         "aoeM": 6,
         "aoeFt": 20,
         "condition": "Raging Vortex",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Summon Companion",
@@ -2113,7 +3021,13 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Read Thoughts",
@@ -2126,7 +3040,16 @@
         "concentration": true,
         "id": 26957,
         "attackRoll": false,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 8,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Reckless Attack",
@@ -2140,9 +3063,15 @@
         "concentration": false,
         "id": 1146,
         "attackRoll": true,
+        "range": 4,
         "condition": "Reckless Attack",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Relentless Endurance",
@@ -2154,7 +3083,8 @@
         "ritual": false,
         "concentration": false,
         "id": 6277,
-        "attackRoll": false
+        "attackRoll": false,
+        "costs": []
     },
     {
         "name": "Rush of the Gale Spirits",
@@ -2172,7 +3102,16 @@
         "aoeFt": 40,
         "condition": "Off Balance",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Sacred Weapon",
@@ -2188,7 +3127,16 @@
         "range": 3,
         "condition": "Sacred Weapon",
         "conditionDuration": 10,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Second Wind",
@@ -2203,7 +3151,13 @@
         "id": 759,
         "attackRoll": false,
         "range": 3,
-        "cost": 2
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "See Invisibility (Class Action)",
@@ -2219,7 +3173,12 @@
         "rangeM": 9,
         "rangeFt": 30,
         "condition": "See Invisibility",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Shadow Arts: Darkness",
@@ -2241,7 +3200,16 @@
         "areaRangeM": 5,
         "areaRangeFt": 17,
         "areaDuration": 10,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Shadow Arts: Darkvision",
@@ -2256,7 +3224,16 @@
         "attackRoll": false,
         "range": 2,
         "condition": "Darkvision",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Shadow Arts: Hide",
@@ -2270,7 +3247,12 @@
         "id": 18484,
         "attackRoll": false,
         "condition": "Hiding",
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Shadow Arts: Pass Without Trace",
@@ -2284,10 +3266,20 @@
         "id": 18515,
         "attackRoll": false,
         "range": 3,
+        "aoe": 1,
         "aoeM": 9,
         "aoeFt": 30,
         "condition": "Pass Without Trace Aura",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Shadow Arts: Silence",
@@ -2304,10 +3296,21 @@
         "rangeM": 18,
         "rangeFt": 60,
         "areaName": "Silence",
+        "areaCategory": 3,
+        "areaShape": 1,
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 100,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Shadow Step",
@@ -2325,7 +3328,12 @@
         "rangeFt": 60,
         "condition": "Shadow Step",
         "conditionDuration": 1,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Shadow Strike",
@@ -2344,7 +3352,16 @@
         "rangeFt": 30,
         "condition": "Sluggardly",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 3
+            }
+        ]
     },
     {
         "name": "Shadow Strike: Unarmed",
@@ -2363,7 +3380,16 @@
         "rangeFt": 30,
         "condition": "Sluggardly",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 3
+            }
+        ]
     },
     {
         "name": "Shapechanger",
@@ -2378,7 +3404,12 @@
         "attackRoll": false,
         "condition": "Polymorph Self",
         "conditionDuration": 5,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Shaping of the Ice",
@@ -2393,7 +3424,16 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Shield Master: Block",
@@ -2407,7 +3447,12 @@
         "id": 21510,
         "attackRoll": false,
         "range": 3,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Shred Armour",
@@ -2424,7 +3469,12 @@
         "range": 2,
         "condition": "Shredded Armour",
         "conditionDuration": 2,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Slashing Flourish (Melee)",
@@ -2438,9 +3488,21 @@
         "concentration": false,
         "id": 18880,
         "attackRoll": true,
+        "range": 4,
+        "aoe": 2,
         "aoeM": 2,
         "aoeFt": 6,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 7,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
     },
     {
         "name": "Slashing Flourish (Ranged)",
@@ -2455,7 +3517,17 @@
         "id": 18890,
         "attackRoll": true,
         "range": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 7,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
     },
     {
         "name": "Slow Fall",
@@ -2468,7 +3540,12 @@
         "concentration": false,
         "id": 8238,
         "attackRoll": false,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Sludgy Sling",
@@ -2483,14 +3560,21 @@
         "id": 18959,
         "attackRoll": true,
         "range": 3,
+        "aoe": 1,
         "aoeM": 3,
         "aoeFt": 10,
         "areaName": "Mud",
+        "areaCategory": 2,
         "areaShape": 1,
         "areaRangeM": 3,
         "areaRangeFt": 10,
         "areaDuration": 3,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Sneak Attack (Melee)",
@@ -2504,7 +3588,14 @@
         "concentration": false,
         "id": 882,
         "attackRoll": false,
-        "cost": 1
+        "range": 4,
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Sneak Attack (Ranged)",
@@ -2518,7 +3609,14 @@
         "concentration": false,
         "id": 883,
         "attackRoll": false,
-        "cost": 1
+        "range": 4,
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Song of Rest",
@@ -2531,7 +3629,13 @@
         "concentration": false,
         "id": 3378,
         "attackRoll": false,
-        "cost": 1
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Sphere of Elemental Balance",
@@ -2545,7 +3649,16 @@
         "id": 8973,
         "attackRoll": false,
         "range": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Spiteful Suffering",
@@ -2562,7 +3675,16 @@
         "rangeFt": 10,
         "condition": "Spiteful Suffering",
         "conditionDuration": 3,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Storm's Fury",
@@ -2576,7 +3698,12 @@
         "concentration": false,
         "id": 15144,
         "attackRoll": false,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Stunning Strike (Melee)",
@@ -2593,7 +3720,17 @@
         "range": 2,
         "condition": "Stunned",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
     },
     {
         "name": "Stunning Strike (Unarmed)",
@@ -2610,7 +3747,17 @@
         "range": 2,
         "condition": "Stunned",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
     },
     {
         "name": "Supreme Sneak",
@@ -2625,7 +3772,13 @@
         "attackRoll": false,
         "condition": "Invisible",
         "conditionDuration": 10,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Sweeping Cinder Strike",
@@ -2639,9 +3792,19 @@
         "concentration": false,
         "id": 7863,
         "attackRoll": false,
+        "aoe": 2,
         "aoeM": 5,
         "aoeFt": 17,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Symbiotic Entity",
@@ -2654,8 +3817,18 @@
         "concentration": false,
         "id": 7877,
         "attackRoll": false,
+        "range": 3,
         "condition": "Symbiotic Entity",
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 24,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Third Eye: Darkvision",
@@ -2669,7 +3842,13 @@
         "id": 16851,
         "attackRoll": false,
         "condition": "Third Eye: Darkvision",
-        "cost": 1
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Third Eye: See Invisibility",
@@ -2683,7 +3862,13 @@
         "id": 16852,
         "attackRoll": false,
         "condition": "See Invisibility",
-        "cost": 1
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Thunderbolt Strike",
@@ -2695,7 +3880,8 @@
         "ritual": false,
         "concentration": false,
         "id": 13686,
-        "attackRoll": false
+        "attackRoll": false,
+        "costs": []
     },
     {
         "name": "Tides of Chaos",
@@ -2709,7 +3895,12 @@
         "id": 17206,
         "attackRoll": false,
         "condition": "Tides of Chaos",
-        "cost": 15
+        "costs": [
+            {
+                "resource": 25,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Touch of the Storm",
@@ -2725,7 +3916,16 @@
         "attackRoll": false,
         "condition": "Shocking Grasp",
         "conditionDuration": 1,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Transmuter's Stone",
@@ -2738,7 +3938,9 @@
         "concentration": false,
         "id": 16839,
         "attackRoll": false,
-        "condition": "Transmuter's Stone: Depleted Magic"
+        "condition": "Transmuter's Stone: Depleted Magic",
+        "recharge": 1,
+        "costs": []
     },
     {
         "name": "Transmuter's Stone: Acid Resistance",
@@ -2751,7 +3953,9 @@
         "concentration": false,
         "id": 20166,
         "attackRoll": false,
-        "condition": "Transmuter's Stone: Acid Resistance"
+        "condition": "Transmuter's Stone: Acid Resistance",
+        "recharge": 1,
+        "costs": []
     },
     {
         "name": "Transmuter's Stone: Cold Resistance",
@@ -2764,7 +3968,9 @@
         "concentration": false,
         "id": 20167,
         "attackRoll": false,
-        "condition": "Transmuter's Stone: Cold Resistance"
+        "condition": "Transmuter's Stone: Cold Resistance",
+        "recharge": 1,
+        "costs": []
     },
     {
         "name": "Transmuter's Stone: Constitution",
@@ -2777,7 +3983,9 @@
         "concentration": false,
         "id": 20158,
         "attackRoll": false,
-        "condition": "Transmuter's Stone: Constitution"
+        "condition": "Transmuter's Stone: Constitution",
+        "recharge": 1,
+        "costs": []
     },
     {
         "name": "Transmuter's Stone: Darkvision",
@@ -2790,7 +3998,9 @@
         "concentration": false,
         "id": 20159,
         "attackRoll": false,
-        "condition": "Transmuter's Stone: Darkvision"
+        "condition": "Transmuter's Stone: Darkvision",
+        "recharge": 1,
+        "costs": []
     },
     {
         "name": "Transmuter's Stone: Fire Resistance",
@@ -2803,7 +4013,9 @@
         "concentration": false,
         "id": 20168,
         "attackRoll": false,
-        "condition": "Transmuter's Stone: Fire Resistance"
+        "condition": "Transmuter's Stone: Fire Resistance",
+        "recharge": 1,
+        "costs": []
     },
     {
         "name": "Transmuter's Stone: Lightning Resistance",
@@ -2816,7 +4028,9 @@
         "concentration": false,
         "id": 20169,
         "attackRoll": false,
-        "condition": "Transmuter's Stone: Lightning Resistance"
+        "condition": "Transmuter's Stone: Lightning Resistance",
+        "recharge": 1,
+        "costs": []
     },
     {
         "name": "Transmuter's Stone: Speed",
@@ -2829,7 +4043,9 @@
         "concentration": false,
         "id": 20164,
         "attackRoll": false,
-        "condition": "Transmuter's Stone: Speed"
+        "condition": "Transmuter's Stone: Speed",
+        "recharge": 1,
+        "costs": []
     },
     {
         "name": "Transmuter's Stone: Thunder Resistance",
@@ -2842,7 +4058,9 @@
         "concentration": false,
         "id": 20170,
         "attackRoll": false,
-        "condition": "Transmuter's Stone: Thunder Resistance"
+        "condition": "Transmuter's Stone: Thunder Resistance",
+        "recharge": 1,
+        "costs": []
     },
     {
         "name": "Turn the Faithless",
@@ -2859,7 +4077,17 @@
         "rangeFt": 30,
         "condition": "Turned",
         "conditionDuration": 3,
-        "cost": 1
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Turn the Unholy",
@@ -2876,7 +4104,17 @@
         "rangeFt": 30,
         "condition": "Turned",
         "conditionDuration": 3,
-        "cost": 1
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Turn Undead",
@@ -2895,7 +4133,17 @@
         "aoeFt": 30,
         "condition": "Turned",
         "conditionDuration": 3,
-        "cost": 1
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Umbral Shroud",
@@ -2910,7 +4158,13 @@
         "attackRoll": false,
         "condition": "Umbral Shroud",
         "conditionDuration": 10,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Undead Thralls: Animate Dead",
@@ -2922,7 +4176,8 @@
         "ritual": false,
         "concentration": false,
         "id": 16836,
-        "attackRoll": false
+        "attackRoll": false,
+        "costs": []
     },
     {
         "name": "Unrelenting Ferocity",
@@ -2937,7 +4192,12 @@
         "id": 1148,
         "attackRoll": false,
         "range": 3,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Unstable Backlash",
@@ -2950,7 +4210,12 @@
         "concentration": false,
         "id": 9532,
         "attackRoll": false,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Vow of Enmity",
@@ -2967,7 +4232,16 @@
         "rangeFt": 10,
         "condition": "Vow of Enmity",
         "conditionDuration": 10,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "War Caster: Opportunity Spell",
@@ -2981,7 +4255,12 @@
         "id": 21508,
         "attackRoll": false,
         "range": 2,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "War God's Blessing",
@@ -2994,7 +4273,12 @@
         "concentration": false,
         "id": 11776,
         "attackRoll": false,
-        "cost": 8
+        "costs": [
+            {
+                "resource": 8,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "War Priest",
@@ -3007,7 +4291,16 @@
         "concentration": false,
         "id": 9203,
         "attackRoll": false,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 23,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Warding Flare",
@@ -3020,7 +4313,12 @@
         "concentration": false,
         "id": 8005,
         "attackRoll": false,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Water Whip",
@@ -3035,7 +4333,16 @@
         "id": 7865,
         "attackRoll": false,
         "rangeM": 9,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Weapon Bond",
@@ -3049,7 +4356,12 @@
         "id": 14413,
         "attackRoll": false,
         "range": 3,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Wholeness of Body",
@@ -3064,7 +4376,13 @@
         "attackRoll": false,
         "condition": "Wholeness of Body",
         "conditionDuration": 3,
-        "cost": 1
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Wild Shape",
@@ -3077,7 +4395,16 @@
         "concentration": false,
         "id": 664,
         "attackRoll": false,
-        "cost": 1
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 24,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Wild Shape: Air Myrmidon",
@@ -3090,7 +4417,16 @@
         "concentration": false,
         "id": 15263,
         "attackRoll": false,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 24,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Wild Shape: Bear",
@@ -3103,7 +4439,16 @@
         "concentration": false,
         "id": 15259,
         "attackRoll": false,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 24,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Wild Shape: Dire Raven",
@@ -3116,7 +4461,16 @@
         "concentration": false,
         "id": 15260,
         "attackRoll": false,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 24,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Wild Shape: Earth Myrmidon",
@@ -3129,7 +4483,16 @@
         "concentration": false,
         "id": 15264,
         "attackRoll": false,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 24,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Wild Shape: Fire Myrmidon",
@@ -3142,7 +4505,16 @@
         "concentration": false,
         "id": 15265,
         "attackRoll": false,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 24,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Wild Shape: Sabre-Toothed Tiger",
@@ -3155,7 +4527,16 @@
         "concentration": false,
         "id": 15261,
         "attackRoll": false,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 24,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Wild Shape: Water Myrmidon",
@@ -3168,7 +4549,16 @@
         "concentration": false,
         "id": 15266,
         "attackRoll": false,
-        "cost": 2
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 24,
+                "amount": 2
+            }
+        ]
     },
     {
         "name": "Wolf Spider Companion",
@@ -3183,7 +4573,13 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "cost": 1
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Wrath of the Storm: Lightning",
@@ -3197,7 +4593,12 @@
         "concentration": false,
         "id": 26548,
         "attackRoll": false,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Wrath of the Storm: Thunder",
@@ -3211,6 +4612,11 @@
         "concentration": false,
         "id": 26551,
         "attackRoll": false,
-        "cost": 4
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            }
+        ]
     }
 ]

@@ -1,6 +1,7 @@
 import { MediaWiki, PageData } from './media-wiki';
 import { PageNotFoundError } from '../errors';
-import { error } from '../logger';
+import { error, warn } from '../logger';
+import { Utils } from '../utils';
 
 type ParserFunction = (
     value: string,
@@ -41,10 +42,30 @@ export class MediaWikiTemplateParser {
                 config: MediaWikiTemplateParserConfig,
                 page: PageData,
             ) => {
-                if (!('default' in config) && !(value in enumType)) {
-                    throw new Error(
-                        `Failed to map '${config.key}' value '${value}' to enum (${page.title}).`,
-                    );
+                if (!(value in enumType) && value !== '') {
+                    const msg = `Failed to map '${config.key}' value '${value}' to enum (${page.title}).`;
+
+                    if (!('default' in config)) {
+                        throw new Error(msg);
+                    }
+
+                    if (value.toLowerCase() in enumType) {
+                        // debug(
+                        //     `'${config.key}' value '${value}' was coerced to lowercase (${page.title}).`,
+                        // );
+
+                        return enumType[value.toLowerCase()];
+                    }
+
+                    if (Utils.stringToTitleCase(value) in enumType) {
+                        // debug(
+                        //     `'${config.key}' value '${value}' was coerced to titlecase (${page.title}).`,
+                        // );
+
+                        return enumType[Utils.stringToTitleCase(value)];
+                    }
+
+                    warn(msg);
                 }
 
                 return enumType[value];

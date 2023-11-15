@@ -61,4 +61,10 @@ export class Utils extends SharedUtils {
 
         return nextSeed / m;
     }
+
+    static stringToTitleCase(str: string): string {
+        return str.toLowerCase().replace(/(?:^|\s)\S/g, function titlecase(a) {
+            return a.toUpperCase();
+        });
+    }
 }
