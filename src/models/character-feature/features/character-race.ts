@@ -5,7 +5,7 @@ import {
 import { GrantableEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import { MwnApiClass } from '../../../api/mwn';
 import { error } from '../../logger';
-import { MediaWiki } from '../../media-wiki';
+import { MediaWiki } from '../../media-wiki/media-wiki';
 import { PageLoadingState } from '../../page-item';
 import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
 import { CharacterSubrace } from './character-subrace';

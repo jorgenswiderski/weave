@@ -1,6 +1,6 @@
 import { MediaWiki, PageData } from './media-wiki';
-import { PageNotFoundError } from './errors';
-import { error } from './logger';
+import { PageNotFoundError } from '../errors';
+import { error } from '../logger';
 
 type ParserFunction = (
     value: string,

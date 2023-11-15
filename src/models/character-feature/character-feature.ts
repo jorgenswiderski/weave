@@ -16,7 +16,7 @@ import { PageItem, PageLoadingState } from '../page-item';
 import { ICharacterOptionWithPage } from './types';
 import { error, warn } from '../logger';
 import { MwnApi } from '../../api/mwn';
-import { MediaWiki, PageData } from '../media-wiki';
+import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { PageNotFoundError } from '../errors';
 import { Spell, getSpellDataById } from '../action/spell';
 import { Action, getActionDataById } from '../action/action';
@@ -73,10 +73,6 @@ export class CharacterFeature
             image: this.image,
             grants: this.grants,
         };
-    }
-
-    static parseNameFromPageTitle(title: string) {
-        return title.split('(')[0].trim();
     }
 
     // eslint-disable-next-line class-methods-use-this, @typescript-eslint/no-empty-function
@@ -137,7 +133,7 @@ export class CharacterFeature
         const imageMatch = /\|\s*image\s*=\s*(.+)/.exec(pageContent);
 
         return {
-            // name: CharacterFeature.parseNameFromPageTitle(pageTitle),
+            // name: MediaWikiWikitextParser.parseNameFromPageTitle(pageTitle),
             name: pageTitle,
             type: GrantableEffectType.CHARACTERISTIC,
             description: descMatch

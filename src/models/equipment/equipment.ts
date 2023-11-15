@@ -3,7 +3,7 @@ import {
     ItemRarity,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/equipment-item';
 import { MwnApiClass } from '../../api/mwn';
-import { MediaWiki } from '../media-wiki';
+import { MediaWiki } from '../media-wiki/media-wiki';
 import { EquipmentItem } from './equipment-item';
 import { WeaponItem } from './weapon-item';
 import { StaticImageCacheService } from '../static-image-cache-service';

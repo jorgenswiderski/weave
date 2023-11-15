@@ -1,5 +1,5 @@
 import { MwnApiClass } from '../../api/mwn';
-import { MediaWiki, PageData } from '../media-wiki';
+import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { initActionData } from './action';
 import { initSpellData } from './spell';
 

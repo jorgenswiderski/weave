@@ -8,8 +8,8 @@ import {
 import { ItemSourceLocation } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
 import { warn } from '../logger';
-import { MediaWiki } from '../media-wiki';
-import { CharacterFeature } from '../character-feature/character-feature';
+import { MediaWiki } from '../media-wiki/media-wiki';
+import { MediaWikiParser } from '../media-wiki/wikitext-parser';
 
 class GameLocationNode {
     parent?: GameLocationNode;
@@ -64,7 +64,7 @@ export class GameLocation
             return `Act ${this.parent.children.length + 1}`;
         }
 
-        return CharacterFeature.parseNameFromPageTitle(title);
+        return MediaWikiParser.parseNameFromPageTitle(title);
     }
 
     toJSON() {

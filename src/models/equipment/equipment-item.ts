@@ -15,18 +15,18 @@ import {
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
 import { debug, error, warn } from '../logger';
-import { MediaWiki, PageData } from '../media-wiki';
+import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { PageItem, PageLoadingState } from '../page-item';
 import {
     MediaWikiTemplateParser,
     MediaWikiTemplateParserConfig,
-} from '../mw-template-parser';
+} from '../media-wiki/mw-template-parser';
 import {
     GameLocation,
     gameLocationById,
     gameLocationByPageTitle,
 } from '../locations/locations';
-import { CharacterFeature } from '../character-feature/character-feature';
+import { MediaWikiParser } from '../media-wiki/wikitext-parser';
 
 let counter = 0;
 
@@ -128,7 +128,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         if (questPages.length > 0) {
             return [
                 {
-                    name: CharacterFeature.parseNameFromPageTitle(
+                    name: MediaWikiParser.parseNameFromPageTitle(
                         questPages[0].title,
                     ),
                     id: questPages[0].data.pageId,
@@ -166,7 +166,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
             return [
                 {
-                    name: CharacterFeature.parseNameFromPageTitle(
+                    name: MediaWikiParser.parseNameFromPageTitle(
                         characterPages[0].title,
                     ),
                     id: characterPages[0].data.pageId,
@@ -260,7 +260,9 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
             if (match) {
                 const preamble = match[1];
-                const pageTitles = this.getAllPageTitles(preamble);
+
+                const pageTitles = MediaWikiParser.getAllPageTitles(preamble);
+
                 const newPages = await this.getPageInfoFromTitles(pageTitles);
 
                 return this.parseGameLocation(newPages, item, [], []);
@@ -268,16 +270,6 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         }
 
         return undefined;
-    }
-
-    protected static getAllPageTitles(content: string): string[] {
-        const pageTitleMatch = /\[\[([^#|\]]+).*?]]/g;
-        const coordsTemplateMatch = /{{Coords\|-?\d+\|-?\d+\|([^}]+)}}/g;
-
-        return [
-            ...content.matchAll(pageTitleMatch),
-            ...content.matchAll(coordsTemplateMatch),
-        ].map((match) => match[1]);
     }
 
     protected static async getPageInfoFromTitles(
@@ -310,7 +302,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         source: string,
         item: EquipmentItem,
     ): Promise<ItemSource | undefined> {
-        const pageTitles = this.getAllPageTitles(source);
+        const pageTitles = MediaWikiParser.getAllPageTitles(source);
         const pages = await this.getPageInfoFromTitles(pageTitles);
 
         const [quest, questPages] = source.toLowerCase().includes('reward')

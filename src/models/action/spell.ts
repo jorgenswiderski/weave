@@ -8,7 +8,7 @@ import { PageNotFoundError } from '../errors';
 import {
     MediaWikiTemplateParser,
     MediaWikiTemplateParserConfig,
-} from '../mw-template-parser';
+} from '../media-wiki/mw-template-parser';
 import { ActionBase } from './action-base';
 import { error } from '../logger';
 

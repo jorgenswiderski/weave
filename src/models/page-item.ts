@@ -1,5 +1,5 @@
 import { error } from './logger';
-import { MediaWiki, PageData } from './media-wiki';
+import { MediaWiki, PageData } from './media-wiki/media-wiki';
 import { Utils } from './utils';
 import { WikiLoadable } from './wiki-loadable';
 
