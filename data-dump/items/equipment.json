@@ -19479,6 +19479,10 @@
                             "name": "Shattered Sanctum",
                             "id": 4134
                         }
+                    },
+                    "character": {
+                        "name": "Gut",
+                        "id": 1962
                     }
                 }
             ],
@@ -32340,7 +32344,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Help the Hag Survivors",
+                        "id": 9293
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Baldur's Gate",
+                            "id": 6062
+                        },
+                        "location": {
+                            "name": "Lower City",
+                            "id": 11839
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "enchantment": 2,
             "id": 14028,
