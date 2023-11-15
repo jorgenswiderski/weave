@@ -3,7 +3,7 @@ import fs from 'fs';
 import https from 'https';
 import { IncomingMessage } from 'http';
 import writeFileAtomic from 'write-file-atomic';
-import { MediaWiki } from '../media-wiki';
+import { MediaWiki } from '../media-wiki/media-wiki';
 import { MwnTokenBucket } from '../../api/mwn';
 import { CONFIG } from '../config';
 import { debug, error } from '../logger';

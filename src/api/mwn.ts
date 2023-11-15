@@ -183,7 +183,9 @@ export class MwnApiClass {
     //     return response?.parse?.sections;
     // }
 
-    queryCategoriesFromPage = async (pageTitle: string): Promise<string[]> => {
+    queryCategoriesFromPage = async (
+        pageTitle: string,
+    ): Promise<{ titles: string[]; includes: (name: string) => boolean }> => {
         const data = await this.queryWithBatchingAcross('titles', {
             prop: 'categories',
             titles: pageTitle,
@@ -196,7 +198,23 @@ export class MwnApiClass {
 
         const categories = data.query.pages[0].categories || [];
 
-        return categories.map((cat: any) => cat.title);
+        const categoryTitles: string[] = categories.map(
+            (cat: any) => cat.title,
+        );
+
+        // custom includes implementation for case insensitivity
+        // reduces copy paste later
+
+        const lowercasedTitles = categoryTitles.map((name) =>
+            name.toLowerCase(),
+        );
+
+        return {
+            titles: categoryTitles,
+            includes: (categoryName: string) => {
+                return lowercasedTitles.includes(categoryName.toLowerCase());
+            },
+        };
     };
 }
 
