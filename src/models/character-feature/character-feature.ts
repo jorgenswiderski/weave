@@ -11,11 +11,12 @@ import {
     ISpell,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { StaticallyReferenceable } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/types';
+import assert from 'assert';
 import { PageItem, PageLoadingState } from '../page-item';
 import { ICharacterOptionWithPage } from './types';
 import { error, warn } from '../logger';
 import { MwnApi } from '../../api/mwn';
-import { MediaWiki, PageData } from '../media-wiki';
+import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { PageNotFoundError } from '../errors';
 import { Spell, getSpellDataById } from '../action/spell';
 import { Action, getActionDataById } from '../action/action';
@@ -74,21 +75,55 @@ export class CharacterFeature
         };
     }
 
-    static parseNameFromPageTitle(title: string) {
-        return title.split('(')[0].trim();
-    }
-
     // eslint-disable-next-line class-methods-use-this, @typescript-eslint/no-empty-function
     async initDescription(): Promise<void> {}
 
     // eslint-disable-next-line class-methods-use-this, @typescript-eslint/no-empty-function
     async initImage(): Promise<void> {}
 
+    private static async parseSpellPage(
+        pageContent: string,
+        pageTitle: string,
+        pageId: number,
+    ): Promise<StaticallyReferenceable> {
+        assert(pageContent.includes('{{SpellPage'));
+        const spells = await getSpellDataById();
+
+        if (!spells.has(pageId)) {
+            throw new Error(
+                `Could not find spell for ${pageTitle} (${pageId})`,
+            );
+        }
+
+        const spell = spells.get(pageId)! as Spell;
+        spell.markUsed();
+
+        return new SpellStub(spell as ISpell);
+    }
+
     private static async parseActionPage(
         pageContent: string,
         pageTitle: string,
         pageId: number,
-        categories: string[],
+    ): Promise<StaticallyReferenceable> {
+        assert(pageContent.includes('{{ActionPage'));
+        const actions = await getActionDataById();
+
+        if (!actions.has(pageId)) {
+            throw new Error(
+                `Could not find action for ${pageTitle} (${pageId})`,
+            );
+        }
+
+        const action = actions.get(pageId)! as Action;
+        action.markUsed();
+
+        return new ActionStub(action as IAction);
+    }
+
+    private static async parsePassiveFeaturePage(
+        pageContent: string,
+        pageTitle: string,
     ): Promise<GrantableEffect | StaticallyReferenceable> {
         const descMatch =
             /\|\s*description\s*=\s*([\s\S]+?)\n\|\s*[\w\s]+=/g.exec(
@@ -97,44 +132,10 @@ export class CharacterFeature
 
         const imageMatch = /\|\s*image\s*=\s*(.+)/.exec(pageContent);
 
-        const effectType =
-            categories.includes('Category:Passive Features') ||
-            categories.includes('Category:Toggleable Passive Features')
-                ? GrantableEffectType.CHARACTERISTIC
-                : GrantableEffectType.ACTION;
-
-        if (effectType === GrantableEffectType.ACTION) {
-            if (pageContent.includes('{{SpellPage')) {
-                const spells = await getSpellDataById();
-
-                if (!spells.has(pageId)) {
-                    error(`Could not find spell for ${pageTitle} (${pageId})`);
-                } else {
-                    const spell = spells.get(pageId)! as Spell;
-                    spell.markUsed();
-
-                    return new SpellStub(spell as ISpell);
-                }
-            }
-
-            if (pageContent.includes('{{ActionPage')) {
-                const actions = await getActionDataById();
-
-                if (!actions.has(pageId)) {
-                    error(`Could not find action for ${pageTitle} (${pageId})`);
-                } else {
-                    const action = actions.get(pageId)! as Action;
-                    action.markUsed();
-
-                    return new ActionStub(action as IAction);
-                }
-            }
-        }
-
         return {
-            // name: CharacterFeature.parseNameFromPageTitle(pageTitle),
+            // name: MediaWikiWikitextParser.parseNameFromPageTitle(pageTitle),
             name: pageTitle,
-            type: effectType,
+            type: GrantableEffectType.CHARACTERISTIC,
             description: descMatch
                 ? MediaWiki.stripMarkup(descMatch[1]).trim()
                 : undefined,
@@ -172,35 +173,39 @@ export class CharacterFeature
                 throw new Error('no page content for grantable effect');
             }
 
-            if (
-                // page.content.includes('{{ActionPage') ||
-                // page.content.includes('{{SpellPage')
-                page.content
-            ) {
-                // uses the ActionPage template, could be either an action or a passive
+            if (page.content.includes('{{ActionPage')) {
                 return await CharacterFeature.parseActionPage(
                     page.content,
                     pageTitle,
                     page.pageId,
-                    categories,
+                );
+            }
+
+            if (page.content.includes('{{SpellPage')) {
+                return await CharacterFeature.parseSpellPage(
+                    page.content,
+                    pageTitle,
+                    page.pageId,
+                );
+            }
+
+            if (page.content.includes('{{Passive feature page')) {
+                return await CharacterFeature.parsePassiveFeaturePage(
+                    page.content,
+                    pageTitle,
                 );
             }
 
             throw new Error(
                 `failed to parse description and image for '${pageTitle}'`,
             );
-
-            // return {
-            //     name: CharacterFeature.parseNameFromPageTitle(pageTitle),
-            //     type: GrantableEffectType.CHARACTERISTIC,
-            // };
         } catch (e) {
             if (e instanceof PageNotFoundError) {
                 warn(
                     `Could not find page ${pageTitle} when parsing for grantable effects.`,
                 );
             } else {
-                throw e;
+                // throw e;
             }
         }
 

@@ -7,7 +7,7 @@ import {
 import { MwnApiClass } from '../../api/mwn';
 import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
 import { error } from '../logger';
-import { MediaWiki } from '../media-wiki';
+import { MediaWiki } from '../media-wiki/media-wiki';
 
 import { PageItem, PageLoadingState } from '../page-item';
 import {

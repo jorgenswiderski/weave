@@ -1,10 +1,21 @@
 import { MwnApiClass } from '../../api/mwn';
-import { MediaWiki, PageData } from '../media-wiki';
+import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { initActionData } from './action';
 import { initSpellData } from './spell';
 
 export async function initActionsAndSpells(): Promise<void> {
-    const categories = ['Actions', 'Class Actions', 'Spells'];
+    const categories = [
+        // can remove these once templates are done being revised
+        // https://discord.com/channels/937803826583445565/1173678971213332550
+        'Spells',
+        'Class actions',
+
+        'Actions',
+        'Bonus actions',
+        'Reactions',
+        'Free actions',
+        'Movement-expending actions',
+    ];
 
     const actionNames = [
         ...new Set(

@@ -4,7 +4,7 @@ import {
     Proficiency,
     ProficiencyTypes,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
-import { MediaWiki } from '../../media-wiki';
+import { MediaWiki } from '../../media-wiki/media-wiki';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeatureTypes } from '../types';
 import { PageNotFoundError } from '../../errors';

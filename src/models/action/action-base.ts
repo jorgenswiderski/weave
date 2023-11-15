@@ -17,7 +17,7 @@ import { PageItem, PageLoadingState } from '../page-item';
 import {
     MediaWikiTemplateParser,
     MediaWikiTemplateParserConfig,
-} from '../mw-template-parser';
+} from '../media-wiki/mw-template-parser';
 import { StaticImageCacheService } from '../static-image-cache-service';
 
 enum ActionLoadState {

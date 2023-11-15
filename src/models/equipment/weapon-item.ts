@@ -11,7 +11,7 @@ import { PageNotFoundError } from '../errors';
 import {
     MediaWikiTemplateParser,
     MediaWikiTemplateParserConfig,
-} from '../mw-template-parser';
+} from '../media-wiki/mw-template-parser';
 import { EquipmentItem } from './equipment-item';
 
 export class WeaponItem extends EquipmentItem implements Partial<IWeaponItem> {

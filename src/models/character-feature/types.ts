@@ -2,7 +2,7 @@ import {
     CharacterPlannerStep,
     ICharacterOption,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
-import { PageData } from '../media-wiki';
+import { PageData } from '../media-wiki/media-wiki';
 
 export enum CharacterFeatureTypes {
     NONE = 'NONE',

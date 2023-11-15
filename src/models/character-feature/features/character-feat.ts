@@ -10,12 +10,13 @@ import {
     GrantableEffectType,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import { error } from '../../logger';
-import { MediaWiki } from '../../media-wiki';
+import { MediaWiki } from '../../media-wiki/media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
 import { PageLoadingState } from '../../page-item';
 import { PageNotFoundError } from '../../errors';
 import { CharacterFeature } from '../character-feature';
 import { StaticImageCacheService } from '../../static-image-cache-service';
+import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
 
 enum SubclassLoadStates {
     CHOICES = 'CHOICES',
@@ -166,7 +167,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                                 (title) =>
                                     new CharacterFeature({
                                         pageTitle: title,
-                                        name: CharacterFeature.parseNameFromPageTitle(
+                                        name: MediaWikiParser.parseNameFromPageTitle(
                                             title,
                                         ),
                                     }),
@@ -191,7 +192,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                                 });
                             } else {
                                 fx.push({
-                                    name: `${CharacterFeature.parseNameFromPageTitle(
+                                    name: `${MediaWikiParser.parseNameFromPageTitle(
                                         name,
                                     )}: ${abilityImprovement.abilities[0]}`,
                                     type: GrantableEffectType.CHARACTERISTIC,

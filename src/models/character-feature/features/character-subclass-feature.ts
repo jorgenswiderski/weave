@@ -4,7 +4,7 @@ import { PageLoadingState } from '../../page-item';
 import { CharacterFeature } from '../character-feature';
 import { CharacterProgressionLevel } from '../../character-class/types';
 import { ICharacterOptionWithPage } from '../types';
-import { MediaWiki, PageData } from '../../media-wiki';
+import { MediaWiki, PageData } from '../../media-wiki/media-wiki';
 import { PageNotFoundError } from '../../errors';
 import { StaticImageCacheService } from '../../static-image-cache-service';
 
