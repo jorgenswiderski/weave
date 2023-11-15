@@ -765,7 +765,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Save Vanra",
+                        "id": 9296
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Baldur's Gate",
+                            "id": 6062
+                        },
+                        "location": {
+                            "name": "Lower City",
+                            "id": 11839
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 9509
         },
@@ -1020,6 +1044,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Deliver Nere's Head",
+                        "id": 4539
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -1114,6 +1142,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Deliver Nere's Head",
+                        "id": 4539
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -1158,7 +1190,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Avenge the Hag Survivors",
+                        "id": 9295
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Baldur's Gate",
+                            "id": 6062
+                        },
+                        "location": {
+                            "name": "Old Garlow's Place",
+                            "id": 13059
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 10947
         },
@@ -3553,6 +3609,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Avenge Glut's Circle",
+                        "id": 4586
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -3823,10 +3883,6 @@
                             "name": "Open Hand Temple",
                             "id": 12249
                         }
-                    },
-                    "character": {
-                        "name": "Gale",
-                        "id": 211
                     }
                 }
             ],
@@ -5047,6 +5103,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Missing Boots",
+                        "id": 4599
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -5765,6 +5825,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Rescue the Tieflings",
+                        "id": 9257
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -8089,7 +8153,27 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Save Hope",
+                        "id": 9329
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Other Locations and Planes of Existence"
+                        },
+                        "location": {
+                            "name": "House of Hope",
+                            "id": 8537
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 11418
         },
@@ -8383,6 +8467,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Mushroom Picker",
+                        "id": 4568
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -8497,6 +8585,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Investigate Kagha",
+                        "id": 4540
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -9388,6 +9480,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find Dribbles the Clown",
+                        "id": 9283
+                    },
                     "location": {
                         "act": {
                             "name": "Act 3",
@@ -9891,6 +9987,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Avenge Glut's Circle",
+                        "id": 4586
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -12401,10 +12501,6 @@
                             "name": "Open Hand Temple",
                             "id": 12249
                         }
-                    },
-                    "character": {
-                        "name": "Gale",
-                        "id": 211
                     }
                 }
             ],
@@ -13576,6 +13672,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Save the Refugees",
+                        "id": 4532
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -13995,6 +14095,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Rescue Volo",
+                        "id": 4584
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -14296,27 +14400,7 @@
             "weightLb": 7.9,
             "price": 70,
             "effects": [],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Wilderness",
-                            "id": 4335
-                        }
-                    },
-                    "character": {
-                        "name": "Astarion",
-                        "id": 215
-                    }
-                }
-            ],
+            "sources": [],
             "proficiency": 1,
             "baseArmorClass": 11,
             "id": 3503
@@ -15056,27 +15140,7 @@
             "weightLb": 18,
             "price": 130,
             "effects": [],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Other Planes of Existence"
-                        },
-                        "location": {
-                            "name": "Nautiloid",
-                            "id": 4492
-                        }
-                    },
-                    "character": {
-                        "name": "Shadowheart",
-                        "id": 140
-                    }
-                }
-            ],
+            "sources": [],
             "proficiency": 2,
             "baseArmorClass": 13,
             "id": 3512
@@ -15540,10 +15604,6 @@
                             "name": "The Risen Road",
                             "id": 4403
                         }
-                    },
-                    "character": {
-                        "name": "Lae'zel",
-                        "id": 147
                     }
                 }
             ],
@@ -15891,6 +15951,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Missing Boots",
+                        "id": 4599
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -16436,7 +16500,31 @@
             "price": 70,
             "uid": "",
             "effects": [],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Free the Artist",
+                        "id": 4582
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Zhentarim Basement",
+                            "id": 4185
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 21578
         },
@@ -16500,6 +16588,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Missing Boots",
+                        "id": 4599
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -17997,6 +18089,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Steal the Sacred Idol",
+                        "id": 4596
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -18486,7 +18582,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Find Arabella's Parents",
+                        "id": 9238
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 2",
+                            "id": 4949
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Shadow-Cursed Lands",
+                            "id": 8117
+                        },
+                        "location": {
+                            "name": "Reithwin Town",
+                            "id": 10621
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 11423
         },
@@ -18568,6 +18688,25 @@
                     "character": {
                         "name": "Strange Ox",
                         "id": 10897
+                    }
+                },
+                {
+                    "quest": {
+                        "name": "Help the Devilish Ox",
+                        "id": 9272
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Rivington",
+                            "id": 11636
+                        }
                     }
                 }
             ],
@@ -21168,25 +21307,6 @@
                         "name": "Balthazar",
                         "id": 10857
                     }
-                },
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Wilderness",
-                            "id": 4335
-                        }
-                    },
-                    "character": {
-                        "name": "Gale",
-                        "id": 211
-                    }
                 }
             ],
             "proficiency": 0,
@@ -21249,6 +21369,10 @@
             "effects": [],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find Mystic Carrion's Servant",
+                        "id": 9311
+                    },
                     "location": {
                         "act": {
                             "name": "Act 3",
@@ -21436,6 +21560,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Save the Goblin Sazza",
+                        "id": 4594
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -23464,6 +23592,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -24965,25 +25097,6 @@
                             "id": 4191
                         }
                     }
-                },
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Other Planes of Existence"
-                        },
-                        "location": {
-                            "name": "Nautiloid",
-                            "id": 4492
-                        }
-                    },
-                    "character": {
-                        "name": "Lae'zel",
-                        "id": 147
-                    }
                 }
             ],
             "proficiency": 0,
@@ -25264,6 +25377,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Hunt the Devil",
+                        "id": 4587
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -26812,6 +26929,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Missing Shipment",
+                        "id": 4553
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -28019,6 +28140,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Counsellor Florrick",
+                        "id": 14880
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -31657,7 +31782,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Investigate Kagha",
+                        "id": 4540
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Emerald Grove",
+                            "id": 8715
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 3799,
             "category": 2,
@@ -32435,6 +32584,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Counsellor Florrick",
+                        "id": 14880
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",
@@ -32552,6 +32705,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "The Pale Elf",
+                        "id": 4521
+                    },
                     "location": {
                         "act": {
                             "name": "Act 3",
@@ -32622,7 +32779,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Save Vanra",
+                        "id": 9296
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Baldur's Gate",
+                            "id": 6062
+                        },
+                        "location": {
+                            "name": "Lower City",
+                            "id": 11839
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "enchantment": 3,
             "id": 9385,
@@ -32725,6 +32906,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "The Blade of Frontiers",
+                        "id": 4519
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -32741,10 +32926,6 @@
                             "name": "Mind Flayer Colony",
                             "id": 10630
                         }
-                    },
-                    "character": {
-                        "name": "Wyll",
-                        "id": 213
                     }
                 }
             ],
@@ -34844,10 +35025,6 @@
                             "name": "The Hollow",
                             "id": 8645
                         }
-                    },
-                    "character": {
-                        "name": "Wyll",
-                        "id": 213
                     }
                 },
                 {
@@ -36203,27 +36380,7 @@
                     "type": 2
                 }
             ],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Other Planes of Existence"
-                        },
-                        "location": {
-                            "name": "Nautiloid",
-                            "id": 4492
-                        }
-                    },
-                    "character": {
-                        "name": "Shadowheart",
-                        "id": 140
-                    }
-                }
-            ],
+            "sources": [],
             "proficiency": 0,
             "enchantment": 3,
             "id": 7957,
@@ -36272,6 +36429,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "The Chosen of Shar",
+                        "id": 4523
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -36284,10 +36445,6 @@
                             "name": "Shadowfell",
                             "id": 12122
                         }
-                    },
-                    "character": {
-                        "name": "Shadowheart",
-                        "id": 140
                     }
                 }
             ],
@@ -36725,6 +36882,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Counsellor Florrick",
+                        "id": 14880
+                    },
                     "location": {
                         "act": {
                             "name": "Act 1",

@@ -11,9 +11,10 @@ import {
 import {
     ItemSource,
     ItemSourceCharacter,
+    ItemSourceQuest,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
-import { debug, error } from '../logger';
+import { debug, error, warn } from '../logger';
 import { MediaWiki, PageData } from '../media-wiki';
 import { PageItem, PageLoadingState } from '../page-item';
 import {
@@ -110,14 +111,44 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return effects;
     }
 
+    protected static parseItemSourceQuest(
+        pages: ItemSourcePageInfo[],
+        item: EquipmentItem,
+    ): [ItemSourceQuest | undefined, Required<ItemSourcePageInfo[]>] {
+        const questPages = pages.filter(
+            (page) => page.info?.categories.includes('Category:Quests'),
+        ) as Required<ItemSourcePageInfo>[];
+
+        if (questPages.length > 1) {
+            warn(
+                `Item '${item.name}' has a source that mentions multiple quests`,
+            );
+        }
+
+        if (questPages.length > 0) {
+            return [
+                {
+                    name: CharacterFeature.parseNameFromPageTitle(
+                        questPages[0].title,
+                    ),
+                    id: questPages[0].data.pageId,
+                },
+                questPages,
+            ];
+        }
+
+        return [undefined, questPages];
+    }
+
     protected static parseItemSourceCharacter(
         pages: ItemSourcePageInfo[],
         item: EquipmentItem,
     ): [ItemSourceCharacter | undefined, Required<ItemSourcePageInfo[]>] {
         const characterPages = pages.filter(
             (page) =>
-                page.info?.categories.includes('Category:Characters') ||
-                page.info?.categories.includes('Category:Creatures'),
+                (page.info?.categories.includes('Category:Characters') ||
+                    page.info?.categories.includes('Category:Creatures')) &&
+                !page.info?.categories.includes('Category:Origins'),
         ) as Required<ItemSourcePageInfo>[];
 
         // if (characterPages.length > 1) {
@@ -151,7 +182,9 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         pages: ItemSourcePageInfo[],
         item: EquipmentItem,
         characterPages: Required<ItemSourcePageInfo>[],
+        questPages: Required<ItemSourcePageInfo>[],
         character?: ItemSourceCharacter,
+        quest?: ItemSourceQuest,
     ): Promise<GameLocation | undefined> {
         const locationPages = pages.filter(({ data, title }) =>
             data?.pageId
@@ -222,26 +255,35 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                     error(err);
                 }
             }
+        } else if (quest) {
+            const match = questPages[0].data.content?.match(/([\s\S]+?)\n==/);
+
+            if (match) {
+                const preamble = match[1];
+                const pageTitles = this.getAllPageTitles(preamble);
+                const newPages = await this.getPageInfoFromTitles(pageTitles);
+
+                return this.parseGameLocation(newPages, item, [], []);
+            }
         }
 
         return undefined;
     }
 
-    protected static async parseSource(
-        source: string,
-        item: EquipmentItem,
-    ): Promise<ItemSource | undefined> {
+    protected static getAllPageTitles(content: string): string[] {
         const pageTitleMatch = /\[\[([^#|\]]+).*?]]/g;
         const coordsTemplateMatch = /{{Coords\|-?\d+\|-?\d+\|([^}]+)}}/g;
 
-        const matches = [
-            ...source.matchAll(pageTitleMatch),
-            ...source.matchAll(coordsTemplateMatch),
-        ];
+        return [
+            ...content.matchAll(pageTitleMatch),
+            ...content.matchAll(coordsTemplateMatch),
+        ].map((match) => match[1]);
+    }
 
-        const pageTitles = matches.map((match) => match[1]);
-
-        const pages = (
+    protected static async getPageInfoFromTitles(
+        pageTitles: string[],
+    ): Promise<ItemSourcePageInfo[]> {
+        return (
             await Promise.all(
                 pageTitles.map(async (title) => {
                     try {
@@ -262,6 +304,18 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 }),
             )
         ).filter(Boolean) as ItemSourcePageInfo[];
+    }
+
+    protected static async parseSource(
+        source: string,
+        item: EquipmentItem,
+    ): Promise<ItemSource | undefined> {
+        const pageTitles = this.getAllPageTitles(source);
+        const pages = await this.getPageInfoFromTitles(pageTitles);
+
+        const [quest, questPages] = source.toLowerCase().includes('reward')
+            ? this.parseItemSourceQuest(pages, item)
+            : [undefined, []];
 
         const [character, characterPages] = this.parseItemSourceCharacter(
             pages,
@@ -272,11 +326,14 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             pages,
             item,
             characterPages as Required<ItemSourcePageInfo>[],
+            questPages as Required<ItemSourcePageInfo>[],
             character,
+            quest,
         );
 
         if (location) {
             return {
+                quest,
                 location: location.getItemSourceLocation(),
                 character,
             };
