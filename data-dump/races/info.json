@@ -192,6 +192,12 @@
                 "image": "Dwarven Combat Training.webp"
             },
             {
+                "name": "Darkvision (Passive Feature)",
+                "type": 2,
+                "description": "Can see in the dark up to 12m.",
+                "image": "Darkvision.webp"
+            },
+            {
                 "name": "Dwarven Resilience",
                 "type": 2,
                 "description": "You have Advantage on Saving Throws against being Poisoned, and you have Resistance against Poison damage.",
@@ -229,6 +235,12 @@
                 "image": "Elven Weapon Training.webp"
             },
             {
+                "name": "Darkvision (Passive Feature)",
+                "type": 2,
+                "description": "Can see in the dark up to 12m.",
+                "image": "Darkvision.webp"
+            },
+            {
                 "name": "Fey Ancestry",
                 "type": 2,
                 "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
@@ -264,6 +276,12 @@
                         "description": "The most commonly seen gnome on Faerûn's surface, Rock Gnomes are named as such for their hardiness and affinity to metal.",
                         "grants": [
                             {
+                                "name": "Darkvision (Passive Feature)",
+                                "type": 2,
+                                "description": "Can see in the dark up to 12m.",
+                                "image": "Darkvision.webp"
+                            },
+                            {
                                 "name": "Artificer's Lore",
                                 "type": 2,
                                 "description": "Add twice your Proficiency Bonus to History checks.",
@@ -275,6 +293,12 @@
                         "name": "Forest Gnomes",
                         "description": "Even smaller than their cousins and twice as reclusive, Forest Gnomes are rare sight in Faerûn. They master magic and craftmanship in their distant, idyllic groves.",
                         "grants": [
+                            {
+                                "name": "Darkvision (Passive Feature)",
+                                "type": 2,
+                                "description": "Can see in the dark up to 12m.",
+                                "image": "Darkvision.webp"
+                            },
                             {
                                 "ref": "s1585"
                             }
@@ -345,6 +369,12 @@
                 "type": 2,
                 "description": "You have Weapon Proficiency with spears, pikes, halberds, and glaives, and Armour Proficiency with Light Armour and Shields.",
                 "image": "Civil Militia.webp"
+            },
+            {
+                "name": "Darkvision (Passive Feature)",
+                "type": 2,
+                "description": "Can see in the dark up to 12m.",
+                "image": "Darkvision.webp"
             },
             {
                 "name": "Fey Ancestry",
@@ -474,6 +504,12 @@
         "choiceType": 8,
         "image": "Race Tiefling.png",
         "grants": [
+            {
+                "name": "Darkvision (Passive Feature)",
+                "type": 2,
+                "description": "Can see in the dark up to 12m.",
+                "image": "Darkvision.webp"
+            },
             {
                 "name": "Hellish Resistance",
                 "type": 2,

@@ -12,3 +12,4 @@ docker-compose.yml.*
 newrelic-infra.yml
 newrelic_agent.log
 logs
+.clinic

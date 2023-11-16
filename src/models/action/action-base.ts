@@ -5,9 +5,9 @@ import {
     ActionDamageSaveEffect,
     ActionRangeType,
     ActionRechargeFrequency,
-    ActionResource,
     ActionSchool,
     IActionBase,
+    ActionCost,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { AbilityScore } from '@jorgenswiderski/tomekeeper-shared/dist/types/ability';
 import { DamageType } from '@jorgenswiderski/tomekeeper-shared/dist/types/damage';
@@ -63,7 +63,7 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
     areaTurnEndDamageSaveEffect?: ActionDamageSaveEffect;
     // notes?: string;
     recharge?: ActionRechargeFrequency;
-    cost?: ActionResource;
+    costs?: ActionCost[];
 
     id?: number;
 
@@ -313,7 +313,7 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
             'areaTurnEndDamageSaveEffect',
             // 'notes',
             'recharge',
-            'cost',
+            'costs',
         ];
 
         keys.forEach((key) => {

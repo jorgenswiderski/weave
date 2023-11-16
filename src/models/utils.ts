@@ -61,4 +61,19 @@ export class Utils extends SharedUtils {
 
         return nextSeed / m;
     }
+
+    static stringToTitleCase(str: string): string {
+        return str.toLowerCase().replace(/(?:^|\s)\S/g, function titlecase(a) {
+            return a.toUpperCase();
+        });
+    }
+
+    static async asyncFilter<T>(
+        arr: T[],
+        predicate: (item: T) => Promise<boolean>,
+    ): Promise<T[]> {
+        const results = await Promise.all(arr.map(predicate));
+
+        return arr.filter((_v, index) => results[index]);
+    }
 }

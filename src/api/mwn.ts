@@ -39,7 +39,7 @@ export class MwnApiClass {
             batchAxis: keyof ApiParams,
             queryParameters: ApiParams,
         ): Promise<ApiResponse> => {
-            const values = queryParameters[batchAxis];
+            let values = queryParameters[batchAxis];
             // eslint-disable-next-line @typescript-eslint/naming-convention
             const { [batchAxis]: _, ...restOfParams } = queryParameters;
             const queryKey = JSON.stringify({ axis: batchAxis, restOfParams });
@@ -66,9 +66,24 @@ export class MwnApiClass {
                 ...datas[0],
                 query: {
                     ...datas[0].query,
+                    normalized: datas.flatMap((d) => d.query?.normalized ?? []),
                     pages: datas.flatMap((d) => d.query?.pages),
                 },
             };
+
+            if (MwnApiClass.batchAxisMap[batchAxis] === 'title') {
+                const values2 = (
+                    typeof values === 'string' ? [values] : values
+                ) as string[];
+
+                values = values2.map((title) => {
+                    const entry = data.query.normalized?.find(
+                        ({ from }) => from === title,
+                    );
+
+                    return entry?.to ?? title;
+                });
+            }
 
             return {
                 ...data,
@@ -158,7 +173,20 @@ export class MwnApiClass {
             (datum: Record<string, any>) => [datum.title, datum],
         );
 
-        return Object.fromEntries(entries);
+        const data = Object.fromEntries(entries);
+
+        // Add a reference to normalized results by the pre-normalized page title name
+        if (responseData.query.normalized) {
+            responseData.query.normalized.forEach(
+                ({ from, to }: { from: string; to: string }) => {
+                    if (pageTitles.includes(from)) {
+                        data[from] = data[to];
+                    }
+                },
+            );
+        }
+
+        return data;
     }
 
     queryPage = memoize(

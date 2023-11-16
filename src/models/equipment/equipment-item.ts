@@ -14,7 +14,7 @@ import {
     ItemSourceQuest,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
-import { debug, error, warn } from '../logger';
+import { error, warn } from '../logger';
 import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { PageItem, PageLoadingState } from '../page-item';
 import {
@@ -27,8 +27,6 @@ import {
     gameLocationByPageTitle,
 } from '../locations/locations';
 import { MediaWikiParser } from '../media-wiki/wikitext-parser';
-
-let counter = 0;
 
 type ItemSourcePageInfo = {
     title: string;
@@ -116,7 +114,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         item: EquipmentItem,
     ): [ItemSourceQuest | undefined, Required<ItemSourcePageInfo[]>] {
         const questPages = pages.filter(
-            (page) => page.info?.categories.includes('Category:Quests'),
+            (page) => page.data?.hasCategory('Quests'),
         ) as Required<ItemSourcePageInfo>[];
 
         if (questPages.length > 1) {
@@ -140,15 +138,16 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return [undefined, questPages];
     }
 
-    protected static parseItemSourceCharacter(
+    protected static async parseItemSourceCharacter(
         pages: ItemSourcePageInfo[],
         item: EquipmentItem,
-    ): [ItemSourceCharacter | undefined, Required<ItemSourcePageInfo[]>] {
+    ): Promise<
+        [ItemSourceCharacter | undefined, Required<ItemSourcePageInfo[]>]
+    > {
         const characterPages = pages.filter(
             (page) =>
-                (page.info?.categories.includes('Category:Characters') ||
-                    page.info?.categories.includes('Category:Creatures')) &&
-                !page.info?.categories.includes('Category:Origins'),
+                page.data?.hasCategory(['Characters', 'Creatures']) &&
+                !page.data?.hasCategory('Origins'),
         ) as Required<ItemSourcePageInfo>[];
 
         // if (characterPages.length > 1) {
@@ -158,7 +157,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         // }
 
         if (characterPages.length > 0) {
-            if (!characterPages[0].data.content?.includes('{{CharacterInfo')) {
+            if (!(await characterPages[0].data.hasTemplate('CharacterInfo'))) {
                 error(
                     `Item '${item.name}' source page '${characterPages[0].title}' has no CharacterInfo template!`,
                 );
@@ -309,7 +308,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             ? this.parseItemSourceQuest(pages, item)
             : [undefined, []];
 
-        const [character, characterPages] = this.parseItemSourceCharacter(
+        const [character, characterPages] = await this.parseItemSourceCharacter(
             pages,
             item,
         );
@@ -347,10 +346,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             return;
         }
 
-        if (
-            !this.page.content.includes('{{EquipmentPage') &&
-            !this.page.content.includes('{{WeaponPage')
-        ) {
+        if (!(await this.page.hasTemplate(['WeaponPage', 'EquipmentPage']))) {
             return;
         }
 
@@ -425,8 +421,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 !this.name.match(/\+\d$/) &&
                 rest.rarity > ItemRarity.common
             ) {
-                counter += 1;
-                debug(counter, this.name);
+                warn(`Failed to parse sources for item '${this.name}'`);
             }
         }
 
@@ -440,11 +435,11 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             throw new PageNotFoundError();
         }
 
-        return (
-            !this.page.content.includes('{{Legacy Content}}') &&
-            !this.page.content.includes('{{Unobtainable}}') &&
-            !this.page.content.includes('{{Inaccessible}}')
-        );
+        return !(await this.page.hasTemplate([
+            'Legacy Content',
+            'Unobtainable',
+            'Inaccessible',
+        ]));
     }
 
     toJSON() {

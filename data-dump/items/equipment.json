@@ -369,6 +369,10 @@
                             "name": "Defiled Temple",
                             "id": 4160
                         }
+                    },
+                    "character": {
+                        "name": "Polma",
+                        "id": 27978
                     }
                 }
             ],
@@ -1382,6 +1386,10 @@
                             "name": "Defiled Temple",
                             "id": 4160
                         }
+                    },
+                    "character": {
+                        "name": "Polma",
+                        "id": 27978
                     }
                 }
             ],
@@ -2118,7 +2126,7 @@
             "uid": "MAG_Thunder_ReverberationOnRangeSpellDamage_Amulet",
             "effects": [
                 {
-                    "name": "Cracking Resonance",
+                    "name": "Crackling Resonance",
                     "description": "When the wearer deals damage with a ranged Spell Attack, inflict 2 turns of Reverberation on the target(s).",
                     "type": 2
                 }
@@ -2348,6 +2356,25 @@
                         "location": {
                             "name": "Riverside Teahouse",
                             "id": 4504
+                        }
+                    }
+                },
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Overgrown Tunnel",
+                            "id": 4525
                         }
                     }
                 }
@@ -2634,7 +2661,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Baldur's Gate",
+                            "id": 6062
+                        },
+                        "location": {
+                            "name": "The Lodge - Basement Docks",
+                            "id": 15032
+                        }
+                    },
+                    "character": {
+                        "name": "Ptaris",
+                        "id": 15028
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 12901
         }
@@ -9708,7 +9759,7 @@
             "name": "The Sparkle Hands",
             "image": "The Sparkle Hands Icon.png",
             "icon": "The Sparkle Hands Unfaded Icon.png",
-            "description": "The Sparkle Hands are a pair of uncommon Gloves that grant Lightning Charges  on unarmed attacks and provides  Advantage against metal constructs and armored foes while charged.",
+            "description": "The Sparkle Hands are a pair of rare Gloves that grant Lightning Charges  on unarmed attacks and provides  Advantage against metal constructs and armored foes while charged.",
             "quote": "'Sometimes I just want to feel that spark,' Yrre the Sparkstruck said. 'Feel the lightning course through me.'",
             "type": 5,
             "rarity": 3,
@@ -13988,7 +14039,7 @@
                 },
                 {
                     "name": "Spore Sacks",
-                    "description": "While imbued with Symbiotic Entity, you can spread Bibberbang Spores, Timmask Spores, and Haste Spores (Condition).",
+                    "description": "While imbued with Symbiotic Entity, you can spread Bibberbang Spores, Timmask Spores (Class Action)|Timmask Spores, and Haste Spores.",
                     "type": 2
                 }
             ],
@@ -14139,7 +14190,27 @@
             "price": 70,
             "uid": "ARM_Padded_Broken",
             "effects": [],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "The Risen Road",
+                            "id": 4403
+                        }
+                    }
+                }
+            ],
             "proficiency": 1,
             "baseArmorClass": 11,
             "id": 3508
@@ -17201,7 +17272,27 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Baldur's Gate",
+                            "id": 6062
+                        },
+                        "location": {
+                            "name": "Elfsong Tavern",
+                            "id": 10779
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 10929
         },
@@ -19148,8 +19239,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Sacred Pool",
-                            "id": 8727
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -19862,13 +19953,13 @@
                 },
                 {
                     "name": "Anonymous Effect",
-                    "description": "Advantage on Dexterity Saving Throws Checks.",
+                    "description": "Advantage on Dexterity Saving Throws",
                     "type": 2,
                     "hidden": true
                 },
                 {
                     "name": "Ketheric's Shield",
-                    "description": "Shield Bash|w=40:''' When a foe hits you with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity SavingThrow.\nAdvantage on Dexterity Saving Throws Checks.",
+                    "description": "Shield Bash|w=40:''' When a foe hits you with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity SavingThrow.\nAdvantage on Dexterity Saving Throws",
                     "type": 2
                 }
             ],
@@ -20736,11 +20827,6 @@
                 {
                     "name": "Critical Virtuoso",
                     "description": "When you score a Critical Hit you can spend a Bonus Action to make an additional attack.",
-                    "type": 2
-                },
-                {
-                    "name": "Press the Advantage",
-                    "description": "After scoring a Critical Hit, use your Bonus Action to make an additional attack.",
                     "type": 2
                 }
             ],
@@ -22345,7 +22431,8 @@
         },
         {
             "name": "Promise",
-            "image": "",
+            "image": "Dagger PlusOne Icon.png",
+            "icon": "Dagger PlusOne Unfaded Icon.png",
             "quote": "A leafy pattern is carved into the dagger's blade. It glows faintly in the dark.",
             "type": 14,
             "rarity": 2,
@@ -23174,11 +23261,6 @@
                     "name": "Electrified Flail|w=40",
                     "description": "Clout a foe with your lightning-suffused flail and Stunned|Stun them.",
                     "type": 2
-                },
-                {
-                    "name": "Tenacity|w=40",
-                    "description": "Main Hand Only. When you miss an attack, you deal 1 bludgeoning damage anyways.",
-                    "type": 2
                 }
             ],
             "sources": [],
@@ -23647,7 +23729,7 @@
             "effects": [
                 {
                     "name": "Sorrowful Lash|w=40",
-                    "description": "Pulls the creature m=3|ft=10 closer to you (Per turn).",
+                    "description": "Bonus Pulls the creature m=3|ft=10 closer to you (Per turn).",
                     "type": 2
                 }
             ],
@@ -24318,6 +24400,69 @@
             "dippable": false
         },
         {
+            "name": "Gnarled Tree Branch",
+            "image": "",
+            "description": "Gnarled Tree Branch is a greatclub used by some ogres. It can only be obtained by disarming opponents and cannot be wielded by player characters.",
+            "quote": "A heavy branch ripped from the trunk of an oak tree.",
+            "type": 19,
+            "rarity": 1,
+            "weightKg": 8.5,
+            "weightLb": 17,
+            "price": 16,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Grants Tenacity: When you miss an attack, you deal 3 Bludgeoning damage anyway.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gnarled Tree Branch",
+                    "description": "Grants Tenacity: When you miss an attack, you deal 3 Bludgeoning damage anyway.",
+                    "type": 2
+                }
+            ],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Defiled Temple",
+                            "id": 4160
+                        }
+                    },
+                    "character": {
+                        "name": "Polma",
+                        "id": 27978
+                    }
+                }
+            ],
+            "proficiency": 0,
+            "id": 27980,
+            "rangeType": 1,
+            "handedness": 3,
+            "damage": "2d8",
+            "damageType": 3,
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": false,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": false
+        },
+        {
             "name": "Greatclub",
             "image": "Greatclub Icon.png",
             "quote": "Traces of dried viscera ring many of the iron spikes embedded in this oak club.",
@@ -24479,11 +24624,6 @@
                 {
                     "name": "Tippler's Rage",
                     "description": "When you have the Alcohol condition, you have Advantage on Attack Rolls. You also create a blast with each attack, dealing 1d4|Thunder damage for 3m / 10ft.",
-                    "type": 2
-                },
-                {
-                    "name": "Tenacity|w=40",
-                    "description": "(Main Hand Only)",
                     "type": 2
                 }
             ],
@@ -26927,7 +27067,7 @@
             "effects": [
                 {
                     "name": "Haroldish Doom",
-                    "description": "When you deal damage to a target with a ranged weapon, it must succeed a Charisma CHA|dc=13 or be  size=25|Bane Icon|Bane|Baned for 2 turns.",
+                    "description": "When you deal damage to a target with a ranged weapon, it must succeed a Charisma CHA|dc=13 or be  size=25|Bane Icon|Bane (Condition)|Baned for 2 turns.",
                     "type": 2
                 }
             ],
@@ -28198,6 +28338,7 @@
             "weightKg": 1.1,
             "weightLb": 2.2,
             "price": 310,
+            "uid": "MAG_StrongString_Longbow",
             "effects": [
                 {
                     "name": "Titan Weapon",
@@ -28803,7 +28944,8 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Golbraith's Cellar"
+                            "name": "Golbraith's Cellar",
+                            "id": 27854
                         }
                     }
                 },
@@ -29739,13 +29881,13 @@
                 },
                 {
                     "name": "Anonymous Effect",
-                    "description": "After attacking, grants Yeenoghu's Gift for 5 turns. Must strike an enemy every turn or be struck by Mad|Mad.",
+                    "description": "After attacking, grants Yeenoghu's Gift for 5 turns. Must strike an enemy every turn or be struck by Madness|Mad.",
                     "type": 2,
                     "hidden": true
                 },
                 {
                     "name": "Shattered Flail",
-                    "description": "After attacking, grants Yeenoghu's Gift for 5 turns. Must strike an enemy every turn or be struck by Mad|Mad.",
+                    "description": "After attacking, grants Yeenoghu's Gift for 5 turns. Must strike an enemy every turn or be struck by Madness|Mad.",
                     "type": 2
                 }
             ],
@@ -30756,7 +30898,7 @@
             "effects": [
                 {
                     "name": "Whossa Large Fellow?|w=40",
-                    "description": "Wielder can cast Enlarge Icon|Enlarge on themselves (Long Rest).",
+                    "description": "Grow in size to become stronger (Long Rest).",
                     "type": 2
                 }
             ],
@@ -32127,18 +32269,12 @@
             "effects": [
                 {
                     "name": "Mystra's Blessing",
-                    "description": "Bless grants an additional 1d4 to Saving Throws and Weapon Attack Rolls, and an additional 2d4 to Spell Attack Rolls. Notes",
+                    "description": "Bless grants an additional 1d4 to Saving Throws and Weapon Attack Rolls, and an additional 2d4 to Spell Attack Rolls.",
                     "type": 2
                 },
                 {
-                    "name": "Anonymous Effect",
-                    "description": "Wielding this weapon grants one 1st level usage of Bless per Long Rest and causes all Bless spells cast by the wearer to act as Mystra's Blessing.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Staff of Arcane Blessing",
-                    "description": "Wielding this weapon grants one 1st level usage of Bless per Long Rest and causes all Bless spells cast by the wearer to act as Mystra's Blessing.",
+                    "name": "Bless|w=40",
+                    "description": "Cast as a level 1 spell (Long Rest).",
                     "type": 2
                 }
             ],
@@ -32283,8 +32419,8 @@
             "price": 430,
             "effects": [
                 {
-                    "name": "Ray of Sickness",
-                    "description": "The wearer gains the ability to cast Ray of Sickness Icon Ray of Sickness once per Short Rest.",
+                    "name": "Ray of Sickness|w=40",
+                    "description": "Cast as a level 1 spell (Short Rest).",
                     "type": 2
                 }
             ],
@@ -32388,10 +32524,10 @@
             "dippable": false
         },
         {
-            "name": "Staff of Spellpower",
+            "name": "Staff of Spell Power",
             "image": "Quarterstaff PlusOne Icon.png",
             "icon": "Quarterstaff PlusOne Unfaded Icon.png",
-            "description": "Staff of Spellpower is a very rare Quarterstaff that can be obtained from the House of Hope.",
+            "description": "Staff of Spell Power is a very rare Quarterstaff that can be obtained from the House of Hope.",
             "quote": "A near-perfect relic that is only blemished by the collected palm-sweat of various archmagi from across the Realms.",
             "type": 34,
             "rarity": 4,
@@ -36286,7 +36422,6 @@
             "damage": "1d6 +1",
             "damageType": 2,
             "damageVersatile": "1d8 +1",
-            "extraDamage": "1d4 Lightning",
             "range": 0,
             "finesse": false,
             "heavy": false,
@@ -36334,7 +36469,7 @@
             "rarity": 1,
             "weightKg": 1.35,
             "weightLb": 2.7,
-            "price": 10,
+            "price": 2,
             "uid": "",
             "effects": [],
             "sources": [

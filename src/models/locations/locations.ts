@@ -7,7 +7,6 @@ import {
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/game-location';
 import { ItemSourceLocation } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
-import { warn } from '../logger';
 import { MediaWiki } from '../media-wiki/media-wiki';
 import { MediaWikiParser } from '../media-wiki/wikitext-parser';
 
@@ -133,7 +132,7 @@ export async function initLocations() {
 
                     return { depth, name: page.title, id: page.pageId };
                 } catch (err) {
-                    warn(`Could not find page for location '${pageTitle}'`);
+                    // warn(`Could not find page for location '${pageTitle}'`);
 
                     return { depth, name: pageTitle };
                 }
@@ -146,7 +145,7 @@ export async function initLocations() {
         let loc: GameLocation;
 
         if (depth > path.length) {
-            warn(`Location '${name}' has no valid parent.`);
+            // warn(`Location '${name}' has no valid parent.`);
 
             // eslint-disable-next-line no-new
             loc = new GameLocation(path[path.length - 1], { name, id }, depth);
