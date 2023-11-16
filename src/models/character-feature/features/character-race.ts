@@ -149,17 +149,9 @@ export class CharacterRace extends CharacterFeature {
         async function parseRacialTraits(
             sectionText: string,
         ): Promise<GrantableEffect[]> {
-            // Use a regular expression to extract feature titles
-            const featureTitleRegex = /\*\s*\{\{SAI\|([^|]+)/g;
-
-            const featureTitles = [];
-            let match;
-
-            while (true) {
-                match = featureTitleRegex.exec(sectionText);
-                if (match === null) break;
-                featureTitles.push(match[1].trim());
-            }
+            const featureTitles = [
+                ...sectionText.matchAll(/\*\s*\{\{SAI\|([^|}]+)[\s\S]*?}}/g),
+            ].map((match) => match[1].trim());
 
             const fx = (
                 await Promise.all(

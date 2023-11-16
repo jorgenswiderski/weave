@@ -22,9 +22,10 @@ async function getInfo(data: any[]) {
 
 async function dump() {
     try {
+        const startTime = Date.now();
+
         await getMongoDb();
-        await initLocations();
-        await initActionsAndSpells();
+        await Promise.all([initLocations(), initActionsAndSpells()]);
 
         const datas = {
             'classes/info': getInfo(await getCharacterClassData()),
@@ -53,7 +54,7 @@ async function dump() {
         await StaticImageCacheService.waitForAllImagesToCache();
         await StaticImageCacheService.cleanupCache();
 
-        log('Data dump complete.');
+        log(`Data dump complete in ${(Date.now() - startTime) / 1000}s.`);
         process.exit(0);
     } catch (err) {
         error('Failed to complete data dump:');

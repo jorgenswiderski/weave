@@ -30,7 +30,11 @@ import { MediaWikiParser } from '../media-wiki/wikitext-parser';
 
 type ItemSourcePageInfo = {
     title: string;
-    info?: { latestRevisionId: number; categories: string[] };
+    info?: {
+        latestRevisionId: number;
+        categories: string[];
+        redirect?: string;
+    };
     data?: PageData;
 };
 
@@ -185,17 +189,25 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         character?: ItemSourceCharacter,
         quest?: ItemSourceQuest,
     ): Promise<GameLocation | undefined> {
-        const locationPages = pages.filter(({ data, title }) =>
-            data?.pageId
-                ? gameLocationById.has(data.pageId)
-                : gameLocationByPageTitle.has(title),
-        );
+        const locationPages = pages.filter(({ data, title, info }) => {
+            if (info?.redirect) {
+                return gameLocationByPageTitle.has(info.redirect);
+            }
 
-        const locations = locationPages.map(({ data, title }) =>
-            data?.pageId
+            return data?.pageId
+                ? gameLocationById.has(data.pageId)
+                : gameLocationByPageTitle.has(title);
+        });
+
+        const locations = locationPages.map(({ data, title, info }) => {
+            if (info?.redirect) {
+                return gameLocationByPageTitle.get(info.redirect)!;
+            }
+
+            return data?.pageId
                 ? gameLocationById.get(data.pageId)!
-                : gameLocationByPageTitle.get(title)!,
-        );
+                : gameLocationByPageTitle.get(title)!;
+        });
 
         if (locations.length > 0) {
             if (locations.length === 1) {

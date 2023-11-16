@@ -622,6 +622,26 @@
         ]
     },
     {
+        "name": "Claws (Bear Wild Shape)",
+        "damage": "amount:2d4, type:Slashing, mod:Strength",
+        "image": "Claws Bear.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Claws is a Wild Shape: Bear Action. Bears use this ability to make a melee attack that deals Slashing Damage to enemies.",
+        "description": "Lash out with deadly claws.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1193,
+        "attackRoll": true,
+        "range": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Clench of the North Wind",
         "image": "Hold Person.webp",
         "level": 0,
@@ -1134,6 +1154,27 @@
         "costs": [
             {
                 "resource": 2,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Divine Strike",
+        "damage": "amounttext:Weapon, type:Physical",
+        "image": "Divine Strike Radiant Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Divine Strike is a Weapon Action-like ability available to level 8 Life,  Trickery, Nature, Tempest, and War. Divine Strike deals 1 ~ 8 additional damage upon a weapon strike (either melee or ranged) of a type dependent on the chosen Domain.",
+        "description": "* Divine Strike Radiant Melee Icon Melee Skill: Once per turn deal 1d8 {Variation Damage Type} damage in addition to your weapon's {Weapon Damage} {Weapon Type} damage.\n* Divine Strike Radiant Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8 {Variation Damage Type} damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 13565,
+        "attackRoll": true,
+        "range": 4,
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 1,
                 "amount": 1
             }
         ]
@@ -4501,7 +4542,7 @@
         "level": 0,
         "school": 0,
         "summary": "Wild Shape is an Action gained by Druids at Level 2 that allows them to magically transform into various creatures in order to fight in combat or explore the environment.\n\nSee also: Combat Wild Shape, the Circle of the Moon enhanced version with extra exclusive forms.",
-        "description": "Magically assume the shape of a beast. While in animal shape, you can't talk or cast Spells.\n\nYou can take on the attributes your beast form -- excluding your Intelligence, Wisdom, and Charisma scores.\n\nWhen your beast form drops to 0 Hit Points, you revert to your normal form.",
+        "description": "Magically assume the shape of a beast. While in animal shape, you can't talk or cast Spells.\n\nYou take on the attributes of your beast form -- excluding your Intelligence, Wisdom, and Charisma scores.\n\nWhen your beast form drops to 0 Hit Points, you revert to your normal form.",
         "ritual": false,
         "concentration": false,
         "id": 664,
