@@ -130,7 +130,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Shattered Sanctum",
+                            "id": 4134
+                        }
+                    },
+                    "character": {
+                        "name": "Gut",
+                        "id": 1962
+                    }
+                }
+            ],
             "id": 3457
         },
         {
@@ -436,7 +460,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -528,31 +552,7 @@
                     "type": 2
                 }
             ],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Wilderness",
-                            "id": 4335
-                        },
-                        "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
-                        }
-                    },
-                    "character": {
-                        "name": "Ormn",
-                        "id": 12287
-                    }
-                }
-            ],
+            "sources": [],
             "id": 3574
         },
         {
@@ -2012,10 +2012,6 @@
                         "region": {
                             "name": "Wilderness",
                             "id": 4335
-                        },
-                        "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
                         }
                     }
                 }
@@ -2056,7 +2052,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -2300,25 +2296,6 @@
                     "character": {
                         "name": "Auntie Ethel",
                         "id": 4308
-                    }
-                },
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Wilderness",
-                            "id": 4335
-                        },
-                        "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
-                        }
                     }
                 },
                 {
@@ -2595,6 +2572,10 @@
                             "name": "Rivington",
                             "id": 11636
                         }
+                    },
+                    "character": {
+                        "name": "Tara",
+                        "id": 11003
                     }
                 }
             ],
@@ -3522,6 +3503,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -3735,6 +3720,29 @@
                             "name": "Wyrm's Rock Fortress",
                             "id": 12272
                         }
+                    }
+                },
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wyrm's Crossing",
+                            "id": 11638
+                        },
+                        "location": {
+                            "name": "Wyrm's Rock Fortress",
+                            "id": 12272
+                        }
+                    },
+                    "character": {
+                        "name": "Enver Gortash",
+                        "id": 11814
                     }
                 }
             ],
@@ -4843,7 +4851,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     },
@@ -5980,8 +5988,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "Inner Sanctum",
+                            "id": 13258
                         }
                     },
                     "character": {
@@ -7211,6 +7219,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -7771,10 +7783,11 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 90,
+            "uid": "MAG_Thunder_Reverberation_Gloves",
             "effects": [
                 {
                     "name": "Thunderous Conversion",
-                    "description": "When the wearer deals Thunder, Lightning, or Radiant damage, inflict 2 turns of Reverberation upon the target(s).",
+                    "description": "When the wearer deals Thunder, Lightning, or Radiant damage, inflict 2 turns of Reverberation upon the target(s) ({{recharge|Per attack)}}.",
                     "type": 2
                 }
             ],
@@ -8106,8 +8119,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -8147,27 +8160,7 @@
                     "type": 2
                 }
             ],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Wilderness",
-                            "id": 4335
-                        },
-                        "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
-                        }
-                    }
-                }
-            ],
+            "sources": [],
             "id": 3430
         },
         {
@@ -8910,7 +8903,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -10992,8 +10985,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -13107,7 +13100,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -13833,8 +13826,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -14321,7 +14314,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -14397,8 +14390,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -15185,8 +15178,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -15459,6 +15452,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -15785,8 +15782,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -16080,8 +16077,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -16182,8 +16179,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -17527,6 +17524,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Thrinn",
+                        "id": 15246
                     }
                 }
             ],
@@ -17878,8 +17879,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -18761,19 +18762,19 @@
                 {
                     "location": {
                         "act": {
-                            "name": "Act 1",
-                            "id": 4189
+                            "name": "Act 2",
+                            "id": 4949
                         },
                         "superRegion": {
                             "name": "Over-world"
                         },
                         "region": {
-                            "name": "Wilderness",
-                            "id": 4335
+                            "name": "Shadow-Cursed Lands",
+                            "id": 8117
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "Last Light Inn",
+                            "id": 8129
                         }
                     },
                     "character": {
@@ -19239,8 +19240,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "Sacred Pool",
+                            "id": 8727
                         }
                     },
                     "character": {
@@ -20019,8 +20020,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -20734,8 +20735,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -21885,8 +21886,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -23560,8 +23561,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -24514,8 +24515,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -24966,8 +24967,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -25329,7 +25330,7 @@
             "name": "Sussur Greatsword",
             "image": "Sussur Greatsword Icon.png",
             "icon": "Sussur Greatsword Unfaded Icon.png",
-            "description": "Sussur Greatsword is a rare greatsword that Silenced|Silences targets on each successful hit.",
+            "description": "Sussur Greatsword is a rare greatsword that can Silenced|Silence targets on a successful hit.",
             "quote": "Sussur roots extend from this sword's hilt into the blade itself. It yearns to drink magic, silencing every creature it strikes.",
             "type": 20,
             "rarity": 3,
@@ -25379,6 +25380,7 @@
             "handedness": 3,
             "damage": "2d6 + 1",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -26243,8 +26245,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -26323,8 +26325,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -27303,7 +27305,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -27560,8 +27562,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -27710,8 +27712,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -28177,8 +28179,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -29878,17 +29880,6 @@
                     "name": "Yeenoghu's Gift",
                     "description": "Hitting an enemy with this weapon heals the wielder for 1d6|Healing - but they can go Mad if they don't continue hitting an enemy each turn.",
                     "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "After attacking, grants Yeenoghu's Gift for 5 turns. Must strike an enemy every turn or be struck by Madness|Mad.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Shattered Flail",
-                    "description": "After attacking, grants Yeenoghu's Gift for 5 turns. Must strike an enemy every turn or be struck by Madness|Mad.",
-                    "type": 2
                 }
             ],
             "sources": [
@@ -30484,7 +30475,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -31876,83 +31867,12 @@
                     "type": 2
                 },
                 {
-                    "name": "Faithwarden's Vines",
-                    "description": "Vines sprout from the ground, slowing creatures within and possibly Entangled|Entangling them (STR to avoid becoming Entangled|Entangled).",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "action",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "m=18|ft=60",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "m=3|ft=10|Radius",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "10",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Concentration",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Always Prepared",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Recharge: Long Rest",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Pale Oak",
-                    "description": "action\nm=18|ft=60\nm=3|ft=10|Radius\n10\nConcentration\nAlways Prepared\nRecharge: Long Rest",
+                    "name": "Faithwarden's Vines|w=40",
+                    "description": "Vines sprout from the ground, slowing creatures within and possibly Entangled|Entangling them Long Rest.",
                     "type": 2
                 }
             ],
-            "sources": [
-                {
-                    "quest": {
-                        "name": "Investigate Kagha",
-                        "id": 4540
-                    },
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Wilderness",
-                            "id": 4335
-                        },
-                        "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
-                        }
-                    }
-                }
-            ],
+            "sources": [],
             "proficiency": 0,
             "id": 3799,
             "category": 2,
@@ -32025,8 +31945,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -32138,8 +32058,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -32673,7 +32593,7 @@
             "dippable": true
         },
         {
-            "name": "Staff of the Ram",
+            "name": "Staff of the Ram (Quarterstaff)",
             "image": "Quarterstaff PlusOne Icon.png",
             "icon": "Quarterstaff PlusOne Unfaded Icon.png",
             "quote": "Fashioned by some unknown archmage - no identifying insignia is forthcoming.\nThe staff thrums with a slow, ferocious pulse that draws its concussive power from the spiral-horned creatures that gave the weapon its name",
@@ -33221,8 +33141,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -34080,7 +34000,7 @@
     ],
     "37": [
         {
-            "name": "Blightbringer",
+            "name": "Blightbringer (Shortbow)",
             "image": "Shortbow PlusOne Icon.png",
             "icon": "Shortbow PlusOne Unfaded Icon.png",
             "quote": "Conducting a series of increasingly sick rituals - involving the ashes of a gnome and silkworms fed fat on the corpse of a dwarven cleric - the goblin shaman Kirruk Redrats created this deadly bow.",
@@ -34421,8 +34341,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -34585,8 +34505,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -34935,7 +34855,8 @@
         },
         {
             "name": "Executioner Sword",
-            "image": "",
+            "image": "Shortsword PlusOne Icon.png",
+            "icon": "Shortsword PlusOne Unfaded Icon.png",
             "quote": "Once there was a man who dreamed of unlocking every bit of his potential. It upset him when he couldn't; after all who can? When his daughter was born, she taught him about real dreams. She taught him with her eyes.",
             "type": 38,
             "rarity": 3,
@@ -36543,7 +36464,20 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "enchantment": 3,
             "id": 7957,
@@ -36682,8 +36616,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "The Hollow",
+                            "id": 8645
                         }
                     },
                     "character": {
@@ -37238,7 +37172,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -37486,7 +37420,7 @@
             "dippable": false
         },
         {
-            "name": "Dwarven Thrower",
+            "name": "Dwarven Thrower (Warhammer)",
             "image": "Warhammer PlusOne Icon.png",
             "icon": "Warhammer PlusOne Unfaded Icon.png",
             "quote": "The first Dwarven Thrower was created unintentionally. The moment was transcribed in the annals of dwarfdom thusly: 'Ach, it doesn't work. Another design down the bloody drain. Now to... Does er... Does anyone else hear a short of humming whistle? Growing louder?'",
@@ -37672,6 +37606,7 @@
             "weightKg": 2.7,
             "weightLb": 5.4,
             "price": 100,
+            "uid": "UNI_UND_DuergarRaft_GruesomeHammer",
             "effects": [
                 {
                     "name": "Impulse Blast",

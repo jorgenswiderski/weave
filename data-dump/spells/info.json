@@ -8583,7 +8583,7 @@
         "level": 1,
         "school": 2,
         "summary": "This spell allows spellcasters to conjure magical vines and turn an area within range into difficult terrain. Creatures are possibly Entangled and move at half speed while standing in this area.",
-        "description": "Vines sprout from the ground, turning it into Difficult Terrain and possibly Entangled|Entangling creatures within.\n\nEntangled creatures cannot move. An ally can use its help action to try and tear away the vines.\n\n10.",
+        "description": "Vines sprout from the ground, turning it into Difficult Terrain and possibly Entangled|Entangling creatures within.\n\nEntangled creatures cannot move. An ally can use its help action to try and tear away the vines.",
         "ritual": false,
         "concentration": true,
         "id": 2286,
@@ -8592,9 +8592,12 @@
         "aoe": 1,
         "aoeM": 3,
         "aoeFt": 10,
-        "condition": "Entangled",
-        "conditionDuration": 10,
-        "conditionSave": 1,
+        "areaName": "Vines",
+        "areaCategory": 3,
+        "areaShape": 1,
+        "areaRangeM": 3,
+        "areaRangeFt": 10,
+        "areaDuration": 10,
         "costs": [
             {
                 "resource": 1,
@@ -8757,6 +8760,44 @@
         ],
         "noSpellSlot": false,
         "damageSaveEffect": 1,
+        "isVariant": false
+    },
+    {
+        "name": "Faithwarden's Vines",
+        "image": "Entangle.webp",
+        "level": 1,
+        "school": 2,
+        "summary": "This spell allows spellcasters to conjure magical vines and turn an area within range into difficult terrain. Creatures are possibly Entangled and move at half speed while standing in this area.",
+        "description": "Vines sprout from the ground, turning it into Difficult Terrain and possibly Entangled|Entangling creatures within.\n\nEntangled creatures cannot move. An ally can use its help action to try and tear away the vines.",
+        "ritual": false,
+        "concentration": true,
+        "id": 28050,
+        "attackRoll": false,
+        "range": 1,
+        "aoe": 1,
+        "aoeM": 3,
+        "aoeFt": 10,
+        "areaName": "Vines",
+        "areaCategory": 3,
+        "areaShape": 1,
+        "areaRangeM": 3,
+        "areaRangeFt": 10,
+        "areaDuration": 10,
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 12,
+                "amount": 1
+            }
+        ],
+        "classes": [
+            "Druid"
+        ],
+        "noSpellSlot": true,
         "isVariant": false
     },
     {

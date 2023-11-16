@@ -3821,7 +3821,11 @@
                 "Features": [
                     {
                         "name": "Improved Bardic Inspiration",
-                        "grants": []
+                        "grants": [
+                            {
+                                "ref": "a2650"
+                            }
+                        ]
                     },
                     {
                         "name": "Font of Inspiration",
@@ -4778,7 +4782,11 @@
                 "Features": [
                     {
                         "name": "Improved Bardic Inspiration",
-                        "grants": []
+                        "grants": [
+                            {
+                                "ref": "a2650"
+                            }
+                        ]
                     },
                     {
                         "name": "Expertise (Subclass Feature)",
@@ -7772,13 +7780,21 @@
                                         "name": "Nature Domain",
                                         "description": "You embody the vast viridian power of the natural world, an avatar of the subtle divinity of fruitfall, avian migration, woodland silence, and the landslide's roaring fury.",
                                         "image": "Nature_Domain_Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a13565"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Tempest Domain",
                                         "description": "Your faith has made you the very thunder that quakes the black firmament, the lightning coursing through the veins of a terrible storm.",
                                         "image": "Tempest_Domain_Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a13565"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Trickery Domain",
@@ -8781,6 +8797,9 @@
                                                 "ref": "a15259"
                                             },
                                             {
+                                                "ref": "a1193"
+                                            },
+                                            {
                                                 "ref": "a1192"
                                             }
                                         ]
@@ -9644,7 +9663,11 @@
                     },
                     {
                         "name": "Wild Shape Improvement",
-                        "grants": []
+                        "grants": [
+                            {
+                                "ref": "a664"
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 3,
@@ -10575,7 +10598,11 @@
                     },
                     {
                         "name": "Wild Shape Improvement",
-                        "grants": []
+                        "grants": [
+                            {
+                                "ref": "a664"
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 3,
@@ -15295,14 +15322,7 @@
                 "Features": [
                     {
                         "name": "Unarmoured Movement",
-                        "grants": [
-                            {
-                                "name": "Unarmoured Movement",
-                                "type": 2,
-                                "description": "Your movement speed increases by m=3|ft=10 while you are not wearing armour or using a shield.",
-                                "image": "Unarmoured Movement.webp"
-                            }
-                        ]
+                        "grants": []
                     }
                 ],
                 "undefined": "Patient Defence}},Step of the Wind: Dash, Step of the Wind: Disengage"

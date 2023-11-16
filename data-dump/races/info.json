@@ -215,7 +215,47 @@
                     {
                         "name": "High Elves",
                         "description": "Heirs of the mystical [https://forgottenrealms.fandom.com/wiki/Feywild Feywild], high elves value magic in all its forms, and even those who do not study spellcraft can manipulate the [https://forgottenrealms.fandom.com/wiki/Weave Weave].",
-                        "grants": []
+                        "grants": [
+                            {
+                                "ref": "s1638"
+                            },
+                            {
+                                "ref": "s1641"
+                            },
+                            {
+                                "ref": "s1645"
+                            },
+                            {
+                                "ref": "s1647"
+                            },
+                            {
+                                "ref": "s1653"
+                            },
+                            {
+                                "ref": "s1661"
+                            },
+                            {
+                                "ref": "s796"
+                            },
+                            {
+                                "ref": "s1662"
+                            },
+                            {
+                                "ref": "s1663"
+                            },
+                            {
+                                "ref": "s1665"
+                            },
+                            {
+                                "ref": "s1691"
+                            },
+                            {
+                                "ref": "s1695"
+                            },
+                            {
+                                "ref": "s1696"
+                            }
+                        ]
                     },
                     {
                         "name": "Wood Elves",
@@ -346,7 +386,47 @@
                     {
                         "name": "High Half-Elves",
                         "description": "A touch of the [https://forgottenrealms.fandom.com/wiki/Feywild Feywild] remains in half-elves with this bloodline, and even those untrained in magic possess a hint of wild power.",
-                        "grants": []
+                        "grants": [
+                            {
+                                "ref": "s1638"
+                            },
+                            {
+                                "ref": "s1641"
+                            },
+                            {
+                                "ref": "s1645"
+                            },
+                            {
+                                "ref": "s1647"
+                            },
+                            {
+                                "ref": "s1653"
+                            },
+                            {
+                                "ref": "s1661"
+                            },
+                            {
+                                "ref": "s796"
+                            },
+                            {
+                                "ref": "s1662"
+                            },
+                            {
+                                "ref": "s1663"
+                            },
+                            {
+                                "ref": "s1665"
+                            },
+                            {
+                                "ref": "s1691"
+                            },
+                            {
+                                "ref": "s1695"
+                            },
+                            {
+                                "ref": "s1696"
+                            }
+                        ]
                     },
                     {
                         "name": "Wood Half-Elves",

@@ -1,4 +1,5 @@
-import { ApiPage, ApiParams, ApiResponse, Mwn } from 'mwn';
+import { ApiParams, ApiResponse, Mwn } from 'mwn';
+import assert from 'assert';
 import { Utils } from '../models/utils';
 import { CONFIG } from '../models/config';
 import { TokenBucket } from '../models/token-bucket';
@@ -67,6 +68,7 @@ export class MwnApiClass {
                 query: {
                     ...datas[0].query,
                     normalized: datas.flatMap((d) => d.query?.normalized ?? []),
+                    redirects: datas.flatMap((d) => d.query?.redirects ?? []),
                     pages: datas.flatMap((d) => d.query?.pages),
                 },
             };
@@ -145,11 +147,21 @@ export class MwnApiClass {
         return titles;
     }
 
-    readPage = memoize(async (pageTitle: string): Promise<ApiPage> => {
-        await MwnTokenBucket.acquireToken();
+    readPage = memoize(
+        async (pageTitle: string): Promise<Record<string, any>> => {
+            const data = await this.queryPage(pageTitle, {
+                prop: 'revisions',
+                rvprop: 'content',
+                rvslots: 'main',
+            });
 
-        return bot.read(pageTitle);
-    });
+            data.revisions =
+                data.revisions?.map((revision: any) => revision.slots.main) ??
+                [];
+
+            return data;
+        },
+    );
 
     async queryPages(
         pageTitles: string[],
@@ -244,6 +256,21 @@ export class MwnApiClass {
             },
         };
     };
+
+    async getRedirect(pageTitle: string): Promise<string> {
+        const response = await this.queryWithBatchingAcross('titles', {
+            titles: [pageTitle],
+            redirects: true,
+        });
+
+        const redirect = response.query?.redirects.find(
+            ({ from }: { from: string }) => from === pageTitle,
+        );
+
+        assert(redirect, `Expected redirect for page '${pageTitle}' to exist!`);
+
+        return redirect.to;
+    }
 }
 
 export const MwnApi = new MwnApiClass();

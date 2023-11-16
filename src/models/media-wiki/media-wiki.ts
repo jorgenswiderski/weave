@@ -16,6 +16,7 @@ export class PageData implements IPageData {
     revisionId: any;
     categories: string[];
     pageId: number;
+    lastFetched: number;
 
     revid?: number;
     parentid?: number;
@@ -41,11 +42,12 @@ export class PageData implements IPageData {
     content?: string;
 
     constructor(data: IPageData) {
-        const { title, pageId, categories, ...rest } = data;
+        const { title, pageId, categories, lastFetched, ...rest } = data;
         Object.assign(this, rest);
         this.title = title;
         this.pageId = pageId;
         this.categories = categories;
+        this.lastFetched = lastFetched;
     }
 
     hasCategory(categoryNames: string[] | string): boolean {
@@ -114,108 +116,129 @@ export class PageData implements IPageData {
 }
 
 export class MediaWiki {
-    static getPage = Utils.memoizeWithExpiration(
-        60000,
-        async function getPage(pageTitle: string): Promise<PageData> {
-            const db: Db = await getMongoDb();
-            const pageCollection = db.collection(MongoCollections.MW_PAGES);
+    protected static isPageThrottled(cachedPage: IPageData): boolean {
+        // If the page is cached and it's been fewer than N seconds since the last fetch,
+        // just return the cached content.
+        const currentTime = Date.now();
 
-            // Check if the page is cached
-            const cachedPage = await pageCollection.findOne({
-                title: pageTitle,
-            });
+        const lastTime = cachedPage?.lastFetched || 0;
+        // Add a %age variance to the the throttle to evenly distribute the cache rebuilding over time
+        const variance = CONFIG.MEDIAWIKI.REVISION_CHECK_THROTTLE_VARIANCE;
 
-            // If the page is cached and it's been fewer than N seconds since the last fetch,
-            // just return the cached content.
-            const currentTime = Date.now();
+        const rngFactor =
+            1.0 + Utils.randomSeeded(lastTime) * variance * 2 - variance;
 
-            const lastTime = cachedPage?.lastFetched || 0;
-            // Add a %age variance to the the throttle to evenly distribute the cache rebuilding over time
-            const variance = CONFIG.MEDIAWIKI.REVISION_CHECK_THROTTLE_VARIANCE;
+        const throttle =
+            CONFIG.MEDIAWIKI.REVISION_CHECK_THROTTLE_IN_MILLIS * rngFactor;
 
-            const rngFactor =
-                1.0 + Utils.randomSeeded(lastTime) * variance * 2 - variance;
+        return currentTime - lastTime < throttle;
+    }
 
-            const throttle =
-                CONFIG.MEDIAWIKI.REVISION_CHECK_THROTTLE_IN_MILLIS * rngFactor;
+    static titleRedirects = new Map<string, string>();
 
-            if (cachedPage && currentTime - lastTime < throttle) {
-                return new PageData(cachedPage as unknown as IPageData);
+    static getPage = Utils.memoize(async function getPage(
+        pageTitle: string,
+    ): Promise<PageData> {
+        assert(
+            !pageTitle.match(/(?:{{)|(?:}})/),
+            `Page title '${pageTitle}' should not include template syntax!`,
+        );
+
+        const db: Db = await getMongoDb();
+        const pageCollection = db.collection(MongoCollections.MW_PAGES);
+
+        // eslint-disable-next-line no-param-reassign
+        pageTitle = MediaWiki.titleRedirects.get(pageTitle) ?? pageTitle;
+
+        // Check if the page is cached
+        const cachedPage = (await pageCollection.findOne({
+            title: pageTitle,
+        })) as unknown as IPageData | undefined;
+
+        if (cachedPage && MediaWiki.isPageThrottled(cachedPage)) {
+            return new PageData(cachedPage);
+        }
+
+        const { latestRevisionId, categories, redirect } =
+            await MediaWiki.getPageInfo(pageTitle);
+
+        if (redirect) {
+            MediaWiki.titleRedirects.set(pageTitle, redirect);
+            // eslint-disable-next-line no-param-reassign
+            pageTitle = redirect;
+
+            const redirectPage = (await pageCollection.findOne({
+                title: redirect,
+            })) as unknown as IPageData | undefined;
+
+            if (redirectPage && MediaWiki.isPageThrottled(redirectPage)) {
+                return new PageData(redirectPage);
             }
+        }
 
-            const { latestRevisionId, categories } =
-                await MediaWiki.getPageInfo(pageTitle);
-
-            // Compare with locally stored revision ID
-            if (cachedPage && cachedPage.revisionId >= latestRevisionId) {
-                await pageCollection.updateOne(
-                    { title: pageTitle },
-                    {
-                        $set: {
-                            lastFetched: currentTime,
-                        },
+        // Compare with locally stored revision ID
+        if (cachedPage && cachedPage.revisionId >= latestRevisionId) {
+            await pageCollection.updateOne(
+                { pageId: cachedPage.pageId },
+                {
+                    $set: {
+                        lastFetched: Date.now(),
                     },
-                );
-
-                return new PageData(cachedPage as unknown as IPageData);
-            }
-
-            const content = await MwnApi.readPage(pageTitle);
-
-            if (!content.revisions || !content.revisions[0]) {
-                throw new Error(`Content for page "${pageTitle}" not found`);
-            }
-
-            const data = {
-                ...content.revisions[0],
-                pageId: content.pageid,
-                title: pageTitle,
-                revisionId: latestRevisionId,
-                categories,
-                lastFetched: currentTime,
-            };
-
-            assert(
-                typeof data.content === 'string',
-                'Page content must be a string',
+                },
             );
 
-            // Store or update the page content, revision ID, and categories in MongoDB
-            try {
-                await pageCollection.updateOne(
-                    { title: pageTitle },
-                    {
-                        $set: {
-                            ...content.revisions[0],
-                            pageId: content.pageid,
-                            revisionId: latestRevisionId,
-                            categories,
-                            lastFetched: currentTime,
-                        },
-                    },
-                    { upsert: true },
-                );
+            return new PageData(cachedPage as unknown as IPageData);
+        }
 
-                debug(`Updated page '${pageTitle}'`);
-            } catch (err) {
-                if (
-                    err instanceof MongoError &&
-                    err.code === 11000 /* Duplicate key */
-                ) {
-                    // The upsert failed due to a unique index constraint being
-                    // violated by 2 or more concurrent insert operations
-                    //
-                    // Since readPage is memoized, the content of the document is
-                    // basically guaranteed to be identical to the data in this
-                    // context, so we can just do nothing
-                } else {
-                    throw err;
-                }
+        const content = await MwnApi.readPage(pageTitle);
+
+        if (!content.revisions || !content.revisions[0]) {
+            throw new Error(`Content for page "${pageTitle}" not found`);
+        }
+
+        const data = {
+            ...content.revisions[0],
+            pageId: content.pageid,
+            title: content.title,
+            revisionId: latestRevisionId,
+            categories,
+            lastFetched: Date.now(),
+        };
+
+        assert(
+            typeof data.content === 'string',
+            'Page content must be a string',
+        );
+
+        // Store or update the page content, revision ID, and categories in MongoDB
+        try {
+            const { pageId, ...rest } = data;
+
+            await pageCollection.updateOne(
+                { pageId },
+                { $set: rest },
+                { upsert: true },
+            );
+
+            debug(`Updated page '${content.title}'`);
+        } catch (err) {
+            if (
+                err instanceof MongoError &&
+                err.code === 11000 /* Duplicate key */
+            ) {
+                // The upsert failed due to a unique index constraint being
+                // violated by 2 or more concurrent insert operations
+                //
+                // Since readPage is memoized, the content of the document is
+                // basically guaranteed to be identical to the data in this
+                // context, so we can just do nothing
+            } else {
+                throw err;
             }
+        }
 
-            return new PageData(data);
-        },
-    );
+        return new PageData(data);
+    });
 
     static stripMarkup(value: string): string {
         let v = value.replace(/\[\[File:([^|]*?)(?:\|[^|]+?)*\]\]/g, ''); // remove files
@@ -265,6 +288,7 @@ export class MediaWiki {
     static async getPageInfo(pageTitle: string): Promise<{
         latestRevisionId: number;
         categories: string[];
+        redirect?: string;
     }> {
         const data = await MwnApi.queryPage(pageTitle, {
             prop: 'info|categories',
@@ -272,12 +296,21 @@ export class MediaWiki {
             cllimit: 'max',
         });
 
-        const { lastrevid, categories } = data;
+        const { lastrevid, categories, title } = data;
+
+        // If the title was normalized, we can just grab the title right out of the data
+        let redirect = pageTitle !== title ? title : undefined;
+
+        // Otherwise its a "true" redirect and we need to fetch the real title
+        if (!redirect && data.redirect) {
+            redirect = await MwnApi.getRedirect(pageTitle);
+        }
 
         return {
             latestRevisionId: lastrevid,
             categories:
                 categories?.map((cat: Record<string, any>) => cat.title) || [],
+            redirect,
         };
     }
 
