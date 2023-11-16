@@ -1,5 +1,6 @@
 import { MwnApiClass } from '../../api/mwn';
 import { MediaWiki, PageData } from '../media-wiki/media-wiki';
+import { Utils } from '../utils';
 import { initActionData } from './action';
 import { initSpellData } from './spell';
 
@@ -42,13 +43,17 @@ export async function initActionsAndSpells(): Promise<void> {
 
     const uniquePages = [...pageMap.values()];
 
-    const actions = uniquePages
-        .filter((page) => page?.content?.includes('{{ActionPage'))
-        .map((page) => page?.title!);
+    const actions = (
+        await Utils.asyncFilter(uniquePages, (page) =>
+            page.hasTemplate('ActionPage'),
+        )
+    ).map((page) => page.title);
 
-    const spells = uniquePages
-        .filter((page) => page?.content?.includes('{{SpellPage'))
-        .map((page) => page?.title!);
+    const spells = (
+        await Utils.asyncFilter(uniquePages, (page) =>
+            page.hasTemplate('SpellPage'),
+        )
+    ).map((page) => page.title);
 
     await Promise.all([initActionData(actions), initSpellData(spells)]);
 }

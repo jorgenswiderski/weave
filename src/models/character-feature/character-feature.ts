@@ -15,7 +15,6 @@ import assert from 'assert';
 import { PageItem, PageLoadingState } from '../page-item';
 import { ICharacterOptionWithPage } from './types';
 import { error, warn } from '../logger';
-import { MwnApi } from '../../api/mwn';
 import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { PageNotFoundError } from '../errors';
 import { Spell, getSpellDataById } from '../action/spell';
@@ -82,17 +81,15 @@ export class CharacterFeature
     async initImage(): Promise<void> {}
 
     private static async parseSpellPage(
-        pageContent: string,
-        pageTitle: string,
-        pageId: number,
+        page: PageData,
     ): Promise<StaticallyReferenceable> {
-        assert(pageContent.includes('{{SpellPage'));
+        const { title, pageId } = page;
+        assert(await page.hasTemplate('SpellPage'));
+
         const spells = await getSpellDataById();
 
         if (!spells.has(pageId)) {
-            throw new Error(
-                `Could not find spell for ${pageTitle} (${pageId})`,
-            );
+            throw new Error(`Could not find spell for ${title} (${pageId})`);
         }
 
         const spell = spells.get(pageId)! as Spell;
@@ -102,17 +99,15 @@ export class CharacterFeature
     }
 
     private static async parseActionPage(
-        pageContent: string,
-        pageTitle: string,
-        pageId: number,
+        page: PageData,
     ): Promise<StaticallyReferenceable> {
-        assert(pageContent.includes('{{ActionPage'));
+        const { title, pageId } = page;
+        assert(await page.hasTemplate('ActionPage'));
+
         const actions = await getActionDataById();
 
         if (!actions.has(pageId)) {
-            throw new Error(
-                `Could not find action for ${pageTitle} (${pageId})`,
-            );
+            throw new Error(`Could not find action for ${title} (${pageId})`);
         }
 
         const action = actions.get(pageId)! as Action;
@@ -122,19 +117,19 @@ export class CharacterFeature
     }
 
     private static async parsePassiveFeaturePage(
-        pageContent: string,
-        pageTitle: string,
-    ): Promise<GrantableEffect | StaticallyReferenceable> {
-        const descMatch =
-            /\|\s*description\s*=\s*([\s\S]+?)\n\|\s*[\w\s]+=/g.exec(
-                pageContent,
-            );
+        page: PageData & { content: string },
+    ): Promise<GrantableEffect> {
+        const { title, content } = page;
+        assert(await page.hasTemplate('Passive feature page'));
 
-        const imageMatch = /\|\s*image\s*=\s*(.+)/.exec(pageContent);
+        const descMatch =
+            /\|\s*description\s*=\s*([\s\S]+?)\n\|\s*[\w\s]+=/g.exec(content);
+
+        const imageMatch = /\|\s*image\s*=\s*(.+)/.exec(content);
 
         return {
             // name: MediaWikiWikitextParser.parseNameFromPageTitle(pageTitle),
-            name: pageTitle,
+            name: title,
             type: GrantableEffectType.CHARACTERISTIC,
             description: descMatch
                 ? MediaWiki.stripMarkup(descMatch[1]).trim()
@@ -148,51 +143,38 @@ export class CharacterFeature
         page?: PageData,
     ): Promise<GrantableEffect | StaticallyReferenceable | null> {
         try {
-            const categories = await MwnApi.queryCategoriesFromPage(pageTitle);
-
-            if (
-                !categories.includes('Category:Class Actions') &&
-                !categories.includes('Category:Racial Action') &&
-                !categories.includes('Category:Passive Features') &&
-                !categories.includes('Category:Spells') &&
-                !categories.includes('Category:Toggleable Passive Features')
-            ) {
-                return null;
-            }
-
-            if (!page) {
-                const p = await MediaWiki.getPage(pageTitle);
-
-                if (p) {
-                    // eslint-disable-next-line no-param-reassign
-                    page = p;
-                }
-            }
+            // eslint-disable-next-line no-param-reassign
+            pageTitle = pageTitle.replace(/_/g, ' ');
+            // eslint-disable-next-line no-param-reassign
+            page = page ?? (await MediaWiki.getPage(pageTitle));
 
             if (!page?.content) {
                 throw new Error('no page content for grantable effect');
             }
 
-            if (page.content.includes('{{ActionPage')) {
-                return await CharacterFeature.parseActionPage(
-                    page.content,
-                    pageTitle,
-                    page.pageId,
-                );
+            if (
+                !page.hasCategory([
+                    'Class actions',
+                    'Racial action',
+                    'Passive features',
+                    'Spells',
+                    'Toggleable passive features',
+                ])
+            ) {
+                return null;
             }
 
-            if (page.content.includes('{{SpellPage')) {
-                return await CharacterFeature.parseSpellPage(
-                    page.content,
-                    pageTitle,
-                    page.pageId,
-                );
+            if (await page.hasTemplate('ActionPage')) {
+                return await CharacterFeature.parseActionPage(page);
             }
 
-            if (page.content.includes('{{Passive feature page')) {
+            if (await page.hasTemplate('SpellPage')) {
+                return await CharacterFeature.parseSpellPage(page);
+            }
+
+            if (await page.hasTemplate('Passive feature page')) {
                 return await CharacterFeature.parsePassiveFeaturePage(
-                    page.content,
-                    pageTitle,
+                    page as PageData & { content: string },
                 );
             }
 

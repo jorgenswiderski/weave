@@ -7,6 +7,7 @@ import { MediaWiki } from '../media-wiki/media-wiki';
 import { EquipmentItem } from './equipment-item';
 import { WeaponItem } from './weapon-item';
 import { StaticImageCacheService } from '../static-image-cache-service';
+import { Utils } from '../utils';
 
 let itemData: Record<string, EquipmentItem[]> | null = null;
 let itemDataById: Map<number, EquipmentItem> | null = null;
@@ -39,13 +40,17 @@ export async function getEquipmentItemData(
         const uniqueNames = [...new Set(equipmentItemNames.flat())];
         const pages = await Promise.all(uniqueNames.map(MediaWiki.getPage));
 
-        const weaponNames = pages
-            .filter((page) => page?.content?.includes('{{WeaponPage'))
-            .map((page) => page!.title);
+        const weaponNames = (
+            await Utils.asyncFilter(pages, (page) =>
+                page.hasTemplate('WeaponPage'),
+            )
+        ).map((page) => page.title);
 
-        const armourNames = pages
-            .filter((page) => page?.content?.includes('{{EquipmentPage'))
-            .map((page) => page!.title);
+        const armourNames = (
+            await Utils.asyncFilter(pages, (page) =>
+                page.hasTemplate('EquipmentPage'),
+            )
+        ).map((page) => page.title);
 
         const data = [
             ...armourNames.map((name) => new EquipmentItem(name)),

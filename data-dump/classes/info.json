@@ -5855,7 +5855,11 @@
                                         "name": "Knowledge Domain",
                                         "description": "Adaptable and adroit in all manner of languages and skills, your mind is an intellectual cup brimming with exquisite knowing.",
                                         "image": "Knowledge Domain Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a7917"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Life Domain",
@@ -15379,6 +15383,9 @@
                                             },
                                             {
                                                 "ref": "a7865"
+                                            },
+                                            {
+                                                "ref": "a8162"
                                             }
                                         ]
                                     },
@@ -16311,6 +16318,9 @@
                                         "description": "You focus your ki to bend the elements to your will, using them as an extension of your own body.",
                                         "image": "Class Monk Four Elements Badge Icon.png",
                                         "grants": [
+                                            {
+                                                "ref": "a7867"
+                                            },
                                             {
                                                 "ref": "a14447"
                                             },
@@ -17258,6 +17268,9 @@
                                                 "ref": "a7865"
                                             },
                                             {
+                                                "ref": "a7867"
+                                            },
+                                            {
                                                 "ref": "a14447"
                                             },
                                             {
@@ -17348,6 +17361,9 @@
                                             },
                                             {
                                                 "ref": "a14026"
+                                            },
+                                            {
+                                                "ref": "a7871"
                                             }
                                         ]
                                     },
@@ -19235,7 +19251,11 @@
                                         "name": "Oathbreaker",
                                         "description": "You have broken your sacred Oath in pursuit of power and ambition. Only darkness remains to fuel you now.",
                                         "image": "Paladin Oathbreaker Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a9715"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -21012,6 +21032,9 @@
                                             },
                                             {
                                                 "ref": "a14210"
+                                            },
+                                            {
+                                                "ref": "a14211"
                                             },
                                             {
                                                 "ref": "a14212"

@@ -45,6 +45,10 @@ export class CharacterRace extends CharacterFeature {
             throw new Error('Could not find page content');
         }
 
+        if (await this.isSpoiler()) {
+            return;
+        }
+
         const subracePattern = /\n===\s*([^=]*?)\s*===\n\s*([\s\S]*?)(?===|$)/g;
 
         let match;
@@ -213,7 +217,7 @@ export class CharacterRace extends CharacterFeature {
             throw new Error('Could not find page content');
         }
 
-        return this.page.content.includes('{{SpoilerWarning}}');
+        return this.page.hasTemplate('SpoilerWarning');
     }
 }
 
@@ -230,14 +234,9 @@ export async function getCharacterRaceData(): Promise<CharacterRace[]> {
 
         await Promise.all(races.map((cr) => cr.waitForInitialization()));
 
-        characterRaceData = [];
-
-        await Promise.all(
-            races.map(async (race) => {
-                if (!(await race.isSpoiler())) {
-                    characterRaceData.push(race);
-                }
-            }),
+        characterRaceData = await Utils.asyncFilter(
+            races,
+            async (race) => !(await race.isSpoiler()),
         );
     }
 

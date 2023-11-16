@@ -45,10 +45,7 @@ export class WeaponItem extends EquipmentItem implements Partial<IWeaponItem> {
             throw new PageNotFoundError();
         }
 
-        if (
-            !this.page.content.includes('{{EquipmentPage') &&
-            !this.page.content.includes('{{WeaponPage')
-        ) {
+        if (!(await this.page.hasTemplate(['WeaponPage', 'EquipmentPage']))) {
             return;
         }
 
