@@ -2,6 +2,7 @@ import { MediaWiki, PageData } from './media-wiki';
 import { PageNotFoundError } from '../errors';
 import { error, warn } from '../logger';
 import { Utils } from '../utils';
+import { MediaWikiParser } from './wikitext-parser';
 
 type ParserFunction = (
     value: string,
@@ -76,7 +77,7 @@ export class MediaWikiTemplateParser {
         wikitext: string,
         key: string,
     ): string | undefined {
-        const commentless = wikitext.replace(/<!--[\s\S]*?-->/g, '');
+        const commentless = MediaWikiParser.removeComments(wikitext);
 
         const regex = new RegExp(
             `\\|\\s*${key}\\s*=([\\s\\S]*?)\\n(?:\\||}})`,

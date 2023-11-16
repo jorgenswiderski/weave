@@ -1,7 +1,7 @@
 /* eslint-disable import/first */
 import dotenv from 'dotenv';
 
-dotenv.config({ path: '.env.dump' });
+dotenv.config({ path: 'dump-data.env' });
 
 import fs from 'fs/promises';
 import { error, log } from './logger';

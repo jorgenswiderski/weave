@@ -159,6 +159,29 @@
         ]
     },
     {
+        "name": "Aura of Hate",
+        "image": "Aura of Hate Icon.png",
+        "level": 0,
+        "school": 0,
+        "summary": "Aura of Hate is a Class Feature of  Paladins. This ability allows a Paladin to add damage to their allies attacks.",
+        "description": "You and any nearby fiends (and undead) gain additional damage to melee weapon attacks equal to your Charisma Modifier. The aura disappears if you fall Unconscious.",
+        "ritual": false,
+        "concentration": false,
+        "id": 9715,
+        "attackRoll": false,
+        "range": 3,
+        "aoe": 5,
+        "aoeM": 3,
+        "aoeFt": 10,
+        "condition": "Aura of Hate",
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Aura of Protection",
         "image": "Aura of Protection.webp",
         "level": 0,
@@ -595,6 +618,30 @@
             {
                 "resource": 1,
                 "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Clench of the North Wind",
+        "image": "Hold Person.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "PAGENAME is an Action that allows the Way of the Four Elements to cast Hold Person as a class action.",
+        "description": "Hold a humanoid enemy still. They can't move, act or react. Attacks from within 3m are always critical hits.",
+        "ritual": false,
+        "concentration": false,
+        "id": 7867,
+        "attackRoll": false,
+        "rangeM": 18,
+        "rangeFt": 60,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 3
             }
         ]
     },
@@ -1827,6 +1874,25 @@
         ]
     },
     {
+        "name": "Harmony of Fire and Water",
+        "image": "Harmony of Fire and Water.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Harmony of Fire and Water is an action that allows the Way of the Four Elements to recover half of their max ki|forceplural=y outside of combat, but can only be used once per long rest.",
+        "description": "While not in combat, regain half of your ki|forceplural=y (rounded down).",
+        "ritual": false,
+        "concentration": false,
+        "id": 8162,
+        "attackRoll": false,
+        "recharge": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Healing Radiance",
         "damage": "amounttext:Proficiency Bonus + Paladin Level + Charisma Modifier, type:Healing",
         "image": "Healing Radiance.webp",
@@ -2333,6 +2399,28 @@
         "costs": [
             {
                 "resource": 2,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Knowledge of the Ages",
+        "image": "Knowledge of the Ages.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Knowledge of the Ages is a Knowledge Domain Cleric Action. This ability allows the Cleric to channel divine power, gaining Proficiency in all Skills of a chosen Ability Score.",
+        "description": "Gain Ability.",
+        "ritual": false,
+        "concentration": false,
+        "id": 7917,
+        "attackRoll": false,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 8,
                 "amount": 1
             }
         ]
@@ -3085,6 +3173,29 @@
         "id": 6277,
         "attackRoll": false,
         "costs": []
+    },
+    {
+        "name": "Ride the Wind",
+        "image": "Fly_Icon.png",
+        "level": 0,
+        "school": 0,
+        "summary": "PAGENAME is an action that allows the Monk following the Class Monk Four Elements Hotbar Icon|Way of the Four Elements to Fly.",
+        "description": "Gain the ability to Fly.",
+        "ritual": false,
+        "concentration": false,
+        "id": 7871,
+        "attackRoll": false,
+        "condition": "Flight",
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 4
+            }
+        ]
     },
     {
         "name": "Rush of the Gale Spirits",
@@ -4557,6 +4668,27 @@
             {
                 "resource": 24,
                 "amount": 2
+            }
+        ]
+    },
+    {
+        "name": "Wolf Companion",
+        "image": "Wolf Companion.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Summon Companion: Wolf is a variant of Summon Companion which is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
+        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14211,
+        "attackRoll": false,
+        "rangeM": 18,
+        "rangeFt": 60,
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
             }
         ]
     },

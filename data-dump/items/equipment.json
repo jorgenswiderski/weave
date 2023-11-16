@@ -30879,7 +30879,7 @@
             "effects": [
                 {
                     "name": "Whossa Large Fellow?|w=40",
-                    "description": "Wielder can cast Enlarge Icon|Enlarge on themselves (Long Rest).",
+                    "description": "Grow in size to become stronger (Long Rest).",
                     "type": 2
                 }
             ],
@@ -32250,18 +32250,12 @@
             "effects": [
                 {
                     "name": "Mystra's Blessing",
-                    "description": "Bless grants an additional 1d4 to Saving Throws and Weapon Attack Rolls, and an additional 2d4 to Spell Attack Rolls. Notes",
+                    "description": "Bless grants an additional 1d4 to Saving Throws and Weapon Attack Rolls, and an additional 2d4 to Spell Attack Rolls.",
                     "type": 2
                 },
                 {
-                    "name": "Anonymous Effect",
-                    "description": "Wielding this weapon grants one 1st level usage of Bless per Long Rest and causes all Bless spells cast by the wearer to act as Mystra's Blessing.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Staff of Arcane Blessing",
-                    "description": "Wielding this weapon grants one 1st level usage of Bless per Long Rest and causes all Bless spells cast by the wearer to act as Mystra's Blessing.",
+                    "name": "Bless|w=40",
+                    "description": "Cast as a level 1 spell (Long Rest).",
                     "type": 2
                 }
             ],
@@ -32406,8 +32400,8 @@
             "price": 430,
             "effects": [
                 {
-                    "name": "Ray of Sickness",
-                    "description": "The wearer gains the ability to cast Ray of Sickness Icon Ray of Sickness once per Short Rest.",
+                    "name": "Ray of Sickness|w=40",
+                    "description": "Cast as a level 1 spell (Short Rest).",
                     "type": 2
                 }
             ],
