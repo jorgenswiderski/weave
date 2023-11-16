@@ -183,6 +183,10 @@
                             "name": "Act 3",
                             "id": 4950
                         }
+                    },
+                    "character": {
+                        "name": "Sarevok Anchev",
+                        "id": 8202
                     }
                 }
             ],
@@ -285,8 +289,8 @@
                         }
                     },
                     "character": {
-                        "name": "Brem",
-                        "id": 14233
+                        "name": "Grat",
+                        "id": 4296
                     }
                 },
                 {
@@ -710,6 +714,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -1817,6 +1825,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -2866,12 +2878,12 @@
                             "name": "Over-world"
                         },
                         "region": {
-                            "name": "Wyrm's Crossing",
-                            "id": 11638
+                            "name": "Rivington",
+                            "id": 11636
                         },
                         "location": {
-                            "name": "South Span Checkpoint",
-                            "id": 24896
+                            "name": "Western Beach",
+                            "id": 12908
                         }
                     }
                 }
@@ -2914,6 +2926,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -3084,6 +3100,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -3550,6 +3570,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -4164,6 +4188,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -4675,6 +4703,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -5839,6 +5871,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -6271,6 +6307,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -6324,6 +6364,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -7050,6 +7094,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -7262,6 +7310,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -7704,6 +7756,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -7753,6 +7809,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -7890,6 +7950,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -8401,6 +8465,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -10133,6 +10201,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 },
                 {
@@ -10717,6 +10789,10 @@
                             "name": "Baldur's Gate",
                             "id": 6062
                         }
+                    },
+                    "character": {
+                        "name": "Ulder Ravengard",
+                        "id": 11465
                     }
                 }
             ],
@@ -12650,6 +12726,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -13425,6 +13505,10 @@
                             "name": "Act 3",
                             "id": 4950
                         }
+                    },
+                    "character": {
+                        "name": "Sarevok Anchev",
+                        "id": 8202
                     }
                 }
             ],
@@ -14783,6 +14867,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -15115,7 +15203,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 2",
+                            "id": 4949
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Shadow-Cursed Lands",
+                            "id": 8117
+                        },
+                        "location": {
+                            "name": "Last Light Inn",
+                            "id": 8129
+                        }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
+                    }
+                }
+            ],
             "proficiency": 2,
             "baseArmorClass": 12,
             "id": 10573
@@ -15515,6 +15627,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -15937,6 +16053,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -16605,6 +16725,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -16961,6 +17085,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Novice Crusher",
+                        "id": 5874
                     }
                 }
             ],
@@ -18906,6 +19034,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Marcus",
+                        "id": 10808
                     }
                 }
             ],
@@ -19325,6 +19457,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 },
                 {
@@ -19390,6 +19526,10 @@
                             "name": "Lady Jannath's Estate",
                             "id": 11246
                         }
+                    },
+                    "character": {
+                        "name": "Jannath",
+                        "id": 17198
                     }
                 }
             ],
@@ -20314,6 +20454,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -23738,6 +23882,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -23979,6 +24127,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -24596,6 +24748,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -24870,6 +25026,10 @@
                             "name": "Nautiloid",
                             "id": 4492
                         }
+                    },
+                    "character": {
+                        "name": "Zhalk",
+                        "id": 4634
                     }
                 }
             ],
@@ -24926,6 +25086,10 @@
                             "name": "Mountain Pass",
                             "id": 4191
                         }
+                    },
+                    "character": {
+                        "name": "Baretha",
+                        "id": 23134
                     }
                 }
             ],
@@ -25048,6 +25212,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 },
                 {
@@ -25121,6 +25289,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Greymon",
+                        "id": 24742
                     }
                 }
             ],
@@ -25481,6 +25653,10 @@
                             "name": "Waukeen's Rest",
                             "id": 4462
                         }
+                    },
+                    "character": {
+                        "name": "Yeva",
+                        "id": 15693
                     }
                 }
             ],
@@ -25537,6 +25713,10 @@
                             "name": "Murder Tribunal",
                             "id": 14112
                         }
+                    },
+                    "character": {
+                        "name": "Sarevok Anchev",
+                        "id": 8202
                     }
                 }
             ],
@@ -27823,6 +28003,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Greymon",
+                        "id": 24742
                     }
                 }
             ],
@@ -28136,6 +28320,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 },
                 {
@@ -28904,6 +29092,10 @@
                             "name": "Baldur's Gate",
                             "id": 6062
                         }
+                    },
+                    "character": {
+                        "name": "Ulder Ravengard",
+                        "id": 11465
                     }
                 }
             ],
@@ -30204,6 +30396,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -30842,6 +31038,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -31008,7 +31208,27 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Rosymorn Monastery Trail",
+                            "id": 10333
+                        }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
+                    }
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 8628,
@@ -31591,6 +31811,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -34236,6 +34460,10 @@
                             "name": "Decrepit Village",
                             "id": 4503
                         }
+                    },
+                    "character": {
+                        "name": "Greymon",
+                        "id": 24742
                     }
                 }
             ],
@@ -36543,7 +36771,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 2",
+                            "id": 4949
+                        },
+                        "superRegion": {
+                            "name": "Other Planes of Existence"
+                        },
+                        "location": {
+                            "name": "Shadowfell",
+                            "id": 12122
+                        }
+                    },
+                    "character": {
+                        "name": "Aylin",
+                        "id": 11922
+                    }
+                }
+            ],
             "proficiency": 0,
             "enchantment": 3,
             "id": 7957,
@@ -37952,6 +38204,10 @@
                             "name": "South Span Checkpoint",
                             "id": 24896
                         }
+                    },
+                    "character": {
+                        "name": "Edwynna",
+                        "id": 27439
                     }
                 }
             ],
@@ -38022,6 +38278,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Brithvar",
+                        "id": 15245
                     }
                 }
             ],
@@ -38068,6 +38328,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -38173,6 +38437,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 },
                 {

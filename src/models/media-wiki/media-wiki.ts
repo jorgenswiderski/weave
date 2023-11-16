@@ -164,16 +164,8 @@ export class MediaWiki {
 
         if (redirect) {
             MediaWiki.titleRedirects.set(pageTitle, redirect);
-            // eslint-disable-next-line no-param-reassign
-            pageTitle = redirect;
 
-            const redirectPage = (await pageCollection.findOne({
-                title: redirect,
-            })) as unknown as IPageData | undefined;
-
-            if (redirectPage && MediaWiki.isPageThrottled(redirectPage)) {
-                return new PageData(redirectPage);
-            }
+            return MediaWiki.getPage(redirect);
         }
 
         // Compare with locally stored revision ID
