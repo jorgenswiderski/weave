@@ -20828,11 +20828,6 @@
                     "name": "Critical Virtuoso",
                     "description": "When you score a Critical Hit you can spend a Bonus Action to make an additional attack.",
                     "type": 2
-                },
-                {
-                    "name": "Press the Advantage",
-                    "description": "After scoring a Critical Hit, use your Bonus Action to make an additional attack.",
-                    "type": 2
                 }
             ],
             "proficiency": 0,
@@ -24427,7 +24422,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Defiled Temple",
+                            "id": 4160
+                        }
+                    },
+                    "character": {
+                        "name": "Polma",
+                        "id": 27978
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 27980,
             "rangeType": 1,
