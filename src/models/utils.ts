@@ -23,6 +23,23 @@ export class Utils extends SharedUtils {
         } as unknown as T;
     }
 
+    static memoize<T extends (...args: any[]) => any>(fn: T): T {
+        const cache: { [key: string]: any } = {};
+
+        return function memoizedFn(...args: any[]): any {
+            const key = JSON.stringify(args);
+
+            if (cache[key]) {
+                return cache[key];
+            }
+
+            const result = fn(...args);
+            cache[key] = result;
+
+            return result;
+        } as unknown as T;
+    }
+
     static resolvedPromise = new Promise<void>((resolve) => {
         resolve();
     });

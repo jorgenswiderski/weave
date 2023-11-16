@@ -5,4 +5,5 @@ export interface IPageData extends ApiRevision {
     revisionId: any;
     categories: string[];
     pageId: number;
+    lastFetched: number;
 }

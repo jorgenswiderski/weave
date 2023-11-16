@@ -130,7 +130,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Shattered Sanctum",
+                            "id": 4134
+                        }
+                    },
+                    "character": {
+                        "name": "Gut",
+                        "id": 1962
+                    }
+                }
+            ],
             "id": 3457
         },
         {
@@ -159,6 +183,10 @@
                             "name": "Act 3",
                             "id": 4950
                         }
+                    },
+                    "character": {
+                        "name": "Sarevok Anchev",
+                        "id": 8202
                     }
                 }
             ],
@@ -261,8 +289,8 @@
                         }
                     },
                     "character": {
-                        "name": "Brem",
-                        "id": 14233
+                        "name": "Grat",
+                        "id": 4296
                     }
                 },
                 {
@@ -436,7 +464,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -686,6 +714,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -1793,6 +1825,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -2056,7 +2092,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -2595,6 +2631,10 @@
                             "name": "Rivington",
                             "id": 11636
                         }
+                    },
+                    "character": {
+                        "name": "Tara",
+                        "id": 11003
                     }
                 }
             ],
@@ -2842,7 +2882,7 @@
                             "id": 11636
                         },
                         "location": {
-                            "name": "Passageway",
+                            "name": "Western Beach",
                             "id": 12908
                         }
                     }
@@ -2886,6 +2926,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -3056,6 +3100,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -3522,6 +3570,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -3735,6 +3787,29 @@
                             "name": "Wyrm's Rock Fortress",
                             "id": 12272
                         }
+                    }
+                },
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wyrm's Crossing",
+                            "id": 11638
+                        },
+                        "location": {
+                            "name": "Wyrm's Rock Fortress",
+                            "id": 12272
+                        }
+                    },
+                    "character": {
+                        "name": "Enver Gortash",
+                        "id": 11814
                     }
                 }
             ],
@@ -4113,6 +4188,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -4624,6 +4703,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -4843,7 +4926,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     },
@@ -5788,6 +5871,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -6220,6 +6307,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -6273,6 +6364,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -6999,6 +7094,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -7211,6 +7310,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -7653,6 +7756,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -7702,6 +7809,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -7771,10 +7882,11 @@
             "weightKg": 0.5,
             "weightLb": 1,
             "price": 90,
+            "uid": "MAG_Thunder_Reverberation_Gloves",
             "effects": [
                 {
                     "name": "Thunderous Conversion",
-                    "description": "When the wearer deals Thunder, Lightning, or Radiant damage, inflict 2 turns of Reverberation upon the target(s).",
+                    "description": "When the wearer deals Thunder, Lightning, or Radiant damage, inflict 2 turns of Reverberation upon the target(s) ({{recharge|Per attack)}}.",
                     "type": 2
                 }
             ],
@@ -7838,6 +7950,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -8165,6 +8281,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Za'Krug",
+                        "id": 4836
                     }
                 }
             ],
@@ -8345,6 +8465,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -8910,7 +9034,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -10077,6 +10201,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 },
                 {
@@ -10197,7 +10325,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -10661,6 +10789,10 @@
                             "name": "Baldur's Gate",
                             "id": 6062
                         }
+                    },
+                    "character": {
+                        "name": "Ulder Ravengard",
+                        "id": 11465
                     }
                 }
             ],
@@ -12326,7 +12458,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     },
@@ -12594,6 +12726,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -13107,7 +13243,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -13369,6 +13505,10 @@
                             "name": "Act 3",
                             "id": 4950
                         }
+                    },
+                    "character": {
+                        "name": "Sarevok Anchev",
+                        "id": 8202
                     }
                 }
             ],
@@ -14321,7 +14461,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -14727,6 +14867,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -14977,7 +15121,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -15059,7 +15203,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 2",
+                            "id": 4949
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Shadow-Cursed Lands",
+                            "id": 8117
+                        },
+                        "location": {
+                            "name": "Last Light Inn",
+                            "id": 8129
+                        }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
+                    }
+                }
+            ],
             "proficiency": 2,
             "baseArmorClass": 12,
             "id": 10573
@@ -15459,6 +15627,10 @@
             ],
             "sources": [
                 {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -15881,6 +16053,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -16549,6 +16725,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -16905,6 +17085,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Novice Crusher",
+                        "id": 5874
                     }
                 }
             ],
@@ -17527,6 +17711,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Thrinn",
+                        "id": 15246
                     }
                 }
             ],
@@ -18846,6 +19034,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Marcus",
+                        "id": 10808
                     }
                 }
             ],
@@ -19239,8 +19431,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
+                            "name": "Sacred Pool",
+                            "id": 8727
                         }
                     },
                     "character": {
@@ -19265,6 +19457,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 },
                 {
@@ -19330,6 +19526,10 @@
                             "name": "Lady Jannath's Estate",
                             "id": 11246
                         }
+                    },
+                    "character": {
+                        "name": "Jannath",
+                        "id": 17198
                     }
                 }
             ],
@@ -19619,7 +19819,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -20254,6 +20454,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -23923,6 +24127,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -24540,6 +24748,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -24814,6 +25026,10 @@
                             "name": "Nautiloid",
                             "id": 4492
                         }
+                    },
+                    "character": {
+                        "name": "Zhalk",
+                        "id": 4634
                     }
                 }
             ],
@@ -24870,6 +25086,10 @@
                             "name": "Mountain Pass",
                             "id": 4191
                         }
+                    },
+                    "character": {
+                        "name": "Baretha",
+                        "id": 23134
                     }
                 }
             ],
@@ -24992,6 +25212,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 },
                 {
@@ -25065,6 +25289,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Greymon",
+                        "id": 24742
                     }
                 }
             ],
@@ -25329,7 +25557,7 @@
             "name": "Sussur Greatsword",
             "image": "Sussur Greatsword Icon.png",
             "icon": "Sussur Greatsword Unfaded Icon.png",
-            "description": "Sussur Greatsword is a rare greatsword that Silenced|Silences targets on each successful hit.",
+            "description": "Sussur Greatsword is a rare greatsword that can Silenced|Silence targets on a successful hit.",
             "quote": "Sussur roots extend from this sword's hilt into the blade itself. It yearns to drink magic, silencing every creature it strikes.",
             "type": 20,
             "rarity": 3,
@@ -25379,6 +25607,7 @@
             "handedness": 3,
             "damage": "2d6 + 1",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25424,6 +25653,10 @@
                             "name": "Waukeen's Rest",
                             "id": 4462
                         }
+                    },
+                    "character": {
+                        "name": "Yeva",
+                        "id": 15693
                     }
                 }
             ],
@@ -25480,6 +25713,10 @@
                             "name": "Murder Tribunal",
                             "id": 14112
                         }
+                    },
+                    "character": {
+                        "name": "Sarevok Anchev",
+                        "id": 8202
                     }
                 }
             ],
@@ -27303,7 +27540,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -27766,6 +28003,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Greymon",
+                        "id": 24742
                     }
                 }
             ],
@@ -28079,6 +28320,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 },
                 {
@@ -28450,7 +28695,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -28847,6 +29092,10 @@
                             "name": "Baldur's Gate",
                             "id": 6062
                         }
+                    },
+                    "character": {
+                        "name": "Ulder Ravengard",
+                        "id": 11465
                     }
                 }
             ],
@@ -29438,7 +29687,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -29878,17 +30127,6 @@
                     "name": "Yeenoghu's Gift",
                     "description": "Hitting an enemy with this weapon heals the wielder for 1d6|Healing - but they can go Mad if they don't continue hitting an enemy each turn.",
                     "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "After attacking, grants Yeenoghu's Gift for 5 turns. Must strike an enemy every turn or be struck by Madness|Mad.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Shattered Flail",
-                    "description": "After attacking, grants Yeenoghu's Gift for 5 turns. Must strike an enemy every turn or be struck by Madness|Mad.",
-                    "type": 2
                 }
             ],
             "sources": [
@@ -30158,6 +30396,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -30484,7 +30726,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -30796,6 +31038,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 }
             ],
@@ -30962,7 +31208,27 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Rosymorn Monastery Trail",
+                            "id": 10333
+                        }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
+                    }
+                }
+            ],
             "proficiency": 0,
             "enchantment": 1,
             "id": 8628,
@@ -31545,6 +31811,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
                     }
                 }
             ],
@@ -31876,55 +32146,8 @@
                     "type": 2
                 },
                 {
-                    "name": "Faithwarden's Vines",
-                    "description": "Vines sprout from the ground, slowing creatures within and possibly Entangled|Entangling them (STR to avoid becoming Entangled|Entangled).",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "action",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "m=18|ft=60",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "m=3|ft=10|Radius",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "10",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Concentration",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Always Prepared",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Recharge: Long Rest",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Pale Oak",
-                    "description": "action\nm=18|ft=60\nm=3|ft=10|Radius\n10\nConcentration\nAlways Prepared\nRecharge: Long Rest",
+                    "name": "Faithwarden's Vines|w=40",
+                    "description": "Vines sprout from the ground, slowing creatures within and possibly Entangled|Entangling them Long Rest.",
                     "type": 2
                 }
             ],
@@ -32673,7 +32896,7 @@
             "dippable": true
         },
         {
-            "name": "Staff of the Ram",
+            "name": "Staff of the Ram (Quarterstaff)",
             "image": "Quarterstaff PlusOne Icon.png",
             "icon": "Quarterstaff PlusOne Unfaded Icon.png",
             "quote": "Fashioned by some unknown archmage - no identifying insignia is forthcoming.\nThe staff thrums with a slow, ferocious pulse that draws its concussive power from the spiral-horned creatures that gave the weapon its name",
@@ -33446,7 +33669,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -34080,7 +34303,7 @@
     ],
     "37": [
         {
-            "name": "Blightbringer",
+            "name": "Blightbringer (Shortbow)",
             "image": "Shortbow PlusOne Icon.png",
             "icon": "Shortbow PlusOne Unfaded Icon.png",
             "quote": "Conducting a series of increasingly sick rituals - involving the ashes of a gnome and silkworms fed fat on the corpse of a dwarven cleric - the goblin shaman Kirruk Redrats created this deadly bow.",
@@ -34237,6 +34460,10 @@
                             "name": "Decrepit Village",
                             "id": 4503
                         }
+                    },
+                    "character": {
+                        "name": "Greymon",
+                        "id": 24742
                     }
                 }
             ],
@@ -34935,7 +35162,8 @@
         },
         {
             "name": "Executioner Sword",
-            "image": "",
+            "image": "Shortsword PlusOne Icon.png",
+            "icon": "Shortsword PlusOne Unfaded Icon.png",
             "quote": "Once there was a man who dreamed of unlocking every bit of his potential. It upset him when he couldn't; after all who can? When his daughter was born, she taught him about real dreams. She taught him with her eyes.",
             "type": 38,
             "rarity": 3,
@@ -36543,7 +36771,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Find the Nightsong",
+                        "id": 4585
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 2",
+                            "id": 4949
+                        },
+                        "superRegion": {
+                            "name": "Other Planes of Existence"
+                        },
+                        "location": {
+                            "name": "Shadowfell",
+                            "id": 12122
+                        }
+                    },
+                    "character": {
+                        "name": "Aylin",
+                        "id": 11922
+                    }
+                }
+            ],
             "proficiency": 0,
             "enchantment": 3,
             "id": 7957,
@@ -37238,7 +37490,7 @@
                             "id": 6062
                         },
                         "location": {
-                            "name": "Counting House",
+                            "name": "The Counting House",
                             "id": 12128
                         }
                     }
@@ -37486,7 +37738,7 @@
             "dippable": false
         },
         {
-            "name": "Dwarven Thrower",
+            "name": "Dwarven Thrower (Warhammer)",
             "image": "Warhammer PlusOne Icon.png",
             "icon": "Warhammer PlusOne Unfaded Icon.png",
             "quote": "The first Dwarven Thrower was created unintentionally. The moment was transcribed in the annals of dwarfdom thusly: 'Ach, it doesn't work. Another design down the bloody drain. Now to... Does er... Does anyone else hear a short of humming whistle? Growing louder?'",
@@ -37672,6 +37924,7 @@
             "weightKg": 2.7,
             "weightLb": 5.4,
             "price": 100,
+            "uid": "UNI_UND_DuergarRaft_GruesomeHammer",
             "effects": [
                 {
                     "name": "Impulse Blast",
@@ -37951,6 +38204,10 @@
                             "name": "South Span Checkpoint",
                             "id": 24896
                         }
+                    },
+                    "character": {
+                        "name": "Edwynna",
+                        "id": 27439
                     }
                 }
             ],
@@ -38021,6 +38278,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Brithvar",
+                        "id": 15245
                     }
                 }
             ],
@@ -38067,6 +38328,10 @@
                             "name": "Rosymorn Monastery Trail",
                             "id": 10333
                         }
+                    },
+                    "character": {
+                        "name": "Esther",
+                        "id": 9115
                     }
                 }
             ],
@@ -38172,6 +38437,10 @@
                             "name": "Goblin Camp",
                             "id": 4131
                         }
+                    },
+                    "character": {
+                        "name": "Grat",
+                        "id": 4296
                     }
                 },
                 {
