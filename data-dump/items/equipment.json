@@ -2358,6 +2358,25 @@
                             "id": 4504
                         }
                     }
+                },
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Overgrown Tunnel",
+                            "id": 4525
+                        }
+                    }
                 }
             ],
             "id": 3586
@@ -14171,7 +14190,27 @@
             "price": 70,
             "uid": "ARM_Padded_Broken",
             "effects": [],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "The Risen Road",
+                            "id": 4403
+                        }
+                    }
+                }
+            ],
             "proficiency": 1,
             "baseArmorClass": 11,
             "id": 3508
@@ -19200,8 +19239,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Sacred Pool",
-                            "id": 8727
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
