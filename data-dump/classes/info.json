@@ -15322,7 +15322,14 @@
                 "Features": [
                     {
                         "name": "Unarmoured Movement",
-                        "grants": []
+                        "grants": [
+                            {
+                                "name": "Unarmoured Movement",
+                                "type": 2,
+                                "description": "Your movement speed increases by m=3|ft=10 while you are not wearing armour or using a shield.",
+                                "image": "Unarmoured Movement.webp"
+                            }
+                        ]
                     }
                 ],
                 "undefined": "Patient Defence}},Step of the Wind: Dash, Step of the Wind: Disengage"
@@ -16383,7 +16390,14 @@
                     },
                     {
                         "name": "Improved Unarmoured Movement",
-                        "grants": []
+                        "grants": [
+                            {
+                                "name": "Unarmoured Movement",
+                                "type": 2,
+                                "description": "Your movement speed increases by m=3|ft=10 while you are not wearing armour or using a shield.",
+                                "image": "Unarmoured Movement.webp"
+                            }
+                        ]
                     }
                 ]
             },
@@ -17340,7 +17354,14 @@
                     },
                     {
                         "name": "Improved Unarmoured Movement",
-                        "grants": []
+                        "grants": [
+                            {
+                                "name": "Unarmoured Movement",
+                                "type": 2,
+                                "description": "Your movement speed increases by m=3|ft=10 while you are not wearing armour or using a shield.",
+                                "image": "Unarmoured Movement.webp"
+                            }
+                        ]
                     }
                 ]
             },

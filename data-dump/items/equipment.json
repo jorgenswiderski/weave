@@ -552,7 +552,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Emerald Grove",
+                            "id": 8715
+                        }
+                    },
+                    "character": {
+                        "name": "Ormn",
+                        "id": 12287
+                    }
+                }
+            ],
             "id": 3574
         },
         {
@@ -2012,6 +2036,10 @@
                         "region": {
                             "name": "Wilderness",
                             "id": 4335
+                        },
+                        "location": {
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     }
                 }
@@ -2296,6 +2324,25 @@
                     "character": {
                         "name": "Auntie Ethel",
                         "id": 4308
+                    }
+                },
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Emerald Grove",
+                            "id": 8715
+                        }
                     }
                 },
                 {
@@ -2819,12 +2866,12 @@
                             "name": "Over-world"
                         },
                         "region": {
-                            "name": "Rivington",
-                            "id": 11636
+                            "name": "Wyrm's Crossing",
+                            "id": 11638
                         },
                         "location": {
-                            "name": "Passageway",
-                            "id": 12908
+                            "name": "South Span Checkpoint",
+                            "id": 24896
                         }
                     }
                 }
@@ -3503,10 +3550,6 @@
             ],
             "sources": [
                 {
-                    "quest": {
-                        "name": "Find the Nightsong",
-                        "id": 4585
-                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -5988,8 +6031,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Inner Sanctum",
-                            "id": 13258
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -7219,10 +7262,6 @@
             ],
             "sources": [
                 {
-                    "quest": {
-                        "name": "Find the Nightsong",
-                        "id": 4585
-                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -8119,8 +8158,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -8160,7 +8199,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Emerald Grove",
+                            "id": 8715
+                        }
+                    },
+                    "character": {
+                        "name": "Za'Krug",
+                        "id": 4836
+                    }
+                }
+            ],
             "id": 3430
         },
         {
@@ -10190,7 +10253,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -10985,8 +11048,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -12319,7 +12382,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     },
@@ -13826,8 +13889,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -14390,8 +14453,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -14970,7 +15033,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -15178,8 +15241,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -15452,10 +15515,6 @@
             ],
             "sources": [
                 {
-                    "quest": {
-                        "name": "Find the Nightsong",
-                        "id": 4585
-                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -15782,8 +15841,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -16077,8 +16136,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -16179,8 +16238,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -17879,8 +17938,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -18762,19 +18821,19 @@
                 {
                     "location": {
                         "act": {
-                            "name": "Act 2",
-                            "id": 4949
+                            "name": "Act 1",
+                            "id": 4189
                         },
                         "superRegion": {
                             "name": "Over-world"
                         },
                         "region": {
-                            "name": "Shadow-Cursed Lands",
-                            "id": 8117
+                            "name": "Wilderness",
+                            "id": 4335
                         },
                         "location": {
-                            "name": "Last Light Inn",
-                            "id": 8129
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -19620,7 +19679,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -20020,8 +20079,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -20735,8 +20794,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -21886,8 +21945,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -23561,8 +23620,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -23679,10 +23738,6 @@
             ],
             "sources": [
                 {
-                    "quest": {
-                        "name": "Find the Nightsong",
-                        "id": 4585
-                    },
                     "location": {
                         "act": {
                             "name": "Act 2",
@@ -24515,8 +24570,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -24967,8 +25022,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -26245,8 +26300,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -26325,8 +26380,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -27562,8 +27617,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -27712,8 +27767,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -28179,8 +28234,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -28452,7 +28507,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -29440,7 +29495,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -31872,7 +31927,31 @@
                     "type": 2
                 }
             ],
-            "sources": [],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Investigate Kagha",
+                        "id": 4540
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Emerald Grove",
+                            "id": 8715
+                        }
+                    }
+                }
+            ],
             "proficiency": 0,
             "id": 3799,
             "category": 2,
@@ -31945,8 +32024,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -32058,8 +32137,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -33141,8 +33220,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -33366,7 +33445,7 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "The Adamantine Forge",
+                            "name": "Adamantine Forge",
                             "id": 4551
                         }
                     }
@@ -34341,8 +34420,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -34505,8 +34584,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -36464,20 +36543,7 @@
                     "type": 2
                 }
             ],
-            "sources": [
-                {
-                    "quest": {
-                        "name": "Find the Nightsong",
-                        "id": 4585
-                    },
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        }
-                    }
-                }
-            ],
+            "sources": [],
             "proficiency": 0,
             "enchantment": 3,
             "id": 7957,
@@ -36616,8 +36682,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "The Hollow",
-                            "id": 8645
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
