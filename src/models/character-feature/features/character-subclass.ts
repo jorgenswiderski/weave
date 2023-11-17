@@ -1,10 +1,10 @@
 import { CharacterPlannerStep } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { error } from '../../logger';
-import { MediaWiki, PageData } from '../../media-wiki';
+import { MediaWiki, PageData } from '../../media-wiki/media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
-import { MwnApiClass } from '../../../api/mwn';
 import { CharacterSubclassFeature } from './character-subclass-feature';
 import { CharacterFeatureTypes } from '../types';
+import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
 
 enum SubclassLoadStates {
     CHOICES = 'CHOICES',
@@ -27,8 +27,9 @@ export class ClassSubclass extends CharacterFeatureCustomizable {
     }
 
     static async getSubclassData(className: string): Promise<PageData[]> {
-        const allSubclassPages =
-            await MwnApiClass.queryTitlesFromCategory('Subclasses');
+        const allSubclassPages = await MediaWiki.getTitlesInCategories([
+            'Subclasses',
+        ]);
 
         const allSubclasses = await Promise.all(
             allSubclassPages.map((title) => MediaWiki.getPage(title)),
@@ -52,7 +53,7 @@ export class ClassSubclass extends CharacterFeatureCustomizable {
                     (page) =>
                         new CharacterSubclassFeature(
                             {
-                                name: CharacterSubclassFeature.parseNameFromPageTitle(
+                                name: MediaWikiParser.parseNameFromPageTitle(
                                     page.title,
                                 ),
                                 pageTitle: page.title,

@@ -11,7 +11,7 @@ import { PageNotFoundError } from '../errors';
 import {
     MediaWikiTemplateParser,
     MediaWikiTemplateParserConfig,
-} from '../mw-template-parser';
+} from '../media-wiki/mw-template-parser';
 import { EquipmentItem } from './equipment-item';
 
 export class WeaponItem extends EquipmentItem implements Partial<IWeaponItem> {
@@ -45,10 +45,7 @@ export class WeaponItem extends EquipmentItem implements Partial<IWeaponItem> {
             throw new PageNotFoundError();
         }
 
-        if (
-            !this.page.content.includes('{{EquipmentPage') &&
-            !this.page.content.includes('{{WeaponPage')
-        ) {
+        if (!(await this.page.hasTemplate(['WeaponPage', 'EquipmentPage']))) {
             return;
         }
 

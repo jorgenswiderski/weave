@@ -23,6 +23,23 @@ export class Utils extends SharedUtils {
         } as unknown as T;
     }
 
+    static memoize<T extends (...args: any[]) => any>(fn: T): T {
+        const cache: { [key: string]: any } = {};
+
+        return function memoizedFn(...args: any[]): any {
+            const key = JSON.stringify(args);
+
+            if (cache[key]) {
+                return cache[key];
+            }
+
+            const result = fn(...args);
+            cache[key] = result;
+
+            return result;
+        } as unknown as T;
+    }
+
     static resolvedPromise = new Promise<void>((resolve) => {
         resolve();
     });
@@ -47,5 +64,33 @@ export class Utils extends SharedUtils {
         }
 
         return str;
+    }
+
+    // Linear congruential generator (LCG) that generates a number between 0 and 1 based on the given seed
+    static randomSeeded(seed: number): number {
+        // LCG parameters
+        const a = 1664525;
+        const c = 1013904223;
+        const m = 2 ** 32;
+
+        // Generate the next seed and return a pseudo-random number between 0 and 1
+        const nextSeed = (a * seed + c) % m;
+
+        return nextSeed / m;
+    }
+
+    static stringToTitleCase(str: string): string {
+        return str.toLowerCase().replace(/(?:^|\s)\S/g, function titlecase(a) {
+            return a.toUpperCase();
+        });
+    }
+
+    static async asyncFilter<T>(
+        arr: T[],
+        predicate: (item: T) => Promise<boolean>,
+    ): Promise<T[]> {
+        const results = await Promise.all(arr.map(predicate));
+
+        return arr.filter((_v, index) => results[index]);
     }
 }

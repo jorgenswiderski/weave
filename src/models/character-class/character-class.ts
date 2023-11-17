@@ -4,10 +4,9 @@ import {
     ICharacterOption,
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
-import { MwnApiClass } from '../../api/mwn';
 import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
 import { error } from '../logger';
-import { MediaWiki } from '../media-wiki';
+import { MediaWiki } from '../media-wiki/media-wiki';
 
 import { PageItem, PageLoadingState } from '../page-item';
 import {
@@ -324,7 +323,7 @@ let characterClassData: CharacterClass[];
 
 export async function getCharacterClassData(): Promise<CharacterClass[]> {
     if (!characterClassData) {
-        const classNames = await MwnApiClass.queryTitlesFromCategory('Classes');
+        const classNames = await MediaWiki.getTitlesInCategories(['Classes']);
 
         characterClassData = classNames.map((name) => new CharacterClass(name));
 

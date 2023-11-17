@@ -1,6 +1,6 @@
 import { ICharacterOption } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { GrantableEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
-import { MediaWiki } from '../../media-wiki';
+import { MediaWiki } from '../../media-wiki/media-wiki';
 
 export class CharacterSubrace implements ICharacterOption {
     label: string;
@@ -26,7 +26,9 @@ export class CharacterSubrace implements ICharacterOption {
                 return this.content;
             }
 
-            throw new Error('Unable to parse description from content');
+            throw new Error(
+                `Unable to parse description from content of page ${this.name}`,
+            );
         }
 
         // Return the first non-null capturing group (either from ''...'' or from {{Q|...}})

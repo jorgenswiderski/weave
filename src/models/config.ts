@@ -19,6 +19,9 @@ export const CONFIG = {
             process.env.MEDIAWIKI_REVISION_CHECK_THROTTLE_IN_MILLIS ?? '5',
             10,
         ),
+        REVISION_CHECK_THROTTLE_VARIANCE: parseFloat(
+            process.env.MEDIAWIKI_REVISION_CHECK_THROTTLE_VARIANCE ?? '0.1',
+        ),
         BASE_URL: process.env.MEDIAWIKI_BASE_URL,
         USE_LOCAL_IMAGE_CACHE: process.env.USE_LOCAL_IMAGE_CACHE === 'true',
         IMAGE_CACHE_DURATION: parseInt(
@@ -29,6 +32,7 @@ export const CONFIG = {
             process.env.MEDIAWIKI_IMAGE_CACHE_REFRESH_TIME ?? '86400000',
             10,
         ),
+        USE_LOCKED_REVISIONS: process.env.USE_LOCKED_REVISIONS === 'true',
     },
     SELF_BASE_URL: process.env.SELF_BASE_URL,
     BUILDS: {

@@ -3,9 +3,8 @@ import {
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { GrantableEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
-import { MwnApiClass } from '../../../api/mwn';
 import { error } from '../../logger';
-import { MediaWiki } from '../../media-wiki';
+import { MediaWiki } from '../../media-wiki/media-wiki';
 import { PageLoadingState } from '../../page-item';
 import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
 import { CharacterSubrace } from './character-subrace';
@@ -43,6 +42,10 @@ export class CharacterRace extends CharacterFeature {
 
         if (!this.page || !this.page.content) {
             throw new Error('Could not find page content');
+        }
+
+        if (await this.isSpoiler()) {
+            return;
         }
 
         const subracePattern = /\n===\s*([^=]*?)\s*===\n\s*([\s\S]*?)(?===|$)/g;
@@ -145,17 +148,9 @@ export class CharacterRace extends CharacterFeature {
         async function parseRacialTraits(
             sectionText: string,
         ): Promise<GrantableEffect[]> {
-            // Use a regular expression to extract feature titles
-            const featureTitleRegex = /\*\s*\{\{SAI\|([^|]+)/g;
-
-            const featureTitles = [];
-            let match;
-
-            while (true) {
-                match = featureTitleRegex.exec(sectionText);
-                if (match === null) break;
-                featureTitles.push(match[1].trim());
-            }
+            const featureTitles = [
+                ...sectionText.matchAll(/\*\s*\{\{SAI\|([^|}]+)[\s\S]*?}}/g),
+            ].map((match) => match[1].trim());
 
             const fx = (
                 await Promise.all(
@@ -213,7 +208,7 @@ export class CharacterRace extends CharacterFeature {
             throw new Error('Could not find page content');
         }
 
-        return this.page.content.includes('{{SpoilerWarning}}');
+        return this.page.hasTemplate('SpoilerWarning');
     }
 }
 
@@ -221,8 +216,9 @@ let characterRaceData: CharacterRace[];
 
 export async function getCharacterRaceData(): Promise<CharacterRace[]> {
     if (!characterRaceData) {
-        const raceNames =
-            await MwnApiClass.queryTitlesFromCategory('Playable races');
+        const raceNames = await MediaWiki.getTitlesInCategories([
+            'Playable races',
+        ]);
 
         const races = raceNames.map(
             (name) => new CharacterRace({ name, pageTitle: name }),
@@ -230,14 +226,9 @@ export async function getCharacterRaceData(): Promise<CharacterRace[]> {
 
         await Promise.all(races.map((cr) => cr.waitForInitialization()));
 
-        characterRaceData = [];
-
-        await Promise.all(
-            races.map(async (race) => {
-                if (!(await race.isSpoiler())) {
-                    characterRaceData.push(race);
-                }
-            }),
+        characterRaceData = await Utils.asyncFilter(
+            races,
+            async (race) => !(await race.isSpoiler()),
         );
     }
 

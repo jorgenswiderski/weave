@@ -2,11 +2,11 @@ import {
     EquipmentItemType,
     ItemRarity,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/equipment-item';
-import { MwnApiClass } from '../../api/mwn';
-import { MediaWiki } from '../media-wiki';
+import { MediaWiki } from '../media-wiki/media-wiki';
 import { EquipmentItem } from './equipment-item';
 import { WeaponItem } from './weapon-item';
 import { StaticImageCacheService } from '../static-image-cache-service';
+import { Utils } from '../utils';
 
 let itemData: Record<string, EquipmentItem[]> | null = null;
 let itemDataById: Map<number, EquipmentItem> | null = null;
@@ -15,7 +15,7 @@ export async function getEquipmentItemData(
     types?: EquipmentItemType[],
 ): Promise<Record<string, EquipmentItem[]>> {
     if (!itemData) {
-        const categories = [
+        const equipmentItemNames = await MediaWiki.getTitlesInCategories([
             'Equipment',
             'Clothing',
             'Light Armour',
@@ -28,24 +28,23 @@ export async function getEquipmentItemData(
             'Boots',
             'Amulets',
             'Rings',
-        ];
+        ]);
 
-        const equipmentItemNames = await Promise.all(
-            categories.map((category) =>
-                MwnApiClass.queryTitlesFromCategory(category),
-            ),
+        const pages = await Promise.all(
+            equipmentItemNames.map((name) => MediaWiki.getPage(name)),
         );
 
-        const uniqueNames = [...new Set(equipmentItemNames.flat())];
-        const pages = await Promise.all(uniqueNames.map(MediaWiki.getPage));
+        const weaponNames = (
+            await Utils.asyncFilter(pages, (page) =>
+                page.hasTemplate('WeaponPage'),
+            )
+        ).map((page) => page.title);
 
-        const weaponNames = pages
-            .filter((page) => page?.content?.includes('{{WeaponPage'))
-            .map((page) => page!.title);
-
-        const armourNames = pages
-            .filter((page) => page?.content?.includes('{{EquipmentPage'))
-            .map((page) => page!.title);
+        const armourNames = (
+            await Utils.asyncFilter(pages, (page) =>
+                page.hasTemplate('EquipmentPage'),
+            )
+        ).map((page) => page.title);
 
         const data = [
             ...armourNames.map((name) => new EquipmentItem(name)),
@@ -56,9 +55,10 @@ export async function getEquipmentItemData(
 
         const filtered = data.filter(
             (item) =>
-                (item?.rarity && item?.rarity > ItemRarity.common) ||
-                item.baseArmorClass ||
-                item instanceof WeaponItem,
+                item.obtainable &&
+                ((item?.rarity && item?.rarity > ItemRarity.common) ||
+                    item.baseArmorClass ||
+                    item instanceof WeaponItem),
         );
 
         filtered.forEach(

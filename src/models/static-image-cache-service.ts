@@ -2,7 +2,7 @@ import fs from 'fs';
 import http from 'http';
 import https from 'https';
 import path from 'path';
-import { MediaWiki } from './media-wiki';
+import { MediaWiki } from './media-wiki/media-wiki';
 import { error, log } from './logger';
 import { MwnTokenBucket } from '../api/mwn';
 

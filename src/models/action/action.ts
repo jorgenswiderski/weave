@@ -1,5 +1,6 @@
 import {
-    ActionResource,
+    ActionCostBehavior,
+    ActionResourceFromString,
     IAction,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { AbilityScore } from '@jorgenswiderski/tomekeeper-shared/dist/types/ability';
@@ -7,8 +8,10 @@ import { PageNotFoundError } from '../errors';
 import {
     MediaWikiTemplateParser,
     MediaWikiTemplateParserConfig,
-} from '../mw-template-parser';
+} from '../media-wiki/mw-template-parser';
 import { ActionBase } from './action-base';
+import { PageData } from '../media-wiki/media-wiki';
+import { error } from '../logger';
 
 let actionData: Action[];
 let actionDataById: Map<number, Action> | null = null;
@@ -17,6 +20,100 @@ export class Action extends ActionBase implements Partial<IAction> {
     condition2?: string;
     condition2Duration?: number;
     condition2Save?: AbilityScore;
+
+    // TODO: Move this to action-base once the SpellPage template is done being revised
+    // https://discord.com/channels/937803826583445565/1173680631125909514
+    protected parseCosts(): void {
+        if (!this.page?.content) {
+            throw new PageNotFoundError();
+        }
+
+        const actionResourceParser = (
+            value: string,
+            config: MediaWikiTemplateParserConfig,
+            page: PageData,
+        ) => {
+            if (!(value in ActionResourceFromString) && value !== '') {
+                error(
+                    `Failed to map '${config.key}' value '${value}' to enum (${page.title}).`,
+                );
+            }
+
+            return ActionResourceFromString[value];
+        };
+
+        const { int } = MediaWikiTemplateParser.Parsers;
+
+        const config: Record<string, MediaWikiTemplateParserConfig> = {
+            cost: {
+                parser: actionResourceParser,
+                default: undefined,
+            },
+            costAmount: {
+                key: 'cost amount',
+                parser: int,
+                default: undefined,
+            },
+            cost2: {
+                parser: actionResourceParser,
+                default: undefined,
+            },
+            cost2Amount: {
+                key: 'cost2 amount',
+                parser: int,
+                default: undefined,
+            },
+            cost3: {
+                parser: actionResourceParser,
+                default: undefined,
+            },
+            cost3Amount: {
+                key: 'cost3 amount',
+                parser: int,
+                default: undefined,
+            },
+            hitCost: {
+                key: 'hit cost',
+                parser: actionResourceParser,
+                default: undefined,
+            },
+            hitCostAmount: {
+                key: 'hit cost amount',
+                parser: int,
+                default: undefined,
+            },
+            hitCost2: {
+                key: 'hit cost2',
+                parser: actionResourceParser,
+                default: undefined,
+            },
+            hitCost2Amount: {
+                key: 'hit cost2 amount',
+                parser: int,
+                default: undefined,
+            },
+        };
+
+        const props = MediaWikiTemplateParser.parseTemplate(this.page, config);
+
+        const resources = Object.fromEntries(
+            Object.entries(props).filter(
+                ([key, value]) => value && !key.endsWith('Amount'),
+            ),
+        );
+
+        this.costs = Object.entries(resources).map(([key, resource]) => {
+            const amountKey = `${key}Amount`;
+            const amount = props[amountKey];
+            const isHitCost = key.startsWith('hit');
+
+            return {
+                resource,
+                amount: amount ?? 1,
+                behavior: isHitCost ? ActionCostBehavior.onHit : undefined,
+            };
+        });
+    }
 
     protected async initData(): Promise<void> {
         await super.initData();
@@ -29,11 +126,6 @@ export class Action extends ActionBase implements Partial<IAction> {
         const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
 
         const config: Record<string, MediaWikiTemplateParserConfig> = {
-            cost: {
-                key: 'cost',
-                parser: parseEnum(ActionResource),
-                default: undefined,
-            },
             condition2: {
                 key: 'condition2',
                 parser: plainText,
@@ -55,6 +147,8 @@ export class Action extends ActionBase implements Partial<IAction> {
             this,
             MediaWikiTemplateParser.parseTemplate(this.page, config),
         );
+
+        this.parseCosts();
     }
 
     toJSON(): Partial<IAction> {

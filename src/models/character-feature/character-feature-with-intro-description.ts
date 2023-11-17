@@ -1,4 +1,4 @@
-import { MediaWiki } from '../media-wiki';
+import { MediaWiki } from '../media-wiki/media-wiki';
 import { CharacterFeature } from './character-feature';
 
 export class CharacterFeatureWithIntroDescription extends CharacterFeature {

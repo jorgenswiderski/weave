@@ -1,7 +1,7 @@
 [
     {
         "name": "Dragonborn",
-        "description": "Dragonborn resemble draconic humanoids. They are a proud race that values clan and skills above all else. Once enslaved by dragons, they strive to be self-sufficient, not wanting to be beholden to anyone, not even the gods. Dragonborn can have scales in a variety of colours, and may or may not have a tail.",
+        "description": "Dragonborn are a playable race in Baldur's Gate 3. Dragonborn have resistance to a type of energy damage and are able to make deadly breath weapon attacks. These abilities are affected by their Dragonborn subrace.",
         "choices": [
             {
                 "type": 2,
@@ -145,8 +145,7 @@
                             {
                                 "name": "Dwarven Toughness",
                                 "type": 2,
-                                "description": "You have 1 extra maximum Hit Points per level.",
-                                "image": "|summary = '''Dwarven Toughness''' is a passive feature that increases a creature's [[Hit Points|Hit Point]] maximum by 1, and again by 1 again every time they gain a level. It is a Subrace Trait for all [[Gold Dwarf]] characters."
+                                "description": "You have 1 extra maximum Hit Points per level."
                             }
                         ]
                     },
@@ -193,9 +192,15 @@
                 "image": "Dwarven Combat Training.webp"
             },
             {
+                "name": "Darkvision (Passive Feature)",
+                "type": 2,
+                "description": "Can see in the dark up to 12m.",
+                "image": "Darkvision.webp"
+            },
+            {
                 "name": "Dwarven Resilience",
                 "type": 2,
-                "description": "You have Advantage on Saving Throws against being Poisoned|inline=true, and you have Resistance against Poison damage.",
+                "description": "You have Advantage on Saving Throws against being Poisoned, and you have Resistance against Poison damage.",
                 "image": "Dwarven Resilience.webp"
             }
         ]
@@ -210,7 +215,47 @@
                     {
                         "name": "High Elves",
                         "description": "Heirs of the mystical [https://forgottenrealms.fandom.com/wiki/Feywild Feywild], high elves value magic in all its forms, and even those who do not study spellcraft can manipulate the [https://forgottenrealms.fandom.com/wiki/Weave Weave].",
-                        "grants": []
+                        "grants": [
+                            {
+                                "ref": "s1638"
+                            },
+                            {
+                                "ref": "s1641"
+                            },
+                            {
+                                "ref": "s1645"
+                            },
+                            {
+                                "ref": "s1647"
+                            },
+                            {
+                                "ref": "s1653"
+                            },
+                            {
+                                "ref": "s1661"
+                            },
+                            {
+                                "ref": "s796"
+                            },
+                            {
+                                "ref": "s1662"
+                            },
+                            {
+                                "ref": "s1663"
+                            },
+                            {
+                                "ref": "s1665"
+                            },
+                            {
+                                "ref": "s1691"
+                            },
+                            {
+                                "ref": "s1695"
+                            },
+                            {
+                                "ref": "s1696"
+                            }
+                        ]
                     },
                     {
                         "name": "Wood Elves",
@@ -230,6 +275,12 @@
                 "image": "Elven Weapon Training.webp"
             },
             {
+                "name": "Darkvision (Passive Feature)",
+                "type": 2,
+                "description": "Can see in the dark up to 12m.",
+                "image": "Darkvision.webp"
+            },
+            {
                 "name": "Fey Ancestry",
                 "type": 2,
                 "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
@@ -243,10 +294,7 @@
         "image": "Race Githyanki.png",
         "grants": [
             {
-                "name": "Astral Knowledge",
-                "type": 2,
-                "description": "Gain Ability.",
-                "image": "Astral Knowledge.webp"
+                "ref": "a6593"
             },
             {
                 "name": "Martial Prodigy",
@@ -268,6 +316,12 @@
                         "description": "The most commonly seen gnome on Faerûn's surface, Rock Gnomes are named as such for their hardiness and affinity to metal.",
                         "grants": [
                             {
+                                "name": "Darkvision (Passive Feature)",
+                                "type": 2,
+                                "description": "Can see in the dark up to 12m.",
+                                "image": "Darkvision.webp"
+                            },
+                            {
                                 "name": "Artificer's Lore",
                                 "type": 2,
                                 "description": "Add twice your Proficiency Bonus to History checks.",
@@ -279,6 +333,12 @@
                         "name": "Forest Gnomes",
                         "description": "Even smaller than their cousins and twice as reclusive, Forest Gnomes are rare sight in Faerûn. They master magic and craftmanship in their distant, idyllic groves.",
                         "grants": [
+                            {
+                                "name": "Darkvision (Passive Feature)",
+                                "type": 2,
+                                "description": "Can see in the dark up to 12m.",
+                                "image": "Darkvision.webp"
+                            },
                             {
                                 "ref": "s1585"
                             }
@@ -326,7 +386,47 @@
                     {
                         "name": "High Half-Elves",
                         "description": "A touch of the [https://forgottenrealms.fandom.com/wiki/Feywild Feywild] remains in half-elves with this bloodline, and even those untrained in magic possess a hint of wild power.",
-                        "grants": []
+                        "grants": [
+                            {
+                                "ref": "s1638"
+                            },
+                            {
+                                "ref": "s1641"
+                            },
+                            {
+                                "ref": "s1645"
+                            },
+                            {
+                                "ref": "s1647"
+                            },
+                            {
+                                "ref": "s1653"
+                            },
+                            {
+                                "ref": "s1661"
+                            },
+                            {
+                                "ref": "s796"
+                            },
+                            {
+                                "ref": "s1662"
+                            },
+                            {
+                                "ref": "s1663"
+                            },
+                            {
+                                "ref": "s1665"
+                            },
+                            {
+                                "ref": "s1691"
+                            },
+                            {
+                                "ref": "s1695"
+                            },
+                            {
+                                "ref": "s1696"
+                            }
+                        ]
                     },
                     {
                         "name": "Wood Half-Elves",
@@ -351,6 +451,12 @@
                 "image": "Civil Militia.webp"
             },
             {
+                "name": "Darkvision (Passive Feature)",
+                "type": 2,
+                "description": "Can see in the dark up to 12m.",
+                "image": "Darkvision.webp"
+            },
+            {
                 "name": "Fey Ancestry",
                 "type": 2,
                 "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
@@ -367,13 +473,10 @@
                 "name": "Darkvision (Passive Feature)",
                 "type": 2,
                 "description": "Can see in the dark up to 12m.",
-                "image": "Darkvision.webp}}"
+                "image": "Darkvision.webp"
             },
             {
-                "name": "Relentless Endurance",
-                "type": 2,
-                "description": "If you reach 0 hit points, you regain 1|Healing instead of becoming Downed.",
-                "image": "Relentless Endurance.webp"
+                "ref": "a6277"
             },
             {
                 "name": "Savage Attacks",
@@ -482,8 +585,16 @@
         "image": "Race Tiefling.png",
         "grants": [
             {
+                "name": "Darkvision (Passive Feature)",
+                "type": 2,
+                "description": "Can see in the dark up to 12m.",
+                "image": "Darkvision.webp"
+            },
+            {
                 "name": "Hellish Resistance",
-                "type": 2
+                "type": 2,
+                "description": "Your blood protects you from flame, abyssal or otherwise. Gain Resistance to Fire damage, taking only half damage from it.",
+                "image": "Hellish Resistance Icon.png"
             }
         ]
     }
