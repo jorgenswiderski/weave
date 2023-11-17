@@ -12,6 +12,11 @@ import { MediaWiki } from '../media-wiki/media-wiki';
 import { Utils } from '../utils';
 import { CONFIG } from '../config';
 
+assert(
+    CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS,
+    'Revisions must be locked to load revisions',
+);
+
 // Override this config value to allow the DB to be revised
 CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS = false;
 
