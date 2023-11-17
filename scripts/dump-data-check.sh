@@ -4,7 +4,7 @@
 git stash --keep-index --include-untracked
 
 # Run your data dump script
-npm run dump-data
+npm run dump-data-pipeless
 
 # Check for unstaged changes in data-dump directory
 if ! git diff --exit-code data-dump; then
