@@ -32,6 +32,7 @@ export const CONFIG = {
             process.env.MEDIAWIKI_IMAGE_CACHE_REFRESH_TIME ?? '86400000',
             10,
         ),
+        USE_LOCKED_REVISIONS: process.env.USE_LOCKED_REVISIONS === 'true',
     },
     SELF_BASE_URL: process.env.SELF_BASE_URL,
     BUILDS: {

@@ -1,4 +1,3 @@
-import { MwnApiClass } from '../../api/mwn';
 import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { Utils } from '../utils';
 import { initActionData } from './action';
@@ -18,19 +17,11 @@ export async function initActionsAndSpells(): Promise<void> {
         'Movement-expending actions',
     ];
 
-    const actionNames = [
-        ...new Set(
-            (
-                await Promise.all(
-                    categories.map((category) =>
-                        MwnApiClass.queryTitlesFromCategory(category),
-                    ),
-                )
-            ).flat(),
-        ),
-    ];
+    const actionNames = await MediaWiki.getTitlesInCategories(categories);
 
-    const actionPages = await Promise.all(actionNames.map(MediaWiki.getPage));
+    const actionPages = await Promise.all(
+        actionNames.map((name) => MediaWiki.getPage(name)),
+    );
 
     // Prune duplicates that may be caused by redirects.
     const pageMap = new Map<number, PageData>();

@@ -1,7 +1,7 @@
 /* eslint-disable import/first */
 import dotenv from 'dotenv';
 
-dotenv.config({ path: '.env.dump' });
+dotenv.config();
 
 import fs from 'fs/promises';
 import { error, log } from './logger';
@@ -15,9 +15,22 @@ import { getActionDataFiltered } from './action/action';
 import { initActionsAndSpells } from './action/init';
 import { StaticImageCacheService } from './static-image-cache-service';
 import { initLocations } from './locations/locations';
+import { RevisionLock } from './revision-lock/revision-lock';
+import { MediaWiki } from './media-wiki/media-wiki';
+import { CONFIG } from './config';
+
+CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS = false;
 
 async function getInfo(data: any[]) {
     return Promise.all(data.map((datum) => datum.getInfo()));
+}
+
+async function write(data: any, path: string): Promise<void> {
+    await fs.mkdir(path.split('/').slice(0, -1).join('/'), {
+        recursive: true,
+    });
+
+    await fs.writeFile(path, JSON.stringify(data, null, 4));
 }
 
 async function dump() {
@@ -40,17 +53,12 @@ async function dump() {
             Object.entries(datas).map(async ([routeName, promise]) => {
                 const data = await promise;
                 const path = `data-dump/${routeName}.json`;
-
-                await fs.mkdir(path.split('/').slice(0, -1).join('/'), {
-                    recursive: true,
-                });
-
-                await fs.writeFile(path, JSON.stringify(data, null, 4));
-
+                await write(data, path);
                 log(`Dumped ${routeName} to ${path}.`);
             }),
         );
 
+        await RevisionLock.save(MediaWiki.titleRedirects, MediaWiki.deadLinks);
         await StaticImageCacheService.waitForAllImagesToCache();
         await StaticImageCacheService.cleanupCache();
 
