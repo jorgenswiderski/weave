@@ -3138,27 +3138,6 @@
         ]
     },
     {
-        "name": "Summon Companion",
-        "image": "Summon Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Ranger's Companion is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.\n\nNote, this is independent of the spell Find Familiar, allowing a Beast Master to have both a Companion and a Familiar summoned simultaneously.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 850,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Read Thoughts",
         "image": "Read Thoughts.webp",
         "level": 0,
@@ -3912,6 +3891,27 @@
         ]
     },
     {
+        "name": "Summon Companion",
+        "image": "Summon Companion.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Ranger's Companion is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.\n\nNote, this is independent of the spell Find Familiar, allowing a Beast Master to have both a Companion and a Familiar summoned simultaneously.",
+        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
+        "ritual": false,
+        "concentration": false,
+        "id": 850,
+        "attackRoll": false,
+        "rangeM": 18,
+        "rangeFt": 60,
+        "recharge": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Supreme Sneak",
         "image": "Supreme Sneak.webp",
         "level": 0,
@@ -4215,6 +4215,35 @@
         "costs": []
     },
     {
+        "name": "Turn Undead",
+        "image": "Turn Undead.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "As an action, present your holy symbol and cause undead creatures to flee.",
+        "description": "Pray to Turn all undead that can see you.\n\nThe condition ends upon taking damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 741,
+        "attackRoll": false,
+        "range": 3,
+        "aoe": 1,
+        "aoeM": 9,
+        "aoeFt": 30,
+        "condition": "Turned",
+        "conditionDuration": 3,
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 9,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Turn the Faithless",
         "image": "Turn the Faithless.webp",
         "level": 0,
@@ -4254,35 +4283,6 @@
         "attackRoll": false,
         "rangeM": 9,
         "rangeFt": 30,
-        "condition": "Turned",
-        "conditionDuration": 3,
-        "conditionSave": 5,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            },
-            {
-                "resource": 9,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Turn Undead",
-        "image": "Turn Undead.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "As an action, present your holy symbol and cause undead creatures to flee.",
-        "description": "Pray to Turn all undead that can see you.\n\nThe condition ends upon taking damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 741,
-        "attackRoll": false,
-        "range": 3,
-        "aoe": 1,
-        "aoeM": 9,
-        "aoeFt": 30,
         "condition": "Turned",
         "conditionDuration": 3,
         "conditionSave": 5,

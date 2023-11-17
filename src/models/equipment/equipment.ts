@@ -2,7 +2,6 @@ import {
     EquipmentItemType,
     ItemRarity,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/equipment-item';
-import { MwnApiClass } from '../../api/mwn';
 import { MediaWiki } from '../media-wiki/media-wiki';
 import { EquipmentItem } from './equipment-item';
 import { WeaponItem } from './weapon-item';
@@ -16,7 +15,7 @@ export async function getEquipmentItemData(
     types?: EquipmentItemType[],
 ): Promise<Record<string, EquipmentItem[]>> {
     if (!itemData) {
-        const categories = [
+        const equipmentItemNames = await MediaWiki.getTitlesInCategories([
             'Equipment',
             'Clothing',
             'Light Armour',
@@ -29,16 +28,11 @@ export async function getEquipmentItemData(
             'Boots',
             'Amulets',
             'Rings',
-        ];
+        ]);
 
-        const equipmentItemNames = await Promise.all(
-            categories.map((category) =>
-                MwnApiClass.queryTitlesFromCategory(category),
-            ),
+        const pages = await Promise.all(
+            equipmentItemNames.map((name) => MediaWiki.getPage(name)),
         );
-
-        const uniqueNames = [...new Set(equipmentItemNames.flat())];
-        const pages = await Promise.all(uniqueNames.map(MediaWiki.getPage));
 
         const weaponNames = (
             await Utils.asyncFilter(pages, (page) =>

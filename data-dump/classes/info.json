@@ -18288,22 +18288,22 @@
                                         ]
                                     },
                                     {
-                                        "name": "Oath of the Ancients",
-                                        "description": "You fight on the side of light in the cosmic struggle against darkness to preserve the sanctity of life and the beauty of nature.",
-                                        "image": "Paladin Oath of the Ancients Icon.png",
-                                        "grants": [
-                                            {
-                                                "ref": "a3995"
-                                            }
-                                        ]
-                                    },
-                                    {
                                         "name": "Oath of Vengeance",
                                         "description": "You have set aside even your own purity to right wrongs and deliver justice to those who have committed the most grievous sins.",
                                         "image": "Paladin Oath of Vengeance.png",
                                         "grants": [
                                             {
                                                 "ref": "a6888"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Oath of the Ancients",
+                                        "description": "You fight on the side of light in the cosmic struggle against darkness to preserve the sanctity of life and the beauty of nature.",
+                                        "image": "Paladin Oath of the Ancients Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "a3995"
                                             }
                                         ]
                                     },
@@ -19266,16 +19266,6 @@
                                         ]
                                     },
                                     {
-                                        "name": "Oath of the Ancients",
-                                        "description": "You fight on the side of light in the cosmic struggle against darkness to preserve the sanctity of life and the beauty of nature.",
-                                        "image": "Paladin Oath of the Ancients Icon.png",
-                                        "grants": [
-                                            {
-                                                "ref": "a7990"
-                                            }
-                                        ]
-                                    },
-                                    {
                                         "name": "Oath of Vengeance",
                                         "description": "You have set aside even your own purity to right wrongs and deliver justice to those who have committed the most grievous sins.",
                                         "image": "Paladin Oath of Vengeance.png",
@@ -19285,6 +19275,16 @@
                                                 "type": 2,
                                                 "description": "If you hit an enemy with an Opportunity Attack, your movement speed increases by 4.5m / 15ft on your next turn.",
                                                 "image": "Relentless Avenger.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Oath of the Ancients",
+                                        "description": "You fight on the side of light in the cosmic struggle against darkness to preserve the sanctity of life and the beauty of nature.",
+                                        "image": "Paladin Oath of the Ancients Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "a7990"
                                             }
                                         ]
                                     },
