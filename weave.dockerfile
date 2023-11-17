@@ -14,7 +14,6 @@ ENV GHP_TOKEN=$GHP_TOKEN
 RUN npm run preinstall
 RUN npm install
 RUN npm run build
-RUN npm run load-revisions-pipeless
 
 EXPOSE 3001
 CMD ["npm", "run", "start-prod"]
