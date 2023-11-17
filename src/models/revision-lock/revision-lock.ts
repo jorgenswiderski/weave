@@ -1,11 +1,15 @@
 import fs from 'fs';
 import { MongoCollections, getMongoDb } from '../mongo';
+import { RevisionLockEntry, RevisionLockInfo } from './types';
 
 class RevisionLockSingleton {
     redirects: Map<string, string>;
+    deadLinks: Set<string>;
 
     constructor() {
-        this.redirects = this.loadRedirects();
+        const { redirects, deadLinks } = this.loadRedirects();
+        this.redirects = redirects;
+        this.deadLinks = deadLinks;
     }
 
     protected static async write(data: any, path: string): Promise<void> {
@@ -16,35 +20,50 @@ class RevisionLockSingleton {
         await fs.promises.writeFile(path, JSON.stringify(data, null, 4));
     }
 
-    redirectsPath = 'data-dump/redirects.json';
-
-    protected loadRedirects(): Map<string, string> {
+    protected loadRedirects(): {
+        redirects: Map<string, string>;
+        deadLinks: Set<string>;
+    } {
         try {
-            const jsonStr = fs.readFileSync(this.redirectsPath, 'utf-8');
-            const redirectObj = JSON.parse(jsonStr);
+            const jsonStr = fs.readFileSync(this.path, 'utf-8');
+            const lockData = JSON.parse(jsonStr) as RevisionLockInfo;
 
-            return new Map<string, string>(Object.entries(redirectObj));
+            const redirectObj = lockData.redirects;
+
+            const redirects = new Map<string, string>(
+                Object.entries(redirectObj),
+            );
+
+            const deadLinks = new Set<string>(lockData.deadLinks);
+
+            return { redirects, deadLinks };
         } catch (err) {
-            return new Map<string, string>();
+            return {
+                redirects: new Map<string, string>(),
+                deadLinks: new Set<string>(),
+            };
         }
     }
 
-    async saveRedirects(redirectMap: Map<string, string>): Promise<void> {
-        const redirects = Object.fromEntries(
+    static getRedirects(
+        redirectMap: Map<string, string>,
+    ): Record<string, string> {
+        return Object.fromEntries(
             [...redirectMap.entries()].sort((a, b) => (a[0] < b[0] ? -1 : 1)),
         );
-
-        await RevisionLockSingleton.write(redirects, this.redirectsPath);
     }
 
     getPageRedirect(pageTitle: string): string | undefined {
         return this.redirects.get(pageTitle);
     }
 
-    revisionsPath = 'data-dump/revision-lock.json';
+    isDeadLink(pageTitle: string): boolean {
+        return this.deadLinks.has(pageTitle);
+    }
 
-    // eslint-disable-next-line class-methods-use-this
-    async saveRevisions(): Promise<void> {
+    path = 'data-dump/revision-lock.json';
+
+    protected static async getRevisions(): Promise<RevisionLockEntry[]> {
         const db = await getMongoDb();
         const collection = db.collection(MongoCollections.MW_PAGES);
 
@@ -60,12 +79,22 @@ class RevisionLockSingleton {
             },
         );
 
-        const data = await cursor.toArray();
+        const data = (await cursor.toArray()) as unknown as RevisionLockEntry[];
 
-        await RevisionLockSingleton.write(
-            data.sort((a, b) => a.pageId - b.pageId),
-            this.revisionsPath,
-        );
+        return data.sort((a, b) => a.pageId - b.pageId);
+    }
+
+    async save(
+        redirectMap: Map<string, string>,
+        deadLinks: Set<string>,
+    ): Promise<void> {
+        const data = {
+            redirects: RevisionLockSingleton.getRedirects(redirectMap),
+            revisions: await RevisionLockSingleton.getRevisions(),
+            deadLinks: Array.from(deadLinks).sort(),
+        };
+
+        await RevisionLockSingleton.write(data, this.path);
     }
 }
 

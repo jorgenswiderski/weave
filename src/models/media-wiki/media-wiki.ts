@@ -7,7 +7,7 @@ import { CONFIG } from '../config';
 import { MwnApi, MwnApiClass } from '../../api/mwn';
 import { Utils } from '../utils';
 import { RemoteImageError } from '../image-cache/types';
-import { debug, warn } from '../logger';
+import { debug, error } from '../logger';
 import { IPageData } from './types';
 import { MediaWikiParser } from './wikitext-parser';
 import { RevisionLock } from '../revision-lock/revision-lock';
@@ -140,6 +140,7 @@ export class MediaWiki {
     }
 
     static titleRedirects = new Map<string, string>();
+    static deadLinks = new Set<string>();
 
     static getPage = Utils.memoize(async function getPage(
         pageTitle: string,
@@ -187,7 +188,10 @@ export class MediaWiki {
         }
 
         if (CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS) {
-            warn(`Could not find page '${pageTitle}'`);
+            if (!RevisionLock.isDeadLink(pageTitle)) {
+                error(`Could not find page '${pageTitle}'`);
+            }
+
             throw new Error(`Content for page "${pageTitle}" not found`);
         }
 
@@ -215,6 +219,7 @@ export class MediaWiki {
         const content = await MwnApi.readPage(pageTitle, revisionId);
 
         if (!content.revisions || !content.revisions[0]) {
+            MediaWiki.deadLinks.add(pageTitle);
             throw new Error(`Content for page "${pageTitle}" not found`);
         }
 

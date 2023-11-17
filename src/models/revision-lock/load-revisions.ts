@@ -11,6 +11,7 @@ import { MongoCollections, getMongoDb } from '../mongo';
 import { MediaWiki } from '../media-wiki/media-wiki';
 import { Utils } from '../utils';
 import { CONFIG } from '../config';
+import { RevisionLockInfo } from './types';
 
 assert(
     CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS,
@@ -23,15 +24,8 @@ CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS = false;
 async function loadRevisions() {
     try {
         const startTime = Date.now();
-
-        const jsonStr = await fs.promises.readFile(
-            RevisionLock.revisionsPath,
-            'utf-8',
-        );
-
-        const locks: { title: string; pageId: number; revisionId: number }[] =
-            JSON.parse(jsonStr);
-
+        const jsonStr = await fs.promises.readFile(RevisionLock.path, 'utf-8');
+        const { revisions: locks } = JSON.parse(jsonStr) as RevisionLockInfo;
         const db = await getMongoDb();
         const collection = db.collection(MongoCollections.MW_PAGES);
 

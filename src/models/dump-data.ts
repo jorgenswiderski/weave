@@ -58,8 +58,7 @@ async function dump() {
             }),
         );
 
-        await RevisionLock.saveRedirects(MediaWiki.titleRedirects);
-        await RevisionLock.saveRevisions();
+        await RevisionLock.save(MediaWiki.titleRedirects, MediaWiki.deadLinks);
         await StaticImageCacheService.waitForAllImagesToCache();
         await StaticImageCacheService.cleanupCache();
 
