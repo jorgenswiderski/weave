@@ -4,12 +4,13 @@ import { Db, MongoError } from 'mongodb';
 import assert from 'assert';
 import { MongoCollections, getMongoDb } from '../mongo';
 import { CONFIG } from '../config';
-import { MwnApi } from '../../api/mwn';
+import { MwnApi, MwnApiClass } from '../../api/mwn';
 import { Utils } from '../utils';
 import { RemoteImageError } from '../image-cache/types';
-import { debug } from '../logger';
+import { debug, error } from '../logger';
 import { IPageData } from './types';
 import { MediaWikiParser } from './wikitext-parser';
+import { RevisionLock } from '../revision-lock/revision-lock';
 
 export class PageData implements IPageData {
     title: string;
@@ -117,6 +118,10 @@ export class PageData implements IPageData {
 
 export class MediaWiki {
     protected static isPageThrottled(cachedPage: IPageData): boolean {
+        if (CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS) {
+            return true;
+        }
+
         // If the page is cached and it's been fewer than N seconds since the last fetch,
         // just return the cached content.
         const currentTime = Date.now();
@@ -135,9 +140,11 @@ export class MediaWiki {
     }
 
     static titleRedirects = new Map<string, string>();
+    static deadLinks = new Set<string>();
 
     static getPage = Utils.memoize(async function getPage(
         pageTitle: string,
+        revisionId?: number,
     ): Promise<PageData> {
         assert(
             !pageTitle.match(/(?:{{)|(?:}})/),
@@ -155,21 +162,48 @@ export class MediaWiki {
             title: pageTitle,
         })) as unknown as IPageData | undefined;
 
-        if (cachedPage && MediaWiki.isPageThrottled(cachedPage)) {
+        if (
+            cachedPage &&
+            (cachedPage.revisionId === revisionId ||
+                (!revisionId && MediaWiki.isPageThrottled(cachedPage)))
+        ) {
             return new PageData(cachedPage);
         }
 
-        const { latestRevisionId, categories, redirect } =
-            await MediaWiki.getPageInfo(pageTitle);
+        let latestRevisionId;
+        let categories;
+        let redirect;
+
+        if (CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS) {
+            redirect = RevisionLock.getPageRedirect(pageTitle);
+        } else {
+            ({ latestRevisionId, categories, redirect } =
+                await MediaWiki.getPageInfo(pageTitle));
+        }
 
         if (redirect) {
             MediaWiki.titleRedirects.set(pageTitle, redirect);
 
-            return MediaWiki.getPage(redirect);
+            return MediaWiki.getPage(redirect, revisionId);
         }
 
+        if (CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS) {
+            if (!RevisionLock.isDeadLink(pageTitle)) {
+                error(`Could not find page '${pageTitle}'`);
+            }
+
+            throw new Error(`Content for page "${pageTitle}" not found`);
+        }
+
+        latestRevisionId = latestRevisionId!;
+        categories = categories!;
+
         // Compare with locally stored revision ID
-        if (cachedPage && cachedPage.revisionId >= latestRevisionId) {
+        if (
+            cachedPage &&
+            !revisionId &&
+            cachedPage.revisionId >= latestRevisionId
+        ) {
             await pageCollection.updateOne(
                 { pageId: cachedPage.pageId },
                 {
@@ -182,17 +216,23 @@ export class MediaWiki {
             return new PageData(cachedPage as unknown as IPageData);
         }
 
-        const content = await MwnApi.readPage(pageTitle);
+        const content = await MwnApi.readPage(pageTitle, revisionId);
 
         if (!content.revisions || !content.revisions[0]) {
+            MediaWiki.deadLinks.add(pageTitle);
             throw new Error(`Content for page "${pageTitle}" not found`);
         }
+
+        assert(
+            content.revid === revisionId,
+            'Content revid must match requested revisionId',
+        );
 
         const data = {
             ...content.revisions[0],
             pageId: content.pageid,
             title: content.title,
-            revisionId: latestRevisionId,
+            revisionId: content.revid ?? latestRevisionId,
             categories,
             lastFetched: Date.now(),
         };
@@ -277,7 +317,7 @@ export class MediaWiki {
         return data?.extract ?? null;
     }
 
-    static async getPageInfo(pageTitle: string): Promise<{
+    protected static async getPageInfo(pageTitle: string): Promise<{
         latestRevisionId: number;
         categories: string[];
         redirect?: string;
@@ -288,7 +328,19 @@ export class MediaWiki {
             cllimit: 'max',
         });
 
-        const { lastrevid, categories, title } = data;
+        let lastrevid;
+        let categories;
+        let title;
+
+        try {
+            ({ lastrevid, categories, title } = data);
+        } catch (err) {
+            if (err instanceof Error) {
+                err.message = `${err.message} (page title: ${pageTitle})`;
+            }
+
+            throw err;
+        }
 
         // If the title was normalized, we can just grab the title right out of the data
         let redirect = pageTitle !== title ? title : undefined;
@@ -334,5 +386,41 @@ export class MediaWiki {
         }
 
         return page.imageinfo[0]?.thumburl ?? page.imageinfo[0].url;
+    }
+
+    static async getTitlesInCategories(
+        categories: string[],
+        includeSubcategories: boolean = false,
+    ): Promise<string[]> {
+        const categoriesFormatted = categories.map(
+            (category) => `Category:${category}`,
+        );
+
+        if (CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS) {
+            const db = await getMongoDb();
+            const collection = db.collection(MongoCollections.MW_PAGES);
+            const query = { categories: { $in: categoriesFormatted } };
+
+            const cursor = collection.find(query, {
+                projection: { _id: 0, title: 1 },
+            });
+
+            const results = await cursor.toArray();
+
+            return results.map((document) => document.title).sort();
+        }
+
+        const titleGroups = await Promise.all(
+            categoriesFormatted.map((category) =>
+                MwnApiClass.queryTitlesFromCategory(
+                    category,
+                    includeSubcategories,
+                ),
+            ),
+        );
+
+        const titles = Array.from(new Set(titleGroups.flat()));
+
+        return titles.sort();
     }
 }

@@ -126,10 +126,6 @@ export async function initLocations() {
                 try {
                     const page = await MediaWiki.getPage(pageTitle);
 
-                    if (!page) {
-                        throw new PageNotFoundError();
-                    }
-
                     return { depth, name: page.title, id: page.pageId };
                 } catch (err) {
                     // warn(`Could not find page for location '${pageTitle}'`);

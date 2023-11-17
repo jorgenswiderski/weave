@@ -4725,6 +4725,79 @@
         "isVariant": false
     },
     {
+        "name": "Create Undead",
+        "image": "Create Undead.webp",
+        "level": 6,
+        "school": 7,
+        "description": "Create a corpse as a heinous mummy that fights by your side.",
+        "ritual": false,
+        "concentration": false,
+        "id": 9156,
+        "attackRoll": false,
+        "range": 1,
+        "rangeM": 3,
+        "rangeFt": 10,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 17,
+                "amount": 1
+            }
+        ],
+        "classes": [
+            "Cleric",
+            "Wizard",
+            "Warlock"
+        ],
+        "noSpellSlot": false,
+        "isVariant": false
+    },
+    {
+        "name": "Create Water",
+        "image": "Create Water.webp",
+        "level": 1,
+        "school": 8,
+        "summary": "This spell is a variant of Create or Destroy Water that allows spellcasters to conjure an area of water that rain from thin air and forms a water surface. Creatures standing in the area when the spell is cast will become Wet.",
+        "description": "Call forth rain. It extinguishes exposed flames and forms a Water Surface.",
+        "ritual": false,
+        "concentration": false,
+        "id": 2090,
+        "attackRoll": false,
+        "rangeM": 9,
+        "rangeFt": 30,
+        "aoe": 1,
+        "aoeM": 4,
+        "aoeFt": 13,
+        "condition": "Wet",
+        "conditionDuration": 3,
+        "areaCategory": 2,
+        "areaShape": 1,
+        "areaRangeM": 2,
+        "areaRangeFt": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 12,
+                "amount": 1
+            }
+        ],
+        "classes": [
+            "Cleric",
+            "Druid",
+            "Storm Sorcery"
+        ],
+        "noSpellSlot": false,
+        "damageSaveEffect": 1,
+        "higherLevels": "Upcast: When the spell is cast a 2nd Level or higher, the area that you can create water increases by 2m / 5ft for each Spell Slot Level above 1st.",
+        "isVariant": true
+    },
+    {
         "name": "Create or Destroy Water",
         "image": "Create Water.webp",
         "level": 1,
@@ -4839,79 +4912,6 @@
             }
         ],
         "isVariant": false
-    },
-    {
-        "name": "Create Undead",
-        "image": "Create Undead.webp",
-        "level": 6,
-        "school": 7,
-        "description": "Create a corpse as a heinous mummy that fights by your side.",
-        "ritual": false,
-        "concentration": false,
-        "id": 9156,
-        "attackRoll": false,
-        "range": 1,
-        "rangeM": 3,
-        "rangeFt": 10,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            },
-            {
-                "resource": 17,
-                "amount": 1
-            }
-        ],
-        "classes": [
-            "Cleric",
-            "Wizard",
-            "Warlock"
-        ],
-        "noSpellSlot": false,
-        "isVariant": false
-    },
-    {
-        "name": "Create Water",
-        "image": "Create Water.webp",
-        "level": 1,
-        "school": 8,
-        "summary": "This spell is a variant of Create or Destroy Water that allows spellcasters to conjure an area of water that rain from thin air and forms a water surface. Creatures standing in the area when the spell is cast will become Wet.",
-        "description": "Call forth rain. It extinguishes exposed flames and forms a Water Surface.",
-        "ritual": false,
-        "concentration": false,
-        "id": 2090,
-        "attackRoll": false,
-        "rangeM": 9,
-        "rangeFt": 30,
-        "aoe": 1,
-        "aoeM": 4,
-        "aoeFt": 13,
-        "condition": "Wet",
-        "conditionDuration": 3,
-        "areaCategory": 2,
-        "areaShape": 1,
-        "areaRangeM": 2,
-        "areaRangeFt": 5,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            },
-            {
-                "resource": 12,
-                "amount": 1
-            }
-        ],
-        "classes": [
-            "Cleric",
-            "Druid",
-            "Storm Sorcery"
-        ],
-        "noSpellSlot": false,
-        "damageSaveEffect": 1,
-        "higherLevels": "Upcast: When the spell is cast a 2nd Level or higher, the area that you can create water increases by 2m / 5ft for each Spell Slot Level above 1st.",
-        "isVariant": true
     },
     {
         "name": "Crown of Madness",

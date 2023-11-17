@@ -584,6 +584,58 @@
             "id": 3574
         },
         {
+            "name": "Amulet of Windrider",
+            "image": "Amulet Necklace D Bronze A 1 Faded.png",
+            "icon": "Amulet Necklace D Bronze A 1 Unfaded Icon.png",
+            "description": "Amulet of Windrider is an uncommon Amulet that allows the wearer to cast Ride the Wind and Gust of Wind. It is one of the rewards of the quest Save Vanra.",
+            "quote": "Heavily embossed with filigree, this necklace reflects light in all directions.",
+            "type": 1,
+            "rarity": 4,
+            "weightKg": 0.05,
+            "weightLb": 0.1,
+            "price": 210,
+            "uid": "LOW_OfWindrider_Amulet",
+            "effects": [
+                {
+                    "name": "Ride the Winds|w=40",
+                    "description": "Can cast at Level 3, once every Long Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "Gust of Wind|w=40",
+                    "description": "Can cast at Level 2, once every Short Rest.",
+                    "type": 2
+                }
+            ],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Save Vanra",
+                        "id": 9296
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Baldur's Gate",
+                            "id": 6062
+                        },
+                        "location": {
+                            "name": "Lower City",
+                            "id": 11839
+                        }
+                    }
+                }
+            ],
+            "proficiency": 0,
+            "id": 9509
+        },
+        {
             "name": "Amulet of the Devout",
             "image": "Amulet of the devout.png",
             "icon": "Amulet of the devout Unfaded Icon.png",
@@ -776,58 +828,6 @@
                 }
             ],
             "id": 3461
-        },
-        {
-            "name": "Amulet of Windrider",
-            "image": "Amulet Necklace D Bronze A 1 Faded.png",
-            "icon": "Amulet Necklace D Bronze A 1 Unfaded Icon.png",
-            "description": "Amulet of Windrider is an uncommon Amulet that allows the wearer to cast Ride the Wind and Gust of Wind. It is one of the rewards of the quest Save Vanra.",
-            "quote": "Heavily embossed with filigree, this necklace reflects light in all directions.",
-            "type": 1,
-            "rarity": 4,
-            "weightKg": 0.05,
-            "weightLb": 0.1,
-            "price": 210,
-            "uid": "LOW_OfWindrider_Amulet",
-            "effects": [
-                {
-                    "name": "Ride the Winds|w=40",
-                    "description": "Can cast at Level 3, once every Long Rest.",
-                    "type": 2
-                },
-                {
-                    "name": "Gust of Wind|w=40",
-                    "description": "Can cast at Level 2, once every Short Rest.",
-                    "type": 2
-                }
-            ],
-            "sources": [
-                {
-                    "quest": {
-                        "name": "Save Vanra",
-                        "id": 9296
-                    },
-                    "location": {
-                        "act": {
-                            "name": "Act 3",
-                            "id": 4950
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Baldur's Gate",
-                            "id": 6062
-                        },
-                        "location": {
-                            "name": "Lower City",
-                            "id": 11839
-                        }
-                    }
-                }
-            ],
-            "proficiency": 0,
-            "id": 9509
         },
         {
             "name": "Beastmaster's Chain",
@@ -8349,6 +8349,151 @@
             "id": 11418
         },
         {
+            "name": "Gloves of The Duellist",
+            "image": "Gloves Leather F Faded.png",
+            "icon": "Gloves Leather F Unfaded Icon.png",
+            "description": "Gloves of The Duellist are a rare pair of Gloves that enhance melee weapon Attack Rolls when the wearer only holds one weapon in the main hand.",
+            "quote": "Ways of beginning a duel have varied over the years. Perhaps the most famous is the Bildumbacher Method, in which the instigator drips paint thinner onto the opponent's socks.",
+            "type": 5,
+            "rarity": 3,
+            "weightKg": 0.5,
+            "weightLb": 1,
+            "price": 160,
+            "effects": [
+                {
+                    "name": "Duelling Gloves",
+                    "description": "While only holding one weapon in your main hand and nothing in your free hand, gain a +2 bonus to melee weapon Attack Rolls.",
+                    "type": 2
+                }
+            ],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 2",
+                            "id": 4949
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Shadow-Cursed Lands",
+                            "id": 8117
+                        },
+                        "location": {
+                            "name": "Moonrise Towers",
+                            "id": 4552
+                        }
+                    },
+                    "character": {
+                        "name": "Lann Tarv",
+                        "id": 10415
+                    }
+                }
+            ],
+            "id": 8844
+        },
+        {
+            "name": "Gloves of Thievery",
+            "image": "Gloves of Thievery Icon.png",
+            "icon": "Gloves of Thievery Unfaded Icon.png",
+            "description": "Gloves of Thievery are an uncommon pair of Gloves that give the wearer Advantage on Sleight of Hand checks.",
+            "quote": "Useful for bank vaults, locked chests and bolted barns.",
+            "type": 5,
+            "rarity": 2,
+            "weightKg": 0.5,
+            "weightLb": 1.1,
+            "price": 60,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Advantage on Sleight of Hand Checks.",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Gloves of Thievery",
+                    "description": "Advantage on Sleight of Hand Checks.",
+                    "type": 2
+                }
+            ],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Zhentarim Basement",
+                            "id": 4185
+                        }
+                    },
+                    "character": {
+                        "name": "Brem",
+                        "id": 14233
+                    }
+                }
+            ],
+            "id": 6826
+        },
+        {
+            "name": "Gloves of Uninhibited Kushigo",
+            "image": "Gloves of Uninhibited Kushigo Icon.png",
+            "icon": "Gloves of Uninhibited Kushigo Unfaded Icon.png",
+            "description": "Gloves of Uninhibited Kushigo is a rare pair of gloves that deals additional damage with Improvised Weapons attacks.",
+            "quote": "Forsaking his infamous  armour, Kushigo left Irishi's body and  wandered naked, without thought or care, into the barren countryside. The land was flat and desolate under the red-gold sun, compared to his lonely heart, it seemed alive with joy.",
+            "type": 5,
+            "rarity": 3,
+            "weightKg": 0.5,
+            "weightLb": 1,
+            "price": 240,
+            "effects": [
+                {
+                    "name": "Kushigo's Might",
+                    "description": "The wearer deals an additional d4|Physical 1d4 damage with Throw Attacks and attacks made with Improvised_Melee_Weapon|Improvised Weapons.",
+                    "type": 2
+                }
+            ],
+            "sources": [
+                {
+                    "quest": {
+                        "name": "Find the Mushroom Picker",
+                        "id": 4568
+                    },
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Under-world"
+                        },
+                        "region": {
+                            "name": "Underdark",
+                            "id": 4325
+                        },
+                        "location": {
+                            "name": "Ebonlake Grotto",
+                            "id": 3974
+                        }
+                    },
+                    "character": {
+                        "name": "Baelen Bonecloak",
+                        "id": 12352
+                    }
+                }
+            ],
+            "id": 8075
+        },
+        {
             "name": "Gloves of the Automaton",
             "image": "Gloves Metal 1 Faded.png",
             "icon": "Gloves Metal 1 Unfaded Icon.png",
@@ -8475,51 +8620,6 @@
             "id": 10191
         },
         {
-            "name": "Gloves of The Duellist",
-            "image": "Gloves Leather F Faded.png",
-            "icon": "Gloves Leather F Unfaded Icon.png",
-            "description": "Gloves of The Duellist are a rare pair of Gloves that enhance melee weapon Attack Rolls when the wearer only holds one weapon in the main hand.",
-            "quote": "Ways of beginning a duel have varied over the years. Perhaps the most famous is the Bildumbacher Method, in which the instigator drips paint thinner onto the opponent's socks.",
-            "type": 5,
-            "rarity": 3,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 160,
-            "effects": [
-                {
-                    "name": "Duelling Gloves",
-                    "description": "While only holding one weapon in your main hand and nothing in your free hand, gain a +2 bonus to melee weapon Attack Rolls.",
-                    "type": 2
-                }
-            ],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 2",
-                            "id": 4949
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Shadow-Cursed Lands",
-                            "id": 8117
-                        },
-                        "location": {
-                            "name": "Moonrise Towers",
-                            "id": 4552
-                        }
-                    },
-                    "character": {
-                        "name": "Lann Tarv",
-                        "id": 10415
-                    }
-                }
-            ],
-            "id": 8844
-        },
-        {
             "name": "Gloves of the Growling Underdog",
             "image": "Gloves of Metal E Faded.png",
             "icon": "Gloves of Metal E Unfaded Icon.png",
@@ -8570,106 +8670,6 @@
                 }
             ],
             "id": 4762
-        },
-        {
-            "name": "Gloves of Thievery",
-            "image": "Gloves of Thievery Icon.png",
-            "icon": "Gloves of Thievery Unfaded Icon.png",
-            "description": "Gloves of Thievery are an uncommon pair of Gloves that give the wearer Advantage on Sleight of Hand checks.",
-            "quote": "Useful for bank vaults, locked chests and bolted barns.",
-            "type": 5,
-            "rarity": 2,
-            "weightKg": 0.5,
-            "weightLb": 1.1,
-            "price": 60,
-            "effects": [
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Advantage on Sleight of Hand Checks.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Gloves of Thievery",
-                    "description": "Advantage on Sleight of Hand Checks.",
-                    "type": 2
-                }
-            ],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Wilderness",
-                            "id": 4335
-                        },
-                        "location": {
-                            "name": "Zhentarim Basement",
-                            "id": 4185
-                        }
-                    },
-                    "character": {
-                        "name": "Brem",
-                        "id": 14233
-                    }
-                }
-            ],
-            "id": 6826
-        },
-        {
-            "name": "Gloves of Uninhibited Kushigo",
-            "image": "Gloves of Uninhibited Kushigo Icon.png",
-            "icon": "Gloves of Uninhibited Kushigo Unfaded Icon.png",
-            "description": "Gloves of Uninhibited Kushigo is a rare pair of gloves that deals additional damage with Improvised Weapons attacks.",
-            "quote": "Forsaking his infamous  armour, Kushigo left Irishi's body and  wandered naked, without thought or care, into the barren countryside. The land was flat and desolate under the red-gold sun, compared to his lonely heart, it seemed alive with joy.",
-            "type": 5,
-            "rarity": 3,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 240,
-            "effects": [
-                {
-                    "name": "Kushigo's Might",
-                    "description": "The wearer deals an additional d4|Physical 1d4 damage with Throw Attacks and attacks made with Improvised_Melee_Weapon|Improvised Weapons.",
-                    "type": 2
-                }
-            ],
-            "sources": [
-                {
-                    "quest": {
-                        "name": "Find the Mushroom Picker",
-                        "id": 4568
-                    },
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Under-world"
-                        },
-                        "region": {
-                            "name": "Underdark",
-                            "id": 4325
-                        },
-                        "location": {
-                            "name": "Ebonlake Grotto",
-                            "id": 3974
-                        }
-                    },
-                    "character": {
-                        "name": "Baelen Bonecloak",
-                        "id": 12352
-                    }
-                }
-            ],
-            "id": 8075
         },
         {
             "name": "Helldusk Gloves",
@@ -11033,6 +11033,10 @@
                             "name": "House of Healing Morgue",
                             "id": 10617
                         }
+                    },
+                    "character": {
+                        "name": "Hollow Armour",
+                        "id": 12329
                     }
                 }
             ],
@@ -12626,6 +12630,51 @@
             "id": 8846
         },
         {
+            "name": "Hat of Uninhibited Kushigo",
+            "image": "Hat of Uninhibited Kushigo Icon.png",
+            "icon": "Hat of Uninhibited Kushigo Unfaded Icon.png",
+            "description": "The Hat of Uninhibited Kushigo is a rare hat that grants +1 bonus to their Save DC after dealing damage with an unarmed attack.",
+            "quote": "Coming upon a wise woman, Kushigo got drunk and grew maudlin, and told her about Irishi's scalping. She gave him some clothes - light and fine - and encouraged him to take his time to grieve. He did.And, when he was ready, he fought again, uninhibited by steel or fellowship - for they only weighed him down.",
+            "type": 7,
+            "rarity": 3,
+            "weightKg": 0.5,
+            "weightLb": 1,
+            "price": 240,
+            "effects": [
+                {
+                    "name": "Lay Bare Their Weakness",
+                    "description": "After dealing damage with an Unarmed Strike|unarmed attack, the wearer gains +1 bonus to their Spell Save DC until the end of their turn.",
+                    "type": 2
+                }
+            ],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 2",
+                            "id": 4949
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Shadow-Cursed Lands",
+                            "id": 8117
+                        },
+                        "location": {
+                            "name": "Last Light Inn",
+                            "id": 8129
+                        }
+                    },
+                    "character": {
+                        "name": "Talli",
+                        "id": 9112
+                    }
+                }
+            ],
+            "id": 10189
+        },
+        {
             "name": "Hat of the Sharp Caster",
             "image": "Hat of the Sharp Caster Icon.png",
             "icon": "Hat of the Sharp Caster Unfaded Icon.png",
@@ -12689,51 +12738,6 @@
             ],
             "proficiency": 0,
             "id": 12256
-        },
-        {
-            "name": "Hat of Uninhibited Kushigo",
-            "image": "Hat of Uninhibited Kushigo Icon.png",
-            "icon": "Hat of Uninhibited Kushigo Unfaded Icon.png",
-            "description": "The Hat of Uninhibited Kushigo is a rare hat that grants +1 bonus to their Save DC after dealing damage with an unarmed attack.",
-            "quote": "Coming upon a wise woman, Kushigo got drunk and grew maudlin, and told her about Irishi's scalping. She gave him some clothes - light and fine - and encouraged him to take his time to grieve. He did.And, when he was ready, he fought again, uninhibited by steel or fellowship - for they only weighed him down.",
-            "type": 7,
-            "rarity": 3,
-            "weightKg": 0.5,
-            "weightLb": 1,
-            "price": 240,
-            "effects": [
-                {
-                    "name": "Lay Bare Their Weakness",
-                    "description": "After dealing damage with an Unarmed Strike|unarmed attack, the wearer gains +1 bonus to their Spell Save DC until the end of their turn.",
-                    "type": 2
-                }
-            ],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 2",
-                            "id": 4949
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Shadow-Cursed Lands",
-                            "id": 8117
-                        },
-                        "location": {
-                            "name": "Last Light Inn",
-                            "id": 8129
-                        }
-                    },
-                    "character": {
-                        "name": "Talli",
-                        "id": 9112
-                    }
-                }
-            ],
-            "id": 10189
         },
         {
             "name": "Helldusk Helmet",
@@ -13304,6 +13308,29 @@
                     "character": {
                         "name": "Findal",
                         "id": 11089
+                    }
+                },
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Emerald Grove",
+                            "id": 8715
+                        }
+                    },
+                    "character": {
+                        "name": "Nettie",
+                        "id": 1033
                     }
                 }
             ],
@@ -13946,67 +13973,6 @@
     ],
     "8": [
         {
-            "name": "Leather Armour",
-            "image": "Leather Armour Icon.png",
-            "icon": "Leather Armour Unfaded Icon.png",
-            "description": "Leather Armour is a common Light Armour.",
-            "quote": "Dark, messy stains line the armholes of the well-used leather breastplate.",
-            "type": 8,
-            "rarity": 1,
-            "weightKg": 4.5,
-            "weightLb": 9,
-            "price": 40,
-            "uid": "ARM_Leather",
-            "effects": [],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Wilderness",
-                            "id": 4335
-                        },
-                        "location": {
-                            "name": "Emerald Grove",
-                            "id": 8715
-                        }
-                    },
-                    "character": {
-                        "name": "Arron",
-                        "id": 4269
-                    }
-                },
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Under-world"
-                        },
-                        "region": {
-                            "name": "Underdark",
-                            "id": 4325
-                        },
-                        "location": {
-                            "name": "Ebonlake Grotto",
-                            "id": 3974
-                        }
-                    }
-                }
-            ],
-            "proficiency": 1,
-            "baseArmorClass": 11,
-            "id": 1317
-        },
-        {
             "name": "Armour of Landfall",
             "image": "Armour of Landfall Icon.png",
             "icon": "Armour of Landfall Unfaded Icon.png",
@@ -14508,6 +14474,67 @@
             "proficiency": 1,
             "baseArmorClass": 12,
             "id": 3983
+        },
+        {
+            "name": "Leather Armour",
+            "image": "Leather Armour Icon.png",
+            "icon": "Leather Armour Unfaded Icon.png",
+            "description": "Leather Armour is a common Light Armour.",
+            "quote": "Dark, messy stains line the armholes of the well-used leather breastplate.",
+            "type": 8,
+            "rarity": 1,
+            "weightKg": 4.5,
+            "weightLb": 9,
+            "price": 40,
+            "uid": "ARM_Leather",
+            "effects": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
+                            "name": "Emerald Grove",
+                            "id": 8715
+                        }
+                    },
+                    "character": {
+                        "name": "Arron",
+                        "id": 4269
+                    }
+                },
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Under-world"
+                        },
+                        "region": {
+                            "name": "Underdark",
+                            "id": 4325
+                        },
+                        "location": {
+                            "name": "Ebonlake Grotto",
+                            "id": 3974
+                        }
+                    }
+                }
+            ],
+            "proficiency": 1,
+            "baseArmorClass": 11,
+            "id": 1317
         },
         {
             "name": "Leather Armour +1",
@@ -16391,23 +16418,6 @@
             "id": 3537
         },
         {
-            "name": "Scale Mail of the Ancients",
-            "image": "Scale Male of the Ancients Icon.png",
-            "icon": "Scale Mail of the Ancients Unfaded Icon.png",
-            "description": "The Scale Mail of the Ancients is a common Medium Armour.",
-            "quote": "Four embroidered sentences decorate the tabard - the tenets of the ancients: 'Kindle the Light. Shelter the Light. Preserve your own Light. Be the Light.'",
-            "type": 9,
-            "rarity": 1,
-            "weightKg": 12,
-            "weightLb": 24,
-            "price": 65,
-            "effects": [],
-            "sources": [],
-            "proficiency": 2,
-            "baseArmorClass": 14,
-            "id": 3562
-        },
-        {
             "name": "Scale Mail of Vengeance",
             "image": "Scale Mail of Vengeance Icon.png",
             "icon": "Scale Mail of Vengeance Unfaded Icon.png",
@@ -16423,6 +16433,23 @@
             "proficiency": 2,
             "baseArmorClass": 14,
             "id": 8660
+        },
+        {
+            "name": "Scale Mail of the Ancients",
+            "image": "Scale Male of the Ancients Icon.png",
+            "icon": "Scale Mail of the Ancients Unfaded Icon.png",
+            "description": "The Scale Mail of the Ancients is a common Medium Armour.",
+            "quote": "Four embroidered sentences decorate the tabard - the tenets of the ancients: 'Kindle the Light. Shelter the Light. Preserve your own Light. Be the Light.'",
+            "type": 9,
+            "rarity": 1,
+            "weightKg": 12,
+            "weightLb": 24,
+            "price": 65,
+            "effects": [],
+            "sources": [],
+            "proficiency": 2,
+            "baseArmorClass": 14,
+            "id": 3562
         },
         {
             "name": "Sharpened Snare Cuirass",
@@ -19431,8 +19458,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Sacred Pool",
-                            "id": 8727
+                            "name": "Emerald Grove",
+                            "id": 8715
                         }
                     },
                     "character": {
@@ -32419,66 +32446,6 @@
             "dippable": true
         },
         {
-            "name": "Staff of a Mumbling Wizard",
-            "image": "Druid Quarterstaff Icon.png",
-            "icon": "Druid Quarterstaff Unfaded Icon.png",
-            "description": "Staff of a Mumbling Wizard is a visually different variant of the regular Quarterstaff.",
-            "quote": "Because it was designed by a compulsive mumbler, this staff can't distinguish between its spells, and so can only cast - Fireball or Firebolt at random.",
-            "type": 34,
-            "rarity": 2,
-            "weightKg": 1.8,
-            "weightLb": 3.6,
-            "price": 10,
-            "effects": [
-                {
-                    "name": "Firebolt?|w=40",
-                    "description": "Can cast the cantrip at will.",
-                    "type": 2
-                }
-            ],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 3",
-                            "id": 4950
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Rivington",
-                            "id": 11636
-                        },
-                        "location": {
-                            "name": "Circus of the Last Days",
-                            "id": 11641
-                        }
-                    },
-                    "character": {
-                        "name": "Akabi",
-                        "id": 10404
-                    }
-                }
-            ],
-            "proficiency": 0,
-            "id": 21479,
-            "category": 2,
-            "rangeType": 1,
-            "handedness": 2,
-            "damage": "1d6",
-            "damageType": 3,
-            "damageVersatile": "1d8",
-            "range": 0,
-            "finesse": false,
-            "heavy": false,
-            "light": false,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": true
-        },
-        {
             "name": "Staff of Arcane Blessing",
             "image": "Magic Staff A Icon.png",
             "icon": "Magic Staff A Unfaded Icon.png",
@@ -32795,6 +32762,66 @@
             "damage": "1d6 + 2",
             "damageType": 3,
             "damageVersatile": "1d8 + 2",
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": false,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": true
+        },
+        {
+            "name": "Staff of a Mumbling Wizard",
+            "image": "Druid Quarterstaff Icon.png",
+            "icon": "Druid Quarterstaff Unfaded Icon.png",
+            "description": "Staff of a Mumbling Wizard is a visually different variant of the regular Quarterstaff.",
+            "quote": "Because it was designed by a compulsive mumbler, this staff can't distinguish between its spells, and so can only cast - Fireball or Firebolt at random.",
+            "type": 34,
+            "rarity": 2,
+            "weightKg": 1.8,
+            "weightLb": 3.6,
+            "price": 10,
+            "effects": [
+                {
+                    "name": "Firebolt?|w=40",
+                    "description": "Can cast the cantrip at will.",
+                    "type": 2
+                }
+            ],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Rivington",
+                            "id": 11636
+                        },
+                        "location": {
+                            "name": "Circus of the Last Days",
+                            "id": 11641
+                        }
+                    },
+                    "character": {
+                        "name": "Akabi",
+                        "id": 10404
+                    }
+                }
+            ],
+            "proficiency": 0,
+            "id": 21479,
+            "category": 2,
+            "rangeType": 1,
+            "handedness": 2,
+            "damage": "1d6",
+            "damageType": 3,
+            "damageVersatile": "1d8",
             "range": 0,
             "finesse": false,
             "heavy": false,
@@ -33969,6 +33996,72 @@
             "damage": "1d6",
             "damageType": 1,
             "extraDamage": "1d4 Fire",
+            "range": 0,
+            "finesse": true,
+            "heavy": false,
+            "light": true,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": false
+        },
+        {
+            "name": "Salty Scimitar(rrr)",
+            "image": "Scimitar PlusTwo Icon.png",
+            "icon": "Salty Scimitar(rrr) Icon.webp",
+            "description": "Salty Scimitar(rrr) is a rare Scimitar that allows the wielder to cast Command.",
+            "quote": "Shiver me timbers, this be a devilishly nasty blade.",
+            "type": 36,
+            "rarity": 3,
+            "weightKg": 1.35,
+            "weightLb": 2.7,
+            "price": 190,
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Cast Command as a Level 1 spell once per Long Rest",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Salty Scimitar(rrr)",
+                    "description": "Cast Command as a Level 1 spell once per Long Rest",
+                    "type": 2
+                }
+            ],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Baldur's Gate",
+                            "id": 6062
+                        },
+                        "location": {
+                            "name": "The Blushing Mermaid",
+                            "id": 15547
+                        }
+                    },
+                    "character": {
+                        "name": "Grisly",
+                        "id": 15548
+                    }
+                }
+            ],
+            "proficiency": 0,
+            "enchantment": 2,
+            "id": 28193,
+            "category": 1,
+            "rangeType": 1,
+            "handedness": 1,
+            "damage": "1d6 + 2",
+            "damageType": 1,
             "range": 0,
             "finesse": true,
             "heavy": false,

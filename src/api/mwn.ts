@@ -31,8 +31,11 @@ function memoize<T extends (...args: any[]) => Promise<any>>(fn: T): T {
 export class MwnApiClass {
     private batches: Record<string, RequestBatch> = {};
 
-    static batchAxisMap: { [key: string]: string } = {
-        titles: 'title',
+    static batchAxisMap: {
+        [key: string]: { key: string; object: 'page' | 'revision' };
+    } = {
+        titles: { key: 'title', object: 'page' },
+        revids: { key: 'revid', object: 'revision' },
     };
 
     private queryWithBatchingAcross = memoize(
@@ -40,12 +43,12 @@ export class MwnApiClass {
             batchAxis: keyof ApiParams,
             queryParameters: ApiParams,
         ): Promise<ApiResponse> => {
-            let values = queryParameters[batchAxis];
+            const values = queryParameters[batchAxis];
             // eslint-disable-next-line @typescript-eslint/naming-convention
             const { [batchAxis]: _, ...restOfParams } = queryParameters;
             const queryKey = JSON.stringify({ axis: batchAxis, restOfParams });
 
-            const inputs = Array.isArray(values) ? values : [values];
+            let inputs = Array.isArray(values) ? values : [values];
 
             if (!this.batches[queryKey]) {
                 this.batches[queryKey] = new RequestBatch(
@@ -73,12 +76,8 @@ export class MwnApiClass {
                 },
             };
 
-            if (MwnApiClass.batchAxisMap[batchAxis] === 'title') {
-                const values2 = (
-                    typeof values === 'string' ? [values] : values
-                ) as string[];
-
-                values = values2.map((title) => {
+            if (batchAxis === 'titles') {
+                inputs = inputs.map((title) => {
                     const entry = data.query.normalized?.find(
                         ({ from }) => from === title,
                     );
@@ -87,18 +86,21 @@ export class MwnApiClass {
                 });
             }
 
+            const axisInfo = MwnApiClass.batchAxisMap[batchAxis];
+
+            const filteredPages = data.query?.pages.filter((page: any) => {
+                if (axisInfo.object === 'page') {
+                    return inputs.includes(page[axisInfo.key]);
+                }
+
+                return inputs.includes(page.revisions[0][axisInfo.key]);
+            });
+
             return {
                 ...data,
                 query: {
                     ...data.query,
-                    pages: data.query?.pages.filter((page: any) =>
-                        typeof values === 'string'
-                            ? page[MwnApiClass.batchAxisMap[batchAxis]] ===
-                              values
-                            : (values as string[]).includes(
-                                  page[MwnApiClass.batchAxisMap[batchAxis]],
-                              ),
-                    ),
+                    pages: filteredPages,
                 },
             };
         },
@@ -117,7 +119,7 @@ export class MwnApiClass {
 
             const params: ApiParams = {
                 list: 'categorymembers',
-                cmtitle: `Category:${categoryName}`,
+                cmtitle: categoryName,
                 cmlimit: 500, // maximum allowed for most users
             };
 
@@ -146,22 +148,6 @@ export class MwnApiClass {
 
         return titles;
     }
-
-    readPage = memoize(
-        async (pageTitle: string): Promise<Record<string, any>> => {
-            const data = await this.queryPage(pageTitle, {
-                prop: 'revisions',
-                rvprop: 'content',
-                rvslots: 'main',
-            });
-
-            data.revisions =
-                data.revisions?.map((revision: any) => revision.slots.main) ??
-                [];
-
-            return data;
-        },
-    );
 
     async queryPages(
         pageTitles: string[],
@@ -209,6 +195,78 @@ export class MwnApiClass {
             const response = await this.queryPages([pageTitle], options);
 
             return response[pageTitle];
+        },
+    );
+
+    async queryRevisions(
+        revisionIds: number[],
+        options: ApiParams & { rvprop: string[] },
+    ): Promise<Record<string, Record<string, any>>> {
+        const responseData = await this.queryWithBatchingAcross('revids', {
+            revids: revisionIds,
+            ...options,
+            rvprop: [...options.rvprop, 'ids'],
+        });
+
+        if (!responseData?.query?.pages) {
+            throw new Error('Could not find page data');
+        }
+
+        const pageData = responseData.query.pages as Record<
+            string,
+            Record<string, any>
+        >;
+
+        const entries = Object.values(pageData).map(
+            (datum: Record<string, any>) => [
+                datum.revisions[0].revid,
+                { revid: datum.revisions[0].revid, ...datum },
+            ],
+        );
+
+        return Object.fromEntries(entries);
+    }
+
+    queryRevision = memoize(
+        async (
+            revisionId: number,
+            options: ApiParams & { rvprop: string[] },
+        ): Promise<Record<string, any>> => {
+            const response = await this.queryRevisions([revisionId], options);
+
+            return response[revisionId];
+        },
+    );
+
+    readPage = memoize(
+        async (
+            pageTitle: string,
+            revisionId?: number,
+        ): Promise<Record<string, any>> => {
+            const props: ApiParams & { rvprop: string[] } = {
+                prop: 'revisions',
+                rvprop: ['content'],
+                rvslots: 'main',
+            };
+
+            let data;
+
+            if (revisionId) {
+                data = await this.queryRevision(revisionId, props);
+
+                assert(
+                    data.title === pageTitle,
+                    `Page fetched by revision id ${revisionId} didn't have the expect page title (Expected: ${pageTitle}, Actual: ${data.title})`,
+                );
+            } else {
+                data = await this.queryPage(pageTitle, props);
+            }
+
+            data.revisions =
+                data.revisions?.map((revision: any) => revision.slots.main) ??
+                [];
+
+            return data;
         },
     );
 

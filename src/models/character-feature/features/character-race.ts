@@ -3,7 +3,6 @@ import {
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { GrantableEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
-import { MwnApiClass } from '../../../api/mwn';
 import { error } from '../../logger';
 import { MediaWiki } from '../../media-wiki/media-wiki';
 import { PageLoadingState } from '../../page-item';
@@ -217,8 +216,9 @@ let characterRaceData: CharacterRace[];
 
 export async function getCharacterRaceData(): Promise<CharacterRace[]> {
     if (!characterRaceData) {
-        const raceNames =
-            await MwnApiClass.queryTitlesFromCategory('Playable races');
+        const raceNames = await MediaWiki.getTitlesInCategories([
+            'Playable races',
+        ]);
 
         const races = raceNames.map(
             (name) => new CharacterRace({ name, pageTitle: name }),

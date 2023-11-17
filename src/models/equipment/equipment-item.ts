@@ -189,21 +189,13 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         character?: ItemSourceCharacter,
         quest?: ItemSourceQuest,
     ): Promise<GameLocation | undefined> {
-        const locationPages = pages.filter(({ data, title, info }) => {
-            if (info?.redirect) {
-                return gameLocationByPageTitle.has(info.redirect);
-            }
-
+        const locationPages = pages.filter(({ data, title }) => {
             return data?.pageId
                 ? gameLocationById.has(data.pageId)
                 : gameLocationByPageTitle.has(title);
         });
 
-        const locations = locationPages.map(({ data, title, info }) => {
-            if (info?.redirect) {
-                return gameLocationByPageTitle.get(info.redirect)!;
-            }
-
+        const locations = locationPages.map(({ data, title }) => {
             return data?.pageId
                 ? gameLocationById.get(data.pageId)!
                 : gameLocationByPageTitle.get(title)!;
@@ -290,12 +282,11 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             await Promise.all(
                 pageTitles.map(async (title) => {
                     try {
-                        const page = (await MediaWiki.getPage(title))!;
+                        const data = await MediaWiki.getPage(title);
 
                         return {
-                            title: page.title,
-                            info: await MediaWiki.getPageInfo(title),
-                            data: page,
+                            title: data.title,
+                            data,
                         };
                     } catch (err) {
                         if (gameLocationByPageTitle.has(title)) {
