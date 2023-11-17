@@ -1,6 +1,5 @@
 import { Db, MongoClient } from 'mongodb';
 import { CONFIG } from './config';
-import { log } from './logger';
 
 let mdb: Promise<Db>;
 
@@ -31,10 +30,6 @@ async function initCollections(db: Db): Promise<void> {
 export async function getMongoDb() {
     if (!mdb) {
         mdb = (async () => {
-            log(
-                `mongodb://${CONFIG.MONGO.USERNAME}:${CONFIG.MONGO.PASSWORD}@${CONFIG.MONGO.HOST}:${CONFIG.MONGO.PORT}`,
-            );
-
             const client = new MongoClient(
                 `mongodb://${CONFIG.MONGO.USERNAME}:${CONFIG.MONGO.PASSWORD}@${CONFIG.MONGO.HOST}:${CONFIG.MONGO.PORT}`,
             );
