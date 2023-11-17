@@ -13,10 +13,10 @@ import { Utils } from '../utils';
 import { CONFIG } from '../config';
 import { RevisionLockInfo } from './types';
 
-assert(
-    CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS,
-    'Revisions must be locked to load revisions',
-);
+if (!CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS) {
+    error('Revisions must be locked to load revisions');
+    process.exit(1);
+}
 
 // Override this config value to allow the DB to be revised
 CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS = false;

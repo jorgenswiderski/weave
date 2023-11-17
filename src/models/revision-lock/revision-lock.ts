@@ -81,7 +81,15 @@ class RevisionLockSingleton {
 
         const data = (await cursor.toArray()) as unknown as RevisionLockEntry[];
 
-        return data.sort((a, b) => a.pageId - b.pageId);
+        return (
+            data.map((datum) =>
+                Object.fromEntries(
+                    Object.entries(datum).sort((a, b) =>
+                        a[0] < b[0] ? -1 : 1,
+                    ),
+                ),
+            ) as RevisionLockEntry[]
+        ).sort((a, b) => a.pageId - b.pageId);
     }
 
     async save(
