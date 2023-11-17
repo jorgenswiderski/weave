@@ -42,6 +42,10 @@
                             "name": "Crèche Y'llek",
                             "id": 10318
                         }
+                    },
+                    "character": {
+                        "name": "Stornugoss",
+                        "id": 10487
                     }
                 }
             ],
@@ -962,6 +966,10 @@
                             "name": "Grymforge",
                             "id": 4546
                         }
+                    },
+                    "character": {
+                        "name": "Camp followers",
+                        "id": 822
                     }
                 }
             ],
