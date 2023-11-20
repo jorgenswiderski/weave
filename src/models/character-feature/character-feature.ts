@@ -287,6 +287,30 @@ export class CharacterFeature
         return features;
     }
 
+    protected static hasChoiceSections(page: PageData): boolean {
+        const matches = [
+            ...page.content.matchAll(
+                /\n\s*={2,}\s*{{(Icon|SAI|SmIconLink)\|[^}]+}}\s*={2,}\s*\n/g,
+            ),
+        ];
+
+        return matches.length > 1;
+    }
+
+    protected static async parseChoiceSections(
+        page: PageData,
+    ): Promise<ICharacterOptionWithStubs[]> {
+        const featureMarkdown = [
+            ...page.content.matchAll(
+                /\n\s*={2,}\s*({{(Icon|SAI|SmIconLink)\|[^}]+}})\s*={2,}\s*\n/g,
+            ),
+        ].map((match) => match[1]);
+
+        return Promise.all(
+            featureMarkdown.map((md) => this.factory!.fromWikitext(md)),
+        );
+    }
+
     protected static async parsePageForChoice(
         page: PageData,
     ): Promise<ICharacterChoiceWithStubs | null> {
@@ -299,6 +323,8 @@ export class CharacterFeature
                 listSection.content,
                 page.title,
             );
+        } else if (this.hasChoiceSections(page)) {
+            options = await this.parseChoiceSections(page);
         }
 
         if (options.length === 0) {
@@ -365,5 +391,16 @@ export class CharacterFeature
 
             this.choices.push(choice);
         }
+    }
+
+    async waitForInitialization(): Promise<any> {
+        await Promise.all([
+            super.waitForInitialization(),
+            ...(this.choices?.map(async (choice) => {
+                if (choice instanceof CharacterFeature) {
+                    await choice.waitForInitialization();
+                }
+            }) ?? []),
+        ]);
     }
 }

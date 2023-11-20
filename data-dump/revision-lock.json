@@ -1904,7 +1904,7 @@
         },
         {
             "pageId": 2391,
-            "revisionId": 103227,
+            "revisionId": 114456,
             "title": "Flame Blade"
         },
         {
@@ -12888,8 +12888,18 @@
             "title": "One with Shadows (Class Action)"
         },
         {
+            "pageId": 19676,
+            "revisionId": 110747,
+            "title": "Pact of the Chain"
+        },
+        {
+            "pageId": 19684,
+            "revisionId": 110746,
+            "title": "Pact of the Blade (Passive Feature)"
+        },
+        {
             "pageId": 19686,
-            "revisionId": 74030,
+            "revisionId": 114460,
             "title": "Pact of the Tome"
         },
         {

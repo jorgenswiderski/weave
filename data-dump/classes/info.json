@@ -31142,7 +31142,47 @@
                 "Features": [
                     {
                         "name": "Pact Boon",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Pact of the Chain",
+                                        "grants": [
+                                            {
+                                                "name": "Pact of the Chain",
+                                                "type": 2,
+                                                "description": "Gain the service of a familiar, a fey spirit that takes a form of your choosing. This can be an animal, imp, or quasit.\n\nGrants:\n* Find Familiar|w=40\n* Find Familiar: Imp|w=40\n* Find Familiar: Quasit|w=40",
+                                                "image": "Pact of the Chain.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Pact of the Blade (Passive Feature)",
+                                        "grants": [
+                                            {
+                                                "name": "Pact of the Blade (Passive Feature)",
+                                                "type": 2,
+                                                "description": "You can Pact of the Blade|Summon a pact weapon, or Bind Pact Weapon|Bind the one you are wielding as one, making it magical.\n\nPact weapons use the wielder's Spellcasting Ability Modifier instead of Strength or Dexterity.",
+                                                "image": "Pact of the Blade Passive Feature.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Pact of the Tome",
+                                        "grants": [
+                                            {
+                                                "name": "Pact of the Tome",
+                                                "type": 2,
+                                                "description": "Your patron grants you a grimoire called \"The Book of Shadows\", which allows you to cast Guidance, Vicious Mockery, and Thorn Whip.",
+                                                "image": "Pact of the Tome.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 2,
