@@ -154,8 +154,7 @@ export class CharacterFeature
         const imageMatch = /\|\s*image\s*=\s*(.+)/.exec(content);
 
         return {
-            // name: MediaWikiWikitextParser.parseNameFromPageTitle(pageTitle),
-            name: title,
+            name: MediaWikiParser.parseNameFromPageTitle(title),
             type: GrantableEffectType.CHARACTERISTIC,
             description: descMatch
                 ? MediaWikiParser.stripMarkup(descMatch[1]).trim()

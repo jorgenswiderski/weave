@@ -192,7 +192,7 @@
                 "image": "Dwarven Combat Training.webp"
             },
             {
-                "name": "Darkvision (Passive Feature)",
+                "name": "Darkvision",
                 "type": 2,
                 "description": "Can see in the dark up to 12m.",
                 "image": "Darkvision.webp"
@@ -275,7 +275,7 @@
                 "image": "Elven Weapon Training.webp"
             },
             {
-                "name": "Darkvision (Passive Feature)",
+                "name": "Darkvision",
                 "type": 2,
                 "description": "Can see in the dark up to 12m.",
                 "image": "Darkvision.webp"
@@ -316,7 +316,7 @@
                         "description": "The most commonly seen gnome on Faerûn's surface, Rock Gnomes are named as such for their hardiness and affinity to metal.",
                         "grants": [
                             {
-                                "name": "Darkvision (Passive Feature)",
+                                "name": "Darkvision",
                                 "type": 2,
                                 "description": "Can see in the dark up to 12m.",
                                 "image": "Darkvision.webp"
@@ -334,7 +334,7 @@
                         "description": "Even smaller than their cousins and twice as reclusive, Forest Gnomes are rare sight in Faerûn. They master magic and craftmanship in their distant, idyllic groves.",
                         "grants": [
                             {
-                                "name": "Darkvision (Passive Feature)",
+                                "name": "Darkvision",
                                 "type": 2,
                                 "description": "Can see in the dark up to 12m.",
                                 "image": "Darkvision.webp"
@@ -451,7 +451,7 @@
                 "image": "Civil Militia.webp"
             },
             {
-                "name": "Darkvision (Passive Feature)",
+                "name": "Darkvision",
                 "type": 2,
                 "description": "Can see in the dark up to 12m.",
                 "image": "Darkvision.webp"
@@ -470,7 +470,7 @@
         "image": "Race Half-Orc.png",
         "grants": [
             {
-                "name": "Darkvision (Passive Feature)",
+                "name": "Darkvision",
                 "type": 2,
                 "description": "Can see in the dark up to 12m.",
                 "image": "Darkvision.webp"
@@ -585,7 +585,7 @@
         "image": "Race Tiefling.png",
         "grants": [
             {
-                "name": "Darkvision (Passive Feature)",
+                "name": "Darkvision",
                 "type": 2,
                 "description": "Can see in the dark up to 12m.",
                 "image": "Darkvision.webp"

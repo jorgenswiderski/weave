@@ -20,7 +20,7 @@
                         "name": "Unarmoured Defence",
                         "grants": [
                             {
-                                "name": "Unarmoured Defence (Barbarian)",
+                                "name": "Unarmoured Defence",
                                 "type": 2,
                                 "description": "Your body is as resilient as any armour. While not wearing Constitution Modifier to your ArmourClass. Wearing Heavy Armour impedes your Rage.",
                                 "image": "Unarmoured Defense Barbarian.webp"
@@ -10710,7 +10710,7 @@
                                                 "ref": "a7876"
                                             },
                                             {
-                                                "name": "Spreading Spores (Passive Feature)",
+                                                "name": "Spreading Spores",
                                                 "type": 2,
                                                 "description": "While Symbiotic Entity is active, you can create a cloud of Spreading Spores (Class Action)|Spreading Spores.",
                                                 "image": "Spreading Spores Passive Feature.webp"
@@ -15312,7 +15312,7 @@
                         "name": "Unarmoured Defence",
                         "grants": [
                             {
-                                "name": "Unarmoured Defence (Monk)",
+                                "name": "Unarmoured Defence",
                                 "type": 2,
                                 "description": "Your reflexes are as effective as any Wisdom Modifier to your ArmourClass.",
                                 "image": "Unarmored Defense Monk.webp"
@@ -28068,7 +28068,7 @@
                                         "image": "Class Sorcerer Wild Magic Badge Icon.png",
                                         "grants": [
                                             {
-                                                "name": "Wild Magic (Subclass Feature)",
+                                                "name": "Wild Magic",
                                                 "type": 2,
                                                 "description": "Unruly magic sparks and fizzes through your veins. Each time you cast a spell of Level 1 or higher, your magic might surge and trigger a random magic effect.\n\n:Wild Magic table (Sorcerer)",
                                                 "image": "Wild Magic Turn Magic.webp"
@@ -31162,7 +31162,7 @@
                                         "name": "Pact of the Blade",
                                         "grants": [
                                             {
-                                                "name": "Pact of the Blade (Passive Feature)",
+                                                "name": "Pact of the Blade",
                                                 "type": 2,
                                                 "description": "You can Pact of the Blade|Summon a pact weapon, or Bind Pact Weapon|Bind the one you are wielding as one, making it magical.\n\nPact weapons use the wielder's Spellcasting Ability Modifier instead of Strength or Dexterity.",
                                                 "image": "Pact of the Blade Passive Feature.webp"

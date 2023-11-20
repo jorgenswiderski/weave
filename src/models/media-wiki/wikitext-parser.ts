@@ -15,6 +15,30 @@ export class MediaWikiParser {
         ].map((match) => match[1]);
     }
 
+    static titleSuffixWhitelist = new Set([
+        'melee',
+        'ranged',
+        'unarmed',
+
+        // wildheart aspects
+        'bear',
+        'chimpanzee',
+        'crocodile',
+        'eagle',
+        'elk',
+        'honey badger',
+        'stallion',
+        'tiger',
+        'wolf',
+        'wolverine',
+
+        // dragonborn breath
+        'acid',
+        'fire',
+        'poison',
+        'cold',
+    ]);
+
     static parseNameFromPageTitle(title: string) {
         const match = title.match(/(.*)\s*\((.*)\)/);
 
@@ -22,7 +46,7 @@ export class MediaWikiParser {
             return title;
         }
 
-        if (['melee', 'ranged', 'unarmed'].includes(match[2].toLowerCase())) {
+        if (this.titleSuffixWhitelist.has(match[2].toLowerCase())) {
             return title;
         }
 
