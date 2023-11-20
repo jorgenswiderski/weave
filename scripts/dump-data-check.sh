@@ -2,6 +2,8 @@
 
 # Stash unstaged changes not added to the index
 git stash --keep-index --include-untracked
+# Remove any untracked files that may have been restored by the stash command (if a tracked file was deleted)
+git clean
 
 # Run your data dump script
 npm run do-dump-data
