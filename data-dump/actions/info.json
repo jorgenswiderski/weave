@@ -2576,6 +2576,132 @@
         ]
     },
     {
+        "name": "Metamagic: Careful Spell",
+        "image": "Metamagic Careful Spell.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Metamagic: Careful Spell is a Level 2 Sorcerer Ability. This Metamagic ability allows Sorcerers to prevent harmful Spell effects affecting their allies.",
+        "description": "Allies automatically succeed Saving Throws against spells that required them.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1379,
+        "attackRoll": false,
+        "costs": [
+            {
+                "resource": 21,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Metamagic: Distant Spell",
+        "image": "Metamagic Distant Spell.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Metamagic: Distant Spell is a Level 2 Sorcerer Ability. This Metamagic ability allows Sorcerers to increase the range of their Spells.",
+        "description": "Increases the range of the spell by 50%. Spells with a range of m=1.5|ft=5 are increased to m=9|ft=30.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1380,
+        "attackRoll": false,
+        "costs": [
+            {
+                "resource": 21,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Metamagic: Extended Spell",
+        "image": "Metamagic Extended Spell.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Metamagic: Extended Spell is a Level 2 Sorcerer Ability. This Metamagic ability allows Sorcerers to extend the duration of magical effects caused by their Spells.",
+        "description": "Double the duration of Conditions, summons, and surfaces caused by spells.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1381,
+        "attackRoll": false,
+        "costs": [
+            {
+                "resource": 21,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Metamagic: Heightened Spell",
+        "image": "Metamagic Heightened Spell.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Metamagic: Heightened Spell is a Level 3 Sorcerer Ability. This Metamagic ability allows Sorcerers to empower the magical effects of their Spells, making it harder for targeted creatures to resist the spell.",
+        "description": "Targets of spells that require Saving Throws have Disadvantage on their first Saving Throw.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1383,
+        "attackRoll": false,
+        "costs": [
+            {
+                "resource": 21,
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "name": "Metamagic: Quickened Spell",
+        "image": "Metamagic Quickened Spell.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Metamagic: Quickened Spell is a Level 3 Sorcerer Ability. This Metamagic ability allows Sorcerers to cast multiple Spells in a turn.",
+        "description": "Spells that take an action take a bonus instead.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1385,
+        "attackRoll": false,
+        "costs": [
+            {
+                "resource": 21,
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "name": "Metamagic: Subtle Spell",
+        "image": "Metamagic Subtle Spell.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Metamagic: Subtle Spell is a Level 3 Sorcerer Ability. This Metamagic ability allows Sorcerers to cast Spells without chanting or hand movements and allows them to ignore the Silenced condition. However, spells cast with Subtle Spell can still be countered by enemy casters using Counterspell.",
+        "description": "You can cast spells while Silenced.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1386,
+        "attackRoll": false,
+        "costs": [
+            {
+                "resource": 21,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Metamagic: Twinned Spell",
+        "image": "Metamagic Twinned Spell.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Metamagic: Twinned Spell is one of several Metamagic abilities Sorcerers can learn at Level 2. This ability allows Sorcerers to target two creatures with certain Spells.",
+        "description": "Spells that only target 1 creature can target an additional creature.\n\nCosts sp|1 per Spell Slot level used. Cantrips also cost sp|1.\n\nFor spells that don't shoot a projectile, the targets need to be close enough together.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1382,
+        "attackRoll": false,
+        "costs": [
+            {
+                "resource": 21,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Minor Conjuration: Create Water",
         "image": "Create Water.webp",
         "level": 0,

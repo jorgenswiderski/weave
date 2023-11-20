@@ -39,3 +39,5 @@ export type MediaWikiTemplateParserConfig = Record<
     string,
     MediaWikiTemplateParserConfigItem
 >;
+
+export class WikitableNotFoundError extends Error {}

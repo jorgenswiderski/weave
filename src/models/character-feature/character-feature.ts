@@ -26,6 +26,7 @@ import { StaticImageCacheService } from '../static-image-cache-service';
 import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
 import { MediaWikiParser } from '../media-wiki/wikitext-parser';
 import { IClassFeatureFactory } from './class-feature/types';
+import { WikitableNotFoundError } from '../media-wiki/types';
 
 enum CharacterFeatureLoadingStates {
     DESCRIPTION = 'DESCRIPTION',
@@ -255,21 +256,16 @@ export class CharacterFeature
         sectionWikitext: string,
         pageTitle: string,
     ): Promise<ICharacterOptionWithStubs[]> {
-        const match = sectionWikitext.match(
-            /{\|\s*class="wikitable.*?"[\s\S]+?\|}/,
-        );
+        let table;
 
-        if (!match) {
-            throw new Error(`Could not find wikitable for page '${pageTitle}'`);
-        }
+        try {
+            table = MediaWikiParser.parseWikiTable(sectionWikitext, '2d');
+        } catch (err) {
+            if (err instanceof WikitableNotFoundError) {
+                err.message = `Could not find wikitable for page '${pageTitle}'`;
+            }
 
-        const tableWikitext = match[0];
-        const table = MediaWikiParser.parseWikiTable(tableWikitext, '2d');
-
-        if (table.length <= 1 || table[0].length <= 1) {
-            error(
-                `Something went wrong parsing wikitable on page '${pageTitle}'`,
-            );
+            throw err;
         }
 
         const features: ICharacterOptionWithStubs[] = await Promise.all(

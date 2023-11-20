@@ -1,3 +1,5 @@
+import { WikitableNotFoundError } from './types';
+
 type TableRow = Record<string, string>;
 
 export class MediaWikiParser {
@@ -29,15 +31,24 @@ export class MediaWikiParser {
         return match[1].trim();
     }
 
-    static parseWikiTable(wikitext: string, format: '2d'): string[][];
+    static parseWikiTable(sectionWikitext: string, format: '2d'): string[][];
     static parseWikiTable(
-        wikitext: string,
+        sectionWikitext: string,
         format: 'record',
     ): Record<string, string>[];
     static parseWikiTable(
-        wikitext: string,
+        sectionWikitext: string,
         format: 'record' | '2d' = 'record',
     ): Record<string, string>[] | string[][] {
+        const match = sectionWikitext.match(
+            /{\|\s*class=("wikitable.*?"|wikitable)[\s\S]+?\|}/,
+        );
+
+        if (!match) {
+            throw new WikitableNotFoundError();
+        }
+
+        const wikitext = match[0];
         const lines = wikitext.split('\n');
 
         // Prefer to return as record, if the columns have labels, otherwise fallback to a 2d-array

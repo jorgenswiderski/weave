@@ -28102,7 +28102,70 @@
                 "Features": [
                     {
                         "name": "Metamagic",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Metamagic: Careful Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1379"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Distant Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1380"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Extended Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1381"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Twinned Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1382"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Heightened Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1383"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Quickened Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1385"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Subtle Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1386"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "Create Spell Slot",
@@ -28140,7 +28203,70 @@
                 "Features": [
                     {
                         "name": "Metamagic",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Metamagic: Careful Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1379"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Distant Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1380"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Extended Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1381"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Twinned Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1382"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Heightened Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1383"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Quickened Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1385"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Subtle Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1386"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 4,
@@ -29950,7 +30076,70 @@
                 "Features": [
                     {
                         "name": "Metamagic",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Metamagic: Careful Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1379"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Distant Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1380"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Extended Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1381"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Twinned Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1382"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Heightened Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1383"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Quickened Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1385"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Metamagic: Subtle Spell",
+                                        "grants": [
+                                            {
+                                                "ref": "a1386"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 6,
