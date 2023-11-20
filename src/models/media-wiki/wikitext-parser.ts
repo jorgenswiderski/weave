@@ -2,6 +2,8 @@ import { WikitableNotFoundError } from './types';
 
 type TableRow = Record<string, string>;
 
+type WikitableMarkup = 'start' | 'caption' | 'row' | 'header' | 'cell' | 'end';
+
 export class MediaWikiParser {
     static getAllPageTitles(wikitext: string): string[] {
         const pageTitleMatch = /\[\[([^#|\]]+).*?]]/g;
@@ -22,7 +24,7 @@ export class MediaWikiParser {
     }
 
     protected static parseWikiTableCell(wikitext: string): string {
-        const match = wikitext.match(/[|!]\s*(?:style=".+?"\s*\|)?\s*(.+)/);
+        const match = wikitext.match(/\s*(?:style=".+?"\s*\|)?\s*(.+)\s*/);
 
         if (!match?.[1]) {
             throw new Error();
@@ -49,50 +51,98 @@ export class MediaWikiParser {
         }
 
         const wikitext = match[0];
-        const lines = wikitext.split('\n');
+
+        type MarkupInfo = {
+            delimiter: string;
+            delimiterMidline?: string;
+            hasContent?: true;
+        };
+
+        const mu: Record<WikitableMarkup, MarkupInfo> = {
+            start: { delimiter: '{|' },
+            caption: { delimiter: '\n|+', hasContent: true },
+            row: { delimiter: '\n|-' },
+            header: {
+                delimiter: '\n!',
+                delimiterMidline: '!!',
+                hasContent: true,
+            },
+            cell: {
+                delimiter: '\n|',
+                delimiterMidline: '||',
+                hasContent: true,
+            },
+            end: { delimiter: '\n|}' },
+        };
 
         // Prefer to return as record, if the columns have labels, otherwise fallback to a 2d-array
-        if (!lines.some((line) => line.startsWith('!'))) {
+        if (!wikitext.includes(mu.header.delimiter)) {
             // eslint-disable-next-line no-param-reassign
             format = '2d';
         }
 
-        let headers: string[];
-
-        if (format === 'record') {
-            headers = lines
-                .filter((line) => line.startsWith('!'))
-                .map(this.parseWikiTableCell)
-                .map(MediaWikiParser.stripMarkup);
-        }
+        const headers: string[] = [];
 
         const rows: TableRow[] | string[][] = [];
         let currentRow: TableRow | string[] = format === 'record' ? {} : [];
 
-        lines.forEach((line) => {
-            if (line.startsWith('|}') || line.startsWith('|+')) {
-                return;
-            }
+        const tableSection =
+            /(\n(?:\|\+|\|-|!|\|))([\s\S]*?)(?=\n(?:\|\+|\|-|!|\||\|}))/g;
 
-            if (line.startsWith('|-')) {
+        const sections = [...wikitext.matchAll(tableSection)].flatMap(
+            ([, markup, content]) => {
+                const type: WikitableMarkup = (
+                    Object.entries(mu) as [WikitableMarkup, MarkupInfo][]
+                ).find(([, { delimiter }]) => markup === delimiter)![0];
+
+                if (mu[type].delimiterMidline) {
+                    return content
+                        .split(mu[type].delimiterMidline!)
+                        .map((cellContent) => ({
+                            content: mu[type].hasContent
+                                ? this.parseWikiTableCell(cellContent)
+                                : undefined,
+                            type,
+                        }));
+                }
+
+                return [
+                    {
+                        type,
+                        content: mu[type].hasContent
+                            ? this.parseWikiTableCell(content)
+                            : undefined,
+                    },
+                ];
+            },
+        );
+
+        sections.forEach(({ type, content }) => {
+            if (type === 'row') {
                 if (Object.keys(currentRow).length > 0) {
                     rows.push(currentRow as any);
                     currentRow = format === 'record' ? {} : [];
                 }
-            } else if (line.startsWith('|')) {
-                const content = this.parseWikiTableCell(line);
+            }
 
+            if (!content) {
+                return;
+            }
+
+            if (type === 'header') {
+                headers.push(MediaWikiParser.stripMarkup(content));
+            } else if (type === 'cell') {
                 if (Array.isArray(currentRow)) {
                     currentRow.push(content);
                 } else {
                     const currentColumnIndex = Object.keys(currentRow).length;
+
                     const header = headers[currentColumnIndex];
                     currentRow[header] = content;
                 }
             }
         });
 
-        // Add the last row if it exists
         if (Object.keys(currentRow).length > 0) {
             rows.push(currentRow as any);
         }
