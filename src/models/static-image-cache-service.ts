@@ -3,7 +3,7 @@ import http from 'http';
 import https from 'https';
 import path from 'path';
 import { MediaWiki } from './media-wiki/media-wiki';
-import { error, log } from './logger';
+import { error, log, warn } from './logger';
 import { MwnTokenBucket } from '../api/mwn';
 
 const ensureDirectoryExistence = async (filePath: string) => {
@@ -89,7 +89,7 @@ class StaticImageCacheServiceSingleton {
 
                 log(`Image cached successfully: ${imageName}`);
             } catch (err) {
-                error(`Failed to cache image: ${imageName}`);
+                warn(`Failed to cache image: ${imageName}`);
             }
         })();
 
@@ -124,9 +124,7 @@ class StaticImageCacheServiceSingleton {
 
     public async cleanupCache(): Promise<void> {
         try {
-            const allFiles = await this.getAllFiles(
-                path.join(this.imageCacheDir, 'media-wiki-assets'),
-            );
+            const allFiles = await this.getAllFiles(this.imageCacheDir);
 
             const filesToDelete = allFiles.filter(
                 (file) => !this.checked[path.basename(file)],

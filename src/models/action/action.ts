@@ -5,13 +5,14 @@ import {
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { AbilityScore } from '@jorgenswiderski/tomekeeper-shared/dist/types/ability';
 import { PageNotFoundError } from '../errors';
-import {
-    MediaWikiTemplateParser,
-    MediaWikiTemplateParserConfig,
-} from '../media-wiki/mw-template-parser';
+import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
 import { ActionBase } from './action-base';
-import { PageData } from '../media-wiki/media-wiki';
 import { error } from '../logger';
+import {
+    MediaWikiTemplateParserConfigItem,
+    MediaWikiTemplateParserConfig,
+    IPageData,
+} from '../media-wiki/types';
 
 let actionData: Action[];
 let actionDataById: Map<number, Action> | null = null;
@@ -21,17 +22,21 @@ export class Action extends ActionBase implements Partial<IAction> {
     condition2Duration?: number;
     condition2Save?: AbilityScore;
 
+    constructor(pageTitle: string) {
+        super(pageTitle, 'ActionPage');
+    }
+
     // TODO: Move this to action-base once the SpellPage template is done being revised
     // https://discord.com/channels/937803826583445565/1173680631125909514
-    protected parseCosts(): void {
+    protected async parseCosts(): Promise<void> {
         if (!this.page?.content) {
             throw new PageNotFoundError();
         }
 
         const actionResourceParser = (
             value: string,
-            config: MediaWikiTemplateParserConfig,
-            page: PageData,
+            config: MediaWikiTemplateParserConfigItem,
+            page: IPageData,
         ) => {
             if (!(value in ActionResourceFromString) && value !== '') {
                 error(
@@ -42,9 +47,9 @@ export class Action extends ActionBase implements Partial<IAction> {
             return ActionResourceFromString[value];
         };
 
-        const { int } = MediaWikiTemplateParser.Parsers;
+        const { int } = MediaWikiTemplate.Parsers;
 
-        const config: Record<string, MediaWikiTemplateParserConfig> = {
+        const config: MediaWikiTemplateParserConfig = {
             cost: {
                 parser: actionResourceParser,
                 default: undefined,
@@ -94,7 +99,8 @@ export class Action extends ActionBase implements Partial<IAction> {
             },
         };
 
-        const props = MediaWikiTemplateParser.parseTemplate(this.page, config);
+        const template = await this.page.getTemplate(this.templateName);
+        const props = template.parse(config);
 
         const resources = Object.fromEntries(
             Object.entries(props).filter(
@@ -122,10 +128,10 @@ export class Action extends ActionBase implements Partial<IAction> {
             throw new PageNotFoundError();
         }
 
-        const { plainText, int } = MediaWikiTemplateParser.Parsers;
-        const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
+        const { plainText, int } = MediaWikiTemplate.Parsers;
+        const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
-        const config: Record<string, MediaWikiTemplateParserConfig> = {
+        const config: MediaWikiTemplateParserConfig = {
             condition2: {
                 key: 'condition2',
                 parser: plainText,
@@ -143,12 +149,9 @@ export class Action extends ActionBase implements Partial<IAction> {
             },
         };
 
-        Object.assign(
-            this,
-            MediaWikiTemplateParser.parseTemplate(this.page, config),
-        );
-
-        this.parseCosts();
+        const template = await this.page.getTemplate(this.templateName);
+        Object.assign(this, template.parse(config));
+        await this.parseCosts();
     }
 
     toJSON(): Partial<IAction> {

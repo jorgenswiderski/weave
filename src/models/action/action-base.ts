@@ -14,11 +14,9 @@ import { DamageType } from '@jorgenswiderski/tomekeeper-shared/dist/types/damage
 import { PageNotFoundError } from '../errors';
 import { error } from '../logger';
 import { PageItem, PageLoadingState } from '../page-item';
-import {
-    MediaWikiTemplateParser,
-    MediaWikiTemplateParserConfig,
-} from '../media-wiki/mw-template-parser';
+import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
 import { StaticImageCacheService } from '../static-image-cache-service';
+import { MediaWikiTemplateParserConfig } from '../media-wiki/types';
 
 enum ActionLoadState {
     ACTION_BASE_DATA = 'ACTION_BASE_DATA',
@@ -69,7 +67,10 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
 
     used: boolean = false;
 
-    constructor(pageTitle: string) {
+    constructor(
+        pageTitle: string,
+        public templateName: string,
+    ) {
         super({ pageTitle });
 
         this.initialized[ActionLoadState.ACTION_BASE_DATA] =
@@ -95,12 +96,11 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
 
         this.id = this.page.pageId;
 
-        const { noOp, plainText, boolean, int } =
-            MediaWikiTemplateParser.Parsers;
+        const { noOp, plainText, boolean, int } = MediaWikiTemplate.Parsers;
 
-        const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
+        const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
-        const config: Record<string, MediaWikiTemplateParserConfig> = {
+        const config: MediaWikiTemplateParserConfig = {
             name: { parser: plainText, default: this.pageTitle },
             image: {
                 parser: noOp,
@@ -264,10 +264,8 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
             },
         };
 
-        Object.assign(
-            this,
-            MediaWikiTemplateParser.parseTemplate(this.page, config),
-        );
+        const template = await this.page.getTemplate(this.templateName);
+        Object.assign(this, template.parse(config));
     }
 
     toJSON(): Partial<IActionBase> {

@@ -545,7 +545,7 @@
             "name": "Amulet of Silvanus",
             "image": "Amulet Necklace D Bronze A 1 Faded.png",
             "icon": "Amulet Necklace D Bronze A 1 Unfaded Icon.png",
-            "description": "The Amulet of Silvanus is an uncommon Amulet that allows the wearer to cast Lesser Restoration once per Long Rest.",
+            "description": "The Amulet of Silvanus is an uncommon Amulet that allows the wearer to cast Lesser Restoration once per Short Rest.",
             "quote": "This amulet, engraved with a small waterfall, imparts a feeling of calm serenity when worn.",
             "type": 1,
             "rarity": 2,
@@ -556,7 +556,7 @@
             "effects": [
                 {
                     "name": "Lesser Restoration|w=40",
-                    "description": "Can cast at Level 2, once per Long Rest.",
+                    "description": "Can cast at Level 2, once per Short Rest.",
                     "type": 2
                 }
             ],
@@ -1081,7 +1081,7 @@
             "uid": "UND_MyconidAmulet_Evil",
             "effects": [
                 {
-                    "name": "Tyrant Tongue",
+                    "name": "Tyrant Tongue (Class Action)|Tyrant Tongue|w=40",
                     "description": "Grant an ally a +2 bonus to Intimidation once per Long Rest.",
                     "type": 2
                 }
@@ -1913,11 +1913,6 @@
                     "type": 2
                 },
                 {
-                    "name": "High Spirits",
-                    "description": "The amulet's spirit lingers, making everything seem a little more vibrant. Must succeed a Wisdom Saving Throw (DC 10/15, see notes) when using the amulet's power, or become Hysterical (equivalent in effect to Tasha's Hideous Laughter with a duration of 1 turn).",
-                    "type": 2
-                },
-                {
                     "name": "Talk to the Sentient Amulet|w=40",
                     "description": "As a free action, the wearer can start a conversation with the amulet.",
                     "type": 2
@@ -1925,6 +1920,11 @@
                 {
                     "name": "Ki Restoration (Lesser)|w=40",
                     "description": "Can cast at Level 1, once per Long Rest.",
+                    "type": 2
+                },
+                {
+                    "name": "High Spirits",
+                    "description": "The amulet's spirit lingers, making everything seem a little more vibrant. Must succeed a Wisdom Saving Throw (DC 10/15, see notes) when using the amulet's power, or become Hysterical (equivalent in effect to Tasha's Hideous Laughter with a duration of 1 turn).",
                     "type": 2
                 }
             ],
@@ -2260,8 +2260,8 @@
             "uid": "MAG_TWN_Surgeon_ParalyzingCritical_Amulet",
             "effects": [
                 {
-                    "name": "Paralysing Critical",
-                    "description": "Once per humanoid, the wearer can Paralysed|Paralyse the target for 2 turns.",
+                    "name": "Paralysing Critical|w=40",
+                    "description": "When scoring a humanoid, the wearer can Paralysed|Paralyse the target for 2 turns (Long Rest).",
                     "type": 2
                 }
             ],
@@ -3039,8 +3039,8 @@
             "price": 190,
             "effects": [
                 {
-                    "name": "Restore Bardic Inspiration",
-                    "description": "Once per Long Rest you can use your Action to play your instrument and restore one of your Bardic Inspiration charges.",
+                    "name": "Restore Bardic Inspiration|w=40",
+                    "description": "Play your instrument to restore one of your Bardic Inspiration slots (Long Rest).",
                     "type": 2
                 }
             ],
@@ -3123,7 +3123,7 @@
             "image": "Boots of Genial Striding Icon.png",
             "icon": "Boots of Genial Striding Unfaded Icon.png",
             "description": "The Boots of Genial Striding is a pair of rare Boots that allow the wearer to move over difficult terrain without impediment.",
-            "quote": "The soles of these boots warp and shift like warm clay manipulared by an unseen sculptor's hands.",
+            "quote": "The soles of these boots warp and shift like warm clay manipulated by an unseen sculptor's hands.",
             "type": 2,
             "rarity": 3,
             "weightKg": 0.55,
@@ -3291,7 +3291,7 @@
             "price": 190,
             "effects": [
                 {
-                    "name": "Click Heels",
+                    "name": "Click Heels (Class Action)|Click Heels|w=40",
                     "description": "Click the heels of your boots as a bonus to gain Click Heels for 1.",
                     "type": 2
                 },
@@ -4873,7 +4873,7 @@
             "effects": [
                 {
                     "name": "Crusader's Mantle|w=40",
-                    "description": "Can cast at Level 3, once per Long Rest.",
+                    "description": "Can cast at Level 3, once per Short Rest.",
                     "type": 2
                 }
             ],
@@ -7068,19 +7068,13 @@
             "effects": [
                 {
                     "name": "Anonymous Effect",
-                    "description": "Cast Protection from Missiles once per Short Rest:",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Target gains Resistance to Physical damage from ranged weapons.",
+                    "description": "Cast Protection from Missiles once per Short Rest.",
                     "type": 2,
                     "hidden": true
                 },
                 {
                     "name": "Cindersnap Gloves",
-                    "description": "Cast Protection from Missiles once per Short Rest:\nTarget gains Resistance to Physical damage from ranged weapons.",
+                    "description": "Cast Protection from Missiles once per Short Rest.",
                     "type": 2
                 }
             ],
@@ -7537,7 +7531,7 @@
             "id": 9679
         },
         {
-            "name": "Gauntlets of Frost Giant Strength",
+            "name": "Gauntlets of Hill Giant Strength",
             "image": "Gauntlets of Hill Giant Strength Icon.png",
             "icon": "Gauntlets of Hill Giant Strength Unfaded Icon.png",
             "description": "Gauntlets of Hill Giant Strength are very rare Gloves that can be obtained from the House of Hope.",
@@ -8514,28 +8508,9 @@
             "price": 290,
             "effects": [
                 {
-                    "name": "Anonymous Effect",
-                    "description": "Grants Circuitry Interface class ability which applies Form of Artifice for 10 (Short rest).",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "You are considered a Construct. Your weapon Attack Rolls have Advantage, and you have Lightning M resistance to Lightning damage.",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Bonus",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Short Rest",
-                    "type": 2,
-                    "hidden": true
+                    "name": "Circuitry Interface|w=40",
+                    "description": "You are considered a construct. Your weapon Attack rolls have Advantage, and you have resistance to Lightning damage.",
+                    "type": 2
                 },
                 {
                     "name": "Anonymous Effect",
@@ -8545,7 +8520,7 @@
                 },
                 {
                     "name": "Gloves of the Automaton",
-                    "description": "Grants Circuitry Interface class ability which applies Form of Artifice for 10 (Short rest).\nYou are considered a Construct. Your weapon Attack Rolls have Advantage, and you have Lightning M resistance to Lightning damage.\nBonus\nShort Rest\nStrengths +1.",
+                    "description": "Strengths +1.",
                     "type": 2
                 }
             ],
@@ -10601,7 +10576,13 @@
             "weightKg": 18,
             "weightLb": 36,
             "price": 260,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Superior Material",
+                    "description": "You take 1 less Slashing damage.",
+                    "type": 2
+                }
+            ],
             "sources": [
                 {
                     "location": {
@@ -10685,7 +10666,13 @@
             "weightKg": 18,
             "weightLb": 36,
             "price": 770,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Superior Material",
+                    "description": "You take 2 less Slashing damage.",
+                    "type": 2
+                }
+            ],
             "sources": [],
             "proficiency": 3,
             "baseArmorClass": 18,
@@ -10861,7 +10848,7 @@
             "id": 9401
         },
         {
-            "name": "Helldusk Armour",
+            "name": "Helldusk Armour (Heavy Armour)",
             "image": "Helldusk Armour Icon.png",
             "icon": "Helldusk Armour Unfaded Icon.png",
             "description": "Helldusk Armour is a legendary heavy Armour that can be obtained from Raphael during Chapter Three.",
@@ -12055,7 +12042,8 @@
                             "id": 8117
                         },
                         "location": {
-                            "name": "Last Light Inn - Cellar"
+                            "name": "Last Light Inn - Cellar",
+                            "id": 28634
                         }
                     }
                 }
@@ -12107,8 +12095,8 @@
                             "id": 4325
                         },
                         "location": {
-                            "name": "Grymforge",
-                            "id": 4546
+                            "name": "Abandoned Refuge",
+                            "id": 11302
                         }
                     }
                 }
@@ -12236,7 +12224,7 @@
             "effects": [
                 {
                     "name": "Synergetic Moments",
-                    "description": "When you inflict a condition, gain Arcane Synergy for 2.",
+                    "description": "When you inflict a condition, gain Arcane Synergy for 2 turns.",
                     "type": 2
                 }
             ],
@@ -14556,7 +14544,13 @@
             "weightLb": 9,
             "price": 130,
             "uid": "ARM_Leather_1",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Stealthy",
+                    "description": "Gain a +1 bonus to Stealth Checks.",
+                    "type": 2
+                }
+            ],
             "sources": [
                 {
                     "location": {
@@ -14729,7 +14723,13 @@
             "weightLb": 13,
             "price": 1000,
             "uid": "MAG_Shadow_StealthBonusWhileObscured_Armor",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Stealthier",
+                    "description": "While Obscured, the wearer gains +3 bonus to Stealth Checks",
+                    "type": 2
+                }
+            ],
             "sources": [
                 {
                     "location": {
@@ -15044,7 +15044,13 @@
             "weightLb": 12.9,
             "price": 260,
             "uid": "ARM_StuddedLeather_1",
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Superior Padding",
+                    "description": "You take 1 less Bludgeoning damage.",
+                    "type": 2
+                }
+            ],
             "sources": [
                 {
                     "location": {
@@ -16377,7 +16383,13 @@
             "weightKg": 12,
             "weightLb": 24,
             "price": 160,
-            "effects": [],
+            "effects": [
+                {
+                    "name": "Superior Material",
+                    "description": "You take 1 less Slashing damage.",
+                    "type": 2
+                }
+            ],
             "sources": [
                 {
                     "location": {
@@ -16479,17 +16491,6 @@
                 {
                     "name": "Sharpened Snare",
                     "description": "Creatures have Disadvantage on SavingThrows when resisting your attacks and spells that inflict Restrained.",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "As of patch #4, this ability affects Ensnaring Strike, Wood Woad Shield, Cruel Sting, and Bhaalist Gloves",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Sharpened Snare Cuirass",
-                    "description": "As of patch #4, this ability affects Ensnaring Strike, Wood Woad Shield, Cruel Sting, and Bhaalist Gloves",
                     "type": 2
                 }
             ],
@@ -16774,7 +16775,7 @@
     ],
     "10": [
         {
-            "name": "After Death Do Us Part",
+            "name": "After Death Do Us Part (Ring)",
             "image": "Partner Ring B Faded.png",
             "icon": "Partner Ring B Unfaded Icon.png",
             "description": "After Death Do Us Part is a rare Ring that allows its wearer to regain half their hit points after being Downed, but be cursed with Shadow Possession.",
@@ -17858,8 +17859,8 @@
             "uid": "DEN_HarpyMeal_NestRing",
             "effects": [
                 {
-                    "name": "Colour Spray",
-                    "description": "You can cast the Colour Spray spell (Short Rest).",
+                    "name": "Colour Spray|w=40",
+                    "description": "Cast as a level 1 spell (Short Rest).",
                     "type": 2
                 }
             ],
@@ -17929,7 +17930,7 @@
             "id": 8764
         },
         {
-            "name": "Ring of Evasion",
+            "name": "Ring of Evasion (Ring)",
             "image": "Ring of Evasion Icon.png",
             "icon": "Ring of Evasion Unfaded Icon.png",
             "description": "Ring of Evasion is a very rare Ring that grants the wearer Dextrous Evasion.",
@@ -17953,7 +17954,7 @@
                     "hidden": true
                 },
                 {
-                    "name": "Ring of Evasion",
+                    "name": "Ring of Evasion (Ring)",
                     "description": "Per Turn",
                     "type": 2
                 }
@@ -18584,8 +18585,8 @@
             "uid": "MAG_Fire_SelfImmolation_Ring",
             "effects": [
                 {
-                    "name": "Self Immolation",
-                    "description": "Set yourself on fire as a Bonus to gain Burning Condition Icon|Heat (Condition)|Heat for 2. Usable once per Short Rest.",
+                    "name": "Self Immolation|w=40",
+                    "description": "Set yourself on fire as a Bonus to gain Heat for 2 turns (Short Rest).",
                     "type": 2
                 }
             ],
@@ -19267,7 +19268,7 @@
             "id": 8732
         },
         {
-            "name": "Sunwalker's Gift",
+            "name": "Sunwalker's Gift (Ring)",
             "image": "Ring H Silver A 1 Faded.png",
             "icon": "Ring H Silver A 1 Unfaded Icon.png",
             "description": "Sunwalker's Gift is an uncommon Ring that grants a creature darkvision.",
@@ -19291,7 +19292,7 @@
                     "hidden": true
                 },
                 {
-                    "name": "Sunwalker's Gift",
+                    "name": "Sunwalker's Gift (Ring)",
                     "description": "Equivalent in effect to having permanent Darkvision (Passive Feature)|Darkvision.",
                     "type": 2
                 }
@@ -19817,7 +19818,7 @@
             "id": 2393
         },
         {
-            "name": "Adamantine Shield",
+            "name": "Adamantine Shield (Shield)",
             "image": "Adamantine Shield Icon.png",
             "icon": "Adamantine Shield Unfaded Icon.png",
             "description": "An Adamantine Shield is a rare Shield that sends enemies Reeling when they miss you with a melee attack.",
@@ -20866,25 +20867,8 @@
             "price": 115,
             "effects": [
                 {
-                    "name": "Woad's Ensnaring Strike",
-                    "description": "Your attack summons thorny vines that possibly Ensnared|Ensnare your target.",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Bonus",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Short Rest",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Wood Woad Shield",
-                    "description": "Bonus\nShort Rest",
+                    "name": "Ensnaring Strike|Woad's Ensnaring Strike|w=40",
+                    "description": "Your attack summons thorny vines that possibly Ensnared|Ensnare your target (Short Rest).",
                     "type": 2
                 }
             ],
@@ -22020,17 +22004,6 @@
                     "name": "Armour Class",
                     "description": "+1",
                     "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Off-Hand Only",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Cold Snap",
-                    "description": "Off-Hand Only",
-                    "type": 2
                 }
             ],
             "sources": [
@@ -22259,7 +22232,7 @@
             "dippable": true
         },
         {
-            "name": "Dolor Amarus",
+            "name": "Dolor Amarus (Dagger)",
             "image": "Dolor Amarus Icon.png",
             "icon": "Dolor Amarus Unfaded Icon.png",
             "description": "Dolor Amarus is a rare Dagger that deals additional damage on a Critical Hit. Dolor Amarus is Latin for 'Bitter Pain'.\nSpoilerWarning",
@@ -22716,7 +22689,7 @@
             "effects": [
                 {
                     "name": "Scarlet Remittance",
-                    "description": "Gain a +1 bonus to Attack Rolls, damage, and Spell Save DC for every foenotes you slay, up to a maximum of +3.",
+                    "description": "Gain a +1 bonus to Attack Rolls, damage, and Spell Save DC for every foe you slay, up to a maximum of +3.",
                     "type": 2
                 },
                 {
@@ -24973,7 +24946,7 @@
             "name": "Balduran's Giantslayer",
             "image": "Balduran Giantslayer Icon.png",
             "icon": "Balduran Giantslayer Unfaded Icon.png",
-            "description": "Balduran's Giantslayer is a legendary greatsword that receives doubled damage bonus from Strength and grants special bonuses against Large, Huge, and Gargantuan creatures.",
+            "description": "Balduran's Giantslayer is a legendary greatsword that receives doubled damage bonus from Giant Form}} class action and the [[Topple the Big Folk weapon action, as well as advantage on attack rolls against Large, Huge, and Gargantuan creatures.",
             "quote": "Wielded by Balduran, the founder of Baldur's Gate and friend to his guardian dragon, a great glittering wyrm called Ansur. Fellowship can be undone, though, as easily as you or I might unlace the strings of our shoes, and it was in a time of skullduggery and hardship that Balduran killed Ansur, carrying out the deed with this sword.",
             "type": 20,
             "rarity": 5,
@@ -25026,6 +24999,7 @@
             "handedness": 3,
             "damage": "2d6 + 3",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25076,6 +25050,7 @@
             "damage": "2d6",
             "damageType": 1,
             "extraDamage": "1d4 Fire",
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25136,6 +25111,7 @@
             "handedness": 3,
             "damage": "2d6 + 1",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25185,6 +25161,7 @@
             "handedness": 3,
             "damage": "2d6",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25252,29 +25229,6 @@
                         "name": "Grat",
                         "id": 4296
                     }
-                },
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 1",
-                            "id": 4189
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Wilderness",
-                            "id": 4335
-                        },
-                        "location": {
-                            "name": "Zhentarim Basement",
-                            "id": 4185
-                        }
-                    },
-                    "character": {
-                        "name": "Brem",
-                        "id": 14233
-                    }
                 }
             ],
             "proficiency": 0,
@@ -25285,6 +25239,7 @@
             "handedness": 3,
             "damage": "2d6 + 1",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25339,6 +25294,7 @@
             "handedness": 3,
             "damage": "2d6 + 1",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25388,6 +25344,7 @@
             "handedness": 3,
             "damage": "2d6",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25441,6 +25398,7 @@
             "handedness": 3,
             "damage": "2d6",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25453,7 +25411,7 @@
             "name": "Silver Sword of the Astral Plane",
             "image": "Githyanki_Greatsword_Icon.png",
             "icon": "Githyanki Greatsword Item Icon.png",
-            "description": "Silver Sword of the Astral Plane is a legendary greatsword that grants special bonuses when wielded by a githyanki.",
+            "description": "Silver Sword of the Astral Plane is a legendary greatsword that grants its wielder the Soulbreaker weapon action and provides special bonuses when wielded by a githyanki.",
             "quote": "The fervour with which the githyanki express devotion to their queen is admirable to some, disquieting to others. When confronted with the fallibility of the divine (since no one is wholly perfect), who knows what reactions such folk might evince.",
             "type": 20,
             "rarity": 5,
@@ -25514,6 +25472,7 @@
             "handedness": 3,
             "damage": "2d6 + 3",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25526,7 +25485,7 @@
             "name": "Soulbreaker Greatsword",
             "image": "Githyanki Greatsword Red Faded.png",
             "icon": "Githyanki Greatsword Red Unfaded Icon.png",
-            "description": "Soulbreaker Greatsword is a rare greatsword that grants a bonus to |Psychic}} damage when wielded by a [[githyanki.",
+            "description": "Soulbreaker Greatsword is a rare greatsword that grants its wielder the |Psychic}} damage when wielded by a [[githyanki.",
             "quote": "The sharp metal whispers to you. Pleading. Cursing... Echoes of slain foes.",
             "type": 20,
             "rarity": 3,
@@ -25703,6 +25662,7 @@
             "handedness": 3,
             "damage": "2d6 + 1",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25726,7 +25686,7 @@
             "effects": [
                 {
                     "name": "Chaos",
-                    "description": "On a hit, regain 1d6|Healing.",
+                    "description": "On a hit, regain 1d6|Healing to yourself.",
                     "type": 2
                 }
             ],
@@ -25764,6 +25724,7 @@
             "damage": "2d6 + 2",
             "damageType": 1,
             "extraDamage": "1d4 Necrotic",
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25828,6 +25789,7 @@
             "handedness": 3,
             "damage": "2d6 + 1",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -25840,7 +25802,7 @@
             "name": "Watcher Greatsword",
             "image": "Greatsword B Icon.png",
             "icon": "Greatsword B Unfaded Icon.png",
-            "description": "Watcher Greatsword is a common greatsword. It can only be used by Steel Watchers.",
+            "description": "Watcher Greatsword is a common greatsword. It can only be wielded by Steel Watchers.",
             "type": 20,
             "rarity": 1,
             "weightKg": 100,
@@ -25895,6 +25857,7 @@
             "handedness": 3,
             "damage": "3d12",
             "damageType": 1,
+            "range": 0,
             "finesse": false,
             "heavy": true,
             "light": false,
@@ -34077,7 +34040,7 @@
             "reach": false,
             "thrown": false,
             "cantDualWield": false,
-            "dippable": false
+            "dippable": true
         },
         {
             "name": "Scimitar",
@@ -35215,17 +35178,6 @@
                 {
                     "name": "Crimson Weapon",
                     "description": "When you make an attack with your off-hand weapon, you can add your Ability Modifier to the damage of the attack.",
-                    "type": 2
-                },
-                {
-                    "name": "Anonymous Effect",
-                    "description": "Main Hand Only",
-                    "type": 2,
-                    "hidden": true
-                },
-                {
-                    "name": "Crimson Mischief",
-                    "description": "Main Hand Only",
                     "type": 2
                 }
             ],
@@ -36565,7 +36517,7 @@
     ],
     "41": [
         {
-            "name": "Infernal spear",
+            "name": "Infernal Spear",
             "image": "Spear PlusOne Icon.png",
             "icon": "Spear PlusOne Unfaded Icon.png",
             "quote": "Precise infernal runes are woven into this weapon's filigree, implying a creator well-versed in hellish arcana.",
@@ -36577,7 +36529,7 @@
             "effects": [
                 {
                     "name": "Infernal Weapon",
-                    "description": "On a hit, the affected entity deals an additional 3|Poison damage and can possibly Poisoned Condition Icon|Poisoned (Condition)|Poison its target.",
+                    "description": "On a hit, the affected entity deals an additional 3|Poison damage and can possibly Poison its target.",
                     "type": 2
                 }
             ],
@@ -37857,7 +37809,7 @@
                 },
                 {
                     "name": "Dwarven Thrower",
-                    "description": "A Dwarf throwing this warhammer deals an extra 1d8|Bludgeoning damage. If the target is Large, Huge or Gargantuan creature, the strike deals an additional 2d8|Bludgeoning damage.",
+                    "description": "A Dwarf throwing this warhammer deals an extra 1d8|Bludgeoning damage. If the target is Large, Huge or Gargantuan creature, the strike deals an additional 2d8|Bludgeoning damage instead.",
                     "type": 2
                 }
             ],

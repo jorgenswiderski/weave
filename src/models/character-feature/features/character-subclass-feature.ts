@@ -4,9 +4,10 @@ import { PageLoadingState } from '../../page-item';
 import { CharacterFeature } from '../character-feature';
 import { CharacterProgressionLevel } from '../../character-class/types';
 import { ICharacterOptionWithPage } from '../types';
-import { MediaWiki, PageData } from '../../media-wiki/media-wiki';
+import { PageData } from '../../media-wiki/media-wiki';
 import { PageNotFoundError } from '../../errors';
 import { StaticImageCacheService } from '../../static-image-cache-service';
+import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
 
 export class CharacterSubclassFeature extends CharacterFeature {
     constructor(
@@ -30,7 +31,7 @@ export class CharacterSubclassFeature extends CharacterFeature {
             throw new Error('could not initialize subclass description');
         }
 
-        this.description = MediaWiki.stripMarkup(match[1]).trim();
+        this.description = MediaWikiParser.stripMarkup(match[1]).trim();
     }
 
     async initImage(): Promise<void> {
@@ -143,7 +144,7 @@ export class CharacterSubclassFeature extends CharacterFeature {
         ).filter(Boolean) as unknown as GrantableEffect[];
     }
 
-    async initGrantableEffects(): Promise<void> {
+    async initOptionsAndEffects(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page) {

@@ -9,8 +9,9 @@ import { Utils } from '../utils';
 import { RemoteImageError } from '../image-cache/types';
 import { debug, error } from '../logger';
 import { IPageData } from './types';
-import { MediaWikiParser } from './wikitext-parser';
 import { RevisionLock } from '../revision-lock/revision-lock';
+import { MediaWikiTemplate } from './media-wiki-template';
+import { MediaWikiParser } from './wikitext-parser';
 
 export class PageData implements IPageData {
     title: string;
@@ -40,15 +41,18 @@ export class PageData implements IPageData {
     sha1?: string;
     contentmodel?: string;
     contentformat?: string;
-    content?: string;
+    content: string;
 
     constructor(data: IPageData) {
-        const { title, pageId, categories, lastFetched, ...rest } = data;
+        const { title, pageId, categories, lastFetched, content, ...rest } =
+            data;
+
         Object.assign(this, rest);
         this.title = title;
         this.pageId = pageId;
         this.categories = categories;
         this.lastFetched = lastFetched;
+        this.content = content;
     }
 
     hasCategory(categoryNames: string[] | string): boolean {
@@ -65,33 +69,26 @@ export class PageData implements IPageData {
         );
     }
 
-    protected static async getTemplatesByName(
-        templateNames: string[],
-    ): Promise<PageData[]> {
-        // eslint-disable-next-line @typescript-eslint/return-await
-        return await Promise.all(
-            templateNames.map((name) =>
-                // eslint-disable-next-line @typescript-eslint/no-use-before-define
-                MediaWiki.getPage(
-                    `${name.startsWith('User:') ? '' : 'Template:'}${name}`,
-                ),
-            ),
+    protected static async getTemplatePage(
+        templateName: string,
+    ): Promise<PageData> {
+        // eslint-disable-next-line @typescript-eslint/no-use-before-define
+        return MediaWiki.getPage(
+            `${
+                templateName.startsWith('User:') ? '' : 'Template:'
+            }${templateName}`,
         );
     }
 
-    async hasTemplate(templateNames: string[] | string): Promise<boolean> {
-        if (!this?.content) {
-            return false;
-        }
+    protected static async getTemplateId(
+        templateName: string,
+    ): Promise<number> {
+        const { pageId } = await PageData.getTemplatePage(templateName);
 
-        // eslint-disable-next-line no-param-reassign
-        templateNames =
-            typeof templateNames === 'string' ? [templateNames] : templateNames;
+        return pageId;
+    }
 
-        const searchTemplateIds = (
-            await PageData.getTemplatesByName(templateNames)
-        ).map(({ pageId }) => pageId);
-
+    protected getRawTemplateNames(): string[] {
         const commentless = MediaWikiParser.removeComments(this.content);
 
         const allTemplateNames = [
@@ -106,13 +103,71 @@ export class PageData implements IPageData {
             })
             .filter((name) => !name.match(/#[^|}]+:/));
 
-        const uniqueTemplateNames = Array.from(new Set(allTemplateNames));
+        return Array.from(new Set(allTemplateNames));
+    }
 
-        const pageTemplateIds = (
-            await PageData.getTemplatesByName(uniqueTemplateNames)
-        ).map(({ pageId }) => pageId);
+    async hasTemplate(templateNames: string[] | string): Promise<boolean> {
+        // eslint-disable-next-line no-param-reassign
+        templateNames =
+            typeof templateNames === 'string' ? [templateNames] : templateNames;
+
+        const searchTemplateIds = await Promise.all(
+            templateNames.map(PageData.getTemplateId),
+        );
+
+        const pageTemplateIds = await Promise.all(
+            this.getRawTemplateNames().map(PageData.getTemplateId),
+        );
 
         return searchTemplateIds.some((id) => pageTemplateIds.includes(id));
+    }
+
+    async getTemplate(templateName: string): Promise<MediaWikiTemplate> {
+        const templateId = await PageData.getTemplateId(templateName);
+        const rawPageTemplateNames = this.getRawTemplateNames();
+
+        const matchingTemplate = await Utils.asyncFilter(
+            rawPageTemplateNames,
+            async (name) => (await PageData.getTemplateId(name)) === templateId,
+        );
+
+        if (matchingTemplate.length === 0) {
+            throw new Error(
+                `Could not find template '${templateName}' in page '${this.title}'`,
+            );
+        }
+
+        if (matchingTemplate.length > 1) {
+            throw new Error(
+                `Found ${matchingTemplate.length} templates matching template '${templateName}' in page '${this.title}'`,
+            );
+        }
+
+        const matchingTemplateName = matchingTemplate[0];
+
+        return new MediaWikiTemplate(this, matchingTemplateName);
+    }
+
+    getSection(
+        nameOrRegex: string,
+        depth?: number,
+    ): { title: string; content: string } | null {
+        const eqs = depth ? '='.repeat(depth) : '={2,}';
+
+        const regex = new RegExp(
+            `\\n\\s*${eqs}\\s*(${nameOrRegex})\\s*${eqs}\\s*\\n([\\s\\S]+?)(?:={2,}|$)`,
+            'i',
+        );
+
+        const match = this.content.match(regex);
+
+        if (!match?.[1] || !match?.[2]) {
+            return null;
+        }
+
+        const [, title, content] = match;
+
+        return { title, content };
     }
 }
 
@@ -271,24 +326,6 @@ export class MediaWiki {
 
         return new PageData(data);
     });
-
-    static stripMarkup(value: string): string {
-        let v = value.replace(/\[\[File:([^|]*?)(?:\|[^|]+?)*\]\]/g, ''); // remove files
-        v = v.replace(/\[\[.*?\|(.*?)\]\]/g, '$1'); // extract link labels
-        v = v.replace(/\[\[(.*?)\]\]/g, '$1');
-        v = v.replace(/{{Q\|(.*?)(?:\|.*?)?}}/g, '$1');
-        v = v.replace(/\{\{([^|}]+?)\}\}/g, '$1');
-        v = v.replace(/{{.*?\|(.*?)}}/g, '$1'); // extract template parameters
-        v = v.replace(/'''(.*?)'''/g, '$1'); // bold text
-        v = v.replace(/''(.*?)''/g, '$1'); // italic text
-        v = v.replace(/`/g, ''); // backticks
-        v = v.replace(/<.*?>/g, ''); // strip out any html tags
-        v = v.replace(/style=".*?" \| /g, ''); // strip out style attributes
-        v = v.replace(/(\w+)\.webp|\.png/g, '$1'); // remove image extensions
-        v = v.trim(); // remove spaces from start and end
-
-        return v;
-    }
 
     static async getTextExtract(
         pageTitle: string,

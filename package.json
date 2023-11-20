@@ -15,7 +15,7 @@
         "compose": "docker-compose up -d",
         "decompose": "docker-compose down",
         "type-check": "tsc --noEmit --skipLibCheck",
-        "check": "npm run lint-fix && npm run type-check",
+        "check": "npm run type-check && npm run lint-fix",
         "do-dump-data": "ts-node src/models/dump-data.ts",
         "dump-data": "npm run do-dump-data | bunyan -o short",
         "preinstall": "echo \"@jorgenswiderski:registry=https://npm.pkg.github.com/\n//npm.pkg.github.com/:_authToken=${GHP_TOKEN}\" > .npmrc",

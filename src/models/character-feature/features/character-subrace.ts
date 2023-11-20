@@ -1,6 +1,6 @@
 import { ICharacterOption } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { GrantableEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
-import { MediaWiki } from '../../media-wiki/media-wiki';
+import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
 
 export class CharacterSubrace implements ICharacterOption {
     label: string;
@@ -22,7 +22,7 @@ export class CharacterSubrace implements ICharacterOption {
         const match = regex.exec(this.content);
 
         if (!match) {
-            if (MediaWiki.stripMarkup(this.content) === this.content) {
+            if (MediaWikiParser.stripMarkup(this.content) === this.content) {
                 return this.content;
             }
 
@@ -32,7 +32,7 @@ export class CharacterSubrace implements ICharacterOption {
         }
 
         // Return the first non-null capturing group (either from ''...'' or from {{Q|...}})
-        return MediaWiki.stripMarkup(match[1] || match[2]).trim();
+        return MediaWikiParser.stripMarkup(match[1] || match[2]).trim();
     }
 
     toJSON() {

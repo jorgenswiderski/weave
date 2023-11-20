@@ -16,6 +16,7 @@ import {
 } from './types';
 import { StaticImageCacheService } from '../static-image-cache-service';
 import { CharacterFeature } from '../character-feature/character-feature';
+import { MediaWikiParser } from '../media-wiki/wikitext-parser';
 
 async function parseFeatures(
     characterClass: CharacterClass,
@@ -31,9 +32,9 @@ async function parseFeatures(
         value
             .split(', ')
             .map((featureString: string) =>
-                ClassFeatureFactory.fromMarkdownString(
-                    characterClass,
+                ClassFeatureFactory.fromWikitext(
                     featureString,
+                    characterClass,
                     level,
                 ),
             ),
@@ -77,13 +78,15 @@ export class CharacterClass extends PageItem implements ICharacterClass {
 
                 await Promise.all(
                     Object.keys(item).map(async (key) => {
-                        const cleanedKey = MediaWiki.stripMarkup(key);
+                        const cleanedKey = MediaWikiParser.stripMarkup(key);
 
                         if (cleanedKey === 'Features') {
                             // Parse the features last
                             cleanedItem[cleanedKey] = item[key];
                         } else {
-                            const value = MediaWiki.stripMarkup(item[key]);
+                            const value = MediaWikiParser.stripMarkup(
+                                item[key],
+                            );
 
                             if (value === '-') {
                                 cleanedItem[cleanedKey] = 0;
@@ -315,7 +318,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
     async getProgression() {
         await this.waitForInitialization();
 
-        return this.progression as CharacterClassProgression;
+        return this.progression!;
     }
 }
 

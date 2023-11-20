@@ -4,7 +4,7 @@
         "description": "Dragonborn are a playable race in Baldur's Gate 3. Dragonborn have resistance to a type of energy damage and are able to make deadly breath weapon attacks. These abilities are affected by their Dragonborn subrace.",
         "choices": [
             {
-                "type": 2,
+                "type": 8,
                 "options": [
                     {
                         "name": "Black Dragonborn",
@@ -93,7 +93,7 @@
         "description": "Drow are the dark elves of the Forgotten Realms. They dwell in the Underdark, large subterranean caverns beneath the surface.",
         "choices": [
             {
-                "type": 2,
+                "type": 8,
                 "options": [
                     {
                         "name": "Lolth-Sworn Drow",
@@ -136,7 +136,7 @@
         "description": "As durable and unyielding as their homes of stone, dwarves are some of the finest warriors, miners, and smiths of Faerûn.",
         "choices": [
             {
-                "type": 2,
+                "type": 8,
                 "options": [
                     {
                         "name": "Gold Dwarves",
@@ -210,7 +210,7 @@
         "description": "With an ethereal countenance and long lifespans, elves are at home with nature's power, flourishing in light and dark alike.",
         "choices": [
             {
-                "type": 2,
+                "type": 8,
                 "options": [
                     {
                         "name": "High Elves",
@@ -309,7 +309,7 @@
         "description": "Small, clever, and energetic, gnomes use their long lives to explore Faerûn's brightest corners and darkest depths.",
         "choices": [
             {
-                "type": 2,
+                "type": 8,
                 "options": [
                     {
                         "name": "Rock Gnomes",
@@ -381,7 +381,7 @@
         "description": "Half-Elves inherit blessings from both their parents, but at the price of never quite fitting in. Curious, ambitious, and versatile, half-elves are welcome everywhere, but struggle without a community to call their own.",
         "choices": [
             {
-                "type": 2,
+                "type": 8,
                 "options": [
                     {
                         "name": "High Half-Elves",
@@ -491,7 +491,7 @@
         "description": "Small yet capable, halflings prefer the comforts of home and hearth - but their natural luck and dexterity makes them fine adventurers.",
         "choices": [
             {
-                "type": 2,
+                "type": 8,
                 "options": [
                     {
                         "name": "Lightfoot Halflings",
@@ -561,7 +561,7 @@
         "description": "Touched by the Hells, Tieflings are resistant to fire and carry extraordinary Infernal powers.",
         "choices": [
             {
-                "type": 2,
+                "type": 8,
                 "options": [
                     {
                         "name": "Asmodeus Tieflings",

@@ -2971,14 +2971,7 @@
                     },
                     {
                         "name": "Expertise (Subclass Feature)",
-                        "grants": [
-                            {
-                                "name": "Expertise (Subclass Feature)",
-                                "type": 2,
-                                "description": "When a character gains this feature, they may choose two skills they are proficient in and gain expertise in both of those skills.",
-                                "image": "Expertise Icon.webp"
-                            }
-                        ]
+                        "grants": []
                     }
                 ],
                 "bardin|forceplural=yes": 3,
@@ -4790,25 +4783,11 @@
                     },
                     {
                         "name": "Expertise (Subclass Feature)",
-                        "grants": [
-                            {
-                                "name": "Expertise (Subclass Feature)",
-                                "type": 2,
-                                "description": "When a character gains this feature, they may choose two skills they are proficient in and gain expertise in both of those skills.",
-                                "image": "Expertise Icon.webp"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Magical Secrets",
-                        "grants": [
-                            {
-                                "name": "Magical Secrets",
-                                "type": 2,
-                                "description": "Your versatile knack for the arcane lets you learn magic from every discipline. Choose some additional spells to add to your repertoire.\n\n== Available Spells ==\nLevel 6 College of Lores are limited to level 3 Spells.\n\n====Cantrips====\n style = column-width: 20em; list-style-type: none;\n* Bone Chill|w=40\n* Eldritch Blast|w=40\n* Fire Bolt|w=40\n* Ray of Frost|w=40\n* Sacred Flame|w=40\ndiv col end\n\n====Level 1 Spells====\n style = column-width: 20em; list-style-type: none;\n* Armour of Agathys|w=40\n* Bless|w=40|c=16\n* Chromatic Orb|w=40\n* Command|w=40\n* Entangle|w=40|c=16\n* False Life|w=40\n* Guiding Bolt|w=40\n* Hellish Rebuke|w=40\n* Hex|w=40|c=16\n* Hunter's Mark|w=40|c=16\n* Ice Knife|w=40\n* Magic Missile|w=40\n* Sanctuary|w=40\n* Thunderous Smite|w=40\ndiv col end\n\n====Level 2 Spells====\n style = column-width: 20em; list-style-type: none;\n* Arcane Lock|w=40\n* Blur|w=40|c=16\n* Darkness|w=40|c=16\n* Darkvision (Spell)|Darkvision|w=40\n* Misty Step|w=40\n* Pass Without Trace|w=40|c=16\n* Ray of Enfeeblement|w=40|c=16\n* Scorching Ray|w=40\n* Spike Growth|w=40|c=16\n* Spiritual Weapon|w=40\n* Web|w=40|c=16\ndiv col end\n\n====Level 3 Spells====\n style = column-width: 20em; list-style-type: none;\n* Animate Dead|w=40\n* Call Lightning|w=40|c=16\n* Counterspell|w=40\n* Crusader's Mantle|w=40|c=16\n* Daylight|w=40\n* Fireball|w=40\n* Gaseous Form|w=40|c=16\n* Grant Flight|w=40|c=16\n* Haste|w=40|c=16\n* Hunger of Hadar|w=40|c=16\n* Lightning Bolt|w=40\n* Mass Healing Word|w=40\n* Remove Curse|w=40\n* Revivify|w=40\n* Sleet Storm|w=40|c=16\n* Slow|w=40|c=16\n* Spirit Guardians|w=40|c=16\n* Vampiric Touch|w=40|c=16\n* Warden of Vitality|w=40\ndiv col end\n\n====Level 4 Spells====\n style = column-width: 20em; list-style-type: none;\n* Banishment|w=40|c=16\n* Blight|w=40\n* Death Ward|w=40\n* Dominate Beast|w=40|c=16\n* Fire Shield|w=40\n* Guardian of Faith (Spell)|Guardian of Faith|w=40\n* Ice Storm|w=40\n* Wall of Fire|w=40|c=16\ndiv col end\n\n====Level 5 Spells====\n style = column-width: 20em; list-style-type: none;\n* Banishing Smite (Melee)|Banishing Smite|w=40\n* Cone of Cold|w=40\n* Conjure Elemental|w=40\n* Contagion|w=40\n* Wall of Stone|w=40|c=16\ndiv col end",
-                                "image": "Class Bard Badge Icon.png"
-                            }
-                        ]
+                        "grants": []
                     }
                 ],
                 "bardin|forceplural=yes": 5,
@@ -11609,7 +11588,77 @@
                     },
                     {
                         "name": "Fighting Style",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Archery",
+                                        "grants": [
+                                            {
+                                                "name": "Archery",
+                                                "type": 2,
+                                                "description": "You gain a +2 bonus to Attack Rolls you make with ranged Weapons.",
+                                                "image": "Archery.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Defence",
+                                        "grants": [
+                                            {
+                                                "name": "Defence",
+                                                "type": 2,
+                                                "description": "You gain a +1 bonus to Armour Class while wearing Armour.",
+                                                "image": "Defence.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Duelling",
+                                        "grants": [
+                                            {
+                                                "name": "Duelling",
+                                                "type": 2,
+                                                "description": "When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.You can carry a shield in your free hand and still gain this bonus.",
+                                                "image": "Duelling.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Great Weapon Fighting",
+                                        "grants": [
+                                            {
+                                                "name": "Great Weapon Fighting",
+                                                "type": 2,
+                                                "description": "When you roll a 1 or 2 on a damage die for an attack with a Two-Handed melee weapon, that die is rerolled once.",
+                                                "image": "Great Weapon Fighting.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Protection",
+                                        "grants": [
+                                            {
+                                                "ref": "a17368"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Two-Weapon Fighting",
+                                        "grants": [
+                                            {
+                                                "name": "Two-Weapon Fighting",
+                                                "type": 2,
+                                                "description": "When you make an offhand attack, you can add your Ability Score Modifier to the damage of the attack.",
+                                                "image": "Two-Weapon Fighting.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -18267,7 +18316,7 @@
                         ]
                     },
                     {
-                        "name": "Channel Oath",
+                        "name": "[[#Level_1|Channel Oath]]",
                         "grants": []
                     },
                     {
@@ -18336,7 +18385,77 @@
                 "Features": [
                     {
                         "name": "Fighting Style",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Archery",
+                                        "grants": [
+                                            {
+                                                "name": "Archery",
+                                                "type": 2,
+                                                "description": "You gain a +2 bonus to Attack Rolls you make with ranged Weapons.",
+                                                "image": "Archery.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Defence",
+                                        "grants": [
+                                            {
+                                                "name": "Defence",
+                                                "type": 2,
+                                                "description": "You gain a +1 bonus to Armour Class while wearing Armour.",
+                                                "image": "Defence.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Duelling",
+                                        "grants": [
+                                            {
+                                                "name": "Duelling",
+                                                "type": 2,
+                                                "description": "When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.You can carry a shield in your free hand and still gain this bonus.",
+                                                "image": "Duelling.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Great Weapon Fighting",
+                                        "grants": [
+                                            {
+                                                "name": "Great Weapon Fighting",
+                                                "type": 2,
+                                                "description": "When you roll a 1 or 2 on a damage die for an attack with a Two-Handed melee weapon, that die is rerolled once.",
+                                                "image": "Great Weapon Fighting.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Protection",
+                                        "grants": [
+                                            {
+                                                "ref": "a17368"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Two-Weapon Fighting",
+                                        "grants": [
+                                            {
+                                                "name": "Two-Weapon Fighting",
+                                                "type": 2,
+                                                "description": "When you make an offhand attack, you can add your Ability Score Modifier to the damage of the attack.",
+                                                "image": "Two-Weapon Fighting.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "#spellcasting",
@@ -21010,11 +21129,135 @@
                 "Features": [
                     {
                         "name": "Favoured Enemy",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Bounty Hunter",
+                                        "grants": [
+                                            {
+                                                "name": "Bounty Hunter",
+                                                "type": 2,
+                                                "description": "Gain Ensnaring Strike (Ranged)|ranged}} or Ensnaring Strike (Melee)|melee) have Disadvantage on their [[Saving Throw.",
+                                                "image": "Bounty Hunter.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Keeper of the Veil",
+                                        "grants": [
+                                            {
+                                                "name": "Keeper of the Veil",
+                                                "type": 2,
+                                                "description": "You specialise in hunting creatures from other planes of existence. You gain Proficiency in Arcana and can grant protection against aberrations, celestials, elementals, fey, fiends, and undead.",
+                                                "image": "Keeper of the Veil.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mage Breaker",
+                                        "grants": [
+                                            {
+                                                "name": "Mage Breaker",
+                                                "type": 2,
+                                                "description": "You have a history of battling spellcasters. Gain True Strike}}, which gives you Advantage on Attack Rolls against a creature. [[Wisdom is your Spellcasting Ability for this spell.",
+                                                "image": "Mage Breaker.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Ranger Knight",
+                                        "grants": [
+                                            {
+                                                "name": "Ranger Knight",
+                                                "type": 2,
+                                                "description": "You have sworn to serve a crown or nation and seek to bring its foes to ruin. Gain Heavy Armour.",
+                                                "image": "Ranger Knight.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sanctified Stalker",
+                                        "grants": [
+                                            {
+                                                "name": "Sanctified Stalker",
+                                                "type": 2,
+                                                "description": "You swore to hunt the enemies of a holy or druidic order. You gain Proficiency in Religion and can cast Sacred Flame.",
+                                                "image": "Sanctified Stalker.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "Natural Explorer",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Beast Tamer",
+                                        "grants": [
+                                            {
+                                                "name": "Beast Tamer",
+                                                "type": 2,
+                                                "description": "You have cultivated a strong bond with animals. You can cast Find Familiar without expending a spell slot.",
+                                                "image": "Beast Tamer.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Urban Tracker",
+                                        "grants": [
+                                            {
+                                                "name": "Urban Tracker",
+                                                "type": 2,
+                                                "description": "An expert at navigating the wild within the city, you gain Sleight of Hand Proficiency.",
+                                                "image": "Urban Tracker.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Cold",
+                                        "grants": [
+                                            {
+                                                "name": "Wasteland Wanderer: Cold",
+                                                "type": 2,
+                                                "description": "You have spent endless days surviving desolate tundras. Gain resistance to Cold damage, taking only half damage from it.",
+                                                "image": "Wasteland Wanderer Cold.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Fire",
+                                        "grants": [
+                                            {
+                                                "name": "Wasteland Wanderer: Fire",
+                                                "type": 2,
+                                                "description": "You have spent endless days surviving forbidding deserts. Gain resistance to Fire, taking only half damage from it.",
+                                                "image": "Wasteland Wanderer Fire.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Poison",
+                                        "grants": [
+                                            {
+                                                "name": "Wasteland Wanderer: Poison",
+                                                "type": 2,
+                                                "description": "You have spent endless days surviving fetid swamps. Gain resistance to Poison, taking only half damage from it.",
+                                                "image": "Wasteland Wanderer Poison.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Spells Known": 0,
@@ -21031,7 +21274,77 @@
                 "Features": [
                     {
                         "name": "Fighting Style",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Archery",
+                                        "grants": [
+                                            {
+                                                "name": "Archery",
+                                                "type": 2,
+                                                "description": "You gain a +2 bonus to Attack Rolls you make with ranged Weapons.",
+                                                "image": "Archery.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Defence",
+                                        "grants": [
+                                            {
+                                                "name": "Defence",
+                                                "type": 2,
+                                                "description": "You gain a +1 bonus to Armour Class while wearing Armour.",
+                                                "image": "Defence.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Duelling",
+                                        "grants": [
+                                            {
+                                                "name": "Duelling",
+                                                "type": 2,
+                                                "description": "When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.You can carry a shield in your free hand and still gain this bonus.",
+                                                "image": "Duelling.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Great Weapon Fighting",
+                                        "grants": [
+                                            {
+                                                "name": "Great Weapon Fighting",
+                                                "type": 2,
+                                                "description": "When you roll a 1 or 2 on a damage die for an attack with a Two-Handed melee weapon, that die is rerolled once.",
+                                                "image": "Great Weapon Fighting.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Protection",
+                                        "grants": [
+                                            {
+                                                "ref": "a17368"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Two-Weapon Fighting",
+                                        "grants": [
+                                            {
+                                                "name": "Two-Weapon Fighting",
+                                                "type": 2,
+                                                "description": "When you make an offhand attack, you can add your Ability Score Modifier to the damage of the attack.",
+                                                "image": "Two-Weapon Fighting.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "#spellcasting",
@@ -21991,11 +22304,135 @@
                 "Features": [
                     {
                         "name": "Favoured Enemy",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Bounty Hunter",
+                                        "grants": [
+                                            {
+                                                "name": "Bounty Hunter",
+                                                "type": 2,
+                                                "description": "Gain Ensnaring Strike (Ranged)|ranged}} or Ensnaring Strike (Melee)|melee) have Disadvantage on their [[Saving Throw.",
+                                                "image": "Bounty Hunter.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Keeper of the Veil",
+                                        "grants": [
+                                            {
+                                                "name": "Keeper of the Veil",
+                                                "type": 2,
+                                                "description": "You specialise in hunting creatures from other planes of existence. You gain Proficiency in Arcana and can grant protection against aberrations, celestials, elementals, fey, fiends, and undead.",
+                                                "image": "Keeper of the Veil.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mage Breaker",
+                                        "grants": [
+                                            {
+                                                "name": "Mage Breaker",
+                                                "type": 2,
+                                                "description": "You have a history of battling spellcasters. Gain True Strike}}, which gives you Advantage on Attack Rolls against a creature. [[Wisdom is your Spellcasting Ability for this spell.",
+                                                "image": "Mage Breaker.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Ranger Knight",
+                                        "grants": [
+                                            {
+                                                "name": "Ranger Knight",
+                                                "type": 2,
+                                                "description": "You have sworn to serve a crown or nation and seek to bring its foes to ruin. Gain Heavy Armour.",
+                                                "image": "Ranger Knight.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sanctified Stalker",
+                                        "grants": [
+                                            {
+                                                "name": "Sanctified Stalker",
+                                                "type": 2,
+                                                "description": "You swore to hunt the enemies of a holy or druidic order. You gain Proficiency in Religion and can cast Sacred Flame.",
+                                                "image": "Sanctified Stalker.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "Natural Explorer",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Beast Tamer",
+                                        "grants": [
+                                            {
+                                                "name": "Beast Tamer",
+                                                "type": 2,
+                                                "description": "You have cultivated a strong bond with animals. You can cast Find Familiar without expending a spell slot.",
+                                                "image": "Beast Tamer.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Urban Tracker",
+                                        "grants": [
+                                            {
+                                                "name": "Urban Tracker",
+                                                "type": 2,
+                                                "description": "An expert at navigating the wild within the city, you gain Sleight of Hand Proficiency.",
+                                                "image": "Urban Tracker.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Cold",
+                                        "grants": [
+                                            {
+                                                "name": "Wasteland Wanderer: Cold",
+                                                "type": 2,
+                                                "description": "You have spent endless days surviving desolate tundras. Gain resistance to Cold damage, taking only half damage from it.",
+                                                "image": "Wasteland Wanderer Cold.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Fire",
+                                        "grants": [
+                                            {
+                                                "name": "Wasteland Wanderer: Fire",
+                                                "type": 2,
+                                                "description": "You have spent endless days surviving forbidding deserts. Gain resistance to Fire, taking only half damage from it.",
+                                                "image": "Wasteland Wanderer Fire.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Poison",
+                                        "grants": [
+                                            {
+                                                "name": "Wasteland Wanderer: Poison",
+                                                "type": 2,
+                                                "description": "You have spent endless days surviving fetid swamps. Gain resistance to Poison, taking only half damage from it.",
+                                                "image": "Wasteland Wanderer Poison.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Spells Known": 4,
@@ -22935,11 +23372,135 @@
                 "Features": [
                     {
                         "name": "Favoured Enemy",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Bounty Hunter",
+                                        "grants": [
+                                            {
+                                                "name": "Bounty Hunter",
+                                                "type": 2,
+                                                "description": "Gain Ensnaring Strike (Ranged)|ranged}} or Ensnaring Strike (Melee)|melee) have Disadvantage on their [[Saving Throw.",
+                                                "image": "Bounty Hunter.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Keeper of the Veil",
+                                        "grants": [
+                                            {
+                                                "name": "Keeper of the Veil",
+                                                "type": 2,
+                                                "description": "You specialise in hunting creatures from other planes of existence. You gain Proficiency in Arcana and can grant protection against aberrations, celestials, elementals, fey, fiends, and undead.",
+                                                "image": "Keeper of the Veil.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mage Breaker",
+                                        "grants": [
+                                            {
+                                                "name": "Mage Breaker",
+                                                "type": 2,
+                                                "description": "You have a history of battling spellcasters. Gain True Strike}}, which gives you Advantage on Attack Rolls against a creature. [[Wisdom is your Spellcasting Ability for this spell.",
+                                                "image": "Mage Breaker.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Ranger Knight",
+                                        "grants": [
+                                            {
+                                                "name": "Ranger Knight",
+                                                "type": 2,
+                                                "description": "You have sworn to serve a crown or nation and seek to bring its foes to ruin. Gain Heavy Armour.",
+                                                "image": "Ranger Knight.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sanctified Stalker",
+                                        "grants": [
+                                            {
+                                                "name": "Sanctified Stalker",
+                                                "type": 2,
+                                                "description": "You swore to hunt the enemies of a holy or druidic order. You gain Proficiency in Religion and can cast Sacred Flame.",
+                                                "image": "Sanctified Stalker.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "Natural Explorer",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Beast Tamer",
+                                        "grants": [
+                                            {
+                                                "name": "Beast Tamer",
+                                                "type": 2,
+                                                "description": "You have cultivated a strong bond with animals. You can cast Find Familiar without expending a spell slot.",
+                                                "image": "Beast Tamer.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Urban Tracker",
+                                        "grants": [
+                                            {
+                                                "name": "Urban Tracker",
+                                                "type": 2,
+                                                "description": "An expert at navigating the wild within the city, you gain Sleight of Hand Proficiency.",
+                                                "image": "Urban Tracker.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Cold",
+                                        "grants": [
+                                            {
+                                                "name": "Wasteland Wanderer: Cold",
+                                                "type": 2,
+                                                "description": "You have spent endless days surviving desolate tundras. Gain resistance to Cold damage, taking only half damage from it.",
+                                                "image": "Wasteland Wanderer Cold.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Fire",
+                                        "grants": [
+                                            {
+                                                "name": "Wasteland Wanderer: Fire",
+                                                "type": 2,
+                                                "description": "You have spent endless days surviving forbidding deserts. Gain resistance to Fire, taking only half damage from it.",
+                                                "image": "Wasteland Wanderer Fire.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Poison",
+                                        "grants": [
+                                            {
+                                                "name": "Wasteland Wanderer: Poison",
+                                                "type": 2,
+                                                "description": "You have spent endless days surviving fetid swamps. Gain resistance to Poison, taking only half damage from it.",
+                                                "image": "Wasteland Wanderer Poison.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "Hide in Plain Sight",
@@ -23844,14 +24405,7 @@
                 "Features": [
                     {
                         "name": "Expertise (Subclass Feature)",
-                        "grants": [
-                            {
-                                "name": "Expertise (Subclass Feature)",
-                                "type": 2,
-                                "description": "When a character gains this feature, they may choose two skills they are proficient in and gain expertise in both of those skills.",
-                                "image": "Expertise Icon.webp"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Sneak Attack (Melee)",
@@ -24929,14 +25483,7 @@
                 "Features": [
                     {
                         "name": "Expertise (Subclass Feature)",
-                        "grants": [
-                            {
-                                "name": "Expertise (Subclass Feature)",
-                                "type": 2,
-                                "description": "When a character gains this feature, they may choose two skills they are proficient in and gain expertise in both of those skills.",
-                                "image": "Expertise Icon.webp"
-                            }
-                        ]
+                        "grants": []
                     }
                 ]
             },
@@ -30406,14 +30953,7 @@
                 "Features": [
                     {
                         "name": "Pact Boon",
-                        "grants": [
-                            {
-                                "name": "Pact Boon",
-                                "type": 2,
-                                "description": "Your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice:\n\n==== Pact of the Chain|w=40====\n\nGain the service of a familiar, a fey spirit that takes a form you choose. This can be an animal, imp, or quasit.\n* Find Familiar|w=40\n* Find Familiar: Imp|w=40\n* Find Familiar: Quasit|w=40\n\n==== Pact of the Blade (Passive Feature)|Pact of the Blade|w=40 ====\nYou can Summon a pact weapon, or Bind the one you are wielding, making it magical.\nPact weapons use the wielder's Spellcasting Ability Modifier instead of Strength or Dexterity.\n\n* Pact of the Blade|w=40\n* Bind Pact Weapon|w=40\n\n==== Pact of the Tome|w=40 ====\nYour patron grants you a grimoire called 'The Book of Shadows', which allows you to cast several spells.\n\n* Guidance|w=40\n* Vicious Mockery|w=40\n* Thorn Whip|w=40.",
-                                "image": "Pact of the Chain.webp"
-                            }
-                        ]
+                        "grants": []
                     }
                 ],
                 "Cantrips Known": 2,
@@ -32233,7 +32773,7 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "Mystic Arcanum",
+                        "name": "[[#Level 11|Mystic Arcanum]] (6th level spell)",
                         "grants": []
                     }
                 ],

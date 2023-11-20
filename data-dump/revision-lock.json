@@ -1,7 +1,6 @@
 {
     "redirects": {
         "Ability Check": "Ability check",
-        "Ability_Check": "Ability Check",
         "Actor": "Feats",
         "Ancient Rune Circle": "Ancient Sigil Circle",
         "Camp Follower": "Camp followers",
@@ -39,6 +38,7 @@
         "Heavy_Magic_Armour_Trader_Table": "Heavy Magic Armour Trader Table",
         "Helm": "Headwear",
         "Help Omeluum investigate the parasite": "Help Omeluum Investigate the Parasite",
+        "High Hall": "The High Hall",
         "High Hall#Upper City Sewers": "High Hall",
         "Improved Bardic Inspiration": "Bardic Inspiration",
         "Improved Unarmoured Movement": "Unarmoured Movement",
@@ -49,7 +49,6 @@
         "Long rest": "Resting",
         "Multiattack Defense": "Multiattack Defence",
         "Myconid Colony": "Ebonlake Grotto",
-        "Mystic Arcanum": "Warlock",
         "Nightsong": "Find the Nightsong",
         "Overgrown_Tunnel": "Overgrown Tunnel",
         "Passageway": "Western Beach",
@@ -175,8 +174,8 @@
         },
         {
             "pageId": 13,
-            "revisionId": 98853,
-            "title": "Adamantine Shield"
+            "revisionId": 113073,
+            "title": "Adamantine Shield (Shield)"
         },
         {
             "pageId": 14,
@@ -195,12 +194,12 @@
         },
         {
             "pageId": 17,
-            "revisionId": 111109,
+            "revisionId": 113069,
             "title": "Adamantine Splint Armour"
         },
         {
             "pageId": 18,
-            "revisionId": 111111,
+            "revisionId": 113072,
             "title": "Adamantine Scale Mail"
         },
         {
@@ -360,7 +359,7 @@
         },
         {
             "pageId": 219,
-            "revisionId": 112683,
+            "revisionId": 114103,
             "title": "Acolyte"
         },
         {
@@ -380,7 +379,7 @@
         },
         {
             "pageId": 378,
-            "revisionId": 102309,
+            "revisionId": 113760,
             "title": "Gameplay mechanics"
         },
         {
@@ -400,7 +399,7 @@
         },
         {
             "pageId": 430,
-            "revisionId": 105075,
+            "revisionId": 112984,
             "title": "Greatsword"
         },
         {
@@ -435,12 +434,12 @@
         },
         {
             "pageId": 615,
-            "revisionId": 103279,
+            "revisionId": 114277,
             "title": "Criminal"
         },
         {
             "pageId": 616,
-            "revisionId": 76098,
+            "revisionId": 114276,
             "title": "Entertainer"
         },
         {
@@ -455,7 +454,7 @@
         },
         {
             "pageId": 619,
-            "revisionId": 112739,
+            "revisionId": 113853,
             "title": "Noble"
         },
         {
@@ -610,7 +609,7 @@
         },
         {
             "pageId": 796,
-            "revisionId": 102652,
+            "revisionId": 113778,
             "title": "Light"
         },
         {
@@ -625,7 +624,7 @@
         },
         {
             "pageId": 807,
-            "revisionId": 98515,
+            "revisionId": 113672,
             "title": "Ranger"
         },
         {
@@ -940,7 +939,7 @@
         },
         {
             "pageId": 1235,
-            "revisionId": 105168,
+            "revisionId": 114225,
             "title": "Strength"
         },
         {
@@ -980,7 +979,7 @@
         },
         {
             "pageId": 1313,
-            "revisionId": 106205,
+            "revisionId": 113675,
             "title": "Warlock"
         },
         {
@@ -1025,7 +1024,7 @@
         },
         {
             "pageId": 1325,
-            "revisionId": 101204,
+            "revisionId": 113976,
             "title": "The Speedy Lightfeet"
         },
         {
@@ -1115,7 +1114,7 @@
         },
         {
             "pageId": 1389,
-            "revisionId": 108613,
+            "revisionId": 113160,
             "title": "Find Familiar"
         },
         {
@@ -1315,7 +1314,7 @@
         },
         {
             "pageId": 1661,
-            "revisionId": 94110,
+            "revisionId": 113105,
             "title": "Friends"
         },
         {
@@ -1325,7 +1324,7 @@
         },
         {
             "pageId": 1663,
-            "revisionId": 101171,
+            "revisionId": 113480,
             "title": "Minor Illusion"
         },
         {
@@ -1390,7 +1389,7 @@
         },
         {
             "pageId": 1969,
-            "revisionId": 99531,
+            "revisionId": 113415,
             "title": "Goblin"
         },
         {
@@ -1440,7 +1439,7 @@
         },
         {
             "pageId": 2044,
-            "revisionId": 84180,
+            "revisionId": 114125,
             "title": "Chromatic Orb: Poison"
         },
         {
@@ -1855,13 +1854,13 @@
         },
         {
             "pageId": 2367,
-            "revisionId": 84618,
-            "title": "Bull's Strength"
+            "revisionId": 112930,
+            "title": "Bull's Strength (Spell)"
         },
         {
             "pageId": 2368,
-            "revisionId": 105608,
-            "title": "Cat's Grace"
+            "revisionId": 112920,
+            "title": "Cat's Grace (Spell)"
         },
         {
             "pageId": 2369,
@@ -1960,7 +1959,7 @@
         },
         {
             "pageId": 2466,
-            "revisionId": 103494,
+            "revisionId": 113676,
             "title": "Paladin"
         },
         {
@@ -2110,7 +2109,7 @@
         },
         {
             "pageId": 2676,
-            "revisionId": 110824,
+            "revisionId": 113508,
             "title": "Fighting style"
         },
         {
@@ -2120,7 +2119,7 @@
         },
         {
             "pageId": 2678,
-            "revisionId": 84934,
+            "revisionId": 113527,
             "title": "Mass Healing Word"
         },
         {
@@ -2785,7 +2784,7 @@
         },
         {
             "pageId": 3339,
-            "revisionId": 105079,
+            "revisionId": 112982,
             "title": "Everburn Blade"
         },
         {
@@ -2795,7 +2794,7 @@
         },
         {
             "pageId": 3341,
-            "revisionId": 105083,
+            "revisionId": 112987,
             "title": "Sword of Justice"
         },
         {
@@ -2820,7 +2819,7 @@
         },
         {
             "pageId": 3351,
-            "revisionId": 107841,
+            "revisionId": 112983,
             "title": "Githyanki Greatsword"
         },
         {
@@ -2835,7 +2834,7 @@
         },
         {
             "pageId": 3354,
-            "revisionId": 98895,
+            "revisionId": 113694,
             "title": "Corellon's Grace"
         },
         {
@@ -2855,7 +2854,7 @@
         },
         {
             "pageId": 3358,
-            "revisionId": 105081,
+            "revisionId": 112985,
             "title": "Greatsword +1"
         },
         {
@@ -3090,7 +3089,7 @@
         },
         {
             "pageId": 3419,
-            "revisionId": 111929,
+            "revisionId": 113607,
             "title": "Template:Spell page"
         },
         {
@@ -3110,7 +3109,7 @@
         },
         {
             "pageId": 3424,
-            "revisionId": 111127,
+            "revisionId": 114268,
             "title": "Studded Leather Armour +1"
         },
         {
@@ -3150,8 +3149,8 @@
         },
         {
             "pageId": 3432,
-            "revisionId": 102442,
-            "title": "Sunwalker's Gift"
+            "revisionId": 113885,
+            "title": "Sunwalker's Gift (Ring)"
         },
         {
             "pageId": 3433,
@@ -3210,7 +3209,7 @@
         },
         {
             "pageId": 3445,
-            "revisionId": 111132,
+            "revisionId": 114270,
             "title": "Scale Mail Armour +1"
         },
         {
@@ -3275,7 +3274,7 @@
         },
         {
             "pageId": 3460,
-            "revisionId": 111555,
+            "revisionId": 113665,
             "title": "Amulet of Elemental Torment"
         },
         {
@@ -3315,7 +3314,7 @@
         },
         {
             "pageId": 3473,
-            "revisionId": 98923,
+            "revisionId": 113380,
             "title": "Boots of Speed"
         },
         {
@@ -3475,7 +3474,7 @@
         },
         {
             "pageId": 3544,
-            "revisionId": 98863,
+            "revisionId": 112896,
             "title": "Bloodguzzler Garb"
         },
         {
@@ -3520,7 +3519,7 @@
         },
         {
             "pageId": 3569,
-            "revisionId": 95600,
+            "revisionId": 113298,
             "title": "Smuggler's Ring"
         },
         {
@@ -3540,7 +3539,7 @@
         },
         {
             "pageId": 3574,
-            "revisionId": 98840,
+            "revisionId": 113486,
             "title": "Amulet of Silvanus"
         },
         {
@@ -3605,12 +3604,12 @@
         },
         {
             "pageId": 3591,
-            "revisionId": 94052,
+            "revisionId": 114117,
             "title": "Devilfoil Mask"
         },
         {
             "pageId": 3592,
-            "revisionId": 93901,
+            "revisionId": 113370,
             "title": "Boots of Brilliance"
         },
         {
@@ -3625,7 +3624,7 @@
         },
         {
             "pageId": 3595,
-            "revisionId": 92484,
+            "revisionId": 113729,
             "title": "Champion's Chain"
         },
         {
@@ -3635,7 +3634,7 @@
         },
         {
             "pageId": 3597,
-            "revisionId": 92500,
+            "revisionId": 113802,
             "title": "Sentient Amulet (Rare)"
         },
         {
@@ -3660,7 +3659,7 @@
         },
         {
             "pageId": 3607,
-            "revisionId": 99678,
+            "revisionId": 113832,
             "title": "Ring of Colour Spray"
         },
         {
@@ -3745,7 +3744,7 @@
         },
         {
             "pageId": 3646,
-            "revisionId": 107115,
+            "revisionId": 113280,
             "title": "Dark Justiciar Helm"
         },
         {
@@ -3790,7 +3789,7 @@
         },
         {
             "pageId": 3709,
-            "revisionId": 108352,
+            "revisionId": 114267,
             "title": "Leather Armour +1"
         },
         {
@@ -3810,7 +3809,7 @@
         },
         {
             "pageId": 3797,
-            "revisionId": 70959,
+            "revisionId": 113965,
             "title": "Ancient Sigil Circle"
         },
         {
@@ -3910,7 +3909,7 @@
         },
         {
             "pageId": 3950,
-            "revisionId": 104476,
+            "revisionId": 113194,
             "title": "Whispering Mask"
         },
         {
@@ -3955,7 +3954,7 @@
         },
         {
             "pageId": 3964,
-            "revisionId": 110661,
+            "revisionId": 113827,
             "title": "Halfling Luck"
         },
         {
@@ -3970,7 +3969,7 @@
         },
         {
             "pageId": 3974,
-            "revisionId": 111747,
+            "revisionId": 113890,
             "title": "Ebonlake Grotto"
         },
         {
@@ -4005,7 +4004,7 @@
         },
         {
             "pageId": 3998,
-            "revisionId": 109254,
+            "revisionId": 114002,
             "title": "Dank Crypt"
         },
         {
@@ -4085,7 +4084,7 @@
         },
         {
             "pageId": 4134,
-            "revisionId": 106196,
+            "revisionId": 113821,
             "title": "Shattered Sanctum"
         },
         {
@@ -4110,7 +4109,7 @@
         },
         {
             "pageId": 4160,
-            "revisionId": 111398,
+            "revisionId": 113814,
             "title": "Defiled Temple"
         },
         {
@@ -4205,7 +4204,7 @@
         },
         {
             "pageId": 4188,
-            "revisionId": 107637,
+            "revisionId": 113837,
             "title": "Blighted Village"
         },
         {
@@ -4215,7 +4214,7 @@
         },
         {
             "pageId": 4191,
-            "revisionId": 96450,
+            "revisionId": 113856,
             "title": "Mountain Pass"
         },
         {
@@ -4225,12 +4224,12 @@
         },
         {
             "pageId": 4194,
-            "revisionId": 109859,
+            "revisionId": 113791,
             "title": "Apothecary's Cellar"
         },
         {
             "pageId": 4197,
-            "revisionId": 96444,
+            "revisionId": 113792,
             "title": "Whispering Depths"
         },
         {
@@ -4240,7 +4239,7 @@
         },
         {
             "pageId": 4202,
-            "revisionId": 105928,
+            "revisionId": 113128,
             "title": "Owlbear Nest"
         },
         {
@@ -4340,7 +4339,7 @@
         },
         {
             "pageId": 4263,
-            "revisionId": 92168,
+            "revisionId": 114249,
             "title": "Tiefling Hideout"
         },
         {
@@ -4420,7 +4419,7 @@
         },
         {
             "pageId": 4335,
-            "revisionId": 111748,
+            "revisionId": 113966,
             "title": "Wilderness"
         },
         {
@@ -4475,7 +4474,7 @@
         },
         {
             "pageId": 4403,
-            "revisionId": 96345,
+            "revisionId": 114069,
             "title": "The Risen Road"
         },
         {
@@ -4495,17 +4494,17 @@
         },
         {
             "pageId": 4421,
-            "revisionId": 112566,
+            "revisionId": 113433,
             "title": "Phase Spider Matriarch"
         },
         {
             "pageId": 4428,
-            "revisionId": 103847,
+            "revisionId": 113129,
             "title": "Gnoll"
         },
         {
             "pageId": 4437,
-            "revisionId": 112730,
+            "revisionId": 113274,
             "title": "Flind"
         },
         {
@@ -4515,7 +4514,7 @@
         },
         {
             "pageId": 4443,
-            "revisionId": 103912,
+            "revisionId": 113080,
             "title": "Anders"
         },
         {
@@ -4580,7 +4579,7 @@
         },
         {
             "pageId": 4515,
-            "revisionId": 100980,
+            "revisionId": 113462,
             "title": "Daughter of Darkness"
         },
         {
@@ -4640,12 +4639,12 @@
         },
         {
             "pageId": 4546,
-            "revisionId": 111700,
+            "revisionId": 113074,
             "title": "Grymforge"
         },
         {
             "pageId": 4551,
-            "revisionId": 111327,
+            "revisionId": 113076,
             "title": "Adamantine Forge (Location)"
         },
         {
@@ -4655,7 +4654,7 @@
         },
         {
             "pageId": 4553,
-            "revisionId": 111438,
+            "revisionId": 113910,
             "title": "Find the Missing Shipment"
         },
         {
@@ -4720,7 +4719,7 @@
         },
         {
             "pageId": 4597,
-            "revisionId": 107662,
+            "revisionId": 113297,
             "title": "Help the Cursed Monk"
         },
         {
@@ -4740,7 +4739,7 @@
         },
         {
             "pageId": 4624,
-            "revisionId": 94990,
+            "revisionId": 113078,
             "title": "Mithral Ore"
         },
         {
@@ -4780,7 +4779,7 @@
         },
         {
             "pageId": 4649,
-            "revisionId": 110261,
+            "revisionId": 112882,
             "title": "Raphael"
         },
         {
@@ -4840,7 +4839,7 @@
         },
         {
             "pageId": 4758,
-            "revisionId": 104278,
+            "revisionId": 113891,
             "title": "Blurg"
         },
         {
@@ -4855,7 +4854,7 @@
         },
         {
             "pageId": 4763,
-            "revisionId": 110190,
+            "revisionId": 112992,
             "title": "Soulbreaker Greatsword"
         },
         {
@@ -4870,7 +4869,7 @@
         },
         {
             "pageId": 4779,
-            "revisionId": 107873,
+            "revisionId": 112912,
             "title": "Rolan"
         },
         {
@@ -4890,7 +4889,7 @@
         },
         {
             "pageId": 4835,
-            "revisionId": 82653,
+            "revisionId": 114006,
             "title": "Overgrown Ruins"
         },
         {
@@ -4990,7 +4989,7 @@
         },
         {
             "pageId": 4972,
-            "revisionId": 108991,
+            "revisionId": 114293,
             "title": "Template:Race"
         },
         {
@@ -5030,7 +5029,7 @@
         },
         {
             "pageId": 5427,
-            "revisionId": 85834,
+            "revisionId": 114279,
             "title": "Hastened (Condition)"
         },
         {
@@ -5115,7 +5114,7 @@
         },
         {
             "pageId": 5874,
-            "revisionId": 111792,
+            "revisionId": 114274,
             "title": "Novice Crusher"
         },
         {
@@ -5130,7 +5129,7 @@
         },
         {
             "pageId": 5955,
-            "revisionId": 109942,
+            "revisionId": 112773,
             "title": "Mayrina"
         },
         {
@@ -5165,7 +5164,7 @@
         },
         {
             "pageId": 6043,
-            "revisionId": 99498,
+            "revisionId": 113313,
             "title": "Grym"
         },
         {
@@ -5190,12 +5189,12 @@
         },
         {
             "pageId": 6121,
-            "revisionId": 102251,
+            "revisionId": 114392,
             "title": "Mizora"
         },
         {
             "pageId": 6140,
-            "revisionId": 106250,
+            "revisionId": 113318,
             "title": "Fezzerk"
         },
         {
@@ -5360,7 +5359,7 @@
         },
         {
             "pageId": 6514,
-            "revisionId": 33587,
+            "revisionId": 113084,
             "title": "Shield Mould"
         },
         {
@@ -5520,7 +5519,7 @@
         },
         {
             "pageId": 6673,
-            "revisionId": 104376,
+            "revisionId": 113855,
             "title": "Haunted One"
         },
         {
@@ -5535,7 +5534,7 @@
         },
         {
             "pageId": 6700,
-            "revisionId": 84683,
+            "revisionId": 113531,
             "title": "Gust of Wind"
         },
         {
@@ -5640,7 +5639,7 @@
         },
         {
             "pageId": 6781,
-            "revisionId": 93651,
+            "revisionId": 114366,
             "title": "Hide Armour +2"
         },
         {
@@ -5725,7 +5724,7 @@
         },
         {
             "pageId": 6845,
-            "revisionId": 98866,
+            "revisionId": 114212,
             "title": "Bow of Awareness"
         },
         {
@@ -5765,7 +5764,7 @@
         },
         {
             "pageId": 6869,
-            "revisionId": 91674,
+            "revisionId": 113056,
             "title": "Wood Woad Shield"
         },
         {
@@ -5985,7 +5984,7 @@
         },
         {
             "pageId": 7888,
-            "revisionId": 92508,
+            "revisionId": 113807,
             "title": "Surgeon's Subjugation Amulet"
         },
         {
@@ -5995,12 +5994,12 @@
         },
         {
             "pageId": 7901,
-            "revisionId": 74887,
+            "revisionId": 113038,
             "title": "Zarys"
         },
         {
             "pageId": 7904,
-            "revisionId": 100799,
+            "revisionId": 114118,
             "title": "Sussur Bloom"
         },
         {
@@ -6025,7 +6024,7 @@
         },
         {
             "pageId": 7915,
-            "revisionId": 103141,
+            "revisionId": 114341,
             "title": "Refectory"
         },
         {
@@ -6265,7 +6264,7 @@
         },
         {
             "pageId": 8025,
-            "revisionId": 85611,
+            "revisionId": 113529,
             "title": "Telekinesis"
         },
         {
@@ -6275,7 +6274,7 @@
         },
         {
             "pageId": 8031,
-            "revisionId": 107697,
+            "revisionId": 112991,
             "title": "Balduran's Giantslayer"
         },
         {
@@ -6300,7 +6299,7 @@
         },
         {
             "pageId": 8038,
-            "revisionId": 108537,
+            "revisionId": 112990,
             "title": "Sword of Chaos"
         },
         {
@@ -6355,37 +6354,37 @@
         },
         {
             "pageId": 8054,
-            "revisionId": 104466,
+            "revisionId": 113763,
             "title": "Kereska's Favour"
         },
         {
             "pageId": 8057,
-            "revisionId": 112027,
+            "revisionId": 113776,
             "title": "Sizzling Cataclysm"
         },
         {
             "pageId": 8059,
-            "revisionId": 99967,
+            "revisionId": 113775,
             "title": "Deadlier than Arsenic"
         },
         {
             "pageId": 8061,
-            "revisionId": 99968,
+            "revisionId": 113774,
             "title": "Bone-shaking Thunder"
         },
         {
             "pageId": 8066,
-            "revisionId": 104226,
+            "revisionId": 113773,
             "title": "Bolts of Doom"
         },
         {
             "pageId": 8068,
-            "revisionId": 99966,
+            "revisionId": 113772,
             "title": "Frost of Dark Winter"
         },
         {
             "pageId": 8071,
-            "revisionId": 99970,
+            "revisionId": 113771,
             "title": "Flame of Wrath"
         },
         {
@@ -6470,7 +6469,7 @@
         },
         {
             "pageId": 8129,
-            "revisionId": 105157,
+            "revisionId": 114333,
             "title": "Last Light Inn"
         },
         {
@@ -6500,7 +6499,7 @@
         },
         {
             "pageId": 8143,
-            "revisionId": 93902,
+            "revisionId": 113372,
             "title": "Boots of Genial Striding"
         },
         {
@@ -6525,8 +6524,8 @@
         },
         {
             "pageId": 8156,
-            "revisionId": 111148,
-            "title": "Helldusk Armour"
+            "revisionId": 112878,
+            "title": "Helldusk Armour (Heavy Armour)"
         },
         {
             "pageId": 8157,
@@ -6585,7 +6584,7 @@
         },
         {
             "pageId": 8202,
-            "revisionId": 112713,
+            "revisionId": 112785,
             "title": "Sarevok Anchev"
         },
         {
@@ -6650,7 +6649,7 @@
         },
         {
             "pageId": 8342,
-            "revisionId": 109147,
+            "revisionId": 113699,
             "title": "Viconia DeVir"
         },
         {
@@ -6870,7 +6869,7 @@
         },
         {
             "pageId": 8537,
-            "revisionId": 112020,
+            "revisionId": 112884,
             "title": "House of Hope"
         },
         {
@@ -6900,8 +6899,8 @@
         },
         {
             "pageId": 8557,
-            "revisionId": 105096,
-            "title": "Gauntlets of Frost Giant Strength"
+            "revisionId": 113620,
+            "title": "Gauntlets of Hill Giant Strength"
         },
         {
             "pageId": 8562,
@@ -7000,7 +6999,7 @@
         },
         {
             "pageId": 8649,
-            "revisionId": 89335,
+            "revisionId": 114246,
             "title": "Makeshift Prison"
         },
         {
@@ -7065,7 +7064,7 @@
         },
         {
             "pageId": 8703,
-            "revisionId": 111771,
+            "revisionId": 114247,
             "title": "Secluded Chamber"
         },
         {
@@ -7080,12 +7079,12 @@
         },
         {
             "pageId": 8714,
-            "revisionId": 111982,
+            "revisionId": 113684,
             "title": "Necklace of Elemental Augmentation"
         },
         {
             "pageId": 8715,
-            "revisionId": 111488,
+            "revisionId": 113961,
             "title": "Emerald Grove"
         },
         {
@@ -7110,7 +7109,7 @@
         },
         {
             "pageId": 8739,
-            "revisionId": 94061,
+            "revisionId": 113207,
             "title": "Diadem of Arcane Synergy"
         },
         {
@@ -7130,7 +7129,7 @@
         },
         {
             "pageId": 8775,
-            "revisionId": 107680,
+            "revisionId": 112988,
             "title": "Jorgoral's Greatsword"
         },
         {
@@ -7180,12 +7179,12 @@
         },
         {
             "pageId": 8815,
-            "revisionId": 110089,
+            "revisionId": 112993,
             "title": "Silver Sword of the Astral Plane"
         },
         {
             "pageId": 8816,
-            "revisionId": 105100,
+            "revisionId": 113136,
             "title": "Orphic Hammer"
         },
         {
@@ -7205,7 +7204,7 @@
         },
         {
             "pageId": 8831,
-            "revisionId": 108444,
+            "revisionId": 113876,
             "title": "Ring of Spiteful Thunder"
         },
         {
@@ -7360,7 +7359,7 @@
         },
         {
             "pageId": 8935,
-            "revisionId": 111138,
+            "revisionId": 114271,
             "title": "Chain Mail +1"
         },
         {
@@ -7390,7 +7389,7 @@
         },
         {
             "pageId": 9000,
-            "revisionId": 93011,
+            "revisionId": 113057,
             "title": "Dowry Ring"
         },
         {
@@ -7680,7 +7679,7 @@
         },
         {
             "pageId": 9190,
-            "revisionId": 97668,
+            "revisionId": 113559,
             "title": "Cold Snap"
         },
         {
@@ -7720,7 +7719,7 @@
         },
         {
             "pageId": 9211,
-            "revisionId": 91167,
+            "revisionId": 113315,
             "title": "Oskar Fevras"
         },
         {
@@ -7730,7 +7729,7 @@
         },
         {
             "pageId": 9224,
-            "revisionId": 110033,
+            "revisionId": 114285,
             "title": "Find the Blood of Lathander"
         },
         {
@@ -7840,7 +7839,7 @@
         },
         {
             "pageId": 9290,
-            "revisionId": 105884,
+            "revisionId": 113205,
             "title": "Ring of Being Really Invisible"
         },
         {
@@ -7885,7 +7884,7 @@
         },
         {
             "pageId": 9332,
-            "revisionId": 96481,
+            "revisionId": 114266,
             "title": "Get Orin's Netherstone"
         },
         {
@@ -7895,7 +7894,7 @@
         },
         {
             "pageId": 9344,
-            "revisionId": 112026,
+            "revisionId": 112886,
             "title": "Deal with the Devil"
         },
         {
@@ -7915,7 +7914,7 @@
         },
         {
             "pageId": 9373,
-            "revisionId": 104895,
+            "revisionId": 114368,
             "title": "Sharpened Snare Cuirass"
         },
         {
@@ -7940,7 +7939,7 @@
         },
         {
             "pageId": 9393,
-            "revisionId": 93074,
+            "revisionId": 113879,
             "title": "Snowburst Ring"
         },
         {
@@ -7985,7 +7984,7 @@
         },
         {
             "pageId": 9418,
-            "revisionId": 111141,
+            "revisionId": 114272,
             "title": "Chain Mail +2"
         },
         {
@@ -8020,7 +8019,7 @@
         },
         {
             "pageId": 9439,
-            "revisionId": 68601,
+            "revisionId": 114284,
             "title": "Basilisk Gate Barracks"
         },
         {
@@ -8030,7 +8029,7 @@
         },
         {
             "pageId": 9462,
-            "revisionId": 91136,
+            "revisionId": 113476,
             "title": "Mantle of the Holy Warrior"
         },
         {
@@ -8080,7 +8079,7 @@
         },
         {
             "pageId": 9499,
-            "revisionId": 96834,
+            "revisionId": 113502,
             "title": "Wavemother's Robe"
         },
         {
@@ -8105,7 +8104,7 @@
         },
         {
             "pageId": 9533,
-            "revisionId": 108439,
+            "revisionId": 114051,
             "title": "Gloves of the Automaton"
         },
         {
@@ -8140,7 +8139,7 @@
         },
         {
             "pageId": 9545,
-            "revisionId": 110981,
+            "revisionId": 112788,
             "title": "Crimson Mischief"
         },
         {
@@ -8170,8 +8169,8 @@
         },
         {
             "pageId": 9559,
-            "revisionId": 89092,
-            "title": "Dolor Amarus"
+            "revisionId": 113946,
+            "title": "Dolor Amarus (Dagger)"
         },
         {
             "pageId": 9561,
@@ -8195,7 +8194,7 @@
         },
         {
             "pageId": 9567,
-            "revisionId": 112407,
+            "revisionId": 113544,
             "title": "Dwarven Thrower (Warhammer)"
         },
         {
@@ -8260,7 +8259,7 @@
         },
         {
             "pageId": 9585,
-            "revisionId": 93066,
+            "revisionId": 113867,
             "title": "Ring of Self Immolation"
         },
         {
@@ -8395,7 +8394,7 @@
         },
         {
             "pageId": 9628,
-            "revisionId": 112460,
+            "revisionId": 113026,
             "title": "Rhapsody"
         },
         {
@@ -8490,7 +8489,7 @@
         },
         {
             "pageId": 9750,
-            "revisionId": 93792,
+            "revisionId": 113317,
             "title": "Coruscation Ring"
         },
         {
@@ -8590,7 +8589,7 @@
         },
         {
             "pageId": 10338,
-            "revisionId": 108383,
+            "revisionId": 114269,
             "title": "Penumbral Armour"
         },
         {
@@ -8710,7 +8709,7 @@
         },
         {
             "pageId": 10423,
-            "revisionId": 111729,
+            "revisionId": 114403,
             "title": "Sorcerous Vault"
         },
         {
@@ -8810,7 +8809,7 @@
         },
         {
             "pageId": 10587,
-            "revisionId": 94578,
+            "revisionId": 112831,
             "title": "Cindersnap Gloves"
         },
         {
@@ -8825,7 +8824,7 @@
         },
         {
             "pageId": 10595,
-            "revisionId": 104322,
+            "revisionId": 112833,
             "title": "Vivacious Cloak"
         },
         {
@@ -8875,7 +8874,7 @@
         },
         {
             "pageId": 10624,
-            "revisionId": 96454,
+            "revisionId": 113779,
             "title": "Secret Chamber"
         },
         {
@@ -9025,12 +9024,12 @@
         },
         {
             "pageId": 10808,
-            "revisionId": 103950,
+            "revisionId": 114400,
             "title": "Marcus"
         },
         {
             "pageId": 10816,
-            "revisionId": 110284,
+            "revisionId": 113307,
             "title": "Isobel"
         },
         {
@@ -9165,7 +9164,7 @@
         },
         {
             "pageId": 10933,
-            "revisionId": 93977,
+            "revisionId": 113619,
             "title": "Githborn: Flying Boots"
         },
         {
@@ -9210,7 +9209,7 @@
         },
         {
             "pageId": 10978,
-            "revisionId": 112742,
+            "revisionId": 113123,
             "title": "Elerrathin's Home"
         },
         {
@@ -9275,7 +9274,7 @@
         },
         {
             "pageId": 10998,
-            "revisionId": 87776,
+            "revisionId": 113788,
             "title": "Deva Mace"
         },
         {
@@ -9395,7 +9394,7 @@
         },
         {
             "pageId": 11246,
-            "revisionId": 112735,
+            "revisionId": 114398,
             "title": "Lady Jannath's Estate"
         },
         {
@@ -9535,7 +9534,7 @@
         },
         {
             "pageId": 11500,
-            "revisionId": 108266,
+            "revisionId": 112829,
             "title": "Abdel's Trusted Shield"
         },
         {
@@ -9690,7 +9689,7 @@
         },
         {
             "pageId": 11746,
-            "revisionId": 93121,
+            "revisionId": 113149,
             "title": "Burnished Ring"
         },
         {
@@ -9780,7 +9779,7 @@
         },
         {
             "pageId": 11814,
-            "revisionId": 107282,
+            "revisionId": 113127,
             "title": "Enver Gortash"
         },
         {
@@ -9810,7 +9809,7 @@
         },
         {
             "pageId": 11856,
-            "revisionId": 110366,
+            "revisionId": 112981,
             "title": "Watcher Greatsword"
         },
         {
@@ -9955,7 +9954,7 @@
         },
         {
             "pageId": 12175,
-            "revisionId": 105082,
+            "revisionId": 112986,
             "title": "Svartlebee's Woundseeker"
         },
         {
@@ -10105,7 +10104,7 @@
         },
         {
             "pageId": 12274,
-            "revisionId": 105916,
+            "revisionId": 114257,
             "title": "Wyrmway"
         },
         {
@@ -10125,7 +10124,7 @@
         },
         {
             "pageId": 12279,
-            "revisionId": 71159,
+            "revisionId": 113469,
             "title": "House of Grief"
         },
         {
@@ -10145,7 +10144,7 @@
         },
         {
             "pageId": 12300,
-            "revisionId": 105076,
+            "revisionId": 112976,
             "title": "Reinforced Greatsword"
         },
         {
@@ -10280,12 +10279,12 @@
         },
         {
             "pageId": 13048,
-            "revisionId": 109967,
+            "revisionId": 114365,
             "title": "Knights of the Shield Hideout"
         },
         {
             "pageId": 13052,
-            "revisionId": 68614,
+            "revisionId": 113951,
             "title": "Wine Festival"
         },
         {
@@ -10625,7 +10624,7 @@
         },
         {
             "pageId": 13943,
-            "revisionId": 60221,
+            "revisionId": 113608,
             "title": "Shadow Teleportation"
         },
         {
@@ -10720,7 +10719,7 @@
         },
         {
             "pageId": 14050,
-            "revisionId": 112671,
+            "revisionId": 112776,
             "title": "Mask of Regret"
         },
         {
@@ -10765,7 +10764,7 @@
         },
         {
             "pageId": 14174,
-            "revisionId": 93279,
+            "revisionId": 114402,
             "title": "Sights of the Seelie: Summon Deva"
         },
         {
@@ -10780,12 +10779,12 @@
         },
         {
             "pageId": 14199,
-            "revisionId": 73724,
+            "revisionId": 113509,
             "title": "Favoured Enemy"
         },
         {
             "pageId": 14201,
-            "revisionId": 73614,
+            "revisionId": 113510,
             "title": "Natural Explorer"
         },
         {
@@ -10820,7 +10819,7 @@
         },
         {
             "pageId": 14233,
-            "revisionId": 103725,
+            "revisionId": 113039,
             "title": "Brem"
         },
         {
@@ -10890,7 +10889,7 @@
         },
         {
             "pageId": 14333,
-            "revisionId": 108441,
+            "revisionId": 113143,
             "title": "Water Queen's House"
         },
         {
@@ -10940,7 +10939,7 @@
         },
         {
             "pageId": 14401,
-            "revisionId": 108874,
+            "revisionId": 114233,
             "title": "Manoeuvring Attack (Melee)"
         },
         {
@@ -11035,8 +11034,8 @@
         },
         {
             "pageId": 14454,
-            "revisionId": 93128,
-            "title": "Ring of Evasion"
+            "revisionId": 113929,
+            "title": "Ring of Evasion (Ring)"
         },
         {
             "pageId": 14474,
@@ -11045,12 +11044,12 @@
         },
         {
             "pageId": 14493,
-            "revisionId": 110302,
+            "revisionId": 114388,
             "title": "Magic Initiate: Druid"
         },
         {
             "pageId": 14497,
-            "revisionId": 107297,
+            "revisionId": 113952,
             "title": "Dolor"
         },
         {
@@ -11545,7 +11544,7 @@
         },
         {
             "pageId": 15767,
-            "revisionId": 60753,
+            "revisionId": 113530,
             "title": "Ki Restoration (Greater)"
         },
         {
@@ -11625,7 +11624,7 @@
         },
         {
             "pageId": 16352,
-            "revisionId": 87961,
+            "revisionId": 113518,
             "title": "Hand Crossbow +2"
         },
         {
@@ -11680,7 +11679,7 @@
         },
         {
             "pageId": 16557,
-            "revisionId": 89715,
+            "revisionId": 113339,
             "title": "Hhune Mausoleum"
         },
         {
@@ -11690,7 +11689,7 @@
         },
         {
             "pageId": 16584,
-            "revisionId": 110859,
+            "revisionId": 113677,
             "title": "Wild Magic: Cambion"
         },
         {
@@ -11885,7 +11884,7 @@
         },
         {
             "pageId": 17205,
-            "revisionId": 104949,
+            "revisionId": 113953,
             "title": "Echo of Abazigal"
         },
         {
@@ -11925,7 +11924,7 @@
         },
         {
             "pageId": 17232,
-            "revisionId": 110553,
+            "revisionId": 112887,
             "title": "Fly (Bonus Action)"
         },
         {
@@ -12035,7 +12034,7 @@
         },
         {
             "pageId": 17363,
-            "revisionId": 110586,
+            "revisionId": 113346,
             "title": "Duelling"
         },
         {
@@ -12080,8 +12079,8 @@
         },
         {
             "pageId": 17495,
-            "revisionId": 88906,
-            "title": "Infernal spear"
+            "revisionId": 113956,
+            "title": "Infernal Spear"
         },
         {
             "pageId": 17496,
@@ -12145,7 +12144,7 @@
         },
         {
             "pageId": 17556,
-            "revisionId": 85110,
+            "revisionId": 113954,
             "title": "Facemaker's Boutique"
         },
         {
@@ -12415,7 +12414,7 @@
         },
         {
             "pageId": 18514,
-            "revisionId": 92996,
+            "revisionId": 113196,
             "title": "'Magic' Ring"
         },
         {
@@ -12660,22 +12659,22 @@
         },
         {
             "pageId": 19264,
-            "revisionId": 72561,
+            "revisionId": 113483,
             "title": "Ancient Mausoleum"
         },
         {
             "pageId": 19265,
-            "revisionId": 103948,
+            "revisionId": 113379,
             "title": "Graveyard (Lower City)"
         },
         {
             "pageId": 19268,
-            "revisionId": 84765,
+            "revisionId": 113326,
             "title": "Gorion Mausoleum"
         },
         {
             "pageId": 19273,
-            "revisionId": 72578,
+            "revisionId": 113322,
             "title": "Durinbold Mausoleum"
         },
         {
@@ -12695,7 +12694,7 @@
         },
         {
             "pageId": 19325,
-            "revisionId": 89691,
+            "revisionId": 113511,
             "title": "Metamagic"
         },
         {
@@ -12804,9 +12803,59 @@
             "title": "Wild Magic: Cats and Dogs"
         },
         {
+            "pageId": 19508,
+            "revisionId": 110505,
+            "title": "Beast Tamer"
+        },
+        {
+            "pageId": 19509,
+            "revisionId": 110837,
+            "title": "Urban Tracker"
+        },
+        {
+            "pageId": 19511,
+            "revisionId": 110841,
+            "title": "Wasteland Wanderer: Cold"
+        },
+        {
+            "pageId": 19513,
+            "revisionId": 110842,
+            "title": "Wasteland Wanderer: Fire"
+        },
+        {
+            "pageId": 19515,
+            "revisionId": 110843,
+            "title": "Wasteland Wanderer: Poison"
+        },
+        {
             "pageId": 19526,
             "revisionId": 100428,
             "title": "Hoots Hooligan"
+        },
+        {
+            "pageId": 19547,
+            "revisionId": 110519,
+            "title": "Bounty Hunter"
+        },
+        {
+            "pageId": 19549,
+            "revisionId": 110706,
+            "title": "Keeper of the Veil"
+        },
+        {
+            "pageId": 19552,
+            "revisionId": 110712,
+            "title": "Mage Breaker"
+        },
+        {
+            "pageId": 19555,
+            "revisionId": 110766,
+            "title": "Ranger Knight"
+        },
+        {
+            "pageId": 19557,
+            "revisionId": 110781,
+            "title": "Sanctified Stalker"
         },
         {
             "pageId": 19561,
@@ -12850,7 +12899,7 @@
         },
         {
             "pageId": 19747,
-            "revisionId": 105077,
+            "revisionId": 112977,
             "title": "Rusty Greatsword"
         },
         {
@@ -12885,8 +12934,8 @@
         },
         {
             "pageId": 19984,
-            "revisionId": 94467,
-            "title": "High Hall"
+            "revisionId": 113640,
+            "title": "The High Hall"
         },
         {
             "pageId": 19988,
@@ -12975,27 +13024,27 @@
         },
         {
             "pageId": 20442,
-            "revisionId": 110299,
+            "revisionId": 114386,
             "title": "Magic Initiate: Bard"
         },
         {
             "pageId": 20443,
-            "revisionId": 110300,
+            "revisionId": 114387,
             "title": "Magic Initiate: Cleric"
         },
         {
             "pageId": 20444,
-            "revisionId": 110303,
+            "revisionId": 114389,
             "title": "Magic Initiate: Sorcerer"
         },
         {
             "pageId": 20445,
-            "revisionId": 110307,
+            "revisionId": 114390,
             "title": "Magic Initiate: Warlock"
         },
         {
             "pageId": 20446,
-            "revisionId": 110308,
+            "revisionId": 114391,
             "title": "Magic Initiate: Wizard"
         },
         {
@@ -13007,6 +13056,11 @@
             "pageId": 20457,
             "revisionId": 77205,
             "title": "Guardian of Faith (Disambiguation)"
+        },
+        {
+            "pageId": 20471,
+            "revisionId": 113868,
+            "title": "Self Immolation"
         },
         {
             "pageId": 20495,
@@ -13360,7 +13414,7 @@
         },
         {
             "pageId": 21436,
-            "revisionId": 80106,
+            "revisionId": 114261,
             "title": "Bite (Spectator)"
         },
         {
@@ -13435,8 +13489,8 @@
         },
         {
             "pageId": 21578,
-            "revisionId": 93091,
-            "title": "After Death Do Us Part"
+            "revisionId": 113896,
+            "title": "After Death Do Us Part (Ring)"
         },
         {
             "pageId": 21638,
@@ -13980,7 +14034,7 @@
         },
         {
             "pageId": 23134,
-            "revisionId": 101036,
+            "revisionId": 113843,
             "title": "Baretha"
         },
         {
@@ -14160,7 +14214,7 @@
         },
         {
             "pageId": 23674,
-            "revisionId": 94050,
+            "revisionId": 113087,
             "title": "Shield Bash"
         },
         {
@@ -14500,7 +14554,7 @@
         },
         {
             "pageId": 24749,
-            "revisionId": 100832,
+            "revisionId": 114259,
             "title": "Bite (General)"
         },
         {
@@ -14745,7 +14799,7 @@
         },
         {
             "pageId": 26264,
-            "revisionId": 112413,
+            "revisionId": 112877,
             "title": "Template:LgRarityItem"
         },
         {
@@ -14770,12 +14824,12 @@
         },
         {
             "pageId": 26434,
-            "revisionId": 104564,
+            "revisionId": 113052,
             "title": "Scarlet Regeneration"
         },
         {
             "pageId": 26469,
-            "revisionId": 102801,
+            "revisionId": 113050,
             "title": "Scarlet Stupor"
         },
         {
@@ -14785,12 +14839,12 @@
         },
         {
             "pageId": 26471,
-            "revisionId": 102803,
+            "revisionId": 113051,
             "title": "Scarlet Saturation"
         },
         {
             "pageId": 26472,
-            "revisionId": 102804,
+            "revisionId": 113049,
             "title": "Scarlet Feast"
         },
         {
@@ -14925,12 +14979,12 @@
         },
         {
             "pageId": 27229,
-            "revisionId": 105885,
+            "revisionId": 113201,
             "title": "Ring of Infinite Wishes"
         },
         {
             "pageId": 27230,
-            "revisionId": 105886,
+            "revisionId": 113200,
             "title": "Ring of Resistance to Ants"
         },
         {
@@ -15155,7 +15209,7 @@
         },
         {
             "pageId": 27814,
-            "revisionId": 111464,
+            "revisionId": 113276,
             "title": "Multiattack (Flind)"
         },
         {
@@ -15365,13 +15419,173 @@
         },
         {
             "pageId": 28193,
-            "revisionId": 112732,
+            "revisionId": 114291,
             "title": "Salty Scimitar(rrr)"
         },
         {
             "pageId": 28212,
-            "revisionId": 112754,
+            "revisionId": 112755,
             "title": "Grave Shot"
+        },
+        {
+            "pageId": 28213,
+            "revisionId": 112762,
+            "title": "Bite (Ghost Dogs)"
+        },
+        {
+            "pageId": 28223,
+            "revisionId": 112780,
+            "title": "Terrifying Howl"
+        },
+        {
+            "pageId": 28225,
+            "revisionId": 112787,
+            "title": "Houndmaster's Mark"
+        },
+        {
+            "pageId": 28235,
+            "revisionId": 113142,
+            "title": "Protection from Missiles"
+        },
+        {
+            "pageId": 28237,
+            "revisionId": 112837,
+            "title": "Have Nice Gift!"
+        },
+        {
+            "pageId": 28312,
+            "revisionId": 113108,
+            "title": "Missile Snaring"
+        },
+        {
+            "pageId": 28354,
+            "revisionId": 113221,
+            "title": "Flail of Madness"
+        },
+        {
+            "pageId": 28357,
+            "revisionId": 113224,
+            "title": "Flail of Pain"
+        },
+        {
+            "pageId": 28359,
+            "revisionId": 113275,
+            "title": "Flail of Paralysis"
+        },
+        {
+            "pageId": 28374,
+            "revisionId": 113249,
+            "title": "Bloodfest"
+        },
+        {
+            "pageId": 28380,
+            "revisionId": 113271,
+            "title": "Seething Fury"
+        },
+        {
+            "pageId": 28410,
+            "revisionId": 113362,
+            "title": "Restore Bardic Inspiration"
+        },
+        {
+            "pageId": 28417,
+            "revisionId": 113374,
+            "title": "Click Heels (Class Action)"
+        },
+        {
+            "pageId": 28442,
+            "revisionId": 113423,
+            "title": "Overwhelming Grief"
+        },
+        {
+            "pageId": 28447,
+            "revisionId": 114142,
+            "title": "Castigate Heartform"
+        },
+        {
+            "pageId": 28449,
+            "revisionId": 114252,
+            "title": "Mapped Terror: Wolves"
+        },
+        {
+            "pageId": 28452,
+            "revisionId": 113443,
+            "title": "Sinister Howl"
+        },
+        {
+            "pageId": 28457,
+            "revisionId": 113451,
+            "title": "Bite (Mapped Terror: Wolves)"
+        },
+        {
+            "pageId": 28469,
+            "revisionId": 114253,
+            "title": "Mapped Terror: Darkness"
+        },
+        {
+            "pageId": 28515,
+            "revisionId": 113725,
+            "title": "Tyrant Tongue (Class Action)"
+        },
+        {
+            "pageId": 28521,
+            "revisionId": 113744,
+            "title": "Lucky: Reroll Attacker's Die"
+        },
+        {
+            "pageId": 28522,
+            "revisionId": 113745,
+            "title": "Lucky: Reroll with Advantage"
+        },
+        {
+            "pageId": 28526,
+            "revisionId": 113793,
+            "title": "Second Chance"
+        },
+        {
+            "pageId": 28534,
+            "revisionId": 113808,
+            "title": "Paralysing Critical"
+        },
+        {
+            "pageId": 28539,
+            "revisionId": 113812,
+            "title": "Legendary Protection"
+        },
+        {
+            "pageId": 28597,
+            "revisionId": 113932,
+            "title": "Ring of Evasion (Reaction)"
+        },
+        {
+            "pageId": 28607,
+            "revisionId": 113963,
+            "title": "Dismiss Construct Mode"
+        },
+        {
+            "pageId": 28634,
+            "revisionId": 114382,
+            "title": "Last Light Inn - Cellar"
+        },
+        {
+            "pageId": 28646,
+            "revisionId": 114328,
+            "title": "Iron-Banded Shield"
+        },
+        {
+            "pageId": 28650,
+            "revisionId": 114346,
+            "title": "Soul Snare: Heal"
+        },
+        {
+            "pageId": 28651,
+            "revisionId": 114355,
+            "title": "Soul Catching Boon"
+        },
+        {
+            "pageId": 28652,
+            "revisionId": 114356,
+            "title": "Soul Catching Prowess"
         }
     ],
     "deadLinks": [
@@ -15399,7 +15613,6 @@
         "Jarg",
         "Kansif",
         "Kuo-Toa",
-        "Last Light Inn - Cellar",
         "Lavernica's House",
         "Moonrise Towers, First Floor",
         "Moonrise Towers, Main Floor",
@@ -15417,6 +15630,8 @@
         "Stone Guard Orgarth",
         "The Devil's Fee",
         "The Rivington General",
-        "Thudd"
+        "Thudd",
+        "[[#Level 11|Mystic Arcanum]] (6th level spell)",
+        "[[#Level_1|Channel Oath]]"
     ]
 }

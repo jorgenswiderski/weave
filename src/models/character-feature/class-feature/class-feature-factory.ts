@@ -1,20 +1,46 @@
 import { ICharacterClass } from '../../character-class/types';
+import { error, warn } from '../../logger';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeat } from '../features/character-feat';
 import { ClassSubclass } from '../features/character-subclass';
 import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
+import { IClassFeatureFactory } from './types';
 
-export class ClassFeatureFactory {
-    static async construct(
+class ClassFeatureFactorySingleton implements IClassFeatureFactory {
+    protected static async construct(
+        type:
+            | CharacterFeatureTypes.CHOOSE_SUBCLASS
+            | CharacterFeatureTypes.SUBCLASS_FEATURE,
+        options: ICharacterOptionWithPage,
         characterClass: ICharacterClass,
+        level: number,
+    ): Promise<CharacterFeature>;
+    protected static async construct(
+        type: Omit<
+            CharacterFeatureTypes,
+            | CharacterFeatureTypes.CHOOSE_SUBCLASS
+            | CharacterFeatureTypes.SUBCLASS_FEATURE
+        >,
+        options: ICharacterOptionWithPage,
+        characterClass?: ICharacterClass,
+        level?: number,
+    ): Promise<CharacterFeature>;
+    protected static async construct(
         type: CharacterFeatureTypes,
         options: ICharacterOptionWithPage,
-        level: number,
+        characterClass?: ICharacterClass,
+        level?: number,
     ): Promise<CharacterFeature> {
         if (
             type === CharacterFeatureTypes.CHOOSE_SUBCLASS ||
             type === CharacterFeatureTypes.SUBCLASS_FEATURE
         ) {
+            if (!characterClass || !level) {
+                throw new Error(
+                    `Class and level should be defined when constructing a subclass feature!`,
+                );
+            }
+
             return new ClassSubclass(characterClass.name, type, level);
         }
 
@@ -25,7 +51,7 @@ export class ClassFeatureFactory {
         return new CharacterFeature(options);
     }
 
-    static parserSpecialCases: {
+    protected parserSpecialCases: {
         [key: string]: { type: CharacterFeatureTypes; pageTitle?: string };
     } = {
         'eldritch invocations': { type: CharacterFeatureTypes.NONE },
@@ -40,24 +66,24 @@ export class ClassFeatureFactory {
         '#pact magic': { type: CharacterFeatureTypes.PACT_MAGIC },
     };
 
-    static fromMarkdownString(
-        characterClass: ICharacterClass,
+    fromWikitext(
         featureText: string,
-        level: number,
+        characterClass?: ICharacterClass,
+        level?: number,
     ): Promise<CharacterFeature> {
         // Handle special labels
         // eslint-disable-next-line no-restricted-syntax
         for (const [caseText, data] of Object.entries(
-            ClassFeatureFactory.parserSpecialCases,
+            this.parserSpecialCases,
         )) {
             if (featureText.toLowerCase().includes(caseText)) {
-                return ClassFeatureFactory.construct(
-                    characterClass,
+                return ClassFeatureFactorySingleton.construct(
                     data.type,
                     {
                         name: caseText,
                         pageTitle: data.pageTitle,
                     },
+                    characterClass,
                     level,
                 );
             }
@@ -75,13 +101,13 @@ export class ClassFeatureFactory {
 
             const pageTitle = parts[1].split('}}')[0].trim();
 
-            return ClassFeatureFactory.construct(
-                characterClass,
+            return ClassFeatureFactorySingleton.construct(
                 CharacterFeatureTypes.OTHER,
                 {
                     name: pageTitle,
                     pageTitle,
                 },
+                characterClass,
                 level,
             );
         }
@@ -91,47 +117,59 @@ export class ClassFeatureFactory {
             const parts = featureText.split('|');
             const pageTitle = parts[3].replace('}}', '').trim();
 
-            return ClassFeatureFactory.construct(
-                characterClass,
+            return ClassFeatureFactorySingleton.construct(
                 CharacterFeatureTypes.OTHER,
                 {
                     name: pageTitle,
                     pageTitle,
                 },
+                characterClass,
                 level,
             );
         }
 
         // Extract link labels or whole links
-        const linkPattern = /\[\[(.*?)\]\]/;
+        const linkPattern = /\[\[([^|]+).*?]]/;
 
         if (linkPattern.test(featureText)) {
             const match = featureText.match(linkPattern);
 
-            if (match) {
-                const parts = match[1].split('|');
+            if (match?.[1]) {
+                const featureName = match[1].trim();
 
-                // Take the linked page title and discard the non-link text
-                return ClassFeatureFactory.construct(
-                    characterClass,
-                    CharacterFeatureTypes.OTHER,
-                    {
-                        name: parts[parts.length - 1].trim(),
-                        pageTitle: parts[parts.length - 1].trim(),
-                    },
-                    level,
-                );
+                const msg = `${characterClass?.name} feature '${featureText}' has a section link`;
+
+                if (featureName.startsWith('#')) {
+                    error(msg);
+                } else {
+                    if (featureName.includes('#')) {
+                        warn(msg);
+                    }
+
+                    return ClassFeatureFactorySingleton.construct(
+                        CharacterFeatureTypes.OTHER,
+                        {
+                            name: featureName,
+                            pageTitle: featureName,
+                        },
+                        characterClass,
+                        level,
+                    );
+                }
             }
         }
 
-        return ClassFeatureFactory.construct(
-            characterClass,
+        return ClassFeatureFactorySingleton.construct(
             CharacterFeatureTypes.OTHER,
             {
                 name: featureText.trim(),
                 pageTitle: featureText.trim(),
             },
+            characterClass,
             level,
         );
     }
 }
+
+export const ClassFeatureFactory = new ClassFeatureFactorySingleton();
+CharacterFeature.factory = ClassFeatureFactory;

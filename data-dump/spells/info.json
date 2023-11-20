@@ -2516,7 +2516,7 @@
                 "id": 2044,
                 "attackRoll": true,
                 "range": 1,
-                "areaName": "Ice Surface",
+                "areaName": "Poison Surface",
                 "areaCategory": 2,
                 "areaShape": 1,
                 "areaRangeM": 2,
@@ -2709,7 +2709,7 @@
         "id": 2044,
         "attackRoll": true,
         "range": 1,
-        "areaName": "Ice Surface",
+        "areaName": "Poison Surface",
         "areaCategory": 2,
         "areaShape": 1,
         "areaRangeM": 2,
@@ -13148,6 +13148,37 @@
             "Eldritch Knight"
         ],
         "noSpellSlot": false,
+        "isVariant": false
+    },
+    {
+        "name": "Protection from Missiles",
+        "image": "Protection from Missiles.webp",
+        "level": 2,
+        "school": 1,
+        "summary": "The caster is protected against Ranged weapon attacks for up to 10 turns.",
+        "description": "Amplify your reflexes to better contend with incoming missiles. Ranged weapon attacks against you have Disadvantage, and their damage is halved.",
+        "ritual": false,
+        "concentration": true,
+        "id": 28235,
+        "attackRoll": false,
+        "range": 3,
+        "condition": "Cindersnap Reflexes",
+        "conditionDuration": 10,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 13,
+                "amount": 1
+            }
+        ],
+        "classes": [
+            "Item"
+        ],
+        "noSpellSlot": true,
+        "damageSaveEffect": 1,
         "isVariant": false
     },
     {

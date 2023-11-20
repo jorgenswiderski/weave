@@ -10,7 +10,6 @@ import {
     GrantableEffectType,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import { error } from '../../logger';
-import { MediaWiki } from '../../media-wiki/media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
 import { PageLoadingState } from '../../page-item';
 import { PageNotFoundError } from '../../errors';
@@ -133,7 +132,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
             feats[featName] = {
                 grants,
                 choices,
-                description: MediaWiki.stripMarkup(match[3]).trim(),
+                description: MediaWikiParser.stripMarkup(match[3]).trim(),
                 abilityImprovement: abilityImprovement ?? undefined,
             };
         });
