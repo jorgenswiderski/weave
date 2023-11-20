@@ -22,7 +22,6 @@
         "Duergar": "Dwarf",
         "Duke Ulder Ravengard": "Ulder Ravengard",
         "Elder Brithvar": "Brithvar",
-        "Eldritch Invocations": "Eldritch Invocation",
         "Escape the Nautiloid": "Prologue",
         "Fighting Style": "Fighting style",
         "Filro the Forgotten": "Filro",
@@ -2180,7 +2179,7 @@
         },
         {
             "pageId": 2698,
-            "revisionId": 114474,
+            "revisionId": 114475,
             "title": "Eldritch Invocation"
         },
         {
@@ -5195,7 +5194,7 @@
         },
         {
             "pageId": 6121,
-            "revisionId": 114392,
+            "revisionId": 114470,
             "title": "Mizora"
         },
         {
@@ -5345,7 +5344,7 @@
         },
         {
             "pageId": 6449,
-            "revisionId": 105754,
+            "revisionId": 114463,
             "title": "Template:Under construction"
         },
         {
@@ -8525,7 +8524,7 @@
         },
         {
             "pageId": 10193,
-            "revisionId": 103024,
+            "revisionId": 114464,
             "title": "Template:Stub"
         },
         {

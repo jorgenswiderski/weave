@@ -14,7 +14,7 @@ import {
 import { StaticallyReferenceable } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/types';
 import assert from 'assert';
 import { PageItem, PageLoadingState } from '../page-item';
-import { ICharacterOptionWithPage } from './types';
+import { ChoiceListConfig, ICharacterOptionWithPage } from './types';
 import { error, warn } from '../logger';
 import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { PageNotFoundError } from '../errors';
@@ -230,12 +230,18 @@ export class CharacterFeature
         return null;
     }
 
-    protected static async isPassiveOption(page: PageData): Promise<boolean> {
+    protected async isPassiveOption(): Promise<boolean> {
+        if (!this.page) {
+            throw new PageNotFoundError();
+        }
+
         // Some pages use the "Passive feature page" template but are really a choice that grants other GrantableEffects
         const { plainText } = MediaWikiTemplate.Parsers;
 
         try {
-            const template = await page.getTemplate('Passive feature page');
+            const template = await this.page.getTemplate(
+                'Passive feature page',
+            );
 
             const { summary, description } = template.parse({
                 summary: { parser: plainText, default: '' },
@@ -251,14 +257,18 @@ export class CharacterFeature
         }
     }
 
-    protected static async parseChoiceList(
+    choiceListConfig: ChoiceListConfig = {
+        feature: 0,
+    };
+
+    protected async parseChoiceList(
         sectionWikitext: string,
         pageTitle: string,
     ): Promise<ICharacterOptionWithStubs[]> {
         let table;
 
         try {
-            table = MediaWikiParser.parseWikiTable(sectionWikitext, '2d');
+            table = MediaWikiParser.parseWikiTable(sectionWikitext, 'both');
         } catch (err) {
             if (err instanceof WikitableNotFoundError) {
                 err.message = `Could not find wikitable for page '${pageTitle}'`;
@@ -267,28 +277,60 @@ export class CharacterFeature
             throw err;
         }
 
-        const features: ICharacterOptionWithStubs[] = await Promise.all(
-            table.map(async (row) => {
-                const firstCell = row[0];
+        const config = this.choiceListConfig;
 
-                const featureMatch =
-                    firstCell.match(/{{(Icon|SAI|SmIconLink)\|[^}]+}}/) ??
-                    firstCell.match(/\[\[[^\]]+?\]\]/);
+        const features: ICharacterOptionWithStubs[] = (
+            await Promise.all(
+                table.map(async (row, index) => {
+                    if (config.minLevel) {
+                        const ml = parseInt(row[config.minLevel], 10);
 
-                if (!featureMatch?.[0]) {
-                    throw new Error();
-                }
+                        assert(
+                            !Number.isNaN(ml),
+                            `Failed to parse minLevel value '${
+                                row[config.minLevel]
+                            }' in row ${index} of wikitable on page '${
+                                this.pageTitle
+                            }'`,
+                        );
 
-                return this.factory!.fromWikitext(featureMatch[0]);
-            }),
-        );
+                        assert(
+                            this.level,
+                            `Level must be defined to enforce minLevel constraint on wikitable on page '${this.pageTitle}'`,
+                        );
+
+                        if (this.level! < ml) {
+                            return undefined;
+                        }
+                    }
+
+                    const featureCell = row[config.feature];
+
+                    const featureMatch =
+                        featureCell.match(/{{(Icon|SAI|SmIconLink)\|[^}]+}}/) ??
+                        featureCell.match(/\[\[[^\]]+?\]\]/);
+
+                    if (!featureMatch?.[0]) {
+                        throw new Error();
+                    }
+
+                    return CharacterFeature.factory!.fromWikitext(
+                        featureMatch[0],
+                    );
+                }),
+            )
+        ).filter(Boolean) as ICharacterOptionWithStubs[];
 
         return features;
     }
 
-    protected static hasChoiceSections(page: PageData): boolean {
+    protected hasChoiceSections(): boolean {
+        if (!this.page) {
+            throw new PageNotFoundError();
+        }
+
         const matches = [
-            ...page.content.matchAll(
+            ...this.page.content.matchAll(
                 /\n\s*={2,}\s*{{(Icon|SAI|SmIconLink)\|[^}]+}}\s*={2,}\s*\n/g,
             ),
         ];
@@ -296,34 +338,42 @@ export class CharacterFeature
         return matches.length > 1;
     }
 
-    protected static async parseChoiceSections(
-        page: PageData,
-    ): Promise<ICharacterOptionWithStubs[]> {
+    protected async parseChoiceSections(): Promise<
+        ICharacterOptionWithStubs[]
+    > {
+        if (!this.page) {
+            throw new PageNotFoundError();
+        }
+
         const featureMarkdown = [
-            ...page.content.matchAll(
+            ...this.page.content.matchAll(
                 /\n\s*={2,}\s*({{(Icon|SAI|SmIconLink)\|[^}]+}})\s*={2,}\s*\n/g,
             ),
         ].map((match) => match[1]);
 
         return Promise.all(
-            featureMarkdown.map((md) => this.factory!.fromWikitext(md)),
+            featureMarkdown.map((md) =>
+                CharacterFeature.factory!.fromWikitext(md),
+            ),
         );
     }
 
-    protected static async parsePageForChoice(
-        page: PageData,
-    ): Promise<ICharacterChoiceWithStubs | null> {
-        const listSection = page.getSection('List of [\\w\\s]+?');
+    protected async parsePageForChoice(): Promise<ICharacterChoiceWithStubs | null> {
+        if (!this.page) {
+            throw new PageNotFoundError();
+        }
+
+        const listSection = this.page.getSection('List of [\\w\\s]+?');
 
         let options: ICharacterOptionWithStubs[] = [];
 
         if (listSection) {
             options = await this.parseChoiceList(
                 listSection.content,
-                page.title,
+                this.page.title,
             );
-        } else if (this.hasChoiceSections(page)) {
-            options = await this.parseChoiceSections(page);
+        } else if (this.hasChoiceSections()) {
+            options = await this.parseChoiceSections();
         }
 
         if (options.length === 0) {
@@ -339,11 +389,14 @@ export class CharacterFeature
         };
     }
 
-    static async initOptionsAndEffects(page: PageData): Promise<{
-        effect: GrantableEffect | StaticallyReferenceable | null;
-        choice: ICharacterChoiceWithStubs | null;
-    }> {
-        const isGrantableEffect = page.hasCategory([
+    async initOptionsAndEffects(): Promise<void> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
+        if (!this.page) {
+            return;
+        }
+
+        const isGrantableEffect = this.page.hasCategory([
             'Class actions',
             'Racial action',
             'Passive features',
@@ -355,29 +408,16 @@ export class CharacterFeature
         let choice: ICharacterChoiceWithStubs | null = null;
 
         if (isGrantableEffect) {
-            if (await CharacterFeature.isPassiveOption(page)) {
-                choice = await CharacterFeature.parsePageForChoice(page);
+            if (await this.isPassiveOption()) {
+                choice = await this.parsePageForChoice();
             } else {
-                effect =
-                    await CharacterFeature.parsePageForGrantableEffect(page);
+                effect = await CharacterFeature.parsePageForGrantableEffect(
+                    this.page,
+                );
             }
-        } else if (page.hasCategory('Class features')) {
-            choice = await CharacterFeature.parsePageForChoice(page);
+        } else if (this.page.hasCategory('Class features')) {
+            choice = await this.parsePageForChoice();
         }
-
-        return { effect, choice };
-    }
-
-    async initOptionsAndEffects(): Promise<void> {
-        await this.initialized[PageLoadingState.PAGE_CONTENT];
-
-        if (!this.page?.content) {
-            return;
-        }
-
-        const { effect, choice } = await CharacterFeature.initOptionsAndEffects(
-            this.page,
-        );
 
         if (effect) {
             this.grants.push(effect);

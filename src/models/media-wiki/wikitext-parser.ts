@@ -74,7 +74,11 @@ export class MediaWikiParser {
     ): Record<string, string>[];
     static parseWikiTable(
         sectionWikitext: string,
-        format: 'record' | '2d' = 'record',
+        format: 'both',
+    ): Record<number | string, string>[];
+    static parseWikiTable(
+        sectionWikitext: string,
+        format: 'record' | '2d' | 'both' = 'record',
     ): Record<string, string>[] | string[][] {
         const match = sectionWikitext.match(
             /{\|\s*class=("wikitable.*?"|wikitable)[\s\S]+?\|}/,
@@ -116,9 +120,10 @@ export class MediaWikiParser {
         }
 
         const headers: string[] = [];
+        const isRecord = format === 'record' || format === 'both';
 
         const rows: TableRow[] | string[][] = [];
-        let currentRow: TableRow | string[] = format === 'record' ? {} : [];
+        let currentRow: TableRow | string[] = isRecord ? {} : [];
 
         const tableSection =
             /(\n(?:\|\+|\|-|!|\|))([\s\S]*?)(?=\n(?:\|\+|\|-|!|\||\|}))/g;
@@ -155,7 +160,7 @@ export class MediaWikiParser {
             if (type === 'row') {
                 if (Object.keys(currentRow).length > 0) {
                     rows.push(currentRow as any);
-                    currentRow = format === 'record' ? {} : [];
+                    currentRow = isRecord ? {} : [];
                 }
             }
 
@@ -169,10 +174,18 @@ export class MediaWikiParser {
                 if (Array.isArray(currentRow)) {
                     currentRow.push(content);
                 } else {
-                    const currentColumnIndex = Object.keys(currentRow).length;
+                    let currentColumnIndex = Object.keys(currentRow).length;
+
+                    if (format === 'both') {
+                        currentColumnIndex /= 2;
+                    }
 
                     const header = headers[currentColumnIndex];
                     currentRow[header] = content;
+
+                    if (format === 'both') {
+                        currentRow[currentColumnIndex] = content;
+                    }
                 }
             }
         });

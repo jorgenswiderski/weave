@@ -4,6 +4,10 @@ import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeat } from '../features/character-feat';
 import { ClassSubclass } from '../features/character-subclass';
+import {
+    CharacterFeatureSorcererMetamagic,
+    CharacterFeatureWarlockEldritchInvocation,
+} from '../features/special/special';
 import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
 import { IClassFeatureFactory } from './types';
 
@@ -49,7 +53,18 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             return new CharacterFeat();
         }
 
-        return new CharacterFeature(options);
+        if (type === CharacterFeatureTypes.SORCERER_METAMAGIC) {
+            return new CharacterFeatureSorcererMetamagic(options, level);
+        }
+
+        if (type === CharacterFeatureTypes.WARLOCK_ELDRITCH_INVOCATION) {
+            return new CharacterFeatureWarlockEldritchInvocation(
+                options,
+                level,
+            );
+        }
+
+        return new CharacterFeature(options, level);
     }
 
     protected parserSpecialCases: {
@@ -64,6 +79,14 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
         'feats|feat': { type: CharacterFeatureTypes.FEAT, pageTitle: 'Feats' },
         '#spellcasting': { type: CharacterFeatureTypes.SPELLCASTING },
         '#pact magic': { type: CharacterFeatureTypes.PACT_MAGIC },
+        '|metamagic}}': {
+            type: CharacterFeatureTypes.SORCERER_METAMAGIC,
+            pageTitle: 'Metamagic',
+        },
+        'eldritch invocation': {
+            type: CharacterFeatureTypes.WARLOCK_ELDRITCH_INVOCATION,
+            pageTitle: 'Eldritch Invocation',
+        },
     };
 
     fromWikitext(
@@ -80,7 +103,11 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
                 return ClassFeatureFactorySingleton.construct(
                     data.type,
                     {
-                        name: caseText,
+                        name: data.pageTitle
+                            ? MediaWikiParser.parseNameFromPageTitle(
+                                  data.pageTitle,
+                              )
+                            : caseText,
                         pageTitle: data.pageTitle,
                     },
                     characterClass,

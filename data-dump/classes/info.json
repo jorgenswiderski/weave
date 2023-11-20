@@ -28138,30 +28138,6 @@
                                                 "ref": "a1382"
                                             }
                                         ]
-                                    },
-                                    {
-                                        "name": "Metamagic: Heightened Spell",
-                                        "grants": [
-                                            {
-                                                "ref": "a1383"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Metamagic: Quickened Spell",
-                                        "grants": [
-                                            {
-                                                "ref": "a1385"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Metamagic: Subtle Spell",
-                                        "grants": [
-                                            {
-                                                "ref": "a1386"
-                                            }
-                                        ]
                                     }
                                 ]
                             }
@@ -31126,7 +31102,7 @@
                 "Proficiency Bonus": 2,
                 "Features": [
                     {
-                        "name": "Eldritch Invocations",
+                        "name": "Eldritch Invocation",
                         "grants": [],
                         "choices": [
                             {
@@ -31239,105 +31215,6 @@
                                                 "type": 2,
                                                 "description": "Once per Bane (Spell)|Bane}} using a Warlock [[Spell Slot.\n\nBane targets up to 3 creatures. They receive a 1d4 penalty to Attack Rolls and Saving Throws.",
                                                 "image": "Thief of Five Fates.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Sign of Ill Omen",
-                                        "grants": [
-                                            {
-                                                "name": "Sign of Ill Omen",
-                                                "type": 2,
-                                                "description": "You can cast Bestow Curse with a Warlock Spell Slot.",
-                                                "image": "Sign of Ill Omen.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Mire the Mind",
-                                        "grants": [
-                                            {
-                                                "name": "Mire the Mind",
-                                                "type": 2,
-                                                "description": "You can cast Slow with a Warlock spell slot.",
-                                                "image": "Mire the Mind.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Book of Ancient Secrets",
-                                        "grants": [
-                                            {
-                                                "name": "Book of Ancient Secrets",
-                                                "type": 2,
-                                                "description": "You can inscribe magical rituals in your Book of Shadows. Gain Ray of Sickness, Chromatic Orb, and Silence spells.\n\nYou can cast them once per Long Rest and they don't expend spell slots",
-                                                "image": "Book of Ancient Secrets.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Dreadful Word",
-                                        "grants": [
-                                            {
-                                                "name": "Dreadful Word",
-                                                "type": 2,
-                                                "description": "You can cast Confusion with a Warlock spell slot.",
-                                                "image": "Dreadful Word.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Sculptor of Flesh",
-                                        "grants": [
-                                            {
-                                                "name": "Sculptor of Flesh",
-                                                "type": 2,
-                                                "description": "You can cast Polymorph with a Warlock spell slot.",
-                                                "image": "Sculptor of Flesh.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Minions of Chaos",
-                                        "grants": [
-                                            {
-                                                "name": "Minions of Chaos",
-                                                "type": 2,
-                                                "description": "You can cast Conjure Elemental with a Warlock spell slot.",
-                                                "image": "Minions of Chaos.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Otherworldly Leap",
-                                        "grants": [
-                                            {
-                                                "name": "Otherworldly Leap",
-                                                "type": 2,
-                                                "description": "You can cast Enhance Leap as a ritual spell out-of-combat, but it does expend a Warlock slot to cast in turn-based mode.As of 4.1.1.3748643. This may be a bug.",
-                                                "image": "Otherworldly Leap.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Whispers of the Grave",
-                                        "grants": [
-                                            {
-                                                "name": "Whispers of the Grave",
-                                                "type": 2,
-                                                "description": "You can cast Speak with Dead without expending a Spell Slot.",
-                                                "image": "Whispers of the Grave.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Lifedrinker",
-                                        "grants": [
-                                            {
-                                                "name": "Lifedrinker",
-                                                "type": 2,
-                                                "description": "Add your Charisma modifier to the damage of your melee weapon attacks.",
-                                                "image": "Lifedrinker.webp"
                                             }
                                         ]
                                     }
@@ -32237,7 +32114,7 @@
                         ]
                     },
                     {
-                        "name": "Eldritch Invocations",
+                        "name": "Eldritch Invocation",
                         "grants": [],
                         "choices": [
                             {
@@ -32372,83 +32249,6 @@
                                                 "type": 2,
                                                 "description": "You can cast Slow with a Warlock spell slot.",
                                                 "image": "Mire the Mind.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Book of Ancient Secrets",
-                                        "grants": [
-                                            {
-                                                "name": "Book of Ancient Secrets",
-                                                "type": 2,
-                                                "description": "You can inscribe magical rituals in your Book of Shadows. Gain Ray of Sickness, Chromatic Orb, and Silence spells.\n\nYou can cast them once per Long Rest and they don't expend spell slots",
-                                                "image": "Book of Ancient Secrets.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Dreadful Word",
-                                        "grants": [
-                                            {
-                                                "name": "Dreadful Word",
-                                                "type": 2,
-                                                "description": "You can cast Confusion with a Warlock spell slot.",
-                                                "image": "Dreadful Word.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Sculptor of Flesh",
-                                        "grants": [
-                                            {
-                                                "name": "Sculptor of Flesh",
-                                                "type": 2,
-                                                "description": "You can cast Polymorph with a Warlock spell slot.",
-                                                "image": "Sculptor of Flesh.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Minions of Chaos",
-                                        "grants": [
-                                            {
-                                                "name": "Minions of Chaos",
-                                                "type": 2,
-                                                "description": "You can cast Conjure Elemental with a Warlock spell slot.",
-                                                "image": "Minions of Chaos.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Otherworldly Leap",
-                                        "grants": [
-                                            {
-                                                "name": "Otherworldly Leap",
-                                                "type": 2,
-                                                "description": "You can cast Enhance Leap as a ritual spell out-of-combat, but it does expend a Warlock slot to cast in turn-based mode.As of 4.1.1.3748643. This may be a bug.",
-                                                "image": "Otherworldly Leap.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Whispers of the Grave",
-                                        "grants": [
-                                            {
-                                                "name": "Whispers of the Grave",
-                                                "type": 2,
-                                                "description": "You can cast Speak with Dead without expending a Spell Slot.",
-                                                "image": "Whispers of the Grave.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Lifedrinker",
-                                        "grants": [
-                                            {
-                                                "name": "Lifedrinker",
-                                                "type": 2,
-                                                "description": "Add your Charisma modifier to the damage of your melee weapon attacks.",
-                                                "image": "Lifedrinker.webp"
                                             }
                                         ]
                                     }
@@ -32526,7 +32326,7 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "Eldritch Invocations",
+                        "name": "Eldritch Invocation",
                         "grants": [],
                         "choices": [
                             {
@@ -32694,50 +32494,6 @@
                                                 "type": 2,
                                                 "description": "You can cast Polymorph with a Warlock spell slot.",
                                                 "image": "Sculptor of Flesh.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Minions of Chaos",
-                                        "grants": [
-                                            {
-                                                "name": "Minions of Chaos",
-                                                "type": 2,
-                                                "description": "You can cast Conjure Elemental with a Warlock spell slot.",
-                                                "image": "Minions of Chaos.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Otherworldly Leap",
-                                        "grants": [
-                                            {
-                                                "name": "Otherworldly Leap",
-                                                "type": 2,
-                                                "description": "You can cast Enhance Leap as a ritual spell out-of-combat, but it does expend a Warlock slot to cast in turn-based mode.As of 4.1.1.3748643. This may be a bug.",
-                                                "image": "Otherworldly Leap.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Whispers of the Grave",
-                                        "grants": [
-                                            {
-                                                "name": "Whispers of the Grave",
-                                                "type": 2,
-                                                "description": "You can cast Speak with Dead without expending a Spell Slot.",
-                                                "image": "Whispers of the Grave.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Lifedrinker",
-                                        "grants": [
-                                            {
-                                                "name": "Lifedrinker",
-                                                "type": 2,
-                                                "description": "Add your Charisma modifier to the damage of your melee weapon attacks.",
-                                                "image": "Lifedrinker.webp"
                                             }
                                         ]
                                     }
@@ -33571,7 +33327,7 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "Eldritch Invocations",
+                        "name": "Eldritch Invocation",
                         "grants": [],
                         "choices": [
                             {
@@ -33772,17 +33528,6 @@
                                                 "type": 2,
                                                 "description": "You can cast Speak with Dead without expending a Spell Slot.",
                                                 "image": "Whispers of the Grave.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Lifedrinker",
-                                        "grants": [
-                                            {
-                                                "name": "Lifedrinker",
-                                                "type": 2,
-                                                "description": "Add your Charisma modifier to the damage of your melee weapon attacks.",
-                                                "image": "Lifedrinker.webp"
                                             }
                                         ]
                                     }
@@ -34684,7 +34429,7 @@
                         ]
                     },
                     {
-                        "name": "Eldritch Invocations",
+                        "name": "Eldritch Invocation",
                         "grants": [],
                         "choices": [
                             {
