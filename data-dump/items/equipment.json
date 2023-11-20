@@ -32048,6 +32048,33 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Xargrim",
+                        "id": 10891
+                    }
+                },
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Under-world"
+                        },
+                        "region": {
+                            "name": "Underdark",
+                            "id": 4325
+                        },
+                        "location": {
+                            "name": "Dread Hollow",
+                            "id": 4518
+                        }
+                    },
+                    "character": {
+                        "name": "Filro",
+                        "id": 8218
                     }
                 }
             ],

@@ -27,6 +27,7 @@ import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
 import { MediaWikiParser } from '../media-wiki/wikitext-parser';
 import { IClassFeatureFactory } from './class-feature/types';
 import { WikitableNotFoundError } from '../media-wiki/types';
+import { ICharacterClass } from '../character-class/types';
 
 enum CharacterFeatureLoadingStates {
     DESCRIPTION = 'DESCRIPTION',
@@ -49,6 +50,7 @@ export class CharacterFeature
     constructor(
         { pageTitle, page, name, image }: ICharacterOptionWithPage,
         public level?: number,
+        public characterClass?: ICharacterClass,
     ) {
         super({ pageTitle, page });
 
@@ -300,6 +302,23 @@ export class CharacterFeature
                         );
 
                         if (this.level! < ml) {
+                            return undefined;
+                        }
+                    }
+
+                    if (config.classes) {
+                        const cell = row[config.classes];
+
+                        assert(
+                            this.characterClass,
+                            `Class must be defined to enforce classes constraint on wikitable on page '${this.pageTitle}'`,
+                        );
+
+                        if (
+                            !cell.includes(
+                                `{{class|${this.characterClass!.name}}}`,
+                            )
+                        ) {
                             return undefined;
                         }
                     }

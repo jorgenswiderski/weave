@@ -5,6 +5,7 @@ import { CharacterFeature } from '../character-feature';
 import { CharacterFeat } from '../features/character-feat';
 import { ClassSubclass } from '../features/character-subclass';
 import {
+    CharacterFeatureFightingStyle,
     CharacterFeatureSorcererMetamagic,
     CharacterFeatureWarlockEldritchInvocation,
 } from '../features/special/special';
@@ -64,6 +65,14 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             );
         }
 
+        if (type === CharacterFeatureTypes.FIGHTING_STYLE) {
+            return new CharacterFeatureFightingStyle(
+                options,
+                level,
+                characterClass,
+            );
+        }
+
         return new CharacterFeature(options, level);
     }
 
@@ -86,6 +95,10 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
         'eldritch invocation': {
             type: CharacterFeatureTypes.WARLOCK_ELDRITCH_INVOCATION,
             pageTitle: 'Eldritch Invocation',
+        },
+        'fighting style': {
+            type: CharacterFeatureTypes.FIGHTING_STYLE,
+            pageTitle: 'Fighting Style',
         },
     };
 

@@ -11,8 +11,10 @@ export enum CharacterFeatureTypes {
     SPELLCASTING = 'SPELLCASTING',
     PACT_MAGIC = 'PACT_MAGIC',
     OTHER = 'OTHER',
+
     SORCERER_METAMAGIC = 'SORCERER_METAMAGIC',
     WARLOCK_ELDRITCH_INVOCATION = 'WARLOCK_ELDRITCH_INVOCATION',
+    FIGHTING_STYLE = 'FIGHTING_STYLE',
 
     CHOOSE_SUBCLASS = CharacterPlannerStep.CHOOSE_SUBCLASS,
     RACE = CharacterPlannerStep.SET_RACE,
@@ -27,4 +29,5 @@ export interface ICharacterOptionWithPage extends ICharacterOption {
 export interface ChoiceListConfig {
     feature: string | number;
     minLevel?: string | number;
+    classes?: string | number;
 }

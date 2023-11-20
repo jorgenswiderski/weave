@@ -15,3 +15,10 @@ export class CharacterFeatureWarlockEldritchInvocation extends CharacterFeature 
         minLevel: 'Level',
     };
 }
+
+export class CharacterFeatureFightingStyle extends CharacterFeature {
+    choiceListConfig: ChoiceListConfig = {
+        feature: 'Fighting Style',
+        classes: 'Available To',
+    };
+}

@@ -18391,17 +18391,6 @@
                                 "type": 23,
                                 "options": [
                                     {
-                                        "name": "Archery",
-                                        "grants": [
-                                            {
-                                                "name": "Archery",
-                                                "type": 2,
-                                                "description": "You gain a +2 bonus to Attack Rolls you make with ranged Weapons.",
-                                                "image": "Archery.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
                                         "name": "Defence",
                                         "grants": [
                                             {
@@ -18439,17 +18428,6 @@
                                         "grants": [
                                             {
                                                 "ref": "a17368"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Two-Weapon Fighting",
-                                        "grants": [
-                                            {
-                                                "name": "Two-Weapon Fighting",
-                                                "type": 2,
-                                                "description": "When you make an offhand attack, you can add your Ability Score Modifier to the damage of the attack.",
-                                                "image": "Two-Weapon Fighting.webp"
                                             }
                                         ]
                                     }
@@ -21309,25 +21287,6 @@
                                                 "type": 2,
                                                 "description": "When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.You can carry a shield in your free hand and still gain this bonus.",
                                                 "image": "Duelling.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Great Weapon Fighting",
-                                        "grants": [
-                                            {
-                                                "name": "Great Weapon Fighting",
-                                                "type": 2,
-                                                "description": "When you roll a 1 or 2 on a damage die for an attack with a Two-Handed melee weapon, that die is rerolled once.",
-                                                "image": "Great Weapon Fighting.webp"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "Protection",
-                                        "grants": [
-                                            {
-                                                "ref": "a17368"
                                             }
                                         ]
                                     },
