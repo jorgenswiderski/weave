@@ -16,7 +16,17 @@ export class MediaWikiParser {
     }
 
     static parseNameFromPageTitle(title: string) {
-        return title.split('(')[0].trim();
+        const match = title.match(/(.*)\s*\((.*)\)/);
+
+        if (!match) {
+            return title;
+        }
+
+        if (['melee', 'ranged', 'unarmed'].includes(match[2].toLowerCase())) {
+            return title;
+        }
+
+        return match[1].trim();
     }
 
     static removeComments(wikitext: string): string {

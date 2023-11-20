@@ -17,7 +17,7 @@
                         ]
                     },
                     {
-                        "name": "Unarmoured Defence (Barbarian)",
+                        "name": "Unarmoured Defence",
                         "grants": [
                             {
                                 "name": "Unarmoured Defence (Barbarian)",
@@ -2970,7 +2970,7 @@
                         ]
                     },
                     {
-                        "name": "Expertise (Subclass Feature)",
+                        "name": "Expertise",
                         "grants": []
                     }
                 ],
@@ -4782,7 +4782,7 @@
                         ]
                     },
                     {
-                        "name": "Expertise (Subclass Feature)",
+                        "name": "Expertise",
                         "grants": []
                     },
                     {
@@ -15309,7 +15309,7 @@
                 "Unarmoured Movement": 0,
                 "Features": [
                     {
-                        "name": "Unarmoured Defence (Monk)",
+                        "name": "Unarmoured Defence",
                         "grants": [
                             {
                                 "name": "Unarmoured Defence (Monk)",
@@ -24404,7 +24404,7 @@
                 "Sneak Attack": 1,
                 "Features": [
                     {
-                        "name": "Expertise (Subclass Feature)",
+                        "name": "Expertise",
                         "grants": []
                     },
                     {
@@ -25482,7 +25482,7 @@
                 "Sneak Attack": 3,
                 "Features": [
                     {
-                        "name": "Expertise (Subclass Feature)",
+                        "name": "Expertise",
                         "grants": []
                     }
                 ]
@@ -31159,7 +31159,7 @@
                                         ]
                                     },
                                     {
-                                        "name": "Pact of the Blade (Passive Feature)",
+                                        "name": "Pact of the Blade",
                                         "grants": [
                                             {
                                                 "name": "Pact of the Blade (Passive Feature)",
@@ -33002,7 +33002,7 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "[[#Level 11|Mystic Arcanum]] (6th level spell)",
+                        "name": "[[#Level 11|Mystic Arcanum]]",
                         "grants": []
                     }
                 ],

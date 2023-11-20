@@ -1,5 +1,6 @@
 import { ICharacterClass } from '../../character-class/types';
 import { error, warn } from '../../logger';
+import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeat } from '../features/character-feat';
 import { ClassSubclass } from '../features/character-subclass';
@@ -104,7 +105,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             return ClassFeatureFactorySingleton.construct(
                 CharacterFeatureTypes.OTHER,
                 {
-                    name: pageTitle,
+                    name: MediaWikiParser.parseNameFromPageTitle(pageTitle),
                     pageTitle,
                 },
                 characterClass,
@@ -120,7 +121,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             return ClassFeatureFactorySingleton.construct(
                 CharacterFeatureTypes.OTHER,
                 {
-                    name: pageTitle,
+                    name: MediaWikiParser.parseNameFromPageTitle(pageTitle),
                     pageTitle,
                 },
                 characterClass,
@@ -149,7 +150,9 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
                     return ClassFeatureFactorySingleton.construct(
                         CharacterFeatureTypes.OTHER,
                         {
-                            name: featureName,
+                            name: MediaWikiParser.parseNameFromPageTitle(
+                                featureName,
+                            ),
                             pageTitle: featureName,
                         },
                         characterClass,
@@ -162,7 +165,9 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
         return ClassFeatureFactorySingleton.construct(
             CharacterFeatureTypes.OTHER,
             {
-                name: featureText.trim(),
+                name: MediaWikiParser.parseNameFromPageTitle(
+                    featureText.trim(),
+                ),
                 pageTitle: featureText.trim(),
             },
             characterClass,
