@@ -55,7 +55,6 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
     protected parserSpecialCases: {
         [key: string]: { type: CharacterFeatureTypes; pageTitle?: string };
     } = {
-        'eldritch invocations': { type: CharacterFeatureTypes.NONE },
         'choose a subclass': {
             type: CharacterFeatureTypes.CHOOSE_SUBCLASS,
         },

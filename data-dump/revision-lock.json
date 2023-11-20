@@ -22,6 +22,7 @@
         "Duergar": "Dwarf",
         "Duke Ulder Ravengard": "Ulder Ravengard",
         "Elder Brithvar": "Brithvar",
+        "Eldritch Invocations": "Eldritch Invocation",
         "Escape the Nautiloid": "Prologue",
         "Fighting Style": "Fighting style",
         "Filro the Forgotten": "Filro",
@@ -2176,6 +2177,11 @@
             "pageId": 2697,
             "revisionId": 93357,
             "title": "Protection from Energy: Thunder"
+        },
+        {
+            "pageId": 2698,
+            "revisionId": 114474,
+            "title": "Eldritch Invocation"
         },
         {
             "pageId": 2700,
@@ -8583,6 +8589,16 @@
             "title": "Helm of Balduran"
         },
         {
+            "pageId": 10330,
+            "revisionId": 110466,
+            "title": "Agonising Blast"
+        },
+        {
+            "pageId": 10331,
+            "revisionId": 110776,
+            "title": "Repelling Blast"
+        },
+        {
             "pageId": 10333,
             "revisionId": 99254,
             "title": "Rosymorn Monastery Trail"
@@ -10556,6 +10572,11 @@
             "pageId": 13598,
             "revisionId": 87582,
             "title": "Template:SpoilerBlur"
+        },
+        {
+            "pageId": 13648,
+            "revisionId": 110551,
+            "title": "Devil's Sight"
         },
         {
             "pageId": 13676,
@@ -12883,9 +12904,89 @@
             "title": "Darkness Cloak"
         },
         {
+            "pageId": 19621,
+            "revisionId": 110475,
+            "title": "Armour of Shadows"
+        },
+        {
+            "pageId": 19622,
+            "revisionId": 110504,
+            "title": "Beast Speech"
+        },
+        {
+            "pageId": 19623,
+            "revisionId": 110507,
+            "title": "Beguiling Influence"
+        },
+        {
+            "pageId": 19624,
+            "revisionId": 110629,
+            "title": "Fiendish Vigour"
+        },
+        {
+            "pageId": 19625,
+            "revisionId": 110725,
+            "title": "Mask of Many Faces"
+        },
+        {
+            "pageId": 19626,
+            "revisionId": 110742,
+            "title": "One with Shadows"
+        },
+        {
             "pageId": 19632,
             "revisionId": 73927,
             "title": "One with Shadows (Class Action)"
+        },
+        {
+            "pageId": 19633,
+            "revisionId": 110816,
+            "title": "Thief of Five Fates"
+        },
+        {
+            "pageId": 19635,
+            "revisionId": 110794,
+            "title": "Sign of Ill Omen"
+        },
+        {
+            "pageId": 19637,
+            "revisionId": 110728,
+            "title": "Mire the Mind"
+        },
+        {
+            "pageId": 19638,
+            "revisionId": 110516,
+            "title": "Book of Ancient Secrets"
+        },
+        {
+            "pageId": 19639,
+            "revisionId": 110584,
+            "title": "Dreadful Word"
+        },
+        {
+            "pageId": 19640,
+            "revisionId": 110789,
+            "title": "Sculptor of Flesh"
+        },
+        {
+            "pageId": 19641,
+            "revisionId": 110727,
+            "title": "Minions of Chaos"
+        },
+        {
+            "pageId": 19642,
+            "revisionId": 110743,
+            "title": "Otherworldly Leap"
+        },
+        {
+            "pageId": 19643,
+            "revisionId": 110844,
+            "title": "Whispers of the Grave"
+        },
+        {
+            "pageId": 19645,
+            "revisionId": 110710,
+            "title": "Lifedrinker"
         },
         {
             "pageId": 19676,

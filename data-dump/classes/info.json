@@ -31126,8 +31126,224 @@
                 "Proficiency Bonus": 2,
                 "Features": [
                     {
-                        "name": "eldritch invocations",
-                        "grants": []
+                        "name": "Eldritch Invocations",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Agonising Blast",
+                                        "grants": [
+                                            {
+                                                "name": "Agonising Blast",
+                                                "type": 2,
+                                                "description": "When you cast Eldritch Blast, add your Charisma Modifier to the damage it deals, unless it is negative.",
+                                                "image": "Agonising Blast.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Armour of Shadows",
+                                        "grants": [
+                                            {
+                                                "name": "Armour of Shadows",
+                                                "type": 2,
+                                                "description": "You can cast Mage Armour on yourself at will, without expending a Spell Slot. Mage Armour increases your Armour Class when you are not wearing armour.",
+                                                "image": "Armour of Shadows.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beast Speech",
+                                        "grants": [
+                                            {
+                                                "name": "Beast Speech",
+                                                "type": 2,
+                                                "description": "You can cast Speak with Animals on yourself at will, without expending a Spell Slot.",
+                                                "image": "Beast Speech.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beguiling Influence",
+                                        "grants": [
+                                            {
+                                                "name": "Beguiling Influence",
+                                                "type": 2,
+                                                "description": "You invoke your patron's bewitching charm. You gain Proficiency in the Deception and Persuasion.",
+                                                "image": "Beguiling Influence.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Devil's Sight",
+                                        "grants": [
+                                            {
+                                                "name": "Devil's Sight",
+                                                "type": 2,
+                                                "description": "You can see normally in darkness, both magical and non-magical, to a distance ofm=24|ft=80.",
+                                                "image": "Devils Sight.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fiendish Vigour",
+                                        "grants": [
+                                            {
+                                                "name": "Fiendish Vigour",
+                                                "type": 2,
+                                                "description": "You can cast False Life on yourself at will as a 1st-level spell, without expending a Spell Slot. False Life grants you 7 Temporary Hit Points|Healing.",
+                                                "image": "Fiendish Vigour.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mask of Many Faces",
+                                        "grants": [
+                                            {
+                                                "name": "Mask of Many Faces",
+                                                "type": 2,
+                                                "description": "You can cast Disguise Self on yourself at will, without expending a Spell Slot.",
+                                                "image": "Mask of Many Faces.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "One with Shadows",
+                                        "grants": [
+                                            {
+                                                "name": "One with Shadows",
+                                                "type": 2,
+                                                "description": "You learn how to cast One with Shadows (Class Action)|One with Shadows.",
+                                                "image": "One with Shadows.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Repelling Blast",
+                                        "grants": [
+                                            {
+                                                "name": "Repelling Blast",
+                                                "type": 2,
+                                                "description": "When you hit a creature with Eldritch Blast, you can push the creature up to m=4.5|ft=15 away from you.",
+                                                "image": "Repelling Blast.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Thief of Five Fates",
+                                        "grants": [
+                                            {
+                                                "name": "Thief of Five Fates",
+                                                "type": 2,
+                                                "description": "Once per Bane (Spell)|Bane}} using a Warlock [[Spell Slot.\n\nBane targets up to 3 creatures. They receive a 1d4 penalty to Attack Rolls and Saving Throws.",
+                                                "image": "Thief of Five Fates.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sign of Ill Omen",
+                                        "grants": [
+                                            {
+                                                "name": "Sign of Ill Omen",
+                                                "type": 2,
+                                                "description": "You can cast Bestow Curse with a Warlock Spell Slot.",
+                                                "image": "Sign of Ill Omen.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mire the Mind",
+                                        "grants": [
+                                            {
+                                                "name": "Mire the Mind",
+                                                "type": 2,
+                                                "description": "You can cast Slow with a Warlock spell slot.",
+                                                "image": "Mire the Mind.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Book of Ancient Secrets",
+                                        "grants": [
+                                            {
+                                                "name": "Book of Ancient Secrets",
+                                                "type": 2,
+                                                "description": "You can inscribe magical rituals in your Book of Shadows. Gain Ray of Sickness, Chromatic Orb, and Silence spells.\n\nYou can cast them once per Long Rest and they don't expend spell slots",
+                                                "image": "Book of Ancient Secrets.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dreadful Word",
+                                        "grants": [
+                                            {
+                                                "name": "Dreadful Word",
+                                                "type": 2,
+                                                "description": "You can cast Confusion with a Warlock spell slot.",
+                                                "image": "Dreadful Word.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sculptor of Flesh",
+                                        "grants": [
+                                            {
+                                                "name": "Sculptor of Flesh",
+                                                "type": 2,
+                                                "description": "You can cast Polymorph with a Warlock spell slot.",
+                                                "image": "Sculptor of Flesh.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Minions of Chaos",
+                                        "grants": [
+                                            {
+                                                "name": "Minions of Chaos",
+                                                "type": 2,
+                                                "description": "You can cast Conjure Elemental with a Warlock spell slot.",
+                                                "image": "Minions of Chaos.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Otherworldly Leap",
+                                        "grants": [
+                                            {
+                                                "name": "Otherworldly Leap",
+                                                "type": 2,
+                                                "description": "You can cast Enhance Leap as a ritual spell out-of-combat, but it does expend a Warlock slot to cast in turn-based mode.As of 4.1.1.3748643. This may be a bug.",
+                                                "image": "Otherworldly Leap.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Whispers of the Grave",
+                                        "grants": [
+                                            {
+                                                "name": "Whispers of the Grave",
+                                                "type": 2,
+                                                "description": "You can cast Speak with Dead without expending a Spell Slot.",
+                                                "image": "Whispers of the Grave.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Lifedrinker",
+                                        "grants": [
+                                            {
+                                                "name": "Lifedrinker",
+                                                "type": 2,
+                                                "description": "Add your Charisma modifier to the damage of your melee weapon attacks.",
+                                                "image": "Lifedrinker.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 2,
@@ -32021,8 +32237,224 @@
                         ]
                     },
                     {
-                        "name": "eldritch invocations",
-                        "grants": []
+                        "name": "Eldritch Invocations",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Agonising Blast",
+                                        "grants": [
+                                            {
+                                                "name": "Agonising Blast",
+                                                "type": 2,
+                                                "description": "When you cast Eldritch Blast, add your Charisma Modifier to the damage it deals, unless it is negative.",
+                                                "image": "Agonising Blast.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Armour of Shadows",
+                                        "grants": [
+                                            {
+                                                "name": "Armour of Shadows",
+                                                "type": 2,
+                                                "description": "You can cast Mage Armour on yourself at will, without expending a Spell Slot. Mage Armour increases your Armour Class when you are not wearing armour.",
+                                                "image": "Armour of Shadows.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beast Speech",
+                                        "grants": [
+                                            {
+                                                "name": "Beast Speech",
+                                                "type": 2,
+                                                "description": "You can cast Speak with Animals on yourself at will, without expending a Spell Slot.",
+                                                "image": "Beast Speech.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beguiling Influence",
+                                        "grants": [
+                                            {
+                                                "name": "Beguiling Influence",
+                                                "type": 2,
+                                                "description": "You invoke your patron's bewitching charm. You gain Proficiency in the Deception and Persuasion.",
+                                                "image": "Beguiling Influence.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Devil's Sight",
+                                        "grants": [
+                                            {
+                                                "name": "Devil's Sight",
+                                                "type": 2,
+                                                "description": "You can see normally in darkness, both magical and non-magical, to a distance ofm=24|ft=80.",
+                                                "image": "Devils Sight.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fiendish Vigour",
+                                        "grants": [
+                                            {
+                                                "name": "Fiendish Vigour",
+                                                "type": 2,
+                                                "description": "You can cast False Life on yourself at will as a 1st-level spell, without expending a Spell Slot. False Life grants you 7 Temporary Hit Points|Healing.",
+                                                "image": "Fiendish Vigour.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mask of Many Faces",
+                                        "grants": [
+                                            {
+                                                "name": "Mask of Many Faces",
+                                                "type": 2,
+                                                "description": "You can cast Disguise Self on yourself at will, without expending a Spell Slot.",
+                                                "image": "Mask of Many Faces.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "One with Shadows",
+                                        "grants": [
+                                            {
+                                                "name": "One with Shadows",
+                                                "type": 2,
+                                                "description": "You learn how to cast One with Shadows (Class Action)|One with Shadows.",
+                                                "image": "One with Shadows.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Repelling Blast",
+                                        "grants": [
+                                            {
+                                                "name": "Repelling Blast",
+                                                "type": 2,
+                                                "description": "When you hit a creature with Eldritch Blast, you can push the creature up to m=4.5|ft=15 away from you.",
+                                                "image": "Repelling Blast.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Thief of Five Fates",
+                                        "grants": [
+                                            {
+                                                "name": "Thief of Five Fates",
+                                                "type": 2,
+                                                "description": "Once per Bane (Spell)|Bane}} using a Warlock [[Spell Slot.\n\nBane targets up to 3 creatures. They receive a 1d4 penalty to Attack Rolls and Saving Throws.",
+                                                "image": "Thief of Five Fates.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sign of Ill Omen",
+                                        "grants": [
+                                            {
+                                                "name": "Sign of Ill Omen",
+                                                "type": 2,
+                                                "description": "You can cast Bestow Curse with a Warlock Spell Slot.",
+                                                "image": "Sign of Ill Omen.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mire the Mind",
+                                        "grants": [
+                                            {
+                                                "name": "Mire the Mind",
+                                                "type": 2,
+                                                "description": "You can cast Slow with a Warlock spell slot.",
+                                                "image": "Mire the Mind.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Book of Ancient Secrets",
+                                        "grants": [
+                                            {
+                                                "name": "Book of Ancient Secrets",
+                                                "type": 2,
+                                                "description": "You can inscribe magical rituals in your Book of Shadows. Gain Ray of Sickness, Chromatic Orb, and Silence spells.\n\nYou can cast them once per Long Rest and they don't expend spell slots",
+                                                "image": "Book of Ancient Secrets.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dreadful Word",
+                                        "grants": [
+                                            {
+                                                "name": "Dreadful Word",
+                                                "type": 2,
+                                                "description": "You can cast Confusion with a Warlock spell slot.",
+                                                "image": "Dreadful Word.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sculptor of Flesh",
+                                        "grants": [
+                                            {
+                                                "name": "Sculptor of Flesh",
+                                                "type": 2,
+                                                "description": "You can cast Polymorph with a Warlock spell slot.",
+                                                "image": "Sculptor of Flesh.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Minions of Chaos",
+                                        "grants": [
+                                            {
+                                                "name": "Minions of Chaos",
+                                                "type": 2,
+                                                "description": "You can cast Conjure Elemental with a Warlock spell slot.",
+                                                "image": "Minions of Chaos.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Otherworldly Leap",
+                                        "grants": [
+                                            {
+                                                "name": "Otherworldly Leap",
+                                                "type": 2,
+                                                "description": "You can cast Enhance Leap as a ritual spell out-of-combat, but it does expend a Warlock slot to cast in turn-based mode.As of 4.1.1.3748643. This may be a bug.",
+                                                "image": "Otherworldly Leap.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Whispers of the Grave",
+                                        "grants": [
+                                            {
+                                                "name": "Whispers of the Grave",
+                                                "type": 2,
+                                                "description": "You can cast Speak with Dead without expending a Spell Slot.",
+                                                "image": "Whispers of the Grave.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Lifedrinker",
+                                        "grants": [
+                                            {
+                                                "name": "Lifedrinker",
+                                                "type": 2,
+                                                "description": "Add your Charisma modifier to the damage of your melee weapon attacks.",
+                                                "image": "Lifedrinker.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 3,
@@ -32094,8 +32526,224 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "eldritch invocations",
-                        "grants": []
+                        "name": "Eldritch Invocations",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Agonising Blast",
+                                        "grants": [
+                                            {
+                                                "name": "Agonising Blast",
+                                                "type": 2,
+                                                "description": "When you cast Eldritch Blast, add your Charisma Modifier to the damage it deals, unless it is negative.",
+                                                "image": "Agonising Blast.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Armour of Shadows",
+                                        "grants": [
+                                            {
+                                                "name": "Armour of Shadows",
+                                                "type": 2,
+                                                "description": "You can cast Mage Armour on yourself at will, without expending a Spell Slot. Mage Armour increases your Armour Class when you are not wearing armour.",
+                                                "image": "Armour of Shadows.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beast Speech",
+                                        "grants": [
+                                            {
+                                                "name": "Beast Speech",
+                                                "type": 2,
+                                                "description": "You can cast Speak with Animals on yourself at will, without expending a Spell Slot.",
+                                                "image": "Beast Speech.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beguiling Influence",
+                                        "grants": [
+                                            {
+                                                "name": "Beguiling Influence",
+                                                "type": 2,
+                                                "description": "You invoke your patron's bewitching charm. You gain Proficiency in the Deception and Persuasion.",
+                                                "image": "Beguiling Influence.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Devil's Sight",
+                                        "grants": [
+                                            {
+                                                "name": "Devil's Sight",
+                                                "type": 2,
+                                                "description": "You can see normally in darkness, both magical and non-magical, to a distance ofm=24|ft=80.",
+                                                "image": "Devils Sight.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fiendish Vigour",
+                                        "grants": [
+                                            {
+                                                "name": "Fiendish Vigour",
+                                                "type": 2,
+                                                "description": "You can cast False Life on yourself at will as a 1st-level spell, without expending a Spell Slot. False Life grants you 7 Temporary Hit Points|Healing.",
+                                                "image": "Fiendish Vigour.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mask of Many Faces",
+                                        "grants": [
+                                            {
+                                                "name": "Mask of Many Faces",
+                                                "type": 2,
+                                                "description": "You can cast Disguise Self on yourself at will, without expending a Spell Slot.",
+                                                "image": "Mask of Many Faces.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "One with Shadows",
+                                        "grants": [
+                                            {
+                                                "name": "One with Shadows",
+                                                "type": 2,
+                                                "description": "You learn how to cast One with Shadows (Class Action)|One with Shadows.",
+                                                "image": "One with Shadows.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Repelling Blast",
+                                        "grants": [
+                                            {
+                                                "name": "Repelling Blast",
+                                                "type": 2,
+                                                "description": "When you hit a creature with Eldritch Blast, you can push the creature up to m=4.5|ft=15 away from you.",
+                                                "image": "Repelling Blast.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Thief of Five Fates",
+                                        "grants": [
+                                            {
+                                                "name": "Thief of Five Fates",
+                                                "type": 2,
+                                                "description": "Once per Bane (Spell)|Bane}} using a Warlock [[Spell Slot.\n\nBane targets up to 3 creatures. They receive a 1d4 penalty to Attack Rolls and Saving Throws.",
+                                                "image": "Thief of Five Fates.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sign of Ill Omen",
+                                        "grants": [
+                                            {
+                                                "name": "Sign of Ill Omen",
+                                                "type": 2,
+                                                "description": "You can cast Bestow Curse with a Warlock Spell Slot.",
+                                                "image": "Sign of Ill Omen.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mire the Mind",
+                                        "grants": [
+                                            {
+                                                "name": "Mire the Mind",
+                                                "type": 2,
+                                                "description": "You can cast Slow with a Warlock spell slot.",
+                                                "image": "Mire the Mind.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Book of Ancient Secrets",
+                                        "grants": [
+                                            {
+                                                "name": "Book of Ancient Secrets",
+                                                "type": 2,
+                                                "description": "You can inscribe magical rituals in your Book of Shadows. Gain Ray of Sickness, Chromatic Orb, and Silence spells.\n\nYou can cast them once per Long Rest and they don't expend spell slots",
+                                                "image": "Book of Ancient Secrets.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dreadful Word",
+                                        "grants": [
+                                            {
+                                                "name": "Dreadful Word",
+                                                "type": 2,
+                                                "description": "You can cast Confusion with a Warlock spell slot.",
+                                                "image": "Dreadful Word.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sculptor of Flesh",
+                                        "grants": [
+                                            {
+                                                "name": "Sculptor of Flesh",
+                                                "type": 2,
+                                                "description": "You can cast Polymorph with a Warlock spell slot.",
+                                                "image": "Sculptor of Flesh.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Minions of Chaos",
+                                        "grants": [
+                                            {
+                                                "name": "Minions of Chaos",
+                                                "type": 2,
+                                                "description": "You can cast Conjure Elemental with a Warlock spell slot.",
+                                                "image": "Minions of Chaos.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Otherworldly Leap",
+                                        "grants": [
+                                            {
+                                                "name": "Otherworldly Leap",
+                                                "type": 2,
+                                                "description": "You can cast Enhance Leap as a ritual spell out-of-combat, but it does expend a Warlock slot to cast in turn-based mode.As of 4.1.1.3748643. This may be a bug.",
+                                                "image": "Otherworldly Leap.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Whispers of the Grave",
+                                        "grants": [
+                                            {
+                                                "name": "Whispers of the Grave",
+                                                "type": 2,
+                                                "description": "You can cast Speak with Dead without expending a Spell Slot.",
+                                                "image": "Whispers of the Grave.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Lifedrinker",
+                                        "grants": [
+                                            {
+                                                "name": "Lifedrinker",
+                                                "type": 2,
+                                                "description": "Add your Charisma modifier to the damage of your melee weapon attacks.",
+                                                "image": "Lifedrinker.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 3,
@@ -32923,8 +33571,224 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "eldritch invocations",
-                        "grants": []
+                        "name": "Eldritch Invocations",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Agonising Blast",
+                                        "grants": [
+                                            {
+                                                "name": "Agonising Blast",
+                                                "type": 2,
+                                                "description": "When you cast Eldritch Blast, add your Charisma Modifier to the damage it deals, unless it is negative.",
+                                                "image": "Agonising Blast.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Armour of Shadows",
+                                        "grants": [
+                                            {
+                                                "name": "Armour of Shadows",
+                                                "type": 2,
+                                                "description": "You can cast Mage Armour on yourself at will, without expending a Spell Slot. Mage Armour increases your Armour Class when you are not wearing armour.",
+                                                "image": "Armour of Shadows.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beast Speech",
+                                        "grants": [
+                                            {
+                                                "name": "Beast Speech",
+                                                "type": 2,
+                                                "description": "You can cast Speak with Animals on yourself at will, without expending a Spell Slot.",
+                                                "image": "Beast Speech.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beguiling Influence",
+                                        "grants": [
+                                            {
+                                                "name": "Beguiling Influence",
+                                                "type": 2,
+                                                "description": "You invoke your patron's bewitching charm. You gain Proficiency in the Deception and Persuasion.",
+                                                "image": "Beguiling Influence.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Devil's Sight",
+                                        "grants": [
+                                            {
+                                                "name": "Devil's Sight",
+                                                "type": 2,
+                                                "description": "You can see normally in darkness, both magical and non-magical, to a distance ofm=24|ft=80.",
+                                                "image": "Devils Sight.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fiendish Vigour",
+                                        "grants": [
+                                            {
+                                                "name": "Fiendish Vigour",
+                                                "type": 2,
+                                                "description": "You can cast False Life on yourself at will as a 1st-level spell, without expending a Spell Slot. False Life grants you 7 Temporary Hit Points|Healing.",
+                                                "image": "Fiendish Vigour.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mask of Many Faces",
+                                        "grants": [
+                                            {
+                                                "name": "Mask of Many Faces",
+                                                "type": 2,
+                                                "description": "You can cast Disguise Self on yourself at will, without expending a Spell Slot.",
+                                                "image": "Mask of Many Faces.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "One with Shadows",
+                                        "grants": [
+                                            {
+                                                "name": "One with Shadows",
+                                                "type": 2,
+                                                "description": "You learn how to cast One with Shadows (Class Action)|One with Shadows.",
+                                                "image": "One with Shadows.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Repelling Blast",
+                                        "grants": [
+                                            {
+                                                "name": "Repelling Blast",
+                                                "type": 2,
+                                                "description": "When you hit a creature with Eldritch Blast, you can push the creature up to m=4.5|ft=15 away from you.",
+                                                "image": "Repelling Blast.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Thief of Five Fates",
+                                        "grants": [
+                                            {
+                                                "name": "Thief of Five Fates",
+                                                "type": 2,
+                                                "description": "Once per Bane (Spell)|Bane}} using a Warlock [[Spell Slot.\n\nBane targets up to 3 creatures. They receive a 1d4 penalty to Attack Rolls and Saving Throws.",
+                                                "image": "Thief of Five Fates.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sign of Ill Omen",
+                                        "grants": [
+                                            {
+                                                "name": "Sign of Ill Omen",
+                                                "type": 2,
+                                                "description": "You can cast Bestow Curse with a Warlock Spell Slot.",
+                                                "image": "Sign of Ill Omen.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mire the Mind",
+                                        "grants": [
+                                            {
+                                                "name": "Mire the Mind",
+                                                "type": 2,
+                                                "description": "You can cast Slow with a Warlock spell slot.",
+                                                "image": "Mire the Mind.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Book of Ancient Secrets",
+                                        "grants": [
+                                            {
+                                                "name": "Book of Ancient Secrets",
+                                                "type": 2,
+                                                "description": "You can inscribe magical rituals in your Book of Shadows. Gain Ray of Sickness, Chromatic Orb, and Silence spells.\n\nYou can cast them once per Long Rest and they don't expend spell slots",
+                                                "image": "Book of Ancient Secrets.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dreadful Word",
+                                        "grants": [
+                                            {
+                                                "name": "Dreadful Word",
+                                                "type": 2,
+                                                "description": "You can cast Confusion with a Warlock spell slot.",
+                                                "image": "Dreadful Word.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sculptor of Flesh",
+                                        "grants": [
+                                            {
+                                                "name": "Sculptor of Flesh",
+                                                "type": 2,
+                                                "description": "You can cast Polymorph with a Warlock spell slot.",
+                                                "image": "Sculptor of Flesh.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Minions of Chaos",
+                                        "grants": [
+                                            {
+                                                "name": "Minions of Chaos",
+                                                "type": 2,
+                                                "description": "You can cast Conjure Elemental with a Warlock spell slot.",
+                                                "image": "Minions of Chaos.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Otherworldly Leap",
+                                        "grants": [
+                                            {
+                                                "name": "Otherworldly Leap",
+                                                "type": 2,
+                                                "description": "You can cast Enhance Leap as a ritual spell out-of-combat, but it does expend a Warlock slot to cast in turn-based mode.As of 4.1.1.3748643. This may be a bug.",
+                                                "image": "Otherworldly Leap.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Whispers of the Grave",
+                                        "grants": [
+                                            {
+                                                "name": "Whispers of the Grave",
+                                                "type": 2,
+                                                "description": "You can cast Speak with Dead without expending a Spell Slot.",
+                                                "image": "Whispers of the Grave.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Lifedrinker",
+                                        "grants": [
+                                            {
+                                                "name": "Lifedrinker",
+                                                "type": 2,
+                                                "description": "Add your Charisma modifier to the damage of your melee weapon attacks.",
+                                                "image": "Lifedrinker.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 3,
@@ -33820,8 +34684,224 @@
                         ]
                     },
                     {
-                        "name": "eldritch invocations",
-                        "grants": []
+                        "name": "Eldritch Invocations",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "options": [
+                                    {
+                                        "name": "Agonising Blast",
+                                        "grants": [
+                                            {
+                                                "name": "Agonising Blast",
+                                                "type": 2,
+                                                "description": "When you cast Eldritch Blast, add your Charisma Modifier to the damage it deals, unless it is negative.",
+                                                "image": "Agonising Blast.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Armour of Shadows",
+                                        "grants": [
+                                            {
+                                                "name": "Armour of Shadows",
+                                                "type": 2,
+                                                "description": "You can cast Mage Armour on yourself at will, without expending a Spell Slot. Mage Armour increases your Armour Class when you are not wearing armour.",
+                                                "image": "Armour of Shadows.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beast Speech",
+                                        "grants": [
+                                            {
+                                                "name": "Beast Speech",
+                                                "type": 2,
+                                                "description": "You can cast Speak with Animals on yourself at will, without expending a Spell Slot.",
+                                                "image": "Beast Speech.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beguiling Influence",
+                                        "grants": [
+                                            {
+                                                "name": "Beguiling Influence",
+                                                "type": 2,
+                                                "description": "You invoke your patron's bewitching charm. You gain Proficiency in the Deception and Persuasion.",
+                                                "image": "Beguiling Influence.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Devil's Sight",
+                                        "grants": [
+                                            {
+                                                "name": "Devil's Sight",
+                                                "type": 2,
+                                                "description": "You can see normally in darkness, both magical and non-magical, to a distance ofm=24|ft=80.",
+                                                "image": "Devils Sight.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fiendish Vigour",
+                                        "grants": [
+                                            {
+                                                "name": "Fiendish Vigour",
+                                                "type": 2,
+                                                "description": "You can cast False Life on yourself at will as a 1st-level spell, without expending a Spell Slot. False Life grants you 7 Temporary Hit Points|Healing.",
+                                                "image": "Fiendish Vigour.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mask of Many Faces",
+                                        "grants": [
+                                            {
+                                                "name": "Mask of Many Faces",
+                                                "type": 2,
+                                                "description": "You can cast Disguise Self on yourself at will, without expending a Spell Slot.",
+                                                "image": "Mask of Many Faces.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "One with Shadows",
+                                        "grants": [
+                                            {
+                                                "name": "One with Shadows",
+                                                "type": 2,
+                                                "description": "You learn how to cast One with Shadows (Class Action)|One with Shadows.",
+                                                "image": "One with Shadows.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Repelling Blast",
+                                        "grants": [
+                                            {
+                                                "name": "Repelling Blast",
+                                                "type": 2,
+                                                "description": "When you hit a creature with Eldritch Blast, you can push the creature up to m=4.5|ft=15 away from you.",
+                                                "image": "Repelling Blast.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Thief of Five Fates",
+                                        "grants": [
+                                            {
+                                                "name": "Thief of Five Fates",
+                                                "type": 2,
+                                                "description": "Once per Bane (Spell)|Bane}} using a Warlock [[Spell Slot.\n\nBane targets up to 3 creatures. They receive a 1d4 penalty to Attack Rolls and Saving Throws.",
+                                                "image": "Thief of Five Fates.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sign of Ill Omen",
+                                        "grants": [
+                                            {
+                                                "name": "Sign of Ill Omen",
+                                                "type": 2,
+                                                "description": "You can cast Bestow Curse with a Warlock Spell Slot.",
+                                                "image": "Sign of Ill Omen.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mire the Mind",
+                                        "grants": [
+                                            {
+                                                "name": "Mire the Mind",
+                                                "type": 2,
+                                                "description": "You can cast Slow with a Warlock spell slot.",
+                                                "image": "Mire the Mind.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Book of Ancient Secrets",
+                                        "grants": [
+                                            {
+                                                "name": "Book of Ancient Secrets",
+                                                "type": 2,
+                                                "description": "You can inscribe magical rituals in your Book of Shadows. Gain Ray of Sickness, Chromatic Orb, and Silence spells.\n\nYou can cast them once per Long Rest and they don't expend spell slots",
+                                                "image": "Book of Ancient Secrets.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dreadful Word",
+                                        "grants": [
+                                            {
+                                                "name": "Dreadful Word",
+                                                "type": 2,
+                                                "description": "You can cast Confusion with a Warlock spell slot.",
+                                                "image": "Dreadful Word.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sculptor of Flesh",
+                                        "grants": [
+                                            {
+                                                "name": "Sculptor of Flesh",
+                                                "type": 2,
+                                                "description": "You can cast Polymorph with a Warlock spell slot.",
+                                                "image": "Sculptor of Flesh.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Minions of Chaos",
+                                        "grants": [
+                                            {
+                                                "name": "Minions of Chaos",
+                                                "type": 2,
+                                                "description": "You can cast Conjure Elemental with a Warlock spell slot.",
+                                                "image": "Minions of Chaos.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Otherworldly Leap",
+                                        "grants": [
+                                            {
+                                                "name": "Otherworldly Leap",
+                                                "type": 2,
+                                                "description": "You can cast Enhance Leap as a ritual spell out-of-combat, but it does expend a Warlock slot to cast in turn-based mode.As of 4.1.1.3748643. This may be a bug.",
+                                                "image": "Otherworldly Leap.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Whispers of the Grave",
+                                        "grants": [
+                                            {
+                                                "name": "Whispers of the Grave",
+                                                "type": 2,
+                                                "description": "You can cast Speak with Dead without expending a Spell Slot.",
+                                                "image": "Whispers of the Grave.webp"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Lifedrinker",
+                                        "grants": [
+                                            {
+                                                "name": "Lifedrinker",
+                                                "type": 2,
+                                                "description": "Add your Charisma modifier to the damage of your melee weapon attacks.",
+                                                "image": "Lifedrinker.webp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 4,
