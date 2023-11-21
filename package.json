@@ -28,7 +28,7 @@
     "author": "Jorgen Swiderski",
     "license": "MIT",
     "dependencies": {
-        "@jorgenswiderski/tomekeeper-shared": "^1.0.16",
+        "@jorgenswiderski/tomekeeper-shared": "^1.0.17",
         "bunyan": "^1.8.15",
         "bunyan-rotating-file-stream": "^2.0.5",
         "cors": "^2.8.5",
