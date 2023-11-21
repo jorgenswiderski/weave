@@ -11592,6 +11592,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Archery",
@@ -18389,6 +18390,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Defence",
@@ -21111,6 +21113,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Bounty Hunter",
@@ -21177,6 +21180,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Beast Tamer",
@@ -21256,6 +21260,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Archery",
@@ -22267,6 +22272,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Bounty Hunter",
@@ -22333,6 +22339,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Beast Tamer",
@@ -23335,6 +23342,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Bounty Hunter",
@@ -23401,6 +23409,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Beast Tamer",
@@ -28065,6 +28074,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 2,
                                 "options": [
                                     {
                                         "name": "Metamagic: Careful Spell",
@@ -28142,6 +28152,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Metamagic: Careful Spell",
@@ -30015,6 +30026,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Metamagic: Careful Spell",
@@ -31066,6 +31078,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 2,
                                 "options": [
                                     {
                                         "name": "Agonising Blast",
@@ -31198,6 +31211,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Pact of the Chain",
@@ -32078,6 +32092,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Agonising Blast",
@@ -32290,6 +32305,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Agonising Blast",
@@ -33291,6 +33307,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Agonising Blast",
@@ -34393,6 +34410,7 @@
                         "choices": [
                             {
                                 "type": 23,
+                                "count": 1,
                                 "options": [
                                     {
                                         "name": "Agonising Blast",

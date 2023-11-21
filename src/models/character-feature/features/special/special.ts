@@ -7,6 +7,10 @@ export class CharacterFeatureSorcererMetamagic extends CharacterFeature {
         feature: 'Metamagic',
         minLevel: 'Level',
     };
+
+    protected getChoiceCount(): number {
+        return this.level === 2 ? 2 : 1;
+    }
 }
 
 export class CharacterFeatureWarlockEldritchInvocation extends CharacterFeature {
@@ -14,6 +18,10 @@ export class CharacterFeatureWarlockEldritchInvocation extends CharacterFeature 
         feature: 'Invocation',
         minLevel: 'Level',
     };
+
+    protected getChoiceCount(): number {
+        return this.level === 2 ? 2 : 1;
+    }
 }
 
 export class CharacterFeatureFightingStyle extends CharacterFeature {

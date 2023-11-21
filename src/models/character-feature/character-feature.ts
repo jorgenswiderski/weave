@@ -377,6 +377,12 @@ export class CharacterFeature
         );
     }
 
+    // To be overridden by special features like CharacterFeatureMetamagic
+    // eslint-disable-next-line class-methods-use-this
+    protected getChoiceCount(): number {
+        return 1;
+    }
+
     protected async parsePageForChoice(): Promise<ICharacterChoiceWithStubs | null> {
         if (!this.page) {
             throw new PageNotFoundError();
@@ -396,15 +402,15 @@ export class CharacterFeature
         }
 
         if (options.length === 0) {
+            warn(`Couldn't find any options on page '${this.page.title}'`);
+
             return null;
         }
 
         return {
             type: CharacterPlannerStep.CLASS_FEATURE_SUBCHOICE,
+            count: this.getChoiceCount(),
             options,
-
-            // TODO
-            // count: 1
         };
     }
 
