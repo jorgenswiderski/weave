@@ -15574,7 +15574,7 @@
         },
         {
             "pageId": 28354,
-            "revisionId": 113221,
+            "revisionId": 114901,
             "title": "Flail of Madness"
         },
         {
@@ -15701,6 +15701,26 @@
             "pageId": 28652,
             "revisionId": 114356,
             "title": "Soul Catching Prowess"
+        },
+        {
+            "pageId": 28678,
+            "revisionId": 114601,
+            "title": "+1 Breastplate"
+        },
+        {
+            "pageId": 28681,
+            "revisionId": 114669,
+            "title": "Bite (Alioramus)"
+        },
+        {
+            "pageId": 28682,
+            "revisionId": 114639,
+            "title": "Pounce (Alioramus)"
+        },
+        {
+            "pageId": 28684,
+            "revisionId": 114693,
+            "title": "Exude Mating Pheromones"
         }
     ],
     "deadLinks": [

@@ -52,7 +52,7 @@ export class PageData implements IPageData {
         this.pageId = pageId;
         this.categories = categories;
         this.lastFetched = lastFetched;
-        this.content = content;
+        this.content = MediaWikiParser.removeComments(content);
     }
 
     hasCategory(categoryNames: string[] | string): boolean {
@@ -89,10 +89,8 @@ export class PageData implements IPageData {
     }
 
     protected getRawTemplateNames(): string[] {
-        const commentless = MediaWikiParser.removeComments(this.content);
-
         const allTemplateNames = [
-            ...commentless.matchAll(/{{(?:Template:)?([^|}]+)[\s\S]*?}}/g),
+            ...this.content.matchAll(/{{(?:Template:)?([^|}]+)[\s\S]*?}}/g),
         ]
             .map((match) => match[1].trim())
             .filter((name) => {

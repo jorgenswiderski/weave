@@ -129,7 +129,7 @@ export class CharacterSubclass extends CharacterFeature {
         }
 
         const featureSection =
-            /\n==\s*Subclass\s[fF]eatures\s*==\s*\n([\s\S]*?)(?=\n==\s*[^=]+?\s*==\s*\n|{{\w+Navbox}})/;
+            /\n\s*==\s*Subclass\sFeatures\s*==\s*\n([\s\S]*?)(?=\n\s*==\s*[^=]+?\s*==\s*\n|{{\w+Navbox}})/i;
 
         const sectionMatch = featureSection.exec(this.page.content);
         const subclassFeatureLevels: number[] = [];
@@ -141,7 +141,7 @@ export class CharacterSubclass extends CharacterFeature {
         }
 
         const levelSection =
-            /\n===\s*Level\s(\d+)\s*===\s*\n([\s\S]*?)(?=\n===\s*Level|$)/g;
+            /\n===\s*Level\s(\d+)\s*===\s*\n([\s\S]*?)(?=\n===\s*Level|$)/gi;
 
         const levelMatches = [...sectionMatch[1].matchAll(levelSection)];
 

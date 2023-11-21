@@ -15114,6 +15114,47 @@
     ],
     "9": [
         {
+            "name": "+1 Breastplate",
+            "image": "",
+            "icon": "",
+            "description": "+1 Breastplate is a common Medium Armour.",
+            "quote": "Wearing this \"plus one\" garment allows you to bring one additional person to a wedding or any other similar occasion.",
+            "type": 9,
+            "rarity": 1,
+            "weightKg": 9,
+            "weightLb": 20,
+            "price": 100,
+            "effects": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Rivington",
+                            "id": 11636
+                        },
+                        "location": {
+                            "name": "Circus of the Last Days",
+                            "id": 11641
+                        }
+                    },
+                    "character": {
+                        "name": "Akabi",
+                        "id": 10404
+                    }
+                }
+            ],
+            "proficiency": 2,
+            "baseArmorClass": 14,
+            "id": 28678
+        },
+        {
             "name": "Adamantine Scale Mail",
             "image": "Adamantine Scale Mail Icon.png",
             "icon": "Adamantine Scale Mail Unfaded Icon.png",

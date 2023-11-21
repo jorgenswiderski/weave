@@ -22,13 +22,12 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
     parseWikitextFromPage(templateName: string): string {
         const regex = new RegExp(`{{(?:Template:)?${templateName}`, 'g');
 
-        const commentless = MediaWikiParser.removeComments(this.page.content);
         let depth = 0;
         let startIndex = -1;
         let endIndex = -1;
 
         while (true) {
-            const match = regex.exec(commentless);
+            const match = regex.exec(this.page.content);
 
             if (!match) {
                 break;
@@ -40,13 +39,20 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
 
             depth += 1;
 
-            for (let i = regex.lastIndex; i < commentless.length; i += 1) {
-                if (commentless[i] === '{' && commentless[i + 1] === '{') {
+            for (
+                let i = regex.lastIndex;
+                i < this.page.content.length;
+                i += 1
+            ) {
+                if (
+                    this.page.content[i] === '{' &&
+                    this.page.content[i + 1] === '{'
+                ) {
                     depth += 1;
                     i += 1; // Skip next '{' as it's part of '}}'
                 } else if (
-                    commentless[i] === '}' &&
-                    commentless[i + 1] === '}'
+                    this.page.content[i] === '}' &&
+                    this.page.content[i + 1] === '}'
                 ) {
                     depth -= 1;
                     i += 1; // Skip next '}' as it's part of '}}'
@@ -69,7 +75,7 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
             );
         }
 
-        const wikitext = commentless.substring(startIndex, endIndex);
+        const wikitext = this.page.content.substring(startIndex, endIndex);
 
         return wikitext;
     }

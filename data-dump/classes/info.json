@@ -11789,7 +11789,26 @@
                                         "name": "Battle Master",
                                         "description": "Battle Masters are paragons of tactical superiority, combining combat manoeuvres  and experience in the field to dominate every fight.",
                                         "image": "Class_Fighter_Battle_Master_Badge_Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a14411"
+                                            },
+                                            {
+                                                "ref": "a14409"
+                                            },
+                                            {
+                                                "ref": "a14360"
+                                            },
+                                            {
+                                                "ref": "a775"
+                                            },
+                                            {
+                                                "ref": "a780"
+                                            },
+                                            {
+                                                "ref": "a14032"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Champion",

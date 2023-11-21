@@ -734,6 +734,36 @@
         ]
     },
     {
+        "name": "Commander's Strike",
+        "image": "Commanders Strike.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Commander's Strike is a Battle Master Action. This combat manoeuvre allows the Fighter to expend an action, bonus action, and Superiority Dice to have an ally make an weapon attack on their next turn using a reaction.",
+        "description": "Direct an ally to strike a foe. The ally uses a reaction on their next turn to make a weapon attack.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14411,
+        "attackRoll": false,
+        "rangeM": 9,
+        "rangeFt": 30,
+        "condition": "Onus of Battle",
+        "conditionDuration": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Control Undead",
         "image": "Control Undead.webp",
         "level": 0,
@@ -1379,6 +1409,27 @@
         "costs": [
             {
                 "resource": 3,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Evasive Footwork",
+        "image": "Evasive Footwork.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Evasive Footwork is a Battle Master Fighter free action. This combat manoeuvre allows the Fighter to impose Disadvantage on melee attacks made against it for a turn.",
+        "description": "Evade attacks; enemies receive Disadvantage on melee attacks against you.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14409,
+        "attackRoll": false,
+        "range": 3,
+        "condition": "Evasive Footwork",
+        "conditionDuration": 1,
+        "costs": [
+            {
+                "resource": 22,
                 "amount": 1
             }
         ]
@@ -2988,6 +3039,25 @@
         ]
     },
     {
+        "name": "Precision Attack",
+        "image": "Precision Attack.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Precision Attack is a Battle Master Fighter Action. This combat manoeuvre allows the Fighter to increase an attack roll for a higher chance of hitting an opponent.",
+        "description": "Your can spend a Superiority Die to add it to a result to an Attack Roll.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14360,
+        "attackRoll": false,
+        "condition": "Precision Attack",
+        "costs": [
+            {
+                "resource": 22,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Preserve Life",
         "damage": "amount:(3 x Cleric's Level), type:Healing",
         "image": "Preserve Life.webp",
@@ -3315,6 +3385,31 @@
         ]
     },
     {
+        "name": "Rally",
+        "damage": "amounttext:8 Temporary, type:Healing",
+        "image": "Rally.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Rally is a Battle Master Bonus Action. This combat manoeuvre allows the Fighter to inspire an ally and grant them additional temporary hit points.",
+        "description": "Expend a superiority die to bolster the resolve of a friendly creature. It gains an additional Healing|8 Temporary Hit Points",
+        "ritual": false,
+        "concentration": false,
+        "id": 775,
+        "attackRoll": false,
+        "range": 1,
+        "condition": "Rallied",
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Read Thoughts",
         "image": "Read Thoughts.webp",
         "level": 0,
@@ -3391,6 +3486,30 @@
             {
                 "resource": 11,
                 "amount": 4
+            }
+        ]
+    },
+    {
+        "name": "Riposte",
+        "damage": "amounttext:Weapon, type:Physical",
+        "image": "Riposte.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Riposte is a Battle Master Fighter reaction. This ability allows the Battle Master to counterattack and deal damage when an enemy misses them with a melee attack.",
+        "description": "When a creature misses you with a melee attack, expend a superiority die to retaliate with a powerful attack that deals an additional 1d8 Physical damage.\n\nThis is a Reaction. Toggle a reaction during your turn. It will automatically execute when needed.",
+        "ritual": false,
+        "concentration": false,
+        "id": 780,
+        "attackRoll": true,
+        "range": 4,
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1
             }
         ]
     },
@@ -4105,6 +4224,33 @@
         "costs": [
             {
                 "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Sweeping Attack",
+        "damage": "amount:1d10, type:Physical",
+        "image": "Action SweepingAttack Large.png",
+        "level": 0,
+        "school": 0,
+        "summary": "Sweeping Attack is a Class Action using Superiority Dice available to Battle Masters",
+        "description": "Swing your weapon in a rapid, sweeping arc to attack multiple enemies at once. Roll you superiority die for damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14032,
+        "attackRoll": true,
+        "range": 4,
+        "aoe": 5,
+        "aoeM": 3,
+        "aoeFt": 10,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
                 "amount": 1
             }
         ]
