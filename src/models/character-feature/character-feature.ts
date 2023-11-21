@@ -28,6 +28,7 @@ import { MediaWikiParser } from '../media-wiki/wikitext-parser';
 import { IClassFeatureFactory } from './class-feature/types';
 import { WikitableNotFoundError } from '../media-wiki/types';
 import { ICharacterClass } from '../character-class/types';
+import { choiceListConfigs } from './choice-list-configs';
 
 enum CharacterFeatureLoadingStates {
     DESCRIPTION = 'DESCRIPTION',
@@ -279,7 +280,8 @@ export class CharacterFeature
             throw err;
         }
 
-        const config = this.choiceListConfig;
+        const config =
+            choiceListConfigs.get(pageTitle) ?? this.choiceListConfig;
 
         const features: ICharacterOptionWithStubs[] = (
             await Promise.all(
@@ -325,20 +327,47 @@ export class CharacterFeature
 
                     const featureCell = row[config.feature];
 
-                    const featureMatch =
-                        featureCell.match(/{{(Icon|SAI|SmIconLink)\|[^}]+}}/) ??
-                        featureCell.match(/\[\[[^\]]+?\]\]/);
+                    const featureTitles = [
+                        ...featureCell.matchAll(
+                            /{{(?:Icon|SAI|SmIconLink)\|([^|}]+).*?}}/g,
+                        ),
+                        ...featureCell.matchAll(/\[\[([^|\]]+).*?\]\]/g),
+                    ]
+                        .map(([, title]) => title)
+                        .slice(0, config.matchAll ? undefined : 1);
 
-                    if (!featureMatch?.[0]) {
-                        throw new Error();
+                    if (featureTitles.length === 0) {
+                        throw new Error(
+                            `Could not find feature at row key ${config.feature} in wikitable on page '${pageTitle}'`,
+                        );
                     }
 
-                    return CharacterFeature.factory!.fromWikitext(
-                        featureMatch[0],
-                    );
+                    const effects = (
+                        await Promise.all(
+                            featureTitles.map((title) =>
+                                CharacterFeature.parsePageForGrantableEffect(
+                                    title,
+                                ),
+                            ),
+                        )
+                    ).filter(Boolean) as (
+                        | GrantableEffect
+                        | StaticallyReferenceable
+                    )[];
+
+                    const name = config.name
+                        ? MediaWikiParser.stripMarkup(row[config.name])
+                        : featureTitles[0];
+
+                    return {
+                        name: MediaWikiParser.parseNameFromPageTitle(name),
+                        grants: effects,
+                    };
                 }),
             )
-        ).filter(Boolean) as ICharacterOptionWithStubs[];
+        )
+            .flat()
+            .filter(Boolean) as ICharacterOptionWithStubs[];
 
         return features;
     }

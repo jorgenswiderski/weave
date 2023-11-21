@@ -1,9 +1,9 @@
-import { ICharacterOption } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
+import { ICharacterOptionWithStubs } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { PageItem } from '../page-item';
 
 export interface CharacterProgressionLevel {
     Level: number;
-    Features: ICharacterOption[];
+    Features: ICharacterOptionWithStubs[];
 }
 
 export interface CharacterClassProgressionLevel

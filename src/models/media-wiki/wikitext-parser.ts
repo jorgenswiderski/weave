@@ -58,7 +58,7 @@ export class MediaWikiParser {
     }
 
     protected static parseWikiTableCell(wikitext: string): string {
-        const match = wikitext.match(/\s*(?:style=".+?"\s*\|)?\s*(.+)\s*/);
+        const match = wikitext.match(/\s*(?:style=".+?"\s*\|)?\s*([\s\S]+)\s*/);
 
         if (!match?.[1]) {
             throw new Error();
@@ -67,6 +67,7 @@ export class MediaWikiParser {
         return match[1].trim();
     }
 
+    static parseWikiTable(sectionWikitext: string): Record<string, string>[];
     static parseWikiTable(sectionWikitext: string, format: '2d'): string[][];
     static parseWikiTable(
         sectionWikitext: string,

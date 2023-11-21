@@ -1180,6 +1180,29 @@
         ]
     },
     {
+        "name": "Diving Strike",
+        "damage": "amounttext:Weapon, type:Physical",
+        "image": "Diving Strike.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Diving Strike is a Wildheart action only available while using Rage: Eagle Heart, allowing you to leap down on a target dealing damage and knocking them prone.",
+        "description": "Leap down unto a foe below you, dealing Weapon Damage and knocking them Prone.\n\nYou do not take Falling damage. You must be at least m=1.5|ft=5 above your target.\n\nAvailable only when Rage|Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1150,
+        "attackRoll": true,
+        "rangeM": 8,
+        "rangeFt": 25,
+        "condition": "Prone",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Dread Ambusher: Hide",
         "image": "Dread Ambusher Hide.webp",
         "level": 0,
@@ -2992,6 +3015,34 @@
         ]
     },
     {
+        "name": "Primal Stampede",
+        "damage": "amounttext:1d4 + Strength modifier, type:Bludgeoning",
+        "level": 0,
+        "school": 0,
+        "summary": "Primal Stampede is a Wildheart action only available while using Rage: Elk Heart, allowing you charge in a line dealing damage to all enemies and knocking them prone.",
+        "description": "Charge forward, attacking all hostile creatures in your way. Deals 1d4 {{DamageModifier|Strength|Bludgeoning}} damage and knocks targets Prone.\n\nAvailable only when Rage|Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1152,
+        "attackRoll": true,
+        "rangeM": 9,
+        "rangeFt": 30,
+        "aoeM": 9,
+        "aoeFt": 30,
+        "condition": "Prone",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 4,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Projected Ward",
         "image": "Projected Ward.webp",
         "level": 0,
@@ -4176,6 +4227,30 @@
         "costs": [
             {
                 "resource": 25,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Tiger's Bloodlust",
+        "damage": "amounttext:1/2 Normal Weapon Damage, type:Physical",
+        "image": "Tiger's Bloodlust.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Tiger's Bloodlust is a Wildheart action only available while using Rage: Tiger Heart, allowing you to attack multiple nearby enemies at once.",
+        "description": "Lash out to attack up to 3 enemies at once. They each take half the damage your weapon usually deals and start to Bleeding|Bleed.\n\nAvailable only when Rage|Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1155,
+        "attackRoll": true,
+        "aoe": 2,
+        "aoeM": 2,
+        "aoeFt": 5,
+        "condition": "Bleeding",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
                 "amount": 1
             }
         ]

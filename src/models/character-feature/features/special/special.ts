@@ -23,10 +23,3 @@ export class CharacterFeatureWarlockEldritchInvocation extends CharacterFeature 
         return this.level === 2 ? 2 : 1;
     }
 }
-
-export class CharacterFeatureFightingStyle extends CharacterFeature {
-    choiceListConfig: ChoiceListConfig = {
-        feature: 'Fighting Style',
-        classes: 'Available To',
-    };
-}

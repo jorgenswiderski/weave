@@ -105,27 +105,68 @@
                                         "grants": [
                                             {
                                                 "ref": "s1585"
-                                            },
+                                            }
+                                        ],
+                                        "choices": [
                                             {
-                                                "ref": "a1147"
-                                            },
-                                            {
-                                                "ref": "a1148"
-                                            },
-                                            {
-                                                "ref": "a1151"
-                                            },
-                                            {
-                                                "ref": "a1153"
-                                            },
-                                            {
-                                                "ref": "a1154"
-                                            },
-                                            {
-                                                "ref": "a1157"
-                                            },
-                                            {
-                                                "ref": "a1156"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Bear Heart",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a1147"
+                                                            },
+                                                            {
+                                                                "ref": "a1148"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Eagle Heart",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a1151"
+                                                            },
+                                                            {
+                                                                "ref": "a1150"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Elk Heart",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a1153"
+                                                            },
+                                                            {
+                                                                "ref": "a1152"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Tiger Heart",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a1154"
+                                                            },
+                                                            {
+                                                                "ref": "a1155"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Wolf Heart",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a1157"
+                                                            },
+                                                            {
+                                                                "ref": "a1156"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
@@ -1025,66 +1066,122 @@
                                         "name": "Wildheart",
                                         "description": "Your attunement with nature and its beasts inspires your rage, empowering you with supernatural might.",
                                         "image": "Class Barbarian Wildheart Badge Icon.png",
-                                        "grants": [
+                                        "grants": [],
+                                        "choices": [
                                             {
-                                                "name": "Aspect of the Beast (Bear)",
-                                                "type": 2,
-                                                "description": "The Aspect of the Bear infuses you with strength.\n\nYour Checks.",
-                                                "image": "Aspect of the Beast Bear.webp"
-                                            },
-                                            {
-                                                "name": "Aspect of the Beast (Chimpanzee)",
-                                                "type": 2,
-                                                "description": "The Aspect of the Chimpanzee grants you a nimble mischievousness.\n\nYou gain Resistance to Falling damage, and throwing camp supplies Blinded|Blinds targets.",
-                                                "image": "Aspect of the Beast Chimpanzee.webp"
-                                            },
-                                            {
-                                                "name": "Aspect of the Beast (Crocodile)",
-                                                "type": 2,
-                                                "description": "The Aspect of the Crocodile increases your agility in the water.\n\nYour Movement Speed increases by m=3|ft=10 while standing in water-based surfaces.\n\nOn slippery surfaces, you also have Advantage on Saving Throws against being knocked Prone",
-                                                "image": "Aspect of the Beast Crocodile.webp"
-                                            },
-                                            {
-                                                "name": "Aspect of the Beast (Eagle)",
-                                                "type": 2,
-                                                "description": "The Aspect of the Eagle enhances your eyesight.\n\nYou can see in the dark up to m=12|ft=40, and gain Advantage on Perception Checks.",
-                                                "image": "Aspect of the Beast Eagle.webp"
-                                            },
-                                            {
-                                                "name": "Aspect of the Beast (Elk)",
-                                                "type": 2,
-                                                "description": "The Aspect of the Elk grants you astounding swiftness.\n\nYou can use Aspect of the Elk, giving yourself and nearby allies extra Movement Speed.",
-                                                "image": "Aspect of the Beast Elk.webp"
-                                            },
-                                            {
-                                                "name": "Aspect of the Beast (Honey Badger)",
-                                                "type": 2,
-                                                "description": "If you're Poisoned, Frightened, or Charmed at the start of your turn, you have a 50% chance to begin Raging without expending a Rage Charge.",
-                                                "image": "Aspect of the Beast Honey Badger.webp"
-                                            },
-                                            {
-                                                "name": "Aspect of the Beast (Stallion)",
-                                                "type": 2,
-                                                "description": "The Aspect of the Stallion creates safety in movement.\n\nDashing grants you temporary hit points equal to twice your Barbarian level.\n\nCan only have temporary hit points from one source.",
-                                                "image": "Aspect of the Beast Stallion.webp"
-                                            },
-                                            {
-                                                "name": "Aspect of the Beast (Tiger)",
-                                                "type": 2,
-                                                "description": "The Aspect of the Tiger infuses you with an unrelenting ferocity.\n\nYou add an additional Strength Modifier to Bleeding}} or Poisoned targets, and gain Proficiency in [[Survival",
-                                                "image": "Aspect of the Beast Tiger.webp"
-                                            },
-                                            {
-                                                "name": "Aspect of the Beast (Wolf)",
-                                                "type": 2,
-                                                "description": "The Aspect of the Wolf boosts your stealthiness.\n\nYou gain Proficiency in Stealth, and can use Aspect of the Wolf.",
-                                                "image": "Aspect of the Beast Wolf.webp"
-                                            },
-                                            {
-                                                "name": "Aspect of the Beast (Wolverine)",
-                                                "type": 2,
-                                                "description": "The Aspect of the Wolverine grants you the tools to relentlessly pursue your prey.\n\nWhen you attack a Bleeding or Poisoned target, you also Maimed|Maim it for 1 turn",
-                                                "image": "Aspect of the Beast Wolverine.webp"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Aspect of the Beast (Bear)",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Aspect of the Beast (Bear)",
+                                                                "type": 2,
+                                                                "description": "The Aspect of the Bear infuses you with strength.\n\nYour Checks.",
+                                                                "image": "Aspect of the Beast Bear.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Chimpanzee)",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Aspect of the Beast (Chimpanzee)",
+                                                                "type": 2,
+                                                                "description": "The Aspect of the Chimpanzee grants you a nimble mischievousness.\n\nYou gain Resistance to Falling damage, and throwing camp supplies Blinded|Blinds targets.",
+                                                                "image": "Aspect of the Beast Chimpanzee.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Crocodile)",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Aspect of the Beast (Crocodile)",
+                                                                "type": 2,
+                                                                "description": "The Aspect of the Crocodile increases your agility in the water.\n\nYour Movement Speed increases by m=3|ft=10 while standing in water-based surfaces.\n\nOn slippery surfaces, you also have Advantage on Saving Throws against being knocked Prone",
+                                                                "image": "Aspect of the Beast Crocodile.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Eagle)",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Aspect of the Beast (Eagle)",
+                                                                "type": 2,
+                                                                "description": "The Aspect of the Eagle enhances your eyesight.\n\nYou can see in the dark up to m=12|ft=40, and gain Advantage on Perception Checks.",
+                                                                "image": "Aspect of the Beast Eagle.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Elk)",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Aspect of the Beast (Elk)",
+                                                                "type": 2,
+                                                                "description": "The Aspect of the Elk grants you astounding swiftness.\n\nYou can use Aspect of the Elk, giving yourself and nearby allies extra Movement Speed.",
+                                                                "image": "Aspect of the Beast Elk.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Honey Badger)",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Aspect of the Beast (Honey Badger)",
+                                                                "type": 2,
+                                                                "description": "If you're Poisoned, Frightened, or Charmed at the start of your turn, you have a 50% chance to begin Raging without expending a Rage Charge.",
+                                                                "image": "Aspect of the Beast Honey Badger.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Stallion)",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Aspect of the Beast (Stallion)",
+                                                                "type": 2,
+                                                                "description": "The Aspect of the Stallion creates safety in movement.\n\nDashing grants you temporary hit points equal to twice your Barbarian level.\n\nCan only have temporary hit points from one source.",
+                                                                "image": "Aspect of the Beast Stallion.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Tiger)",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Aspect of the Beast (Tiger)",
+                                                                "type": 2,
+                                                                "description": "The Aspect of the Tiger infuses you with an unrelenting ferocity.\n\nYou add an additional Strength Modifier to Bleeding}} or Poisoned targets, and gain Proficiency in [[Survival",
+                                                                "image": "Aspect of the Beast Tiger.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Wolf)",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Aspect of the Beast (Wolf)",
+                                                                "type": 2,
+                                                                "description": "The Aspect of the Wolf boosts your stealthiness.\n\nYou gain Proficiency in Stealth, and can use Aspect of the Wolf.",
+                                                                "image": "Aspect of the Beast Wolf.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Wolverine)",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Aspect of the Beast (Wolverine)",
+                                                                "type": 2,
+                                                                "description": "The Aspect of the Wolverine grants you the tools to relentlessly pursue your prey.\n\nWhen you attack a Bleeding or Poisoned target, you also Maimed|Maim it for 1 turn",
+                                                                "image": "Aspect of the Beast Wolverine.webp"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
@@ -21391,21 +21488,42 @@
                                         "name": "Hunter",
                                         "description": "Hunters seek the most dangerous prey in Faerûn, from ancient dragons to massive hordes of undead, and excel at slaying them all.",
                                         "image": "Class Ranger Hunter Badge Icon.png",
-                                        "grants": [
+                                        "grants": [],
+                                        "choices": [
                                             {
-                                                "name": "Colossus Slayer",
-                                                "type": 2,
-                                                "description": "Once per turn, your weapon attack deals an extra 1d8|Physical|drs=t damage if the target is below its hit point maximum.",
-                                                "image": "Colossus Slayer.webp"
-                                            },
-                                            {
-                                                "ref": "a1441"
-                                            },
-                                            {
-                                                "name": "Horde Breaker",
-                                                "type": 2,
-                                                "description": "Target two creatures standing close to each other, attacking them in quick succession.",
-                                                "image": "Horde Breaker Melee.webp"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Colossus Slayer",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Colossus Slayer",
+                                                                "type": 2,
+                                                                "description": "Once per turn, your weapon attack deals an extra 1d8|Physical|drs=t damage if the target is below its hit point maximum.",
+                                                                "image": "Colossus Slayer.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Giant Killer",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a1441"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Horde Breaker",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Horde Breaker",
+                                                                "type": 2,
+                                                                "description": "Target two creatures standing close to each other, attacking them in quick succession.",
+                                                                "image": "Horde Breaker Melee.webp"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
@@ -22459,24 +22577,45 @@
                                         "name": "Hunter",
                                         "description": "Hunters seek the most dangerous prey in Faerûn, from ancient dragons to massive hordes of undead, and excel at slaying them all.",
                                         "image": "Class Ranger Hunter Badge Icon.png",
-                                        "grants": [
+                                        "grants": [],
+                                        "choices": [
                                             {
-                                                "name": "Escape the Horde",
-                                                "type": 2,
-                                                "description": "Opportunity Attacks against you have Disadvantage.",
-                                                "image": "Escape the Horde.webp"
-                                            },
-                                            {
-                                                "name": "Steel Will",
-                                                "type": 2,
-                                                "description": "Advantage on SavingThrows against being Frightened.",
-                                                "image": "Steel Will.webp"
-                                            },
-                                            {
-                                                "name": "Multiattack Defence",
-                                                "type": 2,
-                                                "description": "When a enemy attacks you, they suffer -4 penalty to additional Attack Rolls against you until start of their next turn.",
-                                                "image": "Multiattack Defense.webp"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Escape the Horde",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Escape the Horde",
+                                                                "type": 2,
+                                                                "description": "Opportunity Attacks against you have Disadvantage.",
+                                                                "image": "Escape the Horde.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Steel Will",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Steel Will",
+                                                                "type": 2,
+                                                                "description": "Advantage on SavingThrows against being Frightened.",
+                                                                "image": "Steel Will.webp"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Multiattack Defense",
+                                                        "grants": [
+                                                            {
+                                                                "name": "Multiattack Defence",
+                                                                "type": 2,
+                                                                "description": "When a enemy attacks you, they suffer -4 penalty to additional Attack Rolls against you until start of their next turn.",
+                                                                "image": "Multiattack Defense.webp"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }

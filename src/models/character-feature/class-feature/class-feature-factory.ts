@@ -3,9 +3,8 @@ import { error, warn } from '../../logger';
 import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeat } from '../features/character-feat';
-import { ClassSubclass } from '../features/character-subclass';
+import { ClassSubclassOption } from '../features/character-subclass-option';
 import {
-    CharacterFeatureFightingStyle,
     CharacterFeatureSorcererMetamagic,
     CharacterFeatureWarlockEldritchInvocation,
 } from '../features/special/special';
@@ -47,7 +46,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
                 );
             }
 
-            return new ClassSubclass(characterClass.name, type, level);
+            return new ClassSubclassOption(characterClass.name, type, level);
         }
 
         if (type === CharacterFeatureTypes.FEAT) {
@@ -65,15 +64,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             );
         }
 
-        if (type === CharacterFeatureTypes.FIGHTING_STYLE) {
-            return new CharacterFeatureFightingStyle(
-                options,
-                level,
-                characterClass,
-            );
-        }
-
-        return new CharacterFeature(options, level);
+        return new CharacterFeature(options, level, characterClass);
     }
 
     protected parserSpecialCases: {
@@ -95,10 +86,6 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
         'eldritch invocation': {
             type: CharacterFeatureTypes.WARLOCK_ELDRITCH_INVOCATION,
             pageTitle: 'Eldritch Invocation',
-        },
-        'fighting style': {
-            type: CharacterFeatureTypes.FIGHTING_STYLE,
-            pageTitle: 'Fighting Style',
         },
     };
 
