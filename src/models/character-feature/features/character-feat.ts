@@ -4,10 +4,10 @@ import {
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import {
-    Characteristic,
     CharacteristicType,
     GrantableEffect,
     GrantableEffectType,
+    ICharacteristic,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import { error } from '../../logger';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
@@ -149,7 +149,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                             abilityImprovement,
                         } = data;
 
-                        const fx: (GrantableEffect | Characteristic)[] = (
+                        const fx: (GrantableEffect | ICharacteristic)[] = (
                             await Promise.all(
                                 grants.map((pageTitle) =>
                                     CharacterFeature.parsePageForGrantableEffect(

@@ -14,10 +14,7 @@
                                 "ref": "a6607"
                             },
                             {
-                                "name": "Draconic Ancestry (Acid)",
-                                "type": 2,
-                                "description": "The blood of ancient dragons flow through your veins. You are Resistant to Acid damage.",
-                                "image": "Draconic Ancestry Acid.webp"
+                                "ref": "c6719"
                             }
                         ]
                     },
@@ -29,10 +26,7 @@
                                 "ref": "a4756"
                             },
                             {
-                                "name": "Draconic Ancestry (Fire)",
-                                "type": 2,
-                                "description": "The blood of ancient dragons flow through your veins. You are Resistant to Fire damage.",
-                                "image": "Draconic Ancestry Fire.webp"
+                                "ref": "c6721"
                             }
                         ]
                     },
@@ -44,10 +38,7 @@
                                 "ref": "a6607"
                             },
                             {
-                                "name": "Draconic Ancestry (Acid)",
-                                "type": 2,
-                                "description": "The blood of ancient dragons flow through your veins. You are Resistant to Acid damage.",
-                                "image": "Draconic Ancestry Acid.webp"
+                                "ref": "c6719"
                             }
                         ]
                     },
@@ -59,10 +50,7 @@
                                 "ref": "a6664"
                             },
                             {
-                                "name": "Draconic Ancestry (Poison)",
-                                "type": 2,
-                                "description": "The blood of ancient dragons flow through your veins. You are Resistant to Poison damage.",
-                                "image": "Draconic Ancestry Poison.webp"
+                                "ref": "c6722"
                             }
                         ]
                     },
@@ -74,10 +62,7 @@
                                 "ref": "a4721"
                             },
                             {
-                                "name": "Draconic Ancestry (Cold)",
-                                "type": 2,
-                                "description": "The blood of ancient dragons flow through your veins. You are Resistant to Cold damage.",
-                                "image": "Draconic Ancestry Cold.webp"
+                                "ref": "c6723"
                             }
                         ]
                     }
@@ -112,22 +97,13 @@
         "image": "Race Drow.png",
         "grants": [
             {
-                "name": "Drow Weapon Training",
-                "type": 2,
-                "description": "You have Proficiency with the Rapier, Shortsword, and Hand Crossbow.",
-                "image": "Drow Weapon Training.webp"
+                "ref": "c6562"
             },
             {
-                "name": "Superior Darkvision",
-                "type": 2,
-                "description": "Can see in the dark up to 24m.",
-                "image": "Superior Darkvision.webp"
+                "ref": "c3956"
             },
             {
-                "name": "Fey Ancestry",
-                "type": 2,
-                "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
-                "image": "Fey Ancestry.webp"
+                "ref": "c3953"
             }
         ]
     },
@@ -143,9 +119,7 @@
                         "description": "Gold Dwarves are known for their confidence and keen intuition. The culture of their Deep Kingdom values family, ritual, and fine craftsmanship.",
                         "grants": [
                             {
-                                "name": "Dwarven Toughness",
-                                "type": 2,
-                                "description": "You have 1 extra maximum Hit Points per level."
+                                "ref": "c3960"
                             }
                         ]
                     },
@@ -154,10 +128,7 @@
                         "description": "Shield Dwarves survived a long fall from grace, surrendering many of their ancient kingdoms in wars with Goblins and Orcs. These losses have lead to a cynical mindset, yet Shield Dwarves will endure anything to restore their ancestral homelands.",
                         "grants": [
                             {
-                                "name": "Dwarven Armour Training",
-                                "type": 2,
-                                "description": "You have Armour Proficiency with Light and Medium Armour.",
-                                "image": "Dwarven Armour Training.webp"
+                                "ref": "c6585"
                             }
                         ]
                     },
@@ -166,16 +137,10 @@
                         "description": "Once enslaved by the eldritch Mind Flayers, Duergar adapted to freedom with harsh practicality. Their cold demeanours and gift of stealth are well-known through the Underdark.",
                         "grants": [
                             {
-                                "name": "Superior Darkvision",
-                                "type": 2,
-                                "description": "Can see in the dark up to 24m.",
-                                "image": "Superior Darkvision.webp"
+                                "ref": "c3956"
                             },
                             {
-                                "name": "Duergar Resilience",
-                                "type": 2,
-                                "description": "You have Advantage on Saving Throws  against illusions and against being Charmed or Paralysed.",
-                                "image": "Duergar Resilience.webp"
+                                "ref": "c6053"
                             }
                         ]
                     }
@@ -186,22 +151,13 @@
         "image": "Race Dwarf.png",
         "grants": [
             {
-                "name": "Dwarven Combat Training",
-                "type": 2,
-                "description": "You have Proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammers.",
-                "image": "Dwarven Combat Training.webp"
+                "ref": "c6583"
             },
             {
-                "name": "Darkvision",
-                "type": 2,
-                "description": "Can see in the dark up to 12m.",
-                "image": "Darkvision.webp"
+                "ref": "c3957"
             },
             {
-                "name": "Dwarven Resilience",
-                "type": 2,
-                "description": "You have Advantage on Saving Throws against being Poisoned, and you have Resistance against Poison damage.",
-                "image": "Dwarven Resilience.webp"
+                "ref": "c3959"
             }
         ]
     },
@@ -269,22 +225,13 @@
         "image": "Race Elf.png",
         "grants": [
             {
-                "name": "Elven Weapon Training",
-                "type": 2,
-                "description": "You have Proficiency with the Longsword, Shortsword, Shortbow, and Longbow.",
-                "image": "Elven Weapon Training.webp"
+                "ref": "c6572"
             },
             {
-                "name": "Darkvision",
-                "type": 2,
-                "description": "Can see in the dark up to 12m.",
-                "image": "Darkvision.webp"
+                "ref": "c3957"
             },
             {
-                "name": "Fey Ancestry",
-                "type": 2,
-                "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
-                "image": "Fey Ancestry.webp"
+                "ref": "c3953"
             }
         ]
     },
@@ -297,10 +244,7 @@
                 "ref": "a6593"
             },
             {
-                "name": "Martial Prodigy",
-                "type": 2,
-                "description": "A lifetime of relentless training gave you Armor Proficiency with Light and Medium Armour, as well as Proficiency with the Shortsword, Longsword, and Greatsword.",
-                "image": "Martial Prodigy.webp"
+                "ref": "c6594"
             }
         ]
     },
@@ -316,16 +260,10 @@
                         "description": "The most commonly seen gnome on Faerûn's surface, Rock Gnomes are named as such for their hardiness and affinity to metal.",
                         "grants": [
                             {
-                                "name": "Darkvision",
-                                "type": 2,
-                                "description": "Can see in the dark up to 12m.",
-                                "image": "Darkvision.webp"
+                                "ref": "c3957"
                             },
                             {
-                                "name": "Artificer's Lore",
-                                "type": 2,
-                                "description": "Add twice your Proficiency Bonus to History checks.",
-                                "image": "Artificer's Lore.webp"
+                                "ref": "c3963"
                             }
                         ]
                     },
@@ -334,10 +272,7 @@
                         "description": "Even smaller than their cousins and twice as reclusive, Forest Gnomes are rare sight in Faerûn. They master magic and craftmanship in their distant, idyllic groves.",
                         "grants": [
                             {
-                                "name": "Darkvision",
-                                "type": 2,
-                                "description": "Can see in the dark up to 12m.",
-                                "image": "Darkvision.webp"
+                                "ref": "c3957"
                             },
                             {
                                 "ref": "s1585"
@@ -349,16 +284,10 @@
                         "description": "More guarded than their surface cousins, Deep Gnomes survive in the Underdark with darkvision and skillful stealth.",
                         "grants": [
                             {
-                                "name": "Superior Darkvision",
-                                "type": 2,
-                                "description": "Can see in the dark up to 24m.",
-                                "image": "Superior Darkvision.webp"
+                                "ref": "c3956"
                             },
                             {
-                                "name": "Stone Camouflage",
-                                "type": 2,
-                                "description": "You have Advantage on Stealth checks.",
-                                "image": "Stone Camouflage.webp"
+                                "ref": "c3962"
                             }
                         ]
                     }
@@ -369,10 +298,7 @@
         "image": "Race Gnome.png",
         "grants": [
             {
-                "name": "Gnome Cunning",
-                "type": 2,
-                "description": "You have Advantage on Intelligence, Wisdom, and Charisma Saving Throws.",
-                "image": "Gnome Cunning.webp"
+                "ref": "c3961"
             }
         ]
     },
@@ -445,22 +371,13 @@
         "image": "Race Half-Elf.png",
         "grants": [
             {
-                "name": "Civil Militia",
-                "type": 2,
-                "description": "You have Weapon Proficiency with spears, pikes, halberds, and glaives, and Armour Proficiency with Light Armour and Shields.",
-                "image": "Civil Militia.webp"
+                "ref": "c6570"
             },
             {
-                "name": "Darkvision",
-                "type": 2,
-                "description": "Can see in the dark up to 12m.",
-                "image": "Darkvision.webp"
+                "ref": "c3957"
             },
             {
-                "name": "Fey Ancestry",
-                "type": 2,
-                "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
-                "image": "Fey Ancestry.webp"
+                "ref": "c3953"
             }
         ]
     },
@@ -470,19 +387,13 @@
         "image": "Race Half-Orc.png",
         "grants": [
             {
-                "name": "Darkvision",
-                "type": 2,
-                "description": "Can see in the dark up to 12m.",
-                "image": "Darkvision.webp"
+                "ref": "c3957"
             },
             {
                 "ref": "a6277"
             },
             {
-                "name": "Savage Attacks",
-                "type": 2,
-                "description": "When you land a Critical Hit with a melee weapon attack, you deal an extra dice of weapon damage.",
-                "image": "Savage Attacks.webp"
+                "ref": "c6278"
             }
         ]
     },
@@ -498,10 +409,7 @@
                         "description": "Lightfoot Halflings are stealthy but social, travelling all over Faerûn to make a name for themselves.",
                         "grants": [
                             {
-                                "name": "Naturally Stealthy",
-                                "type": 2,
-                                "description": "Your nimble nature makes you skilled at concealment. You have Advantage on Checks.",
-                                "image": "Naturally Stealthy.webp"
+                                "ref": "c6388"
                             }
                         ]
                     },
@@ -510,10 +418,7 @@
                         "description": "Legends say dwarven blood gave stronghearts their hardiness. Resistant to poison and wellsprings of endurance, these halflings easily hold their own.",
                         "grants": [
                             {
-                                "name": "Strongheart Resilience",
-                                "type": 2,
-                                "description": "You have Advantage on Poison}} and [[Damage_Types#Resistance|Resistance to Poison damage.",
-                                "image": "Strongheart Resilience.webp"
+                                "ref": "c6389"
                             }
                         ]
                     }
@@ -524,16 +429,10 @@
         "image": "Race Halfling.png",
         "grants": [
             {
-                "name": "Halfling Luck",
-                "type": 2,
-                "description": "When you roll a 1 for an Attack Roll, Ability Check, or Saving Throw, you can reroll the die and must use the new roll.",
-                "image": "Halfling Luck.webp"
+                "ref": "c3964"
             },
             {
-                "name": "Brave",
-                "type": 2,
-                "description": "You have Advantage on Saving Throws against Frightened.",
-                "image": "Brave.webp"
+                "ref": "c6387"
             }
         ]
     },
@@ -543,16 +442,10 @@
         "image": "Race Human.png",
         "grants": [
             {
-                "name": "Civil Militia",
-                "type": 2,
-                "description": "You have Weapon Proficiency with spears, pikes, halberds, and glaives, and Armour Proficiency with Light Armour and Shields.",
-                "image": "Civil Militia.webp"
+                "ref": "c6570"
             },
             {
-                "name": "Human Versatility",
-                "type": 2,
-                "description": "Select an additional Skill to be Proficient in. Your carrying capacity is increased by a quarter.",
-                "image": "Human Versatility.webp"
+                "ref": "c6573"
             }
         ]
     },
@@ -585,16 +478,10 @@
         "image": "Race Tiefling.png",
         "grants": [
             {
-                "name": "Darkvision",
-                "type": 2,
-                "description": "Can see in the dark up to 12m.",
-                "image": "Darkvision.webp"
+                "ref": "c3957"
             },
             {
-                "name": "Hellish Resistance",
-                "type": 2,
-                "description": "Your blood protects you from flame, abyssal or otherwise. Gain Resistance to Fire damage, taking only half damage from it.",
-                "image": "Hellish Resistance Icon.png"
+                "ref": "c4741"
             }
         ]
     }

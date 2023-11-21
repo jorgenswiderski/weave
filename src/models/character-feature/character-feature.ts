@@ -5,7 +5,7 @@ import {
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import {
     GrantableEffect,
-    GrantableEffectType,
+    ICharacteristic,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import {
     IAction,
@@ -29,6 +29,8 @@ import { IClassFeatureFactory } from './class-feature/types';
 import { WikitableNotFoundError } from '../media-wiki/types';
 import { ICharacterClass } from '../character-class/types';
 import { choiceListConfigs } from './choice-list-configs';
+import { CharacteristicStub } from '../static-reference/characteristic-stub';
+import { getPassiveDataById } from '../characteristic/characteristic';
 
 enum CharacterFeatureLoadingStates {
     DESCRIPTION = 'DESCRIPTION',
@@ -147,23 +149,18 @@ export class CharacterFeature
 
     private static async parsePassiveFeaturePage(
         page: PageData & { content: string },
-    ): Promise<GrantableEffect> {
-        const { title, content } = page;
+    ): Promise<CharacteristicStub> {
+        const { title, pageId } = page;
         assert(await page.hasTemplate('Passive feature page'));
+        const passive = getPassiveDataById().get(pageId);
 
-        const descMatch =
-            /\|\s*description\s*=\s*([\s\S]+?)\n\|\s*[\w\s]+=/g.exec(content);
+        if (!passive) {
+            throw new Error(`Could not find passive for ${title} (${pageId})`);
+        }
 
-        const imageMatch = /\|\s*image\s*=\s*(.+)/.exec(content);
+        passive.markUsed();
 
-        return {
-            name: MediaWikiParser.parseNameFromPageTitle(title),
-            type: GrantableEffectType.CHARACTERISTIC,
-            description: descMatch
-                ? MediaWikiParser.stripMarkup(descMatch[1]).trim()
-                : undefined,
-            image: imageMatch ? imageMatch[1].trim() : undefined,
-        };
+        return new CharacteristicStub(passive as ICharacteristic);
     }
 
     static async parsePageForGrantableEffect(

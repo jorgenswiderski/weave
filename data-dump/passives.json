@@ -1,0 +1,1492 @@
+[
+    {
+        "name": "Acolyte of Nature",
+        "description": "Learn one of the following cantrips: Poison Spray, Produce Flame, Shillelagh, Thorn Whip.\n\nGet one of the following proficiencies: Animal Handling, Nature, Survival.",
+        "image": "Acolyte of Nature.webp",
+        "type": 2,
+        "id": 8792
+    },
+    {
+        "name": "Advanced Unarmoured Movement",
+        "description": "Difficult Terrain doesn't slow you down and you can Jump (Bonus Action)| Jump (Bonus Action)|Jump an additional m=6|ft=20 while you are not wearing shield.",
+        "image": "Advanced Unarmoured Movement.webp",
+        "type": 2,
+        "id": 13195
+    },
+    {
+        "name": "Agonising Blast",
+        "description": "When you cast Eldritch Blast, add your Charisma Modifier to the damage it deals, unless it is negative.",
+        "image": "Agonising Blast.webp",
+        "type": 2,
+        "id": 10330
+    },
+    {
+        "name": "Alert",
+        "description": "You gain +5 to Initiative and can no longer be surprised.",
+        "image": "Alert.webp",
+        "type": 2,
+        "id": 8367
+    },
+    {
+        "name": "Animalistic Vitality",
+        "description": "Affected entity regains 2d8|Healing of health every round of combat.",
+        "image": "Animalistic Vitality Icon.webp",
+        "type": 2,
+        "id": 18919
+    },
+    {
+        "name": "Arcane Ward",
+        "description": "The residual magic of your spells forms a ward around you that protects you from harm.\n\nEach time you cast an Abjuration spell, the intensity of the ward increases by the amount of the spell's Level, up to a maximum of 2x your Wizard level.\n\nEach time you take damage, the ward blocks an amount of damage equal to its intensity, and its intensity decreases by 1.\n\nAfter each Long Rest, the ward's intensity resets, and becomes the same as your Wizard level.",
+        "image": "Arcane Ward.webp",
+        "type": 2,
+        "id": 16809
+    },
+    {
+        "name": "Archery",
+        "description": "You gain a +2 bonus to Attack Rolls you make with ranged Weapons.",
+        "image": "Archery.webp",
+        "type": 2,
+        "id": 17357
+    },
+    {
+        "name": "Armour of Shadows",
+        "description": "You can cast Mage Armour on yourself at will, without expending a Spell Slot. Mage Armour increases your Armour Class when you are not wearing armour.",
+        "image": "Armour of Shadows.webp",
+        "type": 2,
+        "id": 19621
+    },
+    {
+        "name": "Artificer's Lore",
+        "description": "Add twice your Proficiency Bonus to History checks.",
+        "image": "Artificer's Lore.webp",
+        "type": 2,
+        "id": 3963
+    },
+    {
+        "name": "Aspect of the Beast (Bear)",
+        "description": "The Aspect of the Bear infuses you with strength.\n\nYour Checks.",
+        "image": "Aspect of the Beast Bear.webp",
+        "type": 2,
+        "id": 17306
+    },
+    {
+        "name": "Aspect of the Beast (Chimpanzee)",
+        "description": "The Aspect of the Chimpanzee grants you a nimble mischievousness.\n\nYou gain Resistance to Falling damage, and throwing camp supplies Blinded|Blinds targets.",
+        "image": "Aspect of the Beast Chimpanzee.webp",
+        "type": 2,
+        "id": 17307
+    },
+    {
+        "name": "Aspect of the Beast (Crocodile)",
+        "description": "The Aspect of the Crocodile increases your agility in the water.\n\nYour Movement Speed increases by m=3|ft=10 while standing in water-based surfaces.\n\nOn slippery surfaces, you also have Advantage on Saving Throws against being knocked Prone",
+        "image": "Aspect of the Beast Crocodile.webp",
+        "type": 2,
+        "id": 17310
+    },
+    {
+        "name": "Aspect of the Beast (Eagle)",
+        "description": "The Aspect of the Eagle enhances your eyesight.\n\nYou can see in the dark up to m=12|ft=40, and gain Advantage on Perception Checks.",
+        "image": "Aspect of the Beast Eagle.webp",
+        "type": 2,
+        "id": 17312
+    },
+    {
+        "name": "Aspect of the Beast (Elk)",
+        "description": "The Aspect of the Elk grants you astounding swiftness.\n\nYou can use Aspect of the Elk, giving yourself and nearby allies extra Movement Speed.",
+        "image": "Aspect of the Beast Elk.webp",
+        "type": 2,
+        "id": 17314
+    },
+    {
+        "name": "Aspect of the Beast (Honey Badger)",
+        "description": "If you're Poisoned, Frightened, or Charmed at the start of your turn, you have a 50% chance to begin Raging without expending a Rage Charge.",
+        "image": "Aspect of the Beast Honey Badger.webp",
+        "type": 2,
+        "id": 17323
+    },
+    {
+        "name": "Aspect of the Beast (Stallion)",
+        "description": "The Aspect of the Stallion creates safety in movement.\n\nDashing grants you temporary hit points equal to twice your Barbarian level.\n\nCan only have temporary hit points from one source.",
+        "image": "Aspect of the Beast Stallion.webp",
+        "type": 2,
+        "id": 17325
+    },
+    {
+        "name": "Aspect of the Beast (Tiger)",
+        "description": "The Aspect of the Tiger infuses you with an unrelenting ferocity.\n\nYou add an additional Strength Modifier to Bleeding}} or Poisoned targets, and gain Proficiency in [[Survival",
+        "image": "Aspect of the Beast Tiger.webp",
+        "type": 2,
+        "id": 17327
+    },
+    {
+        "name": "Aspect of the Beast (Wolf)",
+        "description": "The Aspect of the Wolf boosts your stealthiness.\n\nYou gain Proficiency in Stealth, and can use Aspect of the Wolf.",
+        "image": "Aspect of the Beast Wolf.webp",
+        "type": 2,
+        "id": 17338
+    },
+    {
+        "name": "Aspect of the Beast (Wolverine)",
+        "description": "The Aspect of the Wolverine grants you the tools to relentlessly pursue your prey.\n\nWhen you attack a Bleeding or Poisoned target, you also Maimed|Maim it for 1 turn",
+        "image": "Aspect of the Beast Wolverine.webp",
+        "type": 2,
+        "id": 17330
+    },
+    {
+        "name": "Assassin's Alacrity",
+        "description": "Quick as an alley cat in a rain-dark city, you immediately restore your action and bonus at the start of combat",
+        "image": "Assassin's Alacrity.webp",
+        "type": 2,
+        "id": 17801
+    },
+    {
+        "name": "Assassinate: Ambush",
+        "description": "Any successful Surprised}} creature is a [[Critical Hit.",
+        "image": "Generic Threat.webp",
+        "type": 2,
+        "id": 17802
+    },
+    {
+        "name": "Assassinate: Initiative",
+        "description": "You are deadliest against unprepared enemies. In combat, you have Advantage on Attack Rolls against creatures that haven't taken a turn yet.",
+        "image": "Assassinate Initiative.webp",
+        "type": 2,
+        "id": 17805
+    },
+    {
+        "name": "Athlete: Standing Up",
+        "description": "When you are Prone, standing up uses significantly less movement. Your Jump (Bonus Action)|Jump distance also increases by 50%.",
+        "image": "Athlete Standing Up.webp",
+        "type": 2,
+        "id": 21638
+    },
+    {
+        "name": "Beast Speech",
+        "description": "You can cast Speak with Animals on yourself at will, without expending a Spell Slot.",
+        "image": "Beast Speech.webp",
+        "type": 2,
+        "id": 19622
+    },
+    {
+        "name": "Beast Tamer",
+        "description": "You have cultivated a strong bond with animals. You can cast Find Familiar without expending a spell slot.",
+        "image": "Beast Tamer.webp",
+        "type": 2,
+        "id": 19508
+    },
+    {
+        "name": "Beguiling Defences",
+        "description": "You have built stoic barriers in your heart and mind, and cannot be Charmed.",
+        "image": "Beguiling Defences.webp",
+        "type": 2,
+        "id": 8228
+    },
+    {
+        "name": "Beguiling Influence",
+        "description": "You invoke your patron's bewitching charm. You gain Proficiency in the Deception and Persuasion.",
+        "image": "Beguiling Influence.webp",
+        "type": 2,
+        "id": 19623
+    },
+    {
+        "name": "Bestial Fury",
+        "description": "Grants all your companions an extra attack.",
+        "image": "Bestial Fury.webp",
+        "type": 2,
+        "id": 18002
+    },
+    {
+        "name": "Blessed Healer",
+        "description": "Healing others heals you as well.\n\nWhen you cast a healing spell of Level 1 or higher on another creature, you regain hit points equal to 2 + the spell's level|Healing.",
+        "image": "Blessed Healer.webp",
+        "type": 2,
+        "id": 13562
+    },
+    {
+        "name": "Book of Ancient Secrets",
+        "description": "You can inscribe magical rituals in your Book of Shadows. Gain Ray of Sickness, Chromatic Orb, and Silence spells.\n\nYou can cast them once per Long Rest and they don't expend spell slots",
+        "image": "Book of Ancient Secrets.webp",
+        "type": 2,
+        "id": 19638
+    },
+    {
+        "name": "Bounty Hunter",
+        "description": "Gain Ensnaring Strike (Ranged)|ranged}} or Ensnaring Strike (Melee)|melee) have Disadvantage on their [[Saving Throw.",
+        "image": "Bounty Hunter.webp",
+        "type": 2,
+        "id": 19547
+    },
+    {
+        "name": "Brave",
+        "description": "You have Advantage on Saving Throws against Frightened.",
+        "image": "Brave.webp",
+        "type": 2,
+        "id": 6387
+    },
+    {
+        "name": "Brutal Critical",
+        "description": "You've trained to strike swift and true. When you land a Critical Hit, you roll an extra damage die as well as the normal additional critical die.",
+        "image": "Brutal Critical.webp",
+        "type": 2,
+        "id": 7953
+    },
+    {
+        "name": "Civil Militia",
+        "description": "You have Weapon Proficiency with spears, pikes, halberds, and glaives, and Armour Proficiency with Light Armour and Shields.",
+        "image": "Civil Militia.webp",
+        "type": 2,
+        "id": 6570
+    },
+    {
+        "name": "Colossus Slayer",
+        "description": "Once per turn, your weapon attack deals an extra 1d8|Physical|drs=t damage if the target is below its hit point maximum.",
+        "image": "Colossus Slayer.webp",
+        "type": 2,
+        "id": 1442
+    },
+    {
+        "name": "Companion's Bond",
+        "description": "Your Summon Companion|Summoned Companions receive a bonus to Armour Class, damage, and Attack Rolls (even though this is not stated) equal to your ProficiencyBonus.",
+        "image": "Companions Bond.webp",
+        "type": 2,
+        "id": 17997
+    },
+    {
+        "name": "Crossbow Expert: Point-Blank",
+        "description": "When you make crossbow attacks within melee range, the Attack Rolls do not have Disadvantage.",
+        "image": "Crossbow Expert Point Blank.webp",
+        "type": 2,
+        "id": 17001
+    },
+    {
+        "name": "Crossbow Expert: Wounding",
+        "description": "Your Piercing Shot inflicts Gaping Wounds for twice as long.",
+        "image": "Crossbow Expert Wounding.webp",
+        "type": 2,
+        "id": 17038
+    },
+    {
+        "name": "Danger Sense",
+        "description": "You sense when things aren't as they should be. \n\nYou have Advantage on Dexterity surfaces. \n\nTo gain this benefit, you can't be Blinded or Incapacitated.",
+        "image": "Danger Sense.webp",
+        "type": 2,
+        "id": 6407
+    },
+    {
+        "name": "Dark One's Blessing",
+        "description": "Whenever you reduce a hostile creature to 0 Charisma Modifier + [[Warlock Level}} temporary hit points.",
+        "image": "Dark One's Blessing.webp",
+        "type": 2,
+        "id": 6542
+    },
+    {
+        "name": "Dark One's Own Luck",
+        "description": "Call on your patron to change your fate and add a {{DieIcon|d10|Physical1d10}} to an D20|25 Ability Check.",
+        "image": "Generic Magical.webp",
+        "type": 2,
+        "id": 8193
+    },
+    {
+        "name": "Darkvision (Passive Feature)",
+        "description": "Can see in the dark up to 12m.",
+        "image": "Darkvision.webp",
+        "type": 2,
+        "id": 3957
+    },
+    {
+        "name": "Deepened Pact",
+        "description": "Pleased with your service, your otherworldly patron added new boons to the terms of your pact.\n* Pact of the Blade: Gain an Extra Attack with your pact weapon.\n* Pact of the Chain: Your familiar gains an Extra Attack.\n* Pact of the Tome: You can cast Animate Dead, Haste, and Call Lightning once per Long Rest.",
+        "image": "Pact of the Blade Passive Feature.webp",
+        "type": 2,
+        "id": 8437
+    },
+    {
+        "name": "Defence",
+        "description": "You gain a +1 bonus to Armour Class while wearing Armour.",
+        "image": "Defence.webp",
+        "type": 2,
+        "id": 17362
+    },
+    {
+        "name": "Destroy Undead",
+        "description": "When you successfully Turned|Turn an Undead creature, it also takes 4d6|Radiant damage.",
+        "image": "Destroy Undead.webp",
+        "type": 2,
+        "id": 6412
+    },
+    {
+        "name": "Devil's Sight",
+        "description": "You can see normally in darkness, both magical and non-magical, to a distance ofm=24|ft=80.",
+        "image": "Devils Sight.webp",
+        "type": 2,
+        "id": 13648
+    },
+    {
+        "name": "Disciple of Life",
+        "description": "Your devotion empowers your healing spell, the target regains additional hit points equal to 2 + the spell's level|Healing.",
+        "image": "Disciple of Life.webp",
+        "type": 2,
+        "id": 8004
+    },
+    {
+        "name": "Divine Health",
+        "description": "The divine magic flowing within you prevents disease from affecting you.",
+        "image": "Divine Health.webp",
+        "type": 2,
+        "id": 6141
+    },
+    {
+        "name": "Draconic Ancestry (Acid)",
+        "description": "The blood of ancient dragons flow through your veins. You are Resistant to Acid damage.",
+        "image": "Draconic Ancestry Acid.webp",
+        "type": 2,
+        "id": 6719
+    },
+    {
+        "name": "Draconic Ancestry (Cold)",
+        "description": "The blood of ancient dragons flow through your veins. You are Resistant to Cold damage.",
+        "image": "Draconic Ancestry Cold.webp",
+        "type": 2,
+        "id": 6723
+    },
+    {
+        "name": "Draconic Ancestry (Fire)",
+        "description": "The blood of ancient dragons flow through your veins. You are Resistant to Fire damage.",
+        "image": "Draconic Ancestry Fire.webp",
+        "type": 2,
+        "id": 6721
+    },
+    {
+        "name": "Draconic Ancestry (Poison)",
+        "description": "The blood of ancient dragons flow through your veins. You are Resistant to Poison damage.",
+        "image": "Draconic Ancestry Poison.webp",
+        "type": 2,
+        "id": 6722
+    },
+    {
+        "name": "Draconic Resilience",
+        "description": "Dragon-like scales cover parts of your skin. When you aren't wearing armour, your base ArmourClass is 13.",
+        "image": "Draconic Resilience.webp",
+        "type": 2,
+        "id": 14554
+    },
+    {
+        "name": "Draconic Resilience: Hit Points",
+        "description": "Your Hit Point maximum increases by 1 for each Sorcerer level.",
+        "image": "Draconic Resilience Hit Points Icon Small.png",
+        "type": 2,
+        "id": 14555
+    },
+    {
+        "name": "Dread Ambusher",
+        "description": "You specialise in taking out foes swiftly and ruthlessly.\n\nYou gain a +3 bonus to Initiative.\n\nOn the first turn of combat, your Movement Speed increases by m=3|ft=10, and you can make an attack that deals an additional d8|Physical1d8 damage",
+        "image": "Dread Ambusher Melee.webp",
+        "type": 2,
+        "id": 17904
+    },
+    {
+        "name": "Dreadful Word",
+        "description": "You can cast Confusion with a Warlock spell slot.",
+        "image": "Dreadful Word.webp",
+        "type": 2,
+        "id": 19639
+    },
+    {
+        "name": "Drow Weapon Training",
+        "description": "You have Proficiency with the Rapier, Shortsword, and Hand Crossbow.",
+        "image": "Drow Weapon Training.webp",
+        "type": 2,
+        "id": 6562
+    },
+    {
+        "name": "Dual Wielder",
+        "description": "You can use Two-Weapon Fighting even if the weapons you are wielding aren't Light. You cannot dual-wield Heavy weapons.",
+        "image": "Dual Wielder.webp",
+        "type": 2,
+        "id": 4937
+    },
+    {
+        "name": "Dual Wielder: Bonus Armour Class",
+        "description": "You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.",
+        "image": "Dual Wielder Bonus Armour Class.webp",
+        "type": 2,
+        "id": 22724
+    },
+    {
+        "name": "Duelling",
+        "description": "When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.You can carry a shield in your free hand and still gain this bonus.",
+        "image": "Duelling.webp",
+        "type": 2,
+        "id": 17363
+    },
+    {
+        "name": "Duergar Resilience",
+        "description": "You have Advantage on Saving Throws  against illusions and against being Charmed or Paralysed.",
+        "image": "Duergar Resilience.webp",
+        "type": 2,
+        "id": 6053
+    },
+    {
+        "name": "Dungeon Delver: Perception",
+        "description": "You have Advantage on Perception Checks made to detect hidden objects.",
+        "image": "Dungeon Delver Perception.webp",
+        "type": 2,
+        "id": 22726
+    },
+    {
+        "name": "Dungeon Delver: Resist Traps",
+        "description": "You have Advantage on Saving Throws made to avoid traps and Resistance to trap damage.",
+        "image": "Dungeon Delver Resist Traps.webp",
+        "type": 2,
+        "id": 22727
+    },
+    {
+        "name": "Durable",
+        "description": "Regain full Hit Points every time you take a Short Rest.",
+        "image": "Durable.webp",
+        "type": 2,
+        "id": 8370
+    },
+    {
+        "name": "Dwarven Armour Training",
+        "description": "You have Armour Proficiency with Light and Medium Armour.",
+        "image": "Dwarven Armour Training.webp",
+        "type": 2,
+        "id": 6585
+    },
+    {
+        "name": "Dwarven Combat Training",
+        "description": "You have Proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammers.",
+        "image": "Dwarven Combat Training.webp",
+        "type": 2,
+        "id": 6583
+    },
+    {
+        "name": "Dwarven Resilience",
+        "description": "You have Advantage on Saving Throws against being Poisoned, and you have Resistance against Poison damage.",
+        "image": "Dwarven Resilience.webp",
+        "type": 2,
+        "id": 3959
+    },
+    {
+        "name": "Dwarven Toughness",
+        "description": "You have 1 extra maximum Hit Points per level.",
+        "type": 2,
+        "id": 3960
+    },
+    {
+        "name": "Eldritch Strike",
+        "description": "When you hit a creature with a weapon attack, it has Disadvantage on its next Saving Throw against a spell you cast before the end of your next turn.",
+        "image": "Eldritch Strike.webp",
+        "type": 2,
+        "id": 14416
+    },
+    {
+        "name": "Elemental Adept: Acid",
+        "description": "Spells you cast ignore Resistance to Acid damage. In addition, when you deal Acid damage with a spell, you cannot roll a 1.",
+        "image": "Elemental Adept Acid.webp",
+        "type": 2,
+        "id": 22728
+    },
+    {
+        "name": "Elemental Adept: Cold",
+        "description": "Spells you cast ignore Resistance to Cold damage. In addition, when you deal Cold damage with a spell, you cannot roll a 1.",
+        "image": "Elemental Adept Cold.webp",
+        "type": 2,
+        "id": 22729
+    },
+    {
+        "name": "Elemental Adept: Fire",
+        "description": "Spells you cast ignore Resistance to Fire damage. In addition, when you deal Fire damage with a spell, you cannot roll a 1.",
+        "image": "Elemental Adept Fire.webp",
+        "type": 2,
+        "id": 22731
+    },
+    {
+        "name": "Elemental Adept: Lightning",
+        "description": "Spells you cast ignore Resistance to Lightning damage. In addition, when you deal Lightning damage with a spell, you cannot roll a 1.",
+        "image": "Elemental Adept Lightning.webp",
+        "type": 2,
+        "id": 22730
+    },
+    {
+        "name": "Elemental Adept: Thunder",
+        "description": "Spells you cast ignore Resistance to Thunder damage. In addition, when you deal Thunder damage with a spell, you cannot roll a 1.",
+        "image": "Elemental Adept Thunder.webp",
+        "type": 2,
+        "id": 22732
+    },
+    {
+        "name": "Elemental Affinity: Damage",
+        "description": "When you cast a spell that deals damage of the type associated with your draconic ancestry, you add your Modifier to the damage",
+        "image": "Elemental Affinity Damage.webp",
+        "type": 2,
+        "id": 17225
+    },
+    {
+        "name": "Elven Weapon Training",
+        "description": "You have Proficiency with the Longsword, Shortsword, Shortbow, and Longbow.",
+        "image": "Elven Weapon Training.webp",
+        "type": 2,
+        "id": 6572
+    },
+    {
+        "name": "Empowered Evocation",
+        "description": "Your grasp of Evocation magic has tightened, and you can add your Intelligence Modifier to damage rolls with any Evocation spells.",
+        "image": "Empowered Evocation.webp",
+        "type": 2,
+        "id": 16854
+    },
+    {
+        "name": "Escape the Horde",
+        "description": "Opportunity Attacks against you have Disadvantage.",
+        "image": "Escape the Horde.webp",
+        "type": 2,
+        "id": 17837
+    },
+    {
+        "name": "Evasion",
+        "description": "Your agility lets you dodge out of the way of certain spells. When a spell or effect would deal half damage on a successful Dexterity Saving Throw, it deals no damage if you succeed, and only half damage if you fail.",
+        "image": "Evasion.webp",
+        "type": 2,
+        "id": 6817
+    },
+    {
+        "name": "Exceptional Training",
+        "description": "Your summoned companions can now Dash, Disengage, and Help as a bonus.",
+        "image": "Exceptional Training.webp",
+        "type": 2,
+        "id": 17999
+    },
+    {
+        "name": "Experimental Alchemy",
+        "description": "You brew two Alchemical Solutions instead of one when combining extracts, if you succeed a Check.",
+        "image": "Experimental Alchemy.webp",
+        "type": 2,
+        "id": 16821
+    },
+    {
+        "name": "Expert Divination",
+        "description": "You may gain an additional Portent Die: when taking a Short Rest you receive a Prophecy. Complete it to regain a missing Portent Die.",
+        "image": "Expert Divination.webp",
+        "type": 2,
+        "id": 16833
+    },
+    {
+        "name": "Extra Attack",
+        "description": "You can make an additional free attack after making an unarmed or weapon attack.",
+        "image": "Extra Attack.webp",
+        "type": 2,
+        "id": 3152
+    },
+    {
+        "name": "Fast Hands",
+        "description": "You gain an extra bonus, which you can use with any of your existing Bonus Actions.",
+        "image": "Fast Hands.webp",
+        "type": 2,
+        "id": 17797
+    },
+    {
+        "name": "Fast Movement",
+        "description": "Your m=3|ft=10}} while not wearing [[Heavy Armour.",
+        "image": "Fast Movement.webp",
+        "type": 2,
+        "id": 6409
+    },
+    {
+        "name": "Feral Instinct",
+        "description": "You have honed your instincts to the utmost degree.\n\nYou gain a +3 to Initiative and can't be Surprised.",
+        "image": "Feral Instinct.webp",
+        "type": 2,
+        "id": 6819
+    },
+    {
+        "name": "Fey Ancestry",
+        "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
+        "image": "Fey Ancestry.webp",
+        "type": 2,
+        "id": 3953
+    },
+    {
+        "name": "Fiendish Vigour",
+        "description": "You can cast False Life on yourself at will as a 1st-level spell, without expending a Spell Slot. False Life grants you 7 Temporary Hit Points|Healing.",
+        "image": "Fiendish Vigour.webp",
+        "type": 2,
+        "id": 19624
+    },
+    {
+        "name": "Focused Conjuration",
+        "description": "Damage taken while you are Concentrating on a Conjuration spell will not break your Concentration.",
+        "image": "Focused Conjuration.webp",
+        "type": 2,
+        "id": 16850
+    },
+    {
+        "name": "Font of Inspiration",
+        "description": "You regain all of your bi|forceplural=yes after a Long or Short Rest.",
+        "image": "Font of Inspiration.webp",
+        "type": 2,
+        "id": 6410
+    },
+    {
+        "name": "Gnome Cunning",
+        "description": "You have Advantage on Intelligence, Wisdom, and Charisma Saving Throws.",
+        "image": "Gnome Cunning.webp",
+        "type": 2,
+        "id": 3961
+    },
+    {
+        "name": "Great Weapon Fighting",
+        "description": "When you roll a 1 or 2 on a damage die for an attack with a Two-Handed melee weapon, that die is rerolled once.",
+        "image": "Great Weapon Fighting.webp",
+        "type": 2,
+        "id": 17366
+    },
+    {
+        "name": "Great Weapon Master: All In",
+        "description": "When attacking with Heavy melee weapons you are Proficient with, Attack Rolls take a -5 penalty, but their damage increases by 10.",
+        "image": "Great Weapon Master Bonus Attack.webp",
+        "type": 2,
+        "id": 3151
+    },
+    {
+        "name": "Great Weapon Master: Bonus Attack",
+        "description": "When you land a Critical Hit or kill a target with a melee weapon attack, you can make another melee weapon attack as a bonus that turn.",
+        "image": "Great Weapon Master Bonus Attack.webp",
+        "type": 2,
+        "id": 22733
+    },
+    {
+        "name": "Grim Harvest",
+        "description": "Once per turn, if you kill a creature with a spell, you regain Spell Slot level used - thrice if it's a Necromancy spell. Undead and Constructs are unaffected.",
+        "image": "Grim Harvest.webp",
+        "type": 2,
+        "id": 8933
+    },
+    {
+        "name": "Halfling Luck",
+        "description": "When you roll a 1 for an Attack Roll, Ability Check, or Saving Throw, you can reroll the die and must use the new roll.",
+        "image": "Halfling Luck.webp",
+        "type": 2,
+        "id": 3964
+    },
+    {
+        "name": "Heart of the Storm",
+        "description": "When you cast a Spell of Level 1 or higher that deals Lightning or Thunder damage, you cause a small, local storm. All enemies within m=6|ft=20 take  (Sorcerer Level / 2) | Lightning or  (Sorcerer Level / 2) | Thunder.",
+        "image": "Heart of the Storm.webp",
+        "type": 2,
+        "id": 15150
+    },
+    {
+        "name": "Heart of the Storm: Resistance",
+        "description": "You are Resistant to Lightning and Thunder damage",
+        "image": "Heart of the Storm Resistance.webp",
+        "type": 2,
+        "id": 16400
+    },
+    {
+        "name": "Heavily Armoured",
+        "description": "You gain Proficiency with Heavy Armour and your Strength increases by 1, to a maximum of 20.\n\nYou must have Medium Armor Proficiency before you can take this feat.",
+        "image": "Heavily Armoured.webp",
+        "type": 2,
+        "id": 4939
+    },
+    {
+        "name": "Heavy Armour Master",
+        "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.\n\nCategory:Sources of damage reduction\n\nRequires Proficiency with Heavy Armour",
+        "image": "Heavily Armour Master.webp",
+        "type": 2,
+        "id": 8382
+    },
+    {
+        "name": "Hellish Resistance",
+        "description": "Your blood protects you from flame, abyssal or otherwise. Gain Resistance to Fire damage, taking only half damage from it.",
+        "image": "Hellish Resistance Icon.png",
+        "type": 2,
+        "id": 4741
+    },
+    {
+        "name": "Horde Breaker",
+        "description": "Target two creatures standing close to each other, attacking them in quick succession.",
+        "image": "Horde Breaker Melee.webp",
+        "type": 2,
+        "id": 17834
+    },
+    {
+        "name": "Human Versatility",
+        "description": "Select an additional Skill to be Proficient in. Your carrying capacity is increased by a quarter.",
+        "image": "Human Versatility.webp",
+        "type": 2,
+        "id": 6573
+    },
+    {
+        "name": "Improved Abjuration",
+        "description": "Each time you take a Short Rest, the intensity of your Arcane Ward increases by an amount equal to your wizard level.",
+        "image": "Improved Abjuration.webp",
+        "type": 2,
+        "id": 16849
+    },
+    {
+        "name": "Improved Combat Superiority",
+        "description": "The size of your supdie increases to a d10|Physical d10",
+        "image": "Generic Damage.webp",
+        "type": 2,
+        "id": 17574
+    },
+    {
+        "name": "Improved Critical Hit",
+        "description": "The number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack.",
+        "image": "Improved Critical Hit.webp",
+        "type": 2,
+        "id": 15270
+    },
+    {
+        "name": "Improved Elemental Casting",
+        "description": "Your affinity with elemental ki deepens. Several of your offensive Four Elements features deal an additional dice of damage, your Clench of the North Wind can hold an additional creature, and your Embrace of the Inferno fires an extra ray.\n\n* Fist of Four Thunders damage increases to 3d8|Thunder (from 2d8)\n* Fist of Unbroken Air damage increases to 4d10|Bludgeoning (from 3d10)\n* Sweeping Cinder Strike damage increases to 4d6|Fire (from 3d6)\n* Touch of the Storm damage increases to 2d10|Lightning (from 1d10)\n* Water Whip damage increases to 4d10|Thunder (from 3d10)\n* Clench of the North Wind can hold an additional creature.\n* Embrace of the Inferno fires an additional ray.\n* Gong of the Summit damage increases to 4d8|Thunder (from 3d8)",
+        "image": "Generic Magical.webp",
+        "type": 2,
+        "id": 18446
+    },
+    {
+        "name": "Improved Extra Attack",
+        "description": "You can make two additional attacks after attacking with your main-hand weapon.",
+        "image": "Extra Attack.webp",
+        "type": 2,
+        "id": 11255
+    },
+    {
+        "name": "Improved Warding Flare",
+        "description": "When an enemy attacks an ally, you can use your reaction to impose Disadvantage on the Attack Roll, possibly causing their attack to miss.",
+        "image": "Improved Warding Flare.webp",
+        "type": 2,
+        "id": 13685
+    },
+    {
+        "name": "Inured to Undeath",
+        "description": "You have steeped yourself so completely in death that you are hit point maximum cannot be reduced.",
+        "image": "Inured to Undeath.webp",
+        "type": 2,
+        "id": 16856
+    },
+    {
+        "name": "Iron Mind",
+        "description": "You gain Proficiency in Wisdom and Intelligence SavingThrows.",
+        "image": "Iron Mind.webp",
+        "type": 2,
+        "id": 17901
+    },
+    {
+        "name": "Jack of All Trades",
+        "description": "Your vast experiences make you more likely to succeed in any undertaking. Add half of your Ability Checks that you are not Proficient in.",
+        "image": "Jack of All Trades.webp",
+        "type": 2,
+        "id": 3377
+    },
+    {
+        "name": "Keeper of the Veil",
+        "description": "You specialise in hunting creatures from other planes of existence. You gain Proficiency in Arcana and can grant protection against aberrations, celestials, elementals, fey, fiends, and undead.",
+        "image": "Keeper of the Veil.webp",
+        "type": 2,
+        "id": 19549
+    },
+    {
+        "name": "Ki-Empowered Strikes",
+        "description": "Your unarmed attacks count as magical for the purpose of overcoming enemies' Resistance and Immunity to non-magical damage.",
+        "image": "Ki-Empowered Strikes.webp",
+        "type": 2,
+        "id": 13197
+    },
+    {
+        "name": "Land's Stride: Difficult Terrain",
+        "description": "Difficult Terrain no longer slows you down.",
+        "image": "Land's Stride Difficult Terrain.webp",
+        "type": 2,
+        "id": 6706
+    },
+    {
+        "name": "Lifedrinker",
+        "description": "Add your Charisma modifier to the damage of your melee weapon attacks.",
+        "image": "Lifedrinker.webp",
+        "type": 2,
+        "id": 19645
+    },
+    {
+        "name": "Lightly Armoured",
+        "description": "You gain Armour Proficiency with Light Armour and your Strength and Dexterity increases by 1, to a maximum of 20.",
+        "image": "Lightly Armoured.webp",
+        "type": 2,
+        "id": 4941
+    },
+    {
+        "name": "Mage Breaker",
+        "description": "You have a history of battling spellcasters. Gain True Strike}}, which gives you Advantage on Attack Rolls against a creature. [[Wisdom is your Spellcasting Ability for this spell.",
+        "image": "Mage Breaker.webp",
+        "type": 2,
+        "id": 19552
+    },
+    {
+        "name": "Magic Initiate: Bard",
+        "description": "You learn 2 cantrips and a Level 1 spell from the Bard spell list. You can cast the Level 1 spell once per Long Rest. Your Spellcasting Modifier for all 3 spells is Charisma.",
+        "image": "Magic Initiate Bard.webp",
+        "type": 2,
+        "id": 20442
+    },
+    {
+        "name": "Magic Initiate: Cleric",
+        "description": "You learn 2 cantrips and a Level 1 spell from the Cleric spell list. You can cast the Level 1 spell once per Long Rest. Your Spellcasting Modifier for all 3 spells is Wisdom.",
+        "image": "Magic Initiate Cleric.webp",
+        "type": 2,
+        "id": 20443
+    },
+    {
+        "name": "Magic Initiate: Druid",
+        "description": "You learn 2 cantrips and a Level 1 spell from the Druid spell list. You can cast the Level 1 spell once per Long Rest. Your Spellcasting Modifier for all 3 spells is Wisdom.",
+        "image": "Magic Initiate Druid.webp",
+        "type": 2,
+        "id": 14493
+    },
+    {
+        "name": "Magic Initiate: Sorcerer",
+        "description": "You learn 2 cantrips and a Level 1 spell from the Sorcerer spell list. You can cast the Level 1 spell once per Long Rest. Your Spellcasting Modifier for all 3 spells is Charisma.",
+        "image": "Magic Initiate Sorcerer.webp",
+        "type": 2,
+        "id": 20444
+    },
+    {
+        "name": "Magic Initiate: Warlock",
+        "description": "You learn 2 cantrips and a Level 1 spell from the Warlock spell list. You can cast the Level 1 spell once per Long Rest. Your Spellcasting Modifier for all 3 spells is Charisma.",
+        "image": "Magic Initiate Warlock.webp",
+        "type": 2,
+        "id": 20445
+    },
+    {
+        "name": "Magic Initiate: Wizard",
+        "description": "You learn 2 cantrips and a Level 1 spell from the Wizard spell list. You can cast the Level 1 spell once per Long Rest. Your Spellcasting Modifier for all 3 spells is Intelligence.",
+        "image": "Magic Initiate Wizard.webp",
+        "type": 2,
+        "id": 20446
+    },
+    {
+        "name": "Magical Ambush",
+        "description": "While you are Hiding, your targets have Disadvantage on SavingThrows against your Spells.",
+        "image": "Magical Ambush.webp",
+        "type": 2,
+        "id": 17807
+    },
+    {
+        "name": "Manifestation of Body",
+        "description": "Your hands sap the ki from your enemies' bodies. Your unarmed attacks deal an additional 1d4 + Wisdom Modifier|Necrotic damage.",
+        "image": "Manifestation of Body.webp",
+        "type": 2,
+        "id": 11272
+    },
+    {
+        "name": "Manifestation of Mind",
+        "description": "Your hands sap the ki from your enemies' bodies. Your unarmed attacks deal an additional 1d4 + Wisdom Modifier|Psychic damage.",
+        "image": "Manifestation of Mind.webp",
+        "type": 2,
+        "id": 11273
+    },
+    {
+        "name": "Manifestation of Soul",
+        "description": "Your hands sap the ki from your enemies' bodies. Your unarmed attacks deal an additional 1d4 + Wisdom Modifier|Radiant damage.",
+        "image": "Manifestation of Soul.webp",
+        "type": 2,
+        "id": 11274
+    },
+    {
+        "name": "Martial Adept",
+        "description": "Learn two manoeuvres from the Battle Master archetype and receive 1 (additional) supdie to fuel them. You regain expended Superiority Dice after a Short or Long Rest.",
+        "image": "Martial Adept.webp",
+        "type": 2,
+        "id": 4942
+    },
+    {
+        "name": "Martial Arts: Bonus Unarmed Strike",
+        "description": "After making an attack with a Monk Weapon or while unarmed, you can make another unarmed attack as a bonus action.",
+        "image": "Martial Arts Bonus Unarmed Strike.webp",
+        "type": 2,
+        "id": 13199
+    },
+    {
+        "name": "Martial Arts: Deft Strikes",
+        "description": "Attacks with Monk Weapons and unarmed attacks deal 1d4|Bludgeoning damage, unless their normal damage is higher.",
+        "image": "Martial Arts Deft Strike.webp",
+        "type": 2,
+        "id": 13200
+    },
+    {
+        "name": "Martial Arts: Dextrous Attacks",
+        "description": "Attacks with Monk Weapons and unarmed attacks scale with your Dexterity instead of your Strength if your Dexterity is higher.",
+        "image": "Martial Arts Dextrous Attacks.webp",
+        "type": 2,
+        "id": 13203
+    },
+    {
+        "name": "Martial Prodigy",
+        "description": "A lifetime of relentless training gave you Armor Proficiency with Light and Medium Armour, as well as Proficiency with the Shortsword, Longsword, and Greatsword.",
+        "image": "Martial Prodigy.webp",
+        "type": 2,
+        "id": 6594
+    },
+    {
+        "name": "Mask of Many Faces",
+        "description": "You can cast Disguise Self on yourself at will, without expending a Spell Slot.",
+        "image": "Mask of Many Faces.webp",
+        "type": 2,
+        "id": 19625
+    },
+    {
+        "name": "Medium Armour Master",
+        "description": "When you wear medium armour, it doesn't impose Disadvantage on Stealth checks. The bonus to ArmourClass you can gain from your Dexterity modifier also becomes +3 instead of +2.\n\nYou must have Proficiency in Medium Armor to take this feat",
+        "image": "Medium Armour Master.webp",
+        "type": 2,
+        "id": 8384
+    },
+    {
+        "name": "Mindless Rage",
+        "description": "Your rage becomes all-consuming, repelling outside influence.\n\nWhile Frenzied, you can't be Charmed or Frightened, and Calm Emotions no longer ends your rage.",
+        "image": "Mindless Rage.webp",
+        "type": 2,
+        "id": 8873
+    },
+    {
+        "name": "Minions of Chaos",
+        "description": "You can cast Conjure Elemental with a Warlock spell slot.",
+        "image": "Minions of Chaos.webp",
+        "type": 2,
+        "id": 19641
+    },
+    {
+        "name": "Mire the Mind",
+        "description": "You can cast Slow with a Warlock spell slot.",
+        "image": "Mire the Mind.webp",
+        "type": 2,
+        "id": 19637
+    },
+    {
+        "name": "Mobile: Evade Difficult Terrain",
+        "description": "When you Dash, Difficult Terrain doesn't slow you down.",
+        "image": "Mobile Evade Difficult Terrain.webp",
+        "type": 2,
+        "id": 21450
+    },
+    {
+        "name": "Mobile: Evade Opportunity Attack",
+        "description": "If you move after making a melee attack, you don't provoke Opportunity Attacks from your target.\n\nThe effect still works if your attack misses.",
+        "image": "Mobile Evade Opportunity Attack.webp",
+        "type": 2,
+        "id": 21448
+    },
+    {
+        "name": "Moderately Armoured",
+        "description": "You gain Proficiency with Medium Armour and Shields, and your Strength or Dexterity increases by 1, to a maximum of 20.\n\nYou must have Light Armor Proficiency before you can take this feat.",
+        "image": "Moderately Armoured.webp",
+        "type": 2,
+        "id": 4940
+    },
+    {
+        "name": "Mortal Reminder",
+        "description": "When you land a Critical Hit against a creature, that creature and any nearby enemies must succeed a Wisdom Saving Throw or become Frightened until the end of their next turn.",
+        "image": "Mortal Reminder.webp",
+        "type": 2,
+        "id": 6543
+    },
+    {
+        "name": "Multiattack Defence",
+        "description": "When a enemy attacks you, they suffer -4 penalty to additional Attack Rolls against you until start of their next turn.",
+        "image": "Multiattack Defense.webp",
+        "type": 2,
+        "id": 17842
+    },
+    {
+        "name": "Naturally Stealthy",
+        "description": "Your nimble nature makes you skilled at concealment. You have Advantage on Checks.",
+        "image": "Naturally Stealthy.webp",
+        "type": 2,
+        "id": 6388
+    },
+    {
+        "name": "Nature's Ward",
+        "description": "You can't be Charmed or Frightened by elementals and fey. Disease and poison also no longer affect you.",
+        "image": "Nature's Ward.webp",
+        "type": 2,
+        "id": 12190
+    },
+    {
+        "name": "One with Shadows",
+        "description": "You learn how to cast One with Shadows (Class Action)|One with Shadows.",
+        "image": "One with Shadows.webp",
+        "type": 2,
+        "id": 19626
+    },
+    {
+        "name": "Otherworldly Leap",
+        "description": "You can cast Enhance Leap as a ritual spell out-of-combat, but it does expend a Warlock slot to cast in turn-based mode.As of 4.1.1.3748643. This may be a bug.",
+        "image": "Otherworldly Leap.webp",
+        "type": 2,
+        "id": 19642
+    },
+    {
+        "name": "Pact of the Blade (Passive Feature)",
+        "description": "You can Pact of the Blade|Summon a pact weapon, or Bind Pact Weapon|Bind the one you are wielding as one, making it magical.\n\nPact weapons use the wielder's Spellcasting Ability Modifier instead of Strength or Dexterity.",
+        "image": "Pact of the Blade Passive Feature.webp",
+        "type": 2,
+        "id": 19684
+    },
+    {
+        "name": "Pact of the Chain",
+        "description": "Gain the service of a familiar, a fey spirit that takes a form of your choosing. This can be an animal, imp, or quasit.\n\nGrants:\n* Find Familiar|w=40\n* Find Familiar: Imp|w=40\n* Find Familiar: Quasit|w=40",
+        "image": "Pact of the Chain.webp",
+        "type": 2,
+        "id": 19676
+    },
+    {
+        "name": "Pact of the Tome",
+        "description": "Your patron grants you a grimoire called \"The Book of Shadows\", which allows you to cast Guidance, Vicious Mockery, and Thorn Whip.",
+        "image": "Pact of the Tome.webp",
+        "type": 2,
+        "id": 19686
+    },
+    {
+        "name": "Polearm Master: Bonus Attack",
+        "description": "When attacking with a Glaive, Halberd, Quarterstaff, or Spear, you can use a Bonus Action to attack with the butt of your weapon. \nThis attack does 1d4|Bludgeoning|modifier=melee",
+        "image": "Polearm Master Bonus Attack.webp",
+        "type": 2,
+        "id": 22750
+    },
+    {
+        "name": "Polearm Master: Opportunity Attack",
+        "description": "You can also make an Opportunity Attack when a target comes within range.",
+        "image": "Polearm Master Opportunity Attack.webp",
+        "type": 2,
+        "id": 22756
+    },
+    {
+        "name": "Potent Cantrip",
+        "description": "Your cantrips become harder to evade entirely.\n\nWhen a creature succeeds its SavingThrow against one of your cantrips, it still takes half the cantrip's damage, but suffers no additional effects.",
+        "image": "Potent Cantrip.webp",
+        "type": 2,
+        "id": 16835
+    },
+    {
+        "name": "Potent Spellcasting",
+        "description": "Your god grants you even more intense power.\n\nYou can add your Wisdom Modifier to the damage you deal with Cleric cantrips.",
+        "image": "Potent Spellcasting.webp",
+        "type": 2,
+        "id": 13563
+    },
+    {
+        "name": "Primal Strike",
+        "description": "While in beast form, your attacks count as magical for the purpose of overcoming Immunity to non-magical damage.",
+        "image": "Primal Strike.webp",
+        "type": 2,
+        "id": 8904
+    },
+    {
+        "name": "Purity of Body",
+        "description": "You are Immune to Poison damage and can't be Poisoned or affected by disease thanks to the purifying ki flowing through your meridians.",
+        "image": "Purity of Body.webp",
+        "type": 2,
+        "id": 13205
+    },
+    {
+        "name": "Ranger Knight",
+        "description": "You have sworn to serve a crown or nation and seek to bring its foes to ruin. Gain Heavy Armour.",
+        "image": "Ranger Knight.webp",
+        "type": 2,
+        "id": 19555
+    },
+    {
+        "name": "Relentless Avenger",
+        "description": "If you hit an enemy with an Opportunity Attack, your movement speed increases by 4.5m / 15ft on your next turn.",
+        "image": "Relentless Avenger.webp",
+        "type": 2,
+        "id": 7991
+    },
+    {
+        "name": "Relentless Rage",
+        "description": "Once per Short Rest, if you drop to 0 hit point while Rage|Enraged, you regain 1|Healing instead of being Downed.",
+        "image": "Relentless Rage.webp",
+        "type": 2,
+        "id": 8874
+    },
+    {
+        "name": "Reliable Talent",
+        "description": "When you make an Ability Check with a Skill you are Proficient with, the lowest result you can roll on the die is 10.",
+        "image": "Reliable_Talent.webp",
+        "type": 2,
+        "id": 6874
+    },
+    {
+        "name": "Remarkable Athlete: Jump",
+        "description": "You're a master of your own body, your athletic prowess extended beyond the usual. Your Jump distance is increased by m=3|ft=10.",
+        "image": "Remarkable Athlete Jump.webp",
+        "type": 2,
+        "id": 15271
+    },
+    {
+        "name": "Remarkable Athlete: Proficiency",
+        "description": "You're a master of your own body, your athletic prowess extended beyond the usual. You can add half of your Checks that you are not Proficient in.",
+        "image": "Remarkable Athlete Proficiency.webp",
+        "type": 2,
+        "id": 15272
+    },
+    {
+        "name": "Repelling Blast",
+        "description": "When you hit a creature with Eldritch Blast, you can push the creature up to m=4.5|ft=15 away from you.",
+        "image": "Repelling Blast.webp",
+        "type": 2,
+        "id": 10331
+    },
+    {
+        "name": "Resilient",
+        "description": "You increase an Ability by 1, to a maximum of 20.\n\nGain Proficiency in that ability's SavingThrow.",
+        "image": "Resilient.webp",
+        "type": 2,
+        "id": 8386
+    },
+    {
+        "name": "Ritual Caster: Free Spells",
+        "description": "You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice from the following: \n* Speak with Dead\n* Find Familiar\n* Longstrider\n* Enhance Leap\n* Disguise Self\n* Speak with Animals",
+        "image": "Resilient.webp",
+        "type": 2,
+        "id": 22763
+    },
+    {
+        "name": "Sanctified Stalker",
+        "description": "You swore to hunt the enemies of a holy or druidic order. You gain Proficiency in Religion and can cast Sacred Flame.",
+        "image": "Sanctified Stalker.webp",
+        "type": 2,
+        "id": 19557
+    },
+    {
+        "name": "Savage Attacker",
+        "description": "When making melee weapon attacks, you roll your damage dice twice and use the highest result.",
+        "image": "Savage Attacker.webp",
+        "type": 2,
+        "id": 8373
+    },
+    {
+        "name": "Savage Attacks",
+        "description": "When you land a Critical Hit with a melee weapon attack, you deal an extra dice of weapon damage.",
+        "image": "Savage Attacks.webp",
+        "type": 2,
+        "id": 6278
+    },
+    {
+        "name": "Sculpt Spells",
+        "description": "Create pockets of safety within your Evocation spells. Allies automatically succeed their SavingThrows against these spells and take no damage from them.",
+        "image": "Sculpt Spells.webp",
+        "type": 2,
+        "id": 16816
+    },
+    {
+        "name": "Sculptor of Flesh",
+        "description": "You can cast Polymorph with a Warlock spell slot.",
+        "image": "Sculptor of Flesh.webp",
+        "type": 2,
+        "id": 19640
+    },
+    {
+        "name": "Second-Story Work",
+        "description": "You've mastered the art of falling and gain Resistance to Falling damage.",
+        "image": "Second Story Work.webp",
+        "type": 2,
+        "id": 17798
+    },
+    {
+        "name": "Sentinel: Opportunity Advantage",
+        "description": "You gain Advantage on Opportunity Attacks.",
+        "image": "Sentinel Opportunity Advantage.webp",
+        "type": 2,
+        "id": 21524
+    },
+    {
+        "name": "Sentinel: Snare",
+        "description": "When you hit a creature with an Opportunity Attack, it can no longer move for the rest of its turn.",
+        "image": "Sentinel Snare.webp",
+        "type": 2,
+        "id": 21523
+    },
+    {
+        "name": "Sentinel: Vengeance",
+        "description": "When an enemy in melee range attacks an ally, you can use a Reaction to make a weapon attack against that enemy. Target ally must not have the Sentinel feat.",
+        "image": "Sentinel Vengeance.webp",
+        "type": 2,
+        "id": 21521
+    },
+    {
+        "name": "Sharpshooter: All In",
+        "description": "Ranged weapon attacks with weapons you are Proficient with have a -5 penalty to their Attack Roll, but deal an additional 10 damage.",
+        "image": "Sharpshooter All In.webp",
+        "type": 2,
+        "id": 21514
+    },
+    {
+        "name": "Sharpshooter: Low Ground",
+        "description": "Your ranged weapon attacks are not penalized for High Ground Rules.",
+        "image": "Sharpshooter Low Ground.webp",
+        "type": 2,
+        "id": 21516
+    },
+    {
+        "name": "Shield Master",
+        "description": "Gain a +2 bonus to Dexterity SavingThrows when wielding a Shield.",
+        "image": "Shield Master.webp",
+        "type": 2,
+        "id": 4945
+    },
+    {
+        "name": "Sign of Ill Omen",
+        "description": "You can cast Bestow Curse with a Warlock Spell Slot.",
+        "image": "Sign of Ill Omen.webp",
+        "type": 2,
+        "id": 19635
+    },
+    {
+        "name": "Skilled",
+        "description": "You gain Proficiency in 3 Skills of your choice.",
+        "image": "Skilled.webp",
+        "type": 2,
+        "id": 8376
+    },
+    {
+        "name": "Spell Sniper",
+        "description": "You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n\nThe cantrip must be one of:\n* Bone Chill\n* Eldritch Blast\n* Fire Bolt\n* Ray of Frost\n* Shocking Grasp\n* Thorn Whip",
+        "image": "Spell Sniper.webp",
+        "type": 2,
+        "id": 21500
+    },
+    {
+        "name": "Split Enchantment",
+        "description": "You know your enchantments inside and out. You can target 2 creatures with Enchantment spells that would normally only target 1 creature.",
+        "image": "Split Enchantment.webp",
+        "type": 2,
+        "id": 16853
+    },
+    {
+        "name": "Spreading Spores (Passive Feature)",
+        "description": "While Symbiotic Entity is active, you can create a cloud of Spreading Spores (Class Action)|Spreading Spores.",
+        "image": "Spreading Spores Passive Feature.webp",
+        "type": 2,
+        "id": 13692
+    },
+    {
+        "name": "Stalker's Flurry",
+        "description": "When you miss with a weapon attack, you can make another one for free.",
+        "image": "Stalkers Flurry.webp",
+        "type": 2,
+        "id": 17903
+    },
+    {
+        "name": "Steel Will",
+        "description": "Advantage on SavingThrows against being Frightened.",
+        "image": "Steel Will.webp",
+        "type": 2,
+        "id": 17839
+    },
+    {
+        "name": "Stillness of Mind",
+        "description": "If you are Charmed or Frightened, you automatically cast Stillness of Mind to remove the condition.",
+        "image": "Stillness of Mind.webp",
+        "type": 2,
+        "id": 13206
+    },
+    {
+        "name": "Stone Camouflage",
+        "description": "You have Advantage on Stealth checks.",
+        "image": "Stone Camouflage.webp",
+        "type": 2,
+        "id": 3962
+    },
+    {
+        "name": "Strongheart Resilience",
+        "description": "You have Advantage on Poison}} and [[Damage_Types#Resistance|Resistance to Poison damage.",
+        "image": "Strongheart Resilience.webp",
+        "type": 2,
+        "id": 6389
+    },
+    {
+        "name": "Superior Darkvision",
+        "description": "Can see in the dark up to 24m.",
+        "image": "Superior Darkvision.webp",
+        "type": 2,
+        "id": 3956
+    },
+    {
+        "name": "Tavern Brawler",
+        "description": "Increase your Strength or Constitution by 1, to a maximum of 20.\n\nWhen you make an unarmed attack, use an improvised weapon, or throw something, your Strength Modifier is added twice to the damage and Attack Rolls.Bug",
+        "image": "Tavern Brawler.webp",
+        "type": 2,
+        "id": 8378
+    },
+    {
+        "name": "Tempestuous Magic",
+        "description": "After you cast a Level 1 Tempestuous Magic: Flight|Fly}} as a Bonus Action up to ft=30 until the end of your turn without receiving [[Opportunity Attacks.",
+        "image": "Tempestuous Magic.webp",
+        "type": 2,
+        "id": 16294
+    },
+    {
+        "name": "Thief of Five Fates",
+        "description": "Once per Bane (Spell)|Bane}} using a Warlock [[Spell Slot.\n\nBane targets up to 3 creatures. They receive a 1d4 penalty to Attack Rolls and Saving Throws.",
+        "image": "Thief of Five Fates.webp",
+        "type": 2,
+        "id": 19633
+    },
+    {
+        "name": "Thought Shield: Psychic Reflection",
+        "description": "Your patron doesn't appreciate attempts to attack your mind. When you take Psychic damage, your attacker takes the same damage.",
+        "image": "Thought Shield Psychic Reflection.webp",
+        "type": 2,
+        "id": 8230
+    },
+    {
+        "name": "Thought Shield: Psychic Resistance",
+        "description": "An elder being shields your brain. You gain Resistance to Psychic damage.",
+        "image": "Thought Shield Psychic Resistance.webp",
+        "type": 2,
+        "id": 8229
+    },
+    {
+        "name": "Tough",
+        "description": "Your Hit Point maximum increases by 2 for every level you have gained.",
+        "image": "Tough.webp",
+        "type": 2,
+        "id": 4946
+    },
+    {
+        "name": "Tranquility",
+        "description": "Long_rest_iconLong Rests surround you with an aura of peace, granting you Sanctuary permanently until you attack.",
+        "image": "Tranquility.webp",
+        "type": 2,
+        "id": 18443
+    },
+    {
+        "name": "Two-Weapon Fighting",
+        "description": "When you make an offhand attack, you can add your Ability Score Modifier to the damage of the attack.",
+        "image": "Two-Weapon Fighting.webp",
+        "type": 2,
+        "id": 17370
+    },
+    {
+        "name": "Unarmoured Defence (Barbarian)",
+        "description": "Your body is as resilient as any armour. While not wearing Constitution Modifier to your ArmourClass. Wearing Heavy Armour impedes your Rage.",
+        "image": "Unarmoured Defense Barbarian.webp",
+        "type": 2,
+        "id": 6406
+    },
+    {
+        "name": "Unarmoured Defence (Monk)",
+        "description": "Your reflexes are as effective as any Wisdom Modifier to your ArmourClass.",
+        "image": "Unarmored Defense Monk.webp",
+        "type": 2,
+        "id": 8136
+    },
+    {
+        "name": "Unarmoured Movement",
+        "description": "Your movement speed increases by m=3|ft=10 while you are not wearing armour or using a shield.",
+        "image": "Unarmoured Movement.webp",
+        "type": 2,
+        "id": 13208
+    },
+    {
+        "name": "Uncanny Dodge",
+        "description": "Use your lightning-quick reflexes to protect yourself. When an attack hits you, you only take half the usual damage.",
+        "image": "Uncanny Dodge.webp",
+        "type": 2,
+        "id": 3978
+    },
+    {
+        "name": "Undead Thralls: Additional Undead",
+        "description": "When you use Animate Dead, you can raise an additional corpse.",
+        "image": "Undead Thralls Additional Undead.webp",
+        "type": 2,
+        "id": 16837
+    },
+    {
+        "name": "Undead Thralls: Better Summons",
+        "description": "Creatures created with Animate Dead have additional hit points equal to your wizard level, and your Proficiency Bonus is added to their damage.",
+        "image": "Undead Thralls Better Summons.webp",
+        "type": 2,
+        "id": 16838
+    },
+    {
+        "name": "Urban Tracker",
+        "description": "An expert at navigating the wild within the city, you gain Sleight of Hand Proficiency.",
+        "image": "Urban Tracker.webp",
+        "type": 2,
+        "id": 19509
+    },
+    {
+        "name": "War Caster: Concentration",
+        "description": "You gain Advantage on SavingThrows to maintain Concentration on a Spell.",
+        "image": "War Caster Concentration.webp",
+        "type": 2,
+        "id": 21507
+    },
+    {
+        "name": "War Magic",
+        "description": "You have honed your body and magic for war. After you cast a cantrip, you can make a weapon attack using a bonus.",
+        "image": "War Magic.webp",
+        "type": 2,
+        "id": 14417
+    },
+    {
+        "name": "Wasteland Wanderer: Cold",
+        "description": "You have spent endless days surviving desolate tundras. Gain resistance to Cold damage, taking only half damage from it.",
+        "image": "Wasteland Wanderer Cold.webp",
+        "type": 2,
+        "id": 19511
+    },
+    {
+        "name": "Wasteland Wanderer: Fire",
+        "description": "You have spent endless days surviving forbidding deserts. Gain resistance to Fire, taking only half damage from it.",
+        "image": "Wasteland Wanderer Fire.webp",
+        "type": 2,
+        "id": 19513
+    },
+    {
+        "name": "Wasteland Wanderer: Poison",
+        "description": "You have spent endless days surviving fetid swamps. Gain resistance to Poison, taking only half damage from it.",
+        "image": "Wasteland Wanderer Poison.webp",
+        "type": 2,
+        "id": 19515
+    },
+    {
+        "name": "Weapon Master",
+        "description": "Increase your Strength or Dexterity by 1, to a maximum of 20.\n\nGain Proficiency with four Weapon types of your choice.",
+        "image": "Weapon Master.webp",
+        "type": 2,
+        "id": 4947
+    },
+    {
+        "name": "Whispers of the Grave",
+        "description": "You can cast Speak with Dead without expending a Spell Slot.",
+        "image": "Whispers of the Grave.webp",
+        "type": 2,
+        "id": 19643
+    },
+    {
+        "name": "Wild Magic (Subclass Feature)",
+        "description": "Unruly magic sparks and fizzes through your veins. Each time you cast a spell of Level 1 or higher, your magic might surge and trigger a random magic effect.\n\n:Wild Magic table (Sorcerer)",
+        "image": "Wild Magic Turn Magic.webp",
+        "type": 2,
+        "id": 17209
+    },
+    {
+        "name": "Wild Strike",
+        "description": "You can make an additional attack after making an unarmed strike while in wildshape.",
+        "image": "Wild Strike.webp",
+        "type": 2,
+        "id": 9130
+    },
+    {
+        "name": "Wrath of the Storm",
+        "description": "As a reaction, strike back at an attacking creature, dealing 2d8|Lightning or 2d8|Thunder damage. The target takes half damage on a successful SavingThrow.",
+        "image": "Generic Thunder.webp",
+        "type": 2,
+        "id": 9201
+    }
+]
