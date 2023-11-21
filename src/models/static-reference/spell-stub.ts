@@ -3,6 +3,7 @@ import { ISpell } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { StaticReference } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/static-reference';
 import {
     StaticReferenceHandle,
+    StaticReferenceIdentifier,
     StaticallyReferenceable,
 } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/types';
 
@@ -28,4 +29,4 @@ export class SpellStub implements StaticallyReferenceable {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const typeCheck: SpellEffectStubConstructor = SpellStub;
 
-ref = StaticReference.registerClass(SpellStub, 's');
+ref = StaticReference.registerClass(SpellStub, StaticReferenceIdentifier.Spell);

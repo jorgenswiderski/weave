@@ -18,6 +18,10 @@ import { initLocations } from './locations/locations';
 import { RevisionLock } from './revision-lock/revision-lock';
 import { MediaWiki } from './media-wiki/media-wiki';
 import { CONFIG } from './config';
+import {
+    getPassiveDataFiltered,
+    initPassives,
+} from './characteristic/characteristic';
 
 CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS = false;
 
@@ -38,7 +42,12 @@ async function dump() {
         const startTime = Date.now();
 
         await getMongoDb();
-        await Promise.all([initLocations(), initActionsAndSpells()]);
+
+        await Promise.all([
+            initLocations(),
+            initActionsAndSpells(),
+            initPassives(),
+        ]);
 
         const datas = {
             'classes/info': getInfo(await getCharacterClassData()),
@@ -47,6 +56,7 @@ async function dump() {
             'spells/info': getSpellDataFiltered(),
             'actions/info': getActionDataFiltered(),
             'items/equipment': getEquipmentItemData(),
+            passives: getPassiveDataFiltered(),
         };
 
         await Promise.all(
