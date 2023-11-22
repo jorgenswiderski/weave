@@ -65,7 +65,7 @@ export class CharacterSubclass extends CharacterFeature {
     ): Promise<ICharacterOptionWithStubs> {
         const sectionMatches = [
             ...content.matchAll(
-                /\s*====\s*(.*?)\s*====\s*\n([\s\S]*?)(?=(?:\n\s*====)|$)/g,
+                /\s*={4,}\s*(.*?)\s*={4,}\s*\n([\s\S]*?)(?=(?:\n\s*====)|$)/g,
             ),
         ];
 

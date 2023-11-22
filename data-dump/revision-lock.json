@@ -9,6 +9,7 @@
         "Chapter Two": "Act Two",
         "Claws (Bear)": "Claws (Bear Wild Shape)",
         "Commander Zhalk": "Zhalk",
+        "Common Special Arrow Table": "Common Special Arrow Subtable",
         "Corsair Greymon": "Greymon",
         "Counting House": "The Counting House",
         "Creche Y'llek": "Crèche Y'llek",
@@ -22,10 +23,11 @@
         "Duergar": "Dwarf",
         "Duke Ulder Ravengard": "Ulder Ravengard",
         "Elder Brithvar": "Brithvar",
+        "EquipmentTrader_BodyArmor": "EquipmentTrader BodyArmor",
+        "EquipmentTrader_SecondaryArmor": "EquipmentTrader SecondaryArmor",
         "Escape the Nautiloid": "Prologue",
         "Fighting Style": "Fighting style",
         "Filro the Forgotten": "Filro",
-        "Find Familiar: Cheeky Quasit": "Find Familiar",
         "Flaming Fist Marcus": "Marcus",
         "Gauntlet Edwynna": "Edwynna",
         "Gauntlet Yeva": "Yeva",
@@ -33,7 +35,7 @@
         "Gnarled Teahouse": "Riverside Teahouse",
         "Gorion Mausoluem": "Gorion Mausoleum",
         "Grat the Trader": "Grat",
-        "Guardian of Faith": "Guardian of Faith (Disambiguation)",
+        "Guardian of Faith": "Guardian of Faith (disambiguation)",
         "Harper Outpost": "Wilderness",
         "Heavy_Magic_Armour_Trader_Table": "Heavy Magic Armour Trader Table",
         "Helm": "Headwear",
@@ -61,6 +63,7 @@
         "Sergeant Thrinn": "Thrinn",
         "Servant's Quarters": "Servants' Quarters",
         "Spirit Guardians": "Spirit Guardians (Spell)",
+        "Spirit Guardians (Spell)": "Spirit Guardians (spell)",
         "Stylin' Horst Potion Shop": "The Velveteen Elixir",
         "Template:Ability Check": "Template:Ability check",
         "Template:ActionPage": "Template:Action Page",
@@ -71,6 +74,7 @@
         "Template:CharacterInfo": "Template:Character info",
         "Template:Construction": "Template:Under construction",
         "Template:DamageType": "Template:Damage type",
+        "Template:DropTableDivider": "Template:Drop table divider",
         "Template:DropTableEnd": "Template:Drop table end",
         "Template:DropTableRow": "Template:Drop table row",
         "Template:DropTableStart": "Template:Drop table start",
@@ -91,6 +95,7 @@
         "Template:advantage": "Template:Advantage",
         "Template:attack roll": "Template:Attack roll",
         "Template:back to top": "Template:Back to top",
+        "Template:blank": "Template:Blank",
         "Template:blur": "Template:Blur",
         "Template:c": "Template:C",
         "Template:class": "Template:Class",
@@ -139,6 +144,7 @@
         "The Adamantine Forge (Location)": "Adamantine Forge (Location)",
         "The_Risen_Road": "The Risen Road",
         "Tressym": "Tara",
+        "Uncommon Special Arrow Table": "Uncommon Special Arrow Subtable",
         "User:Crashaholic/ActionTemplate": "Template:Action Page",
         "User:MetalPlateMage/ActionTemplate": "Template:Action Page",
         "User:MetalPlateMage/BardNavbox": "Template:BardNavbox",
@@ -1905,8 +1911,8 @@
         },
         {
             "pageId": 2391,
-            "revisionId": 114456,
-            "title": "Flame Blade"
+            "revisionId": 115534,
+            "title": "Flame Blade (Spell)"
         },
         {
             "pageId": 2393,
@@ -2215,8 +2221,8 @@
         },
         {
             "pageId": 2715,
-            "revisionId": 108630,
-            "title": "Spirit Guardians (Spell)"
+            "revisionId": 115419,
+            "title": "Spirit Guardians (spell)"
         },
         {
             "pageId": 2718,
@@ -3804,6 +3810,11 @@
             "title": "Leather Armour +1"
         },
         {
+            "pageId": 3710,
+            "revisionId": 23260,
+            "title": "Template:Blank"
+        },
+        {
             "pageId": 3714,
             "revisionId": 100360,
             "title": "Template:Attack roll"
@@ -4049,6 +4060,11 @@
             "title": "Pooldripp the Zealous"
         },
         {
+            "pageId": 4021,
+            "revisionId": 13532,
+            "title": "Template:Expertise"
+        },
+        {
             "pageId": 4023,
             "revisionId": 112116,
             "title": "Lay on Hands"
@@ -4184,9 +4200,19 @@
             "title": "Reflective Shell"
         },
         {
+            "pageId": 4174,
+            "revisionId": 115313,
+            "title": "Brace (Melee)"
+        },
+        {
             "pageId": 4175,
             "revisionId": 112207,
             "title": "Repulsor"
+        },
+        {
+            "pageId": 4176,
+            "revisionId": 115314,
+            "title": "Brace (Ranged)"
         },
         {
             "pageId": 4179,
@@ -4262,6 +4288,11 @@
             "pageId": 4204,
             "revisionId": 106023,
             "title": "Sunlit Wetlands"
+        },
+        {
+            "pageId": 4207,
+            "revisionId": 115330,
+            "title": "Flourish"
         },
         {
             "pageId": 4208,
@@ -4349,9 +4380,24 @@
             "title": "Heartstopper"
         },
         {
+            "pageId": 4255,
+            "revisionId": 115352,
+            "title": "Pommel Strike"
+        },
+        {
             "pageId": 4256,
             "revisionId": 105714,
             "title": "Piercing Shot"
+        },
+        {
+            "pageId": 4257,
+            "revisionId": 115341,
+            "title": "Mobile Shot"
+        },
+        {
+            "pageId": 4258,
+            "revisionId": 115353,
+            "title": "Prepare"
         },
         {
             "pageId": 4263,
@@ -6590,8 +6636,8 @@
         },
         {
             "pageId": 8120,
-            "revisionId": 94241,
-            "title": "Guardian of Faith (Spell)"
+            "revisionId": 115391,
+            "title": "Guardian of Faith (spell)"
         },
         {
             "pageId": 8122,
@@ -7337,6 +7383,11 @@
             "pageId": 8816,
             "revisionId": 113136,
             "title": "Orphic Hammer"
+        },
+        {
+            "pageId": 8824,
+            "revisionId": 115276,
+            "title": "Arcane Ammunition"
         },
         {
             "pageId": 8825,
@@ -8942,6 +8993,11 @@
             "pageId": 10497,
             "revisionId": 87685,
             "title": "Woe"
+        },
+        {
+            "pageId": 10526,
+            "revisionId": 73837,
+            "title": "Wild Magic table (Barbarian)"
         },
         {
             "pageId": 10542,
@@ -10794,6 +10850,21 @@
             "title": "Template:Drop table end"
         },
         {
+            "pageId": 13541,
+            "revisionId": 100636,
+            "title": "Rare Mushroom Table"
+        },
+        {
+            "pageId": 13542,
+            "revisionId": 48587,
+            "title": "Template:Transcludeable"
+        },
+        {
+            "pageId": 13543,
+            "revisionId": 94153,
+            "title": "Template:Drop table divider"
+        },
+        {
             "pageId": 13546,
             "revisionId": 112387,
             "title": "Haarlep"
@@ -10847,6 +10918,11 @@
             "pageId": 13598,
             "revisionId": 87582,
             "title": "Template:SpoilerBlur"
+        },
+        {
+            "pageId": 13606,
+            "revisionId": 84119,
+            "title": "Tiny Supply Table"
         },
         {
             "pageId": 13648,
@@ -10909,6 +10985,11 @@
             "title": "The Blade of Frontiers (Passive Feature)"
         },
         {
+            "pageId": 13910,
+            "revisionId": 84104,
+            "title": "Fancy Supply Table"
+        },
+        {
             "pageId": 13921,
             "revisionId": 96829,
             "title": "Robe of Supreme Defences"
@@ -10967,6 +11048,11 @@
             "pageId": 14005,
             "revisionId": 88566,
             "title": "Conjure Shadow Lantern Wraith"
+        },
+        {
+            "pageId": 14006,
+            "revisionId": 84115,
+            "title": "Rare Mushroom Supply Table"
         },
         {
             "pageId": 14021,
@@ -11309,6 +11395,11 @@
             "title": "Template:BarbarianNavbox"
         },
         {
+            "pageId": 14439,
+            "revisionId": 97657,
+            "title": "Potion Table"
+        },
+        {
             "pageId": 14444,
             "revisionId": 112213,
             "title": "Transfuse Health"
@@ -11367,6 +11458,16 @@
             "pageId": 14517,
             "revisionId": 53146,
             "title": "Template:MdItemIcon"
+        },
+        {
+            "pageId": 14522,
+            "revisionId": 65017,
+            "title": "Divine Intervention Options"
+        },
+        {
+            "pageId": 14550,
+            "revisionId": 84116,
+            "title": "Scroll Table"
         },
         {
             "pageId": 14554,
@@ -11479,6 +11580,11 @@
             "title": "Heavy Magic Armour Trader Table"
         },
         {
+            "pageId": 14895,
+            "revisionId": 93652,
+            "title": "Magic Armour Trader Table"
+        },
+        {
             "pageId": 14900,
             "revisionId": 95868,
             "title": "Strangler Luke"
@@ -11497,6 +11603,21 @@
             "pageId": 14941,
             "revisionId": 55668,
             "title": "Virulent Venom"
+        },
+        {
+            "pageId": 14953,
+            "revisionId": 73566,
+            "title": "Wild Magic table (Sorcerer)"
+        },
+        {
+            "pageId": 14994,
+            "revisionId": 100628,
+            "title": "Common Special Arrow Subtable"
+        },
+        {
+            "pageId": 14995,
+            "revisionId": 100642,
+            "title": "Uncommon Special Arrow Subtable"
         },
         {
             "pageId": 15025,
@@ -11652,6 +11773,11 @@
             "pageId": 15246,
             "revisionId": 110369,
             "title": "Thrinn"
+        },
+        {
+            "pageId": 15249,
+            "revisionId": 83459,
+            "title": "Wild Shape table (Druid)"
         },
         {
             "pageId": 15250,
@@ -12277,6 +12403,11 @@
             "pageId": 17215,
             "revisionId": 109234,
             "title": "Bend Luck"
+        },
+        {
+            "pageId": 17216,
+            "revisionId": 111372,
+            "title": "DraconicAncestryTable"
         },
         {
             "pageId": 17223,
@@ -13715,8 +13846,8 @@
         },
         {
             "pageId": 20457,
-            "revisionId": 77205,
-            "title": "Guardian of Faith (Disambiguation)"
+            "revisionId": 115392,
+            "title": "Guardian of Faith (disambiguation)"
         },
         {
             "pageId": 20470,
@@ -14452,6 +14583,11 @@
             "pageId": 22260,
             "revisionId": 103099,
             "title": "Azer Warhammer"
+        },
+        {
+            "pageId": 22261,
+            "revisionId": 115344,
+            "title": "Overheat"
         },
         {
             "pageId": 22262,
@@ -15229,6 +15365,11 @@
             "title": "Phalar Aluve: Shriek"
         },
         {
+            "pageId": 23949,
+            "revisionId": 115338,
+            "title": "Illuminating Shot"
+        },
+        {
             "pageId": 23950,
             "revisionId": 112100,
             "title": "Moonmote"
@@ -15474,6 +15615,11 @@
             "title": "Branding Smite (Ranged)"
         },
         {
+            "pageId": 24961,
+            "revisionId": 96682,
+            "title": "Adjusted Ranged Equipment Trader Table"
+        },
+        {
             "pageId": 25019,
             "revisionId": 110246,
             "title": "Greater Wyrm's Scales"
@@ -15667,6 +15813,21 @@
             "pageId": 25745,
             "revisionId": 103120,
             "title": "Template:Feature box"
+        },
+        {
+            "pageId": 25761,
+            "revisionId": 100623,
+            "title": "Common Music Instrument Subtable"
+        },
+        {
+            "pageId": 25762,
+            "revisionId": 100625,
+            "title": "Rare Music Instrument Subtable"
+        },
+        {
+            "pageId": 25763,
+            "revisionId": 100644,
+            "title": "Music Instrument Subtable"
         },
         {
             "pageId": 25775,
@@ -16059,6 +16220,11 @@
             "title": "Bumpnagel"
         },
         {
+            "pageId": 27364,
+            "revisionId": 115360,
+            "title": "Sacred Munitions"
+        },
+        {
             "pageId": 27383,
             "revisionId": 107877,
             "title": "Watcher Crossbow"
@@ -16162,6 +16328,11 @@
             "pageId": 27687,
             "revisionId": 110032,
             "title": "Ceremonial Longsword"
+        },
+        {
+            "pageId": 27712,
+            "revisionId": 110665,
+            "title": "Template:ResourceList"
         },
         {
             "pageId": 27727,
@@ -18507,6 +18678,56 @@
             "pageId": 28684,
             "revisionId": 114693,
             "title": "Exude Mating Pheromones"
+        },
+        {
+            "pageId": 28736,
+            "revisionId": 115270,
+            "title": "Toxic Secretions"
+        },
+        {
+            "pageId": 28777,
+            "revisionId": 115451,
+            "title": "Shadow Mastiff Alpha"
+        },
+        {
+            "pageId": 28784,
+            "revisionId": 115485,
+            "title": "Mapped Terror: Ceremorphosis"
+        },
+        {
+            "pageId": 28785,
+            "revisionId": 115467,
+            "title": "Mapped Terror"
+        },
+        {
+            "pageId": 28788,
+            "revisionId": 115476,
+            "title": "Mapped Terror: Betrayal"
+        },
+        {
+            "pageId": 28791,
+            "revisionId": 115474,
+            "title": "Mapped Terror: Disease"
+        },
+        {
+            "pageId": 28792,
+            "revisionId": 115480,
+            "title": "Mapped Terror: Powerlessness"
+        },
+        {
+            "pageId": 28796,
+            "revisionId": 115496,
+            "title": "Xyanyde's Fire"
+        },
+        {
+            "pageId": 28797,
+            "revisionId": 115499,
+            "title": "Mapped Terror: Spiders"
+        },
+        {
+            "pageId": 28799,
+            "revisionId": 115510,
+            "title": "Bite (Mapped Terror: Spiders)"
         }
     ],
     "deadLinks": [
@@ -18522,6 +18743,8 @@
         "Dead Pixie",
         "Ebon Lake",
         "Ebonlake",
+        "EquipmentTrader BodyArmor",
+        "EquipmentTrader SecondaryArmor",
         "Ffion Goldgrind",
         "Gish For'reth",
         "Golbraith",
@@ -18546,10 +18769,8 @@
         "Raider Zastri",
         "Rosymorn Monastary",
         "Self-Same Trial",
-        "Shadow Mastiff Alpha",
         "Silent Library",
         "Stone Guard Orgarth",
-        "Template:Spell Page",
         "The Devil's Fee",
         "The Rivington General",
         "Thudd",

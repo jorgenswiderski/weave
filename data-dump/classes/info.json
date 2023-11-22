@@ -23673,6 +23673,93 @@
                                             {
                                                 "ref": "c14555"
                                             }
+                                        ],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Draconic Ancestry: Red (Fire)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c27769"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Draconic Ancestry: Black (Acid)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c27762"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Draconic Ancestry: Blue",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c27763"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Draconic Ancestry: White (Cold)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c27774"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Draconic Ancestry: Green (Poison)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c27768"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Draconic Ancestry: Gold (Fire)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c27767"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Draconic Ancestry: Silver (Cold)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c27770"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Draconic Ancestry: Bronze",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c27765"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Draconic Ancestry: Copper (Acid)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c27766"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Draconic Ancestry: Brass (Fire)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c27764"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
                                         ]
                                     },
                                     {

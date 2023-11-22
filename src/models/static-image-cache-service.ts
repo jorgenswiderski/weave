@@ -23,12 +23,12 @@ class StaticImageCacheServiceSingleton {
     checked: Record<string, true> = {};
 
     public async cacheImage(imageName: string): Promise<void> {
+        if (!this.enabled) {
+            return Promise.resolve();
+        }
+
         const imagePromise = (async () => {
             try {
-                if (!this.enabled) {
-                    return;
-                }
-
                 if (this.checked[imageName]) {
                     return;
                 }
@@ -123,6 +123,10 @@ class StaticImageCacheServiceSingleton {
     }
 
     public async cleanupCache(): Promise<void> {
+        if (!this.enabled) {
+            return;
+        }
+
         try {
             const allFiles = await this.getAllFiles(this.imageCacheDir);
 

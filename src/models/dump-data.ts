@@ -81,5 +81,5 @@ async function dump() {
     }
 }
 
-StaticImageCacheService.enabled = true;
+StaticImageCacheService.enabled = CONFIG.MEDIAWIKI.USE_LOCAL_IMAGE_CACHE;
 dump();

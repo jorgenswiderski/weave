@@ -4884,6 +4884,154 @@
         ]
     },
     {
+        "name": "Wild Magic: Bolt of Light",
+        "image": "Wild Magic Bolt of Light.webp",
+        "level": 0,
+        "school": 2,
+        "summary": "Wild Magic: Bolt of Light is a special Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. It allows you to shoot a bolt of light from your chest that deals Radiant damage and has a chance to Blind.",
+        "description": "Shoot a bolt of light from your chest that Blinded|Blinds the target",
+        "ritual": false,
+        "concentration": false,
+        "id": 16545,
+        "attackRoll": false,
+        "rangeFt": 30,
+        "condition": "Blinded",
+        "conditionDuration": 1,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Wild Magic: Dark Tendrils",
+        "image": "Wild Magic Dark Tendrils.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Wild Magic: Dark Tendrils is a Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. Every turn, you deal Necrotic damage to every creature around you while also healing yourself.",
+        "description": "Shadowy tendrils lash outwards from you. Each creature within m=9|ft=30 of you must succeed a CON or take 1d12|Necrotic damage. Additionally, you gain Healing|1d12 HealingHealing|Temporary Hit Points.",
+        "ritual": false,
+        "concentration": false,
+        "id": 19588,
+        "attackRoll": false,
+        "range": 3,
+        "aoe": 1,
+        "aoeM": 9,
+        "aoeFt": 30,
+        "condition": "Wild Magic: Dark Tendrils",
+        "conditionDuration": 10,
+        "costs": []
+    },
+    {
+        "name": "Wild Magic: Intangible Spirit",
+        "damage": "amount: 1d6, type: Force",
+        "image": "Wild Magic Intangible Spirit.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Wild Magic: Intangible Spirit is a special Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. It allows you to summon a spectral flumph that explodes at the end of your turn, dealing damage in an area.",
+        "description": "Summon a spectral flumph. The flumph explodes at the end of your turn, dealing 1d6|Force damage to each creature within ft=7.",
+        "ritual": false,
+        "concentration": false,
+        "id": 16563,
+        "attackRoll": false,
+        "range": 1,
+        "rangeM": 9,
+        "rangeFt": 30,
+        "aoe": 1,
+        "aoeM": 2,
+        "aoeFt": 7,
+        "condition": "Wild Magic: Intangible Spirit",
+        "conditionDuration": 10,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Wild Magic: Magic Retribution",
+        "image": "Wild Magic Magic Retribution.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Wild Magic: Magic Retribution is a special Wild Magic Barbarian class action that is randomly granted when you trigger a Wild Magic roll. Damages enemies who hit you with Force damage.",
+        "description": "You are protected by wild, vengeful magic. Enemies that hit you take 1d6|Force damage in retaliation.",
+        "ritual": false,
+        "concentration": false,
+        "id": 19581,
+        "attackRoll": false,
+        "condition": "Wild Magic: Magic Retribution",
+        "conditionDuration": 10,
+        "costs": []
+    },
+    {
+        "name": "Wild Magic: Protective Lights",
+        "image": "Wild Magic Protective Lights.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Wild Magic: Protective Lights is a special Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. Magical lights surround and circle you, protecting you. You and your allies nearby receive an extra +1 Armour Class.",
+        "description": "You, and any allies within m=3|ft=10 of you, have a +1 bonus to Armour Class.",
+        "ritual": false,
+        "concentration": false,
+        "id": 16527,
+        "attackRoll": false,
+        "condition": "Wild Magic: Protective Lights",
+        "conditionDuration": 10,
+        "costs": []
+    },
+    {
+        "name": "Wild Magic: Teleport (Barbarian)",
+        "image": "Wild Magic Teleport Barbarian.webp",
+        "level": 0,
+        "school": 2,
+        "summary": "Wild Magic: Teleport is a special Wild Magic Barbarian class action that is randomly granted when you trigger a Wild Magic roll. It allows you to teleport as a bonus action every turn.",
+        "description": "As a bonus, teleport up to ft=60 to an unoccupied space you can see",
+        "ritual": false,
+        "concentration": false,
+        "id": 16503,
+        "attackRoll": false,
+        "rangeFt": 60,
+        "condition": "Wild Magic: Teleport",
+        "conditionDuration": 10,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Wild Magic: Vine Growth",
+        "image": "Wild Magic Vine Growth.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Wild Magic: Vine Growth is a special Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. Plants and vines extend from you causing Difficult Terrain to creatures near you. This area is centered on you and moves with you.",
+        "description": "Flowers and vines spread outward from you in a radius of m=5|ft=17 creating Difficult Terrain for everyone other than you.",
+        "ritual": false,
+        "concentration": false,
+        "id": 19586,
+        "attackRoll": false,
+        "condition": "Wild Magic: Vine Growth",
+        "conditionDuration": 10,
+        "costs": []
+    },
+    {
+        "name": "Wild Magic: Weapon Infusion",
+        "image": "Wild Magic Weapon Infusion.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Wild Magic: Weapon Infusion is a special Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. It boosts your weapon, dealing additional Force damage and returns to your hand when thrown.",
+        "description": "Magic infuses your weapon. It deals an additional 1d6|Force damage and gains the Light and Thrown properties. If thrown, it reappears in your hand at the end of your turn.",
+        "ritual": false,
+        "concentration": false,
+        "id": 19561,
+        "attackRoll": false,
+        "condition": "Wild Magic: Weapon Infusion",
+        "conditionDuration": 10,
+        "costs": []
+    },
+    {
         "name": "Wild Shape",
         "image": "Wild Shape.webp",
         "level": 0,

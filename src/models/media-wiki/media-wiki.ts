@@ -43,7 +43,7 @@ export class PageData implements IPageData {
     contentformat?: string;
     content: string;
 
-    constructor(data: IPageData) {
+    protected constructor(data: IPageData) {
         const { title, pageId, categories, lastFetched, content, ...rest } =
             data;
 
@@ -90,7 +90,9 @@ export class PageData implements IPageData {
 
     protected getRawTemplateNames(): string[] {
         const allTemplateNames = [
-            ...this.content.matchAll(/{{(?:Template:)?([^|}]+)[\s\S]*?}}/g),
+            ...this.content.matchAll(
+                /(?<=[^{]|^){{(?:Template:)?([^|{}]+)[\s\S]*?}}/g,
+            ),
         ]
             .map((match) => match[1].trim())
             .filter((name) => {
@@ -167,6 +169,58 @@ export class PageData implements IPageData {
 
         return { title, content };
     }
+
+    static async resolveArticleTransclusions(content: string): Promise<string> {
+        const transclusions = [...content.matchAll(/{{:([^{}|]+)}}/g)];
+
+        if (transclusions.length === 0) {
+            return content;
+        }
+
+        const entries = (await Promise.all(
+            transclusions.map(async ([, pageTitle]) => {
+                // eslint-disable-next-line @typescript-eslint/no-use-before-define
+                return [pageTitle, await MediaWiki.getPage(pageTitle)];
+            }),
+        )) as [string, PageData][];
+
+        const pages = new Map(entries);
+
+        transclusions.forEach(([transclusion, pageTitle]) => {
+            const page = pages.get(pageTitle)!;
+
+            const includeOnlyMatches = [
+                ...page.content.matchAll(
+                    /<(includeonly|onlyinclude)>([\s\S]*?)<\/\1>/g,
+                ),
+            ];
+
+            let transcludeContent = page.content;
+
+            if (includeOnlyMatches.length > 0) {
+                transcludeContent = includeOnlyMatches
+                    .map((match) => match[2])
+                    .join('');
+            }
+
+            transcludeContent = transcludeContent.replace(
+                /<noinclude>[\s\S]*?<\/noinclude>/g,
+                '',
+            );
+
+            // eslint-disable-next-line no-param-reassign
+            content = content.replace(transclusion, transcludeContent);
+        });
+
+        return this.resolveArticleTransclusions(content);
+    }
+
+    static async construct(page: IPageData): Promise<PageData> {
+        return new PageData({
+            ...page,
+            content: await this.resolveArticleTransclusions(page.content),
+        });
+    }
 }
 
 export class MediaWiki {
@@ -220,7 +274,7 @@ export class MediaWiki {
             (cachedPage.revisionId === revisionId ||
                 (!revisionId && MediaWiki.isPageThrottled(cachedPage)))
         ) {
-            return new PageData(cachedPage);
+            return PageData.construct(cachedPage);
         }
 
         let latestRevisionId;
@@ -266,7 +320,7 @@ export class MediaWiki {
                 },
             );
 
-            return new PageData(cachedPage as unknown as IPageData);
+            return PageData.construct(cachedPage as unknown as IPageData);
         }
 
         const content = await MwnApi.readPage(pageTitle, revisionId);
@@ -322,7 +376,7 @@ export class MediaWiki {
             }
         }
 
-        return new PageData(data);
+        return PageData.construct(data);
     });
 
     static async getTextExtract(

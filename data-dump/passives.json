@@ -364,6 +364,76 @@
         "id": 6722
     },
     {
+        "name": "Draconic Ancestry: Black (Acid)",
+        "description": "At Level 6, spells that deal Acid damage are more powerful, and you can become Acid|Resistant to Acid damage.",
+        "image": "Draconic Ancestry Black Acid.webp",
+        "type": 2,
+        "id": 27762
+    },
+    {
+        "name": "Draconic Ancestry: Blue (Lightning)",
+        "description": "At Level 6, spells that deal Lightning damage are more powerful, and you can become Lightning|Resistant to Lightning damage.",
+        "image": "Draconic Ancestry Blue Lightning.webp",
+        "type": 2,
+        "id": 27763
+    },
+    {
+        "name": "Draconic Ancestry: Brass (Fire)",
+        "description": "At Level 6, spells that deal Fire damage are more powerful, and you can become Fire|Resistant to Fire damage.",
+        "image": "Draconic Ancestry Brass Fire.webp",
+        "type": 2,
+        "id": 27764
+    },
+    {
+        "name": "Draconic Ancestry: Bronze (Lightning)",
+        "description": "At Level 6, spells that deal Lightning damage are more powerful, and you can become Lightning|Resistant to Lightning damage.",
+        "image": "Draconic Ancestry Bronze Lightning.webp",
+        "type": 2,
+        "id": 27765
+    },
+    {
+        "name": "Draconic Ancestry: Copper (Acid)",
+        "description": "At Level 6, spells that deal Acid damage are more powerful, and you can become Acid|Resistant to Acid damage.",
+        "image": "Draconic Ancestry Copper Acid.webp",
+        "type": 2,
+        "id": 27766
+    },
+    {
+        "name": "Draconic Ancestry: Gold (Fire)",
+        "description": "At Level 6, spells that deal Fire damage are more powerful, and you can become Fire|Resistant to Fire damage.",
+        "image": "Draconic Ancestry Gold Fire.webp",
+        "type": 2,
+        "id": 27767
+    },
+    {
+        "name": "Draconic Ancestry: Green (Poison)",
+        "description": "At Level 6, spells that deal Poison damage are more powerful, and you can become Poison|Resistant to Poison damage.",
+        "image": "Draconic Ancestry Green Poison.webp",
+        "type": 2,
+        "id": 27768
+    },
+    {
+        "name": "Draconic Ancestry: Red (Fire)",
+        "description": "At Level 6, spells that deal Fire damage are more powerful, and you can become Fire|Resistant to Fire damage.",
+        "image": "Draconic Ancestry Red Fire.webp",
+        "type": 2,
+        "id": 27769
+    },
+    {
+        "name": "Draconic Ancestry: Silver (Cold)",
+        "description": "At Level 6, spells that deal Cold damage are more powerful, and you can become Cold|Resistant to Cold damage.",
+        "image": "Draconic Ancestry Silver Cold.webp",
+        "type": 2,
+        "id": 27770
+    },
+    {
+        "name": "Draconic Ancestry: White (Cold)",
+        "description": "At Level 6, spells that deal Cold damage are more powerful, and you can become Cold|Resistant to Cold damage.",
+        "image": "Draconic Ancestry White Cold.webp",
+        "type": 2,
+        "id": 27774
+    },
+    {
         "name": "Draconic Resilience",
         "description": "Dragon-like scales cover parts of your skin. When you aren't wearing armour, your base ArmourClass is 13.",
         "image": "Draconic Resilience.webp",
@@ -1470,7 +1540,7 @@
     },
     {
         "name": "Wild Magic (Subclass Feature)",
-        "description": "Unruly magic sparks and fizzes through your veins. Each time you cast a spell of Level 1 or higher, your magic might surge and trigger a random magic effect.\n\n:Wild Magic table (Sorcerer)",
+        "description": "Unruly magic sparks and fizzes through your veins. Each time you cast a spell of Level 1 or higher, your magic might surge and trigger a random magic effect.\n\n{| class=\"wikitable mw-collapsible } | one = mw-collapsed | 1 = mw-collapsed | mw-expanded}}\" style=\"width: 100%;\"",
         "image": "Wild Magic Turn Magic.webp",
         "type": 2,
         "id": 17209

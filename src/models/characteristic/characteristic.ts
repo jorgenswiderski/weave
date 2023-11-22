@@ -62,7 +62,7 @@ export class Characteristic
 
         if (!(await this.page.hasTemplate('Passive feature page'))) {
             // If its an Action Page, no problem, it'll just be picked up by the Actions code
-            if (!(await this.page.hasTemplate(['Action Page', 'Spell Page']))) {
+            if (!(await this.page.hasTemplate(['Action Page', 'SpellPage']))) {
                 warn(
                     `Characteristic page '${this.page.title}' is missing Passive feature page template!`,
                 );

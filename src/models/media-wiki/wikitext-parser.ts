@@ -157,11 +157,38 @@ export class MediaWikiParser {
             },
         );
 
+        const pendingHeaders: string[] = [];
+
+        function processCell(content: string) {
+            if (Array.isArray(currentRow)) {
+                currentRow.push(content);
+            } else {
+                let currentColumnIndex = Object.keys(currentRow).length;
+
+                if (format === 'both') {
+                    currentColumnIndex /= 2;
+                }
+
+                const header = headers[currentColumnIndex];
+                currentRow[header] = content;
+
+                if (format === 'both') {
+                    currentRow[currentColumnIndex] = content;
+                }
+            }
+        }
+
         sections.forEach(({ type, content }) => {
             if (type === 'row') {
                 if (Object.keys(currentRow).length > 0) {
                     rows.push(currentRow as any);
                     currentRow = isRecord ? {} : [];
+                } else {
+                    headers.push(
+                        ...pendingHeaders
+                            .splice(0)
+                            .map(MediaWikiParser.stripMarkup),
+                    );
                 }
             }
 
@@ -170,24 +197,13 @@ export class MediaWikiParser {
             }
 
             if (type === 'header') {
-                headers.push(MediaWikiParser.stripMarkup(content));
+                pendingHeaders.push(content);
             } else if (type === 'cell') {
-                if (Array.isArray(currentRow)) {
-                    currentRow.push(content);
-                } else {
-                    let currentColumnIndex = Object.keys(currentRow).length;
-
-                    if (format === 'both') {
-                        currentColumnIndex /= 2;
-                    }
-
-                    const header = headers[currentColumnIndex];
-                    currentRow[header] = content;
-
-                    if (format === 'both') {
-                        currentRow[currentColumnIndex] = content;
-                    }
+                if (pendingHeaders.length > 0) {
+                    pendingHeaders.splice(0).forEach(processCell);
                 }
+
+                processCell(content);
             }
         });
 
