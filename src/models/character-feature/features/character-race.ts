@@ -11,7 +11,7 @@ import { CharacterSubrace } from './character-subrace';
 import { CharacterFeature } from '../character-feature';
 import { Utils } from '../../utils';
 import { StaticImageCacheService } from '../../static-image-cache-service';
-import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
 
 type RaceChoice = { type: CharacterPlannerStep; options: CharacterSubrace[] };
 

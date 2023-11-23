@@ -23,7 +23,7 @@ import {
     gameLocationById,
     gameLocationByPageTitle,
 } from '../locations/locations';
-import { MediaWikiParser } from '../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
 import {
     MediaWikiTemplateParserConfigItem,
     MediaWikiTemplateParserConfig,

@@ -8,7 +8,7 @@ import {
 import { ItemSourceLocation } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
 import { MediaWiki } from '../media-wiki/media-wiki';
-import { MediaWikiParser } from '../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
 
 class GameLocationNode {
     parent?: GameLocationNode;

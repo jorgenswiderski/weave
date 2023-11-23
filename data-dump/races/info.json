@@ -163,7 +163,7 @@
     },
     {
         "name": "Elf",
-        "description": "With an ethereal countenance and long lifespans, elves are at home with nature's power, flourishing in light and dark alike.",
+        "description": "\"With an ethereal countenance and long lifespans, elves are at home with nature's power, flourishing in light and dark alike.\"",
         "choices": [
             {
                 "type": 8,
@@ -237,7 +237,7 @@
     },
     {
         "name": "Githyanki",
-        "description": "Githyanki are peerless warriors from the mind flayers, whose ancient empire enslaved the ancestral gith for millennia.",
+        "description": "Githyanki are peerless warriors from the Astral Plane, known for their legendary silver blades and red dragon mounts. They seek the total destruction of mind flayers, whose ancient empire enslaved the ancestral gith for millennia.",
         "image": "Race Githyanki.png",
         "grants": [
             {
@@ -250,7 +250,7 @@
     },
     {
         "name": "Gnome",
-        "description": "Small, clever, and energetic, gnomes use their long lives to explore Faerûn's brightest corners and darkest depths.",
+        "description": "\"Small, clever, and energetic, gnomes use their long lives to explore Faerûn's brightest corners and darkest depths.\"",
         "choices": [
             {
                 "type": 8,
@@ -304,7 +304,7 @@
     },
     {
         "name": "Half-Elf",
-        "description": "Half-Elves inherit blessings from both their parents, but at the price of never quite fitting in. Curious, ambitious, and versatile, half-elves are welcome everywhere, but struggle without a community to call their own.",
+        "description": "\"Half-Elves inherit blessings from both their parents, but at the price of never quite fitting in. Curious, ambitious, and versatile, half-elves are welcome everywhere, but struggle without a community to call their own.\"",
         "choices": [
             {
                 "type": 8,
@@ -438,7 +438,7 @@
     },
     {
         "name": "Human",
-        "description": "The most common face to see in Faerûn, humans are known for their tenacity, creativity, and endless capacity for growth.",
+        "description": "\"The most common face to see in Faerûn, humans are known for their tenacity, creativity, and endless capacity for growth.\"",
         "image": "Race Human.png",
         "grants": [
             {

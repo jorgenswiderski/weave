@@ -39,7 +39,7 @@ const Barbarian: Overrides = {
     },
     Berserker: {
         3: {
-            'Frenzy|w=40': {
+            Frenzy: {
                 forceContentMatch: true,
             },
         },
@@ -65,14 +65,14 @@ const Barbarian: Overrides = {
 const Cleric: Overrides = {
     'Nature Domain': {
         1: {
-            'Acolyte of Nature|w=40': {
+            'Acolyte of Nature': {
                 forceContentMatch: true,
             },
         },
     },
     'Tempest Domain': {
         1: {
-            'Wrath of the Storm|w=40': {
+            'Wrath of the Storm': {
                 disableTitleMatch: true,
             },
         },
@@ -99,7 +99,7 @@ const Fighter: Overrides = {
 const Rogue: Overrides = {
     'Gloom Stalker': {
         3: {
-            'Dread Ambusher|w=40': {
+            'Dread Ambusher': {
                 forceContentMatch: true,
             },
         },
@@ -118,7 +118,7 @@ const Sorcerer: Overrides = {
     },
     'Storm Sorcery': {
         6: {
-            'Heart of the Storm|w=40': {
+            'Heart of the Storm': {
                 disableTitleMatch: true,
                 forceContentMatch: true,
             },
@@ -129,7 +129,7 @@ const Sorcerer: Overrides = {
 const Wizard: Overrides = {
     'Necromancy School': {
         6: {
-            'Undead Thralls: Animate Dead|w=40': {
+            'Undead Thralls: Animate Dead': {
                 disableTitleMatch: true,
                 forceContentMatch: true,
             },

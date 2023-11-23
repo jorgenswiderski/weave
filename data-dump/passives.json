@@ -1,14 +1,14 @@
 [
     {
         "name": "Acolyte of Nature",
-        "description": "Learn one of the following cantrips: Poison Spray, Produce Flame, Shillelagh, Thorn Whip.\n\nGet one of the following proficiencies: Animal Handling, Nature, Survival.",
+        "description": "Learn one of the following Druid cantrips: Poison Spray, Produce Flame, Shillelagh, Thorn Whip.\n\nGet one of the following proficiencies: Animal Handling, Nature, Survival.",
         "image": "Acolyte of Nature.webp",
         "type": 2,
         "id": 8792
     },
     {
         "name": "Advanced Unarmoured Movement",
-        "description": "Difficult Terrain doesn't slow you down and you can Jump (Bonus Action)| Jump (Bonus Action)|Jump an additional m=6|ft=20 while you are not wearing shield.",
+        "description": "Difficult Terrain doesn't slow you down and you can  Jump (Bonus Action) an additional m=6|ft=20 while you are not wearing armour or using a shield.",
         "image": "Advanced Unarmoured Movement.webp",
         "type": 2,
         "id": 13195
@@ -57,14 +57,14 @@
     },
     {
         "name": "Aspect of the Beast (Bear)",
-        "description": "The Aspect of the Bear infuses you with strength.\n\nYour Checks.",
+        "description": "The Aspect of the Bear infuses you with strength.\n\nYour Carrying Capacity is doubled, and you have Advantage on Strength Checks.",
         "image": "Aspect of the Beast Bear.webp",
         "type": 2,
         "id": 17306
     },
     {
         "name": "Aspect of the Beast (Chimpanzee)",
-        "description": "The Aspect of the Chimpanzee grants you a nimble mischievousness.\n\nYou gain Resistance to Falling damage, and throwing camp supplies Blinded|Blinds targets.",
+        "description": "The Aspect of the Chimpanzee grants you a nimble mischievousness.\n\nYou gain Resistance to Falling damage, and throwing camp supplies Blinds targets.",
         "image": "Aspect of the Beast Chimpanzee.webp",
         "type": 2,
         "id": 17307
@@ -106,7 +106,7 @@
     },
     {
         "name": "Aspect of the Beast (Tiger)",
-        "description": "The Aspect of the Tiger infuses you with an unrelenting ferocity.\n\nYou add an additional Strength Modifier to Bleeding}} or Poisoned targets, and gain Proficiency in [[Survival",
+        "description": "The Aspect of the Tiger infuses you with an unrelenting ferocity.\n\nYou add an additional Strength Modifier to Attack Rolls against Bleeding or Poisoned targets, and gain Proficiency in Survival",
         "image": "Aspect of the Beast Tiger.webp",
         "type": 2,
         "id": 17327
@@ -120,7 +120,7 @@
     },
     {
         "name": "Aspect of the Beast (Wolverine)",
-        "description": "The Aspect of the Wolverine grants you the tools to relentlessly pursue your prey.\n\nWhen you attack a Bleeding or Poisoned target, you also Maimed|Maim it for 1 turn",
+        "description": "The Aspect of the Wolverine grants you the tools to relentlessly pursue your prey.\n\nWhen you attack a Bleeding or Poisoned target, you also Maim it for 1 turn",
         "image": "Aspect of the Beast Wolverine.webp",
         "type": 2,
         "id": 17330
@@ -134,7 +134,7 @@
     },
     {
         "name": "Assassinate: Ambush",
-        "description": "Any successful Surprised}} creature is a [[Critical Hit.",
+        "description": "Any successful Attack Roll against a Surprised creature is a Critical Hit.",
         "image": "Generic Threat.webp",
         "type": 2,
         "id": 17802
@@ -148,7 +148,7 @@
     },
     {
         "name": "Athlete: Standing Up",
-        "description": "When you are Prone, standing up uses significantly less movement. Your Jump (Bonus Action)|Jump distance also increases by 50%.",
+        "description": "When you are Prone, standing up uses significantly less movement. Your Jump distance also increases by 50%.",
         "image": "Athlete Standing Up.webp",
         "type": 2,
         "id": 21638
@@ -204,7 +204,7 @@
     },
     {
         "name": "Bounty Hunter",
-        "description": "Gain Ensnaring Strike (Ranged)|ranged}} or Ensnaring Strike (Melee)|melee) have Disadvantage on their [[Saving Throw.",
+        "description": "Gain Proficiency in Investigation. Creatures you hit with Ensnaring Strike (either ranged or melee) have Disadvantage on their Saving Throw.",
         "image": "Bounty Hunter.webp",
         "type": 2,
         "id": 19547
@@ -239,7 +239,7 @@
     },
     {
         "name": "Companion's Bond",
-        "description": "Your Summon Companion|Summoned Companions receive a bonus to Armour Class, damage, and Attack Rolls (even though this is not stated) equal to your ProficiencyBonus.",
+        "description": "Your Summoned Companions receive a bonus to Armour Class, damage, and Attack Rolls (even though this is not stated) equal to your ProficiencyBonus.",
         "image": "Companions Bond.webp",
         "type": 2,
         "id": 17997
@@ -260,21 +260,21 @@
     },
     {
         "name": "Danger Sense",
-        "description": "You sense when things aren't as they should be. \n\nYou have Advantage on Dexterity surfaces. \n\nTo gain this benefit, you can't be Blinded or Incapacitated.",
+        "description": "You sense when things aren't as they should be. \n\nYou have Advantage on Dexterity Saving Throws against traps, Spells and surfaces. \n\nTo gain this benefit, you can't be Blinded or Incapacitated.",
         "image": "Danger Sense.webp",
         "type": 2,
         "id": 6407
     },
     {
         "name": "Dark One's Blessing",
-        "description": "Whenever you reduce a hostile creature to 0 Charisma Modifier + [[Warlock Level}} temporary hit points.",
+        "description": "Whenever you reduce a hostile creature to 0 Hit Points, this gift from your patron grants you Charisma Modifier + Warlock Level temporary hit points.",
         "image": "Dark One's Blessing.webp",
         "type": 2,
         "id": 6542
     },
     {
         "name": "Dark One's Own Luck",
-        "description": "Call on your patron to change your fate and add a {{DieIcon|d10|Physical1d10}} to an D20|25 Ability Check.",
+        "description": "Call on your patron to change your fate and add a {{DieIcon|d10|Physical1d10}} to an  Ability Check.",
         "image": "Generic Magical.webp",
         "type": 2,
         "id": 8193
@@ -302,7 +302,7 @@
     },
     {
         "name": "Destroy Undead",
-        "description": "When you successfully Turned|Turn an Undead creature, it also takes 4d6|Radiant damage.",
+        "description": "When you successfully Turn an Undead creature, it also takes 4d6|Radiant damage.",
         "image": "Destroy Undead.webp",
         "type": 2,
         "id": 6412
@@ -316,7 +316,7 @@
     },
     {
         "name": "Disciple of Life",
-        "description": "Your devotion empowers your healing spell, the target regains additional hit points equal to 2 + the spell's level|Healing.",
+        "description": "Your devotion empowers your healing Spells. When casting a healing spell, the target regains additional hit points equal to 2 + the spell's level|Healing.",
         "image": "Disciple of Life.webp",
         "type": 2,
         "id": 8004
@@ -581,7 +581,7 @@
     },
     {
         "name": "Elemental Affinity: Damage",
-        "description": "When you cast a spell that deals damage of the type associated with your draconic ancestry, you add your Modifier to the damage",
+        "description": "When you cast a spell that deals damage of the type associated with your draconic ancestry, you add your Charisma Modifier to the damage",
         "image": "Elemental Affinity Damage.webp",
         "type": 2,
         "id": 17225
@@ -623,7 +623,7 @@
     },
     {
         "name": "Experimental Alchemy",
-        "description": "You brew two Alchemical Solutions instead of one when combining extracts, if you succeed a Check.",
+        "description": "You brew two Alchemical Solutions instead of one when combining extracts, if you succeed a Difficulty Class 15 Medicine Check.",
         "image": "Experimental Alchemy.webp",
         "type": 2,
         "id": 16821
@@ -651,7 +651,7 @@
     },
     {
         "name": "Fast Movement",
-        "description": "Your m=3|ft=10}} while not wearing [[Heavy Armour.",
+        "description": "Your Movement Speed increases by m=3|ft=10 while not wearing Heavy Armour.",
         "image": "Fast Movement.webp",
         "type": 2,
         "id": 6409
@@ -665,7 +665,7 @@
     },
     {
         "name": "Fey Ancestry",
-        "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleeping|Sleep.",
+        "description": "The Feywild casts a veil over your mind. You have Advantage on SavingThrows against being Charmed, and magic can't put you to Sleep.",
         "image": "Fey Ancestry.webp",
         "type": 2,
         "id": 3953
@@ -721,7 +721,7 @@
     },
     {
         "name": "Grim Harvest",
-        "description": "Once per turn, if you kill a creature with a spell, you regain Spell Slot level used - thrice if it's a Necromancy spell. Undead and Constructs are unaffected.",
+        "description": "Once per turn, if you kill a creature with a spell, you regain Hit Points equal to twice the Spell Slot level used - thrice if it's a Necromancy spell. Undead and Constructs are unaffected.",
         "image": "Grim Harvest.webp",
         "type": 2,
         "id": 8933
@@ -819,7 +819,7 @@
     },
     {
         "name": "Inured to Undeath",
-        "description": "You have steeped yourself so completely in death that you are hit point maximum cannot be reduced.",
+        "description": "You have steeped yourself so completely in death that you are Resistant to Necrotic damage, and moreover your hit point maximum cannot be reduced.",
         "image": "Inured to Undeath.webp",
         "type": 2,
         "id": 16856
@@ -833,7 +833,7 @@
     },
     {
         "name": "Jack of All Trades",
-        "description": "Your vast experiences make you more likely to succeed in any undertaking. Add half of your Ability Checks that you are not Proficient in.",
+        "description": "Your vast experiences make you more likely to succeed in any undertaking. Add half of your Proficiency Bonus (rounded down) to Ability Checks that you are not Proficient in.",
         "image": "Jack of All Trades.webp",
         "type": 2,
         "id": 3377
@@ -875,7 +875,7 @@
     },
     {
         "name": "Mage Breaker",
-        "description": "You have a history of battling spellcasters. Gain True Strike}}, which gives you Advantage on Attack Rolls against a creature. [[Wisdom is your Spellcasting Ability for this spell.",
+        "description": "You have a history of battling spellcasters. Gain Proficiency with Arcana and the True Strike, which gives you Advantage on Attack Rolls against a creature. Wisdom is your Spellcasting Ability for this spell.",
         "image": "Mage Breaker.webp",
         "type": 2,
         "id": 19552
@@ -1057,7 +1057,7 @@
     },
     {
         "name": "Naturally Stealthy",
-        "description": "Your nimble nature makes you skilled at concealment. You have Advantage on Checks.",
+        "description": "Your nimble nature makes you skilled at concealment. You have Advantage on Stealth Checks.",
         "image": "Naturally Stealthy.webp",
         "type": 2,
         "id": 6388
@@ -1071,7 +1071,7 @@
     },
     {
         "name": "One with Shadows",
-        "description": "You learn how to cast One with Shadows (Class Action)|One with Shadows.",
+        "description": "You learn how to cast One with Shadows.",
         "image": "One with Shadows.webp",
         "type": 2,
         "id": 19626
@@ -1085,14 +1085,14 @@
     },
     {
         "name": "Pact of the Blade (Passive Feature)",
-        "description": "You can Pact of the Blade|Summon a pact weapon, or Bind Pact Weapon|Bind the one you are wielding as one, making it magical.\n\nPact weapons use the wielder's Spellcasting Ability Modifier instead of Strength or Dexterity.",
+        "description": "You can Summon a pact weapon, or Bind the one you are wielding as one, making it magical.\n\nPact weapons use the wielder's Spellcasting Ability Modifier instead of Strength or Dexterity.",
         "image": "Pact of the Blade Passive Feature.webp",
         "type": 2,
         "id": 19684
     },
     {
         "name": "Pact of the Chain",
-        "description": "Gain the service of a familiar, a fey spirit that takes a form of your choosing. This can be an animal, imp, or quasit.\n\nGrants:\n* Find Familiar|w=40\n* Find Familiar: Imp|w=40\n* Find Familiar: Quasit|w=40",
+        "description": "Gain the service of a familiar, a fey spirit that takes a form of your choosing. This can be an animal, imp, or quasit.\n\nGrants:\n* Find Familiar\n* Find Familiar: Imp\n* Find Familiar: Quasit",
         "image": "Pact of the Chain.webp",
         "type": 2,
         "id": 19676
@@ -1134,7 +1134,7 @@
     },
     {
         "name": "Primal Strike",
-        "description": "While in beast form, your attacks count as magical for the purpose of overcoming Immunity to non-magical damage.",
+        "description": "While in beast form, your attacks count as magical for the purpose of overcoming Resistance and Immunity to non-magical damage.",
         "image": "Primal Strike.webp",
         "type": 2,
         "id": 8904
@@ -1148,7 +1148,7 @@
     },
     {
         "name": "Ranger Knight",
-        "description": "You have sworn to serve a crown or nation and seek to bring its foes to ruin. Gain Heavy Armour.",
+        "description": "You have sworn to serve a crown or nation and seek to bring its foes to ruin. Gain Proficiency with History and Proficiency with Heavy Armour.",
         "image": "Ranger Knight.webp",
         "type": 2,
         "id": 19555
@@ -1162,7 +1162,7 @@
     },
     {
         "name": "Relentless Rage",
-        "description": "Once per Short Rest, if you drop to 0 hit point while Rage|Enraged, you regain 1|Healing instead of being Downed.",
+        "description": "Once per Short Rest, if you drop to 0 hit point while Enraged, you regain 1|Healing instead of being Downed.",
         "image": "Relentless Rage.webp",
         "type": 2,
         "id": 8874
@@ -1183,7 +1183,7 @@
     },
     {
         "name": "Remarkable Athlete: Proficiency",
-        "description": "You're a master of your own body, your athletic prowess extended beyond the usual. You can add half of your Checks that you are not Proficient in.",
+        "description": "You're a master of your own body, your athletic prowess extended beyond the usual. You can add half of your Proficiency Bonus to any Strength, Dexterity, and Constitution Checks that you are not Proficient in.",
         "image": "Remarkable Athlete Proficiency.webp",
         "type": 2,
         "id": 15272
@@ -1204,7 +1204,7 @@
     },
     {
         "name": "Ritual Caster: Free Spells",
-        "description": "You learn two Ritual_Spell_Icon|24px Ritual Spells of your choice from the following: \n* Speak with Dead\n* Find Familiar\n* Longstrider\n* Enhance Leap\n* Disguise Self\n* Speak with Animals",
+        "description": "You learn two  Ritual Spells of your choice from the following: \n* Speak with Dead\n* Find Familiar\n* Longstrider\n* Enhance Leap\n* Disguise Self\n* Speak with Animals",
         "image": "Resilient.webp",
         "type": 2,
         "id": 22763
@@ -1309,7 +1309,7 @@
     },
     {
         "name": "Spell Sniper",
-        "description": "You learn a cantrip, and the number you need to roll a Spell is reduced by 1. This effect can stack.\n\nThe cantrip must be one of:\n* Bone Chill\n* Eldritch Blast\n* Fire Bolt\n* Ray of Frost\n* Shocking Grasp\n* Thorn Whip",
+        "description": "You learn a cantrip, and the number you need to roll a Critical Hit while attacking with a Spell is reduced by 1. This effect can stack.\n\nThe cantrip must be one of:\n* Bone Chill\n* Eldritch Blast\n* Fire Bolt\n* Ray of Frost\n* Shocking Grasp\n* Thorn Whip",
         "image": "Spell Sniper.webp",
         "type": 2,
         "id": 21500
@@ -1323,7 +1323,7 @@
     },
     {
         "name": "Spreading Spores (Passive Feature)",
-        "description": "While Symbiotic Entity is active, you can create a cloud of Spreading Spores (Class Action)|Spreading Spores.",
+        "description": "While Symbiotic Entity is active, you can create a cloud of Spreading Spores.",
         "image": "Spreading Spores Passive Feature.webp",
         "type": 2,
         "id": 13692
@@ -1358,7 +1358,7 @@
     },
     {
         "name": "Strongheart Resilience",
-        "description": "You have Advantage on Poison}} and [[Damage_Types#Resistance|Resistance to Poison damage.",
+        "description": "You have Advantage on Saving Throws against Poison and Resistance to Poison damage.",
         "image": "Strongheart Resilience.webp",
         "type": 2,
         "id": 6389
@@ -1379,14 +1379,14 @@
     },
     {
         "name": "Tempestuous Magic",
-        "description": "After you cast a Level 1 Tempestuous Magic: Flight|Fly}} as a Bonus Action up to ft=30 until the end of your turn without receiving [[Opportunity Attacks.",
+        "description": "After you cast a Level 1 Spell or higher you can Fly as a Bonus Action up to ft=30 until the end of your turn without receiving Opportunity Attacks.",
         "image": "Tempestuous Magic.webp",
         "type": 2,
         "id": 16294
     },
     {
         "name": "Thief of Five Fates",
-        "description": "Once per Bane (Spell)|Bane}} using a Warlock [[Spell Slot.\n\nBane targets up to 3 creatures. They receive a 1d4 penalty to Attack Rolls and Saving Throws.",
+        "description": "Once per Long Rest, you can cast Bane using a Warlock Spell Slot.\n\nBane targets up to 3 creatures. They receive a 1d4 penalty to Attack Rolls and Saving Throws.",
         "image": "Thief of Five Fates.webp",
         "type": 2,
         "id": 19633
@@ -1428,14 +1428,14 @@
     },
     {
         "name": "Unarmoured Defence (Barbarian)",
-        "description": "Your body is as resilient as any armour. While not wearing Constitution Modifier to your ArmourClass. Wearing Heavy Armour impedes your Rage.",
+        "description": "Your body is as resilient as any armour. While not wearing armour, you add your Constitution Modifier to your ArmourClass. Wearing Heavy Armour impedes your Rage.",
         "image": "Unarmoured Defense Barbarian.webp",
         "type": 2,
         "id": 6406
     },
     {
         "name": "Unarmoured Defence (Monk)",
-        "description": "Your reflexes are as effective as any Wisdom Modifier to your ArmourClass.",
+        "description": "Your reflexes are as effective as any armour. While not wearing armour, you add your Wisdom Modifier to your ArmourClass.",
         "image": "Unarmored Defense Monk.webp",
         "type": 2,
         "id": 8136

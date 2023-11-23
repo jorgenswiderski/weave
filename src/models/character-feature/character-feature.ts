@@ -24,7 +24,7 @@ import { SpellStub } from '../static-reference/spell-stub';
 import { ActionStub } from '../static-reference/action-stub';
 import { StaticImageCacheService } from '../static-image-cache-service';
 import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
-import { MediaWikiParser } from '../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
 import { IClassFeatureFactory } from './class-feature/types';
 import { WikitableNotFoundError } from '../media-wiki/types';
 import { ICharacterClass } from '../character-class/types';

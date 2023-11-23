@@ -10,7 +10,7 @@ import { CharacterProgressionLevel } from '../../../character-class/types';
 import { ICharacterOptionWithPage } from '../../types';
 import { PageNotFoundError } from '../../../errors';
 import { StaticImageCacheService } from '../../../static-image-cache-service';
-import { MediaWikiParser } from '../../../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../../../media-wiki/media-wiki-parser';
 import { characterSubclassParserOverrides } from './overrides';
 import { CharacteristicStub } from '../../../static-reference/characteristic-stub';
 import { ActionStub } from '../../../static-reference/action-stub';

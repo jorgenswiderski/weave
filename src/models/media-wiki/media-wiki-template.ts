@@ -1,6 +1,6 @@
 import { error, warn } from '../logger';
 import { Utils } from '../utils';
-import { MediaWikiParser } from './wikitext-parser';
+import { MediaWikiParser } from './media-wiki-parser';
 import {
     IMediaWikiTemplate,
     IPageData,

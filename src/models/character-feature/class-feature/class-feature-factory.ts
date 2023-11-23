@@ -1,6 +1,6 @@
 import { ICharacterClass } from '../../character-class/types';
 import { error, warn } from '../../logger';
-import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeat } from '../features/character-feat';
 import { ClassSubclassOption } from '../features/character-subclass-option';

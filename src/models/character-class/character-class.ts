@@ -16,7 +16,7 @@ import {
 } from './types';
 import { StaticImageCacheService } from '../static-image-cache-service';
 import { CharacterFeature } from '../character-feature/character-feature';
-import { MediaWikiParser } from '../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
 
 async function parseFeatures(
     characterClass: CharacterClass,

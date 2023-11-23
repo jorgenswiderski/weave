@@ -11,7 +11,7 @@ import { debug, error } from '../logger';
 import { IPageData } from './types';
 import { RevisionLock } from '../revision-lock/revision-lock';
 import { MediaWikiTemplate } from './media-wiki-template';
-import { MediaWikiParser } from './wikitext-parser';
+import { MediaWikiParser } from './media-wiki-parser';
 
 export class PageData implements IPageData {
     title: string;
@@ -208,6 +208,11 @@ export class PageData implements IPageData {
                 '',
             );
 
+            transcludeContent = this.resolveOtherTransclusions(
+                transcludeContent,
+                pageTitle,
+            );
+
             // eslint-disable-next-line no-param-reassign
             content = content.replace(transclusion, transcludeContent);
         });
@@ -215,11 +220,26 @@ export class PageData implements IPageData {
         return this.resolveArticleTransclusions(content);
     }
 
-    static async construct(page: IPageData): Promise<PageData> {
-        return new PageData({
+    static resolveOtherTransclusions(
+        content: string,
+        pageTitle: string,
+    ): string {
+        return content.replace(/{{PAGENAME}}/g, pageTitle);
+    }
+
+    static async resolveTransclusions(page: IPageData): Promise<IPageData> {
+        const other = this.resolveOtherTransclusions(page.content, page.title);
+
+        const articles = {
             ...page,
-            content: await this.resolveArticleTransclusions(page.content),
-        });
+            content: await this.resolveArticleTransclusions(other),
+        };
+
+        return articles;
+    }
+
+    static async construct(page: IPageData): Promise<PageData> {
+        return new PageData(await this.resolveTransclusions(page));
     }
 }
 

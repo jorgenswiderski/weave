@@ -1,6 +1,6 @@
 import { ICharacterOption } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { GrantableEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
-import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
 
 export class CharacterSubrace implements ICharacterOption {
     label: string;

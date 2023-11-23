@@ -15,7 +15,7 @@ import { PageLoadingState } from '../../page-item';
 import { PageNotFoundError } from '../../errors';
 import { CharacterFeature } from '../character-feature';
 import { StaticImageCacheService } from '../../static-image-cache-service';
-import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
 
 enum SubclassLoadStates {
     CHOICES = 'CHOICES',

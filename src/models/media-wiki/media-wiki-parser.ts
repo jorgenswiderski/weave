@@ -215,13 +215,125 @@ export class MediaWikiParser {
         return rows;
     }
 
+    protected static matchBalanced(
+        text: string,
+        prefix: string,
+        inner: string,
+        suffix: string,
+    ): string[] {
+        const matches = [
+            ...text.matchAll(new RegExp(`${prefix}${inner}`, 'gi')),
+        ];
+
+        const matchText = matches
+            .map(({ index: startIndex }) => {
+                let depth = 0;
+                let endIndex;
+                const prefixChars = prefix.split('');
+                const suffixChars = suffix.split('');
+
+                for (let i = startIndex!; i < text.length; i += 1) {
+                    if (
+                        prefixChars.every(
+                            (char, index) => text[i + index] === char,
+                        )
+                    ) {
+                        depth += 1;
+                        i += prefix.length - 1;
+                    } else if (
+                        suffixChars.every(
+                            (char, index) => text[i + index] === char,
+                        )
+                    ) {
+                        depth -= 1;
+                        i += suffix.length - 1;
+                    }
+
+                    if (depth === 0) {
+                        endIndex = i + (suffix.length - 1);
+                        break;
+                    }
+                }
+
+                return endIndex ? text.substring(startIndex!, endIndex) : null;
+            })
+            .filter(Boolean) as string[];
+
+        return matchText;
+    }
+
+    protected static replaceBalanced(
+        text: string,
+        prefix: string,
+        inner: string,
+        suffix: string,
+        replaceStr: string,
+    ): string {
+        const matchStrs = this.matchBalanced(text, prefix, inner, suffix);
+        let result = text;
+
+        matchStrs.forEach((str) => {
+            result = result.replace(str, replaceStr);
+        });
+
+        return result;
+    }
+
     static stripMarkup(value: string): string {
         let v = value.replace(/\[\[File:([^|]*?)(?:\|[^|]+?)*\]\]/g, ''); // remove files
-        v = v.replace(/\[\[.*?\|(.*?)\]\]/g, '$1'); // extract link labels
-        v = v.replace(/\[\[(.*?)\]\]/g, '$1');
-        v = v.replace(/{{Q\|(.*?)(?:\|.*?)?}}/g, '$1');
-        v = v.replace(/\{\{([^|}]+?)\}\}/g, '$1');
+
+        // Templates: Remove
+        v = MediaWikiParser.replaceBalanced(v, '{{', 'NoExcerpt', '}}', '');
+        v = v.replace(/{{(?:Icon)\|.*?}}/gi, '');
+
+        // Templates: Template Name
+        v = v.replace(
+            /{{(Attack Roll|Advantage|Disadvantage)(?:\|[^|}]+)*}}/gi,
+            '$1',
+        );
+
+        v = v.replace(/{{(Saving ?Throw|Initiative|action)}}/gi, '$1');
+
+        // Templates: First Arg
+        v = v.replace(/{{SAI\|([^|}]*?)(?:\|[^=|}]+=[^|}]+)*}}/gi, '$1');
+        v = v.replace(/{{Q\|([^|}]*?)(?:\|[^|}]+)*}}/gi, '"$1"');
+
+        v = v.replace(
+            /{{Saving ?Throw\|([^|}]*?)(?:\|[^|}]+)*}}/gi,
+            '$1 saving throw',
+        );
+
+        v = v.replace(
+            /{{(?:Class|Initiative|action)\|([^|}]*?)(?:\|[^|}]+)*}}/gi,
+            '$1',
+        ); // general
+
+        v = v.replace(/{{(?:Cond|Condition)\|([^|}]*?)}}/gi, '$1');
+
+        // Templates: Second Arg
+        v = v.replace(
+            /{{(?:SAI|Cond|Condition)\|[^|}]+?\|([^|}]*?)(?:\|[^|}]+)*}}/gi,
+            '$1',
+        );
+
+        // Templates: Third Arg
+        v = v.replace(
+            /{{(?:SmIconLink)\|[^|}]+?\|[^|}]+?\|([^|}]+?)(?:\|[^|}]+)*}}/gi,
+            '$1',
+        ); // replace with template third arg
+
+        // debug match for finding unparsed templates
+        // const m = v.match(/(?<=[^{]|^){{([^|{}]+?)(?:\|[^{}]*?)*}}(?=[^}]|$)/i);
+
+        // Links
+        v = v.replace(/\[\[[^|\]]*?\|([^|\]]*?)\]\]/g, '$1'); // with label
+        v = v.replace(/\[\[([^\]]*?)\]\]/g, '$1'); // without label
+
+        // Template catch-all (FIXME)
+        // templates that probably should not be scrubbed: DamageColor, DamageText, DamageInfo, Distance
         v = v.replace(/{{.*?\|(.*?)}}/g, '$1'); // extract template parameters
+        v = v.replace(/{{([^|}]+?)}}/g, '$1');
+
         v = v.replace(/'''(.*?)'''/g, '$1'); // bold text
         v = v.replace(/''(.*?)''/g, '$1'); // italic text
         v = v.replace(/`/g, ''); // backticks
