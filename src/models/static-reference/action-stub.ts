@@ -13,9 +13,11 @@ let ref: {
 
 export class ActionStub implements StaticReference {
     id: number;
+    name: string;
 
     constructor(public action: IAction) {
         this.id = action.id;
+        this.name = action.name;
     }
 
     toJSON(): StaticReferenceHandle {

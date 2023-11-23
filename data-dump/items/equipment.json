@@ -10820,7 +10820,7 @@
             "id": 9401
         },
         {
-            "name": "Helldusk Armour (Heavy Armour)",
+            "name": "Helldusk Armour",
             "image": "Helldusk Armour Icon.png",
             "icon": "Helldusk Armour Unfaded Icon.png",
             "description": "Helldusk Armour is a legendary heavy Armour that can be obtained from Raphael during Chapter Three.",
@@ -19253,7 +19253,7 @@
             "id": 8732
         },
         {
-            "name": "Sunwalker's Gift (Ring)",
+            "name": "Sunwalker's Gift",
             "image": "Ring H Silver A 1 Faded.png",
             "icon": "Ring H Silver A 1 Unfaded Icon.png",
             "description": "Sunwalker's Gift is an uncommon Ring that grants a creature darkvision.",
@@ -19277,7 +19277,7 @@
                     "hidden": true
                 },
                 {
-                    "name": "Sunwalker's Gift (Ring)",
+                    "name": "Sunwalker's Gift",
                     "description": "Equivalent in effect to having permanent Darkvision (Passive Feature)|Darkvision.",
                     "type": 2
                 }
@@ -19803,7 +19803,7 @@
             "id": 2393
         },
         {
-            "name": "Adamantine Shield (Shield)",
+            "name": "Adamantine Shield",
             "image": "Adamantine Shield Icon.png",
             "icon": "Adamantine Shield Unfaded Icon.png",
             "description": "An Adamantine Shield is a rare Shield that sends enemies Reeling when they miss you with a melee attack.",
@@ -22201,7 +22201,7 @@
             "dippable": true
         },
         {
-            "name": "Dolor Amarus (Dagger)",
+            "name": "Dolor Amarus",
             "image": "Dolor Amarus Icon.png",
             "icon": "Dolor Amarus Unfaded Icon.png",
             "description": "Dolor Amarus is a rare Dagger that deals additional damage on a Critical Hit. Dolor Amarus is Latin for 'Bitter Pain'.\nSpoilerWarning",
@@ -32842,7 +32842,7 @@
             "dippable": true
         },
         {
-            "name": "Staff of the Ram (Quarterstaff)",
+            "name": "Staff of the Ram",
             "image": "Quarterstaff PlusOne Icon.png",
             "icon": "Quarterstaff PlusOne Unfaded Icon.png",
             "quote": "Fashioned by some unknown archmage - no identifying insignia is forthcoming.\nThe staff thrums with a slow, ferocious pulse that draws its concussive power from the spiral-horned creatures that gave the weapon its name",
@@ -34013,6 +34013,32 @@
             "dippable": true
         },
         {
+            "name": "Scimitar (Shar Variant)",
+            "image": "Justiciar's Scimitar Icon.png",
+            "type": 36,
+            "rarity": 1,
+            "weightKg": 1.35,
+            "weightLb": 2.7,
+            "price": 30,
+            "effects": [],
+            "sources": [],
+            "proficiency": 0,
+            "id": 28848,
+            "category": 1,
+            "rangeType": 1,
+            "handedness": 1,
+            "damage": "1d8",
+            "damageType": 1,
+            "range": 0,
+            "finesse": true,
+            "heavy": false,
+            "light": true,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": false
+        },
+        {
             "name": "Scimitar +1",
             "image": "Scimitar PlusOne Icon.png",
             "icon": "Scimitar PlusOne Unfaded Icon.png",
@@ -34307,7 +34333,7 @@
     ],
     "37": [
         {
-            "name": "Blightbringer (Shortbow)",
+            "name": "Blightbringer",
             "image": "Shortbow PlusOne Icon.png",
             "icon": "Shortbow PlusOne Unfaded Icon.png",
             "quote": "Conducting a series of increasingly sick rituals - involving the ashes of a gnome and silkworms fed fat on the corpse of a dwarven cleric - the goblin shaman Kirruk Redrats created this deadly bow.",

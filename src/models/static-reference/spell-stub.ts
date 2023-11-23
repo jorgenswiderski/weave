@@ -14,9 +14,11 @@ let ref: {
 
 export class SpellStub implements StaticallyReferenceable {
     id: number;
+    name: string;
 
     constructor(public spell: ISpell) {
         this.id = spell.id;
+        this.name = spell.name;
     }
 
     toJSON(): StaticReferenceHandle {

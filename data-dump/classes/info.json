@@ -121,9 +121,6 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "a1151"
-                                                            },
-                                                            {
-                                                                "ref": "a1150"
                                                             }
                                                         ]
                                                     },
@@ -143,9 +140,6 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "a1154"
-                                                            },
-                                                            {
-                                                                "ref": "a1155"
                                                             }
                                                         ]
                                                     },
@@ -884,9 +878,6 @@
                                         "grants": [
                                             {
                                                 "ref": "c8873"
-                                            },
-                                            {
-                                                "ref": "s2331"
                                             }
                                         ]
                                     },
@@ -894,17 +885,7 @@
                                         "name": "Wild Magic",
                                         "description": "The wild influence of magic has transformed you, suffusing you with arcane power that churns within you, waiting to be released.",
                                         "image": "Wild_Magic_Barbarian_Subclass_Icon.png",
-                                        "grants": [
-                                            {
-                                                "ref": "a16446"
-                                            },
-                                            {
-                                                "ref": "a16457"
-                                            },
-                                            {
-                                                "ref": "a16458"
-                                            }
-                                        ]
+                                        "grants": []
                                     },
                                     {
                                         "name": "Wildheart",
@@ -1727,9 +1708,6 @@
                                         "grants": [
                                             {
                                                 "ref": "a9534"
-                                            },
-                                            {
-                                                "ref": "a9536"
                                             }
                                         ]
                                     },
@@ -1747,7 +1725,94 @@
                                         "name": "Wildheart",
                                         "description": "Your attunement with nature and its beasts inspires your rage, empowering you with supernatural might.",
                                         "image": "Class Barbarian Wildheart Badge Icon.png",
-                                        "grants": []
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Aspect of the Beast (Bear)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17306"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Chimpanzee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17307"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Crocodile)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17310"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Eagle)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17312"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Elk)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17314"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Honey Badger)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17323"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Stallion)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17325"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Tiger)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17327"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Wolf)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17338"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Aspect of the Beast (Wolverine)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17330"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -4900,21 +4965,53 @@
                                             },
                                             {
                                                 "ref": "s1985"
-                                            },
+                                            }
+                                        ],
+                                        "choices": [
                                             {
-                                                "ref": "c8792"
-                                            },
-                                            {
-                                                "ref": "s1665"
-                                            },
-                                            {
-                                                "ref": "s1670"
-                                            },
-                                            {
-                                                "ref": "s1692"
-                                            },
-                                            {
-                                                "ref": "s1693"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Acolyte of Nature",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c8792"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Poison Spray",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1665"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Produce Flame",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1670"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Shillelagh",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1692"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Thorn Whip",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1693"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -4928,9 +5025,6 @@
                                             },
                                             {
                                                 "ref": "s2190"
-                                            },
-                                            {
-                                                "ref": "c9201"
                                             },
                                             {
                                                 "ref": "a26548"
@@ -6616,7 +6710,11 @@
                                         "name": "Life Domain",
                                         "description": "The Life domain is an aspect of many good deities, offering spells that protect and restore the mind, body, and soul.",
                                         "image": "Class Cleric Life Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a13412"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Light Domain",
@@ -6652,13 +6750,21 @@
                                         "name": "Trickery Domain",
                                         "description": "A domain shared by wicked, chaotic, and mischievous deities alike, those who channel Trickery specialise in deception and illusion magic.",
                                         "image": "Class Cleric Trickery Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a19142"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "War Domain",
                                         "description": "Fortified by holy zeal, you brandish an arsenal of sacramental savagery to use against those you deem unrighteous.",
                                         "image": "War Domain Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a19140"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -7466,24 +7572,61 @@
                                         "grants": [
                                             {
                                                 "ref": "a684"
-                                            },
+                                            }
+                                        ],
+                                        "choices": [
                                             {
-                                                "ref": "s1615"
-                                            },
-                                            {
-                                                "ref": "s1665"
-                                            },
-                                            {
-                                                "ref": "s1670"
-                                            },
-                                            {
-                                                "ref": "s1622"
-                                            },
-                                            {
-                                                "ref": "s1692"
-                                            },
-                                            {
-                                                "ref": "s1693"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Guidance",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1615"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Poison Spray",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1665"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Produce Flame",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1670"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Resistance",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1622"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Shillelagh",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1692"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Thorn Whip",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1693"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -7496,22 +7639,10 @@
                                                 "ref": "a1434"
                                             },
                                             {
-                                                "ref": "a664"
-                                            },
-                                            {
                                                 "ref": "a6468"
                                             },
                                             {
-                                                "ref": "a664"
-                                            },
-                                            {
                                                 "ref": "a15259"
-                                            },
-                                            {
-                                                "ref": "a1193"
-                                            },
-                                            {
-                                                "ref": "a1192"
                                             }
                                         ]
                                     },
@@ -7528,9 +7659,6 @@
                                             },
                                             {
                                                 "ref": "a7877"
-                                            },
-                                            {
-                                                "ref": "a7876"
                                             }
                                         ]
                                     }
@@ -9081,61 +9209,13 @@
                                                 "ref": "a15263"
                                             },
                                             {
-                                                "ref": "a18931"
-                                            },
-                                            {
-                                                "ref": "a18933"
-                                            },
-                                            {
-                                                "ref": "a17231"
-                                            },
-                                            {
                                                 "ref": "a15264"
-                                            },
-                                            {
-                                                "ref": "a18958"
-                                            },
-                                            {
-                                                "ref": "a18959"
-                                            },
-                                            {
-                                                "ref": "a18961"
-                                            },
-                                            {
-                                                "ref": "a18964"
-                                            },
-                                            {
-                                                "ref": "a16348"
                                             },
                                             {
                                                 "ref": "a15265"
                                             },
                                             {
-                                                "ref": "a18976"
-                                            },
-                                            {
-                                                "ref": "a18977"
-                                            },
-                                            {
-                                                "ref": "a16348"
-                                            },
-                                            {
-                                                "ref": "a17231"
-                                            },
-                                            {
                                                 "ref": "a15266"
-                                            },
-                                            {
-                                                "ref": "a18991"
-                                            },
-                                            {
-                                                "ref": "a18994"
-                                            },
-                                            {
-                                                "ref": "a16348"
-                                            },
-                                            {
-                                                "ref": "a17231"
                                             }
                                         ]
                                     },
@@ -9971,24 +10051,61 @@
                                         "name": "Battle Master",
                                         "description": "Battle Masters are paragons of tactical superiority, combining combat manoeuvres  and experience in the field to dominate every fight.",
                                         "image": "Class_Fighter_Battle_Master_Badge_Icon.png",
-                                        "grants": [
+                                        "grants": [],
+                                        "choices": [
                                             {
-                                                "ref": "a14411"
-                                            },
-                                            {
-                                                "ref": "a14409"
-                                            },
-                                            {
-                                                "ref": "a14360"
-                                            },
-                                            {
-                                                "ref": "a775"
-                                            },
-                                            {
-                                                "ref": "a780"
-                                            },
-                                            {
-                                                "ref": "a14032"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Commander's Strike",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14411"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Evasive Footwork",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14409"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Precision Attack",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14360"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Rally",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a775"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Riposte",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a780"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Sweeping Attack",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14032"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "count": 3
                                             }
                                         ]
                                     },
@@ -10009,138 +10126,377 @@
                                         "grants": [
                                             {
                                                 "ref": "a14413"
+                                            }
+                                        ],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Acid Splash",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1638"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Blade Ward",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1641"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Bone Chill",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1645"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Dancing Lights",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1647"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Fire Bolt",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1653"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Friends",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1661"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Light",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s796"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mage Hand",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1662"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Minor Illusion",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1663"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Poison Spray",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1665"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Ray of Frost",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1691"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Shocking Grasp",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1695"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "True Strike",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1696"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "count": 2
                                             },
                                             {
-                                                "ref": "s1638"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Burning Hands",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2008"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Chromatic Orb",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2032"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Magic Missile",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2291"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mage Armour",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2256"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Protection from Evil and Good",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2268"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Shield",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2704"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Thunderwave",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2296"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Witch Bolt",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2300"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "count": 2
                                             },
                                             {
-                                                "ref": "s1641"
-                                            },
-                                            {
-                                                "ref": "s1645"
-                                            },
-                                            {
-                                                "ref": "s1647"
-                                            },
-                                            {
-                                                "ref": "s1653"
-                                            },
-                                            {
-                                                "ref": "s1661"
-                                            },
-                                            {
-                                                "ref": "s796"
-                                            },
-                                            {
-                                                "ref": "s1662"
-                                            },
-                                            {
-                                                "ref": "s1663"
-                                            },
-                                            {
-                                                "ref": "s1665"
-                                            },
-                                            {
-                                                "ref": "s1691"
-                                            },
-                                            {
-                                                "ref": "s1695"
-                                            },
-                                            {
-                                                "ref": "s1696"
-                                            },
-                                            {
-                                                "ref": "s2008"
-                                            },
-                                            {
-                                                "ref": "s2032"
-                                            },
-                                            {
-                                                "ref": "s2291"
-                                            },
-                                            {
-                                                "ref": "s2256"
-                                            },
-                                            {
-                                                "ref": "s2268"
-                                            },
-                                            {
-                                                "ref": "s2704"
-                                            },
-                                            {
-                                                "ref": "s2296"
-                                            },
-                                            {
-                                                "ref": "s2300"
-                                            },
-                                            {
-                                                "ref": "s2008"
-                                            },
-                                            {
-                                                "ref": "s999"
-                                            },
-                                            {
-                                                "ref": "s2032"
-                                            },
-                                            {
-                                                "ref": "s2054"
-                                            },
-                                            {
-                                                "ref": "s2117"
-                                            },
-                                            {
-                                                "ref": "s2171"
-                                            },
-                                            {
-                                                "ref": "s2178"
-                                            },
-                                            {
-                                                "ref": "s2181"
-                                            },
-                                            {
-                                                "ref": "s1389"
-                                            },
-                                            {
-                                                "ref": "s2190"
-                                            },
-                                            {
-                                                "ref": "s2196"
-                                            },
-                                            {
-                                                "ref": "s6660"
-                                            },
-                                            {
-                                                "ref": "s2252"
-                                            },
-                                            {
-                                                "ref": "s2253"
-                                            },
-                                            {
-                                                "ref": "s2256"
-                                            },
-                                            {
-                                                "ref": "s2291"
-                                            },
-                                            {
-                                                "ref": "s2268"
-                                            },
-                                            {
-                                                "ref": "s2294"
-                                            },
-                                            {
-                                                "ref": "s2704"
-                                            },
-                                            {
-                                                "ref": "s2277"
-                                            },
-                                            {
-                                                "ref": "s2281"
-                                            },
-                                            {
-                                                "ref": "s2296"
-                                            },
-                                            {
-                                                "ref": "s2300"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Burning Hands",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2008"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Charm Person",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s999"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Chromatic Orb",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2032"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Colour Spray",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2054"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Disguise Self",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2117"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Expeditious Retreat",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2171"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "False Life",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2178"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Feather Fall",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2181"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Find Familiar",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1389"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Fog Cloud",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2190"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Grease",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2196"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Ice Knife",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6660"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Enhance Leap",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2252"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Longstrider",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2253"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mage Armour",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2256"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Magic Missile",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2291"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Protection from Evil and Good",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2268"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Ray of Sickness",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2294"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Shield",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2704"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Sleep",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2277"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Tasha's Hideous Laughter",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2281"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Thunderwave",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2296"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Witch Bolt",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2300"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
@@ -11515,7 +11871,63 @@
                                         "name": "Battle Master",
                                         "description": "Battle Masters are paragons of tactical superiority, combining combat manoeuvres  and experience in the field to dominate every fight.",
                                         "image": "Class_Fighter_Battle_Master_Badge_Icon.png",
-                                        "grants": []
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Commander's Strike",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14411"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Evasive Footwork",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14409"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Precision Attack",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14360"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Rally",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a775"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Riposte",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a780"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Sweeping Attack",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14032"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "count": 2
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Champion",
@@ -11537,24 +11949,62 @@
                                         "grants": [
                                             {
                                                 "ref": "c14417"
-                                            },
+                                            }
+                                        ],
+                                        "choices": [
                                             {
-                                                "ref": "s6662"
-                                            },
-                                            {
-                                                "ref": "s2342"
-                                            },
-                                            {
-                                                "ref": "s6700"
-                                            },
-                                            {
-                                                "ref": "s1045"
-                                            },
-                                            {
-                                                "ref": "s2530"
-                                            },
-                                            {
-                                                "ref": "s2542"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Arcane Lock",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6662"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Darkness",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2342"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Gust of Wind",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6700"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Melf's Acid Arrow",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1045"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Scorching Ray",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2530"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Shatter",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2542"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "count": 2
                                             }
                                         ]
                                     }
@@ -12265,30 +12715,122 @@
                                             {
                                                 "ref": "c17574"
                                             }
+                                        ],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Commander's Strike",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14411"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Evasive Footwork",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14409"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Precision Attack",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14360"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Rally",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a775"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Riposte",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a780"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Sweeping Attack",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14032"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "count": 2
+                                            }
                                         ]
                                     },
                                     {
                                         "name": "Champion",
                                         "description": "You approach the complex problems posed by combat with one distinctly effective solution - you hit those problems, really quite hard.",
                                         "image": "Class Fighter Champion Badge Icon.png",
-                                        "grants": [
+                                        "grants": [],
+                                        "choices": [
                                             {
-                                                "ref": "c17357"
-                                            },
-                                            {
-                                                "ref": "c17362"
-                                            },
-                                            {
-                                                "ref": "c17363"
-                                            },
-                                            {
-                                                "ref": "c17366"
-                                            },
-                                            {
-                                                "ref": "a17368"
-                                            },
-                                            {
-                                                "ref": "c17370"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Archery",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17357"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Defence",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17362"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Duelling",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17363"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Great Weapon Fighting",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17366"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Protection",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a17368"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Two-Weapon Fighting",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17370"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -13109,40 +13651,103 @@
                                         "image": "Class Monk Four Elements Badge Icon.png",
                                         "grants": [
                                             {
-                                                "ref": "a7857"
-                                            },
-                                            {
-                                                "ref": "a7858"
-                                            },
-                                            {
-                                                "ref": "a7859"
-                                            },
-                                            {
-                                                "ref": "a7860"
-                                            },
-                                            {
-                                                "ref": "a7861"
-                                            },
-                                            {
-                                                "ref": "a8962"
-                                            },
-                                            {
-                                                "ref": "a7862"
-                                            },
-                                            {
-                                                "ref": "a8973"
-                                            },
-                                            {
-                                                "ref": "a7863"
-                                            },
-                                            {
-                                                "ref": "a7864"
-                                            },
-                                            {
-                                                "ref": "a7865"
-                                            },
-                                            {
                                                 "ref": "a8162"
+                                            }
+                                        ],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Blade of Rime",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a7857"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Chill of the Mountain",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a7858"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Fangs of the Fire Snake",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a7859"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Fist of Four Thunders",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a7860"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Fist of Unbroken Air",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a7861"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Rush of the Gale Spirits",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a8962"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Shaping of the Ice",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a7862"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Sphere of Elemental Balance",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a8973"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Sweeping Cinder Strike",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a7863"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Touch of the Storm",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a7864"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Water Whip",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a7865"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "count": 3
                                             }
                                         ]
                                     },
@@ -14703,30 +15308,6 @@
                                         "grants": [
                                             {
                                                 "ref": "c18446"
-                                            },
-                                            {
-                                                "ref": "a7860"
-                                            },
-                                            {
-                                                "ref": "a7861"
-                                            },
-                                            {
-                                                "ref": "a7863"
-                                            },
-                                            {
-                                                "ref": "a7864"
-                                            },
-                                            {
-                                                "ref": "a7865"
-                                            },
-                                            {
-                                                "ref": "a7867"
-                                            },
-                                            {
-                                                "ref": "a14447"
-                                            },
-                                            {
-                                                "ref": "a7868"
                                             }
                                         ]
                                     },
@@ -18076,21 +18657,6 @@
                                         "grants": [
                                             {
                                                 "ref": "a850"
-                                            },
-                                            {
-                                                "ref": "a14208"
-                                            },
-                                            {
-                                                "ref": "a14209"
-                                            },
-                                            {
-                                                "ref": "a14210"
-                                            },
-                                            {
-                                                "ref": "a14211"
-                                            },
-                                            {
-                                                "ref": "a14212"
                                             }
                                         ]
                                     },
@@ -18099,6 +18665,9 @@
                                         "description": "Emerging like a horrible gift from the envelope of darkness and shadow, you ambush and put down your foes before they can even scream.",
                                         "image": "Gloom Stalker Icon.png",
                                         "grants": [
+                                            {
+                                                "ref": "s2117"
+                                            },
                                             {
                                                 "ref": "a17899"
                                             },
@@ -18110,9 +18679,6 @@
                                             },
                                             {
                                                 "ref": "a17897"
-                                            },
-                                            {
-                                                "ref": "s2117"
                                             }
                                         ]
                                     },
@@ -18997,15 +19563,6 @@
                                         "grants": [
                                             {
                                                 "ref": "c17999"
-                                            },
-                                            {
-                                                "ref": "a1149"
-                                            },
-                                            {
-                                                "ref": "a3924"
-                                            },
-                                            {
-                                                "ref": "a2275"
                                             }
                                         ]
                                     },
@@ -20698,126 +21255,345 @@
                                         "grants": [
                                             {
                                                 "ref": "s1662"
+                                            }
+                                        ],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Acid Splash",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1638"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Blade Ward",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1641"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Bone Chill",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1645"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Dancing Lights",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1647"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Fire Bolt",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1653"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Friends",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1661"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Light",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s796"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Minor Illusion",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1663"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Poison Spray",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1665"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Ray of Frost",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1691"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Shocking Grasp",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1695"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "True Strike",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1696"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "count": 2
                                             },
                                             {
-                                                "ref": "s1638"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Charm Person",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s999"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Colour Spray",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2054"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Disguise Self",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2117"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Sleep",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2277"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Tasha's Hideous Laughter",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2281"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "count": 2
                                             },
                                             {
-                                                "ref": "s1641"
-                                            },
-                                            {
-                                                "ref": "s1645"
-                                            },
-                                            {
-                                                "ref": "s1647"
-                                            },
-                                            {
-                                                "ref": "s1653"
-                                            },
-                                            {
-                                                "ref": "s1661"
-                                            },
-                                            {
-                                                "ref": "s796"
-                                            },
-                                            {
-                                                "ref": "s1663"
-                                            },
-                                            {
-                                                "ref": "s1665"
-                                            },
-                                            {
-                                                "ref": "s1691"
-                                            },
-                                            {
-                                                "ref": "s1695"
-                                            },
-                                            {
-                                                "ref": "s1696"
-                                            },
-                                            {
-                                                "ref": "s999"
-                                            },
-                                            {
-                                                "ref": "s2054"
-                                            },
-                                            {
-                                                "ref": "s2117"
-                                            },
-                                            {
-                                                "ref": "s2277"
-                                            },
-                                            {
-                                                "ref": "s2281"
-                                            },
-                                            {
-                                                "ref": "s2008"
-                                            },
-                                            {
-                                                "ref": "s999"
-                                            },
-                                            {
-                                                "ref": "s2032"
-                                            },
-                                            {
-                                                "ref": "s2054"
-                                            },
-                                            {
-                                                "ref": "s2117"
-                                            },
-                                            {
-                                                "ref": "s2171"
-                                            },
-                                            {
-                                                "ref": "s2252"
-                                            },
-                                            {
-                                                "ref": "s2178"
-                                            },
-                                            {
-                                                "ref": "s2181"
-                                            },
-                                            {
-                                                "ref": "s1389"
-                                            },
-                                            {
-                                                "ref": "s2190"
-                                            },
-                                            {
-                                                "ref": "s2196"
-                                            },
-                                            {
-                                                "ref": "s6660"
-                                            },
-                                            {
-                                                "ref": "s2253"
-                                            },
-                                            {
-                                                "ref": "s2256"
-                                            },
-                                            {
-                                                "ref": "s2291"
-                                            },
-                                            {
-                                                "ref": "s2268"
-                                            },
-                                            {
-                                                "ref": "s2294"
-                                            },
-                                            {
-                                                "ref": "s2704"
-                                            },
-                                            {
-                                                "ref": "s2277"
-                                            },
-                                            {
-                                                "ref": "s2281"
-                                            },
-                                            {
-                                                "ref": "s2296"
-                                            },
-                                            {
-                                                "ref": "s2300"
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Burning Hands",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2008"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Charm Person",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s999"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Chromatic Orb",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2032"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Colour Spray",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2054"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Disguise Self",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2117"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Expeditious Retreat",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2171"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Enhance Leap",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2252"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "False Life",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2178"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Feather Fall",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2181"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Find Familiar",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1389"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Fog Cloud",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2190"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Grease",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2196"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Ice Knife",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6660"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Longstrider",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2253"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mage Armour",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2256"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Magic Missile",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2291"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Protection from Evil and Good",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2268"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Ray of Sickness",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2294"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Shield",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2704"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Sleep",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2277"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Tasha's Hideous Laughter",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2281"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Thunderwave",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2296"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Witch Bolt",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2300"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -22264,9 +23040,6 @@
                                         "grants": [
                                             {
                                                 "ref": "a14257"
-                                            },
-                                            {
-                                                "ref": "s2117"
                                             }
                                         ]
                                     },
@@ -23683,6 +24456,9 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "c27769"
+                                                            },
+                                                            {
+                                                                "ref": "s2008"
                                                             }
                                                         ]
                                                     },
@@ -23691,14 +24467,20 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "c27762"
+                                                            },
+                                                            {
+                                                                "ref": "s2196"
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Draconic Ancestry: Blue",
+                                                        "name": "Draconic Ancestry: Blue (Lightning)",
                                                         "grants": [
                                                             {
                                                                 "ref": "c27763"
+                                                            },
+                                                            {
+                                                                "ref": "s2300"
                                                             }
                                                         ]
                                                     },
@@ -23707,6 +24489,9 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "c27774"
+                                                            },
+                                                            {
+                                                                "ref": "s1988"
                                                             }
                                                         ]
                                                     },
@@ -23715,6 +24500,9 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "c27768"
+                                                            },
+                                                            {
+                                                                "ref": "s2294"
                                                             }
                                                         ]
                                                     },
@@ -23723,6 +24511,9 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "c27767"
+                                                            },
+                                                            {
+                                                                "ref": "s2117"
                                                             }
                                                         ]
                                                     },
@@ -23731,14 +24522,20 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "c27770"
+                                                            },
+                                                            {
+                                                                "ref": "s2181"
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Draconic Ancestry: Bronze",
+                                                        "name": "Draconic Ancestry: Bronze (Lightning)",
                                                         "grants": [
                                                             {
                                                                 "ref": "c27765"
+                                                            },
+                                                            {
+                                                                "ref": "s2190"
                                                             }
                                                         ]
                                                     },
@@ -23747,6 +24544,9 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "c27766"
+                                                            },
+                                                            {
+                                                                "ref": "s2281"
                                                             }
                                                         ]
                                                     },
@@ -23755,6 +24555,9 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "c27764"
+                                                            },
+                                                            {
+                                                                "ref": "s2277"
                                                             }
                                                         ]
                                                     }
@@ -24707,9 +25510,6 @@
                                             },
                                             {
                                                 "ref": "s2702"
-                                            },
-                                            {
-                                                "ref": "c15150"
                                             },
                                             {
                                                 "ref": "a15151"
@@ -26316,13 +27116,13 @@
                                         "image": "Class Warlock Archfey Badge Icon.png",
                                         "grants": [
                                             {
-                                                "ref": "a4651"
-                                            },
-                                            {
                                                 "ref": "s2175"
                                             },
                                             {
                                                 "ref": "s2277"
+                                            },
+                                            {
+                                                "ref": "a4651"
                                             }
                                         ]
                                     },
@@ -26332,13 +27132,13 @@
                                         "image": "Class Warlock Fiend Badge Icon.png",
                                         "grants": [
                                             {
-                                                "ref": "c6542"
-                                            },
-                                            {
                                                 "ref": "s2008"
                                             },
                                             {
                                                 "ref": "s3061"
+                                            },
+                                            {
+                                                "ref": "c6542"
                                             }
                                         ]
                                     },
@@ -26348,13 +27148,13 @@
                                         "image": "Class Warlock Great Old One Badge Icon.png",
                                         "grants": [
                                             {
-                                                "ref": "c6543"
-                                            },
-                                            {
                                                 "ref": "s2162"
                                             },
                                             {
                                                 "ref": "s2281"
+                                            },
+                                            {
+                                                "ref": "c6543"
                                             }
                                         ]
                                     }
@@ -27337,9 +28137,6 @@
                                         "grants": [
                                             {
                                                 "ref": "a8188"
-                                            },
-                                            {
-                                                "ref": "s2644"
                                             }
                                         ]
                                     },
@@ -29329,9 +30126,6 @@
                                         "grants": [
                                             {
                                                 "ref": "a16810"
-                                            },
-                                            {
-                                                "ref": "s2090"
                                             }
                                         ]
                                     },
@@ -29352,9 +30146,6 @@
                                         "grants": [
                                             {
                                                 "ref": "a16814"
-                                            },
-                                            {
-                                                "ref": "a20016"
                                             }
                                         ]
                                     },
@@ -29375,9 +30166,6 @@
                                         "grants": [
                                             {
                                                 "ref": "a16818"
-                                            },
-                                            {
-                                                "ref": "s1663"
                                             }
                                         ]
                                     },
@@ -30201,9 +30989,6 @@
                                         "grants": [
                                             {
                                                 "ref": "a20027"
-                                            },
-                                            {
-                                                "ref": "a20027"
                                             }
                                         ]
                                     },
@@ -30212,9 +30997,6 @@
                                         "description": "You walk through the valley of the shadow of death, and make lots of friends there.",
                                         "image": "Class Wizard Necromancy Badge Icon.png",
                                         "grants": [
-                                            {
-                                                "ref": "a16836"
-                                            },
                                             {
                                                 "ref": "s2757"
                                             },
@@ -30233,30 +31015,6 @@
                                         "grants": [
                                             {
                                                 "ref": "a16839"
-                                            },
-                                            {
-                                                "ref": "a20158"
-                                            },
-                                            {
-                                                "ref": "a20159"
-                                            },
-                                            {
-                                                "ref": "a20164"
-                                            },
-                                            {
-                                                "ref": "a20166"
-                                            },
-                                            {
-                                                "ref": "a20167"
-                                            },
-                                            {
-                                                "ref": "a20168"
-                                            },
-                                            {
-                                                "ref": "a20169"
-                                            },
-                                            {
-                                                "ref": "a20170"
                                             }
                                         ]
                                     }
@@ -31083,9 +31841,6 @@
                                         "grants": [
                                             {
                                                 "ref": "a16857"
-                                            },
-                                            {
-                                                "ref": "a17231"
                                             }
                                         ]
                                     }

@@ -7,7 +7,6 @@
         "Captain Grisly": "Grisly",
         "Chapter Three": "Act Three",
         "Chapter Two": "Act Two",
-        "Claws (Bear)": "Claws (Bear Wild Shape)",
         "Commander Zhalk": "Zhalk",
         "Common Special Arrow Table": "Common Special Arrow Subtable",
         "Corsair Greymon": "Greymon",
@@ -81,6 +80,7 @@
         "Template:ItemIcon Insert": "Template:Itemicon insert",
         "Template:NavEquipment": "Template:NavItems",
         "Template:PassiveFeaturePage": "Template:Passive feature page",
+        "Template:R": "Template:Resource",
         "Template:Sai": "Template:SAI",
         "Template:Saving throw": "Template:Saving Throw",
         "Template:SavingThrow": "Template:Saving Throw",
@@ -121,6 +121,7 @@
         "Template:notes": "Template:Notes",
         "Template:nowrap": "Template:Nowrap",
         "Template:prereq": "Template:Prereq",
+        "Template:r": "Template:R",
         "Template:rare": "Template:Rare",
         "Template:recharge": "Template:Recharge",
         "Template:ref": "Template:Ref",
@@ -181,8 +182,8 @@
         },
         {
             "pageId": 13,
-            "revisionId": 113073,
-            "title": "Adamantine Shield (Shield)"
+            "revisionId": 115677,
+            "title": "Adamantine Shield"
         },
         {
             "pageId": 14,
@@ -511,12 +512,12 @@
         },
         {
             "pageId": 685,
-            "revisionId": 95261,
+            "revisionId": 115763,
             "title": "Circle of the Land"
         },
         {
             "pageId": 691,
-            "revisionId": 108025,
+            "revisionId": 115814,
             "title": "Circle of the Moon"
         },
         {
@@ -581,7 +582,7 @@
         },
         {
             "pageId": 764,
-            "revisionId": 103518,
+            "revisionId": 115823,
             "title": "Battle Master"
         },
         {
@@ -1196,12 +1197,12 @@
         },
         {
             "pageId": 1495,
-            "revisionId": 78995,
+            "revisionId": 115834,
             "title": "The Fiend"
         },
         {
             "pageId": 1496,
-            "revisionId": 95541,
+            "revisionId": 115835,
             "title": "The Great Old One"
         },
         {
@@ -1862,7 +1863,7 @@
         {
             "pageId": 2367,
             "revisionId": 112930,
-            "title": "Bull's Strength (Spell)"
+            "title": "Bull's Strength"
         },
         {
             "pageId": 2368,
@@ -1911,8 +1912,8 @@
         },
         {
             "pageId": 2391,
-            "revisionId": 115534,
-            "title": "Flame Blade (Spell)"
+            "revisionId": 115662,
+            "title": "Flame Blade"
         },
         {
             "pageId": 2393,
@@ -3161,8 +3162,8 @@
         },
         {
             "pageId": 3432,
-            "revisionId": 113885,
-            "title": "Sunwalker's Gift (Ring)"
+            "revisionId": 115751,
+            "title": "Sunwalker's Gift"
         },
         {
             "pageId": 3433,
@@ -4906,7 +4907,7 @@
         },
         {
             "pageId": 4645,
-            "revisionId": 93656,
+            "revisionId": 115836,
             "title": "The Archfey"
         },
         {
@@ -5706,7 +5707,7 @@
         },
         {
             "pageId": 6698,
-            "revisionId": 103521,
+            "revisionId": 115825,
             "title": "Gloom Stalker"
         },
         {
@@ -5841,7 +5842,7 @@
         },
         {
             "pageId": 6818,
-            "revisionId": 111097,
+            "revisionId": 115807,
             "title": "Nature Domain"
         },
         {
@@ -6331,7 +6332,7 @@
         },
         {
             "pageId": 7963,
-            "revisionId": 103515,
+            "revisionId": 115824,
             "title": "Champion"
         },
         {
@@ -6711,8 +6712,8 @@
         },
         {
             "pageId": 8156,
-            "revisionId": 112878,
-            "title": "Helldusk Armour (Heavy Armour)"
+            "revisionId": 115727,
+            "title": "Helldusk Armour"
         },
         {
             "pageId": 8157,
@@ -7851,8 +7852,8 @@
         },
         {
             "pageId": 9180,
-            "revisionId": 112374,
-            "title": "Blightbringer (Shortbow)"
+            "revisionId": 115695,
+            "title": "Blightbringer"
         },
         {
             "pageId": 9181,
@@ -8396,8 +8397,8 @@
         },
         {
             "pageId": 9559,
-            "revisionId": 113946,
-            "title": "Dolor Amarus (Dagger)"
+            "revisionId": 115703,
+            "title": "Dolor Amarus"
         },
         {
             "pageId": 9561,
@@ -8701,7 +8702,7 @@
         },
         {
             "pageId": 9706,
-            "revisionId": 94238,
+            "revisionId": 115659,
             "title": "Grasping Vine"
         },
         {
@@ -9506,8 +9507,8 @@
         },
         {
             "pageId": 10983,
-            "revisionId": 112464,
-            "title": "Staff of the Ram (Quarterstaff)"
+            "revisionId": 115710,
+            "title": "Staff of the Ram"
         },
         {
             "pageId": 10984,
@@ -10736,7 +10737,7 @@
         },
         {
             "pageId": 13412,
-            "revisionId": 105511,
+            "revisionId": 115816,
             "title": "Divine Strike: Radiant"
         },
         {
@@ -13266,7 +13267,7 @@
         },
         {
             "pageId": 19140,
-            "revisionId": 105514,
+            "revisionId": 115819,
             "title": "Divine Strike: Weapon"
         },
         {
@@ -13276,7 +13277,7 @@
         },
         {
             "pageId": 19142,
-            "revisionId": 105509,
+            "revisionId": 115818,
             "title": "Divine Strike: Poison"
         },
         {
@@ -16346,8 +16347,8 @@
         },
         {
             "pageId": 27735,
-            "revisionId": 112503,
-            "title": "Arcane Battery (Passive Feature)"
+            "revisionId": 115738,
+            "title": "Arcane Battery (passive feature)"
         },
         {
             "pageId": 27738,
@@ -16361,8 +16362,8 @@
         },
         {
             "pageId": 27742,
-            "revisionId": 112723,
-            "title": "Aura of Murder (Passive Feature)"
+            "revisionId": 115747,
+            "title": "Aura of Murder"
         },
         {
             "pageId": 27744,
@@ -16946,8 +16947,8 @@
         },
         {
             "pageId": 28023,
-            "revisionId": 112369,
-            "title": "Dolor Amarus (Passive Feature)"
+            "revisionId": 115789,
+            "title": "Dolor Amarus (passive feature)"
         },
         {
             "pageId": 28028,
@@ -17141,8 +17142,8 @@
         },
         {
             "pageId": 28076,
-            "revisionId": 112372,
-            "title": "Blightbringer (Passive Feature)"
+            "revisionId": 115759,
+            "title": "Blightbringer (passive feature)"
         },
         {
             "pageId": 28078,
@@ -17631,8 +17632,8 @@
         },
         {
             "pageId": 28267,
-            "revisionId": 112925,
-            "title": "Cat's Grace (Passive Feature)"
+            "revisionId": 115782,
+            "title": "Cat's Grace (passive feature)"
         },
         {
             "pageId": 28269,
@@ -17641,8 +17642,8 @@
         },
         {
             "pageId": 28273,
-            "revisionId": 112933,
-            "title": "Bull's Strength (Passive Feature)"
+            "revisionId": 115761,
+            "title": "Bull's Strength (passive feature)"
         },
         {
             "pageId": 28274,
@@ -17746,8 +17747,8 @@
         },
         {
             "pageId": 28302,
-            "revisionId": 113061,
-            "title": "Adamantine Shield (Passive Feature)"
+            "revisionId": 115731,
+            "title": "Adamantine Shield (passive feature)"
         },
         {
             "pageId": 28305,
@@ -17946,8 +17947,8 @@
         },
         {
             "pageId": 28363,
-            "revisionId": 113259,
-            "title": "Covert Critical (Passive Feature)"
+            "revisionId": 115784,
+            "title": "Covert Critical (passive feature)"
         },
         {
             "pageId": 28368,
@@ -18431,8 +18432,8 @@
         },
         {
             "pageId": 28579,
-            "revisionId": 113898,
-            "title": "After Death Do Us Part (Passive Feature)"
+            "revisionId": 115734,
+            "title": "After Death Do Us Part (passive feature)"
         },
         {
             "pageId": 28580,
@@ -18728,6 +18729,31 @@
             "pageId": 28799,
             "revisionId": 115510,
             "title": "Bite (Mapped Terror: Spiders)"
+        },
+        {
+            "pageId": 28824,
+            "revisionId": 115730,
+            "title": "Watch's helmet"
+        },
+        {
+            "pageId": 28829,
+            "revisionId": 115741,
+            "title": "Scalpspike helm"
+        },
+        {
+            "pageId": 28841,
+            "revisionId": 115773,
+            "title": "Shar Headwear"
+        },
+        {
+            "pageId": 28843,
+            "revisionId": 115777,
+            "title": "Shield (Equipment)"
+        },
+        {
+            "pageId": 28848,
+            "revisionId": 115794,
+            "title": "Scimitar (Shar Variant)"
         }
     ],
     "deadLinks": [

@@ -27,6 +27,7 @@ export interface ICharacterOptionWithPage extends ICharacterOption {
 
 export interface ChoiceListConfig {
     feature: string | number;
+    feature2?: string | number;
     minLevel?: string | number;
     classes?: string | number;
     matchAll?: boolean;

@@ -111,9 +111,7 @@ export class CharacterFeature
         // }
     }
 
-    private static async parseSpellPage(
-        page: PageData,
-    ): Promise<StaticallyReferenceable> {
+    private static async parseSpellPage(page: PageData): Promise<SpellStub> {
         const { title, pageId } = page;
         assert(await page.hasTemplate('SpellPage'));
 
@@ -129,9 +127,7 @@ export class CharacterFeature
         return new SpellStub(spell as ISpell);
     }
 
-    private static async parseActionPage(
-        page: PageData,
-    ): Promise<StaticallyReferenceable> {
+    private static async parseActionPage(page: PageData): Promise<ActionStub> {
         const { title, pageId } = page;
         assert(await page.hasTemplate('ActionPage'));
 
@@ -165,15 +161,21 @@ export class CharacterFeature
 
     static async parsePageForGrantableEffect(
         pageTitle: string,
-    ): Promise<GrantableEffect | StaticallyReferenceable | null>;
+    ): Promise<
+        GrantableEffect | ActionStub | SpellStub | CharacteristicStub | null
+    >;
 
     static async parsePageForGrantableEffect(
         page: PageData,
-    ): Promise<GrantableEffect | StaticallyReferenceable | null>;
+    ): Promise<
+        GrantableEffect | ActionStub | SpellStub | CharacteristicStub | null
+    >;
 
     static async parsePageForGrantableEffect(
         pageOrTitle: string | PageData,
-    ): Promise<GrantableEffect | StaticallyReferenceable | null> {
+    ): Promise<
+        GrantableEffect | ActionStub | SpellStub | CharacteristicStub | null
+    > {
         let page: PageData | undefined;
 
         try {
@@ -264,6 +266,7 @@ export class CharacterFeature
     protected async parseChoiceList(
         sectionWikitext: string,
         pageTitle: string,
+        extraConfig: Partial<ChoiceListConfig> = {},
     ): Promise<ICharacterOptionWithStubs[]> {
         let table;
 
@@ -277,8 +280,10 @@ export class CharacterFeature
             throw err;
         }
 
-        const config =
-            choiceListConfigs.get(pageTitle) ?? this.choiceListConfig;
+        const config: ChoiceListConfig = {
+            ...(choiceListConfigs.get(pageTitle) ?? this.choiceListConfig),
+            ...extraConfig,
+        };
 
         const features: ICharacterOptionWithStubs[] = (
             await Promise.all(
@@ -322,16 +327,22 @@ export class CharacterFeature
                         }
                     }
 
-                    const featureCell = row[config.feature];
+                    const featureCells = [row[config.feature]];
 
-                    const featureTitles = [
-                        ...featureCell.matchAll(
-                            /{{(?:Icon|SAI|SmIconLink)\|([^|}]+).*?}}/g,
-                        ),
-                        ...featureCell.matchAll(/\[\[([^|\]]+).*?\]\]/g),
-                    ]
-                        .map(([, title]) => title)
-                        .slice(0, config.matchAll ? undefined : 1);
+                    if (config.feature2) {
+                        featureCells.push(row[config.feature2]);
+                    }
+
+                    const featureTitles = featureCells.flatMap((featureCell) =>
+                        [
+                            ...featureCell.matchAll(
+                                /{{(?:Icon|SAI|SmIconLink)\|([^|}]+).*?}}/g,
+                            ),
+                            ...featureCell.matchAll(/\[\[([^|\]]+).*?\]\]/g),
+                        ]
+                            .map(([, title]) => title)
+                            .slice(0, config.matchAll ? undefined : 1),
+                    );
 
                     if (featureTitles.length === 0) {
                         throw new Error(

@@ -14,10 +14,12 @@ let ref: {
 export class CharacteristicStub implements StaticReference {
     id: number;
     image?: string;
+    name: string;
 
     constructor(public characteristic: ICharacteristic) {
         this.id = characteristic.id;
         this.image = characteristic.image;
+        this.name = characteristic.name;
     }
 
     toJSON(): StaticReferenceHandle {

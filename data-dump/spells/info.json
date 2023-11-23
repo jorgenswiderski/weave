@@ -9209,7 +9209,7 @@
         "level": 2,
         "school": 5,
         "summary": "This spell allows spellcasters to summon a fiery scimitar in their free hand that sheds bright light. Casters can make a melee weapon attack with the blade to deal Fire damage to enemies.",
-        "description": "Conjure a flaming Scimitar in your hand that deals 3d6|Fire damage. It sheds a bright light in a m=3|ft=10 radius and a dim light in a m=6|ft=20 radius. 10.\n\n Flame Blade",
+        "description": "Conjure a flaming Flame Blade (Weapon)|25|alias=Scimitar in your hand that deals 3d6|Fire damage. It sheds a bright light in a m=3|ft=10 radius and a dim light in a m=6|ft=20 radius. 10.",
         "ritual": false,
         "concentration": false,
         "id": 2391,
@@ -9217,11 +9217,7 @@
         "range": 3,
         "costs": [
             {
-                "resource": 1,
-                "amount": 1
-            },
-            {
-                "resource": 13,
+                "resource": 2,
                 "amount": 1
             }
         ],
@@ -10160,7 +10156,7 @@
         "level": 4,
         "school": 2,
         "summary": "This spell allows spellcasters to summon a Grasping Vine which can pull enemies toward itself.",
-        "description": "Summon a giant vine capable of dragging creatures toward itself.\n\n10\n\nThe Grasping Vine has 6 Hit Points, an Armour Class of 10, and the following ability:\n\nGrasping Pull|w=40\n* Grasp a target and pull it m=6|ft=20 toward you.",
+        "description": "Summon a giant vine capable of dragging creatures toward itself.\n\n10",
         "ritual": false,
         "concentration": true,
         "id": 9706,
@@ -10178,8 +10174,7 @@
             }
         ],
         "classes": [
-            "Druid",
-            "Nature Domain"
+            "Druid"
         ],
         "noSpellSlot": false,
         "isVariant": false

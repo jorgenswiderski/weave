@@ -32,11 +32,12 @@ export class MediaWikiParser {
         'wolf',
         'wolverine',
 
-        // dragonborn breath
+        // dragonborn breath / draconic bloodline ancestries
         'acid',
         'fire',
         'poison',
         'cold',
+        'lightning',
     ]);
 
     static parseNameFromPageTitle(title: string) {

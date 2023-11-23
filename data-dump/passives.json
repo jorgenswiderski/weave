@@ -28,13 +28,6 @@
         "id": 8367
     },
     {
-        "name": "Animalistic Vitality",
-        "description": "Affected entity regains 2d8|Healing of health every round of combat.",
-        "image": "Animalistic Vitality Icon.webp",
-        "type": 2,
-        "id": 18919
-    },
-    {
         "name": "Arcane Ward",
         "description": "The residual magic of your spells forms a ward around you that protects you from harm.\n\nEach time you cast an Abjuration spell, the intensity of the ward increases by the amount of the spell's Level, up to a maximum of 2x your Wizard level.\n\nEach time you take damage, the ward blocks an amount of damage equal to its intensity, and its intensity decreases by 1.\n\nAfter each Long Rest, the ward's intensity resets, and becomes the same as your Wizard level.",
         "image": "Arcane Ward.webp",
@@ -739,13 +732,6 @@
         "image": "Halfling Luck.webp",
         "type": 2,
         "id": 3964
-    },
-    {
-        "name": "Heart of the Storm",
-        "description": "When you cast a Spell of Level 1 or higher that deals Lightning or Thunder damage, you cause a small, local storm. All enemies within m=6|ft=20 take  (Sorcerer Level / 2) | Lightning or  (Sorcerer Level / 2) | Thunder.",
-        "image": "Heart of the Storm.webp",
-        "type": 2,
-        "id": 15150
     },
     {
         "name": "Heart of the Storm: Resistance",
@@ -1551,12 +1537,5 @@
         "image": "Wild Strike.webp",
         "type": 2,
         "id": 9130
-    },
-    {
-        "name": "Wrath of the Storm",
-        "description": "As a reaction, strike back at an attacking creature, dealing 2d8|Lightning or 2d8|Thunder damage. The target takes half damage on a successful SavingThrow.",
-        "image": "Generic Thunder.webp",
-        "type": 2,
-        "id": 9201
     }
 ]

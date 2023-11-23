@@ -2,7 +2,7 @@ import { CharacterPlannerStep } from '@jorgenswiderski/tomekeeper-shared/dist/ty
 import { error } from '../../logger';
 import { MediaWiki, PageData } from '../../media-wiki/media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
-import { CharacterSubclass } from './character-subclass';
+import { CharacterSubclass } from './character-subclass/character-subclass';
 import { CharacterFeatureTypes } from '../types';
 import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
 

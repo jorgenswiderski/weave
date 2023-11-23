@@ -253,47 +253,6 @@
         ]
     },
     {
-        "name": "Beak Attack (Dire Raven Wild Shape)",
-        "damage": "amount:2d4, type: Piercing, mod: Dexterity",
-        "image": "Beak Attack Raven Icon.png",
-        "level": 0,
-        "school": 0,
-        "summary": "Beak Attack is a Wild Shape: Dire Raven Action. Dire Ravens and Ravens use this ability to make a melee attack that deals Piercing Damage to enemies.",
-        "description": "Peck at a target, dealing 2d4 + Dexterity Modifier|Piercing damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1177,
-        "attackRoll": true,
-        "range": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Bear Companion",
-        "image": "Bear Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bear Companion is a variant of Summon Companion which is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 14208,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Bend Luck",
         "image": "Bend Luck.webp",
         "level": 0,
@@ -336,28 +295,6 @@
         "rangeFt": 30,
         "condition": "Benign Transposition: Spent",
         "recharge": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Bite (Sabre-Toothed Tiger)",
-        "damage": "amount:2d6, type: Piercing, mod: Strength",
-        "image": "Bite.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bite (Sabre-Toothed Tiger) is a Wild Shape: Sabre-Toothed Tiger Action. You can use this ability to make a melee attack that deals Piercing Damage to enemies.",
-        "description": "Bite a target.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18905,
-        "attackRoll": true,
-        "range": 2,
-        "condition": "Prone",
-        "conditionDuration": 2,
         "costs": [
             {
                 "resource": 1,
@@ -422,89 +359,6 @@
         ]
     },
     {
-        "name": "Boar Companion",
-        "image": "Boar Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Boar Companion is a variant of Summon Companion which is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 14209,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Bolstering Magic: Boon",
-        "image": "Bolstering Magic Boon.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bolstering Magic: Boon is a Wild Magic Barbarian Class Action. This ability gives bonuses to Attack Rolls and Ability Checks for up to a minute, once per long rest.",
-        "description": "You or an ally receive d4|Physical +1d4 bonus to Attack Rolls and Ability Checks for 10 turns.",
-        "ritual": false,
-        "concentration": false,
-        "id": 16446,
-        "attackRoll": false,
-        "range": 2,
-        "condition": "Bolstering Magic: Boon",
-        "conditionDuration": 10,
-        "recharge": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Bolstering Magic: Level 1 Spell Slot",
-        "image": "Bolstering Magic Level 1 Spell Slot.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bolstering Magic: Level 1 Spell Slot is a Wild Magic Barbarian Class Action. This ability recovers a Level 1 spell slot for you or an ally, once per long rest.",
-        "description": "You or an ally recover a Level 1 Spell Slot",
-        "ritual": false,
-        "concentration": false,
-        "id": 16457,
-        "attackRoll": false,
-        "range": 2,
-        "recharge": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Bolstering Magic: Level 2 Spell Slot",
-        "image": "Bolstering Magic Level 2 Spell Slot.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bolstering Magic: Level 2 Spell Slot is a Wild Magic Barbarian Class Action. This ability recovers a Level 2 spell slot for you or an ally, once per long rest.",
-        "description": "You or an ally recover a Level 2 Spell Slot",
-        "ritual": false,
-        "concentration": false,
-        "id": 16458,
-        "attackRoll": false,
-        "range": 2,
-        "recharge": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Bolstering Magic: Level 3 Spell Slot",
         "image": "Bolstering Magic Level 3 Spell Slot.webp",
         "level": 0,
@@ -520,31 +374,6 @@
         "costs": [
             {
                 "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Burrow (Earth Myrmidon)",
-        "damage": "amount:2d8, type: Bludgeoning",
-        "image": "Burrow.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Burrow is a Wild Shape: Earth Myrmidon Action. You can use this ability to pseudo Teleport to a new location, dealing damage to enemies as you arrive.",
-        "description": "Let the ground swallow you up, only for you to re-emerge in a terrific burst of earth, damaging nearby foes.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18961,
-        "attackRoll": false,
-        "range": 1,
-        "rangeM": 12,
-        "rangeFt": 40,
-        "aoe": 1,
-        "aoeM": 3,
-        "aoeFt": 10,
-        "costs": [
-            {
-                "resource": 2,
                 "amount": 1
             }
         ]
@@ -594,49 +423,6 @@
             },
             {
                 "resource": 11,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Cinderous Swipe",
-        "damage": "amount:weapon",
-        "image": "Cinderous Swipe.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Cinderous Swipe' is a Wild Shape: Fire Myrmidon Action. You can use this ability to make a melee attack in a large cone shape and deal extra Fire damage.",
-        "description": "Create a blooming cone of fire as you swipe at a foe.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18977,
-        "attackRoll": false,
-        "range": 2,
-        "aoe": 2,
-        "aoeM": 5,
-        "aoeFt": 16,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Claws (Bear Wild Shape)",
-        "damage": "amount:2d4, type:Slashing, mod:Strength",
-        "image": "Claws Bear.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Claws is a Wild Shape: Bear Action. Bears use this ability to make a melee attack that deals Slashing Damage to enemies.",
-        "description": "Lash out with deadly claws.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1193,
-        "attackRoll": true,
-        "range": 2,
-        "costs": [
-            {
-                "resource": 1,
                 "amount": 1
             }
         ]
@@ -979,26 +765,6 @@
         ]
     },
     {
-        "name": "Dash",
-        "image": "Dash.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Dash is a common Action. This ability allow characters to double their movement speed.",
-        "description": "Cover more distance this turn: double your Movement Speed.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1149,
-        "attackRoll": false,
-        "condition": "Dash",
-        "conditionDuration": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Defensive Duellist",
         "image": "Defensive Duellist.webp",
         "level": 0,
@@ -1108,47 +874,6 @@
         ]
     },
     {
-        "name": "Dire Raven Companion",
-        "image": "Dire Raven Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Dire Raven Companion is a variant of Summon Companion which is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 14210,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Disengage",
-        "image": "Disengage.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Disengage is an Action that allows the user to safely move out of melee range of a threatening enemy without being attacked.",
-        "description": "Focus on retreating safely. Moving won't provoke Opportunity Attacks.",
-        "ritual": false,
-        "concentration": false,
-        "id": 3924,
-        "attackRoll": false,
-        "condition": "Disengage",
-        "conditionDuration": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Divine Intervention",
         "image": "Divine Intervention Sunder the Heretical.webp",
         "level": 0,
@@ -1210,21 +935,61 @@
         ]
     },
     {
-        "name": "Diving Strike",
+        "name": "Divine Strike: Poison",
         "damage": "amounttext:Weapon, type:Physical",
-        "image": "Diving Strike.webp",
+        "image": "Divine Strike Poison Melee.webp",
         "level": 0,
         "school": 0,
-        "summary": "Diving Strike is a Wildheart action only available while using Rage: Eagle Heart, allowing you to leap down on a target dealing damage and knocking them prone.",
-        "description": "Leap down unto a foe below you, dealing Weapon Damage and knocking them Prone.\n\nYou do not take Falling damage. You must be at least m=1.5|ft=5 above your target.\n\nAvailable only when Rage|Raging.",
+        "summary": "Divine Strike: Poison is a Trickery Domain action or reaction that deals extra Poison damage upon a weapon strike (either melee or ranged).",
+        "description": "* Divine Strike Poison Melee Icon Melee Skill: Once per turn deal 1d8|Poison damage in addition to your weapon's damage.\n* Divine Strike Poison Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Poison damage.",
         "ritual": false,
         "concentration": false,
-        "id": 1150,
+        "id": 19142,
         "attackRoll": true,
-        "rangeM": 8,
-        "rangeFt": 25,
-        "condition": "Prone",
-        "conditionDuration": 2,
+        "range": 4,
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Divine Strike: Radiant",
+        "damage": "amounttext:Weapon, type:Physical",
+        "image": "Divine Strike Radiant Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Divine Strike: Radiant is a Life Domain action and reaction that deals extra Radiant damage upon a weapon strike (either melee or ranged).",
+        "description": "* Divine Strike Radiant Melee Icon Melee Skill: Once per turn deal 1d8|Radiant damage in addition to your weapon's damage.\n* Divine Strike Radiant Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Radiant damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 13412,
+        "attackRoll": true,
+        "range": 4,
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Divine Strike: Weapon",
+        "damage": "amounttext:Weapon, type:Physical",
+        "image": "Divine Strike Physical Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Divine Strike: Weapon is a War Domain action or reaction that deals extra Weapon damage upon a weapon strike (either melee or ranged).",
+        "description": "* Divine Strike Physical Melee Icon Melee Skill: Once per turn deal 1d8|Physical damage in addition to your weapon's damage.\n* Divine Strike Physical Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Physical damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 19140,
+        "attackRoll": true,
+        "range": 4,
+        "recharge": 4,
         "costs": [
             {
                 "resource": 1,
@@ -1304,26 +1069,6 @@
         ]
     },
     {
-        "name": "Elemental Warp",
-        "image": "Elemental Warp.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Teleport to an unoccupied space up to m=18|ft=60 away.",
-        "description": "Surrounded by silver mist, you teleport to an unoccupied space you can see.",
-        "ritual": false,
-        "concentration": false,
-        "id": 16348,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "costs": [
-            {
-                "resource": 2,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Embrace of the Inferno",
         "damage": "amount:2d6, per:ray, type:Fire",
         "image": "Scorching Ray.webp",
@@ -1344,28 +1089,6 @@
             {
                 "resource": 11,
                 "amount": 3
-            }
-        ]
-    },
-    {
-        "name": "Enhanced Jump",
-        "image": "Jump Bonus Action.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Enhanced Jump is a bonus action that allows characters to jump vertically or horizontally, up to a distance determined by their Strength score.",
-        "description": "Jump up, down, and across. Your Strength affects how far you can jump.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18921,
-        "attackRoll": false,
-        "costs": [
-            {
-                "resource": 2,
-                "amount": 1
-            },
-            {
-                "resource": 4,
-                "amount": 10
             }
         ]
     },
@@ -1430,37 +1153,6 @@
         "costs": [
             {
                 "resource": 22,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Explosive Icicle",
-        "damage": "amount:3d8, type: Cold",
-        "image": "Explosive Icicle.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Explosive Icicle is a Wild Shape: Water Myrmidon Action. You can use this ability to shoot three blasts of ice, creating Ice surfaces.",
-        "description": "Hurl three tridents forged of glistening ice that pierce targets and create ice surfaces on impact.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18991,
-        "attackRoll": true,
-        "range": 1,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "aoe": 1,
-        "aoeM": 2,
-        "aoeFt": 6,
-        "areaName": "Ice",
-        "areaCategory": 2,
-        "areaShape": 1,
-        "areaRangeM": 2,
-        "areaRangeFt": 6,
-        "areaDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
                 "amount": 1
             }
         ]
@@ -1875,29 +1567,6 @@
         ]
     },
     {
-        "name": "Goading Roar",
-        "image": "Goading Roar.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Goading Roar is a Wild Shape: Bear and Bear Companion Action. Bears use this ability to taunt enemies into attacking them.",
-        "description": "Roar at nearby enemies to goad them into attacking you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1192,
-        "attackRoll": false,
-        "aoe": 1,
-        "aoeFt": 30,
-        "condition": "Goaded",
-        "conditionDuration": 2,
-        "conditionSave": 5,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Gong of the Summit",
         "damage": "amount: 3d8, type:Thunder",
         "image": "Shatter.webp",
@@ -1923,28 +1592,6 @@
             {
                 "resource": 11,
                 "amount": 3
-            }
-        ]
-    },
-    {
-        "name": "Grounded Thunder Strike",
-        "damage": "amount:1d10, type: Bludgeoning, mod: Strength",
-        "image": "Grounded Thunder Strike.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Grounded Thunder Strike is a Wild Shape: Earth Myrmidon Action. You can use this ability to make a melee attack that deals Thunder Damage to enemies.",
-        "description": "Wallop a foe with a fist of stone and thunder, knocking them Prone (Condition)|Prone.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18958,
-        "attackRoll": true,
-        "range": 2,
-        "condition": "Prone",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
             }
         ]
     },
@@ -2037,34 +1684,6 @@
         ]
     },
     {
-        "name": "Healing Vapours",
-        "damage": "amount:3d8, type:Healing, cond:yes",
-        "image": "Hiemal Strike.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Healing Vapours is a Wild Shape: Water Myrmidon Action. You can use this ability to heal nearby creatures or hurt them if you are poisoned.",
-        "description": "Exude water vapour with your general elemental dampness, healing nearby creatures for 3d8|Healing.\n\nIf you are Poisoned, the water is tainted, and instead of healing it deals 3d8|Poison damage to nearby creatures.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18994,
-        "attackRoll": false,
-        "range": 1,
-        "rangeM": 9,
-        "rangeFt": 30,
-        "areaName": "Water",
-        "areaCategory": 2,
-        "areaShape": 1,
-        "areaRangeM": 9,
-        "areaRangeFt": 30,
-        "areaDuration": 3,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Heart of the Storm: Lightning",
         "damage": "amounttext:Sorcerer Level / 2, type:Lightning",
         "image": "Heart of the Storm Lightning.webp",
@@ -2106,26 +1725,6 @@
         "costs": [
             {
                 "resource": 3,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Help",
-        "image": "Help.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Help is a Common Action. This ability allows characters to aid an ally in combat and remove negative Conditions.",
-        "description": "Help an ally in need.\n\nRemove Burning, Downed, Ensnared, Entangled, Enwebbed, Prone, Sleeping.",
-        "ritual": false,
-        "concentration": false,
-        "id": 2275,
-        "attackRoll": false,
-        "rangeM": 2,
-        "rangeFt": 5,
-        "costs": [
-            {
-                "resource": 1,
                 "amount": 1
             }
         ]
@@ -2385,27 +1984,6 @@
         ]
     },
     {
-        "name": "Invisibility (Air Myrmidon)",
-        "image": "Generic Invisibility.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Invisibility (Air Myrmidon) is a Wild Shape: Air Myrmidon Action that allows you to go Invisible for as long as you maintain concentration.",
-        "description": "Manipulate the currents of the air to make yourself undetectable.\n\nInvisibility ends early if you attack, cast another spell, take an action, or take damage.",
-        "ritual": false,
-        "concentration": true,
-        "id": 18933,
-        "attackRoll": false,
-        "range": 3,
-        "condition": "Invisible",
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Invoke Duplicity",
         "image": "Invoke Duplicity.webp",
         "level": 0,
@@ -2425,26 +2003,6 @@
             },
             {
                 "resource": 8,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Jugular Strike (Sabre-Toothed Tiger)",
-        "damage": "amount:1d4, type: Piercing, mod: Strength",
-        "image": "Jugular Strike.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Jugular Strike (Sabre-Toothed Tiger) is a Wild Shape: Sabre-Toothed Tiger Action. You can use this ability to make a melee attack that deals extra Piercing damage if the target is Prone.",
-        "description": "Lunge at a creature's throat. if the target is Prone, you deal an additional 2d6+Strength Modifier|Piercing damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18910,
-        "attackRoll": true,
-        "range": 2,
-        "costs": [
-            {
-                "resource": 1,
                 "amount": 1
             }
         ]
@@ -2601,50 +2159,6 @@
         "costs": [
             {
                 "resource": 2,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Maintain Hypnotic Gaze",
-        "image": "Maintain Hypnotic Gaze.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Maintain Hypnotic Gaze is an Enchantment class action that lets you keep a creature Hypnotic Gaze (Condition)|Hypnotised further.",
-        "description": "Maintain your Hypnotic Gaze to extend its duration.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20016,
-        "attackRoll": false,
-        "range": 2,
-        "condition": "Hypnotic Gaze",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Maintain Intimidating Presence",
-        "image": "Maintain Intimidating Presence.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Maintain Intimidating Presence is a Berserker Action. This ability allows the Barbarian to continue to instill fear into their enemies.",
-        "description": "Prolong the Frightened|Fear inflicted on a target by your Intimidating Presence",
-        "ritual": false,
-        "concentration": false,
-        "id": 9536,
-        "attackRoll": false,
-        "rangeM": 9,
-        "rangeFt": 30,
-        "condition": "Frightened",
-        "conditionDuration": 2,
-        "conditionSave": 5,
-        "costs": [
-            {
-                "resource": 1,
                 "amount": 1
             }
         ]
@@ -2900,48 +2414,6 @@
                 "resource": 7,
                 "amount": 1,
                 "behavior": 2
-            }
-        ]
-    },
-    {
-        "name": "Muck to Metal",
-        "image": "Muck to Metal.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Muck to Metal is a Wild Shape: Earth Myrmidon action. You can use this ability to physically harden your body, increasing your Armour Class but reducing your Movement Speed.",
-        "description": "Harden your slippery body into a substance like steel, increasing your Armour Class by 2, but reducing your Movement Speed by m=6|ft=20.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18964,
-        "attackRoll": false,
-        "range": 3,
-        "condition": "Transmuted to Steel",
-        "conditionDuration": 4,
-        "costs": [
-            {
-                "resource": 4,
-                "amount": 20
-            }
-        ]
-    },
-    {
-        "name": "Myrmidon's Immolation",
-        "image": "Myrmidon's Immolation.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Myrmidon's Immolation' is a Wild Shape: Fire Myrmidon Action. You can use this ability to make yourself much faster like the spell Haste.",
-        "description": "Ignite with incandescent, primordial flames that Hastened (Condition)|Hasten you.",
-        "ritual": false,
-        "concentration": true,
-        "id": 18976,
-        "attackRoll": false,
-        "range": 3,
-        "condition": "Hastened",
-        "conditionDuration": 3,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
             }
         ]
     },
@@ -3357,32 +2829,6 @@
             }
         ],
         "condition2": "Rage Impeded"
-    },
-    {
-        "name": "Raging Vortex",
-        "damage": "amount:2d8, type: Bludgeoning",
-        "image": "Generic Damage.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Raging Vortex is a Myrmidon Action that creates a swirling vortex that deals damage and silences any creature inside.",
-        "description": "Spiral the wind into a choking maelstrom that inflicts 2d8|Bludgeoning damage per turn and Silenced (Condition)|Silences creatures.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18931,
-        "attackRoll": false,
-        "range": 1,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "aoe": 1,
-        "aoeM": 6,
-        "aoeFt": 20,
-        "condition": "Raging Vortex",
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
     },
     {
         "name": "Rally",
@@ -3882,28 +3328,6 @@
         ]
     },
     {
-        "name": "Shred Armour",
-        "damage": "amount:2d4, type: Piercing, mod: Strength",
-        "image": "Shred Armor.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Shred Armor is a Wild Shape: Sabre-Toothed Tiger Action. You can use this ability to make a melee attack that deals Slashing damage and reduces your defences.",
-        "description": "Rip into a target's weaknesses, reducing their Armour Class by 1.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18918,
-        "attackRoll": true,
-        "range": 2,
-        "condition": "Shredded Armour",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Slashing Flourish (Melee)",
         "damage": "amounttext:Weapon, type:Physical",
         "image": "Slashing Flourish Melee.webp",
@@ -3970,35 +3394,6 @@
         "costs": [
             {
                 "resource": 3,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Sludgy Sling",
-        "damage": "amount:2d6, type: Bludgeoning",
-        "image": "Sludgy Sling.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Sludgy Sling is a Wild Shape: Earth Myrmidon Action. You can use this ability to deal damage to creatures around you as well as cover the area in a Mud surface.",
-        "description": "Overwhelm creatures with painfully heavy sludge, miring the area around yourself in thick mud.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18959,
-        "attackRoll": true,
-        "range": 3,
-        "aoe": 1,
-        "aoeM": 3,
-        "aoeFt": 10,
-        "areaName": "Mud",
-        "areaCategory": 2,
-        "areaShape": 1,
-        "areaRangeM": 3,
-        "areaRangeFt": 10,
-        "areaDuration": 3,
-        "costs": [
-            {
-                "resource": 1,
                 "amount": 1
             }
         ]
@@ -4378,30 +3773,6 @@
         ]
     },
     {
-        "name": "Tiger's Bloodlust",
-        "damage": "amounttext:1/2 Normal Weapon Damage, type:Physical",
-        "image": "Tiger's Bloodlust.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Tiger's Bloodlust is a Wildheart action only available while using Rage: Tiger Heart, allowing you to attack multiple nearby enemies at once.",
-        "description": "Lash out to attack up to 3 enemies at once. They each take half the damage your weapon usually deals and start to Bleeding|Bleed.\n\nAvailable only when Rage|Raging.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1155,
-        "attackRoll": true,
-        "aoe": 2,
-        "aoeM": 2,
-        "aoeFt": 5,
-        "condition": "Bleeding",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Touch of the Storm",
         "damage": "amount:1d10, type:Lightning",
         "image": "Shocking Grasp.webp",
@@ -4438,126 +3809,6 @@
         "id": 16839,
         "attackRoll": false,
         "condition": "Transmuter's Stone: Depleted Magic",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Acid Resistance",
-        "image": "Transmuter's Stone Resistance.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Acid Resistance is a variation of Transmuter's Stone that makes you take half as much damage when hit by an Acid attack.",
-        "description": "Create a stone that grants the carrier Resistance to Acid damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20166,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Acid Resistance",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Cold Resistance",
-        "image": "Transmuter's Stone Resistance.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Cold Resistance is a variation of Transmuter's Stone that makes you take half as much damage when hit by a Cold attack.",
-        "description": "Create a stone that grants the carrier Resistance to Cold damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20167,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Cold Resistance",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Constitution",
-        "image": "Transmuter's Stone Constitution.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Constitution is a variation of Transmuter's Stone that allows you to create a stone that provides Proficiency in Constitution Saving Throws.",
-        "description": "Create a stone that grants the carrier Proficiency in Constitution Saving Throws.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20158,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Constitution",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Darkvision",
-        "image": "Transmuter's Stone Darkvision.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Constitution is a variation of Transmuter's Stone that allows you to create a stone that provides Darkvision to a range of m=18|ft=60",
-        "description": "Create a stone that lets the carrier see in the dark out to a range of m=18|ft=60.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20159,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Darkvision",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Fire Resistance",
-        "image": "Transmuter's Stone Resistance.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Fire Resistance is a variation of Transmuter's Stone that makes you take half as much damage when hit by a Fire attack.",
-        "description": "Create a stone that grants the carrier Resistance to Fire damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20168,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Fire Resistance",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Lightning Resistance",
-        "image": "Transmuter's Stone Resistance.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Lightning Resistance is a variation of Transmuter's Stone that makes you take half as much damage when hit by an Acid attack.",
-        "description": "Create a stone that grants the carrier Resistance to Lightning damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20169,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Lightning Resistance",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Speed",
-        "image": "Transmuter's Stone Speed.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Speed is a variation of Transmuter's Stone that allows you to create a stone that provides increased movement speed.",
-        "description": "Create a stone that increases the carrier's movement speed by m=3|ft=10.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20164,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Speed",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Thunder Resistance",
-        "image": "Transmuter's Stone Resistance.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Thunder Resistance is a variation of Transmuter's Stone that makes you take half as much damage when hit by an Acid attack.",
-        "description": "Create a stone that grants the carrier Resistance to Thunder damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20170,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Thunder Resistance",
         "recharge": 1,
         "costs": []
     },
@@ -4664,19 +3915,6 @@
                 "amount": 1
             }
         ]
-    },
-    {
-        "name": "Undead Thralls: Animate Dead",
-        "image": "Undead Thralls Animate Dead.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Undead Thralls: Animate Dead is a Necromancy passive feature that grants you the spell Animate Dead.",
-        "description": "You gain the Animate Dead spell, if you didn't have it already",
-        "ritual": false,
-        "concentration": false,
-        "id": 16836,
-        "attackRoll": false,
-        "costs": []
     },
     {
         "name": "Unrelenting Ferocity",
@@ -4884,154 +4122,6 @@
         ]
     },
     {
-        "name": "Wild Magic: Bolt of Light",
-        "image": "Wild Magic Bolt of Light.webp",
-        "level": 0,
-        "school": 2,
-        "summary": "Wild Magic: Bolt of Light is a special Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. It allows you to shoot a bolt of light from your chest that deals Radiant damage and has a chance to Blind.",
-        "description": "Shoot a bolt of light from your chest that Blinded|Blinds the target",
-        "ritual": false,
-        "concentration": false,
-        "id": 16545,
-        "attackRoll": false,
-        "rangeFt": 30,
-        "condition": "Blinded",
-        "conditionDuration": 1,
-        "costs": [
-            {
-                "resource": 2,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Wild Magic: Dark Tendrils",
-        "image": "Wild Magic Dark Tendrils.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Wild Magic: Dark Tendrils is a Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. Every turn, you deal Necrotic damage to every creature around you while also healing yourself.",
-        "description": "Shadowy tendrils lash outwards from you. Each creature within m=9|ft=30 of you must succeed a CON or take 1d12|Necrotic damage. Additionally, you gain Healing|1d12 HealingHealing|Temporary Hit Points.",
-        "ritual": false,
-        "concentration": false,
-        "id": 19588,
-        "attackRoll": false,
-        "range": 3,
-        "aoe": 1,
-        "aoeM": 9,
-        "aoeFt": 30,
-        "condition": "Wild Magic: Dark Tendrils",
-        "conditionDuration": 10,
-        "costs": []
-    },
-    {
-        "name": "Wild Magic: Intangible Spirit",
-        "damage": "amount: 1d6, type: Force",
-        "image": "Wild Magic Intangible Spirit.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Wild Magic: Intangible Spirit is a special Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. It allows you to summon a spectral flumph that explodes at the end of your turn, dealing damage in an area.",
-        "description": "Summon a spectral flumph. The flumph explodes at the end of your turn, dealing 1d6|Force damage to each creature within ft=7.",
-        "ritual": false,
-        "concentration": false,
-        "id": 16563,
-        "attackRoll": false,
-        "range": 1,
-        "rangeM": 9,
-        "rangeFt": 30,
-        "aoe": 1,
-        "aoeM": 2,
-        "aoeFt": 7,
-        "condition": "Wild Magic: Intangible Spirit",
-        "conditionDuration": 10,
-        "costs": [
-            {
-                "resource": 2,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Wild Magic: Magic Retribution",
-        "image": "Wild Magic Magic Retribution.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Wild Magic: Magic Retribution is a special Wild Magic Barbarian class action that is randomly granted when you trigger a Wild Magic roll. Damages enemies who hit you with Force damage.",
-        "description": "You are protected by wild, vengeful magic. Enemies that hit you take 1d6|Force damage in retaliation.",
-        "ritual": false,
-        "concentration": false,
-        "id": 19581,
-        "attackRoll": false,
-        "condition": "Wild Magic: Magic Retribution",
-        "conditionDuration": 10,
-        "costs": []
-    },
-    {
-        "name": "Wild Magic: Protective Lights",
-        "image": "Wild Magic Protective Lights.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Wild Magic: Protective Lights is a special Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. Magical lights surround and circle you, protecting you. You and your allies nearby receive an extra +1 Armour Class.",
-        "description": "You, and any allies within m=3|ft=10 of you, have a +1 bonus to Armour Class.",
-        "ritual": false,
-        "concentration": false,
-        "id": 16527,
-        "attackRoll": false,
-        "condition": "Wild Magic: Protective Lights",
-        "conditionDuration": 10,
-        "costs": []
-    },
-    {
-        "name": "Wild Magic: Teleport (Barbarian)",
-        "image": "Wild Magic Teleport Barbarian.webp",
-        "level": 0,
-        "school": 2,
-        "summary": "Wild Magic: Teleport is a special Wild Magic Barbarian class action that is randomly granted when you trigger a Wild Magic roll. It allows you to teleport as a bonus action every turn.",
-        "description": "As a bonus, teleport up to ft=60 to an unoccupied space you can see",
-        "ritual": false,
-        "concentration": false,
-        "id": 16503,
-        "attackRoll": false,
-        "rangeFt": 60,
-        "condition": "Wild Magic: Teleport",
-        "conditionDuration": 10,
-        "costs": [
-            {
-                "resource": 2,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Wild Magic: Vine Growth",
-        "image": "Wild Magic Vine Growth.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Wild Magic: Vine Growth is a special Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. Plants and vines extend from you causing Difficult Terrain to creatures near you. This area is centered on you and moves with you.",
-        "description": "Flowers and vines spread outward from you in a radius of m=5|ft=17 creating Difficult Terrain for everyone other than you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 19586,
-        "attackRoll": false,
-        "condition": "Wild Magic: Vine Growth",
-        "conditionDuration": 10,
-        "costs": []
-    },
-    {
-        "name": "Wild Magic: Weapon Infusion",
-        "image": "Wild Magic Weapon Infusion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Wild Magic: Weapon Infusion is a special Wild Magic Barbarian free action that is randomly used when you trigger a Wild Magic roll. It boosts your weapon, dealing additional Force damage and returns to your hand when thrown.",
-        "description": "Magic infuses your weapon. It deals an additional 1d6|Force damage and gains the Light and Thrown properties. If thrown, it reappears in your hand at the end of your turn.",
-        "ritual": false,
-        "concentration": false,
-        "id": 19561,
-        "attackRoll": false,
-        "condition": "Wild Magic: Weapon Infusion",
-        "conditionDuration": 10,
-        "costs": []
-    },
-    {
         "name": "Wild Shape",
         "image": "Wild Shape.webp",
         "level": 0,
@@ -5204,48 +4294,6 @@
             {
                 "resource": 24,
                 "amount": 2
-            }
-        ]
-    },
-    {
-        "name": "Wolf Companion",
-        "image": "Wolf Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Summon Companion: Wolf is a variant of Summon Companion which is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 14211,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Wolf Spider Companion",
-        "image": "Wolf Spider Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Summon Companion: Wolf Spider is a variant of Summon Companion which is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 14212,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
             }
         ]
     },
