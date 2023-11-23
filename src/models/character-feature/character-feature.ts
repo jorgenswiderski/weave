@@ -19,7 +19,7 @@ import { error, warn } from '../logger';
 import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { PageNotFoundError } from '../errors';
 import { Spell, getSpellDataById } from '../action/spell';
-import { Action, getActionDataById } from '../action/action';
+import { Action } from '../action/action';
 import { SpellStub } from '../static-reference/spell-stub';
 import { ActionStub } from '../static-reference/action-stub';
 import { StaticImageCacheService } from '../static-image-cache-service';
@@ -31,6 +31,7 @@ import { ICharacterClass } from '../character-class/types';
 import { choiceListConfigs } from './choice-list-configs';
 import { CharacteristicStub } from '../static-reference/characteristic-stub';
 import { getPassiveDataById } from '../characteristic/characteristic';
+import { getActionDataById } from '../action/init';
 
 enum CharacterFeatureLoadingStates {
     DESCRIPTION = 'DESCRIPTION',
@@ -129,7 +130,7 @@ export class CharacterFeature
 
     private static async parseActionPage(page: PageData): Promise<ActionStub> {
         const { title, pageId } = page;
-        assert(await page.hasTemplate('ActionPage'));
+        assert(await page.hasTemplate(['ActionPage', 'WeaponActionPage']));
 
         const actions = await getActionDataById();
 
@@ -192,17 +193,23 @@ export class CharacterFeature
 
             if (
                 !page.hasCategory([
-                    'Class actions',
-                    'Racial action',
-                    'Passive features',
                     'Spells',
+                    'Class actions',
+                    'Weapon actions',
+                    'Actions',
+                    'Bonus actions',
+                    'Reactions',
+                    'Free actions',
+                    'Movement-expending actions',
+
+                    'Passive features',
                     'Toggleable passive features',
                 ])
             ) {
                 return null;
             }
 
-            if (await page.hasTemplate('ActionPage')) {
+            if (await page.hasTemplate(['ActionPage', 'WeaponActionPage'])) {
                 return await CharacterFeature.parseActionPage(page);
             }
 

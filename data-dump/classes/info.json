@@ -121,6 +121,9 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "a1151"
+                                                            },
+                                                            {
+                                                                "ref": "a1150"
                                                             }
                                                         ]
                                                     },
@@ -140,6 +143,9 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "a1154"
+                                                            },
+                                                            {
+                                                                "ref": "a1155"
                                                             }
                                                         ]
                                                     },
@@ -265,7 +271,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -1103,7 +1116,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -1937,7 +1957,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -2762,7 +2789,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -3556,7 +3590,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -4304,7 +4345,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -5304,7 +5352,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -6122,7 +6177,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -6939,7 +7001,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -7792,7 +7861,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -8577,7 +8653,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -9362,7 +9445,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -10065,6 +10155,22 @@
                                                         ]
                                                     },
                                                     {
+                                                        "name": "Disarming Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a785"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Distracting Strike (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14404"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
                                                         "name": "Evasive Footwork",
                                                         "grants": [
                                                             {
@@ -10073,10 +10179,50 @@
                                                         ]
                                                     },
                                                     {
+                                                        "name": "Feinting Attack",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14361"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Goading Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14406"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Manoeuvring Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14401"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Menacing Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a769"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
                                                         "name": "Precision Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14360"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Pushing Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a771"
                                                             }
                                                         ]
                                                     },
@@ -10101,6 +10247,14 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "a14032"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Trip Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a784"
                                                             }
                                                         ]
                                                     }
@@ -10605,7 +10759,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -11287,7 +11448,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -11885,6 +12053,22 @@
                                                         ]
                                                     },
                                                     {
+                                                        "name": "Disarming Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a785"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Distracting Strike (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14404"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
                                                         "name": "Evasive Footwork",
                                                         "grants": [
                                                             {
@@ -11893,10 +12077,50 @@
                                                         ]
                                                     },
                                                     {
+                                                        "name": "Feinting Attack",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14361"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Goading Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14406"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Manoeuvring Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14401"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Menacing Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a769"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
                                                         "name": "Precision Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14360"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Pushing Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a771"
                                                             }
                                                         ]
                                                     },
@@ -11921,6 +12145,14 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "a14032"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Trip Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a784"
                                                             }
                                                         ]
                                                     }
@@ -12113,7 +12345,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -12729,6 +12968,22 @@
                                                         ]
                                                     },
                                                     {
+                                                        "name": "Disarming Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a785"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Distracting Strike (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14404"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
                                                         "name": "Evasive Footwork",
                                                         "grants": [
                                                             {
@@ -12737,10 +12992,50 @@
                                                         ]
                                                     },
                                                     {
+                                                        "name": "Feinting Attack",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14361"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Goading Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14406"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Manoeuvring Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a14401"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Menacing Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a769"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
                                                         "name": "Precision Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14360"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Pushing Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a771"
                                                             }
                                                         ]
                                                     },
@@ -12765,6 +13060,14 @@
                                                         "grants": [
                                                             {
                                                                 "ref": "a14032"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Trip Attack (Melee)",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "a784"
                                                             }
                                                         ]
                                                     }
@@ -12963,7 +13266,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -13886,7 +14196,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -14704,7 +15021,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -15519,7 +15843,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -16368,7 +16699,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -17149,7 +17487,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -17878,7 +18223,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -18678,6 +19030,12 @@
                                                 "ref": "c17904"
                                             },
                                             {
+                                                "ref": "a17892"
+                                            },
+                                            {
+                                                "ref": "a17894"
+                                            },
+                                            {
                                                 "ref": "a17897"
                                             }
                                         ]
@@ -18831,7 +19189,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -19725,7 +20090,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -20481,7 +20853,14 @@
                                         "name": "Hunter",
                                         "description": "Hunters seek the most dangerous prey in Faerûn, from ancient dragons to massive hordes of undead, and excel at slaying them all.",
                                         "image": "Class Ranger Hunter Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a14203"
+                                            },
+                                            {
+                                                "ref": "a11612"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -20595,7 +20974,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -21732,7 +22118,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -22442,7 +22835,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -23159,7 +23559,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -23843,7 +24250,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -24869,7 +25283,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -25666,7 +26087,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -26508,7 +26936,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -27418,7 +27853,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -28413,7 +28855,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -29323,7 +29772,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -30323,7 +30779,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -31152,7 +31615,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {
@@ -31978,7 +32448,14 @@
                                         "name": "Charger",
                                         "description": "Gain the following weapon attacks:\n\nCharger: Weapon Attack\n:* Charge forward and slam your weapon into the first enemy in your way without provoking Opportunity Attacks.\n:* Notes:\n:** Use both an action and bonus action, move up to 9m, and make a melee attack with +5 damage.\n:** This counts as a single weapon attack, not a full Action, so it is possible to follow up with abilities like Extra Attack.\n\nCharger: Shove\n:* Charge forward and Shove the first enemy in your way.\n:* Notes:\n:** Shove distance depends on your Strength and the target's weight.\n:** This counts as a full Action.",
                                         "image": "PassiveFeature Generic.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "a21641"
+                                            },
+                                            {
+                                                "ref": "a21643"
+                                            }
+                                        ],
                                         "type": 11
                                     },
                                     {

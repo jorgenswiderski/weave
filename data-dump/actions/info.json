@@ -978,6 +978,29 @@
         ]
     },
     {
+        "name": "Diving Strike",
+        "damage": "amounttext:Weapon, type:Physical",
+        "image": "Diving Strike.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Diving Strike is a Wildheart action only available while using Rage: Eagle Heart, allowing you to leap down on a target dealing damage and knocking them prone.",
+        "description": "Leap down unto a foe below you, dealing Weapon Damage and knocking them Prone.\n\nYou do not take Falling damage. You must be at least m=1.5|ft=5 above your target.\n\nAvailable only when Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1150,
+        "attackRoll": true,
+        "rangeM": 8,
+        "rangeFt": 25,
+        "condition": "Prone",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Dread Ambusher: Hide",
         "image": "Dread Ambusher Hide.webp",
         "level": 0,
@@ -3753,6 +3776,30 @@
         ]
     },
     {
+        "name": "Tiger's Bloodlust",
+        "damage": "amounttext:1/2 Normal Weapon Damage, type:Physical",
+        "image": "Tiger's Bloodlust.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Tiger's Bloodlust is a Wildheart action only available while using Rage: Tiger Heart, allowing you to attack multiple nearby enemies at once.",
+        "description": "Lash out to attack up to 3 enemies at once. They each take half the damage your weapon usually deals and start to Bleed.\n\nAvailable only when Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1155,
+        "attackRoll": true,
+        "aoe": 2,
+        "aoeM": 2,
+        "aoeFt": 5,
+        "condition": "Bleeding",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Touch of the Storm",
         "damage": "amount:1d10, type:Lightning",
         "image": "Shocking Grasp.webp",
@@ -4311,6 +4358,343 @@
         "costs": [
             {
                 "resource": 3,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Charger: Shove",
+        "level": 0,
+        "school": 0,
+        "summary": "Charger: Shove is a weapon action granted by the Charger feat that lets you rush forward and shove the first enemy in your path. This ability uses both your action and your bonus.",
+        "description": "Charge forward and Shove the first enemy in your way. Your chances depend on your Athletics, and are higher if you're hidden or invisible.\n\nThe shove distance depends on your Strength and the target's weight.\n\nDoesn't provoke Opportunity Attacks.",
+        "ritual": false,
+        "concentration": false,
+        "id": 21643,
+        "attackRoll": false,
+        "rangeM": 9,
+        "rangeFt": 30,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Charger: Weapon Attack",
+        "damage": "weapon",
+        "extraDamage": "5",
+        "extraDamageType": 15,
+        "level": 0,
+        "school": 0,
+        "summary": "Charger: Weapon Attack is a weapon action granted by the Charger feat that lets you rush forward and hit the first enemy in your path. This ability uses both your action and your bonus.",
+        "description": "Deal more damage: charge forward and slam your weapon in the first enemy in your way.\n\nDoesn't provoke Opportunity Attacks.",
+        "ritual": false,
+        "concentration": false,
+        "id": 21641,
+        "attackRoll": true,
+        "rangeM": 9,
+        "rangeFt": 30,
+        "costs": []
+    },
+    {
+        "name": "Disarming Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Disarming Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Disarming Attack (Melee) is a Battle Master Action. This combat manoeuvre allows the Fighter to deal damage to enemies with Melee Weapons and possibly make them drop their Weapons.",
+        "description": "Spend a superiority die to deal Weapon Damage + 1d8 Physical damage and potentially force the target to drop the weapons they are holding.",
+        "ritual": false,
+        "concentration": false,
+        "id": 785,
+        "attackRoll": true,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Distracting Strike (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Distracting Strike Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Distracting Strike (Melee) is a Battle Master Action. This combat manoeuvre allows the Fighter to give its allies Advantage on their attack rolls against a target while dealing a bit of extra damage.",
+        "description": "Distract the target, giving your allies Advantage on their next Attack Roll against it.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14404,
+        "attackRoll": true,
+        "condition": "Distracted",
+        "conditionDuration": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Dread Ambusher (Melee)",
+        "damage": "weapon",
+        "extraDamage": "1d8",
+        "extraDamageType": 15,
+        "image": "Dread Ambusher Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Dread Ambusher (Melee) is a Gloom Stalker weapon action. It lets you make an extra attack at the start of combat.",
+        "description": "On the first turn of each combat, ambush a target with an additional swift and precise attack.",
+        "ritual": false,
+        "concentration": false,
+        "id": 17892,
+        "attackRoll": true,
+        "range": 2,
+        "recharge": 3,
+        "costs": []
+    },
+    {
+        "name": "Dread Ambusher (Ranged)",
+        "damage": "weapon",
+        "extraDamage": "1d8",
+        "extraDamageType": 15,
+        "image": "Dread Ambusher Ranged.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Dread Ambusher (Ranged) is a Gloom Stalker weapon action. It lets you make an extra attack at the start of combat.",
+        "description": "On the first turn of each combat, ambush a target with an additional swift and precise attack.",
+        "ritual": false,
+        "concentration": false,
+        "id": 17894,
+        "attackRoll": true,
+        "range": 1,
+        "recharge": 3,
+        "costs": []
+    },
+    {
+        "name": "Feinting Attack",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "level": 0,
+        "school": 0,
+        "summary": "Feinting Attack is a Battle Master Fighter Action. This combat manoeuvre allows the Fighter to make an attack with Advantage with a bit of additional damage by expending a Superiority Die and both an action and bonus action.",
+        "description": "Use both your action and bonus action on a turn to attack a target with Advantage and deal an additional {{DieIcon|d8|Physical1d8}} damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14361,
+        "attackRoll": true,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 2,
+                "amount": 1,
+                "behavior": 2
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Goading Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Goading Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Goading Attack (Melee) is a Battle Master Action. This combat manoeuvre allows to taunt another creature into attack it while doing a bit of extra damage.",
+        "description": "Goad an enemy into attacking only you. It gains Disadvantage on Attack Rolls against anyone but you.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14406,
+        "attackRoll": true,
+        "condition": "Goaded",
+        "conditionDuration": 1,
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Manoeuvring Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Manoeuvering Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Manoeuvring Attack (Melee) is a Battle Master Action. It spends a superiority die to make an attack that deals an additional 1d8 damage. On a hit, select which friendly creature will gain half its movement speed and will be prevented from Opportunity Attacks.",
+        "description": "Attack an enemy. On a hit, you can use Forced Manoeuvre on an ally, increasing their movement speed.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14401,
+        "attackRoll": true,
+        "range": 4,
+        "condition": "Manoeuvring Attack",
+        "conditionDuration": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Menacing Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Menacing Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Menacing Attack (Melee) is a Battle Master Action. This combat manoeuvre allows the Fighter to deal damage to enemies with Melee Weapons and possibly Frighten them.",
+        "description": "Spend a superiority die to deal Weapon Damage + 1d8 Physical damage and possibly Frighten the target.",
+        "ritual": false,
+        "concentration": false,
+        "id": 769,
+        "attackRoll": true,
+        "condition": "Frightened",
+        "conditionDuration": 1,
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Pushing Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Pushing Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Pushing Attack (Melee) is a Battle Master Action. This combat manoeuvre allows the Fighter to deal damage to enemies with Melee Weapons and push them away.",
+        "description": "Spend a superiority die to deal an additional 1d8|Physical damage and possibly push the target back m=4.5|ft=15.",
+        "ritual": false,
+        "concentration": false,
+        "id": 771,
+        "attackRoll": true,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Trip Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Trip Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Trip Attack (Melee) is a Battle Master Action. This combat manoeuvre allows the Fighter to deal damage to enemies with Melee Weapons and possibly knock them Prone.",
+        "description": "A powerful attack that possibly knocks the target Prone.\n\nThe target can't be Huge in size.",
+        "ritual": false,
+        "concentration": false,
+        "id": 784,
+        "attackRoll": true,
+        "condition": "prone",
+        "conditionDuration": 1,
+        "conditionSave": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Volley",
+        "damage": "weapon",
+        "level": 0,
+        "school": 0,
+        "summary": "Volley is a Hunter Class Action. This ability allows Hunters to attack an aoe radius with their ranged weapon rather than a single target.",
+        "description": "Fire a cascade of arrows upon nearby enemies.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14203,
+        "attackRoll": true,
+        "rangeM": 18,
+        "rangeFt": 60,
+        "aoe": 1,
+        "aoeM": 3,
+        "aoeFt": 10,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Whirlwind Attack",
+        "damage": "weapon",
+        "level": 0,
+        "school": 0,
+        "summary": "Whirlwind Attack is a Hunter Class Action. This ability allows Hunters to attack an aoe radius with their melee attack rather than a single target.",
+        "description": "Strike out at all nearby foes, making separate Attack Rolls against each target.",
+        "ritual": false,
+        "concentration": false,
+        "id": 11612,
+        "attackRoll": true,
+        "aoe": 5,
+        "aoeM": 3,
+        "aoeFt": 10,
+        "costs": [
+            {
+                "resource": 1,
                 "amount": 1
             }
         ]

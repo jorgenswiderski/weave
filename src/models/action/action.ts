@@ -14,16 +14,13 @@ import {
     IPageData,
 } from '../media-wiki/types';
 
-let actionData: Action[];
-let actionDataById: Map<number, Action> | null = null;
-
 export class Action extends ActionBase implements Partial<IAction> {
     condition2?: string;
     condition2Duration?: number;
     condition2Save?: AbilityScore;
 
-    constructor(pageTitle: string) {
-        super(pageTitle, 'ActionPage');
+    constructor(pageTitle: string, template: string = 'ActionPage') {
+        super(pageTitle, template);
     }
 
     // TODO: Move this to action-base once the SpellPage template is done being revised
@@ -171,57 +168,4 @@ export class Action extends ActionBase implements Partial<IAction> {
 
         return result;
     }
-}
-
-export async function initActionData(actionNames: string[]): Promise<void> {
-    actionData = actionNames.map((name) => new Action(name));
-
-    await Promise.all(
-        actionData.map((action) => action.waitForInitialization()),
-    );
-
-    actionDataById = new Map<number, Action>();
-
-    actionData.forEach((action) => {
-        if (actionDataById!.has(action.id!)) {
-            const other = actionDataById!.get(action.id!);
-            throw new Error(
-                `action data conflict between ${other?.name} (${other?.id}) and ${action.name} (${action.id})`,
-            );
-        }
-
-        actionDataById!.set(action.id!, action);
-    });
-}
-
-async function waitForInit(): Promise<void> {
-    const executor = (resolve: any) => {
-        if (actionData) {
-            resolve();
-
-            return;
-        }
-
-        setTimeout(() => executor(resolve), 500);
-    };
-
-    return new Promise(executor);
-}
-
-export async function getActionData(): Promise<Action[]> {
-    await waitForInit();
-
-    return actionData;
-}
-
-export async function getActionDataById() {
-    await waitForInit();
-
-    return actionDataById!;
-}
-
-export async function getActionDataFiltered(): Promise<Action[]> {
-    const actions = await getActionData();
-
-    return actions.filter((action) => action.used);
 }

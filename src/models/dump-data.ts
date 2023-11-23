@@ -11,8 +11,7 @@ import { getCharacterRaceData } from './character-feature/features/character-rac
 import { getMongoDb } from './mongo';
 import { getEquipmentItemData } from './equipment/equipment';
 import { getSpellDataFiltered } from './action/spell';
-import { getActionDataFiltered } from './action/action';
-import { initActionsAndSpells } from './action/init';
+import { getActionDataFiltered, initActionsAndSpells } from './action/init';
 import { StaticImageCacheService } from './static-image-cache-service';
 import { initLocations } from './locations/locations';
 import { RevisionLock } from './revision-lock/revision-lock';
