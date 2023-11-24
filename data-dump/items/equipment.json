@@ -16756,7 +16756,7 @@
     ],
     "10": [
         {
-            "name": "After Death Do Us Part (Ring)",
+            "name": "After Death Do Us Part",
             "image": "Partner Ring B Faded.png",
             "icon": "Partner Ring B Unfaded Icon.png",
             "description": "After Death Do Us Part is a rare Ring that allows its wearer to regain half their hit points after being Downed, but be cursed with Shadow Possession.",
@@ -35570,7 +35570,7 @@
             "dippable": false
         },
         {
-            "name": "Shadow Blade (Weapon)",
+            "name": "Shadow Blade (weapon)",
             "image": "Shortsword PlusOne Icon.png",
             "icon": "Shortsword PlusOne Unfaded Icon.png",
             "quote": "Umbral claws sweep through the long slender facets of the blade",
@@ -35592,7 +35592,7 @@
                     "hidden": true
                 },
                 {
-                    "name": "Shadow Blade (Weapon)",
+                    "name": "Shadow Blade (weapon)",
                     "description": "Performance +1",
                     "type": 2
                 }
@@ -37729,7 +37729,7 @@
             "dippable": false
         },
         {
-            "name": "Dwarven Thrower (Warhammer)",
+            "name": "Dwarven Thrower",
             "image": "Warhammer PlusOne Icon.png",
             "icon": "Warhammer PlusOne Unfaded Icon.png",
             "quote": "The first Dwarven Thrower was created unintentionally. The moment was transcribed in the annals of dwarfdom thusly: 'Ach, it doesn't work. Another design down the bloody drain. Now to... Does er... Does anyone else hear a short of humming whistle? Growing louder?'",

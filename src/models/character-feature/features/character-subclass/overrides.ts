@@ -14,13 +14,14 @@ type Overrides = Record<
                 // Allows matching section content of sections that also have an effect in the section title
                 forceContentMatch?: true;
                 choose?: number;
+                chooseBullet?: true;
             }
         >
     >
 >;
 
 const Barbarian: Overrides = {
-    'Wild Magic (Barbarian Subclass)': {
+    'Wild Magic (Barbarian subclass)': {
         3: {
             'Wild Magic Effects': {
                 ignore: true,
@@ -74,6 +75,35 @@ const Cleric: Overrides = {
         1: {
             'Wrath of the Storm': {
                 disableTitleMatch: true,
+            },
+        },
+    },
+};
+
+const Druid: Overrides = {
+    'Circle of the Land': {
+        3: {
+            'Section 0': {
+                choose: 1,
+                chooseBullet: true,
+            },
+        },
+        5: {
+            'Section 0': {
+                choose: 1,
+                chooseBullet: true,
+            },
+        },
+        7: {
+            'Section 0': {
+                choose: 1,
+                chooseBullet: true,
+            },
+        },
+        9: {
+            'Section 0': {
+                choose: 1,
+                chooseBullet: true,
             },
         },
     },
@@ -140,6 +170,7 @@ const Wizard: Overrides = {
 export const characterSubclassParserOverrides: Overrides = {
     ...Barbarian,
     ...Cleric,
+    ...Druid,
     ...Fighter,
     ...Rogue,
     ...Sorcerer,

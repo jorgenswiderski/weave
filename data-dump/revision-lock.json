@@ -1,7 +1,6 @@
 {
     "redirects": {
         "Ability Check": "Ability check",
-        "Actor": "Feats",
         "Ancient Rune Circle": "Ancient Sigil Circle",
         "Camp Follower": "Camp followers",
         "Captain Grisly": "Grisly",
@@ -14,6 +13,8 @@
         "Creche Y'llek": "Crèche Y'llek",
         "Crusher": "Novice Crusher",
         "Dame Aylin": "Aylin",
+        "Darkvision (Passive Feature)": "Darkvision",
+        "Darkvision (Spell)": "Darkvision (spell)",
         "Divine Strike: Elemental Fury": "Divine Strike",
         "Divine Strike: Tempest": "Divine Strike",
         "Druid Grove": "Emerald Grove",
@@ -34,7 +35,6 @@
         "Gnarled Teahouse": "Riverside Teahouse",
         "Gorion Mausoluem": "Gorion Mausoleum",
         "Grat the Trader": "Grat",
-        "Guardian of Faith": "Guardian of Faith (disambiguation)",
         "Harper Outpost": "Wilderness",
         "Heavy_Magic_Armour_Trader_Table": "Heavy Magic Armour Trader Table",
         "Helm": "Headwear",
@@ -52,6 +52,7 @@
         "Myconid Colony": "Ebonlake Grotto",
         "Nightsong": "Find the Nightsong",
         "Overgrown_Tunnel": "Overgrown Tunnel",
+        "Pact of the Blade (Passive Feature)": "Pact of the Blade (passive feature)",
         "Passageway": "Western Beach",
         "Priestess Gut": "Gut",
         "Putrid Bog": "Sunlit Wetlands",
@@ -61,8 +62,7 @@
         "Sarth Baretha": "Baretha",
         "Sergeant Thrinn": "Thrinn",
         "Servant's Quarters": "Servants' Quarters",
-        "Spirit Guardians": "Spirit Guardians (Spell)",
-        "Spirit Guardians (Spell)": "Spirit Guardians (spell)",
+        "Spreading Spores (Passive Feature)": "Spreading Spores (passive feature)",
         "Stylin' Horst Potion Shop": "The Velveteen Elixir",
         "Template:Ability Check": "Template:Ability check",
         "Template:ActionPage": "Template:Action Page",
@@ -1022,8 +1022,8 @@
         },
         {
             "pageId": 1322,
-            "revisionId": 103523,
-            "title": "Wild Magic (Sorcerer Subclass)"
+            "revisionId": 115988,
+            "title": "Wild Magic (Sorcerer subclass)"
         },
         {
             "pageId": 1324,
@@ -1077,37 +1077,37 @@
         },
         {
             "pageId": 1379,
-            "revisionId": 111710,
+            "revisionId": 116115,
             "title": "Metamagic: Careful Spell"
         },
         {
             "pageId": 1380,
-            "revisionId": 109246,
+            "revisionId": 116112,
             "title": "Metamagic: Distant Spell"
         },
         {
             "pageId": 1381,
-            "revisionId": 109247,
+            "revisionId": 116117,
             "title": "Metamagic: Extended Spell"
         },
         {
             "pageId": 1382,
-            "revisionId": 109248,
+            "revisionId": 116146,
             "title": "Metamagic: Twinned Spell"
         },
         {
             "pageId": 1383,
-            "revisionId": 109249,
+            "revisionId": 116137,
             "title": "Metamagic: Heightened Spell"
         },
         {
             "pageId": 1385,
-            "revisionId": 109250,
+            "revisionId": 116140,
             "title": "Metamagic: Quickened Spell"
         },
         {
             "pageId": 1386,
-            "revisionId": 109251,
+            "revisionId": 116130,
             "title": "Metamagic: Subtle Spell"
         },
         {
@@ -1842,8 +1842,8 @@
         },
         {
             "pageId": 2348,
-            "revisionId": 84588,
-            "title": "Darkvision (Spell)"
+            "revisionId": 116068,
+            "title": "Darkvision (spell)"
         },
         {
             "pageId": 2350,
@@ -1867,8 +1867,8 @@
         },
         {
             "pageId": 2368,
-            "revisionId": 112920,
-            "title": "Cat's Grace (Spell)"
+            "revisionId": 115994,
+            "title": "Cat's Grace"
         },
         {
             "pageId": 2369,
@@ -2222,18 +2222,18 @@
         },
         {
             "pageId": 2715,
-            "revisionId": 115419,
-            "title": "Spirit Guardians (spell)"
+            "revisionId": 116039,
+            "title": "Spirit Guardians"
         },
         {
             "pageId": 2718,
-            "revisionId": 112010,
-            "title": "Spirit Guardians: Radiant"
+            "revisionId": 116043,
+            "title": "Spirit Guardians (Radiant)"
         },
         {
             "pageId": 2719,
-            "revisionId": 99083,
-            "title": "Spirit Guardians: Necrotic"
+            "revisionId": 116044,
+            "title": "Spirit Guardians (Necrotic)"
         },
         {
             "pageId": 2727,
@@ -3947,8 +3947,8 @@
         },
         {
             "pageId": 3957,
-            "revisionId": 110539,
-            "title": "Darkvision (Passive Feature)"
+            "revisionId": 116079,
+            "title": "Darkvision"
         },
         {
             "pageId": 3959,
@@ -6042,8 +6042,8 @@
         },
         {
             "pageId": 7856,
-            "revisionId": 114532,
-            "title": "Wild Magic (Barbarian Subclass)"
+            "revisionId": 115987,
+            "title": "Wild Magic (Barbarian subclass)"
         },
         {
             "pageId": 7857,
@@ -6637,8 +6637,8 @@
         },
         {
             "pageId": 8120,
-            "revisionId": 115391,
-            "title": "Guardian of Faith (spell)"
+            "revisionId": 116015,
+            "title": "Guardian of Faith"
         },
         {
             "pageId": 8122,
@@ -6874,6 +6874,11 @@
             "pageId": 8352,
             "revisionId": 93021,
             "title": "Ruby Ring"
+        },
+        {
+            "pageId": 8366,
+            "revisionId": 116101,
+            "title": "Actor"
         },
         {
             "pageId": 8367,
@@ -7357,8 +7362,8 @@
         },
         {
             "pageId": 8797,
-            "revisionId": 112427,
-            "title": "Shadow Blade (Spell)"
+            "revisionId": 115912,
+            "title": "Shadow Blade"
         },
         {
             "pageId": 8798,
@@ -8422,8 +8427,8 @@
         },
         {
             "pageId": 9567,
-            "revisionId": 113544,
-            "title": "Dwarven Thrower (Warhammer)"
+            "revisionId": 116834,
+            "title": "Dwarven Thrower"
         },
         {
             "pageId": 9568,
@@ -10947,8 +10952,8 @@
         },
         {
             "pageId": 13692,
-            "revisionId": 110802,
-            "title": "Spreading Spores (Passive Feature)"
+            "revisionId": 115929,
+            "title": "Spreading Spores (passive feature)"
         },
         {
             "pageId": 13778,
@@ -10982,8 +10987,8 @@
         },
         {
             "pageId": 13904,
-            "revisionId": 110442,
-            "title": "The Blade of Frontiers (Passive Feature)"
+            "revisionId": 115948,
+            "title": "The Blade of Frontiers (passive feature)"
         },
         {
             "pageId": 13910,
@@ -12117,8 +12122,8 @@
         },
         {
             "pageId": 16372,
-            "revisionId": 110398,
-            "title": "Shadow Veil (Passive Feature)"
+            "revisionId": 115916,
+            "title": "Shadow Veil (passive feature)"
         },
         {
             "pageId": 16392,
@@ -12167,8 +12172,8 @@
         },
         {
             "pageId": 16544,
-            "revisionId": 110263,
-            "title": "Knockdown Jaws (Passive Feature)"
+            "revisionId": 115889,
+            "title": "Knockdown Jaws (passive feature)"
         },
         {
             "pageId": 16545,
@@ -12392,8 +12397,8 @@
         },
         {
             "pageId": 17209,
-            "revisionId": 110845,
-            "title": "Wild Magic (Subclass Feature)"
+            "revisionId": 115985,
+            "title": "Wild Magic (passive feature)"
         },
         {
             "pageId": 17211,
@@ -12452,8 +12457,8 @@
         },
         {
             "pageId": 17297,
-            "revisionId": 110654,
-            "title": "Guardian of Faith (Passive Feature)"
+            "revisionId": 115870,
+            "title": "Guardian of Faith (passive feature)"
         },
         {
             "pageId": 17298,
@@ -12577,8 +12582,8 @@
         },
         {
             "pageId": 17436,
-            "revisionId": 86987,
-            "title": "Spreading Spores (Class Action)"
+            "revisionId": 115945,
+            "title": "Spreading Spores"
         },
         {
             "pageId": 17488,
@@ -12807,8 +12812,8 @@
         },
         {
             "pageId": 17857,
-            "revisionId": 110355,
-            "title": "Needle Burst (Passive Feature)"
+            "revisionId": 115897,
+            "title": "Needle Burst (passive feature)"
         },
         {
             "pageId": 17867,
@@ -13642,8 +13647,8 @@
         },
         {
             "pageId": 19684,
-            "revisionId": 110746,
-            "title": "Pact of the Blade (Passive Feature)"
+            "revisionId": 115895,
+            "title": "Pact of the Blade (passive feature)"
         },
         {
             "pageId": 19686,
@@ -13962,8 +13967,8 @@
         },
         {
             "pageId": 20621,
-            "revisionId": 110601,
-            "title": "Elemental Retort (Passive Feature)"
+            "revisionId": 115864,
+            "title": "Elemental Retort (passive feature)"
         },
         {
             "pageId": 20650,
@@ -14392,8 +14397,8 @@
         },
         {
             "pageId": 21578,
-            "revisionId": 113896,
-            "title": "After Death Do Us Part (Ring)"
+            "revisionId": 116830,
+            "title": "After Death Do Us Part"
         },
         {
             "pageId": 21638,
@@ -14702,8 +14707,8 @@
         },
         {
             "pageId": 22389,
-            "revisionId": 112430,
-            "title": "Shadow Blade (Weapon)"
+            "revisionId": 115932,
+            "title": "Shadow Blade (weapon)"
         },
         {
             "pageId": 22424,
@@ -16347,8 +16352,8 @@
         },
         {
             "pageId": 27735,
-            "revisionId": 115738,
-            "title": "Arcane Battery (passive feature)"
+            "revisionId": 116754,
+            "title": "Arcane Battery"
         },
         {
             "pageId": 27738,
@@ -16437,8 +16442,8 @@
         },
         {
             "pageId": 27801,
-            "revisionId": 111421,
-            "title": "Multiattack: Wounded (Werewolf) (Passive Feature)"
+            "revisionId": 115901,
+            "title": "Multiattack: Wounded (Werewolf) (passive feature)"
         },
         {
             "pageId": 27802,
@@ -16597,13 +16602,13 @@
         },
         {
             "pageId": 27895,
-            "revisionId": 111703,
-            "title": "Multiattack (Giant Eagle) (Passive Feature)"
+            "revisionId": 115893,
+            "title": "Multiattack (Giant Eagle) (passive feature)"
         },
         {
             "pageId": 27897,
-            "revisionId": 111706,
-            "title": "Multiattack (Cloaker) (Passive Feature)"
+            "revisionId": 115891,
+            "title": "Multiattack (Cloaker) (passive feature)"
         },
         {
             "pageId": 27903,
@@ -16757,8 +16762,8 @@
         },
         {
             "pageId": 27965,
-            "revisionId": 112040,
-            "title": "Shadow Blade (Passive Feature)"
+            "revisionId": 115931,
+            "title": "Shadow Blade (passive feature)"
         },
         {
             "pageId": 27967,
@@ -17007,8 +17012,8 @@
         },
         {
             "pageId": 28045,
-            "revisionId": 112300,
-            "title": "Darkveil Precision (Passive Feature)"
+            "revisionId": 116821,
+            "title": "Darkveil Precision"
         },
         {
             "pageId": 28046,
@@ -17057,8 +17062,8 @@
         },
         {
             "pageId": 28057,
-            "revisionId": 112340,
-            "title": "Yeenoghu's Gift (Passive Feature)"
+            "revisionId": 115950,
+            "title": "Yeenoghu's Gift (passive feature)"
         },
         {
             "pageId": 28060,
@@ -17122,13 +17127,13 @@
         },
         {
             "pageId": 28072,
-            "revisionId": 112365,
-            "title": "Twist of Fortune (Passive Feature)"
+            "revisionId": 115979,
+            "title": "Twist of Fortune (passive feature)"
         },
         {
             "pageId": 28073,
-            "revisionId": 112367,
-            "title": "Invisible Weapon (Passive Feature)"
+            "revisionId": 116846,
+            "title": "Invisible Weapon"
         },
         {
             "pageId": 28074,
@@ -17152,8 +17157,8 @@
         },
         {
             "pageId": 28080,
-            "revisionId": 112409,
-            "title": "Dwarven Thrower (Passive Feature)"
+            "revisionId": 116843,
+            "title": "Dwarven Thrower (passive feature)"
         },
         {
             "pageId": 28081,
@@ -17207,8 +17212,8 @@
         },
         {
             "pageId": 28100,
-            "revisionId": 112468,
-            "title": "Staff of the Ram (Passive Feature)"
+            "revisionId": 115937,
+            "title": "Staff of the Ram (passive feature)"
         },
         {
             "pageId": 28101,
@@ -17317,13 +17322,13 @@
         },
         {
             "pageId": 28129,
-            "revisionId": 112512,
-            "title": "Selûne's Blessing (Passive Feature)"
+            "revisionId": 115918,
+            "title": "Selûne's Blessing (passive feature)"
         },
         {
             "pageId": 28131,
-            "revisionId": 112516,
-            "title": "Shar's Blessing (Shar's Spear of Evening) (Passive Feature)"
+            "revisionId": 115902,
+            "title": "Shar's Blessing (Shar's Spear of Evening) (passive feature)"
         },
         {
             "pageId": 28132,
@@ -17432,8 +17437,8 @@
         },
         {
             "pageId": 28185,
-            "revisionId": 112696,
-            "title": "Stealthier (Passive Feature)"
+            "revisionId": 115939,
+            "title": "Stealthier (passive feature)"
         },
         {
             "pageId": 28188,
@@ -17577,8 +17582,8 @@
         },
         {
             "pageId": 28253,
-            "revisionId": 112876,
-            "title": "Helldusk Armour (Passive Feature)"
+            "revisionId": 115868,
+            "title": "Helldusk Armour (passive feature)"
         },
         {
             "pageId": 28255,
@@ -17777,8 +17782,8 @@
         },
         {
             "pageId": 28313,
-            "revisionId": 113113,
-            "title": "Infernal Legion (Passive Feature)"
+            "revisionId": 116828,
+            "title": "Infernal Legion"
         },
         {
             "pageId": 28317,
@@ -17842,8 +17847,8 @@
         },
         {
             "pageId": 28338,
-            "revisionId": 113192,
-            "title": "Undead Ward (Passive Feature)"
+            "revisionId": 116767,
+            "title": "Undead Ward"
         },
         {
             "pageId": 28340,
@@ -17947,8 +17952,8 @@
         },
         {
             "pageId": 28363,
-            "revisionId": 115784,
-            "title": "Covert Critical (passive feature)"
+            "revisionId": 116825,
+            "title": "Covert Critical"
         },
         {
             "pageId": 28368,
@@ -18067,8 +18072,8 @@
         },
         {
             "pageId": 28417,
-            "revisionId": 113374,
-            "title": "Click Heels (Class Action)"
+            "revisionId": 116000,
+            "title": "Click Heels"
         },
         {
             "pageId": 28420,
@@ -18182,8 +18187,8 @@
         },
         {
             "pageId": 28486,
-            "revisionId": 113626,
-            "title": "Flying Strike (Passive Feature)"
+            "revisionId": 116756,
+            "title": "Flying Strike"
         },
         {
             "pageId": 28489,
@@ -18417,8 +18422,8 @@
         },
         {
             "pageId": 28575,
-            "revisionId": 113889,
-            "title": "Sunwalker's Gift (Passive Feature)"
+            "revisionId": 115946,
+            "title": "Sunwalker's Gift (passive feature)"
         },
         {
             "pageId": 28576,
@@ -18492,8 +18497,8 @@
         },
         {
             "pageId": 28600,
-            "revisionId": 113940,
-            "title": "Feywild Sparks (Passive Feature)"
+            "revisionId": 116798,
+            "title": "Feywild Sparks"
         },
         {
             "pageId": 28601,
@@ -18602,8 +18607,8 @@
         },
         {
             "pageId": 28638,
-            "revisionId": 114322,
-            "title": "Adroit Caster (Passive Feature)"
+            "revisionId": 116153,
+            "title": "Adroit Caster"
         },
         {
             "pageId": 28643,
@@ -18754,6 +18759,161 @@
             "pageId": 28848,
             "revisionId": 115794,
             "title": "Scimitar (Shar Variant)"
+        },
+        {
+            "pageId": 28930,
+            "revisionId": 116110,
+            "title": "Subsume Shadow"
+        },
+        {
+            "pageId": 28935,
+            "revisionId": 116148,
+            "title": "Dark Vengeance"
+        },
+        {
+            "pageId": 28946,
+            "revisionId": 116272,
+            "title": "Mental Interference"
+        },
+        {
+            "pageId": 28947,
+            "revisionId": 116273,
+            "title": "Umbral Attack"
+        },
+        {
+            "pageId": 28948,
+            "revisionId": 116274,
+            "title": "Running Jump"
+        },
+        {
+            "pageId": 28949,
+            "revisionId": 116276,
+            "title": "Corellon's Guiding Hand"
+        },
+        {
+            "pageId": 28951,
+            "revisionId": 116282,
+            "title": "Baneful Strike"
+        },
+        {
+            "pageId": 28952,
+            "revisionId": 116286,
+            "title": "Thunderous Conversion"
+        },
+        {
+            "pageId": 28955,
+            "revisionId": 116291,
+            "title": "Chilling Grace"
+        },
+        {
+            "pageId": 28956,
+            "revisionId": 116293,
+            "title": "Hot Little Hands"
+        },
+        {
+            "pageId": 28957,
+            "revisionId": 116294,
+            "title": "Warding Hands"
+        },
+        {
+            "pageId": 28958,
+            "revisionId": 116295,
+            "title": "Absolute's Bane"
+        },
+        {
+            "pageId": 28959,
+            "revisionId": 116300,
+            "title": "Underdog's Bravery"
+        },
+        {
+            "pageId": 28960,
+            "revisionId": 116304,
+            "title": "Helm's Protection"
+        },
+        {
+            "pageId": 28961,
+            "revisionId": 116306,
+            "title": "Cleansing Touch"
+        },
+        {
+            "pageId": 28962,
+            "revisionId": 116307,
+            "title": "Ichorous Corrosion"
+        },
+        {
+            "pageId": 28963,
+            "revisionId": 116308,
+            "title": "Radiating Orb Gloves"
+        },
+        {
+            "pageId": 28964,
+            "revisionId": 116314,
+            "title": "End Rage"
+        },
+        {
+            "pageId": 28967,
+            "revisionId": 116319,
+            "title": "Ever Vigilant"
+        },
+        {
+            "pageId": 28968,
+            "revisionId": 116322,
+            "title": "Arcane Ashes"
+        },
+        {
+            "pageId": 28969,
+            "revisionId": 116323,
+            "title": "Winter's Clutches (passive feature)"
+        },
+        {
+            "pageId": 28970,
+            "revisionId": 116325,
+            "title": "Become the Bulwark"
+        },
+        {
+            "pageId": 28971,
+            "revisionId": 116328,
+            "title": "Craterous Wounds"
+        },
+        {
+            "pageId": 28972,
+            "revisionId": 116329,
+            "title": "Doom Lobber"
+        },
+        {
+            "pageId": 28973,
+            "revisionId": 116330,
+            "title": "Daredevil Proximity"
+        },
+        {
+            "pageId": 28974,
+            "revisionId": 116331,
+            "title": "Lesser Infernal Touch"
+        },
+        {
+            "pageId": 28975,
+            "revisionId": 116332,
+            "title": "Battlemage's Power"
+        },
+        {
+            "pageId": 28976,
+            "revisionId": 116333,
+            "title": "Dragonfire Fists"
+        },
+        {
+            "pageId": 28977,
+            "revisionId": 116334,
+            "title": "Crushing Blows"
+        },
+        {
+            "pageId": 28979,
+            "revisionId": 116336,
+            "title": "Illithid Euphoria"
+        },
+        {
+            "pageId": 29255,
+            "revisionId": 116692,
+            "title": "Yeenoghu's Hunger"
         }
     ],
     "deadLinks": [

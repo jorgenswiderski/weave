@@ -6,5 +6,5 @@ export interface IClassFeatureFactory {
         featureText: string,
         characterClass?: ICharacterClass,
         level?: number,
-    ): Promise<ICharacterOptionWithStubs>;
+    ): Promise<ICharacterOptionWithStubs | undefined>;
 }

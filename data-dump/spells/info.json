@@ -2216,39 +2216,6 @@
         "isVariant": false
     },
     {
-        "name": "Cat's Grace",
-        "image": "Cat's Grace.webp",
-        "level": 2,
-        "school": 8,
-        "summary": "This spell allows spellcasters to bestow a creature the finesse of a cat. Affected creatures gain Resistance to falling damage and gain Advantage on Dexterity Checks.",
-        "description": "Creature gains Advantage on Dexterity Checks and only takes half damage from falling.",
-        "ritual": false,
-        "concentration": true,
-        "id": 2368,
-        "attackRoll": false,
-        "range": 2,
-        "condition": "Enhance Ability: Cat's Grace",
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            },
-            {
-                "resource": 13,
-                "amount": 1
-            }
-        ],
-        "classes": [
-            "Bard",
-            "Cleric",
-            "Druid",
-            "Sorcerer"
-        ],
-        "noSpellSlot": false,
-        "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd.",
-        "isVariant": true
-    },
-    {
         "name": "Charm Person",
         "image": "Charm Person.webp",
         "level": 1,
@@ -5101,10 +5068,10 @@
     },
     {
         "name": "Darkvision",
-        "image": "Darkvision Spell.webp",
+        "image": "Darkvision spell.webp",
         "level": 2,
         "school": 8,
-        "summary": "This spell allows spellcasters to alter a creature's sight, granting them the ability to see in the dark.\n\n:\n:",
+        "summary": "This spell allows spellcasters to alter a creature's sight, granting them the ability to see in the dark.",
         "description": "Grant a creature the ability to see in the dark out to a range of m=12|ft=40.",
         "ritual": false,
         "concentration": false,
@@ -5126,12 +5093,9 @@
             "Druid",
             "Ranger",
             "Sorcerer",
-            "Wizard",
-            "Arcane Trickster",
-            "Eldritch Knight"
+            "Wizard"
         ],
         "noSpellSlot": false,
-        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits.",
         "isVariant": false
     },
     {
@@ -8210,12 +8174,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [
-                    "Bard",
-                    "Cleric",
-                    "Druid",
-                    "Sorcerer"
-                ],
+                "classes": [],
                 "noSpellSlot": false,
                 "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd.",
                 "isVariant": true
@@ -10289,7 +10248,7 @@
     },
     {
         "name": "Guardian of Faith",
-        "image": "Guardian of Faith Spell.webp",
+        "image": "Guardian of Faith spell.webp",
         "level": 4,
         "school": 2,
         "summary": "This spell allows spellcasters to summon a divine guardian who sacrifices its Hit Points to damage enemies.",
@@ -13745,7 +13704,7 @@
         "image": "Shadow Blade.webp",
         "level": 2,
         "school": 6,
-        "summary": "Create a Shadow Blade (Weapon) in your main hand that deals Psychic damage.",
+        "summary": "Create a Shadow Blade in your main hand that deals Psychic damage.",
         "description": "Weave a shadowy shortsword in your hand that deals 2d8|Psychic damage.\n\nWhen you use the sword to attack a target that is in dim light or darkness, you make the Attack Roll with Advantage. \n\nThe shadow blade can be unequipped and equipped again, but must remain on the spellcaster's person.",
         "ritual": false,
         "concentration": false,
@@ -14198,7 +14157,7 @@
     },
     {
         "name": "Spirit Guardians",
-        "image": "Spirit Guardians Spell.webp",
+        "image": "Spirit Guardians.webp",
         "level": 3,
         "school": 2,
         "summary": "This spell allows spellcasters to call forth spirits to damage nearby targets and slow their Movement.",
@@ -14226,92 +14185,13 @@
             }
         ],
         "classes": [
-            "Cleric",
-            "War Domain"
+            "Cleric"
         ],
         "noSpellSlot": false,
         "higherLevels": "When the spell is cast using a 4th Level spell slot or higher, damage increases by 1d8|Radiant or 1d8|Necrotic damage for each spell slot level above 3rd.",
         "variants": [
-            {
-                "name": "Spirit Guardians: Radiant",
-                "damage": "3d8",
-                "damageType": 10,
-                "image": "Spirit Guardians Icon.png",
-                "level": 3,
-                "school": 2,
-                "summary": "This spell is a variation of the spell Spirit Guardians. This variant deals Radiant|Radiant damage as well as slows the Movement of nearby enemies.",
-                "description": "Call forth spirits to protect the area around you. Nearby enemies take 3d8|Radiant damage per turn, and their Movement Speed is halved. Lasts for 10 turns.\n\nOn a successful Save, targets still take half damage. \n\nCaster can't become Invisible while Concentrating on this spell.",
-                "ritual": false,
-                "concentration": true,
-                "id": 2718,
-                "attackRoll": false,
-                "range": 3,
-                "aoe": 1,
-                "aoeM": 3,
-                "aoeFt": 10,
-                "condition": "Spirit Guardians Aura",
-                "conditionDuration": 10,
-                "conditionSave": 5,
-                "costs": [
-                    {
-                        "resource": 1,
-                        "amount": 1
-                    },
-                    {
-                        "resource": 14,
-                        "amount": 1
-                    }
-                ],
-                "classes": [
-                    "Cleric",
-                    "War Domain"
-                ],
-                "noSpellSlot": false,
-                "damageSave": 5,
-                "damageSaveEffect": 0,
-                "higherLevels": "When the spell is cast using a 4th Level spell slot or higher, damage increases by 1d8|Radiant damage for each spell slot level above 3rd.",
-                "isVariant": true
-            },
-            {
-                "name": "Spirit Guardians: Necrotic",
-                "damage": "3d8",
-                "damageType": 11,
-                "image": "Spirit Guardians Icon.png",
-                "level": 3,
-                "school": 2,
-                "summary": "This spell is a variation of the spell Spirit Guardians. This variant deals Necrotic|Necrotic damage as well as slows the Movement of nearby enemies.",
-                "description": "Call forth spirits to protect the area around you. Nearby enemies take 3d8|Necrotic damage per turn, and their Movement Speed is halved. Lasts for 10 turns.\n\nOn a successful Save, targets still take half damage. \n\nCaster can't become Invisible while Concentrating on this spell.",
-                "ritual": false,
-                "concentration": true,
-                "id": 2719,
-                "attackRoll": false,
-                "range": 3,
-                "aoe": 1,
-                "aoeM": 3,
-                "aoeFt": 10,
-                "condition": "Spirit Guardians Aura",
-                "conditionDuration": 10,
-                "conditionSave": 5,
-                "costs": [
-                    {
-                        "resource": 1,
-                        "amount": 1
-                    },
-                    {
-                        "resource": 14,
-                        "amount": 1
-                    }
-                ],
-                "classes": [
-                    "Cleric",
-                    "War Domain"
-                ],
-                "noSpellSlot": false,
-                "damageSave": 5,
-                "damageSaveEffect": 0,
-                "higherLevels": "When the spell is cast using a 4th Level spell slot or higher, damage increases by 1d8|Necrotic damage for each spell slot level above 3rd.",
-                "isVariant": true
-            }
+            null,
+            null
         ],
         "isVariant": false
     },
@@ -14322,7 +14202,7 @@
         "image": "Spirit Guardians Icon.png",
         "level": 3,
         "school": 2,
-        "summary": "This spell is a variation of the spell Spirit Guardians. This variant deals Necrotic|Necrotic damage as well as slows the Movement of nearby enemies.",
+        "summary": "This spell is a variation of the spell Spirit Guardians. This variant deals Necrotic damage as well as slows the Movement of nearby enemies.",
         "description": "Call forth spirits to protect the area around you. Nearby enemies take 3d8|Necrotic damage per turn, and their Movement Speed is halved. Lasts for 10 turns.\n\nOn a successful Save, targets still take half damage. \n\nCaster can't become Invisible while Concentrating on this spell.",
         "ritual": false,
         "concentration": true,
@@ -14353,47 +14233,7 @@
         "damageSave": 5,
         "damageSaveEffect": 0,
         "higherLevels": "When the spell is cast using a 4th Level spell slot or higher, damage increases by 1d8|Necrotic damage for each spell slot level above 3rd.",
-        "isVariant": true
-    },
-    {
-        "name": "Spirit Guardians: Radiant",
-        "damage": "3d8",
-        "damageType": 10,
-        "image": "Spirit Guardians Icon.png",
-        "level": 3,
-        "school": 2,
-        "summary": "This spell is a variation of the spell Spirit Guardians. This variant deals Radiant|Radiant damage as well as slows the Movement of nearby enemies.",
-        "description": "Call forth spirits to protect the area around you. Nearby enemies take 3d8|Radiant damage per turn, and their Movement Speed is halved. Lasts for 10 turns.\n\nOn a successful Save, targets still take half damage. \n\nCaster can't become Invisible while Concentrating on this spell.",
-        "ritual": false,
-        "concentration": true,
-        "id": 2718,
-        "attackRoll": false,
-        "range": 3,
-        "aoe": 1,
-        "aoeM": 3,
-        "aoeFt": 10,
-        "condition": "Spirit Guardians Aura",
-        "conditionDuration": 10,
-        "conditionSave": 5,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            },
-            {
-                "resource": 14,
-                "amount": 1
-            }
-        ],
-        "classes": [
-            "Cleric",
-            "War Domain"
-        ],
-        "noSpellSlot": false,
-        "damageSave": 5,
-        "damageSaveEffect": 0,
-        "higherLevels": "When the spell is cast using a 4th Level spell slot or higher, damage increases by 1d8|Radiant damage for each spell slot level above 3rd.",
-        "isVariant": true
+        "isVariant": false
     },
     {
         "name": "Spiritual Weapon",

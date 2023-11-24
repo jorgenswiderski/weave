@@ -22,6 +22,7 @@
         "link": "npm i @jorgenswiderski/tomekeeper-shared@latest && npm link @jorgenswiderski/tomekeeper-shared",
         "do-load-revisions": "ts-node src/models/revision-lock/load-revisions.ts",
         "load-revisions": "npm run do-load-revisions | bunyan -o short",
+        "update-revisions": "ts-node src/models/revision-lock/update-revisions.ts",
         "clean": "rimraf ./dist"
     },
     "keywords": [],

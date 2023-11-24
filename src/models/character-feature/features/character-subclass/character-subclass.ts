@@ -4,6 +4,7 @@ import {
     ICharacterChoiceWithStubs,
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
+import assert from 'assert';
 import { PageLoadingState } from '../../../page-item';
 import { CharacterFeature } from '../../character-feature';
 import { CharacterProgressionLevel } from '../../../character-class/types';
@@ -153,15 +154,43 @@ export class CharacterSubclass extends CharacterFeature {
                 count = match?.[1] ? parseInt(match[1], 10) : 1;
             }
 
+            let options: ICharacterOptionWithStubs[];
+
+            if (config?.chooseBullet) {
+                const matches = [
+                    ...content.matchAll(/\n\s*\*\*\s*([^:]+:[\S]*)\s*(.+)/g),
+                ];
+
+                assert(matches.length > 0);
+
+                options = matches.map(([, label, bulletContent]) => {
+                    const titles = [
+                        ...bulletContent.matchAll(saiPattern),
+                        ...bulletContent.matchAll(iconPattern),
+                    ].map((m) => m[1]);
+
+                    return {
+                        name: MediaWikiParser.stripMarkup(label)
+                            .replace(/:$/, '')
+                            .trim(),
+                        grants: grants.filter((effect) =>
+                            titles.includes(effect.name),
+                        ),
+                    };
+                });
+            } else {
+                options = grants.map((effect) => ({
+                    name: effect.name,
+                    grants: [effect],
+                }));
+            }
+
             return {
                 name: sectionTitlePlain,
                 choices: [
                     {
                         type: CharacterPlannerStep.CLASS_FEATURE_SUBCHOICE,
-                        options: grants.map((effect) => ({
-                            name: effect.name,
-                            grants: [effect],
-                        })),
+                        options,
                         count: count > 1 ? count : undefined,
                     },
                 ],

@@ -1,3 +1,4 @@
+import { CharacterPlannerStep } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { ICharacterClass } from '../../character-class/types';
 import { error, warn } from '../../logger';
 import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
@@ -13,9 +14,7 @@ import { IClassFeatureFactory } from './types';
 
 class ClassFeatureFactorySingleton implements IClassFeatureFactory {
     protected static async construct(
-        type:
-            | CharacterFeatureTypes.CHOOSE_SUBCLASS
-            | CharacterFeatureTypes.SUBCLASS_FEATURE,
+        type: CharacterFeatureTypes.CHOOSE_SUBCLASS,
         options: ICharacterOptionWithPage,
         characterClass: ICharacterClass,
         level: number,
@@ -23,30 +22,30 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
     protected static async construct(
         type: Omit<
             CharacterFeatureTypes,
-            | CharacterFeatureTypes.CHOOSE_SUBCLASS
-            | CharacterFeatureTypes.SUBCLASS_FEATURE
+            CharacterFeatureTypes.CHOOSE_SUBCLASS
         >,
         options: ICharacterOptionWithPage,
         characterClass?: ICharacterClass,
         level?: number,
-    ): Promise<CharacterFeature>;
+    ): Promise<CharacterFeature | undefined>;
     protected static async construct(
         type: CharacterFeatureTypes,
         options: ICharacterOptionWithPage,
         characterClass?: ICharacterClass,
         level?: number,
-    ): Promise<CharacterFeature> {
-        if (
-            type === CharacterFeatureTypes.CHOOSE_SUBCLASS ||
-            type === CharacterFeatureTypes.SUBCLASS_FEATURE
-        ) {
+    ): Promise<CharacterFeature | undefined> {
+        if (type === CharacterFeatureTypes.CHOOSE_SUBCLASS) {
             if (!characterClass || !level) {
                 throw new Error(
                     `Class and level should be defined when constructing a subclass feature!`,
                 );
             }
 
-            return new ClassSubclassOption(characterClass.name, type, level);
+            return new ClassSubclassOption(
+                characterClass.name,
+                CharacterPlannerStep.CHOOSE_SUBCLASS,
+                level,
+            );
         }
 
         if (type === CharacterFeatureTypes.FEAT) {
@@ -64,7 +63,11 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             );
         }
 
-        return new CharacterFeature(options, level, characterClass);
+        if (type !== CharacterFeatureTypes.NONE) {
+            return new CharacterFeature(options, level, characterClass);
+        }
+
+        return undefined;
     }
 
     protected parserSpecialCases: {
@@ -74,7 +77,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             type: CharacterFeatureTypes.CHOOSE_SUBCLASS,
         },
         '|subclass feature': {
-            type: CharacterFeatureTypes.SUBCLASS_FEATURE,
+            type: CharacterFeatureTypes.NONE,
         },
         'feats|feat': { type: CharacterFeatureTypes.FEAT, pageTitle: 'Feats' },
         '#spellcasting': { type: CharacterFeatureTypes.SPELLCASTING },
@@ -93,7 +96,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
         featureText: string,
         characterClass?: ICharacterClass,
         level?: number,
-    ): Promise<CharacterFeature> {
+    ): Promise<CharacterFeature | undefined> {
         // Handle special labels
         // eslint-disable-next-line no-restricted-syntax
         for (const [caseText, data] of Object.entries(

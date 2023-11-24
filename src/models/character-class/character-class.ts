@@ -17,28 +17,54 @@ import {
 import { StaticImageCacheService } from '../static-image-cache-service';
 import { CharacterFeature } from '../character-feature/character-feature';
 import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
+import { ClassSubclassOption } from '../character-feature/features/character-subclass-option';
 
 async function parseFeatures(
     characterClass: CharacterClass,
     value: string,
     level: number,
-): Promise<ICharacterOptionWithStubs[] | null> {
-    if (value === '-') {
-        // No features this level
-        return null;
+): Promise<ICharacterOptionWithStubs[]> {
+    const features: ICharacterOptionWithStubs[] = [];
+
+    if (value !== '-') {
+        const classFeatures = (
+            await Promise.all(
+                value
+                    .split(', ')
+                    .map((featureString: string) =>
+                        ClassFeatureFactory.fromWikitext(
+                            featureString,
+                            characterClass,
+                            level,
+                        ),
+                    ),
+            )
+        ).filter(Boolean) as ICharacterOptionWithStubs[];
+
+        features.push(...classFeatures);
     }
 
-    const features = await Promise.all(
-        value
-            .split(', ')
-            .map((featureString: string) =>
-                ClassFeatureFactory.fromWikitext(
-                    featureString,
-                    characterClass,
-                    level,
+    if (!features.some((feature) => feature instanceof ClassSubclassOption)) {
+        const subclassFeature = new ClassSubclassOption(
+            characterClass.name,
+            CharacterPlannerStep.SUBCLASS_FEATURE,
+            level,
+        );
+
+        await subclassFeature.waitForInitialization();
+
+        if (
+            subclassFeature.choices?.some((choice) =>
+                choice.options.some(
+                    (option) =>
+                        (option.choices && option.choices.length > 0) ||
+                        (option.grants && option.grants.length > 0),
                 ),
-            ),
-    );
+            )
+        ) {
+            features.push(subclassFeature);
+        }
+    }
 
     return features;
 }

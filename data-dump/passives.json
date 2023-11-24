@@ -7,6 +7,13 @@
         "id": 8792
     },
     {
+        "name": "Actor",
+        "description": "You have become a true thespian. Your Charisma increases by 1, to a maximum of 20. Your ProficiencyBonus is doubled for Deception and Performance Checks.",
+        "image": "Actor.webp",
+        "type": 2,
+        "id": 8366
+    },
+    {
         "name": "Advanced Unarmoured Movement",
         "description": "Difficult Terrain doesn't slow you down and you can  Jump (Bonus Action) an additional m=6|ft=20 while you are not wearing armour or using a shield.",
         "image": "Advanced Unarmoured Movement.webp",
@@ -280,7 +287,7 @@
         "id": 8193
     },
     {
-        "name": "Darkvision (Passive Feature)",
+        "name": "Darkvision",
         "description": "Can see in the dark up to 12m.",
         "image": "Darkvision.webp",
         "type": 2,
@@ -1000,6 +1007,55 @@
         "id": 8384
     },
     {
+        "name": "Metamagic: Careful Spell",
+        "description": "Allies automatically succeed Saving Throws against spells that required them.\n\nCosts 1 sp|1 per spell.",
+        "image": "Metamagic Careful Spell.webp",
+        "type": 2,
+        "id": 1379
+    },
+    {
+        "name": "Metamagic: Distant Spell",
+        "description": "Increases the range of the spell by 50%. Spells with a range of m=1.5|ft=5 are increased to m=9|ft=30.\n\nCosts 1 sp|1 per spell.",
+        "image": "Metamagic Distant Spell.webp",
+        "type": 2,
+        "id": 1380
+    },
+    {
+        "name": "Metamagic: Extended Spell",
+        "description": "Double the duration of Conditions, summons, and surfaces caused by spells.\n\nCosts 1 sp|1 per spell.",
+        "image": "Metamagic Extended Spell.webp",
+        "type": 2,
+        "id": 1381
+    },
+    {
+        "name": "Metamagic: Heightened Spell",
+        "description": "Targets of spells that require Saving Throws have Disadvantage on their first Saving Throw.\n\nCosts sp|3 per spell.",
+        "image": "Metamagic Heightened Spell.webp",
+        "type": 2,
+        "id": 1383
+    },
+    {
+        "name": "Metamagic: Quickened Spell",
+        "description": "Spells that take an action take a bonus instead.\n\nCosts sp|3 per spell.",
+        "image": "Metamagic Quickened Spell.webp",
+        "type": 2,
+        "id": 1385
+    },
+    {
+        "name": "Metamagic: Subtle Spell",
+        "description": "You can cast spells while Silenced.\n\nCosts 1 sp per spell.",
+        "image": "Metamagic Subtle Spell.webp",
+        "type": 2,
+        "id": 1386
+    },
+    {
+        "name": "Metamagic: Twinned Spell",
+        "description": "Spells that only target 1 creature can target an additional creature.\n\nCosts 1 sp|1 per Spell Slot level used. Cantrips also cost 1 sp|1.\n\nFor spells that don't shoot a projectile, the targets need to be close enough together.",
+        "image": "Metamagic Twinned Spell.webp",
+        "type": 2,
+        "id": 1382
+    },
+    {
         "name": "Mindless Rage",
         "description": "Your rage becomes all-consuming, repelling outside influence.\n\nWhile Frenzied, you can't be Charmed or Frightened, and Calm Emotions no longer ends your rage.",
         "image": "Mindless Rage.webp",
@@ -1084,7 +1140,7 @@
         "id": 19642
     },
     {
-        "name": "Pact of the Blade (Passive Feature)",
+        "name": "Pact of the Blade (passive feature)",
         "description": "You can Summon a pact weapon, or Bind the one you are wielding as one, making it magical.\n\nPact weapons use the wielder's Spellcasting Ability Modifier instead of Strength or Dexterity.",
         "image": "Pact of the Blade Passive Feature.webp",
         "type": 2,
@@ -1322,9 +1378,9 @@
         "id": 16853
     },
     {
-        "name": "Spreading Spores (Passive Feature)",
+        "name": "Spreading Spores (passive feature)",
         "description": "While Symbiotic Entity is active, you can create a cloud of Spreading Spores.",
-        "image": "Spreading Spores Passive Feature.webp",
+        "image": "Spreading Spores passive feature.webp",
         "type": 2,
         "id": 13692
     },
@@ -1525,7 +1581,7 @@
         "id": 19643
     },
     {
-        "name": "Wild Magic (Subclass Feature)",
+        "name": "Wild Magic (passive feature)",
         "description": "Unruly magic sparks and fizzes through your veins. Each time you cast a spell of Level 1 or higher, your magic might surge and trigger a random magic effect.\n\n{| class=\"wikitable mw-collapsible } | one = mw-collapsed | 1 = mw-collapsed | mw-expanded}}\" style=\"width: 100%;\"",
         "image": "Wild Magic Turn Magic.webp",
         "type": 2,

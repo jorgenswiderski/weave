@@ -218,8 +218,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -878,7 +881,7 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "Subclass: Barbarian",
+                        "name": "Subclass Feature: Barbarian",
                         "grants": [],
                         "choices": [
                             {
@@ -1063,8 +1066,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -1689,6 +1695,39 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Barbarian",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Berserker",
+                                        "description": "Violence is both a means and an end. You follow a path of untrammeled fury, slick with blood, as you thrill in the chaos of battle, heedless of your own well-being.",
+                                        "image": "Class Barbarian Berserker Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Wild Magic",
+                                        "description": "The wild influence of magic has transformed you, suffusing you with arcane power that churns within you, waiting to be released.",
+                                        "image": "Wild_Magic_Barbarian_Subclass_Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Wildheart",
+                                        "description": "Your attunement with nature and its beasts inspires your rage, empowering you with supernatural might.",
+                                        "image": "Class Barbarian Wildheart Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "c6706"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Rages": 4,
@@ -1715,7 +1754,7 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "Subclass: Barbarian",
+                        "name": "Subclass Feature: Barbarian",
                         "grants": [],
                         "choices": [
                             {
@@ -1904,8 +1943,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -2736,8 +2778,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -3424,7 +3469,7 @@
                         ]
                     },
                     {
-                        "name": "Subclass: Bard",
+                        "name": "Subclass Feature: Bard",
                         "grants": [],
                         "choices": [
                             {
@@ -3537,8 +3582,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -4292,8 +4340,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -5144,7 +5195,7 @@
                         ]
                     },
                     {
-                        "name": "Subclass: Cleric",
+                        "name": "Subclass Feature: Cleric",
                         "grants": [],
                         "choices": [
                             {
@@ -5240,7 +5291,110 @@
             {
                 "Level": 3,
                 "Proficiency Bonus": 2,
-                "Features": [],
+                "Features": [
+                    {
+                        "name": "Subclass Feature: Cleric",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Knowledge Domain",
+                                        "description": "Adaptable and adroit in all manner of languages and skills, your mind is an intellectual cup brimming with exquisite knowing.",
+                                        "image": "Knowledge Domain Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2331"
+                                            },
+                                            {
+                                                "ref": "s2382"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Life Domain",
+                                        "description": "The Life domain is an aspect of many good deities, offering spells that protect and restore the mind, body, and soul.",
+                                        "image": "Class Cleric Life Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2305"
+                                            },
+                                            {
+                                                "ref": "s2617"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Light Domain",
+                                        "description": "The Light domain is offered by deities of justice, majesty, and primordial flame, providing spells that dispel darkness and harm the undead.",
+                                        "image": "Light Domain Subclass 300px.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2658"
+                                            },
+                                            {
+                                                "ref": "s2530"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Nature Domain",
+                                        "description": "You embody the vast viridian power of the natural world, an avatar of the subtle divinity of fruitfall, avian migration, woodland silence, and the landslide's roaring fury.",
+                                        "image": "Nature_Domain_Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2319"
+                                            },
+                                            {
+                                                "ref": "s2324"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Tempest Domain",
+                                        "description": "Your faith has made you the very thunder that quakes the black firmament, the lightning coursing through the veins of a terrible storm.",
+                                        "image": "Tempest_Domain_Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s6700"
+                                            },
+                                            {
+                                                "ref": "s2542"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Trickery Domain",
+                                        "description": "A domain shared by wicked, chaotic, and mischievous deities alike, those who channel Trickery specialise in deception and illusion magic.",
+                                        "image": "Class Cleric Trickery Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2521"
+                                            },
+                                            {
+                                                "ref": "s2630"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "War Domain",
+                                        "description": "Fortified by holy zeal, you brandish an arsenal of sacramental savagery to use against those you deem unrighteous.",
+                                        "image": "War Domain Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2827"
+                                            },
+                                            {
+                                                "ref": "s8123"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "Channel Divinity Charges": 1,
                 "Cantrips Known": 3,
                 "Spell Slots": [
@@ -5299,8 +5453,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -5950,6 +6107,108 @@
                                 "ref": "c6412"
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Cleric",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Knowledge Domain",
+                                        "description": "Adaptable and adroit in all manner of languages and skills, your mind is an intellectual cup brimming with exquisite knowing.",
+                                        "image": "Knowledge Domain Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s8091"
+                                            },
+                                            {
+                                                "ref": "s2761"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Life Domain",
+                                        "description": "The Life domain is an aspect of many good deities, offering spells that protect and restore the mind, body, and soul.",
+                                        "image": "Class Cleric Life Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2711"
+                                            },
+                                            {
+                                                "ref": "s2736"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Light Domain",
+                                        "description": "The Light domain is offered by deities of justice, majesty, and primordial flame, providing spells that dispel darkness and harm the undead.",
+                                        "image": "Light Domain Subclass 300px.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2686"
+                                            },
+                                            {
+                                                "ref": "s2677"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Nature Domain",
+                                        "description": "You embody the vast viridian power of the natural world, an avatar of the subtle divinity of fruitfall, avian migration, woodland silence, and the landslide's roaring fury.",
+                                        "image": "Nature_Domain_Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2679"
+                                            },
+                                            {
+                                                "ref": "s2738"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Tempest Domain",
+                                        "description": "Your faith has made you the very thunder that quakes the black firmament, the lightning coursing through the veins of a terrible storm.",
+                                        "image": "Tempest_Domain_Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2702"
+                                            },
+                                            {
+                                                "ref": "s2738"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Trickery Domain",
+                                        "description": "A domain shared by wicked, chaotic, and mischievous deities alike, those who channel Trickery specialise in deception and illusion magic.",
+                                        "image": "Class Cleric Trickery Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2714"
+                                            },
+                                            {
+                                                "ref": "s2700"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "War Domain",
+                                        "description": "Fortified by holy zeal, you brandish an arsenal of sacramental savagery to use against those you deem unrighteous.",
+                                        "image": "War Domain Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2715"
+                                            },
+                                            {
+                                                "ref": "s8122"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Channel Divinity Charges": 1,
@@ -5969,7 +6228,7 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "Subclass: Cleric",
+                        "name": "Subclass Feature: Cleric",
                         "grants": [],
                         "choices": [
                             {
@@ -6065,7 +6324,110 @@
             {
                 "Level": 7,
                 "Proficiency Bonus": 3,
-                "Features": [],
+                "Features": [
+                    {
+                        "name": "Subclass Feature: Cleric",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Knowledge Domain",
+                                        "description": "Adaptable and adroit in all manner of languages and skills, your mind is an intellectual cup brimming with exquisite knowing.",
+                                        "image": "Knowledge Domain Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s6707"
+                                            },
+                                            {
+                                                "ref": "s10346"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Life Domain",
+                                        "description": "The Life domain is an aspect of many good deities, offering spells that protect and restore the mind, body, and soul.",
+                                        "image": "Class Cleric Life Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s8120"
+                                            },
+                                            {
+                                                "ref": "s6709"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Light Domain",
+                                        "description": "The Light domain is offered by deities of justice, majesty, and primordial flame, providing spells that dispel darkness and harm the undead.",
+                                        "image": "Light Domain Subclass 300px.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s8120"
+                                            },
+                                            {
+                                                "ref": "s7938"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Nature Domain",
+                                        "description": "You embody the vast viridian power of the natural world, an avatar of the subtle divinity of fruitfall, avian migration, woodland silence, and the landslide's roaring fury.",
+                                        "image": "Nature_Domain_Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s7935"
+                                            },
+                                            {
+                                                "ref": "s9706"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Tempest Domain",
+                                        "description": "Your faith has made you the very thunder that quakes the black firmament, the lightning coursing through the veins of a terrible storm.",
+                                        "image": "Tempest_Domain_Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s6737"
+                                            },
+                                            {
+                                                "ref": "s6724"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Trickery Domain",
+                                        "description": "A domain shared by wicked, chaotic, and mischievous deities alike, those who channel Trickery specialise in deception and illusion magic.",
+                                        "image": "Class Cleric Trickery Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s6735"
+                                            },
+                                            {
+                                                "ref": "s6731"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "War Domain",
+                                        "description": "Fortified by holy zeal, you brandish an arsenal of sacramental savagery to use against those you deem unrighteous.",
+                                        "image": "War Domain Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s6737"
+                                            },
+                                            {
+                                                "ref": "s7936"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "Channel Divinity Charges": 2,
                 "Cantrips Known": 4,
                 "Spell Slots": [
@@ -6124,8 +6486,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -6752,7 +7117,7 @@
                         ]
                     },
                     {
-                        "name": "Subclass: Cleric",
+                        "name": "Subclass Feature: Cleric",
                         "grants": [],
                         "choices": [
                             {
@@ -6848,7 +7213,110 @@
             {
                 "Level": 9,
                 "Proficiency Bonus": 4,
-                "Features": [],
+                "Features": [
+                    {
+                        "name": "Subclass Feature: Cleric",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Knowledge Domain",
+                                        "description": "Adaptable and adroit in all manner of languages and skills, your mind is an intellectual cup brimming with exquisite knowing.",
+                                        "image": "Knowledge Domain Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s7946"
+                                            },
+                                            {
+                                                "ref": "s8025"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Life Domain",
+                                        "description": "The Life domain is an aspect of many good deities, offering spells that protect and restore the mind, body, and soul.",
+                                        "image": "Class Cleric Life Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s8407"
+                                            },
+                                            {
+                                                "ref": "s7961"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Light Domain",
+                                        "description": "The Light domain is offered by deities of justice, majesty, and primordial flame, providing spells that dispel darkness and harm the undead.",
+                                        "image": "Light Domain Subclass 300px.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s6830"
+                                            },
+                                            {
+                                                "ref": "s8139"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Nature Domain",
+                                        "description": "You embody the vast viridian power of the natural world, an avatar of the subtle divinity of fruitfall, avian migration, woodland silence, and the landslide's roaring fury.",
+                                        "image": "Nature_Domain_Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s7949"
+                                            },
+                                            {
+                                                "ref": "s8034"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Tempest Domain",
+                                        "description": "Your faith has made you the very thunder that quakes the black firmament, the lightning coursing through the veins of a terrible storm.",
+                                        "image": "Tempest_Domain_Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s6830"
+                                            },
+                                            {
+                                                "ref": "s7949"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Trickery Domain",
+                                        "description": "A domain shared by wicked, chaotic, and mischievous deities alike, those who channel Trickery specialise in deception and illusion magic.",
+                                        "image": "Class Cleric Trickery Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s7946"
+                                            },
+                                            {
+                                                "ref": "s8032"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "War Domain",
+                                        "description": "Fortified by holy zeal, you brandish an arsenal of sacramental savagery to use against those you deem unrighteous.",
+                                        "image": "War Domain Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s8139"
+                                            },
+                                            {
+                                                "ref": "s7948"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "Channel Divinity Charges": 2,
                 "Cantrips Known": 4,
                 "Spell Slots": [
@@ -6948,8 +7416,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -7750,7 +8221,139 @@
             {
                 "Level": 3,
                 "Proficiency Bonus": 2,
-                "Features": [],
+                "Features": [
+                    {
+                        "name": "Subclass Feature: Druid",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Circle of the Land",
+                                        "description": "Druids of this Circle connect to powerful magic that flows through the earth and binds all living things together.",
+                                        "image": "Class Druid Land Badge Icon.png",
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Arctic",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2382"
+                                                            },
+                                                            {
+                                                                "ref": "s2324"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Coast",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2521"
+                                                            },
+                                                            {
+                                                                "ref": "s2644"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Desert",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1353"
+                                                            },
+                                                            {
+                                                                "ref": "s2333"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Forest",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2382"
+                                                            },
+                                                            {
+                                                                "ref": "s2319"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Grassland",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2174"
+                                                            },
+                                                            {
+                                                                "ref": "s2630"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mountain",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2324"
+                                                            },
+                                                            {
+                                                                "ref": "s2521"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Swamp",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1045"
+                                                            },
+                                                            {
+                                                                "ref": "s2342"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Underdark",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2644"
+                                                            },
+                                                            {
+                                                                "ref": "s2288"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Circle of the Moon",
+                                        "description": "Druids sworn to the moon draw on its mercurial nature to transform into massive creatures and primal elementals.",
+                                        "image": "Class Druid Moon Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Circle of the Spores",
+                                        "description": "Viewing death, necrosis, fungal growth, and sporulation as just another part of life, you can manipulate such spores to augment yourself and harm your foes.",
+                                        "image": "Class Druid Spores Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2322"
+                                            },
+                                            {
+                                                "ref": "s2350"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "Cantrips Known": 2,
                 "Spell Slots": [
                     null,
@@ -7808,8 +8411,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -8442,6 +9048,39 @@
                                 "ref": "a664"
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Druid",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Circle of the Land",
+                                        "description": "Druids of this Circle connect to powerful magic that flows through the earth and binds all living things together.",
+                                        "image": "Class Druid Land Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Circle of the Moon",
+                                        "description": "Druids sworn to the moon draw on its mercurial nature to transform into massive creatures and primal elementals.",
+                                        "image": "Class Druid Moon Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "a15260"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Circle of the Spores",
+                                        "description": "Viewing death, necrosis, fungal growth, and sporulation as just another part of life, you can manipulate such spores to augment yourself and harm your foes.",
+                                        "image": "Class Druid Spores Badge Icon.png",
+                                        "grants": []
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 3,
@@ -8466,6 +9105,134 @@
                                 "ref": "c9130"
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Druid",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Circle of the Land",
+                                        "description": "Druids of this Circle connect to powerful magic that flows through the earth and binds all living things together.",
+                                        "image": "Class Druid Land Badge Icon.png",
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Arctic",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2738"
+                                                            },
+                                                            {
+                                                                "ref": "s2764"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Coast",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2738"
+                                                            },
+                                                            {
+                                                                "ref": "s2702"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Desert",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2692"
+                                                            },
+                                                            {
+                                                                "ref": "s2743"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Forest",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2702"
+                                                            },
+                                                            {
+                                                                "ref": "s2679"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Grassland:Daylight,",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2764"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mountain",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8092"
+                                                            },
+                                                            {
+                                                                "ref": "s9507"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Swamp",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2762"
+                                                            },
+                                                            {
+                                                                "ref": "s2739"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Underdark",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2762"
+                                                            },
+                                                            {
+                                                                "ref": "s2815"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Circle of the Moon",
+                                        "description": "Druids sworn to the moon draw on its mercurial nature to transform into massive creatures and primal elementals.",
+                                        "image": "Class Druid Moon Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Circle of the Spores",
+                                        "description": "Viewing death, necrosis, fungal growth, and sporulation as just another part of life, you can manipulate such spores to augment yourself and harm your foes.",
+                                        "image": "Class Druid Spores Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2757"
+                                            },
+                                            {
+                                                "ref": "s2815"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 3,
@@ -8484,7 +9251,7 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "Subclass: Druid",
+                        "name": "Subclass Feature: Druid",
                         "grants": [],
                         "choices": [
                             {
@@ -8542,7 +9309,139 @@
             {
                 "Level": 7,
                 "Proficiency Bonus": 3,
-                "Features": [],
+                "Features": [
+                    {
+                        "name": "Subclass Feature: Druid",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Circle of the Land",
+                                        "description": "Druids of this Circle connect to powerful magic that flows through the earth and binds all living things together.",
+                                        "image": "Class Druid Land Badge Icon.png",
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Arctic",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s7998"
+                                                            },
+                                                            {
+                                                                "ref": "s6724"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Coast",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6737"
+                                                            },
+                                                            {
+                                                                "ref": "s6707"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Desert",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6581"
+                                                            },
+                                                            {
+                                                                "ref": "s7938"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Forest",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s7998"
+                                                            },
+                                                            {
+                                                                "ref": "s9706"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Grassland",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6737"
+                                                            },
+                                                            {
+                                                                "ref": "s6731"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mountain",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s7936"
+                                                            },
+                                                            {
+                                                                "ref": "s7935"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Swamp",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6581"
+                                                            },
+                                                            {
+                                                                "ref": "s9706"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Underdark",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s7935"
+                                                            },
+                                                            {
+                                                                "ref": "s7926"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Circle of the Moon",
+                                        "description": "Druids sworn to the moon draw on its mercurial nature to transform into massive creatures and primal elementals.",
+                                        "image": "Class Druid Moon Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Circle of the Spores",
+                                        "description": "Viewing death, necrosis, fungal growth, and sporulation as just another part of life, you can manipulate such spores to augment yourself and harm your foes.",
+                                        "image": "Class Druid Spores Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s6581"
+                                            },
+                                            {
+                                                "ref": "s6707"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "Cantrips Known": 3,
                 "Spell Slots": [
                     null,
@@ -8600,8 +9499,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -9234,6 +10136,39 @@
                                 "ref": "a664"
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Druid",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Circle of the Land",
+                                        "description": "Druids of this Circle connect to powerful magic that flows through the earth and binds all living things together.",
+                                        "image": "Class Druid Land Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Circle of the Moon",
+                                        "description": "Druids sworn to the moon draw on its mercurial nature to transform into massive creatures and primal elementals.",
+                                        "image": "Class Druid Moon Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "a15261"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Circle of the Spores",
+                                        "description": "Viewing death, necrosis, fungal growth, and sporulation as just another part of life, you can manipulate such spores to augment yourself and harm your foes.",
+                                        "image": "Class Druid Spores Badge Icon.png",
+                                        "grants": []
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 3,
@@ -9250,7 +10185,139 @@
             {
                 "Level": 9,
                 "Proficiency Bonus": 4,
-                "Features": [],
+                "Features": [
+                    {
+                        "name": "Subclass Feature: Druid",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Circle of the Land",
+                                        "description": "Druids of this Circle connect to powerful magic that flows through the earth and binds all living things together.",
+                                        "image": "Class Druid Land Badge Icon.png",
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Arctic",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s7943"
+                                                            },
+                                                            {
+                                                                "ref": "s8412"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Coast",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8415"
+                                                            },
+                                                            {
+                                                                "ref": "s8407"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Desert",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8034"
+                                                            },
+                                                            {
+                                                                "ref": "s7949"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Forest",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8412"
+                                                            },
+                                                            {
+                                                                "ref": "s7961"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Grassland",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8407"
+                                                            },
+                                                            {
+                                                                "ref": "s7949"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mountain",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8415"
+                                                            },
+                                                            {
+                                                                "ref": "s8034"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Swamp",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s7949"
+                                                            },
+                                                            {
+                                                                "ref": "s7960"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Underdark",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8412"
+                                                            },
+                                                            {
+                                                                "ref": "s7960"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Circle of the Moon",
+                                        "description": "Druids sworn to the moon draw on its mercurial nature to transform into massive creatures and primal elementals.",
+                                        "image": "Class Druid Moon Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Circle of the Spores",
+                                        "description": "Viewing death, necrosis, fungal growth, and sporulation as just another part of life, you can manipulate such spores to augment yourself and harm your foes.",
+                                        "image": "Class Druid Spores Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s7960"
+                                            },
+                                            {
+                                                "ref": "s8412"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "Cantrips Known": 3,
                 "Spell Slots": [
                     null,
@@ -9267,7 +10334,7 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "Subclass: Druid",
+                        "name": "Subclass Feature: Druid",
                         "grants": [],
                         "choices": [
                             {
@@ -9392,8 +10459,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -10706,8 +11776,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -11395,8 +12468,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -12029,7 +13105,7 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "Subclass: Fighter",
+                        "name": "Subclass Feature: Fighter",
                         "grants": [],
                         "choices": [
                             {
@@ -12292,8 +13368,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -12918,6 +13997,234 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Fighter",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Battle Master",
+                                        "description": "Battle Masters are paragons of tactical superiority, combining combat manoeuvres  and experience in the field to dominate every fight.",
+                                        "image": "Class_Fighter_Battle_Master_Badge_Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Champion",
+                                        "description": "You approach the complex problems posed by combat with one distinctly effective solution - you hit those problems, really quite hard.",
+                                        "image": "Class Fighter Champion Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Eldritch Knight",
+                                        "description": "Eldritch Knights study magic to supplement their weaponry, allowing them to overcome resistance from the toughest foes.",
+                                        "image": "Class Fighter Eldritch Knight Badge Icon.png",
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Arcane Lock",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6662"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Blindness",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2322"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Blur",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1353"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Cloud of Daggers",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2338"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Crown of Madness",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2339"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Darkness",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2342"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Darkvision",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2348"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Detect Thoughts",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2350"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Enlarge/Reduce",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2375"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Flaming Sphere",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2658"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Gust of Wind",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6700"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Hold Person",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2382"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Invisibility",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2174"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Knock",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8088"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Magic Weapon",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2827"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Melf's Acid Arrow",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1045"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mirror Image",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2521"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Misty Step",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2644"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Phantasmal Force",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2633"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Ray of Enfeeblement",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2387"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Scorching Ray",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2530"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "See Invisibility",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6582"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Shatter",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2542"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Web",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2288"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -12940,7 +14247,7 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "Subclass: Fighter",
+                        "name": "Subclass Feature: Fighter",
                         "grants": [],
                         "choices": [
                             {
@@ -13213,8 +14520,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -14143,8 +15453,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -14810,6 +16123,39 @@
                                 "ref": "a8936"
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Monk",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Way of Shadow",
+                                        "description": "You value the arts of stealth and subterfuge, bending the shadows to your will to strike without warning.",
+                                        "image": "Class Monk Shadow Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "a18418"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Way of the Four Elements",
+                                        "description": "You focus your ki to bend the elements to your will, using them as an extension of your own body.",
+                                        "image": "Class Monk Four Elements Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Way of the Open Hand",
+                                        "description": "You specialise in unarmed combat, using your hands and control of ki to heal or inflict grievous hurt.",
+                                        "image": "Class Monk Open Hand Badge Icon.png",
+                                        "grants": []
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -14829,7 +16175,15 @@
                         ]
                     },
                     {
-                        "name": "Subclass: Monk",
+                        "name": "Improved Unarmoured Movement",
+                        "grants": [
+                            {
+                                "ref": "c13208"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Subclass Feature: Monk",
                         "grants": [],
                         "choices": [
                             {
@@ -14881,14 +16235,6 @@
                                         ]
                                     }
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Improved Unarmoured Movement",
-                        "grants": [
-                            {
-                                "ref": "c13208"
                             }
                         ]
                     }
@@ -14968,8 +16314,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -15613,7 +16962,7 @@
                         ]
                     },
                     {
-                        "name": "Subclass: Monk",
+                        "name": "Subclass Feature: Monk",
                         "grants": [],
                         "choices": [
                             {
@@ -15690,7 +17039,7 @@
                 "Unarmoured Movement": "+ 6 m / 20 ft.",
                 "Features": [
                     {
-                        "name": "Subclass: Monk",
+                        "name": "Subclass Feature: Monk",
                         "grants": [],
                         "choices": [
                             {
@@ -15790,8 +17139,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -16590,6 +17942,93 @@
                                 "ref": "c6141"
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Paladin",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Oath of Devotion",
+                                        "description": "Following the ideal of the knight in shining armour, you act with honour and virtue to protect the weak and pursue the greater good.",
+                                        "image": "Paladin Oath of Devotion Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "a3393"
+                                            },
+                                            {
+                                                "ref": "a3398"
+                                            },
+                                            {
+                                                "ref": "s2268"
+                                            },
+                                            {
+                                                "ref": "s2818"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Oath of Vengeance",
+                                        "description": "You have set aside even your own purity to right wrongs and deliver justice to those who have committed the most grievous sins.",
+                                        "image": "Paladin Oath of Vengeance.png",
+                                        "grants": [
+                                            {
+                                                "ref": "a7992"
+                                            },
+                                            {
+                                                "ref": "a7993"
+                                            },
+                                            {
+                                                "ref": "s1998"
+                                            },
+                                            {
+                                                "ref": "s2209"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Oath of the Ancients",
+                                        "description": "You fight on the side of light in the cosmic struggle against darkness to preserve the sanctity of life and the beauty of nature.",
+                                        "image": "Paladin Oath of the Ancients Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "a4011"
+                                            },
+                                            {
+                                                "ref": "a4010"
+                                            },
+                                            {
+                                                "ref": "s1585"
+                                            },
+                                            {
+                                                "ref": "s2167"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Oathbreaker",
+                                        "description": "You have broken your sacred Oath in pursuit of power and ambition. Only darkness remains to fuel you now.",
+                                        "image": "Paladin Oathbreaker Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "a3605"
+                                            },
+                                            {
+                                                "ref": "a3606"
+                                            },
+                                            {
+                                                "ref": "s2205"
+                                            },
+                                            {
+                                                "ref": "s2247"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Lay on Hands Charges": 3,
@@ -16646,8 +18085,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -17293,6 +18735,69 @@
                                 "ref": "c3152"
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Paladin",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Oath of Devotion",
+                                        "description": "Following the ideal of the knight in shining armour, you act with honour and virtue to protect the weak and pursue the greater good.",
+                                        "image": "Paladin Oath of Devotion Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2617"
+                                            },
+                                            {
+                                                "ref": "s2333"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Oath of Vengeance",
+                                        "description": "You have set aside even your own purity to right wrongs and deliver justice to those who have committed the most grievous sins.",
+                                        "image": "Paladin Oath of Vengeance.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2644"
+                                            },
+                                            {
+                                                "ref": "s2382"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Oath of the Ancients",
+                                        "description": "You fight on the side of light in the cosmic struggle against darkness to preserve the sanctity of life and the beauty of nature.",
+                                        "image": "Paladin Oath of the Ancients Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2644"
+                                            },
+                                            {
+                                                "ref": "s2541"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Oathbreaker",
+                                        "description": "You have broken your sacred Oath in pursuit of power and ambition. Only darkness remains to fuel you now.",
+                                        "image": "Paladin Oathbreaker Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2339"
+                                            },
+                                            {
+                                                "ref": "s2342"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Lay on Hands Charges": 4,
@@ -17329,7 +18834,7 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "Subclass: Paladin",
+                        "name": "Subclass Feature: Paladin",
                         "grants": [],
                         "choices": [
                             {
@@ -17434,8 +18939,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -18073,7 +19581,71 @@
             {
                 "Level": 9,
                 "Proficiency Bonus": 4,
-                "Features": [],
+                "Features": [
+                    {
+                        "name": "Subclass Feature: Paladin",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Oath of Devotion",
+                                        "description": "Following the ideal of the knight in shining armour, you act with honour and virtue to protect the weak and pursue the greater good.",
+                                        "image": "Paladin Oath of Devotion Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2680"
+                                            },
+                                            {
+                                                "ref": "s2736"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Oath of Vengeance",
+                                        "description": "You have set aside even your own purity to right wrongs and deliver justice to those who have committed the most grievous sins.",
+                                        "image": "Paladin Oath of Vengeance.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2764"
+                                            },
+                                            {
+                                                "ref": "s2692"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Oath of the Ancients",
+                                        "description": "You fight on the side of light in the cosmic struggle against darkness to preserve the sanctity of life and the beauty of nature.",
+                                        "image": "Paladin Oath of the Ancients Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2692"
+                                            },
+                                            {
+                                                "ref": "s2679"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Oathbreaker",
+                                        "description": "You have broken your sacred Oath in pursuit of power and ambition. Only darkness remains to fuel you now.",
+                                        "image": "Paladin Oathbreaker Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2714"
+                                            },
+                                            {
+                                                "ref": "s2757"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "Lay on Hands Charges": 4,
                 "Spell Slots": [
                     null,
@@ -18170,8 +19742,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -19136,8 +20711,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -19783,6 +21361,43 @@
                                 "ref": "c3152"
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Ranger",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Beast Master",
+                                        "description": "Beast Masters bind themselves to an animal companion, sharing an intelligent bond that flourishes in and out of combat.",
+                                        "image": "Class Ranger Beast Master Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "c17997"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Gloom Stalker",
+                                        "description": "Emerging like a horrible gift from the envelope of darkness and shadow, you ambush and put down your foes before they can even scream.",
+                                        "image": "Gloom Stalker Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2644"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Hunter",
+                                        "description": "Hunters seek the most dangerous prey in Faerûn, from ancient dragons to massive hordes of undead, and excel at slaying them all.",
+                                        "image": "Class Ranger Hunter Badge Icon.png",
+                                        "grants": []
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Spells Known": 4,
@@ -19915,7 +21530,7 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "Subclass: Ranger",
+                        "name": "Subclass Feature: Ranger",
                         "grants": [],
                         "choices": [
                             {
@@ -20037,8 +21652,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -20684,7 +22302,41 @@
             {
                 "Level": 9,
                 "Proficiency Bonus": 4,
-                "Features": [],
+                "Features": [
+                    {
+                        "name": "Subclass Feature: Ranger",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Beast Master",
+                                        "description": "Beast Masters bind themselves to an animal companion, sharing an intelligent bond that flourishes in and out of combat.",
+                                        "image": "Class Ranger Beast Master Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Gloom Stalker",
+                                        "description": "Emerging like a horrible gift from the envelope of darkness and shadow, you ambush and put down your foes before they can even scream.",
+                                        "image": "Gloom Stalker Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2700"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Hunter",
+                                        "description": "Hunters seek the most dangerous prey in Faerûn, from ancient dragons to massive hordes of undead, and excel at slaying them all.",
+                                        "image": "Class Ranger Hunter Badge Icon.png",
+                                        "grants": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "Spells Known": 6,
                 "Spell Slots": [
                     null,
@@ -20823,7 +22475,7 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "Subclass: Ranger",
+                        "name": "Subclass Feature: Ranger",
                         "grants": [],
                         "choices": [
                             {
@@ -20921,8 +22573,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -22065,8 +23720,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -22732,6 +24390,90 @@
                                 "ref": "c6817"
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Rogue",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Arcane Trickster",
+                                        "description": "Arcane Tricksters are rogues with a clever touch of magic, using illusions and enchantments to keep their opponents on the back foot.",
+                                        "image": "Class Rogue Trickster Badge Icon.png",
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Blur",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1353"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Crown of Madness",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2339"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Hold Person",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2382"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Invisibility",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2174"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mirror Image",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2521"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Phantasmal Force",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2633"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Assassin",
+                                        "description": "You prefer to deal sublime punishment to a single foe at a time - not in a duel, mind, because a duel implies chivalry, and you're too busy getting the job done for honour.",
+                                        "image": "Class Rogue Assassin Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Thief",
+                                        "description": "Thieves use their skills in stealth and larceny to acquire whatever they wish, whether from a third story window or the depths of long-forgotten ruins.",
+                                        "image": "Class Rogue Thief Badge Icon.png",
+                                        "grants": []
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -22782,8 +24524,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -23408,6 +25153,234 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Rogue",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Arcane Trickster",
+                                        "description": "Arcane Tricksters are rogues with a clever touch of magic, using illusions and enchantments to keep their opponents on the back foot.",
+                                        "image": "Class Rogue Trickster Badge Icon.png",
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "type": 23,
+                                                "options": [
+                                                    {
+                                                        "name": "Arcane Lock",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6662"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Blindness",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2322"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Blur",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1353"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Cloud of Daggers",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2338"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Crown of Madness",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2339"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Darkness",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2342"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Darkvision",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2348"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Detect Thoughts",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2350"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Enlarge/Reduce",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2375"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Flaming Sphere",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2658"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Gust of Wind",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6700"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Hold Person",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2382"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Invisibility",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2174"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Knock",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8088"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Magic Weapon",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2827"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Melf's Acid Arrow",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1045"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mirror Image",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2521"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Misty Step",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2644"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Phantasmal Force",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2633"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Ray of Enfeeblement",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2387"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Scorching Ray",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2530"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "See Invisibility",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6582"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Shatter",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2542"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Web",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2288"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Assassin",
+                                        "description": "You prefer to deal sublime punishment to a single foe at a time - not in a duel, mind, because a duel implies chivalry, and you're too busy getting the job done for honour.",
+                                        "image": "Class Rogue Assassin Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Thief",
+                                        "description": "Thieves use their skills in stealth and larceny to acquire whatever they wish, whether from a third story window or the depths of long-forgotten ruins.",
+                                        "image": "Class Rogue Thief Badge Icon.png",
+                                        "grants": []
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -23417,7 +25390,7 @@
                 "Sneak Attack": 5,
                 "Features": [
                     {
-                        "name": "Subclass: Rogue",
+                        "name": "Subclass Feature: Rogue",
                         "grants": [],
                         "choices": [
                             {
@@ -23506,8 +25479,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -24197,8 +26173,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -25036,7 +27015,7 @@
                                         "name": "Metamagic: Careful Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1379"
+                                                "ref": "c1379"
                                             }
                                         ]
                                     },
@@ -25044,7 +27023,7 @@
                                         "name": "Metamagic: Distant Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1380"
+                                                "ref": "c1380"
                                             }
                                         ]
                                     },
@@ -25052,7 +27031,7 @@
                                         "name": "Metamagic: Extended Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1381"
+                                                "ref": "c1381"
                                             }
                                         ]
                                     },
@@ -25060,7 +27039,7 @@
                                         "name": "Metamagic: Twinned Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1382"
+                                                "ref": "c1382"
                                             }
                                         ]
                                     }
@@ -25114,7 +27093,7 @@
                                         "name": "Metamagic: Careful Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1379"
+                                                "ref": "c1379"
                                             }
                                         ]
                                     },
@@ -25122,7 +27101,7 @@
                                         "name": "Metamagic: Distant Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1380"
+                                                "ref": "c1380"
                                             }
                                         ]
                                     },
@@ -25130,7 +27109,7 @@
                                         "name": "Metamagic: Extended Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1381"
+                                                "ref": "c1381"
                                             }
                                         ]
                                     },
@@ -25138,7 +27117,7 @@
                                         "name": "Metamagic: Twinned Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1382"
+                                                "ref": "c1382"
                                             }
                                         ]
                                     },
@@ -25146,7 +27125,7 @@
                                         "name": "Metamagic: Heightened Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1383"
+                                                "ref": "c1383"
                                             }
                                         ]
                                     },
@@ -25154,7 +27133,7 @@
                                         "name": "Metamagic: Quickened Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1385"
+                                                "ref": "c1385"
                                             }
                                         ]
                                     },
@@ -25162,7 +27141,7 @@
                                         "name": "Metamagic: Subtle Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1386"
+                                                "ref": "c1386"
                                             }
                                         ]
                                     }
@@ -25230,8 +27209,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -25893,7 +27875,7 @@
                 "Sorcery Points": 6,
                 "Features": [
                     {
-                        "name": "Subclass: Sorcerer",
+                        "name": "Subclass Feature: Sorcerer",
                         "grants": [],
                         "choices": [
                             {
@@ -26034,8 +28016,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -26708,7 +28693,7 @@
                                         "name": "Metamagic: Careful Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1379"
+                                                "ref": "c1379"
                                             }
                                         ]
                                     },
@@ -26716,7 +28701,7 @@
                                         "name": "Metamagic: Distant Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1380"
+                                                "ref": "c1380"
                                             }
                                         ]
                                     },
@@ -26724,7 +28709,7 @@
                                         "name": "Metamagic: Extended Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1381"
+                                                "ref": "c1381"
                                             }
                                         ]
                                     },
@@ -26732,7 +28717,7 @@
                                         "name": "Metamagic: Twinned Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1382"
+                                                "ref": "c1382"
                                             }
                                         ]
                                     },
@@ -26740,7 +28725,7 @@
                                         "name": "Metamagic: Heightened Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1383"
+                                                "ref": "c1383"
                                             }
                                         ]
                                     },
@@ -26748,7 +28733,7 @@
                                         "name": "Metamagic: Quickened Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1385"
+                                                "ref": "c1385"
                                             }
                                         ]
                                     },
@@ -26756,7 +28741,7 @@
                                         "name": "Metamagic: Subtle Spell",
                                         "grants": [
                                             {
-                                                "ref": "a1386"
+                                                "ref": "c1386"
                                             }
                                         ]
                                     }
@@ -26783,7 +28768,7 @@
                 "Sorcery Points": 11,
                 "Features": [
                     {
-                        "name": "Subclass: Sorcerer",
+                        "name": "Subclass Feature: Sorcerer",
                         "grants": [],
                         "choices": [
                             {
@@ -26883,8 +28868,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -27746,6 +29734,56 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Warlock",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "The Archfey",
+                                        "description": "Graced by a lady or lord of the fey, you are imbued with all the sumptuous and scary qualities of your patron's extraordinary realm.",
+                                        "image": "Class Warlock Archfey Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2331"
+                                            },
+                                            {
+                                                "ref": "s2633"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "The Fiend",
+                                        "description": "Warlocks in service to fiends work toward corrupting, destructive ends -- intentionally or otherwise -- and receive hellish blessings in turn.",
+                                        "image": "Class Warlock Fiend Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2322"
+                                            },
+                                            {
+                                                "ref": "s2530"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "The Great Old One",
+                                        "description": "Warlocks bound to eldritch beings in the Far Realms work toward inscrutable goals, gaining strange powers over entropy and the mind.",
+                                        "image": "Class Warlock Great Old One Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2350"
+                                            },
+                                            {
+                                                "ref": "s2633"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 2,
@@ -27800,8 +29838,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -28553,6 +30594,56 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Warlock",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "The Archfey",
+                                        "description": "Graced by a lady or lord of the fey, you are imbued with all the sumptuous and scary qualities of your patron's extraordinary realm.",
+                                        "image": "Class Warlock Archfey Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s8191"
+                                            },
+                                            {
+                                                "ref": "s2679"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "The Fiend",
+                                        "description": "Warlocks in service to fiends work toward corrupting, destructive ends -- intentionally or otherwise -- and receive hellish blessings in turn.",
+                                        "image": "Class Warlock Fiend Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2677"
+                                            },
+                                            {
+                                                "ref": "s2762"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "The Great Old One",
+                                        "description": "Warlocks bound to eldritch beings in the Far Realms work toward inscrutable goals, gaining strange powers over entropy and the mind.",
+                                        "image": "Class Warlock Great Old One Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s2714"
+                                            },
+                                            {
+                                                "ref": "s8091"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 3,
@@ -28566,7 +30657,7 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "Subclass: Warlock",
+                        "name": "Subclass Feature: Warlock",
                         "grants": [],
                         "choices": [
                             {
@@ -28748,6 +30839,56 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Warlock",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "The Archfey",
+                                        "description": "Graced by a lady or lord of the fey, you are imbued with all the sumptuous and scary qualities of your patron's extraordinary realm.",
+                                        "image": "Class Warlock Archfey Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s7935"
+                                            },
+                                            {
+                                                "ref": "s7926"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "The Fiend",
+                                        "description": "Warlocks in service to fiends work toward corrupting, destructive ends -- intentionally or otherwise -- and receive hellish blessings in turn.",
+                                        "image": "Class Warlock Fiend Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s7938"
+                                            },
+                                            {
+                                                "ref": "s6736"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "The Great Old One",
+                                        "description": "Warlocks bound to eldritch beings in the Far Realms work toward inscrutable goals, gaining strange powers over entropy and the mind.",
+                                        "image": "Class Warlock Great Old One Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s7935"
+                                            },
+                                            {
+                                                "ref": "s6712"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 3,
@@ -28802,8 +30943,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -29595,6 +31739,56 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Warlock",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "The Archfey",
+                                        "description": "Graced by a lady or lord of the fey, you are imbued with all the sumptuous and scary qualities of your patron's extraordinary realm.",
+                                        "image": "Class Warlock Archfey Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s7946"
+                                            },
+                                            {
+                                                "ref": "s8032"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "The Fiend",
+                                        "description": "Warlocks in service to fiends work toward corrupting, destructive ends -- intentionally or otherwise -- and receive hellish blessings in turn.",
+                                        "image": "Class Warlock Fiend Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s7943"
+                                            },
+                                            {
+                                                "ref": "s8139"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "The Great Old One",
+                                        "description": "Warlocks bound to eldritch beings in the Far Realms work toward inscrutable goals, gaining strange powers over entropy and the mind.",
+                                        "image": "Class Warlock Great Old One Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "s7946"
+                                            },
+                                            {
+                                                "ref": "s8025"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 3,
@@ -29608,7 +31802,7 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "Subclass: Warlock",
+                        "name": "Subclass Feature: Warlock",
                         "grants": [],
                         "choices": [
                             {
@@ -29719,8 +31913,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -30726,8 +32923,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -31389,7 +33589,7 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "Subclass: Wizard",
+                        "name": "Subclass Feature: Wizard",
                         "grants": [],
                         "choices": [
                             {
@@ -31562,8 +33762,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,
@@ -32225,7 +34428,7 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "Subclass: Wizard",
+                        "name": "Subclass Feature: Wizard",
                         "grants": [],
                         "choices": [
                             {
@@ -32395,8 +34598,11 @@
                                     {
                                         "name": "Actor",
                                         "description": "Actor\n* Your Charisma increases by 1, to a maximum of 20.\n* Your Proficiency Bonus is also doubled for Deception and Performance checks. \n* Note: despite not mentioning this in the tooltip, the character also gains proficiency in these 2 skills if they didn't have those proficiencies yet (game version: 4.1.1.3905231 (Patch 4)).",
-                                        "image": "PassiveFeature Generic.png",
+                                        "image": "Actor.webp",
                                         "grants": [
+                                            {
+                                                "ref": "c8366"
+                                            },
                                             {
                                                 "name": "Actor: Charisma",
                                                 "type": 2,

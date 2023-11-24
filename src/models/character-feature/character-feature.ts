@@ -14,7 +14,11 @@ import {
 import { StaticallyReferenceable } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/types';
 import assert from 'assert';
 import { PageItem, PageLoadingState } from '../page-item';
-import { ChoiceListConfig, ICharacterOptionWithPage } from './types';
+import {
+    CharacterFeatureDataNotFoundError,
+    ChoiceListConfig,
+    ICharacterOptionWithPage,
+} from './types';
 import { error, warn } from '../logger';
 import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { PageNotFoundError } from '../errors';
@@ -119,7 +123,9 @@ export class CharacterFeature
         const spells = await getSpellDataById();
 
         if (!spells.has(pageId)) {
-            throw new Error(`Could not find spell for ${title} (${pageId})`);
+            throw new CharacterFeatureDataNotFoundError(
+                `Could not find spell for ${title} (${pageId})`,
+            );
         }
 
         const spell = spells.get(pageId)! as Spell;
@@ -135,7 +141,9 @@ export class CharacterFeature
         const actions = await getActionDataById();
 
         if (!actions.has(pageId)) {
-            throw new Error(`Could not find action for ${title} (${pageId})`);
+            throw new CharacterFeatureDataNotFoundError(
+                `Could not find action for ${title} (${pageId})`,
+            );
         }
 
         const action = actions.get(pageId)! as Action;
@@ -152,7 +160,9 @@ export class CharacterFeature
         const passive = getPassiveDataById().get(pageId);
 
         if (!passive) {
-            throw new Error(`Could not find passive for ${title} (${pageId})`);
+            throw new CharacterFeatureDataNotFoundError(
+                `Could not find passive for ${title} (${pageId})`,
+            );
         }
 
         passive.markUsed();
@@ -231,8 +241,10 @@ export class CharacterFeature
                 warn(
                     `Could not find page '${page?.title}' when parsing for grantable effects.`,
                 );
+            } else if (e instanceof CharacterFeatureDataNotFoundError) {
+                error(e.message);
             } else {
-                // throw e;
+                error(e);
             }
         }
 
@@ -294,95 +306,100 @@ export class CharacterFeature
 
         const features: ICharacterOptionWithStubs[] = (
             await Promise.all(
-                table.map(async (row, index) => {
-                    if (config.minLevel) {
-                        const ml = parseInt(row[config.minLevel], 10);
+                table
+                    .filter((row, index) => {
+                        if (config.minLevel) {
+                            const ml = parseInt(row[config.minLevel], 10);
 
-                        assert(
-                            !Number.isNaN(ml),
-                            `Failed to parse minLevel value '${
-                                row[config.minLevel]
-                            }' in row ${index} of wikitable on page '${
-                                this.pageTitle
-                            }'`,
-                        );
+                            assert(
+                                !Number.isNaN(ml),
+                                `Failed to parse minLevel value '${
+                                    row[config.minLevel]
+                                }' in row ${index} of wikitable on page '${
+                                    this.pageTitle
+                                }'`,
+                            );
 
-                        assert(
-                            this.level,
-                            `Level must be defined to enforce minLevel constraint on wikitable on page '${this.pageTitle}'`,
-                        );
+                            assert(
+                                this.level,
+                                `Level must be defined to enforce minLevel constraint on wikitable on page '${this.pageTitle}'`,
+                            );
 
-                        if (this.level! < ml) {
-                            return undefined;
+                            if (this.level! < ml) {
+                                return false;
+                            }
                         }
-                    }
 
-                    if (config.classes) {
-                        const cell = row[config.classes];
+                        if (config.classes) {
+                            const cell = row[config.classes];
 
-                        assert(
-                            this.characterClass,
-                            `Class must be defined to enforce classes constraint on wikitable on page '${this.pageTitle}'`,
-                        );
+                            assert(
+                                this.characterClass,
+                                `Class must be defined to enforce classes constraint on wikitable on page '${this.pageTitle}'`,
+                            );
 
-                        if (
-                            !cell.includes(
-                                `{{class|${this.characterClass!.name}}}`,
-                            )
-                        ) {
-                            return undefined;
+                            if (
+                                !cell.includes(
+                                    `{{class|${this.characterClass!.name}}}`,
+                                )
+                            ) {
+                                return false;
+                            }
                         }
-                    }
 
-                    const featureCells = [row[config.feature]];
+                        return true;
+                    })
+                    .map(async (row) => {
+                        const featureCells = [row[config.feature]];
 
-                    if (config.feature2) {
-                        featureCells.push(row[config.feature2]);
-                    }
+                        if (config.feature2) {
+                            featureCells.push(row[config.feature2]);
+                        }
 
-                    const featureTitles = featureCells.flatMap((featureCell) =>
-                        [
-                            ...featureCell.matchAll(
-                                /{{(?:Icon|SAI|SmIconLink)\|([^|}]+).*?}}/g,
-                            ),
-                            ...featureCell.matchAll(/\[\[([^|\]]+).*?\]\]/g),
-                        ]
-                            .map(([, title]) => title)
-                            .slice(0, config.matchAll ? undefined : 1),
-                    );
-
-                    if (featureTitles.length === 0) {
-                        throw new Error(
-                            `Could not find feature at row key ${config.feature} in wikitable on page '${pageTitle}'`,
+                        const featureTitles = featureCells.flatMap(
+                            (featureCell) =>
+                                [
+                                    ...featureCell.matchAll(
+                                        /{{(?:Icon|SAI|SmIconLink)\|([^|}]+).*?}}/g,
+                                    ),
+                                    ...featureCell.matchAll(
+                                        /\[\[([^|\]]+).*?\]\]/g,
+                                    ),
+                                ]
+                                    .map(([, title]) => title)
+                                    .slice(0, config.matchAll ? undefined : 1),
                         );
-                    }
 
-                    const effects = (
-                        await Promise.all(
-                            featureTitles.map((title) =>
-                                CharacterFeature.parsePageForGrantableEffect(
-                                    title,
+                        if (featureTitles.length === 0) {
+                            throw new Error(
+                                `Could not find feature at row key ${config.feature} in wikitable on page '${pageTitle}'`,
+                            );
+                        }
+
+                        const effects = (
+                            await Promise.all(
+                                featureTitles.map((title) =>
+                                    CharacterFeature.parsePageForGrantableEffect(
+                                        title,
+                                    ),
                                 ),
-                            ),
-                        )
-                    ).filter(Boolean) as (
-                        | GrantableEffect
-                        | StaticallyReferenceable
-                    )[];
+                            )
+                        ).filter(Boolean) as (
+                            | GrantableEffect
+                            | StaticallyReferenceable
+                        )[];
 
-                    const name = config.name
-                        ? MediaWikiParser.stripMarkup(row[config.name])
-                        : featureTitles[0];
+                        const name = config.name
+                            ? MediaWikiParser.stripMarkup(row[config.name])
+                            : featureTitles[0];
 
-                    return {
-                        name: MediaWikiParser.parseNameFromPageTitle(name),
-                        grants: effects,
-                    };
-                }),
+                        return {
+                            name: MediaWikiParser.parseNameFromPageTitle(name),
+                            grants: effects,
+                        };
+                    }),
             )
-        )
-            .flat()
-            .filter(Boolean) as ICharacterOptionWithStubs[];
+        ).flat();
 
         return features;
     }
@@ -414,11 +431,13 @@ export class CharacterFeature
             ),
         ].map((match) => match[1]);
 
-        return Promise.all(
-            featureMarkdown.map((md) =>
-                CharacterFeature.factory!.fromWikitext(md),
-            ),
-        );
+        return (
+            await Promise.all(
+                featureMarkdown.map((md) =>
+                    CharacterFeature.factory!.fromWikitext(md),
+                ),
+            )
+        ).filter(Boolean) as ICharacterOptionWithStubs[];
     }
 
     // To be overridden by special features like CharacterFeatureMetamagic

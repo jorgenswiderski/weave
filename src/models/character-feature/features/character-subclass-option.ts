@@ -3,7 +3,6 @@ import { error } from '../../logger';
 import { MediaWiki, PageData } from '../../media-wiki/media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
 import { CharacterSubclass } from './character-subclass/character-subclass';
-import { CharacterFeatureTypes } from '../types';
 import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
 
 enum SubclassLoadStates {
@@ -13,13 +12,15 @@ enum SubclassLoadStates {
 export class ClassSubclassOption extends CharacterFeatureCustomizable {
     constructor(
         public className: string,
-        public featureType:
-            | CharacterFeatureTypes.CHOOSE_SUBCLASS
-            | CharacterFeatureTypes.SUBCLASS_FEATURE,
+        public type:
+            | CharacterPlannerStep.CHOOSE_SUBCLASS
+            | CharacterPlannerStep.SUBCLASS_FEATURE,
         public level: number,
     ) {
         super({
-            name: `Subclass: ${className}`,
+            name: `Subclass${
+                type === CharacterPlannerStep.SUBCLASS_FEATURE ? ' Feature' : ''
+            }: ${className}`,
         });
 
         this.initialized[SubclassLoadStates.CHOICES] =
@@ -47,10 +48,7 @@ export class ClassSubclassOption extends CharacterFeatureCustomizable {
 
         this.choices = [
             {
-                type:
-                    this.featureType === CharacterFeatureTypes.CHOOSE_SUBCLASS
-                        ? CharacterPlannerStep.CHOOSE_SUBCLASS
-                        : CharacterPlannerStep.SUBCLASS_FEATURE,
+                type: this.type,
                 options: filtered.map(
                     (page) =>
                         new CharacterSubclass(

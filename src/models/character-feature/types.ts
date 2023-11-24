@@ -7,7 +7,6 @@ import { PageData } from '../media-wiki/media-wiki';
 export enum CharacterFeatureTypes {
     NONE = 'NONE',
     FEAT = 'FEAT',
-    SUBCLASS_FEATURE = 'SUBCLASS_FEATURE',
     SPELLCASTING = 'SPELLCASTING',
     PACT_MAGIC = 'PACT_MAGIC',
     OTHER = 'OTHER',
@@ -33,3 +32,5 @@ export interface ChoiceListConfig {
     matchAll?: boolean;
     name?: string | number;
 }
+
+export class CharacterFeatureDataNotFoundError extends Error {}
