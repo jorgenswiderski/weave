@@ -15,18 +15,20 @@ import {
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
 import { error, warn } from '../logger';
-import { MediaWiki, PageData } from '../media-wiki/media-wiki';
+import { MediaWiki } from '../media-wiki/media-wiki';
 import { PageItem, PageLoadingState } from '../page-item';
-import {
-    MediaWikiTemplateParser,
-    MediaWikiTemplateParserConfig,
-} from '../media-wiki/mw-template-parser';
+import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
 import {
     GameLocation,
     gameLocationById,
     gameLocationByPageTitle,
 } from '../locations/locations';
-import { MediaWikiParser } from '../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
+import {
+    MediaWikiTemplateParserConfigItem,
+    MediaWikiTemplateParserConfig,
+    IPageData,
+} from '../media-wiki/types';
 
 type ItemSourcePageInfo = {
     title: string;
@@ -35,7 +37,7 @@ type ItemSourcePageInfo = {
         categories: string[];
         redirect?: string;
     };
-    data?: PageData;
+    data?: IPageData;
 };
 
 enum EquipmentItemLoadState {
@@ -65,7 +67,10 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
     obtainable?: boolean;
 
-    constructor(public name: string) {
+    constructor(
+        public name: string,
+        public templateName: string = 'EquipmentPage',
+    ) {
         super({ pageTitle: name });
 
         this.initialized[EquipmentItemLoadState.SPELL_DATA] =
@@ -74,16 +79,16 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
     private static parseEffects(
         effectText: string,
-        config: MediaWikiTemplateParserConfig,
-        page: PageData,
+        config: MediaWikiTemplateParserConfigItem,
+        page: IPageData,
     ): GrantableEffect[] {
         const namedEffectPattern = /\*\s*'''(.*?):?''':?\s*(.*?)(?:\n|$)/g;
 
         const effects: GrantableEffect[] = Array.from(
             effectText.matchAll(namedEffectPattern),
         ).map((match) => ({
-            name: MediaWiki.stripMarkup(match[1]).trim(),
-            description: MediaWiki.stripMarkup(match[2]).trim(),
+            name: MediaWikiParser.stripMarkup(match[1]).trim(),
+            description: MediaWikiParser.stripMarkup(match[2]).trim(),
             type: GrantableEffectType.CHARACTERISTIC,
         }));
 
@@ -93,7 +98,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             effectText.matchAll(anonEffectPattern),
         ).map((match) => ({
             name: 'Anonymous Effect',
-            description: MediaWiki.stripMarkup(match[1]).trim(),
+            description: MediaWikiParser.stripMarkup(match[1]).trim(),
             type: GrantableEffectType.CHARACTERISTIC,
             hidden: true,
         }));
@@ -113,9 +118,8 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return effects;
     }
 
-    protected static parseItemSourceQuest(
+    protected parseItemSourceQuest(
         pages: ItemSourcePageInfo[],
-        item: EquipmentItem,
     ): [ItemSourceQuest | undefined, Required<ItemSourcePageInfo[]>] {
         const questPages = pages.filter(
             (page) => page.data?.hasCategory('Quests'),
@@ -123,7 +127,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
         if (questPages.length > 1) {
             warn(
-                `Item '${item.name}' has a source that mentions multiple quests`,
+                `Item '${this.name}' has a source that mentions multiple quests`,
             );
         }
 
@@ -142,9 +146,8 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return [undefined, questPages];
     }
 
-    protected static async parseItemSourceCharacter(
+    protected async parseItemSourceCharacter(
         pages: ItemSourcePageInfo[],
-        item: EquipmentItem,
     ): Promise<
         [ItemSourceCharacter | undefined, Required<ItemSourcePageInfo[]>]
     > {
@@ -163,7 +166,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         if (characterPages.length > 0) {
             if (!(await characterPages[0].data.hasTemplate('CharacterInfo'))) {
                 error(
-                    `Item '${item.name}' source page '${characterPages[0].title}' has no CharacterInfo template!`,
+                    `Item '${this.name}' source page '${characterPages[0].title}' has no CharacterInfo template!`,
                 );
             }
 
@@ -181,9 +184,8 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return [undefined, characterPages];
     }
 
-    protected static async parseGameLocation(
+    protected async parseGameLocation(
         pages: ItemSourcePageInfo[],
-        item: EquipmentItem,
         characterPages: Required<ItemSourcePageInfo>[],
         questPages: Required<ItemSourcePageInfo>[],
         character?: ItemSourceCharacter,
@@ -222,7 +224,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 return locations[0];
             }
         } else if (character) {
-            const config: Record<string, MediaWikiTemplateParserConfig> = {
+            const config: MediaWikiTemplateParserConfig = {
                 location: {
                     parser: (value) => {
                         const match = value.match(/\[\[([^#|\]]+).*?]]/);
@@ -240,11 +242,10 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 },
             };
 
-            const { location: locationPageTitle } =
-                MediaWikiTemplateParser.parseTemplate(
-                    characterPages[0].data,
-                    config,
-                );
+            const template =
+                await characterPages[0].data.getTemplate('CharacterInfo');
+
+            const { location: locationPageTitle } = template.parse(config);
 
             if (locationPageTitle) {
                 try {
@@ -266,9 +267,10 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
                 const pageTitles = MediaWikiParser.getAllPageTitles(preamble);
 
-                const newPages = await this.getPageInfoFromTitles(pageTitles);
+                const newPages =
+                    await EquipmentItem.getPageInfoFromTitles(pageTitles);
 
-                return this.parseGameLocation(newPages, item, [], []);
+                return this.parseGameLocation(newPages, [], []);
             }
         }
 
@@ -300,25 +302,21 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         ).filter(Boolean) as ItemSourcePageInfo[];
     }
 
-    protected static async parseSource(
+    protected async parseSource(
         source: string,
-        item: EquipmentItem,
     ): Promise<ItemSource | undefined> {
         const pageTitles = MediaWikiParser.getAllPageTitles(source);
-        const pages = await this.getPageInfoFromTitles(pageTitles);
+        const pages = await EquipmentItem.getPageInfoFromTitles(pageTitles);
 
         const [quest, questPages] = source.toLowerCase().includes('reward')
-            ? this.parseItemSourceQuest(pages, item)
+            ? this.parseItemSourceQuest(pages)
             : [undefined, []];
 
-        const [character, characterPages] = await this.parseItemSourceCharacter(
-            pages,
-            item,
-        );
+        const [character, characterPages] =
+            await this.parseItemSourceCharacter(pages);
 
         const location = await this.parseGameLocation(
             pages,
-            item,
             characterPages as Required<ItemSourcePageInfo>[],
             questPages as Required<ItemSourcePageInfo>[],
             character,
@@ -355,10 +353,10 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
         this.id = this.page.pageId;
 
-        const { noOp, plainText, int, float } = MediaWikiTemplateParser.Parsers;
-        const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
+        const { noOp, plainText, int, float } = MediaWikiTemplate.Parsers;
+        const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
-        const config: Record<string, MediaWikiTemplateParserConfig> = {
+        const config: MediaWikiTemplateParserConfig = {
             image: { parser: noOp, default: undefined },
             icon: { parser: noOp, default: undefined },
             description: { parser: plainText, default: undefined },
@@ -405,17 +403,13 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             // notes: { parser: (value) => value.split('*'), default: undefined }, // FIXME
         };
 
-        const { sources, ...rest } = MediaWikiTemplateParser.parseTemplate(
-            this.page,
-            config,
-        );
+        const template = await this.page.getTemplate(this.templateName);
+        const { sources, ...rest } = template.parse(config);
 
         if (sources) {
             this.sources = (
                 await Promise.all(
-                    sources.map((source: string) =>
-                        EquipmentItem.parseSource(source, this),
-                    ),
+                    sources.map((source: string) => this.parseSource(source)),
                 )
             ).filter(Boolean) as ItemSource[];
 

@@ -5,14 +5,16 @@ import { backgroundsRouter } from './backgrounds';
 import { classesRouter } from './classes';
 import { racesRouter } from './races';
 import { spellsRouter } from './spells';
+import { passivesRouter } from './passives';
 
 export const router: Router = express.Router();
 
-router.use('/classes', classesRouter);
-router.use('/races', racesRouter);
-router.use('/backgrounds', backgroundsRouter);
 router.use('/actions', actionsRouter);
-router.use('/spells', spellsRouter);
+router.use('/backgrounds', backgroundsRouter);
+router.use('/classes', classesRouter);
 router.use('/items', itemsRouter);
+router.use('/passives', passivesRouter);
+router.use('/races', racesRouter);
+router.use('/spells', spellsRouter);
 
 export const dataRouter = router;

@@ -16,7 +16,8 @@
                 "proficiency": "RELIGION",
                 "description": "Add your proficiency bonus when making Religion checks."
             }
-        ]
+        ],
+        "id": 219
     },
     {
         "name": "Charlatan",
@@ -35,7 +36,8 @@
                 "proficiency": "SLEIGHT OF HAND",
                 "description": "Add your proficiency bonus when making Sleight of Hand checks."
             }
-        ]
+        ],
+        "id": 614
     },
     {
         "name": "Criminal",
@@ -54,7 +56,8 @@
                 "proficiency": "STEALTH",
                 "description": "Add your proficiency bonus when making Stealth checks."
             }
-        ]
+        ],
+        "id": 615
     },
     {
         "name": "Entertainer",
@@ -73,7 +76,8 @@
                 "proficiency": "PERFORMANCE",
                 "description": "Add your proficiency bonus when making Performance checks."
             }
-        ]
+        ],
+        "id": 616
     },
     {
         "name": "Folk Hero",
@@ -92,7 +96,8 @@
                 "proficiency": "SURVIVAL",
                 "description": "Add your proficiency bonus when making Survival checks."
             }
-        ]
+        ],
+        "id": 617
     },
     {
         "name": "Guild Artisan",
@@ -111,7 +116,8 @@
                 "proficiency": "PERSUASION",
                 "description": "Add your proficiency bonus when making Persuasion checks."
             }
-        ]
+        ],
+        "id": 618
     },
     {
         "name": "Haunted One",
@@ -130,7 +136,8 @@
                 "proficiency": "INTIMIDATION",
                 "description": "Add your proficiency bonus when making Intimidation checks."
             }
-        ]
+        ],
+        "id": 6673
     },
     {
         "name": "Noble",
@@ -149,7 +156,8 @@
                 "proficiency": "PERSUASION",
                 "description": "Add your proficiency bonus when making Persuasion checks."
             }
-        ]
+        ],
+        "id": 619
     },
     {
         "name": "Outlander",
@@ -168,7 +176,8 @@
                 "proficiency": "SURVIVAL",
                 "description": "Add your proficiency bonus when making Survival checks."
             }
-        ]
+        ],
+        "id": 620
     },
     {
         "name": "Sage",
@@ -187,7 +196,8 @@
                 "proficiency": "HISTORY",
                 "description": "Add your proficiency bonus when making History checks."
             }
-        ]
+        ],
+        "id": 621
     },
     {
         "name": "Soldier",
@@ -206,7 +216,8 @@
                 "proficiency": "INTIMIDATION",
                 "description": "Add your proficiency bonus when making Intimidation checks."
             }
-        ]
+        ],
+        "id": 622
     },
     {
         "name": "Urchin",
@@ -225,6 +236,7 @@
                 "proficiency": "STEALTH",
                 "description": "Add your proficiency bonus when making Stealth checks."
             }
-        ]
+        ],
+        "id": 623
     }
 ]

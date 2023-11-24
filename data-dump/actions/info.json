@@ -5,7 +5,7 @@
         "level": 0,
         "school": 0,
         "summary": "Abjure Enemy is an Oath of Vengeance Action. This ability allows them to Frighten an enemy.",
-        "description": "Abjure Enemy: Frightened|Frighten an enemy. They'll be easier to hit and cannot move. Fiends and undead have Disadvantage on this Saving Throw\n\nOn Save: Target is Slowed instead.",
+        "description": "Frighten an enemy. They'll be easier to hit and cannot move. Fiends and undead have Disadvantage on this Saving Throw\n\nOn Save: Target is Slowed instead.",
         "ritual": false,
         "concentration": false,
         "id": 7992,
@@ -99,7 +99,7 @@
         "level": 0,
         "school": 0,
         "summary": "Astral Knowledge is a class action for Githyanki. It grants them the ability to gain Proficiency Icon.",
-        "description": "Gain Ability.",
+        "description": "Gain Proficiency in all Skills of a chosen Ability.",
         "ritual": false,
         "concentration": false,
         "id": 6593,
@@ -163,7 +163,7 @@
         "image": "Aura of Hate Icon.png",
         "level": 0,
         "school": 0,
-        "summary": "Aura of Hate is a Class Feature of  Paladins. This ability allows a Paladin to add damage to their allies attacks.",
+        "summary": "Aura of Hate is a Class Feature of  Oathbreaker Paladins. This ability allows a Paladin to add damage to their allies attacks.",
         "description": "You and any nearby fiends (and undead) gain additional damage to melee weapon attacks equal to your Charisma Modifier. The aura disappears if you fall Unconscious.",
         "ritual": false,
         "concentration": false,
@@ -253,53 +253,12 @@
         ]
     },
     {
-        "name": "Beak Attack (Dire Raven Wild Shape)",
-        "damage": "amount:2d4, type: Piercing, mod: Dexterity",
-        "image": "Beak Attack Raven Icon.png",
-        "level": 0,
-        "school": 0,
-        "summary": "Beak Attack is a Wild Shape: Dire Raven Action. Dire Ravens and Ravens use this ability to make a melee attack that deals Piercing Damage to enemies.",
-        "description": "Peck at a target, dealing 2d4 + Dexterity Modifier|Piercing damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1177,
-        "attackRoll": true,
-        "range": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Bear Companion",
-        "image": "Bear Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bear Companion is a variant of Summon Companion which is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 14208,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Bend Luck",
         "image": "Bend Luck.webp",
         "level": 0,
         "school": 0,
         "summary": "Bend Luck is both a free action and reaction that grants a bonus or penalty to a target's Attack Roll, Ability Check, or Saving Throw.",
-        "description": "Give a target a {{DieIcon|d4|Physical1d4}} bonus or penalty to an Attack Roll, D20|25 Ability Check, or SavingThrow.",
+        "description": "Give a target a {{DieIcon|d4|Physical1d4}} bonus or penalty to an Attack Roll,  Ability Check, or SavingThrow.",
         "ritual": false,
         "concentration": false,
         "id": 17215,
@@ -344,35 +303,13 @@
         ]
     },
     {
-        "name": "Bite (Sabre-Toothed Tiger)",
-        "damage": "amount:2d6, type: Piercing, mod: Strength",
-        "image": "Bite.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bite (Sabre-Toothed Tiger) is a Wild Shape: Sabre-Toothed Tiger Action. You can use this ability to make a melee attack that deals Piercing Damage to enemies.",
-        "description": "Bite a target.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18905,
-        "attackRoll": true,
-        "range": 2,
-        "condition": "Prone",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Blade of Rime",
         "damage": "amount:1d10, type:Piercing",
         "image": "Blade of Rime.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action that allows the Way of the Four Elements to use their equivalent of Ice Knife by expending ki|forceplural=yes instead of Spell Slots.",
-        "description": "Throw a shard of ice that deals 1d10|Piercing damage. It explodes and deals 2d6|Cold to anyone nearby. It leaves an ice surface.\n\nThis spell can be cast while you are Silenced|Silenced.",
+        "summary": "Blade of Rime is an action that allows the Way of the Four Elements to use their equivalent of Ice Knife by expending ki|forceplural=yes instead of Spell Slots.",
+        "description": "Throw a shard of ice that deals 1d10|Piercing damage. It explodes and deals 2d6|Cold to anyone nearby. It leaves an ice surface.\n\nThis spell can be cast while you are Silenced.",
         "ritual": false,
         "concentration": false,
         "id": 7857,
@@ -422,140 +359,12 @@
         ]
     },
     {
-        "name": "Boar Companion",
-        "image": "Boar Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Boar Companion is a variant of Summon Companion which is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 14209,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Bolstering Magic: Boon",
-        "image": "Bolstering Magic Boon.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bolstering Magic: Boon is a Wild Magic Barbarian Class Action. This ability gives bonuses to Attack Rolls and Ability Checks for up to a minute, once per long rest.",
-        "description": "You or an ally receive d4|Physical +1d4 bonus to Attack Rolls and Ability Checks for 10 turns.",
-        "ritual": false,
-        "concentration": false,
-        "id": 16446,
-        "attackRoll": false,
-        "range": 2,
-        "condition": "Bolstering Magic: Boon",
-        "conditionDuration": 10,
-        "recharge": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Bolstering Magic: Level 1 Spell Slot",
-        "image": "Bolstering Magic Level 1 Spell Slot.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bolstering Magic: Level 1 Spell Slot is a Wild Magic Barbarian Class Action. This ability recovers a Level 1 spell slot for you or an ally, once per long rest.",
-        "description": "You or an ally recover a Level 1 Spell Slot",
-        "ritual": false,
-        "concentration": false,
-        "id": 16457,
-        "attackRoll": false,
-        "range": 2,
-        "recharge": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Bolstering Magic: Level 2 Spell Slot",
-        "image": "Bolstering Magic Level 2 Spell Slot.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bolstering Magic: Level 2 Spell Slot is a Wild Magic Barbarian Class Action. This ability recovers a Level 2 spell slot for you or an ally, once per long rest.",
-        "description": "You or an ally recover a Level 2 Spell Slot",
-        "ritual": false,
-        "concentration": false,
-        "id": 16458,
-        "attackRoll": false,
-        "range": 2,
-        "recharge": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Bolstering Magic: Level 3 Spell Slot",
-        "image": "Bolstering Magic Level 3 Spell Slot.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Bolstering Magic: Level 3 Spell Slot is a Wild Magic Barbarian Class Action class action. This ability recovers a Level 3 spell slot for you or an ally, once per long rest.",
-        "description": "You or an ally recover a Level 3 Spell Slot",
-        "ritual": false,
-        "concentration": false,
-        "id": 16460,
-        "attackRoll": false,
-        "range": 2,
-        "recharge": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Burrow (Earth Myrmidon)",
-        "damage": "amount:2d8, type: Bludgeoning",
-        "image": "Burrow.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Burrow is a Wild Shape: Earth Myrmidon Action. You can use this ability to pseudo Teleport to a new location, dealing damage to enemies as you arrive.",
-        "description": "Let the ground swallow you up, only for you to re-emerge in a terrific burst of earth, damaging nearby foes.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18961,
-        "attackRoll": false,
-        "range": 1,
-        "rangeM": 12,
-        "rangeFt": 40,
-        "aoe": 1,
-        "aoeM": 3,
-        "aoeFt": 10,
-        "costs": [
-            {
-                "resource": 2,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Charm Animals and Plants",
         "image": "Charm Animals and Plants.webp",
         "level": 0,
         "school": 0,
         "summary": "Charm Animals and Plants is an Action available to Nature Domains. This ability allows these Clerics to reduce the aggressiveness of nearby fauna and flora.",
-        "description": "Channel fey magic to Charmed|Charm nearby beasts and plants.",
+        "description": "Channel fey magic to Charm nearby beasts and plants.",
         "ritual": false,
         "concentration": false,
         "id": 9704,
@@ -579,7 +388,7 @@
         "image": "Ray of Frost.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action that allows the Way of the Four Elements to hit with cold damage and reduce the movement speed of their opponent. This action is the Monk's equivalent of Ray of Frost.",
+        "summary": "Chill of the Mountain is an action that allows the Way of the Four Elements to hit with cold damage and reduce the movement speed of their opponent. This action is the Monk's equivalent of Ray of Frost.",
         "description": "Call forth the cold mountain winds and reduce the target's movement speed by ft=10.",
         "ritual": false,
         "concentration": false,
@@ -599,54 +408,11 @@
         ]
     },
     {
-        "name": "Cinderous Swipe",
-        "damage": "amount:weapon",
-        "image": "Cinderous Swipe.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Cinderous Swipe' is a Wild Shape: Fire Myrmidon Action. You can use this ability to make a melee attack in a large cone shape and deal extra Fire damage.",
-        "description": "Create a blooming cone of fire as you swipe at a foe.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18977,
-        "attackRoll": false,
-        "range": 2,
-        "aoe": 2,
-        "aoeM": 5,
-        "aoeFt": 16,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Claws (Bear Wild Shape)",
-        "damage": "amount:2d4, type:Slashing, mod:Strength",
-        "image": "Claws Bear.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Claws is a Wild Shape: Bear Action. Bears use this ability to make a melee attack that deals Slashing Damage to enemies.",
-        "description": "Lash out with deadly claws.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1193,
-        "attackRoll": true,
-        "range": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Clench of the North Wind",
         "image": "Hold Person.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an Action that allows the Way of the Four Elements to cast Hold Person as a class action.",
+        "summary": "Clench of the North Wind is an Action that allows the Way of the Four Elements to cast Hold Person as a class action.",
         "description": "Hold a humanoid enemy still. They can't move, act or react. Attacks from within 3m are always critical hits.",
         "ritual": false,
         "concentration": false,
@@ -670,8 +436,8 @@
         "image": "Cloak of Shadows.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of Shadow and Trickery Domain action that allows you to enter the shadows and disappear from sight.",
-        "description": "Wrap yourself in shadows to become Cloak of Shadows|Invisible if you are Obscured.\n\nInvisibility ends early if you attack, cast another spell, take an action, or take damage.",
+        "summary": "Cloak of Shadows is a Way of Shadow and Trickery Domain action that allows you to enter the shadows and disappear from sight.",
+        "description": "Wrap yourself in shadows to become Invisible if you are Obscured.\n\nInvisibility ends early if you attack, cast another spell, take an action, or take damage.",
         "ritual": false,
         "concentration": false,
         "id": 18418,
@@ -729,6 +495,36 @@
             },
             {
                 "resource": 24,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Commander's Strike",
+        "image": "Commanders Strike.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Commander's Strike is a Battle Master Action. This combat manoeuvre allows the Fighter to expend an action, bonus action, and Superiority Dice to have an ally make an weapon attack on their next turn using a reaction.",
+        "description": "Direct an ally to strike a foe. The ally uses a reaction on their next turn to make a weapon attack.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14411,
+        "attackRoll": false,
+        "rangeM": 9,
+        "rangeFt": 30,
+        "condition": "Onus of Battle",
+        "conditionDuration": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 22,
                 "amount": 1
             }
         ]
@@ -949,31 +745,11 @@
         ]
     },
     {
-        "name": "Dash",
-        "image": "Dash.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Dash is a common Action. This ability allow characters to double their movement speed.",
-        "description": "Cover more distance this turn: double your Movement Speed.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1149,
-        "attackRoll": false,
-        "condition": "Dash",
-        "conditionDuration": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Defensive Duellist",
         "image": "Defensive Duellist.webp",
         "level": 0,
         "school": 0,
-        "summary": "Defensive Duellist is a Reaction obtainable by a Finesse Weapon weapon, you can temporarily increases your ArmourClass.",
+        "summary": "Defensive Duellist is a Reaction obtainable by a Feat of the same name. If you are attacked while wielding a Finesse Weapon weapon, you can temporarily increases your ArmourClass.",
         "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
         "ritual": false,
         "concentration": false,
@@ -1078,47 +854,6 @@
         ]
     },
     {
-        "name": "Dire Raven Companion",
-        "image": "Dire Raven Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Dire Raven Companion is a variant of Summon Companion which is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 14210,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Disengage",
-        "image": "Disengage.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Disengage is an Action that allows the user to safely move out of melee range of a threatening enemy without being attacked.",
-        "description": "Focus on retreating safely. Moving won't provoke Opportunity Attacks.",
-        "ritual": false,
-        "concentration": false,
-        "id": 3924,
-        "attackRoll": false,
-        "condition": "Disengage",
-        "conditionDuration": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Divine Intervention",
         "image": "Divine Intervention Sunder the Heretical.webp",
         "level": 0,
@@ -1164,7 +899,7 @@
         "image": "Divine Strike Radiant Melee.webp",
         "level": 0,
         "school": 0,
-        "summary": "Divine Strike is a Weapon Action-like ability available to level 8 Life,  Trickery, Nature, Tempest, and War. Divine Strike deals 1 ~ 8 additional damage upon a weapon strike (either melee or ranged) of a type dependent on the chosen Domain.",
+        "summary": "Divine Strike is a Weapon Action-like ability available to level 8 Clerics of the following Domains:  Life,  Trickery, Nature, Tempest, and War. Divine Strike deals 1 ~ 8 additional damage upon a weapon strike (either melee or ranged) of a type dependent on the chosen Domain.",
         "description": "* Divine Strike Radiant Melee Icon Melee Skill: Once per turn deal 1d8 {Variation Damage Type} damage in addition to your weapon's {Weapon Damage} {Weapon Type} damage.\n* Divine Strike Radiant Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8 {Variation Damage Type} damage.",
         "ritual": false,
         "concentration": false,
@@ -1180,11 +915,97 @@
         ]
     },
     {
+        "name": "Divine Strike: Poison",
+        "damage": "amounttext:Weapon, type:Physical",
+        "image": "Divine Strike Poison Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Divine Strike: Poison is a Trickery Domain action or reaction that deals extra Poison damage upon a weapon strike (either melee or ranged).",
+        "description": "* Divine Strike Poison Melee Icon Melee Skill: Once per turn deal 1d8|Poison damage in addition to your weapon's damage.\n* Divine Strike Poison Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Poison damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 19142,
+        "attackRoll": true,
+        "range": 4,
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Divine Strike: Radiant",
+        "damage": "amounttext:Weapon, type:Physical",
+        "image": "Divine Strike Radiant Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Divine Strike: Radiant is a Life Domain action and reaction that deals extra Radiant damage upon a weapon strike (either melee or ranged).",
+        "description": "* Divine Strike Radiant Melee Icon Melee Skill: Once per turn deal 1d8|Radiant damage in addition to your weapon's damage.\n* Divine Strike Radiant Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Radiant damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 13412,
+        "attackRoll": true,
+        "range": 4,
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Divine Strike: Weapon",
+        "damage": "amounttext:Weapon, type:Physical",
+        "image": "Divine Strike Physical Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Divine Strike: Weapon is a War Domain action or reaction that deals extra Weapon damage upon a weapon strike (either melee or ranged).",
+        "description": "* Divine Strike Physical Melee Icon Melee Skill: Once per turn deal 1d8|Physical damage in addition to your weapon's damage.\n* Divine Strike Physical Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Physical damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 19140,
+        "attackRoll": true,
+        "range": 4,
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Diving Strike",
+        "damage": "amounttext:Weapon, type:Physical",
+        "image": "Diving Strike.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Diving Strike is a Wildheart action only available while using Rage: Eagle Heart, allowing you to leap down on a target dealing damage and knocking them prone.",
+        "description": "Leap down unto a foe below you, dealing Weapon Damage and knocking them Prone.\n\nYou do not take Falling damage. You must be at least m=1.5|ft=5 above your target.\n\nAvailable only when Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1150,
+        "attackRoll": true,
+        "rangeM": 8,
+        "rangeFt": 25,
+        "condition": "Prone",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Dread Ambusher: Hide",
         "image": "Dread Ambusher Hide.webp",
         "level": 0,
         "school": 0,
-        "summary": "Dread Ambusher: Hide is a Gloom Stalker Bonus Action. This ability allows Gloom Stalkers to use their Bonus Action to Hiding (Condition)|Hide from view.",
+        "summary": "Dread Ambusher: Hide is a Gloom Stalker Bonus Action. This ability allows Gloom Stalkers to use their Bonus Action to Hide from view.",
         "description": "Hide from enemies by succeeding at Stealth checks. Stick to the dark and avoid enemy sightlines. Attacking or casting a spell will reveal your location.",
         "ritual": false,
         "concentration": false,
@@ -1204,7 +1025,7 @@
         "level": 0,
         "school": 0,
         "summary": "Dreadful Aspect is an Action available to those that have chosen the path of the Oathbreaker. This ability allows these Paladins to channel their dark emotions to frighten their enemies.",
-        "description": "Let your darkest emotions burst forth as a menacing pulse to Frightened|Frighten nearby enemies.",
+        "description": "Let your darkest emotions burst forth as a menacing pulse to Frighten nearby enemies.",
         "ritual": false,
         "concentration": false,
         "id": 3606,
@@ -1232,7 +1053,7 @@
         "image": "Elemental Affinity Resistance.webp",
         "level": 0,
         "school": 0,
-        "summary": "Elemental Affinity: Resistance is a Resistance to the element matching your Draconic Bloodline",
+        "summary": "Elemental Affinity: Resistance is a Draconic Bloodline Sorcerer reaction that grants you Resistance to the element matching your Draconic Bloodline",
         "description": "When you cast a spell that deals damage matching your draconic ancestry, you can spend a sp|1 to gain Resistance to that damage type.",
         "ritual": false,
         "concentration": false,
@@ -1251,32 +1072,12 @@
         ]
     },
     {
-        "name": "Elemental Warp",
-        "image": "Elemental Warp.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Teleport to an unoccupied space up to m=18|ft=60 away.",
-        "description": "Surrounded by silver mist, you teleport to an unoccupied space you can see.",
-        "ritual": false,
-        "concentration": false,
-        "id": 16348,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "costs": [
-            {
-                "resource": 2,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Embrace of the Inferno",
         "damage": "amount:2d6, per:ray, type:Fire",
         "image": "Scorching Ray.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an Action that allows the Way of the Four Elements to cast Scorching Ray as a class action. Embrace of the Inferno hurls 3 rays of fire at targets within range. You can either target a single creature or multiple creatures with the rays. Each ray rolls a separate Attack Roll and deals Fire damage.",
+        "summary": "Embrace of the Inferno is an Action that allows the Way of the Four Elements to cast Scorching Ray as a class action. Embrace of the Inferno hurls 3 rays of fire at targets within range. You can either target a single creature or multiple creatures with the rays. Each ray rolls a separate Attack Roll and deals Fire damage.",
         "ritual": false,
         "concentration": false,
         "id": 14447,
@@ -1291,28 +1092,6 @@
             {
                 "resource": 11,
                 "amount": 3
-            }
-        ]
-    },
-    {
-        "name": "Enhanced Jump",
-        "image": "Jump Bonus Action.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Enhanced Jump is a bonus action that allows characters to jump vertically or horizontally, up to a distance determined by their Strength score.",
-        "description": "Jump up, down, and across. Your Strength affects how far you can jump.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18921,
-        "attackRoll": false,
-        "costs": [
-            {
-                "resource": 2,
-                "amount": 1
-            },
-            {
-                "resource": 4,
-                "amount": 10
             }
         ]
     },
@@ -1361,32 +1140,22 @@
         ]
     },
     {
-        "name": "Explosive Icicle",
-        "damage": "amount:3d8, type: Cold",
-        "image": "Explosive Icicle.webp",
+        "name": "Evasive Footwork",
+        "image": "Evasive Footwork.webp",
         "level": 0,
         "school": 0,
-        "summary": "Explosive Icicle is a Wild Shape: Water Myrmidon Action. You can use this ability to shoot three blasts of ice, creating Ice surfaces.",
-        "description": "Hurl three tridents forged of glistening ice that pierce targets and create ice surfaces on impact.",
+        "summary": "Evasive Footwork is a Battle Master Fighter free action. This combat manoeuvre allows the Fighter to impose Disadvantage on melee attacks made against it for a turn.",
+        "description": "Evade attacks; enemies receive Disadvantage on melee attacks against you.",
         "ritual": false,
         "concentration": false,
-        "id": 18991,
-        "attackRoll": true,
-        "range": 1,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "aoe": 1,
-        "aoeM": 2,
-        "aoeFt": 6,
-        "areaName": "Ice",
-        "areaCategory": 2,
-        "areaShape": 1,
-        "areaRangeM": 2,
-        "areaRangeFt": 6,
-        "areaDuration": 2,
+        "id": 14409,
+        "attackRoll": false,
+        "range": 3,
+        "condition": "Evasive Footwork",
+        "conditionDuration": 1,
         "costs": [
             {
-                "resource": 1,
+                "resource": 22,
                 "amount": 1
             }
         ]
@@ -1397,7 +1166,7 @@
         "image": "Fangs of the Fire Snake.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action that allows the Way of the Four Elements to hit an enemy, dealing unarmed damage with 1d10|Fire, and deal an extra 1d4|Fire damage on their next melee attack.",
+        "summary": "Fangs of the Fire Snake is an action that allows the Way of the Four Elements to hit an enemy, dealing unarmed damage with 1d10|Fire, and deal an extra 1d4|Fire damage on their next melee attack.",
         "description": "Hit foes from afar.  Your next melee attacks deal an additional 1d4|Fire damage.",
         "ritual": false,
         "concentration": false,
@@ -1425,7 +1194,7 @@
         "level": 0,
         "school": 0,
         "summary": "Fey Presence is an Archfey Action. This ability allows the Warlock to charm or frighten enemies at short range.",
-        "description": "Charmed|Charm or Frightened|Frighten nearby foes with the feywild's beguiling, disturbing magics.",
+        "description": "Charm or Frighten nearby foes with the feywild's beguiling, disturbing magics.",
         "ritual": false,
         "concentration": false,
         "id": 4651,
@@ -1493,7 +1262,7 @@
         "image": "Thunderwave.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action that allows the Way of the Four Elements to push creatures and objects away. It is the Monk equivalent of Thunderwave.",
+        "summary": "Fist of Four Thunders is an action that allows the Way of the Four Elements to push creatures and objects away. It is the Monk equivalent of Thunderwave.",
         "description": "Release a wave of thunderous force that pushes away all creatures and objects.",
         "ritual": false,
         "concentration": false,
@@ -1519,8 +1288,8 @@
         "image": "Fist of Unbroken Air.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action that allows the Way of the Four Elements to punch an enemy at distance, sending them flying backwards..",
-        "description": "Push the target back m=6|ft=20 and knock it Prone (Condition)|Prone.",
+        "summary": "Fist of Unbroken Air is an action that allows the Way of the Four Elements to punch an enemy at distance, sending them flying backwards..",
+        "description": "Push the target back m=6|ft=20 and knock it Prone.",
         "ritual": false,
         "concentration": false,
         "id": 7861,
@@ -1547,7 +1316,7 @@
         "image": "Fireball Icon.png",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action that allows the Way of the Four Elements to cast Fireball as a class action.",
+        "summary": "Flames of the Phoenix is an action that allows the Way of the Four Elements to cast Fireball as a class action.",
         "description": "Shoot a bright flame from your fingers that explodes upon contact, torching everything in the vicinity",
         "ritual": false,
         "concentration": false,
@@ -1569,7 +1338,7 @@
         "image": "Flurry of Blows.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a bonus that allows the Monk to deal two unarmed strikes at their opponent. This skill does not have to come after an Attack or an action.",
+        "summary": "Flurry of Blows is a bonus that allows the Monk to deal two unarmed strikes at their opponent. This skill does not have to come after an Attack or an action.",
         "description": "Punch twice in quick succession.",
         "ritual": false,
         "concentration": false,
@@ -1593,7 +1362,7 @@
         "image": "Flurry of Blows Push.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of the Open Hand bonus action that enhances your Flurry of Blows to push your target away from you as well.",
+        "summary": "Flurry of Blows: Push is a Way of the Open Hand bonus action that enhances your Flurry of Blows to push your target away from you as well.",
         "description": "Punch twice in quick succession and potentially push your target m=5|ft=16 away.",
         "ritual": false,
         "concentration": false,
@@ -1617,8 +1386,8 @@
         "image": "Flurry of Blows Stagger.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of the Open Hand bonus action that enhances your Flurry of Blows to stagger your target as well, preventing reactions as long as it connects.",
-        "description": "Punch twice in quick succession and Open Hand Technique: Staggered (Condition)|Stagger the target, making it unable to take Reactions.",
+        "summary": "Flurry of Blows: Stagger is a Way of the Open Hand bonus action that enhances your Flurry of Blows to stagger your target as well, preventing reactions as long as it connects.",
+        "description": "Punch twice in quick succession and Stagger the target, making it unable to take Reactions.",
         "ritual": false,
         "concentration": false,
         "id": 18390,
@@ -1643,8 +1412,8 @@
         "image": "Flurry of Blows Topple.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of the Open Hand bonus action that enhances your Flurry of Blows to knock your target prone.",
-        "description": "Punch twice in quick succession and potentially knock the target Prone (Condition)|Prone.",
+        "summary": "Flurry of Blows: Topple is a Way of the Open Hand bonus action that enhances your Flurry of Blows to knock your target prone.",
+        "description": "Punch twice in quick succession and potentially knock the target Prone.",
         "ritual": false,
         "concentration": false,
         "id": 18397,
@@ -1690,7 +1459,7 @@
         "image": "Frenzied Strike.webp",
         "level": 0,
         "school": 0,
-        "summary": "Frenzied Strike is a Berserker Bonus Action. This ability allows the Berserker to make a melee attack as a bonus action once per turn.\n\nLooking for the Barbarian bonus action? See {{SAI|Rage.}}",
+        "summary": "Frenzied Strike is a Berserker Bonus Action. This ability allows the Berserker to make a melee attack as a bonus action once per turn.",
         "description": "As a bonus action, make a melee attack with your equipped weapon.\n\n* Will cause a stack of Frenzied Strain on the barbarian.\n* Available only when Frenzied.",
         "ritual": false,
         "concentration": false,
@@ -1713,7 +1482,7 @@
         "level": 0,
         "school": 0,
         "summary": "Frenzy is a Berserker Bonus Action that is a superset of Rage. This ability turns the Berserker's anger into an uncontrollable fury and grants additional abilities in addition to those from Rage. Wearing Heavy Armour triggers the Rage Impeded Condition, removing some benefits of Frenzy.",
-        "description": "Available only in combat.\n\nYour Rage turns into a frenzy! You gain Frenzied Strike and Enraged Throw. You can also make an Improvised Melee Weapon (Bonus Action)|Improvised Melee Weapon as a bonus action.\n\nYou have Resistance to physical damage, and Advantage on Strength Checks and Saving Throws.\n\nRage ends early if you don't attack an enemy or take damage each turn.\n\nYou can't cast or concentrate on spells while raging.",
+        "description": "Available only in combat.\n\nYour Rage turns into a frenzy! You gain Frenzied Strike and Enraged Throw. You can also make an Improvised Melee Weapon as a bonus action.\n\nYou have Resistance to physical damage, and Advantage on Strength Checks and Saving Throws.\n\nRage ends early if you don't attack an enemy or take damage each turn.\n\nYou can't cast or concentrate on spells while raging.",
         "ritual": false,
         "concentration": false,
         "id": 1103,
@@ -1801,35 +1570,12 @@
         ]
     },
     {
-        "name": "Goading Roar",
-        "image": "Goading Roar.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Goading Roar is a Wild Shape: Bear and Bear Companion Action. Bears use this ability to taunt enemies into attacking them.",
-        "description": "Roar at nearby enemies to goad them into attacking you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1192,
-        "attackRoll": false,
-        "aoe": 1,
-        "aoeFt": 30,
-        "condition": "Goaded",
-        "conditionDuration": 2,
-        "conditionSave": 5,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Gong of the Summit",
         "damage": "amount: 3d8, type:Thunder",
         "image": "Shatter.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an Action that allows Way of the Four Elements to cast a monk version of the spell Shatter.",
+        "summary": "Gong of the Summit is an Action that allows Way of the Four Elements to cast a monk version of the spell Shatter.",
         "description": "Damages all nearby creatures and objects. Creatures made of inorganic material such as stone have Disadvantage on their SavingThrow.",
         "ritual": false,
         "concentration": false,
@@ -1853,34 +1599,12 @@
         ]
     },
     {
-        "name": "Grounded Thunder Strike",
-        "damage": "amount:1d10, type: Bludgeoning, mod: Strength",
-        "image": "Grounded Thunder Strike.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Grounded Thunder Strike is a Wild Shape: Earth Myrmidon Action. You can use this ability to make a melee attack that deals Thunder Damage to enemies.",
-        "description": "Wallop a foe with a fist of stone and thunder, knocking them Prone (Condition)|Prone.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18958,
-        "attackRoll": true,
-        "range": 2,
-        "condition": "Prone",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Guided Strike",
-        "image": "Guided Strike.webp",
+        "image": "Guided Strike Icon.png",
         "level": 0,
         "school": 0,
-        "summary": "Guided Strike is a War Domain}}s. This ability allows these Clerics to gain +10 to an Attack Roll at the cost of one Cleric#Level_2|Channel Divinity Charge. This does not cost a Reaction to use. [[War Domain Clerics get War God's Blessing at a later level for a variation of this for their allies.",
-        "description": "Guided Strike is a Reaction available to War Domain Clerics. This ability allows these Clerics to gain +10 to an Attack Roll at the cost of one Channel Divinity Charge. This does not cost a Reaction to use.",
+        "summary": "Guided Strike is a Reaction available to War Domains. This ability allows these Clerics to gain +10 to an Attack Roll at the cost of one Channel Divinity Charge. This does not cost a Reaction to use. War Domain Clerics get War God's Blessing at a later level for a variation of this for their allies.",
+        "description": "Gain a +10 bonus to your Attack Roll.",
         "ritual": false,
         "concentration": false,
         "id": 9099,
@@ -1963,34 +1687,6 @@
         ]
     },
     {
-        "name": "Healing Vapours",
-        "damage": "amount:3d8, type:Healing, cond:yes",
-        "image": "Hiemal Strike.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Healing Vapours is a Wild Shape: Water Myrmidon Action. You can use this ability to heal nearby creatures or hurt them if you are poisoned.",
-        "description": "Exude water vapour with your general elemental dampness, healing nearby creatures for 3d8|Healing.\n\nIf you are Poisoned, the water is tainted, and instead of healing it deals 3d8|Poison damage to nearby creatures.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18994,
-        "attackRoll": false,
-        "range": 1,
-        "rangeM": 9,
-        "rangeFt": 30,
-        "areaName": "Water",
-        "areaCategory": 2,
-        "areaShape": 1,
-        "areaRangeM": 9,
-        "areaRangeFt": 30,
-        "areaDuration": 3,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Heart of the Storm: Lightning",
         "damage": "amounttext:Sorcerer Level / 2, type:Lightning",
         "image": "Heart of the Storm Lightning.webp",
@@ -2037,31 +1733,11 @@
         ]
     },
     {
-        "name": "Help",
-        "image": "Help.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Help is a Common Action. This ability allows characters to aid an ally in combat and remove negative Conditions.",
-        "description": "Help an ally in need.\n\nRemove Burning, Downed, Ensnared, Entangled, Enwebbed, Prone, Sleeping.",
-        "ritual": false,
-        "concentration": false,
-        "id": 2275,
-        "attackRoll": false,
-        "rangeM": 2,
-        "rangeFt": 5,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Hide in Plain Sight",
         "image": "Hide in Plain Sight.webp",
         "level": 0,
         "school": 0,
-        "summary": "Hide in Plain Sight is a Ranger class action that makes you Invisible and gives a +10 bonus to Checks as long as you stand still.",
+        "summary": "Hide in Plain Sight is a Ranger class action that makes you Invisible and gives a +10 bonus to Stealth Checks as long as you stand still.",
         "description": "Camouflage yourself with your environment to become Invisible and gain a +10 bonus on Stealth Checks, as long as you stand still.",
         "ritual": false,
         "concentration": false,
@@ -2107,7 +1783,7 @@
         "level": 0,
         "school": 0,
         "summary": "Hypnotic Gaze is an Enchantment Class Action that attempts to Incapacitate a creature. You can maintain your gaze to keep it going",
-        "description": "Charmed|Charm and Incapacitated|Incapacitates a creature. It cannot attack you. It cannot act.\n\nYou can Maintain Hypnotic Gaze your Hypnotic Gaze each turn to extend its duration.",
+        "description": "Charm and Incapacitates a creature. It cannot attack you. It cannot act.\n\nYou can Maintain Hypnotic Gaze your Hypnotic Gaze each turn to extend its duration.",
         "ritual": false,
         "concentration": false,
         "id": 16814,
@@ -2187,7 +1863,7 @@
         "image": "Inciting Howl.webp",
         "level": 0,
         "school": 0,
-        "summary": "Inciting Howl is an action available to Wildhearts with the Rage: Wolf Heart bestial heart. This ability allows them to use their wolf-like anger to increase their allies' movement speed.\n\nThis page is for the Barbarian action. For the Beast Master companion action see {{SAI|Rage (Boar).}}",
+        "summary": "Inciting Howl is an action available to Wildhearts with the Rage: Wolf Heart bestial heart. This ability allows them to use their wolf-like anger to increase their allies' movement speed.",
         "description": "Each ally within earshot can move an additional 3 m / 10 ft during their next turn.",
         "ritual": false,
         "concentration": false,
@@ -2244,8 +1920,8 @@
         "image": "Inquisitor's Might.webp",
         "level": 0,
         "school": 0,
-        "summary": "Inquisitor's Might is a Bonus Action available to Oath of Vengeance. This ability allows these Paladins to grant a 2 turn single-target buff which causes their or their ally's weapon attacks to deal an additional +Charisma Radiant damage and can Dazed|Daze enemies for 1 turn.",
-        "description": "You or an ally's weapon attacks deal an additional +Charisma Radiant damage and can Dazed|Daze enemies for 1 turn.",
+        "summary": "Inquisitor's Might is a Bonus Action available to Oath of Vengeance. This ability allows these Paladins to grant a 2 turn single-target buff which causes their or their ally's weapon attacks to deal an additional +Charisma Radiant damage and can Daze enemies for 1 turn.",
+        "description": "You or an ally's weapon attacks deal an additional +Charisma Radiant damage and can Daze enemies for 1 turn.",
         "ritual": false,
         "concentration": false,
         "id": 6888,
@@ -2270,8 +1946,8 @@
         "image": "Instinctive Charm.webp",
         "level": 0,
         "school": 0,
-        "summary": "Instinctive Charm is an Enchantment reaction that Charms an attacker, redirecting the attack to someone else. If they succeed the WIS, they cannot be affected again until after a Long Rest.",
-        "description": "Charmed (Condition)|Charm an enemy attacking you. They will attack a new target if possible as a reaction.",
+        "summary": "Instinctive Charm is an Enchantment reaction that Charms an attacker, redirecting the attack to someone else. If they succeed the WIS saving throw, they cannot be affected again until after a Long Rest.",
+        "description": "Charm an enemy attacking you. They will attack a new target if possible as a reaction.",
         "ritual": false,
         "concentration": false,
         "id": 16834,
@@ -2293,7 +1969,7 @@
         "level": 0,
         "school": 0,
         "summary": "Intimidating Presence is a Berserker Action. This ability allows the Barbarian instill fear into their enemies.",
-        "description": "Menace an enemy and instill a terrible Frightened|Fear within them.\n\nYou can use Maintain Intimidating Presence to prolong the targets fear.",
+        "description": "Menace an enemy and instill a terrible Fear within them.\n\nYou can use Maintain Intimidating Presence to prolong the targets fear.",
         "ritual": false,
         "concentration": false,
         "id": 9534,
@@ -2303,27 +1979,6 @@
         "condition": "Frightened",
         "conditionDuration": 2,
         "conditionSave": 5,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Invisibility (Air Myrmidon)",
-        "image": "Generic Invisibility.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Invisibility (Air Myrmidon) is a Wild Shape: Air Myrmidon Action that allows you to go Invisible for as long as you maintain concentration.",
-        "description": "Manipulate the currents of the air to make yourself undetectable.\n\nInvisibility ends early if you attack, cast another spell, take an action, or take damage.",
-        "ritual": false,
-        "concentration": true,
-        "id": 18933,
-        "attackRoll": false,
-        "range": 3,
-        "condition": "Invisible",
-        "recharge": 2,
         "costs": [
             {
                 "resource": 1,
@@ -2356,33 +2011,13 @@
         ]
     },
     {
-        "name": "Jugular Strike (Sabre-Toothed Tiger)",
-        "damage": "amount:1d4, type: Piercing, mod: Strength",
-        "image": "Jugular Strike.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Jugular Strike (Sabre-Toothed Tiger) is a Wild Shape: Sabre-Toothed Tiger Action. You can use this ability to make a melee attack that deals extra Piercing damage if the target is Prone.",
-        "description": "Lunge at a creature's throat. if the target is Prone, you deal an additional 2d6+Strength Modifier|Piercing damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18910,
-        "attackRoll": true,
-        "range": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Ki Resonation: Blast",
         "damage": "amount: 3d6, type: Force",
         "image": "Ki Resonation Blast.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of the Open Hand free action that allows you to detonate the ki in anyone resonating with you. The explosion hits the creature and anyone nearby.",
-        "description": "Detonate the ki of a creature Resonating Ki|Resonating with you, hitting the creature and anyone within m=5|ft=16 of it.\n\nThe resulting explosion causes any nearby creatures Resonating with you to also detonate.",
+        "summary": "Ki Resonation: Blast is a Way of the Open Hand free action that allows you to detonate the ki in anyone resonating with you. The explosion hits the creature and anyone nearby.",
+        "description": "Detonate the ki of a creature Resonating with you, hitting the creature and anyone within m=5|ft=16 of it.\n\nThe resulting explosion causes any nearby creatures Resonating with you to also detonate.",
         "ritual": false,
         "concentration": false,
         "id": 18748,
@@ -2406,8 +2041,8 @@
         "image": "Ki Resonation Punch.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of the Open Hand action that allows you to punch a target, activating the Ki within them. You can then detonate this Ki to cause an explosion.",
-        "description": "Hit a creature with your bare fists, making the ki in its body Resonating Ki|Resonate with yours.\n\nYou can then make this ki explode with Ki Resonation: Blast.",
+        "summary": "Ki Resonation: Punch (Action) is a Way of the Open Hand action that allows you to punch a target, activating the Ki within them. You can then detonate this Ki to cause an explosion.",
+        "description": "Hit a creature with your bare fists, making the ki in its body Resonate with yours.\n\nYou can then make this ki explode with Ki Resonation: Blast.",
         "ritual": false,
         "concentration": false,
         "id": 18744,
@@ -2428,8 +2063,8 @@
         "image": "Ki Resonation Punch.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of the Open Hand bonus action that allows you to punch a target, activating the Ki within them. You can then detonate this Ki to cause an explosion.",
-        "description": "Hit a creature with your bare fists, making the ki in its body Resonating Ki|Resonate with yours.\n\nYou can then make this ki explode with Ki Resonation: Blast.",
+        "summary": "Ki Resonation: Punch (Bonus Action) is a Way of the Open Hand bonus action that allows you to punch a target, activating the Ki within them. You can then detonate this Ki to cause an explosion.",
+        "description": "Hit a creature with your bare fists, making the ki in its body Resonate with yours.\n\nYou can then make this ki explode with Ki Resonation: Blast.",
         "ritual": false,
         "concentration": false,
         "id": 18745,
@@ -2450,7 +2085,7 @@
         "level": 0,
         "school": 0,
         "summary": "Knowledge of the Ages is a Knowledge Domain Cleric Action. This ability allows the Cleric to channel divine power, gaining Proficiency in all Skills of a chosen Ability Score.",
-        "description": "Gain Ability.",
+        "description": "Gain Proficiency in all Skills of a chosen Ability.",
         "ritual": false,
         "concentration": false,
         "id": 7917,
@@ -2527,50 +2162,6 @@
         "costs": [
             {
                 "resource": 2,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Maintain Hypnotic Gaze",
-        "image": "Maintain Hypnotic Gaze.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Maintain Hypnotic Gaze is an Enchantment class action that lets you keep a creature Hypnotic Gaze (Condition)|Hypnotised further.",
-        "description": "Maintain your Hypnotic Gaze to extend its duration.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20016,
-        "attackRoll": false,
-        "range": 2,
-        "condition": "Hypnotic Gaze",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Maintain Intimidating Presence",
-        "image": "Maintain Intimidating Presence.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Maintain Intimidating Presence is a Berserker Action. This ability allows the Barbarian to continue to instill fear into their enemies.",
-        "description": "Prolong the Frightened|Fear inflicted on a target by your Intimidating Presence",
-        "ritual": false,
-        "concentration": false,
-        "id": 9536,
-        "attackRoll": false,
-        "rangeM": 9,
-        "rangeFt": 30,
-        "condition": "Frightened",
-        "conditionDuration": 2,
-        "conditionSave": 5,
-        "costs": [
-            {
-                "resource": 1,
                 "amount": 1
             }
         ]
@@ -2656,7 +2247,7 @@
         "level": 0,
         "school": 0,
         "summary": "Mobile Flourish (Melee) is a College of Swords Action. This flourish manoeuvre allows the Bard to use a Bardic Inspiration to deal extra damage to a target with a melee weapon, sending them flying backwards. Afterwards, you can teleport next to them.",
-        "description": "Thrust your weapon with enough force to push your target back m=6|ft=20. Afterwards, you can Mobile Flourish: Teleport|Teleport to the target.",
+        "description": "Thrust your weapon with enough force to push your target back m=6|ft=20. Afterwards, you can Teleport to the target.",
         "ritual": false,
         "concentration": false,
         "id": 18897,
@@ -2683,7 +2274,7 @@
         "level": 0,
         "school": 0,
         "summary": "Mobile Flourish (Ranged) is a College of Swords Action. This flourish manoeuvre allows the Bard to use a Bardic Inspiration to deal extra damage to a target with a ranged weapon, sending them flying backwards. Afterwards, you can teleport next to them.",
-        "description": "Thrust your weapon with enough force to push your target back m=6|ft=20. Afterwards, you can Mobile Flourish: Teleport|Teleport to the target.",
+        "description": "Thrust your weapon with enough force to push your target back m=6|ft=20. Afterwards, you can Teleport to the target.",
         "ritual": false,
         "concentration": false,
         "id": 18898,
@@ -2704,53 +2295,11 @@
         ]
     },
     {
-        "name": "Muck to Metal",
-        "image": "Muck to Metal.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Muck to Metal is a Wild Shape: Earth Myrmidon action. You can use this ability to physically harden your body, increasing your Armour Class but reducing your Movement Speed.",
-        "description": "Harden your slippery body into a substance like steel, increasing your Armour Class by 2, but reducing your Movement Speed by m=6|ft=20.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18964,
-        "attackRoll": false,
-        "range": 3,
-        "condition": "Transmuted to Steel",
-        "conditionDuration": 4,
-        "costs": [
-            {
-                "resource": 4,
-                "amount": 20
-            }
-        ]
-    },
-    {
-        "name": "Myrmidon's Immolation",
-        "image": "Myrmidon's Immolation.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Myrmidon's Immolation' is a Wild Shape: Fire Myrmidon Action. You can use this ability to make yourself much faster like the spell Haste.",
-        "description": "Ignite with incandescent, primordial flames that Hastened (Condition)|Hasten you.",
-        "ritual": false,
-        "concentration": true,
-        "id": 18976,
-        "attackRoll": false,
-        "range": 3,
-        "condition": "Hastened",
-        "conditionDuration": 3,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Natural Recovery",
         "image": "Natural Recovery.webp",
         "level": 0,
         "school": 0,
-        "summary": "Natural Recovery is a Spell Slots once per day.",
+        "summary": "Natural Recovery is a Circle of the Land Druid Action. This ability allows these Druids to replenish Spell Slots once per day.",
         "description": "Available only out of combat.\n\nOnce per day while out of combat, you can replenish expended Spell Slots.",
         "ritual": false,
         "concentration": false,
@@ -2839,6 +2388,25 @@
         ]
     },
     {
+        "name": "Precision Attack",
+        "image": "Precision Attack.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Precision Attack is a Battle Master Fighter Action. This combat manoeuvre allows the Fighter to increase an attack roll for a higher chance of hitting an opponent.",
+        "description": "Your can spend a Superiority Die to add it to a result to an Attack Roll.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14360,
+        "attackRoll": false,
+        "condition": "Precision Attack",
+        "costs": [
+            {
+                "resource": 22,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Preserve Life",
         "damage": "amount:(3 x Cleric's Level), type:Healing",
         "image": "Preserve Life.webp",
@@ -2861,6 +2429,34 @@
             },
             {
                 "resource": 8,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Primal Stampede",
+        "damage": "amounttext:1d4 + Strength modifier, type:Bludgeoning",
+        "level": 0,
+        "school": 0,
+        "summary": "Primal Stampede is a Wildheart action only available while using Rage: Elk Heart, allowing you charge in a line dealing damage to all enemies and knocking them prone.",
+        "description": "Charge forward, attacking all hostile creatures in your way. Deals 1d4 {{DamageModifier|Strength|Bludgeoning}} damage and knocks targets Prone.\n\nAvailable only when Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1152,
+        "attackRoll": true,
+        "rangeM": 9,
+        "rangeFt": 30,
+        "aoeM": 9,
+        "aoeFt": 30,
+        "condition": "Prone",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 4,
                 "amount": 1
             }
         ]
@@ -2935,7 +2531,7 @@
         "image": "Rage.webp",
         "level": 0,
         "school": 0,
-        "summary": "Rage is a Barbarian Bonus Action and Class Feature. Enter a Rage to gain Resistance against physical damage, deal extra melee and thrown damage, and Advantage on Strength Checks and Saving Throws. Wearing Heavy Armour triggers the Rage Impeded Condition, removing most benefits of Rage.\n\nThis page is for the Barbarian action. For the Beast Master companion action see {{SAI|Rage (Boar).}}",
+        "summary": "Rage is a Barbarian Bonus Action and Class Feature. Enter a Rage to gain Resistance against physical damage, deal extra melee and thrown damage, and Advantage on Strength Checks and Saving Throws. Wearing Heavy Armour triggers the Rage Impeded Condition, removing most benefits of Rage.",
         "description": "Available only in combat.\n\nWhile Raging, you are stronger, and you deal 2 extra damage with melee and improvised weapons, and when throwing objects.\n\nYou have Resistance to physical damage, and Advantage on Strength Checks and Saving Throws.\n\nRage ends early if you don't attack an enemy or take damage each turn.\n\nYou can't cast or concentrate on spells while raging.",
         "ritual": false,
         "concentration": false,
@@ -2961,7 +2557,7 @@
         "image": "Rage Bear Heart.webp",
         "level": 0,
         "school": 0,
-        "summary": "Rage: Bear Heart  is a Wildheart Bonus Action. This ability allows them to use their bear-like anger to gain resistance against all types of damage (except psychic) and deal extra melee damage to enemies.\n\nThis page is for the Barbarian action. For the Beast Master companion action see {{SAI|Rage (Boar).}}",
+        "summary": "Rage: Bear Heart  is a Wildheart Bonus Action. This ability allows them to use their bear-like anger to gain resistance against all types of damage (except psychic) and deal extra melee damage to enemies.",
         "description": "Go into a Rage that makes you tough enough to stand up to any punishment.\n\nYou can use Unrelenting Ferocity, and have Resistance to all damage types except psychic damage.\n\nRage ends early if you haven't attacked a creature or taken damage since your last turn.",
         "ritual": false,
         "concentration": false,
@@ -2988,7 +2584,7 @@
         "level": 0,
         "school": 0,
         "summary": "Rage: Eagle Heart is a Wildheart Bonus Action. This ability allows them to use their eagle-like anger to become hard to hit and gain the ability to attack enemies from the sky.",
-        "description": "Go into a Rage that makes you near untouchable. You can use Diving Strike.\n\nFoes also have Disadvantage on Opportunity Attacks against you, and you can use Dash Bonus Action|Dash as a bonus action.\n\nRage ends early if you haven't attacked a creature or taken damage since your last turn.",
+        "description": "Go into a Rage that makes you near untouchable. You can use Diving Strike.\n\nFoes also have Disadvantage on Opportunity Attacks against you, and you can use Dash as a bonus action.\n\nRage ends early if you haven't attacked a creature or taken damage since your last turn.",
         "ritual": false,
         "concentration": false,
         "id": 1151,
@@ -3062,11 +2658,11 @@
     },
     {
         "name": "Rage: Wild Magic",
-        "image": "Rage Icon.png",
+        "image": "Rage Wild Magic.webp",
         "level": 0,
         "school": 0,
         "summary": "Rage: Wild Magic is a Wild Magic Barbarian Bonus Action. When you Rage, it causes a random magical effect to happen.",
-        "description": "Enter a Rage to gain resistance against physical damage and deal extra melee damage. Barbarians gain Rage at level 1.",
+        "description": "Enter a Rage that releases all the magic roiling inside you, causing a random magical effect.",
         "ritual": false,
         "concentration": false,
         "id": 7924,
@@ -3112,27 +2708,26 @@
         "condition2": "Rage Impeded"
     },
     {
-        "name": "Raging Vortex",
-        "damage": "amount:2d8, type: Bludgeoning",
-        "image": "Generic Damage.webp",
+        "name": "Rally",
+        "damage": "amounttext:8 Temporary, type:Healing",
+        "image": "Rally.webp",
         "level": 0,
         "school": 0,
-        "summary": "Raging Vortex is a Myrmidon Action that creates a swirling vortex that deals damage and silences any creature inside.",
-        "description": "Spiral the wind into a choking maelstrom that inflicts 2d8|Bludgeoning damage per turn and Silenced (Condition)|Silences creatures.",
+        "summary": "Rally is a Battle Master Bonus Action. This combat manoeuvre allows the Fighter to inspire an ally and grant them additional temporary hit points.",
+        "description": "Expend a superiority die to bolster the resolve of a friendly creature. It gains an additional Healing|8 Temporary Hit Points",
         "ritual": false,
         "concentration": false,
-        "id": 18931,
+        "id": 775,
         "attackRoll": false,
         "range": 1,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "aoe": 1,
-        "aoeM": 6,
-        "aoeFt": 20,
-        "condition": "Raging Vortex",
+        "condition": "Rallied",
         "costs": [
             {
-                "resource": 1,
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 22,
                 "amount": 1
             }
         ]
@@ -3199,7 +2794,7 @@
         "image": "Fly_Icon.png",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action that allows the Monk following the Class Monk Four Elements Hotbar Icon|Way of the Four Elements to Fly.",
+        "summary": "Ride the Wind is an action that allows the Monk following the Class Monk Four Elements Hotbar Icon|Way of the Four Elements to Fly.",
         "description": "Gain the ability to Fly.",
         "ritual": false,
         "concentration": false,
@@ -3218,12 +2813,36 @@
         ]
     },
     {
+        "name": "Riposte",
+        "damage": "amounttext:Weapon, type:Physical",
+        "image": "Riposte.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Riposte is a Battle Master Fighter reaction. This ability allows the Battle Master to counterattack and deal damage when an enemy misses them with a melee attack.",
+        "description": "When a creature misses you with a melee attack, expend a superiority die to retaliate with a powerful attack that deals an additional 1d8 Physical damage.\n\nThis is a Reaction. Toggle a reaction during your turn. It will automatically execute when needed.",
+        "ritual": false,
+        "concentration": false,
+        "id": 780,
+        "attackRoll": true,
+        "range": 4,
+        "costs": [
+            {
+                "resource": 3,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Rush of the Gale Spirits",
         "image": "Gust of Wind.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action that allows the Way of the Four Elements to conjure a squall to clear dangerous gasses or throw creatures back, potentially causing a dangerous fall. This action is the Monk's equivalent of Gust of Wind",
-        "description": "Summon a strong wind that clears all clouds and pushes creatures back m=5|ft=17, forcing them Off Balance (Condition)|Off Balance.",
+        "summary": "Rush of the Gale Spirits is an action that allows the Way of the Four Elements to conjure a squall to clear dangerous gasses or throw creatures back, potentially causing a dangerous fall. This action is the Monk's equivalent of Gust of Wind",
+        "description": "Summon a strong wind that clears all clouds and pushes creatures back m=5|ft=17, forcing them Off Balance.",
         "ritual": false,
         "concentration": false,
         "id": 8962,
@@ -3295,7 +2914,7 @@
         "image": "See Invisibility.webp",
         "level": 0,
         "school": 0,
-        "summary": "See Invisibility is an Illusion class action that lets you see Invisible creatures until Long Rest. The effect is similar to the spell See Invisibility (Spell)|See Invisibility.",
+        "summary": "See Invisibility is an Illusion class action that lets you see Invisible creatures until Long Rest. The effect is similar to the spell See Invisibility.",
         "description": "Glimpse Invisible creatures, and possibly reveal them to others.",
         "ritual": false,
         "concentration": false,
@@ -3316,8 +2935,8 @@
         "image": "Darkness.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of Shadow Action. This ability allows Monks to conjure a cloud of darkness in an area within range that obscures and Blinds those within it.",
-        "description": "Create a cloud of magical darkness that Heavily Obscured|Heavily Obscures and Blinded|Blinds creatures within. Creatures cannot make ranged attacks into or out of it.",
+        "summary": "Shadow Arts: Darkness is a Way of Shadow Action. This ability allows Monks to conjure a cloud of darkness in an area within range that obscures and Blinds those within it.",
+        "description": "Create a cloud of magical darkness that Heavily Obscures and Blinds creatures within. Creatures cannot make ranged attacks into or out of it.",
         "ritual": false,
         "concentration": true,
         "id": 18516,
@@ -3347,7 +2966,7 @@
         "image": "Darkvision Spell.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of Shadow Action. This ability allows Monks to alter a creature's sight, granting them the ability to see in the dark\n\n:For the passive feature inherent to races and monsters, see {{SAI|Darkvision (Passive Feature).}}\n:For the Level 2 spell, see {{SAI|Darkvision (Spell).}}",
+        "summary": "Shadow Arts: Darkvision is a Way of Shadow Action. This ability allows Monks to alter a creature's sight, granting them the ability to see in the dark\n\n:\n:",
         "description": "Grant a creature the ability to see in the dark out to a range of m=12|ft=40.",
         "ritual": false,
         "concentration": false,
@@ -3371,7 +2990,7 @@
         "image": "Hide Bonus Action.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of Shadow Bonus Action. This ability allows Monks to use their Bonus Action to Hiding (Condition)|Hide from view.\n\nFor the Rogue version of this skill, see Cunning Action: Hide",
+        "summary": "Shadow Arts: Hide is a Way of Shadow Bonus Action. This ability allows Monks to use their Bonus Action to Hide from view.\n\nFor the Rogue version of this skill, see Cunning Action: Hide",
         "description": "Hide from enemies by succeeding at Stealth checks. Stick to the dark and avoid enemy sightlines. Attacking or casting a spell will reveal your location.",
         "ritual": false,
         "concentration": false,
@@ -3390,8 +3009,8 @@
         "image": "Pass Without Trace.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of Shadow Action. This ability allows Monks to grants themselves and nearby allies a bonus to stealth. This action is the Monk's equivalent of the spell Pass Without Trace",
-        "description": "Call forth a veil of shadow and silence that gives you and nearby allies a +10 bonus to Checks.",
+        "summary": "Shadow Arts: Pass Without Trace is a Way of Shadow Action. This ability allows Monks to grants themselves and nearby allies a bonus to stealth. This action is the Monk's equivalent of the spell Pass Without Trace",
+        "description": "Call forth a veil of shadow and silence that gives you and nearby allies a +10 bonus to Stealth Checks.",
         "ritual": false,
         "concentration": true,
         "id": 18515,
@@ -3417,8 +3036,8 @@
         "image": "Silence.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of Shadow Action. This ability allows Monks to summon a sphere of absolute quietness in an area within range. Creatures within this sphere are immune to Thunder damage and cannot cast verbal spells.\n\n:For the Level 2 spell, see {{SAI|Silence.}}",
-        "description": "Create a sound-proof sphere. All within are Immune to Thunder damage.",
+        "summary": "Shadow Arts: Silence is a Way of Shadow Action. This ability allows Monks to summon a sphere of absolute quietness in an area within range. Creatures within this sphere are immune to Thunder damage and cannot cast verbal spells.\n\n:",
+        "description": "Create a sound-proof sphere. All within are Silenced and Immune to Thunder damage.",
         "ritual": false,
         "concentration": false,
         "id": 18843,
@@ -3448,7 +3067,7 @@
         "image": "Shadow Step.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of Shadow bonus that allows you to enter the shadows and reappear at a distant location, granting you Advantage on your next attack.",
+        "summary": "Shadow Step is a Way of Shadow bonus that allows you to enter the shadows and reappear at a distant location, granting you Advantage on your next attack.",
         "description": "Teleport from shadow to shadow.\n\nAfterwards, you have Advantage on your next melee Attack Roll.",
         "ritual": false,
         "concentration": false,
@@ -3472,7 +3091,7 @@
         "image": "Shadow Strike.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of Shadow action that lets you strike from the shadows dealing Psychic damage",
+        "summary": "Shadow Strike is a Way of Shadow action that lets you strike from the shadows dealing Psychic damage",
         "description": "Teleport to a foe from a hidden position, striking them with the creeping, psychic ferocity of the shadows themselves.",
         "ritual": false,
         "concentration": false,
@@ -3500,7 +3119,7 @@
         "image": "Shadow Strike Unarmed.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is a Way of Shadow action that lets you strike from the shadows with your fists, dealing Psychic damage.",
+        "summary": "Shadow Strike: Unarmed is a Way of Shadow action that lets you strike from the shadows with your fists, dealing Psychic damage.",
         "description": "Teleport to a foe from a hidden position, striking them with the creeping, psychic ferocity of the shadows themselves.",
         "ritual": false,
         "concentration": false,
@@ -3528,7 +3147,7 @@
         "level": 0,
         "school": 0,
         "summary": "Shapechanger is a Transmutation action that allows you to transform into a Blue Jay at will, without expending any spell slots.",
-        "description": "Transform into a blue jay, able to Fly (Class Action)|Fly. \n\nIf the blue jay's hit points drop to 0, the target reverts to its original form with its original hit points.",
+        "description": "Transform into a blue jay, able to Fly. \n\nIf the blue jay's hit points drop to 0, the target reverts to its original form with its original hit points.",
         "ritual": false,
         "concentration": true,
         "id": 16857,
@@ -3547,7 +3166,7 @@
         "image": "Shaping of the Ice.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action that allows the Way of the Four Elements to create an ice cube that can be climbed.",
+        "summary": "Shaping of the Ice is an action that allows the Way of the Four Elements to create an ice cube that can be climbed.",
         "description": "Create a climbable ice cube.",
         "ritual": false,
         "concentration": false,
@@ -3571,8 +3190,8 @@
         "image": "Shield Master Block.webp",
         "level": 0,
         "school": 0,
-        "summary": "Shield Master: Block is a reaction/toggleable passive feature obtainable by the Spell that requires you to make a DEX.",
-        "description": "If a Spell forces you to make a DEX, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
+        "summary": "Shield Master: Block is a reaction/toggleable passive feature obtainable by the Shield Master Feat. Users of this feature able to reduce the damage taken from a Spell that requires you to make a DEX saving throw.",
+        "description": "If a Spell forces you to make a DEX saving throw, you can use your Reaction to shield yourself and diminish the effect's damage.\n* On a failed save, you only take half damage.\n* On a successful save, you don't take any damage, even if you normally would.",
         "ritual": false,
         "concentration": false,
         "id": 21510,
@@ -3581,28 +3200,6 @@
         "costs": [
             {
                 "resource": 3,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Shred Armour",
-        "damage": "amount:2d4, type: Piercing, mod: Strength",
-        "image": "Shred Armor.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Shred Armor is a Wild Shape: Sabre-Toothed Tiger Action. You can use this ability to make a melee attack that deals Slashing damage and reduces your defences.",
-        "description": "Rip into a target's weaknesses, reducing their Armour Class by 1.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18918,
-        "attackRoll": true,
-        "range": 2,
-        "condition": "Shredded Armour",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
                 "amount": 1
             }
         ]
@@ -3679,35 +3276,6 @@
         ]
     },
     {
-        "name": "Sludgy Sling",
-        "damage": "amount:2d6, type: Bludgeoning",
-        "image": "Sludgy Sling.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Sludgy Sling is a Wild Shape: Earth Myrmidon Action. You can use this ability to deal damage to creatures around you as well as cover the area in a Mud surface.",
-        "description": "Overwhelm creatures with painfully heavy sludge, miring the area around yourself in thick mud.",
-        "ritual": false,
-        "concentration": false,
-        "id": 18959,
-        "attackRoll": true,
-        "range": 3,
-        "aoe": 1,
-        "aoeM": 3,
-        "aoeFt": 10,
-        "areaName": "Mud",
-        "areaCategory": 2,
-        "areaShape": 1,
-        "areaRangeM": 3,
-        "areaRangeFt": 10,
-        "areaDuration": 3,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Sneak Attack (Melee)",
         "damage": "amounttext:Weapon, type:Physical",
         "image": "Sneak Attack Melee.webp",
@@ -3773,7 +3341,7 @@
         "image": "Chromatic Orb.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action that allows the Way of the Four Elements to create a sphere that channels different elements. This action is the Monk's equivalent of Chromatic Orb.",
+        "summary": "Sphere of Elemental Balance is an action that allows the Way of the Four Elements to create a sphere that channels different elements. This action is the Monk's equivalent of Chromatic Orb.",
         "description": "Hurl a sphere of energy.\n\nIt deals 3d8|Thunder damage, or 2d8 Acid, Cold, Fire, Lightning or Poison damage and creates a surface.",
         "ritual": false,
         "concentration": false,
@@ -3843,7 +3411,7 @@
         "level": 0,
         "school": 0,
         "summary": "Stunning Strike (Melee) is a Monk Action. This Action allows the Monk to deal damage to enemies with Melee Weapons and possibly Stun them.",
-        "description": "Spend a ki to deal Weapon Damage and possibly Stunned|Stun the target.",
+        "description": "Spend a ki to deal Weapon Damage and possibly Stun the target.",
         "ritual": false,
         "concentration": false,
         "id": 8937,
@@ -3870,7 +3438,7 @@
         "level": 0,
         "school": 0,
         "summary": "Stunning Strike (Unarmed) is a Monk Action. This Action allows the Monk to deal damage to enemies with an Unarmed Strike and possibly Stun them.",
-        "description": "Spend a ki to deal Unarmed Damage and possibly Stunned|Stun the target.",
+        "description": "Spend a ki to deal Unarmed Damage and possibly Stun the target.",
         "ritual": false,
         "concentration": false,
         "id": 8936,
@@ -3933,12 +3501,39 @@
         ]
     },
     {
+        "name": "Sweeping Attack",
+        "damage": "amount:1d10, type:Physical",
+        "image": "Action SweepingAttack Large.png",
+        "level": 0,
+        "school": 0,
+        "summary": "Sweeping Attack is a Class Action using Superiority Dice available to Battle Masters",
+        "description": "Swing your weapon in a rapid, sweeping arc to attack multiple enemies at once. Roll you superiority die for damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14032,
+        "attackRoll": true,
+        "range": 4,
+        "aoe": 5,
+        "aoeM": 3,
+        "aoeFt": 10,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Sweeping Cinder Strike",
         "damage": "amount:3d6, type:Fire",
         "image": "Burning Hands.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action that allows the Way of the Four Elements to shoot a flaming cone from their fingertips and deal Fire damage to enemies. This is the Monk's equivalent of Burning Hands.",
+        "summary": "Sweeping Cinder Strike is an action that allows the Way of the Four Elements to shoot a flaming cone from their fingertips and deal Fire damage to enemies. This is the Monk's equivalent of Burning Hands.",
         "description": "Expel fire from your outstretched hands and ignite anything flammable.",
         "ritual": false,
         "concentration": false,
@@ -4041,7 +3636,7 @@
         "level": 0,
         "school": 0,
         "summary": "Tides of Chaos is a Reaction that grants Advantage on your next Attack Roll, Ability Check, or Saving Throw and increases the chance of a Wild Magic surge afterwards to 50% (normally 5%).",
-        "description": "Gain Advantage on your next Attack Roll, D20|25 Wild Magic surge afterwards.",
+        "description": "Gain Advantage on your next Attack Roll,  Ability Check, or SavingThrow. Increased chance of Wild Magic surge afterwards.",
         "ritual": false,
         "concentration": false,
         "id": 17206,
@@ -4055,12 +3650,36 @@
         ]
     },
     {
+        "name": "Tiger's Bloodlust",
+        "damage": "amounttext:1/2 Normal Weapon Damage, type:Physical",
+        "image": "Tiger's Bloodlust.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Tiger's Bloodlust is a Wildheart action only available while using Rage: Tiger Heart, allowing you to attack multiple nearby enemies at once.",
+        "description": "Lash out to attack up to 3 enemies at once. They each take half the damage your weapon usually deals and start to Bleed.\n\nAvailable only when Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1155,
+        "attackRoll": true,
+        "aoe": 2,
+        "aoeM": 2,
+        "aoeFt": 5,
+        "condition": "Bleeding",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Touch of the Storm",
         "damage": "amount:1d10, type:Lightning",
         "image": "Shocking Grasp.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an Action that allows the Way of the Four Elements to strike nearby enemies with lightning, causing them to be unable to use reactions. This is the Monk's equivalent of Shocking Grasp.",
+        "summary": "Touch of the Storm is an Action that allows the Way of the Four Elements to strike nearby enemies with lightning, causing them to be unable to use reactions. This is the Monk's equivalent of Shocking Grasp.",
         "description": "The target cannot use reactions. This spell has Advantage on creatures with metal armour.",
         "ritual": false,
         "concentration": false,
@@ -4091,126 +3710,6 @@
         "id": 16839,
         "attackRoll": false,
         "condition": "Transmuter's Stone: Depleted Magic",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Acid Resistance",
-        "image": "Transmuter's Stone Resistance.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Acid Resistance is a variation of Transmuter's Stone that makes you take half as much damage when hit by an Acid attack.",
-        "description": "Create a stone that grants the carrier Resistance to Acid damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20166,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Acid Resistance",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Cold Resistance",
-        "image": "Transmuter's Stone Resistance.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Cold Resistance is a variation of Transmuter's Stone that makes you take half as much damage when hit by a Cold attack.",
-        "description": "Create a stone that grants the carrier Resistance to Cold damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20167,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Cold Resistance",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Constitution",
-        "image": "Transmuter's Stone Constitution.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Constitution is a variation of Transmuter's Stone that allows you to create a stone that provides Proficiency in Constitution Saving Throws.",
-        "description": "Create a stone that grants the carrier Proficiency in Constitution Saving Throws.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20158,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Constitution",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Darkvision",
-        "image": "Transmuter's Stone Darkvision.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Constitution is a variation of Transmuter's Stone that allows you to create a stone that provides Darkvision to a range of m=18|ft=60",
-        "description": "Create a stone that lets the carrier see in the dark out to a range of m=18|ft=60.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20159,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Darkvision",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Fire Resistance",
-        "image": "Transmuter's Stone Resistance.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Fire Resistance is a variation of Transmuter's Stone that makes you take half as much damage when hit by a Fire attack.",
-        "description": "Create a stone that grants the carrier Resistance to Fire damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20168,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Fire Resistance",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Lightning Resistance",
-        "image": "Transmuter's Stone Resistance.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Lightning Resistance is a variation of Transmuter's Stone that makes you take half as much damage when hit by an Acid attack.",
-        "description": "Create a stone that grants the carrier Resistance to Lightning damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20169,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Lightning Resistance",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Speed",
-        "image": "Transmuter's Stone Speed.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Speed is a variation of Transmuter's Stone that allows you to create a stone that provides increased movement speed.",
-        "description": "Create a stone that increases the carrier's movement speed by m=3|ft=10.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20164,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Speed",
-        "recharge": 1,
-        "costs": []
-    },
-    {
-        "name": "Transmuter's Stone: Thunder Resistance",
-        "image": "Transmuter's Stone Resistance.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Transmuter's Stone: Thunder Resistance is a variation of Transmuter's Stone that makes you take half as much damage when hit by an Acid attack.",
-        "description": "Create a stone that grants the carrier Resistance to Thunder damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 20170,
-        "attackRoll": false,
-        "condition": "Transmuter's Stone: Thunder Resistance",
         "recharge": 1,
         "costs": []
     },
@@ -4249,7 +3748,7 @@
         "level": 0,
         "school": 0,
         "summary": "Turn the Faithless is an Action available to Oath of the Ancients. This ability allows the Paladin to make fey and fiends flee from them.",
-        "description": "Channel your Oath using ancient words to Turned|Turn nearby fey and fiends.\n\nThe condition ends upon taking damage.",
+        "description": "Channel your Oath using ancient words to Turn nearby fey and fiends.\n\nThe condition ends upon taking damage.",
         "ritual": false,
         "concentration": false,
         "id": 4010,
@@ -4276,7 +3775,7 @@
         "level": 0,
         "school": 0,
         "summary": "Turn the Unholy is an Action available to Oath of Devotion. This ability allows these Paladins to make Undead and Fiends(see notes) flee from them.",
-        "description": "Turned|Turn nearby fey and fiends. They are forced to flee and cannot come close to you.\n\nThe condition ends upon taking damage.",
+        "description": "Turn nearby fey and fiends. They are forced to flee and cannot come close to you.\n\nThe condition ends upon taking damage.",
         "ritual": false,
         "concentration": false,
         "id": 3398,
@@ -4303,7 +3802,7 @@
         "level": 0,
         "school": 0,
         "summary": "Umbral Shroud is a Gloom Stalker Action that lets you become Invisible so long as you are enshrouded in shadows.",
-        "description": "Area must be Lightly or Heavily Obscured\n\nWrap yourself in shadows to become Umbral Shroud (Condition)|Invisible if you are obscured.\n\nInvisibility ends early if you attack, cast another spell, take an action, or take damage",
+        "description": "Area must be Lightly or Heavily Obscured\n\nWrap yourself in shadows to become Invisible if you are obscured.\n\nInvisibility ends early if you attack, cast another spell, take an action, or take damage",
         "ritual": false,
         "concentration": false,
         "id": 17899,
@@ -4317,19 +3816,6 @@
                 "amount": 1
             }
         ]
-    },
-    {
-        "name": "Undead Thralls: Animate Dead",
-        "image": "Undead Thralls Animate Dead.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Undead Thralls: Animate Dead is a Necromancy passive feature that grants you the spell Animate Dead.",
-        "description": "You gain the Animate Dead spell, if you didn't have it already",
-        "ritual": false,
-        "concentration": false,
-        "id": 16836,
-        "attackRoll": false,
-        "costs": []
     },
     {
         "name": "Unrelenting Ferocity",
@@ -4357,7 +3843,7 @@
         "level": 0,
         "school": 0,
         "summary": "Unstable Backlash is a Wild Magic Barbarian Passive Feature. While raging, receiving damage will trigger the effects of Wild Magic.",
-        "description": "While Raging, when you take damage or fail a Wild Magic effect that replaces the current one.",
+        "description": "While Raging, when you take damage or fail a Saving Throw, you trigger another Wild Magic effect that replaces the current one.",
         "ritual": false,
         "concentration": false,
         "id": 9532,
@@ -4400,7 +3886,7 @@
         "image": "War Caster Concentration.webp",
         "level": 0,
         "school": 0,
-        "summary": "War Caster Opportunity Spell is a reaction/passive feature obtainable by the Shocking Grasp}} at an enemy when they leave your melee range. This can be done instead of the usual [[Opportunity Attack.",
+        "summary": "War Caster Opportunity Spell is a reaction/passive feature obtainable by the War Caster Feat. Users of this feature are adept at casting Shocking Grasp at an enemy when they leave your melee range. This can be done instead of the usual Opportunity Attack.",
         "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
         "ritual": false,
         "concentration": false,
@@ -4419,8 +3905,8 @@
         "image": "War God's Blessing.webp",
         "level": 0,
         "school": 0,
-        "summary": "War God's Blessing is a War Domain}}s. This ability allows these Clerics to grant their ally a +10 to an Attack Roll at the cost of one Cleric#Level_2|Channel Divinity Charge. This does not cost a Reaction to use. [[War Domain Clerics get Guided Strike at an earlier level for themselves; War God's Blessing is a variation of Guided Strike for their allies.",
-        "description": "War God's Blessing is a Reaction available to War Domain Clerics. This ability allows these Clerics to grant their ally a +10 to an Attack Roll at the cost of one Channel Divinity Charge. This does not cost a Reaction to use.",
+        "summary": "War God's Blessing is a Reaction available to War Domains. This ability allows these Clerics to grant their ally a +10 to an Attack Roll at the cost of one Channel Divinity Charge. This does not cost a Reaction to use. War Domain Clerics get Guided Strike at an earlier level for themselves; War God's Blessing is a variation of Guided Strike for their allies.",
+        "description": "Endow a nearby ally with the glory of your god to grant them a +10 bonus to their Attack Roll.",
         "ritual": false,
         "concentration": false,
         "id": 11776,
@@ -4478,7 +3964,7 @@
         "image": "Water Whip.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an Action that allows a Way of the Four Elements to either knock a target prone, or pull a target towards them.",
+        "summary": "Water Whip is an Action that allows a Way of the Four Elements to either knock a target prone, or pull a target towards them.",
         "description": "Possibly pulls a target within 9m toward you or knocks it Prone.",
         "ritual": false,
         "concentration": false,
@@ -4520,8 +4006,8 @@
         "image": "Wholeness of Body.webp",
         "level": 0,
         "school": 0,
-        "summary": "PAGENAME is an action unique to Class Monk Open Hand Hotbar Icon|Way of the Open Hand, a subclass of Monk, that lets the monk regain Ki Points and have an extra bonus action.",
-        "description": "Regain half your Ki and enter a temporary state of Wholeness of Body (Condition)|Wholeness where you regain Ki Points and have an extra bonus.",
+        "summary": "Wholeness of Body is an action unique to Class Monk Open Hand Hotbar Icon|Way of the Open Hand, a subclass of Monk, that lets the monk regain Ki Points and have an extra bonus action.",
+        "description": "Regain half your Ki and enter a temporary state of Wholeness where you regain Ki Points and have an extra bonus.",
         "ritual": false,
         "concentration": false,
         "id": 8916,
@@ -4713,48 +4199,6 @@
         ]
     },
     {
-        "name": "Wolf Companion",
-        "image": "Wolf Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Summon Companion: Wolf is a variant of Summon Companion which is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 14211,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Wolf Spider Companion",
-        "image": "Wolf Spider Companion.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Summon Companion: Wolf Spider is a variant of Summon Companion which is a Subclass Feature of Rangers learned immediately upon choosing the Beast Master subclass. This ability allows the Beast Master to call upon their animal companion to fight and aid them in combat.",
-        "description": "Gain a beast companion that accompanies you on your adventures and fights alongside you.",
-        "ritual": false,
-        "concentration": false,
-        "id": 14212,
-        "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
-        "recharge": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Wrath of the Storm: Lightning",
         "damage": "amount:2d8, type:Lightning",
         "image": "Wrath of the Storm Lightning.webp",
@@ -4788,6 +4232,343 @@
         "costs": [
             {
                 "resource": 3,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Charger: Shove",
+        "level": 0,
+        "school": 0,
+        "summary": "Charger: Shove is a weapon action granted by the Charger feat that lets you rush forward and shove the first enemy in your path. This ability uses both your action and your bonus.",
+        "description": "Charge forward and Shove the first enemy in your way. Your chances depend on your Athletics, and are higher if you're hidden or invisible.\n\nThe shove distance depends on your Strength and the target's weight.\n\nDoesn't provoke Opportunity Attacks.",
+        "ritual": false,
+        "concentration": false,
+        "id": 21643,
+        "attackRoll": false,
+        "rangeM": 9,
+        "rangeFt": 30,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Charger: Weapon Attack",
+        "damage": "weapon",
+        "extraDamage": "5",
+        "extraDamageType": 15,
+        "level": 0,
+        "school": 0,
+        "summary": "Charger: Weapon Attack is a weapon action granted by the Charger feat that lets you rush forward and hit the first enemy in your path. This ability uses both your action and your bonus.",
+        "description": "Deal more damage: charge forward and slam your weapon in the first enemy in your way.\n\nDoesn't provoke Opportunity Attacks.",
+        "ritual": false,
+        "concentration": false,
+        "id": 21641,
+        "attackRoll": true,
+        "rangeM": 9,
+        "rangeFt": 30,
+        "costs": []
+    },
+    {
+        "name": "Disarming Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Disarming Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Disarming Attack (Melee) is a Battle Master Action. This combat manoeuvre allows the Fighter to deal damage to enemies with Melee Weapons and possibly make them drop their Weapons.",
+        "description": "Spend a superiority die to deal Weapon Damage + 1d8 Physical damage and potentially force the target to drop the weapons they are holding.",
+        "ritual": false,
+        "concentration": false,
+        "id": 785,
+        "attackRoll": true,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Distracting Strike (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Distracting Strike Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Distracting Strike (Melee) is a Battle Master Action. This combat manoeuvre allows the Fighter to give its allies Advantage on their attack rolls against a target while dealing a bit of extra damage.",
+        "description": "Distract the target, giving your allies Advantage on their next Attack Roll against it.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14404,
+        "attackRoll": true,
+        "condition": "Distracted",
+        "conditionDuration": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Dread Ambusher (Melee)",
+        "damage": "weapon",
+        "extraDamage": "1d8",
+        "extraDamageType": 15,
+        "image": "Dread Ambusher Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Dread Ambusher (Melee) is a Gloom Stalker weapon action. It lets you make an extra attack at the start of combat.",
+        "description": "On the first turn of each combat, ambush a target with an additional swift and precise attack.",
+        "ritual": false,
+        "concentration": false,
+        "id": 17892,
+        "attackRoll": true,
+        "range": 2,
+        "recharge": 3,
+        "costs": []
+    },
+    {
+        "name": "Dread Ambusher (Ranged)",
+        "damage": "weapon",
+        "extraDamage": "1d8",
+        "extraDamageType": 15,
+        "image": "Dread Ambusher Ranged.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Dread Ambusher (Ranged) is a Gloom Stalker weapon action. It lets you make an extra attack at the start of combat.",
+        "description": "On the first turn of each combat, ambush a target with an additional swift and precise attack.",
+        "ritual": false,
+        "concentration": false,
+        "id": 17894,
+        "attackRoll": true,
+        "range": 1,
+        "recharge": 3,
+        "costs": []
+    },
+    {
+        "name": "Feinting Attack",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "level": 0,
+        "school": 0,
+        "summary": "Feinting Attack is a Battle Master Fighter Action. This combat manoeuvre allows the Fighter to make an attack with Advantage with a bit of additional damage by expending a Superiority Die and both an action and bonus action.",
+        "description": "Use both your action and bonus action on a turn to attack a target with Advantage and deal an additional {{DieIcon|d8|Physical1d8}} damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14361,
+        "attackRoll": true,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 2,
+                "amount": 1,
+                "behavior": 2
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Goading Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Goading Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Goading Attack (Melee) is a Battle Master Action. This combat manoeuvre allows to taunt another creature into attack it while doing a bit of extra damage.",
+        "description": "Goad an enemy into attacking only you. It gains Disadvantage on Attack Rolls against anyone but you.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14406,
+        "attackRoll": true,
+        "condition": "Goaded",
+        "conditionDuration": 1,
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Manoeuvring Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Manoeuvering Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Manoeuvring Attack (Melee) is a Battle Master Action. It spends a superiority die to make an attack that deals an additional 1d8 damage. On a hit, select which friendly creature will gain half its movement speed and will be prevented from Opportunity Attacks.",
+        "description": "Attack an enemy. On a hit, you can use Forced Manoeuvre on an ally, increasing their movement speed.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14401,
+        "attackRoll": true,
+        "range": 4,
+        "condition": "Manoeuvring Attack",
+        "conditionDuration": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Menacing Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Menacing Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Menacing Attack (Melee) is a Battle Master Action. This combat manoeuvre allows the Fighter to deal damage to enemies with Melee Weapons and possibly Frighten them.",
+        "description": "Spend a superiority die to deal Weapon Damage + 1d8 Physical damage and possibly Frighten the target.",
+        "ritual": false,
+        "concentration": false,
+        "id": 769,
+        "attackRoll": true,
+        "condition": "Frightened",
+        "conditionDuration": 1,
+        "conditionSave": 5,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Pushing Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Pushing Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Pushing Attack (Melee) is a Battle Master Action. This combat manoeuvre allows the Fighter to deal damage to enemies with Melee Weapons and push them away.",
+        "description": "Spend a superiority die to deal an additional 1d8|Physical damage and possibly push the target back m=4.5|ft=15.",
+        "ritual": false,
+        "concentration": false,
+        "id": 771,
+        "attackRoll": true,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Trip Attack (Melee)",
+        "damage": "weapon",
+        "extraDamage": "superiority die",
+        "image": "Trip Attack Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Trip Attack (Melee) is a Battle Master Action. This combat manoeuvre allows the Fighter to deal damage to enemies with Melee Weapons and possibly knock them Prone.",
+        "description": "A powerful attack that possibly knocks the target Prone.\n\nThe target can't be Huge in size.",
+        "ritual": false,
+        "concentration": false,
+        "id": 784,
+        "attackRoll": true,
+        "condition": "prone",
+        "conditionDuration": 1,
+        "conditionSave": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Volley",
+        "damage": "weapon",
+        "level": 0,
+        "school": 0,
+        "summary": "Volley is a Hunter Class Action. This ability allows Hunters to attack an aoe radius with their ranged weapon rather than a single target.",
+        "description": "Fire a cascade of arrows upon nearby enemies.",
+        "ritual": false,
+        "concentration": false,
+        "id": 14203,
+        "attackRoll": true,
+        "rangeM": 18,
+        "rangeFt": 60,
+        "aoe": 1,
+        "aoeM": 3,
+        "aoeFt": 10,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Whirlwind Attack",
+        "damage": "weapon",
+        "level": 0,
+        "school": 0,
+        "summary": "Whirlwind Attack is a Hunter Class Action. This ability allows Hunters to attack an aoe radius with their melee attack rather than a single target.",
+        "description": "Strike out at all nearby foes, making separate Attack Rolls against each target.",
+        "ritual": false,
+        "concentration": false,
+        "id": 11612,
+        "attackRoll": true,
+        "aoe": 5,
+        "aoeM": 3,
+        "aoeFt": 10,
+        "costs": [
+            {
+                "resource": 1,
                 "amount": 1
             }
         ]

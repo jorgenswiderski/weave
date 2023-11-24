@@ -11,13 +11,17 @@ import { getCharacterRaceData } from './character-feature/features/character-rac
 import { getMongoDb } from './mongo';
 import { getEquipmentItemData } from './equipment/equipment';
 import { getSpellDataFiltered } from './action/spell';
-import { getActionDataFiltered } from './action/action';
-import { initActionsAndSpells } from './action/init';
+import { getActionDataFiltered, initActionsAndSpells } from './action/init';
 import { StaticImageCacheService } from './static-image-cache-service';
 import { initLocations } from './locations/locations';
 import { RevisionLock } from './revision-lock/revision-lock';
 import { MediaWiki } from './media-wiki/media-wiki';
 import { CONFIG } from './config';
+import {
+    getPassiveDataFiltered,
+    initPassives,
+} from './characteristic/characteristic';
+import { MwnTokenBucket } from '../api/mwn';
 
 CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS = false;
 
@@ -38,7 +42,12 @@ async function dump() {
         const startTime = Date.now();
 
         await getMongoDb();
-        await Promise.all([initLocations(), initActionsAndSpells()]);
+
+        await Promise.all([
+            initLocations(),
+            initActionsAndSpells(),
+            initPassives(),
+        ]);
 
         const datas = {
             'classes/info': getInfo(await getCharacterClassData()),
@@ -47,6 +56,7 @@ async function dump() {
             'spells/info': getSpellDataFiltered(),
             'actions/info': getActionDataFiltered(),
             'items/equipment': getEquipmentItemData(),
+            passives: getPassiveDataFiltered(),
         };
 
         await Promise.all(
@@ -63,6 +73,11 @@ async function dump() {
         await StaticImageCacheService.cleanupCache();
 
         log(`Data dump complete in ${(Date.now() - startTime) / 1000}s.`);
+
+        if (CONFIG.MWN.TRACK_TOKEN_USAGE) {
+            MwnTokenBucket.logUsage();
+        }
+
         process.exit(0);
     } catch (err) {
         error('Failed to complete data dump:');
@@ -71,5 +86,5 @@ async function dump() {
     }
 }
 
-StaticImageCacheService.enabled = true;
+StaticImageCacheService.enabled = CONFIG.MEDIAWIKI.USE_LOCAL_IMAGE_CACHE;
 dump();

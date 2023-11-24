@@ -16,28 +16,55 @@ import {
 } from './types';
 import { StaticImageCacheService } from '../static-image-cache-service';
 import { CharacterFeature } from '../character-feature/character-feature';
+import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
+import { ClassSubclassOption } from '../character-feature/features/character-subclass-option';
 
 async function parseFeatures(
     characterClass: CharacterClass,
     value: string,
     level: number,
-): Promise<ICharacterOptionWithStubs[] | null> {
-    if (value === '-') {
-        // No features this level
-        return null;
+): Promise<ICharacterOptionWithStubs[]> {
+    const features: ICharacterOptionWithStubs[] = [];
+
+    if (value !== '-') {
+        const classFeatures = (
+            await Promise.all(
+                value
+                    .split(', ')
+                    .map((featureString: string) =>
+                        ClassFeatureFactory.fromWikitext(
+                            featureString,
+                            characterClass,
+                            level,
+                        ),
+                    ),
+            )
+        ).filter(Boolean) as ICharacterOptionWithStubs[];
+
+        features.push(...classFeatures);
     }
 
-    const features = await Promise.all(
-        value
-            .split(', ')
-            .map((featureString: string) =>
-                ClassFeatureFactory.fromMarkdownString(
-                    characterClass,
-                    featureString,
-                    level,
+    if (!features.some((feature) => feature instanceof ClassSubclassOption)) {
+        const subclassFeature = new ClassSubclassOption(
+            characterClass,
+            CharacterPlannerStep.SUBCLASS_FEATURE,
+            level,
+        );
+
+        await subclassFeature.waitForInitialization();
+
+        if (
+            subclassFeature.choices?.some((choice) =>
+                choice.options.some(
+                    (option) =>
+                        (option.choices && option.choices.length > 0) ||
+                        (option.grants && option.grants.length > 0),
                 ),
-            ),
-    );
+            )
+        ) {
+            features.push(subclassFeature);
+        }
+    }
 
     return features;
 }
@@ -77,13 +104,15 @@ export class CharacterClass extends PageItem implements ICharacterClass {
 
                 await Promise.all(
                     Object.keys(item).map(async (key) => {
-                        const cleanedKey = MediaWiki.stripMarkup(key);
+                        const cleanedKey = MediaWikiParser.stripMarkup(key);
 
                         if (cleanedKey === 'Features') {
                             // Parse the features last
                             cleanedItem[cleanedKey] = item[key];
                         } else {
-                            const value = MediaWiki.stripMarkup(item[key]);
+                            const value = MediaWikiParser.stripMarkup(
+                                item[key],
+                            );
 
                             if (value === '-') {
                                 cleanedItem[cleanedKey] = 0;
@@ -315,7 +344,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
     async getProgression() {
         await this.waitForInitialization();
 
-        return this.progression as CharacterClassProgression;
+        return this.progression!;
     }
 }
 

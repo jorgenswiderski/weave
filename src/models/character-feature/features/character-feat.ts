@@ -4,19 +4,18 @@ import {
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import {
-    Characteristic,
     CharacteristicType,
     GrantableEffect,
     GrantableEffectType,
+    ICharacteristic,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import { error } from '../../logger';
-import { MediaWiki } from '../../media-wiki/media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
 import { PageLoadingState } from '../../page-item';
 import { PageNotFoundError } from '../../errors';
 import { CharacterFeature } from '../character-feature';
 import { StaticImageCacheService } from '../../static-image-cache-service';
-import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
 
 enum SubclassLoadStates {
     CHOICES = 'CHOICES',
@@ -133,7 +132,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
             feats[featName] = {
                 grants,
                 choices,
-                description: MediaWiki.stripMarkup(match[3]).trim(),
+                description: MediaWikiParser.stripMarkup(match[3]).trim(),
                 abilityImprovement: abilityImprovement ?? undefined,
             };
         });
@@ -150,7 +149,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                             abilityImprovement,
                         } = data;
 
-                        const fx: (GrantableEffect | Characteristic)[] = (
+                        const fx: (GrantableEffect | ICharacteristic)[] = (
                             await Promise.all(
                                 grants.map((pageTitle) =>
                                     CharacterFeature.parsePageForGrantableEffect(

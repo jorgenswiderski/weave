@@ -11,6 +11,7 @@ import { CharacterSubrace } from './character-subrace';
 import { CharacterFeature } from '../character-feature';
 import { Utils } from '../../utils';
 import { StaticImageCacheService } from '../../static-image-cache-service';
+import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
 
 type RaceChoice = { type: CharacterPlannerStep; options: CharacterSubrace[] };
 
@@ -53,7 +54,7 @@ export class CharacterRace extends CharacterFeature {
         let match;
 
         const choices: RaceChoice[] = [
-            { type: CharacterPlannerStep.SET_RACE, options: [] },
+            { type: CharacterPlannerStep.CHOOSE_SUBRACE, options: [] },
         ];
 
         while (true) {
@@ -109,7 +110,7 @@ export class CharacterRace extends CharacterFeature {
             return super.getDescription();
         }
 
-        return MediaWiki.stripMarkup(match[1]).trim().split('\n')[0];
+        return MediaWikiParser.stripMarkup(match[1]).trim().split('\n')[0];
     }
 
     async getInfo(): Promise<RaceInfo> {
@@ -129,7 +130,7 @@ export class CharacterRace extends CharacterFeature {
         };
     }
 
-    async initGrantableEffects(): Promise<void> {
+    async initOptionsAndEffects(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page?.content) {

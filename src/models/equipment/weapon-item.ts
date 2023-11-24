@@ -8,11 +8,9 @@ import {
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/equipment-item';
 import { DamageType } from '@jorgenswiderski/tomekeeper-shared/dist/types/damage';
 import { PageNotFoundError } from '../errors';
-import {
-    MediaWikiTemplateParser,
-    MediaWikiTemplateParserConfig,
-} from '../media-wiki/mw-template-parser';
+import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
 import { EquipmentItem } from './equipment-item';
+import { MediaWikiTemplateParserConfig } from '../media-wiki/types';
 
 export class WeaponItem extends EquipmentItem implements Partial<IWeaponItem> {
     category?: WeaponCategory;
@@ -35,7 +33,7 @@ export class WeaponItem extends EquipmentItem implements Partial<IWeaponItem> {
     special?: IActionEffect[];
 
     constructor(public name: string) {
-        super(name);
+        super(name, 'WeaponPage');
     }
 
     protected async initData(): Promise<void> {
@@ -49,10 +47,10 @@ export class WeaponItem extends EquipmentItem implements Partial<IWeaponItem> {
             return;
         }
 
-        const { plainText, boolean } = MediaWikiTemplateParser.Parsers;
-        const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
+        const { plainText, boolean } = MediaWikiTemplate.Parsers;
+        const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
-        const config: Record<string, MediaWikiTemplateParserConfig> = {
+        const config: MediaWikiTemplateParserConfig = {
             category: {
                 parser: parseEnum(WeaponCategory),
             },
@@ -101,10 +99,8 @@ export class WeaponItem extends EquipmentItem implements Partial<IWeaponItem> {
             // },
         };
 
-        Object.assign(
-            this,
-            MediaWikiTemplateParser.parseTemplate(this.page, config),
-        );
+        const template = await this.page.getTemplate(this.templateName);
+        Object.assign(this, template.parse(config));
     }
 
     toJSON() {

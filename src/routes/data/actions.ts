@@ -1,6 +1,6 @@
 // actions.ts
 import express, { Request, Response, Router } from 'express';
-import { getActionDataFiltered } from '../../models/action/action';
+import { getActionDataFiltered } from '../../models/action/init';
 
 export const router: Router = express.Router();
 

@@ -18,6 +18,7 @@ import { getEquipmentItemData } from './models/equipment/equipment';
 import { initActionsAndSpells } from './models/action/init';
 import { apiRouter } from './routes';
 import { initLocations } from './models/locations/locations';
+import { initPassives } from './models/characteristic/characteristic';
 
 async function main() {
     log('=====================================================');
@@ -26,7 +27,11 @@ async function main() {
 
     new MwnProgressBar().render();
 
-    await Promise.all([initActionsAndSpells(), initLocations()]);
+    await Promise.all([
+        initActionsAndSpells(),
+        initLocations(),
+        initPassives(),
+    ]);
 
     await Promise.all([
         getCharacterClassData(),

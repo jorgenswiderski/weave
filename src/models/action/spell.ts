@@ -7,13 +7,14 @@ import {
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { AbilityScore } from '@jorgenswiderski/tomekeeper-shared/dist/types/ability';
 import { PageNotFoundError } from '../errors';
-import {
-    MediaWikiTemplateParser,
-    MediaWikiTemplateParserConfig,
-} from '../media-wiki/mw-template-parser';
+import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
 import { ActionBase } from './action-base';
 import { error } from '../logger';
-import { PageData } from '../media-wiki/media-wiki';
+import {
+    MediaWikiTemplateParserConfigItem,
+    MediaWikiTemplateParserConfig,
+    IPageData,
+} from '../media-wiki/types';
 
 let spellData: Spell[];
 let spellDataById: Map<number, Spell> | null = null;
@@ -29,15 +30,19 @@ export class Spell extends ActionBase implements Partial<ISpell> {
     variants?: ISpell[];
     isVariant: boolean = false;
 
-    protected parseCosts(): void {
+    constructor(pageTitle: string) {
+        super(pageTitle, 'SpellPage');
+    }
+
+    protected async parseCosts(): Promise<void> {
         if (!this.page?.content) {
             throw new PageNotFoundError();
         }
 
         const actionResourceParser = (
             value: string,
-            config: MediaWikiTemplateParserConfig,
-            page: PageData,
+            config: MediaWikiTemplateParserConfigItem,
+            page: IPageData,
         ) => {
             const values = value.split(',').map((val) => val.trim());
 
@@ -72,7 +77,7 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             });
         }
 
-        const config: Record<string, MediaWikiTemplateParserConfig> = {
+        const config: MediaWikiTemplateParserConfig = {
             cost: {
                 parser: actionResourceParser,
                 default: defaultCost,
@@ -84,11 +89,8 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             },
         };
 
-        const { cost, hitCost } = MediaWikiTemplateParser.parseTemplate(
-            this.page,
-            config,
-        );
-
+        const template = await this.page.getTemplate(this.templateName);
+        const { cost, hitCost } = template.parse(config);
         this.costs = [...cost, ...hitCost];
     }
 
@@ -99,11 +101,11 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             throw new PageNotFoundError();
         }
 
-        const { plainText, boolean } = MediaWikiTemplateParser.Parsers;
+        const { plainText, boolean } = MediaWikiTemplate.Parsers;
 
-        const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
+        const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
-        const config: Record<string, MediaWikiTemplateParserConfig> = {
+        const config: MediaWikiTemplateParserConfig = {
             classes: {
                 parser: (value) =>
                     value
@@ -152,11 +154,8 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             },
         };
 
-        Object.assign(
-            this,
-            MediaWikiTemplateParser.parseTemplate(this.page, config),
-        );
-
+        const template = await this.page.getTemplate(this.templateName);
+        Object.assign(this, template.parse(config));
         this.parseCosts();
 
         if (this.classes && this.classes.length > 0) {

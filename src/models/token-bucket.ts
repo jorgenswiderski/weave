@@ -1,3 +1,6 @@
+import { CONFIG } from './config';
+import { log } from './logger';
+
 export class TokenBucket {
     private capacity: number;
     private tokens: number;
@@ -25,7 +28,24 @@ export class TokenBucket {
         this.lastFillTime = now;
     }
 
+    tokenUsage: Record<string, number> = {};
+
+    protected static getParentFunctionName() {
+        const err = new Error();
+        const stack = err.stack!.split('\n');
+
+        // Adjust the index based on where in the stack the parent function name appears
+        // Index 2 usually gives the caller of getParentFunctionName
+        // You might need to adjust this depending on the browser and the presence of strict mode
+        return stack[3].trim();
+    }
+
     public async acquireToken(): Promise<void> {
+        if (CONFIG.MWN.TRACK_TOKEN_USAGE) {
+            const fn = TokenBucket.getParentFunctionName();
+            this.tokenUsage[fn] = (this.tokenUsage[fn] ?? 0) + 1;
+        }
+
         this.totalTokensRequested += 1; // Increment the total requested tokens count
 
         return new Promise((resolve) => {
@@ -61,5 +81,13 @@ export class TokenBucket {
         } = this;
 
         return { tokens, capacity, granted, requested };
+    }
+
+    public logUsage(): void {
+        log('Token usage:');
+
+        Object.entries(this.tokenUsage)
+            .sort((a, b) => b[1] - a[1])
+            .forEach((a) => log(`${a[1]}\t${a[0]}`));
     }
 }
