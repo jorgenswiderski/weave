@@ -80,13 +80,13 @@ export class PageData implements IPageData {
         );
     }
 
-    protected static async getTemplateId(
+    protected static getTemplateId = Utils.memoize(async function getTemplateId(
         templateName: string,
     ): Promise<number> {
         const { pageId } = await PageData.getTemplatePage(templateName);
 
         return pageId;
-    }
+    });
 
     protected getRawTemplateNames(): string[] {
         const allTemplateNames = [
@@ -106,20 +106,30 @@ export class PageData implements IPageData {
         return Array.from(new Set(allTemplateNames));
     }
 
+    static templateCache: Map<number, Set<number>> = new Map();
+
     async hasTemplate(templateNames: string[] | string): Promise<boolean> {
+        const { pageId: key } = this;
+
         // eslint-disable-next-line no-param-reassign
         templateNames =
             typeof templateNames === 'string' ? [templateNames] : templateNames;
+
+        if (!PageData.templateCache.has(key)) {
+            const pageTemplateIds = await Promise.all(
+                this.getRawTemplateNames().map(PageData.getTemplateId),
+            );
+
+            PageData.templateCache.set(key, new Set(pageTemplateIds));
+        }
 
         const searchTemplateIds = await Promise.all(
             templateNames.map(PageData.getTemplateId),
         );
 
-        const pageTemplateIds = await Promise.all(
-            this.getRawTemplateNames().map(PageData.getTemplateId),
-        );
+        const pageTemplateIds = PageData.templateCache.get(key)!;
 
-        return searchTemplateIds.some((id) => pageTemplateIds.includes(id));
+        return searchTemplateIds.some((id) => pageTemplateIds.has(id));
     }
 
     async getTemplate(templateName: string): Promise<MediaWikiTemplate> {
