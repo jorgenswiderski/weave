@@ -26671,6 +26671,33 @@
             "thrown": true,
             "cantDualWield": false,
             "dippable": true
+        },
+        {
+            "name": "Rusty Handaxe",
+            "image": "Item WPN HUM Battleaxe A 0 Rusty A.png",
+            "icon": "Item WPN HUM Battleaxe A 0 Rusty A Icon.png",
+            "quote": "This handaxe is so banjaxed, it's [sic] only possible use could be as a kind of flaky backscratcher.",
+            "type": 22,
+            "rarity": 1,
+            "weightKg": 0.9,
+            "weightLb": 1.8,
+            "price": 2,
+            "effects": [],
+            "proficiency": 0,
+            "id": 29331,
+            "category": 2,
+            "rangeType": 1,
+            "handedness": 1,
+            "damage": "1d6",
+            "damageType": 1,
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": true,
+            "reach": false,
+            "thrown": true,
+            "cantDualWield": false,
+            "dippable": false
         }
     ],
     "23": [

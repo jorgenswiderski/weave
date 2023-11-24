@@ -14,16 +14,8 @@ export const MwnTokenBucket = new TokenBucket(100, 3);
 
 // shorthand just to reduce boilerplate
 function memoize<T extends (...args: any[]) => Promise<any>>(fn: T): T {
-    // const tokenAcquiringFunction = async (...args: any[]) => {
-    //     await bucket.acquireToken();
-    //     log(bucket.lifetimeTokens);
-
-    //     return fn(...args);
-    // };
-
     return Utils.memoizeWithExpiration(
         CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
-        // tokenAcquiringFunction,
         fn,
     ) as T;
 }
@@ -106,7 +98,7 @@ export class MwnApiClass {
         },
     );
 
-    static queryTitlesFromCategory = Utils.memoize(
+    static queryTitlesFromCategory = memoize(
         async function queryTitlesFromCategory(
             categoryName: string,
             includeSubcategories: boolean = false,
