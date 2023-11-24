@@ -21,6 +21,7 @@ import {
     getPassiveDataFiltered,
     initPassives,
 } from './characteristic/characteristic';
+import { MwnTokenBucket } from '../api/mwn';
 
 CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS = false;
 
@@ -72,6 +73,11 @@ async function dump() {
         await StaticImageCacheService.cleanupCache();
 
         log(`Data dump complete in ${(Date.now() - startTime) / 1000}s.`);
+
+        if (CONFIG.MWN.TRACK_TOKEN_USAGE) {
+            MwnTokenBucket.logUsage();
+        }
+
         process.exit(0);
     } catch (err) {
         error('Failed to complete data dump:');
