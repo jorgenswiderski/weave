@@ -888,6 +888,13 @@
         "id": 19552
     },
     {
+        "name": "Mage Hand Legerdemain",
+        "description": "Your mage hand can stow away or retrieve objects carried by other creatures and use Thieves' Tools at range.\n* There is no longer a time limit, and the Mage Hand lasts forever until destroyed or dismissed.\n* The Mage Hand is now permanently Invisible.",
+        "image": "Mage Hand.webp",
+        "type": 2,
+        "id": 17793
+    },
+    {
         "name": "Magic Initiate: Bard",
         "description": "You learn 2 cantrips and a Level 1 spell from the Bard spell list. You can cast the Level 1 spell once per Long Rest. Your Spellcasting Modifier for all 3 spells is Charisma.",
         "image": "Magic Initiate Bard.webp",

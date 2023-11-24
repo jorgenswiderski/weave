@@ -452,6 +452,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 },
                 {
@@ -536,6 +540,10 @@
                             "name": "Shattered Sanctum",
                             "id": 4134
                         }
+                    },
+                    "character": {
+                        "name": "Dror Ragzlin",
+                        "id": 1285
                     }
                 }
             ],
@@ -1614,6 +1622,29 @@
                             "id": 4335
                         },
                         "location": {
+                            "name": "Riverside Teahouse",
+                            "id": 4504
+                        }
+                    },
+                    "character": {
+                        "name": "Mayrina",
+                        "id": 5955
+                    }
+                },
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 1",
+                            "id": 4189
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Wilderness",
+                            "id": 4335
+                        },
+                        "location": {
                             "name": "The Hollow",
                             "id": 8645
                         }
@@ -2382,6 +2413,10 @@
                             "name": "Sunlit Wetlands",
                             "id": 4204
                         }
+                    },
+                    "character": {
+                        "name": "Johl",
+                        "id": 6017
                     }
                 },
                 {
@@ -3321,6 +3356,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Thulla",
+                        "id": 12261
                     }
                 }
             ],
@@ -4140,6 +4179,10 @@
                             "name": "Shattered Sanctum",
                             "id": 4134
                         }
+                    },
+                    "character": {
+                        "name": "Dror Ragzlin",
+                        "id": 1285
                     }
                 }
             ],
@@ -8114,6 +8157,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 }
             ],
@@ -8480,8 +8527,8 @@
                         }
                     },
                     "character": {
-                        "name": "Baelen Bonecloak",
-                        "id": 12352
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 }
             ],
@@ -8641,6 +8688,10 @@
                             "name": "Shattered Sanctum",
                             "id": 4134
                         }
+                    },
+                    "character": {
+                        "name": "Dror Ragzlin",
+                        "id": 1285
                     }
                 }
             ],
@@ -8800,6 +8851,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 }
             ],
@@ -10600,6 +10655,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 },
                 {
@@ -14485,6 +14544,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 }
             ],
@@ -17011,6 +17074,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 }
             ],
@@ -18213,6 +18280,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 }
             ],
@@ -18722,7 +18793,7 @@
                         }
                     },
                     "character": {
-                        "name": "Mind Flayer",
+                        "name": "Mind flayer",
                         "id": 4348
                     }
                 }
@@ -23200,6 +23271,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 }
             ],
@@ -24160,6 +24235,10 @@
                             "name": "Decrepit Village",
                             "id": 4503
                         }
+                    },
+                    "character": {
+                        "name": "Gekh Coal",
+                        "id": 8923
                     }
                 }
             ],
@@ -24505,6 +24584,10 @@
                             "name": "Blighted Village",
                             "id": 4188
                         }
+                    },
+                    "character": {
+                        "name": "Fezzerk",
+                        "id": 6140
                     }
                 }
             ],
@@ -24556,6 +24639,10 @@
                             "name": "Moonrise Towers",
                             "id": 4552
                         }
+                    },
+                    "character": {
+                        "name": "Mig",
+                        "id": 12301
                     }
                 }
             ],
@@ -26741,6 +26828,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 },
                 {
@@ -27367,6 +27458,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 }
             ],
@@ -27754,6 +27849,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 }
             ],
@@ -32597,20 +32696,24 @@
                     },
                     "location": {
                         "act": {
-                            "name": "Act 3",
-                            "id": 4950
+                            "name": "Act 1",
+                            "id": 4189
                         },
                         "superRegion": {
                             "name": "Over-world"
                         },
                         "region": {
-                            "name": "Baldur's Gate",
-                            "id": 6062
+                            "name": "Wilderness",
+                            "id": 4335
                         },
                         "location": {
-                            "name": "Lower City",
-                            "id": 11839
+                            "name": "Riverside Teahouse",
+                            "id": 4504
                         }
+                    },
+                    "character": {
+                        "name": "Mayrina",
+                        "id": 5955
                     }
                 }
             ],
@@ -34013,8 +34116,9 @@
             "dippable": true
         },
         {
-            "name": "Scimitar (Shar Variant)",
+            "name": "Scimitar (Sharran)",
             "image": "Justiciar's Scimitar Icon.png",
+            "icon": "Justiciar's Scimitar Unfaded Icon.png",
             "type": 36,
             "rarity": 1,
             "weightKg": 1.35,
@@ -34023,7 +34127,7 @@
             "effects": [],
             "sources": [],
             "proficiency": 0,
-            "id": 28848,
+            "id": 29298,
             "category": 1,
             "rangeType": 1,
             "handedness": 1,
@@ -34856,6 +34960,10 @@
                             "name": "Ebonlake Grotto",
                             "id": 3974
                         }
+                    },
+                    "character": {
+                        "name": "Derryth Bonecloak",
+                        "id": 6379
                     }
                 }
             ],
@@ -36245,6 +36353,10 @@
                             "name": "The Festering Cove",
                             "id": 4385
                         }
+                    },
+                    "character": {
+                        "name": "Pooldripp the Zealous",
+                        "id": 4019
                     }
                 },
                 {
@@ -37820,6 +37932,10 @@
                             "name": "Shattered Sanctum",
                             "id": 4134
                         }
+                    },
+                    "character": {
+                        "name": "Dror Ragzlin",
+                        "id": 1285
                     }
                 }
             ],

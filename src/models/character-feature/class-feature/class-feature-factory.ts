@@ -42,7 +42,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             }
 
             return new ClassSubclassOption(
-                characterClass.name,
+                characterClass,
                 CharacterPlannerStep.CHOOSE_SUBCLASS,
                 level,
             );

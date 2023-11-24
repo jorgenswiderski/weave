@@ -59,6 +59,7 @@ export class CharacterFeature
         { pageTitle, page, name, image }: ICharacterOptionWithPage,
         public level?: number,
         public characterClass?: ICharacterClass,
+        public subclass?: ICharacterOptionWithStubs,
     ) {
         super({ pageTitle, page });
 
@@ -339,8 +340,16 @@ export class CharacterFeature
                             );
 
                             if (
-                                !cell.includes(
-                                    `{{class|${this.characterClass!.name}}}`,
+                                !(
+                                    cell.includes(
+                                        `{{class|${
+                                            this.characterClass!.name
+                                        }}}`,
+                                    ) ||
+                                    (this.subclass &&
+                                        cell.includes(
+                                            `{{class|${this.subclass.name}}}`,
+                                        ))
                                 )
                             ) {
                                 return false;
@@ -485,6 +494,7 @@ export class CharacterFeature
         }
 
         const isGrantableEffect = this.page.hasCategory([
+            'Weapon actions',
             'Class actions',
             'Racial action',
             'Passive features',
@@ -529,5 +539,30 @@ export class CharacterFeature
                 }
             }) ?? []),
         ]);
+    }
+
+    static async fromPage(
+        pageTitle: string,
+        level?: number,
+        characterClass?: ICharacterClass,
+        subclass?: ICharacterOptionWithStubs,
+    ): Promise<CharacterFeature | undefined> {
+        const cf = new CharacterFeature(
+            {
+                pageTitle,
+                name: MediaWikiParser.parseNameFromPageTitle(pageTitle),
+            },
+            level,
+            characterClass,
+            subclass,
+        );
+
+        await cf.waitForInitialization();
+
+        if (cf.grants.length > 0 || (cf.choices && cf.choices.length > 0)) {
+            return cf;
+        }
+
+        return undefined;
     }
 }

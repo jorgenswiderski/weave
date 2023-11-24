@@ -63,6 +63,17 @@ const Barbarian: Overrides = {
     },
 };
 
+const Bard: Overrides = {
+    'College of Swords': {
+        3: {
+            'Blade Flourish': {
+                disableTitleMatch: true,
+                forceContentMatch: true,
+            },
+        },
+    },
+};
+
 const Cleric: Overrides = {
     'Nature Domain': {
         1: {
@@ -169,6 +180,7 @@ const Wizard: Overrides = {
 
 export const characterSubclassParserOverrides: Overrides = {
     ...Barbarian,
+    ...Bard,
     ...Cleric,
     ...Druid,
     ...Fighter,

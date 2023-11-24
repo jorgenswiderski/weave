@@ -1,4 +1,3 @@
-import { GrantableEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import {
     CharacterPlannerStep,
     ICharacterChoiceWithStubs,
@@ -7,22 +6,23 @@ import {
 import assert from 'assert';
 import { PageLoadingState } from '../../../page-item';
 import { CharacterFeature } from '../../character-feature';
-import { CharacterProgressionLevel } from '../../../character-class/types';
-import { ICharacterOptionWithPage } from '../../types';
+import {
+    CharacterProgressionLevel,
+    ICharacterClass,
+} from '../../../character-class/types';
 import { PageNotFoundError } from '../../../errors';
 import { StaticImageCacheService } from '../../../static-image-cache-service';
 import { MediaWikiParser } from '../../../media-wiki/media-wiki-parser';
 import { characterSubclassParserOverrides } from './overrides';
-import { CharacteristicStub } from '../../../static-reference/characteristic-stub';
-import { ActionStub } from '../../../static-reference/action-stub';
-import { SpellStub } from '../../../static-reference/spell-stub';
+import { ICharacterOptionWithPage } from '../../types';
 
 export class CharacterSubclass extends CharacterFeature {
     constructor(
         option: ICharacterOptionWithPage,
         public level: number,
+        public characterClass: ICharacterClass,
     ) {
-        super(option, level);
+        super(option, level, characterClass);
     }
 
     async initDescription(): Promise<void> {
@@ -106,6 +106,7 @@ export class CharacterSubclass extends CharacterFeature {
 
         const saiPattern = /{{SAI\|([^|}]+?)(?:\|[^}]*?)?}}/g;
         const iconPattern = /{{IconLink\|[^|]+\|([^|}]+?)(?:\|[^}]*?)?}}/g;
+        const linkPattern = /\[\[([^|]*?)(?:\[^}]*?)?]]/g;
 
         let featureMatches: RegExpMatchArray[] = [];
 
@@ -113,10 +114,24 @@ export class CharacterSubclass extends CharacterFeature {
             featureMatches = [
                 ...sectionTitle.matchAll(saiPattern),
                 ...sectionTitle.matchAll(iconPattern),
+                ...sectionTitle.matchAll(linkPattern),
             ];
         }
 
-        if (featureMatches.length === 0 || config?.forceContentMatch) {
+        const f = (
+            await Promise.all(
+                featureMatches.map(([, title]) =>
+                    CharacterFeature.fromPage(
+                        title,
+                        this.level,
+                        this.characterClass,
+                        this,
+                    ),
+                ),
+            )
+        ).filter(Boolean) as CharacterFeature[];
+
+        if (f.length === 0 || config?.forceContentMatch) {
             featureMatches = [
                 ...featureMatches,
                 ...content.matchAll(saiPattern),
@@ -128,21 +143,21 @@ export class CharacterSubclass extends CharacterFeature {
             ...new Set(featureMatches.map((match) => match[1])),
         ];
 
-        const grants = (
+        const features = (
             await Promise.all(
                 featureTitles.map((title) =>
-                    CharacterFeature.parsePageForGrantableEffect(title),
+                    CharacterFeature.fromPage(
+                        title,
+                        this.level,
+                        this.characterClass,
+                        this,
+                    ),
                 ),
             )
-        ).filter(Boolean) as (
-            | GrantableEffect
-            | ActionStub
-            | SpellStub
-            | CharacteristicStub
-        )[];
+        ).filter(Boolean) as CharacterFeature[];
 
         if (
-            grants.length > 1 &&
+            features.length > 1 &&
             (config?.choose || content.match(/Choose (\d|one|a |an )/i))
         ) {
             let count: number = 1;
@@ -173,16 +188,13 @@ export class CharacterSubclass extends CharacterFeature {
                         name: MediaWikiParser.stripMarkup(label)
                             .replace(/:$/, '')
                             .trim(),
-                        grants: grants.filter((effect) =>
-                            titles.includes(effect.name),
-                        ),
+                        grants: features
+                            .filter((feature) => titles.includes(feature.name))
+                            .flatMap((feature) => feature.grants),
                     };
                 });
             } else {
-                options = grants.map((effect) => ({
-                    name: effect.name,
-                    grants: [effect],
-                }));
+                options = features;
             }
 
             return {
@@ -199,7 +211,8 @@ export class CharacterSubclass extends CharacterFeature {
 
         return {
             name: sectionTitlePlain,
-            grants,
+            grants: features.flatMap((feature) => feature.grants),
+            choices: features.flatMap((feature) => feature.choices ?? []),
         };
     }
 

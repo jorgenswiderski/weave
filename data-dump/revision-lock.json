@@ -2,6 +2,7 @@
     "redirects": {
         "Ability Check": "Ability check",
         "Ancient Rune Circle": "Ancient Sigil Circle",
+        "Camp": "Campsite",
         "Camp Follower": "Camp followers",
         "Captain Grisly": "Grisly",
         "Chapter Three": "Act Three",
@@ -48,6 +49,7 @@
         "Lady Jannath": "Jannath",
         "Long Rest": "Resting",
         "Long rest": "Resting",
+        "Mind Flayer": "Mind flayer",
         "Multiattack Defense": "Multiattack Defence",
         "Myconid Colony": "Ebonlake Grotto",
         "Nightsong": "Find the Nightsong",
@@ -4523,7 +4525,7 @@
         {
             "pageId": 4348,
             "revisionId": 109202,
-            "title": "Mind Flayer"
+            "title": "Mind flayer"
         },
         {
             "pageId": 4355,
@@ -4814,6 +4816,11 @@
             "pageId": 4578,
             "revisionId": 105779,
             "title": "Template:NavGameplay"
+        },
+        {
+            "pageId": 4579,
+            "revisionId": 101178,
+            "title": "Template:NavCharacters"
         },
         {
             "pageId": 4582,
@@ -15556,6 +15563,11 @@
             "title": "Warhammer +2"
         },
         {
+            "pageId": 24676,
+            "revisionId": 95325,
+            "title": "Manoeuvres"
+        },
+        {
             "pageId": 24726,
             "revisionId": 102319,
             "title": "Regal Helm"
@@ -16069,11 +16081,6 @@
             "pageId": 26704,
             "revisionId": 110732,
             "title": "Morphic Brine Explosion"
-        },
-        {
-            "pageId": 26903,
-            "revisionId": 110356,
-            "title": "Non-Lethal Attacks"
         },
         {
             "pageId": 26957,
@@ -18756,11 +18763,6 @@
             "title": "Shield (Equipment)"
         },
         {
-            "pageId": 28848,
-            "revisionId": 115794,
-            "title": "Scimitar (Shar Variant)"
-        },
-        {
             "pageId": 28930,
             "revisionId": 116110,
             "title": "Subsume Shadow"
@@ -18914,12 +18916,21 @@
             "pageId": 29255,
             "revisionId": 116692,
             "title": "Yeenoghu's Hunger"
+        },
+        {
+            "pageId": 29298,
+            "revisionId": 117076,
+            "title": "Scimitar (Sharran)"
+        },
+        {
+            "pageId": 29302,
+            "revisionId": 117097,
+            "title": "Angelic Plume Helmet"
         }
     ],
     "deadLinks": [
         "Adventurer Rosanna",
         "Ambrust's Home",
-        "Anti-Hag Support Group Poster",
         "Ardent Jhe'rezath",
         "Baldur's Mouth",
         "Barracks",

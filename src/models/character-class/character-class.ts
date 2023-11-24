@@ -46,7 +46,7 @@ async function parseFeatures(
 
     if (!features.some((feature) => feature instanceof ClassSubclassOption)) {
         const subclassFeature = new ClassSubclassOption(
-            characterClass.name,
+            characterClass,
             CharacterPlannerStep.SUBCLASS_FEATURE,
             level,
         );

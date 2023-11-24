@@ -2691,12 +2691,30 @@
                                             },
                                             {
                                                 "ref": "a18898"
-                                            },
+                                            }
+                                        ],
+                                        "choices": [
                                             {
-                                                "ref": "c17363"
-                                            },
-                                            {
-                                                "ref": "c17370"
+                                                "type": 23,
+                                                "count": 1,
+                                                "options": [
+                                                    {
+                                                        "name": "Duelling",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17363"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Two-Weapon Fighting",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "c17370"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -14391,6 +14409,7 @@
                                         "choices": [
                                             {
                                                 "type": 23,
+                                                "count": 1,
                                                 "options": [
                                                     {
                                                         "name": "Archery",
@@ -23294,6 +23313,9 @@
                                         "description": "Arcane Tricksters are rogues with a clever touch of magic, using illusions and enchantments to keep their opponents on the back foot.",
                                         "image": "Class Rogue Trickster Badge Icon.png",
                                         "grants": [
+                                            {
+                                                "ref": "c17793"
+                                            },
                                             {
                                                 "ref": "s1662"
                                             }
