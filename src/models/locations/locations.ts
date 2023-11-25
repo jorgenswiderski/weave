@@ -161,3 +161,24 @@ export async function initLocations() {
 
     return filtered;
 }
+
+export function getLocationData() {
+    assert(gameLocationByPageTitle.size > 0);
+    const locations = [...gameLocationByPageTitle.values()];
+
+    return locations.sort((a, b) => {
+        if (!a.id && !b.id) {
+            return a.name < b.name ? -1 : 1;
+        }
+
+        if (!a.id) {
+            return -1;
+        }
+
+        if (!b.id) {
+            return 1;
+        }
+
+        return a.id - b.id;
+    });
+}

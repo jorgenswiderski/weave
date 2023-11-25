@@ -13,15 +13,15 @@ import { getEquipmentItemData } from './equipment/equipment';
 import { getSpellDataFiltered } from './action/spell';
 import { getActionDataFiltered, initActionsAndSpells } from './action/init';
 import { StaticImageCacheService } from './static-image-cache-service';
-import { initLocations } from './locations/locations';
+import { getLocationData, initLocations } from './locations/locations';
 import { RevisionLock } from './revision-lock/revision-lock';
 import { MediaWiki } from './media-wiki/media-wiki';
 import { CONFIG } from './config';
+import { MwnTokenBucket } from '../api/mwn';
 import {
     getPassiveDataFiltered,
     initPassives,
 } from './characteristic/characteristic';
-import { MwnTokenBucket } from '../api/mwn';
 
 CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS = false;
 
@@ -50,13 +50,14 @@ async function dump() {
         ]);
 
         const datas = {
-            'classes/info': getInfo(await getCharacterClassData()),
-            'races/info': getInfo(await getCharacterRaceData()),
-            'backgrounds/info': getInfo(await getCharacterBackgroundData()),
-            'spells/info': getSpellDataFiltered(),
-            'actions/info': getActionDataFiltered(),
-            'items/equipment': getEquipmentItemData(),
+            classes: getInfo(await getCharacterClassData()),
+            races: getInfo(await getCharacterRaceData()),
+            backgrounds: getInfo(await getCharacterBackgroundData()),
+            spells: getSpellDataFiltered(),
+            actions: getActionDataFiltered(),
+            equipment: getEquipmentItemData(),
             passives: getPassiveDataFiltered(),
+            locations: getLocationData(),
         };
 
         await Promise.all(
