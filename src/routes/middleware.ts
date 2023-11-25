@@ -11,9 +11,9 @@ export class Middleware {
             let modifiedJsonData = jsonData;
 
             if (typeof jsonData === 'object') {
-                const t = Date.now();
+                // const t = Date.now();
                 modifiedJsonData = InternJson.intern(jsonData);
-                debug(`Internment took ${Date.now() - t}ms.`);
+                // debug(`Internment took ${Date.now() - t}ms.`);
             }
 
             return originalJson.call(this, modifiedJsonData);
@@ -32,12 +32,12 @@ export class Middleware {
         const key = JSON.stringify(req.params);
 
         if (cache.has(key)) {
-            debug('Cache hit');
+            // debug('Cache hit');
             const body = cache.get(key)!;
             res.type('application/json');
             res.send(body);
         } else {
-            debug('Cache miss');
+            // debug('Cache miss');
             const originalJson = res.json.bind(res);
 
             res.json = function lruCacheMiddleware(body: any): Response {
