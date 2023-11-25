@@ -127,6 +127,8 @@ class StaticImageCacheServiceSingleton {
             return;
         }
 
+        await this.waitForAllImagesToCache();
+
         try {
             const allFiles = await this.getAllFiles(this.imageCacheDir);
 

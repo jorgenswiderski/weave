@@ -71,7 +71,7 @@ export class CharacterRace extends CharacterFeature {
         }
     }
 
-    private async getImage(): Promise<string | null> {
+    async initImage(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page || !this.page.content) {
@@ -82,19 +82,15 @@ export class CharacterRace extends CharacterFeature {
         const match = regex.exec(this.page.content);
 
         if (!match || !match[1]) {
-            return null;
+            return;
         }
 
         const image = match[1].trim();
-
-        if (image) {
-            StaticImageCacheService.cacheImage(image);
-        }
-
-        return image;
+        StaticImageCacheService.cacheImage(image);
+        this.image = image;
     }
 
-    protected async getDescription(): Promise<string> {
+    async initDescription(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page || !this.page.content) {
@@ -107,27 +103,14 @@ export class CharacterRace extends CharacterFeature {
         const match = this.page.content.match(descPattern);
 
         if (!match || !match[1]) {
-            return super.getDescription();
+            this.description = await super.getDescription();
+
+            return;
         }
 
-        return MediaWikiParser.stripMarkup(match[1]).trim().split('\n')[0];
-    }
-
-    async getInfo(): Promise<RaceInfo> {
-        await this.initialized[RaceLoadState.CHOICES];
-
-        return {
-            name: this.name,
-            description: await this.getDescription(),
-            choices: Utils.isNonEmptyArray(this?.choices)
-                ? this.choices
-                : undefined,
-            choiceType: Utils.isNonEmptyArray(this?.choices)
-                ? CharacterPlannerStep.CHOOSE_SUBRACE
-                : undefined,
-            image: (await this.getImage()) ?? undefined,
-            grants: this.grants,
-        };
+        this.description = MediaWikiParser.stripMarkup(match[1])
+            .trim()
+            .split('\n')[0];
     }
 
     async initOptionsAndEffects(): Promise<void> {
@@ -210,6 +193,21 @@ export class CharacterRace extends CharacterFeature {
         }
 
         return this.page.hasTemplate('SpoilerWarning');
+    }
+
+    toJSON() {
+        const { name, description, image, choices, grants } = this;
+
+        return {
+            name,
+            description,
+            choices: Utils.isNonEmptyArray(choices) ? choices : undefined,
+            choiceType: Utils.isNonEmptyArray(choices)
+                ? CharacterPlannerStep.CHOOSE_SUBRACE
+                : undefined,
+            image,
+            grants,
+        };
     }
 }
 

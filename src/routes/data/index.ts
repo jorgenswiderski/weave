@@ -6,8 +6,11 @@ import { classesRouter } from './classes';
 import { racesRouter } from './races';
 import { spellsRouter } from './spells';
 import { passivesRouter } from './passives';
+import { Middleware } from '../middleware';
 
 export const router: Router = express.Router();
+
+router.use(Middleware.lruCache, Middleware.intern);
 
 router.use('/actions', actionsRouter);
 router.use('/backgrounds', backgroundsRouter);

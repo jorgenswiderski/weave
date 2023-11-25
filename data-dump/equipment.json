@@ -20707,6 +20707,23 @@
             "id": 11813
         },
         {
+            "name": "Studded Shield +1",
+            "image": "Item WPN HUM Shield C 1.png",
+            "icon": "Item WPN HUM Shield C 1 Icon.png",
+            "description": "A Studded Shield +1 is a rare Shield with an enchantment increasing its Armour Class bonus.",
+            "quote": "Small pockets of rust are starting to eat away at a few of the studs.",
+            "type": 11,
+            "rarity": 3,
+            "weightKg": 2.7,
+            "weightLb": 5.4,
+            "price": 300,
+            "effects": [],
+            "proficiency": 4,
+            "bonusArmorClass": 3,
+            "enchantment": 1,
+            "id": 29376
+        },
+        {
             "name": "Swires' Sledboard",
             "image": "Swires sledboard.png",
             "icon": "Swires sledboard Unfaded Icon.png",
