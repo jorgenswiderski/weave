@@ -83,7 +83,7 @@ export class CharacterFeature
             this.initDescription().catch(error);
     }
 
-    toJSON() {
+    toJSON(): any {
         return {
             name: this.name,
             description: this.description,

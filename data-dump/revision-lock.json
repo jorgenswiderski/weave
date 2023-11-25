@@ -15524,8 +15524,8 @@
         },
         {
             "pageId": 24493,
-            "revisionId": 112204,
-            "title": "Partial-Illithid"
+            "revisionId": 117262,
+            "title": "Partial-illithid"
         },
         {
             "pageId": 24587,
@@ -16319,8 +16319,8 @@
         },
         {
             "pageId": 27633,
-            "revisionId": 109162,
-            "title": "Full-Illithid"
+            "revisionId": 117257,
+            "title": "Full-illithid"
         },
         {
             "pageId": 27637,
@@ -18966,6 +18966,51 @@
             "pageId": 29341,
             "revisionId": 117227,
             "title": "Snakeskin Hat"
+        },
+        {
+            "pageId": 29348,
+            "revisionId": 117245,
+            "title": "Embroidered Hat"
+        },
+        {
+            "pageId": 29369,
+            "revisionId": 117342,
+            "title": "Formidable Helmet"
+        },
+        {
+            "pageId": 29373,
+            "revisionId": 117350,
+            "title": "Firm-Soled Boots"
+        },
+        {
+            "pageId": 29376,
+            "revisionId": 117353,
+            "title": "Studded Shield +1"
+        },
+        {
+            "pageId": 29384,
+            "revisionId": 117394,
+            "title": "Vicious Mockery (Auntie Ethel)"
+        },
+        {
+            "pageId": 29393,
+            "revisionId": 117429,
+            "title": "Bycocket"
+        },
+        {
+            "pageId": 29408,
+            "revisionId": 117464,
+            "title": "Rusty Studded Shield"
+        },
+        {
+            "pageId": 29419,
+            "revisionId": 117500,
+            "title": "Pearl Necklace"
+        },
+        {
+            "pageId": 29422,
+            "revisionId": 117509,
+            "title": "Wizard Hat"
         }
     ],
     "deadLinks": [

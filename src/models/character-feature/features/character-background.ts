@@ -105,7 +105,7 @@ export class CharacterBackground extends CharacterFeature {
         this.id = this.page.pageId;
     }
 
-    getInfo(): ICharacterOption & { id: number } {
+    toJSON(): ICharacterOption & { id: number } {
         return {
             name: this.name,
             description: this.description,
