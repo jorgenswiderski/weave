@@ -89,7 +89,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         ).map((match) => ({
             name: MediaWikiParser.stripMarkup(match[1]).trim(),
             description: MediaWikiParser.stripMarkup(match[2]).trim(),
-            type: GrantableEffectType.CHARACTERISTIC,
+            type: GrantableEffectType.PASSIVE,
         }));
 
         const anonEffectPattern = /\*\s+([^'].+)/g;
@@ -99,7 +99,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         ).map((match) => ({
             name: 'Anonymous Effect',
             description: MediaWikiParser.stripMarkup(match[1]).trim(),
-            type: GrantableEffectType.CHARACTERISTIC,
+            type: GrantableEffectType.PASSIVE,
             hidden: true,
         }));
 
@@ -111,7 +111,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 description: anonEffects
                     .map((effect) => effect.description)
                     .join('\n'),
-                type: GrantableEffectType.CHARACTERISTIC,
+                type: GrantableEffectType.PASSIVE,
             });
         }
 

@@ -1,6 +1,6 @@
 // passives.ts
 import express, { Request, Response, Router } from 'express';
-import { getPassiveDataFiltered } from '../../models/characteristic/characteristic';
+import { getPassiveDataFiltered } from '../../models/passive/passive';
 
 export const router: Router = express.Router();
 

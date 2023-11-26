@@ -4,10 +4,10 @@ import {
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import {
-    CharacteristicType,
+    PassiveType,
     GrantableEffect,
     GrantableEffectType,
-    ICharacteristic,
+    IPassive,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import { error } from '../../logger';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
@@ -149,7 +149,7 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                             abilityImprovement,
                         } = data;
 
-                        const fx: (GrantableEffect | ICharacteristic)[] = (
+                        const fx: (GrantableEffect | IPassive)[] = (
                             await Promise.all(
                                 grants.map((pageTitle) =>
                                     CharacterFeature.parsePageForGrantableEffect(
@@ -194,8 +194,8 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                                     name: `${MediaWikiParser.parseNameFromPageTitle(
                                         name,
                                     )}: ${abilityImprovement.abilities[0]}`,
-                                    type: GrantableEffectType.CHARACTERISTIC,
-                                    subtype: CharacteristicType.ABILITY_FEAT,
+                                    type: GrantableEffectType.PASSIVE,
+                                    subtype: PassiveType.ABILITY_FEAT,
                                     values: {
                                         [abilityImprovement.abilities[0]]:
                                             abilityImprovement.points,

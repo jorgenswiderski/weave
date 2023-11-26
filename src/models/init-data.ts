@@ -10,10 +10,7 @@ import { getEquipmentItemData } from './equipment/equipment';
 import { getSpellDataFiltered } from './action/spell';
 import { getActionDataFiltered, initActionsAndSpells } from './action/init';
 import { getLocationData, initLocations } from './locations/locations';
-import {
-    getPassiveDataFiltered,
-    initPassives,
-} from './characteristic/characteristic';
+import { getPassiveDataFiltered, initPassives } from './passive/passive';
 
 export async function initData() {
     const locations = initLocations();
