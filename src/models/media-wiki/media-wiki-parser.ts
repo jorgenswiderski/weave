@@ -293,6 +293,7 @@ export class MediaWikiParser {
         );
 
         v = v.replace(/{{(Saving ?Throw|Initiative|action)}}/gi, '$1');
+        v = v.replace(/{{(Armour)(Class)}}/gi, '$1 $2');
 
         // Templates: First Arg
         v = v.replace(/{{SAI\|([^|}]*?)(?:\|[^=|}]+=[^|}]+)*}}/gi, '$1');

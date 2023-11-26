@@ -300,7 +300,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -311,7 +311,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -1148,7 +1148,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -1159,7 +1159,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -2025,7 +2025,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -2036,7 +2036,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -2878,7 +2878,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -2889,7 +2889,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -3682,7 +3682,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -3693,7 +3693,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -4440,7 +4440,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -4451,7 +4451,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -5553,7 +5553,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -5564,7 +5564,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -6586,7 +6586,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -6597,7 +6597,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -7516,7 +7516,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -7527,7 +7527,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -8511,7 +8511,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -8522,7 +8522,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -9599,7 +9599,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -9610,7 +9610,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -10559,7 +10559,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -10570,7 +10570,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -11897,7 +11897,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -11908,7 +11908,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -12589,7 +12589,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -12600,7 +12600,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -13510,7 +13510,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -13521,7 +13521,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -14684,7 +14684,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -14695,7 +14695,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -15617,7 +15617,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -15628,7 +15628,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -16478,7 +16478,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -16489,7 +16489,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -17303,7 +17303,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -17314,7 +17314,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -18249,7 +18249,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -18260,7 +18260,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -19103,7 +19103,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -19114,7 +19114,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -19906,7 +19906,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -19917,7 +19917,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -20875,7 +20875,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -20886,7 +20886,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -21816,7 +21816,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -21827,7 +21827,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -22737,7 +22737,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -22748,7 +22748,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -23887,7 +23887,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -23898,7 +23898,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -24691,7 +24691,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -24702,7 +24702,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -25646,7 +25646,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -25657,7 +25657,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -26340,7 +26340,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -26351,7 +26351,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -27376,7 +27376,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -27387,7 +27387,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -28183,7 +28183,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -28194,7 +28194,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -29035,7 +29035,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -29046,7 +29046,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -30005,7 +30005,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -30016,7 +30016,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -31110,7 +31110,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -31121,7 +31121,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -32080,7 +32080,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -32091,7 +32091,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -33090,7 +33090,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -33101,7 +33101,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -33929,7 +33929,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -33940,7 +33940,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {
@@ -34765,7 +34765,7 @@
                                     },
                                     {
                                         "name": "Defensive Duellist",
-                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your ArmourClass by your Proficiency Bonus, possibly causing the attack to miss.",
+                                        "description": "Defensive Duellist\n:* When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
                                         "image": "PassiveFeature Generic.png",
                                         "grants": [
                                             {
@@ -34776,7 +34776,7 @@
                                     },
                                     {
                                         "name": "Dual Wielder",
-                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
+                                        "description": "Dual Wielder: Bonus Armour Class\n:* You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.\n\nDual Wielder\n:* You can use Two-Weapon Fighting even if your weapons aren't Light You cannot dual-wield Heavy weapons.\n* Note: the feat is very ambiguously worded. Testing shows it doesn't actually give the Two-Weapon Fighting style, it just allows you to dual wield non-light non-heavy weapons.",
                                         "image": "Dual Wielder Bonus Armour Class.webp",
                                         "grants": [
                                             {

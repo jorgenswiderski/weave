@@ -435,7 +435,7 @@
     },
     {
         "name": "Draconic Resilience",
-        "description": "Dragon-like scales cover parts of your skin. When you aren't wearing armour, your base ArmourClass is 13.",
+        "description": "Dragon-like scales cover parts of your skin. When you aren't wearing armour, your base Armour Class is 13.",
         "image": "Draconic Resilience.webp",
         "type": 2,
         "id": 14554
@@ -477,7 +477,7 @@
     },
     {
         "name": "Dual Wielder: Bonus Armour Class",
-        "description": "You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.",
+        "description": "You have a +1 bonus to Armour Class while wielding a melee weapon in each hand.",
         "image": "Dual Wielder Bonus Armour Class.webp",
         "type": 2,
         "id": 22724
@@ -1008,7 +1008,7 @@
     },
     {
         "name": "Medium Armour Master",
-        "description": "When you wear medium armour, it doesn't impose Disadvantage on Stealth checks. The bonus to ArmourClass you can gain from your Dexterity modifier also becomes +3 instead of +2.\n\nYou must have Proficiency in Medium Armor to take this feat",
+        "description": "When you wear medium armour, it doesn't impose Disadvantage on Stealth checks. The bonus to Armour Class you can gain from your Dexterity modifier also becomes +3 instead of +2.\n\nYou must have Proficiency in Medium Armor to take this feat",
         "image": "Medium Armour Master.webp",
         "type": 2,
         "id": 8384
@@ -1491,14 +1491,14 @@
     },
     {
         "name": "Unarmoured Defence (Barbarian)",
-        "description": "Your body is as resilient as any armour. While not wearing armour, you add your Constitution Modifier to your ArmourClass. Wearing Heavy Armour impedes your Rage.",
+        "description": "Your body is as resilient as any armour. While not wearing armour, you add your Constitution Modifier to your Armour Class. Wearing Heavy Armour impedes your Rage.",
         "image": "Unarmoured Defense Barbarian.webp",
         "type": 2,
         "id": 6406
     },
     {
         "name": "Unarmoured Defence (Monk)",
-        "description": "Your reflexes are as effective as any armour. While not wearing armour, you add your Wisdom Modifier to your ArmourClass.",
+        "description": "Your reflexes are as effective as any armour. While not wearing armour, you add your Wisdom Modifier to your Armour Class.",
         "image": "Unarmored Defense Monk.webp",
         "type": 2,
         "id": 8136
