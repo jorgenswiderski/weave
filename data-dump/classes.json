@@ -11233,6 +11233,7 @@
                                         "choices": [
                                             {
                                                 "type": 23,
+                                                "count": 3,
                                                 "options": [
                                                     {
                                                         "name": "Commander's Strike",
@@ -11243,18 +11244,24 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Disarming Attack (Melee)",
+                                                        "name": "Disarming Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a785"
+                                                            },
+                                                            {
+                                                                "ref": "a1480"
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Distracting Strike (Melee)",
+                                                        "name": "Distracting Strike",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14404"
+                                                            },
+                                                            {
+                                                                "ref": "a14405"
                                                             }
                                                         ]
                                                     },
@@ -11275,26 +11282,35 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Goading Attack (Melee)",
+                                                        "name": "Goading Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14406"
+                                                            },
+                                                            {
+                                                                "ref": "a14407"
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Manoeuvring Attack (Melee)",
+                                                        "name": "Manoeuvring Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14401"
+                                                            },
+                                                            {
+                                                                "ref": "a14402"
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Menacing Attack (Melee)",
+                                                        "name": "Menacing Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a769"
+                                                            },
+                                                            {
+                                                                "ref": "a1483"
                                                             }
                                                         ]
                                                     },
@@ -11307,10 +11323,13 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Pushing Attack (Melee)",
+                                                        "name": "Pushing Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a771"
+                                                            },
+                                                            {
+                                                                "ref": "a1486"
                                                             }
                                                         ]
                                                     },
@@ -11339,15 +11358,17 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Trip Attack (Melee)",
+                                                        "name": "Trip Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a784"
+                                                            },
+                                                            {
+                                                                "ref": "a1489"
                                                             }
                                                         ]
                                                     }
-                                                ],
-                                                "count": 3
+                                                ]
                                             }
                                         ]
                                     },
@@ -13137,6 +13158,7 @@
                                         "choices": [
                                             {
                                                 "type": 23,
+                                                "count": 2,
                                                 "options": [
                                                     {
                                                         "name": "Commander's Strike",
@@ -13147,18 +13169,24 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Disarming Attack (Melee)",
+                                                        "name": "Disarming Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a785"
+                                                            },
+                                                            {
+                                                                "ref": "a1480"
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Distracting Strike (Melee)",
+                                                        "name": "Distracting Strike",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14404"
+                                                            },
+                                                            {
+                                                                "ref": "a14405"
                                                             }
                                                         ]
                                                     },
@@ -13179,26 +13207,35 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Goading Attack (Melee)",
+                                                        "name": "Goading Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14406"
+                                                            },
+                                                            {
+                                                                "ref": "a14407"
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Manoeuvring Attack (Melee)",
+                                                        "name": "Manoeuvring Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14401"
+                                                            },
+                                                            {
+                                                                "ref": "a14402"
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Menacing Attack (Melee)",
+                                                        "name": "Menacing Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a769"
+                                                            },
+                                                            {
+                                                                "ref": "a1483"
                                                             }
                                                         ]
                                                     },
@@ -13211,10 +13248,13 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Pushing Attack (Melee)",
+                                                        "name": "Pushing Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a771"
+                                                            },
+                                                            {
+                                                                "ref": "a1486"
                                                             }
                                                         ]
                                                     },
@@ -13243,15 +13283,17 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Trip Attack (Melee)",
+                                                        "name": "Trip Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a784"
+                                                            },
+                                                            {
+                                                                "ref": "a1489"
                                                             }
                                                         ]
                                                     }
-                                                ],
-                                                "count": 2
+                                                ]
                                             }
                                         ]
                                     },
@@ -14283,6 +14325,7 @@
                                         "choices": [
                                             {
                                                 "type": 23,
+                                                "count": 2,
                                                 "options": [
                                                     {
                                                         "name": "Commander's Strike",
@@ -14293,18 +14336,24 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Disarming Attack (Melee)",
+                                                        "name": "Disarming Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a785"
+                                                            },
+                                                            {
+                                                                "ref": "a1480"
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Distracting Strike (Melee)",
+                                                        "name": "Distracting Strike",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14404"
+                                                            },
+                                                            {
+                                                                "ref": "a14405"
                                                             }
                                                         ]
                                                     },
@@ -14325,26 +14374,35 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Goading Attack (Melee)",
+                                                        "name": "Goading Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14406"
+                                                            },
+                                                            {
+                                                                "ref": "a14407"
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Manoeuvring Attack (Melee)",
+                                                        "name": "Manoeuvring Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a14401"
+                                                            },
+                                                            {
+                                                                "ref": "a14402"
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Menacing Attack (Melee)",
+                                                        "name": "Menacing Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a769"
+                                                            },
+                                                            {
+                                                                "ref": "a1483"
                                                             }
                                                         ]
                                                     },
@@ -14357,10 +14415,13 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Pushing Attack (Melee)",
+                                                        "name": "Pushing Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a771"
+                                                            },
+                                                            {
+                                                                "ref": "a1486"
                                                             }
                                                         ]
                                                     },
@@ -14389,15 +14450,17 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Trip Attack (Melee)",
+                                                        "name": "Trip Attack",
                                                         "grants": [
                                                             {
                                                                 "ref": "a784"
+                                                            },
+                                                            {
+                                                                "ref": "a1489"
                                                             }
                                                         ]
                                                     }
-                                                ],
-                                                "count": 2
+                                                ]
                                             }
                                         ]
                                     },

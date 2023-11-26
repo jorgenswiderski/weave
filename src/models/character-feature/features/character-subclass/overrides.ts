@@ -1,23 +1,19 @@
 import { ChoiceListConfig } from '../../types';
 
+export interface SubclassFeatureOverrides {
+    ignore?: true;
+    choiceListConfig?: Partial<ChoiceListConfig>;
+    redirectTo?: [number, string];
+    disableTitleMatch?: true;
+    // Allows matching section content of sections that also have an effect in the section title
+    forceContentMatch?: true;
+    choose?: number;
+    chooseBullet?: true;
+}
+
 type Overrides = Record<
     string,
-    Record<
-        number,
-        Record<
-            string,
-            {
-                ignore?: true;
-                choiceListConfig?: Partial<ChoiceListConfig>;
-                redirectTo?: [number, string];
-                disableTitleMatch?: true;
-                // Allows matching section content of sections that also have an effect in the section title
-                forceContentMatch?: true;
-                choose?: number;
-                chooseBullet?: true;
-            }
-        >
-    >
+    Record<number, Record<string, SubclassFeatureOverrides>>
 >;
 
 const Barbarian: Overrides = {
@@ -122,6 +118,16 @@ const Druid: Overrides = {
 
 const Fighter: Overrides = {
     'Battle Master': {
+        3: {
+            Manoeuvres: {
+                choiceListConfig: {
+                    feature: 'Grants',
+                    name: 'Manoeuvres',
+                    matchAll: true,
+                },
+                choose: 3,
+            },
+        },
         7: {
             Manoeuvres: {
                 redirectTo: [3, 'Manoeuvres'],

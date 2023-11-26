@@ -12,7 +12,6 @@
         "Corsair Greymon": "Greymon",
         "Counting House": "The Counting House",
         "Creche Y'llek": "Crèche Y'llek",
-        "Crusher": "Novice Crusher",
         "Dame Aylin": "Aylin",
         "Darkvision (Passive Feature)": "Darkvision",
         "Darkvision (Spell)": "Darkvision (spell)",
@@ -66,6 +65,7 @@
         "Servant's Quarters": "Servants' Quarters",
         "Spreading Spores (Passive Feature)": "Spreading Spores (passive feature)",
         "Stylin' Horst Potion Shop": "The Velveteen Elixir",
+        "Summon Companion": "Ranger's Companion",
         "Template:Ability Check": "Template:Ability check",
         "Template:ActionPage": "Template:Action Page",
         "Template:ActionWarning": "Template:Warning",
@@ -120,6 +120,8 @@
         "Template:inflicts": "Template:Inflicts",
         "Template:legendary": "Template:Legendary",
         "Template:mdRarityItem": "Template:MdRarityItem",
+        "Template:notebegin": "Template:Notebegin",
+        "Template:noteend": "Template:Noteend",
         "Template:notes": "Template:Notes",
         "Template:nowrap": "Template:Nowrap",
         "Template:prereq": "Template:Prereq",
@@ -679,8 +681,8 @@
         },
         {
             "pageId": 850,
-            "revisionId": 108067,
-            "title": "Summon Companion"
+            "revisionId": 117614,
+            "title": "Ranger's Companion"
         },
         {
             "pageId": 879,
@@ -5259,8 +5261,8 @@
         },
         {
             "pageId": 5874,
-            "revisionId": 114274,
-            "title": "Novice Crusher"
+            "revisionId": 117544,
+            "title": "Crusher"
         },
         {
             "pageId": 5887,
@@ -11309,7 +11311,7 @@
         },
         {
             "pageId": 14361,
-            "revisionId": 108870,
+            "revisionId": 117649,
             "title": "Feinting Attack"
         },
         {
@@ -15564,7 +15566,7 @@
         },
         {
             "pageId": 24676,
-            "revisionId": 95325,
+            "revisionId": 117644,
             "title": "Manoeuvres"
         },
         {
@@ -18998,6 +19000,16 @@
             "title": "Bycocket"
         },
         {
+            "pageId": 29398,
+            "revisionId": 117445,
+            "title": "Template:Notebegin"
+        },
+        {
+            "pageId": 29399,
+            "revisionId": 117447,
+            "title": "Template:Noteend"
+        },
+        {
             "pageId": 29408,
             "revisionId": 117464,
             "title": "Rusty Studded Shield"
@@ -19011,6 +19023,21 @@
             "pageId": 29422,
             "revisionId": 117509,
             "title": "Wizard Hat"
+        },
+        {
+            "pageId": 29431,
+            "revisionId": 117621,
+            "title": "Urticating Hairs"
+        },
+        {
+            "pageId": 29433,
+            "revisionId": 117604,
+            "title": "Shooting Spider Companion"
+        },
+        {
+            "pageId": 29443,
+            "revisionId": 117623,
+            "title": "Golbraith"
         }
     ],
     "deadLinks": [
@@ -19029,7 +19056,6 @@
         "EquipmentTrader SecondaryArmor",
         "Ffion Goldgrind",
         "Gish For'reth",
-        "Golbraith",
         "Guildhall Bar",
         "Hope's Prison",
         "Infirmary",
