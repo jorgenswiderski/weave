@@ -17171,7 +17171,7 @@
                         }
                     },
                     "character": {
-                        "name": "Novice Crusher",
+                        "name": "Crusher",
                         "id": 5874
                     }
                 }
@@ -19757,6 +19757,10 @@
                             "name": "Lower City",
                             "id": 11839
                         }
+                    },
+                    "character": {
+                        "name": "Golbraith",
+                        "id": 29443
                     }
                 }
             ],

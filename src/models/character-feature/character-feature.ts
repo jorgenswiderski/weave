@@ -36,6 +36,7 @@ import { choiceListConfigs } from './choice-list-configs';
 import { CharacteristicStub } from '../static-reference/characteristic-stub';
 import { getPassiveDataById } from '../characteristic/characteristic';
 import { getActionDataById } from '../action/init';
+import { SubclassFeatureOverrides } from './features/character-subclass/overrides';
 
 enum CharacterFeatureLoadingStates {
     DESCRIPTION = 'DESCRIPTION',
@@ -283,6 +284,8 @@ export class CharacterFeature
         feature: 0,
     };
 
+    choiceListCount = 1;
+
     protected async parseChoiceList(
         sectionWikitext: string,
         pageTitle: string,
@@ -450,9 +453,8 @@ export class CharacterFeature
     }
 
     // To be overridden by special features like CharacterFeatureMetamagic
-    // eslint-disable-next-line class-methods-use-this
     protected getChoiceCount(): number {
-        return 1;
+        return this.choiceListCount;
     }
 
     protected async parsePageForChoice(): Promise<ICharacterChoiceWithStubs | null> {
@@ -546,6 +548,7 @@ export class CharacterFeature
         level?: number,
         characterClass?: ICharacterClass,
         subclass?: ICharacterOptionWithStubs,
+        config?: SubclassFeatureOverrides,
     ): Promise<CharacterFeature | undefined> {
         const cf = new CharacterFeature(
             {
@@ -556,6 +559,13 @@ export class CharacterFeature
             characterClass,
             subclass,
         );
+
+        cf.choiceListConfig = {
+            ...cf.choiceListConfig,
+            ...config?.choiceListConfig,
+        };
+
+        cf.choiceListCount = config?.choose ?? cf.choiceListCount;
 
         await cf.waitForInitialization();
 

@@ -83,6 +83,10 @@ export class CharacterSubclass extends CharacterFeature {
             return undefined;
         }
 
+        if (config?.redirectTo) {
+            return { name: sectionTitlePlain };
+        }
+
         if (
             content.match(/{\|\s*class=("wikitable.*?"|wikitable)[\s\S]+?\|}/)
         ) {
@@ -126,6 +130,7 @@ export class CharacterSubclass extends CharacterFeature {
                         this.level,
                         this.characterClass,
                         this,
+                        config,
                     ),
                 ),
             )
@@ -151,6 +156,7 @@ export class CharacterSubclass extends CharacterFeature {
                         this.level,
                         this.characterClass,
                         this,
+                        config,
                     ),
                 ),
             )
@@ -302,7 +308,9 @@ export class CharacterSubclass extends CharacterFeature {
                         optionsByLevel[rLevel].find(
                             (opt: ICharacterOptionWithStubs) =>
                                 opt.name === rSection,
-                        )!;
+                        );
+
+                    assert(targetOption);
 
                     return {
                         ...targetOption,
