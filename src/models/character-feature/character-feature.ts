@@ -5,7 +5,7 @@ import {
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import {
     GrantableEffect,
-    ICharacteristic,
+    IPassive,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import {
     IAction,
@@ -33,8 +33,8 @@ import { IClassFeatureFactory } from './class-feature/types';
 import { WikitableNotFoundError } from '../media-wiki/types';
 import { ICharacterClass } from '../character-class/types';
 import { choiceListConfigs } from './choice-list-configs';
-import { CharacteristicStub } from '../static-reference/characteristic-stub';
-import { getPassiveDataById } from '../characteristic/characteristic';
+import { PassiveStub } from '../static-reference/passive-stub';
+import { getPassiveDataById } from '../passive/passive';
 import { getActionDataById } from '../action/init';
 import { SubclassFeatureOverrides } from './features/character-subclass/overrides';
 
@@ -156,7 +156,7 @@ export class CharacterFeature
 
     private static async parsePassiveFeaturePage(
         page: PageData & { content: string },
-    ): Promise<CharacteristicStub> {
+    ): Promise<PassiveStub> {
         const { title, pageId } = page;
         assert(await page.hasTemplate('Passive feature page'));
         const passive = getPassiveDataById().get(pageId);
@@ -169,26 +169,20 @@ export class CharacterFeature
 
         passive.markUsed();
 
-        return new CharacteristicStub(passive as ICharacteristic);
+        return new PassiveStub(passive as IPassive);
     }
 
     static async parsePageForGrantableEffect(
         pageTitle: string,
-    ): Promise<
-        GrantableEffect | ActionStub | SpellStub | CharacteristicStub | null
-    >;
+    ): Promise<GrantableEffect | ActionStub | SpellStub | PassiveStub | null>;
 
     static async parsePageForGrantableEffect(
         page: PageData,
-    ): Promise<
-        GrantableEffect | ActionStub | SpellStub | CharacteristicStub | null
-    >;
+    ): Promise<GrantableEffect | ActionStub | SpellStub | PassiveStub | null>;
 
     static async parsePageForGrantableEffect(
         pageOrTitle: string | PageData,
-    ): Promise<
-        GrantableEffect | ActionStub | SpellStub | CharacteristicStub | null
-    > {
+    ): Promise<GrantableEffect | ActionStub | SpellStub | PassiveStub | null> {
         let page: PageData | undefined;
 
         try {

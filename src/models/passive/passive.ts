@@ -1,8 +1,8 @@
 import {
-    CharacteristicType,
+    PassiveType,
     GrantableEffect,
     GrantableEffectType,
-    ICharacteristic,
+    IPassive,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 import assert from 'assert';
 import { PageItem, PageLoadingState } from '../page-item';
@@ -13,25 +13,21 @@ import { MediaWikiTemplateParserConfig } from '../media-wiki/types';
 import { StaticImageCacheService } from '../static-image-cache-service';
 import { MediaWiki } from '../media-wiki/media-wiki';
 
-enum CharacteristicLoadState {
-    CHARACTERISTIC_DATA = 'CHARACTERISTIC_DATA',
+enum PassiveLoadState {
+    PASSIVE_DATA = 'PASSIVE_DATA',
 }
 
-export class Characteristic
-    extends PageItem
-    implements Partial<ICharacteristic>
-{
+export class Passive extends PageItem implements Partial<IPassive> {
     name?: string;
     description?: string;
     image?: string;
-    type: GrantableEffectType.CHARACTERISTIC =
-        GrantableEffectType.CHARACTERISTIC;
+    type: GrantableEffectType.PASSIVE = GrantableEffectType.PASSIVE;
     id?: number;
 
     // unused
     hidden?: boolean;
     grants?: GrantableEffect[];
-    subtype?: CharacteristicType;
+    subtype?: PassiveType;
     values?: any;
 
     used: boolean = false;
@@ -39,7 +35,7 @@ export class Characteristic
     constructor(pageTitle: string) {
         super({ pageTitle });
 
-        this.initialized[CharacteristicLoadState.CHARACTERISTIC_DATA] =
+        this.initialized[PassiveLoadState.PASSIVE_DATA] =
             this.initData().catch(error);
     }
 
@@ -64,7 +60,7 @@ export class Characteristic
             // If its an Action Page, no problem, it'll just be picked up by the Actions code
             if (!(await this.page.hasTemplate(['Action Page', 'SpellPage']))) {
                 warn(
-                    `Characteristic page '${this.page.title}' is missing Passive feature page template!`,
+                    `Passive page '${this.page.title}' is missing Passive feature page template!`,
                 );
             }
 
@@ -91,10 +87,10 @@ export class Characteristic
         Object.assign(this, template.parse(config));
     }
 
-    toJSON(): Partial<ICharacteristic> {
-        const result: Partial<ICharacteristic> = {};
+    toJSON(): Partial<IPassive> {
+        const result: Partial<IPassive> = {};
 
-        const keys: Array<keyof ICharacteristic> = [
+        const keys: Array<keyof IPassive> = [
             'name',
             'description',
             'image',
@@ -120,18 +116,18 @@ export class Characteristic
     }
 }
 
-let passiveData: Characteristic[];
-let passiveDataById: Map<number, Characteristic> | null = null;
+let passiveData: Passive[];
+let passiveDataById: Map<number, Passive> | null = null;
 
 export async function initPassives(): Promise<void> {
     const passiveNames = await MediaWiki.getTitlesInCategories([
         'Passive features',
     ]);
 
-    passiveData = passiveNames.map((name) => new Characteristic(name));
+    passiveData = passiveNames.map((name) => new Passive(name));
     await Promise.all(passiveData.map((p) => p.waitForInitialization()));
     passiveData = passiveData.filter((p) => p.id);
-    passiveDataById = new Map<number, Characteristic>();
+    passiveDataById = new Map<number, Passive>();
 
     passiveData.forEach((passive) => {
         if (passiveDataById!.has(passive.id!)) {
@@ -146,7 +142,7 @@ export async function initPassives(): Promise<void> {
     });
 }
 
-export function getPassiveDataFiltered(): Characteristic[] {
+export function getPassiveDataFiltered(): Passive[] {
     assert(
         passiveData,
         'Passive data should be initialized before fetching it!',
@@ -155,7 +151,7 @@ export function getPassiveDataFiltered(): Characteristic[] {
     return passiveData.filter((passive) => passive.used);
 }
 
-export function getPassiveDataById(): Map<number, Characteristic> {
+export function getPassiveDataById(): Map<number, Passive> {
     assert(
         passiveDataById,
         'Passive data should be initialized before fetching it!',
