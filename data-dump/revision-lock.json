@@ -991,7 +991,7 @@
         },
         {
             "pageId": 1313,
-            "revisionId": 113675,
+            "revisionId": 117966,
             "title": "Warlock"
         },
         {
@@ -1503,6 +1503,11 @@
             "pageId": 2120,
             "revisionId": 84290,
             "title": "Disguise Self: Femme Drow"
+        },
+        {
+            "pageId": 2121,
+            "revisionId": 118320,
+            "title": "Dispel Disguise"
         },
         {
             "pageId": 2139,
@@ -5706,7 +5711,7 @@
         },
         {
             "pageId": 6674,
-            "revisionId": 110716,
+            "revisionId": 116074,
             "title": "Magical Secrets"
         },
         {
@@ -10125,6 +10130,11 @@
             "title": "Oathbreaker Knight Boots"
         },
         {
+            "pageId": 11849,
+            "revisionId": 117780,
+            "title": "Plain Boots"
+        },
+        {
             "pageId": 11856,
             "revisionId": 112981,
             "title": "Watcher Greatsword"
@@ -11780,6 +11790,11 @@
             "title": "Psionic Backlash"
         },
         {
+            "pageId": 15238,
+            "revisionId": 117771,
+            "title": "The Oak Father's Embrace"
+        },
+        {
             "pageId": 15245,
             "revisionId": 101149,
             "title": "Brithvar"
@@ -12466,7 +12481,7 @@
         },
         {
             "pageId": 17297,
-            "revisionId": 115870,
+            "revisionId": 116751,
             "title": "Guardian of Faith (passive feature)"
         },
         {
@@ -13685,6 +13700,11 @@
             "title": "Pact Boon"
         },
         {
+            "pageId": 19847,
+            "revisionId": 117962,
+            "title": "Mystic Arcanum"
+        },
+        {
             "pageId": 19861,
             "revisionId": 74923,
             "title": "Kass' Practice Sword"
@@ -13861,7 +13881,7 @@
         },
         {
             "pageId": 20457,
-            "revisionId": 115392,
+            "revisionId": 116750,
             "title": "Guardian of Faith (disambiguation)"
         },
         {
@@ -19038,6 +19058,111 @@
             "pageId": 29443,
             "revisionId": 117623,
             "title": "Golbraith"
+        },
+        {
+            "pageId": 29458,
+            "revisionId": 117682,
+            "title": "Well Crated Helm"
+        },
+        {
+            "pageId": 29465,
+            "revisionId": 117686,
+            "title": "Red Carmine Mask"
+        },
+        {
+            "pageId": 29474,
+            "revisionId": 117770,
+            "title": "Broken Club"
+        },
+        {
+            "pageId": 29477,
+            "revisionId": 117778,
+            "title": "Damaged Scale Mail"
+        },
+        {
+            "pageId": 29480,
+            "revisionId": 117884,
+            "title": "Winkling Gloves"
+        },
+        {
+            "pageId": 29486,
+            "revisionId": 118025,
+            "title": "Move Moonbeam"
+        },
+        {
+            "pageId": 29488,
+            "revisionId": 118032,
+            "title": "Otiluke's Conveniently Portable Freezing Sphere"
+        },
+        {
+            "pageId": 29489,
+            "revisionId": 118041,
+            "title": "Otiluke's Freezing Sphere (Launch)"
+        },
+        {
+            "pageId": 29504,
+            "revisionId": 118197,
+            "title": "Ironwood Breastplate"
+        },
+        {
+            "pageId": 29505,
+            "revisionId": 118223,
+            "title": "Nightsinger's Half-Plate"
+        },
+        {
+            "pageId": 29516,
+            "revisionId": 118221,
+            "title": "Fiendish Charm"
+        },
+        {
+            "pageId": 29520,
+            "revisionId": 118226,
+            "title": "Githyanki Breastplate"
+        },
+        {
+            "pageId": 29533,
+            "revisionId": 118282,
+            "title": "Wounding Ray (Spectator)"
+        },
+        {
+            "pageId": 29536,
+            "revisionId": 118288,
+            "title": "Fear Ray"
+        },
+        {
+            "pageId": 29553,
+            "revisionId": 118392,
+            "title": "Greataxe Slash"
+        },
+        {
+            "pageId": 29556,
+            "revisionId": 118402,
+            "title": "Greatsword Slash"
+        },
+        {
+            "pageId": 29561,
+            "revisionId": 118414,
+            "title": "Halberd Slash"
+        },
+        {
+            "pageId": 29562,
+            "revisionId": 118415,
+            "title": "Maul Blow"
+        },
+        {
+            "pageId": 29563,
+            "revisionId": 118416,
+            "title": "Spear Thrust"
+        },
+        {
+            "pageId": 29564,
+            "revisionId": 118417,
+            "title": "Trident Thrust"
+        },
+        {
+            "pageId": 29571,
+            "revisionId": 118464,
+            "title": "Activate Witch Bolt"
         }
     ],
     "deadLinks": [
@@ -19081,8 +19206,6 @@
         "Stone Guard Orgarth",
         "The Devil's Fee",
         "The Rivington General",
-        "Thudd",
-        "[[#Level 11|Mystic Arcanum]] (6th level spell)",
-        "[[#Level_1|Channel Oath]]"
+        "Thudd"
     ]
 }

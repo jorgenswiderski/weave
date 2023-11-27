@@ -627,6 +627,31 @@
         "isVariant": true
     },
     {
+        "name": "Arcane Gate",
+        "image": "Arcane Gate.webp",
+        "level": 6,
+        "school": 2,
+        "description": "Create two linked teleportation portals within range. All creatures, including enemies, may travel between the two portals as a free action.\n\nThe game's pathfinding will automatically navigate through a portal if it is the shorter route.",
+        "ritual": false,
+        "concentration": true,
+        "id": 8040,
+        "attackRoll": false,
+        "range": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 17,
+                "amount": 1
+            }
+        ],
+        "classes": [],
+        "noSpellSlot": false,
+        "isVariant": false
+    },
+    {
         "name": "Arcane Lock",
         "image": "Arcane Lock.webp",
         "level": 2,
@@ -760,6 +785,37 @@
         ],
         "noSpellSlot": false,
         "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st.",
+        "isVariant": false
+    },
+    {
+        "name": "Banishing Smite (Melee)",
+        "damage": "weapon",
+        "extraDamage": "5d10",
+        "extraDamageType": 12,
+        "image": "Banishing Smite Melee.webp",
+        "level": 5,
+        "school": 1,
+        "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banishing the target.",
+        "description": "Possibly Banish your target to another plane of existence.\n\nTargets with 50 Hit Points or more can't be Banished.",
+        "ritual": false,
+        "concentration": true,
+        "id": 11915,
+        "attackRoll": false,
+        "range": 4,
+        "condition": "Banished",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 16,
+                "amount": 1
+            }
+        ],
+        "classes": [],
+        "noSpellSlot": false,
         "isVariant": false
     },
     {
@@ -2731,6 +2787,40 @@
         "noSpellSlot": false,
         "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Thunder damage for each Spell Slot Level above 1st.",
         "isVariant": true
+    },
+    {
+        "name": "Circle of Death",
+        "damage": "8d6",
+        "damageType": 11,
+        "image": "Circle of Death.webp",
+        "level": 6,
+        "school": 7,
+        "description": "Sculpt a massive sphere of entropic energy around a creature. Devastate the target and all surrounding creatures.",
+        "ritual": false,
+        "concentration": false,
+        "id": 7951,
+        "attackRoll": false,
+        "range": 1,
+        "rangeM": 18,
+        "rangeFt": 60,
+        "aoe": 1,
+        "aoeM": 9,
+        "aoeFt": 30,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 17,
+                "amount": 1
+            }
+        ],
+        "classes": [],
+        "noSpellSlot": false,
+        "damageSave": 3,
+        "damageSaveEffect": 0,
+        "isVariant": false
     },
     {
         "name": "Cloud of Daggers",
@@ -8682,6 +8772,131 @@
         ],
         "noSpellSlot": false,
         "damageSaveEffect": 1,
+        "isVariant": false
+    },
+    {
+        "name": "Eyebite",
+        "image": "Eyebite Panicked.webp",
+        "level": 6,
+        "school": 7,
+        "description": "Your eyes become black corridors walled in teeth, your gaze capable of inflicting dread, sickness, or putting creatures to sleep.  While Concentrating,  you may cast Eyebite without expending a spell slot.\n\nEach round, up to ten rounds while concentrating, you can inflict of the following effects on a target:\n* Eyebite: Panicked\n* Eyebite: Sickened\n* Eyebite: Asleep",
+        "ritual": false,
+        "concentration": true,
+        "id": 8017,
+        "attackRoll": false,
+        "rangeM": 18,
+        "rangeFt": 60,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 17,
+                "amount": 1
+            }
+        ],
+        "classes": [],
+        "noSpellSlot": false,
+        "damageSave": 5,
+        "variants": [
+            {
+                "name": "Eyebite: Panicked",
+                "image": "Eyebite Panicked.webp",
+                "level": 6,
+                "school": 7,
+                "summary": "This spell allows you to continuously scare enemies over and over for up to 10 turns. \n\nThis spell is a variation of Eyebite.",
+                "description": "Strike Fear deep into a creature's heart.",
+                "ritual": false,
+                "concentration": true,
+                "id": 8020,
+                "attackRoll": false,
+                "range": 1,
+                "rangeM": 18,
+                "rangeFt": 60,
+                "condition": "Fearful",
+                "conditionDuration": 10,
+                "conditionSave": 5,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 17,
+                        "amount": 1
+                    }
+                ],
+                "classes": [],
+                "noSpellSlot": false,
+                "damageSave": 5,
+                "isVariant": true
+            },
+            {
+                "name": "Eyebite: Sickened",
+                "image": "Eyebite Sickened.webp",
+                "level": 6,
+                "school": 7,
+                "summary": "This spell makes a target deathly sick every turn. \n\nThis spell is a variant of Eyebite.",
+                "description": "Afflict a creature with Disadvantage on Attack Rolls and Ability Checks.",
+                "ritual": false,
+                "concentration": true,
+                "id": 8023,
+                "attackRoll": false,
+                "range": 1,
+                "rangeM": 18,
+                "rangeFt": 60,
+                "condition": "Eyebite: Sickened",
+                "conditionDuration": 10,
+                "conditionSave": 3,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 17,
+                        "amount": 1
+                    }
+                ],
+                "classes": [],
+                "noSpellSlot": false,
+                "damageSave": 5,
+                "isVariant": true
+            },
+            {
+                "name": "Eyebite: Asleep",
+                "image": "Eyebite Asleep.webp",
+                "level": 6,
+                "school": 7,
+                "summary": "This spell allows you to repeatedly force enemies asleep.\n\nThis spell is a variant of Eyebite.",
+                "description": "Put a creature to sleep.",
+                "ritual": false,
+                "concentration": true,
+                "id": 8024,
+                "attackRoll": false,
+                "range": 1,
+                "rangeM": 18,
+                "rangeFt": 60,
+                "condition": "Sleeping",
+                "conditionDuration": 10,
+                "conditionSave": 5,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 17,
+                        "amount": 1
+                    }
+                ],
+                "classes": [],
+                "noSpellSlot": false,
+                "damageSave": 5,
+                "isVariant": true
+            }
+        ],
         "isVariant": false
     },
     {

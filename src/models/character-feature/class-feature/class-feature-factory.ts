@@ -1,4 +1,7 @@
-import { CharacterPlannerStep } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
+import {
+    CharacterPlannerStep,
+    ICharacterOptionWithStubs,
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { ICharacterClass } from '../../character-class/types';
 import { error, warn } from '../../logger';
 import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
@@ -11,28 +14,45 @@ import {
 } from '../features/special/special';
 import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
 import { IClassFeatureFactory } from './types';
+import { CharacterFeatureLearnSpell } from '../features/special/character-feature-learn-spell';
+import { SubclassFeatureOverrides } from '../features/character-subclass/overrides';
+import { CharacterSubclass } from '../features/character-subclass/character-subclass';
 
 class ClassFeatureFactorySingleton implements IClassFeatureFactory {
     protected static async construct(
-        type: CharacterFeatureTypes.CHOOSE_SUBCLASS,
+        type: CharacterFeatureTypes,
         options: ICharacterOptionWithPage,
-        characterClass: ICharacterClass,
-        level: number,
-    ): Promise<CharacterFeature>;
-    protected static async construct(
-        type: Omit<
-            CharacterFeatureTypes,
-            CharacterFeatureTypes.CHOOSE_SUBCLASS
-        >,
-        options: ICharacterOptionWithPage,
-        characterClass?: ICharacterClass,
-        level?: number,
-    ): Promise<CharacterFeature | undefined>;
-    protected static async construct(
+        characterClass: ICharacterClass | undefined,
+        level: number | undefined,
+        subclass: ICharacterOptionWithStubs | undefined,
+        config: SubclassFeatureOverrides | undefined,
+    ): Promise<CharacterFeature | undefined> {
+        const feature = await this.construct2(
+            type,
+            options,
+            characterClass,
+            level,
+            subclass,
+        );
+
+        if (feature) {
+            feature.choiceListConfig = {
+                ...feature.choiceListConfig,
+                ...config?.choiceListConfig,
+            };
+
+            feature.choiceListCount = config?.choose ?? feature.choiceListCount;
+        }
+
+        return feature;
+    }
+
+    protected static async construct2(
         type: CharacterFeatureTypes,
         options: ICharacterOptionWithPage,
         characterClass?: ICharacterClass,
         level?: number,
+        subclass?: ICharacterOptionWithStubs,
     ): Promise<CharacterFeature | undefined> {
         if (type === CharacterFeatureTypes.CHOOSE_SUBCLASS) {
             if (!characterClass || !level) {
@@ -63,8 +83,17 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             );
         }
 
+        if (type === CharacterFeatureTypes.CLASS_FEATURE_LEARN_SPELL) {
+            return new CharacterFeatureLearnSpell(options, level!);
+        }
+
         if (type !== CharacterFeatureTypes.NONE) {
-            return new CharacterFeature(options, level, characterClass);
+            return new CharacterFeature(
+                options,
+                level,
+                characterClass,
+                subclass,
+            );
         }
 
         return undefined;
@@ -79,6 +108,9 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
         '|subclass feature': {
             type: CharacterFeatureTypes.NONE,
         },
+        '|channel oath': {
+            type: CharacterFeatureTypes.NONE,
+        },
         'feats|feat': { type: CharacterFeatureTypes.FEAT, pageTitle: 'Feats' },
         '#spellcasting': { type: CharacterFeatureTypes.SPELLCASTING },
         '#pact magic': { type: CharacterFeatureTypes.PACT_MAGIC },
@@ -90,13 +122,30 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             type: CharacterFeatureTypes.WARLOCK_ELDRITCH_INVOCATION,
             pageTitle: 'Eldritch Invocation',
         },
+        'magical secrets': {
+            type: CharacterFeatureTypes.CLASS_FEATURE_LEARN_SPELL,
+            pageTitle: 'Magical Secrets',
+        },
+        'mystic arcanum': {
+            type: CharacterFeatureTypes.CLASS_FEATURE_LEARN_SPELL,
+            pageTitle: 'Mystic Arcanum',
+        },
     };
 
     fromWikitext(
         featureText: string,
         characterClass?: ICharacterClass,
         level?: number,
+        subclass?: ICharacterOptionWithStubs,
+        config?: SubclassFeatureOverrides,
     ): Promise<CharacterFeature | undefined> {
+        const rest: [
+            ICharacterClass | undefined,
+            number | undefined,
+            ICharacterOptionWithStubs | undefined,
+            SubclassFeatureOverrides | undefined,
+        ] = [characterClass, level, subclass, config];
+
         // Handle special labels
         // eslint-disable-next-line no-restricted-syntax
         for (const [caseText, data] of Object.entries(
@@ -113,8 +162,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
                             : caseText,
                         pageTitle: data.pageTitle,
                     },
-                    characterClass,
-                    level,
+                    ...rest,
                 );
             }
         }
@@ -137,8 +185,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
                     name: MediaWikiParser.parseNameFromPageTitle(pageTitle),
                     pageTitle,
                 },
-                characterClass,
-                level,
+                ...rest,
             );
         }
 
@@ -153,8 +200,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
                     name: MediaWikiParser.parseNameFromPageTitle(pageTitle),
                     pageTitle,
                 },
-                characterClass,
-                level,
+                ...rest,
             );
         }
 
@@ -184,8 +230,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
                             ),
                             pageTitle: featureName,
                         },
-                        characterClass,
-                        level,
+                        ...rest,
                     );
                 }
             }
@@ -199,11 +244,11 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
                 ),
                 pageTitle: featureText.trim(),
             },
-            characterClass,
-            level,
+            ...rest,
         );
     }
 }
 
 export const ClassFeatureFactory = new ClassFeatureFactorySingleton();
 CharacterFeature.factory = ClassFeatureFactory;
+CharacterSubclass.factory = ClassFeatureFactory;

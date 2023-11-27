@@ -15,8 +15,11 @@ import { StaticImageCacheService } from '../../../static-image-cache-service';
 import { MediaWikiParser } from '../../../media-wiki/media-wiki-parser';
 import { characterSubclassParserOverrides } from './overrides';
 import { ICharacterOptionWithPage } from '../../types';
+import { IClassFeatureFactory } from '../../class-feature/types';
 
 export class CharacterSubclass extends CharacterFeature {
+    static factory?: IClassFeatureFactory;
+
     constructor(
         option: ICharacterOptionWithPage,
         public level: number,
@@ -124,11 +127,11 @@ export class CharacterSubclass extends CharacterFeature {
 
         const f = (
             await Promise.all(
-                featureMatches.map(([, title]) =>
-                    CharacterFeature.fromPage(
-                        title,
-                        this.level,
+                featureMatches.map(([m]) =>
+                    CharacterSubclass.factory!.fromWikitext(
+                        m,
                         this.characterClass,
+                        this.level,
                         this,
                         config,
                     ),
@@ -144,23 +147,27 @@ export class CharacterSubclass extends CharacterFeature {
             ];
         }
 
-        const featureTitles = [
-            ...new Set(featureMatches.map((match) => match[1])),
+        const featureWikitext = [
+            ...new Set(featureMatches.map((match) => match[0])),
         ];
 
         const features = (
             await Promise.all(
-                featureTitles.map((title) =>
-                    CharacterFeature.fromPage(
-                        title,
-                        this.level,
+                featureWikitext.map((feature) =>
+                    CharacterSubclass.factory!.fromWikitext(
+                        feature,
                         this.characterClass,
+                        this.level,
                         this,
                         config,
                     ),
                 ),
             )
         ).filter(Boolean) as CharacterFeature[];
+
+        await Promise.all(
+            features.map((feature) => feature.waitForInitialization()),
+        );
 
         if (
             features.length > 1 &&

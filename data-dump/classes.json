@@ -3497,7 +3497,407 @@
                                         "name": "College of Lore",
                                         "description": "You pursue beauty and truth, collecting knowledge from scholarly tomes to peasants' tales, and use your gifts to hold both audiences and enemies spellbound.",
                                         "image": "College Of Lore Icon.png",
-                                        "grants": []
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "type": 24,
+                                                "count": 2,
+                                                "options": [
+                                                    {
+                                                        "name": "Bone Chill",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1645"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Eldritch Blast",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1651"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Fire Bolt",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1653"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Ray of Frost",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1691"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Sacred Flame",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1631"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Armour of Agathys",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1988"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Bless",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1610"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Chromatic Orb",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2032"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Command",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s3061"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Entangle",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2286"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "False Life",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2178"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Guiding Bolt",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2200"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Hellish Rebuke",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2205"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Hex",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2223"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Hunter's Mark",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2209"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Ice Knife",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6660"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Magic Missile",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2291"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Sanctuary",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2818"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Thunderous Smite",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2833"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Arcane Lock",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s6662"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Blur",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s1353"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Darkness",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2342"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Darkvision",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2348"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Misty Step",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2644"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Pass Without Trace",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2630"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Ray of Enfeeblement",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2387"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Scorching Ray",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2530"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Spike Growth",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2324"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Spiritual Weapon",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8123"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Web",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2288"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Animate Dead",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2757"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Call Lightning",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2702"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Counterspell",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2737"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Crusader's Mantle",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8122"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Daylight",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2686"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Fireball",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2677"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Gaseous Form",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2815"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Grant Flight",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s9507"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Haste",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2764"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Hunger of Hadar",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2826"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Lightning Bolt",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8092"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Mass Healing Word",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2678"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Remove Curse",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2680"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Revivify",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2711"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Sleet Storm",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2738"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Slow",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s8091"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Spirit Guardians",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2715"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Vampiric Touch",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s2739"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Warden of Vitality",
+                                                        "grants": [
+                                                            {
+                                                                "ref": "s10342"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "College of Swords",
@@ -4279,7 +4679,511 @@
                     },
                     {
                         "name": "Magical Secrets",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 24,
+                                "count": 2,
+                                "options": [
+                                    {
+                                        "name": "Bone Chill",
+                                        "grants": [
+                                            {
+                                                "ref": "s1645"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Eldritch Blast",
+                                        "grants": [
+                                            {
+                                                "ref": "s1651"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fire Bolt",
+                                        "grants": [
+                                            {
+                                                "ref": "s1653"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Ray of Frost",
+                                        "grants": [
+                                            {
+                                                "ref": "s1691"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sacred Flame",
+                                        "grants": [
+                                            {
+                                                "ref": "s1631"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Armour of Agathys",
+                                        "grants": [
+                                            {
+                                                "ref": "s1988"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Bless",
+                                        "grants": [
+                                            {
+                                                "ref": "s1610"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Chromatic Orb",
+                                        "grants": [
+                                            {
+                                                "ref": "s2032"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Command",
+                                        "grants": [
+                                            {
+                                                "ref": "s3061"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Entangle",
+                                        "grants": [
+                                            {
+                                                "ref": "s2286"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "False Life",
+                                        "grants": [
+                                            {
+                                                "ref": "s2178"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Guiding Bolt",
+                                        "grants": [
+                                            {
+                                                "ref": "s2200"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Hellish Rebuke",
+                                        "grants": [
+                                            {
+                                                "ref": "s2205"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Hex",
+                                        "grants": [
+                                            {
+                                                "ref": "s2223"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Hunter's Mark",
+                                        "grants": [
+                                            {
+                                                "ref": "s2209"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Ice Knife",
+                                        "grants": [
+                                            {
+                                                "ref": "s6660"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Magic Missile",
+                                        "grants": [
+                                            {
+                                                "ref": "s2291"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sanctuary",
+                                        "grants": [
+                                            {
+                                                "ref": "s2818"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Thunderous Smite",
+                                        "grants": [
+                                            {
+                                                "ref": "s2833"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Arcane Lock",
+                                        "grants": [
+                                            {
+                                                "ref": "s6662"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Blur",
+                                        "grants": [
+                                            {
+                                                "ref": "s1353"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Darkness",
+                                        "grants": [
+                                            {
+                                                "ref": "s2342"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Darkvision",
+                                        "grants": [
+                                            {
+                                                "ref": "s2348"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Misty Step",
+                                        "grants": [
+                                            {
+                                                "ref": "s2644"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Pass Without Trace",
+                                        "grants": [
+                                            {
+                                                "ref": "s2630"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Ray of Enfeeblement",
+                                        "grants": [
+                                            {
+                                                "ref": "s2387"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Scorching Ray",
+                                        "grants": [
+                                            {
+                                                "ref": "s2530"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Spike Growth",
+                                        "grants": [
+                                            {
+                                                "ref": "s2324"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Spiritual Weapon",
+                                        "grants": [
+                                            {
+                                                "ref": "s8123"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Web",
+                                        "grants": [
+                                            {
+                                                "ref": "s2288"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Animate Dead",
+                                        "grants": [
+                                            {
+                                                "ref": "s2757"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Call Lightning",
+                                        "grants": [
+                                            {
+                                                "ref": "s2702"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Counterspell",
+                                        "grants": [
+                                            {
+                                                "ref": "s2737"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Crusader's Mantle",
+                                        "grants": [
+                                            {
+                                                "ref": "s8122"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Daylight",
+                                        "grants": [
+                                            {
+                                                "ref": "s2686"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fireball",
+                                        "grants": [
+                                            {
+                                                "ref": "s2677"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Gaseous Form",
+                                        "grants": [
+                                            {
+                                                "ref": "s2815"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Grant Flight",
+                                        "grants": [
+                                            {
+                                                "ref": "s9507"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Haste",
+                                        "grants": [
+                                            {
+                                                "ref": "s2764"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Hunger of Hadar",
+                                        "grants": [
+                                            {
+                                                "ref": "s2826"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Lightning Bolt",
+                                        "grants": [
+                                            {
+                                                "ref": "s8092"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mass Healing Word",
+                                        "grants": [
+                                            {
+                                                "ref": "s2678"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Remove Curse",
+                                        "grants": [
+                                            {
+                                                "ref": "s2680"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Revivify",
+                                        "grants": [
+                                            {
+                                                "ref": "s2711"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sleet Storm",
+                                        "grants": [
+                                            {
+                                                "ref": "s2738"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Slow",
+                                        "grants": [
+                                            {
+                                                "ref": "s8091"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Spirit Guardians",
+                                        "grants": [
+                                            {
+                                                "ref": "s2715"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Vampiric Touch",
+                                        "grants": [
+                                            {
+                                                "ref": "s2739"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Warden of Vitality",
+                                        "grants": [
+                                            {
+                                                "ref": "s10342"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Banishment",
+                                        "grants": [
+                                            {
+                                                "ref": "s6575"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Blight",
+                                        "grants": [
+                                            {
+                                                "ref": "s6581"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Death Ward",
+                                        "grants": [
+                                            {
+                                                "ref": "s6709"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dominate Beast",
+                                        "grants": [
+                                            {
+                                                "ref": "s7935"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fire Shield",
+                                        "grants": [
+                                            {
+                                                "ref": "s6736"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Guardian of Faith",
+                                        "grants": [
+                                            {
+                                                "ref": "s8120"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Ice Storm",
+                                        "grants": [
+                                            {
+                                                "ref": "s6724"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wall of Fire",
+                                        "grants": [
+                                            {
+                                                "ref": "s7938"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Banishing Smite (Melee)",
+                                        "grants": [
+                                            {
+                                                "ref": "s11915"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Cone of Cold",
+                                        "grants": [
+                                            {
+                                                "ref": "s7943"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Conjure Elemental",
+                                        "grants": [
+                                            {
+                                                "ref": "s8415"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Contagion",
+                                        "grants": [
+                                            {
+                                                "ref": "s8412"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wall of Stone",
+                                        "grants": [
+                                            {
+                                                "ref": "s8034"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "bardin|forceplural=yes": 5,
@@ -17879,10 +18783,6 @@
                                 "ref": "a4023"
                             }
                         ]
-                    },
-                    {
-                        "name": "[[#Level_1|Channel Oath]]",
-                        "grants": []
                     },
                     {
                         "name": "Subclass: Paladin",
@@ -31942,8 +32842,56 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "[[#Level 11|Mystic Arcanum]]",
-                        "grants": []
+                        "name": "Mystic Arcanum",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 24,
+                                "count": 1,
+                                "options": [
+                                    {
+                                        "name": "Arcane Gate",
+                                        "grants": [
+                                            {
+                                                "ref": "s8040"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Circle of Death",
+                                        "grants": [
+                                            {
+                                                "ref": "s7951"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Create Undead",
+                                        "grants": [
+                                            {
+                                                "ref": "s9156"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Eyebite",
+                                        "grants": [
+                                            {
+                                                "ref": "s8017"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Flesh to Stone",
+                                        "grants": [
+                                            {
+                                                "ref": "s11505"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Cantrips Known": 4,

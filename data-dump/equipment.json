@@ -10164,6 +10164,41 @@
             "id": 13497
         },
         {
+            "name": "Winkling Gloves",
+            "image": "Gloves Leather 2 Faded.png",
+            "icon": "Gloves Leather 2 Unfaded Icon.png",
+            "description": "Winkling Gloves are a rare pair of Gloves that improves your Sleight of Hand and Attack rolls.",
+            "quote": "Good for a winkle in cases of mechanisms, locks, or some bugger who needs killing",
+            "type": 5,
+            "rarity": 3,
+            "weightKg": 0.5,
+            "weightLb": 1,
+            "price": 240,
+            "uid": "MAG_LC_Tinkerer_Gloves",
+            "effects": [
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Sleight of Hand +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Anonymous Effect",
+                    "description": "Attack +1",
+                    "type": 2,
+                    "hidden": true
+                },
+                {
+                    "name": "Winkling Gloves",
+                    "description": "Sleight of Hand +1\nAttack +1",
+                    "type": 2
+                }
+            ],
+            "sources": [],
+            "proficiency": 0,
+            "id": 29480
+        },
+        {
             "name": "Winter's Clutches",
             "image": "Gloves Leather F Faded.png",
             "icon": "Gloves Leather F Unfaded Icon.png",
@@ -15601,6 +15636,24 @@
             "id": 18603
         },
         {
+            "name": "Damaged Scale Mail",
+            "image": "Damaged Scale Mail Faded.png",
+            "icon": "Damaged Scale Mail Unfaded.png",
+            "description": "Broken Scale Mail is a common Medium armour offering less protection than other Medium armours due to it's damaged state.",
+            "quote": "With many broken and missing scales, the armour offers little in the way of protection.",
+            "type": 9,
+            "rarity": 1,
+            "weightKg": 12,
+            "weightLb": 24,
+            "price": 25,
+            "uid": "",
+            "effects": [],
+            "sources": [],
+            "proficiency": 2,
+            "baseArmorClass": 12,
+            "id": 29477
+        },
+        {
             "name": "Dark Justiciar Half-Plate (Rare)",
             "image": "Dark Justiciar Half-Plate Icon.png",
             "icon": "Dark Justiciar Half-Plate Unfaded Icon.png",
@@ -16668,7 +16721,7 @@
             "id": 3441
         },
         {
-            "name": "The Oakfather's Embrace",
+            "name": "The Oak Father's Embrace",
             "image": "Hide Armour PlusOne Icon.png",
             "icon": "Hide Armour PlusOne Unfaded Icon.png",
             "description": "The Oakfather's Embrace is an uncommon Medium Armour that deals Radiant|Radiant damage to creatures violating the natural order, including the wearer.",
@@ -16708,7 +16761,7 @@
             ],
             "proficiency": 2,
             "baseArmorClass": 13,
-            "id": 3583
+            "id": 15238
         },
         {
             "name": "Unwanted Masterwork Scalemail",
@@ -21322,6 +21375,34 @@
         }
     ],
     "13": [
+        {
+            "name": "Broken Club",
+            "image": "Broken Club Faded.png",
+            "icon": "Broken Club Unfaded.png",
+            "quote": "The tip of this club has snapped off, it's wood rotten to the core.",
+            "type": 13,
+            "weightKg": 0.9,
+            "weightLb": null,
+            "price": 10,
+            "uid": "",
+            "effects": [],
+            "sources": [],
+            "proficiency": 0,
+            "id": 29474,
+            "category": 2,
+            "rangeType": 1,
+            "handedness": 1,
+            "damage": "1d4",
+            "damageType": 3,
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": true,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": false
+        },
         {
             "name": "Club",
             "image": "Club Icon.png",
