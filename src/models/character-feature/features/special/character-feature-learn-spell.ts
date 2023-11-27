@@ -8,6 +8,8 @@ import { PageNotFoundError } from '../../../errors';
 import { CharacterFeature } from '../../character-feature';
 import { PageLoadingState } from '../../../page-item';
 import { ICharacterOptionWithPage } from '../../types';
+import { MediaWikiTemplate } from '../../../media-wiki/media-wiki-template';
+import { MediaWikiParser } from '../../../media-wiki/media-wiki-parser';
 
 // Used for features like Mystic Arcanum & Magical Secrets
 export class CharacterFeatureLearnSpell extends CharacterFeature {
@@ -16,6 +18,52 @@ export class CharacterFeatureLearnSpell extends CharacterFeature {
         public level: number,
     ) {
         super(option, level);
+    }
+
+    async initImage(): Promise<void> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
+        if (!this.page) {
+            throw new PageNotFoundError();
+        }
+
+        const passiveTemplate = await this.page.getTemplate(
+            'Passive feature page',
+        );
+
+        const { noOp } = MediaWikiTemplate.Parsers;
+
+        const { image } = passiveTemplate.parse({
+            image: {
+                parser: noOp,
+            },
+        });
+
+        this.image = image;
+    }
+
+    async initDescription(): Promise<void> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
+        if (!this.page) {
+            throw new PageNotFoundError();
+        }
+
+        const passiveTemplate = await this.page.getTemplate(
+            'Passive feature page',
+        );
+
+        const { description } = passiveTemplate.parse({
+            description: {
+                parser: (value: string) => {
+                    const match = value.match(/([\s\S]+?)\n\s*={2,}/)!;
+
+                    return MediaWikiParser.stripMarkup(match[1]).trim();
+                },
+            },
+        });
+
+        this.description = description;
     }
 
     choiceListCount = this.name === 'Magical Secrets' ? 2 : 1;
