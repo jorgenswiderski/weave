@@ -52,6 +52,14 @@ export class RequestBatch {
 
         await this.bucket.acquireToken();
 
+        // debug(
+        //     `Executing "${batchAxis}" batch of ${
+        //         inputs.length
+        //     } requests (params=${JSON.stringify(params)})\n  ${JSON.stringify(
+        //         inputs,
+        //     ).slice(0, 70)}`,
+        // );
+
         const data = await this.bot.query({
             ...(params as any),
             [batchAxis]: inputs,

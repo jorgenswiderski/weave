@@ -13,6 +13,7 @@ export const CONFIG = {
             process.env.MWN_REQUEST_BATCHING_WINDOW_IN_MILLIS ?? '100',
             10,
         ),
+        TRACK_TOKEN_USAGE: process.env.MWN_TRACK_TOKEN_USAGE === 'true',
     },
     MEDIAWIKI: {
         REVISION_CHECK_THROTTLE_IN_MILLIS: parseInt(

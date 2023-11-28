@@ -8,7 +8,7 @@ import {
 import { ItemSourceLocation } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
 import { MediaWiki } from '../media-wiki/media-wiki';
-import { MediaWikiParser } from '../media-wiki/wikitext-parser';
+import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
 
 class GameLocationNode {
     parent?: GameLocationNode;
@@ -160,4 +160,25 @@ export async function initLocations() {
     });
 
     return filtered;
+}
+
+export function getLocationData() {
+    assert(gameLocationByPageTitle.size > 0);
+    const locations = [...gameLocationByPageTitle.values()];
+
+    return locations.sort((a, b) => {
+        if (!a.id && !b.id) {
+            return a.name < b.name ? -1 : 1;
+        }
+
+        if (!a.id) {
+            return -1;
+        }
+
+        if (!b.id) {
+            return 1;
+        }
+
+        return a.id - b.id;
+    });
 }

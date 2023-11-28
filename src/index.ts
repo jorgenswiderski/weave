@@ -9,31 +9,19 @@ if (process.env.ENVIRONMENT !== 'dev') {
 
 import express from 'express';
 import cors from 'cors';
-import { getCharacterClassData } from './models/character-class/character-class';
 import { log, warn } from './models/logger';
-import { getCharacterRaceData } from './models/character-feature/features/character-race';
-import { getCharacterBackgroundData } from './models/character-feature/features/character-background';
 import { MwnProgressBar } from './api/mwn-progress-bar';
-import { getEquipmentItemData } from './models/equipment/equipment';
-import { initActionsAndSpells } from './models/action/init';
 import { apiRouter } from './routes';
-import { initLocations } from './models/locations/locations';
+import { initData } from './models/init-data';
 
 async function main() {
     log('=====================================================');
     warn('Weave is starting...');
     log('=====================================================');
 
+    const startTime = Date.now();
     new MwnProgressBar().render();
-
-    await Promise.all([initActionsAndSpells(), initLocations()]);
-
-    await Promise.all([
-        getCharacterClassData(),
-        getCharacterRaceData(),
-        getCharacterBackgroundData(),
-        getEquipmentItemData(),
-    ]);
+    await initData();
 
     const app = express();
     const PORT = process.env.PORT || 3001;
@@ -82,7 +70,7 @@ async function main() {
 
     app.listen(PORT, () => {
         log('=====================================================');
-        warn('Weave is ready!');
+        warn(`Weave is ready in ${(Date.now() - startTime) / 1000}s!`);
         log(`Server is running on port ${PORT}`);
         log('=====================================================');
     });

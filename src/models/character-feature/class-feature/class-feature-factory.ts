@@ -1,64 +1,168 @@
+import {
+    CharacterPlannerStep,
+    ICharacterOptionWithStubs,
+} from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { ICharacterClass } from '../../character-class/types';
+import { error, warn } from '../../logger';
+import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeat } from '../features/character-feat';
-import { ClassSubclass } from '../features/character-subclass';
+import { ClassSubclassOption } from '../features/character-subclass-option';
+import {
+    CharacterFeatureSorcererMetamagic,
+    CharacterFeatureWarlockEldritchInvocation,
+} from '../features/special/special';
 import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
+import { IClassFeatureFactory } from './types';
+import { CharacterFeatureLearnSpell } from '../features/special/character-feature-learn-spell';
+import { SubclassFeatureOverrides } from '../features/character-subclass/overrides';
+import { CharacterSubclass } from '../features/character-subclass/character-subclass';
 
-export class ClassFeatureFactory {
-    static async construct(
-        characterClass: ICharacterClass,
+class ClassFeatureFactorySingleton implements IClassFeatureFactory {
+    protected static async construct(
         type: CharacterFeatureTypes,
         options: ICharacterOptionWithPage,
-        level: number,
-    ): Promise<CharacterFeature> {
-        if (
-            type === CharacterFeatureTypes.CHOOSE_SUBCLASS ||
-            type === CharacterFeatureTypes.SUBCLASS_FEATURE
-        ) {
-            return new ClassSubclass(characterClass.name, type, level);
+        characterClass: ICharacterClass | undefined,
+        level: number | undefined,
+        subclass: ICharacterOptionWithStubs | undefined,
+        config: SubclassFeatureOverrides | undefined,
+    ): Promise<CharacterFeature | undefined> {
+        const feature = await this.construct2(
+            type,
+            options,
+            characterClass,
+            level,
+            subclass,
+        );
+
+        if (feature) {
+            feature.choiceListConfig = {
+                ...feature.choiceListConfig,
+                ...config?.choiceListConfig,
+            };
+
+            feature.choiceListCount = config?.choose ?? feature.choiceListCount;
+        }
+
+        return feature;
+    }
+
+    protected static async construct2(
+        type: CharacterFeatureTypes,
+        options: ICharacterOptionWithPage,
+        characterClass?: ICharacterClass,
+        level?: number,
+        subclass?: ICharacterOptionWithStubs,
+    ): Promise<CharacterFeature | undefined> {
+        if (type === CharacterFeatureTypes.CHOOSE_SUBCLASS) {
+            if (!characterClass || !level) {
+                throw new Error(
+                    `Class and level should be defined when constructing a subclass feature!`,
+                );
+            }
+
+            return new ClassSubclassOption(
+                characterClass,
+                CharacterPlannerStep.CHOOSE_SUBCLASS,
+                level,
+            );
         }
 
         if (type === CharacterFeatureTypes.FEAT) {
             return new CharacterFeat();
         }
 
-        return new CharacterFeature(options);
+        if (type === CharacterFeatureTypes.SORCERER_METAMAGIC) {
+            return new CharacterFeatureSorcererMetamagic(options, level);
+        }
+
+        if (type === CharacterFeatureTypes.WARLOCK_ELDRITCH_INVOCATION) {
+            return new CharacterFeatureWarlockEldritchInvocation(
+                options,
+                level,
+            );
+        }
+
+        if (type === CharacterFeatureTypes.CLASS_FEATURE_LEARN_SPELL) {
+            return new CharacterFeatureLearnSpell(options, level!);
+        }
+
+        if (type !== CharacterFeatureTypes.NONE) {
+            return new CharacterFeature(
+                options,
+                level,
+                characterClass,
+                subclass,
+            );
+        }
+
+        return undefined;
     }
 
-    static parserSpecialCases: {
+    protected parserSpecialCases: {
         [key: string]: { type: CharacterFeatureTypes; pageTitle?: string };
     } = {
-        'eldritch invocations': { type: CharacterFeatureTypes.NONE },
         'choose a subclass': {
             type: CharacterFeatureTypes.CHOOSE_SUBCLASS,
         },
         '|subclass feature': {
-            type: CharacterFeatureTypes.SUBCLASS_FEATURE,
+            type: CharacterFeatureTypes.NONE,
+        },
+        '|channel oath': {
+            type: CharacterFeatureTypes.NONE,
         },
         'feats|feat': { type: CharacterFeatureTypes.FEAT, pageTitle: 'Feats' },
         '#spellcasting': { type: CharacterFeatureTypes.SPELLCASTING },
         '#pact magic': { type: CharacterFeatureTypes.PACT_MAGIC },
+        '|metamagic}}': {
+            type: CharacterFeatureTypes.SORCERER_METAMAGIC,
+            pageTitle: 'Metamagic',
+        },
+        'eldritch invocation': {
+            type: CharacterFeatureTypes.WARLOCK_ELDRITCH_INVOCATION,
+            pageTitle: 'Eldritch Invocation',
+        },
+        'magical secrets': {
+            type: CharacterFeatureTypes.CLASS_FEATURE_LEARN_SPELL,
+            pageTitle: 'Magical Secrets',
+        },
+        'mystic arcanum': {
+            type: CharacterFeatureTypes.CLASS_FEATURE_LEARN_SPELL,
+            pageTitle: 'Mystic Arcanum',
+        },
     };
 
-    static fromMarkdownString(
-        characterClass: ICharacterClass,
+    fromWikitext(
         featureText: string,
-        level: number,
-    ): Promise<CharacterFeature> {
+        characterClass?: ICharacterClass,
+        level?: number,
+        subclass?: ICharacterOptionWithStubs,
+        config?: SubclassFeatureOverrides,
+    ): Promise<CharacterFeature | undefined> {
+        const rest: [
+            ICharacterClass | undefined,
+            number | undefined,
+            ICharacterOptionWithStubs | undefined,
+            SubclassFeatureOverrides | undefined,
+        ] = [characterClass, level, subclass, config];
+
         // Handle special labels
         // eslint-disable-next-line no-restricted-syntax
         for (const [caseText, data] of Object.entries(
-            ClassFeatureFactory.parserSpecialCases,
+            this.parserSpecialCases,
         )) {
             if (featureText.toLowerCase().includes(caseText)) {
-                return ClassFeatureFactory.construct(
-                    characterClass,
+                return ClassFeatureFactorySingleton.construct(
                     data.type,
                     {
-                        name: caseText,
+                        name: data.pageTitle
+                            ? MediaWikiParser.parseNameFromPageTitle(
+                                  data.pageTitle,
+                              )
+                            : caseText,
                         pageTitle: data.pageTitle,
                     },
-                    level,
+                    ...rest,
                 );
             }
         }
@@ -75,14 +179,13 @@ export class ClassFeatureFactory {
 
             const pageTitle = parts[1].split('}}')[0].trim();
 
-            return ClassFeatureFactory.construct(
-                characterClass,
+            return ClassFeatureFactorySingleton.construct(
                 CharacterFeatureTypes.OTHER,
                 {
-                    name: pageTitle,
+                    name: MediaWikiParser.parseNameFromPageTitle(pageTitle),
                     pageTitle,
                 },
-                level,
+                ...rest,
             );
         }
 
@@ -91,47 +194,61 @@ export class ClassFeatureFactory {
             const parts = featureText.split('|');
             const pageTitle = parts[3].replace('}}', '').trim();
 
-            return ClassFeatureFactory.construct(
-                characterClass,
+            return ClassFeatureFactorySingleton.construct(
                 CharacterFeatureTypes.OTHER,
                 {
-                    name: pageTitle,
+                    name: MediaWikiParser.parseNameFromPageTitle(pageTitle),
                     pageTitle,
                 },
-                level,
+                ...rest,
             );
         }
 
         // Extract link labels or whole links
-        const linkPattern = /\[\[(.*?)\]\]/;
+        const linkPattern = /\[\[([^|]+).*?]]/;
 
         if (linkPattern.test(featureText)) {
             const match = featureText.match(linkPattern);
 
-            if (match) {
-                const parts = match[1].split('|');
+            if (match?.[1]) {
+                const featureName = match[1].trim();
 
-                // Take the linked page title and discard the non-link text
-                return ClassFeatureFactory.construct(
-                    characterClass,
-                    CharacterFeatureTypes.OTHER,
-                    {
-                        name: parts[parts.length - 1].trim(),
-                        pageTitle: parts[parts.length - 1].trim(),
-                    },
-                    level,
-                );
+                const msg = `${characterClass?.name} feature '${featureText}' has a section link`;
+
+                if (featureName.startsWith('#')) {
+                    error(msg);
+                } else {
+                    if (featureName.includes('#')) {
+                        warn(msg);
+                    }
+
+                    return ClassFeatureFactorySingleton.construct(
+                        CharacterFeatureTypes.OTHER,
+                        {
+                            name: MediaWikiParser.parseNameFromPageTitle(
+                                featureName,
+                            ),
+                            pageTitle: featureName,
+                        },
+                        ...rest,
+                    );
+                }
             }
         }
 
-        return ClassFeatureFactory.construct(
-            characterClass,
+        return ClassFeatureFactorySingleton.construct(
             CharacterFeatureTypes.OTHER,
             {
-                name: featureText.trim(),
+                name: MediaWikiParser.parseNameFromPageTitle(
+                    featureText.trim(),
+                ),
                 pageTitle: featureText.trim(),
             },
-            level,
+            ...rest,
         );
     }
 }
+
+export const ClassFeatureFactory = new ClassFeatureFactorySingleton();
+CharacterFeature.factory = ClassFeatureFactory;
+CharacterSubclass.factory = ClassFeatureFactory;

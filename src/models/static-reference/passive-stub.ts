@@ -1,23 +1,25 @@
-import { IAction } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { StaticReference } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/static-reference';
+import { PassiveStubConstructor } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/stubs';
 import {
     StaticReferenceHandle,
     StaticReferenceIdentifier,
 } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/types';
-import { ActionEffectStubConstructor } from '@jorgenswiderski/tomekeeper-shared/dist/models/static-reference/stubs';
+import { IPassive } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
 
 let ref: {
-    pool: Map<number, ActionStub>;
+    pool: Map<number, PassiveStub>;
     create: (id: number) => StaticReferenceHandle;
 };
 
-export class ActionStub implements StaticReference {
+export class PassiveStub implements StaticReference {
     id: number;
+    image?: string;
     name: string;
 
-    constructor(public action: IAction) {
-        this.id = action.id;
-        this.name = action.name;
+    constructor(public passive: IPassive) {
+        this.id = passive.id;
+        this.image = passive.image;
+        this.name = passive.name;
     }
 
     toJSON(): StaticReferenceHandle {
@@ -28,9 +30,9 @@ export class ActionStub implements StaticReference {
 // Assure that the constructor signature matches that defined by the class stub
 // See stubs.ts for more info
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const typeCheck: ActionEffectStubConstructor = ActionStub;
+const typeCheck: PassiveStubConstructor = PassiveStub;
 
 ref = StaticReference.registerClass(
-    ActionStub,
-    StaticReferenceIdentifier.Action,
+    PassiveStub,
+    StaticReferenceIdentifier.Passive,
 );

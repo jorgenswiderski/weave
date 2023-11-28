@@ -11,6 +11,7 @@ import { CharacterSubrace } from './character-subrace';
 import { CharacterFeature } from '../character-feature';
 import { Utils } from '../../utils';
 import { StaticImageCacheService } from '../../static-image-cache-service';
+import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
 
 type RaceChoice = { type: CharacterPlannerStep; options: CharacterSubrace[] };
 
@@ -53,7 +54,7 @@ export class CharacterRace extends CharacterFeature {
         let match;
 
         const choices: RaceChoice[] = [
-            { type: CharacterPlannerStep.SET_RACE, options: [] },
+            { type: CharacterPlannerStep.CHOOSE_SUBRACE, options: [] },
         ];
 
         while (true) {
@@ -70,7 +71,7 @@ export class CharacterRace extends CharacterFeature {
         }
     }
 
-    private async getImage(): Promise<string | null> {
+    async initImage(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page || !this.page.content) {
@@ -81,19 +82,15 @@ export class CharacterRace extends CharacterFeature {
         const match = regex.exec(this.page.content);
 
         if (!match || !match[1]) {
-            return null;
+            return;
         }
 
         const image = match[1].trim();
-
-        if (image) {
-            StaticImageCacheService.cacheImage(image);
-        }
-
-        return image;
+        StaticImageCacheService.cacheImage(image);
+        this.image = image;
     }
 
-    protected async getDescription(): Promise<string> {
+    async initDescription(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page || !this.page.content) {
@@ -106,30 +103,17 @@ export class CharacterRace extends CharacterFeature {
         const match = this.page.content.match(descPattern);
 
         if (!match || !match[1]) {
-            return super.getDescription();
+            this.description = await super.getDescription();
+
+            return;
         }
 
-        return MediaWiki.stripMarkup(match[1]).trim().split('\n')[0];
+        this.description = MediaWikiParser.stripMarkup(match[1])
+            .trim()
+            .split('\n')[0];
     }
 
-    async getInfo(): Promise<RaceInfo> {
-        await this.initialized[RaceLoadState.CHOICES];
-
-        return {
-            name: this.name,
-            description: await this.getDescription(),
-            choices: Utils.isNonEmptyArray(this?.choices)
-                ? this.choices
-                : undefined,
-            choiceType: Utils.isNonEmptyArray(this?.choices)
-                ? CharacterPlannerStep.CHOOSE_SUBRACE
-                : undefined,
-            image: (await this.getImage()) ?? undefined,
-            grants: this.grants,
-        };
-    }
-
-    async initGrantableEffects(): Promise<void> {
+    async initOptionsAndEffects(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page?.content) {
@@ -209,6 +193,21 @@ export class CharacterRace extends CharacterFeature {
         }
 
         return this.page.hasTemplate('SpoilerWarning');
+    }
+
+    toJSON() {
+        const { name, description, image, choices, grants } = this;
+
+        return {
+            name,
+            description,
+            choices: Utils.isNonEmptyArray(choices) ? choices : undefined,
+            choiceType: Utils.isNonEmptyArray(choices)
+                ? CharacterPlannerStep.CHOOSE_SUBRACE
+                : undefined,
+            image,
+            grants,
+        };
     }
 }
 

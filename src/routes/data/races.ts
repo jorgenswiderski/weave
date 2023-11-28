@@ -5,9 +5,7 @@ import { getCharacterRaceData } from '../../models/character-feature/features/ch
 export const router: Router = express.Router();
 
 router.get('/info', async (req: Request, res: Response) => {
-    const ccd = await getCharacterRaceData();
-
-    const data = await Promise.all(ccd.map(async (race) => race.getInfo()));
+    const data = await getCharacterRaceData();
 
     res.json(data);
 });

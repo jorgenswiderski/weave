@@ -4,6 +4,7 @@ import {
     ICharacterOption,
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
+import assert from 'assert';
 import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
 import { error } from '../logger';
 import { MediaWiki } from '../media-wiki/media-wiki';
@@ -16,34 +17,63 @@ import {
 } from './types';
 import { StaticImageCacheService } from '../static-image-cache-service';
 import { CharacterFeature } from '../character-feature/character-feature';
+import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
+import { ClassSubclassOption } from '../character-feature/features/character-subclass-option';
 
 async function parseFeatures(
     characterClass: CharacterClass,
     value: string,
     level: number,
-): Promise<ICharacterOptionWithStubs[] | null> {
-    if (value === '-') {
-        // No features this level
-        return null;
+): Promise<ICharacterOptionWithStubs[]> {
+    const features: ICharacterOptionWithStubs[] = [];
+
+    if (value !== '-') {
+        const classFeatures = (
+            await Promise.all(
+                value
+                    .split(', ')
+                    .map((featureString: string) =>
+                        ClassFeatureFactory.fromWikitext(
+                            featureString,
+                            characterClass,
+                            level,
+                        ),
+                    ),
+            )
+        ).filter(Boolean) as ICharacterOptionWithStubs[];
+
+        features.push(...classFeatures);
     }
 
-    const features = await Promise.all(
-        value
-            .split(', ')
-            .map((featureString: string) =>
-                ClassFeatureFactory.fromMarkdownString(
-                    characterClass,
-                    featureString,
-                    level,
+    if (!features.some((feature) => feature instanceof ClassSubclassOption)) {
+        const subclassFeature = new ClassSubclassOption(
+            characterClass,
+            CharacterPlannerStep.SUBCLASS_FEATURE,
+            level,
+        );
+
+        await subclassFeature.waitForInitialization();
+
+        if (
+            subclassFeature.choices?.some((choice) =>
+                choice.options.some(
+                    (option) =>
+                        (option.choices && option.choices.length > 0) ||
+                        (option.grants && option.grants.length > 0),
                 ),
-            ),
-    );
+            )
+        ) {
+            features.push(subclassFeature);
+        }
+    }
 
     return features;
 }
 
 enum ClassLoadState {
     PROGRESSION = 'progression',
+    DESCRIPTION = 'description',
+    IMAGE = 'image',
 }
 
 export interface ClassInfo {
@@ -54,6 +84,8 @@ export interface ClassInfo {
 }
 
 export class CharacterClass extends PageItem implements ICharacterClass {
+    private image?: string;
+    private description?: string;
     private progression?: CharacterClassProgression;
 
     constructor(public name: string) {
@@ -61,6 +93,11 @@ export class CharacterClass extends PageItem implements ICharacterClass {
 
         this.initialized[ClassLoadState.PROGRESSION] =
             this.initProgression().catch(error);
+
+        this.initialized[ClassLoadState.IMAGE] = this.initImage().catch(error);
+
+        this.initialized[ClassLoadState.DESCRIPTION] =
+            this.initDescription().catch(error);
     }
 
     private async cleanProgressionTableData(
@@ -77,13 +114,15 @@ export class CharacterClass extends PageItem implements ICharacterClass {
 
                 await Promise.all(
                     Object.keys(item).map(async (key) => {
-                        const cleanedKey = MediaWiki.stripMarkup(key);
+                        const cleanedKey = MediaWikiParser.stripMarkup(key);
 
                         if (cleanedKey === 'Features') {
                             // Parse the features last
                             cleanedItem[cleanedKey] = item[key];
                         } else {
-                            const value = MediaWiki.stripMarkup(item[key]);
+                            const value = MediaWikiParser.stripMarkup(
+                                item[key],
+                            );
 
                             if (value === '-') {
                                 cleanedItem[cleanedKey] = 0;
@@ -279,7 +318,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         return feature.choices[0];
     }
 
-    private async getImage(): Promise<string | null> {
+    private async initImage(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page || !this.page.content) {
@@ -291,7 +330,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         );
 
         if (!match || !match[1]) {
-            return null;
+            return;
         }
 
         const image = match[1].trim();
@@ -300,22 +339,30 @@ export class CharacterClass extends PageItem implements ICharacterClass {
             StaticImageCacheService.cacheImage(image);
         }
 
-        return image;
+        this.image = image;
     }
 
-    async getInfo(): Promise<ClassInfo> {
-        return {
-            name: this.name,
-            description: await this.getDescription(),
-            image: (await this.getImage()) ?? undefined,
-            progression: await this.getProgression(),
-        };
+    private async initDescription(): Promise<void> {
+        this.description = await this.getDescription();
     }
 
     async getProgression() {
         await this.waitForInitialization();
 
-        return this.progression as CharacterClassProgression;
+        return this.progression!;
+    }
+
+    toJSON(): ClassInfo {
+        const { name, description, image, progression } = this;
+
+        assert(description && progression);
+
+        return {
+            name,
+            description: description!,
+            image,
+            progression: progression!,
+        };
     }
 }
 

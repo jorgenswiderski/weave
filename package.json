@@ -1,6 +1,6 @@
 {
     "name": "weave",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "",
     "main": "index.ts",
     "scripts": {
@@ -15,20 +15,21 @@
         "compose": "docker-compose up -d",
         "decompose": "docker-compose down",
         "type-check": "tsc --noEmit --skipLibCheck",
-        "check": "npm run lint-fix && npm run type-check",
+        "check": "npm run type-check && npm run lint-fix",
         "do-dump-data": "ts-node src/models/dump-data.ts",
         "dump-data": "npm run do-dump-data | bunyan -o short",
         "preinstall": "echo \"@jorgenswiderski:registry=https://npm.pkg.github.com/\n//npm.pkg.github.com/:_authToken=${GHP_TOKEN}\" > .npmrc",
         "link": "npm i @jorgenswiderski/tomekeeper-shared@latest && npm link @jorgenswiderski/tomekeeper-shared",
         "do-load-revisions": "ts-node src/models/revision-lock/load-revisions.ts",
         "load-revisions": "npm run do-load-revisions | bunyan -o short",
+        "update-revisions": "ts-node src/models/revision-lock/update-revisions.ts",
         "clean": "rimraf ./dist"
     },
     "keywords": [],
     "author": "Jorgen Swiderski",
     "license": "MIT",
     "dependencies": {
-        "@jorgenswiderski/tomekeeper-shared": "^1.0.16",
+        "@jorgenswiderski/tomekeeper-shared": "^1.0.21",
         "bunyan": "^1.8.15",
         "bunyan-rotating-file-stream": "^2.0.5",
         "cors": "^2.8.5",

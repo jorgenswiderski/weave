@@ -5,33 +5,35 @@ import {
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { AbilityScore } from '@jorgenswiderski/tomekeeper-shared/dist/types/ability';
 import { PageNotFoundError } from '../errors';
-import {
-    MediaWikiTemplateParser,
-    MediaWikiTemplateParserConfig,
-} from '../media-wiki/mw-template-parser';
+import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
 import { ActionBase } from './action-base';
-import { PageData } from '../media-wiki/media-wiki';
 import { error } from '../logger';
-
-let actionData: Action[];
-let actionDataById: Map<number, Action> | null = null;
+import {
+    MediaWikiTemplateParserConfigItem,
+    MediaWikiTemplateParserConfig,
+    IPageData,
+} from '../media-wiki/types';
 
 export class Action extends ActionBase implements Partial<IAction> {
     condition2?: string;
     condition2Duration?: number;
     condition2Save?: AbilityScore;
 
+    constructor(pageTitle: string, template: string = 'ActionPage') {
+        super(pageTitle, template);
+    }
+
     // TODO: Move this to action-base once the SpellPage template is done being revised
     // https://discord.com/channels/937803826583445565/1173680631125909514
-    protected parseCosts(): void {
+    protected async parseCosts(): Promise<void> {
         if (!this.page?.content) {
             throw new PageNotFoundError();
         }
 
         const actionResourceParser = (
             value: string,
-            config: MediaWikiTemplateParserConfig,
-            page: PageData,
+            config: MediaWikiTemplateParserConfigItem,
+            page: IPageData,
         ) => {
             if (!(value in ActionResourceFromString) && value !== '') {
                 error(
@@ -42,9 +44,9 @@ export class Action extends ActionBase implements Partial<IAction> {
             return ActionResourceFromString[value];
         };
 
-        const { int } = MediaWikiTemplateParser.Parsers;
+        const { int } = MediaWikiTemplate.Parsers;
 
-        const config: Record<string, MediaWikiTemplateParserConfig> = {
+        const config: MediaWikiTemplateParserConfig = {
             cost: {
                 parser: actionResourceParser,
                 default: undefined,
@@ -94,7 +96,8 @@ export class Action extends ActionBase implements Partial<IAction> {
             },
         };
 
-        const props = MediaWikiTemplateParser.parseTemplate(this.page, config);
+        const template = await this.page.getTemplate(this.templateName);
+        const props = template.parse(config);
 
         const resources = Object.fromEntries(
             Object.entries(props).filter(
@@ -122,10 +125,10 @@ export class Action extends ActionBase implements Partial<IAction> {
             throw new PageNotFoundError();
         }
 
-        const { plainText, int } = MediaWikiTemplateParser.Parsers;
-        const { parseEnum } = MediaWikiTemplateParser.HighOrderParsers;
+        const { plainText, int } = MediaWikiTemplate.Parsers;
+        const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
-        const config: Record<string, MediaWikiTemplateParserConfig> = {
+        const config: MediaWikiTemplateParserConfig = {
             condition2: {
                 key: 'condition2',
                 parser: plainText,
@@ -143,12 +146,9 @@ export class Action extends ActionBase implements Partial<IAction> {
             },
         };
 
-        Object.assign(
-            this,
-            MediaWikiTemplateParser.parseTemplate(this.page, config),
-        );
-
-        this.parseCosts();
+        const template = await this.page.getTemplate(this.templateName);
+        Object.assign(this, template.parse(config));
+        await this.parseCosts();
     }
 
     toJSON(): Partial<IAction> {
@@ -168,57 +168,4 @@ export class Action extends ActionBase implements Partial<IAction> {
 
         return result;
     }
-}
-
-export async function initActionData(actionNames: string[]): Promise<void> {
-    actionData = actionNames.map((name) => new Action(name));
-
-    await Promise.all(
-        actionData.map((action) => action.waitForInitialization()),
-    );
-
-    actionDataById = new Map<number, Action>();
-
-    actionData.forEach((action) => {
-        if (actionDataById!.has(action.id!)) {
-            const other = actionDataById!.get(action.id!);
-            throw new Error(
-                `action data conflict between ${other?.name} (${other?.id}) and ${action.name} (${action.id})`,
-            );
-        }
-
-        actionDataById!.set(action.id!, action);
-    });
-}
-
-async function waitForInit(): Promise<void> {
-    const executor = (resolve: any) => {
-        if (actionData) {
-            resolve();
-
-            return;
-        }
-
-        setTimeout(() => executor(resolve), 500);
-    };
-
-    return new Promise(executor);
-}
-
-export async function getActionData(): Promise<Action[]> {
-    await waitForInit();
-
-    return actionData;
-}
-
-export async function getActionDataById() {
-    await waitForInit();
-
-    return actionDataById!;
-}
-
-export async function getActionDataFiltered(): Promise<Action[]> {
-    const actions = await getActionData();
-
-    return actions.filter((action) => action.used);
 }

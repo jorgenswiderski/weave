@@ -14,16 +14,8 @@ export const MwnTokenBucket = new TokenBucket(100, 3);
 
 // shorthand just to reduce boilerplate
 function memoize<T extends (...args: any[]) => Promise<any>>(fn: T): T {
-    // const tokenAcquiringFunction = async (...args: any[]) => {
-    //     await bucket.acquireToken();
-    //     log(bucket.lifetimeTokens);
-
-    //     return fn(...args);
-    // };
-
     return Utils.memoizeWithExpiration(
         CONFIG.MWN.MEMOIZATION_DURATION_IN_MILLIS,
-        // tokenAcquiringFunction,
         fn,
     ) as T;
 }
@@ -106,48 +98,51 @@ export class MwnApiClass {
         },
     );
 
-    static async queryTitlesFromCategory(
-        categoryName: string,
-        includeSubcategories: boolean = false,
-    ): Promise<string[]> {
-        let titles: string[] = [];
-        let cmcontinue: ApiParam | null = null;
+    static queryTitlesFromCategory = memoize(
+        async function queryTitlesFromCategory(
+            categoryName: string,
+            includeSubcategories: boolean = false,
+        ): Promise<string[]> {
+            let titles: string[] = [];
+            let cmcontinue: ApiParam | null = null;
 
-        do {
-            // eslint-disable-next-line no-await-in-loop
-            await MwnTokenBucket.acquireToken();
+            do {
+                // eslint-disable-next-line no-await-in-loop
+                await MwnTokenBucket.acquireToken();
 
-            const params: ApiParams = {
-                list: 'categorymembers',
-                cmtitle: categoryName,
-                cmlimit: 500, // maximum allowed for most users
-            };
+                const params: ApiParams = {
+                    list: 'categorymembers',
+                    cmtitle: categoryName,
+                    cmlimit: 500, // maximum allowed for most users
+                };
 
-            if (cmcontinue) {
-                params.cmcontinue = cmcontinue;
-            }
+                if (cmcontinue) {
+                    params.cmcontinue = cmcontinue;
+                }
 
-            // eslint-disable-next-line no-await-in-loop
-            const response = await bot.query(params);
+                // eslint-disable-next-line no-await-in-loop
+                const response = await bot.query(params);
 
-            const members = response?.query?.categorymembers || [];
+                const members = response?.query?.categorymembers || [];
 
-            // Filter out subcategories if not required
-            const filteredMembers = includeSubcategories
-                ? members
-                : members.filter(
-                      (member: any) => !member.title.startsWith('Category:'),
-                  );
+                // Filter out subcategories if not required
+                const filteredMembers = includeSubcategories
+                    ? members
+                    : members.filter(
+                          (member: any) =>
+                              !member.title.startsWith('Category:'),
+                      );
 
-            titles = titles.concat(
-                filteredMembers.map((member: any) => member.title),
-            );
+                titles = titles.concat(
+                    filteredMembers.map((member: any) => member.title),
+                );
 
-            cmcontinue = response?.continue?.cmcontinue;
-        } while (cmcontinue);
+                cmcontinue = response?.continue?.cmcontinue;
+            } while (cmcontinue);
 
-        return titles;
-    }
+            return titles;
+        },
+    );
 
     async queryPages(
         pageTitles: string[],

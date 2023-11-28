@@ -2,24 +2,26 @@ import { CharacterPlannerStep } from '@jorgenswiderski/tomekeeper-shared/dist/ty
 import { error } from '../../logger';
 import { MediaWiki, PageData } from '../../media-wiki/media-wiki';
 import { CharacterFeatureCustomizable } from '../character-feature-customizable';
-import { CharacterSubclassFeature } from './character-subclass-feature';
-import { CharacterFeatureTypes } from '../types';
-import { MediaWikiParser } from '../../media-wiki/wikitext-parser';
+import { CharacterSubclass } from './character-subclass/character-subclass';
+import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
+import { ICharacterClass } from '../../character-class/types';
 
 enum SubclassLoadStates {
     CHOICES = 'CHOICES',
 }
 
-export class ClassSubclass extends CharacterFeatureCustomizable {
+export class ClassSubclassOption extends CharacterFeatureCustomizable {
     constructor(
-        public className: string,
-        public featureType:
-            | CharacterFeatureTypes.CHOOSE_SUBCLASS
-            | CharacterFeatureTypes.SUBCLASS_FEATURE,
+        public characterClass: ICharacterClass,
+        public type:
+            | CharacterPlannerStep.CHOOSE_SUBCLASS
+            | CharacterPlannerStep.SUBCLASS_FEATURE,
         public level: number,
     ) {
         super({
-            name: `Subclass: ${className}`,
+            name: `Subclass${
+                type === CharacterPlannerStep.SUBCLASS_FEATURE ? ' Feature' : ''
+            }: ${characterClass.name}`,
         });
 
         this.initialized[SubclassLoadStates.CHOICES] =
@@ -41,17 +43,16 @@ export class ClassSubclass extends CharacterFeatureCustomizable {
     }
 
     private async initChoices(): Promise<void> {
-        const filtered = await ClassSubclass.getSubclassData(this.className);
+        const filtered = await ClassSubclassOption.getSubclassData(
+            this.characterClass.name,
+        );
 
         this.choices = [
             {
-                type:
-                    this.featureType === CharacterFeatureTypes.CHOOSE_SUBCLASS
-                        ? CharacterPlannerStep.CHOOSE_SUBCLASS
-                        : CharacterPlannerStep.SUBCLASS_FEATURE,
+                type: this.type,
                 options: filtered.map(
                     (page) =>
-                        new CharacterSubclassFeature(
+                        new CharacterSubclass(
                             {
                                 name: MediaWikiParser.parseNameFromPageTitle(
                                     page.title,
@@ -60,6 +61,7 @@ export class ClassSubclass extends CharacterFeatureCustomizable {
                                 page,
                             },
                             this.level,
+                            this.characterClass,
                         ),
                 ),
             },
@@ -69,7 +71,7 @@ export class ClassSubclass extends CharacterFeatureCustomizable {
             (
                 this.choices as {
                     type: CharacterPlannerStep;
-                    options: CharacterSubclassFeature[];
+                    options: CharacterSubclass[];
                 }[]
             )
                 .flatMap((choice) => choice.options)

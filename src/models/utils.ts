@@ -6,6 +6,10 @@ export class Utils extends SharedUtils {
         ttl: number,
         fn: T,
     ): T {
+        if (ttl === 0) {
+            return fn;
+        }
+
         const cache: { [key: string]: { value: any; timestamp: number } } = {};
 
         return function memoizedFn(...args: any[]): any {

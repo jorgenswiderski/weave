@@ -30,6 +30,21 @@ async function loadRevisions() {
         const collection = db.collection(MongoCollections.MW_PAGES);
 
         const mismatches = await Utils.asyncFilter(locks, async (lock) => {
+            assert(
+                typeof lock.title === 'string',
+                `Expected title to be defined for lock on page ${lock.pageId}`,
+            );
+
+            assert(
+                typeof lock.pageId === 'number',
+                `Expected pageId to be defined for lock on page ${lock.title}`,
+            );
+
+            assert(
+                typeof lock.revisionId === 'number',
+                `Expected revisionId to be defined for lock on page ${lock.title}`,
+            );
+
             const document = await collection.findOne(lock);
 
             return !document;
@@ -38,15 +53,36 @@ async function loadRevisions() {
         await Promise.all(
             mismatches.map(async ({ title, revisionId }) => {
                 log(`Updating page '${title}' to revision ${revisionId}`);
-                await MediaWiki.getPage(title, revisionId);
+
+                try {
+                    await MediaWiki.getPage(title, revisionId);
+                } catch (err) {
+                    error(`Failed to fetch page by title '${title}'`);
+                    throw err;
+                }
             }),
         );
 
         const validate = await Promise.all(
-            mismatches.map(async (lock) => collection.findOne(lock)),
+            mismatches.map(async (lock) => [
+                lock,
+                await collection.findOne(lock),
+            ]),
         );
 
-        assert(validate.every((document) => document));
+        validate.forEach(([lock, document]) => {
+            if (!document) {
+                error(
+                    `Couldn't find a matching document when validating lock\n    ${JSON.stringify(
+                        lock,
+                    )}`,
+                );
+            }
+        });
+
+        if (!validate.every(([, document]) => document)) {
+            process.exit(1);
+        }
 
         log(
             `Finished loading revision state in ${
