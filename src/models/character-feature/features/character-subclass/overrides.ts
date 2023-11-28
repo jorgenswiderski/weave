@@ -9,11 +9,12 @@ export interface SubclassFeatureOverrides {
     forceContentMatch?: true;
     choose?: number;
     chooseBullet?: true;
+    optionName?: string;
 }
 
 type Overrides = Record<
     string,
-    Record<number, Record<string, SubclassFeatureOverrides>>
+    Record<number, Record<string | number, SubclassFeatureOverrides>>
 >;
 
 const Barbarian: Overrides = {
@@ -89,26 +90,35 @@ const Cleric: Overrides = {
 
 const Druid: Overrides = {
     'Circle of the Land': {
+        2: {
+            1: {
+                optionName: 'Circle Cantrip',
+            },
+        },
         3: {
-            'Section 0': {
+            0: {
+                optionName: 'Circle Spells',
                 choose: 1,
                 chooseBullet: true,
             },
         },
         5: {
-            'Section 0': {
+            0: {
+                optionName: 'Circle Spells',
                 choose: 1,
                 chooseBullet: true,
             },
         },
         7: {
-            'Section 0': {
+            0: {
+                optionName: 'Circle Spells',
                 choose: 1,
                 chooseBullet: true,
             },
         },
         9: {
-            'Section 0': {
+            0: {
+                optionName: 'Circle Spells',
                 choose: 1,
                 chooseBullet: true,
             },
@@ -141,6 +151,17 @@ const Fighter: Overrides = {
             },
         },
     },
+    'Eldritch Knight': {
+        3: {
+            2: { optionName: 'Eldritch Knight Cantrips' },
+            3: { optionName: 'Eldritch Knight Spells' },
+            4: { optionName: 'Wizard Spells' },
+        },
+        7: {
+            2: { optionName: 'Eldritch Knight Spells' },
+        },
+        8: { 0: { optionName: 'Wizard Spells' } },
+    },
 };
 
 const Rogue: Overrides = {
@@ -151,12 +172,22 @@ const Rogue: Overrides = {
             },
         },
     },
+    'Arcane Trickster': {
+        3: {
+            2: { optionName: 'Arcane Trickster Cantrips' },
+            3: { optionName: 'Arcane Trickster Spells' },
+            4: { optionName: 'Wizard Spells' },
+        },
+        7: { 1: { optionName: 'Arcane Trickster Spells' } },
+        8: { 0: { optionName: 'Wizard Spells' } },
+    },
 };
 
 const Sorcerer: Overrides = {
     'Draconic Bloodline': {
         1: {
             'Draconic Ancestry (Choose 1)': {
+                optionName: 'Draconic Ancestry',
                 choiceListConfig: {
                     feature2: 'Grants',
                 },

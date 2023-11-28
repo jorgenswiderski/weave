@@ -165,17 +165,17 @@ export class PageData implements IPageData {
         const eqs = depth ? '='.repeat(depth) : '={2,}';
 
         const regex = new RegExp(
-            `\\n\\s*${eqs}\\s*(${nameOrRegex})\\s*${eqs}\\s*\\n([\\s\\S]+?)(?:={2,}|$)`,
+            `\\n\\s*(${eqs})\\s*(${nameOrRegex})\\s*\\1\\s*\\n([\\s\\S]+?)(?:=\\n\\s*\\1[^=]|$)`,
             'i',
         );
 
         const match = this.content.match(regex);
 
-        if (!match?.[1] || !match?.[2]) {
+        if (!match?.[2] || !match?.[3]) {
             return null;
         }
 
-        const [, title, content] = match;
+        const [, , title, content] = match;
 
         return { title, content };
     }

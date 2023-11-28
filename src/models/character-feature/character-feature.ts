@@ -36,7 +36,6 @@ import { choiceListConfigs } from './choice-list-configs';
 import { PassiveStub } from '../static-reference/passive-stub';
 import { getPassiveDataById } from '../passive/passive';
 import { getActionDataById } from '../action/init';
-import { SubclassFeatureOverrides } from './features/character-subclass/overrides';
 
 enum CharacterFeatureLoadingStates {
     DESCRIPTION = 'DESCRIPTION',
@@ -535,38 +534,5 @@ export class CharacterFeature
                 }
             }) ?? []),
         ]);
-    }
-
-    static async fromPage(
-        pageTitle: string,
-        level?: number,
-        characterClass?: ICharacterClass,
-        subclass?: ICharacterOptionWithStubs,
-        config?: SubclassFeatureOverrides,
-    ): Promise<CharacterFeature | undefined> {
-        const cf = new CharacterFeature(
-            {
-                pageTitle,
-                name: MediaWikiParser.parseNameFromPageTitle(pageTitle),
-            },
-            level,
-            characterClass,
-            subclass,
-        );
-
-        cf.choiceListConfig = {
-            ...cf.choiceListConfig,
-            ...config?.choiceListConfig,
-        };
-
-        cf.choiceListCount = config?.choose ?? cf.choiceListCount;
-
-        await cf.waitForInitialization();
-
-        if (cf.grants.length > 0 || (cf.choices && cf.choices.length > 0)) {
-            return cf;
-        }
-
-        return undefined;
     }
 }

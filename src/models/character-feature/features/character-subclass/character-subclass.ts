@@ -15,8 +15,12 @@ import { StaticImageCacheService } from '../../../static-image-cache-service';
 import { MediaWikiParser } from '../../../media-wiki/media-wiki-parser';
 import { characterSubclassParserOverrides } from './overrides';
 import { ICharacterOptionWithPage } from '../../types';
+import { IClassFeatureFactory } from '../../class-feature/types';
+import { error } from '../../../logger';
 
 export class CharacterSubclass extends CharacterFeature {
+    static factory?: IClassFeatureFactory;
+
     constructor(
         option: ICharacterOptionWithPage,
         public level: number,
@@ -65,26 +69,36 @@ export class CharacterSubclass extends CharacterFeature {
 
     protected async parseSection(
         content: string,
-        sectionTitle: string,
+        sectionKey: string | number,
         level: number,
     ): Promise<ICharacterOptionWithStubs | undefined> {
         if (!this.page) {
             throw new PageNotFoundError();
         }
 
-        const sectionTitlePlain = MediaWikiParser.stripMarkup(sectionTitle);
-
         const config =
             characterSubclassParserOverrides[this.page.title]?.[level]?.[
-                sectionTitlePlain
+                typeof sectionKey === 'string'
+                    ? MediaWikiParser.stripMarkup(sectionKey)
+                    : sectionKey
             ];
+
+        const isAnonymousSection =
+            !config?.optionName && typeof sectionKey === 'number';
+
+        const sectionTitle = MediaWikiParser.stripMarkup(
+            config?.optionName ??
+                ((isAnonymousSection
+                    ? `Section ${sectionKey}`
+                    : sectionKey) as string),
+        );
 
         if (config?.ignore) {
             return undefined;
         }
 
         if (config?.redirectTo) {
-            return { name: sectionTitlePlain };
+            return { name: sectionTitle };
         }
 
         if (
@@ -103,7 +117,7 @@ export class CharacterSubclass extends CharacterFeature {
             };
 
             return {
-                name: sectionTitlePlain,
+                name: sectionTitle,
                 choices: [choice],
             };
         }
@@ -114,21 +128,21 @@ export class CharacterSubclass extends CharacterFeature {
 
         let featureMatches: RegExpMatchArray[] = [];
 
-        if (!config?.disableTitleMatch) {
+        if (typeof sectionKey === 'string' && !config?.disableTitleMatch) {
             featureMatches = [
-                ...sectionTitle.matchAll(saiPattern),
-                ...sectionTitle.matchAll(iconPattern),
-                ...sectionTitle.matchAll(linkPattern),
+                ...sectionKey.matchAll(saiPattern),
+                ...sectionKey.matchAll(iconPattern),
+                ...sectionKey.matchAll(linkPattern),
             ];
         }
 
         const f = (
             await Promise.all(
-                featureMatches.map(([, title]) =>
-                    CharacterFeature.fromPage(
-                        title,
-                        this.level,
+                featureMatches.map(([m]) =>
+                    CharacterSubclass.factory!.fromWikitext(
+                        m,
                         this.characterClass,
+                        level,
                         this,
                         config,
                     ),
@@ -144,17 +158,17 @@ export class CharacterSubclass extends CharacterFeature {
             ];
         }
 
-        const featureTitles = [
-            ...new Set(featureMatches.map((match) => match[1])),
+        const featureWikitext = [
+            ...new Set(featureMatches.map((match) => match[0])),
         ];
 
         const features = (
             await Promise.all(
-                featureTitles.map((title) =>
-                    CharacterFeature.fromPage(
-                        title,
-                        this.level,
+                featureWikitext.map((feature) =>
+                    CharacterSubclass.factory!.fromWikitext(
+                        feature,
                         this.characterClass,
+                        level,
                         this,
                         config,
                     ),
@@ -162,10 +176,22 @@ export class CharacterSubclass extends CharacterFeature {
             )
         ).filter(Boolean) as CharacterFeature[];
 
+        await Promise.all(
+            features.map((feature) => feature.waitForInitialization()),
+        );
+
         if (
             features.length > 1 &&
             (config?.choose || content.match(/Choose (\d|one|a |an )/i))
         ) {
+            if (isAnonymousSection) {
+                error(
+                    `Expected sectionName to be configured for ${this.name} > Level ${level} > Section ${sectionKey}.`,
+                );
+
+                return undefined;
+            }
+
             let count: number = 1;
 
             if (config?.choose) {
@@ -204,7 +230,7 @@ export class CharacterSubclass extends CharacterFeature {
             }
 
             return {
-                name: sectionTitlePlain,
+                name: sectionTitle,
                 choices: [
                     {
                         type: CharacterPlannerStep.CLASS_FEATURE_SUBCHOICE,
@@ -215,8 +241,13 @@ export class CharacterSubclass extends CharacterFeature {
             };
         }
 
+        if (features.length === 1) {
+            // Use toJSON to prune extra properties and avoid circular references
+            return features[0].toJSON();
+        }
+
         return {
-            name: sectionTitlePlain,
+            name: sectionTitle,
             grants: features.flatMap((feature) => feature.grants),
             choices: features.flatMap((feature) => feature.choices ?? []),
         };
@@ -242,7 +273,7 @@ export class CharacterSubclass extends CharacterFeature {
                     ([, sectionTitle, sectionContent], index) => {
                         return this.parseSection(
                             sectionContent,
-                            sectionTitle ?? `Section ${index}`,
+                            sectionTitle ?? index,
                             level,
                         );
                     },
@@ -329,13 +360,7 @@ export class CharacterSubclass extends CharacterFeature {
                 return option;
             });
 
-            const merged: ICharacterOptionWithStubs = {
-                name: `${this.name} (Level ${level})`,
-                choices: redirected.flatMap((option) => option.choices ?? []),
-                grants: redirected.flatMap((option) => option.grants ?? []),
-            };
-
-            progression[level - 1].Features = [merged];
+            progression[level - 1].Features = redirected;
         });
 
         return progression;
@@ -364,7 +389,12 @@ export class CharacterSubclass extends CharacterFeature {
             this.grants = effects;
         }
 
-        const choices = levelEffects.flatMap((option) => option.choices ?? []);
+        const choices = levelEffects
+            .filter((option) => option.choices?.length)
+            .map((option) => ({
+                options: [{ ...option, grants: undefined }],
+                type: CharacterPlannerStep.CLASS_FEATURE_SUBCHOICE,
+            }));
 
         if (choices.length > 0) {
             this.choices = choices;
