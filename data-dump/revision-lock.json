@@ -33,8 +33,10 @@
         "Gauntlet Yeva": "Yeva",
         "Ghustil Stornugoss": "Stornugoss",
         "Gnarled Teahouse": "Riverside Teahouse",
+        "Golbraith": "Golbraith Stredivas",
         "Gorion Mausoluem": "Gorion Mausoleum",
         "Grat the Trader": "Grat",
+        "Gurgon": "Guard Gurgon",
         "Harper Outpost": "Wilderness",
         "Heavy_Magic_Armour_Trader_Table": "Heavy Magic Armour Trader Table",
         "Helm": "Headwear",
@@ -61,6 +63,7 @@
         "Quest": "Quests",
         "Sarevok": "Sarevok Anchev",
         "Sarth Baretha": "Baretha",
+        "See Invisibility": "See Invisibility (disambiguation)",
         "Sergeant Thrinn": "Thrinn",
         "Servant's Quarters": "Servants' Quarters",
         "Spreading Spores (Passive Feature)": "Spreading Spores (passive feature)",
@@ -73,6 +76,7 @@
         "Template:Attack Roll": "Template:Attack roll",
         "Template:C": "Template:Code",
         "Template:CharacterInfo": "Template:Character info",
+        "Template:Condition Type": "Template:Condition type",
         "Template:Construction": "Template:Under construction",
         "Template:DamageType": "Template:Damage type",
         "Template:DropTableDivider": "Template:Drop table divider",
@@ -100,6 +104,7 @@
         "Template:blank": "Template:Blank",
         "Template:blur": "Template:Blur",
         "Template:c": "Template:C",
+        "Template:cite web": "Template:Cite web",
         "Template:class": "Template:Class",
         "Template:clear": "Template:Clear",
         "Template:cond": "Template:Cond",
@@ -120,8 +125,8 @@
         "Template:inflicts": "Template:Inflicts",
         "Template:legendary": "Template:Legendary",
         "Template:mdRarityItem": "Template:MdRarityItem",
-        "Template:notebegin": "Template:Notebegin",
-        "Template:noteend": "Template:Noteend",
+        "Template:note": "Template:Note",
+        "Template:notelist": "Template:Notelist",
         "Template:notes": "Template:Notes",
         "Template:nowrap": "Template:Nowrap",
         "Template:prereq": "Template:Prereq",
@@ -12126,8 +12131,8 @@
         },
         {
             "pageId": 16338,
-            "revisionId": 112015,
-            "title": "Gurgon"
+            "revisionId": 117468,
+            "title": "Guard Gurgon"
         },
         {
             "pageId": 16348,
@@ -12347,7 +12352,7 @@
         {
             "pageId": 16899,
             "revisionId": 75585,
-            "title": "See Invisibility"
+            "title": "See Invisibility (disambiguation)"
         },
         {
             "pageId": 17001,
@@ -14125,11 +14130,6 @@
             "title": "Unpetrification Ray"
         },
         {
-            "pageId": 21082,
-            "revisionId": 109774,
-            "title": "Wounding Ray (Class Action)"
-        },
-        {
             "pageId": 21192,
             "revisionId": 113861,
             "title": "Mental Inhibition"
@@ -14461,8 +14461,8 @@
         },
         {
             "pageId": 21723,
-            "revisionId": 94125,
-            "title": "Template:Condition Type"
+            "revisionId": 118536,
+            "title": "Template:Condition type"
         },
         {
             "pageId": 21772,
@@ -15745,6 +15745,11 @@
             "title": "Claws (Harpy)"
         },
         {
+            "pageId": 25294,
+            "revisionId": 107798,
+            "title": "Template:Cite web"
+        },
+        {
             "pageId": 25337,
             "revisionId": 100794,
             "title": "Template:Reflist"
@@ -15853,6 +15858,16 @@
             "pageId": 25745,
             "revisionId": 103120,
             "title": "Template:Feature box"
+        },
+        {
+            "pageId": 25750,
+            "revisionId": 119024,
+            "title": "Template:Note"
+        },
+        {
+            "pageId": 25751,
+            "revisionId": 104297,
+            "title": "Template:Notelist"
         },
         {
             "pageId": 25761,
@@ -18730,11 +18745,6 @@
             "title": "Mapped Terror: Ceremorphosis"
         },
         {
-            "pageId": 28785,
-            "revisionId": 115467,
-            "title": "Mapped Terror"
-        },
-        {
             "pageId": 28788,
             "revisionId": 115476,
             "title": "Mapped Terror: Betrayal"
@@ -19056,8 +19066,8 @@
         },
         {
             "pageId": 29443,
-            "revisionId": 117623,
-            "title": "Golbraith"
+            "revisionId": 117760,
+            "title": "Golbraith Stredivas"
         },
         {
             "pageId": 29458,
