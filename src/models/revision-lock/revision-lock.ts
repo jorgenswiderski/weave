@@ -1,6 +1,7 @@
 import fs from 'fs';
 import { MongoCollections, getMongoDb } from '../mongo';
 import { RevisionLockEntry, RevisionLockInfo } from './types';
+import { log } from '../logger';
 
 class RevisionLockSingleton {
     redirects: Map<string, string>;
@@ -61,6 +62,24 @@ class RevisionLockSingleton {
         return this.deadLinks.has(pageTitle);
     }
 
+    static appStart = Date.now();
+
+    protected static async prunePages(): Promise<void> {
+        const db = await getMongoDb();
+        const collection = db.collection(MongoCollections.MW_PAGES);
+
+        const results = await collection.deleteMany({
+            $or: [
+                { lastAccessed: { $lt: this.appStart } },
+                { lastAccessed: { $exists: false } }, // Can remove this after deploy
+            ],
+        });
+
+        if (results.deletedCount > 0) {
+            log(`Pruned ${results.deletedCount} unused pages.`);
+        }
+    }
+
     path = 'data-dump/revision-lock.json';
 
     protected static async getRevisions(): Promise<RevisionLockEntry[]> {
@@ -96,6 +115,8 @@ class RevisionLockSingleton {
         redirectMap: Map<string, string>,
         deadLinks: Set<string>,
     ): Promise<void> {
+        await RevisionLockSingleton.prunePages();
+
         const data = {
             redirects: RevisionLockSingleton.getRedirects(redirectMap),
             revisions: await RevisionLockSingleton.getRevisions(),

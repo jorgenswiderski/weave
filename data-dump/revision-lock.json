@@ -13,6 +13,7 @@
         "Counting House": "The Counting House",
         "Creche Y'llek": "Crèche Y'llek",
         "Dame Aylin": "Aylin",
+        "Dank Crypt": "Overgrown Ruins",
         "Darkvision (Passive Feature)": "Darkvision",
         "Darkvision (Spell)": "Darkvision (spell)",
         "Divine Strike: Elemental Fury": "Divine Strike",
@@ -50,6 +51,7 @@
         "Lady Jannath": "Jannath",
         "Long Rest": "Resting",
         "Long rest": "Resting",
+        "Mason's Guild Basement": "Mason's Guild",
         "Mind Flayer": "Mind flayer",
         "Multiattack Defense": "Multiattack Defence",
         "Myconid Colony": "Ebonlake Grotto",
@@ -61,6 +63,7 @@
         "Putrid Bog": "Sunlit Wetlands",
         "Quartermaster Talli": "Talli",
         "Quest": "Quests",
+        "Refectory": "Overgrown Ruins",
         "Sarevok": "Sarevok Anchev",
         "Sarth Baretha": "Baretha",
         "See Invisibility": "See Invisibility (disambiguation)",
@@ -114,6 +117,7 @@
         "Template:distance": "Template:Distance",
         "Template:div col": "Template:Div col",
         "Template:div col end": "Template:Div col end",
+        "Template:documentation": "Template:Documentation",
         "Template:drop table end": "Template:Drop table end",
         "Template:drop table row": "Template:Drop table row",
         "Template:drop table start": "Template:Drop table start",
@@ -124,6 +128,7 @@
         "Template:icon": "Template:Icon",
         "Template:inflicts": "Template:Inflicts",
         "Template:legendary": "Template:Legendary",
+        "Template:main namespace only": "Template:Main namespace only",
         "Template:mdRarityItem": "Template:MdRarityItem",
         "Template:note": "Template:Note",
         "Template:notelist": "Template:Notelist",
@@ -144,6 +149,7 @@
         "Template:stub": "Template:Stub",
         "Template:temp hp": "Template:Temp hp",
         "Template:trader gold row": "Template:Trader gold row",
+        "Template:trim": "Template:Trim",
         "Template:uid": "Template:Uid",
         "Template:uncommon": "Template:Uncommon",
         "Template:under construction": "Template:Under construction",
@@ -3605,11 +3611,6 @@
             "title": "Ring Mail Armour"
         },
         {
-            "pageId": 3583,
-            "revisionId": 94793,
-            "title": "The Oakfather's Embrace"
-        },
-        {
             "pageId": 3586,
             "revisionId": 92411,
             "title": "Tarnished Charm"
@@ -4040,9 +4041,9 @@
             "title": "Healing Radiance"
         },
         {
-            "pageId": 3998,
-            "revisionId": 114002,
-            "title": "Dank Crypt"
+            "pageId": 3996,
+            "revisionId": 22294,
+            "title": "Template:HorizontalRuleImage"
         },
         {
             "pageId": 4010,
@@ -4073,11 +4074,6 @@
             "pageId": 4019,
             "revisionId": 79105,
             "title": "Pooldripp the Zealous"
-        },
-        {
-            "pageId": 4021,
-            "revisionId": 13532,
-            "title": "Template:Expertise"
         },
         {
             "pageId": 4023,
@@ -5165,54 +5161,9 @@
             "title": "Mattis"
         },
         {
-            "pageId": 5371,
-            "revisionId": 87809,
-            "title": "Blinded (Condition)"
-        },
-        {
-            "pageId": 5376,
-            "revisionId": 85448,
-            "title": "Burning (Condition)"
-        },
-        {
-            "pageId": 5378,
-            "revisionId": 107349,
-            "title": "Charmed (Condition)"
-        },
-        {
             "pageId": 5420,
             "revisionId": 87257,
             "title": "Frightened (Condition)"
-        },
-        {
-            "pageId": 5427,
-            "revisionId": 114279,
-            "title": "Hastened (Condition)"
-        },
-        {
-            "pageId": 5445,
-            "revisionId": 79632,
-            "title": "Invisible (Condition)"
-        },
-        {
-            "pageId": 5458,
-            "revisionId": 95232,
-            "title": "Poisoned (Condition)"
-        },
-        {
-            "pageId": 5461,
-            "revisionId": 110945,
-            "title": "Prone (Condition)"
-        },
-        {
-            "pageId": 5480,
-            "revisionId": 22645,
-            "title": "Silenced (Condition)"
-        },
-        {
-            "pageId": 5484,
-            "revisionId": 110080,
-            "title": "Stunned (Condition)"
         },
         {
             "pageId": 5507,
@@ -5403,6 +5354,11 @@
             "pageId": 6234,
             "revisionId": 112456,
             "title": "Template:Condition"
+        },
+        {
+            "pageId": 6236,
+            "revisionId": 47465,
+            "title": "Template:Trim"
         },
         {
             "pageId": 6277,
@@ -5830,6 +5786,11 @@
             "title": "College of Swords"
         },
         {
+            "pageId": 6746,
+            "revisionId": 118184,
+            "title": "Template:Ritual Spell"
+        },
+        {
             "pageId": 6779,
             "revisionId": 89198,
             "title": "Returning Pike"
@@ -6228,11 +6189,6 @@
             "pageId": 7914,
             "revisionId": 93114,
             "title": "Shifting Corpus Ring"
-        },
-        {
-            "pageId": 7915,
-            "revisionId": 114341,
-            "title": "Refectory"
         },
         {
             "pageId": 7917,
@@ -9145,11 +9101,6 @@
             "title": "Mason's Guild"
         },
         {
-            "pageId": 10620,
-            "revisionId": 62426,
-            "title": "Mason's Guild Basement"
-        },
-        {
             "pageId": 10621,
             "revisionId": 112162,
             "title": "Reithwin Town"
@@ -9430,11 +9381,6 @@
             "title": "Snow-Dusted Monastery Gloves"
         },
         {
-            "pageId": 10895,
-            "revisionId": 36116,
-            "title": "File:Hag Survivors.jpg"
-        },
-        {
             "pageId": 10897,
             "revisionId": 109100,
             "title": "Strange Ox"
@@ -9680,19 +9626,9 @@
             "title": "Findal"
         },
         {
-            "pageId": 11093,
-            "revisionId": 103949,
-            "title": "Surprised (Condition)"
-        },
-        {
             "pageId": 11095,
             "revisionId": 91499,
             "title": "Browbeaten Circlet"
-        },
-        {
-            "pageId": 11222,
-            "revisionId": 97681,
-            "title": "Chilled (Condition)"
         },
         {
             "pageId": 11225,
@@ -10885,11 +10821,6 @@
             "title": "Rare Mushroom Table"
         },
         {
-            "pageId": 13542,
-            "revisionId": 48587,
-            "title": "Template:Transcludeable"
-        },
-        {
             "pageId": 13543,
             "revisionId": 94153,
             "title": "Template:Drop table divider"
@@ -11123,11 +11054,6 @@
             "pageId": 14036,
             "revisionId": 111784,
             "title": "Template:PaladinNavbox"
-        },
-        {
-            "pageId": 14040,
-            "revisionId": 53802,
-            "title": "Channel Oath"
         },
         {
             "pageId": 14043,
@@ -13700,6 +13626,11 @@
             "title": "Khalid's Gift: Aid"
         },
         {
+            "pageId": 19813,
+            "revisionId": 110019,
+            "title": "Template:Action Page/doc"
+        },
+        {
             "pageId": 19846,
             "revisionId": 110745,
             "title": "Pact Boon"
@@ -13718,6 +13649,11 @@
             "pageId": 19862,
             "revisionId": 74924,
             "title": "Chessa's Practice Sword"
+        },
+        {
+            "pageId": 19895,
+            "revisionId": 98365,
+            "title": "User:HINK/Githyank Perry"
         },
         {
             "pageId": 19897,
@@ -13883,11 +13819,6 @@
             "pageId": 20455,
             "revisionId": 107597,
             "title": "Template:SpoilerDurge"
-        },
-        {
-            "pageId": 20457,
-            "revisionId": 116750,
-            "title": "Guardian of Faith (disambiguation)"
         },
         {
             "pageId": 20470,
@@ -14068,11 +13999,6 @@
             "pageId": 20916,
             "revisionId": 78678,
             "title": "Rend Vision (Dire Raven Companion)"
-        },
-        {
-            "pageId": 20919,
-            "revisionId": 78689,
-            "title": "Rend Vision"
         },
         {
             "pageId": 20923,
@@ -14575,6 +14501,11 @@
             "title": "Disguise Self: Masc Strong Tiefling"
         },
         {
+            "pageId": 22112,
+            "revisionId": 84592,
+            "title": "Template:Main namespace only"
+        },
+        {
             "pageId": 22129,
             "revisionId": 89140,
             "title": "Staff of the Emperor"
@@ -14768,6 +14699,11 @@
             "pageId": 22434,
             "revisionId": 108138,
             "title": "Water Myrmidon"
+        },
+        {
+            "pageId": 22439,
+            "revisionId": 119125,
+            "title": "User:HiddenDragon"
         },
         {
             "pageId": 22459,
@@ -15705,6 +15641,11 @@
             "title": "Fire Breath (Ansur)"
         },
         {
+            "pageId": 25036,
+            "revisionId": 97216,
+            "title": "Template:DamageBlob"
+        },
+        {
             "pageId": 25065,
             "revisionId": 111701,
             "title": "Multiattack: Wounded Target"
@@ -16045,6 +15986,11 @@
             "title": "Wrath of the Storm: Thunder"
         },
         {
+            "pageId": 26556,
+            "revisionId": 103112,
+            "title": "Template:Documentation"
+        },
+        {
             "pageId": 26587,
             "revisionId": 105552,
             "title": "Off-Hand Attack (Melee)"
@@ -16368,6 +16314,11 @@
             "pageId": 27650,
             "revisionId": 110364,
             "title": "Permanent Mind Sanctuary"
+        },
+        {
+            "pageId": 27681,
+            "revisionId": 110145,
+            "title": "Template:Resource/category"
         },
         {
             "pageId": 27685,
@@ -19028,16 +18979,6 @@
             "pageId": 29393,
             "revisionId": 117429,
             "title": "Bycocket"
-        },
-        {
-            "pageId": 29398,
-            "revisionId": 117445,
-            "title": "Template:Notebegin"
-        },
-        {
-            "pageId": 29399,
-            "revisionId": 117447,
-            "title": "Template:Noteend"
         },
         {
             "pageId": 29408,
