@@ -5,6 +5,7 @@ import { CONFIG } from '../models/config';
 import { TokenBucket } from '../models/token-bucket';
 import { ApiParam, RequestBatch } from './request-batch';
 import { PageNotFoundError } from '../models/errors';
+import { error, warn } from '../models/logger';
 
 const bot = new Mwn({
     apiUrl: `${CONFIG.MEDIAWIKI.BASE_URL}/api.php`,
@@ -249,10 +250,17 @@ export class MwnApiClass {
             if (revisionId) {
                 data = await this.queryRevision(revisionId, props);
 
-                assert(
-                    data.title === pageTitle,
-                    `Page fetched by revision id ${revisionId} didn't have the expect page title (Expected: ${pageTitle}, Actual: ${data.title})`,
-                );
+                if (!data) {
+                    error(
+                        `Failed to fetch page '${pageTitle}' with revision id ${revisionId}.`,
+                    );
+                }
+
+                if (data.title !== pageTitle) {
+                    warn(
+                        `Page fetched by revision id ${revisionId} didn't have the expect page title (Expected: ${pageTitle}, Actual: ${data.title})`,
+                    );
+                }
             } else {
                 data = await this.queryPage(pageTitle, props);
             }
