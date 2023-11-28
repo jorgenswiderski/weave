@@ -16,5 +16,8 @@ if ! git diff --exit-code data-dump; then
   exit 1
 fi
 
+# Test revision-lock.json
+npm run load-revisions-dry-run
+
 # Apply stashed changes back
 git stash pop
