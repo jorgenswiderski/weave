@@ -142,7 +142,7 @@ export class CharacterSubclass extends CharacterFeature {
                     CharacterSubclass.factory!.fromWikitext(
                         m,
                         this.characterClass,
-                        this.level,
+                        level,
                         this,
                         config,
                     ),
@@ -168,7 +168,7 @@ export class CharacterSubclass extends CharacterFeature {
                     CharacterSubclass.factory!.fromWikitext(
                         feature,
                         this.characterClass,
-                        this.level,
+                        level,
                         this,
                         config,
                     ),
@@ -239,6 +239,11 @@ export class CharacterSubclass extends CharacterFeature {
                     },
                 ],
             };
+        }
+
+        if (features.length === 1) {
+            // Use toJSON to prune extra properties and avoid circular references
+            return features[0].toJSON();
         }
 
         return {

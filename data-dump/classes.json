@@ -3543,6 +3543,8 @@
                                                 "options": [
                                                     {
                                                         "name": "Magical Secrets",
+                                                        "description": "Your versatile knack for the arcane lets you learn magic from every discipline. Choose some additional spells to add to your repertoire.",
+                                                        "image": "Class Bard Badge Icon.png",
                                                         "choices": [
                                                             {
                                                                 "type": 24,
@@ -15572,7 +15574,7 @@
                                             {
                                                 "options": [
                                                     {
-                                                        "name": "Additional Fighting Style",
+                                                        "name": "Fighting Style",
                                                         "choices": [
                                                             {
                                                                 "type": 23,
