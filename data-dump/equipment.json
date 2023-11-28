@@ -2494,8 +2494,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Dank Crypt",
-                            "id": 3998
+                            "name": "Overgrown Ruins",
+                            "id": 4835
                         }
                     },
                     "character": {
@@ -3245,6 +3245,10 @@
                             "name": "Forge of the Nine",
                             "id": 11252
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -7468,6 +7472,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -9120,6 +9128,10 @@
                             "name": "Forge of the Nine",
                             "id": 11252
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -9838,6 +9850,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -10481,6 +10497,10 @@
                             "name": "Forge of the Nine",
                             "id": 11252
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -10671,6 +10691,10 @@
                             "name": "The Hollow",
                             "id": 8645
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 },
                 {
@@ -10906,6 +10930,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -11192,6 +11220,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -11286,6 +11318,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -12406,6 +12442,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -12937,8 +12977,8 @@
                             "id": 8117
                         },
                         "location": {
-                            "name": "Mason's Guild Basement",
-                            "id": 10620
+                            "name": "Mason's Guild",
+                            "id": 10619
                         }
                     }
                 }
@@ -15425,6 +15465,10 @@
                             "name": "The Hollow",
                             "id": 8645
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -15492,6 +15536,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -16409,6 +16457,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -16513,6 +16565,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -16810,6 +16866,10 @@
                             "name": "Forge of the Nine",
                             "id": 11252
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -20371,6 +20431,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -21086,6 +21150,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -21230,6 +21298,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -22246,6 +22318,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 },
                 {
@@ -23921,6 +23997,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -24419,6 +24499,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 },
                 {
@@ -24883,6 +24967,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 },
                 {
@@ -25347,6 +25435,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 },
                 {
@@ -26070,6 +26162,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -26210,6 +26306,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -26695,6 +26795,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -26980,6 +27084,10 @@
                             "name": "The Hollow",
                             "id": 8645
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -27959,6 +28067,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 },
                 {
@@ -28109,6 +28221,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -30744,6 +30860,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -32429,6 +32549,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -33625,6 +33749,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 },
                 {
@@ -34543,6 +34671,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -34800,6 +34932,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -34910,6 +35046,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -35070,6 +35210,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 },
                 {
@@ -36209,6 +36353,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -36264,6 +36412,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -37177,6 +37329,10 @@
                             "name": "Emerald Grove",
                             "id": 8715
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],
@@ -37297,8 +37453,8 @@
                             "id": 4335
                         },
                         "location": {
-                            "name": "Dank Crypt",
-                            "id": 3998
+                            "name": "Overgrown Ruins",
+                            "id": 4835
                         }
                     }
                 }
@@ -37886,6 +38042,10 @@
                             "name": "Last Light Inn",
                             "id": 8129
                         }
+                    },
+                    "character": {
+                        "name": "Dammon",
+                        "id": 1007
                     }
                 }
             ],

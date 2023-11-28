@@ -26,10 +26,8 @@ async function write(data: any, path: string): Promise<void> {
 async function dump() {
     try {
         const startTime = Date.now();
-
-        await getMongoDb();
+        await Promise.all([getMongoDb(), MediaWiki.validatePages()]);
         const data = await initData();
-
         const tasks: Promise<any>[] = [];
 
         tasks.push(

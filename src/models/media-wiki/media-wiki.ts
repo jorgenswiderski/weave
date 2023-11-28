@@ -7,7 +7,7 @@ import { CONFIG } from '../config';
 import { MwnApi, MwnApiClass } from '../../api/mwn';
 import { Utils } from '../utils';
 import { RemoteImageError } from '../image-cache/types';
-import { debug, error } from '../logger';
+import { debug, error, warn } from '../logger';
 import { IPageData } from './types';
 import { RevisionLock } from '../revision-lock/revision-lock';
 import { MediaWikiTemplate } from './media-wiki-template';
@@ -19,6 +19,7 @@ export class PageData implements IPageData {
     categories: string[];
     pageId: number;
     lastFetched: number;
+    lastAccessed: number;
 
     revid?: number;
     parentid?: number;
@@ -44,14 +45,22 @@ export class PageData implements IPageData {
     content: string;
 
     protected constructor(data: IPageData) {
-        const { title, pageId, categories, lastFetched, content, ...rest } =
-            data;
+        const {
+            title,
+            pageId,
+            categories,
+            lastFetched,
+            lastAccessed,
+            content,
+            ...rest
+        } = data;
 
         Object.assign(this, rest);
         this.title = title;
         this.pageId = pageId;
         this.categories = categories;
         this.lastFetched = lastFetched;
+        this.lastAccessed = lastAccessed;
         this.content = MediaWikiParser.removeComments(content);
     }
 
@@ -180,24 +189,51 @@ export class PageData implements IPageData {
         return { title, content };
     }
 
-    static async resolveArticleTransclusions(content: string): Promise<string> {
-        const transclusions = [...content.matchAll(/{{:([^{}|]+)}}/g)];
+    static async resolveArticleTransclusions(
+        content: string,
+        pageTitle: string,
+        ignoredTransclusions: string[] = [],
+    ): Promise<string> {
+        const transclusions = [...content.matchAll(/{{:([^{}|]+)}}/g)].filter(
+            ([, transTitle]) => !ignoredTransclusions.includes(transTitle),
+        );
 
         if (transclusions.length === 0) {
             return content;
         }
 
-        const entries = (await Promise.all(
-            transclusions.map(async ([, pageTitle]) => {
-                // eslint-disable-next-line @typescript-eslint/no-use-before-define
-                return [pageTitle, await MediaWiki.getPage(pageTitle)];
-            }),
-        )) as [string, PageData][];
+        const entries = (
+            await Promise.all(
+                transclusions.map(async ([, transTitle]) => {
+                    try {
+                        return [
+                            transTitle,
+                            // eslint-disable-next-line @typescript-eslint/no-use-before-define
+                            await MediaWiki.getPage(transTitle),
+                        ];
+                    } catch (err) {
+                        return undefined;
+                    }
+                }),
+            )
+        ).filter(Boolean) as [string, PageData][];
 
         const pages = new Map(entries);
 
-        transclusions.forEach(([transclusion, pageTitle]) => {
-            const page = pages.get(pageTitle)!;
+        const failed: string[] = [];
+
+        transclusions.forEach(([transclusion, transTitle]) => {
+            const page = pages.get(transTitle);
+
+            if (!page) {
+                warn(
+                    `Failed to transclude page '${transTitle}' onto page '${pageTitle}' because it does not exist!`,
+                );
+
+                failed.push(transTitle);
+
+                return;
+            }
 
             const includeOnlyMatches = [
                 ...page.content.matchAll(
@@ -220,14 +256,14 @@ export class PageData implements IPageData {
 
             transcludeContent = this.resolveOtherTransclusions(
                 transcludeContent,
-                pageTitle,
+                transTitle,
             );
 
             // eslint-disable-next-line no-param-reassign
             content = content.replace(transclusion, transcludeContent);
         });
 
-        return this.resolveArticleTransclusions(content);
+        return this.resolveArticleTransclusions(content, pageTitle, failed);
     }
 
     static resolveOtherTransclusions(
@@ -242,7 +278,7 @@ export class PageData implements IPageData {
 
         const articles = {
             ...page,
-            content: await this.resolveArticleTransclusions(other),
+            content: await this.resolveArticleTransclusions(other, page.title),
         };
 
         return articles;
@@ -282,6 +318,7 @@ export class MediaWiki {
     static getPage = Utils.memoize(async function getPage(
         pageTitle: string,
         revisionId?: number,
+        allowRedirect: boolean = true,
     ): Promise<PageData> {
         assert(
             !pageTitle.match(/(?:{{)|(?:}})/),
@@ -289,15 +326,27 @@ export class MediaWiki {
         );
 
         const db: Db = await getMongoDb();
-        const pageCollection = db.collection(MongoCollections.MW_PAGES);
+        // eslint-disable-next-line no-param-reassign
+        const collection = db.collection(MongoCollections.MW_PAGES);
 
         // eslint-disable-next-line no-param-reassign
         pageTitle = MediaWiki.titleRedirects.get(pageTitle) ?? pageTitle;
 
         // Check if the page is cached
-        const cachedPage = (await pageCollection.findOne({
+        const cachedPage = (await collection.findOne({
             title: pageTitle,
         })) as unknown as IPageData | undefined;
+
+        if (cachedPage) {
+            await collection.updateOne(
+                { pageId: cachedPage.pageId },
+                {
+                    $set: {
+                        lastAccessed: Date.now(),
+                    },
+                },
+            );
+        }
 
         if (
             cachedPage &&
@@ -319,6 +368,12 @@ export class MediaWiki {
         }
 
         if (redirect) {
+            if (!allowRedirect) {
+                throw new Error(
+                    `Encountered an unexpected redirect when fetching page '${pageTitle}'.`,
+                );
+            }
+
             MediaWiki.titleRedirects.set(pageTitle, redirect);
 
             return MediaWiki.getPage(redirect, revisionId);
@@ -341,7 +396,7 @@ export class MediaWiki {
             !revisionId &&
             cachedPage.revisionId >= latestRevisionId
         ) {
-            await pageCollection.updateOne(
+            await collection.updateOne(
                 { pageId: cachedPage.pageId },
                 {
                     $set: {
@@ -365,13 +420,14 @@ export class MediaWiki {
             'Content revid must match requested revisionId',
         );
 
-        const data = {
+        const data: IPageData = {
             ...content.revisions[0],
             pageId: content.pageid,
             title: content.title,
             revisionId: content.revid ?? latestRevisionId,
             categories,
             lastFetched: Date.now(),
+            lastAccessed: Date.now(),
         };
 
         assert(
@@ -383,7 +439,7 @@ export class MediaWiki {
         try {
             const { pageId, ...rest } = data;
 
-            await pageCollection.updateOne(
+            await collection.updateOne(
                 { pageId },
                 { $set: rest },
                 { upsert: true },
@@ -541,5 +597,49 @@ export class MediaWiki {
         const titles = Array.from(new Set(titleGroups.flat()));
 
         return titles.sort();
+    }
+
+    static async isPageRedirect(pageTitle: string): Promise<boolean> {
+        let redirect;
+
+        if (CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS) {
+            redirect = RevisionLock.getPageRedirect(pageTitle);
+        } else {
+            ({ redirect } = await MediaWiki.getPageInfo(pageTitle));
+        }
+
+        return typeof redirect !== 'undefined';
+    }
+
+    static async validatePages(): Promise<void> {
+        const db = await getMongoDb();
+        const collection = db.collection(MongoCollections.MW_PAGES);
+
+        const cursor = collection.find(
+            {},
+            {
+                projection: {
+                    _id: 0,
+                    pageId: 1,
+                    title: 1,
+                    revisionId: 1,
+                },
+            },
+        );
+
+        const invalidPages = await Utils.asyncFilter(
+            await cursor.toArray(),
+            async ({ title }) => MediaWiki.isPageRedirect(title),
+        );
+
+        if (invalidPages.length > 0) {
+            await Promise.all(
+                invalidPages.map((page) => collection.deleteOne(page)),
+            );
+
+            warn(
+                `Found and removed ${invalidPages.length} invalid pages that were actually redirects.`,
+            );
+        }
     }
 }

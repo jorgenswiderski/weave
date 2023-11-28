@@ -6,6 +6,7 @@ export interface IPageData extends ApiRevision {
     categories: string[];
     pageId: number;
     lastFetched: number;
+    lastAccessed: number;
     content: string;
 
     hasCategory(categoryNames: string[] | string): boolean;
