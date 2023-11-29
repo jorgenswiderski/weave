@@ -19,14 +19,13 @@ export class ImageClassController {
         };
 
         const preload: boolean = p === 'pre';
-        const usePreloadSize: boolean = p === 'post';
 
         const width: number | undefined =
-            !usePreloadSize && typeof w === 'string' && !Number.isNaN(Number(w))
+            typeof w === 'string' && !Number.isNaN(Number(w))
                 ? Number(w)
                 : undefined;
 
-        if (CONFIG.IS_DEV && !preload && !usePreloadSize && !width) {
+        if (CONFIG.IS_DEV && !preload && !width) {
             warn(
                 `Warning: Serving image '${imageName}' with no specified width.`,
             );
@@ -43,7 +42,7 @@ export class ImageClassController {
             const image = await ImageCacheModel.getImage(
                 imageName,
                 width,
-                preload || usePreloadSize,
+                preload,
             );
 
             if ('file' in image) {
