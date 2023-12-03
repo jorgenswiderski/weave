@@ -33,11 +33,13 @@
         "Gauntlet Edwynna": "Edwynna",
         "Gauntlet Yeva": "Yeva",
         "Ghustil Stornugoss": "Stornugoss",
+        "Gish For'reth": "For'reth",
         "Gnarled Teahouse": "Riverside Teahouse",
         "Golbraith": "Golbraith Stredivas",
         "Gorion Mausoluem": "Gorion Mausoleum",
         "Grat the Trader": "Grat",
         "Gurgon": "Guard Gurgon",
+        "Harper Lassandra": "Lassandra",
         "Harper Outpost": "Wilderness",
         "Heavy_Magic_Armour_Trader_Table": "Heavy Magic Armour Trader Table",
         "Helm": "Headwear",
@@ -47,6 +49,7 @@
         "Improved Bardic Inspiration": "Bardic Inspiration",
         "Improved Unarmoured Movement": "Unarmoured Movement",
         "Jaheira's Basement": "Elerrathin's Home",
+        "Kith'rak Voss": "Voss",
         "Lady Esther": "Esther",
         "Lady Jannath": "Jannath",
         "Long Rest": "Resting",
@@ -63,12 +66,14 @@
         "Putrid Bog": "Sunlit Wetlands",
         "Quartermaster Talli": "Talli",
         "Quest": "Quests",
+        "Raider Chost": "Chost",
         "Refectory": "Overgrown Ruins",
         "Sarevok": "Sarevok Anchev",
         "Sarth Baretha": "Baretha",
         "See Invisibility": "See Invisibility (disambiguation)",
         "Sergeant Thrinn": "Thrinn",
         "Servant's Quarters": "Servants' Quarters",
+        "Shadowlands": "Shadow-Cursed Lands",
         "Spreading Spores (Passive Feature)": "Spreading Spores (passive feature)",
         "Stylin' Horst Potion Shop": "The Velveteen Elixir",
         "Summon Companion": "Ranger's Companion",
@@ -86,6 +91,7 @@
         "Template:DropTableEnd": "Template:Drop table end",
         "Template:DropTableRow": "Template:Drop table row",
         "Template:DropTableStart": "Template:Drop table start",
+        "Template:EquipmentPage": "Template:Equipment page",
         "Template:ItemIcon Insert": "Template:Itemicon insert",
         "Template:NavEquipment": "Template:NavItems",
         "Template:PassiveFeaturePage": "Template:Passive feature page",
@@ -98,6 +104,7 @@
         "Template:SpoilerWarning": "Template:Spoiler warning",
         "Template:TraderGoldRow": "Template:Trader gold row",
         "Template:UnderConstruction": "Template:Under construction",
+        "Template:WeaponPage": "Template:Weapon page",
         "Template:WeaponTypePage": "Template:Weapon type page",
         "Template:ability check": "Template:Ability check",
         "Template:action": "Template:Action",
@@ -130,12 +137,15 @@
         "Template:legendary": "Template:Legendary",
         "Template:main namespace only": "Template:Main namespace only",
         "Template:mdRarityItem": "Template:MdRarityItem",
+        "Template:nbts": "Template:Nbts",
         "Template:note": "Template:Note",
         "Template:notelist": "Template:Notelist",
         "Template:notes": "Template:Notes",
         "Template:nowrap": "Template:Nowrap",
         "Template:prereq": "Template:Prereq",
         "Template:r": "Template:R",
+        "Template:radius": "Template:Radius",
+        "Template:range": "Template:Range",
         "Template:rare": "Template:Rare",
         "Template:recharge": "Template:Recharge",
         "Template:ref": "Template:Ref",
@@ -374,11 +384,6 @@
             "pageId": 213,
             "revisionId": 112039,
             "title": "Wyll"
-        },
-        {
-            "pageId": 215,
-            "revisionId": 112588,
-            "title": "Astarion"
         },
         {
             "pageId": 219,
@@ -2542,8 +2547,8 @@
         },
         {
             "pageId": 3028,
-            "revisionId": 112290,
-            "title": "Template:WeaponPage"
+            "revisionId": 121577,
+            "title": "Template:Weapon page"
         },
         {
             "pageId": 3031,
@@ -3072,13 +3077,18 @@
         },
         {
             "pageId": 3403,
-            "revisionId": 108249,
-            "title": "Template:EquipmentPage"
+            "revisionId": 121576,
+            "title": "Template:Equipment page"
         },
         {
             "pageId": 3406,
             "revisionId": 103449,
             "title": "Spear +1"
+        },
+        {
+            "pageId": 3407,
+            "revisionId": 10529,
+            "title": "Template:Nbts"
         },
         {
             "pageId": 3408,
@@ -3366,11 +3376,6 @@
             "title": "Druid Leather Armour"
         },
         {
-            "pageId": 3503,
-            "revisionId": 94659,
-            "title": "Padded Armour (Astarion)"
-        },
-        {
             "pageId": 3504,
             "revisionId": 108363,
             "title": "Padded Armour"
@@ -3399,11 +3404,6 @@
             "pageId": 3511,
             "revisionId": 91521,
             "title": "Circlet"
-        },
-        {
-            "pageId": 3512,
-            "revisionId": 94735,
-            "title": "Chain Shirt (Shadowheart)"
         },
         {
             "pageId": 3514,
@@ -4677,8 +4677,8 @@
         },
         {
             "pageId": 4489,
-            "revisionId": 106144,
-            "title": "Kith'rak Voss"
+            "revisionId": 119930,
+            "title": "Voss"
         },
         {
             "pageId": 4492,
@@ -7087,8 +7087,8 @@
         },
         {
             "pageId": 8565,
-            "revisionId": 112019,
-            "title": "Staff of Spell Power"
+            "revisionId": 121787,
+            "title": "Staff of Spellpower"
         },
         {
             "pageId": 8568,
@@ -7219,11 +7219,6 @@
             "pageId": 8678,
             "revisionId": 88732,
             "title": "Enclave Library"
-        },
-        {
-            "pageId": 8683,
-            "revisionId": 94970,
-            "title": "Padded Armour (Warlock)"
         },
         {
             "pageId": 8687,
@@ -9631,6 +9626,11 @@
             "title": "Browbeaten Circlet"
         },
         {
+            "pageId": 11112,
+            "revisionId": 120878,
+            "title": "Cloak"
+        },
+        {
             "pageId": 11225,
             "revisionId": 94126,
             "title": "Template:Resistance"
@@ -10832,8 +10832,8 @@
         },
         {
             "pageId": 13547,
-            "revisionId": 110228,
-            "title": "Etheral Escape"
+            "revisionId": 120829,
+            "title": "Ethereal Escape"
         },
         {
             "pageId": 13558,
@@ -11446,6 +11446,11 @@
             "title": "Ancient Lair"
         },
         {
+            "pageId": 14599,
+            "revisionId": 119019,
+            "title": "Zanner Toobin"
+        },
+        {
             "pageId": 14645,
             "revisionId": 53889,
             "title": "File:Free the Artist Quest.jpg"
@@ -12034,6 +12039,11 @@
             "pageId": 16197,
             "revisionId": 102115,
             "title": "Template:CharLink"
+        },
+        {
+            "pageId": 16261,
+            "revisionId": 105031,
+            "title": "Melee Weapon Trader Table"
         },
         {
             "pageId": 16276,
@@ -12864,6 +12874,11 @@
             "pageId": 18225,
             "revisionId": 71685,
             "title": "Template:Trader"
+        },
+        {
+            "pageId": 18318,
+            "revisionId": 99596,
+            "title": "Lassandra"
         },
         {
             "pageId": 18390,
@@ -15447,8 +15462,8 @@
         },
         {
             "pageId": 24431,
-            "revisionId": 94425,
-            "title": "Kirh'raki Inferno"
+            "revisionId": 121049,
+            "title": "Kith'raki Inferno"
         },
         {
             "pageId": 24432,
@@ -15612,8 +15627,8 @@
         },
         {
             "pageId": 25023,
-            "revisionId": 97049,
-            "title": "Fly (Ansur)"
+            "revisionId": 120627,
+            "title": "Fly (Dragons)"
         },
         {
             "pageId": 25024,
@@ -15637,8 +15652,8 @@
         },
         {
             "pageId": 25031,
-            "revisionId": 110630,
-            "title": "Fire Breath (Ansur)"
+            "revisionId": 120609,
+            "title": "Fire Breath (Dragons)"
         },
         {
             "pageId": 25036,
@@ -16177,8 +16192,8 @@
         },
         {
             "pageId": 27275,
-            "revisionId": 110310,
-            "title": "Magical Plate"
+            "revisionId": 122012,
+            "title": "Magical Plate (-2)"
         },
         {
             "pageId": 27295,
@@ -16742,8 +16757,8 @@
         },
         {
             "pageId": 27962,
-            "revisionId": 112461,
-            "title": "Arcane Enchantment +1"
+            "revisionId": 121784,
+            "title": "Arcane Enchantment (+1)"
         },
         {
             "pageId": 27963,
@@ -17042,8 +17057,8 @@
         },
         {
             "pageId": 28054,
-            "revisionId": 112322,
-            "title": "Tippler's Rage (Passive Feature)"
+            "revisionId": 121528,
+            "title": "Tippler's Rage"
         },
         {
             "pageId": 28055,
@@ -17057,8 +17072,8 @@
         },
         {
             "pageId": 28057,
-            "revisionId": 115950,
-            "title": "Yeenoghu's Gift (passive feature)"
+            "revisionId": 121532,
+            "title": "Yeenoghu's Gift"
         },
         {
             "pageId": 28060,
@@ -17082,8 +17097,8 @@
         },
         {
             "pageId": 28064,
-            "revisionId": 113256,
-            "title": "Magical Durability +2"
+            "revisionId": 121541,
+            "title": "Magical Durability (+2)"
         },
         {
             "pageId": 28065,
@@ -17202,8 +17217,8 @@
         },
         {
             "pageId": 28098,
-            "revisionId": 112463,
-            "title": "Arcane Enchantment +2"
+            "revisionId": 121134,
+            "title": "Arcane Enchantment (+2)"
         },
         {
             "pageId": 28100,
@@ -17432,8 +17447,8 @@
         },
         {
             "pageId": 28185,
-            "revisionId": 115939,
-            "title": "Stealthier (passive feature)"
+            "revisionId": 122036,
+            "title": "Stealthier"
         },
         {
             "pageId": 28188,
@@ -17457,13 +17472,13 @@
         },
         {
             "pageId": 28194,
-            "revisionId": 112709,
-            "title": "High Spellcasting +2"
+            "revisionId": 121740,
+            "title": "High Spellcasting (+2)"
         },
         {
             "pageId": 28195,
-            "revisionId": 112710,
-            "title": "High Spellcasting +1"
+            "revisionId": 121738,
+            "title": "High Spellcasting (+1)"
         },
         {
             "pageId": 28198,
@@ -17527,8 +17542,8 @@
         },
         {
             "pageId": 28243,
-            "revisionId": 112859,
-            "title": "Superior Plate"
+            "revisionId": 121886,
+            "title": "Superior Plate (+1)"
         },
         {
             "pageId": 28244,
@@ -17547,13 +17562,13 @@
         },
         {
             "pageId": 28247,
-            "revisionId": 112864,
-            "title": "Superior Material +2"
+            "revisionId": 121853,
+            "title": "Superior Material (+2)"
         },
         {
             "pageId": 28248,
-            "revisionId": 112865,
-            "title": "Superior Material +1"
+            "revisionId": 121855,
+            "title": "Superior Material (+1)"
         },
         {
             "pageId": 28249,
@@ -17982,8 +17997,8 @@
         },
         {
             "pageId": 28379,
-            "revisionId": 113258,
-            "title": "Magical Durability +1"
+            "revisionId": 121539,
+            "title": "Magical Durability (+1)"
         },
         {
             "pageId": 28380,
@@ -19119,6 +19134,541 @@
             "pageId": 29645,
             "revisionId": 119273,
             "title": "Template:Feature/Format"
+        },
+        {
+            "pageId": 29654,
+            "revisionId": 119284,
+            "title": "Template:Feature"
+        },
+        {
+            "pageId": 29797,
+            "revisionId": 119514,
+            "title": "Tactical Discipline"
+        },
+        {
+            "pageId": 29801,
+            "revisionId": 121234,
+            "title": "Flail +1"
+        },
+        {
+            "pageId": 29819,
+            "revisionId": 119559,
+            "title": "Template:Skill"
+        },
+        {
+            "pageId": 29822,
+            "revisionId": 119595,
+            "title": "Volo's Ersatz Eye (passive feature)"
+        },
+        {
+            "pageId": 29831,
+            "revisionId": 119700,
+            "title": "Immutable Existence"
+        },
+        {
+            "pageId": 29833,
+            "revisionId": 120030,
+            "title": "Astral Step"
+        },
+        {
+            "pageId": 29836,
+            "revisionId": 120232,
+            "title": "Flail of Dread Skulls"
+        },
+        {
+            "pageId": 29840,
+            "revisionId": 120233,
+            "title": "Chaos Flail"
+        },
+        {
+            "pageId": 29872,
+            "revisionId": 119791,
+            "title": "Kill collar"
+        },
+        {
+            "pageId": 29874,
+            "revisionId": 119829,
+            "title": "Slayer (Class Action)"
+        },
+        {
+            "pageId": 29883,
+            "revisionId": 119827,
+            "title": "Dismiss: Slayer"
+        },
+        {
+            "pageId": 29887,
+            "revisionId": 119849,
+            "title": "Partial Ceremorphosis"
+        },
+        {
+            "pageId": 29890,
+            "revisionId": 119856,
+            "title": "Weakened Constitution"
+        },
+        {
+            "pageId": 29891,
+            "revisionId": 119858,
+            "title": "Weakened Intelligence"
+        },
+        {
+            "pageId": 29894,
+            "revisionId": 119863,
+            "title": "Weakened Wisdom"
+        },
+        {
+            "pageId": 29965,
+            "revisionId": 120058,
+            "title": "Leadership"
+        },
+        {
+            "pageId": 29974,
+            "revisionId": 120073,
+            "title": "Buthir's Wrath"
+        },
+        {
+            "pageId": 29977,
+            "revisionId": 120086,
+            "title": "Throw Stone (Ogre)"
+        },
+        {
+            "pageId": 29979,
+            "revisionId": 120095,
+            "title": "Throw Stone (Kobold)"
+        },
+        {
+            "pageId": 29991,
+            "revisionId": 120113,
+            "title": "Wicked Coercion"
+        },
+        {
+            "pageId": 30001,
+            "revisionId": 120134,
+            "title": "Detonate"
+        },
+        {
+            "pageId": 30023,
+            "revisionId": 120259,
+            "title": "Corrosive Phlegm"
+        },
+        {
+            "pageId": 30026,
+            "revisionId": 120224,
+            "title": "For'reth"
+        },
+        {
+            "pageId": 30035,
+            "revisionId": 120250,
+            "title": "Chost"
+        },
+        {
+            "pageId": 30043,
+            "revisionId": 121814,
+            "title": "Mutilated Carapace"
+        },
+        {
+            "pageId": 30082,
+            "revisionId": 120494,
+            "title": "Knowledge of the Ages: Strength"
+        },
+        {
+            "pageId": 30083,
+            "revisionId": 120495,
+            "title": "Knowledge of the Ages: Dexterity"
+        },
+        {
+            "pageId": 30084,
+            "revisionId": 120496,
+            "title": "Knowledge of the Ages: Wisdom"
+        },
+        {
+            "pageId": 30085,
+            "revisionId": 120516,
+            "title": "Knowledge of the Ages: Intelligence"
+        },
+        {
+            "pageId": 30086,
+            "revisionId": 120498,
+            "title": "Knowledge of the Ages: Charisma"
+        },
+        {
+            "pageId": 30112,
+            "revisionId": 120642,
+            "title": "Legendary Action: Draconic Fury"
+        },
+        {
+            "pageId": 30117,
+            "revisionId": 120628,
+            "title": "Enforcer Shield"
+        },
+        {
+            "pageId": 30118,
+            "revisionId": 120629,
+            "title": "Enforcer Helm"
+        },
+        {
+            "pageId": 30121,
+            "revisionId": 120634,
+            "title": "Multiattack (Red Dragon)"
+        },
+        {
+            "pageId": 30126,
+            "revisionId": 120645,
+            "title": "Burning Claws"
+        },
+        {
+            "pageId": 30127,
+            "revisionId": 120646,
+            "title": "Fire Breath (Magma Mephit)"
+        },
+        {
+            "pageId": 30129,
+            "revisionId": 120648,
+            "title": "Death Burst (Fire)"
+        },
+        {
+            "pageId": 30134,
+            "revisionId": 120663,
+            "title": "Death Burst: Fire"
+        },
+        {
+            "pageId": 30142,
+            "revisionId": 121031,
+            "title": "Template:HonourBanner"
+        },
+        {
+            "pageId": 30143,
+            "revisionId": 120707,
+            "title": "Spear +2"
+        },
+        {
+            "pageId": 30145,
+            "revisionId": 120862,
+            "title": "Adamantine Reverberation"
+        },
+        {
+            "pageId": 30152,
+            "revisionId": 120735,
+            "title": "Call Consort"
+        },
+        {
+            "pageId": 30160,
+            "revisionId": 120724,
+            "title": "Vengeful Father"
+        },
+        {
+            "pageId": 30164,
+            "revisionId": 120739,
+            "title": "Dreamwalker plate"
+        },
+        {
+            "pageId": 30170,
+            "revisionId": 120775,
+            "title": "Dreamsome Boots"
+        },
+        {
+            "pageId": 30190,
+            "revisionId": 120818,
+            "title": "Psionic Visage"
+        },
+        {
+            "pageId": 30191,
+            "revisionId": 120834,
+            "title": "Hordestrike"
+        },
+        {
+            "pageId": 30193,
+            "revisionId": 120827,
+            "title": "Leaping Static"
+        },
+        {
+            "pageId": 30196,
+            "revisionId": 120838,
+            "title": "Wail of Loss (Assistant)"
+        },
+        {
+            "pageId": 30198,
+            "revisionId": 120842,
+            "title": "Wail of Loss"
+        },
+        {
+            "pageId": 30213,
+            "revisionId": 120890,
+            "title": "Mindsteal Link"
+        },
+        {
+            "pageId": 30216,
+            "revisionId": 120899,
+            "title": "Shredding Scales"
+        },
+        {
+            "pageId": 30225,
+            "revisionId": 120919,
+            "title": "Weird Magic Surge"
+        },
+        {
+            "pageId": 30244,
+            "revisionId": 121002,
+            "title": "Chilling Overflow"
+        },
+        {
+            "pageId": 30245,
+            "revisionId": 121006,
+            "title": "Burning Overflow"
+        },
+        {
+            "pageId": 30247,
+            "revisionId": 121009,
+            "title": "Shocking Overflow"
+        },
+        {
+            "pageId": 30248,
+            "revisionId": 121010,
+            "title": "Venomous Overflow"
+        },
+        {
+            "pageId": 30249,
+            "revisionId": 121012,
+            "title": "Wasting Overflow"
+        },
+        {
+            "pageId": 30250,
+            "revisionId": 120992,
+            "title": "Bolstering Overflow"
+        },
+        {
+            "pageId": 30252,
+            "revisionId": 121000,
+            "title": "Caustic Overflow"
+        },
+        {
+            "pageId": 30256,
+            "revisionId": 121014,
+            "title": "Overflowing Brew"
+        },
+        {
+            "pageId": 30286,
+            "revisionId": 121037,
+            "title": "The Dead Wastes"
+        },
+        {
+            "pageId": 30295,
+            "revisionId": 121056,
+            "title": "Sublimation"
+        },
+        {
+            "pageId": 30305,
+            "revisionId": 121089,
+            "title": "Template:Passive"
+        },
+        {
+            "pageId": 30308,
+            "revisionId": 121122,
+            "title": "Template:ClassAction/Format"
+        },
+        {
+            "pageId": 30312,
+            "revisionId": 121180,
+            "title": "Witchbreaker (passive feature)"
+        },
+        {
+            "pageId": 30313,
+            "revisionId": 121183,
+            "title": "Goblin's Undoing"
+        },
+        {
+            "pageId": 30314,
+            "revisionId": 121218,
+            "title": "Arcane Vampirism"
+        },
+        {
+            "pageId": 30315,
+            "revisionId": 121415,
+            "title": "Tenacity (passive feature)"
+        },
+        {
+            "pageId": 30370,
+            "revisionId": 121607,
+            "title": "Morphic Ambush (passive feature)"
+        },
+        {
+            "pageId": 30372,
+            "revisionId": 121642,
+            "title": "Legendary Action: Gossamer Tomb"
+        },
+        {
+            "pageId": 30373,
+            "revisionId": 121706,
+            "title": "Gossamer Tomb"
+        },
+        {
+            "pageId": 30376,
+            "revisionId": 121778,
+            "title": "Soul Ascension"
+        },
+        {
+            "pageId": 30381,
+            "revisionId": 121756,
+            "title": "Beguiling Rebuke"
+        },
+        {
+            "pageId": 30383,
+            "revisionId": 121776,
+            "title": "Legendary Action: Beguiling Rebuke"
+        },
+        {
+            "pageId": 30384,
+            "revisionId": 121780,
+            "title": "Legendary Action: Soul Ascension"
+        },
+        {
+            "pageId": 30388,
+            "revisionId": 121804,
+            "title": "Kushigo Counter"
+        },
+        {
+            "pageId": 30389,
+            "revisionId": 121815,
+            "title": "Formless Slaughter"
+        },
+        {
+            "pageId": 30390,
+            "revisionId": 121816,
+            "title": "Faceless Masquerade"
+        },
+        {
+            "pageId": 30391,
+            "revisionId": 121848,
+            "title": "Let The Undead Blanch With Fear"
+        },
+        {
+            "pageId": 30392,
+            "revisionId": 121844,
+            "title": "Watery Rejuvenation"
+        },
+        {
+            "pageId": 30394,
+            "revisionId": 121850,
+            "title": "Shield (Hope)"
+        },
+        {
+            "pageId": 30397,
+            "revisionId": 121859,
+            "title": "Nightsinger's Reply"
+        },
+        {
+            "pageId": 30398,
+            "revisionId": 121864,
+            "title": "Radiating Shockwave"
+        },
+        {
+            "pageId": 30400,
+            "revisionId": 121867,
+            "title": "Radiant Shockwave"
+        },
+        {
+            "pageId": 30401,
+            "revisionId": 121869,
+            "title": "Piercing Counter"
+        },
+        {
+            "pageId": 30402,
+            "revisionId": 121873,
+            "title": "Cautious Healer"
+        },
+        {
+            "pageId": 30403,
+            "revisionId": 121876,
+            "title": "Order of Nature"
+        },
+        {
+            "pageId": 30405,
+            "revisionId": 121879,
+            "title": "Forest Aegis"
+        },
+        {
+            "pageId": 30406,
+            "revisionId": 121883,
+            "title": "Elven Chain (passive feature)"
+        },
+        {
+            "pageId": 30407,
+            "revisionId": 121884,
+            "title": "Elven Agility"
+        },
+        {
+            "pageId": 30409,
+            "revisionId": 121888,
+            "title": "Superior Plate (+2)"
+        },
+        {
+            "pageId": 30410,
+            "revisionId": 121899,
+            "title": "Ambusher (+1)"
+        },
+        {
+            "pageId": 30411,
+            "revisionId": 121900,
+            "title": "Ambusher (+2)"
+        },
+        {
+            "pageId": 30412,
+            "revisionId": 121904,
+            "title": "Psionic Ward"
+        },
+        {
+            "pageId": 30413,
+            "revisionId": 121909,
+            "title": "Countershock"
+        },
+        {
+            "pageId": 30414,
+            "revisionId": 121922,
+            "title": "Exotic Material"
+        },
+        {
+            "pageId": 30415,
+            "revisionId": 121915,
+            "title": "Adamantine Backlash"
+        },
+        {
+            "pageId": 30416,
+            "revisionId": 121918,
+            "title": "Shar's Protection"
+        },
+        {
+            "pageId": 30417,
+            "revisionId": 121924,
+            "title": "Sharpened Snare"
+        },
+        {
+            "pageId": 30420,
+            "revisionId": 121940,
+            "title": "Jaheira’s Boots"
+        },
+        {
+            "pageId": 30421,
+            "revisionId": 121941,
+            "title": "Jaheira’s Gloves"
+        },
+        {
+            "pageId": 30422,
+            "revisionId": 121942,
+            "title": "Jaheira’s Leather Armor"
+        },
+        {
+            "pageId": 30435,
+            "revisionId": 122013,
+            "title": "Magical Plate (-1)"
+        },
+        {
+            "pageId": 30436,
+            "revisionId": 122018,
+            "title": "Legendary Persistence"
+        },
+        {
+            "pageId": 30439,
+            "revisionId": 122042,
+            "title": "Lunar Beastial Vitality"
         }
     ],
     "deadLinks": [
@@ -19131,12 +19681,12 @@
         "Beastmaster Zurk",
         "Ch'r'ai Har'rak",
         "Dead Pixie",
+        "Dream Guardian",
         "Ebon Lake",
         "Ebonlake",
         "EquipmentTrader BodyArmor",
         "EquipmentTrader SecondaryArmor",
         "Ffion Goldgrind",
-        "Gish For'reth",
         "Guildhall Bar",
         "Hope's Prison",
         "Infirmary",
@@ -19154,7 +19704,6 @@
         "Nortale's Hostel",
         "Peartree's Basement",
         "Prelate Lir'i'c",
-        "Raider Chost",
         "Raider Zastri",
         "Rosymorn Monastary",
         "Self-Same Trial",
