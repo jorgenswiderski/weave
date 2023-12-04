@@ -184,6 +184,10 @@ export class ImageCacheModel {
         await this.writeResponseToFile(response, localImagePath);
     }
 
+    private static getRelativePath(absolutePath: string): string {
+        return absolutePath.split(`${this.IMAGE_CACHE_DIR}\\`)[1];
+    }
+
     private static async getImageFromLocalCache(
         imageName: string,
         isPreload: boolean,
@@ -214,7 +218,10 @@ export class ImageCacheModel {
 
                 await fs.promises.access(localImagePath);
 
-                return { file: localImagePath, cached: true };
+                return {
+                    file: this.getRelativePath(localImagePath),
+                    cached: true,
+                };
             }
 
             // Find the highest resolution version of the image in the cache
@@ -237,14 +244,17 @@ export class ImageCacheModel {
             if (highestResVersion) {
                 await fs.promises.access(highestResVersion);
 
-                return { file: highestResVersion, cached: true };
+                return {
+                    file: this.getRelativePath(highestResVersion),
+                    cached: true,
+                };
             }
         } catch (err) {
             // Cache miss, acquire image next
         }
 
         return {
-            file: localImagePath,
+            file: this.getRelativePath(localImagePath),
             cached: false,
             isUnknownSize: isPreload,
         };

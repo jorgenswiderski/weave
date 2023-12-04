@@ -1,11 +1,14 @@
-import express, { Router } from 'express';
+// routes/images.ts
+import { FastifyPluginAsync } from 'fastify';
+import fastifyStatic from '@fastify/static';
+import path from 'path';
+import { ImageController } from '../controller/image-cache/controller';
 
-import { ImageClassController } from '../controller/image-cache';
+export const imageRoutes: FastifyPluginAsync = async (fastify) => {
+    fastify.register(fastifyStatic, {
+        root: path.join(__dirname, 'cache'),
+    });
 
-const router: Router = express.Router();
-router.use(express.json());
-
-router.get('/:imageName', ImageClassController.getImage);
-router.post('/resize/:imageName', ImageClassController.resizePreloadImage);
-
-export const imageRouter = router;
+    fastify.get('/:imageName', ImageController.get);
+    fastify.post('/resize/:imageName', ImageController.resize);
+};

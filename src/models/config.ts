@@ -3,6 +3,7 @@ import { CONFIG as SharedConfig } from '@jorgenswiderski/tomekeeper-shared/dist/
 export const CONFIG = {
     ...SharedConfig,
 
+    HTTP: { PORT: parseInt(process.env.PORT ?? '3001', 10) },
     IS_DEV: process.env.ENVIRONMENT === 'dev',
     MWN: {
         MEMOIZATION_DURATION_IN_MILLIS: parseInt(
