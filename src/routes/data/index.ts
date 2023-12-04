@@ -7,14 +7,13 @@ import { passivesRoutes } from './passives';
 import { actionsRoutes } from './actions';
 import { itemsRoutes } from './items';
 import { spellsRoutes } from './spells';
-import { FastifyPlugins } from '../plugins';
-import { LruCachePlugin } from '../plugins/lru-cache';
+import { FastifyPlugins } from '../plugins/plugins';
 
 export const dataRoutes: FastifyPluginAsync = async (
     fastify: FastifyInstance,
 ) => {
-    fastify.register(FastifyPlugins.intern);
-    fastify.register(LruCachePlugin);
+    fastify.register(FastifyPlugins.internJson);
+    fastify.register(FastifyPlugins.lruCache);
 
     fastify.register(actionsRoutes, { prefix: '/actions' });
     fastify.register(backgroundsRoutes, { prefix: '/backgrounds' });

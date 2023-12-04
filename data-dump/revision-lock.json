@@ -3762,8 +3762,8 @@
         },
         {
             "pageId": 3630,
-            "revisionId": 111105,
-            "title": "Jump (Bonus Action)"
+            "revisionId": 122613,
+            "title": "Jump"
         },
         {
             "pageId": 3631,
@@ -11392,8 +11392,8 @@
         },
         {
             "pageId": 14454,
-            "revisionId": 113929,
-            "title": "Ring of Evasion (Ring)"
+            "revisionId": 122565,
+            "title": "Ring of Evasion"
         },
         {
             "pageId": 14474,
@@ -13012,8 +13012,8 @@
         },
         {
             "pageId": 18728,
-            "revisionId": 113815,
-            "title": "First blood"
+            "revisionId": 122446,
+            "title": "First Blood"
         },
         {
             "pageId": 18729,
@@ -14714,11 +14714,6 @@
             "pageId": 22434,
             "revisionId": 108138,
             "title": "Water Myrmidon"
-        },
-        {
-            "pageId": 22439,
-            "revisionId": 119125,
-            "title": "User:HiddenDragon"
         },
         {
             "pageId": 22459,
@@ -17082,8 +17077,8 @@
         },
         {
             "pageId": 28061,
-            "revisionId": 112344,
-            "title": "Shar's Blessing (Passive Feature)"
+            "revisionId": 122793,
+            "title": "Shar's Blessing (passive feature)"
         },
         {
             "pageId": 28062,
@@ -17437,8 +17432,8 @@
         },
         {
             "pageId": 28183,
-            "revisionId": 112684,
-            "title": "Superior Padding"
+            "revisionId": 122335,
+            "title": "Superior Padding (-1)"
         },
         {
             "pageId": 28184,
@@ -17542,8 +17537,8 @@
         },
         {
             "pageId": 28243,
-            "revisionId": 121886,
-            "title": "Superior Plate (+1)"
+            "revisionId": 122198,
+            "title": "Superior Plate (-1)"
         },
         {
             "pageId": 28244,
@@ -17562,13 +17557,13 @@
         },
         {
             "pageId": 28247,
-            "revisionId": 121853,
-            "title": "Superior Material (+2)"
+            "revisionId": 122189,
+            "title": "Superior Material (-2)"
         },
         {
             "pageId": 28248,
-            "revisionId": 121855,
-            "title": "Superior Material (+1)"
+            "revisionId": 122179,
+            "title": "Superior Material (-1)"
         },
         {
             "pageId": 28249,
@@ -18077,8 +18072,8 @@
         },
         {
             "pageId": 28416,
-            "revisionId": 113371,
-            "title": "Genial Striding"
+            "revisionId": 122433,
+            "title": "Genial Strider"
         },
         {
             "pageId": 28417,
@@ -18612,8 +18607,8 @@
         },
         {
             "pageId": 28637,
-            "revisionId": 114311,
-            "title": "Exoskeletal Reinforcements"
+            "revisionId": 122401,
+            "title": "Exoskeletal Reinforcement"
         },
         {
             "pageId": 28638,
@@ -19357,8 +19352,8 @@
         },
         {
             "pageId": 30164,
-            "revisionId": 120739,
-            "title": "Dreamwalker plate"
+            "revisionId": 122811,
+            "title": "Dreamwalker Plate"
         },
         {
             "pageId": 30170,
@@ -19597,8 +19592,8 @@
         },
         {
             "pageId": 30409,
-            "revisionId": 121888,
-            "title": "Superior Plate (+2)"
+            "revisionId": 122195,
+            "title": "Superior Plate (-2)"
         },
         {
             "pageId": 30410,
@@ -19669,6 +19664,46 @@
             "pageId": 30439,
             "revisionId": 122042,
             "title": "Lunar Beastial Vitality"
+        },
+        {
+            "pageId": 30479,
+            "revisionId": 122223,
+            "title": "Bulwark Rebuke"
+        },
+        {
+            "pageId": 30481,
+            "revisionId": 122280,
+            "title": "Artificial Sight"
+        },
+        {
+            "pageId": 30482,
+            "revisionId": 122292,
+            "title": "Flaming Shroud"
+        },
+        {
+            "pageId": 30484,
+            "revisionId": 122336,
+            "title": "Superior Padding (-2)"
+        },
+        {
+            "pageId": 30485,
+            "revisionId": 122369,
+            "title": "Subtle Swap"
+        },
+        {
+            "pageId": 30491,
+            "revisionId": 122498,
+            "title": "Godswill"
+        },
+        {
+            "pageId": 30498,
+            "revisionId": 122620,
+            "title": "Jump (Running)"
+        },
+        {
+            "pageId": 30509,
+            "revisionId": 122787,
+            "title": "Cunning Combo"
         }
     ],
     "deadLinks": [

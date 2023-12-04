@@ -25,7 +25,7 @@ async function main() {
     await initData();
 
     const fastify = Fastify({
-        // logger: true,
+        logger: { level: 'warn' },
         trustProxy: '172.16.0.0/12', // Trust NGINX reverse proxy
     });
 

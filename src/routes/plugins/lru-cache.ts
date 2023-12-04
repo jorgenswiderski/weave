@@ -4,8 +4,7 @@ import fastifyPlugin from 'fastify-plugin';
 const maxSize = 100;
 
 export const LruCachePlugin = fastifyPlugin(
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    async (fastify: FastifyInstance, options) => {
+    async (fastify: FastifyInstance) => {
         const cache = new Map();
 
         fastify.addHook('preHandler', async (request, reply) => {
@@ -16,9 +15,13 @@ export const LruCachePlugin = fastifyPlugin(
 
             if (routeCache?.has(key)) {
                 reply.type('application/json');
-                // reply.serializer((data) => data);
-                reply.send(routeCache.get(key));
+                reply.header('lru-cached-response', true);
+
+                return reply.send(routeCache.get(key));
             }
+
+            // eslint-disable-next-line consistent-return, no-useless-return
+            return;
         });
 
         fastify.addHook('onSend', async (request, reply, payload) => {
@@ -43,6 +46,5 @@ export const LruCachePlugin = fastifyPlugin(
     },
     {
         name: 'lruCachePlugin',
-        fastify: '4.x',
     },
 );

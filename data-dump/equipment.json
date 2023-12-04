@@ -16005,15 +16005,16 @@
             "id": 3647
         },
         {
-            "name": "Dreamwalker plate",
+            "name": "Dreamwalker Plate",
             "image": "Dreamwalker Plate Faded.png",
-            "description": "Dreamwalker plate is a set of Medium Armour worn by the guardian who appears in your dreams.",
+            "description": "Dreamwalker Plate is a set of Medium Armour worn by the guardian who appears in your dreams.",
             "quote": "A battle-burnished armour tempered with otherworldly steel.",
             "type": 9,
             "rarity": 1,
             "weightKg": 12,
             "weightLb": 26,
             "price": 180,
+            "uid": "UNI_Daisy_Plate",
             "effects": [],
             "sources": [],
             "proficiency": 2,
@@ -18201,7 +18202,7 @@
             "id": 8764
         },
         {
-            "name": "Ring of Evasion (Ring)",
+            "name": "Ring of Evasion",
             "image": "Ring of Evasion Icon.png",
             "icon": "Ring of Evasion Unfaded Icon.png",
             "description": "Ring of Evasion is a very rare Ring that grants the wearer Dextrous Evasion.",
@@ -18214,19 +18215,14 @@
             "uid": "MAG_PHB_OfEvasion_Ring",
             "effects": [
                 {
-                    "name": "Dextrous Evasion",
-                    "description": "When you fail a Dexterity saving throw, you can use your reaction to succeed instead.",
-                    "type": 2
-                },
-                {
                     "name": "Anonymous Effect",
-                    "description": "Per Turn",
+                    "description": "Dextrous Evasion",
                     "type": 2,
                     "hidden": true
                 },
                 {
-                    "name": "Ring of Evasion (Ring)",
-                    "description": "Per Turn",
+                    "name": "Ring of Evasion",
+                    "description": "Dextrous Evasion",
                     "type": 2
                 }
             ],
