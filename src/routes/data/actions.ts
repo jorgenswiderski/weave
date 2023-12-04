@@ -1,13 +1,11 @@
 // actions.ts
-import express, { Request, Response, Router } from 'express';
+import { FastifyPluginAsync, FastifyRequest, FastifyReply } from 'fastify';
 import { getActionDataFiltered } from '../../models/action/init';
 
-export const router: Router = express.Router();
+export const actionsRoutes: FastifyPluginAsync = async (fastify) => {
+    fastify.get('/', async (request: FastifyRequest, reply: FastifyReply) => {
+        const actionData = await getActionDataFiltered();
 
-router.get('/', async (req: Request, res: Response) => {
-    const actionData = await getActionDataFiltered();
-
-    res.json(actionData);
-});
-
-export const actionsRouter = router;
+        reply.send(actionData);
+    });
+};

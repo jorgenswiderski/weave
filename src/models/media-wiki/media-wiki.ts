@@ -7,7 +7,7 @@ import { CONFIG } from '../config';
 import { MwnApi, MwnApiClass } from '../../api/mwn';
 import { Utils } from '../utils';
 import { RemoteImageError } from '../image-cache/types';
-import { debug, error, warn } from '../logger';
+import { error, warn } from '../logger';
 import { IPageData } from './types';
 import { RevisionLock } from '../revision-lock/revision-lock';
 import { MediaWikiTemplate } from './media-wiki-template';
@@ -445,7 +445,7 @@ export class MediaWiki {
                 { upsert: true },
             );
 
-            debug(`Updated page '${content.title}'`);
+            // debug(`Updated page '${content.title}'`);
         } catch (err) {
             if (
                 err instanceof MongoError &&

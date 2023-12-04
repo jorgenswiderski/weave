@@ -7,6 +7,7 @@ import { imageRoutes } from './images';
 import { debug, error } from '../models/logger';
 import { CONFIG } from '../models/config';
 import { buildsRoutes } from './builds';
+import { dataRoutes } from './data';
 
 export const apiRoutes: FastifyPluginAsync = async (
     fastify: FastifyInstance,
@@ -18,7 +19,7 @@ export const apiRoutes: FastifyPluginAsync = async (
         fastify.register(fastifyResponseValidation);
     }
 
-    // fastify.register(dataRoutes, { prefix: '/data' });
+    fastify.register(dataRoutes, { prefix: '/data' });
     fastify.register(imageRoutes, { prefix: '/images' });
     fastify.register(buildsRoutes, { prefix: '/builds' });
 
