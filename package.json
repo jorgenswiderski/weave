@@ -34,7 +34,6 @@
         "@fastify/cors": "^8.4.1",
         "@fastify/response-validation": "^2.5.1",
         "@fastify/static": "^6.12.0",
-        "@fastify/swagger": "^8.12.0",
         "@jorgenswiderski/tomekeeper-shared": "^1.0.21",
         "bunyan": "^1.8.15",
         "bunyan-rotating-file-stream": "^2.0.5",

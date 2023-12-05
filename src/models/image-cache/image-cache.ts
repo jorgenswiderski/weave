@@ -184,15 +184,25 @@ export class ImageCacheModel {
         await this.writeResponseToFile(response, localImagePath);
     }
 
-    private static getRelativePath(absolutePath: string): string {
-        return absolutePath.split(`${this.IMAGE_CACHE_DIR}\\`)[1];
+    private static getRelativePath(absolutePath: string): {
+        relative: string;
+        absolute: string;
+    } {
+        return {
+            absolute: absolutePath,
+            relative: absolutePath.split(`${this.IMAGE_CACHE_DIR}\\`)[1],
+        };
     }
 
     private static async getImageFromLocalCache(
         imageName: string,
         isPreload: boolean,
         width?: number,
-    ): Promise<{ file: string; cached: boolean; isUnknownSize?: boolean }> {
+    ): Promise<{
+        file: { relative: string; absolute: string };
+        cached: boolean;
+        isUnknownSize?: boolean;
+    }> {
         const fileNameWithoutExtension = path.basename(
             imageName,
             path.extname(imageName),
@@ -265,7 +275,7 @@ export class ImageCacheModel {
         width?: number,
         preload: boolean = false,
     ): Promise<ResponseImage | ResponseRedirect> {
-        let localImagePath: string;
+        let localImagePath: { relative: string; absolute: string };
         const imageKey = JSON.stringify({ imageName, width, preload });
         let isUnknownSize = false;
 
@@ -277,7 +287,7 @@ export class ImageCacheModel {
             );
 
             if (localImage.cached) {
-                return { file: localImage.file };
+                return { file: localImage.file.relative };
             }
 
             localImagePath = localImage.file;
@@ -313,9 +323,9 @@ export class ImageCacheModel {
 
         localImagePath = localImagePath!;
 
-        await this.fetchRemoteImage(imageName, localImagePath, width);
+        await this.fetchRemoteImage(imageName, localImagePath.absolute, width);
 
-        return { isUnknownSize, file: localImagePath };
+        return { isUnknownSize, file: localImagePath.relative };
     }
 
     private static getLocalImagePath(imageName: string, width: number): string {
