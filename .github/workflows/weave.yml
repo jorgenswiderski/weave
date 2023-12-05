@@ -73,7 +73,8 @@ jobs:
                       set +e
                       rm -r node_modules
                       set -e
-                      git pull origin master
+                      git fetch origin
+                      git reset --hard origin/master
                       docker-compose pull
                       docker-compose up --build -d
 
