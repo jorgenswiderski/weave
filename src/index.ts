@@ -37,6 +37,7 @@ async function main() {
 
     fastify.register(cors, {
         origin: (origin, callback) => {
+            log(origin);
             // Allow requests with no origin (like mobile apps or curl requests)
             if (!origin) return callback(null, true);
 
