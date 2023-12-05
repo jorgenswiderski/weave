@@ -1,6 +1,5 @@
 // routes/index.ts
 import { FastifyInstance, FastifyPluginAsync } from 'fastify';
-import fastifySwagger from '@fastify/swagger';
 import fastifyResponseValidation from '@fastify/response-validation';
 import { imageRoutes } from './images';
 // import { dataRoutes } from './data';
@@ -12,8 +11,6 @@ import { dataRoutes } from './data';
 export const apiRoutes: FastifyPluginAsync = async (
     fastify: FastifyInstance,
 ) => {
-    fastify.register(fastifySwagger);
-
     if (CONFIG.IS_DEV) {
         // Only enable in dev environment due to overhead
         fastify.register(fastifyResponseValidation);
