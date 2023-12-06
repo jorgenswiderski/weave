@@ -38,7 +38,6 @@ async function main() {
 
     fastify.register(cors, {
         origin: (origin, callback) => {
-            log(origin);
             // Allow requests with no origin (like mobile apps or curl requests)
             if (!origin) return callback(null, true);
 
@@ -71,7 +70,11 @@ async function main() {
     const { PORT: port } = CONFIG.HTTP;
 
     try {
-        await fastify.listen({ port });
+        await fastify.listen({
+            port,
+            // Bind to all network interfaces, exposing the server to outside the docker container
+            host: '0.0.0.0',
+        });
 
         log('=====================================================');
         warn(`Weave is ready in ${(Date.now() - startTime) / 1000}s!`);
