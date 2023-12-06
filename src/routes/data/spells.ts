@@ -1,13 +1,11 @@
 // spells.ts
-import express, { Request, Response, Router } from 'express';
+import { FastifyPluginAsync, FastifyRequest, FastifyReply } from 'fastify';
 import { getSpellDataFiltered } from '../../models/action/spell';
 
-export const router: Router = express.Router();
+export const spellsRoutes: FastifyPluginAsync = async (fastify) => {
+    fastify.get('/', async (request: FastifyRequest, reply: FastifyReply) => {
+        const spellData = await getSpellDataFiltered();
 
-router.get('/', async (req: Request, res: Response) => {
-    const spellData = await getSpellDataFiltered();
-
-    res.json(spellData);
-});
-
-export const spellsRouter = router;
+        reply.send(spellData);
+    });
+};

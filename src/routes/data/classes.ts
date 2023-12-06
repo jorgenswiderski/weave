@@ -1,13 +1,11 @@
 // classes.ts
-import express, { Request, Response, Router } from 'express';
+import { FastifyPluginAsync, FastifyRequest, FastifyReply } from 'fastify';
 import { getCharacterClassData } from '../../models/character-class/character-class';
 
-export const router: Router = express.Router();
+export const classesRoutes: FastifyPluginAsync = async (fastify) => {
+    fastify.get('/', async (request: FastifyRequest, reply: FastifyReply) => {
+        const data = await getCharacterClassData();
 
-router.get('/', async (req: Request, res: Response) => {
-    const data = await getCharacterClassData();
-
-    res.json(data);
-});
-
-export const classesRouter = router;
+        reply.send(data);
+    });
+};

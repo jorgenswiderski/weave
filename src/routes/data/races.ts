@@ -1,13 +1,11 @@
 // races.ts
-import express, { Request, Response, Router } from 'express';
+import { FastifyPluginAsync, FastifyRequest, FastifyReply } from 'fastify';
 import { getCharacterRaceData } from '../../models/character-feature/features/character-race';
 
-export const router: Router = express.Router();
+export const racesRoutes: FastifyPluginAsync = async (fastify) => {
+    fastify.get('/', async (request: FastifyRequest, reply: FastifyReply) => {
+        const data = await getCharacterRaceData();
 
-router.get('/info', async (req: Request, res: Response) => {
-    const data = await getCharacterRaceData();
-
-    res.json(data);
-});
-
-export const racesRouter = router;
+        reply.send(data);
+    });
+};

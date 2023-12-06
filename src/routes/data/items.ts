@@ -1,33 +1,52 @@
 // items.ts
-import express, { Request, Response, Router } from 'express';
+import { FastifyPluginAsync, FastifyRequest, FastifyReply } from 'fastify';
 import {
     getEquipmentItemData,
     getEquipmentItemInfoById,
 } from '../../models/equipment/equipment';
 
-export const router: Router = express.Router();
+export const itemsRoutes: FastifyPluginAsync = async (fastify) => {
+    fastify.get('/equipment', {
+        schema: {
+            params: {
+                types: { type: 'string' },
+            },
+        },
 
-router.get('/equipment/type', async (req: Request, res: Response) => {
-    const typesParam = req.query.types as string | undefined;
-    let types: number[] | undefined;
+        handler: async function equipmentHandler(
+            request: FastifyRequest,
+            reply: FastifyReply,
+        ) {
+            const { types: typesParam } = request.query as { types?: string };
+            let types: number[] | undefined;
 
-    if (typesParam) {
-        types = typesParam.split(',').map((value) => parseInt(value, 10));
-    }
+            if (typesParam) {
+                types = typesParam
+                    .split(',')
+                    .map((value) => parseInt(value, 10));
+            }
 
-    const itemData = await getEquipmentItemData(types);
+            const itemData = await getEquipmentItemData(types);
 
-    res.json(itemData);
-});
+            reply.send(itemData);
+        },
+    });
 
-router.get('/equipment/id', async (req: Request, res: Response) => {
-    const ids = (req.query.ids as string)
-        .split(',')
-        .map((val) => parseInt(val, 10));
+    fastify.get('/equipment/:id', {
+        schema: {
+            params: {
+                id: { type: 'number' },
+            },
+        },
 
-    const itemData = await getEquipmentItemInfoById();
+        handler: async function itemsIdHandler(
+            request: FastifyRequest,
+            reply: FastifyReply,
+        ) {
+            const { id } = request.params as { id: number };
+            const itemData = await getEquipmentItemInfoById();
 
-    res.json(ids.map((id) => itemData.get(id)));
-});
-
-export const itemsRouter = router;
+            reply.send(itemData.get(id));
+        },
+    });
+};

@@ -7,12 +7,13 @@ if (process.env.ENVIRONMENT !== 'dev') {
     import('newrelic');
 }
 
-import express from 'express';
-import cors from 'cors';
-import { log, warn } from './models/logger';
+import Fastify from 'fastify';
+import cors from '@fastify/cors';
+import { error, log, warn } from './models/logger';
 import { MwnProgressBar } from './api/mwn-progress-bar';
-import { apiRouter } from './routes';
+import { apiRoutes } from './routes';
 import { initData } from './models/init-data';
+import { CONFIG } from './models/config';
 
 async function main() {
     log('=====================================================');
@@ -23,11 +24,11 @@ async function main() {
     new MwnProgressBar().render();
     await initData();
 
-    const app = express();
-    const PORT = process.env.PORT || 3001;
-
-    // Trust NGINX reverse proxy
-    app.set('trust proxy', '172.16.0.0/12');
+    const fastify = Fastify({
+        // logger: { level: 'warn' },
+        logger: true,
+        trustProxy: '172.16.0.0/12', // Trust NGINX reverse proxy
+    });
 
     const allowedOrigins = [
         'http://localhost:3000',
@@ -35,45 +36,54 @@ async function main() {
         /^https:\/\/netherview-.*-jorgenswiderskis-projects\.vercel\.app$/,
     ];
 
-    app.use(
-        cors({
-            origin(origin, callback) {
-                // Allow requests with no origin (like mobile apps or curl requests)
-                if (!origin) return callback(null, true);
+    fastify.register(cors, {
+        origin: (origin, callback) => {
+            // Allow requests with no origin (like mobile apps or curl requests)
+            if (!origin) return callback(null, true);
 
-                if (
-                    allowedOrigins.some((pattern) =>
-                        pattern instanceof RegExp
-                            ? pattern.test(origin)
-                            : pattern === origin,
-                    )
-                ) {
-                    return callback(null, true);
-                }
+            if (
+                allowedOrigins.some((pattern) =>
+                    pattern instanceof RegExp
+                        ? pattern.test(origin)
+                        : pattern === origin,
+                )
+            ) {
+                return callback(null, true);
+            }
 
-                warn(`Denied request from disallowed origin: ${origin}`);
-                const msg = `The CORS policy for this site does not allow access from the specified Origin.`;
+            warn(`Denied request from disallowed origin: ${origin}`);
+            const msg = `The CORS policy for this site does not allow access from the specified Origin.`;
 
-                return callback(new Error(msg), false);
-            },
-            methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD'],
-            allowedHeaders: [
-                'Content-Type',
-                'Authorization',
-                'Baggage',
-                'Sentry-Trace',
-            ],
-        }),
-    );
+            return callback(new Error(msg), false);
+        },
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD'],
+        allowedHeaders: [
+            'Content-Type',
+            'Authorization',
+            'Baggage',
+            'Sentry-Trace',
+        ],
+    });
 
-    app.use('/api', apiRouter);
+    fastify.register(apiRoutes, { prefix: '/api' });
 
-    app.listen(PORT, () => {
+    const { PORT: port } = CONFIG.HTTP;
+
+    try {
+        await fastify.listen({
+            port,
+            // Bind to all network interfaces, exposing the server to outside the docker container
+            host: '0.0.0.0',
+        });
+
         log('=====================================================');
         warn(`Weave is ready in ${(Date.now() - startTime) / 1000}s!`);
-        log(`Server is running on port ${PORT}`);
+        log(`Server is running on port ${port}`);
         log('=====================================================');
-    });
+    } catch (err) {
+        error(err);
+        process.exit(1);
+    }
 }
 
 main();

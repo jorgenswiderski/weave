@@ -1,13 +1,11 @@
 // passives.ts
-import express, { Request, Response, Router } from 'express';
+import { FastifyPluginAsync, FastifyRequest, FastifyReply } from 'fastify';
 import { getPassiveDataFiltered } from '../../models/passive/passive';
 
-export const router: Router = express.Router();
+export const passivesRoutes: FastifyPluginAsync = async (fastify) => {
+    fastify.get('/', async (request: FastifyRequest, reply: FastifyReply) => {
+        const passiveData = getPassiveDataFiltered();
 
-router.get('/', async (req: Request, res: Response) => {
-    const passiveData = getPassiveDataFiltered();
-
-    res.json(passiveData);
-});
-
-export const passivesRouter = router;
+        reply.send(passiveData);
+    });
+};

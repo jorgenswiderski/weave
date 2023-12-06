@@ -1,28 +1,31 @@
-import express, { ErrorRequestHandler, Router } from 'express';
-
-import { imageRouter } from './images';
-import { dataRouter } from './data';
-import { buildsRouter } from './builds';
+// routes/index.ts
+import { FastifyInstance, FastifyPluginAsync } from 'fastify';
+import fastifyResponseValidation from '@fastify/response-validation';
+import { imageRoutes } from './images';
+// import { dataRoutes } from './data';
 import { debug, error } from '../models/logger';
+import { CONFIG } from '../models/config';
+import { buildsRoutes } from './builds';
+import { dataRoutes } from './data';
 
-export const router: Router = express.Router();
+export const apiRoutes: FastifyPluginAsync = async (
+    fastify: FastifyInstance,
+) => {
+    if (CONFIG.IS_DEV) {
+        // Only enable in dev environment due to overhead
+        fastify.register(fastifyResponseValidation);
+    }
 
-router.use('/data', dataRouter);
-router.use('/images', imageRouter);
-router.use('/builds', buildsRouter);
+    fastify.register(dataRoutes, { prefix: '/data' });
+    fastify.register(imageRoutes, { prefix: '/images' });
+    fastify.register(buildsRoutes, { prefix: '/builds' });
 
-// Error handling middleware
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
-    error('Error handling middleware invoked');
-    debug(res); // Log the response object
-    debug(typeof res.status); // Check the type of res.status
-    debug(err);
+    fastify.setErrorHandler((err, req, reply) => {
+        error('Error handling middleware invoked');
+        debug(reply);
+        debug(err);
 
-    error(err.stack);
-    res.status(500).send('Internal server error');
+        error(err.stack);
+        reply.status(500).send('Internal server error');
+    });
 };
-
-router.use(errorHandler);
-
-export const apiRouter = router;

@@ -1,24 +1,41 @@
 // backgrounds.ts
-import express, { Request, Response, Router } from 'express';
+import { FastifyPluginAsync, FastifyRequest, FastifyReply } from 'fastify';
 import { getCharacterBackgroundData } from '../../models/character-feature/features/character-background';
 
-export const router: Router = express.Router();
+export const backgroundsRoutes: FastifyPluginAsync = async (fastify) => {
+    fastify.get('/:id', {
+        schema: {
+            params: {
+                id: { type: 'number' },
+            },
+        },
+        handler: async function backgroundIdHandler(
+            request: FastifyRequest,
+            reply: FastifyReply,
+        ): Promise<void> {
+            const { id } = request.params as { id: number };
 
-router.get('/id', async (req: Request, res: Response) => {
-    const ids = (req.query.ids as string)
-        .split(',')
-        .map((val) => parseInt(val, 10));
+            const data = await getCharacterBackgroundData();
 
-    const data = await getCharacterBackgroundData();
-    const filtered = data.filter((datum) => datum.id && ids.includes(datum.id));
+            const background = data.find(
+                (datum) => datum.id && id === datum.id,
+            );
 
-    res.json(Object.fromEntries(filtered.map((datum) => [datum.id, datum])));
-});
+            if (!background) {
+                reply
+                    .code(404)
+                    .send({ error: `No background with that ID exists` });
 
-router.get('/', async (req: Request, res: Response) => {
-    const data = await getCharacterBackgroundData();
+                return;
+            }
 
-    res.json(data);
-});
+            reply.send(background);
+        },
+    });
 
-export const backgroundsRouter = router;
+    fastify.get('/', async (request: FastifyRequest, reply: FastifyReply) => {
+        const data = await getCharacterBackgroundData();
+
+        reply.send(data);
+    });
+};

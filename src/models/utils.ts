@@ -1,5 +1,5 @@
 import { SharedUtils } from '@jorgenswiderski/tomekeeper-shared/dist/models/utils';
-import { Request } from 'express';
+import { FastifyRequest } from 'fastify';
 
 export class Utils extends SharedUtils {
     static memoizeWithExpiration<T extends (...args: any[]) => any>(
@@ -52,7 +52,7 @@ export class Utils extends SharedUtils {
         return Array.isArray(a) && a.length > 0;
     }
 
-    static getClientIp(req: Request): string {
+    static getClientIp(req: FastifyRequest): string {
         // The X-Forwarded-For header can contain a list of IP addresses.
         // The first one in the list should be the original client's IP address.
         const forwarded = req.headers['x-forwarded-for'];

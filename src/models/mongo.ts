@@ -3,12 +3,12 @@ import { CONFIG } from './config';
 
 let mdb: Promise<Db>;
 
-export enum MongoCollections {
-    MW_PAGES = 'MW_PAGES',
-    BUILDS = 'BUILDS',
-}
+export const MongoCollections = {
+    MW_PAGES: 'MW_PAGES',
+    BUILDS: 'BUILDS',
+};
 
-async function initPagesCollection(db: Db): Promise<void> {
+export async function initPagesCollection(db: Db): Promise<void> {
     const pageCollection = db.collection(MongoCollections.MW_PAGES);
 
     await Promise.all(
