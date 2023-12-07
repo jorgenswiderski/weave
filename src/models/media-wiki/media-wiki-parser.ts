@@ -38,6 +38,8 @@ export class MediaWikiParser {
         'poison',
         'cold',
         'lightning',
+
+        'familiar', // Extra Attack (Familiar) [c30779]
     ]);
 
     static parseNameFromPageTitle(title: string) {

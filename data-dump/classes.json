@@ -30986,7 +30986,7 @@
                         "grants": [],
                         "choices": [
                             {
-                                "type": 23,
+                                "type": 25,
                                 "count": 1,
                                 "options": [
                                     {
@@ -31763,9 +31763,47 @@
                 "Features": [
                     {
                         "name": "Deepened Pact",
-                        "grants": [
+                        "description": "Pleased with your service, your otherworldly patron added new boons to the terms of your pact.",
+                        "image": "Pact of the Blade Passive Feature.webp",
+                        "grants": [],
+                        "choices": [
                             {
-                                "ref": "c8437"
+                                "type": 26,
+                                "options": [
+                                    {
+                                        "name": "Pact of the Blade",
+                                        "description": "Gain an Extra Attack with your pact weapon.",
+                                        "grants": [
+                                            {
+                                                "ref": "c3152"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Pact of the Chain",
+                                        "description": "Your familiar gains an Extra Attack.",
+                                        "grants": [
+                                            {
+                                                "ref": "c30779"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Pact of the Tome",
+                                        "description": "You can cast Animate Dead, Haste, and Call Lightning once per Long Rest.",
+                                        "grants": [
+                                            {
+                                                "ref": "s2757"
+                                            },
+                                            {
+                                                "ref": "s2764"
+                                            },
+                                            {
+                                                "ref": "s2702"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     },
