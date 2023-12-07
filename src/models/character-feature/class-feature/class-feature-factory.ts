@@ -11,12 +11,14 @@ import { ClassSubclassOption } from '../features/character-subclass-option';
 import {
     CharacterFeatureSorcererMetamagic,
     CharacterFeatureWarlockEldritchInvocation,
+    CharacterFeatureWarlockPactBoon,
 } from '../features/special/special';
 import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
 import { IClassFeatureFactory } from './types';
 import { CharacterFeatureLearnSpell } from '../features/special/character-feature-learn-spell';
 import { SubclassFeatureOverrides } from '../features/character-subclass/overrides';
 import { CharacterSubclass } from '../features/character-subclass/character-subclass';
+import { CharacterFeatureWarlockDeepenedPact } from '../features/special/character-feature-warlock-deepened-pact';
 
 class ClassFeatureFactorySingleton implements IClassFeatureFactory {
     protected static async construct(
@@ -83,6 +85,14 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             );
         }
 
+        if (type === CharacterFeatureTypes.WARLOCK_PACT_BOON) {
+            return new CharacterFeatureWarlockPactBoon(options);
+        }
+
+        if (type === CharacterFeatureTypes.WARLOCK_DEEPENED_PACT) {
+            return new CharacterFeatureWarlockDeepenedPact(options);
+        }
+
         if (type === CharacterFeatureTypes.CLASS_FEATURE_LEARN_SPELL) {
             return new CharacterFeatureLearnSpell(options, level!);
         }
@@ -129,6 +139,14 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
         'mystic arcanum': {
             type: CharacterFeatureTypes.CLASS_FEATURE_LEARN_SPELL,
             pageTitle: 'Mystic Arcanum',
+        },
+        'deepened pact': {
+            type: CharacterFeatureTypes.WARLOCK_DEEPENED_PACT,
+            pageTitle: 'Deepened Pact',
+        },
+        'pact boon': {
+            type: CharacterFeatureTypes.WARLOCK_PACT_BOON,
+            pageTitle: 'Pact Boon',
         },
     };
 

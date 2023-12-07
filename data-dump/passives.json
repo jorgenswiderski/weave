@@ -294,13 +294,6 @@
         "id": 3957
     },
     {
-        "name": "Deepened Pact",
-        "description": "Pleased with your service, your otherworldly patron added new boons to the terms of your pact.\n* Pact of the Blade: Gain an Extra Attack with your pact weapon.\n* Pact of the Chain: Your familiar gains an Extra Attack.\n* Pact of the Tome: You can cast Animate Dead, Haste, and Call Lightning once per Long Rest.",
-        "image": "Pact of the Blade Passive Feature.webp",
-        "type": 2,
-        "id": 8437
-    },
-    {
         "name": "Defence",
         "description": "You gain a +1 bonus to Armour Class while wearing Armour.",
         "image": "Defence.webp",
@@ -648,6 +641,13 @@
         "image": "Extra Attack.webp",
         "type": 2,
         "id": 3152
+    },
+    {
+        "name": "Extra Attack (Familiar)",
+        "description": "Your familiar can make an additional free attack after making an unarmed or weapon attack.",
+        "image": "Extra Attack.webp",
+        "type": 2,
+        "id": 30779
     },
     {
         "name": "Fast Hands",

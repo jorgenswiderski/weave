@@ -14669,48 +14669,6 @@
             "id": 3983
         },
         {
-            "name": "Jaheira’s Leather Armor",
-            "image": "",
-            "icon": "",
-            "description": "Jaheira’s Leather Armor' is a common Light Armour.",
-            "quote": "Dark, messy stains line the armholes of the well-used leather breastplate.",
-            "type": 8,
-            "rarity": 1,
-            "weightKg": 4.5,
-            "weightLb": 9,
-            "price": 40,
-            "uid": "UNI_Leather_Jaheira",
-            "effects": [],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 2",
-                            "id": 4949
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Shadow-Cursed Lands",
-                            "id": 8117
-                        },
-                        "location": {
-                            "name": "Last Light Inn",
-                            "id": 8129
-                        }
-                    },
-                    "character": {
-                        "name": "Jaheira",
-                        "id": 2329
-                    }
-                }
-            ],
-            "proficiency": 1,
-            "baseArmorClass": 11,
-            "id": 30422
-        },
-        {
             "name": "Leather Armour",
             "image": "Leather Armour Icon.png",
             "icon": "Leather Armour Unfaded Icon.png",
@@ -36745,6 +36703,34 @@
     ],
     "39": [
         {
+            "name": "Rusty Sickle",
+            "image": "Item WPN HUM Sickle A 0 Rusty A.png",
+            "icon": "Item WPN HUM Sickle A 0 Rusty A Icon.png",
+            "quote": "Not even useful in the herbalist trade.",
+            "type": 39,
+            "rarity": 1,
+            "weightKg": 0.9,
+            "weightLb": 1.8,
+            "price": 1,
+            "effects": [],
+            "sources": [],
+            "proficiency": 0,
+            "id": 30575,
+            "category": 2,
+            "rangeType": 1,
+            "handedness": 1,
+            "damage": "1d4",
+            "damageType": 1,
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": true,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": false
+        },
+        {
             "name": "Sickle",
             "image": "Sickle Icon.png",
             "icon": "Sickle Unfaded Icon.png",
@@ -36829,7 +36815,7 @@
                         }
                     },
                     "character": {
-                        "name": "Pooldripp the Zealous",
+                        "name": "Pooldripp",
                         "id": 4019
                     }
                 },
