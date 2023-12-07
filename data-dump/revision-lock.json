@@ -62,6 +62,7 @@
         "Overgrown_Tunnel": "Overgrown Tunnel",
         "Pact of the Blade (Passive Feature)": "Pact of the Blade (passive feature)",
         "Passageway": "Western Beach",
+        "Pooldripp the Zealous": "Pooldripp",
         "Priestess Gut": "Gut",
         "Putrid Bog": "Sunlit Wetlands",
         "Quartermaster Talli": "Talli",
@@ -133,6 +134,7 @@
         "Template:hatnote": "Template:Hatnote",
         "Template:hp": "Template:Hp",
         "Template:icon": "Template:Icon",
+        "Template:inaccessible": "Template:Inaccessible",
         "Template:inflicts": "Template:Inflicts",
         "Template:legendary": "Template:Legendary",
         "Template:main namespace only": "Template:Main namespace only",
@@ -4072,8 +4074,8 @@
         },
         {
             "pageId": 4019,
-            "revisionId": 79105,
-            "title": "Pooldripp the Zealous"
+            "revisionId": 123746,
+            "title": "Pooldripp"
         },
         {
             "pageId": 4023,
@@ -4619,6 +4621,11 @@
             "pageId": 4413,
             "revisionId": 110454,
             "title": "Web Sense"
+        },
+        {
+            "pageId": 4414,
+            "revisionId": 123045,
+            "title": "Infested"
         },
         {
             "pageId": 4417,
@@ -6957,7 +6964,7 @@
         },
         {
             "pageId": 8437,
-            "revisionId": 110547,
+            "revisionId": 123751,
             "title": "Deepened Pact"
         },
         {
@@ -19297,8 +19304,8 @@
         },
         {
             "pageId": 30118,
-            "revisionId": 120629,
-            "title": "Enforcer Helm"
+            "revisionId": 124111,
+            "title": "Enforcer Helmet"
         },
         {
             "pageId": 30121,
@@ -19342,8 +19349,8 @@
         },
         {
             "pageId": 30152,
-            "revisionId": 120735,
-            "title": "Call Consort"
+            "revisionId": 123726,
+            "title": "Legendary Action: Call Consort"
         },
         {
             "pageId": 30160,
@@ -19362,8 +19369,8 @@
         },
         {
             "pageId": 30190,
-            "revisionId": 120818,
-            "title": "Psionic Visage"
+            "revisionId": 124291,
+            "title": "Legendary Action: Psionic Visage"
         },
         {
             "pageId": 30191,
@@ -19372,8 +19379,8 @@
         },
         {
             "pageId": 30193,
-            "revisionId": 120827,
-            "title": "Leaping Static"
+            "revisionId": 123754,
+            "title": "Legendary Action: Leaping Static"
         },
         {
             "pageId": 30196,
@@ -19397,8 +19404,8 @@
         },
         {
             "pageId": 30225,
-            "revisionId": 120919,
-            "title": "Weird Magic Surge"
+            "revisionId": 124364,
+            "title": "Legendary Action: Weird Magic Surge"
         },
         {
             "pageId": 30244,
@@ -19459,6 +19466,11 @@
             "pageId": 30308,
             "revisionId": 121122,
             "title": "Template:ClassAction/Format"
+        },
+        {
+            "pageId": 30309,
+            "revisionId": 122700,
+            "title": "Template:SpellAction"
         },
         {
             "pageId": 30312,
@@ -19646,11 +19658,6 @@
             "title": "Jaheira’s Gloves"
         },
         {
-            "pageId": 30422,
-            "revisionId": 121942,
-            "title": "Jaheira’s Leather Armor"
-        },
-        {
             "pageId": 30435,
             "revisionId": 122013,
             "title": "Magical Plate (-1)"
@@ -19719,6 +19726,206 @@
             "pageId": 30524,
             "revisionId": 122899,
             "title": "A Mother's Desperation"
+        },
+        {
+            "pageId": 30575,
+            "revisionId": 123012,
+            "title": "Rusty Sickle"
+        },
+        {
+            "pageId": 30576,
+            "revisionId": 123017,
+            "title": "Morphic Evasion"
+        },
+        {
+            "pageId": 30658,
+            "revisionId": 123291,
+            "title": "Druidic Armour"
+        },
+        {
+            "pageId": 30753,
+            "revisionId": 123661,
+            "title": "Pushing Attack (Titanstring Bow)"
+        },
+        {
+            "pageId": 30779,
+            "revisionId": 123748,
+            "title": "Extra Attack (Familiar)"
+        },
+        {
+            "pageId": 30832,
+            "revisionId": 123920,
+            "title": "Rejuvenating Takedown"
+        },
+        {
+            "pageId": 30838,
+            "revisionId": 123937,
+            "title": "Staunch Blessing"
+        },
+        {
+            "pageId": 30844,
+            "revisionId": 123971,
+            "title": "Sanguine Lash"
+        },
+        {
+            "pageId": 30846,
+            "revisionId": 123976,
+            "title": "Legendary Action: Sanguine Lash"
+        },
+        {
+            "pageId": 30852,
+            "revisionId": 124008,
+            "title": "Pulling Web"
+        },
+        {
+            "pageId": 30853,
+            "revisionId": 124148,
+            "title": "Pale Widow Gloves"
+        },
+        {
+            "pageId": 30856,
+            "revisionId": 124014,
+            "title": "Bhaal's Edict"
+        },
+        {
+            "pageId": 30857,
+            "revisionId": 124015,
+            "title": "Legendary Action: Bhaal's Edict"
+        },
+        {
+            "pageId": 30861,
+            "revisionId": 124020,
+            "title": "Arcane Critical"
+        },
+        {
+            "pageId": 30864,
+            "revisionId": 124025,
+            "title": "Deadly Channeller Gloves"
+        },
+        {
+            "pageId": 30870,
+            "revisionId": 124053,
+            "title": "Lightning Strikes"
+        },
+        {
+            "pageId": 30875,
+            "revisionId": 124063,
+            "title": "The Fork-Lightning Fingers"
+        },
+        {
+            "pageId": 30876,
+            "revisionId": 124067,
+            "title": "Vampiric Gloves"
+        },
+        {
+            "pageId": 30880,
+            "revisionId": 124147,
+            "title": "Embroidered Bycocket"
+        },
+        {
+            "pageId": 30883,
+            "revisionId": 124082,
+            "title": "Slippery Slapsticky"
+        },
+        {
+            "pageId": 30884,
+            "revisionId": 124095,
+            "title": "Hat Of Uproarious Laughter"
+        },
+        {
+            "pageId": 30889,
+            "revisionId": 124100,
+            "title": "Helm of Arcane Gate"
+        },
+        {
+            "pageId": 30898,
+            "revisionId": 124119,
+            "title": "Tightening Orbit"
+        },
+        {
+            "pageId": 30899,
+            "revisionId": 124321,
+            "title": "Tightening Orbit Helm"
+        },
+        {
+            "pageId": 30902,
+            "revisionId": 124131,
+            "title": "Robe of Spell Resistance"
+        },
+        {
+            "pageId": 30908,
+            "revisionId": 124145,
+            "title": "Withering Barrier"
+        },
+        {
+            "pageId": 30909,
+            "revisionId": 124146,
+            "title": "Sarevok's Wretched Armour"
+        },
+        {
+            "pageId": 30941,
+            "revisionId": 124331,
+            "title": "Critical Swiftness"
+        },
+        {
+            "pageId": 30942,
+            "revisionId": 124333,
+            "title": "Briskwind Boots"
+        },
+        {
+            "pageId": 30947,
+            "revisionId": 124342,
+            "title": "Drow Leather Boots"
+        },
+        {
+            "pageId": 30948,
+            "revisionId": 124343,
+            "title": "Heavy Boots"
+        },
+        {
+            "pageId": 30951,
+            "revisionId": 124348,
+            "title": "Gargoyle's Countenance"
+        },
+        {
+            "pageId": 30952,
+            "revisionId": 124351,
+            "title": "Gargoyle Boots"
+        },
+        {
+            "pageId": 30958,
+            "revisionId": 124362,
+            "title": "Shadowstep Boots"
+        },
+        {
+            "pageId": 30960,
+            "revisionId": 124367,
+            "title": "Force Bravado"
+        },
+        {
+            "pageId": 30965,
+            "revisionId": 124377,
+            "title": "Stand Like Stone"
+        },
+        {
+            "pageId": 30966,
+            "revisionId": 124384,
+            "title": "Tenacious Boots"
+        },
+        {
+            "pageId": 30969,
+            "revisionId": 124386,
+            "title": "Mental Debilitation"
+        },
+        {
+            "pageId": 30970,
+            "revisionId": 124388,
+            "title": "Braindrain Cape"
+        },
+        {
+            "pageId": 30973,
+            "revisionId": 124396,
+            "title": "Cloak of Avarice"
         }
     ],
     "deadLinks": [
