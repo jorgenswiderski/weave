@@ -95,6 +95,7 @@ export class CharacterFeatureWarlockDeepenedPact extends CharacterFeature {
                 return {
                     name: MediaWikiParser.stripMarkup(optTitle),
                     description: MediaWikiParser.stripMarkup(optDesc.trim()),
+                    type: CharacterPlannerStep.WARLOCK_DEEPENED_PACT,
                     grants: effects.flatMap((effect) => effect.grants),
                 };
             }),

@@ -31773,6 +31773,7 @@
                                     {
                                         "name": "Pact of the Blade",
                                         "description": "Gain an Extra Attack with your pact weapon.",
+                                        "type": 26,
                                         "grants": [
                                             {
                                                 "ref": "c3152"
@@ -31782,6 +31783,7 @@
                                     {
                                         "name": "Pact of the Chain",
                                         "description": "Your familiar gains an Extra Attack.",
+                                        "type": 26,
                                         "grants": [
                                             {
                                                 "ref": "c30779"
@@ -31791,6 +31793,7 @@
                                     {
                                         "name": "Pact of the Tome",
                                         "description": "You can cast Animate Dead, Haste, and Call Lightning once per Long Rest.",
+                                        "type": 26,
                                         "grants": [
                                             {
                                                 "ref": "s2757"
