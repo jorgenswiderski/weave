@@ -188,7 +188,6 @@
         "barbarian": "Barbarian",
         "bard": "Bard",
         "cleric": "Cleric",
-        "disarming": "Disarming",
         "druid": "Druid",
         "fighter": "Fighter",
         "long rest": "Long rest",
@@ -10075,7 +10074,7 @@
         },
         {
             "pageId": 11856,
-            "revisionId": 112981,
+            "revisionId": 125188,
             "title": "Watcher Greatsword"
         },
         {
@@ -20110,13 +20109,48 @@
         },
         {
             "pageId": 31140,
-            "revisionId": 125154,
+            "revisionId": 125187,
             "title": "Greatclub (Minotaur)"
         },
         {
             "pageId": 31141,
             "revisionId": 125153,
             "title": "Valiant Roll"
+        },
+        {
+            "pageId": 31151,
+            "revisionId": 125183,
+            "title": "Valiant Defence"
+        },
+        {
+            "pageId": 31152,
+            "revisionId": 125185,
+            "title": "Template:Unusable"
+        },
+        {
+            "pageId": 31153,
+            "revisionId": 125189,
+            "title": "Valiant Attack"
+        },
+        {
+            "pageId": 31154,
+            "revisionId": 125190,
+            "title": "Valiant Damage"
+        },
+        {
+            "pageId": 31156,
+            "revisionId": 125193,
+            "title": "Bardic Roll"
+        },
+        {
+            "pageId": 31159,
+            "revisionId": 125196,
+            "title": "Bardic Defence"
+        },
+        {
+            "pageId": 31160,
+            "revisionId": 125198,
+            "title": "Bardic Attack"
         }
     ],
     "deadLinks": [

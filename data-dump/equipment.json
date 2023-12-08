@@ -25069,35 +25069,6 @@
             "dippable": true
         },
         {
-            "name": "Greatclub (Minotaur)",
-            "image": "Item WPN MINOTAUR Greatclub A.png",
-            "icon": "Item WPN MINOTAUR Greatclub A Icon.png",
-            "description": "Greatclub is a mundane, nonmagical variant of the Greatclubs family of weapons. It is a simple melee weapon that's wielded with both hands. It cannot be wielded by humanoids.",
-            "quote": "Heavy, spiked branches bound together with rope and sinew. It's hard to imagine a cruder weapon, but it is effective.",
-            "type": 19,
-            "rarity": 1,
-            "weightKg": 8.5,
-            "weightLb": 17,
-            "price": 16,
-            "effects": [],
-            "sources": [],
-            "proficiency": 0,
-            "id": 31140,
-            "category": 2,
-            "rangeType": 1,
-            "handedness": 3,
-            "damage": "2d12",
-            "damageType": 3,
-            "range": 0,
-            "finesse": false,
-            "heavy": false,
-            "light": false,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": true
-        },
-        {
             "name": "Greatclub +1",
             "image": "Greatclub PlusOne Icon.png",
             "icon": "Greatclub PlusOne Unfaded Icon.png",
@@ -26190,74 +26161,6 @@
             "thrown": false,
             "cantDualWield": false,
             "dippable": true
-        },
-        {
-            "name": "Watcher Greatsword",
-            "image": "Greatsword B Icon.png",
-            "icon": "Greatsword B Unfaded Icon.png",
-            "description": "Watcher Greatsword is a common greatsword. It can only be wielded by Steel Watchers.",
-            "type": 20,
-            "rarity": 1,
-            "weightKg": 100,
-            "weightLb": 200,
-            "price": 65,
-            "uid": "WPN_WATCHER_Greatsword_B",
-            "effects": [],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 3",
-                            "id": 4950
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Baldur's Gate",
-                            "id": 6062
-                        },
-                        "location": {
-                            "name": "Steel Watch Foundry",
-                            "id": 12160
-                        }
-                    }
-                },
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 3",
-                            "id": 4950
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Rivington",
-                            "id": 11636
-                        }
-                    },
-                    "character": {
-                        "name": "Steel Watcher",
-                        "id": 13838
-                    }
-                }
-            ],
-            "proficiency": 0,
-            "id": 11856,
-            "category": 1,
-            "rangeType": 1,
-            "handedness": 3,
-            "damage": "3d12",
-            "damageType": 1,
-            "range": 0,
-            "finesse": false,
-            "heavy": true,
-            "light": false,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": false
         }
     ],
     "21": [
