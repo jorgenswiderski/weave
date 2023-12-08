@@ -45,6 +45,7 @@ async function updateRevisions() {
         // Fetch all pages with titles matching the regex
         const documents = await collection
             .find({ title: { $regex: pattern } })
+            // .find({ categories: patternArg })
             .toArray();
 
         if (documents.length === 0) {

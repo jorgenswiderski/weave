@@ -21,7 +21,6 @@ let spellDataById: Map<number, Spell> | null = null;
 
 export class Spell extends ActionBase implements Partial<ISpell> {
     classes?: string[];
-    noSpellSlot?: boolean;
     damageSave?: AbilityScore;
     damageSaveEffect?: ActionDamageSaveEffect;
     damagePer?: string;
@@ -101,8 +100,7 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             throw new PageNotFoundError();
         }
 
-        const { plainText, boolean } = MediaWikiTemplate.Parsers;
-
+        const { plainText } = MediaWikiTemplate.Parsers;
         const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
         const config: MediaWikiTemplateParserConfig = {
@@ -113,11 +111,6 @@ export class Spell extends ActionBase implements Partial<ISpell> {
                         .map((c) => c.trim())
                         .filter((c) => c !== '') || [],
                 default: [],
-            },
-            noSpellSlot: {
-                key: 'no spell slot',
-                parser: boolean,
-                default: false,
             },
             damageSave: {
                 key: 'damage save',
@@ -168,7 +161,6 @@ export class Spell extends ActionBase implements Partial<ISpell> {
 
         const keys: Array<keyof ISpell> = [
             'classes',
-            'noSpellSlot',
             'damageSave',
             'damageSaveEffect',
             'damagePer',
