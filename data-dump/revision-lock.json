@@ -156,7 +156,6 @@
         "Template:reflist": "Template:Reflist",
         "Template:resistance": "Template:Resistance",
         "Template:resource": "Template:Resource",
-        "Template:rewrite": "Template:Rewrite",
         "Template:sai": "Template:Sai",
         "Template:saving Throw": "Template:Saving Throw",
         "Template:saving throw": "Template:Saving throw",
@@ -1291,7 +1290,7 @@
         },
         {
             "pageId": 1615,
-            "revisionId": 114702,
+            "revisionId": 124990,
             "title": "Guidance"
         },
         {
@@ -1456,7 +1455,7 @@
         },
         {
             "pageId": 2032,
-            "revisionId": 122133,
+            "revisionId": 124991,
             "title": "Chromatic Orb"
         },
         {
@@ -1690,11 +1689,6 @@
             "title": "Hunter's Mark"
         },
         {
-            "pageId": 2210,
-            "revisionId": 118662,
-            "title": "Reapply Hunter's Mark"
-        },
-        {
             "pageId": 2223,
             "revisionId": 116873,
             "title": "Hex"
@@ -1756,7 +1750,7 @@
         },
         {
             "pageId": 2261,
-            "revisionId": 114761,
+            "revisionId": 124996,
             "title": "Vicious Mockery"
         },
         {
@@ -1876,7 +1870,7 @@
         },
         {
             "pageId": 2350,
-            "revisionId": 115130,
+            "revisionId": 124992,
             "title": "Detect Thoughts"
         },
         {
@@ -2371,7 +2365,7 @@
         },
         {
             "pageId": 2782,
-            "revisionId": 20609,
+            "revisionId": 122609,
             "title": "Template:Range"
         },
         {
@@ -2551,7 +2545,7 @@
         },
         {
             "pageId": 3028,
-            "revisionId": 121577,
+            "revisionId": 122658,
             "title": "Template:Weapon page"
         },
         {
@@ -3081,7 +3075,7 @@
         },
         {
             "pageId": 3403,
-            "revisionId": 121576,
+            "revisionId": 124954,
             "title": "Template:Equipment page"
         },
         {
@@ -3136,7 +3130,7 @@
         },
         {
             "pageId": 3419,
-            "revisionId": 114515,
+            "revisionId": 124899,
             "title": "Template:Spell page"
         },
         {
@@ -3366,7 +3360,7 @@
         },
         {
             "pageId": 3474,
-            "revisionId": 104874,
+            "revisionId": 118524,
             "title": "Template:Duration"
         },
         {
@@ -3771,7 +3765,7 @@
         },
         {
             "pageId": 3631,
-            "revisionId": 109776,
+            "revisionId": 124798,
             "title": "Template:MiscItemPage"
         },
         {
@@ -4161,7 +4155,7 @@
         },
         {
             "pageId": 4162,
-            "revisionId": 110909,
+            "revisionId": 124963,
             "title": "Endless Rage"
         },
         {
@@ -4201,7 +4195,7 @@
         },
         {
             "pageId": 4170,
-            "revisionId": 110923,
+            "revisionId": 124964,
             "title": "Supernatural Attraction"
         },
         {
@@ -4886,12 +4880,12 @@
         },
         {
             "pageId": 4608,
-            "revisionId": 109138,
+            "revisionId": 120819,
             "title": "Template:Character info"
         },
         {
             "pageId": 4621,
-            "revisionId": 114529,
+            "revisionId": 117566,
             "title": "Template:NavCreatures"
         },
         {
@@ -5041,7 +5035,7 @@
         },
         {
             "pageId": 4781,
-            "revisionId": 99791,
+            "revisionId": 115984,
             "title": "Template:Class"
         },
         {
@@ -5351,7 +5345,7 @@
         },
         {
             "pageId": 6207,
-            "revisionId": 110701,
+            "revisionId": 124998,
             "title": "Template:WeaponActionPage"
         },
         {
@@ -7006,7 +7000,7 @@
         },
         {
             "pageId": 8472,
-            "revisionId": 41176,
+            "revisionId": 117067,
             "title": "Template:Legacy Content"
         },
         {
@@ -7598,11 +7592,6 @@
             "pageId": 9044,
             "revisionId": 109304,
             "title": "Step of the Wind: Dash"
-        },
-        {
-            "pageId": 9049,
-            "revisionId": 118384,
-            "title": "Sorrowful Lash"
         },
         {
             "pageId": 9067,
@@ -8731,7 +8720,7 @@
         },
         {
             "pageId": 10193,
-            "revisionId": 114464,
+            "revisionId": 120615,
             "title": "Template:Stub"
         },
         {
@@ -8961,7 +8950,7 @@
         },
         {
             "pageId": 10485,
-            "revisionId": 110684,
+            "revisionId": 115299,
             "title": "Template:Resource"
         },
         {
@@ -9916,7 +9905,7 @@
         },
         {
             "pageId": 11642,
-            "revisionId": 57201,
+            "revisionId": 120356,
             "title": "Template:Notes"
         },
         {
@@ -10520,11 +10509,6 @@
             "title": "Finger of Death"
         },
         {
-            "pageId": 12924,
-            "revisionId": 104296,
-            "title": "Template:Rewrite"
-        },
-        {
             "pageId": 12930,
             "revisionId": 52729,
             "title": "Template:Description"
@@ -10541,12 +10525,12 @@
         },
         {
             "pageId": 13011,
-            "revisionId": 114970,
+            "revisionId": 124976,
             "title": "Bludgeon the Weak"
         },
         {
             "pageId": 13015,
-            "revisionId": 116646,
+            "revisionId": 124958,
             "title": "Brand the Weak"
         },
         {
@@ -10556,7 +10540,7 @@
         },
         {
             "pageId": 13020,
-            "revisionId": 93304,
+            "revisionId": 124953,
             "title": "Pierce the Weak"
         },
         {
@@ -10771,7 +10755,7 @@
         },
         {
             "pageId": 13477,
-            "revisionId": 77450,
+            "revisionId": 117795,
             "title": "Template:Approval"
         },
         {
@@ -10930,11 +10914,6 @@
             "title": "Shield of Shielding"
         },
         {
-            "pageId": 13782,
-            "revisionId": 118262,
-            "title": "Promise of Wealth"
-        },
-        {
             "pageId": 13786,
             "revisionId": 118430,
             "title": "Summon Gilded Hellsboar"
@@ -11086,7 +11065,7 @@
         },
         {
             "pageId": 14100,
-            "revisionId": 110106,
+            "revisionId": 125069,
             "title": "Template:Action Page"
         },
         {
@@ -11361,7 +11340,7 @@
         },
         {
             "pageId": 14430,
-            "revisionId": 100473,
+            "revisionId": 117542,
             "title": "Template:BarbarianNavbox"
         },
         {
@@ -11616,7 +11595,7 @@
         },
         {
             "pageId": 15034,
-            "revisionId": 112554,
+            "revisionId": 116841,
             "title": "Template:MdRarityItem"
         },
         {
@@ -11681,7 +11660,7 @@
         },
         {
             "pageId": 15123,
-            "revisionId": 101037,
+            "revisionId": 115085,
             "title": "Template:NavRisenRoad"
         },
         {
@@ -11851,7 +11830,7 @@
         },
         {
             "pageId": 15422,
-            "revisionId": 59196,
+            "revisionId": 120654,
             "title": "Template:Achievement"
         },
         {
@@ -12806,12 +12785,12 @@
         },
         {
             "pageId": 17892,
-            "revisionId": 105516,
+            "revisionId": 115326,
             "title": "Dread Ambusher (Melee)"
         },
         {
             "pageId": 17894,
-            "revisionId": 105518,
+            "revisionId": 124981,
             "title": "Dread Ambusher (Ranged)"
         },
         {
@@ -13325,11 +13304,6 @@
             "title": "Durinbold Mausoleum"
         },
         {
-            "pageId": 19285,
-            "revisionId": 118691,
-            "title": "Elemental Retort"
-        },
-        {
             "pageId": 19286,
             "revisionId": 110602,
             "title": "Elemental Siphon"
@@ -13661,7 +13635,7 @@
         },
         {
             "pageId": 19813,
-            "revisionId": 110019,
+            "revisionId": 125016,
             "title": "Template:Action Page/doc"
         },
         {
@@ -13741,7 +13715,7 @@
         },
         {
             "pageId": 20088,
-            "revisionId": 75996,
+            "revisionId": 120709,
             "title": "Template:Tactician"
         },
         {
@@ -13938,11 +13912,6 @@
             "pageId": 20570,
             "revisionId": 112898,
             "title": "Dauntless"
-        },
-        {
-            "pageId": 20576,
-            "revisionId": 118938,
-            "title": "Sethan: Spiritual Greataxe"
         },
         {
             "pageId": 20577,
@@ -14941,7 +14910,7 @@
         },
         {
             "pageId": 22953,
-            "revisionId": 88976,
+            "revisionId": 124906,
             "title": "Template:Inflicts"
         },
         {
@@ -15021,12 +14990,12 @@
         },
         {
             "pageId": 23143,
-            "revisionId": 108221,
+            "revisionId": 124800,
             "title": "Template:NavItems"
         },
         {
             "pageId": 23167,
-            "revisionId": 101084,
+            "revisionId": 122681,
             "title": "Template:TooltipBox"
         },
         {
@@ -15176,7 +15145,7 @@
         },
         {
             "pageId": 23448,
-            "revisionId": 124901,
+            "revisionId": 124950,
             "title": "Template:Spell page/doc"
         },
         {
@@ -15721,12 +15690,12 @@
         },
         {
             "pageId": 25294,
-            "revisionId": 107798,
+            "revisionId": 121289,
             "title": "Template:Cite web"
         },
         {
             "pageId": 25337,
-            "revisionId": 100794,
+            "revisionId": 121301,
             "title": "Template:Reflist"
         },
         {
@@ -15736,7 +15705,7 @@
         },
         {
             "pageId": 25389,
-            "revisionId": 100795,
+            "revisionId": 121312,
             "title": "Template:Ref"
         },
         {
@@ -16350,13 +16319,8 @@
             "title": "Permanent Mind Sanctuary"
         },
         {
-            "pageId": 27681,
-            "revisionId": 110145,
-            "title": "Template:Resource/category"
-        },
-        {
             "pageId": 27685,
-            "revisionId": 114493,
+            "revisionId": 125053,
             "title": "Template:Passive feature page"
         },
         {
@@ -19151,7 +19115,7 @@
         },
         {
             "pageId": 29645,
-            "revisionId": 119273,
+            "revisionId": 119361,
             "title": "Template:Feature/Format"
         },
         {
@@ -19481,7 +19445,7 @@
         },
         {
             "pageId": 30308,
-            "revisionId": 121122,
+            "revisionId": 122711,
             "title": "Template:ClassAction/Format"
         },
         {
@@ -19525,13 +19489,8 @@
             "title": "Gossamer Tomb"
         },
         {
-            "pageId": 30376,
-            "revisionId": 121778,
-            "title": "Soul Ascension"
-        },
-        {
             "pageId": 30381,
-            "revisionId": 124897,
+            "revisionId": 124967,
             "title": "Beguiling Rebuke"
         },
         {
@@ -19955,11 +19914,6 @@
             "title": "Shield of Returning"
         },
         {
-            "pageId": 30982,
-            "revisionId": 124432,
-            "title": "No Rest for the Wicked"
-        },
-        {
             "pageId": 30983,
             "revisionId": 124426,
             "title": "Dauntless Amulet"
@@ -20133,6 +20087,36 @@
             "pageId": 31121,
             "revisionId": 124875,
             "title": "Watchful Hunt"
+        },
+        {
+            "pageId": 31132,
+            "revisionId": 124979,
+            "title": "Garrotte (Meazel)"
+        },
+        {
+            "pageId": 31133,
+            "revisionId": 124982,
+            "title": "Shadow Teleport (Meazel)"
+        },
+        {
+            "pageId": 31134,
+            "revisionId": 124984,
+            "title": "Shadow Teleport"
+        },
+        {
+            "pageId": 31136,
+            "revisionId": 125129,
+            "title": "Necrotic Claws (Shadow)"
+        },
+        {
+            "pageId": 31140,
+            "revisionId": 125154,
+            "title": "Greatclub (Minotaur)"
+        },
+        {
+            "pageId": 31141,
+            "revisionId": 125153,
+            "title": "Valiant Roll"
         }
     ],
     "deadLinks": [

@@ -579,39 +579,6 @@
         ]
     },
     {
-        "name": "Banishing Smite (Melee)",
-        "damage": "weapon",
-        "extraDamage": "5d10",
-        "extraDamageType": 12,
-        "image": "Banishing Smite Melee.webp",
-        "level": 5,
-        "school": 1,
-        "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banishing the target.",
-        "description": "Possibly Banish your target to another plane of existence.\n\nTargets with 50 Hit Points or more can't be Banished.",
-        "ritual": false,
-        "concentration": true,
-        "id": 11915,
-        "attackRoll": false,
-        "range": 4,
-        "condition": "Banished",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            },
-            {
-                "resource": 2,
-                "amount": 1
-            },
-            {
-                "resource": 16,
-                "amount": 1
-            }
-        ],
-        "classes": []
-    },
-    {
         "name": "Banishment",
         "image": "Banishment.webp",
         "level": 4,
@@ -5040,35 +5007,6 @@
                 "higherLevels": "Upcast: Ensnared condition deals an extra 1d6|Piercing damage per level."
             }
         ]
-    },
-    {
-        "name": "Ensnaring Strike (Ranged)",
-        "damage": "weapon",
-        "image": "Ensnaring Strike Ranged.webp",
-        "level": 1,
-        "school": 2,
-        "summary": "This spell allows spellcasters to use ranged weapon attacks to ensnare enemies with thorny vines and deal Piercing|Piercing damage to them each turn.",
-        "description": "Your attack summons thorny vines, dealing Physical|Weapon Damage and possibly Ensnaring your target.\n\nEnsnared creatures cannot move and take 1d6|Piercing damage at the start of each turn. An ally can use their Help Action to try and tear away the vines.",
-        "ritual": false,
-        "concentration": true,
-        "id": 2167,
-        "attackRoll": true,
-        "range": 1,
-        "condition": "Ensnared",
-        "conditionDuration": 10,
-        "conditionSave": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            },
-            {
-                "resource": 2,
-                "amount": 1
-            }
-        ],
-        "classes": [],
-        "higherLevels": "Upcast: Ensnared condition deals an extra 1d6|Piercing damage per level."
     },
     {
         "name": "Entangle",

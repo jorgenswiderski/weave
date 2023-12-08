@@ -267,7 +267,5 @@ export async function getSpellDataById() {
 export async function getSpellDataFiltered(): Promise<Spell[]> {
     const spells = await getSpellData();
 
-    return spells.filter(
-        (spell) => spell.used || (spell.classes && spell.classes.length > 0),
-    );
+    return spells.filter((spell) => spell.classes && spell.classes.length > 0);
 }
