@@ -6,6 +6,7 @@ import {
     ISpell,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { AbilityScore } from '@jorgenswiderski/tomekeeper-shared/dist/types/ability';
+import assert from 'assert';
 import { PageNotFoundError } from '../errors';
 import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
 import { ActionBase } from './action-base';
@@ -27,7 +28,7 @@ export class Spell extends ActionBase implements Partial<ISpell> {
     higherLevels?: string;
     variantNames?: string[];
     variants?: ISpell[];
-    isVariant: boolean = false;
+    variantOf?: string;
 
     constructor(pageTitle: string) {
         super(pageTitle, 'SpellPage');
@@ -100,7 +101,7 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             throw new PageNotFoundError();
         }
 
-        const { plainText } = MediaWikiTemplate.Parsers;
+        const { plainText, noOp } = MediaWikiTemplate.Parsers;
         const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
         const config: MediaWikiTemplateParserConfig = {
@@ -145,6 +146,11 @@ export class Spell extends ActionBase implements Partial<ISpell> {
                 },
                 default: undefined,
             },
+            variantOf: {
+                key: 'variant of',
+                parser: noOp,
+                default: undefined,
+            },
         };
 
         const template = await this.page.getTemplate(this.templateName);
@@ -154,6 +160,40 @@ export class Spell extends ActionBase implements Partial<ISpell> {
         if (this.classes && this.classes.length > 0) {
             this.markUsed();
         }
+    }
+
+    initVariants(): void {
+        if (this.variantOf) {
+            const primary = spellData.find(
+                (s) => s.pageTitle === this.variantOf,
+            );
+
+            assert(
+                primary,
+                `Failed to find primary variant of spell '${this.pageTitle}' '${this.variantOf}'`,
+            );
+        }
+
+        if (!this.variantNames) {
+            return;
+        }
+
+        // If a spell has itself has a variant, this indicates there is no "primary" variant
+        assert(
+            !this.variantNames.includes(this.name!),
+            `Spell '${this.name}' should not include itself as a variant`,
+        );
+
+        this.variants = this.variantNames.map((pageTitle) => {
+            const spell = spellData.find((s) => s.pageTitle === pageTitle);
+
+            assert(
+                spell,
+                `Failed to find variant of spell '${this.pageTitle}' '${pageTitle}'`,
+            );
+
+            return spell!;
+        }) as ISpell[];
     }
 
     toJSON(): Partial<ISpell> {
@@ -166,7 +206,6 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             'damagePer',
             'higherLevels',
             'variants',
-            'isVariant',
         ];
 
         keys.forEach((key) => {
@@ -181,41 +220,9 @@ export class Spell extends ActionBase implements Partial<ISpell> {
 
 export async function initSpellData(spellNames: string[]): Promise<void> {
     spellData = spellNames.map((name) => new Spell(name));
-    await Promise.all(spellData.map((cc) => cc.waitForInitialization()));
+    await Promise.all(spellData.map((spell) => spell.waitForInitialization()));
 
-    // Set variant status
-    const variants = new Map<string, Spell>();
-
-    // Remove horizontal variants (siblings)
-    // These spells include themself as a variant, so just remove all variants for these spells
-    spellData.forEach((spell) => {
-        if (spell.variantNames?.includes(spell.name!)) {
-            // eslint-disable-next-line no-param-reassign
-            delete spell.variantNames;
-        }
-    });
-
-    spellData
-        .filter((spell) => spell.variantNames)
-        .flatMap((spell) => spell.variantNames!)
-        .forEach((name) =>
-            variants.set(name, spellData.find((spell) => spell.name === name)!),
-        );
-
-    spellData.forEach((spell) => {
-        if (variants.has(spell.name!)) {
-            // eslint-disable-next-line no-param-reassign
-            spell.isVariant = true;
-        }
-
-        if (spell.variantNames) {
-            // eslint-disable-next-line no-param-reassign
-            spell.variants = spell.variantNames.map(
-                (name) => variants.get(name)!,
-            ) as ISpell[];
-        }
-    });
-
+    spellData.forEach((spell) => spell.initVariants());
     spellDataById = new Map<number, Spell>();
 
     spellData.forEach((spell) => {

@@ -1881,7 +1881,7 @@
         },
         {
             "pageId": 2358,
-            "revisionId": 115241,
+            "revisionId": 124860,
             "title": "Enhance Ability"
         },
         {
@@ -1901,8 +1901,8 @@
         },
         {
             "pageId": 2369,
-            "revisionId": 115225,
-            "title": "Eagle's Splendor"
+            "revisionId": 124864,
+            "title": "Eagle's Splendour"
         },
         {
             "pageId": 2370,
@@ -2256,7 +2256,7 @@
         },
         {
             "pageId": 2718,
-            "revisionId": 116043,
+            "revisionId": 124939,
             "title": "Spirit Guardians (Radiant)"
         },
         {
@@ -2591,7 +2591,7 @@
         },
         {
             "pageId": 3069,
-            "revisionId": 115027,
+            "revisionId": 124935,
             "title": "Command: Grovel"
         },
         {
@@ -5161,7 +5161,7 @@
         },
         {
             "pageId": 5081,
-            "revisionId": 116095,
+            "revisionId": 124898,
             "title": "Ensnaring Strike"
         },
         {
@@ -6936,7 +6936,7 @@
         },
         {
             "pageId": 8412,
-            "revisionId": 115086,
+            "revisionId": 124943,
             "title": "Contagion"
         },
         {
@@ -10101,7 +10101,7 @@
         },
         {
             "pageId": 11915,
-            "revisionId": 114933,
+            "revisionId": 124919,
             "title": "Banishing Smite (Melee)"
         },
         {
@@ -10801,12 +10801,12 @@
         },
         {
             "pageId": 13504,
-            "revisionId": 114895,
+            "revisionId": 124924,
             "title": "Animate Dead: Skeleton"
         },
         {
             "pageId": 13505,
-            "revisionId": 114897,
+            "revisionId": 124930,
             "title": "Animate Dead: Zombie"
         },
         {
@@ -12320,8 +12320,13 @@
             "title": "Silent"
         },
         {
+            "pageId": 17139,
+            "revisionId": 124913,
+            "title": "Banishing Smite"
+        },
+        {
             "pageId": 17142,
-            "revisionId": 114935,
+            "revisionId": 124920,
             "title": "Banishing Smite (Ranged)"
         },
         {
@@ -14271,12 +14276,12 @@
         },
         {
             "pageId": 21418,
-            "revisionId": 114910,
+            "revisionId": 124932,
             "title": "Animate Dead: Flying Ghoul"
         },
         {
             "pageId": 21419,
-            "revisionId": 114907,
+            "revisionId": 124931,
             "title": "Animate Dead: Ghoul"
         },
         {
@@ -15170,13 +15175,18 @@
             "title": "Demonspirit Aura"
         },
         {
+            "pageId": 23448,
+            "revisionId": 124901,
+            "title": "Template:Spell page/doc"
+        },
+        {
             "pageId": 23484,
             "revisionId": 121491,
             "title": "Draconic Elemental Weapon"
         },
         {
             "pageId": 23507,
-            "revisionId": 118685,
+            "revisionId": 124856,
             "title": "Draconic Elemental Weapon: Acid"
         },
         {
@@ -19521,7 +19531,7 @@
         },
         {
             "pageId": 30381,
-            "revisionId": 121756,
+            "revisionId": 124897,
             "title": "Beguiling Rebuke"
         },
         {
@@ -20113,6 +20123,16 @@
             "pageId": 31094,
             "revisionId": 124708,
             "title": "Echoes in the Dark"
+        },
+        {
+            "pageId": 31116,
+            "revisionId": 124858,
+            "title": "Blinding Ambush"
+        },
+        {
+            "pageId": 31121,
+            "revisionId": 124875,
+            "title": "Watchful Hunt"
         }
     ],
     "deadLinks": [

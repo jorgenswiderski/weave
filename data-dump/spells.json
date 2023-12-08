@@ -29,8 +29,7 @@
             "Wizard"
         ],
         "damageSave": 2,
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases by another d6|Acid Acid|1d6 Acid damage, for a total of 2d6|Acid.\nWhen the spellcaster reaches Level 10, the damage increases by another d6|Acid Acid|1d6 Acid damage, for a total of 3d6|Acid.",
-        "isVariant": false
+        "higherLevels": "When the spellcaster reaches Level 5, the damage increases by another d6|Acid Acid|1d6 Acid damage, for a total of 2d6|Acid.\nWhen the spellcaster reaches Level 10, the damage increases by another d6|Acid Acid|1d6 Acid damage, for a total of 3d6|Acid."
     },
     {
         "name": "Aid",
@@ -58,8 +57,7 @@
             "Cleric",
             "Paladin"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level increases the target's maximum health by an additional 5|Healing for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level increases the target's maximum health by an additional 5|Healing for each Spell Slot Level above 2nd."
     },
     {
         "name": "Animal Friendship",
@@ -92,8 +90,7 @@
             "Ranger"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st."
     },
     {
         "name": "Animate Dead",
@@ -146,8 +143,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Animate Dead: Skeleton Squad",
@@ -173,8 +169,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Animate Dead: Zombie",
@@ -199,8 +194,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Animate Dead: Zombie Batallion",
@@ -225,8 +219,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Animate Dead: Ghoul",
@@ -251,8 +244,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Animate Dead: Ghoul Pack",
@@ -277,8 +269,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Animate Dead: Flying Ghoul",
@@ -303,8 +294,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Animate Dead: Flying Ghoul Flock",
@@ -329,11 +319,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Arcane Gate",
@@ -360,8 +348,7 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Arcane Lock",
@@ -389,8 +376,7 @@
         ],
         "classes": [
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Armour of Agathys",
@@ -418,8 +404,7 @@
         "classes": [
             "Warlock"
         ],
-        "higherLevels": "Upcast: Gain an additional 5 and deal an additional 5 Cold damage per level.",
-        "isVariant": false
+        "higherLevels": "Upcast: Gain an additional 5 and deal an additional 5 Cold damage per level."
     },
     {
         "name": "Arms of Hadar",
@@ -456,8 +441,7 @@
         ],
         "damageSave": 1,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Deals an additional 1d6|Necrotic damage per level.",
-        "isVariant": false
+        "higherLevels": "Upcast: Deals an additional 1d6|Necrotic damage per level."
     },
     {
         "name": "Bane",
@@ -489,8 +473,110 @@
             "Bard",
             "Cleric"
         ],
-        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st."
+    },
+    {
+        "name": "Banishing Smite",
+        "damage": "weapon",
+        "extraDamage": "5d10",
+        "extraDamageType": 12,
+        "image": "Banishing Smite.webp",
+        "level": 5,
+        "school": 1,
+        "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banishing the target.",
+        "description": "Possibly Banish your target to another plane of existence.\n\nTargets with 50 Hit Points or more can't be Banished.",
+        "ritual": false,
+        "concentration": true,
+        "id": 17139,
+        "attackRoll": false,
+        "range": 4,
+        "condition": "Banished",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 16,
+                "amount": 1
+            }
+        ],
+        "classes": [
+            "Paladin"
+        ],
+        "variants": [
+            {
+                "name": "Banishing Smite (Melee)",
+                "damage": "weapon",
+                "extraDamage": "5d10",
+                "extraDamageType": 12,
+                "image": "Banishing Smite Melee.webp",
+                "level": 5,
+                "school": 1,
+                "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banishing the target.",
+                "description": "Possibly Banish your target to another plane of existence.\n\nTargets with 50 Hit Points or more can't be Banished.",
+                "ritual": false,
+                "concentration": true,
+                "id": 11915,
+                "attackRoll": false,
+                "range": 4,
+                "condition": "Banished",
+                "conditionDuration": 2,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 2,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 16,
+                        "amount": 1
+                    }
+                ],
+                "classes": []
+            },
+            {
+                "name": "Banishing Smite (Ranged)",
+                "damage": "weapon",
+                "extraDamage": "5d10",
+                "extraDamageType": 12,
+                "image": "Banishing Smite Ranged.webp",
+                "level": 5,
+                "school": 1,
+                "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banishing the target.",
+                "description": "Possibly Banish your target to another plane of existence.\n\nTargets with 50 Hit Points or more can't be Banished.",
+                "ritual": false,
+                "concentration": true,
+                "id": 17142,
+                "attackRoll": false,
+                "range": 4,
+                "condition": "Banished",
+                "conditionDuration": 2,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 2,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 16,
+                        "amount": 1
+                    }
+                ],
+                "classes": []
+            }
+        ]
     },
     {
         "name": "Banishing Smite (Melee)",
@@ -523,46 +609,7 @@
                 "amount": 1
             }
         ],
-        "classes": [
-            "Paladin"
-        ],
-        "isVariant": false
-    },
-    {
-        "name": "Banishing Smite (Ranged)",
-        "damage": "weapon",
-        "extraDamage": "5d10",
-        "extraDamageType": 12,
-        "image": "Banishing Smite Ranged.webp",
-        "level": 5,
-        "school": 1,
-        "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banishing the target.",
-        "description": "Possibly Banish your target to another plane of existence.\n\nTargets with 50 Hit Points or more can't be Banished.",
-        "ritual": false,
-        "concentration": true,
-        "id": 17142,
-        "attackRoll": false,
-        "range": 4,
-        "condition": "Banished",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            },
-            {
-                "resource": 2,
-                "amount": 1
-            },
-            {
-                "resource": 16,
-                "amount": 1
-            }
-        ],
-        "classes": [
-            "Paladin"
-        ],
-        "isVariant": false
+        "classes": []
     },
     {
         "name": "Banishment",
@@ -597,8 +644,7 @@
             "Wizard"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: Affect an additional target per level.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affect an additional target per level."
     },
     {
         "name": "Barkskin",
@@ -626,8 +672,7 @@
         "classes": [
             "Druid",
             "Ranger"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Beacon of Hope",
@@ -659,8 +704,7 @@
         "classes": [
             "Cleric"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Bestow Curse",
@@ -717,8 +761,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Bestow Curse: Additional Damage",
@@ -742,8 +785,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Bestow Curse: Attack Disadvantage",
@@ -771,8 +813,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Bestow Curse: Strength Disadvantage",
@@ -800,8 +841,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Bestow Curse: Dexterity Disadvantage",
@@ -829,8 +869,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Bestow Curse: Constitution Disadvantage",
@@ -858,8 +897,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Bestow Curse: Intelligence Disadvantage",
@@ -887,8 +925,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Bestow Curse: Wisdom Disadvantage",
@@ -916,8 +953,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Bestow Curse: Charisma Disadvantage",
@@ -945,11 +981,9 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd."
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Blade Barrier",
@@ -983,8 +1017,7 @@
             "Cleric"
         ],
         "damageSave": 2,
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Blade Ward",
@@ -1011,8 +1044,7 @@
             "Sorcerer",
             "Wizard",
             "Warlock"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Bless",
@@ -1043,8 +1075,7 @@
             "Cleric",
             "Paladin"
         ],
-        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st."
     },
     {
         "name": "Blight",
@@ -1079,8 +1110,7 @@
         ],
         "damageSave": 3,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Necrotic damage for each Spell Slot Level above 4th.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Necrotic damage for each Spell Slot Level above 4th."
     },
     {
         "name": "Blinding Smite",
@@ -1117,8 +1147,7 @@
         "classes": [
             "Paladin"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Blindness",
@@ -1151,8 +1180,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 2nd."
     },
     {
         "name": "Blink",
@@ -1181,8 +1209,7 @@
         "classes": [
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Blur",
@@ -1211,8 +1238,7 @@
         "classes": [
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Bone Chill",
@@ -1243,8 +1269,7 @@
             "Warlock",
             "Wizard"
         ],
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases by another d8|Necrotic Necrotic|1d8 Necrotic damage, for a total of 2d8|Necrotic.\nWhen the spellcaster reaches Level 10, the damage increases by another d8|Necrotic Necrotic|1d8 Necrotic damage, for a total of 3d8|Necrotic.",
-        "isVariant": false
+        "higherLevels": "When the spellcaster reaches Level 5, the damage increases by another d8|Necrotic Necrotic|1d8 Necrotic damage, for a total of 2d8|Necrotic.\nWhen the spellcaster reaches Level 10, the damage increases by another d8|Necrotic Necrotic|1d8 Necrotic damage, for a total of 3d8|Necrotic."
     },
     {
         "name": "Branding Smite",
@@ -1318,8 +1343,7 @@
                 ],
                 "classes": [],
                 "damageSaveEffect": 1,
-                "higherLevels": "Deals an additional 1d6|Radiant damage per level.",
-                "isVariant": true
+                "higherLevels": "Deals an additional 1d6|Radiant damage per level."
             },
             {
                 "name": "Branding Smite (Ranged)",
@@ -1350,16 +1374,14 @@
                     },
                     {
                         "resource": 13,
-                "amount": 1
-            }
-        ],
+                        "amount": 1
+                    }
+                ],
                 "classes": [],
-        "damageSaveEffect": 1,
-        "higherLevels": "Deals an additional 1d6|Radiant damage per level.",
-        "isVariant": true
+                "damageSaveEffect": 1,
+                "higherLevels": "Deals an additional 1d6|Radiant damage per level."
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Burning Hands",
@@ -1394,8 +1416,7 @@
         ],
         "damageSave": 2,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Deals an additional Fire|1d6 Fire damage per level.",
-        "isVariant": false
+        "higherLevels": "Upcast: Deals an additional Fire|1d6 Fire damage per level."
     },
     {
         "name": "Call Lightning",
@@ -1433,8 +1454,7 @@
         ],
         "damageSave": 2,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: When the spell is cast using a 4th level spell slot or higher, damage increases by 1d10|Lightning for each Spell Slot Level above 3rd.",
-        "isVariant": false
+        "higherLevels": "Upcast: When the spell is cast using a 4th level spell slot or higher, damage increases by 1d10|Lightning for each Spell Slot Level above 3rd."
     },
     {
         "name": "Calm Emotions",
@@ -1467,8 +1487,7 @@
         "classes": [
             "Bard",
             "Cleric"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Chain Lightning",
@@ -1500,8 +1519,7 @@
             "Wizard"
         ],
         "damageSave": 2,
-        "damageSaveEffect": 0,
-        "isVariant": false
+        "damageSaveEffect": 0
     },
     {
         "name": "Charm Person",
@@ -1535,8 +1553,7 @@
             "Warlock",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Affect an additional target for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affect an additional target for each Spell Slot Level above 1st."
     },
     {
         "name": "Chromatic Orb",
@@ -1591,8 +1608,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Thunder damage for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Thunder damage for each Spell Slot Level above 1st."
             },
             {
                 "name": "Chromatic Orb: Acid",
@@ -1625,8 +1641,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Acid damage for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Acid damage for each Spell Slot Level above 1st."
             },
             {
                 "name": "Chromatic Orb: Cold",
@@ -1659,8 +1674,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Cold damage for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Cold damage for each Spell Slot Level above 1st."
             },
             {
                 "name": "Chromatic Orb: Fire",
@@ -1693,8 +1707,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Fire damage for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Fire damage for each Spell Slot Level above 1st."
             },
             {
                 "name": "Chromatic Orb: Lightning",
@@ -1727,8 +1740,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Lightning damage for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Lightning damage for each Spell Slot Level above 1st."
             },
             {
                 "name": "Chromatic Orb: Poison",
@@ -1761,11 +1773,9 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Poison damage for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "* Upcast: Casting this spell at a higher level deals an extra 1d8|Poison damage for each Spell Slot Level above 1st."
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Circle of Death",
@@ -1801,8 +1811,7 @@
             "Wizard"
         ],
         "damageSave": 3,
-        "damageSaveEffect": 0,
-        "isVariant": false
+        "damageSaveEffect": 0
     },
     {
         "name": "Cloud of Daggers",
@@ -1840,8 +1849,7 @@
             "Warlock",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 2d4|Slashing damage for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 2d4|Slashing damage for each Spell Slot Level above 2nd."
     },
     {
         "name": "Cloudkill",
@@ -1880,8 +1888,7 @@
         "classes": [
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Colour Spray",
@@ -1914,8 +1921,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level increases the number of targets by 1 and total Hit Points by 11 for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level increases the number of targets by 1 and total Hit Points by 11 for each Spell Slot Level above 1st."
     },
     {
         "name": "Command",
@@ -1972,8 +1978,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st."
             },
             {
                 "name": "Command: Drop",
@@ -2001,8 +2006,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st."
             },
             {
                 "name": "Command: Flee",
@@ -2030,33 +2034,34 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st."
             },
             {
                 "name": "Command: Grovel",
-                "image": "Command Grovel Undead.webp",
+                "image": "Command Grovel.webp",
                 "level": 1,
                 "school": 4,
-                "summary": "This spell is a variant of Exhort the Risen and is similar to the spell Command: Grovel except it applies to Undead only. It allows spellcasters to order their Undead target to fall Prone and do nothing.",
-                "description": "Command an undead to fall Prone on its turn and do nothing else.",
+                "summary": "This spell allows spellcasters to order their target to temporarily fall Prone and do nothing else.",
+                "description": "Command a creature to fall Prone on its turn and do nothing else.",
                 "ritual": false,
                 "concentration": false,
-                "id": 23709,
+                "id": 3069,
                 "attackRoll": false,
                 "range": 1,
                 "condition": "Command: Grovel",
                 "conditionDuration": 1,
                 "conditionSave": 5,
-                "recharge": 1,
                 "costs": [
                     {
                         "resource": 1,
                         "amount": 1
+                    },
+                    {
+                        "resource": 12,
+                        "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Command: Halt",
@@ -2084,11 +2089,9 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st."
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Compelled Duel",
@@ -2119,8 +2122,7 @@
         ],
         "classes": [
             "Paladin"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Cone of Cold",
@@ -2155,8 +2157,7 @@
         ],
         "damageSave": 3,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: The damage is increased by 1d8|Cold for each Spell Slot Level above 5th.",
-        "isVariant": false
+        "higherLevels": "Upcast: The damage is increased by 1d8|Cold for each Spell Slot Level above 5th."
     },
     {
         "name": "Confusion",
@@ -2192,8 +2193,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Affects a larger area at higher levels.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affects a larger area at higher levels."
     },
     {
         "name": "Conjure Barrage",
@@ -2255,8 +2255,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Conjure Barrage: Ranged Weapon",
@@ -2286,11 +2285,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Conjure Elemental",
@@ -2342,8 +2339,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Conjure Elemental: Earth Elemental",
@@ -2367,8 +2363,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Conjure Elemental: Fire Elemental",
@@ -2392,8 +2387,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Conjure Elemental: Water Elemental",
@@ -2417,8 +2411,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Conjure Elemental: Air Myrmidon",
@@ -2442,8 +2435,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Conjure Elemental: Earth Myrmidon",
@@ -2467,8 +2459,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Conjure Elemental: Fire Myrmidon",
@@ -2492,8 +2483,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Conjure Elemental: Water Myrmidon",
@@ -2517,11 +2507,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Conjure Minor Elemental",
@@ -2576,8 +2564,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Conjure Minor Elemental: Ice Mephits",
@@ -2602,8 +2589,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Conjure Minor Elemental: Mud Mephits",
@@ -2628,11 +2614,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Conjure Woodland Being",
@@ -2659,8 +2643,7 @@
         "classes": [
             "Druid"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Contagion",
@@ -2686,7 +2669,10 @@
                 "amount": 1
             }
         ],
-        "classes": [],
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
         "variants": [
             {
                 "name": "Contagion: Filth Fever",
@@ -2711,8 +2697,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Contagion: Flesh Rot",
@@ -2737,8 +2722,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Contagion: Slimy Doom",
@@ -2763,8 +2747,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Contagion: Seizure",
@@ -2789,8 +2772,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Contagion: Mindfire",
@@ -2815,8 +2797,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Contagion: Blinding Sickness",
@@ -2841,11 +2822,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Counterspell",
@@ -2873,8 +2852,7 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Create Undead",
@@ -2903,8 +2881,7 @@
             "Cleric",
             "Wizard",
             "Warlock"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Create or Destroy Water",
@@ -2974,8 +2951,7 @@
                 ],
                 "classes": [],
                 "damageSaveEffect": 1,
-                "higherLevels": "Upcast: When the spell is cast a 2nd Level or higher, the area that you can create water increases by 2m / 5ft for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "Upcast: When the spell is cast a 2nd Level or higher, the area that you can create water increases by 2m / 5ft for each Spell Slot Level above 1st."
             },
             {
                 "name": "Destroy Water",
@@ -3005,11 +2981,9 @@
                 ],
                 "classes": [],
                 "damageSaveEffect": 1,
-                "higherLevels": "Upcast: When the spell is cast a 2nd Level or higher, the area that you can destroy water increases by 2m / 5ft for each Spell Slot Level above 1st.",
-                "isVariant": true
+                "higherLevels": "Upcast: When the spell is cast a 2nd Level or higher, the area that you can destroy water increases by 2m / 5ft for each Spell Slot Level above 1st."
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Crown of Madness",
@@ -3044,8 +3018,7 @@
             "Warlock",
             "Wizard"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Crusader's Mantle",
@@ -3076,8 +3049,7 @@
         ],
         "classes": [
             "Paladin"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Cure Wounds",
@@ -3110,8 +3082,7 @@
             "Paladin",
             "Ranger"
         ],
-        "higherLevels": "Upcast: Heals an additional 1d8|Healing for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Heals an additional 1d8|Healing for each Spell Slot Level above 1st."
     },
     {
         "name": "Dancing Lights",
@@ -3142,8 +3113,7 @@
             "Bard",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Darkness",
@@ -3178,8 +3148,7 @@
             "Warlock",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits."
     },
     {
         "name": "Darkvision",
@@ -3209,8 +3178,7 @@
             "Ranger",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Daylight",
@@ -3268,8 +3236,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Daylight: Enchant Item",
@@ -3297,11 +3264,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Death Ward",
@@ -3329,8 +3294,7 @@
         "classes": [
             "Cleric",
             "Paladin"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Destructive Wave",
@@ -3365,8 +3329,7 @@
         "classes": [
             "Paladin"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Detect Thoughts",
@@ -3396,8 +3359,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Dimension Door",
@@ -3427,8 +3389,7 @@
             "Warlock",
             "Wizard"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Disguise Self",
@@ -3483,8 +3444,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Dragonborn",
@@ -3510,8 +3470,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Drow",
@@ -3537,8 +3496,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Drow",
@@ -3564,8 +3522,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Strong Drow",
@@ -3591,8 +3548,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Strong Drow",
@@ -3618,8 +3574,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Dwarf",
@@ -3645,8 +3600,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Dwarf",
@@ -3672,8 +3626,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Elf",
@@ -3699,8 +3652,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Elf",
@@ -3726,8 +3678,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Strong Elf",
@@ -3753,8 +3704,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Strong Elf",
@@ -3780,8 +3730,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Githyanki",
@@ -3807,8 +3756,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Githyanki",
@@ -3834,8 +3782,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Gnome",
@@ -3861,8 +3808,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Gnome",
@@ -3888,8 +3834,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Half-Elf",
@@ -3915,8 +3860,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Half-Elf",
@@ -3942,8 +3886,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Strong Half-Elf",
@@ -3969,8 +3912,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Strong Half-Elf",
@@ -3996,8 +3938,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Half-Orc",
@@ -4023,8 +3964,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Half-Orc",
@@ -4050,8 +3990,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Halfling",
@@ -4077,8 +4016,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Halfling",
@@ -4104,8 +4042,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Human",
@@ -4131,8 +4068,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Human",
@@ -4158,8 +4094,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Strong Human",
@@ -4185,8 +4120,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Strong Human",
@@ -4212,8 +4146,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Tiefling",
@@ -4239,8 +4172,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Tiefling",
@@ -4266,8 +4198,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Femme Strong Tiefling",
@@ -4293,8 +4224,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             },
             {
                 "name": "Disguise Self: Masc Strong Tiefling",
@@ -4320,11 +4250,9 @@
                     }
                 ],
                 "classes": [],
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Disintegrate",
@@ -4355,8 +4283,7 @@
             "Wizard"
         ],
         "damageSave": 2,
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Dispel Evil and Good",
@@ -4385,8 +4312,7 @@
         "classes": [
             "Cleric",
             "Paladin"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Dissonant Whispers",
@@ -4420,8 +4346,7 @@
         ],
         "damageSave": 5,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Deal an additional  1d6 | Psychic damage per level.",
-        "isVariant": false
+        "higherLevels": "Upcast: Deal an additional  1d6 | Psychic damage per level."
     },
     {
         "name": "Divine Favour",
@@ -4449,8 +4374,7 @@
         ],
         "classes": [
             "Paladin"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Divine Smite",
@@ -4480,8 +4404,7 @@
         "classes": [
             "Paladin"
         ],
-        "higherLevels": "* When Divine Smite is cast at 2nd Level or higher, damage increases by 1d8|Radiant for each Spell Slot Level above 1st. This damage is capped to 5d8, so using a spell slot above 4th spell level adds no further damage.",
-        "isVariant": false
+        "higherLevels": "* When Divine Smite is cast at 2nd Level or higher, damage increases by 1d8|Radiant for each Spell Slot Level above 1st. This damage is capped to 5d8, so using a spell slot above 4th spell level adds no further damage."
     },
     {
         "name": "Dominate Beast",
@@ -4513,8 +4436,7 @@
         "classes": [
             "Druid",
             "Sorcerer"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Dominate Person",
@@ -4547,8 +4469,7 @@
             "Bard",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Eldritch Blast",
@@ -4574,8 +4495,7 @@
             "Warlock"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "The spell creates multiple beams at higher levels: 1d10|Force|per=ray\n* 2 beams at Level 5 (scales on character level, sum of all class levels)\n* 3 beams at Level 10 (same)\nYou can either target a single creature or multiple creatures with the beams. Each beam rolls a separate Attack Roll.",
-        "isVariant": false
+        "higherLevels": "The spell creates multiple beams at higher levels: 1d10|Force|per=ray\n* 2 beams at Level 5 (scales on character level, sum of all class levels)\n* 3 beams at Level 10 (same)\nYou can either target a single creature or multiple creatures with the beams. Each beam rolls a separate Attack Roll."
     },
     {
         "name": "Elemental Weapon",
@@ -4626,8 +4546,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Elemental Weapon: Cold",
@@ -4636,24 +4555,23 @@
                 "school": 8,
                 "summary": "This spell is a variant of Elemental Weapon and imbues a weapon with icy might, granting it bonus Cold|Cold damage and a +1 Enchantment.",
                 "description": "Imbue a weapon with an icy might. It receives a +1 bonus to Attack Rolls and Damage Rolls1d4|Cold damage.",
-        "ritual": false,
-        "concentration": false,
+                "ritual": false,
+                "concentration": false,
                 "id": 9699,
                 "attackRoll": false,
-        "range": 1,
+                "range": 1,
                 "condition": "Elemental Weapon: Cold",
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
                     },
                     {
                         "resource": 14,
                         "amount": 1
                     }
-        ],
-                "classes": [],
-                "isVariant": true
+                ],
+                "classes": []
             },
             {
                 "name": "Elemental Weapon: Fire",
@@ -4678,8 +4596,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Elemental Weapon: Lightning",
@@ -4704,8 +4621,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Elemental Weapon: Thunder",
@@ -4730,11 +4646,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Enhance Ability",
@@ -4790,8 +4704,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd.",
-                "isVariant": true
+                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd."
             },
             {
                 "name": "Bull's Strength",
@@ -4817,8 +4730,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd.",
-                "isVariant": true
+                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd."
             },
             {
                 "name": "Cat's Grace",
@@ -4844,10 +4756,34 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd.",
-                "isVariant": true
+                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd."
             },
-            null,
+            {
+                "name": "Eagle's Splendour",
+                "image": "Eagle's Splendour.webp",
+                "level": 2,
+                "school": 8,
+                "summary": "This spell allows spellcasters to bestow a creature the elegance of an eagle. Affected creatures gain Advantage on Charisma Checks.",
+                "description": "Creature gains Advantage on Charisma Checks.",
+                "ritual": false,
+                "concentration": true,
+                "id": 2369,
+                "attackRoll": false,
+                "range": 2,
+                "condition": "Enhance Ability: Eagle's Splendour",
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 13,
+                        "amount": 1
+                    }
+                ],
+                "classes": [],
+                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd."
+            },
             {
                 "name": "Fox's Cunning",
                 "image": "Fox's Cunning.webp",
@@ -4872,8 +4808,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd.",
-                "isVariant": true
+                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd."
             },
             {
                 "name": "Owl's Wisdom",
@@ -4895,11 +4830,9 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd.",
-                "isVariant": true
+                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd."
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Enhance Leap",
@@ -4930,8 +4863,7 @@
             "Ranger",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Enlarge/Reduce",
@@ -4987,8 +4919,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Reduce",
@@ -5016,11 +4947,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Ensnaring Strike",
@@ -5079,49 +5008,46 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: Ensnared condition deals an extra 1d6|Piercing damage per level.",
-                "isVariant": true
+                "higherLevels": "Upcast: Ensnared condition deals an extra 1d6|Piercing damage per level."
             },
-    {
+            {
                 "name": "Ensnaring Strike (Melee)",
-        "damage": "weapon",
-        "image": "Ensnaring Strike Melee.webp",
-        "level": 1,
-        "school": 2,
+                "damage": "weapon",
+                "image": "Ensnaring Strike Melee.webp",
+                "level": 1,
+                "school": 2,
                 "summary": "This spell allows spellcasters to use melee weapon attacks to ensnare enemies with thorny vines and deal Piercing|Piercing damage to them each turn..",
-        "description": "Your attack summons thorny vines, dealing Physical|Weapon Damage and possibly Ensnaring your target.\n\nEnsnared creatures cannot move and take 1d6|Piercing damage at the start of each turn. An ally can use their Help Action to try and tear away the vines.",
-        "ritual": false,
-        "concentration": true,
-        "id": 2168,
-        "attackRoll": true,
-        "range": 2,
-        "condition": "Ensnared",
-        "conditionDuration": 10,
-        "conditionSave": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            },
-            {
-                "resource": 2,
-                "amount": 1
-            }
-        ],
+                "description": "Your attack summons thorny vines, dealing Physical|Weapon Damage and possibly Ensnaring your target.\n\nEnsnared creatures cannot move and take 1d6|Piercing damage at the start of each turn. An ally can use their Help Action to try and tear away the vines.",
+                "ritual": false,
+                "concentration": true,
+                "id": 2168,
+                "attackRoll": true,
+                "range": 2,
+                "condition": "Ensnared",
+                "conditionDuration": 10,
+                "conditionSave": 1,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 2,
+                        "amount": 1
+                    }
+                ],
                 "classes": [],
-        "higherLevels": "Upcast: Ensnared condition deals an extra 1d6|Piercing damage per level.",
-                "isVariant": true
+                "higherLevels": "Upcast: Ensnared condition deals an extra 1d6|Piercing damage per level."
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
-        "name": "Ensnaring Strike",
+        "name": "Ensnaring Strike (Ranged)",
         "damage": "weapon",
         "image": "Ensnaring Strike Ranged.webp",
         "level": 1,
         "school": 2,
-        "summary": "This spell allows spellcasters to use ranged weapon attacks to ensnare enemies with thorny vines and deal Piercing|Piercing damage to them each turn.\n\nThis spell is the ranged variant of Ensnaring Strike (Melee).",
+        "summary": "This spell allows spellcasters to use ranged weapon attacks to ensnare enemies with thorny vines and deal Piercing|Piercing damage to them each turn.",
         "description": "Your attack summons thorny vines, dealing Physical|Weapon Damage and possibly Ensnaring your target.\n\nEnsnared creatures cannot move and take 1d6|Piercing damage at the start of each turn. An ally can use their Help Action to try and tear away the vines.",
         "ritual": false,
         "concentration": true,
@@ -5141,17 +5067,8 @@
                 "amount": 1
             }
         ],
-        "classes": [
-            "Ranger",
-            "Oath of the Ancients"
-        ],
-        "noSpellSlot": false,
-        "higherLevels": "Upcast: Ensnared condition deals an extra 1d6|Piercing damage per level.",
-        "variants": [
-            null,
-            null
-        ],
-        "isVariant": false
+        "classes": [],
+        "higherLevels": "Upcast: Ensnared condition deals an extra 1d6|Piercing damage per level."
     },
     {
         "name": "Entangle",
@@ -5186,8 +5103,7 @@
         ],
         "classes": [
             "Druid"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Enthrall",
@@ -5219,8 +5135,7 @@
             "Bard",
             "Warlock"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits."
     },
     {
         "name": "Evard's Black Tentacles",
@@ -5260,8 +5175,7 @@
             "Wizard"
         ],
         "damageSave": 1,
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Expeditious Retreat",
@@ -5291,8 +5205,7 @@
             "Warlock",
             "Wizard"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Eyebite",
@@ -5352,8 +5265,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 5,
-                "isVariant": true
+                "damageSave": 5
             },
             {
                 "name": "Eyebite: Sickened",
@@ -5383,8 +5295,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 5,
-                "isVariant": true
+                "damageSave": 5
             },
             {
                 "name": "Eyebite: Asleep",
@@ -5414,11 +5325,9 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 5,
-                "isVariant": true
+                "damageSave": 5
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Faerie Fire",
@@ -5451,8 +5360,7 @@
             "Bard",
             "Druid"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "False Life",
@@ -5481,8 +5389,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level yields an extra 5 for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level yields an extra 5 for each Spell Slot Level above 1st."
     },
     {
         "name": "Fear",
@@ -5518,8 +5425,7 @@
             "Warlock",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits."
     },
     {
         "name": "Feather Fall",
@@ -5553,8 +5459,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Feign Death",
@@ -5588,8 +5493,7 @@
             "Druid",
             "Wizard"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Find Familiar",
@@ -5617,8 +5521,7 @@
         ],
         "classes": [
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Fire Bolt",
@@ -5646,8 +5549,7 @@
             "Wizard",
             "Sorcerer"
         ],
-        "higherLevels": "* When the spellcaster reaches Level 5, the damage increases by another d10|Fire Fire|1d10 Fire damage, for a total of 2d10|Fire.\n* When the spellcaster reaches Level 10, the damage increases by another d10|Fire Fire|1d10 Fire damage, for a total of 3d10|Fire.",
-        "isVariant": false
+        "higherLevels": "* When the spellcaster reaches Level 5, the damage increases by another d10|Fire Fire|1d10 Fire damage, for a total of 2d10|Fire.\n* When the spellcaster reaches Level 10, the damage increases by another d10|Fire Fire|1d10 Fire damage, for a total of 3d10|Fire."
     },
     {
         "name": "Fire Shield",
@@ -5699,8 +5601,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Fire Shield: Chill",
@@ -5726,11 +5627,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Fireball",
@@ -5767,8 +5666,7 @@
         ],
         "damageSave": 2,
         "damageSaveEffect": 0,
-        "higherLevels": "When the spell is cast using a 4th level slot or higher, damage increases by 1d6|Fire  for each spell slot level above 3rd.",
-        "isVariant": false
+        "higherLevels": "When the spell is cast using a 4th level slot or higher, damage increases by 1d6|Fire  for each spell slot level above 3rd."
     },
     {
         "name": "Flame Blade",
@@ -5791,8 +5689,7 @@
         "classes": [
             "Druid"
         ],
-        "higherLevels": "Upcast: When this spell is cast at 4th Level or higher, damage increases by 1d6|Fire for every two Spell Slot Levels above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: When this spell is cast at 4th Level or higher, damage increases by 1d6|Fire for every two Spell Slot Levels above 2nd."
     },
     {
         "name": "Flame Strike",
@@ -5828,8 +5725,7 @@
         ],
         "damageSave": 2,
         "damageSaveEffect": 0,
-        "higherLevels": "Deals an additional  1d6 | Fire damage and  1d6 | Radiant damage for each Spell Slot Level above 5th.",
-        "isVariant": false
+        "higherLevels": "Deals an additional  1d6 | Fire damage and  1d6 | Radiant damage for each Spell Slot Level above 5th."
     },
     {
         "name": "Flaming Sphere",
@@ -5864,8 +5760,7 @@
         ],
         "damageSave": 2,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Fire damage for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Fire damage for each Spell Slot Level above 2nd."
     },
     {
         "name": "Flesh to Stone",
@@ -5896,8 +5791,7 @@
             "Wizard",
             "Warlock"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Fog Cloud",
@@ -5939,8 +5833,7 @@
             "Wizard"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: When this spell is cast at 2nd level or higher, its area of effect increases by 2 m / 7 ft for each spell slot level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: When this spell is cast at 2nd level or higher, its area of effect increases by 2 m / 7 ft for each spell slot level above 1st."
     },
     {
         "name": "Freedom of Movement",
@@ -5970,8 +5863,7 @@
             "Cleric",
             "Druid",
             "Ranger"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Friends",
@@ -6000,8 +5892,7 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Gaseous Form",
@@ -6030,8 +5921,7 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Globe of Invulnerability",
@@ -6067,8 +5957,7 @@
         "classes": [
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Glyph of Warding",
@@ -6132,8 +6021,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Glyph of Warding: Detonation",
@@ -6161,8 +6049,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Glyph of Warding: Thunder",
@@ -6195,8 +6082,7 @@
                 "classes": [],
                 "damageSave": 2,
                 "damageSaveEffect": 0,
-                "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Thunder damage for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Thunder damage for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Glyph of Warding: Lightning",
@@ -6229,8 +6115,7 @@
                 "classes": [],
                 "damageSave": 2,
                 "damageSaveEffect": 0,
-                "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Lightning damage for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Lightning damage for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Glyph of Warding: Fire",
@@ -6263,8 +6148,7 @@
                 "classes": [],
                 "damageSave": 2,
                 "damageSaveEffect": 0,
-                "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Fire damage for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Fire damage for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Glyph of Warding: Cold",
@@ -6297,8 +6181,7 @@
                 "classes": [],
                 "damageSave": 2,
                 "damageSaveEffect": 0,
-                "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Cold damage for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Cold damage for each Spell Slot Level above 3rd."
             },
             {
                 "name": "Glyph of Warding: Acid",
@@ -6331,11 +6214,9 @@
                 "classes": [],
                 "damageSave": 2,
                 "damageSaveEffect": 0,
-                "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Acid damage for each Spell Slot Level above 3rd.",
-                "isVariant": true
+                "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Acid damage for each Spell Slot Level above 3rd."
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Goodberry",
@@ -6362,8 +6243,7 @@
         "classes": [
             "Druid",
             "Ranger"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Grant Flight",
@@ -6394,8 +6274,7 @@
             "Warlock",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 3rd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 3rd."
     },
     {
         "name": "Grasping Vine",
@@ -6422,8 +6301,7 @@
         ],
         "classes": [
             "Druid"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Grease",
@@ -6461,8 +6339,7 @@
         "classes": [
             "Wizard"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Greater Invisibility",
@@ -6493,8 +6370,7 @@
         "classes": [
             "Bard",
             "Sorcerer Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Greater Restoration",
@@ -6522,8 +6398,7 @@
             "Bard",
             "Cleric",
             "Druid"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Guardian of Faith",
@@ -6550,8 +6425,7 @@
         ],
         "classes": [
             "Cleric"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Guidance",
@@ -6576,8 +6450,7 @@
         "classes": [
             "Cleric",
             "Druid"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Guiding Bolt",
@@ -6611,8 +6484,7 @@
             "Cleric"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: Deals an additional 1d6|Radiant damage per level.",
-        "isVariant": false
+        "higherLevels": "Upcast: Deals an additional 1d6|Radiant damage per level."
     },
     {
         "name": "Gust of Wind",
@@ -6647,8 +6519,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits."
     },
     {
         "name": "Hail of Thorns",
@@ -6686,8 +6557,7 @@
             "Ranger"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "* When the spell is cast at 2nd Level or higher, the addition AoE damage increases by 1d10|Piercing for each spell slot level above 1st.",
-        "isVariant": false
+        "higherLevels": "* When the spell is cast at 2nd Level or higher, the addition AoE damage increases by 1d10|Piercing for each spell slot level above 1st."
     },
     {
         "name": "Harm",
@@ -6719,8 +6589,7 @@
             "Cleric"
         ],
         "damageSave": 3,
-        "damageSaveEffect": 0,
-        "isVariant": false
+        "damageSaveEffect": 0
     },
     {
         "name": "Haste",
@@ -6750,8 +6619,7 @@
         "classes": [
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Heal",
@@ -6780,8 +6648,7 @@
         "classes": [
             "Cleric",
             "Druid"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Healing Word",
@@ -6814,8 +6681,7 @@
             "Cleric",
             "Druid"
         ],
-        "higherLevels": "Upcast: Heals an additional 1d4|Healing for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Heals an additional 1d4|Healing for each Spell Slot Level above 1st."
     },
     {
         "name": "Heat Metal",
@@ -6848,8 +6714,7 @@
             "Bard",
             "Druid"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Fire damage for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Fire damage for each Spell Slot Level above 2nd."
     },
     {
         "name": "Hellish Rebuke",
@@ -6879,8 +6744,7 @@
         ],
         "damageSave": 2,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Deals an additional 1d10|Fire damage per level.",
-        "isVariant": false
+        "higherLevels": "Upcast: Deals an additional 1d10|Fire damage per level."
     },
     {
         "name": "Heroes' Feast",
@@ -6911,8 +6775,7 @@
         "classes": [
             "Cleric",
             "Druid"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Heroism",
@@ -6942,8 +6805,7 @@
             "Bard",
             "Paladin"
         ],
-        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st."
     },
     {
         "name": "Hex",
@@ -6995,8 +6857,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Hex (Dexterity)",
@@ -7022,8 +6883,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Hex (Constitution)",
@@ -7049,8 +6909,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Hex (Intelligence)",
@@ -7076,8 +6935,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Hex (Wisdom)",
@@ -7103,8 +6961,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Hex (Charisma)",
@@ -7131,11 +6988,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Hold Monster",
@@ -7167,8 +7022,7 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Hold Person",
@@ -7203,8 +7057,7 @@
             "Warlock",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 2nd."
     },
     {
         "name": "Hunger of Hadar",
@@ -7244,8 +7097,7 @@
         "classes": [
             "Warlock"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Hunter's Mark",
@@ -7273,8 +7125,7 @@
         "classes": [
             "Ranger"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Hypnotic Pattern",
@@ -7309,8 +7160,7 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Ice Knife",
@@ -7355,8 +7205,7 @@
             "Wizard"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Cold damage for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Cold damage for each Spell Slot Level above 1st."
     },
     {
         "name": "Ice Storm",
@@ -7402,8 +7251,7 @@
         ],
         "damageSave": 2,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Bludgeoning damage for each Spell Slot Level above 4th.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Bludgeoning damage for each Spell Slot Level above 4th."
     },
     {
         "name": "Inflict Wounds",
@@ -7433,8 +7281,7 @@
             "Cleric"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: Deals an additional 1d10|Necrotic damage per level.",
-        "isVariant": false
+        "higherLevels": "Upcast: Deals an additional 1d10|Necrotic damage per level."
     },
     {
         "name": "Insect Plague",
@@ -7480,8 +7327,7 @@
         ],
         "damageSave": 3,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d10|Piercing damage for each Spell Slot Level above 5th.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d10|Piercing damage for each Spell Slot Level above 5th."
     },
     {
         "name": "Invisibility",
@@ -7514,8 +7360,7 @@
             "Wizard"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 2nd."
     },
     {
         "name": "Knock",
@@ -7543,8 +7388,7 @@
             "Bard",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Lesser Restoration",
@@ -7574,8 +7418,7 @@
             "Druid",
             "Paladin",
             "Ranger"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Light",
@@ -7602,8 +7445,7 @@
             "Cleric",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Lightning Arrow",
@@ -7637,8 +7479,7 @@
         "classes": [
             "Ranger"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Lightning Bolt",
@@ -7673,8 +7514,7 @@
         ],
         "damageSave": 2,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Lightning for each Spell Slot Level above 3rd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Lightning for each Spell Slot Level above 3rd."
     },
     {
         "name": "Longstrider",
@@ -7706,8 +7546,7 @@
             "Wizard"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: Affect an additional target for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affect an additional target for each Spell Slot Level above 1st."
     },
     {
         "name": "Mage Armour",
@@ -7736,8 +7575,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Mage Hand",
@@ -7763,8 +7601,7 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Magic Missile",
@@ -7798,8 +7635,7 @@
         ],
         "damageSaveEffect": 1,
         "damagePer": "dart",
-        "higherLevels": "When the spell is cast at 2nd Level or higher, an additional dart is created for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "When the spell is cast at 2nd Level or higher, an additional dart is created for each Spell Slot Level above 1st."
     },
     {
         "name": "Magic Weapon",
@@ -7828,8 +7664,7 @@
             "Paladin",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Casting this spell using a 4th or 5th level Spell Slot will increase the bonus by 2, and a 6th level Spell Slot will increase it by 3.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell using a 4th or 5th level Spell Slot will increase the bonus by 2, and a 6th level Spell Slot will increase it by 3."
     },
     {
         "name": "Mass Cure Wounds",
@@ -7860,8 +7695,7 @@
             "Cleric",
             "Druid"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level heals an extra 1d8|Healing for each Spell Slot Level above 5th.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level heals an extra 1d8|Healing for each Spell Slot Level above 5th."
     },
     {
         "name": "Mass Healing Word",
@@ -7893,8 +7727,7 @@
         "classes": [
             "Cleric"
         ],
-        "higherLevels": "When this spell is cast using a 4th level slot or higher, targets heal an extra 1d4|Healing for each Spell Slot Level above 3rd.",
-        "isVariant": false
+        "higherLevels": "When this spell is cast using a 4th level slot or higher, targets heal an extra 1d4|Healing for each Spell Slot Level above 3rd."
     },
     {
         "name": "Melf's Acid Arrow",
@@ -7931,8 +7764,7 @@
             "Wizard"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 2d4|Acid damage (1d4|Acid on impact and at the end of target's turn) for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 2d4|Acid damage (1d4|Acid on impact and at the end of target's turn) for each Spell Slot Level above 2nd."
     },
     {
         "name": "Minor Illusion",
@@ -7959,8 +7791,7 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Mirror Image",
@@ -7990,8 +7821,7 @@
             "Sorcerer",
             "Wizard",
             "Warlock"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Misty Step",
@@ -8021,8 +7851,7 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Moonbeam",
@@ -8057,8 +7886,7 @@
         "damageSave": 3,
         "damageSaveEffect": 0,
         "damagePer": "turn",
-        "higherLevels": "Upcast: When the spell is cast at 3rd level or higher, damage increases by 1d10|Radiant for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: When the spell is cast at 3rd level or higher, damage increases by 1d10|Radiant for each Spell Slot Level above 2nd."
     },
     {
         "name": "Otiluke's Freezing Sphere",
@@ -8089,7 +7917,39 @@
         "damageSave": 3,
         "damageSaveEffect": 1,
         "variants": [
-            null,
+            {
+                "name": "Otiluke's Freezing Sphere",
+                "damage": "10d6",
+                "damageType": 5,
+                "image": "Otiluke's Freezing Sphere Launch.webp",
+                "level": 6,
+                "school": 5,
+                "description": "Launch a ball of churning ice that explodes and damages all creatures and objects within range.",
+                "ritual": false,
+                "concentration": false,
+                "id": 29489,
+                "attackRoll": false,
+                "range": 2,
+                "areaName": "Ice",
+                "areaCategory": 2,
+                "areaShape": 1,
+                "areaRangeM": 6,
+                "areaRangeFt": 20,
+                "areaDuration": 10,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 17,
+                        "amount": 1
+                    }
+                ],
+                "classes": [],
+                "damageSave": 3,
+                "damageSaveEffect": 1
+            },
             {
                 "name": "Otiluke's Conveniently Portable Freezing Sphere",
                 "damage": "10d6",
@@ -8117,11 +7977,9 @@
                 ],
                 "classes": [],
                 "damageSave": 3,
-                "damageSaveEffect": 1,
-                "isVariant": true
+                "damageSaveEffect": 1
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Otiluke's Resilient Sphere",
@@ -8152,8 +8010,7 @@
         "classes": [
             "Wizard"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Otto's Irresistible Dance",
@@ -8184,8 +8041,7 @@
         "classes": [
             "Bard",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Pass Without Trace",
@@ -8216,8 +8072,7 @@
         "classes": [
             "Druid",
             "Ranger"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Phantasmal Force",
@@ -8248,8 +8103,7 @@
             "Bard",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Phantasmal Killer",
@@ -8279,8 +8133,7 @@
         "classes": [
             "Wizard"
         ],
-        "higherLevels": "* When this spell is cast at 5th Level or higher, it deals an additional 1d10|Psychic damage per level per turn.",
-        "isVariant": false
+        "higherLevels": "* When this spell is cast at 5th Level or higher, it deals an additional 1d10|Psychic damage per level per turn."
     },
     {
         "name": "Planar Ally",
@@ -8330,8 +8183,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Planar Ally: Deva",
@@ -8355,8 +8207,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Planar Ally: Cambion",
@@ -8380,11 +8231,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Planar Binding",
@@ -8416,8 +8265,7 @@
             "Cleric",
             "Druid",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Plant Growth",
@@ -8451,8 +8299,7 @@
             "Bard",
             "Druid",
             "Ranger"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Poison Spray",
@@ -8482,8 +8329,7 @@
             "Wizard"
         ],
         "damageSave": 3,
-        "higherLevels": "* When the spellcaster reaches Level 5, the damage increases by another d12|Poison Poison|1d12 Poison damage, for a total of 2d12|Poison.\n* When the spellcaster reaches Level 10, the damage increases by another d12|Poison Poison|1d12 Poison damage, for a total of 3d12|Poison.",
-        "isVariant": false
+        "higherLevels": "* When the spellcaster reaches Level 5, the damage increases by another d12|Poison Poison|1d12 Poison damage, for a total of 2d12|Poison.\n* When the spellcaster reaches Level 10, the damage increases by another d12|Poison Poison|1d12 Poison damage, for a total of 3d12|Poison."
     },
     {
         "name": "Polymorph",
@@ -8517,8 +8363,7 @@
             "Druid",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Prayer of Healing",
@@ -8550,8 +8395,7 @@
         "classes": [
             "Cleric"
         ],
-        "higherLevels": "When the spell is cast at 3rd Level or higher, heal a target an extra 1d8|Healing for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "When the spell is cast at 3rd Level or higher, heal a target an extra 1d8|Healing for each Spell Slot Level above 2nd."
     },
     {
         "name": "Produce Flame",
@@ -8575,8 +8419,7 @@
         "classes": [
             "Cleric",
             "Druid"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Protection from Energy",
@@ -8632,8 +8475,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Protection from Energy: Cold",
@@ -8658,8 +8500,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Protection from Energy: Fire",
@@ -8684,8 +8525,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Protection from Energy: Lightning",
@@ -8710,8 +8550,7 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             },
             {
                 "name": "Protection from Energy: Thunder",
@@ -8736,11 +8575,9 @@
                         "amount": 1
                     }
                 ],
-                "classes": [],
-                "isVariant": true
+                "classes": []
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Protection from Evil and Good",
@@ -8770,8 +8607,7 @@
             "Warlock",
             "Wizard",
             "Paladin"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Protection from Poison",
@@ -8801,8 +8637,7 @@
             "Druid",
             "Paladin",
             "Ranger"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Ray of Enfeeblement",
@@ -8832,8 +8667,7 @@
         "classes": [
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Ray of Frost",
@@ -8863,8 +8697,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d8|Cold.\nWhen the spellcaster reaches Level 10, the damage increases to 3d8|Cold.",
-        "isVariant": false
+        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d8|Cold.\nWhen the spellcaster reaches Level 10, the damage increases to 3d8|Cold."
     },
     {
         "name": "Ray of Sickness",
@@ -8898,8 +8731,7 @@
             "Wizard"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Poison damage for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Poison damage for each Spell Slot Level above 1st."
     },
     {
         "name": "Remove Curse",
@@ -8928,8 +8760,7 @@
             "Paladin",
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Resistance",
@@ -8954,8 +8785,7 @@
         "classes": [
             "Cleric",
             "Druid"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Revivify",
@@ -8987,8 +8817,7 @@
             "Cleric",
             "Paladin"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Sacred Flame",
@@ -9016,8 +8845,7 @@
             "Cleric"
         ],
         "damageSave": 2,
-        "higherLevels": "* When the spellcaster reaches Level 5, the damage increases to 2d8|Radiant.\n* When the spellcaster reaches Level 10, the damage increases to 3d8|Radiant.",
-        "isVariant": false
+        "higherLevels": "* When the spellcaster reaches Level 5, the damage increases to 2d8|Radiant.\n* When the spellcaster reaches Level 10, the damage increases to 3d8|Radiant."
     },
     {
         "name": "Sanctuary",
@@ -9047,8 +8875,7 @@
             "Cleric",
             "Paladin"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Scorching Ray",
@@ -9079,8 +8906,7 @@
             "Wizard"
         ],
         "damagePer": "ray",
-        "higherLevels": "Upcast: Casting this spell at a higher level hurls an additional ray for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level hurls an additional ray for each Spell Slot Level above 2nd."
     },
     {
         "name": "Searing Smite",
@@ -9117,8 +8943,7 @@
         "classes": [
             "Paladin"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Fire initial damage for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Fire initial damage for each Spell Slot Level above 1st."
     },
     {
         "name": "See Invisibility",
@@ -9150,8 +8975,7 @@
             "Bard",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Seeming",
@@ -9180,8 +9004,7 @@
             "Bard",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Shatter",
@@ -9218,8 +9041,7 @@
         ],
         "damageSave": 3,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Thunder damage for each Spell Slot Level above 2nd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Thunder damage for each Spell Slot Level above 2nd."
     },
     {
         "name": "Shield",
@@ -9248,8 +9070,7 @@
         "classes": [
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Shield of Faith",
@@ -9277,8 +9098,7 @@
         "classes": [
             "Cleric",
             "Paladin"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Shillelagh",
@@ -9302,8 +9122,7 @@
         ],
         "classes": [
             "Druid"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Shocking Grasp",
@@ -9331,8 +9150,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d8|Lightning.\nWhen the spellcaster reaches Level 10, the damage increases to 3d8|Lightning.",
-        "isVariant": false
+        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d8|Lightning.\nWhen the spellcaster reaches Level 10, the damage increases to 3d8|Lightning."
     },
     {
         "name": "Silence",
@@ -9369,8 +9187,7 @@
             "Cleric",
             "Ranger"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Sleep",
@@ -9402,8 +9219,7 @@
             "Wizard"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: Affect creatures with more hit points at higher levels. The total hit points of creatures this spell can affect is increased by 8 hit points per level.",
-        "isVariant": false
+        "higherLevels": "Upcast: Affect creatures with more hit points at higher levels. The total hit points of creatures this spell can affect is increased by 8 hit points per level."
     },
     {
         "name": "Sleet Storm",
@@ -9439,8 +9255,7 @@
             "Druid",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Slow",
@@ -9471,8 +9286,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSave": 5,
-        "isVariant": false
+        "damageSave": 5
     },
     {
         "name": "Speak with Animals",
@@ -9501,8 +9315,7 @@
             "Bard",
             "Druid",
             "Ranger"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Speak with Dead",
@@ -9532,8 +9345,7 @@
             "Bard",
             "Cleric"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Spike Growth",
@@ -9568,8 +9380,7 @@
         "classes": [
             "Druid",
             "Ranger"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Spirit Guardians",
@@ -9605,10 +9416,77 @@
         ],
         "higherLevels": "When the spell is cast using a 4th Level spell slot or higher, damage increases by 1d8|Radiant or 1d8|Necrotic damage for each spell slot level above 3rd.",
         "variants": [
-            null,
-            null
-        ],
-        "isVariant": false
+            {
+                "name": "Spirit Guardians: Radiant",
+                "damage": "3d8",
+                "damageType": 10,
+                "image": "Spirit Guardians.webp",
+                "level": 3,
+                "school": 2,
+                "summary": "This spell is a variation of the spell Spirit Guardians. This variant deals Radiant damage as well as slows the Movement of nearby enemies.",
+                "description": "Call forth spirits to protect the area around you. Nearby enemies take 3d8|Radiant damage per turn, and their Movement Speed is halved. Lasts for 10 turns.\n\nOn a successful Save, targets still take half damage. \n\nCaster can't become Invisible while Concentrating on this spell.",
+                "ritual": false,
+                "concentration": true,
+                "id": 2718,
+                "attackRoll": false,
+                "range": 3,
+                "aoe": 1,
+                "aoeM": 3,
+                "aoeFt": 10,
+                "condition": "Spirit Guardians Aura",
+                "conditionDuration": 10,
+                "conditionSave": 5,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 14,
+                        "amount": 1
+                    }
+                ],
+                "classes": [],
+                "damageSave": 5,
+                "damageSaveEffect": 0,
+                "higherLevels": "When the spell is cast using a 4th Level spell slot or higher, damage increases by 1d8|Radiant damage for each spell slot level above 3rd."
+            },
+            {
+                "name": "Spirit Guardians: Necrotic",
+                "damage": "3d8",
+                "damageType": 11,
+                "image": "Spirit Guardians Icon.png",
+                "level": 3,
+                "school": 2,
+                "summary": "This spell is a variation of the spell Spirit Guardians. This variant deals Necrotic damage as well as slows the Movement of nearby enemies.",
+                "description": "Call forth spirits to protect the area around you. Nearby enemies take 3d8|Necrotic damage per turn, and their Movement Speed is halved. Lasts for 10 turns.\n\nOn a successful Save, targets still take half damage. \n\nCaster can't become Invisible while Concentrating on this spell.",
+                "ritual": false,
+                "concentration": true,
+                "id": 2719,
+                "attackRoll": false,
+                "range": 3,
+                "aoe": 1,
+                "aoeM": 3,
+                "aoeFt": 10,
+                "condition": "Spirit Guardians Aura",
+                "conditionDuration": 10,
+                "conditionSave": 5,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 14,
+                        "amount": 1
+                    }
+                ],
+                "classes": [],
+                "damageSave": 5,
+                "damageSaveEffect": 0,
+                "higherLevels": "When the spell is cast using a 4th Level spell slot or higher, damage increases by 1d8|Necrotic damage for each spell slot level above 3rd."
+            }
+        ]
     },
     {
         "name": "Spiritual Weapon",
@@ -9667,8 +9545,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8|Healing and deals an additional 1d8|Force damage.",
-                "isVariant": true
+                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8|Healing and deals an additional 1d8|Force damage."
             },
             {
                 "name": "Spiritual Weapon: Greatsword",
@@ -9698,8 +9575,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8 and deals an additional 1d8|Force damage.",
-                "isVariant": true
+                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8 and deals an additional 1d8|Force damage."
             },
             {
                 "name": "Spiritual Weapon: Halberd",
@@ -9729,8 +9605,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8|Healing and deals an additional 1d8|Force damage.",
-                "isVariant": true
+                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8|Healing and deals an additional 1d8|Force damage."
             },
             {
                 "name": "Spiritual Weapon: Maul",
@@ -9760,8 +9635,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8|Healing and deals an additional 1d8|Force damage.",
-                "isVariant": true
+                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8|Healing and deals an additional 1d8|Force damage."
             },
             {
                 "name": "Spiritual Weapon: Spear",
@@ -9791,8 +9665,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8|Healing and deals an additional 1d8|Force damage.",
-                "isVariant": true
+                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8|Healing and deals an additional 1d8|Force damage."
             },
             {
                 "name": "Spiritual Weapon: Trident",
@@ -9822,11 +9695,9 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8|Healing and deals an additional 1d8|Force damage.",
-                "isVariant": true
+                "higherLevels": "Upcast: For every 2 Spell Slot Levels higher than the original, the weapon gains 8|Healing and deals an additional 1d8|Force damage."
             }
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Staggering Smite",
@@ -9859,8 +9730,7 @@
         "classes": [
             "Paladin"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Stinking Cloud",
@@ -9894,8 +9764,7 @@
             "Bard",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Stoneskin",
@@ -9924,8 +9793,7 @@
             "Druid",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Sunbeam",
@@ -9963,8 +9831,7 @@
             "Wizard"
         ],
         "damageSave": 3,
-        "damageSaveEffect": 0,
-        "isVariant": false
+        "damageSaveEffect": 0
     },
     {
         "name": "Tasha's Hideous Laughter",
@@ -9997,8 +9864,7 @@
             "Bard",
             "Wizard"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Telekinesis",
@@ -10030,8 +9896,7 @@
         "classes": [
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Thaumaturgy",
@@ -10056,8 +9921,7 @@
         "classes": [
             "Cleric"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Thorn Whip",
@@ -10083,8 +9947,7 @@
         "classes": [
             "Druid"
         ],
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d6|Piercing.\nWhen the spellcaster reaches Level 10, the damage increases to 3d6|Piercing.",
-        "isVariant": false
+        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d6|Piercing.\nWhen the spellcaster reaches Level 10, the damage increases to 3d6|Piercing."
     },
     {
         "name": "Thunderous Smite",
@@ -10121,8 +9984,7 @@
         "classes": [
             "Paladin"
         ],
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Thunderwave",
@@ -10159,8 +10021,7 @@
         ],
         "damageSave": 3,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Thunder damage for each Spell Slot Level above 1st.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Thunder damage for each Spell Slot Level above 1st."
     },
     {
         "name": "True Strike",
@@ -10187,8 +10048,7 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Vampiric Touch",
@@ -10220,8 +10080,7 @@
             "Warlock",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Necrotic damage for each Spell Slot Level above 3rd.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Necrotic damage for each Spell Slot Level above 3rd."
     },
     {
         "name": "Vicious Mockery",
@@ -10251,8 +10110,7 @@
             "Bard"
         ],
         "damageSave": 5,
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d4|Psychic.\nWhen the spellcaster reaches Level 10, the damage increases to 3d4|Psychic.",
-        "isVariant": false
+        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d4|Psychic.\nWhen the spellcaster reaches Level 10, the damage increases to 3d4|Psychic."
     },
     {
         "name": "Wall of Fire",
@@ -10296,8 +10154,7 @@
         ],
         "damageSave": 2,
         "damageSaveEffect": 0,
-        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Fire damage for each Spell Slot Level above 4th.",
-        "isVariant": false
+        "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Fire damage for each Spell Slot Level above 4th."
     },
     {
         "name": "Wall of Ice",
@@ -10337,8 +10194,7 @@
             "Wizard"
         ],
         "damageSave": 2,
-        "damageSaveEffect": 1,
-        "isVariant": false
+        "damageSaveEffect": 1
     },
     {
         "name": "Wall of Stone",
@@ -10368,8 +10224,7 @@
             "Druid",
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Wall of Thorns",
@@ -10407,8 +10262,7 @@
             "Druid"
         ],
         "damageSave": 2,
-        "damageSaveEffect": 0,
-        "isVariant": false
+        "damageSaveEffect": 0
     },
     {
         "name": "Warden of Vitality",
@@ -10436,8 +10290,7 @@
         ],
         "classes": [
             "Paladin"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Warding Bond",
@@ -10464,8 +10317,7 @@
         ],
         "classes": [
             "Cleric"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Web",
@@ -10501,8 +10353,7 @@
         "classes": [
             "Sorcerer",
             "Wizard"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Wind Walk",
@@ -10530,8 +10381,7 @@
         ],
         "classes": [
             "Druid"
-        ],
-        "isVariant": false
+        ]
     },
     {
         "name": "Witch Bolt",
@@ -10565,8 +10415,7 @@
             "Wizard"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "Upcast: The initial damage increases by 1d12|Lightning per level. Damage on subsequent turns is always 1d12|Lightning",
-        "isVariant": false
+        "higherLevels": "Upcast: The initial damage increases by 1d12|Lightning per level. Damage on subsequent turns is always 1d12|Lightning"
     },
     {
         "name": "Wrathful Smite",
@@ -10602,7 +10451,6 @@
         ],
         "classes": [
             "Paladin"
-        ],
-        "isVariant": false
+        ]
     }
 ]
