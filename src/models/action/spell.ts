@@ -1,8 +1,5 @@
 import {
-    ActionCostBehavior,
     ActionDamageSaveEffect,
-    ActionResource,
-    ActionResourceFromString,
     ISpell,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { AbilityScore } from '@jorgenswiderski/tomekeeper-shared/dist/types/ability';
@@ -11,11 +8,7 @@ import { PageNotFoundError } from '../errors';
 import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
 import { ActionBase } from './action-base';
 import { error } from '../logger';
-import {
-    MediaWikiTemplateParserConfigItem,
-    MediaWikiTemplateParserConfig,
-    IPageData,
-} from '../media-wiki/types';
+import { MediaWikiTemplateParserConfig } from '../media-wiki/types';
 
 let spellData: Spell[];
 let spellDataById: Map<number, Spell> | null = null;
@@ -32,66 +25,6 @@ export class Spell extends ActionBase implements Partial<ISpell> {
 
     constructor(pageTitle: string) {
         super(pageTitle, 'SpellPage');
-    }
-
-    protected async parseCosts(): Promise<void> {
-        if (!this.page?.content) {
-            throw new PageNotFoundError();
-        }
-
-        const actionResourceParser = (
-            value: string,
-            config: MediaWikiTemplateParserConfigItem,
-            page: IPageData,
-        ) => {
-            const values = value.split(',').map((val) => val.trim());
-
-            if (
-                !values.every(
-                    (val) => value === '' || val in ActionResourceFromString,
-                )
-            ) {
-                error(
-                    `Failed to map '${config.key}' value '${value}' to enum (${page.title}).`,
-                );
-            }
-
-            const isHitCost = value === 'hit cost';
-
-            return values.map((val) => ({
-                resource: ActionResourceFromString[val],
-                amount: 1,
-                behavior: isHitCost ? ActionCostBehavior.onHit : undefined,
-            }));
-        };
-
-        // FIXME
-        const defaultCost = [{ resource: ActionResource.action, amount: 1 }];
-
-        if (this.level && this.level > 0) {
-            defaultCost.push({
-                resource: ActionResource[
-                    `spellSlot${this.level}` as any
-                ] as unknown as ActionResource,
-                amount: 1,
-            });
-        }
-
-        const config: MediaWikiTemplateParserConfig = {
-            cost: {
-                parser: actionResourceParser,
-                default: defaultCost,
-            },
-            hitCost: {
-                key: 'hit cost',
-                parser: actionResourceParser,
-                default: [],
-            },
-        };
-
-        const template = await this.page.getTemplate(this.templateName);
-        const { cost, hitCost } = template.parse(config);
-        this.costs = [...cost, ...hitCost];
     }
 
     protected async initData(): Promise<void> {
@@ -155,7 +88,6 @@ export class Spell extends ActionBase implements Partial<ISpell> {
 
         const template = await this.page.getTemplate(this.templateName);
         Object.assign(this, template.parse(config));
-        this.parseCosts();
 
         if (this.classes && this.classes.length > 0) {
             this.markUsed();

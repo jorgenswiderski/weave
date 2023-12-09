@@ -499,11 +499,13 @@
             },
             {
                 "resource": 2,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             },
             {
                 "resource": 16,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             }
         ],
         "classes": [
@@ -534,11 +536,13 @@
                     },
                     {
                         "resource": 2,
-                        "amount": 1
+                        "amount": 1,
+                        "behavior": 2
                     },
                     {
                         "resource": 16,
-                        "amount": 1
+                        "amount": 1,
+                        "behavior": 2
                     }
                 ],
                 "classes": []
@@ -567,11 +571,13 @@
                     },
                     {
                         "resource": 2,
-                        "amount": 1
+                        "amount": 1,
+                        "behavior": 2
                     },
                     {
                         "resource": 16,
-                        "amount": 1
+                        "amount": 1,
+                        "behavior": 2
                     }
                 ],
                 "classes": []
@@ -1104,11 +1110,13 @@
             },
             {
                 "resource": 2,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             },
             {
                 "resource": 14,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             }
         ],
         "classes": [
@@ -1263,11 +1271,13 @@
             },
             {
                 "resource": 2,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             },
             {
                 "resource": 13,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             }
         ],
         "classes": [
@@ -1301,11 +1311,13 @@
                     },
                     {
                         "resource": 2,
-                        "amount": 1
+                        "amount": 1,
+                        "behavior": 2
                     },
                     {
                         "resource": 13,
-                        "amount": 1
+                        "amount": 1,
+                        "behavior": 2
                     }
                 ],
                 "classes": [],
@@ -1337,11 +1349,13 @@
                     },
                     {
                         "resource": 2,
-                        "amount": 1
+                        "amount": 1,
+                        "behavior": 2
                     },
                     {
                         "resource": 13,
-                        "amount": 1
+                        "amount": 1,
+                        "behavior": 2
                     }
                 ],
                 "classes": [],
@@ -4365,7 +4379,8 @@
             },
             {
                 "resource": 12,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             }
         ],
         "classes": [
@@ -4940,7 +4955,13 @@
             },
             {
                 "resource": 2,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
+            },
+            {
+                "resource": 12,
+                "amount": 1,
+                "behavior": 2
             }
         ],
         "classes": [
@@ -4971,7 +4992,13 @@
                     },
                     {
                         "resource": 2,
-                        "amount": 1
+                        "amount": 1,
+                        "behavior": 2
+                    },
+                    {
+                        "resource": 12,
+                        "amount": 1,
+                        "behavior": 2
                     }
                 ],
                 "classes": [],
@@ -5000,7 +5027,13 @@
                     },
                     {
                         "resource": 2,
-                        "amount": 1
+                        "amount": 1,
+                        "behavior": 2
+                    },
+                    {
+                        "resource": 12,
+                        "amount": 1,
+                        "behavior": 2
                     }
                 ],
                 "classes": [],
@@ -8871,11 +8904,13 @@
             },
             {
                 "resource": 2,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             },
             {
                 "resource": 12,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             }
         ],
         "classes": [
@@ -9662,7 +9697,8 @@
             },
             {
                 "resource": 2,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             }
         ],
         "classes": [
@@ -9912,11 +9948,13 @@
             },
             {
                 "resource": 2,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             },
             {
                 "resource": 12,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             }
         ],
         "classes": [
@@ -10380,11 +10418,13 @@
             },
             {
                 "resource": 2,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             },
             {
                 "resource": 12,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             }
         ],
         "classes": [

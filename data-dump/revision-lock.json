@@ -139,6 +139,7 @@
         "Template:inflicts": "Template:Inflicts",
         "Template:legendary": "Template:Legendary",
         "Template:main namespace only": "Template:Main namespace only",
+        "Template:math": "Template:Math",
         "Template:mdRarityItem": "Template:MdRarityItem",
         "Template:nbts": "Template:Nbts",
         "Template:note": "Template:Note",
@@ -169,6 +170,7 @@
         "Template:under construction": "Template:Under construction",
         "Template:up to date": "Template:Up to date",
         "Template:verify": "Template:Verify",
+        "Template:weight": "Template:Weight",
         "Temple of Bhaal": "Bhaal Temple",
         "The Adamantine Forge (Location)": "Adamantine Forge (Location)",
         "The_Risen_Road": "The Risen Road",
@@ -519,7 +521,7 @@
         },
         {
             "pageId": 664,
-            "revisionId": 112550,
+            "revisionId": 125297,
             "title": "Wild Shape"
         },
         {
@@ -529,7 +531,7 @@
         },
         {
             "pageId": 684,
-            "revisionId": 109284,
+            "revisionId": 125269,
             "title": "Natural Recovery"
         },
         {
@@ -554,7 +556,7 @@
         },
         {
             "pageId": 720,
-            "revisionId": 109286,
+            "revisionId": 125273,
             "title": "Preserve Life"
         },
         {
@@ -564,7 +566,7 @@
         },
         {
             "pageId": 728,
-            "revisionId": 109371,
+            "revisionId": 125274,
             "title": "Radiance of the Dawn"
         },
         {
@@ -579,12 +581,12 @@
         },
         {
             "pageId": 736,
-            "revisionId": 109277,
+            "revisionId": 125265,
             "title": "Invoke Duplicity"
         },
         {
             "pageId": 741,
-            "revisionId": 109388,
+            "revisionId": 125296,
             "title": "Turn Undead"
         },
         {
@@ -614,17 +616,17 @@
         },
         {
             "pageId": 771,
-            "revisionId": 109369,
+            "revisionId": 114685,
             "title": "Pushing Attack (Melee)"
         },
         {
             "pageId": 775,
-            "revisionId": 109293,
+            "revisionId": 125061,
             "title": "Rally"
         },
         {
             "pageId": 780,
-            "revisionId": 109295,
+            "revisionId": 125279,
             "title": "Riposte"
         },
         {
@@ -634,7 +636,7 @@
         },
         {
             "pageId": 785,
-            "revisionId": 108860,
+            "revisionId": 120170,
             "title": "Disarming Attack (Melee)"
         },
         {
@@ -709,12 +711,12 @@
         },
         {
             "pageId": 882,
-            "revisionId": 92599,
+            "revisionId": 125068,
             "title": "Sneak Attack (Melee)"
         },
         {
             "pageId": 883,
-            "revisionId": 92600,
+            "revisionId": 125067,
             "title": "Sneak Attack (Ranged)"
         },
         {
@@ -784,7 +786,7 @@
         },
         {
             "pageId": 1085,
-            "revisionId": 109287,
+            "revisionId": 125132,
             "title": "Rage"
         },
         {
@@ -799,7 +801,7 @@
         },
         {
             "pageId": 1103,
-            "revisionId": 109242,
+            "revisionId": 125258,
             "title": "Frenzy"
         },
         {
@@ -829,7 +831,7 @@
         },
         {
             "pageId": 1147,
-            "revisionId": 109288,
+            "revisionId": 125300,
             "title": "Rage: Bear Heart"
         },
         {
@@ -839,37 +841,37 @@
         },
         {
             "pageId": 1149,
-            "revisionId": 91922,
+            "revisionId": 123306,
             "title": "Dash"
         },
         {
             "pageId": 1150,
-            "revisionId": 114509,
+            "revisionId": 118134,
             "title": "Diving Strike"
         },
         {
             "pageId": 1151,
-            "revisionId": 109289,
+            "revisionId": 125275,
             "title": "Rage: Eagle Heart"
         },
         {
             "pageId": 1152,
-            "revisionId": 114512,
+            "revisionId": 120526,
             "title": "Primal Stampede"
         },
         {
             "pageId": 1153,
-            "revisionId": 109290,
+            "revisionId": 125133,
             "title": "Rage: Elk Heart"
         },
         {
             "pageId": 1154,
-            "revisionId": 109291,
+            "revisionId": 125059,
             "title": "Rage: Tiger Heart"
         },
         {
             "pageId": 1155,
-            "revisionId": 114514,
+            "revisionId": 117433,
             "title": "Tiger's Bloodlust"
         },
         {
@@ -879,7 +881,7 @@
         },
         {
             "pageId": 1157,
-            "revisionId": 109292,
+            "revisionId": 125276,
             "title": "Rage: Wolf Heart"
         },
         {
@@ -899,12 +901,12 @@
         },
         {
             "pageId": 1184,
-            "revisionId": 91873,
+            "revisionId": 123025,
             "title": "Burrow (Badger)"
         },
         {
             "pageId": 1185,
-            "revisionId": 86679,
+            "revisionId": 125220,
             "title": "Bite (Badger)"
         },
         {
@@ -934,7 +936,7 @@
         },
         {
             "pageId": 1207,
-            "revisionId": 110933,
+            "revisionId": 125116,
             "title": "Charge"
         },
         {
@@ -949,7 +951,7 @@
         },
         {
             "pageId": 1215,
-            "revisionId": 103400,
+            "revisionId": 117629,
             "title": "Web (Spider)"
         },
         {
@@ -959,7 +961,7 @@
         },
         {
             "pageId": 1223,
-            "revisionId": 86684,
+            "revisionId": 125222,
             "title": "Bite (Wolf)"
         },
         {
@@ -1059,12 +1061,12 @@
         },
         {
             "pageId": 1341,
-            "revisionId": 110876,
+            "revisionId": 116772,
             "title": "Wild Magic: Summon Mephit"
         },
         {
             "pageId": 1342,
-            "revisionId": 110877,
+            "revisionId": 116773,
             "title": "Wild Magic: Swap"
         },
         {
@@ -1074,27 +1076,27 @@
         },
         {
             "pageId": 1355,
-            "revisionId": 110874,
+            "revisionId": 116775,
             "title": "Wild Magic: Blur"
         },
         {
             "pageId": 1356,
-            "revisionId": 110871,
+            "revisionId": 116776,
             "title": "Wild Magic: Enchant Weapons"
         },
         {
             "pageId": 1357,
-            "revisionId": 110875,
+            "revisionId": 116777,
             "title": "Wild Magic: Explosive Healing"
         },
         {
             "pageId": 1358,
-            "revisionId": 110873,
+            "revisionId": 116779,
             "title": "Wild Magic: Fog"
         },
         {
             "pageId": 1359,
-            "revisionId": 110870,
+            "revisionId": 116780,
             "title": "Wild Magic: Teleport"
         },
         {
@@ -1134,7 +1136,7 @@
         },
         {
             "pageId": 1387,
-            "revisionId": 109265,
+            "revisionId": 125041,
             "title": "Create Spell Slot"
         },
         {
@@ -1164,7 +1166,7 @@
         },
         {
             "pageId": 1425,
-            "revisionId": 103402,
+            "revisionId": 115587,
             "title": "Tusk Attack"
         },
         {
@@ -1199,7 +1201,7 @@
         },
         {
             "pageId": 1480,
-            "revisionId": 108872,
+            "revisionId": 120171,
             "title": "Disarming Attack (Ranged)"
         },
         {
@@ -1209,7 +1211,7 @@
         },
         {
             "pageId": 1486,
-            "revisionId": 109370,
+            "revisionId": 114683,
             "title": "Pushing Attack (Ranged)"
         },
         {
@@ -1254,12 +1256,12 @@
         },
         {
             "pageId": 1515,
-            "revisionId": 78430,
+            "revisionId": 119073,
             "title": "Scare"
         },
         {
             "pageId": 1519,
-            "revisionId": 109673,
+            "revisionId": 125119,
             "title": "Arcane Recovery"
         },
         {
@@ -1404,12 +1406,12 @@
         },
         {
             "pageId": 1906,
-            "revisionId": 114408,
+            "revisionId": 122625,
             "title": "Dip"
         },
         {
             "pageId": 1907,
-            "revisionId": 109968,
+            "revisionId": 118176,
             "title": "Opportunity Attack"
         },
         {
@@ -1619,12 +1621,12 @@
         },
         {
             "pageId": 2167,
-            "revisionId": 116093,
+            "revisionId": 125234,
             "title": "Ensnaring Strike (Ranged)"
         },
         {
             "pageId": 2168,
-            "revisionId": 116096,
+            "revisionId": 125235,
             "title": "Ensnaring Strike (Melee)"
         },
         {
@@ -1769,7 +1771,7 @@
         },
         {
             "pageId": 2275,
-            "revisionId": 108821,
+            "revisionId": 118164,
             "title": "Help"
         },
         {
@@ -2124,7 +2126,7 @@
         },
         {
             "pageId": 2650,
-            "revisionId": 109257,
+            "revisionId": 125215,
             "title": "Bardic Inspiration"
         },
         {
@@ -2366,6 +2368,11 @@
             "pageId": 2782,
             "revisionId": 122609,
             "title": "Template:Range"
+        },
+        {
+            "pageId": 2783,
+            "revisionId": 108904,
+            "title": "Template:Weight"
         },
         {
             "pageId": 2785,
@@ -2799,7 +2806,7 @@
         },
         {
             "pageId": 3334,
-            "revisionId": 105732,
+            "revisionId": 124290,
             "title": "Tenacity"
         },
         {
@@ -2984,7 +2991,7 @@
         },
         {
             "pageId": 3378,
-            "revisionId": 83420,
+            "revisionId": 120530,
             "title": "Song of Rest"
         },
         {
@@ -3024,7 +3031,7 @@
         },
         {
             "pageId": 3393,
-            "revisionId": 109297,
+            "revisionId": 125134,
             "title": "Sacred Weapon"
         },
         {
@@ -3044,12 +3051,12 @@
         },
         {
             "pageId": 3397,
-            "revisionId": 109266,
+            "revisionId": 125244,
             "title": "Cutting Words"
         },
         {
             "pageId": 3398,
-            "revisionId": 109387,
+            "revisionId": 125135,
             "title": "Turn the Unholy"
         },
         {
@@ -3059,7 +3066,7 @@
         },
         {
             "pageId": 3400,
-            "revisionId": 110924,
+            "revisionId": 125262,
             "title": "Holy Rebuke"
         },
         {
@@ -3679,12 +3686,12 @@
         },
         {
             "pageId": 3605,
-            "revisionId": 109263,
+            "revisionId": 125054,
             "title": "Control Undead"
         },
         {
             "pageId": 3606,
-            "revisionId": 109269,
+            "revisionId": 125247,
             "title": "Dreadful Aspect"
         },
         {
@@ -3699,7 +3706,7 @@
         },
         {
             "pageId": 3610,
-            "revisionId": 109303,
+            "revisionId": 125284,
             "title": "Spiteful Suffering"
         },
         {
@@ -3759,7 +3766,7 @@
         },
         {
             "pageId": 3630,
-            "revisionId": 122613,
+            "revisionId": 125055,
             "title": "Jump"
         },
         {
@@ -3834,7 +3841,7 @@
         },
         {
             "pageId": 3768,
-            "revisionId": 76784,
+            "revisionId": 118171,
             "title": "Throw"
         },
         {
@@ -3869,27 +3876,27 @@
         },
         {
             "pageId": 3923,
-            "revisionId": 105541,
+            "revisionId": 114782,
             "title": "Main Hand Attack"
         },
         {
             "pageId": 3924,
-            "revisionId": 76795,
+            "revisionId": 118163,
             "title": "Disengage"
         },
         {
             "pageId": 3925,
-            "revisionId": 105563,
+            "revisionId": 115355,
             "title": "Ranged Attack"
         },
         {
             "pageId": 3926,
-            "revisionId": 89350,
+            "revisionId": 118174,
             "title": "Unarmed Strike"
         },
         {
             "pageId": 3927,
-            "revisionId": 76786,
+            "revisionId": 118168,
             "title": "Improvised Melee Weapon"
         },
         {
@@ -3994,12 +4001,12 @@
         },
         {
             "pageId": 3967,
-            "revisionId": 76781,
+            "revisionId": 118169,
             "title": "Shove"
         },
         {
             "pageId": 3968,
-            "revisionId": 107573,
+            "revisionId": 118167,
             "title": "Hide"
         },
         {
@@ -4034,7 +4041,7 @@
         },
         {
             "pageId": 3995,
-            "revisionId": 109276,
+            "revisionId": 125120,
             "title": "Healing Radiance"
         },
         {
@@ -4044,12 +4051,12 @@
         },
         {
             "pageId": 4010,
-            "revisionId": 109408,
+            "revisionId": 125288,
             "title": "Turn the Faithless"
         },
         {
             "pageId": 4011,
-            "revisionId": 109368,
+            "revisionId": 125270,
             "title": "Nature's Wrath"
         },
         {
@@ -4064,7 +4071,7 @@
         },
         {
             "pageId": 4016,
-            "revisionId": 111543,
+            "revisionId": 125208,
             "title": "Combat Inspiration"
         },
         {
@@ -4074,22 +4081,22 @@
         },
         {
             "pageId": 4023,
-            "revisionId": 112116,
+            "revisionId": 125126,
             "title": "Lay on Hands"
         },
         {
             "pageId": 4024,
-            "revisionId": 112117,
+            "revisionId": 125127,
             "title": "Lay on Hands: Cure"
         },
         {
             "pageId": 4025,
-            "revisionId": 112119,
+            "revisionId": 125128,
             "title": "Lay on Hands: Greater Healing"
         },
         {
             "pageId": 4026,
-            "revisionId": 112120,
+            "revisionId": 125131,
             "title": "Lay on Hands: Lesser Healing"
         },
         {
@@ -4159,7 +4166,7 @@
         },
         {
             "pageId": 4163,
-            "revisionId": 112209,
+            "revisionId": 122995,
             "title": "Stage Fright"
         },
         {
@@ -4199,7 +4206,7 @@
         },
         {
             "pageId": 4171,
-            "revisionId": 105689,
+            "revisionId": 115309,
             "title": "Backbreaker"
         },
         {
@@ -4209,22 +4216,22 @@
         },
         {
             "pageId": 4174,
-            "revisionId": 115313,
+            "revisionId": 120035,
             "title": "Brace (Melee)"
         },
         {
             "pageId": 4175,
-            "revisionId": 112207,
+            "revisionId": 122997,
             "title": "Repulsor"
         },
         {
             "pageId": 4176,
-            "revisionId": 115314,
+            "revisionId": 120036,
             "title": "Brace (Ranged)"
         },
         {
             "pageId": 4179,
-            "revisionId": 110895,
+            "revisionId": 125115,
             "title": "Aberrant Shape"
         },
         {
@@ -4234,7 +4241,7 @@
         },
         {
             "pageId": 4181,
-            "revisionId": 105685,
+            "revisionId": 115316,
             "title": "Cleave"
         },
         {
@@ -4269,7 +4276,7 @@
         },
         {
             "pageId": 4192,
-            "revisionId": 105697,
+            "revisionId": 115318,
             "title": "Concussive Smash"
         },
         {
@@ -4304,12 +4311,12 @@
         },
         {
             "pageId": 4208,
-            "revisionId": 105716,
+            "revisionId": 115349,
             "title": "Piercing Strike"
         },
         {
             "pageId": 4209,
-            "revisionId": 105738,
+            "revisionId": 115370,
             "title": "Weakening Strike"
         },
         {
@@ -4354,17 +4361,17 @@
         },
         {
             "pageId": 4243,
-            "revisionId": 105683,
+            "revisionId": 115339,
             "title": "Lacerate"
         },
         {
             "pageId": 4244,
-            "revisionId": 105734,
+            "revisionId": 115367,
             "title": "Topple"
         },
         {
             "pageId": 4245,
-            "revisionId": 105708,
+            "revisionId": 115334,
             "title": "Hamstring Shot"
         },
         {
@@ -4379,12 +4386,12 @@
         },
         {
             "pageId": 4251,
-            "revisionId": 110948,
+            "revisionId": 116230,
             "title": "Rush Attack"
         },
         {
             "pageId": 4252,
-            "revisionId": 105710,
+            "revisionId": 115335,
             "title": "Heartstopper"
         },
         {
@@ -4394,7 +4401,7 @@
         },
         {
             "pageId": 4256,
-            "revisionId": 105714,
+            "revisionId": 115347,
             "title": "Piercing Shot"
         },
         {
@@ -4554,7 +4561,7 @@
         },
         {
             "pageId": 4378,
-            "revisionId": 111718,
+            "revisionId": 120635,
             "title": "Multiattack"
         },
         {
@@ -4919,7 +4926,7 @@
         },
         {
             "pageId": 4643,
-            "revisionId": 106249,
+            "revisionId": 115332,
             "title": "Gargantuan Cleave"
         },
         {
@@ -5154,7 +5161,7 @@
         },
         {
             "pageId": 5081,
-            "revisionId": 124898,
+            "revisionId": 125237,
             "title": "Ensnaring Strike"
         },
         {
@@ -5349,7 +5356,7 @@
         },
         {
             "pageId": 6208,
-            "revisionId": 100802,
+            "revisionId": 119507,
             "title": "Create Lava"
         },
         {
@@ -5489,7 +5496,7 @@
         },
         {
             "pageId": 6468,
-            "revisionId": 109345,
+            "revisionId": 125243,
             "title": "Combat Wild Shape"
         },
         {
@@ -5514,7 +5521,7 @@
         },
         {
             "pageId": 6518,
-            "revisionId": 110124,
+            "revisionId": 115284,
             "title": "Absolute Power"
         },
         {
@@ -5644,7 +5651,7 @@
         },
         {
             "pageId": 6659,
-            "revisionId": 109264,
+            "revisionId": 125118,
             "title": "Countercharm"
         },
         {
@@ -5869,7 +5876,7 @@
         },
         {
             "pageId": 6831,
-            "revisionId": 106261,
+            "revisionId": 115361,
             "title": "Searing Blood"
         },
         {
@@ -5959,7 +5966,7 @@
         },
         {
             "pageId": 6888,
-            "revisionId": 109362,
+            "revisionId": 125263,
             "title": "Inquisitor's Might"
         },
         {
@@ -5998,11 +6005,6 @@
             "title": "Gloves of Cinder and Sizzle"
         },
         {
-            "pageId": 6899,
-            "revisionId": 24731,
-            "title": "Template:Insert up to date"
-        },
-        {
             "pageId": 6908,
             "revisionId": 119274,
             "title": "Warding Bond"
@@ -6029,57 +6031,57 @@
         },
         {
             "pageId": 7857,
-            "revisionId": 109258,
+            "revisionId": 122177,
             "title": "Blade of Rime"
         },
         {
             "pageId": 7858,
-            "revisionId": 109261,
+            "revisionId": 122176,
             "title": "Chill of the Mountain"
         },
         {
             "pageId": 7859,
-            "revisionId": 109351,
+            "revisionId": 122175,
             "title": "Fangs of the Fire Snake"
         },
         {
             "pageId": 7860,
-            "revisionId": 109352,
+            "revisionId": 122164,
             "title": "Fist of Four Thunders"
         },
         {
             "pageId": 7861,
-            "revisionId": 109270,
+            "revisionId": 122162,
             "title": "Fist of Unbroken Air"
         },
         {
             "pageId": 7862,
-            "revisionId": 109380,
+            "revisionId": 122160,
             "title": "Shaping of the Ice"
         },
         {
             "pageId": 7863,
-            "revisionId": 109305,
+            "revisionId": 122156,
             "title": "Sweeping Cinder Strike"
         },
         {
             "pageId": 7864,
-            "revisionId": 109306,
+            "revisionId": 122155,
             "title": "Touch of the Storm"
         },
         {
             "pageId": 7865,
-            "revisionId": 109321,
+            "revisionId": 122153,
             "title": "Water Whip"
         },
         {
             "pageId": 7867,
-            "revisionId": 109691,
+            "revisionId": 122150,
             "title": "Clench of the North Wind"
         },
         {
             "pageId": 7868,
-            "revisionId": 109360,
+            "revisionId": 122147,
             "title": "Gong of the Summit"
         },
         {
@@ -6089,7 +6091,7 @@
         },
         {
             "pageId": 7871,
-            "revisionId": 109294,
+            "revisionId": 122142,
             "title": "Ride the Wind"
         },
         {
@@ -6099,7 +6101,7 @@
         },
         {
             "pageId": 7873,
-            "revisionId": 109205,
+            "revisionId": 125250,
             "title": "Flurry of Blows"
         },
         {
@@ -6114,7 +6116,7 @@
         },
         {
             "pageId": 7877,
-            "revisionId": 109385,
+            "revisionId": 125287,
             "title": "Symbiotic Entity"
         },
         {
@@ -6194,12 +6196,12 @@
         },
         {
             "pageId": 7917,
-            "revisionId": 109278,
+            "revisionId": 125121,
             "title": "Knowledge of the Ages"
         },
         {
             "pageId": 7924,
-            "revisionId": 109372,
+            "revisionId": 125060,
             "title": "Rage: Wild Magic"
         },
         {
@@ -6284,7 +6286,7 @@
         },
         {
             "pageId": 7954,
-            "revisionId": 110555,
+            "revisionId": 120580,
             "title": "Divine Intervention"
         },
         {
@@ -6344,12 +6346,12 @@
         },
         {
             "pageId": 7992,
-            "revisionId": 110894,
+            "revisionId": 125224,
             "title": "Abjure Enemy"
         },
         {
             "pageId": 7993,
-            "revisionId": 109316,
+            "revisionId": 125289,
             "title": "Vow of Enmity"
         },
         {
@@ -6489,7 +6491,7 @@
         },
         {
             "pageId": 8047,
-            "revisionId": 107974,
+            "revisionId": 115342,
             "title": "Moonlight Butterflies"
         },
         {
@@ -6574,7 +6576,7 @@
         },
         {
             "pageId": 8085,
-            "revisionId": 110949,
+            "revisionId": 115374,
             "title": "Zephyr Flash"
         },
         {
@@ -6584,7 +6586,7 @@
         },
         {
             "pageId": 8089,
-            "revisionId": 105740,
+            "revisionId": 120193,
             "title": "Zephyr Break"
         },
         {
@@ -6704,7 +6706,7 @@
         },
         {
             "pageId": 8162,
-            "revisionId": 109715,
+            "revisionId": 125087,
             "title": "Harmony of Fire and Water"
         },
         {
@@ -6809,7 +6811,7 @@
         },
         {
             "pageId": 8312,
-            "revisionId": 109218,
+            "revisionId": 125271,
             "title": "Patient Defence"
         },
         {
@@ -7039,7 +7041,7 @@
         },
         {
             "pageId": 8527,
-            "revisionId": 109274,
+            "revisionId": 125261,
             "title": "Fungal Infestation"
         },
         {
@@ -7099,7 +7101,7 @@
         },
         {
             "pageId": 8571,
-            "revisionId": 107525,
+            "revisionId": 115321,
             "title": "Dawnburst Strike"
         },
         {
@@ -7309,7 +7311,7 @@
         },
         {
             "pageId": 8776,
-            "revisionId": 106244,
+            "revisionId": 115317,
             "title": "Colossal Onslaught"
         },
         {
@@ -7324,7 +7326,7 @@
         },
         {
             "pageId": 8793,
-            "revisionId": 106256,
+            "revisionId": 115356,
             "title": "Razor Gale"
         },
         {
@@ -7344,12 +7346,12 @@
         },
         {
             "pageId": 8799,
-            "revisionId": 106150,
+            "revisionId": 115368,
             "title": "Topple the Big Folk"
         },
         {
             "pageId": 8813,
-            "revisionId": 110087,
+            "revisionId": 115363,
             "title": "Soulbreaker"
         },
         {
@@ -7504,7 +7506,7 @@
         },
         {
             "pageId": 8908,
-            "revisionId": 106204,
+            "revisionId": 115319,
             "title": "Corrosive Strike"
         },
         {
@@ -7514,7 +7516,7 @@
         },
         {
             "pageId": 8916,
-            "revisionId": 70623,
+            "revisionId": 122981,
             "title": "Wholeness of Body"
         },
         {
@@ -7559,12 +7561,12 @@
         },
         {
             "pageId": 8962,
-            "revisionId": 109296,
+            "revisionId": 122161,
             "title": "Rush of the Gale Spirits"
         },
         {
             "pageId": 8973,
-            "revisionId": 109396,
+            "revisionId": 122157,
             "title": "Sphere of Elemental Balance"
         },
         {
@@ -7589,7 +7591,7 @@
         },
         {
             "pageId": 9044,
-            "revisionId": 109304,
+            "revisionId": 125083,
             "title": "Step of the Wind: Dash"
         },
         {
@@ -7629,7 +7631,7 @@
         },
         {
             "pageId": 9088,
-            "revisionId": 109409,
+            "revisionId": 125285,
             "title": "Step of the Wind: Disengage"
         },
         {
@@ -7709,7 +7711,7 @@
         },
         {
             "pageId": 9119,
-            "revisionId": 106202,
+            "revisionId": 115362,
             "title": "Shadowsoaked Blow"
         },
         {
@@ -7739,7 +7741,7 @@
         },
         {
             "pageId": 9142,
-            "revisionId": 110951,
+            "revisionId": 115340,
             "title": "Maiming Strike"
         },
         {
@@ -7769,7 +7771,7 @@
         },
         {
             "pageId": 9161,
-            "revisionId": 105526,
+            "revisionId": 115331,
             "title": "Frigid Blade"
         },
         {
@@ -7789,7 +7791,7 @@
         },
         {
             "pageId": 9170,
-            "revisionId": 105524,
+            "revisionId": 115328,
             "title": "Flaming Blade"
         },
         {
@@ -7799,7 +7801,7 @@
         },
         {
             "pageId": 9172,
-            "revisionId": 106175,
+            "revisionId": 115350,
             "title": "Poison Mist"
         },
         {
@@ -7814,12 +7816,12 @@
         },
         {
             "pageId": 9176,
-            "revisionId": 105556,
+            "revisionId": 122868,
             "title": "Perfectly Balanced Strike"
         },
         {
             "pageId": 9177,
-            "revisionId": 108018,
+            "revisionId": 121692,
             "title": "Whirlwind Attack (Weapon Action)"
         },
         {
@@ -7834,7 +7836,7 @@
         },
         {
             "pageId": 9182,
-            "revisionId": 107508,
+            "revisionId": 115320,
             "title": "Crowning Strike"
         },
         {
@@ -7884,7 +7886,7 @@
         },
         {
             "pageId": 9195,
-            "revisionId": 107714,
+            "revisionId": 115333,
             "title": "Grand Slam"
         },
         {
@@ -7904,7 +7906,7 @@
         },
         {
             "pageId": 9203,
-            "revisionId": 109317,
+            "revisionId": 125092,
             "title": "War Priest"
         },
         {
@@ -8024,7 +8026,7 @@
         },
         {
             "pageId": 9289,
-            "revisionId": 82973,
+            "revisionId": 122890,
             "title": "Claws (Owlbear)"
         },
         {
@@ -8094,7 +8096,7 @@
         },
         {
             "pageId": 9366,
-            "revisionId": 106251,
+            "revisionId": 115337,
             "title": "Hush You!"
         },
         {
@@ -8149,7 +8151,7 @@
         },
         {
             "pageId": 9398,
-            "revisionId": 105519,
+            "revisionId": 115324,
             "title": "Dueller's Enthusiasm"
         },
         {
@@ -8354,7 +8356,7 @@
         },
         {
             "pageId": 9553,
-            "revisionId": 111964,
+            "revisionId": 115329,
             "title": "Edge of Darkness"
         },
         {
@@ -8419,7 +8421,7 @@
         },
         {
             "pageId": 9574,
-            "revisionId": 108450,
+            "revisionId": 124926,
             "title": "Dazzling Ray"
         },
         {
@@ -8434,7 +8436,7 @@
         },
         {
             "pageId": 9577,
-            "revisionId": 106159,
+            "revisionId": 115345,
             "title": "Part the Flesh"
         },
         {
@@ -8479,7 +8481,7 @@
         },
         {
             "pageId": 9592,
-            "revisionId": 107700,
+            "revisionId": 115357,
             "title": "Reposition Malefactor"
         },
         {
@@ -8494,7 +8496,7 @@
         },
         {
             "pageId": 9596,
-            "revisionId": 110163,
+            "revisionId": 115336,
             "title": "Hellflame Cleave"
         },
         {
@@ -8669,7 +8671,7 @@
         },
         {
             "pageId": 9704,
-            "revisionId": 109260,
+            "revisionId": 125137,
             "title": "Charm Animals and Plants"
         },
         {
@@ -8764,7 +8766,7 @@
         },
         {
             "pageId": 10310,
-            "revisionId": 107986,
+            "revisionId": 115354,
             "title": "Profane Scourge"
         },
         {
@@ -8999,7 +9001,7 @@
         },
         {
             "pageId": 10555,
-            "revisionId": 107501,
+            "revisionId": 115310,
             "title": "Blood Money"
         },
         {
@@ -9249,7 +9251,7 @@
         },
         {
             "pageId": 10776,
-            "revisionId": 109271,
+            "revisionId": 122144,
             "title": "Flames of the Phoenix"
         },
         {
@@ -9499,7 +9501,7 @@
         },
         {
             "pageId": 10993,
-            "revisionId": 109762,
+            "revisionId": 118071,
             "title": "Sweetplum Gales"
         },
         {
@@ -9509,7 +9511,7 @@
         },
         {
             "pageId": 10995,
-            "revisionId": 109749,
+            "revisionId": 118063,
             "title": "Shifting Winds"
         },
         {
@@ -9554,7 +9556,7 @@
         },
         {
             "pageId": 11029,
-            "revisionId": 109700,
+            "revisionId": 118203,
             "title": "Draining Kiss"
         },
         {
@@ -9644,7 +9646,7 @@
         },
         {
             "pageId": 11253,
-            "revisionId": 85665,
+            "revisionId": 122570,
             "title": "Power Word Kill"
         },
         {
@@ -9859,7 +9861,7 @@
         },
         {
             "pageId": 11612,
-            "revisionId": 108006,
+            "revisionId": 121694,
             "title": "Whirlwind Attack"
         },
         {
@@ -10054,7 +10056,7 @@
         },
         {
             "pageId": 11837,
-            "revisionId": 85682,
+            "revisionId": 122456,
             "title": "Selûne's Dream"
         },
         {
@@ -10099,7 +10101,7 @@
         },
         {
             "pageId": 11920,
-            "revisionId": 112201,
+            "revisionId": 122996,
             "title": "Perilous Stakes"
         },
         {
@@ -10699,7 +10701,7 @@
         },
         {
             "pageId": 13412,
-            "revisionId": 115816,
+            "revisionId": 115830,
             "title": "Divine Strike: Radiant"
         },
         {
@@ -10749,7 +10751,7 @@
         },
         {
             "pageId": 13468,
-            "revisionId": 107522,
+            "revisionId": 115311,
             "title": "Bolt of Celestial Light"
         },
         {
@@ -11024,7 +11026,7 @@
         },
         {
             "pageId": 14026,
-            "revisionId": 109281,
+            "revisionId": 122143,
             "title": "Mist Stance"
         },
         {
@@ -11034,7 +11036,7 @@
         },
         {
             "pageId": 14032,
-            "revisionId": 109384,
+            "revisionId": 125286,
             "title": "Sweeping Attack"
         },
         {
@@ -11064,7 +11066,7 @@
         },
         {
             "pageId": 14100,
-            "revisionId": 125069,
+            "revisionId": 125184,
             "title": "Template:Action Page"
         },
         {
@@ -11134,7 +11136,7 @@
         },
         {
             "pageId": 14208,
-            "revisionId": 108615,
+            "revisionId": 125219,
             "title": "Bear Companion"
         },
         {
@@ -11149,7 +11151,7 @@
         },
         {
             "pageId": 14211,
-            "revisionId": 78593,
+            "revisionId": 119560,
             "title": "Wolf Companion"
         },
         {
@@ -11239,12 +11241,12 @@
         },
         {
             "pageId": 14360,
-            "revisionId": 109285,
+            "revisionId": 124701,
             "title": "Precision Attack"
         },
         {
             "pageId": 14361,
-            "revisionId": 117649,
+            "revisionId": 125291,
             "title": "Feinting Attack"
         },
         {
@@ -11264,7 +11266,7 @@
         },
         {
             "pageId": 14392,
-            "revisionId": 108262,
+            "revisionId": 125221,
             "title": "Bite (Panther)"
         },
         {
@@ -11319,7 +11321,7 @@
         },
         {
             "pageId": 14411,
-            "revisionId": 109227,
+            "revisionId": 125117,
             "title": "Commander's Strike"
         },
         {
@@ -11359,7 +11361,7 @@
         },
         {
             "pageId": 14447,
-            "revisionId": 109349,
+            "revisionId": 122149,
             "title": "Embrace of the Inferno"
         },
         {
@@ -11554,7 +11556,7 @@
         },
         {
             "pageId": 14941,
-            "revisionId": 55668,
+            "revisionId": 120027,
             "title": "Virulent Venom"
         },
         {
@@ -11639,7 +11641,7 @@
         },
         {
             "pageId": 15097,
-            "revisionId": 105736,
+            "revisionId": 115369,
             "title": "Unshackling Strike"
         },
         {
@@ -11674,12 +11676,12 @@
         },
         {
             "pageId": 15151,
-            "revisionId": 66428,
+            "revisionId": 125086,
             "title": "Heart of the Storm: Lightning"
         },
         {
             "pageId": 15152,
-            "revisionId": 66429,
+            "revisionId": 125085,
             "title": "Heart of the Storm: Thunder"
         },
         {
@@ -11739,77 +11741,77 @@
         },
         {
             "pageId": 15250,
-            "revisionId": 109322,
+            "revisionId": 125098,
             "title": "Wild Shape: Badger"
         },
         {
             "pageId": 15251,
-            "revisionId": 109324,
+            "revisionId": 125099,
             "title": "Wild Shape: Cat"
         },
         {
             "pageId": 15252,
-            "revisionId": 109325,
+            "revisionId": 125100,
             "title": "Wild Shape: Spider"
         },
         {
             "pageId": 15253,
-            "revisionId": 109326,
+            "revisionId": 125101,
             "title": "Wild Shape: Wolf"
         },
         {
             "pageId": 15254,
-            "revisionId": 109328,
+            "revisionId": 125105,
             "title": "Wild Shape: Deep Rothé"
         },
         {
             "pageId": 15255,
-            "revisionId": 109329,
+            "revisionId": 125106,
             "title": "Wild Shape: Panther"
         },
         {
             "pageId": 15257,
-            "revisionId": 109330,
+            "revisionId": 125107,
             "title": "Wild Shape: Owlbear"
         },
         {
             "pageId": 15258,
-            "revisionId": 109332,
+            "revisionId": 125109,
             "title": "Wild Shape: Dilophosaurus"
         },
         {
             "pageId": 15259,
-            "revisionId": 109323,
+            "revisionId": 125097,
             "title": "Wild Shape: Bear"
         },
         {
             "pageId": 15260,
-            "revisionId": 109327,
+            "revisionId": 125104,
             "title": "Wild Shape: Dire Raven"
         },
         {
             "pageId": 15261,
-            "revisionId": 109331,
+            "revisionId": 125108,
             "title": "Wild Shape: Sabre-Toothed Tiger"
         },
         {
             "pageId": 15263,
-            "revisionId": 109334,
+            "revisionId": 125110,
             "title": "Wild Shape: Air Myrmidon"
         },
         {
             "pageId": 15264,
-            "revisionId": 109335,
+            "revisionId": 125111,
             "title": "Wild Shape: Earth Myrmidon"
         },
         {
             "pageId": 15265,
-            "revisionId": 109336,
+            "revisionId": 125112,
             "title": "Wild Shape: Fire Myrmidon"
         },
         {
             "pageId": 15266,
-            "revisionId": 109337,
+            "revisionId": 125113,
             "title": "Wild Shape: Water Myrmidon"
         },
         {
@@ -11899,12 +11901,12 @@
         },
         {
             "pageId": 15611,
-            "revisionId": 106158,
+            "revisionId": 115358,
             "title": "Revitalising Strike"
         },
         {
             "pageId": 15634,
-            "revisionId": 109746,
+            "revisionId": 125063,
             "title": "Seismic Wrath"
         },
         {
@@ -11944,7 +11946,7 @@
         },
         {
             "pageId": 15759,
-            "revisionId": 60216,
+            "revisionId": 122482,
             "title": "Ki Restoration (Lesser)"
         },
         {
@@ -12019,12 +12021,12 @@
         },
         {
             "pageId": 16110,
-            "revisionId": 112206,
+            "revisionId": 118579,
             "title": "Psionic Overload"
         },
         {
             "pageId": 16120,
-            "revisionId": 112217,
+            "revisionId": 120487,
             "title": "Shield of Thralls"
         },
         {
@@ -12209,7 +12211,7 @@
         },
         {
             "pageId": 16836,
-            "revisionId": 76069,
+            "revisionId": 114900,
             "title": "Undead Thralls: Animate Dead"
         },
         {
@@ -12224,7 +12226,7 @@
         },
         {
             "pageId": 16839,
-            "revisionId": 109307,
+            "revisionId": 124739,
             "title": "Transmuter's Stone"
         },
         {
@@ -12354,7 +12356,7 @@
         },
         {
             "pageId": 17206,
-            "revisionId": 109386,
+            "revisionId": 116801,
             "title": "Tides of Chaos"
         },
         {
@@ -12369,7 +12371,7 @@
         },
         {
             "pageId": 17215,
-            "revisionId": 109234,
+            "revisionId": 125241,
             "title": "Bend Luck"
         },
         {
@@ -12379,7 +12381,7 @@
         },
         {
             "pageId": 17223,
-            "revisionId": 109348,
+            "revisionId": 125248,
             "title": "Elemental Affinity: Resistance"
         },
         {
@@ -12549,7 +12551,7 @@
         },
         {
             "pageId": 17488,
-            "revisionId": 109958,
+            "revisionId": 125267,
             "title": "Crushing Flight"
         },
         {
@@ -12564,7 +12566,7 @@
         },
         {
             "pageId": 17496,
-            "revisionId": 81178,
+            "revisionId": 122893,
             "title": "Enrage"
         },
         {
@@ -12574,7 +12576,7 @@
         },
         {
             "pageId": 17506,
-            "revisionId": 82965,
+            "revisionId": 122865,
             "title": "Pounce (Dilophosaurus)"
         },
         {
@@ -12654,7 +12656,7 @@
         },
         {
             "pageId": 17563,
-            "revisionId": 110697,
+            "revisionId": 114941,
             "title": "Indomitable"
         },
         {
@@ -12684,7 +12686,7 @@
         },
         {
             "pageId": 17722,
-            "revisionId": 112198,
+            "revisionId": 122999,
             "title": "Mind Blast"
         },
         {
@@ -12879,27 +12881,27 @@
         },
         {
             "pageId": 18390,
-            "revisionId": 109356,
+            "revisionId": 125033,
             "title": "Flurry of Blows: Stagger"
         },
         {
             "pageId": 18397,
-            "revisionId": 109357,
+            "revisionId": 125255,
             "title": "Flurry of Blows: Topple"
         },
         {
             "pageId": 18401,
-            "revisionId": 109354,
+            "revisionId": 125254,
             "title": "Flurry of Blows: Push"
         },
         {
             "pageId": 18418,
-            "revisionId": 104522,
+            "revisionId": 124181,
             "title": "Cloak of Shadows"
         },
         {
             "pageId": 18422,
-            "revisionId": 76532,
+            "revisionId": 120489,
             "title": "Shadow Step"
         },
         {
@@ -12919,37 +12921,37 @@
         },
         {
             "pageId": 18491,
-            "revisionId": 110941,
+            "revisionId": 121194,
             "title": "Giant Form"
         },
         {
             "pageId": 18492,
-            "revisionId": 109302,
+            "revisionId": 125082,
             "title": "Sphere of Elemental Balance: Thunder"
         },
         {
             "pageId": 18494,
-            "revisionId": 109381,
+            "revisionId": 125075,
             "title": "Sphere of Elemental Balance: Acid"
         },
         {
             "pageId": 18497,
-            "revisionId": 109300,
+            "revisionId": 125079,
             "title": "Sphere of Elemental Balance: Cold"
         },
         {
             "pageId": 18498,
-            "revisionId": 109407,
+            "revisionId": 125077,
             "title": "Sphere of Elemental Balance: Fire"
         },
         {
             "pageId": 18500,
-            "revisionId": 109382,
+            "revisionId": 125080,
             "title": "Sphere of Elemental Balance: Lightning"
         },
         {
             "pageId": 18505,
-            "revisionId": 109301,
+            "revisionId": 125081,
             "title": "Sphere of Elemental Balance: Poison"
         },
         {
@@ -12959,17 +12961,17 @@
         },
         {
             "pageId": 18515,
-            "revisionId": 109377,
+            "revisionId": 125065,
             "title": "Shadow Arts: Pass Without Trace"
         },
         {
             "pageId": 18516,
-            "revisionId": 109298,
+            "revisionId": 125281,
             "title": "Shadow Arts: Darkness"
         },
         {
             "pageId": 18519,
-            "revisionId": 109974,
+            "revisionId": 125280,
             "title": "Shadow Arts: Darkvision"
         },
         {
@@ -13069,17 +13071,17 @@
         },
         {
             "pageId": 18843,
-            "revisionId": 112103,
+            "revisionId": 125066,
             "title": "Shadow Arts: Silence"
         },
         {
             "pageId": 18858,
-            "revisionId": 109378,
+            "revisionId": 125282,
             "title": "Shadow Strike"
         },
         {
             "pageId": 18859,
-            "revisionId": 109379,
+            "revisionId": 125283,
             "title": "Shadow Strike: Unarmed"
         },
         {
@@ -13109,7 +13111,7 @@
         },
         {
             "pageId": 18886,
-            "revisionId": 112199,
+            "revisionId": 122998,
             "title": "Mind Sanctuary"
         },
         {
@@ -13144,7 +13146,7 @@
         },
         {
             "pageId": 18902,
-            "revisionId": 112180,
+            "revisionId": 123000,
             "title": "Absorb Intellect"
         },
         {
@@ -13159,7 +13161,7 @@
         },
         {
             "pageId": 18918,
-            "revisionId": 82961,
+            "revisionId": 117336,
             "title": "Shred Armour"
         },
         {
@@ -13169,7 +13171,7 @@
         },
         {
             "pageId": 18921,
-            "revisionId": 111104,
+            "revisionId": 125268,
             "title": "Enhanced Jump"
         },
         {
@@ -13199,12 +13201,12 @@
         },
         {
             "pageId": 18961,
-            "revisionId": 71165,
+            "revisionId": 123022,
             "title": "Burrow (Earth Myrmidon)"
         },
         {
             "pageId": 18964,
-            "revisionId": 112055,
+            "revisionId": 123020,
             "title": "Muck to Metal"
         },
         {
@@ -13234,12 +13236,12 @@
         },
         {
             "pageId": 18994,
-            "revisionId": 97339,
+            "revisionId": 117310,
             "title": "Healing Vapours"
         },
         {
             "pageId": 19140,
-            "revisionId": 115819,
+            "revisionId": 115828,
             "title": "Divine Strike: Weapon"
         },
         {
@@ -13249,7 +13251,7 @@
         },
         {
             "pageId": 19142,
-            "revisionId": 115818,
+            "revisionId": 115829,
             "title": "Divine Strike: Poison"
         },
         {
@@ -13309,7 +13311,7 @@
         },
         {
             "pageId": 19287,
-            "revisionId": 73443,
+            "revisionId": 116781,
             "title": "Wild Magic: Telekinesis"
         },
         {
@@ -13359,12 +13361,12 @@
         },
         {
             "pageId": 19432,
-            "revisionId": 110868,
+            "revisionId": 116783,
             "title": "Wild Magic: Turn Magic"
         },
         {
             "pageId": 19436,
-            "revisionId": 110869,
+            "revisionId": 116782,
             "title": "Wild Magic: Burning"
         },
         {
@@ -13374,27 +13376,27 @@
         },
         {
             "pageId": 19440,
-            "revisionId": 110872,
+            "revisionId": 116784,
             "title": "Wild Magic: Sorcery Points"
         },
         {
             "pageId": 19460,
-            "revisionId": 110878,
+            "revisionId": 116785,
             "title": "Wild Magic: Action Surge"
         },
         {
             "pageId": 19461,
-            "revisionId": 110879,
+            "revisionId": 116786,
             "title": "Wild Magic: Flight"
         },
         {
             "pageId": 19462,
-            "revisionId": 73436,
+            "revisionId": 116787,
             "title": "Wild Magic: Shield"
         },
         {
             "pageId": 19465,
-            "revisionId": 73450,
+            "revisionId": 116788,
             "title": "Wild Magic: Resilient Sphere"
         },
         {
@@ -13404,27 +13406,27 @@
         },
         {
             "pageId": 19469,
-            "revisionId": 73471,
+            "revisionId": 116789,
             "title": "Wild Magic: Polymorph"
         },
         {
             "pageId": 19471,
-            "revisionId": 73499,
+            "revisionId": 116790,
             "title": "Wild Magic: Slow"
         },
         {
             "pageId": 19474,
-            "revisionId": 73497,
+            "revisionId": 116791,
             "title": "Wild Magic: Spike Growth"
         },
         {
             "pageId": 19475,
-            "revisionId": 110866,
+            "revisionId": 116792,
             "title": "Wild Magic: Entangle"
         },
         {
             "pageId": 19477,
-            "revisionId": 73504,
+            "revisionId": 116793,
             "title": "Wild Magic: Speak with Animals"
         },
         {
@@ -13549,7 +13551,7 @@
         },
         {
             "pageId": 19632,
-            "revisionId": 73927,
+            "revisionId": 118815,
             "title": "One with Shadows (Class Action)"
         },
         {
@@ -13669,7 +13671,7 @@
         },
         {
             "pageId": 19977,
-            "revisionId": 105704,
+            "revisionId": 115323,
             "title": "Disarming Strike"
         },
         {
@@ -13699,7 +13701,7 @@
         },
         {
             "pageId": 20027,
-            "revisionId": 75580,
+            "revisionId": 118312,
             "title": "See Invisibility (Class Action)"
         },
         {
@@ -13974,7 +13976,7 @@
         },
         {
             "pageId": 20808,
-            "revisionId": 78323,
+            "revisionId": 124606,
             "title": "Infectious Bite (Rat)"
         },
         {
@@ -14094,7 +14096,7 @@
         },
         {
             "pageId": 21244,
-            "revisionId": 110699,
+            "revisionId": 124851,
             "title": "Infernal Dagger"
         },
         {
@@ -14104,7 +14106,7 @@
         },
         {
             "pageId": 21259,
-            "revisionId": 109693,
+            "revisionId": 125026,
             "title": "Concussive Burst"
         },
         {
@@ -14194,7 +14196,7 @@
         },
         {
             "pageId": 21342,
-            "revisionId": 109721,
+            "revisionId": 125057,
             "title": "Lethal Leech"
         },
         {
@@ -14219,12 +14221,12 @@
         },
         {
             "pageId": 21357,
-            "revisionId": 103463,
+            "revisionId": 117211,
             "title": "Claws (Class Action)"
         },
         {
             "pageId": 21368,
-            "revisionId": 105527,
+            "revisionId": 115132,
             "title": "Claws (Ghoul)"
         },
         {
@@ -14369,7 +14371,7 @@
         },
         {
             "pageId": 21643,
-            "revisionId": 110930,
+            "revisionId": 125290,
             "title": "Charger: Shove"
         },
         {
@@ -14379,7 +14381,7 @@
         },
         {
             "pageId": 21660,
-            "revisionId": 109392,
+            "revisionId": 125295,
             "title": "Wild Shape: Cave Bear"
         },
         {
@@ -14399,7 +14401,7 @@
         },
         {
             "pageId": 21828,
-            "revisionId": 83399,
+            "revisionId": 123304,
             "title": "Dash (Bonus Action)"
         },
         {
@@ -14774,7 +14776,7 @@
         },
         {
             "pageId": 22610,
-            "revisionId": 86871,
+            "revisionId": 115492,
             "title": "Winter's Breath"
         },
         {
@@ -14884,12 +14886,12 @@
         },
         {
             "pageId": 22765,
-            "revisionId": 109710,
+            "revisionId": 125034,
             "title": "Gore (Minotaur)"
         },
         {
             "pageId": 22769,
-            "revisionId": 110934,
+            "revisionId": 125299,
             "title": "Charge (Minotaur)"
         },
         {
@@ -14914,7 +14916,7 @@
         },
         {
             "pageId": 23038,
-            "revisionId": 111714,
+            "revisionId": 115343,
             "title": "Multiattack (Steel Watcher Titan)"
         },
         {
@@ -15014,17 +15016,17 @@
         },
         {
             "pageId": 23182,
-            "revisionId": 89406,
+            "revisionId": 120488,
             "title": "Gaze of the Dead"
         },
         {
             "pageId": 23183,
-            "revisionId": 89409,
+            "revisionId": 120490,
             "title": "Reaper's Scythe"
         },
         {
             "pageId": 23184,
-            "revisionId": 89418,
+            "revisionId": 120480,
             "title": "Call of the Damned"
         },
         {
@@ -15189,17 +15191,17 @@
         },
         {
             "pageId": 23640,
-            "revisionId": 91585,
+            "revisionId": 119693,
             "title": "Shrouded in Shadow"
         },
         {
             "pageId": 23669,
-            "revisionId": 109722,
+            "revisionId": 122178,
             "title": "Lightning Aura"
         },
         {
             "pageId": 23674,
-            "revisionId": 113087,
+            "revisionId": 122224,
             "title": "Shield Bash"
         },
         {
@@ -15214,7 +15216,7 @@
         },
         {
             "pageId": 23684,
-            "revisionId": 91734,
+            "revisionId": 122225,
             "title": "Rebuke of the Mighty"
         },
         {
@@ -15334,7 +15336,7 @@
         },
         {
             "pageId": 23948,
-            "revisionId": 112441,
+            "revisionId": 121989,
             "title": "Phalar Aluve: Shriek"
         },
         {
@@ -15709,7 +15711,7 @@
         },
         {
             "pageId": 25417,
-            "revisionId": 110532,
+            "revisionId": 123024,
             "title": "Dark Currents"
         },
         {
@@ -15719,12 +15721,12 @@
         },
         {
             "pageId": 25423,
-            "revisionId": 99456,
+            "revisionId": 125028,
             "title": "Daddy's Lecture"
         },
         {
             "pageId": 25428,
-            "revisionId": 99475,
+            "revisionId": 124940,
             "title": "Shadowjaw Bite"
         },
         {
@@ -15759,12 +15761,12 @@
         },
         {
             "pageId": 25458,
-            "revisionId": 110800,
+            "revisionId": 120042,
             "title": "Spider Queen's Wrath"
         },
         {
             "pageId": 25466,
-            "revisionId": 112562,
+            "revisionId": 125090,
             "title": "Venomous Bite (Phase Spider Matriarch)"
         },
         {
@@ -15839,7 +15841,7 @@
         },
         {
             "pageId": 25788,
-            "revisionId": 101451,
+            "revisionId": 123023,
             "title": "Phantasms"
         },
         {
@@ -15889,7 +15891,7 @@
         },
         {
             "pageId": 25957,
-            "revisionId": 106280,
+            "revisionId": 120674,
             "title": "Fiendish Ascension"
         },
         {
@@ -15909,7 +15911,7 @@
         },
         {
             "pageId": 26345,
-            "revisionId": 109780,
+            "revisionId": 125019,
             "title": "Bloodlust (Redcap)"
         },
         {
@@ -15939,7 +15941,7 @@
         },
         {
             "pageId": 26470,
-            "revisionId": 104267,
+            "revisionId": 123885,
             "title": "Let the Slaughter Begin"
         },
         {
@@ -15964,17 +15966,17 @@
         },
         {
             "pageId": 26483,
-            "revisionId": 109374,
+            "revisionId": 125278,
             "title": "Relentless Lunge"
         },
         {
             "pageId": 26486,
-            "revisionId": 103536,
+            "revisionId": 123915,
             "title": "Slay"
         },
         {
             "pageId": 26487,
-            "revisionId": 102853,
+            "revisionId": 123930,
             "title": "Multiattack (Slayer)"
         },
         {
@@ -15994,12 +15996,12 @@
         },
         {
             "pageId": 26587,
-            "revisionId": 105552,
+            "revisionId": 114780,
             "title": "Off-Hand Attack (Melee)"
         },
         {
             "pageId": 26588,
-            "revisionId": 105553,
+            "revisionId": 114781,
             "title": "Off-Hand Attack (Ranged)"
         },
         {
@@ -16014,7 +16016,7 @@
         },
         {
             "pageId": 26626,
-            "revisionId": 103401,
+            "revisionId": 120235,
             "title": "Rush"
         },
         {
@@ -16069,12 +16071,12 @@
         },
         {
             "pageId": 26957,
-            "revisionId": 109373,
+            "revisionId": 125277,
             "title": "Read Thoughts"
         },
         {
             "pageId": 26958,
-            "revisionId": 109346,
+            "revisionId": 125245,
             "title": "Dampen Elements"
         },
         {
@@ -16144,7 +16146,7 @@
         },
         {
             "pageId": 27245,
-            "revisionId": 106239,
+            "revisionId": 125058,
             "title": "Psychic Resonance"
         },
         {
@@ -16169,12 +16171,12 @@
         },
         {
             "pageId": 27265,
-            "revisionId": 109390,
+            "revisionId": 125094,
             "title": "Water Whip: Knock Prone"
         },
         {
             "pageId": 27269,
-            "revisionId": 109391,
+            "revisionId": 125096,
             "title": "Water Whip: Pull"
         },
         {
@@ -16309,7 +16311,7 @@
         },
         {
             "pageId": 27637,
-            "revisionId": 111823,
+            "revisionId": 120075,
             "title": "Throw Stone"
         },
         {
@@ -16334,7 +16336,7 @@
         },
         {
             "pageId": 27727,
-            "revisionId": 110926,
+            "revisionId": 125298,
             "title": "Bull Rush"
         },
         {
@@ -16349,7 +16351,7 @@
         },
         {
             "pageId": 27738,
-            "revisionId": 110986,
+            "revisionId": 121775,
             "title": "Whossa Large Fellow?"
         },
         {
@@ -16449,7 +16451,7 @@
         },
         {
             "pageId": 27809,
-            "revisionId": 111446,
+            "revisionId": 124133,
             "title": "Multiattack (Ettercap)"
         },
         {
@@ -16469,7 +16471,7 @@
         },
         {
             "pageId": 27815,
-            "revisionId": 111493,
+            "revisionId": 124619,
             "title": "Multiattack (Hook Horror)"
         },
         {
@@ -16499,7 +16501,7 @@
         },
         {
             "pageId": 27823,
-            "revisionId": 111505,
+            "revisionId": 124641,
             "title": "Devour (Shadow-Cursed Shambling Mound)"
         },
         {
@@ -16569,7 +16571,7 @@
         },
         {
             "pageId": 27878,
-            "revisionId": 111680,
+            "revisionId": 120527,
             "title": "Static Overdrive"
         },
         {
@@ -16804,7 +16806,7 @@
         },
         {
             "pageId": 27981,
-            "revisionId": 112099,
+            "revisionId": 123162,
             "title": "Slam (Ogre)"
         },
         {
@@ -16989,7 +16991,7 @@
         },
         {
             "pageId": 28040,
-            "revisionId": 112287,
+            "revisionId": 120076,
             "title": "Sharp Rock"
         },
         {
@@ -17354,12 +17356,12 @@
         },
         {
             "pageId": 28141,
-            "revisionId": 112575,
+            "revisionId": 122901,
             "title": "Bite (Bulette)"
         },
         {
             "pageId": 28142,
-            "revisionId": 112578,
+            "revisionId": 124617,
             "title": "Deadly Leap"
         },
         {
@@ -17389,7 +17391,7 @@
         },
         {
             "pageId": 28163,
-            "revisionId": 112637,
+            "revisionId": 115113,
             "title": "Vengeful Strike"
         },
         {
@@ -17499,7 +17501,7 @@
         },
         {
             "pageId": 28225,
-            "revisionId": 112787,
+            "revisionId": 114842,
             "title": "Houndmaster's Mark"
         },
         {
@@ -17769,7 +17771,7 @@
         },
         {
             "pageId": 28312,
-            "revisionId": 113108,
+            "revisionId": 121643,
             "title": "Missile Snaring"
         },
         {
@@ -17964,7 +17966,7 @@
         },
         {
             "pageId": 28374,
-            "revisionId": 113249,
+            "revisionId": 121328,
             "title": "Bloodfest"
         },
         {
@@ -18294,12 +18296,12 @@
         },
         {
             "pageId": 28521,
-            "revisionId": 113744,
+            "revisionId": 120476,
             "title": "Lucky: Reroll Attacker's Die"
         },
         {
             "pageId": 28522,
-            "revisionId": 113745,
+            "revisionId": 120477,
             "title": "Lucky: Reroll with Advantage"
         },
         {
@@ -18484,7 +18486,7 @@
         },
         {
             "pageId": 28597,
-            "revisionId": 113932,
+            "revisionId": 122566,
             "title": "Ring of Evasion (Reaction)"
         },
         {
@@ -18669,7 +18671,7 @@
         },
         {
             "pageId": 28682,
-            "revisionId": 114639,
+            "revisionId": 125272,
             "title": "Pounce (Alioramus)"
         },
         {
@@ -18751,6 +18753,11 @@
             "pageId": 28935,
             "revisionId": 116148,
             "title": "Dark Vengeance"
+        },
+        {
+            "pageId": 28938,
+            "revisionId": 116280,
+            "title": "Template:Math"
         },
         {
             "pageId": 28946,
@@ -18909,7 +18916,7 @@
         },
         {
             "pageId": 29303,
-            "revisionId": 117114,
+            "revisionId": 125294,
             "title": "Auntie's Trickery"
         },
         {
@@ -18934,12 +18941,12 @@
         },
         {
             "pageId": 29334,
-            "revisionId": 117208,
+            "revisionId": 125029,
             "title": "Damsel in Distress"
         },
         {
             "pageId": 29336,
-            "revisionId": 117215,
+            "revisionId": 125017,
             "title": "A Coven of Hags"
         },
         {
@@ -19079,32 +19086,32 @@
         },
         {
             "pageId": 29553,
-            "revisionId": 118392,
+            "revisionId": 118927,
             "title": "Greataxe Slash"
         },
         {
             "pageId": 29556,
-            "revisionId": 118402,
+            "revisionId": 118928,
             "title": "Greatsword Slash"
         },
         {
             "pageId": 29561,
-            "revisionId": 118414,
+            "revisionId": 118929,
             "title": "Halberd Slash"
         },
         {
             "pageId": 29562,
-            "revisionId": 118415,
+            "revisionId": 118930,
             "title": "Maul Blow"
         },
         {
             "pageId": 29563,
-            "revisionId": 118416,
+            "revisionId": 118931,
             "title": "Spear Thrust"
         },
         {
             "pageId": 29564,
-            "revisionId": 118417,
+            "revisionId": 118932,
             "title": "Trident Thrust"
         },
         {
@@ -19169,7 +19176,7 @@
         },
         {
             "pageId": 29874,
-            "revisionId": 119829,
+            "revisionId": 123880,
             "title": "Slayer (Class Action)"
         },
         {
@@ -19249,27 +19256,27 @@
         },
         {
             "pageId": 30082,
-            "revisionId": 120494,
+            "revisionId": 125122,
             "title": "Knowledge of the Ages: Strength"
         },
         {
             "pageId": 30083,
-            "revisionId": 120495,
+            "revisionId": 125123,
             "title": "Knowledge of the Ages: Dexterity"
         },
         {
             "pageId": 30084,
-            "revisionId": 120496,
+            "revisionId": 125056,
             "title": "Knowledge of the Ages: Wisdom"
         },
         {
             "pageId": 30085,
-            "revisionId": 120516,
+            "revisionId": 125124,
             "title": "Knowledge of the Ages: Intelligence"
         },
         {
             "pageId": 30086,
-            "revisionId": 120498,
+            "revisionId": 125125,
             "title": "Knowledge of the Ages: Charisma"
         },
         {
@@ -19334,7 +19341,7 @@
         },
         {
             "pageId": 30160,
-            "revisionId": 120724,
+            "revisionId": 124970,
             "title": "Vengeful Father"
         },
         {
@@ -19349,7 +19356,7 @@
         },
         {
             "pageId": 30190,
-            "revisionId": 124291,
+            "revisionId": 125260,
             "title": "Legendary Action: Psionic Visage"
         },
         {
@@ -19484,7 +19491,7 @@
         },
         {
             "pageId": 30373,
-            "revisionId": 121706,
+            "revisionId": 124083,
             "title": "Gossamer Tomb"
         },
         {
@@ -19694,7 +19701,7 @@
         },
         {
             "pageId": 30519,
-            "revisionId": 122872,
+            "revisionId": 124618,
             "title": "Pounce (Hook Horror)"
         },
         {
@@ -19769,7 +19776,7 @@
         },
         {
             "pageId": 30861,
-            "revisionId": 124020,
+            "revisionId": 125293,
             "title": "Arcane Critical"
         },
         {
@@ -19814,7 +19821,7 @@
         },
         {
             "pageId": 30898,
-            "revisionId": 124119,
+            "revisionId": 124506,
             "title": "Tightening Orbit"
         },
         {
@@ -19836,6 +19843,11 @@
             "pageId": 30909,
             "revisionId": 124146,
             "title": "Sarevok's Wretched Armour"
+        },
+        {
+            "pageId": 30915,
+            "revisionId": 125259,
+            "title": "Psionic Visage"
         },
         {
             "pageId": 30941,
@@ -20079,7 +20091,7 @@
         },
         {
             "pageId": 31116,
-            "revisionId": 124858,
+            "revisionId": 124902,
             "title": "Blinding Ambush"
         },
         {
@@ -20119,7 +20131,7 @@
         },
         {
             "pageId": 31151,
-            "revisionId": 125183,
+            "revisionId": 125211,
             "title": "Valiant Defence"
         },
         {
@@ -20129,12 +20141,12 @@
         },
         {
             "pageId": 31153,
-            "revisionId": 125189,
+            "revisionId": 125212,
             "title": "Valiant Attack"
         },
         {
             "pageId": 31154,
-            "revisionId": 125190,
+            "revisionId": 125213,
             "title": "Valiant Damage"
         },
         {
@@ -20144,13 +20156,18 @@
         },
         {
             "pageId": 31159,
-            "revisionId": 125196,
+            "revisionId": 125216,
             "title": "Bardic Defence"
         },
         {
             "pageId": 31160,
-            "revisionId": 125198,
+            "revisionId": 125217,
             "title": "Bardic Attack"
+        },
+        {
+            "pageId": 31177,
+            "revisionId": 125256,
+            "title": "Shatter Visage"
         }
     ],
     "deadLinks": [

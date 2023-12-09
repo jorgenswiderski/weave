@@ -8,6 +8,8 @@ import {
     ActionSchool,
     IActionBase,
     ActionCost,
+    ActionCostBehavior,
+    ActionResourceFromString,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/action';
 import { AbilityScore } from '@jorgenswiderski/tomekeeper-shared/dist/types/ability';
 import { DamageType } from '@jorgenswiderski/tomekeeper-shared/dist/types/damage';
@@ -16,7 +18,11 @@ import { error } from '../logger';
 import { PageItem, PageLoadingState } from '../page-item';
 import { MediaWikiTemplate } from '../media-wiki/media-wiki-template';
 import { StaticImageCacheService } from '../static-image-cache-service';
-import { MediaWikiTemplateParserConfig } from '../media-wiki/types';
+import {
+    IPageData,
+    MediaWikiTemplateParserConfig,
+    MediaWikiTemplateParserConfigItem,
+} from '../media-wiki/types';
 
 enum ActionLoadState {
     ACTION_BASE_DATA = 'ACTION_BASE_DATA',
@@ -85,6 +91,60 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
         const match = wikitext.match(regex);
 
         return match ? match[1].trim() : undefined;
+    }
+
+    protected parseCosts(template: MediaWikiTemplate): void {
+        if (!this.page?.content) {
+            throw new PageNotFoundError();
+        }
+
+        const actionCostParser = (
+            value: string,
+            config: MediaWikiTemplateParserConfigItem,
+            page: IPageData,
+        ) => {
+            const costMatches = [...value.matchAll(/([\w\d]+)(?::(\d+))?/g)];
+
+            const costs = costMatches.map(
+                ([, resource, amount]): ActionCost => {
+                    if (
+                        !(resource in ActionResourceFromString) &&
+                        resource !== ''
+                    ) {
+                        error(
+                            `Failed to map '${config.key}' value '${value}' to enum (${page.title}).`,
+                        );
+                    }
+
+                    return {
+                        resource: ActionResourceFromString[resource],
+                        amount: parseInt(amount ?? 1, 10),
+                        behavior:
+                            config.key === 'hit cost'
+                                ? ActionCostBehavior.onHit
+                                : undefined,
+                    };
+                },
+            );
+
+            return costs;
+        };
+
+        const config: MediaWikiTemplateParserConfig = {
+            cost: {
+                parser: actionCostParser,
+                default: [],
+            },
+            hitCost: {
+                key: 'hit cost',
+                parser: actionCostParser,
+                default: [],
+            },
+        };
+
+        const { cost, hitCost } = template.parse(config);
+
+        this.costs = [...cost, ...hitCost];
     }
 
     protected async initData(): Promise<void> {
@@ -266,6 +326,7 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
 
         const template = await this.page.getTemplate(this.templateName);
         Object.assign(this, template.parse(config));
+        this.parseCosts(template);
     }
 
     toJSON(): Partial<IActionBase> {
