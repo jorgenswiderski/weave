@@ -68,17 +68,13 @@ export async function getActionDataFiltered(): Promise<Action[]> {
 
 export async function initActionsAndSpells(): Promise<void> {
     const categories = [
-        // can remove these once templates are done being revised
-        // https://discord.com/channels/937803826583445565/1173678971213332550
-        'Spells',
-        'Class actions',
-        'Weapon actions',
-
         'Actions',
         'Bonus actions',
         'Reactions',
         'Free actions',
         'Movement-expending actions',
+
+        'Class actions', // some actions only cost a class resource (like a Superiority Die) and so technically are not "free actions"
     ];
 
     const actionNames = await MediaWiki.getTitlesInCategories(categories);

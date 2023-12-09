@@ -341,7 +341,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             throw new PageNotFoundError();
         }
 
-        this.obtainable = await this.isObtainable();
+        this.obtainable = await this.isUsable();
 
         if (!this.obtainable) {
             return;
@@ -425,7 +425,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         Object.assign(this, rest);
     }
 
-    async isObtainable(): Promise<boolean> {
+    async isUsable(): Promise<boolean> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
         if (!this.page?.content) {
@@ -436,6 +436,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             'Legacy Content',
             'Unobtainable',
             'Inaccessible',
+            'Unusable',
         ]));
     }
 

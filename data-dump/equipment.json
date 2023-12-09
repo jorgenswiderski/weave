@@ -25889,7 +25889,7 @@
                         }
                     },
                     "character": {
-                        "name": "Kith'rak Therezzyn",
+                        "name": "Therezzyn",
                         "id": 17560
                     }
                 }
@@ -26161,74 +26161,6 @@
             "thrown": false,
             "cantDualWield": false,
             "dippable": true
-        },
-        {
-            "name": "Watcher Greatsword",
-            "image": "Greatsword B Icon.png",
-            "icon": "Greatsword B Unfaded Icon.png",
-            "description": "Watcher Greatsword is a common greatsword. It can only be wielded by Steel Watchers.",
-            "type": 20,
-            "rarity": 1,
-            "weightKg": 100,
-            "weightLb": 200,
-            "price": 65,
-            "uid": "WPN_WATCHER_Greatsword_B",
-            "effects": [],
-            "sources": [
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 3",
-                            "id": 4950
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Baldur's Gate",
-                            "id": 6062
-                        },
-                        "location": {
-                            "name": "Steel Watch Foundry",
-                            "id": 12160
-                        }
-                    }
-                },
-                {
-                    "location": {
-                        "act": {
-                            "name": "Act 3",
-                            "id": 4950
-                        },
-                        "superRegion": {
-                            "name": "Over-world"
-                        },
-                        "region": {
-                            "name": "Rivington",
-                            "id": 11636
-                        }
-                    },
-                    "character": {
-                        "name": "Steel Watcher",
-                        "id": 13838
-                    }
-                }
-            ],
-            "proficiency": 0,
-            "id": 11856,
-            "category": 1,
-            "rangeType": 1,
-            "handedness": 3,
-            "damage": "3d12",
-            "damageType": 1,
-            "range": 0,
-            "finesse": false,
-            "heavy": true,
-            "light": false,
-            "reach": false,
-            "thrown": false,
-            "cantDualWield": false,
-            "dippable": false
         }
     ],
     "21": [
