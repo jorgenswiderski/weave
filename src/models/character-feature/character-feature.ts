@@ -198,14 +198,12 @@ export class CharacterFeature
 
             if (
                 !page.hasCategory([
-                    'Spells',
-                    'Class actions',
-                    'Weapon actions',
                     'Actions',
                     'Bonus actions',
                     'Reactions',
                     'Free actions',
                     'Movement-expending actions',
+                    'Class actions',
 
                     'Passive features',
                     'Toggleable passive features',
@@ -489,11 +487,13 @@ export class CharacterFeature
         }
 
         const isGrantableEffect = this.page.hasCategory([
-            'Weapon actions',
+            'Actions',
+            'Bonus actions',
+            'Reactions',
+            'Free actions',
+            'Movement-expending actions',
             'Class actions',
-            'Racial action',
             'Passive features',
-            'Spells',
             'Toggleable passive features',
         ]);
 

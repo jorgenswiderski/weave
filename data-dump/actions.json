@@ -308,7 +308,7 @@
         "image": "Blade of Rime.webp",
         "level": 0,
         "school": 0,
-        "summary": "Blade of Rime is an action that allows the Way of the Four Elements to use their equivalent of Ice Knife by expending ki|forceplural=yes instead of Spell Slots.",
+        "summary": "Blade of Rime is an action that allows a Way of the Four Elements to use their equivalent of Ice Knife by expending ki|forceplural=yes instead of Spell Slots.",
         "description": "Throw a shard of ice that deals 1d10|Piercing damage. It explodes and deals 2d6|Cold to anyone nearby. It leaves an ice surface.\n\nThis spell can be cast while you are Silenced.",
         "ritual": false,
         "concentration": false,
@@ -388,14 +388,15 @@
         "image": "Ray of Frost.webp",
         "level": 0,
         "school": 0,
-        "summary": "Chill of the Mountain is an action that allows the Way of the Four Elements to hit with cold damage and reduce the movement speed of their opponent. This action is the Monk's equivalent of Ray of Frost.",
+        "summary": "Chill of the Mountain is an action that allows a Way of the Four Elements to hit with cold damage and reduce the movement speed of their opponent. This action is the Monk's equivalent of Ray of Frost.",
         "description": "Call forth the cold mountain winds and reduce the target's movement speed by ft=10.",
         "ritual": false,
         "concentration": false,
         "id": 7858,
-        "attackRoll": false,
+        "attackRoll": true,
         "range": 1,
         "condition": "Ray of Frost",
+        "conditionDuration": 1,
         "costs": [
             {
                 "resource": 1,
@@ -412,14 +413,13 @@
         "image": "Hold Person.webp",
         "level": 0,
         "school": 0,
-        "summary": "Clench of the North Wind is an Action that allows the Way of the Four Elements to cast Hold Person as a class action.",
-        "description": "Hold a humanoid enemy still. They can't move, act or react. Attacks from within 3m are always critical hits.",
+        "summary": "Clench of the North Wind is an action that allows a Way of the Four Elements to cast their equivalent of Hold Person by expending ki|forceplural=yes instead of Spell Slots.",
+        "description": "Hold a humanoid enemy still. They can't move, act or react. Attacks from within m=3|ft=10 are always critical hits.",
         "ritual": false,
-        "concentration": false,
+        "concentration": true,
         "id": 7867,
         "attackRoll": false,
-        "rangeM": 18,
-        "rangeFt": 60,
+        "range": 1,
         "costs": [
             {
                 "resource": 1,
@@ -915,92 +915,6 @@
         ]
     },
     {
-        "name": "Divine Strike: Poison",
-        "damage": "amounttext:Weapon, type:Physical",
-        "image": "Divine Strike Poison Melee.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Divine Strike: Poison is a Trickery Domain action or reaction that deals extra Poison damage upon a weapon strike (either melee or ranged).",
-        "description": "* Divine Strike Poison Melee Icon Melee Skill: Once per turn deal 1d8|Poison damage in addition to your weapon's damage.\n* Divine Strike Poison Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Poison damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 19142,
-        "attackRoll": true,
-        "range": 4,
-        "recharge": 4,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Divine Strike: Radiant",
-        "damage": "amounttext:Weapon, type:Physical",
-        "image": "Divine Strike Radiant Melee.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Divine Strike: Radiant is a Life Domain action and reaction that deals extra Radiant damage upon a weapon strike (either melee or ranged).",
-        "description": "* Divine Strike Radiant Melee Icon Melee Skill: Once per turn deal 1d8|Radiant damage in addition to your weapon's damage.\n* Divine Strike Radiant Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Radiant damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 13412,
-        "attackRoll": true,
-        "range": 4,
-        "recharge": 4,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Divine Strike: Weapon",
-        "damage": "amounttext:Weapon, type:Physical",
-        "image": "Divine Strike Physical Melee.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Divine Strike: Weapon is a War Domain action or reaction that deals extra Weapon damage upon a weapon strike (either melee or ranged).",
-        "description": "* Divine Strike Physical Melee Icon Melee Skill: Once per turn deal 1d8|Physical damage in addition to your weapon's damage.\n* Divine Strike Physical Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Physical damage.",
-        "ritual": false,
-        "concentration": false,
-        "id": 19140,
-        "attackRoll": true,
-        "range": 4,
-        "recharge": 4,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
-        "name": "Diving Strike",
-        "damage": "amounttext:Weapon, type:Physical",
-        "image": "Diving Strike.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Diving Strike is a Wildheart action only available while using Rage: Eagle Heart, allowing you to leap down on a target dealing damage and knocking them prone.",
-        "description": "Leap down unto a foe below you, dealing Weapon Damage and knocking them Prone.\n\nYou do not take Falling damage. You must be at least m=1.5|ft=5 above your target.\n\nAvailable only when Raging.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1150,
-        "attackRoll": true,
-        "rangeM": 8,
-        "rangeFt": 25,
-        "condition": "Prone",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Dread Ambusher: Hide",
         "image": "Dread Ambusher Hide.webp",
         "level": 0,
@@ -1035,7 +949,7 @@
         "aoeM": 9,
         "aoeFt": 30,
         "condition": "Frightened",
-        "conditionDuration": 10,
+        "conditionDuration": 2,
         "conditionSave": 5,
         "costs": [
             {
@@ -1077,13 +991,13 @@
         "image": "Scorching Ray.webp",
         "level": 0,
         "school": 0,
-        "summary": "Embrace of the Inferno is an Action that allows the Way of the Four Elements to cast Scorching Ray as a class action. Embrace of the Inferno hurls 3 rays of fire at targets within range. You can either target a single creature or multiple creatures with the rays. Each ray rolls a separate Attack Roll and deals Fire damage.",
+        "summary": "Embrace of the Inferno is an action that allows a Way of the Four Elements to cast their equivalent of Scorching Ray by expending ki|forceplural=yes instead of Spell Slots.",
+        "description": "Expel the fire burning through your veins as 3 flaming rays. Each ray deals 2d6|Fire.",
         "ritual": false,
         "concentration": false,
         "id": 14447,
         "attackRoll": true,
-        "rangeM": 18,
-        "rangeFt": 60,
+        "range": 1,
         "costs": [
             {
                 "resource": 1,
@@ -1162,11 +1076,11 @@
     },
     {
         "name": "Fangs of the Fire Snake",
-        "damage": "amounttext: 1d6 + Dexterity, type: Bludgeoning",
+        "damage": "amounttext: Normal Unarmed Damage, type: Bludgeoning",
         "image": "Fangs of the Fire Snake.webp",
         "level": 0,
         "school": 0,
-        "summary": "Fangs of the Fire Snake is an action that allows the Way of the Four Elements to hit an enemy, dealing unarmed damage with 1d10|Fire, and deal an extra 1d4|Fire damage on their next melee attack.",
+        "summary": "Fangs of the Fire Snake is an action that allows a Way of the Four Elements to hit an enemy, dealing unarmed damage with 1d10|Fire, and deal an extra 1d4|Fire damage on their next melee attack.",
         "description": "Hit foes from afar.  Your next melee attacks deal an additional 1d4|Fire damage.",
         "ritual": false,
         "concentration": false,
@@ -1262,7 +1176,7 @@
         "image": "Thunderwave.webp",
         "level": 0,
         "school": 0,
-        "summary": "Fist of Four Thunders is an action that allows the Way of the Four Elements to push creatures and objects away. It is the Monk equivalent of Thunderwave.",
+        "summary": "Fist of Four Thunders is an action that allows a Way of the Four Elements to push creatures and objects away. It is the Monk equivalent of Thunderwave.",
         "description": "Release a wave of thunderous force that pushes away all creatures and objects.",
         "ritual": false,
         "concentration": false,
@@ -1288,7 +1202,7 @@
         "image": "Fist of Unbroken Air.webp",
         "level": 0,
         "school": 0,
-        "summary": "Fist of Unbroken Air is an action that allows the Way of the Four Elements to punch an enemy at distance, sending them flying backwards..",
+        "summary": "Fist of Unbroken Air is an action that allows a Way of the Four Elements to punch an enemy at distance, sending them flying backwards.",
         "description": "Push the target back m=6|ft=20 and knock it Prone.",
         "ritual": false,
         "concentration": false,
@@ -1316,12 +1230,16 @@
         "image": "Fireball Icon.png",
         "level": 0,
         "school": 0,
-        "summary": "Flames of the Phoenix is an action that allows the Way of the Four Elements to cast Fireball as a class action.",
+        "summary": "Flames of the Phoenix is an action that allows a Way of the Four Elements to cast their equivalent of Fireball by expending ki|forceplural=yes instead of Spell Slots.",
         "description": "Shoot a bright flame from your fingers that explodes upon contact, torching everything in the vicinity",
         "ritual": false,
         "concentration": false,
         "id": 10776,
         "attackRoll": false,
+        "range": 1,
+        "aoe": 1,
+        "aoeM": 4,
+        "aoeFt": 13,
         "costs": [
             {
                 "resource": 1,
@@ -1448,7 +1366,10 @@
         "rangeFt": 60,
         "costs": [
             {
-                "resource": 5,
+                "amount": 1
+            },
+            {
+                "resource": 4,
                 "amount": 1
             }
         ]
@@ -1575,7 +1496,7 @@
         "image": "Shatter.webp",
         "level": 0,
         "school": 0,
-        "summary": "Gong of the Summit is an Action that allows Way of the Four Elements to cast a monk version of the spell Shatter.",
+        "summary": "Gong of the Summit is an action that allows a Way of the Four Elements to cast their equivalent of Shatter by expending ki|forceplural=yes instead of Spell Slots.",
         "description": "Damages all nearby creatures and objects. Creatures made of inorganic material such as stone have Disadvantage on their SavingThrow.",
         "ritual": false,
         "concentration": false,
@@ -1886,7 +1807,7 @@
         "image": "Indomitable.webp",
         "level": 0,
         "school": 0,
-        "summary": "Indomitable is a Fighter reaction/passive feature that lets you reroll a failed Saving Throw.",
+        "summary": "Indomitable is a Fighter reaction that lets you reroll a failed Saving Throw. It is a free action, and therefore does not consume your reaction when used.",
         "description": "Whenever you fail a Saving Throw, you can roll again, using the new result instead.",
         "ritual": false,
         "concentration": false,
@@ -2084,7 +2005,7 @@
         "image": "Knowledge of the Ages.webp",
         "level": 0,
         "school": 0,
-        "summary": "Knowledge of the Ages is a Knowledge Domain Cleric Action. This ability allows the Cleric to channel divine power, gaining Proficiency in all Skills of a chosen Ability Score.",
+        "summary": "Knowledge of the Ages is a Knowledge Domain class action. This ability allows the Cleric to channel divine power, gaining Proficiency in all Skills of a chosen Ability Score.",
         "description": "Gain Proficiency in all Skills of a chosen Ability.",
         "ritual": false,
         "concentration": false,
@@ -2393,7 +2314,7 @@
         "level": 0,
         "school": 0,
         "summary": "Precision Attack is a Battle Master Fighter Action. This combat manoeuvre allows the Fighter to increase an attack roll for a higher chance of hitting an opponent.",
-        "description": "Your can spend a Superiority Die to add it to a result to an Attack Roll.",
+        "description": "You can spend a Superiority Die to add it to the result to an Attack Roll.",
         "ritual": false,
         "concentration": false,
         "id": 14360,
@@ -2435,7 +2356,8 @@
     },
     {
         "name": "Primal Stampede",
-        "damage": "amounttext:1d4 + Strength modifier, type:Bludgeoning",
+        "damage": "amount:1d4, mod:Strength, type:Bludgeoning",
+        "image": "Primal Stampede.webp",
         "level": 0,
         "school": 0,
         "summary": "Primal Stampede is a Wildheart action only available while using Rage: Elk Heart, allowing you charge in a line dealing damage to all enemies and knocking them prone.",
@@ -2450,6 +2372,7 @@
         "aoeFt": 30,
         "condition": "Prone",
         "conditionDuration": 2,
+        "conditionSave": 1,
         "costs": [
             {
                 "resource": 1,
@@ -2815,7 +2738,7 @@
         "image": "Fly_Icon.png",
         "level": 0,
         "school": 0,
-        "summary": "Ride the Wind is an action that allows the Monk following the Class Monk Four Elements Hotbar Icon|Way of the Four Elements to Fly.",
+        "summary": "Ride the Wind is an action that allows a Monk following the Way of the Four Elements to Fly.",
         "description": "Gain the ability to Fly.",
         "ritual": false,
         "concentration": false,
@@ -2862,7 +2785,7 @@
         "image": "Gust of Wind.webp",
         "level": 0,
         "school": 0,
-        "summary": "Rush of the Gale Spirits is an action that allows the Way of the Four Elements to conjure a squall to clear dangerous gasses or throw creatures back, potentially causing a dangerous fall. This action is the Monk's equivalent of Gust of Wind",
+        "summary": "Rush of the Gale Spirits is an action that allows a Way of the Four Elements to conjure a squall to clear dangerous gasses or throw creatures back, potentially causing a dangerous fall. This action is the Monk's equivalent of Gust of Wind",
         "description": "Summon a strong wind that clears all clouds and pushes creatures back m=5|ft=17, forcing them Off Balance.",
         "ritual": false,
         "concentration": false,
@@ -2984,10 +2907,10 @@
     },
     {
         "name": "Shadow Arts: Darkvision",
-        "image": "Darkvision Spell.webp",
+        "image": "Darkvision spell.webp",
         "level": 0,
         "school": 0,
-        "summary": "Shadow Arts: Darkvision is a Way of Shadow Action. This ability allows Monks to alter a creature's sight, granting them the ability to see in the dark\n\n:\n:",
+        "summary": "Shadow Arts: Darkvision is a Way of Shadow Action. This ability allows Monks to alter a creature's sight, granting them the ability to see in the dark",
         "description": "Grant a creature the ability to see in the dark out to a range of m=12|ft=40.",
         "ritual": false,
         "concentration": false,
@@ -3187,7 +3110,7 @@
         "image": "Shaping of the Ice.webp",
         "level": 0,
         "school": 0,
-        "summary": "Shaping of the Ice is an action that allows the Way of the Four Elements to create an ice cube that can be climbed.",
+        "summary": "Shaping of the Ice is an action that allows a Way of the Four Elements to create an ice cube that can be climbed.",
         "description": "Create a climbable ice cube.",
         "ritual": false,
         "concentration": false,
@@ -3362,12 +3285,12 @@
         "image": "Chromatic Orb.webp",
         "level": 0,
         "school": 0,
-        "summary": "Sphere of Elemental Balance is an action that allows the Way of the Four Elements to create a sphere that channels different elements. This action is the Monk's equivalent of Chromatic Orb.",
+        "summary": "Sphere of Elemental Balance is an action that allows a Way of the Four Elements to create a sphere that channels different elements. This action is the Monk's equivalent of Chromatic Orb.",
         "description": "Hurl a sphere of energy.\n\nIt deals 3d8|Thunder damage, or 2d8 Acid, Cold, Fire, Lightning or Poison damage and creates a surface.",
         "ritual": false,
         "concentration": false,
         "id": 8973,
-        "attackRoll": false,
+        "attackRoll": true,
         "range": 1,
         "costs": [
             {
@@ -3533,7 +3456,7 @@
         "image": "Burning Hands.webp",
         "level": 0,
         "school": 0,
-        "summary": "Sweeping Cinder Strike is an action that allows the Way of the Four Elements to shoot a flaming cone from their fingertips and deal Fire damage to enemies. This is the Monk's equivalent of Burning Hands.",
+        "summary": "Sweeping Cinder Strike is an action that allows a Way of the Four Elements to shoot a flaming cone from their fingertips and deal Fire damage to enemies. This is the Monk's equivalent of Burning Hands.",
         "description": "Expel fire from your outstretched hands and ignite anything flammable.",
         "ritual": false,
         "concentration": false,
@@ -3650,41 +3573,18 @@
         ]
     },
     {
-        "name": "Tiger's Bloodlust",
-        "damage": "amounttext:1/2 Normal Weapon Damage, type:Physical",
-        "image": "Tiger's Bloodlust.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Tiger's Bloodlust is a Wildheart action only available while using Rage: Tiger Heart, allowing you to attack multiple nearby enemies at once.",
-        "description": "Lash out to attack up to 3 enemies at once. They each take half the damage your weapon usually deals and start to Bleed.\n\nAvailable only when Raging.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1155,
-        "attackRoll": true,
-        "aoe": 2,
-        "aoeM": 2,
-        "aoeFt": 5,
-        "condition": "Bleeding",
-        "conditionDuration": 2,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Touch of the Storm",
         "damage": "amount:1d10, type:Lightning",
         "image": "Shocking Grasp.webp",
         "level": 0,
         "school": 0,
-        "summary": "Touch of the Storm is an Action that allows the Way of the Four Elements to strike nearby enemies with lightning, causing them to be unable to use reactions. This is the Monk's equivalent of Shocking Grasp.",
+        "summary": "Touch of the Storm is an action that allows the Way of the Four Elements to strike nearby enemies with lightning, causing them to be unable to use reactions. This is the Monk's equivalent of Shocking Grasp.",
         "description": "The target cannot use reactions. This spell has Advantage on creatures with metal armour.",
         "ritual": false,
         "concentration": false,
         "id": 7864,
-        "attackRoll": false,
+        "attackRoll": true,
+        "range": 2,
         "condition": "Shocking Grasp",
         "conditionDuration": 1,
         "costs": [
@@ -3964,8 +3864,8 @@
         "image": "Water Whip.webp",
         "level": 0,
         "school": 0,
-        "summary": "Water Whip is an Action that allows a Way of the Four Elements to either knock a target prone, or pull a target towards them.",
-        "description": "Possibly pulls a target within 9m toward you or knocks it Prone.",
+        "summary": "Water Whip is an action that allows a Way of the Four Elements to either knock a target prone, or pull it towards them.",
+        "description": "Possibly pulls a target m=9|ft=30 toward you or knocks it Prone.",
         "ritual": false,
         "concentration": false,
         "id": 7865,
@@ -4007,7 +3907,7 @@
         "level": 0,
         "school": 0,
         "summary": "Wholeness of Body is an action unique to Class Monk Open Hand Hotbar Icon|Way of the Open Hand, a subclass of Monk, that lets the monk regain Ki Points and have an extra bonus action.",
-        "description": "Regain half your Ki and enter a temporary state of Wholeness where you regain Ki Points and have an extra bonus.",
+        "description": "Regain half your Kis and enter a temporary state of Wholeness where you regain Ki Points and have an extra bonus.",
         "ritual": false,
         "concentration": false,
         "id": 8916,
@@ -4274,7 +4174,16 @@
         "attackRoll": true,
         "rangeM": 9,
         "rangeFt": 30,
-        "costs": []
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
     },
     {
         "name": "Disarming Attack (Melee)",
@@ -4289,6 +4198,7 @@
         "concentration": false,
         "id": 785,
         "attackRoll": true,
+        "condition": "Weapon Dropped!",
         "costs": [
             {
                 "resource": 1,
@@ -4314,6 +4224,7 @@
         "concentration": false,
         "id": 1480,
         "attackRoll": true,
+        "condition": "Weapon Dropped!",
         "costs": [
             {
                 "resource": 1,
@@ -4369,6 +4280,95 @@
         "range": 4,
         "condition": "Distracted",
         "conditionDuration": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Divine Strike: Poison",
+        "damage": "weapon",
+        "extraDamage": "1d8",
+        "extraDamageType": 9,
+        "image": "Divine Strike Poison Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Divine Strike: Poison is a Trickery Domain Weapon Action and Reaction that deals extra Poison damage upon a weapon strike (either melee or ranged).",
+        "description": "* Divine Strike Poison Melee Icon Melee Skill: Once per turn deal 1d8|Poison damage in addition to your weapon's damage.\n* Divine Strike Poison Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Poison damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 19142,
+        "attackRoll": true,
+        "range": 4,
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Divine Strike: Radiant",
+        "damage": "weapon",
+        "extraDamage": "1d8",
+        "extraDamageType": 10,
+        "image": "Divine Strike Radiant Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Divine Strike: Radiant is a Life Domain Weapon Action and Reaction that deals extra Radiant damage upon a weapon strike (either melee or ranged).",
+        "description": "* Divine Strike Radiant Melee Icon Melee Skill: Once per turn deal 1d8|Radiant damage in addition to your weapon's damage.\n* Divine Strike Radiant Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Radiant damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 13412,
+        "attackRoll": true,
+        "range": 4,
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Divine Strike: Weapon",
+        "damage": "weapon",
+        "extraDamage": "1d8",
+        "extraDamageType": 15,
+        "image": "Divine Strike Physical Melee.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Divine Strike: Weapon is a War Domain Weapon Action and Reaction that deals extra Weapon damage upon a weapon strike (either melee or ranged).",
+        "description": "* Divine Strike Physical Melee Icon Melee Skill: Once per turn deal 1d8|Physical damage in addition to your weapon's damage.\n* Divine Strike Physical Ranged Icon Ranged Skill and Reaction: Deal an additional 1d8|Physical damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 19140,
+        "attackRoll": true,
+        "range": 4,
+        "recharge": 4,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Diving Strike",
+        "damage": "weapon",
+        "level": 0,
+        "school": 0,
+        "summary": "Diving Strike is a Wildheart action only available while using Rage: Eagle Heart, allowing you to leap down on a target dealing damage and knocking them prone.",
+        "description": "Leap down unto a foe below you, dealing normal weapon damage and knocking them Prone.\n\nYou do not take Falling damage. You must be at least m=1.5|ft=5 above your target.\n\nAvailable only when Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1150,
+        "attackRoll": true,
+        "condition": "Prone",
+        "conditionDuration": 2,
         "costs": [
             {
                 "resource": 1,
@@ -4631,7 +4631,8 @@
             },
             {
                 "resource": 22,
-                "amount": 1
+                "amount": 1,
+                "behavior": 2
             }
         ]
     },
@@ -4655,6 +4656,30 @@
             },
             {
                 "resource": 22,
+                "amount": 1,
+                "behavior": 2
+            }
+        ]
+    },
+    {
+        "name": "Tiger's Bloodlust",
+        "damage": "half weapon",
+        "level": 0,
+        "school": 0,
+        "summary": "Tiger's Bloodlust is a Wildheart action only available while using Rage: Tiger Heart, allowing you to attack multiple nearby enemies at once.",
+        "description": "Lash out to attack up to 3 enemies at once. They each take half the damage your weapon usually deals and start to Bleed.\n\nAvailable only when Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1155,
+        "attackRoll": true,
+        "aoe": 2,
+        "aoeM": 2,
+        "aoeFt": 5,
+        "condition": "Bleeding",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
                 "amount": 1
             }
         ]
