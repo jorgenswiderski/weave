@@ -5196,10 +5196,10 @@
                                         ]
                                     },
                                     {
-                                        "name": "Banishing Smite (Melee)",
+                                        "name": "Banishing Smite",
                                         "grants": [
                                             {
-                                                "ref": "s11915"
+                                                "ref": "s17139"
                                             }
                                         ]
                                     },
@@ -19202,7 +19202,7 @@
                                                 "ref": "s1585"
                                             },
                                             {
-                                                "ref": "s2167"
+                                                "ref": "s5081"
                                             }
                                         ]
                                     },
