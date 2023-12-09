@@ -6,7 +6,7 @@ import writeFileAtomic from 'write-file-atomic';
 import { MediaWiki } from '../media-wiki/media-wiki';
 import { MwnTokenBucket } from '../../api/mwn';
 import { CONFIG } from '../config';
-import { debug, error } from '../logger';
+import { debug, error, warn } from '../logger';
 import { RemoteImageError } from './types';
 
 interface ImageCacheResponse {
@@ -56,8 +56,8 @@ export class ImageCacheModel {
                 JSON.stringify(this.preloadSizes, null, 4),
             );
         } catch (err) {
-            error('Failed to flush preload sizes:');
-            error(err);
+            warn('Failed to flush preload sizes:');
+            warn(err);
         }
     }
 
@@ -78,8 +78,8 @@ export class ImageCacheModel {
                 JSON.stringify(this.assetCacheTime, null, 4),
             );
         } catch (err) {
-            error('Failed to flush asset map:');
-            error(err);
+            warn('Failed to flush asset map:');
+            warn(err);
         }
     }
 
