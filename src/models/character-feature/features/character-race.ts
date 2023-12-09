@@ -196,17 +196,13 @@ export class CharacterRace extends CharacterFeature {
     }
 
     toJSON() {
-        const { name, description, image, choices, grants } = this;
+        const { choices } = this;
 
         return {
-            name,
-            description,
-            choices: Utils.isNonEmptyArray(choices) ? choices : undefined,
-            choiceType: Utils.isNonEmptyArray(choices)
+            ...super.toJSON(),
+            choiceType: choices
                 ? CharacterPlannerStep.CHOOSE_SUBRACE
                 : undefined,
-            image,
-            grants,
         };
     }
 }

@@ -5,6 +5,7 @@
         "Camp": "Campsite",
         "Camp Follower": "Camp followers",
         "Captain Grisly": "Grisly",
+        "Ch'r'ai Tska'an": "Tska'an",
         "Chapter Three": "Act Three",
         "Chapter Two": "Act Two",
         "Commander Zhalk": "Zhalk",
@@ -9216,8 +9217,8 @@
         },
         {
             "pageId": 10735,
-            "revisionId": 108062,
-            "title": "Ch'r'ai Tska'an"
+            "revisionId": 125789,
+            "title": "Tska'an"
         },
         {
             "pageId": 10738,
@@ -15756,8 +15757,8 @@
         },
         {
             "pageId": 25456,
-            "revisionId": 112567,
-            "title": "Venomous Discharge"
+            "revisionId": 125770,
+            "title": "Venomous Discharge (Phase Spider)"
         },
         {
             "pageId": 25458,
@@ -19495,6 +19496,11 @@
             "title": "Gossamer Tomb"
         },
         {
+            "pageId": 30376,
+            "revisionId": 125882,
+            "title": "Soul Ascension"
+        },
+        {
             "pageId": 30381,
             "revisionId": 124967,
             "title": "Beguiling Rebuke"
@@ -19730,9 +19736,19 @@
             "title": "Pushing Attack (Titanstring Bow)"
         },
         {
+            "pageId": 30773,
+            "revisionId": 125879,
+            "title": "Call Consort"
+        },
+        {
             "pageId": 30779,
             "revisionId": 123748,
             "title": "Extra Attack (Familiar)"
+        },
+        {
+            "pageId": 30782,
+            "revisionId": 125876,
+            "title": "Leaping Static"
         },
         {
             "pageId": 30832,
@@ -19883,6 +19899,11 @@
             "pageId": 30958,
             "revisionId": 124362,
             "title": "Shadowstep Boots"
+        },
+        {
+            "pageId": 30959,
+            "revisionId": 125877,
+            "title": "Weird Magic Surge"
         },
         {
             "pageId": 30960,
@@ -20168,6 +20189,206 @@
             "pageId": 31177,
             "revisionId": 125256,
             "title": "Shatter Visage"
+        },
+        {
+            "pageId": 31220,
+            "revisionId": 125391,
+            "title": "Legendary Action: Adamantine Reverberation"
+        },
+        {
+            "pageId": 31238,
+            "revisionId": 125425,
+            "title": "Mind Mastery"
+        },
+        {
+            "pageId": 31249,
+            "revisionId": 125445,
+            "title": "Electrocution Immunity"
+        },
+        {
+            "pageId": 31250,
+            "revisionId": 125446,
+            "title": "Rend With White Lightning"
+        },
+        {
+            "pageId": 31331,
+            "revisionId": 125679,
+            "title": "Legendary Action: Spectral Aspect"
+        },
+        {
+            "pageId": 31332,
+            "revisionId": 125684,
+            "title": "Legendary Action: The Dead Wastes"
+        },
+        {
+            "pageId": 31364,
+            "revisionId": 125769,
+            "title": "Venomous Discharge (Phase Spider Matriarch)"
+        },
+        {
+            "pageId": 31371,
+            "revisionId": 125787,
+            "title": "Vengeful Playmate"
+        },
+        {
+            "pageId": 31376,
+            "revisionId": 125803,
+            "title": "Tyrannical Branding"
+        },
+        {
+            "pageId": 31380,
+            "revisionId": 125837,
+            "title": "Murderous Retort"
+        },
+        {
+            "pageId": 31381,
+            "revisionId": 125812,
+            "title": "Form of Dread"
+        },
+        {
+            "pageId": 31383,
+            "revisionId": 125817,
+            "title": "Legendary Action: Murderous Retort"
+        },
+        {
+            "pageId": 31384,
+            "revisionId": 125818,
+            "title": "Torrential Undeath"
+        },
+        {
+            "pageId": 31386,
+            "revisionId": 125834,
+            "title": "Vampiric Swarm"
+        },
+        {
+            "pageId": 31387,
+            "revisionId": 125835,
+            "title": "Sanctuary of Loss"
+        },
+        {
+            "pageId": 31391,
+            "revisionId": 125836,
+            "title": "Heartwrench"
+        },
+        {
+            "pageId": 31396,
+            "revisionId": 125842,
+            "title": "Legendary Action: Hordestrike"
+        },
+        {
+            "pageId": 31397,
+            "revisionId": 125847,
+            "title": "Legendary Action: Shredding Scales"
+        },
+        {
+            "pageId": 31399,
+            "revisionId": 125849,
+            "title": "Legendary Action: Vengeful Playmate"
+        },
+        {
+            "pageId": 31400,
+            "revisionId": 125850,
+            "title": "Legendary Action: Blinding Ambush"
+        },
+        {
+            "pageId": 31401,
+            "revisionId": 125888,
+            "title": "Grasping Appendage"
+        },
+        {
+            "pageId": 31403,
+            "revisionId": 125855,
+            "title": "Legendary Action: Overflowing Brew"
+        },
+        {
+            "pageId": 31404,
+            "revisionId": 125857,
+            "title": "Legendary Action: Sublimation"
+        },
+        {
+            "pageId": 31405,
+            "revisionId": 125859,
+            "title": "Legendary Action: Wail of Loss"
+        },
+        {
+            "pageId": 31406,
+            "revisionId": 125861,
+            "title": "Legendary Action: Gaze of the Dead"
+        },
+        {
+            "pageId": 31407,
+            "revisionId": 125864,
+            "title": "Legendary Action: Tyrannical Branding"
+        },
+        {
+            "pageId": 31408,
+            "revisionId": 125866,
+            "title": "Legendary Action: Torrential Undeath"
+        },
+        {
+            "pageId": 31409,
+            "revisionId": 125867,
+            "title": "Legendary Action: Vampiric Swarm"
+        },
+        {
+            "pageId": 31410,
+            "revisionId": 125870,
+            "title": "Legendary Action: Sanctuary of Loss"
+        },
+        {
+            "pageId": 31411,
+            "revisionId": 125871,
+            "title": "Legendary Action: Heartwrench"
+        },
+        {
+            "pageId": 31418,
+            "revisionId": 125906,
+            "title": "Brand of the Silverlight"
+        },
+        {
+            "pageId": 31419,
+            "revisionId": 125911,
+            "title": "Lunar Legionary"
+        },
+        {
+            "pageId": 31422,
+            "revisionId": 125917,
+            "title": "Longsword +2"
+        },
+        {
+            "pageId": 31423,
+            "revisionId": 125918,
+            "title": "Mace +2"
+        },
+        {
+            "pageId": 31426,
+            "revisionId": 125932,
+            "title": "Broken Pike"
+        },
+        {
+            "pageId": 31427,
+            "revisionId": 125935,
+            "title": "False Spear of the Night"
+        },
+        {
+            "pageId": 31430,
+            "revisionId": 125959,
+            "title": "Greataxe +2"
+        },
+        {
+            "pageId": 31433,
+            "revisionId": 125999,
+            "title": "Gold Pendant"
+        },
+        {
+            "pageId": 31434,
+            "revisionId": 125997,
+            "title": "Silver Amulet"
+        },
+        {
+            "pageId": 31435,
+            "revisionId": 125998,
+            "title": "Polished Necklace"
         }
     ],
     "deadLinks": [

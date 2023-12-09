@@ -10,6 +10,7 @@ export enum PageLoadingState {
 export class PageItem extends WikiLoadable {
     pageTitle?: string;
     page?: PageData;
+    id?: number;
 
     constructor({ pageTitle, page }: { pageTitle?: string; page?: PageData }) {
         super();
@@ -40,6 +41,7 @@ export class PageItem extends WikiLoadable {
         }
 
         this.page = data;
+        this.id = data.pageId;
     }
 
     protected async getDescription(): Promise<string> {

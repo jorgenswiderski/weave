@@ -90,6 +90,7 @@ export class CharacterFeature
             image: this.image,
             grants: this.grants,
             choices: this.choices,
+            id: this.id,
         };
     }
 

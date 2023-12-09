@@ -2,6 +2,8 @@
     {
         "name": "Dragonborn",
         "description": "Dragonborn are a playable race in Baldur's Gate 3. Dragonborn have resistance to a type of energy damage and are able to make deadly breath weapon attacks. These abilities are affected by their Dragonborn subrace.",
+        "image": "Race Dragonborn.png",
+        "grants": [],
         "choices": [
             {
                 "type": 8,
@@ -69,13 +71,24 @@
                 ]
             }
         ],
-        "choiceType": 8,
-        "image": "Race Dragonborn.png",
-        "grants": []
+        "id": 4496,
+        "choiceType": 8
     },
     {
         "name": "Drow",
         "description": "Drow are the dark elves of the Forgotten Realms. They dwell in the Underdark, large subterranean caverns beneath the surface.",
+        "image": "Race Drow.png",
+        "grants": [
+            {
+                "ref": "c6562"
+            },
+            {
+                "ref": "c3956"
+            },
+            {
+                "ref": "c3953"
+            }
+        ],
         "choices": [
             {
                 "type": 8,
@@ -93,23 +106,24 @@
                 ]
             }
         ],
-        "choiceType": 8,
-        "image": "Race Drow.png",
-        "grants": [
-            {
-                "ref": "c6562"
-            },
-            {
-                "ref": "c3956"
-            },
-            {
-                "ref": "c3953"
-            }
-        ]
+        "id": 130,
+        "choiceType": 8
     },
     {
         "name": "Dwarf",
         "description": "As durable and unyielding as their homes of stone, dwarves are some of the finest warriors, miners, and smiths of Faerûn.",
+        "image": "Race Dwarf.png",
+        "grants": [
+            {
+                "ref": "c6583"
+            },
+            {
+                "ref": "c3957"
+            },
+            {
+                "ref": "c3959"
+            }
+        ],
         "choices": [
             {
                 "type": 8,
@@ -147,23 +161,24 @@
                 ]
             }
         ],
-        "choiceType": 8,
-        "image": "Race Dwarf.png",
+        "id": 134,
+        "choiceType": 8
+    },
+    {
+        "name": "Elf",
+        "description": "\"With an ethereal countenance and long lifespans, elves are at home with nature's power, flourishing in light and dark alike.\"",
+        "image": "Race Elf.png",
         "grants": [
             {
-                "ref": "c6583"
+                "ref": "c6572"
             },
             {
                 "ref": "c3957"
             },
             {
-                "ref": "c3959"
+                "ref": "c3953"
             }
-        ]
-    },
-    {
-        "name": "Elf",
-        "description": "\"With an ethereal countenance and long lifespans, elves are at home with nature's power, flourishing in light and dark alike.\"",
+        ],
         "choices": [
             {
                 "type": 8,
@@ -221,19 +236,8 @@
                 ]
             }
         ],
-        "choiceType": 8,
-        "image": "Race Elf.png",
-        "grants": [
-            {
-                "ref": "c6572"
-            },
-            {
-                "ref": "c3957"
-            },
-            {
-                "ref": "c3953"
-            }
-        ]
+        "id": 132,
+        "choiceType": 8
     },
     {
         "name": "Githyanki",
@@ -246,11 +250,18 @@
             {
                 "ref": "c6594"
             }
-        ]
+        ],
+        "id": 131
     },
     {
         "name": "Gnome",
         "description": "\"Small, clever, and energetic, gnomes use their long lives to explore Faerûn's brightest corners and darkest depths.\"",
+        "image": "Race Gnome.png",
+        "grants": [
+            {
+                "ref": "c3961"
+            }
+        ],
         "choices": [
             {
                 "type": 8,
@@ -294,17 +305,24 @@
                 ]
             }
         ],
-        "choiceType": 8,
-        "image": "Race Gnome.png",
-        "grants": [
-            {
-                "ref": "c3961"
-            }
-        ]
+        "id": 2611,
+        "choiceType": 8
     },
     {
         "name": "Half-Elf",
         "description": "\"Half-Elves inherit blessings from both their parents, but at the price of never quite fitting in. Curious, ambitious, and versatile, half-elves are welcome everywhere, but struggle without a community to call their own.\"",
+        "image": "Race Half-Elf.png",
+        "grants": [
+            {
+                "ref": "c6570"
+            },
+            {
+                "ref": "c3957"
+            },
+            {
+                "ref": "c3953"
+            }
+        ],
         "choices": [
             {
                 "type": 8,
@@ -367,19 +385,8 @@
                 ]
             }
         ],
-        "choiceType": 8,
-        "image": "Race Half-Elf.png",
-        "grants": [
-            {
-                "ref": "c6570"
-            },
-            {
-                "ref": "c3957"
-            },
-            {
-                "ref": "c3953"
-            }
-        ]
+        "id": 133,
+        "choiceType": 8
     },
     {
         "name": "Half-Orc",
@@ -395,11 +402,21 @@
             {
                 "ref": "c6278"
             }
-        ]
+        ],
+        "id": 4495
     },
     {
         "name": "Halfling",
         "description": "Small yet capable, halflings prefer the comforts of home and hearth - but their natural luck and dexterity makes them fine adventurers.",
+        "image": "Race Halfling.png",
+        "grants": [
+            {
+                "ref": "c3964"
+            },
+            {
+                "ref": "c6387"
+            }
+        ],
         "choices": [
             {
                 "type": 8,
@@ -425,16 +442,8 @@
                 ]
             }
         ],
-        "choiceType": 8,
-        "image": "Race Halfling.png",
-        "grants": [
-            {
-                "ref": "c3964"
-            },
-            {
-                "ref": "c6387"
-            }
-        ]
+        "id": 135,
+        "choiceType": 8
     },
     {
         "name": "Human",
@@ -447,11 +456,21 @@
             {
                 "ref": "c6573"
             }
-        ]
+        ],
+        "id": 138
     },
     {
         "name": "Tiefling",
         "description": "Touched by the Hells, Tieflings are resistant to fire and carry extraordinary Infernal powers.",
+        "image": "Race Tiefling.png",
+        "grants": [
+            {
+                "ref": "c3957"
+            },
+            {
+                "ref": "c4741"
+            }
+        ],
         "choices": [
             {
                 "type": 8,
@@ -474,15 +493,7 @@
                 ]
             }
         ],
-        "choiceType": 8,
-        "image": "Race Tiefling.png",
-        "grants": [
-            {
-                "ref": "c3957"
-            },
-            {
-                "ref": "c4741"
-            }
-        ]
+        "id": 137,
+        "choiceType": 8
     }
 ]

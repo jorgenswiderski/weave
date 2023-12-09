@@ -9031,7 +9031,7 @@
                         }
                     },
                     "character": {
-                        "name": "Ch'r'ai Tska'an",
+                        "name": "Tska'an",
                         "id": 10735
                     }
                 }
@@ -16436,7 +16436,7 @@
                         }
                     },
                     "character": {
-                        "name": "Ch'r'ai Tska'an",
+                        "name": "Tska'an",
                         "id": 10735
                     }
                 }
@@ -24691,6 +24691,56 @@
             "dippable": true
         },
         {
+            "name": "Greataxe +2",
+            "image": "Greataxe PlusTwo Icon.png",
+            "icon": "Greataxe PlusTwo Unfaded Icon.png",
+            "quote": "This heavy axe emits a barely audible hum when swung.",
+            "type": 18,
+            "rarity": 3,
+            "weightKg": 3.15,
+            "weightLb": 6.3,
+            "price": 190,
+            "uid": "WPN_HUM_Greataxe_A_2_NOT_APPROVED",
+            "effects": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Baldur's Gate",
+                            "id": 6062
+                        },
+                        "location": {
+                            "name": "The Counting House",
+                            "id": 12128
+                        }
+                    }
+                }
+            ],
+            "proficiency": 0,
+            "enchantment": 2,
+            "id": 31430,
+            "category": 1,
+            "rangeType": 1,
+            "handedness": 3,
+            "damage": "1d12 + 2",
+            "damageType": 1,
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": false,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": true
+        },
+        {
             "name": "Hellfire Greataxe",
             "image": "Greataxe PlusTwo Icon.png",
             "icon": "Greataxe PlusTwo Unfaded Icon.png",
@@ -29770,6 +29820,57 @@
             "dippable": true
         },
         {
+            "name": "Longsword +2",
+            "image": "Longsword PlusTwo Icon.png",
+            "icon": "Longsword PlusTwo Unfaded Icon.png",
+            "quote": "This longsword never dulls, although an observer may notice it quietly drinks the blood of slain enemies.",
+            "type": 29,
+            "rarity": 3,
+            "weightKg": 1.35,
+            "weightLb": 3,
+            "price": 125,
+            "uid": "WPN_HUM_Longsword_A_2",
+            "effects": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Baldur's Gate",
+                            "id": 6062
+                        },
+                        "location": {
+                            "name": "Forge of the Nine",
+                            "id": 11252
+                        }
+                    }
+                }
+            ],
+            "proficiency": 0,
+            "enchantment": 2,
+            "id": 31422,
+            "category": 1,
+            "rangeType": 1,
+            "handedness": 2,
+            "damage": "1d8 + 2",
+            "damageType": 1,
+            "damageVersatile": "1d10 + 2",
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": false,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": true
+        },
+        {
             "name": "Phalar Aluve",
             "image": "Longsword +1 Icon.png",
             "icon": "Longsword +1 Unfaded Icon.png",
@@ -30394,6 +30495,56 @@
             "rangeType": 1,
             "handedness": 1,
             "damage": "1d6+1",
+            "damageType": 3,
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": false,
+            "reach": false,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": true
+        },
+        {
+            "name": "Mace +2",
+            "image": "Mace PlusTwo Icon.png",
+            "icon": "Mace PlusTwo Unfaded Icon.png",
+            "quote": "The shallow etchings along this mace's head seem to change shape, depending on the light.",
+            "type": 30,
+            "rarity": 3,
+            "weightKg": 1.8,
+            "weightLb": 4,
+            "price": 95,
+            "uid": "WPN_HUM_Mace_A_2",
+            "effects": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 3",
+                            "id": 4950
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Baldur's Gate",
+                            "id": 6062
+                        },
+                        "location": {
+                            "name": "Forge of the Nine",
+                            "id": 11252
+                        }
+                    }
+                }
+            ],
+            "proficiency": 0,
+            "enchantment": 2,
+            "id": 31423,
+            "category": 2,
+            "rangeType": 1,
+            "handedness": 1,
+            "damage": "1d6 + 2",
             "damageType": 3,
             "range": 0,
             "finesse": false,
@@ -31267,6 +31418,51 @@
             "thrown": false,
             "cantDualWield": false,
             "dippable": false
+        },
+        {
+            "name": "Broken Pike",
+            "image": "Broken Pike Faded.png",
+            "icon": "Broken Pike Unfaded Icon.webp",
+            "quote": "The pike's tip is battered and bent, fit for neither soldier nor scoundrel.",
+            "type": 33,
+            "rarity": 1,
+            "weightKg": 8.1,
+            "weightLb": 16.2,
+            "price": 10,
+            "uid": "WPN_HUM_Pike_Broken_A",
+            "effects": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 2",
+                            "id": 4949
+                        },
+                        "superRegion": {
+                            "name": "Other Planes of Existence"
+                        },
+                        "location": {
+                            "name": "Shadowfell",
+                            "id": 12122
+                        }
+                    }
+                }
+            ],
+            "proficiency": 0,
+            "id": 31426,
+            "category": 1,
+            "rangeType": 1,
+            "handedness": 3,
+            "damage": "1d10",
+            "damageType": 2,
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": false,
+            "reach": true,
+            "thrown": false,
+            "cantDualWield": false,
+            "dippable": true
         },
         {
             "name": "Pike",
@@ -36966,6 +37162,55 @@
         }
     ],
     "41": [
+        {
+            "name": "False Spear of the Night",
+            "image": "Rusty Spear Faded.png",
+            "icon": "Rusty Spear Unfaded.png",
+            "quote": "While the handle is well made, the metal point is pitted with rust, and brittle as frozen underwear in the hands of a stone giant.",
+            "type": 41,
+            "rarity": 1,
+            "weightKg": 1.35,
+            "weightLb": 2.7,
+            "price": 2,
+            "effects": [],
+            "sources": [
+                {
+                    "location": {
+                        "act": {
+                            "name": "Act 2",
+                            "id": 4949
+                        },
+                        "superRegion": {
+                            "name": "Over-world"
+                        },
+                        "region": {
+                            "name": "Shadow-Cursed Lands",
+                            "id": 8117
+                        },
+                        "location": {
+                            "name": "Gauntlet of Shar",
+                            "id": 10466
+                        }
+                    }
+                }
+            ],
+            "proficiency": 0,
+            "id": 31427,
+            "category": 2,
+            "rangeType": 1,
+            "handedness": 2,
+            "damage": "1d6",
+            "damageType": 2,
+            "damageVersatile": "1d8",
+            "range": 0,
+            "finesse": false,
+            "heavy": false,
+            "light": false,
+            "reach": false,
+            "thrown": true,
+            "cantDualWield": false,
+            "dippable": true
+        },
         {
             "name": "Infernal Spear",
             "image": "Spear PlusOne Icon.png",
