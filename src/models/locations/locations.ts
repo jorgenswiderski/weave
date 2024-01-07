@@ -7,8 +7,9 @@ import {
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/game-location';
 import { ItemSourceLocation } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
-import { MediaWiki } from '../media-wiki/media-wiki';
+import { MediaWiki, PageData } from '../media-wiki/media-wiki';
 import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
+import { PageSection } from '../media-wiki/types';
 
 class GameLocationNode {
     parent?: GameLocationNode;
@@ -78,11 +79,99 @@ export class GameLocation
             location: this.depth > 3 ? this?.toJSON() : undefined,
         };
     }
+
+    static async fromPageTitle(
+        parent: GameLocationNode,
+        pageTitle: string,
+    ): Promise<GameLocation> {
+        let id: number | undefined;
+
+        try {
+            const page = await MediaWiki.getPage(pageTitle);
+            id = page.pageId;
+        } catch (err) {
+            // do nothing
+        }
+
+        return new GameLocation(parent, { name: pageTitle, id });
+    }
 }
 
 const gameLocationRoot = new GameLocationRoot();
 export const gameLocationById = new Map<number, GameLocation>();
 export const gameLocationByPageTitle = new Map<string, GameLocation>();
+
+async function parseLocation(
+    parent: GameLocation,
+    image: string,
+    pageTitle: string,
+    locationContent: string,
+): Promise<void> {
+    const contentLines = locationContent
+        .split('<br>')
+        .map((line) => line.trim());
+
+    // const description = contentLines[0];
+
+    const location = await GameLocation.fromPageTitle(parent, pageTitle);
+
+    const subLocationMatches = [
+        ...contentLines
+            .slice(1)
+            .join('\n')
+            .matchAll(/\[\[([^|]*?)(?:\[^}]*?)?]]/g),
+    ];
+
+    const subLocationNames = subLocationMatches.map((match) => match![1]);
+
+    await Promise.all(
+        subLocationNames.map((subtitle) =>
+            GameLocation.fromPageTitle(location, subtitle),
+        ),
+    );
+}
+
+async function parseRegion(
+    parent: GameLocation,
+    { title, content }: PageSection,
+): Promise<void> {
+    const region = await GameLocation.fromPageTitle(parent, title);
+
+    const locationMatches = [
+        ...content.matchAll(
+            /{{ImageLocation\|([^|]+?)\|([^|]+?)\|([\s\S]+?)}}/g,
+        ),
+    ];
+
+    await Promise.all(
+        locationMatches.map(([, image, pageTitle, locationContent]) =>
+            parseLocation(region, image, pageTitle, locationContent),
+        ),
+    );
+}
+
+async function parseSuperRegion(
+    parent: GameLocation,
+    { title, content }: PageSection,
+): Promise<void> {
+    const superRegion = await GameLocation.fromPageTitle(parent, title);
+
+    await Promise.all(
+        PageData.getSections(content, `[^=]+?`, 4).map((section) =>
+            parseRegion(superRegion, section),
+        ),
+    );
+}
+
+async function parseAct({ title, content }: PageSection): Promise<void> {
+    const act = await GameLocation.fromPageTitle(gameLocationRoot, title);
+
+    await Promise.all(
+        PageData.getSections(content, `[^=]+?`, 3).map((section) =>
+            parseSuperRegion(act, section),
+        ),
+    );
+}
 
 export async function initLocations() {
     const data = await MediaWiki.getPage('List of locations');
@@ -91,75 +180,21 @@ export async function initLocations() {
         throw new PageNotFoundError();
     }
 
-    const { content } = data;
+    await Promise.all(data.getSections(`Act \\w+?`, 2).map(parseAct));
 
-    const lines = content.split('\n').map((line) => line.trim());
+    function indexLocations(location: GameLocationNode): void {
+        if (location instanceof GameLocation) {
+            gameLocationByPageTitle.set(location.name, location);
 
-    const filtered = lines.filter(
-        (line) => line.length > 0 && line.match(/^[*=]+/),
-    );
-
-    const locations: { depth: number; name: string; id?: number }[] =
-        await Promise.all(
-            filtered.map(async (line) => {
-                const match = line.match(/^[*=]+/)!;
-                const prefix = match[0];
-
-                let depth = prefix.length;
-
-                if (prefix.charAt(0) === '*') {
-                    depth += 3;
-                } else {
-                    depth -= 1;
-                }
-
-                const nameMatch = line.match(/\[\[([^|\]]+).*?]]/);
-
-                if (!nameMatch) {
-                    assert(!line.includes('[['));
-
-                    return { depth, name: line.match(/([\w\s-]+)/)![0].trim() };
-                }
-
-                const pageTitle = nameMatch[1];
-
-                try {
-                    const page = await MediaWiki.getPage(pageTitle);
-
-                    return { depth, name: page.title, id: page.pageId };
-                } catch (err) {
-                    // warn(`Could not find page for location '${pageTitle}'`);
-
-                    return { depth, name: pageTitle };
-                }
-            }),
-        );
-
-    const path: GameLocationNode[] = [gameLocationRoot];
-
-    locations.forEach(({ depth, name, id }) => {
-        let loc: GameLocation;
-
-        if (depth > path.length) {
-            // warn(`Location '${name}' has no valid parent.`);
-
-            // eslint-disable-next-line no-new
-            loc = new GameLocation(path[path.length - 1], { name, id }, depth);
-        } else {
-            loc = new GameLocation(path[depth - 1], { name, id });
-            path[depth] = loc;
+            if (location.id) {
+                gameLocationById.set(location.id, location);
+            }
         }
 
-        if (id) {
-            gameLocationById.set(id, loc);
-        }
+        location.children.forEach(indexLocations);
+    }
 
-        gameLocationByPageTitle.set(name, loc);
-
-        path.splice(depth + 1);
-    });
-
-    return filtered;
+    indexLocations(gameLocationRoot);
 }
 
 export function getLocationData() {
