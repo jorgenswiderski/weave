@@ -28,6 +28,7 @@ import {
     MediaWikiTemplateParserConfigItem,
     MediaWikiTemplateParserConfig,
     IPageData,
+    IMediaWikiTemplate,
 } from '../media-wiki/types';
 
 type ItemSourcePageInfo = {
@@ -242,8 +243,18 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 },
             };
 
-            const template =
-                await characterPages[0].data.getTemplate('CharacterInfo');
+            let template: IMediaWikiTemplate;
+
+            try {
+                template =
+                    await characterPages[0].data.getTemplate('CharacterInfo');
+            } catch (err) {
+                // CharacterInfo2 template may be used as an alternative in some places
+                // (they are functionally the same, but without a stat block)
+                // Although this template is deprecated we can still support it for now
+                template =
+                    await characterPages[0].data.getTemplate('CharacterInfo2');
+            }
 
             const { location: locationPageTitle } = template.parse(config);
 
