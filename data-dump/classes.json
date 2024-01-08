@@ -1,7 +1,7 @@
 [
     {
         "name": "Barbarian",
-        "description": "Barbarian is a character Class in Baldur's Gate 3. Barbarians use their martial prowess and primal rage to strengthen themselves and dominate enemies in combat. Barbarians' key ability scores are Strength, Dexterity, and Constitution.",
+        "description": "Barbarians use their martial prowess and primal rage to strengthen themselves and dominate enemies in combat.",
         "image": "Class Barbarian Badge Icon.png",
         "progression": [
             {
@@ -2611,7 +2611,7 @@
     },
     {
         "name": "Bard",
-        "description": "Bard is a character Class in Baldur's Gate 3. Bards are expert storytellers, artists, and performers. Bards channel their power through song, speech, or performance to cast Spells. Bards use Charisma as their primary ability score.",
+        "description": "Bards are expert storytellers, artists, and performers. Bards channel their power through song, speech, or performance to cast Spells. Bards use Charisma as their primary ability score.",
         "image": "Class Bard Badge Icon.png",
         "progression": [
             {
@@ -5964,7 +5964,7 @@
     },
     {
         "name": "Cleric",
-        "description": "Cleric is a character Class in Baldur's Gate 3. Clerics worship and enact their deities' will to the world, for better or worse. They channel the power of their faith to cast Spells. Clerics use Wisdom as their primary ability score.",
+        "description": "Clerics worship and enact their deities' will to the world, for better or worse. They channel the power of their faith to cast Spells. Clerics use Wisdom as their primary ability score.",
         "image": "Class Cleric Badge Icon.png",
         "progression": [
             {
@@ -9049,7 +9049,7 @@
     },
     {
         "name": "Druid",
-        "description": "Druid is a character Class in Baldur's Gate 3. Druids are closely attuned with nature and the animals that live in it. They utilize the power of nature to cast Spells and have the ability to transform into various creatures. Druids use Wisdom as their primary ability score.",
+        "description": "Druids are closely attuned with nature and the animals that live in it. They utilize the power of nature to cast Spells and have the ability to transform into various creatures. Druids use Wisdom as their primary ability score.",
         "image": "Class Druid Badge Icon.png",
         "progression": [
             {
@@ -12144,7 +12144,7 @@
     },
     {
         "name": "Fighter",
-        "description": "Fighter is a character Class in Baldur's Gate 3. Fighters use their martial expertise to fight enemies and support their allies in combat. Fighters use Strength or Dexterity as their primary ability score.",
+        "description": "Fighters use their martial expertise to fight enemies and support their allies in combat. Fighters use Strength or Dexterity as their primary ability score.",
         "image": "Class Fighter Badge Icon.png",
         "progression": [
             {
@@ -16349,7 +16349,7 @@
     },
     {
         "name": "Monk",
-        "description": "Monk is a character Class in Baldur's Gate 3. Monks are unarmed combatants capable of spending Ki Points to perform special abilities. Monk's key ability scores are Wisdom, Dexterity, and Constitution.",
+        "description": "Monks are unarmed combatants capable of spending Ki Points to perform special abilities. Monk's key ability scores are Wisdom, Dexterity, and Constitution.",
         "image": "Class Monk Badge Icon.png",
         "progression": [
             {
@@ -18978,7 +18978,7 @@
     },
     {
         "name": "Paladin",
-        "description": "Paladin is a character Class in Baldur's Gate 3. Paladins are masters of a variety of weapons and armour. They channel the power of their sacred oath to heal the sick and injured and to smite their foes. Important Ability Scores for Paladins include Strength (or Dexterity), Charisma, and Constitution.",
+        "description": "Paladins are masters of a variety of weapons and armour. They channel the power of their sacred oath to heal the sick and injured and to smite their foes. Important Ability Scores for Paladins include Strength (or Dexterity), Charisma, and Constitution.",
         "image": "Paladin Class Icon.png",
         "progression": [
             {
@@ -21584,7 +21584,7 @@
     },
     {
         "name": "Ranger",
-        "description": "Ranger is a character Class in Baldur's Gate 3. In tune with nature and their surroundings, Rangers utilize both their knowledge of the wilds and spellcasting to pursue their prey. Important Ability Scores for Rangers include Dexterity (or Strength), Constitution, and Wisdom.",
+        "description": "In tune with nature and their surroundings, Rangers utilize both their knowledge of the wilds and spellcasting to pursue their prey. Important Ability Scores for Rangers include Dexterity (or Strength), Constitution, and Wisdom.",
         "image": "Class Ranger Badge Icon.png",
         "progression": [
             {
@@ -24435,7 +24435,7 @@
     },
     {
         "name": "Rogue",
-        "description": "Rogue is a character Class in Baldur's Gate 3. Rogues are well versed in the art of stealth and rely on their resourcefulness to be in control of any challenging situation. Rogues use Dexterity as their primary ability score.",
+        "description": "Rogues are well versed in the art of stealth and rely on their resourcefulness to be in control of any challenging situation. Rogues use Dexterity as their primary ability score.",
         "image": "Class Rogue Badge Icon.png",
         "progression": [
             {
@@ -28081,7 +28081,7 @@
     },
     {
         "name": "Sorcerer",
-        "description": "Sorcerer is a character Class in Baldur's Gate 3. Sorcerers use their innate magical powers to fight enemies and aid allies in combat. Sorcerers use Charisma as their primary ability score.",
+        "description": "Sorcerers use their innate magical powers to fight enemies and aid allies in combat. Sorcerers use Charisma as their primary ability score.",
         "image": "Sorcerer Class Icon.png",
         "progression": [
             {
@@ -30797,7 +30797,7 @@
     },
     {
         "name": "Warlock",
-        "description": "Warlock is a character Class in Baldur's Gate 3. Warlocks channel their patron's pact magic to fight enemies and aid allies in combat. Warlocks use Charisma as their primary ability score.",
+        "description": "Warlocks channel their patron's pact magic to fight enemies and aid allies in combat. Warlocks use Charisma as their primary ability score.",
         "image": "Class Warlock Badge Icon.png",
         "progression": [
             {
@@ -34091,7 +34091,7 @@
     },
     {
         "name": "Wizard",
-        "description": "Wizard is a character Class in Baldur's Gate 3. Wizards channel magic through their extensive knowledge of the arcane to fight enemies and aid allies in combat. Wizards use Intelligence as their primary ability score.",
+        "description": "Wizards channel magic through their extensive knowledge of the arcane to fight enemies and aid allies in combat. Wizards use Intelligence as their primary ability score.",
         "image": "Class Wizard Badge Icon.png",
         "progression": [
             {

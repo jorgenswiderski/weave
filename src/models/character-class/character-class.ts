@@ -280,7 +280,13 @@ export class CharacterClass extends PageItem implements ICharacterClass {
     }
 
     private async initDescription(): Promise<void> {
-        this.description = await this.getDescription();
+        const description = await this.getDescription();
+
+        const sentences = description.split(/(?<=(?:\.|!|\?|\.\.\.)\s+)/g);
+
+        this.description = sentences
+            .filter((sentence) => !sentence.match(/is a (?:character )?class/i))
+            .join('');
     }
 
     toJSON(): ClassInfo {
