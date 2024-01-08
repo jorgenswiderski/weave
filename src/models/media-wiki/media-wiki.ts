@@ -8,7 +8,7 @@ import { MwnApi, MwnApiClass } from '../../api/mwn';
 import { Utils } from '../utils';
 import { RemoteImageError } from '../image-cache/types';
 import { error, warn } from '../logger';
-import { IPageData } from './types';
+import { IPageData, PageSection } from './types';
 import { RevisionLock } from '../revision-lock/revision-lock';
 import { MediaWikiTemplate } from './media-wiki-template';
 import { MediaWikiParser } from './media-wiki-parser';
@@ -97,6 +97,11 @@ export class PageData implements IPageData {
         return pageId;
     });
 
+    static magicWords = [
+        /^#[^|}]+:/, // Some magic words (parser functions?) start with an octothorpe
+        /^[lu]c(?:first)?:/i, // Casing formatter https://www.mediawiki.org/wiki/Help:Magic_words/en#Formatting
+    ];
+
     protected getRawTemplateNames(): string[] {
         const allTemplateNames = [
             ...this.content.matchAll(
@@ -104,13 +109,17 @@ export class PageData implements IPageData {
             ),
         ]
             .map((match) => match[1].trim())
+            // filter out "magic words" like "{{DISPLAYTITLE}}" which aren't templates
+            // https://www.mediawiki.org/wiki/Help:Magic_words/en
             .filter((name) => {
-                // check for  embedded variables like "{{DISPLAYTITLE}}" which aren't templates
+                // Many magic words are in upper case, filter out matches which are in all uppercase
                 const varName = name.split(':')[0];
 
                 return varName !== varName.toUpperCase();
             })
-            .filter((name) => !name.match(/#[^|}]+:/));
+            .filter((name) =>
+                PageData.magicWords.every((regexp) => !name.match(regexp)),
+            );
 
         return Array.from(new Set(allTemplateNames));
     }
@@ -167,14 +176,11 @@ export class PageData implements IPageData {
         return new MediaWikiTemplate(this, matchingTemplateName);
     }
 
-    getSection(
-        nameOrRegex: string,
-        depth?: number,
-    ): { title: string; content: string } | null {
+    getSection(nameOrRegex: string, depth?: number): PageSection | null {
         const eqs = depth ? '='.repeat(depth) : '={2,}';
 
         const regex = new RegExp(
-            `\\n\\s*(${eqs})\\s*(${nameOrRegex})\\s*\\1\\s*\\n([\\s\\S]+?)(?:=\\n\\s*\\1[^=]|$)`,
+            `(?<=\\n\\s*|\\s+|^)(${eqs})\\s*(${nameOrRegex})\\s*\\1\\s*\\n([\\s\\S]+?)(?=\\n\\s*\\1[^=]|$)`,
             'i',
         );
 
@@ -187,6 +193,30 @@ export class PageData implements IPageData {
         const [, , title, content] = match;
 
         return { title, content };
+    }
+
+    getSections(nameOrRegex: string, depth?: number): PageSection[] {
+        return PageData.getSections(this.content, nameOrRegex, depth);
+    }
+
+    static getSections(
+        pageContent: string,
+        nameOrRegex: string,
+        depth?: number,
+    ): PageSection[] {
+        const eqs = depth ? '='.repeat(depth) : '={2,}';
+
+        const regex = new RegExp(
+            `(?<=\\n\\s*|^)(${eqs})\\s*(${nameOrRegex})\\s*\\1\\s*\\n([\\s\\S]+?)(?=\\n\\s*\\1[^=]|$)`,
+            'ig',
+        );
+
+        const matches = pageContent.matchAll(regex);
+
+        return [...matches].map(([, , title, content]) => ({
+            title,
+            content,
+        }));
     }
 
     static async resolveArticleTransclusions(
