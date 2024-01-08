@@ -18,7 +18,7 @@ export class CharacterSubrace implements ICharacterOption {
     // FIXME: This mostly works, but produces artifacts on a few subraces
     initDescription(): string {
         // Regular expression to capture content between double single quotes or within {{Q|...}}
-        const regex = /''(.*?)''|{{Q\|(.*?)(?:\|.*?)*?}}/;
+        const regex = /''(.*?)''|{{Q\|(.*?)(?:\|.*?)*?}}/i;
         const match = regex.exec(this.content);
 
         if (!match) {
