@@ -62,7 +62,10 @@ export class CharacterRace extends CharacterFeature {
             if (!match) break;
 
             choices[0].options.push(
-                new CharacterSubrace(match[1], match[2].trim()),
+                new CharacterSubrace(
+                    Utils.stringToTitleCase(match[1]),
+                    match[2].trim(),
+                ),
             );
         }
 
