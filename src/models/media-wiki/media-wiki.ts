@@ -192,7 +192,10 @@ export class PageData implements IPageData {
 
         const [, , title, content] = match;
 
-        return { title, content };
+        return {
+            title: title.trim(),
+            content,
+        };
     }
 
     getSections(nameOrRegex: string, depth?: number): PageSection[] {
@@ -214,7 +217,7 @@ export class PageData implements IPageData {
         const matches = pageContent.matchAll(regex);
 
         return [...matches].map(([, , title, content]) => ({
-            title,
+            title: title.trim(),
             content,
         }));
     }
