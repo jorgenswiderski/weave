@@ -9,7 +9,6 @@ import { CharacterFeature } from '../../character-feature';
 import { PageLoadingState } from '../../../page-item';
 import { ICharacterOptionWithPage } from '../../types';
 import { MediaWikiTemplate } from '../../../media-wiki/media-wiki-template';
-import { MediaWikiParser } from '../../../media-wiki/media-wiki-parser';
 
 // Used for features like Mystic Arcanum & Magical Secrets
 export class CharacterFeatureLearnSpell extends CharacterFeature {
@@ -55,11 +54,7 @@ export class CharacterFeatureLearnSpell extends CharacterFeature {
 
         const { description } = passiveTemplate.parse({
             description: {
-                parser: (value: string) => {
-                    const match = value.match(/([\s\S]+?)\n\s*={2,}/)!;
-
-                    return MediaWikiParser.stripMarkup(match[1]).trim();
-                },
+                parser: MediaWikiTemplate.Parsers.plainText,
             },
         });
 
