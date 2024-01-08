@@ -60,14 +60,34 @@ export class MediaWikiParser {
         return wikitext.replace(/<!--[\s\S]*?-->/g, '');
     }
 
-    protected static parseWikiTableCell(wikitext: string): string {
-        const match = wikitext.match(/\s*(?:style=".+?"\s*\|)?\s*([\s\S]+)\s*/);
+    protected static parseWikiTableCellSpan(
+        wikitext: string,
+    ): number | undefined {
+        const match = wikitext.match(
+            /\s*(rowspan=".+?"\s*)?(colspan=".+?"\s*)?(?:style=".+?"\s*)?\|?\s*([\s\S]*)\s*/,
+        );
 
-        if (!match?.[1]) {
+        if (!match) {
             throw new Error();
         }
 
-        return match[1].trim();
+        if (match[1]) {
+            return parseInt(match[1].match(/rowspan="(\d+)"/)![1], 10);
+        }
+
+        return undefined;
+    }
+
+    protected static parseWikiTableCellContents(wikitext: string): string {
+        const match = wikitext.match(
+            /\s*((?:rowspan|colspan)=".+?"\s*\|)?(?:style=".+?"\s*\|)?\s*([\s\S]*)\s*/,
+        );
+
+        if (!match) {
+            throw new Error();
+        }
+
+        return match[2].trim();
     }
 
     static parseWikiTable(sectionWikitext: string): Record<string, string>[];
@@ -123,7 +143,7 @@ export class MediaWikiParser {
             format = '2d';
         }
 
-        const headers: string[] = [];
+        let headers: string[] = [];
         const isRecord = format === 'record' || format === 'both';
 
         const rows: TableRow[] | string[][] = [];
@@ -143,9 +163,12 @@ export class MediaWikiParser {
                         .split(mu[type].delimiterMidline!)
                         .map((cellContent) => ({
                             content: mu[type].hasContent
-                                ? this.parseWikiTableCell(cellContent)
+                                ? this.parseWikiTableCellContents(cellContent)
                                 : undefined,
                             type,
+                            rows: mu[type].hasContent
+                                ? this.parseWikiTableCellSpan(cellContent)
+                                : undefined,
                         }));
                 }
 
@@ -153,7 +176,10 @@ export class MediaWikiParser {
                     {
                         type,
                         content: mu[type].hasContent
-                            ? this.parseWikiTableCell(content)
+                            ? this.parseWikiTableCellContents(content)
+                            : undefined,
+                        rows: mu[type].hasContent
+                            ? this.parseWikiTableCellSpan(content)
                             : undefined,
                     },
                 ];
@@ -161,52 +187,78 @@ export class MediaWikiParser {
         );
 
         const pendingHeaders: string[] = [];
+        const rowSpans: Map<string, string> = new Map();
 
-        function processCell(content: string) {
+        function processSpannedCells(): void {
+            while (
+                rowSpans.has(`${rows.length}-${Object.keys(currentRow).length}`)
+            ) {
+                const spanContent = rowSpans.get(
+                    `${rows.length}-${Object.keys(currentRow).length}`,
+                )!;
+
+                rowSpans.delete(
+                    `${rows.length}-${Object.keys(currentRow).length}`,
+                );
+
+                // eslint-disable-next-line @typescript-eslint/no-use-before-define
+                processCell(spanContent);
+            }
+        }
+
+        function processCell(content: string, rowSpan?: number) {
+            processSpannedCells();
+
+            let currentColumnIndex = Object.keys(currentRow).length;
+
+            if (format === 'both') {
+                currentColumnIndex /= 2;
+            }
+
             if (Array.isArray(currentRow)) {
                 currentRow.push(content);
             } else {
-                let currentColumnIndex = Object.keys(currentRow).length;
-
-                if (format === 'both') {
-                    currentColumnIndex /= 2;
-                }
-
                 const header = headers[currentColumnIndex];
                 currentRow[header] = content;
 
                 if (format === 'both') {
                     currentRow[currentColumnIndex] = content;
                 }
+
+                if (rowSpan && rowSpan > 1) {
+                    for (
+                        let x = rows.length + 1;
+                        x < rows.length + rowSpan;
+                        x += 1
+                    ) {
+                        rowSpans.set(`${x}-${currentColumnIndex}`, content);
+                    }
+                }
             }
         }
 
-        sections.forEach(({ type, content }) => {
+        sections.forEach(({ type, content, rows: rowSpan }) => {
             if (type === 'row') {
+                processSpannedCells();
+
                 if (Object.keys(currentRow).length > 0) {
                     rows.push(currentRow as any);
                     currentRow = isRecord ? {} : [];
                 } else {
-                    headers.push(
-                        ...pendingHeaders
-                            .splice(0)
-                            .map(MediaWikiParser.stripMarkup),
-                    );
+                    headers = pendingHeaders
+                        .splice(0)
+                        .map(MediaWikiParser.stripMarkup);
                 }
             }
 
-            if (!content) {
+            if (typeof content === 'undefined') {
                 return;
             }
 
             if (type === 'header') {
                 pendingHeaders.push(content);
             } else if (type === 'cell') {
-                if (pendingHeaders.length > 0) {
-                    pendingHeaders.splice(0).forEach(processCell);
-                }
-
-                processCell(content);
+                processCell(content, rowSpan);
             }
         });
 

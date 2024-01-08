@@ -1,7 +1,5 @@
 import {
     CharacterPlannerStep,
-    ICharacterChoice,
-    ICharacterOption,
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import assert from 'assert';
@@ -67,6 +65,12 @@ async function parseFeatures(
         }
     }
 
+    await Promise.all(
+        features.map((feature) =>
+            (feature as CharacterFeature).waitForInitialization(),
+        ),
+    );
+
     return features;
 }
 
@@ -100,63 +104,59 @@ export class CharacterClass extends PageItem implements ICharacterClass {
             this.initDescription().catch(error);
     }
 
-    private async cleanProgressionTableData(
-        formattedData: { [key: string]: any }[],
-    ) {
+    private static parseProgressionTableData(
+        formattedData: Record<string, any>[],
+    ): Record<string, string | number>[] {
+        return formattedData.map((item) => {
+            const cleanedItem: Record<string, string | number> = {};
+
+            Object.keys(item).forEach((key) => {
+                const cleanedKey = MediaWikiParser.stripMarkup(key);
+
+                if (cleanedKey === 'Features') {
+                    // skip parsing the features, that's handled in a dedicated function is its more complex
+                    cleanedItem[cleanedKey] = item[key];
+                } else {
+                    const value = MediaWikiParser.stripMarkup(item[key]);
+
+                    if (value === '-') {
+                        cleanedItem[cleanedKey] = 0;
+
+                        return;
+                    }
+
+                    // Try to convert to integer
+                    const intValue = parseInt(value, 10);
+
+                    if (!Number.isNaN(intValue)) {
+                        cleanedItem[cleanedKey] = intValue;
+                    } else {
+                        cleanedItem[cleanedKey] = value;
+                    }
+                }
+            });
+
+            return cleanedItem;
+        });
+    }
+
+    private async parseProgressionFeatures(
+        data: Record<string, string | number>[],
+    ): Promise<
+        Record<string, string | number | ICharacterOptionWithStubs[]>[]
+    > {
         return Promise.all(
-            formattedData.map(async (item) => {
-                const cleanedItem: {
-                    [key: string]:
-                        | string
-                        | number
-                        | ICharacterOptionWithStubs[];
-                } = {};
-
-                await Promise.all(
-                    Object.keys(item).map(async (key) => {
-                        const cleanedKey = MediaWikiParser.stripMarkup(key);
-
-                        if (cleanedKey === 'Features') {
-                            // Parse the features last
-                            cleanedItem[cleanedKey] = item[key];
-                        } else {
-                            const value = MediaWikiParser.stripMarkup(
-                                item[key],
-                            );
-
-                            if (value === '-') {
-                                cleanedItem[cleanedKey] = 0;
-
-                                return;
-                            }
-
-                            // Try to convert to integer
-                            const intValue = parseInt(value, 10);
-
-                            if (!Number.isNaN(intValue)) {
-                                cleanedItem[cleanedKey] = intValue;
-                            } else {
-                                cleanedItem[cleanedKey] = value;
-                            }
-                        }
-                    }),
-                );
-
+            data.map(async (item) => {
                 const features = await parseFeatures(
                     this,
-                    cleanedItem.Features as string,
-                    cleanedItem.Level as number,
+                    item.Features as string,
+                    item.Level as number,
                 );
 
-                cleanedItem.Features = features ?? [];
-
-                await Promise.all(
-                    cleanedItem.Features.map((feature) =>
-                        (feature as CharacterFeature).waitForInitialization(),
-                    ),
-                );
-
-                return cleanedItem;
+                return {
+                    ...item,
+                    Features: features,
+                };
             }),
         );
     }
@@ -236,86 +236,23 @@ export class CharacterClass extends PageItem implements ICharacterClass {
     async initProgression() {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
-        if (!this.page || !this.page.content) {
+        if (!this.page?.content) {
             throw new Error('Could not find character class page content');
         }
 
-        // Step 1: Isolate the class progression table
-        const tableRegex = /\{\|([\s\S]*?)\|\}/g; // Capture everything between {| and |}
-        const rowRegex = /\|-\s*([\s\S]*?)(?=\|-\s*|$)/g; // Capture rows between |- and the next |- or end of string
-        const cellRegex = /\|([^\n]*)/g; // Capture content of each cell
-
-        const match = tableRegex.exec(this.page.content);
-
-        if (match) {
-            const tableContent = match[1];
-            const rows = [...tableContent.matchAll(rowRegex)];
-
-            const parsedRows = rows.map((row) => {
-                const cells = [...row[1].matchAll(cellRegex)];
-
-                return cells.map((cell) => cell[1].trim());
-            });
-
-            const keys = parsedRows[1];
-            const dataRows = parsedRows.slice(2);
-
-            const formattedData = dataRows.map((row) => {
-                return row.reduce(
-                    (obj, cell, index) => {
-                        // eslint-disable-next-line no-param-reassign
-                        obj[keys[index]] = cell;
-
-                        return obj;
-                    },
-                    {} as { [key: string]: any },
-                );
-            });
-
-            const cleanedData =
-                await this.cleanProgressionTableData(formattedData);
-
-            const dataWithSpells = CharacterClass.parseSpellSlots(cleanedData);
-            this.progression = CharacterClass.coerceSpellsKnown(dataWithSpells);
-        } else {
-            throw new Error(
-                `No class progression table found for "${this.name}"`,
-            );
-        }
-    }
-
-    private async getSubclasses(): Promise<ICharacterChoice> {
-        await this.waitForInitialization();
-
-        if (!this.progression) {
-            throw new Error('Could not find progression');
-        }
-
-        const features = this.progression.map((level) => level.Features).flat();
-
-        await Promise.all(
-            features.flatMap((feature) =>
-                Object.values((feature as unknown as PageItem).initialized),
-            ),
+        const tableData = MediaWikiParser.parseWikiTable(
+            this.page.content,
+            'record',
         );
 
-        const chooseSubclass = features.find(
-            (feature) =>
-                feature?.choices?.[0].type === // FIXME
-                CharacterPlannerStep.CHOOSE_SUBCLASS,
-        );
+        const formattedData =
+            CharacterClass.parseProgressionTableData(tableData);
 
-        if (!chooseSubclass) {
-            throw new Error('Could not find subclass info');
-        }
+        const dataWithFeatures =
+            await this.parseProgressionFeatures(formattedData);
 
-        const feature = chooseSubclass as ICharacterOption;
-
-        if (!feature.choices || !feature.choices[0]) {
-            throw new Error('Subclass info has no choices');
-        }
-
-        return feature.choices[0];
+        const dataWithSpells = CharacterClass.parseSpellSlots(dataWithFeatures);
+        this.progression = CharacterClass.coerceSpellsKnown(dataWithSpells);
     }
 
     private async initImage(): Promise<void> {
@@ -346,16 +283,18 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         this.description = await this.getDescription();
     }
 
-    async getProgression() {
-        await this.waitForInitialization();
-
-        return this.progression!;
-    }
-
     toJSON(): ClassInfo {
         const { name, description, image, progression } = this;
 
-        assert(description && progression);
+        assert(
+            description,
+            `Description for class '${name}' should be defined`,
+        );
+
+        assert(
+            progression,
+            `Progression for class '${name}' should be defined`,
+        );
 
         return {
             name,
