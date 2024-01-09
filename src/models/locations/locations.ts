@@ -7,9 +7,10 @@ import {
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/game-location';
 import { ItemSourceLocation } from '@jorgenswiderski/tomekeeper-shared/dist/types/item-sources';
 import { PageNotFoundError } from '../errors';
-import { MediaWiki, PageData } from '../media-wiki/media-wiki';
+import { MediaWiki } from '../media-wiki/media-wiki';
 import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
-import { PageSection } from '../media-wiki/types';
+import { IPageSection } from '../media-wiki/types';
+import { PageSection } from '../media-wiki/page-section';
 
 class GameLocationNode {
     parent?: GameLocationNode;
@@ -133,7 +134,7 @@ async function parseLocation(
 
 async function parseRegion(
     parent: GameLocation,
-    { title, content }: PageSection,
+    { title, content }: IPageSection,
 ): Promise<void> {
     const region = await GameLocation.fromPageTitle(parent, title);
 
@@ -152,22 +153,22 @@ async function parseRegion(
 
 async function parseSuperRegion(
     parent: GameLocation,
-    { title, content }: PageSection,
+    { title, content }: IPageSection,
 ): Promise<void> {
     const superRegion = await GameLocation.fromPageTitle(parent, title);
 
     await Promise.all(
-        PageData.getSections(content, `[^=]+?`, 4).map((section) =>
+        PageSection.getSections(content, `[^=]+?`, 4).map((section) =>
             parseRegion(superRegion, section),
         ),
     );
 }
 
-async function parseAct({ title, content }: PageSection): Promise<void> {
+async function parseAct({ title, content }: IPageSection): Promise<void> {
     const act = await GameLocation.fromPageTitle(gameLocationRoot, title);
 
     await Promise.all(
-        PageData.getSections(content, `[^=]+?`, 3).map((section) =>
+        PageSection.getSections(content, `[^=]+?`, 3).map((section) =>
             parseSuperRegion(act, section),
         ),
     );

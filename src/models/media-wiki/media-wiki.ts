@@ -8,10 +8,11 @@ import { MwnApi, MwnApiClass } from '../../api/mwn';
 import { Utils } from '../utils';
 import { RemoteImageError } from '../image-cache/types';
 import { error, warn } from '../logger';
-import { IPageData, PageSection } from './types';
+import { IPageData } from './types';
 import { RevisionLock } from '../revision-lock/revision-lock';
 import { MediaWikiTemplate } from './media-wiki-template';
 import { MediaWikiParser } from './media-wiki-parser';
+import { PageSection } from './page-section';
 
 export class PageData implements IPageData {
     title: string;
@@ -177,49 +178,14 @@ export class PageData implements IPageData {
     }
 
     getSection(nameOrRegex: string, depth?: number): PageSection | null {
-        const eqs = depth ? '='.repeat(depth) : '={2,}';
-
-        const regex = new RegExp(
-            `(?<=\\n\\s*|\\s+|^)(${eqs})\\s*(${nameOrRegex})\\s*\\1\\s*\\n([\\s\\S]+?)(?=\\n\\s*\\1[^=]|$)`,
-            'i',
+        return (
+            PageSection.getSections(this.content, nameOrRegex, depth)?.[0] ||
+            null
         );
-
-        const match = this.content.match(regex);
-
-        if (!match?.[2] || !match?.[3]) {
-            return null;
-        }
-
-        const [, , title, content] = match;
-
-        return {
-            title: title.trim(),
-            content,
-        };
     }
 
     getSections(nameOrRegex: string, depth?: number): PageSection[] {
-        return PageData.getSections(this.content, nameOrRegex, depth);
-    }
-
-    static getSections(
-        pageContent: string,
-        nameOrRegex: string,
-        depth?: number,
-    ): PageSection[] {
-        const eqs = depth ? '='.repeat(depth) : '={2,}';
-
-        const regex = new RegExp(
-            `(?<=\\n\\s*|^)(${eqs})\\s*(${nameOrRegex})\\s*\\1\\s*\\n([\\s\\S]+?)(?=\\n\\s*\\1[^=]|$)`,
-            'ig',
-        );
-
-        const matches = pageContent.matchAll(regex);
-
-        return [...matches].map(([, , title, content]) => ({
-            title: title.trim(),
-            content,
-        }));
+        return PageSection.getSections(this.content, nameOrRegex, depth);
     }
 
     static async resolveArticleTransclusions(

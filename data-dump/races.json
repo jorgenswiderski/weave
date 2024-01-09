@@ -1,7 +1,7 @@
 [
     {
         "name": "Dragonborn",
-        "description": "Dragonborn are a playable race in Baldur's Gate 3. Dragonborn have resistance to a type of energy damage and are able to make deadly breath weapon attacks. These abilities are affected by their Dragonborn subrace.",
+        "description": "Dragonborn are a playable race in Baldur's Gate 3. They have resistance to a type of energy damage, and are able to make deadly breath weapon attacks. These abilities are affected by their dragonborn subrace. Dragonborn resemble draconic humanoids, can have scales in a variety of colours, and may or may not have a tail.",
         "choices": [
             {
                 "type": 8,
@@ -19,6 +19,18 @@
                         ]
                     },
                     {
+                        "name": "Blue Dragonborn",
+                        "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the deep sapphire scales and charged, crackling breath of blue dragons.",
+                        "grants": [
+                            {
+                                "ref": "a6605"
+                            },
+                            {
+                                "ref": "c6720"
+                            }
+                        ]
+                    },
+                    {
                         "name": "Brass Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the burnished ochre hue and flickering, fiery breath of brass dragons.",
                         "grants": [
@@ -31,8 +43,20 @@
                         ]
                     },
                     {
+                        "name": "Bronze Dragonborn",
+                        "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the shining sepia scales and sparkling breath of bronze dragons.",
+                        "grants": [
+                            {
+                                "ref": "a6605"
+                            },
+                            {
+                                "ref": "c6720"
+                            }
+                        ]
+                    },
+                    {
                         "name": "Copper Dragonborn",
-                        "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the pink-gold colouration and corrosive breath of copper dragons.",
+                        "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the pink-gold colouration and corrosive breath of copper dragons",
                         "grants": [
                             {
                                 "ref": "a6607"
@@ -43,8 +67,20 @@
                         ]
                     },
                     {
+                        "name": "Gold Dragonborn",
+                        "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the resplendent shine and roiling, blazing breath of gold dragons",
+                        "grants": [
+                            {
+                                "ref": "a6668"
+                            },
+                            {
+                                "ref": "c6721"
+                            }
+                        ]
+                    },
+                    {
                         "name": "Green Dragonborn",
-                        "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the brilliant emerald aspect and stinking, putrid breath of green dragons.",
+                        "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the brilliant emerald aspect and stinking, putrid breath of green dragons",
                         "grants": [
                             {
                                 "ref": "a6664"
@@ -55,8 +91,32 @@
                         ]
                     },
                     {
+                        "name": "Red Dragonborn",
+                        "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the bright scarlet likeness and roiling, burning breath of red dragons",
+                        "grants": [
+                            {
+                                "ref": "a6668"
+                            },
+                            {
+                                "ref": "c6721"
+                            }
+                        ]
+                    },
+                    {
                         "name": "Silver Dragonborn",
-                        "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the glinting shine and scorching cold breath of silver dragons.",
+                        "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the glinting shine and scorching cold breath of silver dragons",
+                        "grants": [
+                            {
+                                "ref": "a4721"
+                            },
+                            {
+                                "ref": "c6723"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "White Dragonborn",
+                        "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the snowy aspect and frosty breath of white dragons.",
                         "grants": [
                             {
                                 "ref": "a4721"
@@ -70,31 +130,31 @@
             }
         ],
         "choiceType": 8,
-        "image": "Race Dragonborn.png",
+        "image": "Race Black Dragonborn.png",
         "grants": []
     },
     {
         "name": "Drow",
-        "description": "Drow are the dark elves of the Forgotten Realms. They dwell in the Underdark, large subterranean caverns beneath the surface.",
+        "description": "Drow are a playable race in Baldur's Gate 3. They are the dark elves of the Forgotten Realms, dwelling in the Underdark, large subterranean caverns beneath the surface.",
         "choices": [
             {
                 "type": 8,
                 "options": [
                     {
-                        "name": "Lolth-Sworn Drow",
-                        "description": "Raised by Lolth's cult in the city of Menzoberranzan, these drow extol the virtues of their corrupt and merciless goddess. Lolth marks her followers with bright red eyes so the Underdark will learn to fear Drow on sight.",
+                        "name": "Lolth-sworn Drow",
+                        "description": "Raised by [[Lolth",
                         "grants": []
                     },
                     {
-                        "name": "The Cult of Lolth",
-                        "description": "The much-reviled matriarch of the drow pantheon, Lolth holds sway over spiders, the Underdark, and the wicked creatures of the Demonweb Pits. Her primary goal is to corrupt all drow, transforming them into heartless cultists.",
+                        "name": "Seldarine Drow",
+                        "description": "Drow are the result of an ancient schism between the elven dieties Corellon Larethian and Lolth. The latter's treachery drove the drow into the Underdark, where they splintered into warring factions. Seldarine drow can be found seeking allies from all over Faerûn, aiming to settle their conflict with Lolth - and themselves - by any means necessary.",
                         "grants": []
                     }
                 ]
             }
         ],
         "choiceType": 8,
-        "image": "Race Drow.png",
+        "image": "Drow Lolth-Sworn Default.png",
         "grants": [
             {
                 "ref": "c6562"
@@ -109,7 +169,7 @@
     },
     {
         "name": "Dwarf",
-        "description": "As durable and unyielding as their homes of stone, dwarves are some of the finest warriors, miners, and smiths of Faerûn.",
+        "description": "Dwarves are a playable race in Baldur's Gate 3.",
         "choices": [
             {
                 "type": 8,
@@ -148,7 +208,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "Race Dwarf.png",
+        "image": "Dwarf Gold Default.png",
         "grants": [
             {
                 "ref": "c6583"
@@ -163,13 +223,13 @@
     },
     {
         "name": "Elf",
-        "description": "\"With an ethereal countenance and long lifespans, elves are at home with nature's power, flourishing in light and dark alike.\"",
+        "description": "Elves are a playable race. They are long lived, and have an affinity for magic.",
         "choices": [
             {
                 "type": 8,
                 "options": [
                     {
-                        "name": "High Elves",
+                        "name": "High Elf",
                         "description": "Heirs of the mystical [https://forgottenrealms.fandom.com/wiki/Feywild Feywild], high elves value magic in all its forms, and even those who do not study spellcraft can manipulate the [https://forgottenrealms.fandom.com/wiki/Weave Weave].",
                         "grants": [
                             {
@@ -214,7 +274,7 @@
                         ]
                     },
                     {
-                        "name": "Wood Elves",
+                        "name": "Wood Elf",
                         "description": "Wood elves spend their reclusive lives in [[Faerûn",
                         "grants": []
                     }
@@ -222,7 +282,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "Race Elf.png",
+        "image": "High Elf Default Portrait.png",
         "grants": [
             {
                 "ref": "c6572"
@@ -238,7 +298,7 @@
     {
         "name": "Githyanki",
         "description": "Githyanki are peerless warriors from the Astral Plane, known for their legendary silver blades and red dragon mounts. They seek the total destruction of mind flayers, whose ancient empire enslaved the ancestral gith for millennia.",
-        "image": "Race Githyanki.png",
+        "image": "Githyanki Default Portrait.png",
         "grants": [
             {
                 "ref": "a6593"
@@ -250,7 +310,7 @@
     },
     {
         "name": "Gnome",
-        "description": "\"Small, clever, and energetic, gnomes use their long lives to explore Faerûn's brightest corners and darkest depths.\"",
+        "description": "Gnomes are a playable race in Baldur's Gate 3.",
         "choices": [
             {
                 "type": 8,
@@ -295,7 +355,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "Race Gnome.png",
+        "image": "Rock Gnome Default Portrait.png",
         "grants": [
             {
                 "ref": "c3961"
@@ -304,13 +364,13 @@
     },
     {
         "name": "Half-Elf",
-        "description": "\"Half-Elves inherit blessings from both their parents, but at the price of never quite fitting in. Curious, ambitious, and versatile, half-elves are welcome everywhere, but struggle without a community to call their own.\"",
+        "description": "Half-Elves are a playable race in Baldur's Gate 3.",
         "choices": [
             {
                 "type": 8,
                 "options": [
                     {
-                        "name": "High Half-Elves",
+                        "name": "High Half-elves",
                         "description": "A touch of the [https://forgottenrealms.fandom.com/wiki/Feywild Feywild] remains in half-elves with this bloodline, and even those untrained in magic possess a hint of wild power.",
                         "grants": [
                             {
@@ -355,12 +415,12 @@
                         ]
                     },
                     {
-                        "name": "Wood Half-Elves",
+                        "name": "Wood Half-elves",
                         "description": "Like their wood elf parent, these half-elves have a quickened stride and eye for stealth. Yet many break away from isolation in Faerûn's forests to explore the rest of the Realms.",
                         "grants": []
                     },
                     {
-                        "name": "Drow Half-Elves",
+                        "name": "Drow Half-elves",
                         "description": "Most Half-Drow result from liaisons between [[Drow#Seldarine Drow",
                         "grants": []
                     }
@@ -368,7 +428,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "Race Half-Elf.png",
+        "image": "High Half-Elf Default Portrait.png",
         "grants": [
             {
                 "ref": "c6570"
@@ -383,8 +443,8 @@
     },
     {
         "name": "Half-Orc",
-        "description": "Half-Orcs exhibit a blend of orcish and human characteristics, and their appearance varies widely. Creatures of intense emotion, Half-Orcs are more inclined to act than contemplate - whether the rage burning their bodies compels them to fight, or the love filling their hearts inspires acts of incredible kindness.",
-        "image": "Race Half-Orc.png",
+        "description": "Half-orcs are a playable race in Baldur's Gate 3. They are born of both human and orc ancestry, and exhibit a blend of orcish and human characteristics, their appearances varying widely.",
+        "image": "Half-Orc Default.png",
         "grants": [
             {
                 "ref": "c3957"
@@ -399,7 +459,7 @@
     },
     {
         "name": "Halfling",
-        "description": "Small yet capable, halflings prefer the comforts of home and hearth - but their natural luck and dexterity makes them fine adventurers.",
+        "description": "Halflings are a playable race in Baldur's Gate 3.",
         "choices": [
             {
                 "type": 8,
@@ -426,7 +486,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "Race Halfling.png",
+        "image": "Halfling Lightfoot Default.png",
         "grants": [
             {
                 "ref": "c3964"
@@ -438,8 +498,8 @@
     },
     {
         "name": "Human",
-        "description": "\"The most common face to see in Faerûn, humans are known for their tenacity, creativity, and endless capacity for growth.\"",
-        "image": "Race Human.png",
+        "description": "Humans are a playable race in Baldur's Gate 3. They are one of the most populous races in Faerûn, exhibiting a versatile range of skills rather than any one mastery.",
+        "image": "Human Default Portrait.png",
         "grants": [
             {
                 "ref": "c6570"
@@ -451,7 +511,7 @@
     },
     {
         "name": "Tiefling",
-        "description": "Touched by the Hells, Tieflings are resistant to fire and carry extraordinary Infernal powers.",
+        "description": "Tieflings are a playable race in Baldur's Gate 3. Touched by the Hells, tieflings are resistant to fire and carry extraordinary Infernal powers.",
         "choices": [
             {
                 "type": 8,
@@ -475,7 +535,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "Race Tiefling.png",
+        "image": "Asmodeus Tiefling Default Portrait.png",
         "grants": [
             {
                 "ref": "c3957"

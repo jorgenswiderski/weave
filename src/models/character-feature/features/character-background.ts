@@ -10,7 +10,7 @@ import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
 import { PageNotFoundError } from '../../errors';
 import { StaticImageCacheService } from '../../static-image-cache-service';
 import { PageLoadingState } from '../../page-item';
-import { PageSection } from '../../media-wiki/types';
+import { IPageSection } from '../../media-wiki/types';
 
 enum BackgroundLoadingStates {
     ID = 'BACKGROUND_ID',
@@ -117,7 +117,7 @@ export class CharacterBackground extends CharacterFeature {
     }
 }
 
-function parseBackgroundSections(page: PageData): PageSection[] {
+function parseBackgroundSections(page: PageData): IPageSection[] {
     const sections = page.getSections('[\\w\\s]+', 2);
 
     const legacyIndex = sections.findIndex((section) =>

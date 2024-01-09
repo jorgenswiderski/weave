@@ -12,8 +12,8 @@ export interface IPageData extends ApiRevision {
     hasCategory(categoryNames: string[] | string): boolean;
     hasTemplate(templateNames: string[] | string): Promise<boolean>;
     getTemplate(templateName: string): Promise<IMediaWikiTemplate>;
-    getSection(nameOrRegex: string, depth?: number): PageSection | null;
-    getSections(nameOrRegex: string, depth?: number): PageSection[];
+    getSection(nameOrRegex: string, depth?: number): IPageSection | null;
+    getSections(nameOrRegex: string, depth?: number): IPageSection[];
 }
 
 export interface IMediaWikiTemplate {
@@ -41,7 +41,9 @@ export type MediaWikiTemplateParserConfig = Record<
 
 export class WikitableNotFoundError extends Error {}
 
-export interface PageSection {
+export interface IPageSection {
     title: string;
     content: string;
+    getSubsection(nameOrRegex: string, depth?: number): IPageSection | null;
+    getSubsections(nameOrRegex: string, depth?: number): IPageSection[];
 }

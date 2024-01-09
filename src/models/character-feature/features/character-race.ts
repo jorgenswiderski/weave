@@ -3,6 +3,7 @@ import {
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import { GrantableEffect } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
+import assert from 'assert';
 import { error } from '../../logger';
 import { MediaWiki } from '../../media-wiki/media-wiki';
 import { PageLoadingState } from '../../page-item';
@@ -12,6 +13,7 @@ import { CharacterFeature } from '../character-feature';
 import { Utils } from '../../utils';
 import { StaticImageCacheService } from '../../static-image-cache-service';
 import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
+import { IPageSection } from '../../media-wiki/types';
 
 type RaceChoice = { type: CharacterPlannerStep; options: CharacterSubrace[] };
 
@@ -38,10 +40,28 @@ export class CharacterRace extends CharacterFeature {
             this.initOptions().catch(error);
     }
 
+    protected static async parseFeatures(
+        content: string,
+    ): Promise<GrantableEffect[]> {
+        const featureTitles = [
+            ...content.matchAll(/\*\s*\{\{SAI\|([^|}]+)[\s\S]*?}}/g),
+        ].map((match) => match[1].trim());
+
+        const fx = (
+            await Promise.all(
+                featureTitles.map(async (title) =>
+                    CharacterFeature.parsePageForGrantableEffect(title),
+                ),
+            )
+        ).filter(Boolean) as GrantableEffect[];
+
+        return fx;
+    }
+
     private async initOptions(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
-        if (!this.page || !this.page.content) {
+        if (!this.page?.content) {
             throw new Error('Could not find page content');
         }
 
@@ -49,28 +69,27 @@ export class CharacterRace extends CharacterFeature {
             return;
         }
 
-        const subracePattern = /\n===\s*([^=]*?)\s*===\n\s*([\s\S]*?)(?===|$)/g;
+        const featuresSection = this.page.getSection('Racial features');
 
-        let match;
+        assert(
+            featuresSection,
+            `Failed to find 'Racial features' for race '${this.name}'`,
+        );
 
-        const choices: RaceChoice[] = [
-            { type: CharacterPlannerStep.CHOOSE_SUBRACE, options: [] },
-        ];
+        const subraceSections = featuresSection.getSubsections('[^=]+?', 3);
 
-        while (true) {
-            match = subracePattern.exec(this.page.content);
-            if (!match) break;
+        const options = subraceSections.map(
+            (section) => new CharacterSubrace(section),
+        );
 
-            choices[0].options.push(
-                new CharacterSubrace(
-                    Utils.stringToTitleCase(match[1]),
-                    match[2].trim(),
-                ),
-            );
-        }
+        await Promise.all(
+            options.map((option) => option.waitForInitialization()),
+        );
 
-        if (choices[0].options.length) {
-            this.choices = choices;
+        if (options.length) {
+            this.choices = [
+                { type: CharacterPlannerStep.CHOOSE_SUBRACE, options },
+            ];
         }
     }
 
@@ -116,6 +135,14 @@ export class CharacterRace extends CharacterFeature {
             .split('\n')[0];
     }
 
+    protected async parseRacialFeatures(features: IPageSection): Promise<void> {
+        const excludingSubsections = features.content.split(/\n=/)[0];
+
+        const fx = await CharacterRace.parseFeatures(excludingSubsections);
+
+        this.grants.push(...fx);
+    }
+
     async initOptionsAndEffects(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
@@ -123,68 +150,12 @@ export class CharacterRace extends CharacterFeature {
             throw new Error('could not find page content');
         }
 
-        // Extract the race features section
-        const raceFeaturesSectionMatch = this.page.content.match(
-            /====\s*Rac\w+ \w+s\s*====\n([\s\S]+?)\n=/,
-        );
+        const featuresSection = this.page.getSection('Racial features');
 
-        const raceFeaturesSection = raceFeaturesSectionMatch
-            ? raceFeaturesSectionMatch[1]
-            : '';
-
-        async function parseRacialTraits(
-            sectionText: string,
-        ): Promise<GrantableEffect[]> {
-            const featureTitles = [
-                ...sectionText.matchAll(/\*\s*\{\{SAI\|([^|}]+)[\s\S]*?}}/g),
-            ].map((match) => match[1].trim());
-
-            const fx = (
-                await Promise.all(
-                    featureTitles.map(async (title) =>
-                        CharacterFeature.parsePageForGrantableEffect(title),
-                    ),
-                )
-            ).filter(Boolean) as GrantableEffect[];
-
-            return fx;
-        }
-
-        this.grants.push(...(await parseRacialTraits(raceFeaturesSection)));
-
-        await this.initialized[RaceLoadState.CHOICES];
-
-        if (this.choices?.[0]) {
-            await Promise.all(
-                this.choices[0].options.map(
-                    async (choice: CharacterSubrace): Promise<void> => {
-                        if (!this.page?.content) {
-                            throw new Error('could not find page content');
-                        }
-
-                        // Extract the subrace section
-                        let subraceFeaturesSectionMatch = new RegExp(
-                            `===\\s*${choice.name}\\s*===\\s*\n[\\s\\S]+?\n====\\s*Subrace \\w+?s\\s*====\n([\\s\\S]+?)\n=`,
-                        ).exec(this.page.content);
-
-                        if (!subraceFeaturesSectionMatch?.[1]) {
-                            subraceFeaturesSectionMatch = new RegExp(
-                                `===\\s*${choice.name}\\s*===\\s*\n([\\s\\S]+?)\n=`,
-                            ).exec(this.page.content);
-                        }
-
-                        const subraceFeaturesSection =
-                            subraceFeaturesSectionMatch
-                                ? subraceFeaturesSectionMatch[1]
-                                : '';
-
-                        // eslint-disable-next-line no-param-reassign
-                        choice.grants = await parseRacialTraits(
-                            subraceFeaturesSection,
-                        );
-                    },
-                ),
-            );
+        if (featuresSection) {
+            await this.parseRacialFeatures(featuresSection);
+        } else {
+            error(`Could not find racial features for race '${this.name}'.`);
         }
     }
 
