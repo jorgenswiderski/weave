@@ -122,4 +122,8 @@ export class Utils extends SharedUtils {
 
         return arr.filter((_v, index) => results[index]);
     }
+
+    static stringToSentences(phrase: string): string[] {
+        return phrase.split(/(?<=(?:\.|!|\?|\.\.\.)\s+)/g);
+    }
 }

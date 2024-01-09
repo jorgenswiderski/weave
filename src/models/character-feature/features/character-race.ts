@@ -125,7 +125,13 @@ export class CharacterRace extends CharacterFeature {
         const match = this.page.content.match(descPattern);
 
         if (!match || !match[1]) {
-            this.description = await super.getDescription();
+            const description = await super.getDescription();
+
+            this.description = Utils.stringToSentences(description)
+                .filter(
+                    (sentence) => !sentence.match(/(is|are) a playable race/i),
+                )
+                .join('');
 
             return;
         }

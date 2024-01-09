@@ -1,7 +1,7 @@
 [
     {
         "name": "Dragonborn",
-        "description": "Dragonborn are a playable race in Baldur's Gate 3. They have resistance to a type of energy damage, and are able to make deadly breath weapon attacks. These abilities are affected by their dragonborn subrace. Dragonborn resemble draconic humanoids, can have scales in a variety of colours, and may or may not have a tail.",
+        "description": "They have resistance to a type of energy damage, and are able to make deadly breath weapon attacks. These abilities are affected by their dragonborn subrace. Dragonborn resemble draconic humanoids, can have scales in a variety of colours, and may or may not have a tail.",
         "choices": [
             {
                 "type": 8,
@@ -135,7 +135,7 @@
     },
     {
         "name": "Drow",
-        "description": "Drow are a playable race in Baldur's Gate 3. They are the dark elves of the Forgotten Realms, dwelling in the Underdark, large subterranean caverns beneath the surface.",
+        "description": "They are the dark elves of the Forgotten Realms, dwelling in the Underdark, large subterranean caverns beneath the surface.",
         "choices": [
             {
                 "type": 8,
@@ -169,7 +169,7 @@
     },
     {
         "name": "Dwarf",
-        "description": "Dwarves are a playable race in Baldur's Gate 3.",
+        "description": "",
         "choices": [
             {
                 "type": 8,
@@ -223,7 +223,7 @@
     },
     {
         "name": "Elf",
-        "description": "Elves are a playable race. They are long lived, and have an affinity for magic.",
+        "description": "They are long lived, and have an affinity for magic.",
         "choices": [
             {
                 "type": 8,
@@ -310,7 +310,7 @@
     },
     {
         "name": "Gnome",
-        "description": "Gnomes are a playable race in Baldur's Gate 3.",
+        "description": "",
         "choices": [
             {
                 "type": 8,
@@ -364,7 +364,7 @@
     },
     {
         "name": "Half-Elf",
-        "description": "Half-Elves are a playable race in Baldur's Gate 3.",
+        "description": "",
         "choices": [
             {
                 "type": 8,
@@ -443,7 +443,7 @@
     },
     {
         "name": "Half-Orc",
-        "description": "Half-orcs are a playable race in Baldur's Gate 3. They are born of both human and orc ancestry, and exhibit a blend of orcish and human characteristics, their appearances varying widely.",
+        "description": "They are born of both human and orc ancestry, and exhibit a blend of orcish and human characteristics, their appearances varying widely.",
         "image": "Half-Orc Default.png",
         "grants": [
             {
@@ -459,7 +459,7 @@
     },
     {
         "name": "Halfling",
-        "description": "Halflings are a playable race in Baldur's Gate 3.",
+        "description": "",
         "choices": [
             {
                 "type": 8,
@@ -498,7 +498,7 @@
     },
     {
         "name": "Human",
-        "description": "Humans are a playable race in Baldur's Gate 3. They are one of the most populous races in Faerûn, exhibiting a versatile range of skills rather than any one mastery.",
+        "description": "They are one of the most populous races in Faerûn, exhibiting a versatile range of skills rather than any one mastery.",
         "image": "Human Default Portrait.png",
         "grants": [
             {
@@ -511,7 +511,7 @@
     },
     {
         "name": "Tiefling",
-        "description": "Tieflings are a playable race in Baldur's Gate 3. Touched by the Hells, tieflings are resistant to fire and carry extraordinary Infernal powers.",
+        "description": "Touched by the Hells, tieflings are resistant to fire and carry extraordinary Infernal powers.",
         "choices": [
             {
                 "type": 8,

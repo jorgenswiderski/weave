@@ -17,6 +17,7 @@ import { StaticImageCacheService } from '../static-image-cache-service';
 import { CharacterFeature } from '../character-feature/character-feature';
 import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
 import { ClassSubclassOption } from '../character-feature/features/character-subclass-option';
+import { Utils } from '../utils';
 
 async function parseFeatures(
     characterClass: CharacterClass,
@@ -282,9 +283,7 @@ export class CharacterClass extends PageItem implements ICharacterClass {
     private async initDescription(): Promise<void> {
         const description = await this.getDescription();
 
-        const sentences = description.split(/(?<=(?:\.|!|\?|\.\.\.)\s+)/g);
-
-        this.description = sentences
+        this.description = Utils.stringToSentences(description)
             .filter((sentence) => !sentence.match(/is a (?:character )?class/i))
             .join('');
     }
