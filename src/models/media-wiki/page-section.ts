@@ -22,7 +22,7 @@ export class PageSection implements IPageSection {
 
         return [...matches].map(
             ([, , title, sectionContent]) =>
-                new PageSection(title, sectionContent),
+                new PageSection(title.trim(), sectionContent),
         );
     }
 
