@@ -10,11 +10,14 @@ export class PageSection implements IPageSection {
         content: string,
         nameOrRegex: string,
         depth?: number,
+        allowInlineSection: boolean = false,
     ): PageSection[] {
         const eqs = depth ? '='.repeat(depth) : '={2,}';
 
         const regex = new RegExp(
-            `(?<=\\n\\s*|^)(${eqs})\\s*(${nameOrRegex})\\s*\\1\\s*\\n([\\s\\S]+?)(?=\\n\\s*\\1[^=]|$)`,
+            `(?<=\\n${
+                allowInlineSection ? '?' : ''
+            }\\s*|^)(${eqs})\\s*(${nameOrRegex})\\s*\\1\\s*\\n([\\s\\S]+?)(?=\\n\\s*\\1[^=]|$)`,
             'ig',
         );
 
@@ -26,14 +29,31 @@ export class PageSection implements IPageSection {
         );
     }
 
-    getSubsections(nameOrRegex: string, depth?: number): PageSection[] {
-        return PageSection.getSections(this.content, nameOrRegex, depth);
+    getSubsections(
+        nameOrRegex: string,
+        depth?: number,
+        allowInlineSection?: boolean,
+    ): PageSection[] {
+        return PageSection.getSections(
+            this.content,
+            nameOrRegex,
+            depth,
+            allowInlineSection,
+        );
     }
 
-    getSubsection(nameOrRegex: string, depth?: number): PageSection | null {
+    getSubsection(
+        nameOrRegex: string,
+        depth?: number,
+        allowInlineSection?: boolean,
+    ): PageSection | null {
         return (
-            PageSection.getSections(this.content, nameOrRegex, depth)?.[0] ||
-            null
+            PageSection.getSections(
+                this.content,
+                nameOrRegex,
+                depth,
+                allowInlineSection,
+            )?.[0] || null
         );
     }
 }

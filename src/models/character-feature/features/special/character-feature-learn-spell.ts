@@ -70,7 +70,17 @@ export class CharacterFeatureLearnSpell extends CharacterFeature {
             throw new PageNotFoundError();
         }
 
-        const section = this.page.getSection('Available Spells')!;
+        const section = this.page.getSection(
+            'Available Spells',
+            undefined,
+            true,
+        );
+
+        if (!section) {
+            throw new Error(
+                `Could not find spells section for FeatureLearnSpell '${this.name}.'`,
+            );
+        }
 
         const featureMarkdown = [
             ...section.content.matchAll(/{{(SAI|SmIconLink)\|[^}]+}}/g),

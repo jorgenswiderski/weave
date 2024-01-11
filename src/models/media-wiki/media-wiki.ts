@@ -177,15 +177,32 @@ export class PageData implements IPageData {
         return new MediaWikiTemplate(this, matchingTemplateName);
     }
 
-    getSection(nameOrRegex: string, depth?: number): PageSection | null {
+    getSection(
+        nameOrRegex: string,
+        depth?: number,
+        allowInlineSection?: boolean,
+    ): PageSection | null {
         return (
-            PageSection.getSections(this.content, nameOrRegex, depth)?.[0] ||
-            null
+            PageSection.getSections(
+                this.content,
+                nameOrRegex,
+                depth,
+                allowInlineSection,
+            )?.[0] || null
         );
     }
 
-    getSections(nameOrRegex: string, depth?: number): PageSection[] {
-        return PageSection.getSections(this.content, nameOrRegex, depth);
+    getSections(
+        nameOrRegex: string,
+        depth?: number,
+        allowInlineSection?: boolean,
+    ): PageSection[] {
+        return PageSection.getSections(
+            this.content,
+            nameOrRegex,
+            depth,
+            allowInlineSection,
+        );
     }
 
     static async resolveArticleTransclusions(
