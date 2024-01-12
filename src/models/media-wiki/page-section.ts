@@ -14,6 +14,14 @@ export class PageSection implements IPageSection {
     ): PageSection[] {
         const eqs = depth ? '='.repeat(depth) : '={2,}';
 
+        // Transclude Template:H3
+        // TODO: Use a generalized solution for transcluding templates
+        // (current transclusion code doesn't support parameters)
+        const replaced = content.replace(
+            /{{H3\s*\|\s*([^}]+?)\s*}}/gi,
+            `===$1===`,
+        );
+
         const regex = new RegExp(
             `(?<=\\n${
                 allowInlineSection ? '?' : ''
@@ -21,9 +29,9 @@ export class PageSection implements IPageSection {
             'ig',
         );
 
-        const matches = content.matchAll(regex);
+        const matches = [...replaced.matchAll(regex)];
 
-        return [...matches].map(
+        return matches.map(
             ([, , title, sectionContent]) =>
                 new PageSection(title.trim(), sectionContent),
         );

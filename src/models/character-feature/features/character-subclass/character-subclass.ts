@@ -263,7 +263,7 @@ export class CharacterSubclass extends CharacterFeature {
 
         const sectionMatches = [
             ...content.matchAll(
-                /(?:{{HorizontalRuleImage}}\s*\n|={4,}\s*(.*?)\s*={4,}\s*\n|^)([\s\S]*?)(?=(?:\n\s*====)|$|{{HorizontalRuleImage}})/g,
+                /(?:{{HorizontalRuleImage}}\s*\n|={4,}\s*(.*?)\s*={4,}\s*\n|^)([\s\S]*?)(?={{HorizontalRuleImage}}|\n\s*={4,}|$)/g,
             ),
         ];
 
@@ -287,21 +287,21 @@ export class CharacterSubclass extends CharacterFeature {
             throw new Error('Could not find page content');
         }
 
-        const featureSection =
-            /\n\s*==\s*Subclass\sFeatures\s*==\s*\n([\s\S]*?)(?=\n\s*==\s*[^=]+?\s*==\s*\n|{{\w+Navbox}})/i;
+        const featuresSection = this.page.getSection('Subclass Features');
 
-        const sectionMatch = featureSection.exec(this.page.content);
-
-        if (!sectionMatch?.[1]) {
+        if (!featuresSection) {
             throw new Error(
                 `Could not find subclass features for ${this.name}`,
             );
         }
 
-        const levelSection =
-            /\n===\s*Level\s(\d+)\s*===\s*\n([\s\S]*?)(?=\n===\s*Level|$)/gi;
+        const levelSections = featuresSection.getSubsections('Level \\d+');
 
-        const levelMatches = [...sectionMatch[1].matchAll(levelSection)];
+        if (levelSections.length === 0) {
+            throw new Error(
+                `Could not find subclass level sections for '${this.name}'`,
+            );
+        }
 
         const progression: CharacterProgressionLevel[] = Array.from({
             length: 12,
@@ -312,8 +312,8 @@ export class CharacterSubclass extends CharacterFeature {
 
         const optionsByLevel = Object.fromEntries(
             await Promise.all(
-                levelMatches.map(async ([, levelStr, content]) => {
-                    const level = parseInt(levelStr, 10);
+                levelSections.map(async ({ title, content }) => {
+                    const level = parseInt(title.match(/\d+/)![0], 10);
 
                     return [level, await this.getLevelOptions(content, level)];
                 }),
