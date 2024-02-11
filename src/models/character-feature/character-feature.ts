@@ -325,29 +325,21 @@ export class CharacterFeature
                             }
                         }
 
-                        if (config.classes) {
-                            const cell = row[config.classes];
+                        if (config.classRestricted) {
+                            // FIXME: This was used before for Fighting Styles but the table on that page isn't parsed correctly anymore
+                            assert(false);
 
-                            assert(
-                                this.characterClass,
-                                `Class must be defined to enforce classes constraint on wikitable on page '${this.pageTitle}'`,
-                            );
+                            // assert(
+                            //     this.characterClass,
+                            //     `Class must be defined to enforce classes constraint on wikitable on page '${this.pageTitle}'`,
+                            // );
 
-                            if (
-                                !(
-                                    cell.includes(
-                                        `{{class|${
-                                            this.characterClass!.name
-                                        }}}`,
-                                    ) ||
-                                    (this.subclass &&
-                                        cell.includes(
-                                            `{{class|${this.subclass.name}}}`,
-                                        ))
-                                )
-                            ) {
-                                return false;
-                            }
+                            // const classCell = row?.[this.characterClass.name];
+
+                            // const isClassAllowed =
+                            //     classCell && classCell.trim() === '✓';
+
+                            // return isClassAllowed;
                         }
 
                         return true;

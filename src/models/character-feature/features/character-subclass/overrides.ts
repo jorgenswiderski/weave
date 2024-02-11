@@ -18,14 +18,20 @@ type Overrides = Record<
 >;
 
 const Barbarian: Overrides = {
-    'Wild Magic (Barbarian subclass)': {
+    'Wild Magic (barbarian subclass)': {
         3: {
             'Wild Magic Effects': {
                 ignore: true,
             },
         },
         6: {
-            'Bolstering Magic': {
+            'Bolstering Magic: Boon': {
+                ignore: true,
+            },
+            'Bolstering Magic: Level 1 Spell Slot': {
+                ignore: true,
+            },
+            'Bolstering Magic: Level 2 Spell Slot': {
                 ignore: true,
             },
         },
@@ -41,10 +47,15 @@ const Barbarian: Overrides = {
                 forceContentMatch: true,
             },
         },
+        6: {
+            'Mindless Rage': {},
+        },
     },
     Wildheart: {
         3: {
-            'Bestial Heart': {
+            // Bestial Heart is parsed anonymously as "Section 1" because of a weird HorizontalImageRule placement
+            1: {
+                optionName: 'Bestial Heart',
                 choiceListConfig: {
                     name: 'Bestial Hearts',
                     feature: 'Grants',
@@ -53,8 +64,9 @@ const Barbarian: Overrides = {
             },
         },
         10: {
-            'Additional Animal Aspect': {
+            0: {
                 redirectTo: [6, 'Animal Aspect'],
+                optionName: 'Additional Animal Aspect',
             },
         },
     },

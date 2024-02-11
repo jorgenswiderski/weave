@@ -17,6 +17,8 @@ import { characterSubclassParserOverrides } from './overrides';
 import { ICharacterOptionWithPage } from '../../types';
 import { IClassFeatureFactory } from '../../class-feature/types';
 import { error } from '../../../logger';
+import { PageSection } from '../../../media-wiki/page-section';
+import { CharacterFeatureRedirect } from './types';
 
 export class CharacterSubclass extends CharacterFeature {
     static factory?: IClassFeatureFactory;
@@ -71,7 +73,9 @@ export class CharacterSubclass extends CharacterFeature {
         content: string,
         sectionKey: string | number,
         level: number,
-    ): Promise<ICharacterOptionWithStubs | undefined> {
+    ): Promise<
+        ICharacterOptionWithStubs | CharacterFeatureRedirect | undefined
+    > {
         if (!this.page) {
             throw new PageNotFoundError();
         }
@@ -98,7 +102,9 @@ export class CharacterSubclass extends CharacterFeature {
         }
 
         if (config?.redirectTo) {
-            return { name: sectionTitle };
+            const redirect: CharacterFeatureRedirect = { redirect: sectionKey };
+
+            return redirect;
         }
 
         if (
@@ -208,7 +214,10 @@ export class CharacterSubclass extends CharacterFeature {
                     ...content.matchAll(/\n\s*\*\*\s*([^:]+:[\S]*)\s*(.+)/g),
                 ];
 
-                assert(matches.length > 0);
+                assert(
+                    matches.length > 0,
+                    `Expected bullet list for ${this.name} > Level ${level} > Section ${sectionKey}`,
+                );
 
                 options = matches.map(([, label, bulletContent]) => {
                     const titles = [
@@ -256,30 +265,114 @@ export class CharacterSubclass extends CharacterFeature {
     protected async getLevelOptions(
         content: string,
         level: number,
-    ): Promise<ICharacterOptionWithStubs[]> {
+    ): Promise<(ICharacterOptionWithStubs | CharacterFeatureRedirect)[]> {
         if (!this.page) {
             throw new PageNotFoundError();
         }
 
         const sectionMatches = [
             ...content.matchAll(
-                /(?:{{HorizontalRuleImage}}\s*\n|={4,}\s*(.*?)\s*={4,}\s*\n|^)([\s\S]*?)(?={{HorizontalRuleImage}}|\n\s*={4,}|$)/g,
+                /(?:{{HorizontalRuleImage}}\s*\n|={4,}\s*(.*?)\s*={4,}\s*\n|(?:\n|^);\s*(.*?)\s*\n:\s*|^)([\s\S]*?)(?={{HorizontalRuleImage}}|\n\s*={4,}|\n;\s*|$)/g,
             ),
         ];
 
         return (
             await Promise.all(
                 sectionMatches.map(
-                    ([, sectionTitle, sectionContent], index) => {
+                    (
+                        [, sectionTitle, sectionTitle2, sectionContent],
+                        index,
+                    ) => {
                         return this.parseSection(
                             sectionContent,
-                            sectionTitle ?? index,
+                            sectionTitle ?? sectionTitle2 ?? index,
                             level,
                         );
                     },
                 ),
             )
-        ).filter(Boolean) as ICharacterOptionWithStubs[];
+        ).filter(Boolean) as (
+            | ICharacterOptionWithStubs
+            | CharacterFeatureRedirect
+        )[];
+    }
+
+    protected async resolveRedirects(
+        progression: CharacterProgressionLevel[],
+        levelSections: PageSection[],
+    ): Promise<CharacterProgressionLevel[]> {
+        if (!this.page) {
+            throw new PageNotFoundError();
+        }
+
+        const optionsByLevel = Object.fromEntries(
+            await Promise.all(
+                levelSections.map(async ({ title, content }) => {
+                    const level = parseInt(title.match(/\d+/)![0], 10);
+
+                    return [level, await this.getLevelOptions(content, level)];
+                }),
+            ),
+        );
+
+        const config = characterSubclassParserOverrides[this.page.title];
+
+        const redirectedFeatures: Map<number, ICharacterOptionWithStubs[]> =
+            new Map();
+
+        (
+            Object.entries(optionsByLevel) as unknown as [
+                string,
+                (ICharacterOptionWithStubs | CharacterFeatureRedirect)[],
+            ][]
+        ).forEach(([levelStr, options]) => {
+            const level = parseInt(levelStr, 10);
+
+            const redirected = options.map(
+                (option): ICharacterOptionWithStubs => {
+                    // Check whether its an Option or a Redirect
+                    if (typeof (option as any)?.redirect === 'undefined') {
+                        return option as ICharacterOptionWithStubs;
+                    }
+
+                    const { redirect: sectionKey } =
+                        option as CharacterFeatureRedirect;
+
+                    const sectionConfig = config?.[level]?.[sectionKey];
+                    assert(sectionConfig.redirectTo);
+
+                    const [rLevel, rSection] = sectionConfig.redirectTo;
+
+                    const targetOption: ICharacterOptionWithStubs =
+                        optionsByLevel[rLevel].find(
+                            (opt: ICharacterOptionWithStubs) =>
+                                opt.name === rSection,
+                        );
+
+                    assert(targetOption);
+
+                    return {
+                        ...targetOption,
+                        choices: targetOption.choices
+                            ? [
+                                  ...targetOption.choices.map((choice) => ({
+                                      ...choice,
+                                      count:
+                                          sectionConfig.choose ?? choice.count,
+                                  })),
+                              ]
+                            : undefined,
+                    };
+                },
+            );
+
+            redirectedFeatures.set(level, redirected);
+        });
+
+        return progression.map((level) => ({
+            ...level,
+            Features: redirectedFeatures.get(level.Level) ?? level.Features,
+        }));
     }
 
     async getProgression(): Promise<CharacterProgressionLevel[]> {
@@ -310,60 +403,12 @@ export class CharacterSubclass extends CharacterFeature {
             Features: [],
         }));
 
-        const optionsByLevel = Object.fromEntries(
-            await Promise.all(
-                levelSections.map(async ({ title, content }) => {
-                    const level = parseInt(title.match(/\d+/)![0], 10);
-
-                    return [level, await this.getLevelOptions(content, level)];
-                }),
-            ),
+        const redirected = await this.resolveRedirects(
+            progression,
+            levelSections,
         );
 
-        const config = characterSubclassParserOverrides[this.page.title];
-
-        (
-            Object.entries(optionsByLevel) as unknown as [
-                number,
-                ICharacterOptionWithStubs[],
-            ][]
-        ).forEach(([level, options]) => {
-            const redirected = options.map((option) => {
-                const { name } = option;
-                const sectionConfig = config?.[level]?.[name];
-
-                if (sectionConfig?.redirectTo) {
-                    const [rLevel, rSection] = sectionConfig.redirectTo;
-
-                    const targetOption: ICharacterOptionWithStubs =
-                        optionsByLevel[rLevel].find(
-                            (opt: ICharacterOptionWithStubs) =>
-                                opt.name === rSection,
-                        );
-
-                    assert(targetOption);
-
-                    return {
-                        ...targetOption,
-                        choices: targetOption.choices
-                            ? [
-                                  ...targetOption.choices.map((choice) => ({
-                                      ...choice,
-                                      count:
-                                          sectionConfig.choose ?? choice.count,
-                                  })),
-                              ]
-                            : undefined,
-                    };
-                }
-
-                return option;
-            });
-
-            progression[level - 1].Features = redirected;
-        });
-
-        return progression;
+        return redirected;
     }
 
     async getEffectsByLevel(
