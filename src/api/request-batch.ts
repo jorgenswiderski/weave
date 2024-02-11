@@ -50,8 +50,6 @@ export class RequestBatch {
             throw new Error('no resolve');
         }
 
-        await this.bucket.acquireToken();
-
         // debug(
         //     `Executing "${batchAxis}" batch of ${
         //         inputs.length
@@ -60,12 +58,46 @@ export class RequestBatch {
         //     ).slice(0, 70)}`,
         // );
 
-        const data = await this.bot.query({
-            ...(params as any),
-            [batchAxis]: inputs,
-        });
+        await this.bucket.acquireToken();
 
-        resolve(data);
+        let data: Record<string, any> | undefined;
+        let continueData: { continue?: string } | undefined = {};
+
+        while (continueData) {
+            // eslint-disable-next-line no-await-in-loop
+            await this.bucket.acquireToken();
+
+            const { continue: ignored, ...continueProps } = continueData;
+
+            // eslint-disable-next-line no-await-in-loop
+            const response = await this.bot.query({
+                ...(params as any),
+                [batchAxis]: inputs,
+                ...continueProps,
+            });
+
+            if (!data) {
+                data = response;
+            } else {
+                const { pages } = data.query;
+
+                // Update the initial response's pages with the new page properties
+                response.query!.pages.forEach((page: Record<string, any>) => {
+                    const index = (pages as Record<string, any>[]).findIndex(
+                        ({ pageid }) => page.pageid === pageid,
+                    );
+
+                    pages[index] = {
+                        ...pages[index],
+                        ...page,
+                    };
+                });
+            }
+
+            continueData = response?.continue;
+        }
+
+        resolve(data!);
     }
 
     addInputs(inputs: ApiParam[]): Promise<ApiResponse>[] {

@@ -338,7 +338,7 @@ export class MediaWikiParser {
 
         // Templates: Remove
         v = MediaWikiParser.replaceBalanced(v, '{{', 'NoExcerpt', '}}', '');
-        v = v.replace(/{{(?:Icon)\|.*?}}/gi, '');
+        v = v.replace(/{{(?:Icon|note)\|.*?}}/gi, '');
 
         // Templates: Template Name
         v = v.replace(

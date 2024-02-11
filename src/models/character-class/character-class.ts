@@ -18,6 +18,7 @@ import { CharacterFeature } from '../character-feature/character-feature';
 import { MediaWikiParser } from '../media-wiki/media-wiki-parser';
 import { ClassSubclassOption } from '../character-feature/features/character-subclass-option';
 import { Utils } from '../utils';
+import { CharacterFeat } from '../character-feature/features/character-feat';
 
 async function parseFeatures(
     characterClass: CharacterClass,
@@ -312,16 +313,51 @@ export class CharacterClass extends PageItem implements ICharacterClass {
 
 let characterClassData: CharacterClass[];
 
+async function initCharacterClassData(): Promise<void> {
+    const classNames = await MediaWiki.getTitlesInCategories(['Classes']);
+
+    characterClassData = classNames.map((name) => new CharacterClass(name));
+
+    await Promise.all(
+        characterClassData.map((cc) => cc.waitForInitialization()),
+    );
+}
+
 export async function getCharacterClassData(): Promise<CharacterClass[]> {
     if (!characterClassData) {
-        const classNames = await MediaWiki.getTitlesInCategories(['Classes']);
-
-        characterClassData = classNames.map((name) => new CharacterClass(name));
-
-        await Promise.all(
-            characterClassData.map((cc) => cc.waitForInitialization()),
-        );
+        await initCharacterClassData();
     }
 
     return characterClassData;
+}
+
+function excludeFeatData(data: CharacterClass[]) {
+    const excluded = data.map((cls) => ({
+        ...cls.toJSON(),
+        progression: (cls as any).progression.map(
+            (level: CharacterClassProgressionLevel) => ({
+                ...level,
+                Features: level.Features.map((feature) => {
+                    if (feature instanceof CharacterFeat) {
+                        return {
+                            ...feature.toJSON(),
+                            choices: undefined,
+                        };
+                    }
+
+                    return feature;
+                }),
+            }),
+        ),
+    }));
+
+    return excluded;
+}
+
+export async function getCharacterClassDataWithoutFeats(): Promise<any[]> {
+    if (!characterClassData) {
+        await initCharacterClassData();
+    }
+
+    return excludeFeatData(characterClassData);
 }
