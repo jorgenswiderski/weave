@@ -81,7 +81,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
     private static parseEffects(
         effectText: string,
         config: MediaWikiTemplateParserConfigItem,
-        page: IPageData,
+        page?: IPageData,
     ): GrantableEffect[] {
         const namedEffectPattern = /\*\s*'''(.*?):?''':?\s*(.*?)(?:\n|$)/g;
 
@@ -108,7 +108,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
         if (anonEffects.length > 0) {
             effects.push({
-                name: page.title,
+                name: page!.title,
                 description: anonEffects
                     .map((effect) => effect.description)
                     .join('\n'),
@@ -243,17 +243,29 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 },
             };
 
-            let template: IMediaWikiTemplate;
+            let template: IMediaWikiTemplate | undefined;
 
             try {
                 template =
                     await characterPages[0].data.getTemplate('CharacterInfo');
             } catch (err) {
-                // CharacterInfo2 template may be used as an alternative in some places
-                // (they are functionally the same, but without a stat block)
-                // Although this template is deprecated we can still support it for now
-                template =
-                    await characterPages[0].data.getTemplate('CharacterInfo2');
+                try {
+                    // CharacterInfo2 template may be used as an alternative in some places
+                    // (they are functionally the same, but without a stat block)
+                    // Although this template is deprecated we can still support it for now
+                    template =
+                        await characterPages[0].data.getTemplate(
+                            'CharacterInfo2',
+                        );
+                } catch (err2) {
+                    warn(
+                        `Could not find CharacterInfo template on page '${this.name}'`,
+                    );
+                }
+            }
+
+            if (!template) {
+                return undefined;
             }
 
             const { location: locationPageTitle } = template.parse(config);
@@ -414,7 +426,9 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             // notes: { parser: (value) => value.split('*'), default: undefined }, // FIXME
         };
 
-        const template = await this.page.getTemplate(this.templateName);
+        // Rarely, a item page could have multiple templates for variations of the item
+        // Just grab the first variant
+        const template = (await this.page.getTemplates(this.templateName))[0];
         const { sources, ...rest } = template.parse(config);
 
         if (sources) {

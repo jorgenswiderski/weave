@@ -151,7 +151,18 @@ export class PageData implements IPageData {
         return searchTemplateIds.some((id) => pageTemplateIds.has(id));
     }
 
-    async getTemplate(templateName: string): Promise<MediaWikiTemplate> {
+    protected async getTemplateInternal(
+        templateName: string,
+        matchAll?: undefined,
+    ): Promise<MediaWikiTemplate>;
+    protected async getTemplateInternal(
+        templateName: string,
+        matchAll: true,
+    ): Promise<MediaWikiTemplate[]>;
+    protected async getTemplateInternal(
+        templateName: string,
+        matchAll: true | undefined,
+    ): Promise<MediaWikiTemplate | MediaWikiTemplate[]> {
         const templateId = await PageData.getTemplateId(templateName);
         const rawPageTemplateNames = this.getRawTemplateNames();
 
@@ -174,7 +185,30 @@ export class PageData implements IPageData {
 
         const matchingTemplateName = matchingTemplate[0];
 
-        return new MediaWikiTemplate(this, matchingTemplateName);
+        const templates = MediaWikiTemplate.fromPage(
+            this,
+            matchingTemplateName,
+        );
+
+        if (!matchAll && templates.length > 1) {
+            throw new Error(
+                `Found more than 1 'Template:${matchingTemplateName}' when parsing page '${this.title}', but only expected 1!`,
+            );
+        }
+
+        if (matchAll) {
+            return templates;
+        }
+
+        return templates[0];
+    }
+
+    async getTemplate(templateName: string): Promise<MediaWikiTemplate> {
+        return this.getTemplateInternal(templateName);
+    }
+
+    async getTemplates(templateName: string): Promise<MediaWikiTemplate[]> {
+        return this.getTemplateInternal(templateName, true);
     }
 
     getSection(

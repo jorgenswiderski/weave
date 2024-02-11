@@ -10,16 +10,22 @@ import {
 } from './types';
 
 export class MediaWikiTemplate implements IMediaWikiTemplate {
-    wikitext: string;
-
     constructor(
-        public page: IPageData & { content: string },
+        public wikitext: string,
+        public page?: IPageData,
+    ) {}
+
+    static fromPage(
+        page: IPageData & { content: string },
         templateName: string,
-    ) {
-        this.wikitext = this.parseWikitextFromPage(templateName);
+    ): MediaWikiTemplate[] {
+        return this.getAllTemplateWikitexts(page.content, templateName, page);
     }
 
-    parseWikitextFromPage(templateName: string): string {
+    static getTemplateWikitext(
+        content: string,
+        templateName: string,
+    ): { wikitext: string; endIndex: number } | null {
         const regex = new RegExp(`{{(?:Template:)?${templateName}`, 'g');
 
         let depth = 0;
@@ -27,7 +33,7 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
         let endIndex = -1;
 
         while (true) {
-            const match = regex.exec(this.page.content);
+            const match = regex.exec(content);
 
             if (!match) {
                 break;
@@ -39,21 +45,11 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
 
             depth += 1;
 
-            for (
-                let i = regex.lastIndex;
-                i < this.page.content.length;
-                i += 1
-            ) {
-                if (
-                    this.page.content[i] === '{' &&
-                    this.page.content[i + 1] === '{'
-                ) {
+            for (let i = regex.lastIndex; i < content.length; i += 1) {
+                if (content[i] === '{' && content[i + 1] === '{') {
                     depth += 1;
                     i += 1; // Skip next '{' as it's part of '}}'
-                } else if (
-                    this.page.content[i] === '}' &&
-                    this.page.content[i + 1] === '}'
-                ) {
+                } else if (content[i] === '}' && content[i + 1] === '}') {
                     depth -= 1;
                     i += 1; // Skip next '}' as it's part of '}}'
 
@@ -70,14 +66,43 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
         }
 
         if (startIndex === -1 || endIndex === -1) {
+            return null;
+        }
+
+        const wikitext = content.substring(startIndex, endIndex);
+
+        return { wikitext, endIndex };
+    }
+
+    static getAllTemplateWikitexts(
+        allContent: string,
+        templateName: string,
+        page?: IPageData,
+    ): MediaWikiTemplate[] {
+        let remainingContent = allContent;
+        const templates: MediaWikiTemplate[] = [];
+
+        while (true) {
+            const template = this.getTemplateWikitext(
+                remainingContent,
+                templateName,
+            );
+
+            if (!template) {
+                break;
+            }
+
+            templates.push(new MediaWikiTemplate(template.wikitext, page));
+            remainingContent = remainingContent.substring(template.endIndex);
+        }
+
+        if (templates.length === 0) {
             throw new Error(
                 `Failed to parse '${templateName}' template from page content.`,
             );
         }
 
-        const wikitext = this.page.content.substring(startIndex, endIndex);
-
-        return wikitext;
+        return templates;
     }
 
     static Parsers: Record<string, TemplateParserFunction> = {
@@ -104,10 +129,10 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
             (
                 value: string,
                 config: MediaWikiTemplateParserConfigItem,
-                page: IPageData,
+                page?: IPageData,
             ) => {
                 if (!(value in enumType) && value !== '') {
-                    const msg = `Failed to map '${config.key}' value '${value}' to enum (${page.title}).`;
+                    const msg = `Failed to map '${config.key}' value '${value}' to enum (${page?.title}).`;
 
                     if (!('default' in config)) {
                         throw new Error(msg);
@@ -115,7 +140,7 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
 
                     if (value.toLowerCase() in enumType) {
                         // debug(
-                        //     `'${config.key}' value '${value}' was coerced to lowercase (${page.title}).`,
+                        //     `'${config.key}' value '${value}' was coerced to lowercase (${page?.title}).`,
                         // );
 
                         return enumType[value.toLowerCase()];
@@ -123,7 +148,7 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
 
                     if (Utils.stringToTitleCase(value) in enumType) {
                         // debug(
-                        //     `'${config.key}' value '${value}' was coerced to titlecase (${page.title}).`,
+                        //     `'${config.key}' value '${value}' was coerced to titlecase (${page?.title}).`,
                         // );
 
                         return enumType[Utils.stringToTitleCase(value)];
@@ -157,7 +182,7 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
                 if (typeof value === 'undefined' || value === null) {
                     if (!('default' in itemConfig)) {
                         error(
-                            `Failed to parse '${prop}' from page '${this.page.title}' and no default value was specified.`,
+                            `Failed to parse '${prop}' from page '${this.page?.title}' and no default value was specified.`,
                         );
                     }
 

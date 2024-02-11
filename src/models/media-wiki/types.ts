@@ -18,14 +18,13 @@ export interface IPageData extends ApiRevision {
 
 export interface IMediaWikiTemplate {
     wikitext: string;
-    parseWikitextFromPage(templateName: string): string;
     parse(config: MediaWikiTemplateParserConfig): Record<string, any>;
 }
 
 export type TemplateParserFunction = (
     value: string,
     config: MediaWikiTemplateParserConfigItem,
-    page: IPageData,
+    page?: IPageData,
 ) => any;
 
 export interface MediaWikiTemplateParserConfigItem {

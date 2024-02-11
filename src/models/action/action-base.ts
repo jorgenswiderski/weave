@@ -101,7 +101,7 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
         const actionCostParser = (
             value: string,
             config: MediaWikiTemplateParserConfigItem,
-            page: IPageData,
+            page?: IPageData,
         ) => {
             const costMatches = [...value.matchAll(/([\w\d]+)(?::(\d+))?/g)];
 
@@ -112,7 +112,7 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
                         resource !== ''
                     ) {
                         error(
-                            `Failed to map '${config.key}' value '${value}' to enum (${page.title}).`,
+                            `Failed to map '${config.key}' value '${value}' to enum (${page?.title}).`,
                         );
                     }
 
