@@ -152,6 +152,10 @@ export class CharacterRace extends CharacterFeature {
     async initOptionsAndEffects(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
+        if (await this.isSpoiler()) {
+            return;
+        }
+
         if (!this.page?.content) {
             throw new Error('could not find page content');
         }
