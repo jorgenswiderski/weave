@@ -120,8 +120,9 @@ export class CharacterBackground extends CharacterFeature {
 function parseBackgroundSections(page: PageData): IPageSection[] {
     const sections = page.getSections('[\\w\\s]+', 2);
 
+    // FIXME: Use .hasTemplate when page section supports it
     const legacyIndex = sections.findIndex((section) =>
-        section.content.includes('{{Legacy Content'),
+        section.content.includes('{{Legacy content'),
     );
 
     return sections.slice(0, legacyIndex);
