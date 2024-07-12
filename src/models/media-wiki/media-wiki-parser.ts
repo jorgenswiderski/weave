@@ -255,12 +255,20 @@ export class MediaWikiParser {
                 return;
             }
 
+            // If this is a row header, force it to be a cell instead
+            if (type === 'header' && content.includes('#Level ')) {
+                // eslint-disable-next-line no-param-reassign
+                type = 'cell';
+            }
+
             if (type === 'header') {
                 pendingHeaders.push(content);
             } else if (type === 'cell') {
                 processCell(content, rowSpan);
             }
         });
+
+        processSpannedCells();
 
         if (Object.keys(currentRow).length > 0) {
             rows.push(currentRow as any);

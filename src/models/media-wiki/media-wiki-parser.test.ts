@@ -371,5 +371,46 @@ describe('MediaWikiParser', () => {
                 },
             ]);
         });
+
+        it('should be able to parse a table that has row headers', () => {
+            const wikitext = `{| class="wikitable" style="max-width: 41em;"
+|+ Barbarian Class Progression
+|-
+! style="width: 6%;" | Level
+! style="width: 6%;" | Proficiency Bonus
+! Features
+! style="width: 13%;" | {{Resource | rg | forceplural = yes }}
+! style="width: 12%;" | Rage Damage
+|-
+! [[#Level 1|1st]]
+| rowspan="4" style="text-align: center;" | +2
+| {{SAI|Rage}}, {{Pass|Unarmoured Defence (Barbarian)|Unarmoured Defence}} 
+| rowspan="2" style="text-align: center;" | 2
+| rowspan="8" style="text-align: center;" | +2
+|-
+! [[#Level 2|2nd]]
+| {{SAI|Reckless Attack}}, {{Pass|Danger Sense}}
+|}`;
+
+            const result = MediaWikiParser.parseWikiTable(wikitext);
+
+            expect(result).toEqual([
+                {
+                    Level: '[[#Level 1|1st]]',
+                    'Proficiency Bonus': '+2',
+                    Features:
+                        '{{SAI|Rage}}, {{Pass|Unarmoured Defence (Barbarian)|Unarmoured Defence}}',
+                    'rg | forceplural = yes': '2',
+                    'Rage Damage': '+2',
+                },
+                {
+                    Level: '[[#Level 2|2nd]]',
+                    'Proficiency Bonus': '+2',
+                    Features: '{{SAI|Reckless Attack}}, {{Pass|Danger Sense}}',
+                    'rg | forceplural = yes': '2',
+                    'Rage Damage': '+2',
+                },
+            ]);
+        });
     });
 });
