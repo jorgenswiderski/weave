@@ -2934,7 +2934,7 @@
             "effects": [
                 {
                     "name": "Evasive Instinct",
-                    "description": "You have a +1 bonus to ArmourClass and Saving Throws as long as you are not wearing armour or holding a shield.",
+                    "description": "You have a +1 bonus to Armour Class and Saving Throws as long as you are not wearing armour or holding a shield.",
                     "type": 2
                 },
                 {
@@ -5523,13 +5523,13 @@
                 },
                 {
                     "name": "Anonymous Effect",
-                    "description": "ArmourClass +1",
+                    "description": "Armour Class +1",
                     "type": 2,
                     "hidden": true
                 },
                 {
                     "name": "Cloth of Authority",
-                    "description": "ArmourClass +1",
+                    "description": "Armour Class +1",
                     "type": 2
                 }
             ],
@@ -6547,7 +6547,7 @@
                 },
                 {
                     "name": "Sparkswall Armour",
-                    "description": "The wearer has +1 to ArmourClass and SavingThrows as long as they have Lightning Charges.",
+                    "description": "The wearer has +1 to Armour Class and SavingThrows as long as they have Lightning Charges.",
                     "type": 2
                 }
             ],
@@ -10423,7 +10423,7 @@
             "effects": [
                 {
                     "name": "Troubadour's Wonder",
-                    "description": "Your ArmourClass increases by 1. In addition, if you have Bardic Inspiration, you gain 1 more use of it.",
+                    "description": "Your Armour Class increases by 1. In addition, if you have Bardic Inspiration, you gain 1 more use of it.",
                     "type": 2
                 }
             ],
@@ -16701,7 +16701,7 @@
             "name": "Sharpened Snare Cuirass",
             "image": "Hide Armour PlusTwo Icon.png",
             "icon": "Hide Armour PlusTwo Unfaded Icon.png",
-            "description": "Sharpened Snare Cuirass is a very rare Medium Armour that adds your Dexterity Modifier to your ArmourClass.",
+            "description": "Sharpened Snare Cuirass is a very rare Medium Armour that adds your Dexterity Modifier to your Armour Class.",
             "quote": "This magnificent hide was harvested from a rare mythological creature of the Feywild, a cross bettween a unicorn and a stoat.",
             "type": 9,
             "rarity": 4,
@@ -16711,7 +16711,7 @@
             "effects": [
                 {
                     "name": "Exotic Material",
-                    "description": "Add your Dexterity Modifier to your ArmourClass.",
+                    "description": "Add your Dexterity Modifier to your Armour Class.",
                     "type": 2
                 },
                 {
@@ -16960,7 +16960,7 @@
             "effects": [
                 {
                     "name": "Exotic Material",
-                    "description": "Add your Dexterity Modifier to your ArmourClass. Additionally, this armour does not impose Disadvantage on Stealth Ability Checks.",
+                    "description": "Add your Dexterity Modifier to your Armour Class. Additionally, this armour does not impose Disadvantage on Stealth Ability Checks.",
                     "type": 2
                 },
                 {
@@ -18993,7 +18993,7 @@
             "effects": [
                 {
                     "name": "Treader by Twilight",
-                    "description": "You gain a +1 bonus to ArmourClass while obscured.",
+                    "description": "You gain a +1 bonus to Armour Class while obscured.",
                     "type": 2
                 }
             ],
@@ -22269,7 +22269,7 @@
                     "type": 2
                 },
                 {
-                    "name": "ArmourClass +1",
+                    "name": "Armour Class +1",
                     "description": "",
                     "type": 2
                 },
@@ -22711,7 +22711,7 @@
                 },
                 {
                     "name": "Gleamdancer",
-                    "description": "When this dagger is wielded in the off-hand, the wielder gains a +1 bonus to ArmourClass.",
+                    "description": "When this dagger is wielded in the off-hand, the wielder gains a +1 bonus to Armour Class.",
                     "type": 2
                 }
             ],
@@ -23591,7 +23591,7 @@
                     "type": 2
                 },
                 {
-                    "name": "ArmourClass",
+                    "name": "Armour Class",
                     "description": "+1",
                     "type": 2
                 }
@@ -24454,7 +24454,7 @@
             "name": "Defender Greataxe",
             "image": "Greataxe PlusTwo Icon.png",
             "icon": "Greataxe PlusTwo Unfaded Icon.png",
-            "description": "Defender Greataxe is a rare greataxe that can be reduced in its enchantment on the first attack of the round to increase wielder's ArmourClass and SavingThrow bonus.",
+            "description": "Defender Greataxe is a rare greataxe that can be reduced in its enchantment on the first attack of the round to increase wielder's Armour Class and SavingThrow bonus.",
             "quote": "The power of this axe lies in a fluctuating arcane enchantment that flows between the beard and the edge of the axe, and the wielder themselves.",
             "type": 18,
             "rarity": 3,
@@ -24465,7 +24465,7 @@
             "effects": [
                 {
                     "name": "Defensive Attack",
-                    "description": "When making your first attack of the round, you can reduce this weapon's Enchantment by 1 to increase your ArmourClass and SavingThrow bonus by 1.",
+                    "description": "When making your first attack of the round, you can reduce this weapon's Enchantment by 1 to increase your Armour Class and SavingThrow bonus by 1.",
                     "type": 2
                 }
             ],
@@ -26112,7 +26112,7 @@
             "effects": [
                 {
                     "name": "Tyr's Protection",
-                    "description": "Surround a creature with a shimmering field of magic that increases its short rest).",
+                    "description": "Surround a creature with a shimmering field of magic that increases its Armour Class by 2. Spell ends when the Sword of Justice is unequipped (short rest).",
                     "type": 2
                 }
             ],

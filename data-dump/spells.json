@@ -10274,7 +10274,7 @@
         "level": 2,
         "school": 1,
         "summary": "This spell allows spellcasters to bolster an ally's defenses while also sharing any damage they receive.",
-        "description": "Ward an ally. They gain Resistance to all damage, and a +1 bonus to their ArmourClass and SavingThrows.\nEach time the target takes damage, the spellcaster takes the same amount of damage.",
+        "description": "Ward an ally. They gain Resistance to all damage, and a +1 bonus to their Armour Class and SavingThrows.\nEach time the target takes damage, the spellcaster takes the same amount of damage.",
         "ritual": false,
         "concentration": false,
         "id": 6908,
