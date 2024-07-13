@@ -401,6 +401,7 @@ export class MediaWikiParser {
         v = v.replace(/`/g, ''); // backticks
         v = v.replace(/<.*?>/g, ''); // strip out any html tags
         v = v.replace(/style=".*?" \| /g, ''); // strip out style attributes
+        v = v.replace(/scope=".*?" \| /g, ''); // strip out scope attribute
         v = v.replace(/(\w+)\.webp|\.png/g, '$1'); // remove image extensions
         v = v.trim(); // remove spaces from start and end
 
