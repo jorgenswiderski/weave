@@ -1,27 +1,6 @@
 [
     {
-        "name": "Ambrust's Home"
-    },
-    {
-        "name": "Baldur's Mouth"
-    },
-    {
-        "name": "Barren's Coop"
-    },
-    {
-        "name": "Lavernica's House"
-    },
-    {
-        "name": "Nortale's Hostel"
-    },
-    {
-        "name": "Other Locations and Planes of Existence"
-    },
-    {
-        "name": "Other Planes of Existence"
-    },
-    {
-        "name": "Over-world"
+        "name": "Other planes of existence"
     },
     {
         "name": "Under-world"
@@ -39,22 +18,6 @@
         "id": 4131
     },
     {
-        "name": "Shattered Sanctum",
-        "id": 4134
-    },
-    {
-        "name": "Worg Pens",
-        "id": 4158
-    },
-    {
-        "name": "Defiled Temple",
-        "id": 4160
-    },
-    {
-        "name": "Zhentarim Basement",
-        "id": 4185
-    },
-    {
         "name": "Blighted Village",
         "id": 4188
     },
@@ -67,36 +30,12 @@
         "id": 4191
     },
     {
-        "name": "Apothecary's Cellar",
-        "id": 4194
-    },
-    {
-        "name": "Whispering Depths",
-        "id": 4197
-    },
-    {
-        "name": "Underground Passage",
-        "id": 4199
-    },
-    {
-        "name": "Owlbear Nest",
-        "id": 4202
-    },
-    {
         "name": "Sunlit Wetlands",
         "id": 4204
     },
     {
-        "name": "Tiefling Hideout",
-        "id": 4263
-    },
-    {
-        "name": "Secluded Cove",
-        "id": 4272
-    },
-    {
-        "name": "Chapel Entrance",
-        "id": 4276
+        "name": "Over-world",
+        "id": 4318
     },
     {
         "name": "Selûnite Outpost",
@@ -131,32 +70,16 @@
         "id": 4462
     },
     {
-        "name": "Nautiloid",
-        "id": 4492
-    },
-    {
         "name": "Decrepit Village",
         "id": 4503
-    },
-    {
-        "name": "Riverside Teahouse",
-        "id": 4504
     },
     {
         "name": "Dread Hollow",
         "id": 4518
     },
     {
-        "name": "Overgrown Tunnel",
-        "id": 4525
-    },
-    {
         "name": "Grymforge",
         "id": 4546
-    },
-    {
-        "name": "Adamantine Forge",
-        "id": 4551
     },
     {
         "name": "Moonrise Towers",
@@ -187,48 +110,12 @@
         "id": 8129
     },
     {
-        "name": "House of Hope",
-        "id": 8537
-    },
-    {
         "name": "Stormshore Tabernacle",
         "id": 8609
     },
     {
-        "name": "The Hollow",
-        "id": 8645
-    },
-    {
-        "name": "Makeshift Prison",
-        "id": 8649
-    },
-    {
-        "name": "Servants' Quarters",
-        "id": 8655
-    },
-    {
-        "name": "Druids' Chambers",
-        "id": 8674
-    },
-    {
-        "name": "Enclave Library",
-        "id": 8678
-    },
-    {
-        "name": "Hidden Vault",
-        "id": 8693
-    },
-    {
-        "name": "Secluded Chamber",
-        "id": 8703
-    },
-    {
         "name": "Emerald Grove",
         "id": 8715
-    },
-    {
-        "name": "Sacred Pool",
-        "id": 8727
     },
     {
         "name": "Storehouse",
@@ -243,15 +130,7 @@
         "id": 9472
     },
     {
-        "name": "Stormshore Armoury",
-        "id": 9480
-    },
-    {
-        "name": "Beehive General Goods",
-        "id": 9606
-    },
-    {
-        "name": "Crèche Y'llek",
+        "name": "Creche Y'llek",
         "id": 10318
     },
     {
@@ -267,68 +146,16 @@
         "id": 10340
     },
     {
-        "name": "Sorcerous Vault",
-        "id": 10423
-    },
-    {
-        "name": "Gauntlet of Shar",
-        "id": 10466
-    },
-    {
-        "name": "House of Healing Morgue",
-        "id": 10617
-    },
-    {
-        "name": "House of Healing",
-        "id": 10618
-    },
-    {
-        "name": "Mason's Guild",
-        "id": 10619
-    },
-    {
         "name": "Reithwin Town",
         "id": 10621
-    },
-    {
-        "name": "Secret Chamber",
-        "id": 10624
-    },
-    {
-        "name": "Astral Plane",
-        "id": 10625
-    },
-    {
-        "name": "The Waning Moon",
-        "id": 10626
-    },
-    {
-        "name": "Reithwin Graveyard",
-        "id": 10627
     },
     {
         "name": "Grand Mausoleum",
         "id": 10628
     },
     {
-        "name": "Moonrise Towers Prison",
-        "id": 10629
-    },
-    {
-        "name": "Mind Flayer Colony",
-        "id": 10630
-    },
-    {
-        "name": "Sharran Sanctuary",
-        "id": 10732
-    },
-    {
         "name": "Elfsong Tavern",
         "id": 10779
-    },
-    {
-        "name": "Reithwin Tollhouse",
-        "id": 10850
     },
     {
         "name": "Elerrathin's Home",
@@ -347,20 +174,8 @@
         "id": 11252
     },
     {
-        "name": "Abandoned Refuge",
-        "id": 11302
-    },
-    {
         "name": "Sword Coast Couriers",
         "id": 11414
-    },
-    {
-        "name": "Iron Throne",
-        "id": 11535
-    },
-    {
-        "name": "Oubliette",
-        "id": 11607
     },
     {
         "name": "Rivington",
@@ -379,16 +194,8 @@
         "id": 11839
     },
     {
-        "name": "Shadowfell",
-        "id": 12122
-    },
-    {
-        "name": "The Counting House",
+        "name": "Counting House",
         "id": 12128
-    },
-    {
-        "name": "Moonrise Towers Rooftop",
-        "id": 12131
     },
     {
         "name": "Steel Watch Foundry",
@@ -403,24 +210,8 @@
         "id": 12250
     },
     {
-        "name": "Abandoned Windmill",
-        "id": 12251
-    },
-    {
         "name": "Requisitioned Barn",
         "id": 12252
-    },
-    {
-        "name": "Gur Camp",
-        "id": 12253
-    },
-    {
-        "name": "Rivington Well",
-        "id": 12254
-    },
-    {
-        "name": "Jungle",
-        "id": 12255
     },
     {
         "name": "Rivington General",
@@ -435,32 +226,12 @@
         "id": 12260
     },
     {
-        "name": "Carm's Garm",
-        "id": 12270
-    },
-    {
-        "name": "Fraygo's Flophouse",
-        "id": 12271
-    },
-    {
         "name": "Wyrm's Rock Fortress",
         "id": 12272
     },
     {
-        "name": "Wyrm's Rock Prison",
-        "id": 12273
-    },
-    {
-        "name": "Wyrmway",
-        "id": 12274
-    },
-    {
         "name": "Lower City Sewers",
         "id": 12275
-    },
-    {
-        "name": "Cazador's Dungeon",
-        "id": 12276
     },
     {
         "name": "Undercity Ruins",
@@ -471,52 +242,12 @@
         "id": 12279
     },
     {
-        "name": "Cloister of Sombre Embrace",
-        "id": 12281
-    },
-    {
-        "name": "Angleiron's Cellar",
-        "id": 12903
-    },
-    {
-        "name": "Western Beach",
-        "id": 12908
-    },
-    {
-        "name": "Knights of the Shield Hideout",
-        "id": 13048
-    },
-    {
-        "name": "Wine Festival",
-        "id": 13052
-    },
-    {
-        "name": "Guildhall",
-        "id": 13056
-    },
-    {
-        "name": "Flymm's Cobblers",
-        "id": 13057
-    },
-    {
         "name": "Old Garlow's Place",
         "id": 13059
     },
     {
-        "name": "Inner Sanctum",
-        "id": 13258
-    },
-    {
         "name": "Philgrave's Mansion",
         "id": 13418
-    },
-    {
-        "name": "Ancient Temple",
-        "id": 13435
-    },
-    {
-        "name": "Murder Tribunal",
-        "id": 14112
     },
     {
         "name": "Candulhallow's Tombstones",
@@ -527,10 +258,6 @@
         "id": 14117
     },
     {
-        "name": "Ramazith's Tower",
-        "id": 14155
-    },
-    {
         "name": "Szarr Palace",
         "id": 14193
     },
@@ -539,92 +266,24 @@
         "id": 14333
     },
     {
-        "name": "Ancient Lair",
-        "id": 14583
-    },
-    {
         "name": "The Lodge",
         "id": 15031
-    },
-    {
-        "name": "The Lodge - Basement Docks",
-        "id": 15032
-    },
-    {
-        "name": "The Velveteen Elixir",
-        "id": 15211
-    },
-    {
-        "name": "Bonecloak's Apothecary",
-        "id": 15545
     },
     {
         "name": "The Blushing Mermaid",
         "id": 15547
     },
     {
-        "name": "Hhune Mausoleum",
-        "id": 16557
-    },
-    {
         "name": "Felogyr's Fireworks",
         "id": 17168
     },
     {
-        "name": "Highberry's Home",
+        "name": "Wine Festival",
         "id": 17546
-    },
-    {
-        "name": "Facemaker's Boutique",
-        "id": 17556
-    },
-    {
-        "name": "Chromatic Scale",
-        "id": 17559
-    },
-    {
-        "name": "The Glitter Gala",
-        "id": 17561
-    },
-    {
-        "name": "The Bibliophile",
-        "id": 17569
-    },
-    {
-        "name": "The Singing Lute",
-        "id": 17570
-    },
-    {
-        "name": "The Blushing Mermaid - Basement",
-        "id": 17619
-    },
-    {
-        "name": "Lora's House",
-        "id": 17624
-    },
-    {
-        "name": "Ancient Mausoleum",
-        "id": 19264
     },
     {
         "name": "Graveyard",
         "id": 19265
-    },
-    {
-        "name": "Gorion Mausoleum",
-        "id": 19268
-    },
-    {
-        "name": "Durinbold Mausoleum",
-        "id": 19273
-    },
-    {
-        "name": "The High Hall",
-        "id": 19984
-    },
-    {
-        "name": "Morphic Pool",
-        "id": 19988
     },
     {
         "name": "Upper City",
@@ -635,15 +294,15 @@
         "id": 24896
     },
     {
-        "name": "Golbraith's Cellar",
-        "id": 27854
+        "name": "Lustrous Lass",
+        "id": 27393
     },
     {
         "name": "Bloomridge Park",
         "id": 27893
     },
     {
-        "name": "Last Light Inn - Cellar",
-        "id": 28634
+        "name": "Baldur's Mouth",
+        "id": 31640
     }
 ]

@@ -62,7 +62,17 @@ export class GameLocation
         if (this.depth === 1) {
             assert(title.startsWith('Act'));
 
-            return `Act ${this.parent.children.length + 1}`;
+            // Map the number text (ie "One") to a numeral (ie "1"),
+            // it just looks nicer, brevity, etc
+            const digitMap: { [key: string]: string } = {
+                One: '1',
+                Two: '2',
+                Three: '3',
+            };
+
+            const actNumber = title.split(' ')[1];
+
+            return `Act ${digitMap[actNumber]}`;
         }
 
         return MediaWikiParser.parseNameFromPageTitle(title);

@@ -3,6 +3,7 @@ import {
     ICharacterOptionWithStubs,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/character-feature-customization-option';
 import assert from 'assert';
+import { exit } from 'process';
 import { ClassFeatureFactory } from '../character-feature/class-feature/class-feature-factory';
 import { error } from '../logger';
 import { MediaWiki } from '../media-wiki/media-wiki';
@@ -98,7 +99,11 @@ export class CharacterClass extends PageItem implements ICharacterClass {
         super({ pageTitle: name });
 
         this.initialized[ClassLoadState.PROGRESSION] =
-            this.initProgression().catch(error);
+            this.initProgression().catch((e) => {
+                error(`Critical error initializing progression for ${name}:`);
+                error(e);
+                exit(1);
+            });
 
         this.initialized[ClassLoadState.IMAGE] = this.initImage().catch(error);
 

@@ -147,7 +147,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return [undefined, questPages];
     }
 
-    protected async parseItemSourceCharacter(
+    protected static async parseItemSourceCharacter(
         pages: ItemSourcePageInfo[],
     ): Promise<
         [ItemSourceCharacter | undefined, Required<ItemSourcePageInfo[]>]
@@ -165,12 +165,6 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         // }
 
         if (characterPages.length > 0) {
-            if (!(await characterPages[0].data.hasTemplate('CharacterInfo'))) {
-                error(
-                    `Item '${this.name}' source page '${characterPages[0].title}' has no CharacterInfo template!`,
-                );
-            }
-
             return [
                 {
                     name: MediaWikiParser.parseNameFromPageTitle(
@@ -232,26 +226,23 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         });
 
         if (locations.length > 0) {
-            if (locations.length === 1) {
-                return locations[0];
-            }
-
             if (locations.length > 1) {
                 // Find the location with the highest depth value (most specific location)
                 locations.sort((a, b) => b.depth - a.depth);
 
                 // if (
-                //     locations.length > 1 &&
                 //     locations[0].depth === locations[1].depth
                 // ) {
                 //     warn(
                 //         `Item '${item.name}' has a source that mentions multiple locations with the same depth`,
                 //     );
                 // }
-
-                return locations[0];
             }
-        } else if (character) {
+
+            return locations[0];
+        }
+
+        if (character) {
             const config: MediaWikiTemplateParserConfig = {
                 location: {
                     parser: (value) => {
@@ -277,27 +268,27 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
             if (!template) {
                 warn(
-                    `Could not find CharacterInfo template on page '${this.name}'`,
+                    `Could not find CharacterInfo template on page '${characterPages[0].title}'`,
                 );
+            } else {
+                const { location: locationPageTitle } = template.parse(config);
 
-                return undefined;
-            }
+                if (locationPageTitle) {
+                    try {
+                        // Get the real page title, in case of redirects
+                        const page = await MediaWiki.getPage(locationPageTitle);
 
-            const { location: locationPageTitle } = template.parse(config);
-
-            if (locationPageTitle) {
-                try {
-                    // Get the real page title, in case of redirects
-                    const page = await MediaWiki.getPage(locationPageTitle);
-
-                    if (page) {
-                        return gameLocationByPageTitle.get(page.title);
+                        if (page) {
+                            return gameLocationByPageTitle.get(page.title);
+                        }
+                    } catch (err) {
+                        error(err);
                     }
-                } catch (err) {
-                    error(err);
                 }
             }
-        } else if (quest) {
+        }
+
+        if (quest) {
             const match = questPages[0].data.content?.match(/([\s\S]+?)\n==/);
 
             if (match) {
@@ -351,7 +342,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             : [undefined, []];
 
         const [character, characterPages] =
-            await this.parseItemSourceCharacter(pages);
+            await EquipmentItem.parseItemSourceCharacter(pages);
 
         const location = await this.parseGameLocation(
             pages,

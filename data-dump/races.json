@@ -9,128 +9,58 @@
                     {
                         "name": "Black Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the charcoal colouration and fizzling, acid breath of black dragons.",
-                        "grants": [
-                            {
-                                "ref": "a6607"
-                            },
-                            {
-                                "ref": "c6719"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Blue Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the deep sapphire scales and charged, crackling breath of blue dragons.",
-                        "grants": [
-                            {
-                                "ref": "a6605"
-                            },
-                            {
-                                "ref": "c6720"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Brass Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the burnished ochre hue and flickering, fiery breath of brass dragons.",
-                        "grants": [
-                            {
-                                "ref": "a4756"
-                            },
-                            {
-                                "ref": "c6721"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Bronze Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the shining sepia scales and sparkling breath of bronze dragons.",
-                        "grants": [
-                            {
-                                "ref": "a6605"
-                            },
-                            {
-                                "ref": "c6720"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Copper Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the pink-gold colouration and corrosive breath of copper dragons",
-                        "grants": [
-                            {
-                                "ref": "a6607"
-                            },
-                            {
-                                "ref": "c6719"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Gold Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the resplendent shine and roiling, blazing breath of gold dragons",
-                        "grants": [
-                            {
-                                "ref": "a6668"
-                            },
-                            {
-                                "ref": "c6721"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Green Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the brilliant emerald aspect and stinking, putrid breath of green dragons",
-                        "grants": [
-                            {
-                                "ref": "a6664"
-                            },
-                            {
-                                "ref": "c6722"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Red Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the bright scarlet likeness and roiling, burning breath of red dragons",
-                        "grants": [
-                            {
-                                "ref": "a6668"
-                            },
-                            {
-                                "ref": "c6721"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Silver Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the glinting shine and scorching cold breath of silver dragons",
-                        "grants": [
-                            {
-                                "ref": "a4721"
-                            },
-                            {
-                                "ref": "c6723"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "White Dragonborn",
                         "description": "Despite no ancestral links to the mighty creatures, these dragonborn share the snowy aspect and frosty breath of white dragons.",
-                        "grants": [
-                            {
-                                "ref": "a4721"
-                            },
-                            {
-                                "ref": "c6723"
-                            }
-                        ]
+                        "grants": []
                     }
                 ]
             }
         ],
         "choiceType": 8,
-        "image": "Race Black Dragonborn.png",
+        "image": "Dragonborn Black.png",
         "grants": []
     },
     {
@@ -147,7 +77,7 @@
                     },
                     {
                         "name": "Seldarine Drow",
-                        "description": "Drow are the result of an ancient schism between the elven dieties Corellon Larethian and Lolth. The latter's treachery drove the drow into the Underdark, where they splintered into warring factions. Seldarine drow can be found seeking allies from all over Faerûn, aiming to settle their conflict with Lolth - and themselves - by any means necessary.",
+                        "description": "Drow are the result of an ancient schism between the elven deities Corellon Larethian and Lolth. The latter's treachery drove the drow into the Underdark, where they splintered into warring factions. Seldarine drow can be found seeking allies from all over Faerûn, aiming to settle their conflict with Lolth - and themselves - by any means necessary.",
                         "grants": []
                     }
                 ]
@@ -155,17 +85,7 @@
         ],
         "choiceType": 8,
         "image": "Drow Lolth-Sworn Default.png",
-        "grants": [
-            {
-                "ref": "c6562"
-            },
-            {
-                "ref": "c3956"
-            },
-            {
-                "ref": "c3953"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Dwarf",
@@ -177,49 +97,24 @@
                     {
                         "name": "Gold Dwarves",
                         "description": "Gold Dwarves are known for their confidence and keen intuition. The culture of their Deep Kingdom values family, ritual, and fine craftsmanship.",
-                        "grants": [
-                            {
-                                "ref": "c3960"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Shield Dwarves",
                         "description": "Shield Dwarves survived a long fall from grace, surrendering many of their ancient kingdoms in wars with Goblins and Orcs. These losses have lead to a cynical mindset, yet Shield Dwarves will endure anything to restore their ancestral homelands.",
-                        "grants": [
-                            {
-                                "ref": "c6585"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Duergar",
                         "description": "Once enslaved by the eldritch Mind Flayers, Duergar adapted to freedom with harsh practicality. Their cold demeanours and gift of stealth are well-known through the Underdark.",
-                        "grants": [
-                            {
-                                "ref": "c3956"
-                            },
-                            {
-                                "ref": "c6053"
-                            }
-                        ]
+                        "grants": []
                     }
                 ]
             }
         ],
         "choiceType": 8,
         "image": "Dwarf Gold Default.png",
-        "grants": [
-            {
-                "ref": "c6583"
-            },
-            {
-                "ref": "c3957"
-            },
-            {
-                "ref": "c3959"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Elf",
@@ -283,30 +178,13 @@
         ],
         "choiceType": 8,
         "image": "High Elf Default Portrait.png",
-        "grants": [
-            {
-                "ref": "c6572"
-            },
-            {
-                "ref": "c3957"
-            },
-            {
-                "ref": "c3953"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Githyanki",
         "description": "Githyanki are peerless warriors from the Astral Plane, known for their legendary silver blades and red dragon mounts. They seek the total destruction of mind flayers, whose ancient empire enslaved the ancestral gith for millennia.",
         "image": "Githyanki Default Portrait.png",
-        "grants": [
-            {
-                "ref": "a6593"
-            },
-            {
-                "ref": "c6594"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Gnome",
@@ -318,49 +196,24 @@
                     {
                         "name": "Rock Gnomes",
                         "description": "The most commonly seen gnome on Faerûn's surface, Rock Gnomes are named as such for their hardiness and affinity to metal.",
-                        "grants": [
-                            {
-                                "ref": "c3957"
-                            },
-                            {
-                                "ref": "c3963"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Forest Gnomes",
                         "description": "Even smaller than their cousins and twice as reclusive, Forest Gnomes are rare sight in Faerûn. They master magic and craftmanship in their distant, idyllic groves.",
-                        "grants": [
-                            {
-                                "ref": "c3957"
-                            },
-                            {
-                                "ref": "s1585"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Deep Gnomes",
                         "description": "More guarded than their surface cousins, Deep Gnomes survive in the Underdark with darkvision and skillful stealth.",
-                        "grants": [
-                            {
-                                "ref": "c3956"
-                            },
-                            {
-                                "ref": "c3962"
-                            }
-                        ]
+                        "grants": []
                     }
                 ]
             }
         ],
         "choiceType": 8,
         "image": "Rock Gnome Default Portrait.png",
-        "grants": [
-            {
-                "ref": "c3961"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Half-Elf",
@@ -370,7 +223,7 @@
                 "type": 8,
                 "options": [
                     {
-                        "name": "High Half-elves",
+                        "name": "High Half-elf",
                         "description": "A touch of the [https://forgottenrealms.fandom.com/wiki/Feywild Feywild] remains in half-elves with this bloodline, and even those untrained in magic possess a hint of wild power.",
                         "grants": [
                             {
@@ -415,12 +268,12 @@
                         ]
                     },
                     {
-                        "name": "Wood Half-elves",
+                        "name": "Wood Half-elf",
                         "description": "Like their wood elf parent, these half-elves have a quickened stride and eye for stealth. Yet many break away from isolation in Faerûn's forests to explore the rest of the Realms.",
                         "grants": []
                     },
                     {
-                        "name": "Drow Half-elves",
+                        "name": "Drow Half-elf",
                         "description": "Most Half-Drow result from liaisons between [[Drow#Seldarine Drow",
                         "grants": []
                     }
@@ -429,33 +282,13 @@
         ],
         "choiceType": 8,
         "image": "High Half-Elf Default Portrait.png",
-        "grants": [
-            {
-                "ref": "c6570"
-            },
-            {
-                "ref": "c3957"
-            },
-            {
-                "ref": "c3953"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Half-Orc",
         "description": "They are born of both human and orc ancestry, and exhibit a blend of orcish and human characteristics, their appearances varying widely.",
         "image": "Half-Orc Default.png",
-        "grants": [
-            {
-                "ref": "c3957"
-            },
-            {
-                "ref": "a6277"
-            },
-            {
-                "ref": "c6278"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Halfling",
@@ -467,47 +300,25 @@
                     {
                         "name": "Lightfoot Halflings",
                         "description": "Lightfoot Halflings are stealthy but social, travelling all over Faerûn to make a name for themselves.",
-                        "grants": [
-                            {
-                                "ref": "c6388"
-                            }
-                        ]
+                        "grants": []
                     },
                     {
                         "name": "Strongheart Halflings",
                         "description": "Legends say dwarven blood gave stronghearts their hardiness. Resistant to poison and wellsprings of endurance, these halflings easily hold their own.",
-                        "grants": [
-                            {
-                                "ref": "c6389"
-                            }
-                        ]
+                        "grants": []
                     }
                 ]
             }
         ],
         "choiceType": 8,
         "image": "Halfling Lightfoot Default.png",
-        "grants": [
-            {
-                "ref": "c3964"
-            },
-            {
-                "ref": "c6387"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Human",
         "description": "They are one of the most populous races in Faerûn, exhibiting a versatile range of skills rather than any one mastery.",
         "image": "Human Default Portrait.png",
-        "grants": [
-            {
-                "ref": "c6570"
-            },
-            {
-                "ref": "c6573"
-            }
-        ]
+        "grants": []
     },
     {
         "name": "Tiefling",
@@ -536,13 +347,6 @@
         ],
         "choiceType": 8,
         "image": "Asmodeus Tiefling Default Portrait.png",
-        "grants": [
-            {
-                "ref": "c3957"
-            },
-            {
-                "ref": "c4741"
-            }
-        ]
+        "grants": []
     }
 ]

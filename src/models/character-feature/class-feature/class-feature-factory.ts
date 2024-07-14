@@ -210,7 +210,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
         // Check for SmIconLink style template
         if (featureText.startsWith('{{SmIconLink|')) {
             const parts = featureText.split('|');
-            const pageTitle = parts[3].replace('}}', '').trim();
+            const pageTitle = parts[parts.length - 1].replace('}}', '').trim();
 
             return ClassFeatureFactorySingleton.construct(
                 CharacterFeatureTypes.OTHER,
