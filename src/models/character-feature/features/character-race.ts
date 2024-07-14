@@ -97,8 +97,12 @@ export class CharacterRace extends CharacterFeature {
     async initImage(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
-        if (!this.page || !this.page.content) {
+        if (!this.page?.content) {
             throw new Error('Could not find page content');
+        }
+
+        if (await this.isSpoiler()) {
+            return;
         }
 
         const template = await this.page.getTemplate('Class Quote');
@@ -122,8 +126,12 @@ export class CharacterRace extends CharacterFeature {
     async initDescription(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
-        if (!this.page || !this.page.content) {
+        if (!this.page?.content) {
             throw new Error('Could not find page content');
+        }
+
+        if (await this.isSpoiler()) {
+            return;
         }
 
         const descPattern =
@@ -159,12 +167,12 @@ export class CharacterRace extends CharacterFeature {
     async initOptionsAndEffects(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
-        if (await this.isSpoiler()) {
-            return;
+        if (!this.page?.content) {
+            throw new Error('Could not find page content');
         }
 
-        if (!this.page?.content) {
-            throw new Error('could not find page content');
+        if (await this.isSpoiler()) {
+            return;
         }
 
         const featuresSection = this.page.getSection('Racial features');
@@ -179,7 +187,7 @@ export class CharacterRace extends CharacterFeature {
     async isSpoiler(): Promise<boolean> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
-        if (!this.page || !this.page.content) {
+        if (!this.page?.content) {
             throw new Error('Could not find page content');
         }
 
