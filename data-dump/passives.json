@@ -7,6 +7,27 @@
         "id": 8792
     },
     {
+        "name": "Actor",
+        "description": "You have become a true thespian. Your Charisma increases by 1, to a maximum of 20bug. Your ProficiencyBonus is doubled for Deception and Performance Checks.",
+        "image": "Perform Whistle.webp",
+        "type": 2,
+        "id": 8366
+    },
+    {
+        "name": "Alert",
+        "description": "You gain +5 to Initiative and can no longer be surprised.",
+        "image": "Generic Threat.webp",
+        "type": 2,
+        "id": 8367
+    },
+    {
+        "name": "Athlete: Standing Up",
+        "description": "When you are Prone, standing up uses significantly less movement. Your Jump distance also increases by 50%.",
+        "image": "Athlete Standing Up.webp",
+        "type": 2,
+        "id": 21638
+    },
+    {
         "name": "Bestial Fury",
         "description": "Grants all your companions an extra attack.",
         "image": "Bestial Fury.webp",
@@ -40,6 +61,20 @@
         "image": "Companions Bond.webp",
         "type": 2,
         "id": 17997
+    },
+    {
+        "name": "Crossbow Expert: Point-Blank",
+        "description": "When you make crossbow attacks within melee range, the Attack Rolls do not have Disadvantage.",
+        "image": "Crossbow Expert Point-Blank.webp",
+        "type": 2,
+        "id": 17001
+    },
+    {
+        "name": "Crossbow Expert: Wounding",
+        "description": "Your Piercing Shot inflicts Gaping Wounds for twice as long.",
+        "image": "Crossbow Expert Wounding.webp",
+        "type": 2,
+        "id": 17038
     },
     {
         "name": "Dark One's Blessing",
@@ -84,6 +119,41 @@
         "id": 17904
     },
     {
+        "name": "Dual Wielder",
+        "description": "You can use Two-Weapon Fighting even if the weapons you are wielding aren't Light. You cannot dual-wield Heavy weapons.",
+        "image": "Dual Wielder.webp",
+        "type": 2,
+        "id": 4937
+    },
+    {
+        "name": "Dual Wielder: Bonus Armour Class",
+        "description": "You have a +1 bonus to ArmourClass while wielding a melee weapon in each hand.",
+        "image": "Dual Wielder Bonus Armour Class.webp",
+        "type": 2,
+        "id": 22724
+    },
+    {
+        "name": "Dungeon Delver: Perception",
+        "description": "You have Advantage on Perception Checks made to detect hidden objects.",
+        "image": "Dungeon Delver Perception.webp",
+        "type": 2,
+        "id": 22726
+    },
+    {
+        "name": "Dungeon Delver: Resist Traps",
+        "description": "You have Advantage on Saving Throws made to avoid traps and Resistance to trap damage.",
+        "image": "Dungeon Delver Resist Traps.webp",
+        "type": 2,
+        "id": 22727
+    },
+    {
+        "name": "Durable",
+        "description": "Regain full Hit Points every time you take a Short Rest.",
+        "image": "Durable.webp",
+        "type": 2,
+        "id": 8370
+    },
+    {
         "name": "Escape the Horde",
         "description": "Opportunity Attacks against you have Disadvantage.",
         "image": "Escape the Horde.webp",
@@ -103,6 +173,34 @@
         "image": "Extra Attack.webp",
         "type": 2,
         "id": 3152
+    },
+    {
+        "name": "Great Weapon Master: All In",
+        "description": "When attacking with Heavy melee weapons you are proficient with, Attack rolls take a -5 penalty, but their damage increases by 10.",
+        "image": "Great Weapon Master Bonus Damage.webp",
+        "type": 2,
+        "id": 3151
+    },
+    {
+        "name": "Great Weapon Master: Bonus Attack",
+        "description": "When you land a Critical Hit or kill a target with a melee weapon attack, you can make another melee weapon attack as a bonus that turn.",
+        "image": "Great Weapon Master Bonus Attack.webp",
+        "type": 2,
+        "id": 22733
+    },
+    {
+        "name": "Heavily Armoured",
+        "description": "You gain Proficiency with Heavy Armour and your Strength increases by 1, to a maximum of 20.",
+        "image": "Heavily Armoured.webp",
+        "type": 2,
+        "id": 4939
+    },
+    {
+        "name": "Heavy Armour Master",
+        "description": "Your Strength increases by 1, to a maximum of 20.\n\nIncoming damage from non-magical attacks also decreases by 3 while you're wearing heavy armour.",
+        "image": "Heavy Armour Master.webp",
+        "type": 2,
+        "id": 8382
     },
     {
         "name": "Horde Breaker",
@@ -138,6 +236,97 @@
         "image": "Land's Stride Difficult Terrain.webp",
         "type": 2,
         "id": 6706
+    },
+    {
+        "name": "Lightly Armoured",
+        "description": "You gain Armour Proficiency with Light Armour and your Strength and Dexterity increases by 1, to a maximum of 20.",
+        "image": "Lightly Armoured.webp",
+        "type": 2,
+        "id": 4941
+    },
+    {
+        "name": "Lucky",
+        "description": "You gain 3 lps, which you can use to gain Advantage on Attack Rolls, Ability Checks, or Saving Throws, or to make an enemy reroll their Attack Rolls.",
+        "image": "Lucky.webp",
+        "type": 2,
+        "id": 18732
+    },
+    {
+        "name": "Mage Slayer: Attack Caster",
+        "description": "When a creature casts a spell within melee range of you, you can use a reaction to immediately make an attack against the caster.",
+        "image": "Mage Slayer Attack Caster.webp",
+        "type": 2,
+        "id": 22736
+    },
+    {
+        "name": "Mage Slayer: Break Concentration",
+        "description": "Enemies you hit have Disadvantage on Concentration Saving Throws.notes",
+        "image": "Mage Slayer Break Concentration.webp",
+        "type": 2,
+        "id": 22737
+    },
+    {
+        "name": "Mage Slayer: Saving Throw Advantage",
+        "description": "When a creature casts a spell within melee range of you, you have Advantage on any Saving Throws against it.",
+        "image": "Mage Slayer Saving Throw Advantage.webp",
+        "type": 2,
+        "id": 22735
+    },
+    {
+        "name": "Magic Initiate: Bard",
+        "description": "You have learnt 2 cantrips and a Level 1 spell from the Bard spell list.",
+        "image": "Magic Initiate Bard.webp",
+        "type": 2,
+        "id": 20442
+    },
+    {
+        "name": "Magic Initiate: Cleric",
+        "description": "You have learnt 2 cantrips and a Level 1 spell from the Cleric spell list.",
+        "image": "Magic Initiate Cleric.webp",
+        "type": 2,
+        "id": 20443
+    },
+    {
+        "name": "Magic Initiate: Druid",
+        "description": "You have learnt 2 cantrips and a Level 1 spell from the Druid spell list.",
+        "image": "Magic Initiate Druid.webp",
+        "type": 2,
+        "id": 14493
+    },
+    {
+        "name": "Magic Initiate: Sorcerer",
+        "description": "You have learnt 2 cantrips and a Level 1 spell from the Sorcerer spell list.",
+        "image": "Magic Initiate Sorcerer.webp",
+        "type": 2,
+        "id": 20444
+    },
+    {
+        "name": "Magic Initiate: Warlock",
+        "description": "You have learnt 2 cantrips and a Level 1 spell from the Warlock spell list.",
+        "image": "Magic Initiate Warlock.webp",
+        "type": 2,
+        "id": 20445
+    },
+    {
+        "name": "Magic Initiate: Wizard",
+        "description": "You have learnt 2 cantrips and a Level 1 spell from the Wizard spell list.",
+        "image": "Magic Initiate Wizard.webp",
+        "type": 2,
+        "id": 20446
+    },
+    {
+        "name": "Martial Adept",
+        "description": "Learn two manoeuvres from the Battle Master archetype and receive 1 (additional) supdie to fuel them. You regain expended Superiority Dice after a Short or Long Rest.",
+        "image": "Martial Adept.webp",
+        "type": 2,
+        "id": 4942
+    },
+    {
+        "name": "Medium Armour Master",
+        "description": "When you wear medium armour, it doesn't impose Disadvantage on Stealth checks. The bonus to ArmourClass you can gain from your Dexterity modifier also becomes +3 instead of +2.\n\nYou must have Proficiency in Medium Armour to take this feat",
+        "image": "Medium Armour Master.webp",
+        "type": 2,
+        "id": 8384
     },
     {
         "name": "Metamagic: Careful Spell",
@@ -189,6 +378,34 @@
         "id": 1382
     },
     {
+        "name": "Mobile",
+        "description": "Your movement speed increases by 3m.",
+        "image": "Dash Bonus Action.webp",
+        "type": 2,
+        "id": 21449
+    },
+    {
+        "name": "Mobile: Evade Difficult Terrain",
+        "description": "When you Dash, Difficult Terrain doesn't slow you down.",
+        "image": "Mobile Evade Difficult Terrain.webp",
+        "type": 2,
+        "id": 21450
+    },
+    {
+        "name": "Mobile: Evade Opportunity Attack",
+        "description": "If you move after making a melee attack, you don't provoke Opportunity Attacks from your target.",
+        "image": "Mobile Evade Opportunity Attack.webp",
+        "type": 2,
+        "id": 21448
+    },
+    {
+        "name": "Moderately Armoured",
+        "description": "You gain Proficiency with Medium Armour and Shields, and your Strength or Dexterity increases by 1, to a maximum of 20.",
+        "image": "Moderately Armoured.webp",
+        "type": 2,
+        "id": 4940
+    },
+    {
         "name": "Multiattack Defence",
         "description": "When a enemy attacks you, they suffer -4 penalty to additional Attack Rolls against you until start of their next turn.",
         "image": "Multiattack Defense.webp",
@@ -224,11 +441,88 @@
         "id": 19686
     },
     {
+        "name": "Pikes|It's not stated in-game but Polearm Mastery works with Pikes too. Polearm Master is coded to work with any weapon that is tagged as a SPEAR or STAVE (quarterstaffs), and weapons with Extra Reach (Glaives, Halberds and Pikes)}} Quarterstaves|alias=Quarterstaff, or Spears|alias=Spear, you can use a Bonus Action to attack with the butt of your weapon. \nThis attack does 1d4|Bludgeoning|modifier=melee bug",
+        "description": "When attacking with a Glaives|alias=Glaive, Halberds|alias=Halberd, Pikes|alias=Pike Quarterstaves|alias=Quarterstaff, or Spears|alias=Spear, you can use a Bonus Action to attack with the butt of your weapon. \nThis attack does 1d4|Bludgeoning|modifier=melee bug",
+        "image": "Polearm Master Bonus Attack.webp",
+        "type": 2,
+        "id": 22750
+    },
+    {
+        "name": "Polearm Master: Opportunity Attack",
+        "description": "When wielding a glaive, halberd, quarterstaff, or spear, you can make an Opportunity Attack when a target comes within range.",
+        "image": "Polearm Master Opportunity Attack.webp",
+        "type": 2,
+        "id": 22756
+    },
+    {
         "name": "Potent Spellcasting",
         "description": "Your god grants you even more intense power.\n\nYou can add your Wisdom Modifier to the damage you deal with Cleric cantrips.",
         "image": "Potent Spellcasting.webp",
         "type": 2,
         "id": 13563
+    },
+    {
+        "name": "Ritual Caster: Free Spells",
+        "description": "You learn two  Ritual Spells of your choice from the following: \n* Speak with Dead\n* Find Familiar\n* Longstrider\n* Enhance Leap\n* Disguise Self\n* Speak with Animals",
+        "image": "Ritual Caster Free Spells.webp",
+        "type": 2,
+        "id": 22763
+    },
+    {
+        "name": "Savage Attacker",
+        "description": "When making melee weapon attacks, you roll your damage dice twice and use the highest result.",
+        "image": "Savage Attacker.webp",
+        "type": 2,
+        "id": 8373
+    },
+    {
+        "name": "Sentinel: Opportunity Advantage",
+        "description": "You gain Advantage on Opportunity Attacks.",
+        "image": "Sentinel Opportunity Advantage.webp",
+        "type": 2,
+        "id": 21524
+    },
+    {
+        "name": "Sentinel: Snare",
+        "description": "When you hit a creature with an Opportunity Attack, it can no longer move for the rest of its turn.",
+        "image": "Sentinel Snare.webp",
+        "type": 2,
+        "id": 21523
+    },
+    {
+        "name": "Sentinel: Vengeance",
+        "description": "When an enemy in melee range attacks an ally, you can use a Reaction to make a weapon attack against that enemy. Target ally must not have the Sentinel feat.",
+        "image": "Sentinel Vengeance.webp",
+        "type": 2,
+        "id": 21521
+    },
+    {
+        "name": "Sharpshooter: All In",
+        "description": "Ranged weapon attacks with weapons you are Proficient with have a -5 penalty to their Attack Roll, but deal an additional 10 damage.",
+        "image": "Sharpshooter All In.webp",
+        "type": 2,
+        "id": 21514
+    },
+    {
+        "name": "Sharpshooter: Low Ground",
+        "description": "Your ranged weapon attacks are not penalized for High Ground Rules.",
+        "image": "Sharpshooter Low Ground.webp",
+        "type": 2,
+        "id": 21516
+    },
+    {
+        "name": "Shield Master",
+        "description": "Gain a +2 bonus to Dexterity SavingThrows when wielding a Shield.",
+        "image": "Shield Master.webp",
+        "type": 2,
+        "id": 4945
+    },
+    {
+        "name": "Spell Sniper",
+        "description": "You learn a cantrip, and the number you need to roll a Critical Hit while attacking with a Spell is reduced by 1. This effect can stack.",
+        "image": "Spell Sniper.webp",
+        "type": 2,
+        "id": 21500
     },
     {
         "name": "Stalker's Flurry",
@@ -252,10 +546,45 @@
         "id": 3956
     },
     {
+        "name": "Tavern Brawler",
+        "description": "Increase your Strength or Constitution by 1, to a maximum of 20.\n\nWhen you make an unarmed attack, use an improvised weapon, or throw something, your Strength Modifier is added twice to the damage and Attack Rolls.Bug",
+        "image": "Tavern Brawler.webp",
+        "type": 2,
+        "id": 8378
+    },
+    {
         "name": "Tempestuous Magic",
         "description": "After you cast a Level 1 Spell or higher you can Fly as a Bonus Action up to m=9 until the end of your turn without receiving Opportunity Attacks.",
         "image": "Tempestuous Magic.webp",
         "type": 2,
         "id": 16294
+    },
+    {
+        "name": "Tough",
+        "description": "Your Hit Point maximum increases by 2 for every level you have gained.",
+        "image": "Tough.webp",
+        "type": 2,
+        "id": 4946
+    },
+    {
+        "name": "War Caster: Concentration",
+        "description": "You gain Advantage on SavingThrows to maintain Concentration on a Spell.",
+        "image": "War Caster Concentration.webp",
+        "type": 2,
+        "id": 21507
+    },
+    {
+        "name": "War Caster: Opportunity Spell",
+        "description": "You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
+        "image": "War Caster Opportunity Spell.webp",
+        "type": 2,
+        "id": 21508
+    },
+    {
+        "name": "Weapon Master",
+        "description": "Increase your Strength or Dexterity by 1, to a maximum of 20.\n\nGain Proficiency with four Weapon types of your choice.",
+        "image": "Weapon Master.webp",
+        "type": 2,
+        "id": 4947
     }
 ]

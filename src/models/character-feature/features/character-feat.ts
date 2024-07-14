@@ -285,12 +285,14 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
                     const featureName = featureData[`feature${i}`];
                     const featureDescription = featureData[`description${i}`];
 
-                    if (featureName) {
-                        features.push({
-                            name: featureName,
-                            description: featureDescription,
-                        });
+                    if (!featureName) {
+                        continue;
                     }
+
+                    features.push({
+                        name: featureName,
+                        description: featureDescription,
+                    });
                 }
 
                 return CharacterFeat.parseOptionData(

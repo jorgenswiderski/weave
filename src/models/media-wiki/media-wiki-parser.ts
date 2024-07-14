@@ -358,6 +358,7 @@ export class MediaWikiParser {
 
         // Templates: First Arg
         v = v.replace(/{{SAI\|([^|}]*?)(?:\|[^=|}]+=[^|}]+)*}}/gi, '$1');
+        v = v.replace(/{{Pass\|([^|}]*?)(?:\|[^=|}]+=[^|}]+)*}}/gi, '$1');
         v = v.replace(/{{Q\|([^|}]*?)(?:\|[^|}]+)*}}/gi, '"$1"');
 
         v = v.replace(

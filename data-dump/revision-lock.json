@@ -26,7 +26,6 @@
         "Counting House": "The Counting House",
         "Creche Y'llek": "Crèche Y'llek",
         "Crèche_Y'llek": "Crèche Y'llek",
-        "Damage Types": "Damage",
         "Damage Types#Resistance": "Damage Types",
         "Dame Aylin": "Aylin",
         "Dank Crypt": "Overgrown Ruins",
@@ -77,7 +76,6 @@
         "Mason's Guild Basement": "Mason's Guild",
         "Mind Flayer": "Mind flayers",
         "Moonrise_Towers": "Moonrise Towers",
-        "Movement speed": "Resources",
         "Multiattack Defense": "Multiattack Defence",
         "Myconid Colony": "Ebonlake Grotto",
         "Nightsong": "Find the Nightsong",
@@ -88,7 +86,6 @@
         "Prelate Lir'i'c": "Lir'i'c",
         "Priestess Gut": "Gut",
         "Prologue": "Escape the Nautiloid",
-        "Prone": "Prone (Condition)",
         "Putrid Bog": "Sunlit Wetlands",
         "Quartermaster Talli": "Talli",
         "Quest": "Quests",
@@ -2117,11 +2114,6 @@
             "title": "Staff of Arcane Blessing"
         },
         {
-            "pageId": 2418,
-            "revisionId": 192604,
-            "title": "Damage"
-        },
-        {
             "pageId": 2424,
             "revisionId": 162542,
             "title": "Abilities"
@@ -4022,11 +4014,6 @@
             "title": "Salami"
         },
         {
-            "pageId": 3922,
-            "revisionId": 197786,
-            "title": "Resources"
-        },
-        {
             "pageId": 3923,
             "revisionId": 179054,
             "title": "Main Hand Attack"
@@ -5342,11 +5329,6 @@
             "title": "Frightened (Condition)"
         },
         {
-            "pageId": 5461,
-            "revisionId": 206688,
-            "title": "Prone (Condition)"
-        },
-        {
             "pageId": 5507,
             "revisionId": 173754,
             "title": "Nere's Head"
@@ -5443,7 +5425,7 @@
         },
         {
             "pageId": 6043,
-            "revisionId": 203680,
+            "revisionId": 207285,
             "title": "Grym"
         },
         {
@@ -7828,7 +7810,7 @@
         },
         {
             "pageId": 9115,
-            "revisionId": 207177,
+            "revisionId": 207290,
             "title": "Esther"
         },
         {
@@ -12368,7 +12350,7 @@
         },
         {
             "pageId": 16858,
-            "revisionId": 201281,
+            "revisionId": 207288,
             "title": "Ko'kuu"
         },
         {
@@ -22718,22 +22700,22 @@
         },
         {
             "pageId": 40673,
-            "revisionId": 194874,
+            "revisionId": 207305,
             "title": "Hunna"
         },
         {
             "pageId": 40674,
-            "revisionId": 197121,
+            "revisionId": 207304,
             "title": "Geanne"
         },
         {
             "pageId": 40675,
-            "revisionId": 197122,
+            "revisionId": 207302,
             "title": "Anya"
         },
         {
             "pageId": 40676,
-            "revisionId": 197124,
+            "revisionId": 207309,
             "title": "Vanessa"
         },
         {
@@ -23088,67 +23070,20 @@
         }
     ],
     "deadLinks": [
-        "Actor|w=30",
-        "Alert|w=30",
-        "Athlete: Standing Up|w=30",
         "Beastmaster Zurk",
-        "Crossbow Expert: Point-Blank|w=30",
-        "Crossbow Expert: Wounding|w=30",
-        "Dual Wielder: Bonus Armour Class|w=30",
-        "Dual Wielder|w=30",
-        "Dungeon Delver: Perception|w=30",
-        "Dungeon Delver: Resist Traps|w=30",
-        "Durable|w=30",
         "Ebon Lake",
         "Ebonlake",
         "Elegant chest",
         "EquipmentTrader BodyArmor",
         "EquipmentTrader SecondaryArmor",
-        "Great Weapon Master: All In|w=30",
-        "Great Weapon Master: Bonus Attack|w=30",
         "Guildhall Bar",
-        "Heavily Armoured|w=30",
-        "Heavy Armour Master|w=30",
         "Hope's Prison",
         "Infirmary",
         "Jaheira's Hideout Basement",
-        "Lightly Armoured|w=30",
-        "Lucky|w=30",
-        "Mage Slayer: Attack Caster|w=30",
-        "Mage Slayer: Break Concentration|w=30",
-        "Mage Slayer: Saving Throw Advantage|w=30",
-        "Magic Initiate: Bard|w=30",
-        "Magic Initiate: Cleric|w=30",
-        "Magic Initiate: Druid|w=30",
-        "Magic Initiate: Sorcerer|w=30",
-        "Magic Initiate: Warlock|w=30",
-        "Magic Initiate: Wizard|w=30",
-        "Martial Adept|w=30",
-        "Medium Armour Master|w=30",
-        "Mobile: Evade Difficult Terrain|w=30",
-        "Mobile: Evade Opportunity Attack|w=30",
-        "Mobile|w=30",
-        "Moderately Armoured|w=30",
         "Moonrise Towers, First Floor",
         "Other planes of existence",
-        "Polearm Master: Bonus Attack|w=30",
-        "Polearm Master: Opportunity Attack|w=30",
-        "Ritual Caster: Free Spells|w=30",
         "Rosanna",
         "Rosymorn Monastary",
-        "Savage Attacker|w=30",
-        "Sentinel: Opportunity Advantage|w=30",
-        "Sentinel: Snare|w=30",
-        "Sentinel: Vengeance|w=30",
-        "Sharpshooter: All In|w=30",
-        "Sharpshooter: Low Ground|w=30",
-        "Shield Master|w=30",
-        "Spell Sniper|w=30",
-        "Tavern Brawler|w=30",
-        "Tough|w=30",
-        "Under-world",
-        "War Caster: Concentration|w=30",
-        "War Caster: Opportunity Spell|w=30",
-        "Weapon Master|w=30"
+        "Under-world"
     ]
 }
