@@ -14,12 +14,16 @@ export class PageSection implements IPageSection {
     ): PageSection[] {
         const eqs = depth ? '='.repeat(depth) : '={2,}';
 
-        // Transclude Template:H3
         // TODO: Use a generalized solution for transcluding templates
         // (current transclusion code doesn't support parameters)
-        const replaced = content.replace(
-            /{{H3\s*\|\s*([^}]+?)\s*}}/gi,
-            `===$1===`,
+        const transclusions: [RegExp, string][] = [
+            [/{{H3\s*\|\s*([^}]+?)\s*}}/gi, `===$1===`], // Template:H3
+            [/{{Level header\s*\|\s*(\d+)\s*}}/gi, `===Level $1===`], // Template:Level header
+        ];
+
+        const replaced = transclusions.reduce(
+            (acc, [regex, replacement]) => acc.replace(regex, replacement),
+            content,
         );
 
         const regex = new RegExp(
