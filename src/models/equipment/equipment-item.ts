@@ -185,6 +185,33 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return [undefined, characterPages];
     }
 
+    protected static async getCharacterInfoTemplateForItem(
+        pageData: IPageData,
+    ): Promise<IMediaWikiTemplate | undefined> {
+        const templateTypes = [
+            'CharacterInfo',
+            'CharacterInfo2',
+            // 'Infobox creature',
+        ];
+
+        let template: IMediaWikiTemplate | undefined;
+
+        // eslint-disable-next-line no-restricted-syntax
+        for (const templateType of templateTypes) {
+            try {
+                template =
+                    // eslint-disable-next-line no-await-in-loop
+                    await pageData.getTemplate(templateType);
+
+                break;
+            } catch (err) {
+                // do nothing
+            }
+        }
+
+        return template;
+    }
+
     protected async parseGameLocation(
         pages: ItemSourcePageInfo[],
         characterPages: Required<ItemSourcePageInfo>[],
@@ -243,28 +270,16 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 },
             };
 
-            let template: IMediaWikiTemplate | undefined;
-
-            try {
-                template =
-                    await characterPages[0].data.getTemplate('CharacterInfo');
-            } catch (err) {
-                try {
-                    // CharacterInfo2 template may be used as an alternative in some places
-                    // (they are functionally the same, but without a stat block)
-                    // Although this template is deprecated we can still support it for now
-                    template =
-                        await characterPages[0].data.getTemplate(
-                            'CharacterInfo2',
-                        );
-                } catch (err2) {
-                    warn(
-                        `Could not find CharacterInfo template on page '${this.name}'`,
-                    );
-                }
-            }
+            const template: IMediaWikiTemplate | undefined =
+                await EquipmentItem.getCharacterInfoTemplateForItem(
+                    characterPages[0].data,
+                );
 
             if (!template) {
+                warn(
+                    `Could not find CharacterInfo template on page '${this.name}'`,
+                );
+
                 return undefined;
             }
 
