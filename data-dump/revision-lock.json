@@ -26,6 +26,7 @@
         "Counting House": "The Counting House",
         "Creche Y'llek": "Crèche Y'llek",
         "Crèche_Y'llek": "Crèche Y'llek",
+        "Damage Types": "Damage",
         "Damage Types#Resistance": "Damage Types",
         "Dame Aylin": "Aylin",
         "Dank Crypt": "Overgrown Ruins",
@@ -76,6 +77,7 @@
         "Mason's Guild Basement": "Mason's Guild",
         "Mind Flayer": "Mind flayers",
         "Moonrise_Towers": "Moonrise Towers",
+        "Movement speed": "Resources",
         "Multiattack Defense": "Multiattack Defence",
         "Myconid Colony": "Ebonlake Grotto",
         "Nightsong": "Find the Nightsong",
@@ -86,6 +88,7 @@
         "Prelate Lir'i'c": "Lir'i'c",
         "Priestess Gut": "Gut",
         "Prologue": "Escape the Nautiloid",
+        "Prone": "Prone (Condition)",
         "Putrid Bog": "Sunlit Wetlands",
         "Quartermaster Talli": "Talli",
         "Quest": "Quests",
@@ -2114,6 +2117,11 @@
             "title": "Staff of Arcane Blessing"
         },
         {
+            "pageId": 2418,
+            "revisionId": 192604,
+            "title": "Damage"
+        },
+        {
             "pageId": 2424,
             "revisionId": 162542,
             "title": "Abilities"
@@ -4014,6 +4022,11 @@
             "title": "Salami"
         },
         {
+            "pageId": 3922,
+            "revisionId": 197786,
+            "title": "Resources"
+        },
+        {
             "pageId": 3923,
             "revisionId": 179054,
             "title": "Main Hand Attack"
@@ -5327,6 +5340,11 @@
             "pageId": 5420,
             "revisionId": 184404,
             "title": "Frightened (Condition)"
+        },
+        {
+            "pageId": 5461,
+            "revisionId": 206688,
+            "title": "Prone (Condition)"
         },
         {
             "pageId": 5507,

@@ -167,7 +167,19 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
             'i',
         );
 
-        const match = this.wikitext.match(regex);
+        let { wikitext } = this;
+
+        // Add line breaks to the template text ONLY if there are no line breaks already
+        // We want to avoid adding line breaks to nested templates, so we'll only add them if they don't already exist
+        // The compromise we're making here is only being able to properly
+        // parse nested templates IF they have line breaks in the original wikitext
+        if (!wikitext.includes('\n')) {
+            wikitext = wikitext
+                .replace(/(\|)/g, '\n$1')
+                .replace(/(}})$/g, '\n$1');
+        }
+
+        const match = wikitext.match(regex);
 
         return match ? match[1].trim() : undefined;
     }

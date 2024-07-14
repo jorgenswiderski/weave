@@ -60,7 +60,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "Dragonborn Black.png",
+        "image": "Race Dragonborn.png",
         "grants": []
     },
     {
@@ -84,7 +84,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "Drow Lolth-Sworn Default.png",
+        "image": "Race Drow.png",
         "grants": []
     },
     {
@@ -113,7 +113,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "Dwarf Gold Default.png",
+        "image": "Race Dwarf.png",
         "grants": []
     },
     {
@@ -177,13 +177,13 @@
             }
         ],
         "choiceType": 8,
-        "image": "High Elf Default Portrait.png",
+        "image": "Race Elf.png",
         "grants": []
     },
     {
         "name": "Githyanki",
         "description": "Githyanki are peerless warriors from the Astral Plane, known for their legendary silver blades and red dragon mounts. They seek the total destruction of mind flayers, whose ancient empire enslaved the ancestral gith for millennia.",
-        "image": "Githyanki Default Portrait.png",
+        "image": "Race Githyanki.png",
         "grants": []
     },
     {
@@ -212,7 +212,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "Rock Gnome Default Portrait.png",
+        "image": "Race Gnome.png",
         "grants": []
     },
     {
@@ -281,13 +281,13 @@
             }
         ],
         "choiceType": 8,
-        "image": "High Half-Elf Default Portrait.png",
+        "image": "Race Half-Elf.png",
         "grants": []
     },
     {
         "name": "Half-Orc",
         "description": "They are born of both human and orc ancestry, and exhibit a blend of orcish and human characteristics, their appearances varying widely.",
-        "image": "Half-Orc Default.png",
+        "image": "Race Half-Orc.png",
         "grants": []
     },
     {
@@ -311,13 +311,13 @@
             }
         ],
         "choiceType": 8,
-        "image": "Halfling Lightfoot Default.png",
+        "image": "Race Halfling.png",
         "grants": []
     },
     {
         "name": "Human",
         "description": "They are one of the most populous races in Faerûn, exhibiting a versatile range of skills rather than any one mastery.",
-        "image": "Human Default Portrait.png",
+        "image": "Race Human.png",
         "grants": []
     },
     {
@@ -346,7 +346,7 @@
             }
         ],
         "choiceType": 8,
-        "image": "Asmodeus Tiefling Default Portrait.png",
+        "image": "Race Tiefling.png",
         "grants": []
     }
 ]

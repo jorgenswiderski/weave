@@ -14,6 +14,7 @@ import { Utils } from '../../utils';
 import { StaticImageCacheService } from '../../static-image-cache-service';
 import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
 import { IPageSection } from '../../media-wiki/types';
+import { MediaWikiTemplate } from '../../media-wiki/media-wiki-template';
 
 type RaceChoice = { type: CharacterPlannerStep; options: CharacterSubrace[] };
 
@@ -100,14 +101,20 @@ export class CharacterRace extends CharacterFeature {
             throw new Error('Could not find page content');
         }
 
-        const regex = /\[\[File\s*:\s*([^|\]]+).*|right]]/m;
-        const match = regex.exec(this.page.content);
+        const template = await this.page.getTemplate('Class Quote');
 
-        if (!match || !match[1]) {
+        const { noOp } = MediaWikiTemplate.Parsers;
+
+        const config = {
+            image: { parser: noOp, default: undefined },
+        };
+
+        const { image } = template.parse(config);
+
+        if (!image) {
             return;
         }
 
-        const image = match[1].trim();
         StaticImageCacheService.cacheImage(image);
         this.image = image;
     }
