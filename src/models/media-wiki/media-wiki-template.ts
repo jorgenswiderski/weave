@@ -163,7 +163,7 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
 
     protected parseValue(key: string): string | undefined {
         const regex = new RegExp(
-            `\\|\\s*${key}\\s*=([\\s\\S]*?)\\n(?:\\||}})`,
+            `\\n\\s*\\|\\s*${key}\\s*=([\\s\\S]*?)\\n(?:\\||}})`,
             'i',
         );
 

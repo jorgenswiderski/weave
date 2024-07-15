@@ -988,7 +988,7 @@
         ]
     },
     {
-        "name": "weight|This weight is not influenced by a creatures equipped items or items inside a creatures inventory or a container. The weight is not how much it weighs to pick up or have in your inventory, but the weight of only the object/creature itself. You can see this weight by clicking \"Examine -> Detailed Info\" and looking under \"Weight: \".}} of the object being thrown:\n*** Light objects: under kg=10|lb=20:1|Bludgeoning damage.\n*** Medium objects: kg=10|lb=20 - 50 kg / 100 lb:1d4|Bludgeoning damage.\n*** Heavy objects: over kg=50|lb=100:2d4|Bludgeoning damage.\n* Enraged Throw always applies prone to the target if it hits.\n* If the thrown object or creature is heavier than half the targets weight the target will be knocked back m=2|ft=7.\n* Throwing a creature will apply prone to that thrown creature (no saving throw).",
+        "name": "Enraged Throw",
         "damage": "Object (1~8)",
         "damageType": 3,
         "image": "Enraged Throw.webp",
@@ -1421,7 +1421,7 @@
     {
         "name": "Fungal Infestation",
         "image": "Fungal Infestation.webp",
-        "level": 3,
+        "level": 0,
         "school": 0,
         "summary": "Fungal Infestation is a reaction gained by Circle of the Sporess at Level 6 that allows them to raise a Fungal Zombie from a nearby corpse using a resource exclusive to this action.",
         "description": "Raises a mildewed, mould-encrusted zombie from a corpse.\n\nTarget must be a beast or humanoid corpse.",

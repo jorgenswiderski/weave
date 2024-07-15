@@ -420,7 +420,7 @@
         "id": 17999
     },
     {
-        "name": "Extra Attack Code|This information can be found in the definition of ExtraAttackSpellCheck() in Game/scripts/thoth/CommonConditions.khn obtained from unpacking Game.pak. (See Modding:Unpacking_and_converting_files).}}\n*** Commander's Strikename=Extra Attack Code|\n*** Bufotoxinname=Extra Attack Code|\n*** Smokepowder Arrowname=Extra Attack Code|\n** Once Extra Attack is triggered all affected attacks will glow white and the action point will be removed from their cost. Other resources like bonus actions or class resources will stay.\n* Additional instances of Extra Attack do not stack; a multiclassed Ranger and Fighter with 5+ Levels in each will still only have 1 Extra Attack.\n** Deepened Pact (Pact of the Blade (passive feature))'s Extra Attack does stack, but not in Honour mode.\n** Level 11 Fighters gain an improved version of this ability, allowing for 2 Extra Attacks per trigger.\n* Some other Classes have their own version of Extra Attack;\n** Pact of the Blade or Chain Warlock's Deepened Pact at level 5.\n** Druid's Wild Strike and Improved Wild Strike at Level 5 and 10.\n** Beast Master Ranger's Bestial Fury at level 11.\n* An attack made with the action gained from Action Surge can trigger Extra Attack, regardless of difficulty.\n=== Non-Honour mode ===\nThe notes below are changed to specifically not work in the Honour mode difficulty. They still work in Explorer, Balanced and Tactician:\n* Warlock's Pact of the Blade Deepened Pact: Extra Attack does stack with other sources.\n* Sources of additional Action Icon Actions like Hastened and Elixir of Bloodlust can also have Extra Attack apply. Only Action Surge works in honour mode.\n** For example, a Hastened Level 11 Fighter with Elixir of Bloodlust on Tactician difficulty or below could attack 6 times, then an additional 3 times if they got a kill that round.",
+        "name": "Extra Attack",
         "description": "You can make an additional free attack after making an unarmed or weapon attack.",
         "image": "Extra Attack.webp",
         "type": 2,
@@ -854,7 +854,7 @@
         "id": 19686
     },
     {
-        "name": "Pikes|It's not stated in-game but Polearm Mastery works with Pikes too. Polearm Master is coded to work with any weapon that is tagged as a SPEAR or STAVE (quarterstaffs), and weapons with Extra Reach (Glaives, Halberds and Pikes)}} Quarterstaves|alias=Quarterstaff, or Spears|alias=Spear, you can use a Bonus Action to attack with the butt of your weapon. \nThis attack does 1d4|Bludgeoning|modifier=melee bug",
+        "name": "Polearm Master: Bonus Attack",
         "description": "When attacking with a Glaives|alias=Glaive, Halberds|alias=Halberd, Pikes|alias=Pike Quarterstaves|alias=Quarterstaff, or Spears|alias=Spear, you can use a Bonus Action to attack with the butt of your weapon. \nThis attack does 1d4|Bludgeoning|modifier=melee bug",
         "image": "Polearm Master Bonus Attack.webp",
         "type": 2,
