@@ -21,6 +21,13 @@
         "id": 13195
     },
     {
+        "name": "Agonising Blast",
+        "description": "When you cast Eldritch Blast, add your Charisma Modifier to the damage it deals, unless it is negative.",
+        "image": "Agonising Blast.webp",
+        "type": 2,
+        "id": 10330
+    },
+    {
         "name": "Alert",
         "description": "You gain +5 to Initiative and can no longer be surprised.",
         "image": "Generic Threat.webp",
@@ -28,11 +35,116 @@
         "id": 8367
     },
     {
+        "name": "Arctic",
+        "description": "You can cast Hold Person and Spike Growth.",
+        "image": "Arctic Faded.webp",
+        "type": 2,
+        "id": 40067
+    },
+    {
+        "name": "Armour of Shadows",
+        "description": "You can cast Mage Armour on yourself at will, without expending a Spell Slot. Mage Armour increases your Armour Class when you are not wearing armour.",
+        "image": "Mage Armour.webp",
+        "type": 2,
+        "id": 19621
+    },
+    {
+        "name": "Aspect of the Beast: Bear",
+        "description": "The Aspect of the Bear infuses you with strength.\n\nYour Carrying Capacity is doubled, and you have Advantage on Strength Checks.",
+        "image": "Aspect of the Beast Bear.webp",
+        "type": 2,
+        "id": 17306
+    },
+    {
+        "name": "Aspect of the Beast: Chimpanzee",
+        "description": "The Aspect of the Chimpanzee grants you a nimble mischievousness.\n\nYou gain Resistance to falling damage, and throwing camp supplies Blinds targets.",
+        "image": "Aspect of the Beast Chimpanzee.webp",
+        "type": 2,
+        "id": 17307
+    },
+    {
+        "name": "Aspect of the Beast: Crocodile",
+        "description": "The Aspect of the Crocodile increases your agility in the water.\n\nYour Movement Speed increases by m=3|ft=10 while standing in water-based surfaces.\n\nOn slippery surfaces, you also have Advantage on Saving Throws against being knocked Prone",
+        "image": "Aspect of the Beast Crocodile.webp",
+        "type": 2,
+        "id": 17310
+    },
+    {
+        "name": "Aspect of the Beast: Eagle",
+        "description": "The Aspect of the Eagle enhances your eyesight.\n\nYou can see in the dark up to m=12|ft=40, and gain Advantage on Perception Checks.",
+        "image": "Aspect of the Beast Eagle.webp",
+        "type": 2,
+        "id": 17312
+    },
+    {
+        "name": "Aspect of the Beast: Elk",
+        "description": "The Aspect of the Elk grants you astounding swiftness.\n\nYou can use Aspect of the Elk, giving yourself and nearby allies extra Movement Speed.",
+        "image": "Aspect of the Beast Elk.webp",
+        "type": 2,
+        "id": 17314
+    },
+    {
+        "name": "Aspect of the Beast: Honey Badger",
+        "description": "If you're Poisoned, Frightened, or Charmed at the start of your turn, you have a 50% chance to begin Raging without expending a Rage Charge.",
+        "image": "Aspect of the Beast Honey Badger.webp",
+        "type": 2,
+        "id": 17323
+    },
+    {
+        "name": "Aspect of the Beast: Stallion",
+        "description": "The Aspect of the Stallion creates safety in movement.\n\nDashing grants you temp hp equal to twice your Barbarian level.",
+        "image": "Aspect of the Beast Stallion.webp",
+        "type": 2,
+        "id": 17325
+    },
+    {
+        "name": "Aspect of the Beast: Tiger",
+        "description": "The Aspect of the Tiger infuses you with an unrelenting ferocity.\n\nYou add an additional Strength Modifier to Attack Rolls against Bleeding or Poisoned targets, and gain Proficiency in Survival",
+        "image": "Aspect of the Beast Tiger.webp",
+        "type": 2,
+        "id": 17327
+    },
+    {
+        "name": "Aspect of the Beast: Wolf",
+        "description": "The Aspect of the Wolf boosts your stealthiness.\n\nYou gain Proficiency in Stealth, and can use Aspect of the Wolf.",
+        "image": "Aspect of the Beast Wolf.webp",
+        "type": 2,
+        "id": 17338
+    },
+    {
+        "name": "Aspect of the Beast: Wolverine",
+        "description": "The Aspect of the Wolverine grants you the tools to relentlessly pursue your prey.\n\nWhen you attack a Bleeding or Poisoned target, you also Maim it for 1 turn",
+        "image": "Aspect of the Beast Wolverine.webp",
+        "type": 2,
+        "id": 17330
+    },
+    {
         "name": "Athlete: Standing Up",
         "description": "When you are Prone, standing up uses significantly less movement. Your Jump distance also increases by 50%.",
         "image": "Athlete Standing Up.webp",
         "type": 2,
         "id": 21638
+    },
+    {
+        "name": "Beast Speech",
+        "description": "You can cast Speak with Animals on yourself at will, without expending a Spell Slot.",
+        "image": "Speak with Animals.webp",
+        "type": 2,
+        "id": 19622
+    },
+    {
+        "name": "Beast Tamer",
+        "description": "You have cultivated a strong bond with animals. You can cast Find Familiar without expending a spell slot.",
+        "image": "Beast Tamer.webp",
+        "type": 2,
+        "id": 19508
+    },
+    {
+        "name": "Beguiling Influence",
+        "description": "You invoke your patron's bewitching charm. You gain Proficiency in Deception and Persuasion.",
+        "image": "Beguiling Influence.webp",
+        "type": 2,
+        "id": 19623
     },
     {
         "name": "Bestial Fury",
@@ -56,11 +168,32 @@
         "id": 32415
     },
     {
+        "name": "Book of Ancient Secrets",
+        "description": "You can inscribe magical rituals in your Book of Shadows. Gain Ray of Sickness, Chromatic Orb, and Silence spells.\n\nYou can cast them once per Long Rest and they don't expend spell slots",
+        "image": "Book of Ancient Secrets.webp",
+        "type": 2,
+        "id": 19638
+    },
+    {
+        "name": "Bounty Hunter",
+        "description": "Gain Proficiency in Investigation. Creatures you hit with Ensnaring Strike (either ranged or melee) have Disadvantage on their Saving Throw.",
+        "image": "Bounty Hunter.webp",
+        "type": 2,
+        "id": 19547
+    },
+    {
         "name": "Brutal Critical",
         "description": "You've trained to strike swift and true. When you land a Critical Hitnotes, you roll an extra damage die as well as the normal additional critical die.",
         "image": "Brutal Critical.webp",
         "type": 2,
         "id": 7953
+    },
+    {
+        "name": "Coast",
+        "description": "You can cast Mirror Image and Misty Step.",
+        "image": "Coast Faded.webp",
+        "type": 2,
+        "id": 40071
     },
     {
         "name": "Colossus Slayer",
@@ -112,11 +245,11 @@
         "id": 8193
     },
     {
-        "name": "Darkvision",
-        "description": "Can see in the dark up to m=12.",
-        "image": "Darkvision.webp",
+        "name": "Desert",
+        "description": "You can cast Blur and Silence.",
+        "image": "Desert Faded.webp",
         "type": 2,
-        "id": 3957
+        "id": 40072
     },
     {
         "name": "Destroy Undead",
@@ -124,6 +257,13 @@
         "image": "Destroy Undead.webp",
         "type": 2,
         "id": 6412
+    },
+    {
+        "name": "Devil's Sight",
+        "description": "You can see normally in darkness, both magical and non-magical, to a distance ofm=24|ft=80.",
+        "image": "Devils Sight.webp",
+        "type": 2,
+        "id": 13648
     },
     {
         "name": "Disciple of Life",
@@ -140,11 +280,88 @@
         "id": 6141
     },
     {
+        "name": "Draconic Ancestry: Black (Acid)",
+        "description": "At Level 6, spells that deal Acid damage are more powerful, and you can become Resistant to Acid|Acid damage.",
+        "image": "Draconic Ancestry Black Acid.webp",
+        "type": 2,
+        "id": 27762
+    },
+    {
+        "name": "Draconic Ancestry: Blue (Lightning)",
+        "description": "At Level 6, spells that deal Lightning damage are more powerful, and you can become Resistant to Lightning|Lightning damage.",
+        "image": "Draconic Ancestry Blue Lightning.webp",
+        "type": 2,
+        "id": 27763
+    },
+    {
+        "name": "Draconic Ancestry: Brass (Fire)",
+        "description": "At Level 6, spells that deal Fire damage are more powerful, and you can become Resistant to Fire|Fire damage.",
+        "image": "Draconic Ancestry Brass Fire.webp",
+        "type": 2,
+        "id": 27764
+    },
+    {
+        "name": "Draconic Ancestry: Bronze (Lightning)",
+        "description": "At Level 6, spells that deal Lightning damage are more powerful, and you can become Resistant to Lightning|Lightning damage.",
+        "image": "Draconic Ancestry Bronze Lightning.webp",
+        "type": 2,
+        "id": 27765
+    },
+    {
+        "name": "Draconic Ancestry: Copper (Acid)",
+        "description": "At Level 6, spells that deal Acid damage are more powerful, and you can become Resistant to Acid|Acid damage.",
+        "image": "Draconic Ancestry Copper Acid.webp",
+        "type": 2,
+        "id": 27766
+    },
+    {
+        "name": "Draconic Ancestry: Gold (Fire)",
+        "description": "At Level 6, spells that deal Fire damage are more powerful, and you can become Resistant to Fire|Fire damage.",
+        "image": "Draconic Ancestry Gold Fire.webp",
+        "type": 2,
+        "id": 27767
+    },
+    {
+        "name": "Draconic Ancestry: Green (Poison)",
+        "description": "At Level 6, spells that deal Poison damage are more powerful, and you can become Resistant to Poison|Poison damage.",
+        "image": "Draconic Ancestry Green Poison.webp",
+        "type": 2,
+        "id": 27768
+    },
+    {
+        "name": "Draconic Ancestry: Red (Fire)",
+        "description": "At Level 6, spells that deal Fire damage are more powerful, and you can become Resistant to Fire|Fire damage.",
+        "image": "Draconic Ancestry Red Fire.webp",
+        "type": 2,
+        "id": 27769
+    },
+    {
+        "name": "Draconic Ancestry: Silver (Cold)",
+        "description": "At Level 6, spells that deal Cold damage are more powerful, and you can become Resistant to Cold|Cold damage.",
+        "image": "Draconic Ancestry Silver Cold.webp",
+        "type": 2,
+        "id": 27770
+    },
+    {
+        "name": "Draconic Ancestry: White (Cold)",
+        "description": "At Level 6, spells that deal Cold damage are more powerful, and you can become Resistant to Cold|Cold damage.",
+        "image": "Draconic Ancestry White Cold.webp",
+        "type": 2,
+        "id": 27774
+    },
+    {
         "name": "Dread Ambusher",
         "description": "You specialise in taking out foes swiftly and ruthlessly.\n\nYou gain a +3 bonus to Initiative.\n\nOn the first turn of combat, your Movement Speed increases by m=3|ft=10, and you can also make an extra weapon attack that deals an additional d8|Physical1d8 damage",
         "image": "Dread Ambusher Melee.webp",
         "type": 2,
         "id": 17904
+    },
+    {
+        "name": "Dreadful Word",
+        "description": "You can cast Confusion with a Warlock spell slot.",
+        "image": "Confusion.webp",
+        "type": 2,
+        "id": 19639
     },
     {
         "name": "Dual Wielder",
@@ -224,11 +441,32 @@
         "id": 6819
     },
     {
+        "name": "Fiendish Vigour",
+        "description": "You can cast False Life on yourself at will as a 1st-level spell, without expending a Spell Slot.",
+        "image": "Fiendish Vigour.webp",
+        "type": 2,
+        "id": 19624
+    },
+    {
         "name": "Font of Inspiration",
         "description": "You regain all of your bi|forceplural=yes after a Long or Short Rest.",
         "image": "Font of Inspiration.webp",
         "type": 2,
         "id": 6410
+    },
+    {
+        "name": "Forest (passive feature)",
+        "description": "You can cast Barkskin and Hold Person.",
+        "image": "Forest Faded.webp",
+        "type": 2,
+        "id": 40073
+    },
+    {
+        "name": "Grassland",
+        "description": "You can cast Invisibility and Pass Without Trace.",
+        "image": "Grassland Faded.webp",
+        "type": 2,
+        "id": 40074
     },
     {
         "name": "Great Weapon Master: All In",
@@ -315,6 +553,13 @@
         "id": 3377
     },
     {
+        "name": "Keeper of the Veil",
+        "description": "You specialise in hunting creatures from other planes of existence. You gain Proficiency in Arcana and can grant protection against aberrations, celestials, elementals, fey, fiends, and undead.",
+        "image": "Keeper of the Veil.webp",
+        "type": 2,
+        "id": 19549
+    },
+    {
         "name": "Ki-Empowered Strikes",
         "description": "Your unarmed attacks count as magical for the purpose of overcoming enemies' Resistance and Immunity to non-magical damage.",
         "image": "Ki-Empowered Strikes.webp",
@@ -329,6 +574,13 @@
         "id": 6706
     },
     {
+        "name": "Lifedrinker",
+        "description": "Add your Charisma modifier to the damage of your melee weapon attacks.",
+        "image": "Lifedrinker.webp",
+        "type": 2,
+        "id": 19645
+    },
+    {
         "name": "Lightly Armoured",
         "description": "You gain Armour Proficiency with Light Armour and your Strength and Dexterity increases by 1, to a maximum of 20.",
         "image": "Lightly Armoured.webp",
@@ -341,6 +593,13 @@
         "image": "Lucky.webp",
         "type": 2,
         "id": 18732
+    },
+    {
+        "name": "Mage Breaker",
+        "description": "You have a history of battling spellcasters. Gain Proficiency with Arcana and True Strike, which gives you Advantage on Attack Rolls against a creature. Wisdom is your Spellcasting Ability for this spell.",
+        "image": "Mage Breaker.webp",
+        "type": 2,
+        "id": 19552
     },
     {
         "name": "Mage Slayer: Attack Caster",
@@ -434,6 +693,13 @@
         "id": 13203
     },
     {
+        "name": "Mask of Many Faces",
+        "description": "You can cast Disguise Self on yourself at will, without expending a Spell Slot.",
+        "image": "Disguise Self.webp",
+        "type": 2,
+        "id": 19625
+    },
+    {
         "name": "Medium Armour Master",
         "description": "When you wear medium armour, it doesn't impose Disadvantage on Stealth checks. The bonus to ArmourClass you can gain from your Dexterity modifier also becomes +3 instead of +2.\n\nYou must have Proficiency in Medium Armour to take this feat",
         "image": "Medium Armour Master.webp",
@@ -490,6 +756,20 @@
         "id": 1382
     },
     {
+        "name": "Minions of Chaos",
+        "description": "You can cast Conjure Elemental with a Warlock spell slot.",
+        "image": "Minions of Chaos.webp",
+        "type": 2,
+        "id": 19641
+    },
+    {
+        "name": "Mire the Mind",
+        "description": "You can cast Slow with a Warlock spell slot.",
+        "image": "Mire the Mind.webp",
+        "type": 2,
+        "id": 19637
+    },
+    {
         "name": "Mobile",
         "description": "Your movement speed increases by 3m.",
         "image": "Dash Bonus Action.webp",
@@ -518,6 +798,13 @@
         "id": 4940
     },
     {
+        "name": "Mountain",
+        "description": "You can cast Mirror Image and Spike Growth.",
+        "image": "Mountain Faded.webp",
+        "type": 2,
+        "id": 40075
+    },
+    {
         "name": "Multiattack Defence",
         "description": "When a enemy attacks you, they suffer -4 penalty to additional Attack Rolls against you until start of their next turn.",
         "image": "Multiattack Defense.webp",
@@ -530,6 +817,20 @@
         "image": "Nature's Ward.webp",
         "type": 2,
         "id": 12190
+    },
+    {
+        "name": "One with Shadows",
+        "description": "You learn how to cast One with Shadows.",
+        "image": "One with Shadows.webp",
+        "type": 2,
+        "id": 19626
+    },
+    {
+        "name": "Otherworldly Leap",
+        "description": "You can cast the Enhance Leap spell without expending a spell slot.",
+        "image": "Enhance Leap.webp",
+        "type": 2,
+        "id": 19642
     },
     {
         "name": "Pact of the Blade",
@@ -581,6 +882,13 @@
         "id": 13205
     },
     {
+        "name": "Ranger Knight",
+        "description": "You have sworn to serve a crown or nation and seek to bring its foes to ruin. Gain Proficiency with History and Proficiency with Heavy Armour.",
+        "image": "Ranger Knight.webp",
+        "type": 2,
+        "id": 19555
+    },
+    {
         "name": "Relentless Rage",
         "description": "Once per Short Rest, if you drop to 0 hit point while Enraged, you regain 1|Healing instead of being Downed.",
         "image": "Relentless Rage.webp",
@@ -595,6 +903,13 @@
         "id": 6874
     },
     {
+        "name": "Repelling Blast",
+        "description": "When you hit a creature with Eldritch Blast, you can push the creature up to m=4.5|ft=15 away from you.",
+        "image": "Repelling Blast.webp",
+        "type": 2,
+        "id": 10331
+    },
+    {
         "name": "Ritual Caster: Free Spells",
         "description": "You learn two  Ritual Spells of your choice from the following: \n* Speak with Dead\n* Find Familiar\n* Longstrider\n* Enhance Leap\n* Disguise Self\n* Speak with Animals",
         "image": "Ritual Caster Free Spells.webp",
@@ -602,11 +917,25 @@
         "id": 22763
     },
     {
+        "name": "Sanctified Stalker",
+        "description": "You swore to hunt the enemies of a holy or druidic order. You gain Proficiency in Religion and can cast Sacred Flame.",
+        "image": "Sanctified Stalker.webp",
+        "type": 2,
+        "id": 19557
+    },
+    {
         "name": "Savage Attacker",
         "description": "When making melee weapon attacks, you roll your damage dice twice and use the highest result.",
         "image": "Savage Attacker.webp",
         "type": 2,
         "id": 8373
+    },
+    {
+        "name": "Sculptor of Flesh",
+        "description": "You can cast Polymorph with a Warlock spell slot.",
+        "image": "Polymorph.webp",
+        "type": 2,
+        "id": 19640
     },
     {
         "name": "Sentinel: Opportunity Advantage",
@@ -651,6 +980,13 @@
         "id": 4945
     },
     {
+        "name": "Sign of Ill Omen",
+        "description": "You can cast Bestow Curse with a Warlock Spell Slot.",
+        "image": "Sign of Ill Omen.webp",
+        "type": 2,
+        "id": 19635
+    },
+    {
         "name": "Slow Fall",
         "description": "When you fall, you can use your reaction to gain Resistance to Falling damage.",
         "image": "Slow Fall.webp",
@@ -693,6 +1029,13 @@
         "id": 3956
     },
     {
+        "name": "Swamp",
+        "description": "You can cast Melf's Acid Arrow and Darkness.",
+        "image": "Swamp Faded.webp",
+        "type": 2,
+        "id": 40076
+    },
+    {
         "name": "Tavern Brawler",
         "description": "Increase your Strength or Constitution by 1, to a maximum of 20.\n\nWhen you make an unarmed attack, use an improvised weapon, or throw something, your Strength Modifier is added twice to the damage and Attack Rolls.Bug",
         "image": "Tavern Brawler.webp",
@@ -705,6 +1048,13 @@
         "image": "Tempestuous Magic.webp",
         "type": 2,
         "id": 16294
+    },
+    {
+        "name": "Thief of Five Fates",
+        "description": "Once per Long Rest, you can cast Bane using a Warlock Spell Slot.",
+        "image": "Thief of Five Fates.webp",
+        "type": 2,
+        "id": 19633
     },
     {
         "name": "Tough",
@@ -742,6 +1092,20 @@
         "id": 3978
     },
     {
+        "name": "Underdark (passive feature)",
+        "description": "You can cast Web and Misty Step.",
+        "image": "Underdark Faded.webp",
+        "type": 2,
+        "id": 40077
+    },
+    {
+        "name": "Urban Tracker",
+        "description": "An expert at navigating the wild within the city, you gain Sleight of Hand Proficiency.",
+        "image": "Urban Tracker.webp",
+        "type": 2,
+        "id": 19509
+    },
+    {
         "name": "War Caster: Concentration",
         "description": "You gain Advantage on SavingThrows to maintain Concentration on a Spell.",
         "image": "War Caster Concentration.webp",
@@ -756,11 +1120,39 @@
         "id": 21508
     },
     {
+        "name": "Wasteland Wanderer: Cold",
+        "description": "You have spent endless days surviving desolate tundras. Gain resistance to Cold damage, taking only half damage from it.",
+        "image": "Wasteland Wanderer Cold.webp",
+        "type": 2,
+        "id": 19511
+    },
+    {
+        "name": "Wasteland Wanderer: Fire",
+        "description": "You have spent endless days surviving forbidding deserts. Gain resistance to Fire, taking only half damage from it.",
+        "image": "Wasteland Wanderer Fire.webp",
+        "type": 2,
+        "id": 19513
+    },
+    {
+        "name": "Wasteland Wanderer: Poison",
+        "description": "You have spent endless days surviving fetid swamps. Gain resistance to Poison, taking only half damage from it.",
+        "image": "Wasteland Wanderer Poison.webp",
+        "type": 2,
+        "id": 19515
+    },
+    {
         "name": "Weapon Master",
         "description": "Increase your Strength or Dexterity by 1, to a maximum of 20.\n\nGain Proficiency with four Weapon types of your choice.",
         "image": "Weapon Master.webp",
         "type": 2,
         "id": 4947
+    },
+    {
+        "name": "Whispers of the Grave",
+        "description": "You can cast Speak with Dead without expending a Spell Slot.",
+        "image": "Whispers of the Grave.webp",
+        "type": 2,
+        "id": 19643
     },
     {
         "name": "Wild Strike",

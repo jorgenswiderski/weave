@@ -33,12 +33,9 @@
         "Crèche_Y'llek": "Crèche Y'llek",
         "Cult of Myrkul": "Myrkul",
         "Cult of the Absolute": "Absolute",
-        "Damage Types": "Damage",
-        "Damage Types#Resistance": "Damage Types",
         "Dame Aylin": "Aylin",
         "Dank Crypt": "Overgrown Ruins",
         "Dark Urge": "The Dark Urge",
-        "Darkvision (Passive Feature)": "Darkvision",
         "Deep Gnome": "Gnome",
         "Deep gnome": "Gnome",
         "Disarm": "Disarming",
@@ -104,7 +101,6 @@
         "Mind flayer": "Mind flayers",
         "Monstrosity": "List of creature types",
         "Moonrise_Towers": "Moonrise Towers",
-        "Movement speed": "Resources",
         "Multiattack Defense": "Multiattack Defence",
         "Myconid Colony": "Ebonlake Grotto",
         "Nightsong": "Find the Nightsong",
@@ -117,7 +113,6 @@
         "Prelate Lir'i'c": "Lir'i'c",
         "Priestess Gut": "Gut",
         "Prologue": "Escape the Nautiloid",
-        "Prone": "Prone (Condition)",
         "Putrid Bog": "Sunlit Wetlands",
         "Quartermaster Talli": "Talli",
         "Quest": "Quests",
@@ -316,13 +311,10 @@
         "mimic": "Mimic",
         "mind flayer": "Mind flayer",
         "monk": "Monk",
-        "movement speed": "Movement speed",
         "myconid": "Myconid",
         "paladin": "Paladin",
         "portent": "Portent",
-        "prone": "Prone",
         "quest": "Quest",
-        "rage": "Rage",
         "ranger": "Ranger",
         "redcap": "Redcap",
         "rogue": "Rogue",
@@ -587,11 +579,6 @@
             "pageId": 436,
             "revisionId": 180538,
             "title": "Hand Crossbow"
-        },
-        {
-            "pageId": 437,
-            "revisionId": 197759,
-            "title": "Proficiency"
         },
         {
             "pageId": 440,
@@ -1142,11 +1129,6 @@
             "pageId": 1235,
             "revisionId": 164402,
             "title": "Strength"
-        },
-        {
-            "pageId": 1238,
-            "revisionId": 188037,
-            "title": "Dexterity"
         },
         {
             "pageId": 1241,
@@ -2182,11 +2164,6 @@
             "pageId": 2412,
             "revisionId": 163661,
             "title": "Staff of Arcane Blessing"
-        },
-        {
-            "pageId": 2418,
-            "revisionId": 192604,
-            "title": "Damage"
         },
         {
             "pageId": 2424,
@@ -4089,11 +4066,6 @@
             "title": "Salami"
         },
         {
-            "pageId": 3922,
-            "revisionId": 197786,
-            "title": "Resources"
-        },
-        {
             "pageId": 3923,
             "revisionId": 179054,
             "title": "Main Hand Attack"
@@ -5437,11 +5409,6 @@
             "pageId": 5420,
             "revisionId": 184404,
             "title": "Frightened (Condition)"
-        },
-        {
-            "pageId": 5461,
-            "revisionId": 206688,
-            "title": "Prone (Condition)"
         },
         {
             "pageId": 5507,

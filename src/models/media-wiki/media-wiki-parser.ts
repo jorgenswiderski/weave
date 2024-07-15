@@ -237,7 +237,7 @@ export class MediaWikiParser {
             }
         }
 
-        sections.forEach(({ type, content, rows: rowSpan }) => {
+        sections.forEach(({ type, content, rows: rowSpan }, index) => {
             if (type === 'row') {
                 processSpannedCells();
 
@@ -256,9 +256,17 @@ export class MediaWikiParser {
             }
 
             // If this is a row header, force it to be a cell instead
-            if (type === 'header' && content.includes('#Level ')) {
-                // eslint-disable-next-line no-param-reassign
-                type = 'cell';
+            if (type === 'header') {
+                const prevCell = sections[index - 1];
+                const nextCell = sections[index + 1];
+
+                if (
+                    ['row', 'start'].includes(prevCell?.type) &&
+                    nextCell?.type === 'cell'
+                ) {
+                    // eslint-disable-next-line no-param-reassign
+                    type = 'cell';
+                }
             }
 
             if (type === 'header') {
@@ -401,8 +409,8 @@ export class MediaWikiParser {
         v = v.replace(/''(.*?)''/g, '$1'); // italic text
         v = v.replace(/`/g, ''); // backticks
         v = v.replace(/<.*?>/g, ''); // strip out any html tags
-        v = v.replace(/style=".*?" \| /g, ''); // strip out style attributes
-        v = v.replace(/scope=".*?" \| /g, ''); // strip out scope attribute
+        v = v.replace(/style=".*?"\s?\|\s?/g, ''); // strip out style attributes
+        v = v.replace(/scope=".*?"\s?\|\s?/g, ''); // strip out scope attribute
         v = v.replace(/(\w+)\.webp|\.png/g, '$1'); // remove image extensions
         v = v.trim(); // remove spaces from start and end
 

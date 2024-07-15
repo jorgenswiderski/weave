@@ -96,7 +96,83 @@
                                         "name": "Wildheart",
                                         "description": "Your attunement with nature and its beasts inspires your rage, empowering you with supernatural might.",
                                         "image": "Class Barbarian Wildheart Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "s1585"
+                                            }
+                                        ],
+                                        "choices": [
+                                            {
+                                                "options": [
+                                                    {
+                                                        "name": "Bestial Heart",
+                                                        "choices": [
+                                                            {
+                                                                "type": 23,
+                                                                "options": [
+                                                                    {
+                                                                        "name": "Bear Heart",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "a1147"
+                                                                            },
+                                                                            {
+                                                                                "ref": "a1148"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Eagle Heart",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "a1151"
+                                                                            },
+                                                                            {
+                                                                                "ref": "a1150"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Elk Heart",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "a1153"
+                                                                            },
+                                                                            {
+                                                                                "ref": "a1152"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Tiger Heart",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "a1154"
+                                                                            },
+                                                                            {
+                                                                                "ref": "a1155"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Wolf Heart",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "a1157"
+                                                                            },
+                                                                            {
+                                                                                "ref": "a1156"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "type": 23
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -173,7 +249,104 @@
                                         "name": "Wildheart",
                                         "description": "Your attunement with nature and its beasts inspires your rage, empowering you with supernatural might.",
                                         "image": "Class Barbarian Wildheart Badge Icon.png",
-                                        "grants": []
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "options": [
+                                                    {
+                                                        "name": "Animal Aspect",
+                                                        "choices": [
+                                                            {
+                                                                "type": 23,
+                                                                "options": [
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Bear",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17306"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Chimpanzee",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17307"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Crocodile",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17310"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Eagle",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17312"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Elk",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17314"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Honey Badger",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17323"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Stallion",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17325"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Tiger",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17327"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Wolf",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17338"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Wolverine",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17330"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "type": 23
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -262,7 +435,104 @@
                                         "name": "Wildheart",
                                         "description": "Your attunement with nature and its beasts inspires your rage, empowering you with supernatural might.",
                                         "image": "Class Barbarian Wildheart Badge Icon.png",
-                                        "grants": []
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "options": [
+                                                    {
+                                                        "name": "Animal Aspect",
+                                                        "choices": [
+                                                            {
+                                                                "type": 23,
+                                                                "options": [
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Bear",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17306"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Chimpanzee",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17307"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Crocodile",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17310"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Eagle",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17312"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Elk",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17314"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Honey Badger",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17323"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Stallion",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17325"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Tiger",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17327"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Wolf",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17338"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Aspect of the Beast: Wolverine",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c17330"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "type": 23
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -2710,66 +2980,66 @@
                                                                 "type": 23,
                                                                 "options": [
                                                                     {
-                                                                        "name": "Hold Person",
+                                                                        "name": "Arctic",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2382"
+                                                                                "ref": "c40067"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Mirror Image",
+                                                                        "name": "Coast",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2521"
+                                                                                "ref": "c40071"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Blur",
+                                                                        "name": "Desert",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s1353"
+                                                                                "ref": "c40072"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Barkskin",
+                                                                        "name": "Forest",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2319"
+                                                                                "ref": "c40073"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Invisibility",
+                                                                        "name": "Grassland",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2174"
+                                                                                "ref": "c40074"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Mirror Image",
+                                                                        "name": "Mountain",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2521"
+                                                                                "ref": "c40075"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Melf's Acid Arrow",
+                                                                        "name": "Swamp",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s1045"
+                                                                                "ref": "c40076"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Web",
+                                                                        "name": "Underdark",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2288"
+                                                                                "ref": "c40077"
                                                                             }
                                                                         ]
                                                                     }
@@ -2912,66 +3182,66 @@
                                                                 "type": 23,
                                                                 "options": [
                                                                     {
-                                                                        "name": "Sleet Storm",
+                                                                        "name": "Arctic",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2738"
+                                                                                "ref": "c40067"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Sleet Storm",
+                                                                        "name": "Coast",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2738"
+                                                                                "ref": "c40071"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Protection from Energy",
+                                                                        "name": "Desert",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2692"
+                                                                                "ref": "c40072"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Call Lightning",
+                                                                        "name": "Forest",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2702"
+                                                                                "ref": "c40073"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Daylight",
+                                                                        "name": "Grassland",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2686"
+                                                                                "ref": "c40074"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Lightning Bolt",
+                                                                        "name": "Mountain",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s8092"
+                                                                                "ref": "c40075"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Stinking Cloud",
+                                                                        "name": "Swamp",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2762"
+                                                                                "ref": "c40076"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Gaseous Form",
+                                                                        "name": "Underdark",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s2815"
+                                                                                "ref": "c40077"
                                                                             }
                                                                         ]
                                                                     }
@@ -3101,66 +3371,66 @@
                                                                 "type": 23,
                                                                 "options": [
                                                                     {
-                                                                        "name": "Conjure Minor Elemental",
+                                                                        "name": "Arctic",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s7998"
+                                                                                "ref": "c40067"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Freedom of Movement",
+                                                                        "name": "Coast",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s6737"
+                                                                                "ref": "c40071"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Blight",
+                                                                        "name": "Desert",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s6581"
+                                                                                "ref": "c40072"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Conjure Minor Elemental",
+                                                                        "name": "Forest",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s7998"
+                                                                                "ref": "c40073"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Freedom of Movement",
+                                                                        "name": "Grassland",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s6737"
+                                                                                "ref": "c40074"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Stoneskin",
+                                                                        "name": "Mountain",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s7936"
+                                                                                "ref": "c40075"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Blight",
+                                                                        "name": "Swamp",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s6581"
+                                                                                "ref": "c40076"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Greater Invisibility",
+                                                                        "name": "Underdark",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s7926"
+                                                                                "ref": "c40077"
                                                                             }
                                                                         ]
                                                                     }
@@ -3295,66 +3565,66 @@
                                                                 "type": 23,
                                                                 "options": [
                                                                     {
-                                                                        "name": "Cone of Cold",
+                                                                        "name": "Arctic",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s7943"
+                                                                                "ref": "c40067"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Conjure Elemental",
+                                                                        "name": "Coast",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s8415"
+                                                                                "ref": "c40071"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Wall of Stone",
+                                                                        "name": "Desert",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s8034"
+                                                                                "ref": "c40072"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Mass Cure Wounds",
+                                                                        "name": "Forest",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s7961"
+                                                                                "ref": "c40073"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Greater Restoration",
+                                                                        "name": "Grassland",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s8407"
+                                                                                "ref": "c40074"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Wall of Stone",
+                                                                        "name": "Mountain",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s8034"
+                                                                                "ref": "c40075"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Insect Plague",
+                                                                        "name": "Swamp",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s7949"
+                                                                                "ref": "c40076"
                                                                             }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        "name": "Contagion",
+                                                                        "name": "Underdark",
                                                                         "grants": [
                                                                             {
-                                                                                "ref": "s8412"
+                                                                                "ref": "c40077"
                                                                             }
                                                                         ]
                                                                     }
@@ -4106,7 +4376,68 @@
                                         "name": "Way of Shadow",
                                         "description": "You value the arts of stealth and subterfuge, bending the shadows to your will to strike without warning.",
                                         "image": "Class Monk Shadow Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "s1663"
+                                            }
+                                        ],
+                                        "choices": [
+                                            {
+                                                "options": [
+                                                    {
+                                                        "name": "Shadow Arts",
+                                                        "choices": [
+                                                            {
+                                                                "type": 23,
+                                                                "options": [
+                                                                    {
+                                                                        "name": "Shadow Arts: Hide",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "a18484"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Shadow Arts: Pass Without Trace",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "a18515"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Shadow Arts: Darkness",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "a18516"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Shadow Arts: Darkvision",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "a18519"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Shadow Arts: Silence",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "a18843"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "type": 23
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Way of the Four Elements",
@@ -4308,6 +4639,39 @@
                                 "ref": "a8936"
                             }
                         ]
+                    },
+                    {
+                        "name": "Subclass Feature: Monk",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Way of Shadow",
+                                        "description": "You value the arts of stealth and subterfuge, bending the shadows to your will to strike without warning.",
+                                        "image": "Class Monk Shadow Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "a18418"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Way of the Four Elements",
+                                        "description": "You focus your ki to bend the elements to your will, using them as an extension of your own body.",
+                                        "image": "Class Monk Four Elements Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Way of the Open Hand",
+                                        "description": "You specialise in unarmed combat, using your hands and control of ki to heal or inflict grievous hurt.",
+                                        "image": "Class Monk Open Hand Badge Icon.png",
+                                        "grants": []
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "ki | forceplural=yes": 6,
@@ -4345,7 +4709,11 @@
                                         "name": "Way of Shadow",
                                         "description": "You value the arts of stealth and subterfuge, bending the shadows to your will to strike without warning.",
                                         "image": "Class Monk Shadow Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a18422"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Way of the Four Elements",
@@ -4541,7 +4909,14 @@
                                         "name": "Way of Shadow",
                                         "description": "You value the arts of stealth and subterfuge, bending the shadows to your will to strike without warning.",
                                         "image": "Class Monk Shadow Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a18858"
+                                            },
+                                            {
+                                                "ref": "a18859"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Way of the Four Elements",
@@ -5165,32 +5540,44 @@
                                 "count": 1,
                                 "options": [
                                     {
-                                        "name": "Ensnaring Strike",
+                                        "name": "Bounty Hunter",
                                         "grants": [
                                             {
-                                                "ref": "s5081"
+                                                "ref": "c19547"
                                             }
                                         ]
                                     },
                                     {
-                                        "name": "Proficiency",
-                                        "grants": []
-                                    },
-                                    {
-                                        "name": "True Strike",
+                                        "name": "Keeper of the Veil",
                                         "grants": [
                                             {
-                                                "ref": "s1696"
+                                                "ref": "c19549"
                                             }
                                         ]
                                     },
                                     {
-                                        "name": "Proficiency",
-                                        "grants": []
+                                        "name": "Mage Breaker",
+                                        "grants": [
+                                            {
+                                                "ref": "c19552"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "name": "Proficiency",
-                                        "grants": []
+                                        "name": "Ranger Knight",
+                                        "grants": [
+                                            {
+                                                "ref": "c19555"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sanctified Stalker",
+                                        "grants": [
+                                            {
+                                                "ref": "c19557"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -5198,7 +5585,55 @@
                     },
                     {
                         "name": "Natural Explorer",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "count": 1,
+                                "options": [
+                                    {
+                                        "name": "Beast Tamer",
+                                        "grants": [
+                                            {
+                                                "ref": "c19508"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Urban Tracker",
+                                        "grants": [
+                                            {
+                                                "ref": "c19509"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Cold",
+                                        "grants": [
+                                            {
+                                                "ref": "c19511"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Fire",
+                                        "grants": [
+                                            {
+                                                "ref": "c19513"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Poison",
+                                        "grants": [
+                                            {
+                                                "ref": "c19515"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Spells Known": 0,
@@ -5427,32 +5862,44 @@
                                 "count": 1,
                                 "options": [
                                     {
-                                        "name": "Ensnaring Strike",
+                                        "name": "Bounty Hunter",
                                         "grants": [
                                             {
-                                                "ref": "s5081"
+                                                "ref": "c19547"
                                             }
                                         ]
                                     },
                                     {
-                                        "name": "Proficiency",
-                                        "grants": []
-                                    },
-                                    {
-                                        "name": "True Strike",
+                                        "name": "Keeper of the Veil",
                                         "grants": [
                                             {
-                                                "ref": "s1696"
+                                                "ref": "c19549"
                                             }
                                         ]
                                     },
                                     {
-                                        "name": "Proficiency",
-                                        "grants": []
+                                        "name": "Mage Breaker",
+                                        "grants": [
+                                            {
+                                                "ref": "c19552"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "name": "Proficiency",
-                                        "grants": []
+                                        "name": "Ranger Knight",
+                                        "grants": [
+                                            {
+                                                "ref": "c19555"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sanctified Stalker",
+                                        "grants": [
+                                            {
+                                                "ref": "c19557"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -5460,7 +5907,55 @@
                     },
                     {
                         "name": "Natural Explorer",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "count": 1,
+                                "options": [
+                                    {
+                                        "name": "Beast Tamer",
+                                        "grants": [
+                                            {
+                                                "ref": "c19508"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Urban Tracker",
+                                        "grants": [
+                                            {
+                                                "ref": "c19509"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Cold",
+                                        "grants": [
+                                            {
+                                                "ref": "c19511"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Fire",
+                                        "grants": [
+                                            {
+                                                "ref": "c19513"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Poison",
+                                        "grants": [
+                                            {
+                                                "ref": "c19515"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Spells Known": 4,
@@ -5646,32 +6141,44 @@
                                 "count": 1,
                                 "options": [
                                     {
-                                        "name": "Ensnaring Strike",
+                                        "name": "Bounty Hunter",
                                         "grants": [
                                             {
-                                                "ref": "s5081"
+                                                "ref": "c19547"
                                             }
                                         ]
                                     },
                                     {
-                                        "name": "Proficiency",
-                                        "grants": []
-                                    },
-                                    {
-                                        "name": "True Strike",
+                                        "name": "Keeper of the Veil",
                                         "grants": [
                                             {
-                                                "ref": "s1696"
+                                                "ref": "c19549"
                                             }
                                         ]
                                     },
                                     {
-                                        "name": "Proficiency",
-                                        "grants": []
+                                        "name": "Mage Breaker",
+                                        "grants": [
+                                            {
+                                                "ref": "c19552"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "name": "Proficiency",
-                                        "grants": []
+                                        "name": "Ranger Knight",
+                                        "grants": [
+                                            {
+                                                "ref": "c19555"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sanctified Stalker",
+                                        "grants": [
+                                            {
+                                                "ref": "c19557"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -5679,7 +6186,55 @@
                     },
                     {
                         "name": "Natural Explorer",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "count": 1,
+                                "options": [
+                                    {
+                                        "name": "Beast Tamer",
+                                        "grants": [
+                                            {
+                                                "ref": "c19508"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Urban Tracker",
+                                        "grants": [
+                                            {
+                                                "ref": "c19509"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Cold",
+                                        "grants": [
+                                            {
+                                                "ref": "c19511"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Fire",
+                                        "grants": [
+                                            {
+                                                "ref": "c19513"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Wasteland Wanderer: Poison",
+                                        "grants": [
+                                            {
+                                                "ref": "c19515"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "Hide in Plain Sight",
@@ -6317,7 +6872,104 @@
                                         "name": "Draconic Bloodline",
                                         "description": "Your veins carry draconic magic, the result of a powerful dragon ancestor.",
                                         "image": "Class Sorcerer Draconic Bloodline Badge Icon.png",
-                                        "grants": []
+                                        "grants": [],
+                                        "choices": [
+                                            {
+                                                "options": [
+                                                    {
+                                                        "name": "Section 2",
+                                                        "choices": [
+                                                            {
+                                                                "type": 23,
+                                                                "options": [
+                                                                    {
+                                                                        "name": "Draconic Ancestry: Red (Fire)",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c27769"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Draconic Ancestry: Black (Acid)",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c27762"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Draconic Ancestry: Blue (Lightning)",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c27763"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Draconic Ancestry: White (Cold)",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c27774"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Draconic Ancestry: Green (Poison)",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c27768"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Draconic Ancestry: Gold (Fire)",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c27767"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Draconic Ancestry: Silver (Cold)",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c27770"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Draconic Ancestry: Bronze (Lightning)",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c27765"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Draconic Ancestry: Copper (Acid)",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c27766"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "Draconic Ancestry: Brass (Fire)",
+                                                                        "grants": [
+                                                                            {
+                                                                                "ref": "c27764"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "type": 23
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Storm Sorcery",
@@ -6786,7 +7438,11 @@
                                         "name": "Draconic Bloodline",
                                         "description": "Your veins carry draconic magic, the result of a powerful dragon ancestor.",
                                         "image": "Class Sorcerer Draconic Bloodline Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "a17231"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Storm Sorcery",
@@ -6938,7 +7594,95 @@
                 "Features": [
                     {
                         "name": "Eldritch Invocation",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "count": 2,
+                                "options": [
+                                    {
+                                        "name": "Agonising Blast",
+                                        "grants": [
+                                            {
+                                                "ref": "c10330"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Armour of Shadows",
+                                        "grants": [
+                                            {
+                                                "ref": "c19621"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beast Speech",
+                                        "grants": [
+                                            {
+                                                "ref": "c19622"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beguiling Influence",
+                                        "grants": [
+                                            {
+                                                "ref": "c19623"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Devil's Sight",
+                                        "grants": [
+                                            {
+                                                "ref": "c13648"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fiendish Vigour",
+                                        "grants": [
+                                            {
+                                                "ref": "c19624"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mask of Many Faces",
+                                        "grants": [
+                                            {
+                                                "ref": "c19625"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "One with Shadows",
+                                        "grants": [
+                                            {
+                                                "ref": "c19626"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Repelling Blast",
+                                        "grants": [
+                                            {
+                                                "ref": "c10331"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Thief of Five Fates",
+                                        "grants": [
+                                            {
+                                                "ref": "c19633"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Invocations Known": 2,
@@ -7094,7 +7838,111 @@
                     },
                     {
                         "name": "Eldritch Invocation",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "count": 1,
+                                "options": [
+                                    {
+                                        "name": "Agonising Blast",
+                                        "grants": [
+                                            {
+                                                "ref": "c10330"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Armour of Shadows",
+                                        "grants": [
+                                            {
+                                                "ref": "c19621"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beast Speech",
+                                        "grants": [
+                                            {
+                                                "ref": "c19622"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beguiling Influence",
+                                        "grants": [
+                                            {
+                                                "ref": "c19623"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Devil's Sight",
+                                        "grants": [
+                                            {
+                                                "ref": "c13648"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fiendish Vigour",
+                                        "grants": [
+                                            {
+                                                "ref": "c19624"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mask of Many Faces",
+                                        "grants": [
+                                            {
+                                                "ref": "c19625"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "One with Shadows",
+                                        "grants": [
+                                            {
+                                                "ref": "c19626"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Repelling Blast",
+                                        "grants": [
+                                            {
+                                                "ref": "c10331"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Thief of Five Fates",
+                                        "grants": [
+                                            {
+                                                "ref": "c19633"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sign of Ill Omen",
+                                        "grants": [
+                                            {
+                                                "ref": "c19635"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mire the Mind",
+                                        "grants": [
+                                            {
+                                                "ref": "c19637"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "Subclass Feature: Warlock",
@@ -7223,7 +8071,135 @@
                 "Features": [
                     {
                         "name": "Eldritch Invocation",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "count": 1,
+                                "options": [
+                                    {
+                                        "name": "Agonising Blast",
+                                        "grants": [
+                                            {
+                                                "ref": "c10330"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Armour of Shadows",
+                                        "grants": [
+                                            {
+                                                "ref": "c19621"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beast Speech",
+                                        "grants": [
+                                            {
+                                                "ref": "c19622"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beguiling Influence",
+                                        "grants": [
+                                            {
+                                                "ref": "c19623"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Devil's Sight",
+                                        "grants": [
+                                            {
+                                                "ref": "c13648"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fiendish Vigour",
+                                        "grants": [
+                                            {
+                                                "ref": "c19624"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mask of Many Faces",
+                                        "grants": [
+                                            {
+                                                "ref": "c19625"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "One with Shadows",
+                                        "grants": [
+                                            {
+                                                "ref": "c19626"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Repelling Blast",
+                                        "grants": [
+                                            {
+                                                "ref": "c10331"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Thief of Five Fates",
+                                        "grants": [
+                                            {
+                                                "ref": "c19633"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sign of Ill Omen",
+                                        "grants": [
+                                            {
+                                                "ref": "c19635"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mire the Mind",
+                                        "grants": [
+                                            {
+                                                "ref": "c19637"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Book of Ancient Secrets",
+                                        "grants": [
+                                            {
+                                                "ref": "c19638"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dreadful Word",
+                                        "grants": [
+                                            {
+                                                "ref": "c19639"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sculptor of Flesh",
+                                        "grants": [
+                                            {
+                                                "ref": "c19640"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "Subclass Feature: Warlock",
@@ -7315,7 +8291,159 @@
                 "Features": [
                     {
                         "name": "Eldritch Invocation",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "count": 1,
+                                "options": [
+                                    {
+                                        "name": "Agonising Blast",
+                                        "grants": [
+                                            {
+                                                "ref": "c10330"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Armour of Shadows",
+                                        "grants": [
+                                            {
+                                                "ref": "c19621"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beast Speech",
+                                        "grants": [
+                                            {
+                                                "ref": "c19622"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beguiling Influence",
+                                        "grants": [
+                                            {
+                                                "ref": "c19623"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Devil's Sight",
+                                        "grants": [
+                                            {
+                                                "ref": "c13648"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fiendish Vigour",
+                                        "grants": [
+                                            {
+                                                "ref": "c19624"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mask of Many Faces",
+                                        "grants": [
+                                            {
+                                                "ref": "c19625"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "One with Shadows",
+                                        "grants": [
+                                            {
+                                                "ref": "c19626"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Repelling Blast",
+                                        "grants": [
+                                            {
+                                                "ref": "c10331"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Thief of Five Fates",
+                                        "grants": [
+                                            {
+                                                "ref": "c19633"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sign of Ill Omen",
+                                        "grants": [
+                                            {
+                                                "ref": "c19635"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mire the Mind",
+                                        "grants": [
+                                            {
+                                                "ref": "c19637"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Book of Ancient Secrets",
+                                        "grants": [
+                                            {
+                                                "ref": "c19638"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dreadful Word",
+                                        "grants": [
+                                            {
+                                                "ref": "c19639"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sculptor of Flesh",
+                                        "grants": [
+                                            {
+                                                "ref": "c19640"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Minions of Chaos",
+                                        "grants": [
+                                            {
+                                                "ref": "c19641"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Otherworldly Leap",
+                                        "grants": [
+                                            {
+                                                "ref": "c19642"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Whispers of the Grave",
+                                        "grants": [
+                                            {
+                                                "ref": "c19643"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "Subclass Feature: Warlock",
@@ -7509,7 +8637,167 @@
                     },
                     {
                         "name": "Eldritch Invocation",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "count": 1,
+                                "options": [
+                                    {
+                                        "name": "Agonising Blast",
+                                        "grants": [
+                                            {
+                                                "ref": "c10330"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Armour of Shadows",
+                                        "grants": [
+                                            {
+                                                "ref": "c19621"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beast Speech",
+                                        "grants": [
+                                            {
+                                                "ref": "c19622"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Beguiling Influence",
+                                        "grants": [
+                                            {
+                                                "ref": "c19623"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Devil's Sight",
+                                        "grants": [
+                                            {
+                                                "ref": "c13648"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fiendish Vigour",
+                                        "grants": [
+                                            {
+                                                "ref": "c19624"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mask of Many Faces",
+                                        "grants": [
+                                            {
+                                                "ref": "c19625"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "One with Shadows",
+                                        "grants": [
+                                            {
+                                                "ref": "c19626"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Repelling Blast",
+                                        "grants": [
+                                            {
+                                                "ref": "c10331"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Thief of Five Fates",
+                                        "grants": [
+                                            {
+                                                "ref": "c19633"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sign of Ill Omen",
+                                        "grants": [
+                                            {
+                                                "ref": "c19635"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Mire the Mind",
+                                        "grants": [
+                                            {
+                                                "ref": "c19637"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Book of Ancient Secrets",
+                                        "grants": [
+                                            {
+                                                "ref": "c19638"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dreadful Word",
+                                        "grants": [
+                                            {
+                                                "ref": "c19639"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Sculptor of Flesh",
+                                        "grants": [
+                                            {
+                                                "ref": "c19640"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Minions of Chaos",
+                                        "grants": [
+                                            {
+                                                "ref": "c19641"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Otherworldly Leap",
+                                        "grants": [
+                                            {
+                                                "ref": "c19642"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Whispers of the Grave",
+                                        "grants": [
+                                            {
+                                                "ref": "c19643"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Lifedrinker",
+                                        "grants": [
+                                            {
+                                                "ref": "c19645"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Invocations Known": 6,

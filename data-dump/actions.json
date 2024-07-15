@@ -762,26 +762,6 @@
         ]
     },
     {
-        "name": "Dash",
-        "image": "Dash.webp",
-        "level": 0,
-        "school": 0,
-        "summary": "Dash is a common Action. This ability allow characters to double their movement speed.",
-        "description": "Cover more distance this turn: double your Movement Speed.",
-        "ritual": false,
-        "concentration": false,
-        "id": 1149,
-        "attackRoll": false,
-        "condition": "Dash",
-        "conditionDuration": 1,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            }
-        ]
-    },
-    {
         "name": "Defensive Duellist",
         "image": "Defensive Duellist.webp",
         "level": 0,
@@ -1835,6 +1815,29 @@
         ]
     },
     {
+        "name": "Inciting Howl",
+        "image": "Inciting Howl.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Inciting Howl is an action available to Wildhearts with the Rage: Wolf Heart bestial heart. This ability allows them to use their wolf-like anger to increase their allies' movement speed.",
+        "description": "Each ally within earshot can move an additional 3 m / 10 ft during their next turn.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1156,
+        "attackRoll": false,
+        "aoe": 1,
+        "aoeM": 9,
+        "aoeFt": 30,
+        "condition": "Inciting Howl",
+        "conditionDuration": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Infiltration Expertise",
         "image": "Infiltration Expertise.webp",
         "level": 0,
@@ -2437,6 +2440,37 @@
         ]
     },
     {
+        "name": "Primal Stampede",
+        "damage": "1d4",
+        "damageType": 3,
+        "image": "Primal Stampede.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Primal Stampede is a Wildheart action only available while using Rage: Elk Heart, allowing you charge in a line dealing damage to all enemies and knocking them prone.",
+        "description": "Charge forward, attacking all hostile creatures in your way. Deals 1d4 {{DamageModifier|Strength|Bludgeoning}} damage and knocks targets Prone.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1152,
+        "attackRoll": true,
+        "rangeM": 9,
+        "rangeFt": 30,
+        "aoeM": 9,
+        "aoeFt": 30,
+        "condition": "Prone",
+        "conditionDuration": 2,
+        "conditionSave": 1,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 4,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Projected Ward",
         "image": "Projected Ward.webp",
         "level": 0,
@@ -2513,6 +2547,110 @@
         "condition2": "Rage Impeded"
     },
     {
+        "name": "Rage: Bear Heart",
+        "image": "Rage Bear Heart.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Rage: Bear Heart  is a Wildheart bonus action. This ability allows them to use their bear-like anger to gain resistance against all types of damage (except psychic) and deal extra melee damage to enemies.",
+        "description": "Enter a Rage that makes you tough enough to stand up to any punishment.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1147,
+        "attackRoll": false,
+        "range": 3,
+        "condition": "Rage: Bear Heart",
+        "conditionDuration": 10,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
+        "condition2": "Rage Impeded"
+    },
+    {
+        "name": "Rage: Eagle Heart",
+        "image": "Rage Eagle Heart.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Rage: Eagle Heart is a Wildheart bonus action. This ability allows them to use their eagle-like anger to become hard to hit and gain the ability to attack enemies from the sky.",
+        "description": "Enter a Rage that makes you near untouchable.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1151,
+        "attackRoll": false,
+        "range": 3,
+        "condition": "Rage: Eagle Heart",
+        "conditionDuration": 10,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
+        "condition2": "Rage Impeded"
+    },
+    {
+        "name": "Rage: Elk Heart",
+        "image": "Rage Elk Heart.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Rage: Elk  Heart is a Wildheart bonus action. This ability allows them to use their elk-like anger to increase their movement speed and charge into enemies.",
+        "description": "Enter a Rage that grants you extraordinary swiftness.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1153,
+        "attackRoll": false,
+        "range": 3,
+        "condition": "Rage: Elk Heart",
+        "conditionDuration": 10,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
+        "condition2": "Rage Impeded"
+    },
+    {
+        "name": "Rage: Tiger Heart",
+        "image": "Rage Tiger Heart.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Rage: Tiger  Heart is a Wildheart bonus action. This ability allows them to use their tiger-like anger to increase their jump distance and strike at multiple enemies at once.",
+        "description": "Enter a Rage that empowers your leaps.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1154,
+        "attackRoll": false,
+        "range": 3,
+        "condition": "Rage: Tiger Heart",
+        "conditionDuration": 10,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
+        "condition2": "Rage Impeded"
+    },
+    {
         "name": "Rage: Wild Magic",
         "image": "Rage Wild Magic.webp",
         "level": 0,
@@ -2525,6 +2663,32 @@
         "attackRoll": false,
         "range": 3,
         "condition": "Rage",
+        "conditionDuration": 10,
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            },
+            {
+                "resource": 20,
+                "amount": 1
+            }
+        ],
+        "condition2": "Rage Impeded"
+    },
+    {
+        "name": "Rage: Wolf Heart",
+        "image": "Rage Wolf Heart.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Rage: Wolf Heart is a Wildheart bonus action. This ability allows them to use their wolf-like anger to aid their allies in combat.",
+        "description": "Enter a Rage so inciting it spurs on your allies.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1157,
+        "attackRoll": false,
+        "range": 3,
+        "condition": "Rage: Wolf Heart",
         "conditionDuration": 10,
         "costs": [
             {
@@ -2750,6 +2914,136 @@
             {
                 "resource": 1,
                 "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Shadow Arts: Darkness",
+        "image": "Darkness.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Shadow Arts: Darkness is a Way of Shadow Action. This ability allows Monks to conjure a cloud of darkness in an area within range that obscures and Blinds those within it.",
+        "description": "Create a cloud of magical darkness that Heavily Obscures and Blinds creatures within. Creatures cannot make ranged attacks into or out of it.",
+        "ritual": false,
+        "concentration": true,
+        "id": 18516,
+        "attackRoll": false,
+        "range": 1,
+        "rangeM": 18,
+        "rangeFt": 60,
+        "areaName": "Darkness (cloud)",
+        "areaShape": 1,
+        "areaRangeM": 5,
+        "areaRangeFt": 17,
+        "areaDuration": 10,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "name": "Shadow Arts: Darkvision",
+        "image": "Darkvision spell.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Shadow Arts: Darkvision is a Way of Shadow class action. It allows a monk to alter a creature's sight, granting them the ability to see in the dark.",
+        "description": "Grant a creature the ability to see in the dark out to a range of m=12|ft=40.",
+        "ritual": false,
+        "concentration": false,
+        "id": 18519,
+        "attackRoll": false,
+        "range": 2,
+        "condition": "Darkvision",
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "name": "Shadow Arts: Hide",
+        "image": "Hide Bonus Action.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Shadow Arts: Hide is a Way of Shadow class action. It allows a monk to Hide from view using a bonus.",
+        "description": "Hide from enemies by succeeding at Stealth checks. Stick to the dark and avoid enemy sightlines. Attacking or casting a spell will reveal your location.",
+        "ritual": false,
+        "concentration": false,
+        "id": 18484,
+        "attackRoll": false,
+        "condition": "Hiding",
+        "costs": [
+            {
+                "resource": 2,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Shadow Arts: Pass Without Trace",
+        "image": "Pass Without Trace.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Shadow Arts: Pass Without Trace is a Way of Shadow action that grants a stealth bonus to the caster and nearby allies.",
+        "description": "Call forth a veil of shadow and silence that gives you and nearby allies a +10 bonus to Stealth checks.",
+        "ritual": false,
+        "concentration": true,
+        "id": 18515,
+        "attackRoll": false,
+        "range": 3,
+        "aoe": 1,
+        "aoeM": 9,
+        "aoeFt": 30,
+        "condition": "Pass Without Trace Aura",
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "name": "Shadow Arts: Silence",
+        "image": "Silence.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Shadow Arts: Silence is a Way of Shadow class action. It allows a monk to summon a sphere of absolute quietness in an area within range. Creatures within this sphere are immune to Thunder damage and cannot cast verbal spells.",
+        "description": "Create a sound-proof sphere. All within are Silenced and immune to Thunder damage.",
+        "ritual": false,
+        "concentration": false,
+        "id": 18843,
+        "attackRoll": false,
+        "range": 1,
+        "rangeM": 18,
+        "rangeFt": 60,
+        "areaName": "Silence (area)",
+        "areaShape": 1,
+        "areaRangeM": 6,
+        "areaRangeFt": 20,
+        "areaDuration": 100,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            },
+            {
+                "resource": 11,
+                "amount": 2
             }
         ]
     },
@@ -3647,6 +3941,27 @@
         ]
     },
     {
+        "name": "Unrelenting Ferocity",
+        "damage": "1d8",
+        "damageType": 14,
+        "image": "Unrelenting Ferocity.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Unrelenting Ferocity is an action available to Wildheart Barbarians with the Rage: Bear Heart bestial heart. This ability allows them to heal themselves while raging.",
+        "description": "Muster up your stamina to heal yourself.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1148,
+        "attackRoll": false,
+        "range": 3,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Unstable Backlash",
         "image": "Generic Magical.webp",
         "level": 0,
@@ -4262,6 +4577,27 @@
         ]
     },
     {
+        "name": "Diving Strike",
+        "damage": "weapon",
+        "image": "Diving Strike.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Diving Strike is a Wildheart action only available while using Rage: Eagle Heart, allowing you to leap down on a target dealing damage and knocking them prone.",
+        "description": "Leap down unto a foe below you, dealing normal weapon damage and knocking them Prone.\n\nYou do not take Falling damage. You must be at least m=1.5|ft=5 above your target.\n\nAvailable only when Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1150,
+        "attackRoll": true,
+        "condition": "Prone",
+        "conditionDuration": 2,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
         "name": "Dread Ambusher (Melee)",
         "damage": "weapon",
         "extraDamage": "1d8",
@@ -4613,6 +4949,30 @@
         "condition": "Burning",
         "conditionDuration": 2,
         "conditionSave": 3,
+        "costs": [
+            {
+                "resource": 1,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "name": "Tiger's Bloodlust",
+        "damage": "half weapon",
+        "image": "Tiger's Bloodlust.webp",
+        "level": 0,
+        "school": 0,
+        "summary": "Tiger's Bloodlust is a Wildheart action only available while using Rage: Tiger Heart, allowing you to attack multiple nearby enemies at once.",
+        "description": "Lash out to attack up to 3 enemies at once. They each take half the damage your weapon usually deals and start to Bleed.\n\nAvailable only when Raging.",
+        "ritual": false,
+        "concentration": false,
+        "id": 1155,
+        "attackRoll": true,
+        "aoe": 2,
+        "aoeM": 2,
+        "aoeFt": 5,
+        "condition": "Bleeding",
+        "conditionDuration": 2,
         "costs": [
             {
                 "resource": 1,
