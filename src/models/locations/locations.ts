@@ -114,7 +114,6 @@ export const gameLocationByPageTitle = new Map<string, GameLocation>();
 
 async function parseLocation(
     parent: GameLocation,
-    image: string,
     pageTitle: string,
     locationContent: string,
 ): Promise<void> {
@@ -154,9 +153,27 @@ async function parseRegion(
         ),
     ];
 
+    // Merge matches that have the same page title
+    const merged = locationMatches.reduce(
+        (acc, [, , pageTitle, locationContent]) => {
+            const existing = acc.find(
+                ([existingPageTitle]) => existingPageTitle === pageTitle,
+            );
+
+            if (existing) {
+                existing[1] += locationContent;
+
+                return acc;
+            }
+
+            return [...acc, [pageTitle, locationContent]] as [string, string][];
+        },
+        [] as [string, string][],
+    );
+
     await Promise.all(
-        locationMatches.map(([, image, pageTitle, locationContent]) =>
-            parseLocation(region, image, pageTitle, locationContent),
+        merged.map(([pageTitle, locationContent]) =>
+            parseLocation(region, pageTitle, locationContent),
         ),
     );
 }
