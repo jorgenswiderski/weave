@@ -7831,12 +7831,50 @@
                 "Features": [
                     {
                         "name": "Deepened Pact",
+                        "description": "Pleased with your service, your otherworldly patron added new boons to the terms of your pact.",
                         "image": "Deepened Pact.webp",
                         "grants": [],
                         "choices": [
                             {
                                 "type": 26,
-                                "options": []
+                                "options": [
+                                    {
+                                        "name": "Pact of the Blade (passive feature)",
+                                        "description": "Gain an Extra Attack with your pact weapon.",
+                                        "type": 26,
+                                        "grants": [
+                                            {
+                                                "ref": "c3152"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Pact of the Chain",
+                                        "description": "Your familiar gains an Extra Attack.",
+                                        "type": 26,
+                                        "grants": [
+                                            {
+                                                "ref": "c3152"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Pact of the Tome",
+                                        "description": "You can cast Animate Dead, Haste, and Call Lightning once per Long Rest.",
+                                        "type": 26,
+                                        "grants": [
+                                            {
+                                                "ref": "s2757"
+                                            },
+                                            {
+                                                "ref": "s2764"
+                                            },
+                                            {
+                                                "ref": "s2702"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     },
