@@ -191,7 +191,6 @@
         "Template:advantage": "Template:Advantage",
         "Template:attack roll": "Template:Attack roll",
         "Template:back to top": "Template:Back to top",
-        "Template:blank": "Template:Blank",
         "Template:blockquote": "Template:Blockquote",
         "Template:bug": "Template:Bug",
         "Template:c": "Template:C",
@@ -217,7 +216,6 @@
         "Template:div col end": "Template:Div col end",
         "Template:div_col": "Template:Div col",
         "Template:div_col_end": "Template:Div col end",
-        "Template:documentation": "Template:Documentation",
         "Template:dopt": "Template:Dopt",
         "Template:drop table end": "Template:Drop table end",
         "Template:drop table row": "Template:Drop table row",
@@ -259,7 +257,6 @@
         "Template:table end": "Template:Table end",
         "Template:table feat": "Template:Table feat",
         "Template:temp hp": "Template:Temp hp",
-        "Template:trim": "Template:Trim",
         "Template:ublist": "Template:Ublist",
         "Template:unobtainable": "Template:Unobtainable",
         "Template:verify": "Template:Verify",
@@ -4022,11 +4019,6 @@
             "title": "Leather Armour +1"
         },
         {
-            "pageId": 3710,
-            "revisionId": 23260,
-            "title": "Template:Blank"
-        },
-        {
             "pageId": 3714,
             "revisionId": 142637,
             "title": "Template:Attack roll"
@@ -5610,11 +5602,6 @@
             "pageId": 6234,
             "revisionId": 190943,
             "title": "Template:Condition"
-        },
-        {
-            "pageId": 6236,
-            "revisionId": 47465,
-            "title": "Template:Trim"
         },
         {
             "pageId": 6277,
@@ -14017,11 +14004,6 @@
             "title": "Khalid's Gift: Aid"
         },
         {
-            "pageId": 19813,
-            "revisionId": 196584,
-            "title": "Template:Action page/doc"
-        },
-        {
             "pageId": 19846,
             "revisionId": 168526,
             "title": "Pact Boon"
@@ -15557,11 +15539,6 @@
             "title": "Demonspirit Aura"
         },
         {
-            "pageId": 23448,
-            "revisionId": 186971,
-            "title": "Template:Spell page/doc"
-        },
-        {
             "pageId": 23484,
             "revisionId": 190655,
             "title": "Draconic Elemental Weapon"
@@ -16067,11 +16044,6 @@
             "title": "Fire Breath (Dragons)"
         },
         {
-            "pageId": 25036,
-            "revisionId": 127585,
-            "title": "Template:DamageBlob"
-        },
-        {
             "pageId": 25065,
             "revisionId": 168506,
             "title": "Multiattack: Wounded Target"
@@ -16442,11 +16414,6 @@
             "title": "Wrath of the Storm: Thunder"
         },
         {
-            "pageId": 26556,
-            "revisionId": 103112,
-            "title": "Template:Documentation"
-        },
-        {
             "pageId": 26587,
             "revisionId": 179063,
             "title": "Off-Hand Attack (Melee)"
@@ -16780,11 +16747,6 @@
             "pageId": 27687,
             "revisionId": 163127,
             "title": "Ceremonial Longsword"
-        },
-        {
-            "pageId": 27712,
-            "revisionId": 171521,
-            "title": "Template:ResourceList"
         },
         {
             "pageId": 27727,
@@ -19552,16 +19514,6 @@
             "title": "Activate Witch Bolt"
         },
         {
-            "pageId": 29645,
-            "revisionId": 119361,
-            "title": "Template:Feature/Format"
-        },
-        {
-            "pageId": 29654,
-            "revisionId": 119284,
-            "title": "Template:Feature"
-        },
-        {
             "pageId": 29797,
             "revisionId": 168641,
             "title": "Tactical Discipline"
@@ -21352,11 +21304,6 @@
             "title": "Guild Ring"
         },
         {
-            "pageId": 32586,
-            "revisionId": 141307,
-            "title": "Template:Save"
-        },
-        {
             "pageId": 32595,
             "revisionId": 179401,
             "title": "Recast Dazzling Ray"
@@ -21887,11 +21834,6 @@
             "title": "Great Weapon Master: Bonus Attack (attack)"
         },
         {
-            "pageId": 34650,
-            "revisionId": 197086,
-            "title": "Template:Area full"
-        },
-        {
             "pageId": 34674,
             "revisionId": 165451,
             "title": "Zina's Dog Collar"
@@ -22380,11 +22322,6 @@
             "pageId": 38200,
             "revisionId": 194253,
             "title": "Surprise (game mechanic)"
-        },
-        {
-            "pageId": 38353,
-            "revisionId": 182248,
-            "title": "Template:Weapon action page/doc"
         },
         {
             "pageId": 38733,
