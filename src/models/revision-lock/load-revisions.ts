@@ -10,6 +10,7 @@ import { RevisionLock } from './revision-lock';
 import { MongoCollections, getMongoDb, initPagesCollection } from '../mongo';
 import { MediaWiki } from '../media-wiki/media-wiki';
 import { CONFIG } from '../config';
+import { MwnTokenBucket } from '../../api/mwn';
 
 const isDryRun = process.argv.includes('--dry-run');
 
@@ -81,6 +82,10 @@ async function loadRevisions() {
             });
 
             throw new Error(`Failed to validate all documents`);
+        }
+
+        if (CONFIG.MWN.TRACK_TOKEN_USAGE) {
+            MwnTokenBucket.logUsage();
         }
 
         log(
