@@ -804,6 +804,8 @@
                                                 "options": [
                                                     {
                                                         "name": "Magical Secrets",
+                                                        "description": "Your versatile knack for the arcane lets you learn magic from every discipline. Choose some additional spells to add to your repertoire.",
+                                                        "image": "Class Bard Badge Icon.png",
                                                         "choices": [
                                                             {
                                                                 "type": 24,
@@ -1318,6 +1320,8 @@
                     },
                     {
                         "name": "Magical Secrets",
+                        "description": "Your versatile knack for the arcane lets you learn magic from every discipline. Choose some additional spells to add to your repertoire.",
+                        "image": "Class Bard Badge Icon.png",
                         "grants": [],
                         "choices": [
                             {
@@ -8564,6 +8568,8 @@
                 "Features": [
                     {
                         "name": "Mystic Arcanum",
+                        "description": "Your patron bestows upon you a magical secret called an arcanum. Choose one 6th Level spell from the Warlock Spell list. You can cast your arcanum spell once without expending a spell slot. You must finish a Long Rest before you can do so again.",
+                        "image": "Class Warlock Badge Icon.png",
                         "grants": [],
                         "choices": [
                             {

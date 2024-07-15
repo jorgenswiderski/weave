@@ -8,7 +8,7 @@ import { PageNotFoundError } from '../../../errors';
 import { CharacterFeature } from '../../character-feature';
 import { PageLoadingState } from '../../../page-item';
 import { ICharacterOptionWithPage } from '../../types';
-import { MediaWikiTemplate } from '../../../media-wiki/media-wiki-template';
+import { MediaWikiParser } from '../../../media-wiki/media-wiki-parser';
 
 // Used for features like Mystic Arcanum & Magical Secrets
 export class CharacterFeatureLearnSpell extends CharacterFeature {
@@ -26,19 +26,16 @@ export class CharacterFeatureLearnSpell extends CharacterFeature {
             throw new PageNotFoundError();
         }
 
-        const passiveTemplate = await this.page.getTemplate(
-            'Passive feature page',
-        );
+        // [[File:Class Warlock Badge Icon.png|frameless|right]]
+        const imageMatch = this.page.content.match(/\[\[File:([^|]+).*\]\]/);
 
-        const { noOp } = MediaWikiTemplate.Parsers;
+        if (!imageMatch) {
+            throw new Error(
+                `Could not find image for FeatureLearnSpell '${this.name}.'`,
+            );
+        }
 
-        const { image } = passiveTemplate.parse({
-            image: {
-                parser: noOp,
-            },
-        });
-
-        this.image = image;
+        this.image = imageMatch[1];
     }
 
     async initDescription(): Promise<void> {
@@ -48,17 +45,15 @@ export class CharacterFeatureLearnSpell extends CharacterFeature {
             throw new PageNotFoundError();
         }
 
-        const passiveTemplate = await this.page.getTemplate(
-            'Passive feature page',
-        );
+        const section = this.page.getSection('Description');
 
-        const { description } = passiveTemplate.parse({
-            description: {
-                parser: MediaWikiTemplate.Parsers.plainText,
-            },
-        });
+        if (!section) {
+            throw new Error(
+                `Could not find description section for FeatureLearnSpell '${this.name}.'`,
+            );
+        }
 
-        this.description = description;
+        this.description = MediaWikiParser.stripMarkup(section.content);
     }
 
     choiceListCount = this.name === 'Magical Secrets' ? 2 : 1;
@@ -70,11 +65,7 @@ export class CharacterFeatureLearnSpell extends CharacterFeature {
             throw new PageNotFoundError();
         }
 
-        const section = this.page.getSection(
-            'Available Spells',
-            undefined,
-            true,
-        );
+        const section = this.page.getSection('Available Spells');
 
         if (!section) {
             throw new Error(

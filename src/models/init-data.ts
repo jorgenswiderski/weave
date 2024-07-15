@@ -12,11 +12,8 @@ import { getActionDataFiltered, initActionsAndSpells } from './action/init';
 import { getLocationData, initLocations } from './locations/locations';
 import { getPassiveDataFiltered, initPassives } from './passive/passive';
 import { getCharacterFeatData } from './character-feature/features/character-feat';
-import { RevisionLock } from './revision-lock/revision-lock';
 
 export async function initData() {
-    await RevisionLock.validateDatabaseState();
-
     const locations = initLocations();
     const actions = initActionsAndSpells();
     const passives = initPassives();

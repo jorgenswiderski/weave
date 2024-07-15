@@ -14,6 +14,7 @@ import { MwnProgressBar } from './api/mwn-progress-bar';
 import { apiRoutes } from './routes';
 import { initData } from './models/init-data';
 import { CONFIG } from './models/config';
+import { RevisionLock } from './models/revision-lock/revision-lock';
 
 async function main() {
     log('=====================================================');
@@ -22,6 +23,7 @@ async function main() {
 
     const startTime = Date.now();
     new MwnProgressBar().render();
+    await RevisionLock.validateDatabaseState();
     await initData();
 
     const fastify = Fastify({
