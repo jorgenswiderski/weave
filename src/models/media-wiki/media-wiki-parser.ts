@@ -1,6 +1,15 @@
 import { WikitableNotFoundError } from './types';
+import { error } from '../logger';
 
-type TableRow = Record<string, string>;
+interface TableCell {
+    content: string;
+    type: 'header' | 'cell';
+}
+
+interface CellSpans {
+    rowspan: number;
+    colspan: number;
+}
 
 type WikitableMarkup = 'start' | 'caption' | 'row' | 'header' | 'cell' | 'end';
 
@@ -60,34 +69,34 @@ export class MediaWikiParser {
         return wikitext.replace(/<!--[\s\S]*?-->/g, '');
     }
 
-    protected static parseWikiTableCellSpan(
-        wikitext: string,
-    ): number | undefined {
-        const match = wikitext.match(
-            /\s*(rowspan=".+?"\s*)?(colspan=".+?"\s*)?(?:style=".+?"\s*)?\|?\s*([\s\S]*)\s*/,
-        );
+    protected static parseWikiTableCellSpan(wikitext: string): CellSpans {
+        const spans: CellSpans = { rowspan: 1, colspan: 1 };
 
-        if (!match) {
-            throw new Error();
+        const match = wikitext.match(/rowspan\s*=\s*"?(\d+)"?/);
+
+        if (match) {
+            spans.rowspan = parseInt(match[1], 10);
         }
 
-        if (match[1]) {
-            return parseInt(match[1].match(/rowspan="(\d+)"/)![1], 10);
+        const match2 = wikitext.match(/colspan\s*=\s*"?(\d+)"?/);
+
+        if (match2) {
+            spans.colspan = parseInt(match2[1], 10);
         }
 
-        return undefined;
+        return spans;
     }
 
     protected static parseWikiTableCellContents(wikitext: string): string {
         const match = wikitext.match(
-            /\s*((?:rowspan|colspan)=".+?"\s*\|)?(?:style=".+?"\s*\|)?\s*([\s\S]*)\s*/,
+            /\s*(?:(?:(?:rowspan|colspan|style|scope)\s*=\s*"?.+?"?\s*)+?\|)?\s*([\s\S]*)\s*/,
         );
 
         if (!match) {
             throw new Error();
         }
 
-        return match[2].trim();
+        return match[1].trim();
     }
 
     static parseWikiTable(sectionWikitext: string): Record<string, string>[];
@@ -103,6 +112,7 @@ export class MediaWikiParser {
     static parseWikiTable(
         sectionWikitext: string,
         format: 'record' | '2d' | 'both' = 'record',
+        stripHeaders: boolean = true,
     ): Record<string, string>[] | string[][] {
         const match = sectionWikitext.match(
             /{\|\s*class=("wikitable.*?"|wikitable)[\s\S]+?\|}/,
@@ -143,11 +153,8 @@ export class MediaWikiParser {
             format = '2d';
         }
 
-        let headers: string[] = [];
-        const isRecord = format === 'record' || format === 'both';
-
-        const rows: TableRow[] | string[][] = [];
-        let currentRow: TableRow | string[] = isRecord ? {} : [];
+        const rows: TableCell[][] = [];
+        let currentRow: TableCell[] = [];
 
         const tableSection =
             /(\n(?:\|\+|\|-|!|\|))([\s\S]*?)(?=\n(?:\|\+|\|-|!|\||\|}))/g;
@@ -166,7 +173,7 @@ export class MediaWikiParser {
                                 ? this.parseWikiTableCellContents(cellContent)
                                 : undefined,
                             type,
-                            rows: mu[type].hasContent
+                            cellSpan: mu[type].hasContent
                                 ? this.parseWikiTableCellSpan(cellContent)
                                 : undefined,
                         }));
@@ -178,7 +185,7 @@ export class MediaWikiParser {
                         content: mu[type].hasContent
                             ? this.parseWikiTableCellContents(content)
                             : undefined,
-                        rows: mu[type].hasContent
+                        cellSpan: mu[type].hasContent
                             ? this.parseWikiTableCellSpan(content)
                             : undefined,
                     },
@@ -186,68 +193,54 @@ export class MediaWikiParser {
             },
         );
 
-        const pendingHeaders: string[] = [];
-        const rowSpans: Map<string, string> = new Map();
+        const spans: Map<string, TableCell> = new Map();
 
         function processSpannedCells(): void {
-            while (
-                rowSpans.has(`${rows.length}-${Object.keys(currentRow).length}`)
-            ) {
-                const spanContent = rowSpans.get(
-                    `${rows.length}-${Object.keys(currentRow).length}`,
-                )!;
+            while (spans.has(`${rows.length}-${currentRow.length}`)) {
+                const cell = spans.get(`${rows.length}-${currentRow.length}`)!;
 
-                rowSpans.delete(
-                    `${rows.length}-${Object.keys(currentRow).length}`,
-                );
+                spans.delete(`${rows.length}-${currentRow.length}`);
 
                 // eslint-disable-next-line @typescript-eslint/no-use-before-define
-                processCell(spanContent);
+                processCell(cell);
             }
         }
 
-        function processCell(content: string, rowSpan?: number) {
+        function processCell(
+            cell: TableCell,
+            { rowspan, colspan }: CellSpans = {
+                rowspan: 1,
+                colspan: 1,
+            },
+        ): void {
             processSpannedCells();
+            currentRow.push(cell);
 
-            let currentColumnIndex = Object.keys(currentRow).length;
-
-            if (format === 'both') {
-                currentColumnIndex /= 2;
-            }
-
-            if (Array.isArray(currentRow)) {
-                currentRow.push(content);
-            } else {
-                const header = headers[currentColumnIndex];
-                currentRow[header] = content;
-
-                if (format === 'both') {
-                    currentRow[currentColumnIndex] = content;
-                }
-
-                if (rowSpan && rowSpan > 1) {
-                    for (
-                        let x = rows.length + 1;
-                        x < rows.length + rowSpan;
-                        x += 1
-                    ) {
-                        rowSpans.set(`${x}-${currentColumnIndex}`, content);
+            for (let x = rows.length; x < rows.length + rowspan; x += 1) {
+                for (
+                    let y = currentRow.length - 1;
+                    y < currentRow.length - 1 + colspan;
+                    y += 1
+                ) {
+                    if (x === rows.length && y === currentRow.length - 1) {
+                        continue;
                     }
+
+                    spans.set(`${x}-${y}`, cell);
                 }
             }
         }
 
-        sections.forEach(({ type, content, rows: rowSpan }, index) => {
+        // Process the table into TableCell[][] that accounts for rowspan, colspan
+        // This is functionally similar to a 2d array of strings, but we're also keeping track of which cells are header cells
+
+        sections.forEach(({ type, content, cellSpan }) => {
             if (type === 'row') {
                 processSpannedCells();
 
-                if (Object.keys(currentRow).length > 0) {
-                    rows.push(currentRow as any);
-                    currentRow = isRecord ? {} : [];
-                } else {
-                    headers = pendingHeaders
-                        .splice(0)
-                        .map(MediaWikiParser.stripMarkup);
+                if (currentRow.length > 0) {
+                    rows.push(currentRow);
+                    currentRow = [];
                 }
             }
 
@@ -255,24 +248,8 @@ export class MediaWikiParser {
                 return;
             }
 
-            // If this is a row header, force it to be a cell instead
-            if (type === 'header') {
-                const prevCell = sections[index - 1];
-                const nextCell = sections[index + 1];
-
-                if (
-                    ['row', 'start'].includes(prevCell?.type) &&
-                    nextCell?.type === 'cell'
-                ) {
-                    // eslint-disable-next-line no-param-reassign
-                    type = 'cell';
-                }
-            }
-
-            if (type === 'header') {
-                pendingHeaders.push(content);
-            } else if (type === 'cell') {
-                processCell(content, rowSpan);
+            if (type === 'cell' || type === 'header') {
+                processCell({ content, type }, cellSpan);
             }
         });
 
@@ -282,7 +259,56 @@ export class MediaWikiParser {
             rows.push(currentRow as any);
         }
 
-        return rows;
+        const twoDimensionalRows = rows;
+
+        if (
+            !twoDimensionalRows.every(
+                (row) =>
+                    row.length === twoDimensionalRows[0].length ||
+                    row.every(({ type }) => type === 'header'),
+            )
+        ) {
+            error('Expected table to be rectangular!');
+        }
+
+        const recordRows = twoDimensionalRows.filter(
+            (row) => !row.every(({ type }) => type === 'header'),
+        );
+
+        if (format === '2d') {
+            return recordRows.map((row) => row.map(({ content }) => content));
+        }
+
+        const columnHeaders = twoDimensionalRows.filter((row) =>
+            row.every(({ type }) => type === 'header'),
+        );
+
+        // Use the content from the final column header row as the keys for the record
+        const keys = columnHeaders[columnHeaders.length - 1].map(
+            ({ content }) =>
+                stripHeaders ? MediaWikiParser.stripMarkup(content) : content,
+        );
+
+        return recordRows.map((row) =>
+            row.reduce(
+                (acc, { content }, index) => {
+                    const withKvp = {
+                        ...acc,
+                        [keys[index]]: content,
+                    };
+
+                    if (format === 'both') {
+                        return {
+                            ...withKvp,
+                            [index]: content,
+                        };
+                    }
+
+                    return withKvp;
+                },
+                {} as Record<string, string>,
+            ),
+        );
     }
 
     protected static matchBalanced(

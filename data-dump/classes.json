@@ -3836,7 +3836,63 @@
                     },
                     {
                         "name": "Fighting Style",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "count": 1,
+                                "options": [
+                                    {
+                                        "name": "Archery",
+                                        "grants": [
+                                            {
+                                                "ref": "c17357"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Defence",
+                                        "grants": [
+                                            {
+                                                "ref": "c17362"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Duelling",
+                                        "grants": [
+                                            {
+                                                "ref": "c17363"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Great Weapon Fighting",
+                                        "grants": [
+                                            {
+                                                "ref": "c17366"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Protection",
+                                        "grants": [
+                                            {
+                                                "ref": "c17368"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Two-Weapon Fighting",
+                                        "grants": [
+                                            {
+                                                "ref": "c17370"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -5059,7 +5115,47 @@
                 "Features": [
                     {
                         "name": "Fighting Style",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "count": 1,
+                                "options": [
+                                    {
+                                        "name": "Defence",
+                                        "grants": [
+                                            {
+                                                "ref": "c17362"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Duelling",
+                                        "grants": [
+                                            {
+                                                "ref": "c17363"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Great Weapon Fighting",
+                                        "grants": [
+                                            {
+                                                "ref": "c17366"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Protection",
+                                        "grants": [
+                                            {
+                                                "ref": "c17368"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "#spellcasting",
@@ -5654,7 +5750,47 @@
                 "Features": [
                     {
                         "name": "Fighting Style",
-                        "grants": []
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 23,
+                                "count": 1,
+                                "options": [
+                                    {
+                                        "name": "Archery",
+                                        "grants": [
+                                            {
+                                                "ref": "c17357"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Defence",
+                                        "grants": [
+                                            {
+                                                "ref": "c17362"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Duelling",
+                                        "grants": [
+                                            {
+                                                "ref": "c17363"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Two-Weapon Fighting",
+                                        "grants": [
+                                            {
+                                                "ref": "c17370"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "name": "#spellcasting",

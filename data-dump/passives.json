@@ -35,6 +35,13 @@
         "id": 8367
     },
     {
+        "name": "Archery",
+        "description": "You gain a +2 bonus to Attack Rolls you make with ranged Weapons.",
+        "image": "Archery.webp",
+        "type": 2,
+        "id": 17357
+    },
+    {
         "name": "Arctic",
         "description": "You can cast Hold Person and Spike Growth.",
         "image": "Arctic Faded.webp",
@@ -245,6 +252,13 @@
         "id": 8193
     },
     {
+        "name": "Defence",
+        "description": "You gain a +1 bonus to Armour Class while wearing Armour.",
+        "image": "Defence.webp",
+        "type": 2,
+        "id": 17362
+    },
+    {
         "name": "Desert",
         "description": "You can cast Blur and Silence.",
         "image": "Desert Faded.webp",
@@ -378,6 +392,13 @@
         "id": 22724
     },
     {
+        "name": "Duelling",
+        "description": "When you are wielding a melee weapon in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.",
+        "image": "Duelling.webp",
+        "type": 2,
+        "id": 17363
+    },
+    {
         "name": "Dungeon Delver: Perception",
         "description": "You have Advantage on Perception Checks made to detect hidden objects.",
         "image": "Dungeon Delver Perception.webp",
@@ -467,6 +488,13 @@
         "image": "Grassland Faded.webp",
         "type": 2,
         "id": 40074
+    },
+    {
+        "name": "Great Weapon Fighting",
+        "description": "When you roll a 1 or 2 on a damage die for an attack with a Two-Handed melee weapon, that die is rerolled once.",
+        "image": "Great Weapon Fighting.webp",
+        "type": 2,
+        "id": 17366
     },
     {
         "name": "Great Weapon Master: All In",
@@ -875,6 +903,13 @@
         "id": 13563
     },
     {
+        "name": "Protection",
+        "description": "When you have a Shield, impose Disadvantage on an enemy who attacks one of your allies when you are within melee. You must be able to see the enemy.",
+        "image": "Protection.webp",
+        "type": 2,
+        "id": 17368
+    },
+    {
         "name": "Purity of Body",
         "description": "You are Immune to Poison damage and can't be Poisoned or affected by disease thanks to the purifying ki flowing through your meridians.",
         "image": "Purity of Body.webp",
@@ -1062,6 +1097,13 @@
         "image": "Tough.webp",
         "type": 2,
         "id": 4946
+    },
+    {
+        "name": "Two-Weapon Fighting",
+        "description": "When you make an offhand attack, you can add your Ability Score Modifier to the damage of the attack.",
+        "image": "Two-Weapon Fighting.webp",
+        "type": 2,
+        "id": 17370
     },
     {
         "name": "Unarmoured Defence",

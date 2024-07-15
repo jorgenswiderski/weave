@@ -42,7 +42,9 @@ export class CharacterSubclass extends CharacterFeature {
         const match = descMatch.exec(this.page.content);
 
         if (!match?.[1]) {
-            throw new Error('could not initialize subclass description');
+            throw new Error(
+                `could not initialize subclass description for '${this.name}'`,
+            );
         }
 
         this.description = MediaWikiParser.stripMarkup(match[1]).trim();
@@ -59,7 +61,9 @@ export class CharacterSubclass extends CharacterFeature {
         const match = imageMatch.exec(this.page.content);
 
         if (!match?.[1]) {
-            throw new Error('could not initialize subclass image');
+            throw new Error(
+                `could not initialize subclass image for '${this.name}'`,
+            );
         }
 
         this.image = match[1];

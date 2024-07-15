@@ -412,5 +412,52 @@ describe('MediaWikiParser', () => {
                 },
             ]);
         });
+
+        it('should be able to parse a fighting styles table', () => {
+            const wikitext = `{| class="wikitable" style="text-align: center;"
+! rowspan = 3 | Fighting Style
+! colspan = 5 | Available To
+! rowspan = 3 | Description
+|-
+! Level 1
+! colspan = 2 | Level 2 
+! Level 3 !! Level 10
+|-
+! {{class|Fighter}} !! {{class|Paladin}} !! {{class|Ranger}} !! {{class|College of Swords}} !! {{class|Champion}}
+|-
+! scope="row" | {{Pass|Archery|w=40}}
+| ✓ ||  || ✓ ||  || ✓ 
+| style="text-align: left" | You gain a +2 bonus to {{Attack Roll}}s you make with ranged [[Weapons]].
+|-
+! scope="row" | {{Pass|Defence|w=40}}
+| ✓ || ✓ || ✓ ||  || ✓ 
+| style="text-align: left" | You gain a +1 bonus to {{Armour Class}} while wearing [[Armour]].
+|}`;
+
+            const result = MediaWikiParser.parseWikiTable(wikitext);
+
+            expect(result).toEqual([
+                {
+                    'Fighting Style': '{{Pass|Archery|w=40}}',
+                    Fighter: '✓',
+                    Paladin: '',
+                    Ranger: '✓',
+                    'College of Swords': '',
+                    Champion: '✓',
+                    Description:
+                        'You gain a +2 bonus to {{Attack Roll}}s you make with ranged [[Weapons]].',
+                },
+                {
+                    'Fighting Style': '{{Pass|Defence|w=40}}',
+                    Fighter: '✓',
+                    Paladin: '✓',
+                    Ranger: '✓',
+                    'College of Swords': '',
+                    Champion: '✓',
+                    Description:
+                        'You gain a +1 bonus to {{Armour Class}} while wearing [[Armour]].',
+                },
+            ]);
+        });
     });
 });

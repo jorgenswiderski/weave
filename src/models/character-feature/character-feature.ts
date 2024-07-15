@@ -326,20 +326,17 @@ export class CharacterFeature
                         }
 
                         if (config.classRestricted) {
-                            // FIXME: This was used before for Fighting Styles but the table on that page isn't parsed correctly anymore
-                            assert(false);
+                            assert(
+                                this.characterClass,
+                                `Class must be defined to enforce classes constraint on wikitable on page '${this.pageTitle}'`,
+                            );
 
-                            // assert(
-                            //     this.characterClass,
-                            //     `Class must be defined to enforce classes constraint on wikitable on page '${this.pageTitle}'`,
-                            // );
+                            const classCell = row?.[this.characterClass.name];
 
-                            // const classCell = row?.[this.characterClass.name];
+                            const isClassAllowed =
+                                classCell && classCell.trim() === '✓';
 
-                            // const isClassAllowed =
-                            //     classCell && classCell.trim() === '✓';
-
-                            // return isClassAllowed;
+                            return isClassAllowed;
                         }
 
                         return true;
