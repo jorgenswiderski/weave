@@ -206,9 +206,47 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return template;
     }
 
+    protected static async getGameLocationFromCharacter(
+        character: ItemSourceCharacter,
+    ): Promise<GameLocation | undefined> {
+        const page = await MediaWiki.getPage(character.name);
+
+        const template =
+            await EquipmentItem.getCharacterInfoTemplateForItem(page);
+
+        if (template) {
+            const { location } = template.parse({
+                location: {
+                    parser: (value) => value.trim(),
+                    default: undefined,
+                },
+            });
+
+            if (location) {
+                return gameLocationByPageTitle.get(location);
+            }
+        }
+
+        const introText = page.content?.match(/([\s\S]+?)\n==/)?.[1];
+
+        if (introText) {
+            const pageTitles = MediaWikiParser.getAllPageTitles(introText);
+            const pages = await EquipmentItem.getPageInfoFromTitles(pageTitles);
+
+            const locationPages = pages
+                .filter(({ data }) => data?.hasCategory('Locations'))
+                .filter(({ title }) => gameLocationByPageTitle.has(title));
+
+            if (locationPages.length > 0) {
+                return gameLocationByPageTitle.get(locationPages[0].title);
+            }
+        }
+
+        return undefined;
+    }
+
     protected async parseGameLocation(
         pages: ItemSourcePageInfo[],
-        characterPages: Required<ItemSourcePageInfo>[],
         questPages: Required<ItemSourcePageInfo>[],
         character?: ItemSourceCharacter,
         quest?: ItemSourceQuest,
@@ -243,48 +281,11 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         }
 
         if (character) {
-            const config: MediaWikiTemplateParserConfig = {
-                location: {
-                    parser: (value) => {
-                        const match = value.match(/\[\[([^#|\]]+).*?]]/);
+            const location: GameLocation | undefined =
+                await EquipmentItem.getGameLocationFromCharacter(character);
 
-                        if (match?.[1]) {
-                            return match[1];
-                        }
-
-                        const coordsTemplateMatch = value.match(
-                            /{{Coords\|-?\d+\|-?\d+\|([^}]+)}}/,
-                        );
-
-                        return coordsTemplateMatch?.[1];
-                    },
-                },
-            };
-
-            const template: IMediaWikiTemplate | undefined =
-                await EquipmentItem.getCharacterInfoTemplateForItem(
-                    characterPages[0].data,
-                );
-
-            if (!template) {
-                warn(
-                    `Could not find CharacterInfo template on page '${characterPages[0].title}'`,
-                );
-            } else {
-                const { location: locationPageTitle } = template.parse(config);
-
-                if (locationPageTitle) {
-                    try {
-                        // Get the real page title, in case of redirects
-                        const page = await MediaWiki.getPage(locationPageTitle);
-
-                        if (page) {
-                            return gameLocationByPageTitle.get(page.title);
-                        }
-                    } catch (err) {
-                        error(err);
-                    }
-                }
+            if (location) {
+                return location;
             }
         }
 
@@ -299,7 +300,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 const newPages =
                     await EquipmentItem.getPageInfoFromTitles(pageTitles);
 
-                return this.parseGameLocation(newPages, [], []);
+                return this.parseGameLocation(newPages, []);
             }
         }
 
@@ -341,12 +342,10 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             ? this.parseItemSourceQuest(pages)
             : [undefined, []];
 
-        const [character, characterPages] =
-            await EquipmentItem.parseItemSourceCharacter(pages);
+        const [character] = await EquipmentItem.parseItemSourceCharacter(pages);
 
         const location = await this.parseGameLocation(
             pages,
-            characterPages as Required<ItemSourcePageInfo>[],
             questPages as Required<ItemSourcePageInfo>[],
             character,
             quest,

@@ -119,7 +119,7 @@ async function parseLocation(
     locationContent: string,
 ): Promise<void> {
     const contentLines = locationContent
-        .split('<br>')
+        .split(/\n|(?:<br>)/)
         .map((line) => line.trim());
 
     // const description = contentLines[0];

@@ -1,21 +1,26 @@
 {
     "redirects": {
         "A'jak'nir Jeera": "Jeera",
+        "Aberration": "List of creature types",
         "Ability Check": "Abilities",
         "Act 1": "Act One",
+        "Act 2": "Act Two",
         "Act 3": "Act Three",
         "Ancient Rune Circle": "Ancient Sigil Circle",
         "Ardent Jhe'rezath": "Jhe'rezath",
+        "Asmodeus Tiefling": "Tiefling",
+        "Asmodeus tiefling": "Tiefling",
         "Barnabus": "'Barnabus'",
         "Blighted_Village": "Blighted Village",
         "Blood Surface": "Blood (surface)",
         "Camp Follower": "Camp followers",
+        "Camp follower": "Camp followers",
         "Captain Grisly": "Grisly",
         "Cashguard Captain Faril": "Faril",
         "Cazador": "Cazador Szarr",
+        "Celestial": "List of creature types",
         "Ch'r'ai Har'rak": "Har'rak",
         "Ch'r'ai Tska'an": "Tska'an",
-        "Chapter One": "Act One",
         "Chapter Three": "Act Three",
         "Chapter Two": "Act Two",
         "Commander Zhalk": "Zhalk",
@@ -26,26 +31,36 @@
         "Counting House": "The Counting House",
         "Creche Y'llek": "Crèche Y'llek",
         "Crèche_Y'llek": "Crèche Y'llek",
+        "Cult of Myrkul": "Myrkul",
+        "Cult of the Absolute": "Absolute",
         "Damage Types": "Damage",
         "Damage Types#Resistance": "Damage Types",
         "Dame Aylin": "Aylin",
         "Dank Crypt": "Overgrown Ruins",
         "Dark Urge": "The Dark Urge",
         "Darkvision (Passive Feature)": "Darkvision",
+        "Deep Gnome": "Gnome",
+        "Deep gnome": "Gnome",
         "Disarm": "Disarming",
         "Divine Strike: Tempest": "Divine Strike",
+        "Drow Half-Elf": "Half-Elf",
+        "Drow half-elf": "Half-Elf",
         "Druid Grove": "Emerald Grove",
         "Druid_Grove": "Druid Grove",
         "Duergar": "Dwarf",
         "Duke Ulder Ravengard": "Ulder Ravengard",
         "Eilistraee": "Deities",
         "Elder Brithvar": "Brithvar",
+        "Elemental": "List of creature types",
         "EquipmentTrader_BodyArmor": "EquipmentTrader BodyArmor",
         "EquipmentTrader_SecondaryArmor": "EquipmentTrader SecondaryArmor",
+        "Fey": "List of creature types",
+        "Fiend": "List of creature types",
         "Fighting Style": "Fighting style",
         "Filro the Forgotten": "Filro",
         "Flaming Fist Marcus": "Marcus",
         "Flymm_Cargo": "Flymm Cargo",
+        "Followers of the Absolute": "Cult of the Absolute",
         "Fytz the Firecracker": "Fytz",
         "Gauntlet Edwynna": "Edwynna",
         "Gauntlet Yeva": "Yeva",
@@ -54,20 +69,30 @@
         "Gish For'reth": "For'reth",
         "Gnarled Teahouse": "Riverside Teahouse",
         "Golbraith": "Golbraith Stredivas",
+        "Gold Dwarf": "Dwarf",
+        "Gold dwarf": "Dwarf",
         "Grat the Trader": "Grat",
         "Graveyard": "Graveyard (Lower City)",
         "Guide: Early Silver Sword": "Guide:Early Silver Sword",
+        "Half-elf": "Half-Elf",
+        "Harper": "Harpers",
         "Harper Lassandra": "Lassandra",
         "Harper Outpost": "Wilderness",
         "Help Omeluum investigate the parasite": "Help Omeluum Investigate the Parasite",
         "Help the Cursed Monk": "Help the Spirit of the Amulet",
         "High Hall": "The High Hall",
+        "High half-elf": "Half-Elf",
         "Houndmaster Pol": "Pol",
+        "Humanoid": "List of creature types",
         "Jaheira's Basement": "Elerrathin's Home",
         "Kith'rak Therezzyn": "Therezzyn",
         "Kith'rak Voss": "Voss",
         "Known spells": "Spells",
         "Lady Esther": "Esther",
+        "Lightfoot Halfling": "Halfling",
+        "List of Creature Types": "List of creature types",
+        "List_of_Creature_Types": "List of Creature Types",
+        "Lolth-sworn drow": "Drow",
         "Long Rest": "Resting",
         "Long rest": "Resting",
         "Mask of Regret": "Category:Hag Victims",
@@ -76,6 +101,8 @@
         "Mask of Vengeance": "Category:Hag Victims",
         "Mason's Guild Basement": "Mason's Guild",
         "Mind Flayer": "Mind flayers",
+        "Mind flayer": "Mind flayers",
+        "Monstrosity": "List of creature types",
         "Moonrise_Towers": "Moonrise Towers",
         "Movement speed": "Resources",
         "Multiattack Defense": "Multiattack Defence",
@@ -84,6 +111,8 @@
         "Overgrown_Tunnel": "Overgrown Tunnel",
         "Pact of the Blade (Passive Feature)": "Pact of the Blade (passive feature)",
         "Passageway": "Western Beach",
+        "Phase spider": "Phase Spider",
+        "Plant": "List of creature types",
         "Pooldripp the Zealous": "Pooldripp",
         "Prelate Lir'i'c": "Lir'i'c",
         "Priestess Gut": "Gut",
@@ -94,6 +123,7 @@
         "Quest": "Quests",
         "Raider Chost": "Chost",
         "Raider Zastri": "Zastri",
+        "Rock Gnome": "Gnome",
         "Sarevok": "Sarevok Anchev",
         "Sarth Baretha": "Baretha",
         "See Invisibility": "See Invisibility (disambiguation)",
@@ -106,9 +136,11 @@
         "Sister Geanne": "Geanne",
         "Sister Hunna": "Hunna",
         "Sister Vanessa": "Vanessa",
+        "Small": "Creature size",
         "Sticky Dondo": "Dondo",
         "Stone Guard Orgarth": "Orgarth",
         "Strangler Luke": "Luke",
+        "Stylin' Horst Potion Shop": "The Velveteen Elixir",
         "Summon Companion": "Ranger's Companion",
         "Template:Ability Check": "Template:Ability check",
         "Template:Action Page": "Template:Action page",
@@ -151,7 +183,6 @@
         "Template:Sai": "Template:SAI",
         "Template:Saving throw": "Template:Saving Throw",
         "Template:SavingThrow": "Template:Saving Throw",
-        "Template:SkillCheck": "Template:Ability check",
         "Template:SpellPage": "Template:Spell page",
         "Template:SpoilerWarning": "Template:Spoiler warning",
         "Template:TraderGoldRow": "Template:Trader gold row",
@@ -233,7 +264,6 @@
         "Template:table end": "Template:Table end",
         "Template:table feat": "Template:Table feat",
         "Template:temp hp": "Template:Temp hp",
-        "Template:trader gold row": "Template:Trader gold row",
         "Template:trim": "Template:Trim",
         "Template:ublist": "Template:Ublist",
         "Template:unobtainable": "Template:Unobtainable",
@@ -241,10 +271,17 @@
         "Template:warning": "Template:Warning",
         "Template:weight": "Template:Weight",
         "Temple of Bhaal": "Bhaal Temple",
+        "Temporary companion": "Companions",
+        "The Absolute": "Absolute",
         "The Rite of Thorns": "Rite of Thorns Scroll",
         "The_Risen_Road": "The Risen Road",
+        "Timothy": "'Timothy'",
+        "Tomelia": "'Tomelia'",
+        "Trader": "Traders",
+        "True Soul": "Absolute",
         "Uncommon Special Arrow Table": "Uncommon Special Arrow Subtable",
         "Unconscious": "Unconscious (Condition Type)",
+        "Undead": "List of creature types",
         "User:MetalPlateMage/ActionTemplate": "Template:Action page",
         "Varsh Ko'kuu": "Ko'kuu",
         "Vicar Humbletoes": "Humbletoes",
@@ -252,30 +289,50 @@
         "Waypoint": "Ancient Sigil Circle",
         "Wild Shape Improvement": "Wild Shape",
         "Wine Festival": "Highberry's Home",
+        "Wood elf": "Elf",
         "Wyrm's Rock": "Wyrm's Rock Fortress",
         "Za'Krug": "Za'krug",
         "Zhentarim Hideout": "Zhentarim Basement",
+        "aasimar": "Aasimar",
         "barbarian": "Barbarian",
         "bard": "Bard",
+        "cambion": "Cambion",
+        "camp follower": "Camp follower",
         "cleric": "Cleric",
+        "companions": "Companions",
+        "deep gnome": "Deep gnome",
         "disarm": "Disarm",
+        "djinni": "Djinni",
+        "drow half-elf": "Drow half-elf",
         "druid": "Druid",
+        "duergar": "Duergar",
         "elegant chest": "Elegant chest",
         "fighter": "Fighter",
         "githyanki": "Githyanki",
+        "gnoll": "Gnoll",
+        "half-elf": "Half-elf",
+        "human": "Human",
         "long rest": "Long rest",
         "mimic": "Mimic",
+        "mind flayer": "Mind flayer",
         "monk": "Monk",
         "movement speed": "Movement speed",
+        "myconid": "Myconid",
         "paladin": "Paladin",
         "portent": "Portent",
         "prone": "Prone",
         "quest": "Quest",
         "rage": "Rage",
         "ranger": "Ranger",
+        "redcap": "Redcap",
         "rogue": "Rogue",
         "sorcerer": "Sorcerer",
-        "the Risen Road": "The Risen Road",
+        "temporary companion": "Temporary companion",
+        "the Dark Urge": "The Dark Urge",
+        "tiefling": "Tiefling",
+        "tiefling refugees": "Tiefling refugees",
+        "trader": "Trader",
+        "vampire": "Vampire",
         "warlock": "Warlock",
         "waypoint": "Waypoint",
         "wizard": "Wizard"
@@ -398,7 +455,7 @@
         },
         {
             "pageId": 150,
-            "revisionId": 205585,
+            "revisionId": 207540,
             "title": "Rescue the Grand Duke"
         },
         {
@@ -498,7 +555,7 @@
         },
         {
             "pageId": 378,
-            "revisionId": 206681,
+            "revisionId": 207344,
             "title": "Gameplay mechanics"
         },
         {
@@ -778,7 +835,7 @@
         },
         {
             "pageId": 829,
-            "revisionId": 203046,
+            "revisionId": 207587,
             "title": "Zevlor"
         },
         {
@@ -860,6 +917,16 @@
             "pageId": 1007,
             "revisionId": 202926,
             "title": "Dammon"
+        },
+        {
+            "pageId": 1022,
+            "revisionId": 199793,
+            "title": "Locke"
+        },
+        {
+            "pageId": 1024,
+            "revisionId": 201283,
+            "title": "Komira"
         },
         {
             "pageId": 1027,
@@ -1813,7 +1880,7 @@
         },
         {
             "pageId": 2209,
-            "revisionId": 203038,
+            "revisionId": 207375,
             "title": "Hunter's Mark"
         },
         {
@@ -2258,7 +2325,7 @@
         },
         {
             "pageId": 2644,
-            "revisionId": 158905,
+            "revisionId": 207376,
             "title": "Misty Step"
         },
         {
@@ -2573,7 +2640,7 @@
         },
         {
             "pageId": 2818,
-            "revisionId": 199961,
+            "revisionId": 207374,
             "title": "Sanctuary"
         },
         {
@@ -3203,7 +3270,7 @@
         },
         {
             "pageId": 3398,
-            "revisionId": 202603,
+            "revisionId": 207322,
             "title": "Turn the Unholy"
         },
         {
@@ -4163,7 +4230,7 @@
         },
         {
             "pageId": 3974,
-            "revisionId": 204032,
+            "revisionId": 207495,
             "title": "Ebonlake Grotto"
         },
         {
@@ -4275,6 +4342,11 @@
             "pageId": 4033,
             "revisionId": 138022,
             "title": "Template:Verify"
+        },
+        {
+            "pageId": 4129,
+            "revisionId": 191714,
+            "title": "Idol of Silvanus"
         },
         {
             "pageId": 4131,
@@ -4408,7 +4480,7 @@
         },
         {
             "pageId": 4185,
-            "revisionId": 202398,
+            "revisionId": 207581,
             "title": "Zhentarim Basement"
         },
         {
@@ -4455,6 +4527,11 @@
             "pageId": 4204,
             "revisionId": 202377,
             "title": "Sunlit Wetlands"
+        },
+        {
+            "pageId": 4205,
+            "revisionId": 206465,
+            "title": "Creature size"
         },
         {
             "pageId": 4207,
@@ -4612,6 +4689,11 @@
             "title": "Auntie Ethel"
         },
         {
+            "pageId": 4313,
+            "revisionId": 203734,
+            "title": "Redcap"
+        },
+        {
             "pageId": 4315,
             "revisionId": 176938,
             "title": "The Absolute's Will"
@@ -4727,6 +4809,11 @@
             "title": "Antimagic Susceptibility"
         },
         {
+            "pageId": 4384,
+            "revisionId": 207037,
+            "title": "Cambion"
+        },
+        {
             "pageId": 4385,
             "revisionId": 203960,
             "title": "The Festering Cove"
@@ -4797,8 +4884,13 @@
             "title": "Magic Club"
         },
         {
+            "pageId": 4420,
+            "revisionId": 197431,
+            "title": "Phase Spider"
+        },
+        {
             "pageId": 4421,
-            "revisionId": 207056,
+            "revisionId": 207449,
             "title": "Phase Spider Matriarch"
         },
         {
@@ -4893,7 +4985,7 @@
         },
         {
             "pageId": 4516,
-            "revisionId": 176963,
+            "revisionId": 207491,
             "title": "Defeat the Duergar Intruders"
         },
         {
@@ -4923,12 +5015,12 @@
         },
         {
             "pageId": 4526,
-            "revisionId": 191407,
+            "revisionId": 207514,
             "title": "Free True Soul Nere"
         },
         {
             "pageId": 4528,
-            "revisionId": 188940,
+            "revisionId": 207332,
             "title": "Cure the Poisoned Gnome"
         },
         {
@@ -4938,7 +5030,7 @@
         },
         {
             "pageId": 4539,
-            "revisionId": 188911,
+            "revisionId": 207517,
             "title": "Deliver Nere's Head"
         },
         {
@@ -4950,6 +5042,11 @@
             "pageId": 4541,
             "revisionId": 197794,
             "title": "Kill Kagha"
+        },
+        {
+            "pageId": 4544,
+            "revisionId": 207505,
+            "title": "Rescue the Gnome"
         },
         {
             "pageId": 4546,
@@ -4968,7 +5065,7 @@
         },
         {
             "pageId": 4553,
-            "revisionId": 199345,
+            "revisionId": 207535,
             "title": "Find the Missing Shipment"
         },
         {
@@ -5013,7 +5110,7 @@
         },
         {
             "pageId": 4586,
-            "revisionId": 166401,
+            "revisionId": 207502,
             "title": "Avenge Glut's Circle"
         },
         {
@@ -5043,7 +5140,7 @@
         },
         {
             "pageId": 4599,
-            "revisionId": 188938,
+            "revisionId": 207342,
             "title": "Find the Missing Boots"
         },
         {
@@ -5078,7 +5175,7 @@
         },
         {
             "pageId": 4634,
-            "revisionId": 207035,
+            "revisionId": 207460,
             "title": "Zhalk"
         },
         {
@@ -5392,6 +5489,11 @@
             "title": "Abdirak"
         },
         {
+            "pageId": 5735,
+            "revisionId": 200631,
+            "title": "Demir"
+        },
+        {
             "pageId": 5872,
             "revisionId": 164418,
             "title": "Copper Band"
@@ -5412,6 +5514,11 @@
             "title": "Burnished Necklace"
         },
         {
+            "pageId": 5900,
+            "revisionId": 205248,
+            "title": "Silfy"
+        },
+        {
             "pageId": 5955,
             "revisionId": 204868,
             "title": "Mayrina"
@@ -5422,9 +5529,24 @@
             "title": "Template:IconLink"
         },
         {
+            "pageId": 6017,
+            "revisionId": 201237,
+            "title": "Johl"
+        },
+        {
             "pageId": 6021,
             "revisionId": 207263,
             "title": "Glut"
+        },
+        {
+            "pageId": 6022,
+            "revisionId": 206739,
+            "title": "Tiefling refugees"
+        },
+        {
+            "pageId": 6028,
+            "revisionId": 206736,
+            "title": "Society of Brilliance"
         },
         {
             "pageId": 6032,
@@ -5443,7 +5565,7 @@
         },
         {
             "pageId": 6043,
-            "revisionId": 207285,
+            "revisionId": 207370,
             "title": "Grym"
         },
         {
@@ -5570,6 +5692,11 @@
             "pageId": 6360,
             "revisionId": 171923,
             "title": "Template:LatestUpdate"
+        },
+        {
+            "pageId": 6366,
+            "revisionId": 204970,
+            "title": "Zariel"
         },
         {
             "pageId": 6379,
@@ -6158,7 +6285,7 @@
         },
         {
             "pageId": 7845,
-            "revisionId": 207176,
+            "revisionId": 207481,
             "title": "Jeera"
         },
         {
@@ -6313,7 +6440,7 @@
         },
         {
             "pageId": 7901,
-            "revisionId": 207113,
+            "revisionId": 207545,
             "title": "Zarys"
         },
         {
@@ -6912,6 +7039,11 @@
             "title": "Infernal Robe"
         },
         {
+            "pageId": 8227,
+            "revisionId": 207188,
+            "title": "Aasimar"
+        },
+        {
             "pageId": 8228,
             "revisionId": 168193,
             "title": "Beguiling Defences"
@@ -7163,7 +7295,7 @@
         },
         {
             "pageId": 8483,
-            "revisionId": 206988,
+            "revisionId": 207482,
             "title": "Oliver"
         },
         {
@@ -7180,6 +7312,11 @@
             "pageId": 8506,
             "revisionId": 197554,
             "title": "Shield +1"
+        },
+        {
+            "pageId": 8507,
+            "revisionId": 179255,
+            "title": "Multiplayer"
         },
         {
             "pageId": 8514,
@@ -7405,6 +7542,11 @@
             "pageId": 8721,
             "revisionId": 202408,
             "title": "Ring of Arcane Synergy"
+        },
+        {
+            "pageId": 8727,
+            "revisionId": 202349,
+            "title": "Sacred Pool"
         },
         {
             "pageId": 8732,
@@ -8103,13 +8245,18 @@
         },
         {
             "pageId": 9257,
-            "revisionId": 206935,
+            "revisionId": 207451,
             "title": "Rescue the Tieflings"
         },
         {
             "pageId": 9259,
             "revisionId": 191395,
             "title": "Infiltrate Moonrise Towers"
+        },
+        {
+            "pageId": 9260,
+            "revisionId": 206750,
+            "title": "Bhaal"
         },
         {
             "pageId": 9272,
@@ -8252,6 +8399,11 @@
             "title": "Sunlight Weakness"
         },
         {
+            "pageId": 9381,
+            "revisionId": 206747,
+            "title": "Myrkul"
+        },
+        {
             "pageId": 9382,
             "revisionId": 191464,
             "title": "Heart Ablaze"
@@ -8362,6 +8514,11 @@
             "title": "Basilisk Gate Barracks"
         },
         {
+            "pageId": 9456,
+            "revisionId": 202679,
+            "title": "Mephistopheles"
+        },
+        {
             "pageId": 9461,
             "revisionId": 204123,
             "title": "Humbletoes"
@@ -8403,7 +8560,7 @@
         },
         {
             "pageId": 9483,
-            "revisionId": 185869,
+            "revisionId": 207454,
             "title": "Flail of Ages"
         },
         {
@@ -9237,6 +9394,11 @@
             "title": "Reithwin Town"
         },
         {
+            "pageId": 10624,
+            "revisionId": 202411,
+            "title": "Secret Chamber"
+        },
+        {
             "pageId": 10625,
             "revisionId": 202416,
             "title": "Astral Plane"
@@ -9245,6 +9407,11 @@
             "pageId": 10626,
             "revisionId": 206154,
             "title": "The Waning Moon"
+        },
+        {
+            "pageId": 10627,
+            "revisionId": 206163,
+            "title": "Reithwin Graveyard"
         },
         {
             "pageId": 10628,
@@ -9512,6 +9679,11 @@
             "title": "Shar"
         },
         {
+            "pageId": 10916,
+            "revisionId": 207467,
+            "title": "Harpers"
+        },
+        {
             "pageId": 10917,
             "revisionId": 194044,
             "title": "Wavemother's Cloak"
@@ -9668,7 +9840,7 @@
         },
         {
             "pageId": 11020,
-            "revisionId": 207228,
+            "revisionId": 207465,
             "title": "Deva"
         },
         {
@@ -9735,11 +9907,6 @@
             "pageId": 11060,
             "revisionId": 179470,
             "title": "Contagion: Slimy Doom"
-        },
-        {
-            "pageId": 11065,
-            "revisionId": 36732,
-            "title": "File:Astarion Icon.png"
         },
         {
             "pageId": 11072,
@@ -9832,6 +9999,11 @@
             "title": "Abandoned Refuge"
         },
         {
+            "pageId": 11306,
+            "revisionId": 163021,
+            "title": "Elturel"
+        },
+        {
             "pageId": 11368,
             "revisionId": 170002,
             "title": "Blackguard's Plate"
@@ -9922,11 +10094,6 @@
             "title": "Abdel's Trusted Shield"
         },
         {
-            "pageId": 11501,
-            "revisionId": 38076,
-            "title": "File:Mystic Carrion Servant Quest.jpg"
-        },
-        {
             "pageId": 11505,
             "revisionId": 179479,
             "title": "Flesh to Stone"
@@ -9940,6 +10107,11 @@
             "pageId": 11512,
             "revisionId": 168429,
             "title": "Light Sensitivity"
+        },
+        {
+            "pageId": 11535,
+            "revisionId": 206588,
+            "title": "Iron Throne"
         },
         {
             "pageId": 11543,
@@ -10282,6 +10454,11 @@
             "title": "Lorroakan"
         },
         {
+            "pageId": 11957,
+            "revisionId": 203895,
+            "title": "Thisobald Thorm"
+        },
+        {
             "pageId": 11968,
             "revisionId": 169653,
             "title": "Vicious Shortbow"
@@ -10352,6 +10529,11 @@
             "title": "Moonrise Towers Rooftop"
         },
         {
+            "pageId": 12133,
+            "revisionId": 180690,
+            "title": "Astral Prism"
+        },
+        {
             "pageId": 12136,
             "revisionId": 182046,
             "title": "Shar's Darkness"
@@ -10380,6 +10562,11 @@
             "pageId": 12190,
             "revisionId": 193790,
             "title": "Nature's Ward"
+        },
+        {
+            "pageId": 12194,
+            "revisionId": 177496,
+            "title": "Waterdeep"
         },
         {
             "pageId": 12210,
@@ -10452,6 +10639,11 @@
             "title": "Gur Camp"
         },
         {
+            "pageId": 12254,
+            "revisionId": 190200,
+            "title": "Rivington Well"
+        },
+        {
             "pageId": 12255,
             "revisionId": 201062,
             "title": "Jungle"
@@ -10478,7 +10670,7 @@
         },
         {
             "pageId": 12261,
-            "revisionId": 205506,
+            "revisionId": 207333,
             "title": "Thulla"
         },
         {
@@ -10500,6 +10692,11 @@
             "pageId": 12272,
             "revisionId": 202559,
             "title": "Wyrm's Rock Fortress"
+        },
+        {
+            "pageId": 12273,
+            "revisionId": 204818,
+            "title": "Wyrm's Rock Prison"
         },
         {
             "pageId": 12274,
@@ -10542,6 +10739,11 @@
             "title": "Ormn"
         },
         {
+            "pageId": 12292,
+            "revisionId": 203803,
+            "title": "Myconid"
+        },
+        {
             "pageId": 12300,
             "revisionId": 163514,
             "title": "Reinforced Greatsword"
@@ -10575,6 +10777,11 @@
             "pageId": 12395,
             "revisionId": 168132,
             "title": "Accursed Coins"
+        },
+        {
+            "pageId": 12781,
+            "revisionId": 196838,
+            "title": "Tissue and Organ Register"
         },
         {
             "pageId": 12861,
@@ -10620,6 +10827,16 @@
             "pageId": 12903,
             "revisionId": 202587,
             "title": "Angleiron's Cellar"
+        },
+        {
+            "pageId": 12906,
+            "revisionId": 202602,
+            "title": "Open Hand Temple Cellar"
+        },
+        {
+            "pageId": 12907,
+            "revisionId": 202601,
+            "title": "Under Temple Cave Area"
         },
         {
             "pageId": 12908,
@@ -10692,21 +10909,6 @@
             "title": "Pierce the Weak"
         },
         {
-            "pageId": 13023,
-            "revisionId": 207107,
-            "title": "Rugan"
-        },
-        {
-            "pageId": 13024,
-            "revisionId": 207103,
-            "title": "Olly"
-        },
-        {
-            "pageId": 13029,
-            "revisionId": 43386,
-            "title": "File:Orin Bhaal Temple Quest.jpg"
-        },
-        {
             "pageId": 13038,
             "revisionId": 180362,
             "title": "Fly (Illithid Power)"
@@ -10727,13 +10929,18 @@
             "title": "Guildhall"
         },
         {
+            "pageId": 13057,
+            "revisionId": 202883,
+            "title": "Flymm's Cobblers"
+        },
+        {
             "pageId": 13059,
             "revisionId": 205016,
             "title": "Old Garlow's Place"
         },
         {
             "pageId": 13070,
-            "revisionId": 205192,
+            "revisionId": 207492,
             "title": "Orpheus"
         },
         {
@@ -10838,8 +11045,13 @@
         },
         {
             "pageId": 13256,
-            "revisionId": 206972,
+            "revisionId": 207458,
             "title": "Mystic Carrion"
+        },
+        {
+            "pageId": 13258,
+            "revisionId": 202375,
+            "title": "Inner Sanctum"
         },
         {
             "pageId": 13395,
@@ -10865,6 +11077,11 @@
             "pageId": 13431,
             "revisionId": 170196,
             "title": "Pyroquickness Hat"
+        },
+        {
+            "pageId": 13435,
+            "revisionId": 187078,
+            "title": "Ancient Temple"
         },
         {
             "pageId": 13448,
@@ -11347,6 +11564,11 @@
             "title": "Conjure Elemental: Water Elemental"
         },
         {
+            "pageId": 14285,
+            "revisionId": 205900,
+            "title": "Helena Anchev"
+        },
+        {
             "pageId": 14305,
             "revisionId": 60764,
             "title": "Template:SmItemIcon"
@@ -11457,6 +11679,11 @@
             "title": "Template:BarbarianNavbox"
         },
         {
+            "pageId": 14433,
+            "revisionId": 190620,
+            "title": "Balduran"
+        },
+        {
             "pageId": 14439,
             "revisionId": 97657,
             "title": "Potion Table"
@@ -11512,6 +11739,11 @@
             "title": "Magic Initiate: Druid"
         },
         {
+            "pageId": 14494,
+            "revisionId": 206481,
+            "title": "Wulbren Bongle"
+        },
+        {
             "pageId": 14497,
             "revisionId": 200635,
             "title": "Dolor"
@@ -11552,11 +11784,6 @@
             "title": "Zanner Toobin"
         },
         {
-            "pageId": 14603,
-            "revisionId": 53568,
-            "title": "File:Find the Missing Shipment Rugan Quest.jpg"
-        },
-        {
             "pageId": 14651,
             "revisionId": 200006,
             "title": "Template:Rarity item"
@@ -11575,6 +11802,11 @@
             "pageId": 14685,
             "revisionId": 195327,
             "title": "Zevlor's Key"
+        },
+        {
+            "pageId": 14700,
+            "revisionId": 204136,
+            "title": "List of creature types"
         },
         {
             "pageId": 14730,
@@ -11605,6 +11837,11 @@
             "pageId": 14745,
             "revisionId": 89126,
             "title": "Slings"
+        },
+        {
+            "pageId": 14861,
+            "revisionId": 207007,
+            "title": "Connor Vinderblad"
         },
         {
             "pageId": 14880,
@@ -11670,11 +11907,6 @@
             "pageId": 14995,
             "revisionId": 100642,
             "title": "Uncommon Special Arrow Subtable"
-        },
-        {
-            "pageId": 15008,
-            "revisionId": 56432,
-            "title": "File:Gluts Circle Quest.jpg"
         },
         {
             "pageId": 15025,
@@ -11762,11 +11994,6 @@
             "title": "Netherstone-Studded Gauntlet"
         },
         {
-            "pageId": 15123,
-            "revisionId": 190521,
-            "title": "Template:The Risen Road"
-        },
-        {
             "pageId": 15144,
             "revisionId": 185877,
             "title": "Storm's Fury"
@@ -11815,6 +12042,16 @@
             "pageId": 15206,
             "revisionId": 194592,
             "title": "Summon Quothe the Raven"
+        },
+        {
+            "pageId": 15211,
+            "revisionId": 202575,
+            "title": "The Velveteen Elixir"
+        },
+        {
+            "pageId": 15234,
+            "revisionId": 202976,
+            "title": "Water Queen's Cellar"
         },
         {
             "pageId": 15235,
@@ -11972,6 +12209,11 @@
             "title": "Heapside Prison"
         },
         {
+            "pageId": 15545,
+            "revisionId": 202739,
+            "title": "Bonecloak's Apothecary"
+        },
+        {
             "pageId": 15547,
             "revisionId": 202960,
             "title": "The Blushing Mermaid"
@@ -11985,6 +12227,11 @@
             "pageId": 15549,
             "revisionId": 201664,
             "title": "Lora"
+        },
+        {
+            "pageId": 15550,
+            "revisionId": 207028,
+            "title": "Vanra"
         },
         {
             "pageId": 15568,
@@ -12105,6 +12352,11 @@
             "pageId": 16080,
             "revisionId": 168241,
             "title": "Displace"
+        },
+        {
+            "pageId": 16083,
+            "revisionId": 205687,
+            "title": "Korrilla"
         },
         {
             "pageId": 16085,
@@ -12442,6 +12694,11 @@
             "title": "Lady Jannath"
         },
         {
+            "pageId": 17200,
+            "revisionId": 203116,
+            "title": "Nine-Fingers Keene"
+        },
+        {
             "pageId": 17204,
             "revisionId": 199496,
             "title": "Thrumbo"
@@ -12573,7 +12830,7 @@
         },
         {
             "pageId": 17325,
-            "revisionId": 201720,
+            "revisionId": 207455,
             "title": "Aspect of the Beast: Stallion"
         },
         {
@@ -12727,6 +12984,16 @@
             "title": "Seldom Caught Unawares (+1)"
         },
         {
+            "pageId": 17556,
+            "revisionId": 206437,
+            "title": "Facemaker's Boutique"
+        },
+        {
+            "pageId": 17559,
+            "revisionId": 202741,
+            "title": "Chromatic Scale"
+        },
+        {
             "pageId": 17560,
             "revisionId": 207178,
             "title": "Therezzyn"
@@ -12742,6 +13009,16 @@
             "title": "Indomitable"
         },
         {
+            "pageId": 17569,
+            "revisionId": 202887,
+            "title": "The Bibliophile"
+        },
+        {
+            "pageId": 17570,
+            "revisionId": 202889,
+            "title": "The Singing Lute"
+        },
+        {
             "pageId": 17574,
             "revisionId": 168371,
             "title": "Improved Combat Superiority"
@@ -12755,6 +13032,11 @@
             "pageId": 17619,
             "revisionId": 202962,
             "title": "The Blushing Mermaid - Basement"
+        },
+        {
+            "pageId": 17624,
+            "revisionId": 202905,
+            "title": "Lora's House"
         },
         {
             "pageId": 17722,
@@ -12887,6 +13169,11 @@
             "title": "Dread Ambusher"
         },
         {
+            "pageId": 17907,
+            "revisionId": 206745,
+            "title": "Selûne"
+        },
+        {
             "pageId": 17942,
             "revisionId": 190701,
             "title": "Shadow-Cursed Vine Blight"
@@ -12908,7 +13195,7 @@
         },
         {
             "pageId": 17997,
-            "revisionId": 191634,
+            "revisionId": 207464,
             "title": "Companion's Bond"
         },
         {
@@ -12930,11 +13217,6 @@
             "pageId": 18137,
             "revisionId": 202573,
             "title": "Entharl Danthelon"
-        },
-        {
-            "pageId": 18224,
-            "revisionId": 198857,
-            "title": "Template:Uid"
         },
         {
             "pageId": 18225,
@@ -13110,6 +13392,11 @@
             "pageId": 18748,
             "revisionId": 201759,
             "title": "Ki Resonation: Blast"
+        },
+        {
+            "pageId": 18752,
+            "revisionId": 206130,
+            "title": "Lolth"
         },
         {
             "pageId": 18760,
@@ -13312,6 +13599,11 @@
             "title": "Healing Vapours"
         },
         {
+            "pageId": 19022,
+            "revisionId": 206761,
+            "title": "Umberlee"
+        },
+        {
             "pageId": 19140,
             "revisionId": 186276,
             "title": "Divine Strike: Weapon"
@@ -13362,9 +13654,19 @@
             "title": "Godey"
         },
         {
+            "pageId": 19264,
+            "revisionId": 141121,
+            "title": "Ancient Mausoleum"
+        },
+        {
             "pageId": 19265,
             "revisionId": 202927,
             "title": "Graveyard (Lower City)"
+        },
+        {
+            "pageId": 19268,
+            "revisionId": 189964,
+            "title": "Gorion Mausoleum"
         },
         {
             "pageId": 19269,
@@ -13420,6 +13722,11 @@
             "pageId": 19376,
             "revisionId": 163156,
             "title": "Comeback Handaxe"
+        },
+        {
+            "pageId": 19386,
+            "revisionId": 206738,
+            "title": "Circle of the Emerald Grove"
         },
         {
             "pageId": 19399,
@@ -13707,6 +14014,31 @@
             "title": "Rusty Greatsword"
         },
         {
+            "pageId": 19794,
+            "revisionId": 199918,
+            "title": "Jord"
+        },
+        {
+            "pageId": 19798,
+            "revisionId": 199922,
+            "title": "Tate"
+        },
+        {
+            "pageId": 19799,
+            "revisionId": 199923,
+            "title": "Rion"
+        },
+        {
+            "pageId": 19803,
+            "revisionId": 199919,
+            "title": "Jhessem"
+        },
+        {
+            "pageId": 19804,
+            "revisionId": 201016,
+            "title": "Fig"
+        },
+        {
             "pageId": 19805,
             "revisionId": 176841,
             "title": "Khalid's Gift: Aid"
@@ -13737,6 +14069,11 @@
             "title": "Chessa's Practice Sword"
         },
         {
+            "pageId": 19885,
+            "revisionId": 206308,
+            "title": "Hag"
+        },
+        {
             "pageId": 19895,
             "revisionId": 98365,
             "title": "User:HINK/Githyank Perry"
@@ -13760,6 +14097,11 @@
             "pageId": 19984,
             "revisionId": 203030,
             "title": "The High Hall"
+        },
+        {
+            "pageId": 19988,
+            "revisionId": 203000,
+            "title": "Morphic Pool"
         },
         {
             "pageId": 19990,
@@ -14472,6 +14814,16 @@
             "title": "Multiattack (Cave Bear Wild Shape)"
         },
         {
+            "pageId": 21669,
+            "revisionId": 205033,
+            "title": "Gur"
+        },
+        {
+            "pageId": 21719,
+            "revisionId": 117409,
+            "title": "Nine Hells"
+        },
+        {
             "pageId": 21723,
             "revisionId": 118536,
             "title": "Template:Condition type"
@@ -14760,6 +15112,11 @@
             "pageId": 22360,
             "revisionId": 115174,
             "title": "Dispel Evil And Good: Break Enchantment"
+        },
+        {
+            "pageId": 22383,
+            "revisionId": 204395,
+            "title": "Amanita Szarr"
         },
         {
             "pageId": 22389,
@@ -15762,6 +16119,11 @@
             "title": "'Barnabus'"
         },
         {
+            "pageId": 25076,
+            "revisionId": 203718,
+            "title": "Linsella"
+        },
+        {
             "pageId": 25199,
             "revisionId": 183402,
             "title": "Luring Song"
@@ -15795,6 +16157,11 @@
             "pageId": 25389,
             "revisionId": 121312,
             "title": "Template:Ref"
+        },
+        {
+            "pageId": 25416,
+            "revisionId": 193705,
+            "title": "Vampire"
         },
         {
             "pageId": 25417,
@@ -15892,6 +16259,11 @@
             "title": "Dryad"
         },
         {
+            "pageId": 25696,
+            "revisionId": 206740,
+            "title": "Clan Ironhand"
+        },
+        {
             "pageId": 25739,
             "revisionId": 165826,
             "title": "Scarlet Remittance"
@@ -15947,9 +16319,19 @@
             "title": "Moan"
         },
         {
+            "pageId": 25793,
+            "revisionId": 207270,
+            "title": "Mummy (race)"
+        },
+        {
             "pageId": 25807,
             "revisionId": 178350,
             "title": "Withering Touch"
+        },
+        {
+            "pageId": 25862,
+            "revisionId": 206756,
+            "title": "The Guild"
         },
         {
             "pageId": 25865,
@@ -16000,6 +16382,11 @@
             "pageId": 26339,
             "revisionId": 194687,
             "title": "Merry Revelry"
+        },
+        {
+            "pageId": 26341,
+            "revisionId": 206748,
+            "title": "Anti-Hag Support Group"
         },
         {
             "pageId": 26345,
@@ -16700,6 +17087,11 @@
             "pageId": 27906,
             "revisionId": 168497,
             "title": "Multiattack: Muddy"
+        },
+        {
+            "pageId": 27909,
+            "revisionId": 202940,
+            "title": "Vonayn's Home"
         },
         {
             "pageId": 27925,
@@ -19327,6 +19719,11 @@
             "title": "Mutilated Carapace"
         },
         {
+            "pageId": 30066,
+            "revisionId": 195734,
+            "title": "Volo's Guide to Baldur's Gate (Signed)"
+        },
+        {
             "pageId": 30082,
             "revisionId": 177295,
             "title": "Knowledge of the Ages: Strength"
@@ -20148,7 +20545,7 @@
         },
         {
             "pageId": 31072,
-            "revisionId": 201301,
+            "revisionId": 207459,
             "title": "Kansif"
         },
         {
@@ -20670,6 +21067,16 @@
             "pageId": 31792,
             "revisionId": 192161,
             "title": "Blinding Shot"
+        },
+        {
+            "pageId": 31795,
+            "revisionId": 205135,
+            "title": "'Timothy'"
+        },
+        {
+            "pageId": 31796,
+            "revisionId": 205134,
+            "title": "'Tomelia'"
         },
         {
             "pageId": 31801,
@@ -21487,6 +21894,16 @@
             "title": "Broken Shield"
         },
         {
+            "pageId": 34581,
+            "revisionId": 199508,
+            "title": "Sally Flymm"
+        },
+        {
+            "pageId": 34583,
+            "revisionId": 200644,
+            "title": "Dravo Flymm"
+        },
+        {
             "pageId": 34615,
             "revisionId": 164174,
             "title": "Bandit's Armour"
@@ -21570,6 +21987,11 @@
             "pageId": 34812,
             "revisionId": 176686,
             "title": "Fiery Bolt"
+        },
+        {
+            "pageId": 34833,
+            "revisionId": 202898,
+            "title": "Barren's Coop"
         },
         {
             "pageId": 34836,
@@ -22497,6 +22919,11 @@
             "title": "Wild Shape: Boar"
         },
         {
+            "pageId": 40413,
+            "revisionId": 185496,
+            "title": "Armbrust's Home"
+        },
+        {
             "pageId": 40447,
             "revisionId": 188242,
             "title": "Alchemist's Fire (Action)"
@@ -22897,14 +23324,29 @@
             "title": "Template:Weapons"
         },
         {
+            "pageId": 41133,
+            "revisionId": 207244,
+            "title": "Grease Elemental"
+        },
+        {
             "pageId": 41134,
             "revisionId": 193090,
             "title": "Slam (Grease Elemental)"
         },
         {
+            "pageId": 41136,
+            "revisionId": 203799,
+            "title": "Greaseball"
+        },
+        {
             "pageId": 41137,
             "revisionId": 203801,
             "title": "Pseudopod (Greaseball)"
+        },
+        {
+            "pageId": 41139,
+            "revisionId": 204160,
+            "title": "Grease Mephit"
         },
         {
             "pageId": 41140,
@@ -22977,6 +23419,11 @@
             "title": "Share Untenable Secret"
         },
         {
+            "pageId": 41791,
+            "revisionId": 199682,
+            "title": "Cordula Eltan"
+        },
+        {
             "pageId": 41821,
             "revisionId": 198807,
             "title": "Template:DiQ"
@@ -23022,6 +23469,11 @@
             "title": "Bite (Worg)"
         },
         {
+            "pageId": 42679,
+            "revisionId": 203769,
+            "title": "Merregon"
+        },
+        {
             "pageId": 42725,
             "revisionId": 202341,
             "title": "Template:Quest"
@@ -23045,6 +23497,11 @@
             "pageId": 42777,
             "revisionId": 203274,
             "title": "Throat Punch"
+        },
+        {
+            "pageId": 42880,
+            "revisionId": 203752,
+            "title": "Undead Dragon"
         },
         {
             "pageId": 43265,
@@ -23089,6 +23546,7 @@
     ],
     "deadLinks": [
         "Beastmaster Zurk",
+        "Devil",
         "Ebon Lake",
         "Ebonlake",
         "Elegant chest",
