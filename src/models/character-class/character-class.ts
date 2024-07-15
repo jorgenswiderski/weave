@@ -32,7 +32,7 @@ async function parseFeatures(
         const classFeatures = (
             await Promise.all(
                 value
-                    .split(', ')
+                    .split(/,\s?/)
                     .map((featureString: string) =>
                         ClassFeatureFactory.fromWikitext(
                             featureString,

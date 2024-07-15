@@ -14,6 +14,13 @@
         "id": 8366
     },
     {
+        "name": "Advanced Unarmoured Movement",
+        "description": "Difficult Terrain doesn't slow you down and you can Jump an additional m=6|ft=20 while you are not wearing armour or using a shield.",
+        "image": "Advanced Unarmoured Movement.webp",
+        "type": 2,
+        "id": 13195
+    },
+    {
         "name": "Alert",
         "description": "You gain +5 to Initiative and can no longer be surprised.",
         "image": "Generic Threat.webp",
@@ -49,6 +56,13 @@
         "id": 32415
     },
     {
+        "name": "Brutal Critical",
+        "description": "You've trained to strike swift and true. When you land a Critical Hitnotes, you roll an extra damage die as well as the normal additional critical die.",
+        "image": "Brutal Critical.webp",
+        "type": 2,
+        "id": 7953
+    },
+    {
         "name": "Colossus Slayer",
         "description": "Once per turn, your weapon attack deals an extra 1d8|Physical|drs=t damage if the target is below its hit point maximum.",
         "image": "Colossus Slayer.webp",
@@ -77,6 +91,13 @@
         "id": 17038
     },
     {
+        "name": "Danger Sense",
+        "description": "You sense when things aren't as they should be. \n\nYou have Advantage on Dexterity saving throws, such as against traps, Spells, and surfaces. \n\nTo gain this benefit, you can't be Blinded or Incapacitated.",
+        "image": "Danger Sense.webp",
+        "type": 2,
+        "id": 6407
+    },
+    {
         "name": "Dark One's Blessing",
         "description": "Whenever you reduce a hostile creature to 0 Hit Points, this gift from your patron grants you Charisma Modifier + Warlock Level temporary hit points.",
         "image": "Dark One's Blessing.webp",
@@ -96,6 +117,13 @@
         "image": "Darkvision.webp",
         "type": 2,
         "id": 3957
+    },
+    {
+        "name": "Destroy Undead",
+        "description": "When you successfully Turn an Undead creature, it also takes 4d6|Radiant.",
+        "image": "Destroy Undead.webp",
+        "type": 2,
+        "id": 6412
     },
     {
         "name": "Disciple of Life",
@@ -161,6 +189,13 @@
         "id": 17837
     },
     {
+        "name": "Evasion",
+        "description": "Your agility lets you dodge out of the way of certain spells. When a spell or effect would deal half damage on a successful Dexterity saving throw, it deals no damage if you succeed, and only half damage if you fail.",
+        "image": "Evasion.webp",
+        "type": 2,
+        "id": 6817
+    },
+    {
         "name": "Exceptional Training",
         "description": "Your summoned companions can now Dash, Disengage, and Help as a bonus.",
         "image": "Exceptional Training.webp",
@@ -173,6 +208,27 @@
         "image": "Extra Attack.webp",
         "type": 2,
         "id": 3152
+    },
+    {
+        "name": "Fast Movement",
+        "description": "Your Movement Speed increases by m=3|ft=10 while not wearing Heavy Armour.",
+        "image": "Fast Movement.webp",
+        "type": 2,
+        "id": 6409
+    },
+    {
+        "name": "Feral Instinct",
+        "description": "You have honed your instincts to the utmost degree.\n\nYou gain a +3 to Initiative and can't be Surprised.",
+        "image": "Feral Instinct.webp",
+        "type": 2,
+        "id": 6819
+    },
+    {
+        "name": "Font of Inspiration",
+        "description": "You regain all of your bi|forceplural=yes after a Long or Short Rest.",
+        "image": "Font of Inspiration.webp",
+        "type": 2,
+        "id": 6410
     },
     {
         "name": "Great Weapon Master: All In",
@@ -210,6 +266,34 @@
         "id": 17834
     },
     {
+        "name": "Improved Bardic Inspiration",
+        "description": "The bonus gained from Bardic Inspiration increases to d8|Physical+1d8.",
+        "image": "Bardic Inspiration.webp",
+        "type": 2,
+        "id": 12127
+    },
+    {
+        "name": "Improved Divine Smite",
+        "description": "Your attacks are suffused with divine might. \nMelee weapon attacks deal an additional 1d8|Radiant damage.",
+        "image": "Improved Divine Smite.webp",
+        "type": 2,
+        "id": 12941
+    },
+    {
+        "name": "Improved Extra Attack",
+        "description": "You can make two additional attacks after attacking with your main-hand weapon.",
+        "image": "Extra Attack.webp",
+        "type": 2,
+        "id": 11255
+    },
+    {
+        "name": "Improved Wild Strike",
+        "description": "You can make 2 additional attacks after making an unarmed strike while in wildshape.",
+        "image": "Improved Wild Strike.webp",
+        "type": 2,
+        "id": 9131
+    },
+    {
         "name": "Indomitable",
         "description": "Whenever you fail a Saving Throw, you can roll again, using the new result instead.",
         "image": "Indomitable.webp",
@@ -229,6 +313,13 @@
         "image": "Jack of All Trades.webp",
         "type": 2,
         "id": 3377
+    },
+    {
+        "name": "Ki-Empowered Strikes",
+        "description": "Your unarmed attacks count as magical for the purpose of overcoming enemies' Resistance and Immunity to non-magical damage.",
+        "image": "Ki-Empowered Strikes.webp",
+        "type": 2,
+        "id": 13197
     },
     {
         "name": "Land's Stride: Difficult Terrain",
@@ -320,6 +411,27 @@
         "image": "Martial Adept.webp",
         "type": 2,
         "id": 4942
+    },
+    {
+        "name": "Martial Arts: Bonus Unarmed Strike",
+        "description": "After making an attack with a Monk Weapon or while unarmed, you can make another unarmed attack as a bonus action.",
+        "image": "Martial Arts Bonus Unarmed Strike.webp",
+        "type": 2,
+        "id": 13199
+    },
+    {
+        "name": "Martial Arts: Deft Strikes",
+        "description": "Attacks with Monk Weapons and unarmed attacks deal 1d4|Bludgeoning damage, unless their normal damage is higher.",
+        "image": "Martial Arts Deft Strikes.webp",
+        "type": 2,
+        "id": 13200
+    },
+    {
+        "name": "Martial Arts: Dextrous Attacks",
+        "description": "Attacks with Monk Weapons and unarmed attacks scale with your Dexterity instead of your Strength if your Dexterity is higher.",
+        "image": "Martial Arts Dextrous Attacks.webp",
+        "type": 2,
+        "id": 13203
     },
     {
         "name": "Medium Armour Master",
@@ -462,6 +574,27 @@
         "id": 13563
     },
     {
+        "name": "Purity of Body",
+        "description": "You are Immune to Poison damage and can't be Poisoned or affected by disease thanks to the purifying ki flowing through your meridians.",
+        "image": "Purity of Body.webp",
+        "type": 2,
+        "id": 13205
+    },
+    {
+        "name": "Relentless Rage",
+        "description": "Once per Short Rest, if you drop to 0 hit point while Enraged, you regain 1|Healing instead of being Downed.",
+        "image": "Relentless Rage.webp",
+        "type": 2,
+        "id": 8874
+    },
+    {
+        "name": "Reliable Talent",
+        "description": "When you make an Ability Check with a Skill you are Proficient with, the lowest result you can roll on the die is 10.",
+        "image": "Reliable Talent.webp",
+        "type": 2,
+        "id": 6874
+    },
+    {
         "name": "Ritual Caster: Free Spells",
         "description": "You learn two  Ritual Spells of your choice from the following: \n* Speak with Dead\n* Find Familiar\n* Longstrider\n* Enhance Leap\n* Disguise Self\n* Speak with Animals",
         "image": "Ritual Caster Free Spells.webp",
@@ -518,6 +651,13 @@
         "id": 4945
     },
     {
+        "name": "Slow Fall",
+        "description": "When you fall, you can use your reaction to gain Resistance to Falling damage.",
+        "image": "Slow Fall.webp",
+        "type": 2,
+        "id": 8238
+    },
+    {
         "name": "Spell Sniper",
         "description": "You learn a cantrip, and the number you need to roll a Critical Hit while attacking with a Spell is reduced by 1. This effect can stack.",
         "image": "Spell Sniper.webp",
@@ -537,6 +677,13 @@
         "image": "Steel Will.webp",
         "type": 2,
         "id": 17839
+    },
+    {
+        "name": "Stillness of Mind",
+        "description": "If you are Charmed or Frightened, you automatically cast Stillness of Mind to remove the condition.",
+        "image": "Stillness of Mind passive feature.webp",
+        "type": 2,
+        "id": 13206
     },
     {
         "name": "Superior Darkvision",
@@ -567,6 +714,34 @@
         "id": 4946
     },
     {
+        "name": "Unarmoured Defence",
+        "description": "Your body is as resilient as any armour. While not wearing armour, you add your Constitution Modifier to your ArmourClass.",
+        "image": "Unarmoured Defense Barbarian.webp",
+        "type": 2,
+        "id": 6406
+    },
+    {
+        "name": "Unarmoured Defence",
+        "description": "Your reflexes are as effective as any armour. While not wearing armour, you add your Wisdom Modifier to your ArmourClass.",
+        "image": "Unarmoured Defence Monk.webp",
+        "type": 2,
+        "id": 8136
+    },
+    {
+        "name": "Unarmoured Movement",
+        "description": "Your movement speed increases by m=3|ft=10 while you are not wearing armour or using a shield.",
+        "image": "Unarmoured Movement.webp",
+        "type": 2,
+        "id": 13208
+    },
+    {
+        "name": "Uncanny Dodge",
+        "description": "Use your lightning-quick reflexes to protect yourself. When an attack hits you, you only take half the usual damage.",
+        "image": "Uncanny Dodge.webp",
+        "type": 2,
+        "id": 3978
+    },
+    {
         "name": "War Caster: Concentration",
         "description": "You gain Advantage on SavingThrows to maintain Concentration on a Spell.",
         "image": "War Caster Concentration.webp",
@@ -586,5 +761,12 @@
         "image": "Weapon Master.webp",
         "type": 2,
         "id": 4947
+    },
+    {
+        "name": "Wild Strike",
+        "description": "You can make an additional attack after making an unarmed strike while in wildshape.",
+        "image": "Wild Strike.webp",
+        "type": 2,
+        "id": 9130
     }
 ]

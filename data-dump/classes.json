@@ -17,8 +17,12 @@
                         ]
                     },
                     {
-                        "name": "{{Pass|Unarmoured Defence",
-                        "grants": []
+                        "name": "Unarmoured Defence",
+                        "grants": [
+                            {
+                                "ref": "c6406"
+                            }
+                        ]
                     }
                 ],
                 "rg | forceplural = yes": 2,
@@ -37,8 +41,12 @@
                         ]
                     },
                     {
-                        "name": "{{Pass|Danger Sense}}",
-                        "grants": []
+                        "name": "Danger Sense",
+                        "grants": [
+                            {
+                                "ref": "c6407"
+                            }
+                        ]
                     }
                 ],
                 "rg | forceplural = yes": 2,
@@ -115,12 +123,20 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Extra Attack}}",
-                        "grants": []
+                        "name": "Extra Attack",
+                        "grants": [
+                            {
+                                "ref": "c3152"
+                            }
+                        ]
                     },
                     {
-                        "name": "{{Pass|Fast Movement}}",
-                        "grants": []
+                        "name": "Fast Movement",
+                        "grants": [
+                            {
+                                "ref": "c6409"
+                            }
+                        ]
                     }
                 ],
                 "rg | forceplural = yes": 3,
@@ -172,8 +188,12 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Feral Instinct}}",
-                        "grants": []
+                        "name": "Feral Instinct",
+                        "grants": [
+                            {
+                                "ref": "c6819"
+                            }
+                        ]
                     }
                 ],
                 "rg | forceplural = yes": 4,
@@ -196,8 +216,12 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "{{Pass|Brutal Critical}}",
-                        "grants": []
+                        "name": "Brutal Critical",
+                        "grants": [
+                            {
+                                "ref": "c7953"
+                            }
+                        ]
                     }
                 ],
                 "rg | forceplural = yes": 4,
@@ -253,8 +277,12 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "{{Pass|Relentless Rage}}",
-                        "grants": []
+                        "name": "Relentless Rage",
+                        "grants": [
+                            {
+                                "ref": "c8874"
+                            }
+                        ]
                     }
                 ],
                 "rg | forceplural = yes": 4,
@@ -448,12 +476,20 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Improved Bardic Inspiration}}",
-                        "grants": []
+                        "name": "Improved Bardic Inspiration",
+                        "grants": [
+                            {
+                                "ref": "c12127"
+                            }
+                        ]
                     },
                     {
-                        "name": "{{Pass|Font of Inspiration}}",
-                        "grants": []
+                        "name": "Font of Inspiration",
+                        "grants": [
+                            {
+                                "ref": "c6410"
+                            }
+                        ]
                     }
                 ],
                 "bardin|forceplural=yes": 4,
@@ -999,8 +1035,12 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "{{Pass|Improved Bardic Inspiration}}",
-                        "grants": []
+                        "name": "Improved Bardic Inspiration",
+                        "grants": [
+                            {
+                                "ref": "c12127"
+                            }
+                        ]
                     },
                     {
                         "name": "Expertise",
@@ -1927,8 +1967,12 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Destroy Undead}}",
-                        "grants": []
+                        "name": "Destroy Undead",
+                        "grants": [
+                            {
+                                "ref": "c6412"
+                            }
+                        ]
                     },
                     {
                         "name": "Subclass Feature: Cleric",
@@ -2839,8 +2883,12 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Wild Strike}}",
-                        "grants": []
+                        "name": "Wild Strike",
+                        "grants": [
+                            {
+                                "ref": "c9130"
+                            }
+                        ]
                     },
                     {
                         "name": "Subclass Feature: Druid",
@@ -3359,8 +3407,12 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "{{Pass|Improved Wild Strike}}",
-                        "grants": []
+                        "name": "Improved Wild Strike",
+                        "grants": [
+                            {
+                                "ref": "c9131"
+                            }
+                        ]
                     },
                     {
                         "name": "Subclass Feature: Druid",
@@ -3865,8 +3917,12 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Extra Attack}}",
-                        "grants": []
+                        "name": "Extra Attack",
+                        "grants": [
+                            {
+                                "ref": "c3152"
+                            }
+                        ]
                     }
                 ]
             },
@@ -3919,8 +3975,12 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "{{Pass|Improved Extra Attack}}",
-                        "grants": []
+                        "name": "Improved Extra Attack",
+                        "grants": [
+                            {
+                                "ref": "c11255"
+                            }
+                        ]
                     }
                 ]
             },
@@ -3946,20 +4006,36 @@
                 "Proficiency Bonus": 2,
                 "Features": [
                     {
-                        "name": "{{Pass|Unarmoured Defence",
-                        "grants": []
+                        "name": "Unarmoured Defence",
+                        "grants": [
+                            {
+                                "ref": "c8136"
+                            }
+                        ]
                     },
                     {
-                        "name": "{{Pass|Martial Arts: Dextrous Attacks}}",
-                        "grants": []
+                        "name": "Martial Arts: Dextrous Attacks",
+                        "grants": [
+                            {
+                                "ref": "c13203"
+                            }
+                        ]
                     },
                     {
-                        "name": "{{Pass|Martial Arts: Deft Strikes}}",
-                        "grants": []
+                        "name": "Martial Arts: Deft Strikes",
+                        "grants": [
+                            {
+                                "ref": "c13200"
+                            }
+                        ]
                     },
                     {
-                        "name": "{{Pass|Martial Arts: Bonus Unarmed Strike}}",
-                        "grants": []
+                        "name": "Martial Arts: Bonus Unarmed Strike",
+                        "grants": [
+                            {
+                                "ref": "c13199"
+                            }
+                        ]
                     },
                     {
                         "name": "Flurry of Blows",
@@ -3979,8 +4055,12 @@
                 "Proficiency Bonus": 2,
                 "Features": [
                     {
-                        "name": "{{Pass|Unarmoured Movement|size=25}}",
-                        "grants": []
+                        "name": "Unarmoured Movement",
+                        "grants": [
+                            {
+                                "ref": "c13208"
+                            }
+                        ]
                     },
                     {
                         "name": "Patient Defence",
@@ -4189,8 +4269,12 @@
                         "grants": []
                     },
                     {
-                        "name": "{{Pass|Slow Fall|size=25}}",
-                        "grants": []
+                        "name": "Slow Fall",
+                        "grants": [
+                            {
+                                "ref": "c8238"
+                            }
+                        ]
                     }
                 ],
                 "ki | forceplural=yes": 5,
@@ -4202,8 +4286,12 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Extra Attack}}",
-                        "grants": []
+                        "name": "Extra Attack",
+                        "grants": [
+                            {
+                                "ref": "c3152"
+                            }
+                        ]
                     },
                     {
                         "name": "Stunning Strike (Melee)",
@@ -4231,12 +4319,20 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Ki-Empowered Strikes}}",
-                        "grants": []
+                        "name": "Ki-Empowered Strikes",
+                        "grants": [
+                            {
+                                "ref": "c13197"
+                            }
+                        ]
                     },
                     {
-                        "name": "{{Pass|Unarmoured Movement|Improved Unarmoured Movement}}",
-                        "grants": []
+                        "name": "Unarmoured Movement",
+                        "grants": [
+                            {
+                                "ref": "c13208"
+                            }
+                        ]
                     },
                     {
                         "name": "Subclass Feature: Monk",
@@ -4291,12 +4387,20 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Evasion}}",
-                        "grants": []
+                        "name": "Evasion",
+                        "grants": [
+                            {
+                                "ref": "c6817"
+                            }
+                        ]
                     },
                     {
-                        "name": "{{Pass|Stillness of Mind",
-                        "grants": []
+                        "name": "Stillness of Mind",
+                        "grants": [
+                            {
+                                "ref": "c13206"
+                            }
+                        ]
                     }
                 ],
                 "ki | forceplural=yes": 8,
@@ -4321,8 +4425,12 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "{{Pass|Advanced Unarmoured Movement}}",
-                        "grants": []
+                        "name": "Advanced Unarmoured Movement",
+                        "grants": [
+                            {
+                                "ref": "c13195"
+                            }
+                        ]
                     },
                     {
                         "name": "Subclass Feature: Monk",
@@ -4398,8 +4506,20 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "{{Pass|Purity of Body}},{{Pass|Unarmoured Movement|Improved Unarmoured Movement}}",
-                        "grants": []
+                        "name": "Purity of Body",
+                        "grants": [
+                            {
+                                "ref": "c13205"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Unarmoured Movement",
+                        "grants": [
+                            {
+                                "ref": "c13208"
+                            }
+                        ]
                     }
                 ],
                 "ki | forceplural=yes": 11,
@@ -4713,8 +4833,12 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Extra Attack}}",
-                        "grants": []
+                        "name": "Extra Attack",
+                        "grants": [
+                            {
+                                "ref": "c3152"
+                            }
+                        ]
                     },
                     {
                         "name": "Subclass Feature: Paladin",
@@ -4988,8 +5112,12 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "{{Pass|Improved Divine Smite}}",
-                        "grants": []
+                        "name": "Improved Divine Smite",
+                        "grants": [
+                            {
+                                "ref": "c12941"
+                            }
+                        ]
                     }
                 ],
                 "layonh|forceplural=yes": 5,
@@ -5885,8 +6013,12 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Uncanny Dodge}}",
-                        "grants": []
+                        "name": "Uncanny Dodge",
+                        "grants": [
+                            {
+                                "ref": "c3978"
+                            }
+                        ]
                     }
                 ],
                 "Sneak Attack Damage": 3
@@ -5896,7 +6028,7 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Expertise",
+                        "name": "Expertise",
                         "grants": []
                     }
                 ],
@@ -5907,8 +6039,12 @@
                 "Proficiency Bonus": 3,
                 "Features": [
                     {
-                        "name": "{{Pass|Evasion}}",
-                        "grants": []
+                        "name": "Evasion",
+                        "grants": [
+                            {
+                                "ref": "c6817"
+                            }
+                        ]
                     },
                     {
                         "name": "Subclass Feature: Rogue",
@@ -6134,8 +6270,12 @@
                 "Proficiency Bonus": 4,
                 "Features": [
                     {
-                        "name": "{{Pass|Reliable Talent}}",
-                        "grants": []
+                        "name": "Reliable Talent",
+                        "grants": [
+                            {
+                                "ref": "c6874"
+                            }
+                        ]
                     }
                 ],
                 "Sneak Attack Damage": 6

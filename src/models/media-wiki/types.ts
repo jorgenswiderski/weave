@@ -12,6 +12,7 @@ export interface IPageData extends ApiRevision {
     hasCategory(categoryNames: string[] | string): boolean;
     hasTemplate(templateNames: string[] | string): Promise<boolean>;
     getTemplate(templateName: string): Promise<IMediaWikiTemplate>;
+    getTemplates(templateName: string): Promise<IMediaWikiTemplate[]>;
     getSection(nameOrRegex: string, depth?: number): IPageSection | null;
     getSections(nameOrRegex: string, depth?: number): IPageSection[];
 }

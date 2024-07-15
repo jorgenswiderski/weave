@@ -13,6 +13,7 @@ import { RevisionLock } from '../revision-lock/revision-lock';
 import { MediaWikiTemplate } from './media-wiki-template';
 import { MediaWikiParser } from './media-wiki-parser';
 import { PageSection } from './page-section';
+import { MediaWikiText } from './media-wiki-text';
 
 export class PageData implements IPageData {
     title: string;
@@ -79,136 +80,16 @@ export class PageData implements IPageData {
         );
     }
 
-    protected static async getTemplatePage(
-        templateName: string,
-    ): Promise<PageData> {
-        // eslint-disable-next-line @typescript-eslint/no-use-before-define
-        return MediaWiki.getPage(
-            `${
-                templateName.startsWith('User:') ? '' : 'Template:'
-            }${templateName}`,
-        );
-    }
-
-    protected static getTemplateId = Utils.memoize(async function getTemplateId(
-        templateName: string,
-    ): Promise<number> {
-        const { pageId } = await PageData.getTemplatePage(templateName);
-
-        return pageId;
-    });
-
-    static magicWords = [
-        /^#[^|}]+:/, // Some magic words (parser functions?) start with an octothorpe
-        /^[lu]c(?:first)?:/i, // Casing formatter https://www.mediawiki.org/wiki/Help:Magic_words/en#Formatting
-    ];
-
-    protected getRawTemplateNames(): string[] {
-        const allTemplateNames = [
-            ...this.content.matchAll(
-                /(?<=[^{]|^){{(?:Template:)?([^|{}]+)[\s\S]*?}}/g,
-            ),
-        ]
-            .map((match) => match[1].trim())
-            // filter out "magic words" like "{{DISPLAYTITLE}}" which aren't templates
-            // https://www.mediawiki.org/wiki/Help:Magic_words/en
-            .filter((name) => {
-                // Many magic words are in upper case, filter out matches which are in all uppercase
-                const varName = name.split(':')[0];
-
-                return varName !== varName.toUpperCase();
-            })
-            .filter((name) =>
-                PageData.magicWords.every((regexp) => !name.match(regexp)),
-            );
-
-        return Array.from(new Set(allTemplateNames));
-    }
-
-    static templateCache: Map<number, Set<number>> = new Map();
-
-    async hasTemplate(templateNames: string[] | string): Promise<boolean> {
-        const { pageId: key } = this;
-
-        // eslint-disable-next-line no-param-reassign
-        templateNames =
-            typeof templateNames === 'string' ? [templateNames] : templateNames;
-
-        if (!PageData.templateCache.has(key)) {
-            const pageTemplateIds = await Promise.all(
-                this.getRawTemplateNames().map(PageData.getTemplateId),
-            );
-
-            PageData.templateCache.set(key, new Set(pageTemplateIds));
-        }
-
-        const searchTemplateIds = await Promise.all(
-            templateNames.map(PageData.getTemplateId),
-        );
-
-        const pageTemplateIds = PageData.templateCache.get(key)!;
-
-        return searchTemplateIds.some((id) => pageTemplateIds.has(id));
-    }
-
-    protected async getTemplateInternal(
-        templateName: string,
-        matchAll?: undefined,
-    ): Promise<MediaWikiTemplate>;
-    protected async getTemplateInternal(
-        templateName: string,
-        matchAll: true,
-    ): Promise<MediaWikiTemplate[]>;
-    protected async getTemplateInternal(
-        templateName: string,
-        matchAll: true | undefined,
-    ): Promise<MediaWikiTemplate | MediaWikiTemplate[]> {
-        const templateId = await PageData.getTemplateId(templateName);
-        const rawPageTemplateNames = this.getRawTemplateNames();
-
-        const matchingTemplate = await Utils.asyncFilter(
-            rawPageTemplateNames,
-            async (name) => (await PageData.getTemplateId(name)) === templateId,
-        );
-
-        if (matchingTemplate.length === 0) {
-            throw new Error(
-                `Could not find template '${templateName}' in page '${this.title}'`,
-            );
-        }
-
-        if (matchingTemplate.length > 1) {
-            throw new Error(
-                `Found ${matchingTemplate.length} templates matching template '${templateName}' in page '${this.title}'`,
-            );
-        }
-
-        const matchingTemplateName = matchingTemplate[0];
-
-        const templates = MediaWikiTemplate.fromPage(
-            this,
-            matchingTemplateName,
-        );
-
-        if (!matchAll && templates.length > 1) {
-            throw new Error(
-                `Found more than 1 'Template:${matchingTemplateName}' when parsing page '${this.title}', but only expected 1!`,
-            );
-        }
-
-        if (matchAll) {
-            return templates;
-        }
-
-        return templates[0];
-    }
-
     async getTemplate(templateName: string): Promise<MediaWikiTemplate> {
-        return this.getTemplateInternal(templateName);
+        return MediaWikiText.getTemplate(this.content, templateName, this);
     }
 
     async getTemplates(templateName: string): Promise<MediaWikiTemplate[]> {
-        return this.getTemplateInternal(templateName, true);
+        return MediaWikiText.getTemplates(this.content, templateName, this);
+    }
+
+    async hasTemplate(templateNames: string[] | string): Promise<boolean> {
+        return MediaWikiText.hasTemplate(this.content, templateNames, this);
     }
 
     getSection(
@@ -693,3 +574,5 @@ export class MediaWiki {
         }
     }
 }
+
+MediaWikiText.MediaWiki.getPage = MediaWiki.getPage;
