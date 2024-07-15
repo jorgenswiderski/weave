@@ -1,16 +1,22 @@
 import fs from 'fs';
+import { Collection, Document } from 'mongodb';
+import assert from 'assert';
 import { MongoCollections, getMongoDb } from '../mongo';
 import { RevisionLockEntry, RevisionLockInfo } from './types';
 import { log } from '../logger';
+import { CONFIG } from '../config';
+import { Utils } from '../utils';
 
 class RevisionLockSingleton {
     redirects: Map<string, string>;
     deadLinks: Set<string>;
+    revisions: RevisionLockEntry[];
 
     constructor() {
-        const { redirects, deadLinks } = this.loadRedirects();
+        const { redirects, deadLinks, revisions } = this.load();
         this.redirects = redirects;
         this.deadLinks = deadLinks;
+        this.revisions = revisions;
     }
 
     protected static async write(data: any, path: string): Promise<void> {
@@ -21,9 +27,12 @@ class RevisionLockSingleton {
         await fs.promises.writeFile(path, JSON.stringify(data, null, 4));
     }
 
-    protected loadRedirects(): {
+    path = 'data-dump/revision-lock.json';
+
+    protected load(): {
         redirects: Map<string, string>;
         deadLinks: Set<string>;
+        revisions: RevisionLockEntry[];
     } {
         try {
             const jsonStr = fs.readFileSync(this.path, 'utf-8');
@@ -37,11 +46,12 @@ class RevisionLockSingleton {
 
             const deadLinks = new Set<string>(lockData.deadLinks);
 
-            return { redirects, deadLinks };
+            return { redirects, deadLinks, revisions: lockData.revisions };
         } catch (err) {
             return {
                 redirects: new Map<string, string>(),
                 deadLinks: new Set<string>(),
+                revisions: [],
             };
         }
     }
@@ -80,9 +90,7 @@ class RevisionLockSingleton {
         }
     }
 
-    path = 'data-dump/revision-lock.json';
-
-    protected static async getRevisions(): Promise<RevisionLockEntry[]> {
+    protected async updateRevisions(): Promise<void> {
         const db = await getMongoDb();
         const collection = db.collection(MongoCollections.MW_PAGES);
 
@@ -100,7 +108,7 @@ class RevisionLockSingleton {
 
         const data = (await cursor.toArray()) as unknown as RevisionLockEntry[];
 
-        return (
+        this.revisions = (
             data.map((datum) =>
                 Object.fromEntries(
                     Object.entries(datum).sort((a, b) =>
@@ -116,14 +124,55 @@ class RevisionLockSingleton {
         deadLinks: Set<string>,
     ): Promise<void> {
         await RevisionLockSingleton.prunePages();
+        await this.updateRevisions();
 
         const data = {
             redirects: RevisionLockSingleton.getRedirects(redirectMap),
-            revisions: await RevisionLockSingleton.getRevisions(),
+            revisions: this.revisions,
             deadLinks: Array.from(deadLinks).sort(),
         };
 
         await RevisionLockSingleton.write(data, this.path);
+    }
+
+    async getRevisionMismatches(collection: Collection<Document>) {
+        return Utils.asyncFilter(this.revisions, async (lock) => {
+            assert(
+                typeof lock.title === 'string',
+                `Expected title to be defined for lock on page ${lock.pageId}`,
+            );
+
+            assert(
+                typeof lock.pageId === 'number',
+                `Expected pageId to be defined for lock on page ${lock.title}`,
+            );
+
+            assert(
+                typeof lock.revisionId === 'number',
+                `Expected revisionId to be defined for lock on page ${lock.title}`,
+            );
+
+            const document = await collection!.findOne(lock);
+
+            return !document;
+        });
+    }
+
+    async validateDatabaseState(): Promise<void> {
+        if (!CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS) {
+            return;
+        }
+
+        const db = await getMongoDb();
+        const collection = db.collection(MongoCollections.MW_PAGES);
+
+        const mismatches = await this.getRevisionMismatches(collection);
+
+        assert(
+            mismatches.length === 0,
+            `Database state does not match revision lock, ${mismatches.length} mismatches found.
+            Run 'npm run load-revisions' or disable USE_LOCKED_REVISIONS in config.`,
+        );
     }
 }
 

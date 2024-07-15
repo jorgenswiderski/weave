@@ -3,16 +3,13 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-import fs from 'fs';
 import assert from 'assert';
 import { Collection, Document } from 'mongodb';
 import { error, log } from '../logger';
 import { RevisionLock } from './revision-lock';
 import { MongoCollections, getMongoDb, initPagesCollection } from '../mongo';
 import { MediaWiki } from '../media-wiki/media-wiki';
-import { Utils } from '../utils';
 import { CONFIG } from '../config';
-import { RevisionLockInfo } from './types';
 
 const isDryRun = process.argv.includes('--dry-run');
 
@@ -34,8 +31,6 @@ async function loadRevisions() {
 
     try {
         const startTime = Date.now();
-        const jsonStr = await fs.promises.readFile(RevisionLock.path, 'utf-8');
-        const { revisions: locks } = JSON.parse(jsonStr) as RevisionLockInfo;
         const db = await getMongoDb();
 
         if (isDryRun) {
@@ -44,26 +39,7 @@ async function loadRevisions() {
 
         collection = db.collection(MongoCollections.MW_PAGES);
 
-        const mismatches = await Utils.asyncFilter(locks, async (lock) => {
-            assert(
-                typeof lock.title === 'string',
-                `Expected title to be defined for lock on page ${lock.pageId}`,
-            );
-
-            assert(
-                typeof lock.pageId === 'number',
-                `Expected pageId to be defined for lock on page ${lock.title}`,
-            );
-
-            assert(
-                typeof lock.revisionId === 'number',
-                `Expected revisionId to be defined for lock on page ${lock.title}`,
-            );
-
-            const document = await collection!.findOne(lock);
-
-            return !document;
-        });
+        const mismatches = await RevisionLock.getRevisionMismatches(collection);
 
         if (mismatches.length > 50) {
             log(

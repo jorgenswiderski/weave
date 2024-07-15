@@ -5012,7 +5012,7 @@
         },
         {
             "pageId": 4541,
-            "revisionId": 197794,
+            "revisionId": 207693,
             "title": "Kill Kagha"
         },
         {
@@ -5482,7 +5482,7 @@
         },
         {
             "pageId": 5900,
-            "revisionId": 205248,
+            "revisionId": 207626,
             "title": "Silfy"
         },
         {
@@ -8222,7 +8222,7 @@
         },
         {
             "pageId": 9260,
-            "revisionId": 206750,
+            "revisionId": 207648,
             "title": "Bhaal"
         },
         {
@@ -8367,7 +8367,7 @@
         },
         {
             "pageId": 9381,
-            "revisionId": 206747,
+            "revisionId": 207642,
             "title": "Myrkul"
         },
         {
@@ -23509,6 +23509,11 @@
             "pageId": 43519,
             "revisionId": 206554,
             "title": "Joyous Trumpet"
+        },
+        {
+            "pageId": 43615,
+            "revisionId": 207691,
+            "title": "Garrotte (Sorn Orlith)"
         }
     ],
     "deadLinks": [
