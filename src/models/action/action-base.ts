@@ -103,16 +103,19 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
             config: MediaWikiTemplateParserConfigItem,
             page?: IPageData,
         ) => {
-            const costMatches = [...value.matchAll(/([\w\d]+)(?::(\d+))?/g)];
+            const costMatches = [...value.matchAll(/([\w\s]+)(?::(\d+))?/g)];
 
             const costs = costMatches.map(
                 ([, resource, amount]): ActionCost => {
+                    // eslint-disable-next-line no-param-reassign
+                    resource = resource.trim().toLowerCase();
+
                     if (
                         !(resource in ActionResourceFromString) &&
                         resource !== ''
                     ) {
                         error(
-                            `Failed to map '${config.key}' value '${value}' to enum (${page?.title}).`,
+                            `Failed to map resource '${resource}' to enum (${page?.title}) in key '${config.key}' .`,
                         );
                     }
 

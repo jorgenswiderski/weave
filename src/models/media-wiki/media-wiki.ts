@@ -542,7 +542,7 @@ export class MediaWiki {
         return typeof redirect !== 'undefined';
     }
 
-    static async validatePages(): Promise<void> {
+    static async pruneUnusedPages(): Promise<void> {
         const db = await getMongoDb();
         const collection = db.collection(MongoCollections.MW_PAGES);
 

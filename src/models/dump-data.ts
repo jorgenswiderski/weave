@@ -13,8 +13,6 @@ import { CONFIG } from './config';
 import { MwnTokenBucket } from '../api/mwn';
 import { initData } from './init-data';
 
-CONFIG.MEDIAWIKI.USE_LOCKED_REVISIONS = false;
-
 async function write(data: any, path: string): Promise<void> {
     await fs.mkdir(path.split('/').slice(0, -1).join('/'), {
         recursive: true,
@@ -26,11 +24,15 @@ async function write(data: any, path: string): Promise<void> {
 async function dump() {
     try {
         const startTime = Date.now();
-        await Promise.all([getMongoDb(), MediaWiki.validatePages()]);
-        const data = await initData();
-        const tasks: Promise<any>[] = [];
+        await Promise.all([getMongoDb(), MediaWiki.pruneUnusedPages()]);
 
-        tasks.push(
+        log(`Initializing data...`);
+        const data = await initData();
+
+        log(`Flushing to disk...`);
+        const ioTasks: Promise<any>[] = [];
+
+        ioTasks.push(
             ...Object.entries(data).map(async ([name, subData]) => {
                 const path = `data-dump/${name}.json`;
                 await write(subData, path);
@@ -38,12 +40,12 @@ async function dump() {
             }),
         );
 
-        tasks.push(
-            RevisionLock.save(MediaWiki.titleRedirects, MediaWiki.deadLinks),
+        ioTasks.push(
+            RevisionLock.save(MediaWiki.titleRedirects, RevisionLock.deadLinks),
         );
 
-        tasks.push(StaticImageCacheService.cleanupCache());
-        await Promise.all(tasks);
+        ioTasks.push(StaticImageCacheService.cleanupCache());
+        await Promise.all(ioTasks);
 
         if (CONFIG.MWN.TRACK_TOKEN_USAGE) {
             MwnTokenBucket.logUsage();

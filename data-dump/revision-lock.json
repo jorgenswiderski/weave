@@ -270,6 +270,7 @@
         "The Absolute": "Absolute",
         "The Rite of Thorns": "Rite of Thorns Scroll",
         "The_Risen_Road": "The Risen Road",
+        "Tiefling Refugees": "Tiefling refugees",
         "Timothy": "'Timothy'",
         "Tomelia": "'Tomelia'",
         "Trader": "Traders",
@@ -822,7 +823,7 @@
         },
         {
             "pageId": 829,
-            "revisionId": 207587,
+            "revisionId": 207632,
             "title": "Zevlor"
         },
         {
@@ -1512,7 +1513,7 @@
         },
         {
             "pageId": 1661,
-            "revisionId": 179653,
+            "revisionId": 207672,
             "title": "Friends"
         },
         {
@@ -3597,7 +3598,7 @@
         },
         {
             "pageId": 3509,
-            "revisionId": 203370,
+            "revisionId": 207643,
             "title": "Brand of the Absolute"
         },
         {
@@ -4137,7 +4138,7 @@
         },
         {
             "pageId": 3949,
-            "revisionId": 164774,
+            "revisionId": 207613,
             "title": "Key of the Ancients"
         },
         {
@@ -4947,7 +4948,7 @@
         },
         {
             "pageId": 4511,
-            "revisionId": 170092,
+            "revisionId": 207687,
             "title": "Rescue the Druid Halsin"
         },
         {
@@ -4997,7 +4998,7 @@
         },
         {
             "pageId": 4532,
-            "revisionId": 197793,
+            "revisionId": 207637,
             "title": "Save the Refugees"
         },
         {
@@ -5007,7 +5008,7 @@
         },
         {
             "pageId": 4540,
-            "revisionId": 183921,
+            "revisionId": 207698,
             "title": "Investigate Kagha"
         },
         {
@@ -5047,7 +5048,7 @@
         },
         {
             "pageId": 4566,
-            "revisionId": 197804,
+            "revisionId": 207661,
             "title": "Defeat the Goblins"
         },
         {
@@ -5627,7 +5628,7 @@
         },
         {
             "pageId": 6303,
-            "revisionId": 204248,
+            "revisionId": 207754,
             "title": "Orin"
         },
         {
@@ -7451,6 +7452,11 @@
             "title": "Scale Mail of Vengeance"
         },
         {
+            "pageId": 8674,
+            "revisionId": 189019,
+            "title": "Druids' Chambers"
+        },
+        {
             "pageId": 8677,
             "revisionId": 201816,
             "title": "Knife of the Undermountain King"
@@ -7517,7 +7523,7 @@
         },
         {
             "pageId": 8732,
-            "revisionId": 165228,
+            "revisionId": 207850,
             "title": "Strange Conduit Ring"
         },
         {
@@ -8322,7 +8328,7 @@
         },
         {
             "pageId": 9332,
-            "revisionId": 190602,
+            "revisionId": 207744,
             "title": "Get Orin's Netherstone"
         },
         {
@@ -9197,7 +9203,7 @@
         },
         {
             "pageId": 10443,
-            "revisionId": 203881,
+            "revisionId": 207812,
             "title": "Ketheric Thorm"
         },
         {
@@ -10047,7 +10053,7 @@
         },
         {
             "pageId": 11465,
-            "revisionId": 203092,
+            "revisionId": 207614,
             "title": "Ulder Ravengard"
         },
         {
@@ -10327,7 +10333,7 @@
         },
         {
             "pageId": 11814,
-            "revisionId": 206410,
+            "revisionId": 207786,
             "title": "Enver Gortash"
         },
         {
@@ -11017,7 +11023,7 @@
         },
         {
             "pageId": 13258,
-            "revisionId": 202375,
+            "revisionId": 207853,
             "title": "Inner Sanctum"
         },
         {
@@ -14062,7 +14068,7 @@
         },
         {
             "pageId": 19984,
-            "revisionId": 203030,
+            "revisionId": 207815,
             "title": "The High Hall"
         },
         {
@@ -14072,7 +14078,7 @@
         },
         {
             "pageId": 19990,
-            "revisionId": 189324,
+            "revisionId": 207723,
             "title": "Bhaal Temple"
         },
         {

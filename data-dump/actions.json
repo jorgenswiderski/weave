@@ -310,9 +310,6 @@
             },
             {
                 "resource": 4,
-                "amount": 1
-            },
-            {
                 "amount": 6
             }
         ]
@@ -1361,10 +1358,7 @@
         "rangeFt": 60,
         "costs": [
             {
-                "amount": 1
-            },
-            {
-                "resource": 4,
+                "resource": 5,
                 "amount": 1
             }
         ]
@@ -2287,9 +2281,6 @@
         "costs": [
             {
                 "resource": 4,
-                "amount": 1
-            },
-            {
                 "amount": 5
             }
         ]
