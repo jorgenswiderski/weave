@@ -21,18 +21,16 @@ export class CharacterFeatureWarlockDeepenedPact extends CharacterFeature {
             'Passive feature page',
         );
 
-        const { noOp } = MediaWikiTemplate.Parsers;
-
         const { image } = passiveTemplate.parse({
-            image: {
-                parser: noOp,
-            },
+            image: {},
         });
 
         this.image = image;
     }
 
-    protected async getDescription(): Promise<string> {
+    async initDescription(): Promise<void> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
         if (!this.page) {
             throw new PageNotFoundError();
         }
@@ -41,24 +39,15 @@ export class CharacterFeatureWarlockDeepenedPact extends CharacterFeature {
             'Passive feature page',
         );
 
-        const { noOp } = MediaWikiTemplate.Parsers;
+        const { plainText } = MediaWikiTemplate.Parsers;
 
         const { description } = passiveTemplate.parse({
             description: {
-                parser: noOp,
+                parser: plainText,
             },
         });
 
-        return description;
-    }
-
-    async initDescription(): Promise<void> {
-        await this.initialized[PageLoadingState.PAGE_CONTENT];
-
-        const description = await this.getDescription();
-        const match = description.match(/(.+?)\n/)!;
-
-        this.description = MediaWikiParser.stripMarkup(match[1]).trim();
+        this.description = description;
     }
 
     protected async parseOptions(): Promise<ICharacterOptionWithStubs[]> {
@@ -66,24 +55,32 @@ export class CharacterFeatureWarlockDeepenedPact extends CharacterFeature {
             throw new PageNotFoundError();
         }
 
-        const description = await this.getDescription();
+        const passiveTemplate = await this.page.getTemplate(
+            'Passive feature page',
+        );
+
+        const { additional: optionsDescription } = passiveTemplate.parse({
+            additional: {},
+        });
 
         const pacts = [
-            ...description.matchAll(
-                /(?<=\n\s*\*)\s*([^:]+?)\s*:\s*([\s\S]+?)(?:\n\s*\*|$)/g,
+            ...optionsDescription.matchAll(
+                /\s*;\s*{{Pass\s*\|\s*([^|}]+?)\s*}}\s*\n\s*:\s*(.+?)\s*(?=(?:\n\s*;)|$)/g,
             ),
         ];
 
         const options: ICharacterOptionWithStubs[] = await Promise.all(
             pacts.map(async ([, optTitle, optDesc]) => {
                 const effectMatches = [
-                    ...optDesc.matchAll(/{{SAI\|([^|}]+?)(?:\|[^}]*?)?}}/g),
+                    ...optDesc.matchAll(
+                        /{{(?:SAI|Pass)\|([^|}]+?)(?:\|[^}]*?)?}}/g,
+                    ),
                 ];
 
                 const effects = (
                     await Promise.all(
-                        effectMatches.map(([sai]) =>
-                            CharacterFeature.factory!.fromWikitext(sai),
+                        effectMatches.map(([template]) =>
+                            CharacterFeature.factory!.fromWikitext(template),
                         ),
                     )
                 ).filter(Boolean) as CharacterFeature[];

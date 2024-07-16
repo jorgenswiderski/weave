@@ -28,6 +28,7 @@ import {
     MediaWikiTemplateParserConfigItem,
     MediaWikiTemplateParserConfig,
     IPageData,
+    IMediaWikiTemplate,
 } from '../media-wiki/types';
 
 type ItemSourcePageInfo = {
@@ -80,7 +81,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
     private static parseEffects(
         effectText: string,
         config: MediaWikiTemplateParserConfigItem,
-        page: IPageData,
+        page?: IPageData,
     ): GrantableEffect[] {
         const namedEffectPattern = /\*\s*'''(.*?):?''':?\s*(.*?)(?:\n|$)/g;
 
@@ -107,7 +108,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
         if (anonEffects.length > 0) {
             effects.push({
-                name: page.title,
+                name: page!.title,
                 description: anonEffects
                     .map((effect) => effect.description)
                     .join('\n'),
@@ -146,7 +147,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return [undefined, questPages];
     }
 
-    protected async parseItemSourceCharacter(
+    protected static async parseItemSourceCharacter(
         pages: ItemSourcePageInfo[],
     ): Promise<
         [ItemSourceCharacter | undefined, Required<ItemSourcePageInfo[]>]
@@ -164,12 +165,6 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         // }
 
         if (characterPages.length > 0) {
-            if (!(await characterPages[0].data.hasTemplate('CharacterInfo'))) {
-                error(
-                    `Item '${this.name}' source page '${characterPages[0].title}' has no CharacterInfo template!`,
-                );
-            }
-
             return [
                 {
                     name: MediaWikiParser.parseNameFromPageTitle(
@@ -184,9 +179,74 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         return [undefined, characterPages];
     }
 
+    protected static async getCharacterInfoTemplateForItem(
+        pageData: IPageData,
+    ): Promise<IMediaWikiTemplate | undefined> {
+        const templateTypes = [
+            'CharacterInfo',
+            'CharacterInfo2',
+            // 'Infobox creature',
+        ];
+
+        let template: IMediaWikiTemplate | undefined;
+
+        // eslint-disable-next-line no-restricted-syntax
+        for (const templateType of templateTypes) {
+            try {
+                template =
+                    // eslint-disable-next-line no-await-in-loop
+                    await pageData.getTemplate(templateType);
+
+                break;
+            } catch (err) {
+                // do nothing
+            }
+        }
+
+        return template;
+    }
+
+    protected static async getGameLocationFromCharacter(
+        character: ItemSourceCharacter,
+    ): Promise<GameLocation | undefined> {
+        const page = await MediaWiki.getPage(character.name);
+
+        const template =
+            await EquipmentItem.getCharacterInfoTemplateForItem(page);
+
+        if (template) {
+            const { location } = template.parse({
+                location: {
+                    parser: (value) => value.trim(),
+                    default: undefined,
+                },
+            });
+
+            if (location) {
+                return gameLocationByPageTitle.get(location);
+            }
+        }
+
+        const introText = page.content?.match(/([\s\S]+?)\n==/)?.[1];
+
+        if (introText) {
+            const pageTitles = MediaWikiParser.getAllPageTitles(introText);
+            const pages = await EquipmentItem.getPageInfoFromTitles(pageTitles);
+
+            const locationPages = pages
+                .filter(({ data }) => data?.hasCategory('Locations'))
+                .filter(({ title }) => gameLocationByPageTitle.has(title));
+
+            if (locationPages.length > 0) {
+                return gameLocationByPageTitle.get(locationPages[0].title);
+            }
+        }
+
+        return undefined;
+    }
+
     protected async parseGameLocation(
         pages: ItemSourcePageInfo[],
-        characterPages: Required<ItemSourcePageInfo>[],
         questPages: Required<ItemSourcePageInfo>[],
         character?: ItemSourceCharacter,
         quest?: ItemSourceQuest,
@@ -204,62 +264,32 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
         });
 
         if (locations.length > 0) {
-            if (locations.length === 1) {
-                return locations[0];
-            }
-
             if (locations.length > 1) {
                 // Find the location with the highest depth value (most specific location)
                 locations.sort((a, b) => b.depth - a.depth);
 
                 // if (
-                //     locations.length > 1 &&
                 //     locations[0].depth === locations[1].depth
                 // ) {
                 //     warn(
                 //         `Item '${item.name}' has a source that mentions multiple locations with the same depth`,
                 //     );
                 // }
-
-                return locations[0];
             }
-        } else if (character) {
-            const config: MediaWikiTemplateParserConfig = {
-                location: {
-                    parser: (value) => {
-                        const match = value.match(/\[\[([^#|\]]+).*?]]/);
 
-                        if (match?.[1]) {
-                            return match[1];
-                        }
+            return locations[0];
+        }
 
-                        const coordsTemplateMatch = value.match(
-                            /{{Coords\|-?\d+\|-?\d+\|([^}]+)}}/,
-                        );
+        if (character) {
+            const location: GameLocation | undefined =
+                await EquipmentItem.getGameLocationFromCharacter(character);
 
-                        return coordsTemplateMatch?.[1];
-                    },
-                },
-            };
-
-            const template =
-                await characterPages[0].data.getTemplate('CharacterInfo');
-
-            const { location: locationPageTitle } = template.parse(config);
-
-            if (locationPageTitle) {
-                try {
-                    // Get the real page title, in case of redirects
-                    const page = await MediaWiki.getPage(locationPageTitle);
-
-                    if (page) {
-                        return gameLocationByPageTitle.get(page.title);
-                    }
-                } catch (err) {
-                    error(err);
-                }
+            if (location) {
+                return location;
             }
-        } else if (quest) {
+        }
+
+        if (quest) {
             const match = questPages[0].data.content?.match(/([\s\S]+?)\n==/);
 
             if (match) {
@@ -270,7 +300,7 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
                 const newPages =
                     await EquipmentItem.getPageInfoFromTitles(pageTitles);
 
-                return this.parseGameLocation(newPages, [], []);
+                return this.parseGameLocation(newPages, []);
             }
         }
 
@@ -312,12 +342,10 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             ? this.parseItemSourceQuest(pages)
             : [undefined, []];
 
-        const [character, characterPages] =
-            await this.parseItemSourceCharacter(pages);
+        const [character] = await EquipmentItem.parseItemSourceCharacter(pages);
 
         const location = await this.parseGameLocation(
             pages,
-            characterPages as Required<ItemSourcePageInfo>[],
             questPages as Required<ItemSourcePageInfo>[],
             character,
             quest,
@@ -353,12 +381,12 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
         this.id = this.page.pageId;
 
-        const { noOp, plainText, int, float } = MediaWikiTemplate.Parsers;
+        const { plainText, int, float } = MediaWikiTemplate.Parsers;
         const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
         const config: MediaWikiTemplateParserConfig = {
-            image: { parser: noOp, default: undefined },
-            icon: { parser: noOp, default: undefined },
+            image: { default: undefined },
+            icon: { default: undefined },
             description: { parser: plainText, default: undefined },
             quote: { parser: plainText, default: undefined },
             type: {
@@ -403,7 +431,9 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
             // notes: { parser: (value) => value.split('*'), default: undefined }, // FIXME
         };
 
-        const template = await this.page.getTemplate(this.templateName);
+        // Rarely, a item page could have multiple templates for variations of the item
+        // Just grab the first variant
+        const template = (await this.page.getTemplates(this.templateName))[0];
         const { sources, ...rest } = template.parse(config);
 
         if (sources) {

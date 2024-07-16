@@ -99,7 +99,9 @@ export class WeaponItem extends EquipmentItem implements Partial<IWeaponItem> {
             // },
         };
 
-        const template = await this.page.getTemplate(this.templateName);
+        // Rarely, a item page could have multiple templates for variations of the item
+        // Just grab the first variant
+        const template = (await this.page.getTemplates(this.templateName))[0];
         Object.assign(this, template.parse(config));
     }
 

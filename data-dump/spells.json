@@ -29,7 +29,7 @@
             "Wizard"
         ],
         "damageSave": 2,
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases by another d6|Acid Acid|1d6 Acid damage, for a total of 2d6|Acid.\nWhen the spellcaster reaches Level 10, the damage increases by another d6|Acid Acid|1d6 Acid damage, for a total of 3d6|Acid."
+        "higherLevels": "* At character level 5, the damage increases to 2d6|Acid.\n* At character level 10, the damage increases to 3d6|Acid."
     },
     {
         "name": "Aid",
@@ -65,7 +65,7 @@
         "level": 1,
         "school": 4,
         "summary": "This spell charms a beast and convinces it you mean no harm.",
-        "description": "Convince a beast not to attack you.\n\nThe creature must have an Intelligence of 3 or less.\nCondition ends early if you or an ally hurts the target.\nIn higher difficulty modes, the target might become hostile when the spell ends.",
+        "description": "Convince a beast not to attack you.",
         "ritual": false,
         "concentration": false,
         "id": 1985,
@@ -98,7 +98,7 @@
         "level": 3,
         "school": 7,
         "summary": "This spell allows spellcasters to animate a corpse to create an undead servant.",
-        "description": "Animate a corpse to create an undead servant while not in combat.\n\nThe target must be a Medium or Small corpse.",
+        "description": "Animate a corpse to create an undead servant while not in combat.",
         "ritual": false,
         "concentration": false,
         "id": 2757,
@@ -119,17 +119,43 @@
             "Cleric",
             "Wizard"
         ],
+        "higherLevels": "* When the spell is cast at 4th Level, raise up to 3 Skeletons or Zombies instead of 1.\n* When the spell is cast at 5th Level, raise a Ghoul or Flying Ghoul.\n* When the spell is cast at 6th Level, raise up to 3 Ghouls or Flying Ghouls instead of 1.",
         "variants": [
             {
                 "name": "Animate Dead: Skeleton",
                 "image": "Animate Dead Skeleton.webp",
                 "level": 3,
                 "school": 7,
-                "summary": "This spell allows spellcasters to animate a corpse to create a skeleton|Skeleton that focuses on ranged weaponry. They must target a corpse, and the skeleton lasts until killed or until the next long rest.",
-                "description": "Create a Skeleton that specialises in ranged combat.\n\nThe target must be a Medium or Small corpse.",
+                "summary": "This spell allows spellcasters to animate a corpse to create a Skeleton that focuses on ranged weaponry. They must target a corpse, and the skeleton lasts until killed or until the next long rest.",
+                "description": "Create a Skeleton that specialises in ranged combat.",
                 "ritual": false,
                 "concentration": false,
                 "id": 13504,
+                "attackRoll": false,
+                "rangeM": 3,
+                "rangeFt": 10,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 14,
+                        "amount": 1
+                    }
+                ],
+                "classes": []
+            },
+            {
+                "name": "Animate Dead: Zombie",
+                "image": "Animate Dead Zombie.webp",
+                "level": 3,
+                "school": 7,
+                "summary": "This spell allows spellcasters to animate a corpse to create a Zombie that specializes in melee combat. They must target a corpse, and the zombie lasts until killed or until the next long rest.\n\nThis spell is a variation of Animate Dead.",
+                "description": "Create a Zombie that specialises in melee combat.",
+                "ritual": false,
+                "concentration": false,
+                "id": 13505,
                 "attackRoll": false,
                 "rangeM": 3,
                 "rangeFt": 10,
@@ -150,8 +176,8 @@
                 "image": "Animate Dead Skeleton.webp",
                 "level": 4,
                 "school": 7,
-                "summary": "This spell is a higher level version of Animate Dead: Skeleton that can summon 3 skeletons instead of 1. Accordingly, the user must also target 3 corpses for this instead of 1.",
-                "description": "Create 3 Skeletons that specialise in ranged combat.\n\nThe target must be a Medium or Small corpse.",
+                "summary": "This spell is a higher level version of Animate Dead: Skeleton that can summon 3 Skeletons instead of 1. Accordingly, the user must also target 3 corpses for this instead of 1.",
+                "description": "Create 3 Skeletons that specialise in ranged combat.",
                 "ritual": false,
                 "concentration": false,
                 "id": 21420,
@@ -172,37 +198,12 @@
                 "damageSaveEffect": 1
             },
             {
-                "name": "Animate Dead: Zombie",
-                "image": "Animate Dead Zombie.webp",
-                "level": 3,
-                "school": 7,
-                "summary": "This spell allows spellcasters to animate a corpse to create a Zombie that specializes in melee combat. They must target a corpse, and the zombie lasts until killed or until the next long rest.\n\nThis spell is a variation of Animate Dead.",
-                "description": "Create a Zombie that specialises in melee combat.\n\nThe target must be a Medium or Small corpse.",
-                "ritual": false,
-                "concentration": false,
-                "id": 13505,
-                "attackRoll": false,
-                "rangeM": 3,
-                "rangeFt": 10,
-                "costs": [
-                    {
-                        "resource": 1,
-                        "amount": 1
-                    },
-                    {
-                        "resource": 14,
-                        "amount": 1
-                    }
-                ],
-                "classes": []
-            },
-            {
                 "name": "Animate Dead: Zombie Batallion",
                 "image": "Animate Dead Zombie.webp",
                 "level": 4,
                 "school": 7,
                 "summary": "This spell is a higher level version of Animate Dead: Zombie that can summon 3 Zombies instead of 1. Accordingly, the user must also target 3 corpses for this instead of 1.",
-                "description": "Create 3 Zombies that specialises in melee combat.\n\nThe targets must be a Medium or Small corpse.",
+                "description": "Create 3 Zombies that specialise in melee combat.",
                 "ritual": false,
                 "concentration": false,
                 "id": 21421,
@@ -226,11 +227,36 @@
                 "image": "Animate Dead Ghoul.webp",
                 "level": 5,
                 "school": 7,
-                "summary": "This spell allows spellcasters to animate a corpse to create a ghoul|Ghoul (Animate Dead). Requires a corpse, and lasts until long rest.",
-                "description": "Create a ghoul that specialises in melee combat.\n\nThe target must be a Medium or Small corpse.",
+                "summary": "This spell allows spellcasters to animate a corpse to create a Ghoul|Ghoul (Animate Dead). Requires a corpse, and lasts until long rest.",
+                "description": "Create a Ghoul that specialises in melee combat.",
                 "ritual": false,
                 "concentration": false,
                 "id": 21419,
+                "attackRoll": false,
+                "rangeM": 3,
+                "rangeFt": 10,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 16,
+                        "amount": 1
+                    }
+                ],
+                "classes": []
+            },
+            {
+                "name": "Animate Dead: Flying Ghoul",
+                "image": "Animate Dead Ghoul.webp",
+                "level": 5,
+                "school": 7,
+                "summary": "This spell allows spellcasters to animate a corpse to create a Flying Ghoul. Requires a corpse, and lasts until long rest.",
+                "description": "Create a Flying Ghoul that specialises in melee combat.",
+                "ritual": false,
+                "concentration": false,
+                "id": 21418,
                 "attackRoll": false,
                 "rangeM": 3,
                 "rangeFt": 10,
@@ -251,8 +277,8 @@
                 "image": "Animate Dead Ghoul.webp",
                 "level": 6,
                 "school": 7,
-                "summary": "This spell is a higher level version of Animate Dead: Ghoul that can summon 3 Ghouls instead of 1. Accordingly, the user must also target 3 corpses for this instead of 1.",
-                "description": "Create 3 Ghouls that specialises in melee combat.\n\nThe targets must be a Medium or Small corpse.",
+                "summary": "This spell is a higher level version of Animate Dead: Ghoul that can summon 3 Ghoul (Animate Dead)|Ghouls instead of 1. Accordingly, the user must also target 3 corpses for this instead of 1.",
+                "description": "Create 3 Ghouls that specialise in melee combat.",
                 "ritual": false,
                 "concentration": false,
                 "id": 21423,
@@ -272,37 +298,12 @@
                 "classes": []
             },
             {
-                "name": "Animate Dead: Flying Ghoul",
-                "image": "Animate Dead Ghoul.webp",
-                "level": 5,
-                "school": 7,
-                "summary": "This spell allows spellcasters to animate a corpse to create a flying ghoul. Requires a corpse, and lasts until long rest.",
-                "description": "Create a flying ghoul that specialises in ranged combat.\n\nThe target must be a Medium or Small corpse.",
-                "ritual": false,
-                "concentration": false,
-                "id": 21418,
-                "attackRoll": false,
-                "rangeM": 3,
-                "rangeFt": 10,
-                "costs": [
-                    {
-                        "resource": 1,
-                        "amount": 1
-                    },
-                    {
-                        "resource": 16,
-                        "amount": 1
-                    }
-                ],
-                "classes": []
-            },
-            {
                 "name": "Animate Dead: Flying Ghoul Flock",
                 "image": "Animate Dead Ghoul.webp",
                 "level": 6,
                 "school": 7,
                 "summary": "This spell is a higher level version of Animate Dead: Flying Ghoul that can summon 3 Flying Ghouls instead of 1. Accordingly, the user must also target 3 corpses for this instead of 1.",
-                "description": "Create 3 Flying Ghouls that specialises in melee combat.\n\nThe targets must be a Medium or Small corpse.",
+                "description": "Create 3 Flying Ghouls that specialise in melee combat.",
                 "ritual": false,
                 "concentration": false,
                 "id": 21424,
@@ -384,7 +385,7 @@
         "level": 1,
         "school": 1,
         "summary": "It allows spellcasters to create a spectral armour of frost that covers the caster and their equipment. The armour provides additional Hit Points to the caster and damages hostile targets while the added Hit Points are present.",
-        "description": "Gain 5 and deal 5|Cold Cold|damage to any creature that hits you with a melee attack.\n\nCan only have Temporary Hit Points from one source.",
+        "description": "Gain 5 and deal 5|Cold Cold|damage to any creature that hits you with a melee attack.",
         "ritual": false,
         "concentration": false,
         "id": 1988,
@@ -414,7 +415,7 @@
         "level": 1,
         "school": 2,
         "summary": "This spell allows the caster to summon dark tendrils and deal Necrotic damage to enemies in an area centered on the caster, preventing them from taking reactions.",
-        "description": "Prevent targets from using reactions. \n\nOn Save: Targets still take half damage but are able to use reactions.",
+        "description": "Prevent targets from using reactions.",
         "ritual": false,
         "concentration": false,
         "id": 1995,
@@ -439,8 +440,7 @@
         "classes": [
             "Warlock"
         ],
-        "damageSave": 1,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "Upcast: Deals an additional 1d6|Necrotic damage per level."
     },
     {
@@ -480,15 +480,15 @@
         "damage": "weapon",
         "extraDamage": "5d10",
         "extraDamageType": 12,
-        "image": "Banishing Smite.webp",
+        "image": "Banishing Smite Melee.webp",
         "level": 5,
         "school": 1,
         "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banishing the target.",
-        "description": "Possibly Banish your target to another plane of existence.\n\nTargets with 50 Hit Points or more can't be Banished.",
+        "description": "Possibly Banish your target to another plane of existence.",
         "ritual": false,
         "concentration": true,
         "id": 17139,
-        "attackRoll": false,
+        "attackRoll": true,
         "range": 4,
         "condition": "Banished",
         "conditionDuration": 2,
@@ -509,7 +509,7 @@
             }
         ],
         "classes": [
-            "Paladin"
+            "Bard"
         ],
         "variants": [
             {
@@ -521,7 +521,7 @@
                 "level": 5,
                 "school": 1,
                 "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banishing the target.",
-                "description": "Possibly Banish your target to another plane of existence.\n\nTargets with 50 Hit Points or more can't be Banished.",
+                "description": "Possibly Banish your target to another plane of existence.",
                 "ritual": false,
                 "concentration": true,
                 "id": 11915,
@@ -556,7 +556,7 @@
                 "level": 5,
                 "school": 1,
                 "summary": "This spells allows spellcasters to imbue their weapon with power, dealing force damage and possibly Banishing the target.",
-                "description": "Possibly Banish your target to another plane of existence.\n\nTargets with 50 Hit Points or more can't be Banished.",
+                "description": "Possibly Banish your target to another plane of existence.",
                 "ritual": false,
                 "concentration": true,
                 "id": 17142,
@@ -685,7 +685,7 @@
         "level": 3,
         "school": 7,
         "summary": "This spell allows spellcasters to curse a target with their touch.",
-        "description": "Curse a creature with your touch. The curse either bestows Disadvantage on Checks and SavingThrows, Disadvantage on Attack Rolls, lets you deal additional damage to the target, or robs it of its Actions.\n\nThe effect of the curse is based on the variant selected, and lasts for 10 turns.",
+        "description": "Curse a creature with your touch. The curse either bestows Disadvantage on Ability Checks and SavingThrows, Disadvantage on Attack Rolls, lets you deal additional damage to the target, or robs it of its Actions.\n\nThe effect of the curse is based on the variant selected, and lasts for 10 turns.",
         "ritual": false,
         "concentration": true,
         "id": 2714,
@@ -706,6 +706,7 @@
             "Cleric",
             "Wizard"
         ],
+        "damageSave": 5,
         "higherLevels": "Upcast: The duration is increased by 10 turns for each Spell Slot Level above 3rd.",
         "variants": [
             {
@@ -741,7 +742,7 @@
                 "image": "Bestow Curse Additional Damage.webp",
                 "level": 3,
                 "school": 7,
-                "summary": "This spell allows spellcasters to curse a target, causing them to take additional damage from their attacks and spells.",
+                "summary": "This spell allows spellcasters to curse a target, causing it to take additional damage from the caster's attacks and spells.",
                 "description": "Curse a creature with your touch. Your attacks and spells deal an additional 1d8|Necrotic damage to the target.",
                 "ritual": false,
                 "concentration": true,
@@ -794,7 +795,7 @@
                 "level": 3,
                 "school": 7,
                 "summary": "This spell allows spellcasters to curse a target, causing it to suffer Disadvantage on Strength Checks and Saving Throws.",
-                "description": "Curse a creature with your touch. It suffers Disadvantage on Strength Checks and SavingThrows.",
+                "description": "Curse a creature with your touch. It suffers Disadvantage on Strength Ability Checks and SavingThrows.",
                 "ritual": false,
                 "concentration": true,
                 "id": 2843,
@@ -822,7 +823,7 @@
                 "level": 3,
                 "school": 7,
                 "summary": "This spell allows spellcasters to curse a target, causing it to suffer Disadvantage on Dexterity Checks and Saving Throws.",
-                "description": "Curse a creature with your touch. It suffers Disadvantage on Dexterity Checks and SavingThrows.",
+                "description": "Curse a creature with your touch. It suffers Disadvantage on Dexterity Ability Checks and SavingThrows.",
                 "ritual": false,
                 "concentration": true,
                 "id": 2844,
@@ -850,7 +851,7 @@
                 "level": 3,
                 "school": 7,
                 "summary": "This spell allows spellcasters to curse a target, causing it to suffer Disadvantage on Constitution Checks and Saving Throws.",
-                "description": "Curse a creature with your touch. It suffers Disadvantage on Constitution Checks and SavingThrows.",
+                "description": "Curse a creature with your touch. It suffers Disadvantage on Constitution Ability Checks and SavingThrows.",
                 "ritual": false,
                 "concentration": true,
                 "id": 2842,
@@ -878,7 +879,7 @@
                 "level": 3,
                 "school": 7,
                 "summary": "This spell allows spellcasters to curse a target, causing it to suffer Disadvantage on Intelligence Checks and Saving Throws.",
-                "description": "Curse a creature with your touch. It suffers Disadvantage on Intelligence Checks and SavingThrows.",
+                "description": "Curse a creature with your touch. It suffers Disadvantage on Intelligence Ability Checks and SavingThrows.",
                 "ritual": false,
                 "concentration": true,
                 "id": 2841,
@@ -906,7 +907,7 @@
                 "level": 3,
                 "school": 7,
                 "summary": "This spell allows spellcasters to curse a target, causing it to suffer Disadvantage on Wisdom Checks and Saving Throws.",
-                "description": "Curse a creature with your touch. It suffers Disadvantage on Wisdom Checks and SavingThrows.",
+                "description": "Curse a creature with your touch. It suffers Disadvantage on Wisdom Ability Checks and SavingThrows.",
                 "ritual": false,
                 "concentration": true,
                 "id": 2840,
@@ -934,7 +935,7 @@
                 "level": 3,
                 "school": 7,
                 "summary": "This spell allows spellcasters to curse a target, causing it to suffer Disadvantage on Charisma Checks and Saving Throws.",
-                "description": "Curse a creature with your touch. It suffers Disadvantage on Charisma Checks and SavingThrows.",
+                "description": "Curse a creature with your touch. It suffers Disadvantage on Charisma Ability Checks and SavingThrows.",
                 "ritual": false,
                 "concentration": true,
                 "id": 2845,
@@ -974,8 +975,11 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "condition": "Difficult Terrain",
-        "conditionDuration": 1,
+        "areaName": "Blade Barrier (area)",
+        "areaShape": 4,
+        "areaRangeM": 36,
+        "areaRangeFt": 120,
+        "areaDuration": 60,
         "costs": [
             {
                 "resource": 1,
@@ -989,7 +993,6 @@
         "classes": [
             "Cleric"
         ],
-        "damageSave": 2,
         "damageSaveEffect": 1
     },
     {
@@ -1014,6 +1017,7 @@
         ],
         "classes": [
             "Bard",
+            "Cleric",
             "Sorcerer",
             "Wizard",
             "Warlock"
@@ -1058,7 +1062,7 @@
         "level": 4,
         "school": 7,
         "summary": "This spell allows spellcasters to drain the moisture and vitality from a target creature using necromantic energy. It's especially effective versus plants.",
-        "description": "Deals 8d8|Necrotic to a target. Plants take maximum damage from this spell, and have Disadvantage on the SavingThrow against it.\n\nOn Save: Target still takes half damage.\n\nNo effect on undead and constructs.",
+        "description": "Deals 8d8|Necrotic to a target. Plants take maximum damage from this spell, and have Disadvantage on the SavingThrow against it.",
         "ritual": false,
         "concentration": false,
         "id": 6581,
@@ -1081,8 +1085,7 @@
             "Warlock",
             "Wizard"
         ],
-        "damageSave": 3,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Necrotic damage for each Spell Slot Level above 4th."
     },
     {
@@ -1093,7 +1096,7 @@
         "image": "Blinding Smite.webp",
         "level": 3,
         "school": 5,
-        "summary": "Blinding Smite allows a Paladin to expend a Spell Slot to deal additional Radiant damage with a melee weapon attack and possibly blind their target..",
+        "summary": "Blinding Smite allows a Paladin to expend a Spell Slot to deal additional Radiant damage with a melee weapon attack and possibly blind their target.",
         "description": "Evoke a heavenly flare and possibly Blind your target",
         "ritual": false,
         "concentration": false,
@@ -1163,7 +1166,7 @@
         "level": 3,
         "school": 8,
         "summary": "This spell allows the spellcaster to travel to the Ethereal Plane, becoming temporarily unassailable and unseen until they return.",
-        "description": "Available only in combat.\n\nAt the end of your turn, roll a  d20. On 11 or higher, you vanish into the Ethereal Plane. While there, you can't be harmed or seen in this world. \n\nWhen you do vanish, your presence here is a representation of the location you'll come back to. You can choose to teleport it up to m=6|ft=20.",
+        "description": "Available only in combat.\n\nAt the end of your turn, roll a  d20. On 11 or higher, you vanish into the Ethereal Plane. While there, you can't be harmed or seen in this world.",
         "ritual": false,
         "concentration": false,
         "id": 8191,
@@ -1192,7 +1195,7 @@
         "level": 2,
         "school": 6,
         "summary": "This spell Blurs the spellcaster's body and makes them harder to hit.",
-        "description": "Your body becomes Blurred. Attackers have Disadvantage on Attack Rolls against you.\n\nDoesn't affect creatures that don't rely on sight or that can see through illusions.",
+        "description": "Attackers have Disadvantage on Attack Rolls against you.",
         "ritual": false,
         "concentration": true,
         "id": 1353,
@@ -1244,7 +1247,7 @@
             "Warlock",
             "Wizard"
         ],
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases by another d8|Necrotic Necrotic|1d8 Necrotic damage, for a total of 2d8|Necrotic.\nWhen the spellcaster reaches Level 10, the damage increases by another d8|Necrotic Necrotic|1d8 Necrotic damage, for a total of 3d8|Necrotic."
+        "higherLevels": "* At character level 5, the damage increases to 2d8|Necrotic.\n* At character level 10, the damage increases to 3d8|Necrotic."
     },
     {
         "name": "Branding Smite",
@@ -1372,7 +1375,7 @@
         "level": 1,
         "school": 5,
         "summary": "It allows spellcasters to shoot a flaming cone from their fingertips and deal Fire damage to enemies.",
-        "description": "Each flammable target is hit with 3d6|Fire Fire|damage.\n\nOn Save: Targets still take half damage.",
+        "description": "Each flammable target is hit with 3d6|Fire Fire|damage.",
         "ritual": false,
         "concentration": false,
         "id": 2008,
@@ -1407,7 +1410,7 @@
         "level": 3,
         "school": 2,
         "summary": "This spell allows spellcasters to call down lightning to hit all targets within range. The spellcaster can also continue to call down lightning repeatedly on subsequent turns.",
-        "description": "Call down lightning to hit all targets within range and its area of effect for 3d10|Lightning damage.",
+        "description": "Call down lightning to hit all targets within range and its area of effect for 3d10|Lightning damage. Then for 10 turns, you can call down lightning again without expending a spell slot.",
         "ritual": false,
         "concentration": true,
         "id": 2702,
@@ -1433,9 +1436,8 @@
         "classes": [
             "Druid"
         ],
-        "damageSave": 2,
-        "damageSaveEffect": 0,
-        "higherLevels": "Upcast: When the spell is cast using a 4th level spell slot or higher, damage increases by 1d10|Lightning for each Spell Slot Level above 3rd."
+        "damageSaveEffect": 1,
+        "higherLevels": "Upcast: When the spell is cast using a 4th level spell slot or higher, damage increases by 1d10|Lightning for each Spell Slot Level above 3rd for the first cast and given free casts."
     },
     {
         "name": "Calm Emotions",
@@ -1454,7 +1456,6 @@
         "aoeFt": 20,
         "condition": "Calmed",
         "conditionDuration": 10,
-        "conditionSave": 6,
         "costs": [
             {
                 "resource": 1,
@@ -1499,8 +1500,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSave": 2,
-        "damageSaveEffect": 0
+        "damageSaveEffect": 1
     },
     {
         "name": "Charm Person",
@@ -1508,7 +1508,7 @@
         "level": 1,
         "school": 4,
         "summary": "This spell allows spellcasters to temporarily charm a humanoid creature, granting Advantage on Charisma Checks.",
-        "description": "Charm a humanoid to prevent it from attacking you. You gain Advantage on Charisma Checks in dialogue.\n\nEnemies have Advantage on SavingThrows against being Charmed.\n\nCondition ends early if you or an ally hurts the target.\nIn higher difficulty modes, the target might accuse you of enchanting them.",
+        "description": "Charm a humanoid to prevent it from attacking you. You gain Advantage on Charisma Checks in dialogue.",
         "ritual": false,
         "concentration": false,
         "id": 999,
@@ -1599,15 +1599,13 @@
                 "level": 1,
                 "school": 5,
                 "summary": "This spell is a variant of Chromatic Orb. This variant allows spellcasters to hurl a globe of acid, dealing Acid damage and creating an Acid Surface.",
-                "description": "Hurl a sphere of energy that deals 2d8|Acid damage and creates an Acid Surface.",
+                "description": "Hurl a sphere of energy that deals 2d8|Acid damage and creates an Acid (surface) surface.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2043,
                 "attackRoll": true,
                 "range": 1,
-                "areaName": "Acid Surface",
-                "areaCategory": 2,
-                "areaShape": 1,
+                "areaName": "Acid (surface)",
                 "areaRangeM": 2,
                 "areaRangeFt": 7,
                 "areaDuration": 2,
@@ -1632,15 +1630,13 @@
                 "level": 1,
                 "school": 5,
                 "summary": "This spell is a variant of Chromatic Orb. This variant allows spellcasters to hurl a globe of cold energy, dealing Cold damage and creating an Ice Surface.",
-                "description": "Hurl a sphere of energy that deals 2d8|Cold damage and creates an Ice Surface.",
+                "description": "Hurl a sphere of energy that deals 2d8|Cold damage and creates an Ice (surface) surface.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2045,
                 "attackRoll": true,
                 "range": 1,
-                "areaName": "Ice",
-                "areaCategory": 2,
-                "areaShape": 1,
+                "areaName": "Ice (surface)",
                 "areaRangeM": 2,
                 "areaRangeFt": 7,
                 "areaDuration": 2,
@@ -1665,15 +1661,13 @@
                 "level": 1,
                 "school": 5,
                 "summary": "This spell is a variant of Chromatic Orb. This variant allows spellcasters to hurl a ball of fire, dealing Fire damage and creating a Fire Surface.",
-                "description": "Hurl a sphere of energy that deals 2d8|Fire damage and creates a Fire Surface.",
+                "description": "Hurl a sphere of energy that deals 2d8|Fire damage and creates a Fire (surface) surface.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2034,
                 "attackRoll": true,
                 "range": 1,
-                "areaName": "Fire",
-                "areaCategory": 2,
-                "areaShape": 1,
+                "areaName": "Fire (surface)",
                 "areaRangeM": 2,
                 "areaRangeFt": 7,
                 "areaDuration": 2,
@@ -1704,9 +1698,7 @@
                 "id": 2046,
                 "attackRoll": true,
                 "range": 1,
-                "areaName": "Electrified Surface",
-                "areaCategory": 2,
-                "areaShape": 1,
+                "areaName": "Electrified Water",
                 "areaRangeM": 2,
                 "areaRangeFt": 7,
                 "areaDuration": 2,
@@ -1731,15 +1723,13 @@
                 "level": 1,
                 "school": 5,
                 "summary": "This spell is a variant of Chromatic Orb. This variant allows spellcasters to hurl an orb of poison, dealing Poison damage and creating a Poison Surface.",
-                "description": "Hurl a sphere of energy that deals 2d8|Poison damage and creates a Poison Surface.",
+                "description": "Hurl a sphere of energy that deals 2d8|Poison damage and creates a Simple Toxin (surface) surface.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2044,
                 "attackRoll": true,
                 "range": 1,
-                "areaName": "Poison Surface",
-                "areaCategory": 2,
-                "areaShape": 1,
+                "areaName": "Simple Toxin (surface)",
                 "areaRangeM": 2,
                 "areaRangeFt": 7,
                 "areaDuration": 7,
@@ -1791,8 +1781,7 @@
             "Warlock",
             "Wizard"
         ],
-        "damageSave": 3,
-        "damageSaveEffect": 0
+        "damageSaveEffect": 1
     },
     {
         "name": "Cloud of Daggers",
@@ -1801,15 +1790,14 @@
         "image": "Cloud of Daggers.webp",
         "level": 2,
         "school": 2,
-        "summary": "This spell allows spellcasters to conjure a barrage of daggers in an area that deal Slashing damage to any creature entering or starting their turn in the area.",
+        "summary": "This spell allows spellcasters to conjure a barrage of daggers in an area that deals Slashing damage to any creature entering or starting its turn in the area.",
         "description": "Conjure a cloud of spinning daggers that attack anyone inside.",
         "ritual": false,
         "concentration": true,
         "id": 2338,
         "attackRoll": false,
         "range": 1,
-        "areaName": "Cloud of Daggers",
-        "areaCategory": 1,
+        "areaName": "Cloud of Daggers (area)",
         "areaShape": 1,
         "areaRangeM": 2,
         "areaRangeFt": 7,
@@ -1834,11 +1822,13 @@
     },
     {
         "name": "Cloudkill",
+        "damage": "5d8",
+        "damageType": 9,
         "image": "Cloudkill.webp",
         "level": 5,
         "school": 2,
         "summary": "This spell allows spellcasters to conjure a moveable cloud that damages and obscures everything it envelops.",
-        "description": "Craft a large cloud that inflicts 5d8|Poison damage per turn. You can reposition the cloud every turn. The cloud Heavily Obscures everything within it.",
+        "description": "Craft a large cloud that inflicts 5d8|Poison damage per turn. You can reposition the cloud every turn.",
         "ritual": false,
         "concentration": true,
         "id": 7960,
@@ -1846,16 +1836,11 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "areaName": "Cloudkill",
-        "areaCategory": 1,
+        "areaName": "Cloudkill (cloud)",
         "areaShape": 1,
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 10,
-        "areaTurnStartDamage": "5d8",
-        "areaTurnStartDamageType": 9,
-        "areaTurnStartDamageSave": 3,
-        "areaTurnStartDamageSaveEffect": 0,
         "costs": [
             {
                 "resource": 1,
@@ -1916,7 +1901,6 @@
         "id": 3061,
         "attackRoll": false,
         "range": 1,
-        "conditionSave": 5,
         "costs": [
             {
                 "resource": 1,
@@ -2042,7 +2026,8 @@
                         "amount": 1
                     }
                 ],
-                "classes": []
+                "classes": [],
+                "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 1st."
             },
             {
                 "name": "Command: Halt",
@@ -2112,7 +2097,7 @@
         "image": "Cone of Cold.webp",
         "level": 5,
         "school": 5,
-        "summary": "This spell allows spellcasters to blast icy air into a region in front of them, damaging affected creatures and turning existing water surfaces into Ice Surface.",
+        "summary": "This spell allows spellcasters to blast icy air into a region in front of them, damaging affected creatures and turning existing water surfaces into Ice Surfaces.",
         "description": "Make a flurry of frost, crisp air, and condensed snow crystals erupt from your hands.",
         "ritual": false,
         "concentration": false,
@@ -2122,6 +2107,10 @@
         "aoe": 2,
         "aoeM": 9,
         "aoeFt": 30,
+        "areaName": "Ice (surface)",
+        "areaShape": 2,
+        "areaRangeM": 9,
+        "areaRangeFt": 30,
         "costs": [
             {
                 "resource": 1,
@@ -2136,8 +2125,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSave": 3,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "Upcast: The damage is increased by 1d8|Cold for each Spell Slot Level above 5th."
     },
     {
@@ -2145,7 +2133,7 @@
         "image": "Confusion.webp",
         "level": 4,
         "school": 4,
-        "summary": "This spell allows spellcaster to confuse a group of creatures, drastically reducing their effectiveness in combat.",
+        "summary": "This spell allows the caster to confuse a group of creatures, drastically reducing their effectiveness in combat.",
         "description": "Befuddle a group of creatures, causing them to attack at random, wander around aimlessly, and occasionally skip turns in the stupor.",
         "ritual": false,
         "concentration": true,
@@ -2174,7 +2162,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Affects a larger area at higher levels."
+        "higherLevels": "Upcast: Increases the radius of the affected area by m=2 per additional spell slot level."
     },
     {
         "name": "Conjure Barrage",
@@ -2217,7 +2205,7 @@
                 "level": 3,
                 "school": 2,
                 "summary": "This spell allows spellcasters to summon a barrage of blades in front of them, potentially hitting multiple enemies. This spell is a variant of Conjure Barrage.",
-                "description": "Channel your weapon's essence into a destructive, widespread volley. Deal your melee weapon's Physical|Weapon Damage, plus an additional d8|Physical 2d8 damage of the same Type to enemies within a cone in front of you.\n\nOn a successful Dexterity SavingThrow, targets still take half damage.",
+                "description": "Channel your weapon's essence into a destructive, widespread volley. Deal your melee weapon's Physical|Weapon Damage, plus an additional d8|Physical 2d8 damage of the same Type to enemies within a cone in front of you.",
                 "ritual": false,
                 "concentration": false,
                 "id": 10608,
@@ -2247,7 +2235,7 @@
                 "level": 3,
                 "school": 2,
                 "summary": "This spell allows spellcasters to summon a barrage of blades in front of them, potentially hitting multiple enemies. This spell is a variant of Conjure Barrage.",
-                "description": "Channel your weapon's essence into a destructive, widespread volley. Deal your ranged weapon's Physical|Weapon Damage, plus an additional d8|physical 2d8 damage of the same Type to enemies within a cone in front of you.\n\nOn a successful Dexterity SavingThrow, targets still take half damage.",
+                "description": "Channel your weapon's essence into a destructive, widespread volley. Deal your ranged weapon's Physical|Weapon Damage, plus an additional d8|Slashing 2d8 damage of the same Type to enemies within a cone in front of you.",
                 "ritual": false,
                 "concentration": false,
                 "id": 10609,
@@ -2424,7 +2412,7 @@
                 "level": 6,
                 "school": 2,
                 "summary": "This spell is a variant of Conjure Elemental. This variant allows spellcasters to summon an Earth Myrmidon.",
-                "description": "The myrmidon can cast Muck to Metal, Sludgy Sling, and Burrow.",
+                "description": "The myrmidon can cast Muck to Metal, Sludgy Sling, and Burrow (Earth Myrmidon).",
                 "ritual": false,
                 "concentration": false,
                 "id": 14271,
@@ -2494,7 +2482,7 @@
     },
     {
         "name": "Conjure Minor Elemental",
-        "image": "Conjure Minor Elemental.webp",
+        "image": "Conjure Minor Elemental Azer.webp",
         "level": 4,
         "school": 2,
         "summary": "Conjure 2 Mud Mephits, 2 Ice Mephites, or an Azer to fight for you.",
@@ -2528,7 +2516,7 @@
                 "level": 4,
                 "school": 2,
                 "summary": "It is a variant of Conjure Minor Elemental that summons an Azer.",
-                "description": "Conjure an Azer from the Plane of Fire. It deals both Bludgeoning and Fire damage with its warhammer, and can Overheat.",
+                "description": "Conjure an Azer from the Plane of Fire. It deals both Bludgeoning and Fire damage with its warhammer, and can Overheat. It carries the Azer Warhammer.",
                 "ritual": false,
                 "concentration": false,
                 "id": 22262,
@@ -2549,7 +2537,7 @@
             },
             {
                 "name": "Conjure Minor Elemental: Ice Mephits",
-                "image": "Conjure Minor Elemental.webp",
+                "image": "Conjure Minor Elemental Ice Mephits.webp",
                 "level": 4,
                 "school": 2,
                 "summary": "It is a variant of Conjure Minor Elemental that summons two Ice Mephits.",
@@ -2574,11 +2562,11 @@
             },
             {
                 "name": "Conjure Minor Elemental: Mud Mephits",
-                "image": "Conjure Minor Elemental.webp",
+                "image": "Conjure Minor Elemental Mud Mephits.webp",
                 "level": 4,
                 "school": 2,
                 "summary": "It is a variant of Conjure Minor Elemental that summons two Mud Mephits.",
-                "description": "Conjure two Mud Mephits from the Elemental Chaos. They can Breath Mud and Explode when they die.",
+                "description": "Conjure two Mud Mephits from the Elemental Chaos. They can cast Mud Breath and Explode when they die.",
                 "ritual": false,
                 "concentration": false,
                 "id": 22287,
@@ -2661,7 +2649,7 @@
                 "level": 5,
                 "school": 7,
                 "summary": "This spell is a variation of the Level 5 Necromancy Spell, Contagion. It allows spellcasters to Poison an enemy, with the possibility of the affliction progressing into a Disease which saps target's Strength.",
-                "description": "Poison a target and possibly afflict them with a Disease. When cast, the target receives Contagion Poisoned.",
+                "description": "The target receives Disadvantage on Strength Ability Checks, Saving Throws, and Attack Rolls that use Strength.",
                 "ritual": false,
                 "concentration": false,
                 "id": 11031,
@@ -2686,7 +2674,7 @@
                 "level": 5,
                 "school": 7,
                 "summary": "This spell is a variation of the Level 5 Necromancy Spell, Contagion. It allows spellcasters to Poison an enemy, with the possibility of the affliction progressing into a Disease which saps target's Charisma.",
-                "description": "Poison a target and possibly afflict them with a Disease. When cast, the target receives Contagion Poisoned.",
+                "description": "The target receives Disadvantage on Charisma Ability Checks, and is afflicted with Vulnerability to all damage.",
                 "ritual": false,
                 "concentration": false,
                 "id": 11053,
@@ -2711,7 +2699,7 @@
                 "level": 5,
                 "school": 7,
                 "summary": "This spell is a variation of the Level 5 Necromancy Spell, Contagion. It allows spellcasters to Poison an enemy, with the possibility of the affliction progressing into a Disease which saps target's Constitution.",
-                "description": "Poison a target and possibly afflict them with a Disease. When cast, the target receives Contagion Poisoned.",
+                "description": "The target receives Disadvantage on Constitution Ability Checks and Saving Throws. Whenever they are hit, they get Stunned.",
                 "ritual": false,
                 "concentration": false,
                 "id": 11060,
@@ -2736,7 +2724,7 @@
                 "level": 5,
                 "school": 7,
                 "summary": "This spell is a variation of the Level 5 Necromancy Spell, Contagion. It allows spellcasters to Poison an enemy, with the possibility of the affliction progressing into a Disease which saps target's Dexterity.",
-                "description": "Poison a target and possibly afflict them with a Disease. When cast, the target receives Contagion Poisoned.",
+                "description": "The target receives Disadvantage on Dexterity Ability Checks, Saving Throws, and Attack Rolls.",
                 "ritual": false,
                 "concentration": false,
                 "id": 11046,
@@ -2761,7 +2749,7 @@
                 "level": 5,
                 "school": 7,
                 "summary": "This spell is a variation of the Level 5 Necromancy Spell, Contagion. It allows spellcasters to Poison an enemy, with the possibility of the affliction progressing into a Disease which saps target's Intelligence.",
-                "description": "Poison a target and possibly afflict them with a Disease. When cast, the target receives Contagion Poisoned.",
+                "description": "The target receives Disadvantage on Intelligence Ability Checks and Saving Throws, and is Befuddled.",
                 "ritual": false,
                 "concentration": false,
                 "id": 11057,
@@ -2786,7 +2774,7 @@
                 "level": 5,
                 "school": 7,
                 "summary": "This spell is a variation of the Level 5 Necromancy Spell, Contagion. It allows spellcasters to Poison an enemy, with the possibility of the affliction progressing into a Disease which saps target's Wisdom.",
-                "description": "Poison a target and possibly afflict them with a Disease. When cast, the target receives Contagion Poisoned.",
+                "description": "The target receives Disadvantage on Wisdom Ability Checks and Saving Throws, and is Blinded.",
                 "ritual": false,
                 "concentration": false,
                 "id": 11072,
@@ -2813,7 +2801,7 @@
         "level": 3,
         "school": 1,
         "summary": "This spell allows spellcasters to interrupt another caster's spellcasting, causing it to fail and have no effect.",
-        "description": "Nullify another creature's spell as a reaction. The spell must be 3rd Level or lower. If it is higher, you must succeed a Check to nullify it, the difficulty of which is based on the spell's Level.",
+        "description": "Try to stop a spell being cast.",
         "ritual": false,
         "concentration": false,
         "id": 2737,
@@ -2833,7 +2821,8 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ]
+        ],
+        "higherLevels": "Counterspell can be upcasted to counter spells of higher levels without requiring a check."
     },
     {
         "name": "Create Undead",
@@ -2904,7 +2893,7 @@
                 "level": 1,
                 "school": 8,
                 "summary": "This spell is a variant of Create or Destroy Water that allows spellcasters to conjure an area of water that rain from thin air and forms a water surface. Creatures standing in the area when the spell is cast will become Wet.",
-                "description": "Call forth rain. It extinguishes exposed flames and forms a Water Surface.",
+                "description": "Call forth rain. It extinguishes exposed flames and forms a Water (surface) surface.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2090,
@@ -2916,10 +2905,6 @@
                 "aoeFt": 13,
                 "condition": "Wet",
                 "conditionDuration": 3,
-                "areaCategory": 2,
-                "areaShape": 1,
-                "areaRangeM": 2,
-                "areaRangeFt": 5,
                 "costs": [
                     {
                         "resource": 1,
@@ -2940,7 +2925,7 @@
                 "level": 1,
                 "school": 8,
                 "summary": "This spell is a variant of Create or Destroy Water that  allows spellcasters to destroy an area of water (or water-like surfaces). The spell will remove the Wet condition from creatures within its area of effect.",
-                "description": "Cause water-based surfaces (such as water, steam, ice, blood and poison) to vanish.",
+                "description": "Cause water-based surfaces (such as Water (surface), Steam Cloud, Ice (surface), Blood (surface) and Simple Toxin (surface)) to vanish.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2096,
@@ -3016,7 +3001,7 @@
         "aoe": 1,
         "aoeM": 9,
         "aoeFt": 30,
-        "condition": "Crusader's Mantle",
+        "condition": "Crusader's Mantle Aura",
         "conditionDuration": 10,
         "costs": [
             {
@@ -3040,7 +3025,7 @@
         "level": 1,
         "school": 5,
         "summary": "This spell allows spellcasters to heal allies with divine magic through touch.",
-        "description": "Healing|Heal a creature you can touch.\n\nNo effect on undead and constructs.",
+        "description": "Healing|Heal a creature you can touch.",
         "ritual": false,
         "concentration": false,
         "id": 1611,
@@ -3101,16 +3086,14 @@
         "image": "Darkness.webp",
         "level": 2,
         "school": 5,
-        "summary": "This spell allows spellcasters to conjure a cloud of darkness in an area within range that obscures and blinds those within it.",
-        "description": "Create a cloud of magical darkness that Heavily Obscures and Blinds creatures within. Creatures cannot make ranged attacks into or out of it.",
+        "summary": "This spell allows spellcasters to conjure a cloud of darkness in an area within range that obscures and inflicts blind to those within it.",
+        "description": "Create a cloud of magical darkness that Heavily Obscures and inflicts Blind to creatures within. Creatures cannot make ranged attacks into or out of it.",
         "ritual": false,
         "concentration": true,
         "id": 2342,
         "attackRoll": false,
         "range": 1,
-        "areaName": "Darkness",
-        "areaCategory": 1,
-        "areaShape": 1,
+        "areaName": "Darkness (cloud)",
         "areaRangeM": 5,
         "areaRangeFt": 17,
         "areaDuration": 10,
@@ -3128,8 +3111,7 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ],
-        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits."
+        ]
     },
     {
         "name": "Darkvision",
@@ -3225,7 +3207,7 @@
                 "level": 3,
                 "school": 5,
                 "summary": "This spell is a variant of the spell Daylight. This variant of the spell allows spellcasters to enchant an item to shine like the sun.",
-                "description": "Enchant an item or weapon to shine with the light of the sun and dispel all darkness around it. Target must have a weapon in their main hand.",
+                "description": "Enchant an item or weapon to shine with the light of the sun and dispel all darkness around it. Target must have a weapon in its main hand.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2687,
@@ -3235,6 +3217,7 @@
                 "aoeM": 15,
                 "aoeFt": 50,
                 "condition": "Daylight",
+                "conditionDuration": 20,
                 "costs": [
                     {
                         "resource": 1,
@@ -3310,7 +3293,75 @@
         "classes": [
             "Paladin"
         ],
-        "damageSaveEffect": 1
+        "damageSaveEffect": 1,
+        "variants": [
+            {
+                "name": "Destructive Wave: Necrotic",
+                "damage": "5d6",
+                "damageType": 7,
+                "extraDamage": "5d6",
+                "extraDamageType": 11,
+                "image": "Destructive Wave.webp",
+                "level": 5,
+                "school": 5,
+                "summary": "This spell allows the caster to create a massive shockwave that damages all creatures and can possibly knock them prone.",
+                "description": "Emit a shockwave of malevolent thunder that damages nearby creatures and possibly knocks them Prone.",
+                "ritual": false,
+                "concentration": false,
+                "id": 33452,
+                "attackRoll": false,
+                "rangeM": 9,
+                "rangeFt": 30,
+                "condition": "Prone",
+                "conditionDuration": 1,
+                "conditionSave": 3,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 16,
+                        "amount": 1
+                    }
+                ],
+                "classes": [],
+                "damageSaveEffect": 1
+            },
+            {
+                "name": "Destructive Wave: Radiant",
+                "damage": "5d6",
+                "damageType": 7,
+                "extraDamage": "5d6",
+                "extraDamageType": 10,
+                "image": "Destructive Wave.webp",
+                "level": 5,
+                "school": 5,
+                "summary": "This spell allows the caster to create a massive shockwave that damages all creatures and can possibly knock them prone.",
+                "description": "Emit a shockwave of divine thunder that damages nearby creatures and possibly knocks them Prone.",
+                "ritual": false,
+                "concentration": false,
+                "id": 33453,
+                "attackRoll": false,
+                "rangeM": 9,
+                "rangeFt": 30,
+                "condition": "Prone",
+                "conditionDuration": 1,
+                "conditionSave": 3,
+                "costs": [
+                    {
+                        "resource": 1,
+                        "amount": 1
+                    },
+                    {
+                        "resource": 16,
+                        "amount": 1
+                    }
+                ],
+                "classes": [],
+                "damageSaveEffect": 1
+            }
+        ]
     },
     {
         "name": "Detect Thoughts",
@@ -3354,6 +3405,8 @@
         "id": 6735,
         "attackRoll": false,
         "range": 2,
+        "rangeM": 2,
+        "rangeFt": 7,
         "costs": [
             {
                 "resource": 1,
@@ -4263,7 +4316,6 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSave": 2,
         "damageSaveEffect": 1
     },
     {
@@ -4272,9 +4324,9 @@
         "level": 5,
         "school": 1,
         "summary": "This spell allows spellcasters to protect themselves from Evil and Good creatures, and allows them to break Enchantments on allies.",
-        "description": "Aberrations, Celestials, Elementals, Fey, Fiends, and Undead have Disadvantage on Attack Rolls against you. You can also break Enchantments that Charm, Frighten, or Possesses allies.",
+        "description": "Aberrations, Celestials, Elementals, Fey, Fiends, and Undead have Disadvantage on Attack Rolls against you.",
         "ritual": false,
-        "concentration": false,
+        "concentration": true,
         "id": 8410,
         "attackRoll": false,
         "range": 3,
@@ -4291,8 +4343,7 @@
             }
         ],
         "classes": [
-            "Cleric",
-            "Paladin"
+            "Cleric"
         ]
     },
     {
@@ -4303,7 +4354,7 @@
         "level": 1,
         "school": 4,
         "summary": "This spell allows spellcasters to fill a target with terror and deal Psychic damage to them.",
-        "description": "Frighten a creature: it will be easier to hit and cannot move.\n\nOn a successful Wisdom saving throw, the creature only takes half damage.",
+        "description": "Frighten a creature: it will be easier to hit and cannot move.",
         "ritual": false,
         "concentration": false,
         "id": 2162,
@@ -4325,8 +4376,7 @@
         "classes": [
             "Bard"
         ],
-        "damageSave": 5,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "Upcast: Deal an additional  1d6 | Psychic damage per level."
     },
     {
@@ -4366,11 +4416,11 @@
         "level": 1,
         "school": 0,
         "summary": "Divine Smite allows a Paladin to expend a Spell Slot to deal additional Radiant damage with a melee weapon attack.",
-        "description": "Your weapon emanates divine might as you strike, dealing an additional 2d8|Radiant|drs=t damage. Deals an additional 1d8|Radiant|drs=t damage to Fiends and Undead.",
+        "description": "Your weapon deals an additional 2d8|Radiant|drs=t damage, increased by 1d8|Radiant damage when attacking Fiends or Undead.",
         "ritual": false,
         "concentration": false,
         "id": 3940,
-        "attackRoll": false,
+        "attackRoll": true,
         "range": 4,
         "costs": [
             {
@@ -4402,7 +4452,7 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "condition": "Dominated",
+        "condition": "Dominated (Dominate Beast)",
         "conditionDuration": 10,
         "conditionSave": 5,
         "costs": [
@@ -4426,7 +4476,7 @@
         "level": 5,
         "school": 4,
         "summary": "This spell allows spellcasters to force a humanoid to temporarily fight as an ally.",
-        "description": "Make a humanoid fight alongside you. Every time the creature takes damage, it makes a Wisdom SavingThrow against your domination. Allies cannot be dominated.",
+        "description": "Dominate a nearby humanoid. Allies are unaffected.",
         "ritual": false,
         "concentration": true,
         "id": 7946,
@@ -4477,7 +4527,7 @@
             "Warlock"
         ],
         "damageSaveEffect": 1,
-        "higherLevels": "The spell creates multiple beams at higher levels: 1d10|Force|per=ray\n* 2 beams at Level 5 (scales on character level, sum of all class levels)\n* 3 beams at Level 10 (same)\nYou can either target a single creature or multiple creatures with the beams. Each beam rolls a separate Attack Roll."
+        "higherLevels": "Unlike other cantrips whose damage increases at certain character levels, Eldritch Blast, instead, creates multiple beams at higher levels: 1d10|Force|per=ray\n* 2 beams at character level 5 \n* 3 beams at character level 10 \nYou can either target a single creature or multiple creatures with the beams. Each beam rolls a separate Attack Roll and is affected by the selected Eldritch Invocations (see notes for further details)."
     },
     {
         "name": "Elemental Weapon",
@@ -4674,7 +4724,7 @@
                 "id": 2366,
                 "attackRoll": false,
                 "range": 2,
-                "condition": "Enhance Ability: Bear's Endurance",
+                "condition": "Bear's Endurance",
                 "costs": [
                     {
                         "resource": 1,
@@ -4700,7 +4750,7 @@
                 "id": 2367,
                 "attackRoll": false,
                 "range": 2,
-                "condition": "Enhance Ability: Bull's Strength",
+                "condition": "Bull's Strength",
                 "costs": [
                     {
                         "resource": 1,
@@ -4726,7 +4776,7 @@
                 "id": 2368,
                 "attackRoll": false,
                 "range": 2,
-                "condition": "Enhance Ability: Cat's Grace",
+                "condition": "Cat's Grace",
                 "costs": [
                     {
                         "resource": 1,
@@ -4752,7 +4802,7 @@
                 "id": 2369,
                 "attackRoll": false,
                 "range": 2,
-                "condition": "Enhance Ability: Eagle's Splendour",
+                "condition": "Eagle's Splendour",
                 "costs": [
                     {
                         "resource": 1,
@@ -4764,7 +4814,7 @@
                     }
                 ],
                 "classes": [],
-                "higherLevels": "Upcast: When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd."
+                "higherLevels": "When this Spell is cast at 3rd level or higher, you can target an additional creature for each Spell Slot Level above 2nd."
             },
             {
                 "name": "Fox's Cunning",
@@ -4778,7 +4828,7 @@
                 "id": 2370,
                 "attackRoll": false,
                 "range": 2,
-                "condition": "Enhance Ability: Fox's Cunning",
+                "condition": "Fox's Cunning",
                 "costs": [
                     {
                         "resource": 1,
@@ -4804,7 +4854,7 @@
                 "id": 2371,
                 "attackRoll": false,
                 "range": 2,
-                "condition": "Enhance Ability: Owl's Wisdom",
+                "condition": "Owl's Wisdom",
                 "costs": [
                     {
                         "resource": 1,
@@ -4936,7 +4986,7 @@
     {
         "name": "Ensnaring Strike",
         "damage": "weapon",
-        "image": "Ensnaring Strike Melee.webp",
+        "image": "Ensnaring Strike Ranged.webp",
         "level": 1,
         "school": 2,
         "summary": "This spell allows spellcasters to use weapon attacks to ensnare enemies with thorny vines and deal Piercing|Piercing damage to them each turn.",
@@ -5047,7 +5097,7 @@
         "level": 1,
         "school": 2,
         "summary": "This spell allows spellcasters to conjure magical vines and turn an area within range into difficult terrain. Creatures are possibly Entangled and move at half speed while standing in this area.",
-        "description": "Vines sprout from the ground, turning it into Difficult Terrain and possibly Entangling creatures within.\n\nEntangled creatures cannot move. An ally can use its help action to try and tear away the vines.",
+        "description": "Vines sprout from the ground, turning it into Difficult Terrain and possibly Entangling creatures within.",
         "ritual": false,
         "concentration": true,
         "id": 2286,
@@ -5056,9 +5106,7 @@
         "aoe": 1,
         "aoeM": 3,
         "aoeFt": 10,
-        "areaName": "Vines",
-        "areaCategory": 3,
-        "areaShape": 1,
+        "areaName": "Twisting Vines",
         "areaRangeM": 3,
         "areaRangeFt": 10,
         "areaDuration": 10,
@@ -5105,8 +5153,7 @@
         "classes": [
             "Bard",
             "Warlock"
-        ],
-        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits."
+        ]
     },
     {
         "name": "Evard's Black Tentacles",
@@ -5127,8 +5174,7 @@
         "aoe": 1,
         "aoeM": 6,
         "aoeFt": 20,
-        "areaName": "Evard's Black Tentacles",
-        "areaShape": 1,
+        "areaName": "Black Tentacles",
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 10,
@@ -5183,7 +5229,7 @@
         "image": "Eyebite Panicked.webp",
         "level": 6,
         "school": 7,
-        "description": "Your eyes become black corridors walled in teeth, your gaze capable of inflicting dread, sickness, or putting creatures to sleep.  While Concentrating,  you may cast Eyebite without expending a spell slot.",
+        "description": "Your eyes become black corridors walled in teeth, your gaze capable of inflicting dread, sickness, or putting creatures to sleep.",
         "ritual": false,
         "concentration": true,
         "id": 8017,
@@ -5314,6 +5360,9 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
+        "aoe": 1,
+        "aoeM": 6,
+        "aoeFt": 20,
         "condition": "Faerie Fire",
         "conditionDuration": 10,
         "conditionSave": 2,
@@ -5339,7 +5388,7 @@
         "level": 1,
         "school": 7,
         "summary": "This spell allows spellcasters to gain Temporary Hit Points.",
-        "description": "Bolster yourself with a necromantic facsimile of life to gain 7.\n\nCan only have Temporary Hit Points from one source.",
+        "description": "Bolster yourself with a necromantic facsimile of life to gain 7.",
         "ritual": false,
         "concentration": false,
         "id": 2178,
@@ -5368,7 +5417,7 @@
         "level": 3,
         "school": 6,
         "summary": "This spell allows spellcasters to terrify targets by projecting phantasmal images.",
-        "description": "Project an image so frightening it makes targets drop everything and become Fearful. They will be easier to hit and cannot move. If the target ends their turn where they can't see you, they can make another SavingThrow to shake off their fear.\n\nAffected targets become Fearful for 2 turns and Disarmed for 1 turn.",
+        "description": "Targets drop everything and become Fearful: they have Disadvantage on Ability Checks and Attack Rolls.",
         "ritual": false,
         "concentration": true,
         "id": 2700,
@@ -5377,7 +5426,7 @@
         "aoe": 2,
         "aoeM": 9,
         "aoeFt": 30,
-        "condition": "Feared",
+        "condition": "Fearful",
         "conditionDuration": 2,
         "conditionSave": 5,
         "costs": [
@@ -5396,7 +5445,7 @@
             "Warlock",
             "Wizard"
         ],
-        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits."
+        "damageSaveEffect": 1
     },
     {
         "name": "Feather Fall",
@@ -5417,7 +5466,7 @@
         "conditionDuration": 10,
         "costs": [
             {
-                "resource": 1,
+                "resource": 2,
                 "amount": 1
             },
             {
@@ -5520,7 +5569,7 @@
             "Wizard",
             "Sorcerer"
         ],
-        "higherLevels": "* When the spellcaster reaches Level 5, the damage increases by another d10|Fire Fire|1d10 Fire damage, for a total of 2d10|Fire.\n* When the spellcaster reaches Level 10, the damage increases by another d10|Fire Fire|1d10 Fire damage, for a total of 3d10|Fire."
+        "higherLevels": "* At character level 5, the damage increases to 2d10|Fire.\n* At character level 10, the damage increases to 3d10|Fire."
     },
     {
         "name": "Fire Shield",
@@ -5528,7 +5577,7 @@
         "level": 4,
         "school": 5,
         "summary": "This spell shields the spellcaster with luminous energy.",
-        "description": "Wreathe your body in flames that shed light in a ft=10 radius, provide Resistance to Fire or Cold damage, and retaliate against melee attacks.",
+        "description": "Wreathe your body in flames that shed light in a m=3 radius, provide Resistance to Fire or Cold damage, and retaliate against melee attacks.",
         "ritual": false,
         "concentration": false,
         "id": 6736,
@@ -5554,7 +5603,7 @@
                 "level": 4,
                 "school": 5,
                 "summary": "This spell shields the spellcaster with scorching flames. It is a variant of Fire Shield",
-                "description": "Scorching flames shed light in a ft=10 radius. You take only half the damage of all Cold damage, and deal 2d8|Fire damage to anyone who hits you with a melee attack.",
+                "description": "Scorching flames shed light in a m=3 radius. You take only half the damage of all Cold damage, and deal 2d8|Fire damage to anyone who hits you with a melee attack.",
                 "ritual": false,
                 "concentration": false,
                 "id": 10821,
@@ -5580,7 +5629,7 @@
                 "level": 4,
                 "school": 5,
                 "summary": "This spell shields the spellcaster with ice-cold flames. It is a variant of Fire Shield.",
-                "description": "Ice-cold flames shed light in a ft=10 radius. You take only half the damage of all Fire damage, and deal 2d8|Cold damage to anyone who hits you with a melee attack.",
+                "description": "Ice-cold flames shed light in a m=3 radius. You take only half the damage of all Fire damage, and deal 2d8|Cold damage to anyone who hits you with a melee attack.",
                 "ritual": false,
                 "concentration": false,
                 "id": 10822,
@@ -5610,7 +5659,7 @@
         "level": 3,
         "school": 5,
         "summary": "This spell allows spellcasters to unleash a streak of fire from their hands that ignites into a large explosion at a chosen point within range.",
-        "description": "Shoot a bright flame from your fingers that explodes upon contact, torching everything in the vicinity for 8d6|Fire  damage. On a successful Saving Throw, targets still take half damage.",
+        "description": "Shoot a bright flame from your fingers that explodes upon contact, torching everything in the vicinity for 8d6|Fire damage.",
         "ritual": false,
         "concentration": false,
         "id": 2677,
@@ -5635,8 +5684,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSave": 2,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "When the spell is cast using a 4th level slot or higher, damage increases by 1d6|Fire  for each spell slot level above 3rd."
     },
     {
@@ -5645,7 +5693,7 @@
         "level": 2,
         "school": 5,
         "summary": "This spell allows spellcasters to summon a fiery scimitar in their free hand that sheds bright light. Casters can make a melee weapon attack with the blade to deal Fire damage to enemies.",
-        "description": "Conjure a flaming Flame Blade (Weapon)|25|alias=Scimitar in your hand that deals 3d6|Fire damage. It sheds a bright light in a m=3|ft=10 radius and a dim light in a m=6|ft=20 radius. 10.",
+        "description": "Conjure a flaming Flame Blade (weapon)|25|alias=Scimitar in your hand for 10 turns that deals 3d6|Fire damage. It sheds a bright light in a m=3|ft=10 radius and a dim light in a m=6|ft=20 radius.",
         "ritual": false,
         "concentration": false,
         "id": 2391,
@@ -5671,7 +5719,7 @@
         "image": "Flame Strike.webp",
         "level": 5,
         "school": 5,
-        "summary": "This spells allows the caster to make a pillar of divine flame at a chosen location dealing   5d6 | Fire damage and  5d6 | Radiant damage.",
+        "summary": "This spell allows the caster to make a pillar of divine flame at a chosen location dealing   5d6 | Fire damage and  5d6 | Radiant damage.",
         "description": "Make a pillar of divine fire roar down from the heavens like the wrath of affronted angels.",
         "ritual": false,
         "concentration": false,
@@ -5694,8 +5742,7 @@
         "classes": [
             "Cleric"
         ],
-        "damageSave": 2,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "Deals an additional  1d6 | Fire damage and  1d6 | Radiant damage for each Spell Slot Level above 5th."
     },
     {
@@ -5706,7 +5753,7 @@
         "level": 2,
         "school": 2,
         "summary": "This spell allows spellcasters to conjure a Flaming Sphere that can attack and burn enemies.",
-        "description": "Summon a Flaming Sphere that deals 2d6|Fire damage to nearby enemies and objects. It also sheds bright light in a m=6|ft=20 radius, and dim light for an additional m=6|ft=20. 10.",
+        "description": "Summon a Flaming Sphere that deals 2d6|Fire damage to nearby enemies and objects. It also sheds bright light in a m=6|ft=20 radius, and dim light for an additional m=6|ft=20. 10. You can move the sphere.",
         "ritual": false,
         "concentration": true,
         "id": 2658,
@@ -5729,8 +5776,7 @@
             "Druid",
             "Wizard"
         ],
-        "damageSave": 2,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Fire damage for each Spell Slot Level above 2nd."
     },
     {
@@ -5739,7 +5785,7 @@
         "level": 6,
         "school": 8,
         "summary": "Atrophy a foe, Restraining them until they temporarily turn to stone.",
-        "description": "Atrophy a foe, Restraining them until they temporarily turn to stone. The target will Petrify if it does not succeed its Saving Throw within 3 turns.",
+        "description": "Atrophy a foe, Restraining them until they temporarily turn to stone.",
         "ritual": false,
         "concentration": false,
         "id": 11505,
@@ -5782,8 +5828,6 @@
         "aoeM": 5,
         "aoeFt": 15,
         "areaName": "Fog",
-        "areaCategory": 1,
-        "areaShape": 1,
         "areaRangeM": 5,
         "areaRangeFt": 15,
         "areaDuration": 10,
@@ -5812,7 +5856,7 @@
         "level": 4,
         "school": 1,
         "summary": "This spell allows spellcasters to imbue an ally with the ability to avoid some slowing effects.",
-        "description": "Snap an ally out of any Stun. Difficult Terrain can't slow them down, and they can't be magically Paralysed or Restrained. \n\nIf the target is restrained by non-magical means, it can spend melee of Movement to free itself.",
+        "description": "Snap an ally out of any Stun. Difficult Terrain can't slow them down, and they can't be magically Paralysed or Restrained.",
         "ritual": false,
         "concentration": false,
         "id": 6737,
@@ -5832,8 +5876,7 @@
         "classes": [
             "Bard",
             "Cleric",
-            "Druid",
-            "Ranger"
+            "Druid"
         ]
     },
     {
@@ -5842,7 +5885,7 @@
         "level": 0,
         "school": 4,
         "summary": "It makes the caster appear more charismatic to the affected creature.",
-        "description": "Gain Advantage on Charisma Checks against a non-hostile creature.\n\nIn higher difficulty modes, the target might accuse you of enchanting them.",
+        "description": "Gain Advantage on Charisma Checks against a non-hostile creature.",
         "ritual": false,
         "concentration": true,
         "id": 1661,
@@ -5871,7 +5914,7 @@
         "level": 3,
         "school": 8,
         "summary": "This spell allows spellcasters to transform themselves or an ally into a cloud of mist to avoid attacks, reduce size, and gain Advantage on some Saving Throws.",
-        "description": "Transform yourself or an ally into a tiny gas cloud. It can't fall, and fits through small openings. It is very hard to damage.\n\nThe cloud has Advantage on Constitution, Dexterity, and Strength SavingThrows.\n\nWhile transformed, the target won't be able to attack, cast spells, or talk.",
+        "description": "Transform yourself or an ally into a tiny gas cloud. It can't fall, and fits through small openings. It is very hard to damage.",
         "ritual": false,
         "concentration": true,
         "id": 2815,
@@ -5909,8 +5952,7 @@
         "aoeM": 3,
         "aoeFt": 10,
         "conditionDuration": 3,
-        "areaName": "Globe of Invulnerability",
-        "areaCategory": 3,
+        "areaName": "Globe of Invulnerability (area)",
         "areaShape": 1,
         "areaRangeM": 3,
         "areaRangeFt": 10,
@@ -5936,7 +5978,7 @@
         "level": 3,
         "school": 1,
         "summary": "This spell allows spellcasters to inscribe a ward that can trigger various magical effects when stepped on by an enemy.",
-        "description": "Inscribe a circle of arcane glyphs on the ground. When stepped on by an enemy the selected magical effect will trigger.\n\nThe glyph will last until triggered, or until a Long Rest.\n\nOnly one glyph can be active at a time.",
+        "description": "Inscribe a circle of arcane glyphs on the ground. When stepped on by an enemy the selected magical effect will trigger.\n\nThe glyph will last until triggered, or until a Long Rest.",
         "ritual": false,
         "concentration": false,
         "id": 2770,
@@ -5969,7 +6011,7 @@
                 "level": 3,
                 "school": 1,
                 "summary": "This spell is a variant of the Level 3 Abjuration Spell, Glyph of Warding. This variant of the spell allows spellcasters to inscribe a ward that can put enemies to Sleep when triggered.",
-                "description": "The glyph emits a soothing magic that puts everyone within range to Sleep when stepped on by an enemy. Any creatures within the area of effect (that aren't immune to magical sleep) that fail the Dexterity saving throw will be put to Sleep.\n\nThe glyph will last until triggered, or until a Long Rest.\n\nOnly one glyph can be active at a time.",
+                "description": "The glyph emits a soothing magic that puts everyone within range to Sleep when stepped on by an enemy. Any creatures within the area of effect (that aren't immune to magical sleep) that fail the Dexterity saving throw will be put to Sleep.\n\nThe glyph will last until triggered, or until a Long Rest.",
                 "ritual": false,
                 "concentration": false,
                 "id": 6438,
@@ -6000,7 +6042,7 @@
                 "level": 3,
                 "school": 1,
                 "summary": "This spell is a variant of the Level 3 Abjuration Spell, Glyph of Warding. This variant of the spell allows spellcasters to inscribe a ward that explodes and pushes everyone back when triggered.",
-                "description": "The glyph emits a gust of wind that pushes back everyone within range when stepped on by an enemy. Any creatures within the area of effect that fail the Dexterity saving throw will be pushed back.\n\nThe glyph will last until triggered, or until a Long Rest.\n\nOnly one glyph can be active at a time.",
+                "description": "The glyph emits a gust of wind that pushes back everyone within range when stepped on by an enemy. Any creatures within the area of effect that fail the Dexterity saving throw will be pushed back.\n\nThe glyph will last until triggered, or until a Long Rest.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2806,
@@ -6030,7 +6072,7 @@
                 "level": 3,
                 "school": 1,
                 "summary": "This spell is a variant of the Level 3 Abjuration Spell, Glyph of Warding. This variant of the spell allows spellcasters to inscribe a ward that explodes and deals Thunder damage to enemies when triggered.",
-                "description": "The glyph explodes, dealing Thunder damage to enemies in the vicinity. Creatures who pass the Dexterity saving throw still take half damage. \n\nThe glyph will last until triggered, or until a Long Rest.\n\nOnly one glyph can be active at a time.",
+                "description": "The glyph explodes, dealing Thunder damage to enemies in the vicinity. Creatures who pass the Dexterity saving throw still take half damage. \n\nThe glyph will last until triggered, or until a Long Rest.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2807,
@@ -6051,8 +6093,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 2,
-                "damageSaveEffect": 0,
+                "damageSaveEffect": 1,
                 "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Thunder damage for each Spell Slot Level above 3rd."
             },
             {
@@ -6063,7 +6104,7 @@
                 "level": 3,
                 "school": 1,
                 "summary": "This spell is a variant of the Level 3 Abjuration Spell, Glyph of Warding. This variant of the spell allows spellcasters to inscribe a ward that explodes and deals Lightning damage to enemies when triggered.",
-                "description": "The glyph explodes, dealing Lightning damage to enemies in the vicinity. Creatures who pass the Dexterity saving throw still take half damage. \n\nThe glyph will last until triggered, or until a Long Rest.\n\nOnly one glyph can be active at a time.",
+                "description": "The glyph explodes, dealing Lightning damage to enemies in the vicinity. Creatures who pass the Dexterity saving throw still take half damage. \n\nThe glyph will last until triggered, or until a Long Rest.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2808,
@@ -6084,8 +6125,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 2,
-                "damageSaveEffect": 0,
+                "damageSaveEffect": 1,
                 "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Lightning damage for each Spell Slot Level above 3rd."
             },
             {
@@ -6096,7 +6136,7 @@
                 "level": 3,
                 "school": 1,
                 "summary": "This spell is a variant of the Level 3 Abjuration Spell, Glyph of Warding. This variant of the spell allows spellcasters to inscribe a ward that explodes and deals Fire damage to enemies when triggered.",
-                "description": "The glyph explodes, dealing Fire damage to enemies in the vicinity. Creatures who pass the Dexterity saving throw still take half damage. \n\nThe glyph will last until triggered, or until a Long Rest.\n\nOnly one glyph can be active at a time.",
+                "description": "The glyph explodes, dealing Fire damage to enemies in the vicinity. Creatures who pass the Dexterity saving throw still take half damage. \n\nThe glyph will last until triggered, or until a Long Rest.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2810,
@@ -6117,8 +6157,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 2,
-                "damageSaveEffect": 0,
+                "damageSaveEffect": 1,
                 "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Fire damage for each Spell Slot Level above 3rd."
             },
             {
@@ -6129,7 +6168,7 @@
                 "level": 3,
                 "school": 1,
                 "summary": "This spell is a variant of the Level 3 Abjuration Spell, Glyph of Warding. This variant of the spell allows spellcasters to inscribe a ward that explodes and deals Cold damage to enemies when triggered.",
-                "description": "The glyph explodes, dealing Cold damage to enemies in the vicinity. Creatures who pass the Dexterity saving throw still take half damage. \n\nThe glyph will last until triggered, or until a Long Rest.\n\nOnly one glyph can be active at a time.",
+                "description": "The glyph explodes, dealing Cold damage to enemies in the vicinity. Creatures who pass the Dexterity saving throw still take half damage. \n\nThe glyph will last until triggered, or until a Long Rest.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2809,
@@ -6150,8 +6189,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 2,
-                "damageSaveEffect": 0,
+                "damageSaveEffect": 1,
                 "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Cold damage for each Spell Slot Level above 3rd."
             },
             {
@@ -6162,7 +6200,7 @@
                 "level": 3,
                 "school": 1,
                 "summary": "This spell is a variant of the Level 3 Abjuration Spell, Glyph of Warding. This variant of the spell allows spellcasters to inscribe a ward that explodes and deals Acid damage to enemies when triggered.",
-                "description": "The glyph explodes, dealing Acid damage to enemies in the vicinity. Creatures who pass the Dexterity saving throw still take half damage. \n\nThe glyph will last until triggered, or until a Long Rest.\n\nOnly one glyph can be active at a time.",
+                "description": "The glyph explodes, dealing Acid damage to enemies in the vicinity. Creatures who pass the Dexterity saving throw still take half damage. \n\nThe glyph will last until triggered, or until a Long Rest.",
                 "ritual": false,
                 "concentration": false,
                 "id": 2811,
@@ -6183,8 +6221,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 2,
-                "damageSaveEffect": 0,
+                "damageSaveEffect": 1,
                 "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Acid damage for each Spell Slot Level above 3rd."
             }
         ]
@@ -6255,14 +6292,17 @@
         "summary": "This spell allows spellcasters to summon a Grasping Vine which can pull enemies toward itself.",
         "description": "Summon a giant vine capable of dragging creatures toward itself.\n\n10",
         "ritual": false,
-        "concentration": true,
+        "concentration": false,
         "id": 9706,
         "attackRoll": false,
         "rangeM": 9,
         "rangeFt": 30,
+        "areaName": "Twisting Vines",
+        "areaRangeM": 3,
+        "areaDuration": 10,
         "costs": [
             {
-                "resource": 1,
+                "resource": 2,
                 "amount": 1
             },
             {
@@ -6288,12 +6328,7 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "condition": "Prone",
-        "conditionDuration": 1,
-        "conditionSave": 2,
-        "areaName": "Grease",
-        "areaCategory": 2,
-        "areaShape": 1,
+        "areaName": "Grease (surface)",
         "areaRangeM": 5,
         "areaRangeFt": 15,
         "areaDuration": 10,
@@ -6318,7 +6353,7 @@
         "level": 4,
         "school": 6,
         "summary": "This spell allows spellcasters to provide a more resilient form of Invisibility for their allies.",
-        "description": "Turn a creature Invisible. Attacks against it have Disadvantage. It attacks with Advantage. Invisibility breaks when you fail increasingly harder Stealth Ability Checks on attacking, casting spells or interacting with items.",
+        "description": "Turn a creature Invisible. Attacks against it have Disadvantage. It attacks with Advantage.",
         "ritual": false,
         "concentration": true,
         "id": 7926,
@@ -6340,7 +6375,8 @@
         ],
         "classes": [
             "Bard",
-            "Sorcerer Wizard"
+            "Sorcerer",
+            "Wizard"
         ]
     },
     {
@@ -6369,33 +6405,6 @@
             "Bard",
             "Cleric",
             "Druid"
-        ]
-    },
-    {
-        "name": "Guardian of Faith",
-        "image": "Guardian of Faith spell.webp",
-        "level": 4,
-        "school": 2,
-        "summary": "This spell allows spellcasters to summon a divine guardian who sacrifices its Hit Points to damage enemies.",
-        "description": "Call forth a divine guardian that attacks nearby enemies. Every time it deals damage, the guardian loses an equal amount of Hit Points. Lasts 10 turns. The guardian is stationary. When an enemy is in range, it uses an attack called \"Strike of the Guardian\". It has a range of 3m and deals 20 Radiant damage. On a DEX save, enemies still take half damage. It has 60 Hit Points.",
-        "ritual": false,
-        "concentration": false,
-        "id": 8120,
-        "attackRoll": false,
-        "rangeM": 9,
-        "rangeFt": 30,
-        "costs": [
-            {
-                "resource": 1,
-                "amount": 1
-            },
-            {
-                "resource": 15,
-                "amount": 1
-            }
-        ],
-        "classes": [
-            "Cleric"
         ]
     },
     {
@@ -6430,8 +6439,8 @@
         "image": "Guiding Bolt.webp",
         "level": 1,
         "school": 5,
-        "summary": "This spell allows spellcasters to hit enemies with radiant bolt that deals Radiant damage and grants Advantage to Attack Roll made against them.",
-        "description": "The next Attack Roll against this target has Advantage.",
+        "summary": "This spell allows spellcasters to hit enemies with radiant bolt that deals Radiant damage and grants advantage to attack rolls made against them.",
+        "description": "The next attack roll against this target has Advantage.",
         "ritual": false,
         "concentration": false,
         "id": 2200,
@@ -6463,7 +6472,7 @@
         "level": 2,
         "school": 5,
         "summary": "This spell allows spellcasters to conjure a squall to clear dangerous gasses or throw creatures back, potentially causing a dangerous fall.",
-        "description": "Summon a strong wind that clears all clouds. Any creatures caught in the gale who fail a Strength SavingThrow will be pushed back ft=17 and be thrown Off Balance.",
+        "description": "Summon a strong wind that clears all clouds. Any creatures caught in the gale who fail a Strength SavingThrow will be pushed back m=5 and be thrown Off Balance.",
         "ritual": false,
         "concentration": false,
         "id": 6700,
@@ -6489,8 +6498,7 @@
             "Druid",
             "Sorcerer",
             "Wizard"
-        ],
-        "higherLevels": "Upcast: Casting this spell at a higher level doesn't grant any additional benefits."
+        ]
     },
     {
         "name": "Hail of Thorns",
@@ -6538,7 +6546,7 @@
         "level": 6,
         "school": 7,
         "summary": "This spell allows spellcasters to make an enemy much more feeble.",
-        "description": "Reduce a target's maximum Hit Points, but never below 1.\n\nOn Save: Target still takes half damage, but its maximum Hit Points are not reduced.",
+        "description": "Reduce a target's maximum Hit Points, but never below 1.",
         "ritual": false,
         "concentration": false,
         "id": 8346,
@@ -6559,8 +6567,7 @@
         "classes": [
             "Cleric"
         ],
-        "damageSave": 3,
-        "damageSaveEffect": 0
+        "damageSaveEffect": 1
     },
     {
         "name": "Haste",
@@ -6568,7 +6575,7 @@
         "level": 3,
         "school": 8,
         "summary": "This spell allows spellcasters to allow their allies to become Hastened.",
-        "description": "Target yourself or an ally to become Hastened. The creature has a +2 bonus to Armour Class, Advantage on Dexterity SavingThrows, its Movement Speed is doubled, and can take one additional Action per turn. \n\nWhen the condition ends, the creature becomes Lethargic.",
+        "description": "Target yourself or an ally to become Hastened. The creature has a +2 bonus to Armour Class, Advantage on Dexterity SavingThrows, its Movement Speed is doubled, and can take one additional Action per turn.",
         "ritual": false,
         "concentration": true,
         "id": 2764,
@@ -6600,7 +6607,7 @@
         "level": 6,
         "school": 5,
         "summary": "This spell allows spellcasters to substantially heal a target by recovering Hit Points and removing Diseases.",
-        "description": "Heals a target's wounds and remove Blindness and any Diseases.\n\nNo effect on undead and constructs.",
+        "description": "Heals a target's wounds and remove Blindness and any Diseases.",
         "ritual": false,
         "concentration": false,
         "id": 6569,
@@ -6629,7 +6636,7 @@
         "level": 1,
         "school": 5,
         "summary": "This spell allows spellcasters to heal allies that they can see within range.",
-        "description": "Healing|Heal a creature you can see.\n\nNo effect on undead and constructs.",
+        "description": "Healing|Heal a creature you can see.",
         "ritual": false,
         "concentration": false,
         "id": 1635,
@@ -6662,7 +6669,7 @@
         "level": 2,
         "school": 8,
         "summary": "This spell allows spellcasters to heat up a metal weapon or armour on the targeted creature, forcing them to let go or receive damage or suffer various penalties.",
-        "description": "Cause a metal Weapon or Armour to glow red-hot and force the creature touching it to let go or receive Disadvantage on Attack Rolls and Ability Checks. If the creature is only wearing metal armour, it always receives Disadvantage. \n\nIf the creature is still touching the metal, you can use a Bonus Action on subsequent turns to Reapply Heat Metal to deal another 2d8|Fire damage and force the creature to let go or receive Disadvantage.",
+        "description": "Cause a metal weapon or armour to glow red-hot and force the wearer to let go or receive Disadvantage on Attack Rolls and Ability Checks.",
         "ritual": false,
         "concentration": true,
         "id": 2645,
@@ -6695,7 +6702,7 @@
         "level": 1,
         "school": 5,
         "summary": "This spell allows spellcasters to surround a creature in hellfire that deals Fire damage as a Reaction when taking damage from them.",
-        "description": "React to your next attacker with flames that deal 2d10|Fire damage. \n\nOn Save: Target still takes half damage.",
+        "description": "React to your next attacker with flames that deal 2d10|Fire damage.",
         "ritual": false,
         "concentration": false,
         "id": 2205,
@@ -6754,7 +6761,7 @@
         "level": 1,
         "school": 4,
         "summary": "This spell allows spellcasters to instill themselves or an ally with courage. The affected creature cannot be Frightened and gains Temporary Hit Points.",
-        "description": "Make yourself or a target immune to Frightened and gain 5 Temporary Hit Points each turn.\n\nCan only have Temporary Hit Points from one source.",
+        "description": "Make yourself or a target immune to Frightened and gain 5 Temporary Hit Points each turn.",
         "ritual": false,
         "concentration": true,
         "id": 2264,
@@ -6780,16 +6787,19 @@
     },
     {
         "name": "Hex",
+        "damage": "1d6",
+        "damageType": 11,
         "image": "Hex.webp",
         "level": 1,
         "school": 4,
         "summary": "This spell allows spellcasters to put a curse on a creature and deal additional Necrotic damage to the targeted creature. The curse also imposes Disadvantage on a chosen ability check.",
-        "description": "Make your attacks deal an additional 1d6|Necrotic Necrotic|damage damage [sic] to the target and give it Disadvantage on Checks on an Ability of your choosing.\n\nIf the target dies before the spell ends, you can Reapply Hex to a new creature without expending a Spell Slot.",
+        "description": "Make your attacks deal an additional 1d6|Necrotic damage to the target and give it Disadvantage on an Ability of your choosing.",
         "ritual": false,
         "concentration": true,
         "id": 2223,
         "attackRoll": false,
         "range": 1,
+        "condition": "Reapply Hex",
         "costs": [
             {
                 "resource": 2,
@@ -6803,9 +6813,12 @@
         "classes": [
             "Warlock"
         ],
+        "damageSaveEffect": 1,
         "variants": [
             {
                 "name": "Hex (Strength)",
+                "damage": "1d6",
+                "damageType": 11,
                 "image": "Hex Strength.webp",
                 "level": 1,
                 "school": 4,
@@ -6817,7 +6830,7 @@
                 "attackRoll": false,
                 "range": 1,
                 "rangeFt": 60,
-                "condition": "Hex: Strength",
+                "condition": "Hexed: Strength",
                 "costs": [
                     {
                         "resource": 2,
@@ -6828,10 +6841,13 @@
                         "amount": 1
                     }
                 ],
-                "classes": []
+                "classes": [],
+                "damageSaveEffect": 1
             },
             {
                 "name": "Hex (Dexterity)",
+                "damage": "1d6",
+                "damageType": 11,
                 "image": "Hex Dexterity.webp",
                 "level": 1,
                 "school": 4,
@@ -6843,7 +6859,7 @@
                 "attackRoll": false,
                 "range": 1,
                 "rangeFt": 60,
-                "condition": "Hex: Dexterity",
+                "condition": "Hexed: Dexterity",
                 "costs": [
                     {
                         "resource": 2,
@@ -6854,10 +6870,13 @@
                         "amount": 1
                     }
                 ],
-                "classes": []
+                "classes": [],
+                "damageSaveEffect": 1
             },
             {
                 "name": "Hex (Constitution)",
+                "damage": "1d6",
+                "damageType": 11,
                 "image": "Hex Constitution.webp",
                 "level": 1,
                 "school": 4,
@@ -6869,7 +6888,7 @@
                 "attackRoll": false,
                 "range": 1,
                 "rangeFt": 60,
-                "condition": "Hex: Constitution",
+                "condition": "Hexed: Constitution",
                 "costs": [
                     {
                         "resource": 2,
@@ -6880,10 +6899,13 @@
                         "amount": 1
                     }
                 ],
-                "classes": []
+                "classes": [],
+                "damageSaveEffect": 1
             },
             {
                 "name": "Hex (Intelligence)",
+                "damage": "1d6",
+                "damageType": 11,
                 "image": "Hex Intelligence.webp",
                 "level": 1,
                 "school": 4,
@@ -6895,7 +6917,7 @@
                 "attackRoll": false,
                 "range": 1,
                 "rangeFt": 60,
-                "condition": "Hex: Intelligence",
+                "condition": "Hexed: Intelligence",
                 "costs": [
                     {
                         "resource": 2,
@@ -6906,10 +6928,13 @@
                         "amount": 1
                     }
                 ],
-                "classes": []
+                "classes": [],
+                "damageSaveEffect": 1
             },
             {
                 "name": "Hex (Wisdom)",
+                "damage": "1d6",
+                "damageType": 11,
                 "image": "Hex Wisdom.webp",
                 "level": 1,
                 "school": 4,
@@ -6921,7 +6946,7 @@
                 "attackRoll": false,
                 "range": 1,
                 "rangeFt": 60,
-                "condition": "Hex: Wisdom",
+                "condition": "Hexed: Wisdom",
                 "costs": [
                     {
                         "resource": 2,
@@ -6932,10 +6957,13 @@
                         "amount": 1
                     }
                 ],
-                "classes": []
+                "classes": [],
+                "damageSaveEffect": 1
             },
             {
                 "name": "Hex (Charisma)",
+                "damage": "1d6",
+                "damageType": 11,
                 "image": "Hex Charisma.webp",
                 "level": 1,
                 "school": 4,
@@ -6948,7 +6976,7 @@
                 "range": 1,
                 "rangeM": 18,
                 "rangeFt": 60,
-                "condition": "Hex: Charisma",
+                "condition": "Hexed: Charisma",
                 "costs": [
                     {
                         "resource": 2,
@@ -6959,7 +6987,8 @@
                         "amount": 1
                     }
                 ],
-                "classes": []
+                "classes": [],
+                "damageSaveEffect": 1
             }
         ]
     },
@@ -6969,13 +6998,13 @@
         "level": 5,
         "school": 4,
         "summary": "This spell allows spellcasters to Paralyse a creature, preventing them from acting and making them vulnerable to attacks.",
-        "description": "Paralyse a creature. It can't Move, Act, or React. Attacks from within m=3|ft=10 are always Critical Hits.\n* No effect on undead.",
+        "description": "Paralyse a creature. It can't Move, Act, or React. Attacks from within m=3|ft=10 are always Critical Hits.",
         "ritual": false,
         "concentration": true,
         "id": 7948,
         "attackRoll": false,
         "range": 1,
-        "condition": "Paralysed",
+        "condition": "Hold Monster",
         "conditionDuration": 10,
         "conditionSave": 5,
         "costs": [
@@ -6993,7 +7022,8 @@
             "Sorcerer",
             "Warlock",
             "Wizard"
-        ]
+        ],
+        "higherLevels": "Upcast: Affects an additional target for each Spell Slot Level above 5th."
     },
     {
         "name": "Hold Person",
@@ -7032,29 +7062,27 @@
     },
     {
         "name": "Hunger of Hadar",
+        "damage": "2d6",
+        "damageType": 5,
+        "extraDamage": "2d6",
+        "extraDamageType": 8,
         "image": "Hunger of Hadar.webp",
         "level": 3,
         "school": 2,
         "summary": "It creates an area that deals damage and inflicts conditions to creatures in it, including reduced movement speed.",
-        "description": "Creatures within this black sphere are Blinded and take damage at the end of their turn and the start of their turn.\n\nCreatures starting their turn in the area take 2d6|Cold damage. Creatures ending their turn in the area possibly take 2d6|Acid damage.\n\nThe area is Difficult Terrain.",
+        "description": "Creatures within this black sphere are Blinded and take damage at the end of their turn and the start of their turn.",
         "ritual": false,
         "concentration": true,
         "id": 2826,
         "attackRoll": false,
         "range": 1,
-        "areaName": "Hunger of Hadar",
-        "areaCategory": 1,
-        "areaShape": 1,
+        "aoe": 1,
+        "aoeM": 6,
+        "aoeFt": 20,
+        "areaName": "Hunger of Hadar (area)",
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 10,
-        "areaTurnStartDamage": "2d6",
-        "areaTurnStartDamageType": 5,
-        "areaTurnStartDamageSave": 0,
-        "areaTurnEndDamage": "2d6",
-        "areaTurnEndDamageType": 8,
-        "areaTurnEndDamageSave": 2,
-        "areaTurnEndDamageSaveEffect": 0,
         "costs": [
             {
                 "resource": 1,
@@ -7075,8 +7103,8 @@
         "image": "Hunter's Mark.webp",
         "level": 1,
         "school": 3,
-        "summary": "This spell allows spellcasters to mark a creature as their prey and deal additional Physical damage to the targeted creature.",
-        "description": "Mark a creature as your quarry to deal an additional 1d6|Physical|drs=t damage whenever you hit it with a weapon attack.\n\nIf the target dies before the spell ends, you can use Reapply Hunter's Mark to mark a new creature.",
+        "summary": "This spell allows spellcasters to mark a creature as their prey and deal additional Weapon damage to the targeted creature.",
+        "description": "Mark a creature as your quarry to deal an additional 1d6|Weapon damage whenever you hit it with a weapon attack.",
         "ritual": false,
         "concentration": true,
         "id": 2209,
@@ -7104,7 +7132,7 @@
         "level": 3,
         "school": 6,
         "summary": "This spell allows spellcasters to hypnotise all creatures within an area.",
-        "description": "Hypnotise creatures that can see the pattern. They cannot attack you. They cannot move nor act.\n\nThis spell can be cast while you are Silenced.",
+        "description": "Hypnotise creatures that can see the pattern. They cannot attack you. They cannot move nor act.",
         "ritual": false,
         "concentration": true,
         "id": 2743,
@@ -7143,7 +7171,7 @@
         "level": 1,
         "school": 2,
         "summary": "The caster throws a shard of ice, which explodes and leaves behind an icy surface.",
-        "description": "Throw a shard of ice that deals 1d10|Piercing damage. It explodes and deals 2d6|Cold damage to anyone nearby. It leaves an Ice Surface. On miss, the shard of ice still explodes.\n\nThis spell can be cast while you are Silenced.",
+        "description": "Throw a shard of ice that deals 1d10|Piercing damage. It explodes and deals 2d6|Cold damage to anyone nearby. It leaves an Ice (surface) surface. On miss, the shard of ice still explodes.",
         "ritual": false,
         "concentration": false,
         "id": 6660,
@@ -7154,9 +7182,7 @@
         "aoe": 1,
         "aoeM": 2,
         "aoeFt": 7,
-        "areaName": "Ice Surface",
-        "areaCategory": 2,
-        "areaShape": 1,
+        "areaName": "Ice (surface)",
         "areaRangeM": 2,
         "areaRangeFt": 7,
         "areaDuration": 2,
@@ -7188,7 +7214,7 @@
         "level": 4,
         "school": 5,
         "summary": "This spell allows spellcasters to summon an ice storm to strike an area.",
-        "description": "Impel a storm of hail and ice to crash from the sky, covering the ground and striking all objects and creatures within range, dealing Bludgeoning and Cold damage. It also creates an Ice Surface that lasts 2 turns.",
+        "description": "Impel a storm of hail and ice to crash from the sky, covering the ground and striking all objects and creatures within range, dealing Bludgeoning and Cold damage. It also creates an Ice (surface) surface that lasts 2 turns.",
         "ritual": false,
         "concentration": false,
         "id": 6724,
@@ -7199,8 +7225,7 @@
         "aoe": 1,
         "aoeM": 6,
         "aoeFt": 20,
-        "areaName": "Ice",
-        "areaCategory": 2,
+        "areaName": "Ice (surface)",
         "areaShape": 1,
         "areaRangeM": 6,
         "areaRangeFt": 20,
@@ -7220,8 +7245,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSave": 2,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Bludgeoning damage for each Spell Slot Level above 4th."
     },
     {
@@ -7271,16 +7295,11 @@
         "aoe": 1,
         "aoeM": 6,
         "aoeFt": 20,
-        "areaName": "Insect Swarm",
-        "areaCategory": 1,
+        "areaName": "Insect Plague (area)",
         "areaShape": 1,
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 10,
-        "areaTurnStartDamage": "4d10",
-        "areaTurnStartDamageType": 2,
-        "areaTurnStartDamageSave": 3,
-        "areaTurnStartDamageSaveEffect": 0,
         "costs": [
             {
                 "resource": 1,
@@ -7296,8 +7315,7 @@
             "Druid",
             "Sorcerer"
         ],
-        "damageSave": 3,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d10|Piercing damage for each Spell Slot Level above 5th."
     },
     {
@@ -7306,7 +7324,7 @@
         "level": 2,
         "school": 6,
         "summary": "This spell allows spellcasters to turn themselves and other creatures Invisible to the naked eye.",
-        "description": "Touch a creature to turn it Invisible. Attacks against it have Disadvantage. It attacks with Advantage.\n\nInvisibility breaks when you fail Stealth Checks on attacking, casting spells, or interacting with items.Bug\n\nCondition ends early if the creature attacks or casts a spell.",
+        "description": "Touch a creature to turn it Invisible. Attacks against it have Disadvantage. It attacks with Advantage.",
         "ritual": false,
         "concentration": true,
         "id": 2174,
@@ -7397,7 +7415,7 @@
         "level": 0,
         "school": 5,
         "summary": "It makes an object shed light in a small area.",
-        "description": "Infuse an object with an aura of light. Only affects one target at a time.",
+        "description": "Infuse an object with an aura of light.",
         "ritual": false,
         "concentration": false,
         "id": 796,
@@ -7450,7 +7468,8 @@
         "classes": [
             "Ranger"
         ],
-        "damageSaveEffect": 1
+        "damageSaveEffect": 1,
+        "higherLevels": "When the spell is cast at 4th level or higher, both the primary arrow damage and the burst damage increase by 1d8|Lightning for each spell slot level above 3rd."
     },
     {
         "name": "Lightning Bolt",
@@ -7483,8 +7502,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSave": 2,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d6|Lightning for each Spell Slot Level above 3rd."
     },
     {
@@ -7524,7 +7542,7 @@
         "image": "Mage Armour.webp",
         "level": 1,
         "school": 1,
-        "summary": "This spell allows unarmoured spellcasters to surround themselves with magical protection.",
+        "summary": "This spell allows  spellcasters to surround an unarmoured creature (including themselves if they're unarmoured) with magical protection.",
         "description": "Surround an unarmoured creature in a protective magical force. Its 13 + its Dexterity modifier.\n\nPrerequisite: The target can't be wearing Armour.",
         "ritual": false,
         "concentration": false,
@@ -7645,7 +7663,7 @@
         "level": 5,
         "school": 5,
         "summary": "This spell allows spellcasters to heal several of their allies.",
-        "description": "Unleash a soothing hum of energy that heals you and nearby allies.\n\nNo effect on Undead and Constructs",
+        "description": "Unleash a soothing hum of energy that heals you and nearby allies.",
         "ritual": false,
         "concentration": false,
         "id": 7961,
@@ -7716,9 +7734,7 @@
         "range": 1,
         "condition": "Melf's Acid Arrow",
         "conditionDuration": 1,
-        "areaName": "Acid Surface",
-        "areaCategory": 2,
-        "areaShape": 1,
+        "areaName": "Acid (surface)",
         "areaRangeM": 2,
         "areaRangeFt": 7,
         "costs": [
@@ -7743,7 +7759,7 @@
         "level": 0,
         "school": 6,
         "summary": "It conjures a simple illusion to distract creatures.",
-        "description": "Create an illusion that compels nearby creatures to investigate.\n\nYou can remain hidden while casting this spell.\n\nThis spell can be cast while you are Silenced.\n\nDuration: 10 turns.",
+        "description": "Create an illusion that compels nearby creatures to investigate.",
         "ritual": false,
         "concentration": false,
         "id": 1663,
@@ -7770,7 +7786,7 @@
         "level": 2,
         "school": 6,
         "summary": "This spell allows spellcasters to create 3 illusory duplicates of themselves to distract attackers.",
-        "description": "Create 3 illusory duplicates of yourself to distract attackers. Each duplicate increases your Armour Class by 3. \n\nWhenever you successfully evade an attack, one of the duplicates disappears.",
+        "description": "Create 3 illusory duplicates of yourself to distract attackers. Each duplicate increases your Armour Class by 3.",
         "ritual": false,
         "concentration": false,
         "id": 2521,
@@ -7832,7 +7848,7 @@
         "level": 2,
         "school": 5,
         "summary": "This spell allows spellcasters to call down a beam of moonlight that deals Radiant damage to any creature that enters the beam or starts its turn there.",
-        "description": "Call down a silvery beam of pale light that deals 2d10|Radiant damage to any creatures that enters it or starts its turn in the light. You can use an Action to move the beam ranged. On a successful Constitution SavingThrow, targets still take half damage.\n\n10\n\nWhen cast, the spellcaster gains the following ability:\n* Move Moonbeam: Move the beam of moonlight up to ranged.",
+        "description": "Call down a beam of light that damages any creatures that enters the beam or starts its turn in the light. You can use an Action to move the beam m=18|ft=60.",
         "ritual": false,
         "concentration": true,
         "id": 2541,
@@ -7841,6 +7857,11 @@
         "aoe": 1,
         "aoeM": 1,
         "aoeFt": 3,
+        "areaName": "Moonbeam (area)",
+        "areaShape": 1,
+        "areaRangeM": 1,
+        "areaRangeFt": 3,
+        "areaDuration": 10,
         "costs": [
             {
                 "resource": 1,
@@ -7854,8 +7875,7 @@
         "classes": [
             "Druid"
         ],
-        "damageSave": 3,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "damagePer": "turn",
         "higherLevels": "Upcast: When the spell is cast at 3rd level or higher, damage increases by 1d10|Radiant for each Spell Slot Level above 2nd."
     },
@@ -7885,7 +7905,6 @@
         "classes": [
             "Wizard"
         ],
-        "damageSave": 3,
         "damageSaveEffect": 1,
         "variants": [
             {
@@ -7901,9 +7920,7 @@
                 "id": 29489,
                 "attackRoll": false,
                 "range": 2,
-                "areaName": "Ice",
-                "areaCategory": 2,
-                "areaShape": 1,
+                "areaName": "Ice (surface)",
                 "areaRangeM": 6,
                 "areaRangeFt": 20,
                 "areaDuration": 10,
@@ -7918,7 +7935,6 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 3,
                 "damageSaveEffect": 1
             },
             {
@@ -7947,7 +7963,6 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 3,
                 "damageSaveEffect": 1
             }
         ]
@@ -7957,7 +7972,7 @@
         "image": "Otiluke's Resilient Sphere.webp",
         "level": 4,
         "school": 5,
-        "description": "Enclose a target in a sphere of shimmering force, reducing its movement speed by half, and blocking all incoming and outgoing damage",
+        "description": "Enclose a target in a sphere of shimmering force, reducing its movement speed by half, and blocking all incoming and spell effects.",
         "ritual": false,
         "concentration": false,
         "id": 10346,
@@ -7989,7 +8004,7 @@
         "level": 6,
         "school": 4,
         "summary": "This spell allows spellcasters to force a creature to stay in place, inactive.",
-        "description": "Cause a creature to start dancing, making it unable to take Actions or Move. Its attackers have Advantage on Attack Rolls. The dancer has Disadvantage on Attack Rolls and Dexterity SavingThrows.",
+        "description": "Cause a creature to start dancing, making it unable to take Actions or Move. Its attackers have Advantage on Attack Rolls.",
         "ritual": false,
         "concentration": true,
         "id": 8898,
@@ -8020,7 +8035,7 @@
         "level": 2,
         "school": 1,
         "summary": "This spell allows spellcasters to grants themselves and nearby allies a bonus to Stealth Checks.",
-        "description": "Call forth a veil of shadow and silence that gives you and nearby allies a +10 bonus to Stealth Checks.",
+        "description": "Call forth a veil of shadow and silence that gives you and nearby allies a +10 bonus to Stealths.",
         "ritual": false,
         "concentration": true,
         "id": 2630,
@@ -8078,6 +8093,8 @@
     },
     {
         "name": "Phantasmal Killer",
+        "damage": "4d10",
+        "damageType": 13,
         "image": "Phantasmal Killer.webp",
         "level": 4,
         "school": 6,
@@ -8104,11 +8121,13 @@
         "classes": [
             "Wizard"
         ],
+        "damageSaveEffect": 1,
+        "damagePer": "turn",
         "higherLevels": "* When this spell is cast at 5th Level or higher, it deals an additional 1d10|Psychic damage per level per turn."
     },
     {
         "name": "Planar Ally",
-        "image": "Planar Ally Icon.png",
+        "image": "Planar Ally.webp",
         "level": 6,
         "school": 2,
         "summary": "This spell allows spellcasters to summon an Elemental, Celestial, or Fiend for aid.",
@@ -8134,7 +8153,7 @@
         "variants": [
             {
                 "name": "Planar Ally: Djinni",
-                "image": "Planar Ally Icon.png",
+                "image": "Planar Ally.webp",
                 "level": 6,
                 "school": 2,
                 "summary": "This spell is a variant of the Level 6 Conjuration Spell, Planar Ally. It allows spellcasters to summon an Elemental for aid.",
@@ -8158,7 +8177,7 @@
             },
             {
                 "name": "Planar Ally: Deva",
-                "image": "Planar Ally Icon.png",
+                "image": "Planar Ally.webp",
                 "level": 6,
                 "school": 2,
                 "summary": "This spell is a variant of the Level 6 Conjuration Spell, Planar Ally. It allows spellcasters to summon a Celestial for aid.",
@@ -8182,11 +8201,11 @@
             },
             {
                 "name": "Planar Ally: Cambion",
-                "image": "Planar Ally Icon.png",
+                "image": "Planar Ally.webp",
                 "level": 6,
                 "school": 2,
                 "summary": "This spell is a variant of the Level 6 Conjuration Spell, Planar Ally. It allows spellcasters to summon a Fiend for aid.",
-                "description": "Conjure a Celestial Cambion to fight alongside you.",
+                "description": "Conjure a Cambion to fight alongside you.",
                 "ritual": false,
                 "concentration": false,
                 "id": 10939,
@@ -8212,7 +8231,7 @@
         "level": 5,
         "school": 1,
         "summary": "This spell allows spellcasters to take control of a Celestial, Elemental, Fey, or Fiend.",
-        "description": "Target an otherworldly creature and attach its consciousness to your own. It will follow and fight for you as an ally.\n\nTarget must be a Celestial, Elemental, Fey, or a Fiend.",
+        "description": "Target an otherworldly creature and attach its consciousness to your own. It will follow and fight for you as an ally.",
         "ritual": false,
         "concentration": true,
         "id": 8418,
@@ -8250,9 +8269,7 @@
         "id": 2679,
         "attackRoll": false,
         "range": 1,
-        "areaName": "Plant Growth",
-        "areaCategory": 2,
-        "areaShape": 1,
+        "areaName": "Plant Growth (surface)",
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 10,
@@ -8300,7 +8317,7 @@
             "Wizard"
         ],
         "damageSave": 3,
-        "higherLevels": "* When the spellcaster reaches Level 5, the damage increases by another d12|Poison Poison|1d12 Poison damage, for a total of 2d12|Poison.\n* When the spellcaster reaches Level 10, the damage increases by another d12|Poison Poison|1d12 Poison damage, for a total of 3d12|Poison."
+        "higherLevels": "* At character level 5, the damage increases to 2d12|Poison.\n* At character level 10, the damage increases to 3d12|Poison."
     },
     {
         "name": "Polymorph",
@@ -8308,7 +8325,7 @@
         "level": 4,
         "school": 8,
         "summary": "This spell transforms a creature into a sheep.",
-        "description": "Transform a creature into a harmless sheep. If the sheep's Hit Points drop to 0, the target reverts to its original form with its original Hit Points.",
+        "description": "Transform a creature into a harmless sheep.",
         "ritual": false,
         "concentration": true,
         "id": 6731,
@@ -8344,7 +8361,7 @@
         "level": 2,
         "school": 5,
         "summary": "This spell allows spellcasters to heal all allies within range.",
-        "description": "Heal all allies you can see within range by 2d8 + Spellcasting Modifier|Healing.\n\nCan only be used outside of combat. This spell has no effect on Undead and Constructs.",
+        "description": "Heal all allies you can see within range by 2d8 + Spellcasting Modifier|Healing.",
         "ritual": false,
         "concentration": false,
         "id": 2620,
@@ -8374,7 +8391,7 @@
         "level": 0,
         "school": 2,
         "summary": "This cantrip creates a blue flame in the caster's palm that emanates light and can be thrown at enemies.",
-        "description": "A flame in your hand sheds a light in a m=9|ft=30 radius and deals 1d8|Fire Fire|damage when thrown.\n\nThrowing the flame immediately after you conjure it does not cost an Action. Extinguishing or throwing it on subsequent turns costs an Action. The throw has a range of m=9|ft=30.",
+        "description": "A flame in your hand sheds a light in a m=9|ft=30 radius and deals 1d8|Fire Fire|damage when thrown.",
         "ritual": false,
         "concentration": false,
         "id": 1670,
@@ -8556,7 +8573,7 @@
         "level": 1,
         "school": 1,
         "summary": "This spell allows spellcasters to surround themselves with magical protection against Aberrations, Celestials, Elementals, Fey, Fiends, and Undead.",
-        "description": "Protect an ally against the attacks and powers of Aberrations, Celestials, Elementals, Fey, Fiends, and Undead.\n\nThe targets can't be Charmed, Frightened, or possessed by them, and when these creatures attack it, they have Disadvantage.",
+        "description": "Protect an ally against the attacks and powers of Aberrations, Celestials, Elementals, Fey, Fiends, and Undead.",
         "ritual": false,
         "concentration": true,
         "id": 2268,
@@ -8586,7 +8603,7 @@
         "level": 2,
         "school": 1,
         "summary": "This spell allows spellcasters to grant a creature they touch protection from Poisonous effects.",
-        "description": "Touch a creature to grant it protection against Poisonous influences. You neutralize all Poisons that affect it, grant it Advantage on SavingThrows against being Poisoned, and Resistance to Poison damage.",
+        "description": "Touch a creature to neutralise all poisons affecting it, and grant it protection against poisonous influences.",
         "ritual": false,
         "concentration": false,
         "id": 2625,
@@ -8668,7 +8685,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d8|Cold.\nWhen the spellcaster reaches Level 10, the damage increases to 3d8|Cold."
+        "higherLevels": "* At character level 5, the damage increases to 2d8|Cold.\n* At character level 10, the damage increases to 3d8|Cold."
     },
     {
         "name": "Ray of Sickness",
@@ -8816,7 +8833,7 @@
             "Cleric"
         ],
         "damageSave": 2,
-        "higherLevels": "* When the spellcaster reaches Level 5, the damage increases to 2d8|Radiant.\n* When the spellcaster reaches Level 10, the damage increases to 3d8|Radiant."
+        "higherLevels": "* At character level 5, the damage increases to 2d8|Radiant.\n* At character level 10, the damage increases to 3d8|Radiant."
     },
     {
         "name": "Sanctuary",
@@ -8824,7 +8841,7 @@
         "level": 1,
         "school": 1,
         "summary": "This spell allows spellcasters to ward themselves or an ally against enemy attacks.",
-        "description": "You or an ally cannot be targeted until you attack or harm a creature. You can still take damage from area spells.\n\nUntil the affected entity attacks or harms another creature, it cannot be targeted by enemy attacks. However, it can still take damage from spells that influence a larger area.",
+        "description": "You or an ally cannot be targeted until you attack or harm a creature. You can still take damage from area spells.",
         "ritual": false,
         "concentration": false,
         "id": 2818,
@@ -8930,9 +8947,6 @@
         "id": 6582,
         "attackRoll": false,
         "range": 3,
-        "aoe": 1,
-        "aoeM": 9,
-        "aoeFt": 30,
         "condition": "See Invisibility",
         "costs": [
             {
@@ -8956,13 +8970,13 @@
         "level": 5,
         "school": 6,
         "summary": "This spell allows spellcasters to disguise their allies.",
-        "description": "Disguise up to 4 members of your adventuring party.  Initial disguises are chosen at random.  Each affected party member may then choose a new disguise a single time as an Action.\n\nDisguises last until dispelled as an Action using Dispel Disguise.",
+        "description": "Disguise up to 4 members of your adventuring party.",
         "ritual": false,
         "concentration": false,
         "id": 8032,
         "attackRoll": false,
         "range": 1,
-        "condition": "Disguise Self",
+        "condition": "Seeming",
         "costs": [
             {
                 "resource": 1,
@@ -8987,7 +9001,7 @@
         "level": 2,
         "school": 5,
         "summary": "This spell allows the spellcaster to generate a deafening noise explosion that can damage multiple creatures and objects. This spell is extra potent against inorganic targets, who must make their Saving Throw at Disadvantage.",
-        "description": "Damages all nearby creatures and objects. Creatures made of inorganic material such as stone have Disadvantage on their SavingThrow. \n\nOn Save: Targets still take half damage.",
+        "description": "Damages all nearby creatures and objects.",
         "ritual": false,
         "concentration": false,
         "id": 2542,
@@ -9012,8 +9026,7 @@
             "Wizard",
             "Warlock"
         ],
-        "damageSave": 3,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Thunder damage for each Spell Slot Level above 2nd."
     },
     {
@@ -9123,7 +9136,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d8|Lightning.\nWhen the spellcaster reaches Level 10, the damage increases to 3d8|Lightning."
+        "higherLevels": "* At character level 5, the damage increases to 2d8|Lightning.\n* At character level 10, the damage increases to 3d8|Lightning."
     },
     {
         "name": "Silence",
@@ -9139,8 +9152,7 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "areaName": "Silence",
-        "areaCategory": 3,
+        "areaName": "Silence (area)",
         "areaShape": 1,
         "areaRangeM": 6,
         "areaRangeFt": 20,
@@ -9168,7 +9180,7 @@
         "level": 1,
         "school": 4,
         "summary": "It allows the spellcaster to temporarily make conscious creatures fall into a deep slumber.",
-        "description": "Put creatures into a magical slumber. Select targets up to a combined 24 Hit Points.\n\nThe condition ends upon taking damage.",
+        "description": "Put creatures into a magical slumber. Select targets up to a combined 24 Hit Points.",
         "ritual": false,
         "concentration": false,
         "id": 2277,
@@ -9200,7 +9212,7 @@
         "level": 3,
         "school": 2,
         "summary": "This spell allows spellcasters to call forth a storm that douses fire, creates an Ice Surface, and disrupts the Concentration of spellcasters.",
-        "description": "Call forth a storm that douses fire, creates an Ice Surface, and forces spellcasters to succeed at a Concentration SavingThrow in order to maintain Concentration.\n\nIce is a surface that is considered Difficult Terrain. Creatures moving through it have their Movement Speed halved, and will fall Prone on a failed Dexterity SavingThrow.",
+        "description": "Call forth a storm that douses fire, creates an Ice (surface) surface, and forces spellcasters to succeed at a Concentration SavingThrow in order to maintain Concentration.\n\nIce is a surface that is considered Difficult Terrain. Creatures moving through it have their Movement Speed halved, and will fall Prone on a failed Dexterity SavingThrow.",
         "ritual": false,
         "concentration": true,
         "id": 2738,
@@ -9208,9 +9220,7 @@
         "range": 1,
         "rangeM": 18,
         "rangeFt": 60,
-        "areaName": "Sleet Storm",
-        "areaCategory": 1,
-        "areaShape": 1,
+        "areaName": "Sleet Storm (area)",
         "areaRangeM": 9,
         "areaRangeFt": 30,
         "areaDuration": 10,
@@ -9296,7 +9306,7 @@
         "level": 3,
         "school": 7,
         "summary": "This spell allows spellcasters to grant a semblance of life to a corpse, allowing it to answer questions.",
-        "description": "Grant a semblance of life to a corpse, allowing it to answer questions. \n\nSkeletons and creatures killed with Acid, Fire, Lightning, Necrotic, Radiant damage no longer have a mouth and can't be made to talk using this spell.\n\nCasting this spell also grants the ability Recast Speak with Dead, which allows the spellcaster to recast the spell without expending a spell slot, until the next Long Rest.",
+        "description": "Grant a semblance of life to a corpse, allowing it to answer questions.",
         "ritual": true,
         "concentration": false,
         "id": 2761,
@@ -9335,7 +9345,6 @@
         "attackRoll": false,
         "range": 1,
         "areaName": "Spikes",
-        "areaCategory": 2,
         "areaShape": 1,
         "areaRangeM": 6,
         "areaRangeFt": 20,
@@ -9361,7 +9370,7 @@
         "level": 3,
         "school": 2,
         "summary": "This spell allows spellcasters to call forth spirits to damage nearby targets and slow their Movement.",
-        "description": "Call forth spirits to protect you. Nearby enemies take 3d8|Radiant or 3d8|Necrotic damage per turn, and their Movement Speed is halved. Lasts for 10 turns.\n\nOn a successful Save, targets still take half damage. \n\nCaster can't become Invisible while Concentrating on this spell.",
+        "description": "Call forth spirits to protect you.",
         "ritual": false,
         "concentration": true,
         "id": 2715,
@@ -9370,9 +9379,6 @@
         "aoe": 1,
         "aoeM": 3,
         "aoeFt": 10,
-        "condition": "Spirit Guardians Aura",
-        "conditionDuration": 10,
-        "conditionSave": 5,
         "areaDuration": 10,
         "costs": [
             {
@@ -9397,7 +9403,7 @@
                 "level": 3,
                 "school": 2,
                 "summary": "This spell is a variation of the spell Spirit Guardians. This variant deals Radiant damage as well as slows the Movement of nearby enemies.",
-                "description": "Call forth spirits to protect the area around you. Nearby enemies take 3d8|Radiant damage per turn, and their Movement Speed is halved. Lasts for 10 turns.\n\nOn a successful Save, targets still take half damage. \n\nCaster can't become Invisible while Concentrating on this spell.",
+                "description": "Call forth spirits to protect the area around you.",
                 "ritual": false,
                 "concentration": true,
                 "id": 2718,
@@ -9420,19 +9426,18 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 5,
-                "damageSaveEffect": 0,
+                "damageSaveEffect": 1,
                 "higherLevels": "When the spell is cast using a 4th Level spell slot or higher, damage increases by 1d8|Radiant damage for each spell slot level above 3rd."
             },
             {
                 "name": "Spirit Guardians: Necrotic",
                 "damage": "3d8",
                 "damageType": 11,
-                "image": "Spirit Guardians Icon.png",
+                "image": "Spirit Guardians.webp",
                 "level": 3,
                 "school": 2,
                 "summary": "This spell is a variation of the spell Spirit Guardians. This variant deals Necrotic damage as well as slows the Movement of nearby enemies.",
-                "description": "Call forth spirits to protect the area around you. Nearby enemies take 3d8|Necrotic damage per turn, and their Movement Speed is halved. Lasts for 10 turns.\n\nOn a successful Save, targets still take half damage. \n\nCaster can't become Invisible while Concentrating on this spell.",
+                "description": "Call forth spirits to protect the area around you.",
                 "ritual": false,
                 "concentration": true,
                 "id": 2719,
@@ -9455,8 +9460,7 @@
                     }
                 ],
                 "classes": [],
-                "damageSave": 5,
-                "damageSaveEffect": 0,
+                "damageSaveEffect": 1,
                 "higherLevels": "When the spell is cast using a 4th Level spell slot or higher, damage increases by 1d8|Necrotic damage for each spell slot level above 3rd."
             }
         ]
@@ -9685,7 +9689,7 @@
         "ritual": false,
         "concentration": false,
         "id": 24602,
-        "attackRoll": false,
+        "attackRoll": true,
         "range": 4,
         "condition": "Staggering Smite",
         "conditionDuration": 1,
@@ -9718,9 +9722,7 @@
         "id": 2762,
         "attackRoll": false,
         "range": 1,
-        "areaName": "Stinking Cloud",
-        "areaCategory": 1,
-        "areaShape": 1,
+        "areaName": "Stinking Cloud (cloud)",
         "areaRangeM": 6,
         "areaRangeFt": 20,
         "areaDuration": 10,
@@ -9782,7 +9784,6 @@
         "concentration": true,
         "id": 8409,
         "attackRoll": false,
-        "range": 3,
         "aoe": 4,
         "aoeM": 18,
         "aoeFt": 60,
@@ -9804,8 +9805,7 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSave": 3,
-        "damageSaveEffect": 0
+        "damageSaveEffect": 1
     },
     {
         "name": "Tasha's Hideous Laughter",
@@ -9813,7 +9813,7 @@
         "level": 1,
         "school": 4,
         "summary": "It allows spellcasters to send a targeted creature into a fit of laughter, falling Prone.",
-        "description": "Leave a creature Prone with laughter, without the ability to get up.\n\nThe creature must have an Intelligence of 5 or more.\nThe target can try to shake off the effect each time it takes damage.",
+        "description": "Leave a creature Prone with laughter, without the ability to get up.",
         "ritual": false,
         "concentration": true,
         "id": 2281,
@@ -9846,7 +9846,7 @@
         "level": 5,
         "school": 8,
         "summary": "This spell allows spellcasters to throw creatures and objects around with only their mind.",
-        "description": "Throw a creature or object up to m=18|ft=60 with a thought. Once per turn, you can use Telekinesis again without expending a Spell Slot. Heavier items deal more damage when thrown in this manner.\n\n10",
+        "description": "Throw a creature or object up to m=18|ft=60 with a thought. Once per turn, you can use Telekinesis again without expending a Spell Slot.",
         "ritual": false,
         "concentration": true,
         "id": 8025,
@@ -9869,8 +9869,10 @@
         ],
         "classes": [
             "Sorcerer",
-            "Wizard"
-        ]
+            "Wizard",
+            "Cleric"
+        ],
+        "damageSaveEffect": 1
     },
     {
         "name": "Thaumaturgy",
@@ -9905,11 +9907,11 @@
         "level": 0,
         "school": 8,
         "summary": "It deals damage to a target and pulls it closer to the caster.",
-        "description": "Pulls the creature m=3|ft=10 closer to you.\n\nThe target cannot be pulled if it is Huge in size.",
+        "description": "Pulls the creature m=3|ft=10 closer to you.",
         "ritual": false,
         "concentration": false,
         "id": 1693,
-        "attackRoll": true,
+        "attackRoll": false,
         "rangeM": 9,
         "rangeFt": 30,
         "costs": [
@@ -9921,7 +9923,7 @@
         "classes": [
             "Druid"
         ],
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d6|Piercing.\nWhen the spellcaster reaches Level 10, the damage increases to 3d6|Piercing."
+        "higherLevels": "* At character level 5, the damage increases to 2d6|Piercing.\n* At character level 10, the damage increases to 3d6|Piercing."
     },
     {
         "name": "Thunderous Smite",
@@ -9931,14 +9933,14 @@
         "image": "Thunderous Smite.webp",
         "level": 1,
         "school": 5,
-        "summary": "This spell allows spellcasters to cause their weapon to ring with Thunder as they strike, pushing targets away and potentially knocking them Prone.",
-        "description": "Your weapon rings with thunder as you strike, pushing your target m=3|ft=10 away and possibly knocking them Prone.",
+        "summary": "This spell allows spellcasters to cause their melee weapon to ring with Thunder as they strike, pushing targets away and potentially knocking them Prone.",
+        "description": "Your melee weapon rings with thunder as you strike, pushing your target m=3|ft=10 away and possibly knocking them Prone.",
         "ritual": false,
         "concentration": false,
         "id": 2833,
-        "attackRoll": true,
+        "attackRoll": false,
         "range": 4,
-        "condition": "prone",
+        "condition": "Prone",
         "conditionDuration": 1,
         "conditionSave": 1,
         "costs": [
@@ -10034,7 +10036,7 @@
         "level": 3,
         "school": 7,
         "summary": "This spell allows spellcasters at melee range to siphon the life force of their target.",
-        "description": "Touch an enemy to siphon their life force and regain half as many Hit Points.\n\nFor 10 turns, you can use Vampiric Touch again without expending an additional Spell Slot.",
+        "description": "Touch an enemy to siphon their life force and regain half as many Hit Points.",
         "ritual": false,
         "concentration": true,
         "id": 2739,
@@ -10086,7 +10088,7 @@
             "Bard"
         ],
         "damageSave": 5,
-        "higherLevels": "When the spellcaster reaches Level 5, the damage increases to 2d4|Psychic.\nWhen the spellcaster reaches Level 10, the damage increases to 3d4|Psychic."
+        "higherLevels": "* At character level 5, the damage increases to 2d4|Psychic.\n* At character level 10, the damage increases to 3d4|Psychic."
     },
     {
         "name": "Wall of Fire",
@@ -10103,16 +10105,11 @@
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 60,
-        "areaName": "Wall of Fire",
-        "areaCategory": 3,
+        "areaName": "Wall of Fire (area)",
         "areaShape": 4,
         "areaRangeM": 36,
         "areaRangeFt": 120,
         "areaDuration": 10,
-        "areaTurnStartDamage": "5d8",
-        "areaTurnStartDamageType": 4,
-        "areaTurnStartDamageSave": 2,
-        "areaTurnStartDamageSaveEffect": 0,
         "costs": [
             {
                 "resource": 1,
@@ -10128,34 +10125,30 @@
             "Sorcerer",
             "Wizard"
         ],
-        "damageSave": 2,
-        "damageSaveEffect": 0,
+        "damageSaveEffect": 1,
         "higherLevels": "Upcast: Casting this spell at a higher level deals an extra 1d8|Fire damage for each Spell Slot Level above 4th."
     },
     {
         "name": "Wall of Ice",
         "damage": "10d6",
         "damageType": 5,
+        "extraDamage": "10d6",
+        "extraDamageType": 5,
         "image": "Wall of Ice.webp",
         "level": 6,
         "school": 5,
-        "description": "Raise a wall of solid ice that deals 10d6|Cold damage to anyone standing in its way. When the ice is broken, it leaves behind a cloud of frigid air that deals 10d6|Cold per turn to creatures within.",
+        "description": "Raise a wall of solid ice that deals 10d6|Cold damage to anyone standing in its way.",
         "ritual": false,
         "concentration": true,
         "id": 9198,
         "attackRoll": false,
         "rangeM": 18,
         "rangeFt": 54,
-        "areaName": "Wall of Ice",
-        "areaCategory": 3,
+        "areaName": "Wall of Ice (area)",
         "areaShape": 4,
         "areaRangeM": 9,
         "areaRangeFt": 30,
         "areaDuration": 10,
-        "areaTurnStartDamage": "10d6",
-        "areaTurnStartDamageType": 5,
-        "areaTurnStartDamageSave": 2,
-        "areaTurnStartDamageSaveEffect": 0,
         "costs": [
             {
                 "resource": 1,
@@ -10169,7 +10162,6 @@
         "classes": [
             "Wizard"
         ],
-        "damageSave": 2,
         "damageSaveEffect": 1
     },
     {
@@ -10210,20 +10202,15 @@
         "level": 6,
         "school": 2,
         "summary": "This spell allows spellcasters to conjure a wall of brambles, Entangling and damaging any creatures who are in the area, or trying to pass through.",
-        "description": "Create a wall of pliable, twisting thorns surrounded by Entangling vines. Creatures can move through the wall, but take 7d8|Piercing damage per turn, their Movement Speed is quartered due to Difficult Terrain, and they may become Entangled.",
+        "description": "Create a wall of pliable, twisting thorns surrounded by Entangling vines.",
         "ritual": false,
         "concentration": true,
         "id": 10350,
         "attackRoll": false,
         "range": 1,
-        "areaName": "Twisting Vines",
-        "areaCategory": 3,
+        "areaName": "Wall of Thorns (area)",
         "areaShape": 4,
         "areaDuration": 60,
-        "areaTurnStartDamage": "7d8",
-        "areaTurnStartDamageType": 2,
-        "areaTurnStartDamageSave": 2,
-        "areaTurnStartDamageSaveEffect": 0,
         "costs": [
             {
                 "resource": 1,
@@ -10237,8 +10224,7 @@
         "classes": [
             "Druid"
         ],
-        "damageSave": 2,
-        "damageSaveEffect": 0
+        "damageSaveEffect": 1
     },
     {
         "name": "Warden of Vitality",
@@ -10252,7 +10238,7 @@
         "id": 10342,
         "attackRoll": false,
         "range": 3,
-        "condition": "Warden of Vitality",
+        "condition": "Warden of Vitality (Aura)",
         "conditionDuration": 10,
         "costs": [
             {
@@ -10274,13 +10260,13 @@
         "level": 2,
         "school": 1,
         "summary": "This spell allows spellcasters to bolster an ally's defenses while also sharing any damage they receive.",
-        "description": "Ward an ally. They gain Resistance to all damage, and a +1 bonus to their ArmourClass and SavingThrows.\nEach time the target takes damage, the spellcaster takes the same amount of damage.",
+        "description": "Ward an ally. They gain resistance to all damage, and a +1 bonus to their ArmourClass and SavingThrows.",
         "ritual": false,
         "concentration": false,
         "id": 6908,
         "attackRoll": false,
         "range": 2,
-        "condition": "Warding Bond",
+        "condition": "Warding Bond (Target)",
         "costs": [
             {
                 "resource": 1,
@@ -10307,15 +10293,15 @@
         "id": 2288,
         "attackRoll": false,
         "range": 1,
+        "aoe": 1,
+        "aoeM": 4,
+        "aoeFt": 13,
         "condition": "Enwebbed",
         "conditionDuration": 1,
         "conditionSave": 2,
-        "areaName": "Web",
-        "areaCategory": 2,
-        "areaShape": 1,
+        "areaName": "Web (surface)",
         "areaRangeM": 4,
         "areaRangeFt": 13,
-        "areaDuration": 10,
         "costs": [
             {
                 "resource": 1,
@@ -10329,7 +10315,8 @@
         "classes": [
             "Sorcerer",
             "Wizard"
-        ]
+        ],
+        "damageSaveEffect": 1
     },
     {
         "name": "Wind Walk",
@@ -10337,7 +10324,7 @@
         "level": 6,
         "school": 8,
         "summary": "This spell allows spellcasters to transform a group of allies into a cloud of mist. This form offers damage Resistance, Advantage on some Saving Throws, and the ability to Fly.",
-        "description": "Transform yourself and all nearby party members into tiny clouds of mist to avoid attacks. You become Resistant to non-magical damage, gain Advantage on Constitution, Dexterity, and Strength SavingThrows, and become Tiny in size. You also gain the ability to Fly.\n\nWhile transformed, you won't be able to attack, cast spells, or talk.",
+        "description": "Transform yourself and all nearby party members into tiny clouds of mist to avoid attacks.",
         "ritual": false,
         "concentration": false,
         "id": 10351,
@@ -10429,6 +10416,7 @@
         ],
         "classes": [
             "Paladin"
-        ]
+        ],
+        "damageSaveEffect": 1
     }
 ]

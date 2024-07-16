@@ -31,7 +31,7 @@ export interface ChoiceListConfig {
     feature: string | number;
     feature2?: string | number;
     minLevel?: string | number;
-    classes?: string | number;
+    classRestricted?: true;
     matchAll?: boolean;
     name?: string | number;
 }

@@ -84,9 +84,34 @@ export class Utils extends SharedUtils {
     }
 
     static stringToTitleCase(str: string): string {
-        return str.toLowerCase().replace(/(?:^|\s)\S/g, function titlecase(a) {
-            return a.toUpperCase();
-        });
+        const lowercaseWords = new Set([
+            'a',
+            'an',
+            'and',
+            'as',
+            'at',
+            'by',
+            'for',
+            'in',
+            'of',
+            'on',
+            'or',
+            'the',
+            'to',
+            'with',
+        ]);
+
+        return str
+            .toLowerCase()
+            .split(' ')
+            .map((word, index) => {
+                if (index === 0 || !lowercaseWords.has(word)) {
+                    return word.charAt(0).toUpperCase() + word.slice(1);
+                }
+
+                return word;
+            })
+            .join(' ');
     }
 
     static async asyncFilter<T>(
@@ -96,5 +121,9 @@ export class Utils extends SharedUtils {
         const results = await Promise.all(arr.map(predicate));
 
         return arr.filter((_v, index) => results[index]);
+    }
+
+    static stringToSentences(phrase: string): string[] {
+        return phrase.split(/(?<=(?:\.|!|\?|\.\.\.)\s+)/g);
     }
 }

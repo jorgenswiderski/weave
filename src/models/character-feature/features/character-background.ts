@@ -4,12 +4,13 @@ import {
     Proficiency,
     ProficiencyTypes,
 } from '@jorgenswiderski/tomekeeper-shared/dist/types/grantable-effect';
-import { MediaWiki } from '../../media-wiki/media-wiki';
+import { MediaWiki, PageData } from '../../media-wiki/media-wiki';
 import { CharacterFeature } from '../character-feature';
 import { CharacterFeatureTypes, ICharacterOptionWithPage } from '../types';
 import { PageNotFoundError } from '../../errors';
 import { StaticImageCacheService } from '../../static-image-cache-service';
 import { PageLoadingState } from '../../page-item';
+import { IPageSection } from '../../media-wiki/types';
 
 enum BackgroundLoadingStates {
     ID = 'BACKGROUND_ID',
@@ -116,26 +117,15 @@ export class CharacterBackground extends CharacterFeature {
     }
 }
 
-function parseBackgroundSections(
-    pageContent: string,
-): { name: string; content: string }[] {
-    const regex =
-        /\n=\s*([\w\s]+)\s*=\s*\n([\s\S]*?)(?=\n=\s*[\w\s]+\s*=\s*\n|\s*$)/g;
+function parseBackgroundSections(page: PageData): IPageSection[] {
+    const sections = page.getSections('[\\w\\s]+', 2);
 
-    const matches: { name: string; content: string }[] = [];
-    let match;
+    // FIXME: Use .hasTemplate when page section supports it
+    const legacyIndex = sections.findIndex((section) =>
+        section.content.includes('{{Legacy content'),
+    );
 
-    // eslint-disable-next-line no-cond-assign
-    while ((match = regex.exec(pageContent))) {
-        if (!match[2].includes('{{Legacy Content|section}}')) {
-            matches.push({
-                name: match[1].trim(),
-                content: match[2].trim(),
-            });
-        }
-    }
-
-    return matches;
+    return sections.slice(0, legacyIndex);
 }
 
 let characterBackgroundData: CharacterBackground[];
@@ -144,19 +134,19 @@ export async function getCharacterBackgroundData(): Promise<
     CharacterBackground[]
 > {
     if (!characterBackgroundData) {
-        const pageData = await MediaWiki.getPage('Backgrounds');
+        const page = await MediaWiki.getPage('Backgrounds');
 
-        if (!pageData || !pageData.content) {
+        if (!page?.content) {
             throw new Error('no page content');
         }
 
-        const backgroundSections = parseBackgroundSections(pageData.content);
+        const backgroundSections = parseBackgroundSections(page);
 
         const data = backgroundSections.map(
-            (section) =>
+            ({ title, content }) =>
                 new CharacterBackground(
-                    { name: section.name, pageTitle: section.name },
-                    section.content,
+                    { name: title, pageTitle: title },
+                    content,
                 ),
         );
 

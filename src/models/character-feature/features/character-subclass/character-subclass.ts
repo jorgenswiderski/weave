@@ -17,6 +17,10 @@ import { characterSubclassParserOverrides } from './overrides';
 import { ICharacterOptionWithPage } from '../../types';
 import { IClassFeatureFactory } from '../../class-feature/types';
 import { error } from '../../../logger';
+import { PageSection } from '../../../media-wiki/page-section';
+import { CharacterFeatureRedirect } from './types';
+import { MediaWikiTemplateParserConfig } from '../../../media-wiki/types';
+import { MediaWikiTemplate } from '../../../media-wiki/media-wiki-template';
 
 export class CharacterSubclass extends CharacterFeature {
     static factory?: IClassFeatureFactory;
@@ -29,6 +33,36 @@ export class CharacterSubclass extends CharacterFeature {
         super(option, level, characterClass);
     }
 
+    async getQuoteData(): Promise<{ description?: string; image?: string }> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
+        if (!this.page?.content) {
+            return {};
+        }
+
+        const templates: Record<string, MediaWikiTemplateParserConfig> = {
+            q: { description: { key: 1 }, image: {} },
+            SubclassQuote: { description: { key: 'quote' }, image: {} },
+            ClassQuote: { description: { key: 'quote' }, image: {} },
+        };
+
+        // eslint-disable-next-line no-restricted-syntax
+        for (const [templateName, config] of Object.entries(templates)) {
+            let template: MediaWikiTemplate;
+
+            try {
+                // eslint-disable-next-line no-await-in-loop
+                template = await this.page.getTemplate(templateName);
+            } catch (e) {
+                continue;
+            }
+
+            return template.parse(config);
+        }
+
+        return {};
+    }
+
     async initDescription(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
@@ -36,14 +70,8 @@ export class CharacterSubclass extends CharacterFeature {
             return;
         }
 
-        const descMatch = /{{SubclassQuote\|quote=(.+?)\|image/g;
-        const match = descMatch.exec(this.page.content);
-
-        if (!match?.[1]) {
-            throw new Error('could not initialize subclass description');
-        }
-
-        this.description = MediaWikiParser.stripMarkup(match[1]).trim();
+        const { description } = await this.getQuoteData();
+        this.description = description;
     }
 
     async initImage(): Promise<void> {
@@ -53,14 +81,8 @@ export class CharacterSubclass extends CharacterFeature {
             return;
         }
 
-        const imageMatch = /{{SubclassQuote\|quote=.+?\|image=([^|}]+)[|}]+/g;
-        const match = imageMatch.exec(this.page.content);
-
-        if (!match?.[1]) {
-            throw new Error('could not initialize subclass image');
-        }
-
-        this.image = match[1];
+        const { image } = await this.getQuoteData();
+        this.image = image;
 
         if (this.image) {
             StaticImageCacheService.cacheImage(this.image);
@@ -71,7 +93,9 @@ export class CharacterSubclass extends CharacterFeature {
         content: string,
         sectionKey: string | number,
         level: number,
-    ): Promise<ICharacterOptionWithStubs | undefined> {
+    ): Promise<
+        ICharacterOptionWithStubs | CharacterFeatureRedirect | undefined
+    > {
         if (!this.page) {
             throw new PageNotFoundError();
         }
@@ -98,7 +122,9 @@ export class CharacterSubclass extends CharacterFeature {
         }
 
         if (config?.redirectTo) {
-            return { name: sectionTitle };
+            const redirect: CharacterFeatureRedirect = { redirect: sectionKey };
+
+            return redirect;
         }
 
         if (
@@ -123,6 +149,7 @@ export class CharacterSubclass extends CharacterFeature {
         }
 
         const saiPattern = /{{SAI\|([^|}]+?)(?:\|[^}]*?)?}}/g;
+        const passPattern = /{{Pass\|([^|}]+?)(?:\|[^}]*?)?}}/g;
         const iconPattern = /{{IconLink\|[^|]+\|([^|}]+?)(?:\|[^}]*?)?}}/g;
         const linkPattern = /\[\[([^|]*?)(?:\[^}]*?)?]]/g;
 
@@ -131,6 +158,7 @@ export class CharacterSubclass extends CharacterFeature {
         if (typeof sectionKey === 'string' && !config?.disableTitleMatch) {
             featureMatches = [
                 ...sectionKey.matchAll(saiPattern),
+                ...sectionKey.matchAll(passPattern),
                 ...sectionKey.matchAll(iconPattern),
                 ...sectionKey.matchAll(linkPattern),
             ];
@@ -154,6 +182,7 @@ export class CharacterSubclass extends CharacterFeature {
             featureMatches = [
                 ...featureMatches,
                 ...content.matchAll(saiPattern),
+                ...content.matchAll(passPattern),
                 ...content.matchAll(iconPattern),
             ];
         }
@@ -208,7 +237,10 @@ export class CharacterSubclass extends CharacterFeature {
                     ...content.matchAll(/\n\s*\*\*\s*([^:]+:[\S]*)\s*(.+)/g),
                 ];
 
-                assert(matches.length > 0);
+                assert(
+                    matches.length > 0,
+                    `Expected bullet list for ${this.name} > Level ${level} > Section ${sectionKey}`,
+                );
 
                 options = matches.map(([, label, bulletContent]) => {
                     const titles = [
@@ -256,64 +288,50 @@ export class CharacterSubclass extends CharacterFeature {
     protected async getLevelOptions(
         content: string,
         level: number,
-    ): Promise<ICharacterOptionWithStubs[]> {
+    ): Promise<(ICharacterOptionWithStubs | CharacterFeatureRedirect)[]> {
         if (!this.page) {
             throw new PageNotFoundError();
         }
 
         const sectionMatches = [
             ...content.matchAll(
-                /(?:{{HorizontalRuleImage}}\s*\n|={4,}\s*(.*?)\s*={4,}\s*\n|^)([\s\S]*?)(?=(?:\n\s*====)|$|{{HorizontalRuleImage}})/g,
+                /(?:{{HorizontalRuleImage}}\s*\n|={4,}\s*(.*?)\s*={4,}\s*\n|(?:\n|^);\s*(.*?)\s*\n:\s*|^)([\s\S]*?)(?={{HorizontalRuleImage}}|\n\s*={4,}|\n;\s*|$)/g,
             ),
         ];
 
         return (
             await Promise.all(
                 sectionMatches.map(
-                    ([, sectionTitle, sectionContent], index) => {
+                    (
+                        [, sectionTitle, sectionTitle2, sectionContent],
+                        index,
+                    ) => {
                         return this.parseSection(
                             sectionContent,
-                            sectionTitle ?? index,
+                            sectionTitle ?? sectionTitle2 ?? index,
                             level,
                         );
                     },
                 ),
             )
-        ).filter(Boolean) as ICharacterOptionWithStubs[];
+        ).filter(Boolean) as (
+            | ICharacterOptionWithStubs
+            | CharacterFeatureRedirect
+        )[];
     }
 
-    async getProgression(): Promise<CharacterProgressionLevel[]> {
-        if (!this.page?.content) {
-            throw new Error('Could not find page content');
+    protected async resolveRedirects(
+        progression: CharacterProgressionLevel[],
+        levelSections: PageSection[],
+    ): Promise<CharacterProgressionLevel[]> {
+        if (!this.page) {
+            throw new PageNotFoundError();
         }
-
-        const featureSection =
-            /\n\s*==\s*Subclass\sFeatures\s*==\s*\n([\s\S]*?)(?=\n\s*==\s*[^=]+?\s*==\s*\n|{{\w+Navbox}})/i;
-
-        const sectionMatch = featureSection.exec(this.page.content);
-
-        if (!sectionMatch?.[1]) {
-            throw new Error(
-                `Could not find subclass features for ${this.name}`,
-            );
-        }
-
-        const levelSection =
-            /\n===\s*Level\s(\d+)\s*===\s*\n([\s\S]*?)(?=\n===\s*Level|$)/gi;
-
-        const levelMatches = [...sectionMatch[1].matchAll(levelSection)];
-
-        const progression: CharacterProgressionLevel[] = Array.from({
-            length: 12,
-        }).map((a, index) => ({
-            Level: index + 1,
-            Features: [],
-        }));
 
         const optionsByLevel = Object.fromEntries(
             await Promise.all(
-                levelMatches.map(async ([, levelStr, content]) => {
-                    const level = parseInt(levelStr, 10);
+                levelSections.map(async ({ title, content }) => {
+                    const level = parseInt(title.match(/\d+/)![0], 10);
 
                     return [level, await this.getLevelOptions(content, level)];
                 }),
@@ -322,17 +340,30 @@ export class CharacterSubclass extends CharacterFeature {
 
         const config = characterSubclassParserOverrides[this.page.title];
 
+        const redirectedFeatures: Map<number, ICharacterOptionWithStubs[]> =
+            new Map();
+
         (
             Object.entries(optionsByLevel) as unknown as [
-                number,
-                ICharacterOptionWithStubs[],
+                string,
+                (ICharacterOptionWithStubs | CharacterFeatureRedirect)[],
             ][]
-        ).forEach(([level, options]) => {
-            const redirected = options.map((option) => {
-                const { name } = option;
-                const sectionConfig = config?.[level]?.[name];
+        ).forEach(([levelStr, options]) => {
+            const level = parseInt(levelStr, 10);
 
-                if (sectionConfig?.redirectTo) {
+            const redirected = options.map(
+                (option): ICharacterOptionWithStubs => {
+                    // Check whether its an Option or a Redirect
+                    if (typeof (option as any)?.redirect === 'undefined') {
+                        return option as ICharacterOptionWithStubs;
+                    }
+
+                    const { redirect: sectionKey } =
+                        option as CharacterFeatureRedirect;
+
+                    const sectionConfig = config?.[level]?.[sectionKey];
+                    assert(sectionConfig.redirectTo);
+
                     const [rLevel, rSection] = sectionConfig.redirectTo;
 
                     const targetOption: ICharacterOptionWithStubs =
@@ -355,15 +386,52 @@ export class CharacterSubclass extends CharacterFeature {
                               ]
                             : undefined,
                     };
-                }
+                },
+            );
 
-                return option;
-            });
-
-            progression[level - 1].Features = redirected;
+            redirectedFeatures.set(level, redirected);
         });
 
-        return progression;
+        return progression.map((level) => ({
+            ...level,
+            Features: redirectedFeatures.get(level.Level) ?? level.Features,
+        }));
+    }
+
+    async getProgression(): Promise<CharacterProgressionLevel[]> {
+        if (!this.page?.content) {
+            throw new Error('Could not find page content');
+        }
+
+        const featuresSection = this.page.getSection('Subclass Features');
+
+        if (!featuresSection) {
+            throw new Error(
+                `Could not find subclass features for ${this.name}`,
+            );
+        }
+
+        const levelSections = featuresSection.getSubsections('Level \\d+');
+
+        if (levelSections.length === 0) {
+            throw new Error(
+                `Could not find subclass level sections for '${this.name}'`,
+            );
+        }
+
+        const progression: CharacterProgressionLevel[] = Array.from({
+            length: 12,
+        }).map((a, index) => ({
+            Level: index + 1,
+            Features: [],
+        }));
+
+        const redirected = await this.resolveRedirects(
+            progression,
+            levelSections,
+        );
+
+        return redirected;
     }
 
     async getEffectsByLevel(

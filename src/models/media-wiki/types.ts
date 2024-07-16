@@ -12,26 +12,24 @@ export interface IPageData extends ApiRevision {
     hasCategory(categoryNames: string[] | string): boolean;
     hasTemplate(templateNames: string[] | string): Promise<boolean>;
     getTemplate(templateName: string): Promise<IMediaWikiTemplate>;
-    getSection(
-        nameOrRegex: string,
-        depth?: number,
-    ): { title: string; content: string } | null;
+    getTemplates(templateName: string): Promise<IMediaWikiTemplate[]>;
+    getSection(nameOrRegex: string, depth?: number): IPageSection | null;
+    getSections(nameOrRegex: string, depth?: number): IPageSection[];
 }
 
 export interface IMediaWikiTemplate {
     wikitext: string;
-    parseWikitextFromPage(templateName: string): string;
     parse(config: MediaWikiTemplateParserConfig): Record<string, any>;
 }
 
 export type TemplateParserFunction = (
     value: string,
     config: MediaWikiTemplateParserConfigItem,
-    page: IPageData,
+    page?: IPageData,
 ) => any;
 
 export interface MediaWikiTemplateParserConfigItem {
-    key?: string;
+    key?: string | number;
     parser?: TemplateParserFunction;
     default?: any;
 }
@@ -42,3 +40,10 @@ export type MediaWikiTemplateParserConfig = Record<
 >;
 
 export class WikitableNotFoundError extends Error {}
+
+export interface IPageSection {
+    title: string;
+    content: string;
+    getSubsection(nameOrRegex: string, depth?: number): IPageSection | null;
+    getSubsections(nameOrRegex: string, depth?: number): IPageSection[];
+}

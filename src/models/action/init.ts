@@ -79,8 +79,12 @@ export async function initActionsAndSpells(): Promise<void> {
 
     const actionNames = await MediaWiki.getTitlesInCategories(categories);
 
+    const filteredActionNames = actionNames.filter(
+        (name) => !name.startsWith('Template:'),
+    );
+
     const actionPages = await Promise.all(
-        actionNames.map((name) => MediaWiki.getPage(name)),
+        filteredActionNames.map((name) => MediaWiki.getPage(name)),
     );
 
     // Prune duplicates that may be caused by redirects.

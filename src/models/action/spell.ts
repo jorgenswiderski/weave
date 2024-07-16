@@ -34,7 +34,7 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             throw new PageNotFoundError();
         }
 
-        const { plainText, noOp } = MediaWikiTemplate.Parsers;
+        const { plainText } = MediaWikiTemplate.Parsers;
         const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
         const config: MediaWikiTemplateParserConfig = {
@@ -81,7 +81,6 @@ export class Spell extends ActionBase implements Partial<ISpell> {
             },
             variantOf: {
                 key: 'variant of',
-                parser: noOp,
                 default: undefined,
             },
         };

@@ -101,18 +101,21 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
         const actionCostParser = (
             value: string,
             config: MediaWikiTemplateParserConfigItem,
-            page: IPageData,
+            page?: IPageData,
         ) => {
-            const costMatches = [...value.matchAll(/([\w\d]+)(?::(\d+))?/g)];
+            const costMatches = [...value.matchAll(/([\w\s]+)(?::(\d+))?/g)];
 
             const costs = costMatches.map(
                 ([, resource, amount]): ActionCost => {
+                    // eslint-disable-next-line no-param-reassign
+                    resource = resource.trim().toLowerCase();
+
                     if (
                         !(resource in ActionResourceFromString) &&
                         resource !== ''
                     ) {
                         error(
-                            `Failed to map '${config.key}' value '${value}' to enum (${page.title}).`,
+                            `Failed to map resource '${resource}' to enum (${page?.title}) in key '${config.key}' .`,
                         );
                     }
 
@@ -156,14 +159,13 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
 
         this.id = this.page.pageId;
 
-        const { noOp, plainText, boolean, int } = MediaWikiTemplate.Parsers;
+        const { plainText, boolean, int } = MediaWikiTemplate.Parsers;
 
         const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
         const config: MediaWikiTemplateParserConfig = {
             name: { parser: plainText, default: this.pageTitle },
             image: {
-                parser: noOp,
                 default: undefined,
             },
             level: {

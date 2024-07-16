@@ -19,6 +19,7 @@ import { CharacterFeatureLearnSpell } from '../features/special/character-featur
 import { SubclassFeatureOverrides } from '../features/character-subclass/overrides';
 import { CharacterSubclass } from '../features/character-subclass/character-subclass';
 import { CharacterFeatureWarlockDeepenedPact } from '../features/special/character-feature-warlock-deepened-pact';
+import { MediaWikiText } from '../../media-wiki/media-wiki-text';
 
 class ClassFeatureFactorySingleton implements IClassFeatureFactory {
     protected static async construct(
@@ -150,7 +151,7 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
         },
     };
 
-    fromWikitext(
+    async fromWikitext(
         featureText: string,
         characterClass?: ICharacterClass,
         level?: number,
@@ -185,17 +186,32 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             }
         }
 
-        // Remove icons
-        if (featureText.startsWith('{{Icon')) {
-            // eslint-disable-next-line no-param-reassign, prefer-destructuring
-            featureText = featureText.split('}} ')[1];
+        let featureWikitext: MediaWikiText;
+
+        try {
+            // Remove any icons (Template:Icon)
+            const iconTemplates = await MediaWikiText.getTemplates(
+                featureText,
+                'Icon',
+            );
+
+            featureWikitext = new MediaWikiText(
+                iconTemplates.reduce(
+                    (acc, template) => acc.replace(template.wikitext, ''),
+                    featureText,
+                ),
+            );
+        } catch (err) {
+            featureWikitext = new MediaWikiText(featureText);
         }
 
-        // Check for SAI style template
-        if (featureText.startsWith('{{SAI|')) {
-            const parts = featureText.split('|');
+        if (await featureWikitext.hasTemplate('SAI')) {
+            const template = await featureWikitext.getTemplate('SAI');
 
-            const pageTitle = parts[1].split('}}')[0].trim();
+            const pageTitle = template.wikitext
+                .split('|')[1]
+                .replace('}}', '')
+                .trim();
 
             return ClassFeatureFactorySingleton.construct(
                 CharacterFeatureTypes.OTHER,
@@ -207,10 +223,13 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             );
         }
 
-        // Check for SmIconLink style template
-        if (featureText.startsWith('{{SmIconLink|')) {
-            const parts = featureText.split('|');
-            const pageTitle = parts[3].replace('}}', '').trim();
+        if (await featureWikitext.hasTemplate('Pass')) {
+            const template = await featureWikitext.getTemplate('Pass');
+
+            const pageTitle = template.wikitext
+                .split('|')[1]
+                .replace('}}', '')
+                .trim();
 
             return ClassFeatureFactorySingleton.construct(
                 CharacterFeatureTypes.OTHER,
@@ -222,35 +241,49 @@ class ClassFeatureFactorySingleton implements IClassFeatureFactory {
             );
         }
 
-        // Extract link labels or whole links
-        const linkPattern = /\[\[([^|]+).*?]]/;
+        if (await featureWikitext.hasTemplate('SmIconLink')) {
+            const template = await featureWikitext.getTemplate('SmIconLink');
 
-        if (linkPattern.test(featureText)) {
-            const match = featureText.match(linkPattern);
+            const pageTitle = template.wikitext
+                .split('|')
+                .slice(-1)[0]
+                .replace('}}', '')
+                .trim();
 
-            if (match?.[1]) {
-                const featureName = match[1].trim();
+            return ClassFeatureFactorySingleton.construct(
+                CharacterFeatureTypes.OTHER,
+                {
+                    name: MediaWikiParser.parseNameFromPageTitle(pageTitle),
+                    pageTitle,
+                },
+                ...rest,
+            );
+        }
 
-                const msg = `${characterClass?.name} feature '${featureText}' has a section link`;
+        const links = MediaWikiParser.getAllPageTitles(featureText);
 
-                if (featureName.startsWith('#')) {
-                    error(msg);
-                } else {
-                    if (featureName.includes('#')) {
-                        warn(msg);
-                    }
+        if (links.length > 0) {
+            const featureName = links[0].trim();
 
-                    return ClassFeatureFactorySingleton.construct(
-                        CharacterFeatureTypes.OTHER,
-                        {
-                            name: MediaWikiParser.parseNameFromPageTitle(
-                                featureName,
-                            ),
-                            pageTitle: featureName,
-                        },
-                        ...rest,
-                    );
+            const msg = `${characterClass?.name} feature '${featureText}' has a section link`;
+
+            if (featureName.startsWith('#')) {
+                error(msg);
+            } else {
+                if (featureName.includes('#')) {
+                    warn(msg);
                 }
+
+                return ClassFeatureFactorySingleton.construct(
+                    CharacterFeatureTypes.OTHER,
+                    {
+                        name: MediaWikiParser.parseNameFromPageTitle(
+                            featureName,
+                        ),
+                        pageTitle: featureName,
+                    },
+                    ...rest,
+                );
             }
         }
 

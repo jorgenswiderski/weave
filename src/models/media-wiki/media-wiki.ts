@@ -12,6 +12,8 @@ import { IPageData } from './types';
 import { RevisionLock } from '../revision-lock/revision-lock';
 import { MediaWikiTemplate } from './media-wiki-template';
 import { MediaWikiParser } from './media-wiki-parser';
+import { PageSection } from './page-section';
+import { MediaWikiText } from './media-wiki-text';
 
 export class PageData implements IPageData {
     title: string;
@@ -78,115 +80,44 @@ export class PageData implements IPageData {
         );
     }
 
-    protected static async getTemplatePage(
-        templateName: string,
-    ): Promise<PageData> {
-        // eslint-disable-next-line @typescript-eslint/no-use-before-define
-        return MediaWiki.getPage(
-            `${
-                templateName.startsWith('User:') ? '' : 'Template:'
-            }${templateName}`,
-        );
+    async getTemplate(templateName: string): Promise<MediaWikiTemplate> {
+        return MediaWikiText.getTemplate(this.content, templateName, this);
     }
 
-    protected static getTemplateId = Utils.memoize(async function getTemplateId(
-        templateName: string,
-    ): Promise<number> {
-        const { pageId } = await PageData.getTemplatePage(templateName);
-
-        return pageId;
-    });
-
-    protected getRawTemplateNames(): string[] {
-        const allTemplateNames = [
-            ...this.content.matchAll(
-                /(?<=[^{]|^){{(?:Template:)?([^|{}]+)[\s\S]*?}}/g,
-            ),
-        ]
-            .map((match) => match[1].trim())
-            .filter((name) => {
-                // check for  embedded variables like "{{DISPLAYTITLE}}" which aren't templates
-                const varName = name.split(':')[0];
-
-                return varName !== varName.toUpperCase();
-            })
-            .filter((name) => !name.match(/#[^|}]+:/));
-
-        return Array.from(new Set(allTemplateNames));
+    async getTemplates(templateName: string): Promise<MediaWikiTemplate[]> {
+        return MediaWikiText.getTemplates(this.content, templateName, this);
     }
-
-    static templateCache: Map<number, Set<number>> = new Map();
 
     async hasTemplate(templateNames: string[] | string): Promise<boolean> {
-        const { pageId: key } = this;
-
-        // eslint-disable-next-line no-param-reassign
-        templateNames =
-            typeof templateNames === 'string' ? [templateNames] : templateNames;
-
-        if (!PageData.templateCache.has(key)) {
-            const pageTemplateIds = await Promise.all(
-                this.getRawTemplateNames().map(PageData.getTemplateId),
-            );
-
-            PageData.templateCache.set(key, new Set(pageTemplateIds));
-        }
-
-        const searchTemplateIds = await Promise.all(
-            templateNames.map(PageData.getTemplateId),
-        );
-
-        const pageTemplateIds = PageData.templateCache.get(key)!;
-
-        return searchTemplateIds.some((id) => pageTemplateIds.has(id));
-    }
-
-    async getTemplate(templateName: string): Promise<MediaWikiTemplate> {
-        const templateId = await PageData.getTemplateId(templateName);
-        const rawPageTemplateNames = this.getRawTemplateNames();
-
-        const matchingTemplate = await Utils.asyncFilter(
-            rawPageTemplateNames,
-            async (name) => (await PageData.getTemplateId(name)) === templateId,
-        );
-
-        if (matchingTemplate.length === 0) {
-            throw new Error(
-                `Could not find template '${templateName}' in page '${this.title}'`,
-            );
-        }
-
-        if (matchingTemplate.length > 1) {
-            throw new Error(
-                `Found ${matchingTemplate.length} templates matching template '${templateName}' in page '${this.title}'`,
-            );
-        }
-
-        const matchingTemplateName = matchingTemplate[0];
-
-        return new MediaWikiTemplate(this, matchingTemplateName);
+        return MediaWikiText.hasTemplate(this.content, templateNames, this);
     }
 
     getSection(
         nameOrRegex: string,
         depth?: number,
-    ): { title: string; content: string } | null {
-        const eqs = depth ? '='.repeat(depth) : '={2,}';
-
-        const regex = new RegExp(
-            `\\n\\s*(${eqs})\\s*(${nameOrRegex})\\s*\\1\\s*\\n([\\s\\S]+?)(?:=\\n\\s*\\1[^=]|$)`,
-            'i',
+        allowInlineSection?: boolean,
+    ): PageSection | null {
+        return (
+            PageSection.getSections(
+                this.content,
+                nameOrRegex,
+                depth,
+                allowInlineSection,
+            )?.[0] || null
         );
+    }
 
-        const match = this.content.match(regex);
-
-        if (!match?.[2] || !match?.[3]) {
-            return null;
-        }
-
-        const [, , title, content] = match;
-
-        return { title, content };
+    getSections(
+        nameOrRegex: string,
+        depth?: number,
+        allowInlineSection?: boolean,
+    ): PageSection[] {
+        return PageSection.getSections(
+            this.content,
+            nameOrRegex,
+            depth,
+            allowInlineSection,
+        );
     }
 
     static async resolveArticleTransclusions(
@@ -611,7 +542,7 @@ export class MediaWiki {
         return typeof redirect !== 'undefined';
     }
 
-    static async validatePages(): Promise<void> {
+    static async pruneUnusedPages(): Promise<void> {
         const db = await getMongoDb();
         const collection = db.collection(MongoCollections.MW_PAGES);
 
@@ -643,3 +574,5 @@ export class MediaWiki {
         }
     }
 }
+
+MediaWikiText.MediaWiki.getPage = MediaWiki.getPage;

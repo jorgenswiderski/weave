@@ -54,7 +54,7 @@ export class PageItem extends WikiLoadable {
         });
 
         if (!intro) {
-            throw new Error('Page intro is null');
+            throw new Error(`Page '${this.pageTitle}' intro is null`);
         }
 
         return intro.split('\n')[0].trim();

@@ -325,29 +325,18 @@ export class CharacterFeature
                             }
                         }
 
-                        if (config.classes) {
-                            const cell = row[config.classes];
-
+                        if (config.classRestricted) {
                             assert(
                                 this.characterClass,
                                 `Class must be defined to enforce classes constraint on wikitable on page '${this.pageTitle}'`,
                             );
 
-                            if (
-                                !(
-                                    cell.includes(
-                                        `{{class|${
-                                            this.characterClass!.name
-                                        }}}`,
-                                    ) ||
-                                    (this.subclass &&
-                                        cell.includes(
-                                            `{{class|${this.subclass.name}}}`,
-                                        ))
-                                )
-                            ) {
-                                return false;
-                            }
+                            const classCell = row?.[this.characterClass.name];
+
+                            const isClassAllowed =
+                                classCell && classCell.trim() === '✓';
+
+                            return isClassAllowed;
                         }
 
                         return true;
@@ -363,7 +352,7 @@ export class CharacterFeature
                             (featureCell) =>
                                 [
                                     ...featureCell.matchAll(
-                                        /{{(?:Icon|SAI|SmIconLink)\|([^|}]+).*?}}/g,
+                                        /{{(?:Icon|SAI|SmIconLink|Pass)\|([^|}]+).*?}}/g,
                                     ),
                                     ...featureCell.matchAll(
                                         /\[\[([^|\]]+).*?\]\]/g,
@@ -414,7 +403,7 @@ export class CharacterFeature
 
         const matches = [
             ...this.page.content.matchAll(
-                /\n\s*={2,}\s*{{(Icon|SAI|SmIconLink)\|[^}]+}}\s*={2,}\s*\n/g,
+                /\n\s*={2,}\s*{{(Icon|SAI|SmIconLink|Pass)\|[^}]+}}\s*={2,}\s*\n/g,
             ),
         ];
 
@@ -430,7 +419,7 @@ export class CharacterFeature
 
         const featureMarkdown = [
             ...this.page.content.matchAll(
-                /\n\s*={2,}\s*({{(Icon|SAI|SmIconLink)\|[^}]+}})\s*={2,}\s*\n/g,
+                /\n\s*={2,}\s*({{(Icon|SAI|SmIconLink|Pass)\|[^}]+}})\s*={2,}\s*\n/g,
             ),
         ].map((match) => match[1]);
 

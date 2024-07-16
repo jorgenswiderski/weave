@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-import { getCharacterClassData } from './character-class/character-class';
+import { getCharacterClassDataWithoutFeats } from './character-class/character-class';
 import { getCharacterBackgroundData } from './character-feature/features/character-background';
 import { getCharacterRaceData } from './character-feature/features/character-race';
 import { getEquipmentItemData } from './equipment/equipment';
@@ -11,6 +11,7 @@ import { getSpellDataFiltered } from './action/spell';
 import { getActionDataFiltered, initActionsAndSpells } from './action/init';
 import { getLocationData, initLocations } from './locations/locations';
 import { getPassiveDataFiltered, initPassives } from './passive/passive';
+import { getCharacterFeatData } from './character-feature/features/character-feat';
 
 export async function initData() {
     const locations = initLocations();
@@ -25,7 +26,7 @@ export async function initData() {
         }
     > = {
         classes: {
-            fn: getCharacterClassData,
+            fn: getCharacterClassDataWithoutFeats,
             dependencies: [actions, passives],
         },
         races: {
@@ -52,6 +53,10 @@ export async function initData() {
         passives: {
             fn: async () => getPassiveDataFiltered(),
             dependencies: [passives, 'classes', 'races', 'backgrounds'],
+        },
+        feats: {
+            fn: async () => getCharacterFeatData(),
+            dependencies: [actions, passives],
         },
     };
 

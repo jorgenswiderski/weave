@@ -93,8 +93,12 @@ async function updateRevisions() {
             `Updated ${updatedCounter} of ${pageTitles.length} pages in ${
                 (Date.now() - startTime) / 1000
             }s. ${
-                pageTitles.length - updatedCounter
-            } pages were already up to date.`,
+                pageTitles.length - updatedCounter > 0
+                    ? `${
+                          pageTitles.length - updatedCounter
+                      } pages were already up to date.`
+                    : ''
+            }`,
         );
 
         console.log('Run dump-data to update revision-lock.json.');

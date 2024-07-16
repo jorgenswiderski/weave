@@ -14,6 +14,7 @@ import { MwnProgressBar } from './api/mwn-progress-bar';
 import { apiRoutes } from './routes';
 import { initData } from './models/init-data';
 import { CONFIG } from './models/config';
+import { RevisionLock } from './models/revision-lock/revision-lock';
 
 async function main() {
     log('=====================================================');
@@ -22,6 +23,7 @@ async function main() {
 
     const startTime = Date.now();
     new MwnProgressBar().render();
+    await RevisionLock.validateDatabaseState();
     await initData();
 
     const fastify = Fastify({
@@ -68,21 +70,19 @@ async function main() {
 
     const { PORT: port } = CONFIG.HTTP;
 
-    try {
-        await fastify.listen({
-            port,
-            // Bind to all network interfaces, exposing the server to outside the docker container
-            host: '0.0.0.0',
-        });
+    await fastify.listen({
+        port,
+        // Bind to all network interfaces, exposing the server to outside the docker container
+        host: '0.0.0.0',
+    });
 
-        log('=====================================================');
-        warn(`Weave is ready in ${(Date.now() - startTime) / 1000}s!`);
-        log(`Server is running on port ${port}`);
-        log('=====================================================');
-    } catch (err) {
-        error(err);
-        process.exit(1);
-    }
+    log('=====================================================');
+    warn(`Weave is ready in ${(Date.now() - startTime) / 1000}s!`);
+    log(`Server is running on port ${port}`);
+    log('=====================================================');
 }
 
-main();
+main().catch((err) => {
+    error(err);
+    process.exit(1);
+});

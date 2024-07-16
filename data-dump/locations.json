@@ -1,27 +1,6 @@
 [
     {
-        "name": "Ambrust's Home"
-    },
-    {
-        "name": "Baldur's Mouth"
-    },
-    {
-        "name": "Barren's Coop"
-    },
-    {
-        "name": "Lavernica's House"
-    },
-    {
-        "name": "Nortale's Hostel"
-    },
-    {
-        "name": "Other Locations and Planes of Existence"
-    },
-    {
-        "name": "Other Planes of Existence"
-    },
-    {
-        "name": "Over-world"
+        "name": "Other planes of existence"
     },
     {
         "name": "Under-world"
@@ -87,16 +66,12 @@
         "id": 4204
     },
     {
-        "name": "Tiefling Hideout",
-        "id": 4263
-    },
-    {
         "name": "Secluded Cove",
         "id": 4272
     },
     {
-        "name": "Chapel Entrance",
-        "id": 4276
+        "name": "Over-world",
+        "id": 4318
     },
     {
         "name": "Selûnite Outpost",
@@ -129,10 +104,6 @@
     {
         "name": "Waukeen's Rest",
         "id": 4462
-    },
-    {
-        "name": "Nautiloid",
-        "id": 4492
     },
     {
         "name": "Decrepit Village",
@@ -187,8 +158,8 @@
         "id": 8129
     },
     {
-        "name": "House of Hope",
-        "id": 8537
+        "name": "House in Deep Shadows",
+        "id": 8493
     },
     {
         "name": "Stormshore Tabernacle",
@@ -197,30 +168,6 @@
     {
         "name": "The Hollow",
         "id": 8645
-    },
-    {
-        "name": "Makeshift Prison",
-        "id": 8649
-    },
-    {
-        "name": "Servants' Quarters",
-        "id": 8655
-    },
-    {
-        "name": "Druids' Chambers",
-        "id": 8674
-    },
-    {
-        "name": "Enclave Library",
-        "id": 8678
-    },
-    {
-        "name": "Hidden Vault",
-        "id": 8693
-    },
-    {
-        "name": "Secluded Chamber",
-        "id": 8703
     },
     {
         "name": "Emerald Grove",
@@ -251,7 +198,7 @@
         "id": 9606
     },
     {
-        "name": "Crèche Y'llek",
+        "name": "Creche Y'llek",
         "id": 10318
     },
     {
@@ -273,10 +220,6 @@
     {
         "name": "Gauntlet of Shar",
         "id": 10466
-    },
-    {
-        "name": "House of Healing Morgue",
-        "id": 10617
     },
     {
         "name": "House of Healing",
@@ -379,11 +322,7 @@
         "id": 11839
     },
     {
-        "name": "Shadowfell",
-        "id": 12122
-    },
-    {
-        "name": "The Counting House",
+        "name": "Counting House",
         "id": 12128
     },
     {
@@ -451,10 +390,6 @@
         "id": 12273
     },
     {
-        "name": "Wyrmway",
-        "id": 12274
-    },
-    {
         "name": "Lower City Sewers",
         "id": 12275
     },
@@ -479,16 +414,20 @@
         "id": 12903
     },
     {
+        "name": "Open Hand Temple Cellar",
+        "id": 12906
+    },
+    {
+        "name": "Under Temple Cave Area",
+        "id": 12907
+    },
+    {
         "name": "Western Beach",
         "id": 12908
     },
     {
         "name": "Knights of the Shield Hideout",
         "id": 13048
-    },
-    {
-        "name": "Wine Festival",
-        "id": 13052
     },
     {
         "name": "Guildhall",
@@ -551,8 +490,12 @@
         "id": 15032
     },
     {
-        "name": "The Velveteen Elixir",
+        "name": "Stylin' Horst Potion Shop",
         "id": 15211
+    },
+    {
+        "name": "Water Queen's Cellar",
+        "id": 15234
     },
     {
         "name": "Bonecloak's Apothecary",
@@ -569,6 +512,10 @@
     {
         "name": "Felogyr's Fireworks",
         "id": 17168
+    },
+    {
+        "name": "Wine Festival",
+        "id": 17546
     },
     {
         "name": "Highberry's Home",
@@ -619,7 +566,7 @@
         "id": 19273
     },
     {
-        "name": "The High Hall",
+        "name": "High Hall",
         "id": 19984
     },
     {
@@ -635,6 +582,10 @@
         "id": 24896
     },
     {
+        "name": "Lustrous Lass",
+        "id": 27393
+    },
+    {
         "name": "Golbraith's Cellar",
         "id": 27854
     },
@@ -643,7 +594,31 @@
         "id": 27893
     },
     {
+        "name": "Vonayn's Home",
+        "id": 27909
+    },
+    {
         "name": "Last Light Inn - Cellar",
         "id": 28634
+    },
+    {
+        "name": "Baldur's Mouth",
+        "id": 31640
+    },
+    {
+        "name": "Barren's Coop",
+        "id": 34833
+    },
+    {
+        "name": "Lavernica's Home",
+        "id": 40275
+    },
+    {
+        "name": "Nortale's Hostel",
+        "id": 40398
+    },
+    {
+        "name": "Armbrust's Home",
+        "id": 40413
     }
 ]
