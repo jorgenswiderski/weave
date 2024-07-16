@@ -149,6 +149,7 @@ export class CharacterSubclass extends CharacterFeature {
         }
 
         const saiPattern = /{{SAI\|([^|}]+?)(?:\|[^}]*?)?}}/g;
+        const passPattern = /{{Pass\|([^|}]+?)(?:\|[^}]*?)?}}/g;
         const iconPattern = /{{IconLink\|[^|]+\|([^|}]+?)(?:\|[^}]*?)?}}/g;
         const linkPattern = /\[\[([^|]*?)(?:\[^}]*?)?]]/g;
 
@@ -157,6 +158,7 @@ export class CharacterSubclass extends CharacterFeature {
         if (typeof sectionKey === 'string' && !config?.disableTitleMatch) {
             featureMatches = [
                 ...sectionKey.matchAll(saiPattern),
+                ...sectionKey.matchAll(passPattern),
                 ...sectionKey.matchAll(iconPattern),
                 ...sectionKey.matchAll(linkPattern),
             ];
@@ -180,6 +182,7 @@ export class CharacterSubclass extends CharacterFeature {
             featureMatches = [
                 ...featureMatches,
                 ...content.matchAll(saiPattern),
+                ...content.matchAll(passPattern),
                 ...content.matchAll(iconPattern),
             ];
         }

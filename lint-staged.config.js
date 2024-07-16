@@ -4,6 +4,6 @@ module.exports = {
         'eslint . --ext .js,.ts --cache',
         'npm run format',
         () => 'npm run type-check',
-        'npm run test',
+        () => 'npm test',
     ],
 };

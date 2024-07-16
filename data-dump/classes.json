@@ -235,7 +235,7 @@
                                         "image": "Class Barbarian Berserker Badge Icon.png",
                                         "grants": [
                                             {
-                                                "ref": "s2331"
+                                                "ref": "c8873"
                                             }
                                         ]
                                     },
@@ -379,6 +379,39 @@
                     {
                         "name": "Feat",
                         "grants": []
+                    },
+                    {
+                        "name": "Subclass Feature: Barbarian",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Berserker",
+                                        "description": "Violence is both a means and an end. You follow a path of untrammeled fury, slick with blood, as you thrill in the chaos of battle, heedless of your own well-being.",
+                                        "image": "Class Barbarian Berserker Badge Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Wild Magic",
+                                        "description": "The wild influence of magic has transformed you, suffusing you with arcane power that churns within you, waiting to be released.",
+                                        "image": "Wild_Magic_Barbarian_Subclass_Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Wildheart",
+                                        "description": "Your attunement with nature and its beasts inspires your rage, empowering you with supernatural might.",
+                                        "image": "Class Barbarian Wildheart Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "c6706"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "rg | forceplural = yes": 4,
@@ -684,6 +717,12 @@
                                             },
                                             {
                                                 "ref": "a18898"
+                                            },
+                                            {
+                                                "ref": "c17363"
+                                            },
+                                            {
+                                                "ref": "c17370"
                                             }
                                         ]
                                     },
@@ -1220,13 +1259,21 @@
                                         "name": "College of Swords",
                                         "description": "Bards of the College of Swords are called blades, and they entertain through daring feats of weapon prowess.",
                                         "image": "Class Bard Swords Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c3152"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "College of Valour",
                                         "description": "You wander the land to witness and relate the deeds of the mighty, keeping alive the memory of heroes of the past and inspiring heroes of the future.",
                                         "image": "Class Bard Valour Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c3152"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -1975,6 +2022,9 @@
                                                 "ref": "a26551"
                                             },
                                             {
+                                                "ref": "c9201"
+                                            },
+                                            {
                                                 "ref": "s2296"
                                             },
                                             {
@@ -2003,6 +2053,9 @@
                                         "description": "Fortified by holy zeal, you brandish an arsenal of sacramental savagery to use against those you deem unrighteous.",
                                         "image": "War Domain Icon.png",
                                         "grants": [
+                                            {
+                                                "ref": "c9203"
+                                            },
                                             {
                                                 "ref": "s2817"
                                             },
@@ -2461,7 +2514,11 @@
                                         "name": "Tempest Domain",
                                         "description": "Your faith has made you the very thunder that quakes the black firmament, the lightning coursing through the veins of a terrible storm.",
                                         "image": "Tempest_Domain_Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c13686"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Trickery Domain",
@@ -2654,7 +2711,11 @@
                                         "name": "Light Domain",
                                         "description": "The Light domain is offered by deities of justice, majesty, and primordial flame, providing spells that dispel darkness and harm the undead.",
                                         "image": "Light Domain Subclass 300px.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c13563"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Nature Domain",
@@ -3430,7 +3491,11 @@
                                         "name": "Circle of the Moon",
                                         "description": "Druids sworn to the moon draw on its mercurial nature to transform into massive creatures and primal elementals.",
                                         "image": "Class Druid Moon Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c8904"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Circle of the Spores",
@@ -4194,7 +4259,11 @@
                                         "name": "Champion",
                                         "description": "You approach the complex problems posed by combat with one distinctly effective solution - you hit those problems, really quite hard.",
                                         "image": "Class Fighter Champion Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c15270"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Eldritch Knight",
@@ -4381,7 +4450,48 @@
             {
                 "Level": 7,
                 "Proficiency Bonus": 3,
-                "Features": []
+                "Features": [
+                    {
+                        "name": "Subclass Feature: Fighter",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Battle Master",
+                                        "description": "Battle Masters are paragons of tactical superiority, combining combat manoeuvres  and experience in the field to dominate every fight.",
+                                        "image": "Class_Fighter_Battle_Master_Badge_Icon.png",
+                                        "grants": []
+                                    },
+                                    {
+                                        "name": "Champion",
+                                        "description": "You approach the complex problems posed by combat with one distinctly effective solution - you hit those problems, really quite hard.",
+                                        "image": "Class Fighter Champion Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "c15271"
+                                            },
+                                            {
+                                                "ref": "c15272"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Eldritch Knight",
+                                        "description": "Eldritch Knights study magic to supplement their weaponry, allowing them to overcome resistance from the toughest foes.",
+                                        "image": "Class Fighter Eldritch Knight Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "c14417"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "Level": 8,
@@ -4410,7 +4520,64 @@
             {
                 "Level": 10,
                 "Proficiency Bonus": 4,
-                "Features": []
+                "Features": [
+                    {
+                        "name": "Subclass Feature: Fighter",
+                        "grants": [],
+                        "choices": [
+                            {
+                                "type": 10,
+                                "options": [
+                                    {
+                                        "name": "Battle Master",
+                                        "description": "Battle Masters are paragons of tactical superiority, combining combat manoeuvres  and experience in the field to dominate every fight.",
+                                        "image": "Class_Fighter_Battle_Master_Badge_Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "c17574"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Champion",
+                                        "description": "You approach the complex problems posed by combat with one distinctly effective solution - you hit those problems, really quite hard.",
+                                        "image": "Class Fighter Champion Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "c17357"
+                                            },
+                                            {
+                                                "ref": "c17362"
+                                            },
+                                            {
+                                                "ref": "c17363"
+                                            },
+                                            {
+                                                "ref": "c17366"
+                                            },
+                                            {
+                                                "ref": "c17368"
+                                            },
+                                            {
+                                                "ref": "c17370"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Eldritch Knight",
+                                        "description": "Eldritch Knights study magic to supplement their weaponry, allowing them to overcome resistance from the toughest foes.",
+                                        "image": "Class Fighter Eldritch Knight Badge Icon.png",
+                                        "grants": [
+                                            {
+                                                "ref": "c14416"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "Level": 11,
@@ -4909,6 +5076,15 @@
                                         "image": "Class Monk Open Hand Badge Icon.png",
                                         "grants": [
                                             {
+                                                "ref": "c11272"
+                                            },
+                                            {
+                                                "ref": "c11273"
+                                            },
+                                            {
+                                                "ref": "c11274"
+                                            },
+                                            {
                                                 "ref": "a8916"
                                             }
                                         ]
@@ -5013,6 +5189,9 @@
                                             },
                                             {
                                                 "ref": "a7868"
+                                            },
+                                            {
+                                                "ref": "c18446"
                                             }
                                         ]
                                     },
@@ -5110,7 +5289,11 @@
                                         "name": "Way of the Open Hand",
                                         "description": "You specialise in unarmed combat, using your hands and control of ki to heal or inflict grievous hurt.",
                                         "image": "Class Monk Open Hand Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c18443"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -5174,6 +5357,9 @@
                                         "image": "Paladin Oath of Devotion Icon.png",
                                         "grants": [
                                             {
+                                                "ref": "c31623"
+                                            },
+                                            {
                                                 "ref": "a3400"
                                             }
                                         ]
@@ -5184,6 +5370,9 @@
                                         "image": "Paladin Oath of Vengeance.png",
                                         "grants": [
                                             {
+                                                "ref": "c39614"
+                                            },
+                                            {
                                                 "ref": "a6888"
                                             }
                                         ]
@@ -5193,6 +5382,9 @@
                                         "description": "You fight on the side of light in the cosmic struggle against darkness to preserve the sanctity of life and the beauty of nature.",
                                         "image": "Paladin Oath of the Ancients Icon.png",
                                         "grants": [
+                                            {
+                                                "ref": "c39613"
+                                            },
                                             {
                                                 "ref": "a3995"
                                             }
@@ -5545,7 +5737,11 @@
                                         "name": "Oath of Vengeance",
                                         "description": "You have set aside even your own purity to right wrongs and deliver justice to those who have committed the most grievous sins.",
                                         "image": "Paladin Oath of Vengeance.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c7991"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Oath of the Ancients",
@@ -6661,6 +6857,9 @@
                                         "image": "Class Rogue Trickster Badge Icon.png",
                                         "grants": [
                                             {
+                                                "ref": "c17793"
+                                            },
+                                            {
                                                 "ref": "s1662"
                                             },
                                             {
@@ -6789,13 +6988,30 @@
                                         "name": "Assassin",
                                         "description": "You prefer to deal sublime punishment to a single foe at a time - not in a duel, mind, because a duel implies chivalry, and you're too busy getting the job done for honour.",
                                         "image": "Class Rogue Assassin Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c17801"
+                                            },
+                                            {
+                                                "ref": "c17802"
+                                            },
+                                            {
+                                                "ref": "c17805"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Thief",
                                         "description": "Thieves use their skills in stealth and larceny to acquire whatever they wish, whether from a third story window or the depths of long-forgotten ruins.",
                                         "image": "Class Rogue Thief Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c17797"
+                                            },
+                                            {
+                                                "ref": "c17798"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -7032,7 +7248,11 @@
                                         "name": "Arcane Trickster",
                                         "description": "Arcane Tricksters are rogues with a clever touch of magic, using illusions and enchantments to keep their opponents on the back foot.",
                                         "image": "Class Rogue Trickster Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c17807"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Assassin",
@@ -7124,7 +7344,11 @@
                                         "name": "Draconic Bloodline",
                                         "description": "Your veins carry draconic magic, the result of a powerful dragon ancestor.",
                                         "image": "Class Sorcerer Draconic Bloodline Badge Icon.png",
-                                        "grants": [],
+                                        "grants": [
+                                            {
+                                                "ref": "c14554"
+                                            }
+                                        ],
                                         "choices": [
                                             {
                                                 "options": [
@@ -7237,7 +7461,14 @@
                                         "name": "Wild Magic",
                                         "description": "Your powers come from ancient forces of chaos. They churn within you -- waiting to burst free at any time.",
                                         "image": "Class Sorcerer Wild Magic Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c17209"
+                                            },
+                                            {
+                                                "ref": "c40248"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -7475,7 +7706,14 @@
                                         "name": "Draconic Bloodline",
                                         "description": "Your veins carry draconic magic, the result of a powerful dragon ancestor.",
                                         "image": "Class Sorcerer Draconic Bloodline Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c17225"
+                                            },
+                                            {
+                                                "ref": "c17223"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Storm Sorcery",
@@ -7487,6 +7725,9 @@
                                             },
                                             {
                                                 "ref": "a15152"
+                                            },
+                                            {
+                                                "ref": "c16400"
                                             },
                                             {
                                                 "ref": "s2296"
@@ -7815,6 +8056,9 @@
                                         "description": "You pledged something unthinkable to an unspeakably ancient entity - which in return furnished you with powers of cerebral entropy and control.",
                                         "image": "Class Warlock Great Old One Badge Icon.png",
                                         "grants": [
+                                            {
+                                                "ref": "c6543"
+                                            },
                                             {
                                                 "ref": "s2162"
                                             },
@@ -8813,7 +9057,11 @@
                                         "name": "The Archfey",
                                         "description": "Graced by a lady or lord of the fey, you are imbued with all the sumptuous and scary qualities of your patron's extraordinary realm.",
                                         "image": "Class Warlock Archfey Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c8228"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "The Fiend",
@@ -8829,7 +9077,14 @@
                                         "name": "The Great Old One",
                                         "description": "You pledged something unthinkable to an unspeakably ancient entity - which in return furnished you with powers of cerebral entropy and control.",
                                         "image": "Class Warlock Great Old One Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c8229"
+                                            },
+                                            {
+                                                "ref": "c8230"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -9156,7 +9411,11 @@
                                         "name": "Abjuration School",
                                         "description": "Abjuration spells summon wards, banish enemies, and nullify magic, suitable for those who wish to defend themselves and others.",
                                         "image": "Class Wizard Abjuration Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c16809"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Conjuration School",
@@ -9175,7 +9434,11 @@
                                         "name": "Divination School",
                                         "description": "You peer through time itself and can sculpt the future, like temporal clay, into a more favourable form.",
                                         "image": "Class Wizard Divination Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c6658"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Enchantment School",
@@ -9194,13 +9457,20 @@
                                         "name": "Evocation School",
                                         "description": "Evocation spells focus elemental energy into powerful attacks and enchantments. Those who specialise in this school are known as evokers.",
                                         "image": "Class Wizard Evocation Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c16816"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Illusion School",
                                         "description": "You specialise in unravelling and restitching the fabric of reality to fool the unwary, the gullible, and the monstrous.",
                                         "image": "Class Wizard Illusion Badge Icon.png",
                                         "grants": [
+                                            {
+                                                "ref": "a16818"
+                                            },
                                             {
                                                 "ref": "a16818"
                                             }
@@ -9210,13 +9480,21 @@
                                         "name": "Necromancy School",
                                         "description": "You walk through the valley of the shadow of death, and make lots of friends there.",
                                         "image": "Class Wizard Necromancy Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c8933"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Transmutation School",
                                         "description": "Your innate fascination with the structure of things has granted you an incredible power over crude matter and its manipulation.",
                                         "image": "Class Wizard Transmutation Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c16821"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -9327,7 +9605,11 @@
                                         "name": "Divination School",
                                         "description": "You peer through time itself and can sculpt the future, like temporal clay, into a more favourable form.",
                                         "image": "Class Wizard Divination Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c16833"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Enchantment School",
@@ -9343,7 +9625,11 @@
                                         "name": "Evocation School",
                                         "description": "Evocation spells focus elemental energy into powerful attacks and enchantments. Those who specialise in this school are known as evokers.",
                                         "image": "Class Wizard Evocation Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c16835"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Illusion School",
@@ -9362,6 +9648,15 @@
                                         "grants": [
                                             {
                                                 "ref": "s2757"
+                                            },
+                                            {
+                                                "ref": "c16836"
+                                            },
+                                            {
+                                                "ref": "c16837"
+                                            },
+                                            {
+                                                "ref": "c16838"
                                             }
                                         ]
                                     },
@@ -9371,31 +9666,7 @@
                                         "image": "Class Wizard Transmutation Badge Icon.png",
                                         "grants": [
                                             {
-                                                "ref": "a16839"
-                                            },
-                                            {
-                                                "ref": "a20158"
-                                            },
-                                            {
-                                                "ref": "a20159"
-                                            },
-                                            {
-                                                "ref": "a20164"
-                                            },
-                                            {
-                                                "ref": "a20166"
-                                            },
-                                            {
-                                                "ref": "a20167"
-                                            },
-                                            {
-                                                "ref": "a20168"
-                                            },
-                                            {
-                                                "ref": "a20169"
-                                            },
-                                            {
-                                                "ref": "a20170"
+                                                "ref": "c39615"
                                             }
                                         ]
                                     }
@@ -9488,13 +9759,21 @@
                                         "name": "Abjuration School",
                                         "description": "Abjuration spells summon wards, banish enemies, and nullify magic, suitable for those who wish to defend themselves and others.",
                                         "image": "Class Wizard Abjuration Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c16849"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Conjuration School",
                                         "description": "Compelled by shape and motion, your favoured arcane style involves summoning creatures and objects, as well as displacing them in space.",
                                         "image": "Class Wizard Conjuration Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c16850"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Divination School",
@@ -9513,13 +9792,21 @@
                                         "name": "Enchantment School",
                                         "description": "Your magic influences, beguiles, and bends the will and conviction of those around you.",
                                         "image": "Class Wizard Enchantment Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c16853"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Evocation School",
                                         "description": "Evocation spells focus elemental energy into powerful attacks and enchantments. Those who specialise in this school are known as evokers.",
                                         "image": "Class Wizard Evocation Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c16854"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Illusion School",
@@ -9535,7 +9822,11 @@
                                         "name": "Necromancy School",
                                         "description": "You walk through the valley of the shadow of death, and make lots of friends there.",
                                         "image": "Class Wizard Necromancy Badge Icon.png",
-                                        "grants": []
+                                        "grants": [
+                                            {
+                                                "ref": "c16856"
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Transmutation School",
@@ -9543,7 +9834,7 @@
                                         "image": "Class Wizard Transmutation Badge Icon.png",
                                         "grants": [
                                             {
-                                                "ref": "a17231"
+                                                "ref": "c40158"
                                             }
                                         ]
                                     }
