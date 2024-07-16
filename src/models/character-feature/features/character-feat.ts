@@ -259,11 +259,11 @@ export class CharacterFeat extends CharacterFeatureCustomizable {
         }
 
         const templates = await this.page.getTemplates('Table feat');
-        const { plainText, noOp } = MediaWikiTemplate.Parsers;
+        const { plainText } = MediaWikiTemplate.Parsers;
 
         const config = {
             name: { parser: plainText },
-            description: { parser: noOp, default: undefined }, // feat description
+            description: { default: undefined }, // feat description
 
             feature1: { parser: plainText, default: undefined },
             description1: { parser: plainText, default: undefined },

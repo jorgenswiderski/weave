@@ -21,12 +21,8 @@ export class CharacterFeatureWarlockDeepenedPact extends CharacterFeature {
             'Passive feature page',
         );
 
-        const { noOp } = MediaWikiTemplate.Parsers;
-
         const { image } = passiveTemplate.parse({
-            image: {
-                parser: noOp,
-            },
+            image: {},
         });
 
         this.image = image;
@@ -63,12 +59,8 @@ export class CharacterFeatureWarlockDeepenedPact extends CharacterFeature {
             'Passive feature page',
         );
 
-        const { noOp } = MediaWikiTemplate.Parsers;
-
         const { additional: optionsDescription } = passiveTemplate.parse({
-            additional: {
-                parser: noOp,
-            },
+            additional: {},
         });
 
         const pacts = [

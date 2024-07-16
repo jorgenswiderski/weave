@@ -14,7 +14,6 @@ import { Utils } from '../../utils';
 import { StaticImageCacheService } from '../../static-image-cache-service';
 import { MediaWikiParser } from '../../media-wiki/media-wiki-parser';
 import { IPageSection } from '../../media-wiki/types';
-import { MediaWikiTemplate } from '../../media-wiki/media-wiki-template';
 
 type RaceChoice = { type: CharacterPlannerStep; options: CharacterSubrace[] };
 
@@ -107,10 +106,8 @@ export class CharacterRace extends CharacterFeature {
 
         const template = await this.page.getTemplate('Class Quote');
 
-        const { noOp } = MediaWikiTemplate.Parsers;
-
         const config = {
-            image: { parser: noOp, default: undefined },
+            image: { default: undefined },
         };
 
         const { image } = template.parse(config);

@@ -179,7 +179,9 @@
         "Template:Saving throw": "Template:Saving Throw",
         "Template:SavingThrow": "Template:Saving Throw",
         "Template:SpellPage": "Template:Spell page",
+        "Template:SpellSlot": "Template:Spell slot",
         "Template:SpoilerWarning": "Template:Spoiler warning",
+        "Template:SubclassQuote": "Template:Class quote",
         "Template:TraderGoldRow": "Template:Trader gold row",
         "Template:UnderConstruction": "Template:Under construction",
         "Template:WeaponAction": "Template:Weapon action",
@@ -223,6 +225,7 @@
         "Template:duration": "Template:Duration",
         "Template:em": "Template:Em",
         "Template:feature box": "Template:Feature box",
+        "Template:gold": "Template:Gold",
         "Template:hatnote": "Template:Hatnote",
         "Template:hp": "Template:Hp",
         "Template:icon": "Template:Icon",
@@ -256,6 +259,7 @@
         "Template:table begin": "Template:Table begin",
         "Template:table end": "Template:Table end",
         "Template:table feat": "Template:Table feat",
+        "Template:table list": "Template:Table list",
         "Template:temp hp": "Template:Temp hp",
         "Template:ublist": "Template:Ublist",
         "Template:unobtainable": "Template:Unobtainable",
@@ -3189,6 +3193,11 @@
             "title": "Template:SimpleWeaponsProf"
         },
         {
+            "pageId": 3382,
+            "revisionId": 128816,
+            "title": "Template:MartialWeaponsProf"
+        },
+        {
             "pageId": 3384,
             "revisionId": 205831,
             "title": "Barcus Wroot"
@@ -5015,7 +5024,7 @@
         },
         {
             "pageId": 4546,
-            "revisionId": 204016,
+            "revisionId": 207861,
             "title": "Grymforge"
         },
         {
@@ -5115,7 +5124,7 @@
         },
         {
             "pageId": 4621,
-            "revisionId": 207266,
+            "revisionId": 207854,
             "title": "Template:Creatures"
         },
         {
@@ -11484,6 +11493,11 @@
             "title": "Infiltration Expertise"
         },
         {
+            "pageId": 14261,
+            "revisionId": 103386,
+            "title": "Template:Gold"
+        },
+        {
             "pageId": 14268,
             "revisionId": 115076,
             "title": "Conjure Elemental: Water Myrmidon"
@@ -12157,6 +12171,11 @@
             "pageId": 15526,
             "revisionId": 190327,
             "title": "Shar's Aegis"
+        },
+        {
+            "pageId": 15539,
+            "revisionId": 58999,
+            "title": "Template:SubclassNote"
         },
         {
             "pageId": 15541,
@@ -14194,6 +14213,11 @@
             "title": "Magic Initiate: Wizard"
         },
         {
+            "pageId": 20455,
+            "revisionId": 107597,
+            "title": "Template:SpoilerDurge"
+        },
+        {
             "pageId": 20470,
             "revisionId": 165697,
             "title": "Homing Weapon"
@@ -14427,6 +14451,11 @@
             "pageId": 21081,
             "revisionId": 176802,
             "title": "Unpetrification Ray"
+        },
+        {
+            "pageId": 21099,
+            "revisionId": 148490,
+            "title": "Template:Spell slot"
         },
         {
             "pageId": 21192,
@@ -21159,6 +21188,11 @@
             "title": "Wolf Heart"
         },
         {
+            "pageId": 32130,
+            "revisionId": 130838,
+            "title": "Template:Table list"
+        },
+        {
             "pageId": 32159,
             "revisionId": 136686,
             "title": "Template:Ublist"
@@ -22242,6 +22276,11 @@
             "pageId": 36608,
             "revisionId": 179672,
             "title": "Headcrack"
+        },
+        {
+            "pageId": 36738,
+            "revisionId": 164288,
+            "title": "Template:Level header"
         },
         {
             "pageId": 36818,

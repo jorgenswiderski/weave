@@ -106,7 +106,6 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
     }
 
     static Parsers: Record<string, TemplateParserFunction> = {
-        noOp: (value) => value,
         plainText: (value) =>
             value ? MediaWikiParser.stripMarkup(value) : undefined,
         int: (value: string) => {
@@ -161,12 +160,7 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
             },
     };
 
-    protected parseValue(key: string): string | undefined {
-        const regex = new RegExp(
-            `\\n\\s*\\|\\s*${key}\\s*=([\\s\\S]*?)\\n(?:\\||}})`,
-            'i',
-        );
-
+    protected parseValue(key: string | number): string | undefined {
         let { wikitext } = this;
 
         // Add line breaks to the template text ONLY if there are no line breaks already
@@ -179,9 +173,27 @@ export class MediaWikiTemplate implements IMediaWikiTemplate {
                 .replace(/(}})$/g, '\n$1');
         }
 
-        const match = wikitext.match(regex);
+        if (typeof key === 'string') {
+            const regex = new RegExp(
+                `\\n\\s*\\|\\s*${key}\\s*=([\\s\\S]*?)\\n(?:\\||}})`,
+                'i',
+            );
 
-        return match ? match[1].trim() : undefined;
+            const match = wikitext.match(regex);
+
+            return match ? match[1].trim() : undefined;
+        }
+
+        const params = [...wikitext.matchAll(/\|\s*([^|]*)(?=\n\s*\||}})/g)];
+
+        const endOfAnonParams = params.findIndex((match) =>
+            match[1].match(/^\w+\s*=/),
+        );
+
+        const anonParams =
+            endOfAnonParams > 0 ? params.slice(0, endOfAnonParams) : params;
+
+        return anonParams?.[key - 1]?.[1].trim();
     }
 
     parse(config: MediaWikiTemplateParserConfig): Record<string, any> {

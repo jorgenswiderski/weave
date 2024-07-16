@@ -69,12 +69,11 @@ export class Passive extends PageItem implements Partial<IPassive> {
 
         this.id = this.page.pageId;
 
-        const { noOp, plainText } = MediaWikiTemplate.Parsers;
+        const { plainText } = MediaWikiTemplate.Parsers;
 
         const config: MediaWikiTemplateParserConfig = {
             name: { parser: plainText, default: this.pageTitle },
             image: {
-                parser: noOp,
                 default: undefined,
             },
             description: {

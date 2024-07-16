@@ -19,6 +19,8 @@ import { IClassFeatureFactory } from '../../class-feature/types';
 import { error } from '../../../logger';
 import { PageSection } from '../../../media-wiki/page-section';
 import { CharacterFeatureRedirect } from './types';
+import { MediaWikiTemplateParserConfig } from '../../../media-wiki/types';
+import { MediaWikiTemplate } from '../../../media-wiki/media-wiki-template';
 
 export class CharacterSubclass extends CharacterFeature {
     static factory?: IClassFeatureFactory;
@@ -31,6 +33,36 @@ export class CharacterSubclass extends CharacterFeature {
         super(option, level, characterClass);
     }
 
+    async getQuoteData(): Promise<{ description?: string; image?: string }> {
+        await this.initialized[PageLoadingState.PAGE_CONTENT];
+
+        if (!this.page?.content) {
+            return {};
+        }
+
+        const templates: Record<string, MediaWikiTemplateParserConfig> = {
+            q: { description: { key: 1 }, image: {} },
+            SubclassQuote: { description: { key: 'quote' }, image: {} },
+            ClassQuote: { description: { key: 'quote' }, image: {} },
+        };
+
+        // eslint-disable-next-line no-restricted-syntax
+        for (const [templateName, config] of Object.entries(templates)) {
+            let template: MediaWikiTemplate;
+
+            try {
+                // eslint-disable-next-line no-await-in-loop
+                template = await this.page.getTemplate(templateName);
+            } catch (e) {
+                continue;
+            }
+
+            return template.parse(config);
+        }
+
+        return {};
+    }
+
     async initDescription(): Promise<void> {
         await this.initialized[PageLoadingState.PAGE_CONTENT];
 
@@ -38,16 +70,8 @@ export class CharacterSubclass extends CharacterFeature {
             return;
         }
 
-        const descMatch = /{{SubclassQuote\|quote=(.+?)\|image/g;
-        const match = descMatch.exec(this.page.content);
-
-        if (!match?.[1]) {
-            throw new Error(
-                `could not initialize subclass description for '${this.name}'`,
-            );
-        }
-
-        this.description = MediaWikiParser.stripMarkup(match[1]).trim();
+        const { description } = await this.getQuoteData();
+        this.description = description;
     }
 
     async initImage(): Promise<void> {
@@ -57,16 +81,8 @@ export class CharacterSubclass extends CharacterFeature {
             return;
         }
 
-        const imageMatch = /{{SubclassQuote\|quote=.+?\|image=([^|}]+)[|}]+/g;
-        const match = imageMatch.exec(this.page.content);
-
-        if (!match?.[1]) {
-            throw new Error(
-                `could not initialize subclass image for '${this.name}'`,
-            );
-        }
-
-        this.image = match[1];
+        const { image } = await this.getQuoteData();
+        this.image = image;
 
         if (this.image) {
             StaticImageCacheService.cacheImage(this.image);

@@ -381,12 +381,12 @@ export class EquipmentItem extends PageItem implements Partial<IEquipmentItem> {
 
         this.id = this.page.pageId;
 
-        const { noOp, plainText, int, float } = MediaWikiTemplate.Parsers;
+        const { plainText, int, float } = MediaWikiTemplate.Parsers;
         const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
         const config: MediaWikiTemplateParserConfig = {
-            image: { parser: noOp, default: undefined },
-            icon: { parser: noOp, default: undefined },
+            image: { default: undefined },
+            icon: { default: undefined },
             description: { parser: plainText, default: undefined },
             quote: { parser: plainText, default: undefined },
             type: {

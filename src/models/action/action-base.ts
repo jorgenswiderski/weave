@@ -159,14 +159,13 @@ export class ActionBase extends PageItem implements Partial<IActionBase> {
 
         this.id = this.page.pageId;
 
-        const { noOp, plainText, boolean, int } = MediaWikiTemplate.Parsers;
+        const { plainText, boolean, int } = MediaWikiTemplate.Parsers;
 
         const { parseEnum } = MediaWikiTemplate.HighOrderParsers;
 
         const config: MediaWikiTemplateParserConfig = {
             name: { parser: plainText, default: this.pageTitle },
             image: {
-                parser: noOp,
                 default: undefined,
             },
             level: {

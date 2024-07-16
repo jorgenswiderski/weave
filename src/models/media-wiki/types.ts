@@ -29,7 +29,7 @@ export type TemplateParserFunction = (
 ) => any;
 
 export interface MediaWikiTemplateParserConfigItem {
-    key?: string;
+    key?: string | number;
     parser?: TemplateParserFunction;
     default?: any;
 }
